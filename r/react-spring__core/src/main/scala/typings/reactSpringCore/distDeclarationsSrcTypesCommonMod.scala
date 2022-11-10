@@ -1,5 +1,6 @@
 package typings.reactSpringCore
 
+import typings.reactSpringTypes.mod.Any
 import typings.reactSpringTypes.utilMod.Remap
 import typings.std.Exclude
 import typings.std.Pick
@@ -14,13 +15,12 @@ object distDeclarationsSrcTypesCommonMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.ReadonlyArray<any> ? @react-spring/types.@react-spring/types.Any : T extends object ? object : @react-spring/types.@react-spring/types.Any
     }}}
     */
-  @js.native
-  trait IsPlainObject[T] extends StObject
+  type IsPlainObject[T] = Any
   
   /** Replace the type of each `P` property with `never` */
   type NeverProps[T, P /* <: /* keyof T */ String */] = Remap[
@@ -39,13 +39,12 @@ object distDeclarationsSrcTypesCommonMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @react-spring/core.@react-spring/core/dist/declarations/src/types/common.IsPlainObject<T> ? string & keyof T : string
     }}}
     */
-  @js.native
-  trait StringKeys[T] extends StObject
+  type StringKeys[T] = String
   
   type Valid[T, U] = NeverProps[T, InvalidKeys[T, U]]
 }

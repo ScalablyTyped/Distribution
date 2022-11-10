@@ -48,6 +48,15 @@ error,
 end, 
 ready]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  O extends {  xmlns :true} ? saxes.saxes.SaxesAttributeNSIncomplete : O extends {  xmlns :false | undefined} ? saxes.saxes.SaxesAttributePlain : saxes.saxes.SaxesAttribute
+  }}}
+  */
+type AttributeEventForOptions[O /* <: SaxesOptions */] = SaxesAttributeNSIncomplete
+
 type AttributeHandler[O] = js.Function1[/* attribute */ AttributeEventForOptions[O], Unit]
 
 type CDataHandler = js.Function1[/* cdata */ String, Unit]
@@ -73,6 +82,24 @@ type PIHandler = js.Function1[/* data */ Body, Unit]
 type ReadyHandler = js.Function0[Unit]
 
 type ResolvePrefix = js.Function1[/* prefix */ String, js.UndefOr[String]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  O extends {  xmlns :true} ? saxes.saxes.SaxesStartTagNS : O extends {  xmlns :false | undefined} ? saxes.saxes.SaxesStartTagPlain : saxes.saxes.SaxesStartTag
+  }}}
+  */
+type StartTagForOptions[O /* <: SaxesOptions */] = SaxesStartTagNS
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  O extends {  xmlns :true} ? saxes.saxes.SaxesTagNS : O extends {  xmlns :false | undefined} ? saxes.saxes.SaxesTagPlain : saxes.saxes.SaxesTag
+  }}}
+  */
+type TagForOptions[O /* <: SaxesOptions */] = SaxesTagNS
 
 type TextHandler = js.Function1[/* text */ String, Unit]
 

@@ -9,17 +9,17 @@ trait GetMissionProfileRequest extends StObject {
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: String
+  var missionProfileId: Uuid
 }
 object GetMissionProfileRequest {
   
-  inline def apply(missionProfileId: String): GetMissionProfileRequest = {
+  inline def apply(missionProfileId: Uuid): GetMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMissionProfileRequest]
   }
   
   extension [Self <: GetMissionProfileRequest](x: Self) {
     
-    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
   }
 }

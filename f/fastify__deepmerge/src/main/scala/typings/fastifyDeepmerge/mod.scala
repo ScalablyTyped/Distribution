@@ -24,13 +24,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     @fastify/deepmerge.@fastify/deepmerge.First<T> extends never ? R : @fastify/deepmerge.@fastify/deepmerge.DeepMergeAll<@fastify/deepmerge.@fastify/deepmerge.DeepMerge<R, @fastify/deepmerge.@fastify/deepmerge.First<T>>, @fastify/deepmerge.@fastify/deepmerge.Rest<T>>
     }}}
     */
-  @js.native
-  trait DeepMergeAll[R, T] extends StObject
+  type DeepMergeAll[R, T] = R
   
   type DeepMergeAllFn = js.Function1[/* targets */ js.Array[Any], DeepMergeAll[js.Object, js.Array[Any]]]
   
@@ -40,19 +39,18 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     U extends @fastify/deepmerge.@fastify/deepmerge.BuiltIns ? U : [T, U] extends [std.Array<any>, std.Array<any>] ? @fastify/deepmerge.@fastify/deepmerge.MergeTypes<T, U> : [T, U] extends [{[key: string] : unknown}, {[key: string] : unknown}] ? @fastify/deepmerge.@fastify/deepmerge.DeepMergeHelper<T, U, @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>}, {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>} ]: @fastify/deepmerge.@fastify/deepmerge.DifferenceKeys<T, U, std.Omit<T, keyof U> & std.Omit<U, keyof T>, {[ K in keyof std.Omit<T, keyof U> & std.Omit<U, keyof T> ]: std.Omit<T, keyof U> & std.Omit<U, keyof T>[K]}> & {[ K in keyof @fastify/deepmerge.@fastify/deepmerge.IntersectionKeys<T, U> ]: @fastify/deepmerge.@fastify/deepmerge.DeepMerge<T[K], U[K]>}[K]}> : U
     }}}
     */
-  @js.native
-  trait DeepMerge_[T, U] extends StObject
+  type DeepMerge_[T, U] = U
   
   type DifferenceKeys[T, U, T0, T1] = T1
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [infer _I, ...infer _Rest] ? _I : never
     }}}
@@ -109,13 +107,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<infer A1> ? U extends std.Array<infer A2> ? std.Array<A1 | A2> : T : U
     }}}
     */
-  @js.native
-  trait MergeTypes[T, U] extends StObject
+  type MergeTypes[T, U] = T
   
   trait Options extends StObject {
     
@@ -154,7 +151,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [infer _I, ...infer _Rest] ? _Rest : never
     }}}

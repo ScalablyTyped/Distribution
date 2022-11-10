@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("puppeteer", "JSHandle")
 @js.native
-open class JSHandle[T] ()
-  extends StObject
-     with _HandleOr[T] {
+open class JSHandle[T] () extends StObject {
   
   /**
     * @returns Either `null` or the handle itself if the handle is an

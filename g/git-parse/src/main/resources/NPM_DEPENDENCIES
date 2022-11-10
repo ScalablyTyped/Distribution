@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "git-parse" : "3.0.0"
+      "git-parse" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "git-parse" : "3.0.0"
+      "git-parse" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

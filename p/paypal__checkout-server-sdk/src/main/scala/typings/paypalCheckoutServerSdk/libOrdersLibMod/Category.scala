@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Category extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "Category")
-@js.native
-object Category extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DIGITAL_GOODS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PHYSICAL_GOODS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DONATION
+*/
+trait Category extends StObject
+object Category {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Category & String] = js.native
+  inline def DIGITAL_GOODS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DIGITAL_GOODS = "DIGITAL_GOODS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DIGITAL_GOODS]
   
-  @js.native
-  sealed trait DIGITAL_GOODS
-    extends StObject
-       with Category
-  /* "DIGITAL_GOODS" */ val DIGITAL_GOODS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.DIGITAL_GOODS & String = js.native
+  inline def DONATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DONATION = "DONATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DONATION]
   
-  @js.native
-  sealed trait DONATION
-    extends StObject
-       with Category
-  /* "DONATION" */ val DONATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.DONATION & String = js.native
-  
-  @js.native
-  sealed trait PHYSICAL_GOODS
-    extends StObject
-       with Category
-  /* "PHYSICAL_GOODS" */ val PHYSICAL_GOODS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.PHYSICAL_GOODS & String = js.native
+  inline def PHYSICAL_GOODS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PHYSICAL_GOODS = "PHYSICAL_GOODS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PHYSICAL_GOODS]
 }

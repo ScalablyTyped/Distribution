@@ -5,7 +5,6 @@ import typings.devextreme.anon.Index
 import typings.devextreme.anon.keyinEventNameFunctionInserted
 import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.utils.DxExtendedPromise
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.Store.EventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,8 +16,8 @@ trait Store[TItem, TKey] extends StObject {
   /**
     * Gets a data item with a specific key.
     */
-  def byKey(key: TKey): DxPromise[TItem] = js.native
-  def byKey(key: TKey, extraOptions: LoadOptions[TItem]): DxPromise[TItem] = js.native
+  def byKey(key: TKey): js.Promise[TItem] = js.native
+  def byKey(key: TKey, extraOptions: LoadOptions[TItem]): js.Promise[TItem] = js.native
   
   /**
     * Adds a data item to the store.
@@ -70,12 +69,12 @@ trait Store[TItem, TKey] extends StObject {
   /**
     * Removes a data item with a specific key from the store.
     */
-  def remove(key: TKey): DxPromise[Unit] = js.native
+  def remove(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Gets the total count of items the load() function returns.
     */
-  def totalCount(obj: Filter[TItem]): DxPromise[Double] = js.native
+  def totalCount(obj: Filter[TItem]): js.Promise[Double] = js.native
   
   /**
     * Updates a data item with a specific key.

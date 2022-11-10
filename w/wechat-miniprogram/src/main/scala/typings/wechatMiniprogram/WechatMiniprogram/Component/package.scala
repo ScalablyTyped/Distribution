@@ -35,8 +35,26 @@ type MethodOption = Record[String, js.Function]
 
 type PropertyOption = Record[String, AllProperty]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends wechat-miniprogram.WechatMiniprogram.Component.ShortProperty ? wechat-miniprogram.WechatMiniprogram.Component.ValueType<T> : wechat-miniprogram.WechatMiniprogram.Component.FullPropertyToData<std.Exclude<T, wechat-miniprogram.WechatMiniprogram.Component.ShortProperty>>
+  }}}
+  */
+type PropertyToData[T /* <: AllProperty */] = String
+
 type PropertyType = StringConstructor | NumberConstructor | BooleanConstructor | ArrayConstructor | ObjectConstructor | Null
 
 type ShortProperty = StringConstructor | NumberConstructor | BooleanConstructor | ArrayConstructor | ObjectConstructor | Null
 
 type TrivialInstance = Instance[IAnyObject, IAnyObject, IAnyObject, IAnyObject, `false`]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null ? any : T extends std.StringConstructor ? string : T extends std.NumberConstructor ? number : T extends std.BooleanConstructor ? boolean : T extends std.ArrayConstructor ? std.Array<any> : T extends std.ObjectConstructor ? wechat-miniprogram.WechatMiniprogram.IAnyObject : never
+  }}}
+  */
+type ValueType[T /* <: PropertyType */] = String

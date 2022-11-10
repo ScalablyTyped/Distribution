@@ -2,13 +2,14 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait panelConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var body: js.UndefOr[String | baseview] = js.undefined
   
@@ -16,11 +17,13 @@ trait panelConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
+  
+  var header: js.UndefOr[String | js.Object] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -40,7 +43,7 @@ trait panelConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[Double | obj] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -63,7 +66,7 @@ object panelConfig {
   
   extension [Self <: panelConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -79,7 +82,7 @@ object panelConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -90,6 +93,10 @@ object panelConfig {
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeader(value: String | js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -127,7 +134,7 @@ object panelConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

@@ -1,29 +1,24 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait storage extends StObject {
   
-  var cookie: typings.webix.webix.cookie
+  var cookie: typings.webix.webix.cookie = js.native
   
-  var local: typings.webix.webix.local
+  var local: typings.webix.webix.local = js.native
   
-  var session: typings.webix.webix.session
+  def prefix(scope: String, storage: typings.webix.webix.cookie): WebixStorage = js.native
+  def prefix(scope: String, storage: typings.webix.webix.local): WebixStorage = js.native
+  def prefix(scope: String, storage: typings.webix.webix.session): WebixStorage = js.native
+  
+  var session: typings.webix.webix.session = js.native
 }
 object storage {
   
-  @JSImport("webix", "storage")
-  @js.native
-  val ^ : typings.webix.webix.storage = js.native
-  
-  extension [Self <: storage](x: Self) {
-    
-    inline def setCookie(value: typings.webix.webix.cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
-    
-    inline def setLocal(value: typings.webix.webix.local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
-    
-    inline def setSession(value: typings.webix.webix.session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
-  }
+  inline def apply: typings.webix.webix.storage = ^.asInstanceOf[js.Dynamic].selectDynamic("storage").asInstanceOf[typings.webix.webix.storage]
 }

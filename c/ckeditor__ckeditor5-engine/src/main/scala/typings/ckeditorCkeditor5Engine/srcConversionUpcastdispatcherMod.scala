@@ -145,13 +145,15 @@ object srcConversionUpcastdispatcherMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends 'element' | 'text' | 'documentFragment' ? [@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastEventDataTypes[K], @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastConversionApi] : K extends 'viewCleanup' ? [@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/documentfragment.default | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/element.default] : K extends 'selectionChange' ? [{  oldSelection :@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/documentselection.default | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/selection.default,   newSelection :@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/documentselection.default | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/selection.default,   domSelection :std.Selection}] : K extends / * template literal string: element:${inferN} * / string ? [@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastConversionData<@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/view/element.default & {  name :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify N * / any}>, @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastConversionApi] : K extends / * template literal string: ${inferNS}:${string} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NS * / any extends 'element' | 'text' | 'documentFragment' ? [@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastEventDataTypes[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NS * / any], @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastConversionApi] : std.Array<any> : std.Array<any>
     }}}
     */
-  @js.native
-  trait UpcastEventArgs[K /* <: String */] extends StObject
+  type UpcastEventArgs[K /* <: String */] = js.Tuple2[
+    /* import warning: importer.ImportType#apply Failed type conversion: @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/conversion/upcastdispatcher.UpcastEventDataTypes[K] */ js.Any, 
+    UpcastConversionApi
+  ]
   
   trait UpcastEventDataTypes extends StObject {
     

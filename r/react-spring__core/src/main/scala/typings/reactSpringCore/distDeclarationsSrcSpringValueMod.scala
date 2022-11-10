@@ -268,25 +268,47 @@ object distDeclarationsSrcSpringValueMod {
       
       inline def setOnChange(value: Extract[js.UndefOr[EventProp[OnChange[SpringValue[T], SpringValue[T], Unit]]], js.Function]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
+      inline def setOnChangeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnPause(value: Extract[js.UndefOr[EventProp[OnPause[SpringValue[T], SpringValue[T], Unit]]], js.Function]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
+      
+      inline def setOnPauseFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onPause", js.Any.fromFunction3(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
       inline def setOnProps(value: Extract[js.UndefOr[EventProp[OnProps[T]]], js.Function]): Self = StObject.set(x, "onProps", value.asInstanceOf[js.Any])
       
+      inline def setOnPropsFunction2(value: (/* props */ SpringProps[T], /* spring */ SpringValue[T]) => Unit): Self = StObject.set(x, "onProps", js.Any.fromFunction2(value))
+      
       inline def setOnPropsUndefined: Self = StObject.set(x, "onProps", js.undefined)
       
       inline def setOnRest(value: Extract[js.UndefOr[EventProp[OnRest[SpringValue[T], SpringValue[T], Unit]]], js.Function]): Self = StObject.set(x, "onRest", value.asInstanceOf[js.Any])
+      
+      inline def setOnRestFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onRest", js.Any.fromFunction3(value))
       
       inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
       inline def setOnResume(value: Extract[js.UndefOr[EventProp[OnResume[SpringValue[T], SpringValue[T], Unit]]], js.Function]): Self = StObject.set(x, "onResume", value.asInstanceOf[js.Any])
       
+      inline def setOnResumeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onResume", js.Any.fromFunction3(value))
+      
       inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
       
       inline def setOnStart(value: Extract[js.UndefOr[EventProp[OnStart[SpringValue[T], SpringValue[T], Unit]]], js.Function]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      
+      inline def setOnStartFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onStart", js.Any.fromFunction3(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       

@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ModelEnumsFacilitatorType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "ModelEnumsFacilitatorType")
-@js.native
-object ModelEnumsFacilitatorType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.API_CALLER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNAL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNER
+*/
+trait ModelEnumsFacilitatorType extends StObject
+object ModelEnumsFacilitatorType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ModelEnumsFacilitatorType & String] = js.native
+  inline def API_CALLER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.API_CALLER = "API_CALLER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.API_CALLER]
   
-  @js.native
-  sealed trait API_CALLER
-    extends StObject
-       with ModelEnumsFacilitatorType
-  /* "API_CALLER" */ val API_CALLER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.API_CALLER & String = js.native
+  inline def INTERNAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNAL = "INTERNAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNAL]
   
-  @js.native
-  sealed trait INTERNAL
-    extends StObject
-       with ModelEnumsFacilitatorType
-  /* "INTERNAL" */ val INTERNAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.INTERNAL & String = js.native
-  
-  @js.native
-  sealed trait PARTNER
-    extends StObject
-       with ModelEnumsFacilitatorType
-  /* "PARTNER" */ val PARTNER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.PARTNER & String = js.native
+  inline def PARTNER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNER = "PARTNER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNER]
 }

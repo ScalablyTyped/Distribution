@@ -545,13 +545,12 @@ object buildSrcChannelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     C extends 'x2' ? 'x' : C extends 'y2' ? 'y' : C extends 'latitude2' ? 'latitude' : C extends 'longitude2' ? 'longitude' : C extends 'theta2' ? 'theta' : C extends 'radius2' ? 'radius' : C
     }}}
     */
-  @js.native
-  trait MainChannelOf[C /* <: ExtendedChannel */] extends StObject
+  type MainChannelOf[C /* <: ExtendedChannel */] = x
   
   type NonPositionChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'detail' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'order' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'description' | 'strokeDash' | 'tooltip' | 'angle' | 'shape' | 'href'>[number] */ js.Any
   
@@ -591,13 +590,12 @@ object buildSrcChannelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     C extends 'x' ? 'x2' : C extends 'y' ? 'y2' : C extends 'latitude' ? 'latitude2' : C extends 'longitude' ? 'longitude2' : C extends 'theta' ? 'theta2' : C extends 'radius' ? 'radius2' : undefined
     }}}
     */
-  @js.native
-  trait SecondaryChannelOf[C /* <: Channel */] extends StObject
+  type SecondaryChannelOf[C /* <: Channel */] = x2
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.x2

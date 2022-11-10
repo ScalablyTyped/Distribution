@@ -32,6 +32,11 @@ trait UpdateTemplateRequest extends StObject {
   var requiredFields: js.UndefOr[RequiredFieldList] = js.undefined
   
   /**
+    * The status of the template.
+    */
+  var status: js.UndefOr[TemplateStatus] = js.undefined
+  
+  /**
     * A unique identifier for the template.
     */
   var templateId: TemplateId
@@ -64,6 +69,10 @@ object UpdateTemplateRequest {
     inline def setRequiredFieldsUndefined: Self = StObject.set(x, "requiredFields", js.undefined)
     
     inline def setRequiredFieldsVarargs(value: RequiredField*): Self = StObject.set(x, "requiredFields", js.Array(value*))
+    
+    inline def setStatus(value: TemplateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setTemplateId(value: TemplateId): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
   }

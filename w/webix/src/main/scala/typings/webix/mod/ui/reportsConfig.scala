@@ -2,21 +2,20 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait reportsConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
-  
-  var body: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -28,9 +27,7 @@ trait reportsConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  
-  var locale: js.UndefOr[Any] = js.undefined
+  var locale: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -67,13 +64,9 @@ object reportsConfig {
   
   extension [Self <: reportsConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
@@ -83,7 +76,7 @@ object reportsConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -107,11 +100,7 @@ object reportsConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
-    
-    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
-    
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

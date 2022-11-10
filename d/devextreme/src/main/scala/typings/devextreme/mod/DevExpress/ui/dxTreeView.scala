@@ -3,7 +3,6 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.devextremeStrings.dblclick_
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -34,15 +33,15 @@ trait dxTreeView[TKey]
   /**
     * Collapses an item with a specific key.
     */
-  def collapseItem(itemData: Item): DxPromise[Unit] = js.native
+  def collapseItem(itemData: Item): js.Promise[Unit] = js.native
   /**
     * Collapses an item found using its DOM node.
     */
-  def collapseItem(itemElement: Element): DxPromise[Unit] = js.native
+  def collapseItem(itemElement: Element): js.Promise[Unit] = js.native
   /**
     * Collapses an item with a specific key.
     */
-  def collapseItem(key: TKey): DxPromise[Unit] = js.native
+  def collapseItem(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Expands all items. If you load items on demand, this method expands only the loaded items.
@@ -52,15 +51,15 @@ trait dxTreeView[TKey]
   /**
     * Expands an item found using its data object.
     */
-  def expandItem(itemData: Item): DxPromise[Unit] = js.native
+  def expandItem(itemData: Item): js.Promise[Unit] = js.native
   /**
     * Expands an item found using its DOM node.
     */
-  def expandItem(itemElement: Element): DxPromise[Unit] = js.native
+  def expandItem(itemElement: Element): js.Promise[Unit] = js.native
   /**
     * Expands an item with a specific key.
     */
-  def expandItem(key: TKey): DxPromise[Unit] = js.native
+  def expandItem(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Gets all nodes.
@@ -85,15 +84,15 @@ trait dxTreeView[TKey]
   /**
     * Scrolls the content to an item found using its data.
     */
-  def scrollToItem(itemData: Item): DxPromise[Unit] = js.native
+  def scrollToItem(itemData: Item): js.Promise[Unit] = js.native
   /**
     * Scrolls the content to an item found using its DOM node.
     */
-  def scrollToItem(itemElement: Element): DxPromise[Unit] = js.native
+  def scrollToItem(itemElement: Element): js.Promise[Unit] = js.native
   /**
     * Scrolls the content to an item found using its key.
     */
-  def scrollToItem(key: TKey): DxPromise[Unit] = js.native
+  def scrollToItem(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Selects all nodes.
@@ -134,7 +133,7 @@ trait dxTreeView[TKey]
   /**
     * Updates the tree view scrollbars according to the current size of the UI component content.
     */
-  def updateDimensions(): DxPromise[Unit] = js.native
+  def updateDimensions(): js.Promise[Unit] = js.native
 }
 object dxTreeView {
   
@@ -466,9 +465,9 @@ object dxTreeView {
     @JSName("scrollWidth")
     var scrollWidth_Original: js.Function0[Double]
     
-    def update(): DxPromise[Unit]
+    def update(): js.Promise[Unit]
     @JSName("update")
-    var update_Original: js.Function0[DxPromise[Unit]]
+    var update_Original: js.Function0[js.Promise[Unit]]
   }
   object Scrollable {
     
@@ -494,7 +493,7 @@ object dxTreeView {
       scrollToElement: /* element */ UserDefinedElement[Element] => Unit,
       scrollTop: () => Double,
       scrollWidth: () => Double,
-      update: () => DxPromise[Unit]
+      update: () => js.Promise[Unit]
     ): Scrollable = {
       val __obj = js.Dynamic.literal($element = js.Any.fromFunction0($element), beginUpdate = js.Any.fromFunction0(beginUpdate), clientHeight = js.Any.fromFunction0(clientHeight), clientWidth = js.Any.fromFunction0(clientWidth), content = js.Any.fromFunction0(content), dispose = js.Any.fromFunction0(dispose), element = js.Any.fromFunction0(element), endUpdate = js.Any.fromFunction0(endUpdate), instance = js.Any.fromFunction0(instance), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), option = js.Any.fromFunction0(option), resetOption = js.Any.fromFunction1(resetOption), scrollBy = js.Any.fromFunction1(scrollBy), scrollHeight = js.Any.fromFunction0(scrollHeight), scrollLeft = js.Any.fromFunction0(scrollLeft), scrollOffset = js.Any.fromFunction0(scrollOffset), scrollTo = js.Any.fromFunction1(scrollTo), scrollToElement = js.Any.fromFunction1(scrollToElement), scrollTop = js.Any.fromFunction0(scrollTop), scrollWidth = js.Any.fromFunction0(scrollWidth), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Scrollable]
@@ -544,7 +543,7 @@ object dxTreeView {
       
       inline def setScrollWidth(value: () => Double): Self = StObject.set(x, "scrollWidth", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: () => DxPromise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   

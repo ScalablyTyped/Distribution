@@ -306,6 +306,8 @@ object `@reactNavigationStackViewsHeaderHeaderTitleMod` {
       
       inline def setStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setSuppressHighlighting(value: Boolean): Self = StObject.set(x, "suppressHighlighting", value.asInstanceOf[js.Any])

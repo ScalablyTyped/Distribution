@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SelectionModel extends StObject {
   
+  def getSelectedId(): String | js.Array[Any] = js.native
   def getSelectedId(as_array: Boolean): String | js.Array[Any] = js.native
   
-  def getSelectedItem(as_array: Boolean): Any = js.native
+  def getSelectedItem(): obj = js.native
+  def getSelectedItem(as_array: Boolean): obj = js.native
   
   def isSelected(id: String): Boolean = js.native
   def isSelected(id: Double): Boolean = js.native

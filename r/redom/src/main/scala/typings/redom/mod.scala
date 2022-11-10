@@ -2,6 +2,7 @@ package typings.redom
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.SVGElement
@@ -178,13 +179,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Q extends 'a' ? std.HTMLAnchorElement : Q extends 'area' ? std.HTMLAreaElement : Q extends 'audio' ? std.HTMLAudioElement : Q extends 'base' ? std.HTMLBaseElement : Q extends 'body' ? std.HTMLBodyElement : Q extends 'br' ? std.HTMLBRElement : Q extends 'button' ? std.HTMLButtonElement : Q extends 'canvas' ? std.HTMLCanvasElement : Q extends 'data' ? std.HTMLDataElement : Q extends 'datalist' ? std.HTMLDataListElement : Q extends 'details' ? std.HTMLDetailsElement : Q extends 'div' ? std.HTMLDivElement : Q extends 'dl' ? std.HTMLDListElement : Q extends 'embed' ? std.HTMLEmbedElement : Q extends 'fieldset' ? std.HTMLFieldSetElement : Q extends 'form' ? std.HTMLFormElement : Q extends 'hr' ? std.HTMLHRElement : Q extends 'head' ? std.HTMLHeadElement : Q extends 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' ? std.HTMLHeadingElement : Q extends 'html' ? std.HTMLHtmlElement : Q extends 'iframe' ? std.HTMLIFrameElement : Q extends 'img' ? std.HTMLImageElement : Q extends 'input' ? std.HTMLInputElement : Q extends 'label' ? std.HTMLLabelElement : Q extends 'legend' ? std.HTMLLegendElement : Q extends 'li' ? std.HTMLLIElement : Q extends 'link' ? std.HTMLLinkElement : Q extends 'map' ? std.HTMLMapElement : Q extends 'meta' ? std.HTMLMetaElement : Q extends 'meter' ? std.HTMLMeterElement : Q extends 'del' | 'ins' ? std.HTMLModElement : Q extends 'object' ? std.HTMLObjectElement : Q extends 'ol' ? std.HTMLOListElement : Q extends 'optgroup' ? std.HTMLOptGroupElement : Q extends 'option' ? std.HTMLOptionElement : Q extends 'output' ? std.HTMLOutputElement : Q extends 'p' ? std.HTMLParagraphElement : Q extends 'param' ? std.HTMLParamElement : Q extends 'pre' ? std.HTMLPreElement : Q extends 'progress' ? std.HTMLProgressElement : Q extends 'blockquote' | 'q' ? std.HTMLQuoteElement : Q extends 'script' ? std.HTMLScriptElement : Q extends 'select' ? std.HTMLSelectElement : Q extends 'slot' ? std.HTMLSlotElement : Q extends 'source' ? std.HTMLSourceElement : Q extends 'span' ? std.HTMLSpanElement : Q extends 'style' ? std.HTMLStyleElement : Q extends 'caption' ? std.HTMLTableCaptionElement : Q extends 'th' | 'td' ? std.HTMLTableCellElement : Q extends 'col' | 'colgroup' ? std.HTMLTableColElement : Q extends 'table' ? std.HTMLTableElement : Q extends 'tr' ? std.HTMLTableRowElement : Q extends 'thead' | 'tbody' | 'tfoot' ? std.HTMLTableSectionElement : Q extends 'template' ? std.HTMLTemplateElement : Q extends 'textarea' ? std.HTMLTextAreaElement : Q extends 'time' ? std.HTMLTimeElement : Q extends 'title' ? std.HTMLTitleElement : Q extends 'track' ? std.HTMLTrackElement : Q extends 'ul' ? std.HTMLUListElement : Q extends 'video' ? std.HTMLVideoElement : Q extends 'svg' ? std.SVGElement : std.HTMLElement
     }}}
     */
-  @js.native
-  trait HTMLElementOfStringLiteral[Q /* <: String */] extends StObject
+  type HTMLElementOfStringLiteral[Q /* <: String */] = HTMLAnchorElement
   
   trait RedomComponent extends StObject {
     
@@ -246,13 +246,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Q extends std.Node ? Q : Q extends redom.redom.RedomComponentClass ? std.InstanceType<Q> : Q extends redom.redom.RedomComponentFactoryFunction ? std.ReturnType<Q> : Q extends string ? redom.redom.HTMLElementOfStringLiteral<Q> : never
     }}}
     */
-  @js.native
-  trait RedomElementOfElQuery[Q /* <: RedomElQuery */] extends StObject
+  type RedomElementOfElQuery[Q /* <: RedomElQuery */] = Q
   
   type RedomMiddleware = js.Function1[/* el */ HTMLElement | SVGElement, Unit]
   

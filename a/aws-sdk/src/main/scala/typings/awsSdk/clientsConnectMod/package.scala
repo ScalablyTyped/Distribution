@@ -1036,6 +1036,8 @@ type UpdateHoursOfOperationDescription = java.lang.String
 
 type UpdateQuickConnectDescription = java.lang.String
 
+type Url = java.lang.String
+
 type UseCaseId = java.lang.String
 
 type UseCaseSummaryList = js.Array[UseCase]

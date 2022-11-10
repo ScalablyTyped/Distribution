@@ -2107,24 +2107,22 @@ object mod extends Shortcut {
   /** Convert literal string types like 'foo-bar' to 'fooBar' */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     string extends S ? string : S extends / * template literal string: ${inferT}-${inferU} * / string ? / * template literal string: ${T}${PascalCase<U>} * / string : S
     }}}
     */
-  @js.native
-  trait CamelCase[S /* <: String */] extends StObject
+  type CamelCase[S /* <: String */] = S
   
   /** Convert literal string types like 'foo-bar' to 'fooBar', allowing all `PropertyKey` types */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends string ? std.Exclude<yargs.yargs.CamelCase<K>, ''> : K
     }}}
     */
-  @js.native
-  trait CamelCaseKey[K /* <: PropertyKey */] extends StObject
+  type CamelCaseKey[K /* <: PropertyKey */] = K
   
   type Choices = js.Array[js.UndefOr[String | Double | `true`]]
   
@@ -2195,7 +2193,7 @@ object mod extends Shortcut {
   // prettier-ignore
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     O extends {  required :string | true} | {  require :string | true} | {  demand :string | true} | {  demandOption :string | true} ? std.Exclude<yargs.yargs.InferredOptionTypeInner<O>, undefined> : yargs.yargs.InferredOptionTypeInner<O>
     }}}
@@ -2206,13 +2204,12 @@ object mod extends Shortcut {
   // prettier-ignore
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O extends {  default :any, coerce (arg : any): infer T} ? T : O extends {  default :infer D} ? D : O extends {  type :'count'} ? number : O extends {  count :true} ? number : yargs.yargs.RequiredOptionType<O> | undefined
     }}}
     */
-  @js.native
-  trait InferredOptionTypeInner[O /* <: Options | PositionalOptions */] extends StObject
+  type InferredOptionTypeInner[O /* <: Options | PositionalOptions */] = Double
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -2553,13 +2550,12 @@ object mod extends Shortcut {
   /** Convert literal string types like 'foo-bar' to 'FooBar' */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     string extends S ? string : S extends / * template literal string: ${inferT}-${inferU} * / string ? / * template literal string: ${Capitalize<T>}${PascalCase<U>} * / string : std.Capitalize<S>
     }}}
     */
-  @js.native
-  trait PascalCase[S /* <: String */] extends StObject
+  type PascalCase[S /* <: String */] = String
   
   trait PositionalOptions extends StObject {
     
@@ -2759,13 +2755,12 @@ object mod extends Shortcut {
   // prettier-ignore
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O extends {  type :'array',   string :true} ? std.Array<string> : O extends {  type :'array',   number :true} ? std.Array<number> : O extends {  type :'array',   normalize :true} ? std.Array<string> : O extends {  type :'string',   array :true} ? std.Array<string> : O extends {  type :'number',   array :true} ? std.Array<number> : O extends {  string :true,   array :true} ? std.Array<string> : O extends {  number :true,   array :true} ? std.Array<number> : O extends {  normalize :true,   array :true} ? std.Array<string> : O extends {  type :'array'} ? std.Array<string | number> : O extends {  type :'boolean'} ? boolean : O extends {  type :'number'} ? number : O extends {  type :'string'} ? string : O extends {  array :true} ? std.Array<string | number> : O extends {  boolean :true} ? boolean : O extends {  number :true} ? number : O extends {  string :true} ? string : O extends {  normalize :true} ? string : O extends {  choices :std.ReadonlyArray<infer C>} ? C : O extends {coerce (arg : any): infer T} ? T : unknown
     }}}
     */
-  @js.native
-  trait RequiredOptionType[O /* <: Options | PositionalOptions */] extends StObject
+  type RequiredOptionType[O /* <: Options | PositionalOptions */] = js.Array[String]
   
   type SyncCompletionFunction = js.Function2[/* current */ String, /* argv */ Any, js.Array[String]]
   

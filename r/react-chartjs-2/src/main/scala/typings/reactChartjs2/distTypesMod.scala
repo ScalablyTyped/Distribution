@@ -4,13 +4,17 @@ import typings.chartJs.mod.Chart
 import typings.chartJs.mod.ChartData
 import typings.chartJs.mod.ChartOptions
 import typings.chartJs.mod.ChartType
+import typings.chartJs.mod.DefaultDataPoint
 import typings.chartJs.mod.Plugin
 import typings.chartJs.mod.UpdateMode
 import typings.chartJs.typesBasicMod.AnyObject
 import typings.react.mod.CanvasHTMLAttributes
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
+import typings.reactChartjs2.reactChartjs2Strings.`type`
 import typings.std.HTMLCanvasElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,11 +124,13 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TOmitType extends true ? <TData = chart.js.chart.js.DefaultDataPoint<TDefaultType>, TLabel = unknown>(props : std.Omit<react-chartjs-2.react-chartjs-2/dist/types.ChartProps<TDefaultType, TData, TLabel>, 'type'> & {  ref :react-chartjs-2.react-chartjs-2/dist/types.ForwardedRef<react-chartjs-2.react-chartjs-2/dist/types.ChartJSOrUndefined<TDefaultType, TData, TLabel>> | undefined}): react.react.<global>.JSX.Element : <TType extends chart.js.chart.js.ChartType = chart.js.chart.js.ChartType, TData = chart.js.chart.js.DefaultDataPoint<TType>, TLabel = unknown>(props : react-chartjs-2.react-chartjs-2/dist/types.ChartProps<TType, TData, TLabel> & {  ref :react-chartjs-2.react-chartjs-2/dist/types.ForwardedRef<react-chartjs-2.react-chartjs-2/dist/types.ChartJSOrUndefined<TType, TData, TLabel>> | undefined}): react.react.<global>.JSX.Element
     }}}
     */
-  @js.native
-  trait TypedChartComponent[TDefaultType /* <: ChartType */, TOmitType] extends StObject
+  type TypedChartComponent[TDefaultType /* <: ChartType */, TOmitType] = js.Function1[
+    /* props */ (Omit[ChartProps[TDefaultType, DefaultDataPoint[TDefaultType], Any], `type`]) & (/* import warning: importer.ImportType#apply Failed type conversion: {  ref :react-chartjs-2.react-chartjs-2/dist/types.ForwardedRef<react-chartjs-2.react-chartjs-2/dist/types.ChartJSOrUndefined<TDefaultType, chart.js.chart.js.DefaultDataPoint<TDefaultType>, unknown>> | undefined} */ js.Any), 
+    Element
+  ]
 }

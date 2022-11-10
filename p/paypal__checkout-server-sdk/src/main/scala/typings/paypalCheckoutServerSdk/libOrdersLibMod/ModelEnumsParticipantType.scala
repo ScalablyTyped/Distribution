@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ModelEnumsParticipantType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "ModelEnumsParticipantType")
-@js.native
-object ModelEnumsParticipantType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FACILITATOR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SENDER
+*/
+trait ModelEnumsParticipantType extends StObject
+object ModelEnumsParticipantType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ModelEnumsParticipantType & String] = js.native
+  inline def FACILITATOR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FACILITATOR = "FACILITATOR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FACILITATOR]
   
-  @js.native
-  sealed trait FACILITATOR
-    extends StObject
-       with ModelEnumsParticipantType
-  /* "FACILITATOR" */ val FACILITATOR: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.FACILITATOR & String = js.native
+  inline def RECEIVER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVER = "RECEIVER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVER]
   
-  @js.native
-  sealed trait RECEIVER
-    extends StObject
-       with ModelEnumsParticipantType
-  /* "RECEIVER" */ val RECEIVER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.RECEIVER & String = js.native
-  
-  @js.native
-  sealed trait SENDER
-    extends StObject
-       with ModelEnumsParticipantType
-  /* "SENDER" */ val SENDER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.SENDER & String = js.native
+  inline def SENDER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SENDER = "SENDER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SENDER]
 }

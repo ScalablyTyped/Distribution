@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdSpace extends StObject {
   
   @JSName("$$")
-  var DollarDollar: Any = js.native
+  var DollarDollar: obj = js.native
   
   def innerId(id: String): Double | String = js.native
   def innerId(id: Double): Double | String = js.native
   
-  def ui(view: Any): baseview = js.native
+  def ui(view: obj): baseview = js.native
 }
 object IdSpace {
   

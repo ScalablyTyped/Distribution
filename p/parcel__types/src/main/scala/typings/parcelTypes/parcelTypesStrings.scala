@@ -52,6 +52,10 @@ object parcelTypesStrings {
   inline def bundle_group: bundle_group = "bundle_group".asInstanceOf[bundle_group]
   
   @js.native
+  sealed trait bundled extends StObject
+  inline def bundled: bundled = "bundled".asInstanceOf[bundled]
+  
+  @js.native
   sealed trait bundling extends StObject
   inline def bundling: bundling = "bundling".asInstanceOf[bundling]
   

@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.common.ValidationStatus
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait dxValidationGroupResult extends StObject {
   /**
     * A promise that is fulfilled when all async rules are validated.
     */
-  var complete: js.UndefOr[DxPromise[dxValidationGroupResult]] = js.undefined
+  var complete: js.UndefOr[js.Promise[dxValidationGroupResult]] = js.undefined
   
   /**
     * Indicates whether all the rules checked for the group are satisfied.
@@ -58,7 +57,7 @@ object dxValidationGroupResult {
       value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
     ): Self = StObject.set(x, "brokenRules", js.Array(value*))
     
-    inline def setComplete(value: DxPromise[dxValidationGroupResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: js.Promise[dxValidationGroupResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     

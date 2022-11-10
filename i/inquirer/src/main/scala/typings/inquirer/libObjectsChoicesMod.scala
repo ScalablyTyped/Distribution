@@ -223,7 +223,10 @@ object libObjectsChoicesMod {
       * @returns
       * The value of the property of each choice.
       */
-    def pluck[TProperty /* <: ChoiceProperty[T] */](property: ChoiceProperty[T] | TProperty): js.Array[
+    def pluck[TProperty /* <: ChoiceProperty[T] */](property: TProperty): js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer/lib/objects/choices.RealChoice<T> & {[key: string] : undefined}[TProperty] */ js.Any
+      ] = js.native
+    def pluck[TProperty /* <: ChoiceProperty[T] */](property: ChoiceProperty[T]): js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer/lib/objects/choices.RealChoice<T> & {[key: string] : undefined}[TProperty] */ js.Any
       ] = js.native
     

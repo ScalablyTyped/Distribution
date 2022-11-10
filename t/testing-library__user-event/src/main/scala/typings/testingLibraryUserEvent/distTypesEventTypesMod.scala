@@ -11,6 +11,7 @@ import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.FormDataEvent
 import typings.std.InputEvent
+import typings.std.InputEventInit
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -243,11 +244,10 @@ object distTypesEventTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     E extends std.InputEvent ? std.InputEventInit : E extends std.ClipboardEvent ? std.ClipboardEventInit : E extends std.KeyboardEvent ? std.KeyboardEventInit : E extends std.PointerEvent ? std.PointerEventInit : E extends std.MouseEvent ? std.MouseEventInit : E extends std.UIEvent ? std.UIEventInit : std.EventInit
     }}}
     */
-  @js.native
-  trait SpecificEventInit[E /* <: Event */] extends StObject
+  type SpecificEventInit[E /* <: Event */] = InputEventInit
 }

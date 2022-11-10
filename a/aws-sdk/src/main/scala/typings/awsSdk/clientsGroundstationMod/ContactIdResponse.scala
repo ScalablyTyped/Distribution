@@ -9,7 +9,7 @@ trait ContactIdResponse extends StObject {
   /**
     * UUID of a contact.
     */
-  var contactId: js.UndefOr[String] = js.undefined
+  var contactId: js.UndefOr[Uuid] = js.undefined
 }
 object ContactIdResponse {
   
@@ -20,7 +20,7 @@ object ContactIdResponse {
   
   extension [Self <: ContactIdResponse](x: Self) {
     
-    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: Uuid): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     inline def setContactIdUndefined: Self = StObject.set(x, "contactId", js.undefined)
   }

@@ -42,13 +42,12 @@ object styledComponentsNativeMod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof T extends never ? any : T
     }}}
     */
-  @js.native
-  trait AnyIfEmpty[T /* <: js.Object */] extends StObject
+  type AnyIfEmpty[T /* <: js.Object */] = T
   
   @js.native
   trait ReactNativeStyledInterface[T /* <: js.Object */]

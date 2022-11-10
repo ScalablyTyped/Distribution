@@ -2,23 +2,27 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait spreadsheetConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var bottombar: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[Any] = js.undefined
+  var buttons: js.UndefOr[obj] = js.undefined
   
   var clipboard: js.UndefOr[Boolean] = js.undefined
   
   var clipboardDecimalDelimiter: js.UndefOr[String] = js.undefined
+  
+  var clipboardNumberFormat: js.UndefOr[obj] = js.undefined
   
   var columnCount: js.UndefOr[Double] = js.undefined
   
@@ -28,9 +32,9 @@ trait spreadsheetConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -50,7 +54,7 @@ trait spreadsheetConfig extends StObject {
   
   var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.undefined
+  var menu: js.UndefOr[Boolean | js.Array[Any]] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
   
@@ -58,11 +62,13 @@ trait spreadsheetConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[Double | obj] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
   var paddingY: js.UndefOr[Double] = js.undefined
+  
+  var prepareData: js.UndefOr[Boolean] = js.undefined
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
@@ -72,15 +78,19 @@ trait spreadsheetConfig extends StObject {
   
   var rowHeight: js.UndefOr[Double] = js.undefined
   
+  var save: js.UndefOr[String | obj] = js.undefined
+  
   var sheetTabWidth: js.UndefOr[Double] = js.undefined
   
-  var subbar: js.UndefOr[Any] = js.undefined
+  var strict: js.UndefOr[Boolean] = js.undefined
+  
+  var subbar: js.UndefOr[obj] = js.undefined
   
   var toolbar: js.UndefOr[String | Boolean] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -95,7 +105,7 @@ object spreadsheetConfig {
   
   extension [Self <: spreadsheetConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -107,7 +117,7 @@ object spreadsheetConfig {
     
     inline def setBottombarUndefined: Self = StObject.set(x, "bottombar", js.undefined)
     
-    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: obj): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
@@ -116,6 +126,10 @@ object spreadsheetConfig {
     inline def setClipboardDecimalDelimiter(value: String): Self = StObject.set(x, "clipboardDecimalDelimiter", value.asInstanceOf[js.Any])
     
     inline def setClipboardDecimalDelimiterUndefined: Self = StObject.set(x, "clipboardDecimalDelimiter", js.undefined)
+    
+    inline def setClipboardNumberFormat(value: obj): Self = StObject.set(x, "clipboardNumberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardNumberFormatUndefined: Self = StObject.set(x, "clipboardNumberFormat", js.undefined)
     
     inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
     
@@ -137,11 +151,11 @@ object spreadsheetConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -183,9 +197,11 @@ object spreadsheetConfig {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Boolean | js.Array[Any]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    
+    inline def setMenuVarargs(value: Any*): Self = StObject.set(x, "menu", js.Array(value*))
     
     inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
@@ -199,7 +215,7 @@ object spreadsheetConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -210,6 +226,10 @@ object spreadsheetConfig {
     inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    
+    inline def setPrepareData(value: Boolean): Self = StObject.set(x, "prepareData", value.asInstanceOf[js.Any])
+    
+    inline def setPrepareDataUndefined: Self = StObject.set(x, "prepareData", js.undefined)
     
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
@@ -227,11 +247,19 @@ object spreadsheetConfig {
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
     inline def setSheetTabWidth(value: Double): Self = StObject.set(x, "sheetTabWidth", value.asInstanceOf[js.Any])
     
     inline def setSheetTabWidthUndefined: Self = StObject.set(x, "sheetTabWidth", js.undefined)
     
-    inline def setSubbar(value: Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    
+    inline def setSubbar(value: obj): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
     
     inline def setSubbarUndefined: Self = StObject.set(x, "subbar", js.undefined)
     
@@ -243,7 +271,7 @@ object spreadsheetConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

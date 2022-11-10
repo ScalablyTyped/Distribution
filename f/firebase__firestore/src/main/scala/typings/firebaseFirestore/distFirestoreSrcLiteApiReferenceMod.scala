@@ -221,13 +221,12 @@ object distFirestoreSrcLiteApiReferenceMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/types.Primitive ? T : T extends {} ? {[ K in keyof T ]:? @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/reference.UpdateData<T[K]> | @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/field_value.FieldValue} & @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/types.NestedUpdateFields<T> : std.Partial<T>
     }}}
     */
-  @js.native
-  trait UpdateData[T] extends StObject
+  type UpdateData[T] = T
   
   type WithFieldValue[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/types.Primitive ? T : T extends {} ? {[ K in keyof T ]: @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/reference.WithFieldValue<T[K]> | @firebase/firestore.@firebase/firestore/dist/firestore/src/lite-api/field_value.FieldValue} : never */ js.Any)
 }

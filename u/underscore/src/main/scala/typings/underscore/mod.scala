@@ -1688,13 +1688,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends never ? any : V extends underscore.underscore.List<any> ? number : V extends underscore.underscore.Dictionary<any> ? string : V extends undefined ? undefined : never
     }}}
     */
-  @js.native
-  trait CollectionKey[V] extends StObject
+  type CollectionKey[V] = Double
   
   @js.native
   trait CompiledTemplate extends StObject {
@@ -1710,13 +1709,12 @@ object mod extends Shortcut {
   // '& object' prevents strings from being matched by list checks so types like string[] don't end up resulting in any
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends underscore.underscore.List<infer TItem> & object ? TItem extends underscore.underscore.List<any> & object ? any : TItem : T
     }}}
     */
-  @js.native
-  trait DeepestListItemOrSelf[T] extends StObject
+  type DeepestListItemOrSelf[T] = T
   
   type Dictionary[T] = StringDictionary[T]
   
@@ -1726,7 +1724,7 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     I extends (args : ...any): infer R ? R : I extends keyof T ? T[I] : I extends string | number | std.Array<string | number> ? any : I extends object ? boolean : I extends null | undefined ? T : never
     }}}
@@ -1756,13 +1754,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends underscore.underscore.List<infer TItem> ? TItem : T
     }}}
     */
-  @js.native
-  trait ListItemOrSelf[T] extends StObject
+  type ListItemOrSelf[T] = T
   
   type ListIterator[T /* <: TypeOfList[V] */, TResult, V] = CollectionIterator[T, TResult, V]
   
@@ -1783,20 +1780,19 @@ object mod extends Shortcut {
   // switch to Omit when the minimum TS version moves past 3.5
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends never ? any : std.Extract<K, keyof V> extends never ? std.Partial<V> : std.Pick<V, std.Exclude<keyof V, K>>
     }}}
     */
-  @js.native
-  trait Omit[V, K /* <: String */] extends StObject
+  type Omit[V, K /* <: String */] = Partial[V]
   
   // if T is an inferrable pair, the value type for the pair
   // if T is a list, assume that it contains pairs of some type, so any
   // if T isn't a list, there's no way that it can provide pairs, so never
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.Readonly<[string | number, infer TValue]> ? TValue : T extends underscore.underscore.List<infer TValue> ? TValue : never
     }}}
@@ -1806,19 +1802,18 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Extract<K, keyof V> extends never ? std.Partial<V> : std.Pick<V, std.Extract<K, keyof V>>
     }}}
     */
-  @js.native
-  trait Pick[V, K /* <: String */] extends StObject
+  type Pick[V, K /* <: String */] = Partial[V]
   
   type Predicate[T] = js.Function1[/* value */ T, Boolean]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     K extends keyof T ? T[K] : any
     }}}
@@ -1918,27 +1913,25 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends underscore.underscore.List<any> ? underscore.underscore.TypeOfList<V> : underscore.underscore.TypeOfDictionary<V, TObjectDefault>
     }}}
     */
-  @js.native
-  trait TypeOfCollection[V, TObjectDefault] extends StObject
+  type TypeOfCollection[V, TObjectDefault] = TObjectDefault
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends never ? any : V extends underscore.underscore.Dictionary<infer T> ? T : TDefault
     }}}
     */
-  @js.native
-  trait TypeOfDictionary[V, TDefault] extends StObject
+  type TypeOfDictionary[V, TDefault] = TDefault
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     V extends never ? any : V extends underscore.underscore.List<infer T> ? T : never
     }}}

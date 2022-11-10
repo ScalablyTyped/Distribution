@@ -2140,6 +2140,15 @@ type OpenVideoEditorFailCallback = js.Function1[/* res */ GeneralCallbackResult,
 /** 接口调用成功的回调函数 */
 type OpenVideoEditorSuccessCallback = js.Function1[/* result */ OpenVideoEditorSuccessCallbackResult, Unit]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  F extends (arg : infer P): infer R ? (arg : P | undefined): R : F
+  }}}
+  */
+type Optional[F] = F
+
 /** 接口调用结束的回调函数（调用成功、失败都会执行） */
 type PageScrollToCompleteCallback = js.Function1[/* res */ GeneralCallbackResult, Unit]
 
@@ -2287,6 +2296,15 @@ type PreviewMediaSuccessCallback = js.Function1[/* res */ GeneralCallbackResult,
   * 最低基础库 2.4.1
   */
 type ProgressActiveEnd[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] = CustomEvent[CurPercent, Mark, TargetDataset, TargetDataset]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  P extends {  success :any} ? void : P extends {  fail :any} ? void : P extends {  complete :any} ? void : std.Promise<std.Parameters<std.Exclude<T['success'], undefined>>[0]>
+  }}}
+  */
+type PromisifySuccessResult[P, T /* <: AsyncMethodOptionLike */] = Unit
 
 /** radio-group 切换事件 */
 type RadioGroupChange[Mark /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] = CustomEvent[ValueString, Mark, TargetDataset, TargetDataset]

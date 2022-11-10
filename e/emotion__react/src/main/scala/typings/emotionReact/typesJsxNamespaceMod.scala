@@ -1065,7 +1065,7 @@ object typesJsxNamespaceMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     'className' extends keyof P ? string extends P['className' & keyof P] ? {  css :@emotion/serialize.@emotion/serialize.Interpolation<@emotion/react.@emotion/react.Theme> | undefined} : {} : {}
     }}}

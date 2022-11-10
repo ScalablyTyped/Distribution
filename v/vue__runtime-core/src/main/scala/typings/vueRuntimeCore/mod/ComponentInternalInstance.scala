@@ -143,10 +143,7 @@ object ComponentInternalInstance {
     attrs: Data,
     data: Data,
     effect: typings.vueReactivity.mod.ReactiveEffect[Any],
-    emit: EmitFn[
-      ObjectEmitsOptions, 
-      /* keyof @vue/runtime-core.@vue/runtime-core.ObjectEmitsOptions */ String
-    ],
+    emit: (/* event */ String, /* repeated */ Any) => Unit,
     isDeactivated: Boolean,
     isMounted: Boolean,
     isUnmounted: Boolean,
@@ -160,7 +157,7 @@ object ComponentInternalInstance {
     update: SchedulerJob,
     vnode: VNode[RendererNode, RendererElement, StringDictionary[Any]]
   ): ComponentInternalInstance = {
-    val __obj = js.Dynamic.literal(appContext = appContext.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], emit = emit.asInstanceOf[js.Any], isDeactivated = isDeactivated.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], isUnmounted = isUnmounted.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], subTree = subTree.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vnode = vnode.asInstanceOf[js.Any], exposeProxy = null, exposed = null, parent = null, proxy = null)
+    val __obj = js.Dynamic.literal(appContext = appContext.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), isDeactivated = isDeactivated.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], isUnmounted = isUnmounted.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], subTree = subTree.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vnode = vnode.asInstanceOf[js.Any], exposeProxy = null, exposed = null, parent = null, proxy = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentInternalInstance]
   }
@@ -179,12 +176,7 @@ object ComponentInternalInstance {
     
     inline def setEffect(value: typings.vueReactivity.mod.ReactiveEffect[Any]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    inline def setEmit(
-      value: EmitFn[
-          ObjectEmitsOptions, 
-          /* keyof @vue/runtime-core.@vue/runtime-core.ObjectEmitsOptions */ String
-        ]
-    ): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
+    inline def setEmit(value: (/* event */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
     inline def setExposeProxy(value: Record[String, Any]): Self = StObject.set(x, "exposeProxy", value.asInstanceOf[js.Any])
     

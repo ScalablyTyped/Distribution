@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -26,17 +25,17 @@ trait dxGallery[TItem /* <: ItemLike */, TKey]
   /**
     * Shows a specific image.
     */
-  def goToItem(itemIndex: Double, animation: Boolean): DxPromise[Unit] = js.native
+  def goToItem(itemIndex: Double, animation: Boolean): js.Promise[Unit] = js.native
   
   /**
     * Shows the next image.
     */
-  def nextItem(animation: Boolean): DxPromise[Unit] = js.native
+  def nextItem(animation: Boolean): js.Promise[Unit] = js.native
   
   /**
     * Shows the previous image.
     */
-  def prevItem(animation: Boolean): DxPromise[Unit] = js.native
+  def prevItem(animation: Boolean): js.Promise[Unit] = js.native
 }
 object dxGallery {
   

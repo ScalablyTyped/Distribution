@@ -24,10 +24,10 @@ trait MainTemplate extends StObject {
   
   var hooks: ReadonlyrenderManifesttapAfterStartup = js.native
   
-  val outputOptions: Output = js.native
+  def outputOptions: Output = js.native
   
   def renderCurrentHashCode(hash: String): String = js.native
   def renderCurrentHashCode(hash: String, length: Double): String = js.native
   
-  val requireFn: __webpack_require__ = js.native
+  def requireFn: __webpack_require__ = js.native
 }

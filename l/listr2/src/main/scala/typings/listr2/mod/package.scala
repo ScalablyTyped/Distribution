@@ -60,6 +60,18 @@ DefaultRenderer])
 /** The default renderer value used in Listr2 applications */
 type ListrDefaultRendererValue = default
 
+/**
+  * Used to match event.type to ListrEvent permutations
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  E extends {  type :infer U} ? T extends U ? E : never : never
+  }}}
+  */
+type ListrEventFromType[T /* <: ListrEventType */, E] = E
+
 /** Type of default fallback renderer */
 type ListrFallbackRenderer = TypeofVerboseRenderer & (Instantiable2[
 /* tasks */ js.Array[
@@ -73,6 +85,42 @@ VerboseRenderer])
 
 /** Name of default fallback renderer */
 type ListrFallbackRendererValue = verbose
+
+/**
+  * Returns the class type from friendly names of the renderers.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends listr2.listr2.ListrDefaultRendererValue ? listr2.listr2.ListrDefaultRenderer : T extends listr2.listr2.ListrSimpleRendererValue ? listr2.listr2.ListrSimpleRenderer : T extends listr2.listr2.ListrFallbackRendererValue ? listr2.listr2.ListrFallbackRenderer : T extends listr2.listr2.ListrSilentRenderer ? listr2.listr2.ListrSilentRenderer : T extends listr2.listr2.ListrRendererFactory ? T : never
+  }}}
+  */
+type ListrGetRendererClassFromValue[T /* <: ListrRendererValue */] = ListrDefaultRenderer
+
+/**
+  * Returns renderer per task options depending on the renderer type.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends listr2.listr2.ListrDefaultRendererValue ? listr2.listr2.ListrDefaultRenderer['rendererTaskOptions'] : T extends listr2.listr2.ListrSimpleRendererValue ? listr2.listr2.ListrSimpleRenderer : T extends listr2.listr2.ListrFallbackRendererValue ? listr2.listr2.ListrFallbackRenderer['rendererTaskOptions'] : T extends listr2.listr2.ListrSilentRenderer ? listr2.listr2.ListrSilentRenderer['rendererTaskOptions'] : T extends listr2.listr2.ListrRendererFactory ? T['rendererTaskOptions'] : never
+  }}}
+  */
+type ListrGetRendererTaskOptions[T /* <: ListrRendererValue */] = ListrSimpleRenderer
+
+/**
+  * Returns the friendly names from the type of renderer classes.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends listr2.listr2.DefaultRenderer ? listr2.listr2.ListrDefaultRendererValue : T extends listr2.listr2.SimpleRenderer ? listr2.listr2.ListrSimpleRendererValue : T extends listr2.listr2.VerboseRenderer ? listr2.listr2.ListrFallbackRendererValue : T extends listr2.listr2.SilentRenderer ? listr2.listr2.ListrSilentRenderer : T extends listr2.listr2.ListrRendererFactory ? T : never
+  }}}
+  */
+type ListrGetRendererValueFromClass[T /* <: ListrRendererFactory */] = ListrDefaultRendererValue
 
 /** A renderer factory from the current type */
 type ListrRendererFactory = TypeofListrRenderer & (Instantiable3[
@@ -123,5 +171,16 @@ type ListrTaskResult[Ctx] = String | js.Promise[Any] | (Listr[Ctx, Any, Any]) | 
 /** Returns all the prompt options depending on the type selected. */
 type PromptOptions[T /* <: Boolean */] = (Unionize[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ K in listr2.listr2.PromptTypes ]: -? T extends true? {  type :K,   name :string | (): string} & listr2.listr2.PromptOptionsType<K> : {  type :K} & listr2.listr2.PromptOptionsType<K>} */ js.Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: {  type :string} & T extends true ? listr2.listr2.PromptOptionsType<string> & {  name :string | (): string} : listr2.listr2.PromptOptionsType<string> */ js.Any)
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends keyof / * Inlined listr2.listr2.PromptOptionsMap * /
+{  AutoComplete :listr2.listr2.ArrayPromptOptions,   BasicAuth :listr2.listr2.StringPromptOptions,   Confirm :listr2.listr2.BooleanPromptOptions,   Editable :listr2.listr2.ArrayPromptOptions,   Form :listr2.listr2.ArrayPromptOptions,   Input :listr2.listr2.StringPromptOptions,   Invisible :listr2.listr2.StringPromptOptions,   List :listr2.listr2.ArrayPromptOptions,   MultiSelect :listr2.listr2.ArrayPromptOptions,   Numeral :listr2.listr2.NumberPromptOptions,   Password :listr2.listr2.StringPromptOptions,   Quiz :listr2.listr2.QuizPromptOptions,   Scale :listr2.listr2.ScalePromptOptions,   Select :listr2.listr2.ArrayPromptOptions,   Snippet :listr2.listr2.SnippetPromptOptions,   Sort :listr2.listr2.SortPromptOptions,   Survey :listr2.listr2.SurveyPromptOptions,   Text :listr2.listr2.StringPromptOptions,   Toggle :listr2.listr2.TogglePromptOptions} ? / * Inlined listr2.listr2.PromptOptionsMap * /
+{  AutoComplete :listr2.listr2.ArrayPromptOptions,   BasicAuth :listr2.listr2.StringPromptOptions,   Confirm :listr2.listr2.BooleanPromptOptions,   Editable :listr2.listr2.ArrayPromptOptions,   Form :listr2.listr2.ArrayPromptOptions,   Input :listr2.listr2.StringPromptOptions,   Invisible :listr2.listr2.StringPromptOptions,   List :listr2.listr2.ArrayPromptOptions,   MultiSelect :listr2.listr2.ArrayPromptOptions,   Numeral :listr2.listr2.NumberPromptOptions,   Password :listr2.listr2.StringPromptOptions,   Quiz :listr2.listr2.QuizPromptOptions,   Scale :listr2.listr2.ScalePromptOptions,   Select :listr2.listr2.ArrayPromptOptions,   Snippet :listr2.listr2.SnippetPromptOptions,   Sort :listr2.listr2.SortPromptOptions,   Survey :listr2.listr2.SurveyPromptOptions,   Text :listr2.listr2.StringPromptOptions,   Toggle :listr2.listr2.TogglePromptOptions}[T] : T extends string ? listr2.listr2.BasePromptOptions & std.Record<std.PropertyKey, unknown> : any
+  }}}
+  */
+type PromptOptionsType[T] = BasePromptOptions & (Record[PropertyKey, Any])
 
 type Unionize[T /* <: Record[PropertyKey, Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]}[keyof T] */ js.Any

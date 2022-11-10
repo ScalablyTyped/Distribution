@@ -12,6 +12,7 @@ import typings.std.IDBObjectStore
 import typings.std.IDBOpenDBRequest
 import typings.std.IDBRequest
 import typings.std.IDBTransaction
+import typings.std.IDBTransactionMode
 import typings.std.IDBValidKey
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -46,10 +47,64 @@ inline def wrap(value: IDBOpenDBRequest): js.Promise[js.UndefOr[IDBPDatabase[Any
 inline def wrap(value: IDBTransaction): IDBPTransaction[Any, ArrayLike[StoreNames[Any]], readonly] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[IDBPTransaction[Any, ArrayLike[StoreNames[Any]], readonly]]
 inline def wrap[T](value: IDBRequest[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  IndexName extends idb.idb/build/entry.IndexNames<DBTypes, StoreName> ? idb.idb/build/entry.IndexKey<DBTypes, StoreName, IndexName> : idb.idb/build/entry.StoreKey<DBTypes, StoreName>
+  }}}
+  */
+type CursorKey[DBTypes /* <: DBSchema | Any */, StoreName /* <: StoreNames[DBTypes] */, IndexName /* <: (IndexNames[DBTypes, StoreName]) | Any */] = IDBValidKey
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  IndexName extends idb.idb/build/entry.IndexNames<DBTypes, StoreName> ? idb.idb/build/entry.IDBPIndex<DBTypes, TxStores, StoreName, IndexName, Mode> : idb.idb/build/entry.IDBPObjectStore<DBTypes, TxStores, StoreName, Mode>
+  }}}
+  */
+type CursorSource[DBTypes /* <: DBSchema | Any */, TxStores /* <: ArrayLike[StoreNames[DBTypes]] */, StoreName /* <: StoreNames[DBTypes] */, IndexName /* <: (IndexNames[DBTypes, StoreName]) | Any */, Mode /* <: IDBTransactionMode */] = IDBPIndex[DBTypes, TxStores, StoreName, IndexName, Mode]
+
 type DBSchema = StringDictionary[DBSchemaValue]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  DBTypes extends idb.idb/build/entry.DBSchema ? IndexName extends keyof DBTypes[StoreName]['indexes'] ? DBTypes[StoreName]['indexes'][IndexName] : std.IDBValidKey : std.IDBValidKey
+  }}}
+  */
+type IndexKey[DBTypes /* <: DBSchema | Any */, StoreName /* <: StoreNames[DBTypes] */, IndexName /* <: IndexNames[DBTypes, StoreName] */] = IDBValidKey
+
 type IndexKeys = StringDictionary[IDBValidKey]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  DBTypes extends idb.idb/build/entry.DBSchema ? keyof DBTypes[StoreName]['indexes'] : string
+  }}}
+  */
+type IndexNames[DBTypes /* <: DBSchema | Any */, StoreName /* <: StoreNames[DBTypes] */] = String
 
 type KnownKeys[T] = ValuesOf[KeyToKeyNoIndex[T]]
 
 type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  DBTypes extends idb.idb/build/entry.DBSchema ? DBTypes[StoreName]['key'] : std.IDBValidKey
+  }}}
+  */
+type StoreKey[DBTypes /* <: DBSchema | Any */, StoreName /* <: StoreNames[DBTypes] */] = IDBValidKey
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  DBTypes extends idb.idb/build/entry.DBSchema ? idb.idb/build/entry.KnownKeys<DBTypes> : string
+  }}}
+  */
+type StoreNames[DBTypes /* <: DBSchema | Any */] = String

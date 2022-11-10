@@ -1,5 +1,6 @@
 package typings.redisTimeSeries
 
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisTimeSeries.distCommandsMod.SampleRawReply
 import typings.redisTimeSeries.distCommandsMod.SampleReply
 import org.scalablytyped.runtime.StObject
@@ -20,8 +21,28 @@ object distCommandsGetMod {
   @js.native
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
-  inline def transformArguments(key: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def transformArguments(key: String): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+  inline def transformArguments(key: String, options: GetOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(reply: js.Array[Any]): Null | SampleReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[Null | SampleReply]
   inline def transformReply(reply: SampleRawReply): Null | SampleReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[Null | SampleReply]
+  
+  trait GetOptions extends StObject {
+    
+    var LATEST: js.UndefOr[Boolean] = js.undefined
+  }
+  object GetOptions {
+    
+    inline def apply(): GetOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetOptions]
+    }
+    
+    extension [Self <: GetOptions](x: Self) {
+      
+      inline def setLATEST(value: Boolean): Self = StObject.set(x, "LATEST", value.asInstanceOf[js.Any])
+      
+      inline def setLATESTUndefined: Self = StObject.set(x, "LATEST", js.undefined)
+    }
+  }
 }

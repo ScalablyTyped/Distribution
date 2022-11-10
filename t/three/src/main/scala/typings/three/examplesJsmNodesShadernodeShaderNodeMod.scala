@@ -104,7 +104,7 @@ object examplesJsmNodesShadernodeShaderNodeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends new (args : ...any): infer R ? R extends three.three/examples/jsm/nodes/Nodes.Node ? R : never : never
     }}}
@@ -232,13 +232,12 @@ object examplesJsmNodesShadernodeShaderNodeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends three.three/examples/jsm/nodes/Nodes.Node ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Swizzable<T> : T extends number | boolean ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Swizzable<three.three/examples/jsm/nodes/Nodes.ConstNode> : T
     }}}
     */
-  @js.native
-  trait NodeObject_[T] extends StObject
+  type NodeObject_[T] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -266,7 +265,7 @@ object examplesJsmNodesShadernodeShaderNodeMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends {new (args : infer A1): unknown, new (args : infer A2): unknown, new (args : infer A3): unknown, new (args : infer A4): unknown} ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Construtors<A1, A2, A3, A4> : T extends {new (args : infer A1): unknown, new (args : infer A2): unknown, new (args : infer A3): unknown} ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Construtors<A1, A2, A3, undefined> : T extends {new (args : infer A1): unknown, new (args : infer A2): unknown} ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Construtors<A1, A2, undefined, undefined> : T extends new (args : infer A): unknown ? three.three/examples/jsm/nodes/shadernode/ShaderNode.Construtors<A, undefined, undefined, undefined> : three.three/examples/jsm/nodes/shadernode/ShaderNode.Construtors<undefined, undefined, undefined, undefined>
     }}}
@@ -277,13 +276,12 @@ object examplesJsmNodesShadernodeShaderNodeMod {
   // opposite of NodeObject: node -> node|swizzable|boolean|number, otherwise do nothing
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends three.three/examples/jsm/nodes/Nodes.Node ? three.three/examples/jsm/nodes/shadernode/ShaderNode.NodeRepresentation<T> : T
     }}}
     */
-  @js.native
-  trait Proxied[T] extends StObject
+  type Proxied[T] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -301,23 +299,21 @@ object examplesJsmNodesShadernodeShaderNodeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [unknown, ...infer X, unknown] ? X : []
     }}}
     */
-  @js.native
-  trait RemoveHeadAndTail[T /* <: Array[Any] */] extends StObject
+  type RemoveHeadAndTail[T /* <: Array[Any] */] = js.Array[Any]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [unknown, ...infer X] ? X : []
     }}}
     */
-  @js.native
-  trait RemoveTail[T /* <: Array[Any] */] extends StObject
+  type RemoveTail[T /* <: Array[Any] */] = js.Array[Any]
   
   type Swizzable[T /* <: Node */] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in three.three/examples/jsm/nodes/core/constants.SwizzleOption | number ]: three.three/examples/jsm/nodes/shadernode/ShaderNode.Swizzable<three.three/examples/jsm/nodes/Nodes.Node>} */ js.Any)
 }

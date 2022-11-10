@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pino-pretty" : "9.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pino-pretty" : "9.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

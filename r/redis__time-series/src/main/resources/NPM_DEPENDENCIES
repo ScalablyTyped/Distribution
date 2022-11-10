@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@redis/time-series" : "1.0.3"
+      "@redis/time-series" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@redis/time-series" : "1.0.3"
+      "@redis/time-series" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

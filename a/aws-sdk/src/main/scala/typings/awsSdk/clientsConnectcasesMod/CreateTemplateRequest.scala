@@ -30,6 +30,11 @@ trait CreateTemplateRequest extends StObject {
     * A list of fields that must contain a value for a case to be successfully created with this template.
     */
   var requiredFields: js.UndefOr[RequiredFieldList] = js.undefined
+  
+  /**
+    * The status of the template.
+    */
+  var status: js.UndefOr[TemplateStatus] = js.undefined
 }
 object CreateTemplateRequest {
   
@@ -57,5 +62,9 @@ object CreateTemplateRequest {
     inline def setRequiredFieldsUndefined: Self = StObject.set(x, "requiredFields", js.undefined)
     
     inline def setRequiredFieldsVarargs(value: RequiredField*): Self = StObject.set(x, "requiredFields", js.Array(value*))
+    
+    inline def setStatus(value: TemplateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

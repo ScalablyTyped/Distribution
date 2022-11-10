@@ -59,7 +59,8 @@ object distTokenizerMod {
     
     var line: Double = js.native
     
-    def locate(tok: Unlocated[AttrToken | Token], startPos: Position): /* asserts tok is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(ecmarkdown), TsIdentModule(None,List(ecmarkdown, dist, node-types)), TsIdentSimple(Token))),IArray())*/ Boolean = js.native
+    def locate(tok: Unlocated[Token], startPos: Position): /* asserts tok is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(ecmarkdown), TsIdentModule(None,List(ecmarkdown, dist, node-types)), TsIdentSimple(Token))),IArray())*/ Boolean = js.native
+    def locate(tok: Unlocated[AttrToken], startPos: Position): /* asserts tok is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(ecmarkdown), TsIdentModule(None,List(ecmarkdown, dist, node-types)), TsIdentSimple(AttrToken))),IArray())*/ Boolean = js.native
     
     def matchToken(): Unit = js.native
     

@@ -607,13 +607,12 @@ object distTypesLegacyFunctionMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     sync extends 'async' ? sass-embedded.sass-embedded/dist/types/legacy/function.LegacySyncFunction | sass-embedded.sass-embedded/dist/types/legacy/function.LegacyAsyncFunction : sass-embedded.sass-embedded/dist/types/legacy/function.LegacySyncFunction
     }}}
     */
-  @js.native
-  trait LegacyFunction[sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */] extends StObject
+  type LegacyFunction[sync /* <: typings.sassEmbedded.sassEmbeddedStrings.sync | async */] = LegacySyncFunction | LegacyAsyncFunction
   
   @js.native
   trait LegacySyncFunction extends StObject {

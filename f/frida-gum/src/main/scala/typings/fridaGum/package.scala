@@ -75,6 +75,15 @@ T]
 
 type GetNativeFunctionReturnValue[T /* <: NativeFunctionReturnType */] = GetValue[NativeFunctionReturnTypeMap, NativeFunctionReturnValue, NativeFunctionReturnType, T]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  std.Array<Type> extends T ? Value : T extends keyof Map ? Map[T] : {[ P in keyof T ]: T[P] extends Type? frida-gum.GetValue<Map, Value, Type, T[P]> : never}
+  }}}
+  */
+type GetValue[Map, Value, Type, T /* <: Type */] = Value
+
 /**
   * Opaque ID returned by `setImmediate()`. Pass it to `clearImmediate()` to cancel a pending `setImmediate()`.
   */
@@ -140,6 +149,15 @@ type PageProtection = String
 type RecursiveKeysOf[T] = (/* keyof T */ String) | js.Array[Any]
 
 type RecursiveValuesOf[T] = (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | js.Array[Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  List extends [frida-gum.Variadic, ...infer Tail] ? [...std.Array<Tail[0]>] : List extends [infer Head, ...infer Tail] ? [Head, ...frida-gum.ResolveVariadic<Tail>] : []
+  }}}
+  */
+type ResolveVariadic[List /* <: js.Array[Any] */] = js.Array[Any]
 
 type RpcExports = StringDictionary[AnyFunction]
 

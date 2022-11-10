@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.pivot because var conflicts: $divider, $height, $setNode, $skin_Original, $view, $width, DollarDollar, config, data, name, operations, waitData. Inlined  */ @JSGlobal("webix.ui.pivot")
+- typings.webix.webix.ui.pivot because var conflicts: $app, $height, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.pivot")
 @js.native
 open class pivot ()
   extends typings.webix.mod.ui.pivot

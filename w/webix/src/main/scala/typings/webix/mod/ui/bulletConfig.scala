@@ -2,13 +2,14 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait bulletConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var bands: js.UndefOr[js.Array[Any]] = js.undefined
   
@@ -20,7 +21,7 @@ trait bulletConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -46,11 +47,15 @@ trait bulletConfig extends StObject {
   
   var marker: js.UndefOr[Double | Boolean] = js.undefined
   
+  var markerColor: js.UndefOr[String] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
   
   var maxRange: js.UndefOr[Double] = js.undefined
   
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
+  var minBarHeight: js.UndefOr[Double] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
   
@@ -58,9 +63,11 @@ trait bulletConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
+  var origin: js.UndefOr[Double] = js.undefined
+  
   var placeholder: js.UndefOr[Any] = js.undefined
   
-  var scale: js.UndefOr[Any] = js.undefined
+  var scale: js.UndefOr[obj | Boolean] = js.undefined
   
   var smoothFlow: js.UndefOr[Boolean] = js.undefined
   
@@ -83,7 +90,7 @@ object bulletConfig {
   
   extension [Self <: bulletConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -109,7 +116,7 @@ object bulletConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -159,6 +166,10 @@ object bulletConfig {
     
     inline def setMarker(value: Double | Boolean): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
+    inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerColorUndefined: Self = StObject.set(x, "markerColor", js.undefined)
+    
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
@@ -173,6 +184,10 @@ object bulletConfig {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
+    inline def setMinBarHeight(value: Double): Self = StObject.set(x, "minBarHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinBarHeightUndefined: Self = StObject.set(x, "minBarHeight", js.undefined)
+    
     inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
@@ -185,11 +200,15 @@ object bulletConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
+    inline def setOrigin(value: Double): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
     inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setScale(value: Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: obj | Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     

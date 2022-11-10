@@ -76,7 +76,7 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     F extends (args : infer A): any ? A : never
     }}}
@@ -443,13 +443,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     BindParameters extends std.Array<any> ? moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<BindParameters> : moc-better-sqlite3.moc-better-sqlite3.MocBetterSqlite3.Statement<[BindParameters]>
     }}}
     */
-  @js.native
-  trait Statement[BindParameters /* <: js.Array[Any] | js.Object */] extends StObject
+  type Statement[BindParameters /* <: js.Array[Any] | js.Object */] = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Statement[BindParameters]
   
   type Transaction = typings.mocBetterSqlite3.mod.MocBetterSqlite3.Transaction[VariableArgFunction]
   

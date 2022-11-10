@@ -4,810 +4,407 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ResponseCode extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "ResponseCode")
-@js.native
-object ResponseCode extends StObject {
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ResponseCode & String] = js.native
-  
-  @js.native
-  sealed trait ACCOUNT_NOT_ON_FILE
-    extends StObject
-       with ResponseCode
-  /* "6300" */ val ACCOUNT_NOT_ON_FILE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ACCOUNT_NOT_ON_FILE & String = js.native
-  
-  @js.native
-  sealed trait ADULT_GAMING_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPAG" */ val ADULT_GAMING_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ADULT_GAMING_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait AMEX_DENIED
-    extends StObject
-       with ResponseCode
-  /* "PPSE" */ val AMEX_DENIED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AMEX_DENIED & String = js.native
-  
-  @js.native
-  sealed trait AMEX_DISABLED
-    extends StObject
-       with ResponseCode
-  /* "PPAE" */ val AMEX_DISABLED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AMEX_DISABLED & String = js.native
-  
-  @js.native
-  sealed trait AMOUNT_EXCEEDED
-    extends StObject
-       with ResponseCode
-  /* "PPAX" */ val AMOUNT_EXCEEDED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AMOUNT_EXCEEDED & String = js.native
-  
-  @js.native
-  sealed trait AMOUNT_INCOMPATIBLE
-    extends StObject
-       with ResponseCode
-  /* "PPAI" */ val AMOUNT_INCOMPATIBLE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AMOUNT_INCOMPATIBLE & String = js.native
-  
-  @js.native
-  sealed trait AMOUNT_MISMATCH
-    extends StObject
-       with ResponseCode
-  /* "PPS6" */ val AMOUNT_MISMATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AMOUNT_MISMATCH & String = js.native
-  
-  @js.native
-  sealed trait APPROVED
-    extends StObject
-       with ResponseCode
-  /* "0000" */ val APPROVED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.APPROVED & String = js.native
-  
-  @js.native
-  sealed trait APPROVED_NON_CAPTURE
-    extends StObject
-       with ResponseCode
-  /* "7600" */ val APPROVED_NON_CAPTURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.APPROVED_NON_CAPTURE & String = js.native
-  
-  @js.native
-  sealed trait ARC_AVS
-    extends StObject
-       with ResponseCode
-  /* "PPAV" */ val ARC_AVS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ARC_AVS & String = js.native
-  
-  @js.native
-  sealed trait ARC_CVV
-    extends StObject
-       with ResponseCode
-  /* "PPC2" */ val ARC_CVV: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ARC_CVV & String = js.native
-  
-  @js.native
-  sealed trait ARC_SCORE
-    extends StObject
-       with ResponseCode
-  /* "PPSC" */ val ARC_SCORE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ARC_SCORE & String = js.native
-  
-  @js.native
-  sealed trait AUTHENTICATION_FAILED
-    extends StObject
-       with ResponseCode
-  /* "7710" */ val AUTHENTICATION_FAILED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AUTHENTICATION_FAILED & String = js.native
-  
-  @js.native
-  sealed trait AUTH_MESSAGE
-    extends StObject
-       with ResponseCode
-  /* "PPDV" */ val AUTH_MESSAGE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AUTH_MESSAGE & String = js.native
-  
-  @js.native
-  sealed trait AUTH_RESULT
-    extends StObject
-       with ResponseCode
-  /* "PPAR" */ val AUTH_RESULT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AUTH_RESULT & String = js.native
-  
-  @js.native
-  sealed trait AVS_FAILURE
-    extends StObject
-       with ResponseCode
-  /* "5170" */ val AVS_FAILURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.AVS_FAILURE & String = js.native
-  
-  @js.native
-  sealed trait BAD_GAMING
-    extends StObject
-       with ResponseCode
-  /* "PPBG" */ val BAD_GAMING: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BAD_GAMING & String = js.native
-  
-  @js.native
-  sealed trait BAD_PROCESSING_CODE
-    extends StObject
-       with ResponseCode
-  /* "1360" */ val BAD_PROCESSING_CODE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BAD_PROCESSING_CODE & String = js.native
-  
-  @js.native
-  sealed trait BAD_RESPONSE_REVERSAL_REQUIRED
-    extends StObject
-       with ResponseCode
-  /* "0800" */ val BAD_RESPONSE_REVERSAL_REQUIRED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BAD_RESPONSE_REVERSAL_REQUIRED & String = js.native
-  
-  @js.native
-  sealed trait BANKAUTH_EXPIRED
-    extends StObject
-       with ResponseCode
-  /* "PPS3" */ val BANKAUTH_EXPIRED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BANKAUTH_EXPIRED & String = js.native
-  
-  @js.native
-  sealed trait BANKAUTH_ROW_MISMATCH
-    extends StObject
-       with ResponseCode
-  /* "PPS0" */ val BANKAUTH_ROW_MISMATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BANKAUTH_ROW_MISMATCH & String = js.native
-  
-  @js.native
-  sealed trait BANKAUTH_ROW_SETTLED
-    extends StObject
-       with ResponseCode
-  /* "PPS1" */ val BANKAUTH_ROW_SETTLED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BANKAUTH_ROW_SETTLED & String = js.native
-  
-  @js.native
-  sealed trait BANKAUTH_ROW_VOIDED
-    extends StObject
-       with ResponseCode
-  /* "PPS2" */ val BANKAUTH_ROW_VOIDED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BANKAUTH_ROW_VOIDED & String = js.native
-  
-  @js.native
-  sealed trait BILLING_ADDRESS
-    extends StObject
-       with ResponseCode
-  /* "PPAD" */ val BILLING_ADDRESS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BILLING_ADDRESS & String = js.native
-  
-  @js.native
-  sealed trait BIN_ERROR
-    extends StObject
-       with ResponseCode
-  /* "7800" */ val BIN_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BIN_ERROR & String = js.native
-  
-  @js.native
-  sealed trait BLOCKED_Mastercard
-    extends StObject
-       with ResponseCode
-  /* "PPMC" */ val BLOCKED_Mastercard: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.BLOCKED_Mastercard & String = js.native
-  
-  @js.native
-  sealed trait CARD_CLOSED
-    extends StObject
-       with ResponseCode
-  /* "5140" */ val CARD_CLOSED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CARD_CLOSED & String = js.native
-  
-  @js.native
-  sealed trait CARD_NOT_ACTIVATED
-    extends StObject
-       with ResponseCode
-  /* "5930" */ val CARD_NOT_ACTIVATED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CARD_NOT_ACTIVATED & String = js.native
-  
-  @js.native
-  sealed trait CARD_TYPE_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPCT" */ val CARD_TYPE_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CARD_TYPE_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait CE_REGISTRATION_INCOMPLETE
-    extends StObject
-       with ResponseCode
-  /* "PPCE" */ val CE_REGISTRATION_INCOMPLETE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CE_REGISTRATION_INCOMPLETE & String = js.native
-  
-  @js.native
-  sealed trait CONFIGURATION_ERROR
-    extends StObject
-       with ResponseCode
-  /* "8020" */ val CONFIGURATION_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CONFIGURATION_ERROR & String = js.native
-  
-  @js.native
-  sealed trait COUNTRY
-    extends StObject
-       with ResponseCode
-  /* "PPCO" */ val COUNTRY: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.COUNTRY & String = js.native
-  
-  @js.native
-  sealed trait CREDITCARD_MISMATCH
-    extends StObject
-       with ResponseCode
-  /* "PPS5" */ val CREDITCARD_MISMATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CREDITCARD_MISMATCH & String = js.native
-  
-  @js.native
-  sealed trait CREDIT_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPCR" */ val CREDIT_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CREDIT_ERROR & String = js.native
-  
-  @js.native
-  sealed trait CURRENCY_CODE_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPUC" */ val CURRENCY_CODE_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CURRENCY_CODE_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait CURRENCY_MISMATCH
-    extends StObject
-       with ResponseCode
-  /* "PPS4" */ val CURRENCY_MISMATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CURRENCY_MISMATCH & String = js.native
-  
-  @js.native
-  sealed trait CURRENCY_USED_INVALID
-    extends StObject
-       with ResponseCode
-  /* "PPCU" */ val CURRENCY_USED_INVALID: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CURRENCY_USED_INVALID & String = js.native
-  
-  @js.native
-  sealed trait CVV2_FAILURE
-    extends StObject
-       with ResponseCode
-  /* "5110" */ val CVV2_FAILURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CVV2_FAILURE & String = js.native
-  
-  @js.native
-  sealed trait CVV_FAILURE
-    extends StObject
-       with ResponseCode
-  /* "PCVV" */ val CVV_FAILURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.CVV_FAILURE & String = js.native
-  
-  @js.native
-  sealed trait DCC_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPDC" */ val DCC_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.DCC_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait DECLINED_PLEASE_RETRY
-    extends StObject
-       with ResponseCode
-  /* "9100" */ val DECLINED_PLEASE_RETRY: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.DECLINED_PLEASE_RETRY & String = js.native
-  
-  @js.native
-  sealed trait DINERS_REJECT
-    extends StObject
-       with ResponseCode
-  /* "PPDI" */ val DINERS_REJECT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.DINERS_REJECT & String = js.native
-  
-  @js.native
-  sealed trait DO_NOT_HONOR
-    extends StObject
-       with ResponseCode
-  /* "0500" */ val DO_NOT_HONOR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.DO_NOT_HONOR & String = js.native
-  
-  @js.native
-  sealed trait DUPLICATE_TRANSACTION
-    extends StObject
-       with ResponseCode
-  /* "5200" */ val DUPLICATE_TRANSACTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.DUPLICATE_TRANSACTION & String = js.native
-  
-  @js.native
-  sealed trait ERROR_3DS
-    extends StObject
-       with ResponseCode
-  /* "7700" */ val ERROR_3DS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ERROR_3DS & String = js.native
-  
-  @js.native
-  sealed trait EXCEEDS_FREQUENCY_LIMIT
-    extends StObject
-       with ResponseCode
-  /* "PPEL" */ val EXCEEDS_FREQUENCY_LIMIT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.EXCEEDS_FREQUENCY_LIMIT & String = js.native
-  
-  @js.native
-  sealed trait EXPIRED_CARD
-    extends StObject
-       with ResponseCode
-  /* "5400" */ val EXPIRED_CARD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.EXPIRED_CARD & String = js.native
-  
-  @js.native
-  sealed trait EXPIRED_FUNDING_INSTRUMENT
-    extends StObject
-       with ResponseCode
-  /* "PPEF" */ val EXPIRED_FUNDING_INSTRUMENT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.EXPIRED_FUNDING_INSTRUMENT & String = js.native
-  
-  @js.native
-  sealed trait EXPIRY_DATE
-    extends StObject
-       with ResponseCode
-  /* "PPEX" */ val EXPIRY_DATE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.EXPIRY_DATE & String = js.native
-  
-  @js.native
-  sealed trait FATAL_COMMUNICATION_ERROR
-    extends StObject
-       with ResponseCode
-  /* "8100" */ val FATAL_COMMUNICATION_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.FATAL_COMMUNICATION_ERROR & String = js.native
-  
-  @js.native
-  sealed trait FIELD_VALIDATION_FAILED
-    extends StObject
-       with ResponseCode
-  /* "PPFV" */ val FIELD_VALIDATION_FAILED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.FIELD_VALIDATION_FAILED & String = js.native
-  
-  @js.native
-  sealed trait FUNDING_SOURCE_ALREADY_EXISTS
-    extends StObject
-       with ResponseCode
-  /* "PPFE" */ val FUNDING_SOURCE_ALREADY_EXISTS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.FUNDING_SOURCE_ALREADY_EXISTS & String = js.native
-  
-  @js.native
-  sealed trait GAMING_REFUND_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPGR" */ val GAMING_REFUND_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.GAMING_REFUND_ERROR & String = js.native
-  
-  @js.native
-  sealed trait GENERIC_DECLINE
-    extends StObject
-       with ResponseCode
-  /* "5100" */ val GENERIC_DECLINE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.GENERIC_DECLINE & String = js.native
-  
-  @js.native
-  sealed trait H1_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPH1" */ val H1_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.H1_ERROR & String = js.native
-  
-  @js.native
-  sealed trait HOLD_CALL_CENTER
-    extends StObject
-       with ResponseCode
-  /* "9530" */ val HOLD_CALL_CENTER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.HOLD_CALL_CENTER & String = js.native
-  
-  @js.native
-  sealed trait HOST_KEY_ERROR
-    extends StObject
-       with ResponseCode
-  /* "8010" */ val HOST_KEY_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.HOST_KEY_ERROR & String = js.native
-  
-  @js.native
-  sealed trait IDEMPOTENCY_FAILURE
-    extends StObject
-       with ResponseCode
-  /* "PPIF" */ val IDEMPOTENCY_FAILURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.IDEMPOTENCY_FAILURE & String = js.native
-  
-  @js.native
-  sealed trait ID_MISMATCH
-    extends StObject
-       with ResponseCode
-  /* "PPIM" */ val ID_MISMATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ID_MISMATCH & String = js.native
-  
-  @js.native
-  sealed trait INCORRECT_PIN_REENTER
-    extends StObject
-       with ResponseCode
-  /* "5500" */ val INCORRECT_PIN_REENTER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INCORRECT_PIN_REENTER & String = js.native
-  
-  @js.native
-  sealed trait INSUFFICIENT_FUNDS
-    extends StObject
-       with ResponseCode
-  /* "5120" */ val INSUFFICIENT_FUNDS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INSUFFICIENT_FUNDS & String = js.native
-  
-  @js.native
-  sealed trait INTERNAL_SYSTEM_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPER" */ val INTERNAL_SYSTEM_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INTERNAL_SYSTEM_ERROR & String = js.native
-  
-  @js.native
-  sealed trait INVALID_ACCOUNT
-    extends StObject
-       with ResponseCode
-  /* "1330" */ val INVALID_ACCOUNT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_ACCOUNT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_ACCOUNT_RECURRING
-    extends StObject
-       with ResponseCode
-  /* "1335" */ val INVALID_ACCOUNT_RECURRING: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_ACCOUNT_RECURRING & String = js.native
-  
-  @js.native
-  sealed trait INVALID_AMOUNT
-    extends StObject
-       with ResponseCode
-  /* "1310" */ val INVALID_AMOUNT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_AMOUNT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_CAPTURE_DATE
-    extends StObject
-       with ResponseCode
-  /* "1317" */ val INVALID_CAPTURE_DATE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_CAPTURE_DATE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_CARD_VERIFICATION_VALUE
-    extends StObject
-       with ResponseCode
-  /* "1382" */ val INVALID_CARD_VERIFICATION_VALUE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_CARD_VERIFICATION_VALUE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_CURRENCY_CODE
-    extends StObject
-       with ResponseCode
-  /* "1320" */ val INVALID_CURRENCY_CODE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_CURRENCY_CODE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_DATA_FORMAT
-    extends StObject
-       with ResponseCode
-  /* "1300" */ val INVALID_DATA_FORMAT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_DATA_FORMAT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_EXPIRATION
-    extends StObject
-       with ResponseCode
-  /* "1380" */ val INVALID_EXPIRATION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_EXPIRATION & String = js.native
-  
-  @js.native
-  sealed trait INVALID_FUNDING_INSTRUMENT
-    extends StObject
-       with ResponseCode
-  /* "PPFI" */ val INVALID_FUNDING_INSTRUMENT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_FUNDING_INSTRUMENT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_INPUT_FAILURE
-    extends StObject
-       with ResponseCode
-  /* "PPII" */ val INVALID_INPUT_FAILURE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_INPUT_FAILURE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_ISSUE
-    extends StObject
-       with ResponseCode
-  /* "5900" */ val INVALID_ISSUE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_ISSUE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_LIFE_CYCLE_OF_TRANSACTION
-    extends StObject
-       with ResponseCode
-  /* "1384" */ val INVALID_LIFE_CYCLE_OF_TRANSACTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_LIFE_CYCLE_OF_TRANSACTION & String = js.native
-  
-  @js.native
-  sealed trait INVALID_MCC
-    extends StObject
-       with ResponseCode
-  /* "1370" */ val INVALID_MCC: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_MCC & String = js.native
-  
-  @js.native
-  sealed trait INVALID_MERCHANT
-    extends StObject
-       with ResponseCode
-  /* "1350" */ val INVALID_MERCHANT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_MERCHANT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_ORDER
-    extends StObject
-       with ResponseCode
-  /* "1390" */ val INVALID_ORDER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_ORDER & String = js.native
-  
-  @js.native
-  sealed trait INVALID_OR_RESTRICTED_CARD
-    extends StObject
-       with ResponseCode
-  /* "5180" */ val INVALID_OR_RESTRICTED_CARD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_OR_RESTRICTED_CARD & String = js.native
-  
-  @js.native
-  sealed trait INVALID_PARENT_TRANSACTION_STATUS
-    extends StObject
-       with ResponseCode
-  /* "PPRF" */ val INVALID_PARENT_TRANSACTION_STATUS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_PARENT_TRANSACTION_STATUS & String = js.native
-  
-  @js.native
-  sealed trait INVALID_PAYMENT_METHOD
-    extends StObject
-       with ResponseCode
-  /* "PPPM" */ val INVALID_PAYMENT_METHOD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_PAYMENT_METHOD & String = js.native
-  
-  @js.native
-  sealed trait INVALID_PIN
-    extends StObject
-       with ResponseCode
-  /* "5130" */ val INVALID_PIN: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_PIN & String = js.native
-  
-  @js.native
-  sealed trait INVALID_PRODUCT
-    extends StObject
-       with ResponseCode
-  /* "PPPI" */ val INVALID_PRODUCT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_PRODUCT & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TERMINAL
-    extends StObject
-       with ResponseCode
-  /* "1340" */ val INVALID_TERMINAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TERMINAL & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TRACE_ID
-    extends StObject
-       with ResponseCode
-  /* "PPIT" */ val INVALID_TRACE_ID: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TRACE_ID & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TRACE_REFERENCE
-    extends StObject
-       with ResponseCode
-  /* "PPTF" */ val INVALID_TRACE_REFERENCE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TRACE_REFERENCE & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TRANSACTION
-    extends StObject
-       with ResponseCode
-  /* "5210" */ val INVALID_TRANSACTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TRANSACTION & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TRANSACTION_CARD_ISSUER_ACQUIRER
-    extends StObject
-       with ResponseCode
-  /* "1312" */ val INVALID_TRANSACTION_CARD_ISSUER_ACQUIRER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TRANSACTION_CARD_ISSUER_ACQUIRER & String = js.native
-  
-  @js.native
-  sealed trait INVALID_TRANSACTION_ID
-    extends StObject
-       with ResponseCode
-  /* "PPTI" */ val INVALID_TRANSACTION_ID: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_TRANSACTION_ID & String = js.native
-  
-  @js.native
-  sealed trait INVALID_VERIFICATION_TOKEN
-    extends StObject
-       with ResponseCode
-  /* "PPTV" */ val INVALID_VERIFICATION_TOKEN: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.INVALID_VERIFICATION_TOKEN & String = js.native
-  
-  @js.native
-  sealed trait ISSUER_NOT_AVAILABLE_NOT_RETRIABLE
-    extends StObject
-       with ResponseCode
-  /* "5910" */ val ISSUER_NOT_AVAILABLE_NOT_RETRIABLE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ISSUER_NOT_AVAILABLE_NOT_RETRIABLE & String = js.native
-  
-  @js.native
-  sealed trait ISSUER_NOT_AVAILABLE_RETRIABLE
-    extends StObject
-       with ResponseCode
-  /* "5920" */ val ISSUER_NOT_AVAILABLE_RETRIABLE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.ISSUER_NOT_AVAILABLE_RETRIABLE & String = js.native
-  
-  @js.native
-  sealed trait LARGE_STATUS_CODE
-    extends StObject
-       with ResponseCode
-  /* "PPLS" */ val LARGE_STATUS_CODE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.LARGE_STATUS_CODE & String = js.native
-  
-  @js.native
-  sealed trait LATE_REVERSAL
-    extends StObject
-       with ResponseCode
-  /* "PPLR" */ val LATE_REVERSAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.LATE_REVERSAL & String = js.native
-  
-  @js.native
-  sealed trait LOST_OR_STOLEN
-    extends StObject
-       with ResponseCode
-  /* "9520" */ val LOST_OR_STOLEN: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.LOST_OR_STOLEN & String = js.native
-  
-  @js.native
-  sealed trait MCC_CODE
-    extends StObject
-       with ResponseCode
-  /* "PPAU" */ val MCC_CODE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.MCC_CODE & String = js.native
-  
-  @js.native
-  sealed trait MERCHANT_NOT_REGISTERED
-    extends StObject
-       with ResponseCode
-  /* "PPRR" */ val MERCHANT_NOT_REGISTERED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.MERCHANT_NOT_REGISTERED & String = js.native
-  
-  @js.native
-  sealed trait NETWORK_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPNT" */ val NETWORK_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.NETWORK_ERROR & String = js.native
-  
-  @js.native
-  sealed trait NOT_SUPPORTED_NRC
-    extends StObject
-       with ResponseCode
-  /* "PPNC" */ val NOT_SUPPORTED_NRC: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.NOT_SUPPORTED_NRC & String = js.native
-  
-  @js.native
-  sealed trait NO_PHONE_FOR_DCC_TRANSACTION
-    extends StObject
-       with ResponseCode
-  /* "PPPH" */ val NO_PHONE_FOR_DCC_TRANSACTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.NO_PHONE_FOR_DCC_TRANSACTION & String = js.native
-  
-  @js.native
-  sealed trait PARTIAL_AUTHORIZATION
-    extends StObject
-       with ResponseCode
-  /* "1000" */ val PARTIAL_AUTHORIZATION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.PARTIAL_AUTHORIZATION & String = js.native
-  
-  @js.native
-  sealed trait PICKUP_CARD_SPECIAL_CONDITIONS
-    extends StObject
-       with ResponseCode
-  /* "5150" */ val PICKUP_CARD_SPECIAL_CONDITIONS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.PICKUP_CARD_SPECIAL_CONDITIONS & String = js.native
-  
-  @js.native
-  sealed trait PIN_ERROR
-    extends StObject
-       with ResponseCode
-  /* "7900" */ val PIN_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.PIN_ERROR & String = js.native
-  
-  @js.native
-  sealed trait PPMD
-    extends StObject
-       with ResponseCode
-  /* "PPMD" */ val PPMD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.PPMD & String = js.native
-  
-  @js.native
-  sealed trait PROCESSOR_SYSTEM_ERROR
-    extends StObject
-       with ResponseCode
-  /* "8000" */ val PROCESSOR_SYSTEM_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.PROCESSOR_SYSTEM_ERROR & String = js.native
-  
-  @js.native
-  sealed trait QUASI_CASH_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPQC" */ val QUASI_CASH_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.QUASI_CASH_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait REFERRAL
-    extends StObject
-       with ResponseCode
-  /* "0100" */ val REFERRAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.REFERRAL & String = js.native
-  
-  @js.native
-  sealed trait REFUSED_CARD
-    extends StObject
-       with ResponseCode
-  /* "9540" */ val REFUSED_CARD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.REFUSED_CARD & String = js.native
-  
-  @js.native
-  sealed trait RESTRICTED_FUNDING_INSTRUMENT
-    extends StObject
-       with ResponseCode
-  /* "PPFR" */ val RESTRICTED_FUNDING_INSTRUMENT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.RESTRICTED_FUNDING_INSTRUMENT & String = js.native
-  
-  @js.native
-  sealed trait RETRIABLE_COMMUNICATION_ERROR
-    extends StObject
-       with ResponseCode
-  /* "8110" */ val RETRIABLE_COMMUNICATION_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.RETRIABLE_COMMUNICATION_ERROR & String = js.native
-  
-  @js.native
-  sealed trait REVERSAL_REJECTED
-    extends StObject
-       with ResponseCode
-  /* "5800" */ val REVERSAL_REJECTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.REVERSAL_REJECTED & String = js.native
-  
-  @js.native
-  sealed trait SECURE_ERROR_3DS
-    extends StObject
-       with ResponseCode
-  /* "PPD3" */ val SECURE_ERROR_3DS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.SECURE_ERROR_3DS & String = js.native
-  
-  @js.native
-  sealed trait SECURITY_VIOLATION
-    extends StObject
-       with ResponseCode
-  /* "9510" */ val SECURITY_VIOLATION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.SECURITY_VIOLATION & String = js.native
-  
-  @js.native
-  sealed trait SOFT_AVS
-    extends StObject
-       with ResponseCode
-  /* "5190" */ val SOFT_AVS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.SOFT_AVS & String = js.native
-  
-  @js.native
-  sealed trait STATUS_DESCRIPTION
-    extends StObject
-       with ResponseCode
-  /* "PPSD" */ val STATUS_DESCRIPTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.STATUS_DESCRIPTION & String = js.native
-  
-  @js.native
-  sealed trait SUSPECTED_FRAUD
-    extends StObject
-       with ResponseCode
-  /* "9500" */ val SUSPECTED_FRAUD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.SUSPECTED_FRAUD & String = js.native
-  
-  @js.native
-  sealed trait SYSTEM_UNAVAILABLE
-    extends StObject
-       with ResponseCode
-  /* "8220" */ val SYSTEM_UNAVAILABLE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.SYSTEM_UNAVAILABLE & String = js.native
-  
-  @js.native
-  sealed trait TRANSACTION_CANNOT_BE_COMPLETED
-    extends StObject
-       with ResponseCode
-  /* "1393" */ val TRANSACTION_CANNOT_BE_COMPLETED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.TRANSACTION_CANNOT_BE_COMPLETED & String = js.native
-  
-  @js.native
-  sealed trait TRANSACTION_NOT_PERMITTED
-    extends StObject
-       with ResponseCode
-  /* "5700" */ val TRANSACTION_NOT_PERMITTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.TRANSACTION_NOT_PERMITTED & String = js.native
-  
-  @js.native
-  sealed trait TRANSACTION_TYPE_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPTT" */ val TRANSACTION_TYPE_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.TRANSACTION_TYPE_UNSUPPORTED & String = js.native
-  
-  @js.native
-  sealed trait UNAUTHORIZED_USER
-    extends StObject
-       with ResponseCode
-  /* "5160" */ val UNAUTHORIZED_USER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNAUTHORIZED_USER & String = js.native
-  
-  @js.native
-  sealed trait UNRECOGNIZED_RESPONSE_CODE
-    extends StObject
-       with ResponseCode
-  /* "9600" */ val UNRECOGNIZED_RESPONSE_CODE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNRECOGNIZED_RESPONSE_CODE & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORTED_OPERATION
-    extends StObject
-       with ResponseCode
-  /* "8030" */ val UNSUPPORTED_OPERATION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORTED_OPERATION & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORTED_REVERSAL
-    extends StObject
-       with ResponseCode
-  /* "PPUR" */ val UNSUPPORTED_REVERSAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORTED_REVERSAL & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORT_ENTITY
-    extends StObject
-       with ResponseCode
-  /* "PPUE" */ val UNSUPPORT_ENTITY: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORT_ENTITY & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORT_INSTALLMENT
-    extends StObject
-       with ResponseCode
-  /* "PPUI" */ val UNSUPPORT_INSTALLMENT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORT_INSTALLMENT & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORT_POS_FLAG
-    extends StObject
-       with ResponseCode
-  /* "PPUP" */ val UNSUPPORT_POS_FLAG: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORT_POS_FLAG & String = js.native
-  
-  @js.native
-  sealed trait UNSUPPORT_REFUND_ON_PENDING_BC
-    extends StObject
-       with ResponseCode
-  /* "PPRE" */ val UNSUPPORT_REFUND_ON_PENDING_BC: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.UNSUPPORT_REFUND_ON_PENDING_BC & String = js.native
-  
-  @js.native
-  sealed trait USER_NOT_AUTHORIZED
-    extends StObject
-       with ResponseCode
-  /* "PPUA" */ val USER_NOT_AUTHORIZED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.USER_NOT_AUTHORIZED & String = js.native
-  
-  @js.native
-  sealed trait VALIDATE_CURRENCY
-    extends StObject
-       with ResponseCode
-  /* "PPVC" */ val VALIDATE_CURRENCY: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.VALIDATE_CURRENCY & String = js.native
-  
-  @js.native
-  sealed trait VALIDATION_ERROR
-    extends StObject
-       with ResponseCode
-  /* "PPVE" */ val VALIDATION_ERROR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.VALIDATION_ERROR & String = js.native
-  
-  @js.native
-  sealed trait VERIFICATION_TOKEN_EXPIRED
-    extends StObject
-       with ResponseCode
-  /* "PPTE" */ val VERIFICATION_TOKEN_EXPIRED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.VERIFICATION_TOKEN_EXPIRED & String = js.native
-  
-  @js.native
-  sealed trait VERIFICATION_TOKEN_REVOKED
-    extends StObject
-       with ResponseCode
-  /* "PPTR" */ val VERIFICATION_TOKEN_REVOKED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.VERIFICATION_TOKEN_REVOKED & String = js.native
-  
-  @js.native
-  sealed trait VIRTUAL_TERMINAL_UNSUPPORTED
-    extends StObject
-       with ResponseCode
-  /* "PPVT" */ val VIRTUAL_TERMINAL_UNSUPPORTED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ResponseCode.VIRTUAL_TERMINAL_UNSUPPORTED & String = js.native
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0000`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0100`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0800`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1000`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1300`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1310`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1312`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1317`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1320`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1330`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1335`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1340`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1350`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1360`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1370`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1380`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1382`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1384`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1390`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1393`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0500`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5100`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5110`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5120`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5130`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5140`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5150`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5160`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5170`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5180`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5190`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5200`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5210`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5400`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5500`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5700`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5800`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5900`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5910`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5920`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`6300`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7600`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7700`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7710`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7800`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7900`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8000`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8010`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8020`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8030`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8100`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8110`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8220`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9100`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9500`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9510`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9520`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9530`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9540`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9600`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5930`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCU
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPQC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIM
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPH1
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAG
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCO
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAU
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS0
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS1
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS2
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS3
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS4
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS5
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS6
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRF
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEX
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAX
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDV
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPBG
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPGR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIF
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFV
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPII
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPM
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUA
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEF
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PCVV
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTV
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTF
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD3
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPH
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAV
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPC2
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSC
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUI
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRE
+*/
+trait ResponseCode extends StObject
+object ResponseCode {
+  
+  inline def `0000`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0000` = "0000".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0000`]
+  
+  inline def `0100`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0100` = "0100".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0100`]
+  
+  inline def `0500`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0500` = "0500".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0500`]
+  
+  inline def `0800`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0800` = "0800".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0800`]
+  
+  inline def `1000`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1000` = "1000".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1000`]
+  
+  inline def `1300`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1300` = "1300".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1300`]
+  
+  inline def `1310`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1310` = "1310".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1310`]
+  
+  inline def `1312`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1312` = "1312".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1312`]
+  
+  inline def `1317`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1317` = "1317".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1317`]
+  
+  inline def `1320`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1320` = "1320".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1320`]
+  
+  inline def `1330`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1330` = "1330".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1330`]
+  
+  inline def `1335`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1335` = "1335".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1335`]
+  
+  inline def `1340`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1340` = "1340".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1340`]
+  
+  inline def `1350`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1350` = "1350".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1350`]
+  
+  inline def `1360`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1360` = "1360".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1360`]
+  
+  inline def `1370`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1370` = "1370".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1370`]
+  
+  inline def `1380`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1380` = "1380".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1380`]
+  
+  inline def `1382`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1382` = "1382".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1382`]
+  
+  inline def `1384`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1384` = "1384".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1384`]
+  
+  inline def `1390`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1390` = "1390".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1390`]
+  
+  inline def `1393`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1393` = "1393".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1393`]
+  
+  inline def `5100`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5100` = "5100".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5100`]
+  
+  inline def `5110`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5110` = "5110".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5110`]
+  
+  inline def `5120`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5120` = "5120".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5120`]
+  
+  inline def `5130`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5130` = "5130".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5130`]
+  
+  inline def `5140`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5140` = "5140".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5140`]
+  
+  inline def `5150`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5150` = "5150".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5150`]
+  
+  inline def `5160`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5160` = "5160".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5160`]
+  
+  inline def `5170`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5170` = "5170".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5170`]
+  
+  inline def `5180`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5180` = "5180".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5180`]
+  
+  inline def `5190`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5190` = "5190".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5190`]
+  
+  inline def `5200`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5200` = "5200".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5200`]
+  
+  inline def `5210`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5210` = "5210".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5210`]
+  
+  inline def `5400`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5400` = "5400".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5400`]
+  
+  inline def `5500`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5500` = "5500".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5500`]
+  
+  inline def `5700`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5700` = "5700".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5700`]
+  
+  inline def `5800`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5800` = "5800".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5800`]
+  
+  inline def `5900`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5900` = "5900".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5900`]
+  
+  inline def `5910`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5910` = "5910".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5910`]
+  
+  inline def `5920`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5920` = "5920".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5920`]
+  
+  inline def `5930`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5930` = "5930".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`5930`]
+  
+  inline def `6300`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`6300` = "6300".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`6300`]
+  
+  inline def `7600`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7600` = "7600".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7600`]
+  
+  inline def `7700`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7700` = "7700".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7700`]
+  
+  inline def `7710`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7710` = "7710".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7710`]
+  
+  inline def `7800`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7800` = "7800".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7800`]
+  
+  inline def `7900`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7900` = "7900".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`7900`]
+  
+  inline def `8000`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8000` = "8000".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8000`]
+  
+  inline def `8010`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8010` = "8010".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8010`]
+  
+  inline def `8020`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8020` = "8020".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8020`]
+  
+  inline def `8030`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8030` = "8030".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8030`]
+  
+  inline def `8100`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8100` = "8100".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8100`]
+  
+  inline def `8110`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8110` = "8110".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8110`]
+  
+  inline def `8220`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8220` = "8220".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`8220`]
+  
+  inline def `9100`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9100` = "9100".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9100`]
+  
+  inline def `9500`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9500` = "9500".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9500`]
+  
+  inline def `9510`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9510` = "9510".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9510`]
+  
+  inline def `9520`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9520` = "9520".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9520`]
+  
+  inline def `9530`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9530` = "9530".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9530`]
+  
+  inline def `9540`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9540` = "9540".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9540`]
+  
+  inline def `9600`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9600` = "9600".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`9600`]
+  
+  inline def PCVV: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PCVV = "PCVV".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PCVV]
+  
+  inline def PPAD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAD = "PPAD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAD]
+  
+  inline def PPAE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAE = "PPAE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAE]
+  
+  inline def PPAG: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAG = "PPAG".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAG]
+  
+  inline def PPAI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAI = "PPAI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAI]
+  
+  inline def PPAR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAR = "PPAR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAR]
+  
+  inline def PPAU: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAU = "PPAU".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAU]
+  
+  inline def PPAV: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAV = "PPAV".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAV]
+  
+  inline def PPAX: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAX = "PPAX".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPAX]
+  
+  inline def PPBG: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPBG = "PPBG".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPBG]
+  
+  inline def PPC2: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPC2 = "PPC2".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPC2]
+  
+  inline def PPCE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCE = "PPCE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCE]
+  
+  inline def PPCO: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCO = "PPCO".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCO]
+  
+  inline def PPCR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCR = "PPCR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCR]
+  
+  inline def PPCT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCT = "PPCT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCT]
+  
+  inline def PPCU: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCU = "PPCU".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPCU]
+  
+  inline def PPD3: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD3 = "PPD3".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD3]
+  
+  inline def PPDC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDC = "PPDC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDC]
+  
+  inline def PPDI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDI = "PPDI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDI]
+  
+  inline def PPDV: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDV = "PPDV".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPDV]
+  
+  inline def PPEF: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEF = "PPEF".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEF]
+  
+  inline def PPEL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEL = "PPEL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEL]
+  
+  inline def PPER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPER = "PPER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPER]
+  
+  inline def PPEX: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEX = "PPEX".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPEX]
+  
+  inline def PPFE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFE = "PPFE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFE]
+  
+  inline def PPFI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFI = "PPFI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFI]
+  
+  inline def PPFR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFR = "PPFR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFR]
+  
+  inline def PPFV: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFV = "PPFV".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPFV]
+  
+  inline def PPGR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPGR = "PPGR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPGR]
+  
+  inline def PPH1: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPH1 = "PPH1".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPH1]
+  
+  inline def PPIF: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIF = "PPIF".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIF]
+  
+  inline def PPII: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPII = "PPII".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPII]
+  
+  inline def PPIM: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIM = "PPIM".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIM]
+  
+  inline def PPIT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIT = "PPIT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPIT]
+  
+  inline def PPLR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLR = "PPLR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLR]
+  
+  inline def PPLS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLS = "PPLS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPLS]
+  
+  inline def PPMC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMC = "PPMC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMC]
+  
+  inline def PPMD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMD = "PPMD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPMD]
+  
+  inline def PPNC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNC = "PPNC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNC]
+  
+  inline def PPNT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNT = "PPNT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPNT]
+  
+  inline def PPPH: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPH = "PPPH".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPH]
+  
+  inline def PPPI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPI = "PPPI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPI]
+  
+  inline def PPPM: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPM = "PPPM".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPPM]
+  
+  inline def PPQC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPQC = "PPQC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPQC]
+  
+  inline def PPRE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRE = "PPRE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRE]
+  
+  inline def PPRF: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRF = "PPRF".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRF]
+  
+  inline def PPRR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRR = "PPRR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPRR]
+  
+  inline def PPS0: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS0 = "PPS0".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS0]
+  
+  inline def PPS1: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS1 = "PPS1".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS1]
+  
+  inline def PPS2: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS2 = "PPS2".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS2]
+  
+  inline def PPS3: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS3 = "PPS3".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS3]
+  
+  inline def PPS4: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS4 = "PPS4".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS4]
+  
+  inline def PPS5: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS5 = "PPS5".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS5]
+  
+  inline def PPS6: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS6 = "PPS6".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPS6]
+  
+  inline def PPSC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSC = "PPSC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSC]
+  
+  inline def PPSD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSD = "PPSD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSD]
+  
+  inline def PPSE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSE = "PPSE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPSE]
+  
+  inline def PPTE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTE = "PPTE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTE]
+  
+  inline def PPTF: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTF = "PPTF".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTF]
+  
+  inline def PPTI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTI = "PPTI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTI]
+  
+  inline def PPTR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTR = "PPTR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTR]
+  
+  inline def PPTT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTT = "PPTT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTT]
+  
+  inline def PPTV: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTV = "PPTV".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPTV]
+  
+  inline def PPUA: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUA = "PPUA".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUA]
+  
+  inline def PPUC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUC = "PPUC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUC]
+  
+  inline def PPUE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUE = "PPUE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUE]
+  
+  inline def PPUI: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUI = "PPUI".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUI]
+  
+  inline def PPUP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUP = "PPUP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUP]
+  
+  inline def PPUR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUR = "PPUR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPUR]
+  
+  inline def PPVC: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVC = "PPVC".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVC]
+  
+  inline def PPVE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVE = "PPVE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVE]
+  
+  inline def PPVT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVT = "PPVT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPVT]
 }

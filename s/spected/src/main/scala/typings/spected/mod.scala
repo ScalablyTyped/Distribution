@@ -35,13 +35,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [INPUT] extends [std.ReadonlyArray<infer U>] ? (value : INPUT): std.ReadonlyArray<spected.spected.SpecArray<U, ROOTINPUT>> : [INPUT] extends [object] ? (value : INPUT): spected.spected.SpecObject<INPUT, ROOTINPUT> : (value : INPUT): spected.spected.SpecArray<INPUT, ROOTINPUT>
     }}}
     */
-  @js.native
-  trait SpecFunction[INPUT, ROOTINPUT] extends StObject
+  type SpecFunction[INPUT, ROOTINPUT] = js.Function1[/* value */ INPUT, SpecObject[INPUT, ROOTINPUT]]
   
   type SpecObject[INPUT, ROOTINPUT] = Partial[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof INPUT ]: spected.spected.SpecValue<INPUT[key], ROOTINPUT>} */ js.Any
@@ -49,11 +48,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [INPUT] extends [std.ReadonlyArray<any>] ? spected.spected.SpecArray<INPUT, ROOTINPUT> | spected.spected.SpecFunction<INPUT, ROOTINPUT> : [INPUT] extends [object] ? spected.spected.SpecArray<INPUT, ROOTINPUT> | spected.spected.SpecFunction<INPUT, ROOTINPUT> | spected.spected.SpecObject<INPUT, ROOTINPUT> : spected.spected.SpecArray<INPUT, ROOTINPUT> | spected.spected.SpecFunction<INPUT, ROOTINPUT>
     }}}
     */
-  @js.native
-  trait SpecValue[INPUT, ROOTINPUT] extends StObject
+  type SpecValue[INPUT, ROOTINPUT] = (SpecArray[INPUT, ROOTINPUT]) | (SpecFunction[INPUT, ROOTINPUT])
 }

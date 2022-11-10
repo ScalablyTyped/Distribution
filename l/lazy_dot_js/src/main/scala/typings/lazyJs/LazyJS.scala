@@ -96,13 +96,12 @@ object LazyJS {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Shallow extends true ? T extends lazy.js.LazyJS.Sequence<infer U> ? U : T : {  0 :T extends lazy.js.LazyJS.Sequence<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : T extends std.Array<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : T extends std.ReadonlyArray<infer U> ? lazy.js.LazyJS.Flatten<U, Shallow> : never,   1 :T}[T extends lazy.js.LazyJS.Sequence<any> ? 0 : T extends std.Array<any> ? 0 : T extends std.ReadonlyArray<any> ? 0 : 1]
     }}}
     */
-  @js.native
-  trait Flatten[T, Shallow /* <: Boolean */] extends StObject
+  type Flatten[T, Shallow /* <: Boolean */] = T
   
   @js.native
   trait GeneratedSequence[T]
@@ -200,7 +199,7 @@ object LazyJS {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     (front : FrontT, rest : TailT): any extends (tuple : infer TupleT): any ? TupleT : never
     }}}

@@ -1,5 +1,6 @@
 package typings.blueprintjsIcons
 
+import typings.blueprintjsIcons.blueprintjsIconsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +12,19 @@ object libEsmTypeUtilsScreamingSnakeCaseMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Value extends std.Uppercase<Value> ? @blueprintjs/icons.@blueprintjs/icons/lib/esm/type-utils/includes.Includes<@blueprintjs/icons.@blueprintjs/icons/lib/esm/type-utils/delimiter-case.SplitIncludingDelimiters<std.Lowercase<Value>, '_'>, '_'> extends true ? true : false : false
     }}}
     */
-  @js.native
-  trait IsScreamingSnakeCase[Value /* <: String */] extends StObject
+  type IsScreamingSnakeCase[Value /* <: String */] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Value extends string ? @blueprintjs/icons.@blueprintjs/icons/lib/esm/type-utils/screaming-snake-case.IsScreamingSnakeCase<Value> extends true ? Value : std.Uppercase<@blueprintjs/icons.@blueprintjs/icons/lib/esm/type-utils/snake-case.SnakeCase<Value>> : Value
     }}}
     */
-  @js.native
-  trait ScreamingSnakeCase[Value] extends StObject
+  type ScreamingSnakeCase[Value] = Value
 }

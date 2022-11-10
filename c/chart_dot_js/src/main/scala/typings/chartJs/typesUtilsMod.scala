@@ -8,13 +8,12 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Function ? T : T extends std.Array<infer U> ? chart.js.chart.js/types/utils._DeepPartialArray<U> : T extends object ? chart.js.chart.js/types/utils._DeepPartialObject<T> : T | undefined
     }}}
     */
-  @js.native
-  trait DeepPartial[T] extends StObject
+  type DeepPartial[T] = T
   
   type DeepPartialArray[T] = js.Array[DeepPartial[T]]
   
@@ -30,17 +29,16 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [unknown] ? std.Array<T> : never
     }}}
     */
-  @js.native
-  trait DistributiveArray[T] extends StObject
+  type DistributiveArray[T] = js.Array[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends unknown ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}

@@ -4,78 +4,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Reason extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "Reason")
-@js.native
-object Reason extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUYER_COMPLAINT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHARGEBACK
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ECHECK
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNATIONAL_WITHDRAWAL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PENDING_REVIEW
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REFUNDED
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TRANSACTION_APPROVED_AWAITING_FUNDING
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNILATERAL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VERIFICATION_REQUIRED
+*/
+trait Reason extends StObject
+object Reason {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Reason & String] = js.native
+  inline def BUYER_COMPLAINT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUYER_COMPLAINT = "BUYER_COMPLAINT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUYER_COMPLAINT]
   
-  @js.native
-  sealed trait BUYER_COMPLAINT
-    extends StObject
-       with Reason
-  /* "BUYER_COMPLAINT" */ val BUYER_COMPLAINT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.BUYER_COMPLAINT & String = js.native
+  inline def CHARGEBACK: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHARGEBACK = "CHARGEBACK".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHARGEBACK]
   
-  @js.native
-  sealed trait CHARGEBACK
-    extends StObject
-       with Reason
-  /* "CHARGEBACK" */ val CHARGEBACK: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.CHARGEBACK & String = js.native
+  inline def ECHECK: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ECHECK = "ECHECK".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ECHECK]
   
-  @js.native
-  sealed trait ECHECK
-    extends StObject
-       with Reason
-  /* "ECHECK" */ val ECHECK: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.ECHECK & String = js.native
+  inline def INTERNATIONAL_WITHDRAWAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNATIONAL_WITHDRAWAL = "INTERNATIONAL_WITHDRAWAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INTERNATIONAL_WITHDRAWAL]
   
-  @js.native
-  sealed trait INTERNATIONAL_WITHDRAWAL
-    extends StObject
-       with Reason
-  /* "INTERNATIONAL_WITHDRAWAL" */ val INTERNATIONAL_WITHDRAWAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.INTERNATIONAL_WITHDRAWAL & String = js.native
+  inline def OTHER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER = "OTHER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER]
   
-  @js.native
-  sealed trait OTHER
-    extends StObject
-       with Reason
-  /* "OTHER" */ val OTHER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.OTHER & String = js.native
+  inline def PENDING_REVIEW: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PENDING_REVIEW = "PENDING_REVIEW".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PENDING_REVIEW]
   
-  @js.native
-  sealed trait PENDING_REVIEW
-    extends StObject
-       with Reason
-  /* "PENDING_REVIEW" */ val PENDING_REVIEW: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.PENDING_REVIEW & String = js.native
+  inline def RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION = "RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION]
   
-  @js.native
-  sealed trait RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION
-    extends StObject
-       with Reason
-  /* "RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION" */ val RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.RECEIVING_PREFERENCE_MANDATES_MANUAL_ACTION & String = js.native
+  inline def REFUNDED: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REFUNDED = "REFUNDED".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REFUNDED]
   
-  @js.native
-  sealed trait REFUNDED
-    extends StObject
-       with Reason
-  /* "REFUNDED" */ val REFUNDED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.REFUNDED & String = js.native
+  inline def TRANSACTION_APPROVED_AWAITING_FUNDING: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TRANSACTION_APPROVED_AWAITING_FUNDING = "TRANSACTION_APPROVED_AWAITING_FUNDING".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TRANSACTION_APPROVED_AWAITING_FUNDING]
   
-  @js.native
-  sealed trait TRANSACTION_APPROVED_AWAITING_FUNDING
-    extends StObject
-       with Reason
-  /* "TRANSACTION_APPROVED_AWAITING_FUNDING" */ val TRANSACTION_APPROVED_AWAITING_FUNDING: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.TRANSACTION_APPROVED_AWAITING_FUNDING & String = js.native
+  inline def UNILATERAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNILATERAL = "UNILATERAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNILATERAL]
   
-  @js.native
-  sealed trait UNILATERAL
-    extends StObject
-       with Reason
-  /* "UNILATERAL" */ val UNILATERAL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.UNILATERAL & String = js.native
-  
-  @js.native
-  sealed trait VERIFICATION_REQUIRED
-    extends StObject
-       with Reason
-  /* "VERIFICATION_REQUIRED" */ val VERIFICATION_REQUIRED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Reason.VERIFICATION_REQUIRED & String = js.native
+  inline def VERIFICATION_REQUIRED: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VERIFICATION_REQUIRED = "VERIFICATION_REQUIRED".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VERIFICATION_REQUIRED]
 }

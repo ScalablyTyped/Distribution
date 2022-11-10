@@ -45,7 +45,6 @@ object distTypesStreamDotsMod {
     inline def apply[RawDatum /* <: StreamDatum */](
       color: String,
       data: js.Array[StreamLayerDatum],
-      dotComponent: Exclude[js.UndefOr[DotComponent], Unit],
       getBorderColor: StreamLayerDatum => String,
       getBorderWidth: StreamLayerDatum => Double,
       getColor: StreamLayerDatum => String,
@@ -53,7 +52,7 @@ object distTypesStreamDotsMod {
       id: String | Double,
       position: start | center | end
     ): StreamDotsProps[RawDatum] = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dotComponent = dotComponent.asInstanceOf[js.Any], getBorderColor = js.Any.fromFunction1(getBorderColor), getBorderWidth = js.Any.fromFunction1(getBorderWidth), getColor = js.Any.fromFunction1(getColor), getSize = js.Any.fromFunction1(getSize), id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getBorderColor = js.Any.fromFunction1(getBorderColor), getBorderWidth = js.Any.fromFunction1(getBorderWidth), getColor = js.Any.fromFunction1(getColor), getSize = js.Any.fromFunction1(getSize), id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamDotsProps[RawDatum]]
     }
     
@@ -66,6 +65,8 @@ object distTypesStreamDotsMod {
       inline def setDataVarargs(value: StreamLayerDatum*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDotComponent(value: Exclude[js.UndefOr[DotComponent], Unit]): Self = StObject.set(x, "dotComponent", value.asInstanceOf[js.Any])
+      
+      inline def setDotComponentUndefined: Self = StObject.set(x, "dotComponent", js.undefined)
       
       inline def setGetBorderColor(value: StreamLayerDatum => String): Self = StObject.set(x, "getBorderColor", js.Any.fromFunction1(value))
       

@@ -2,6 +2,7 @@ package typings.emotionStyledBase
 
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.global.JSX.LibraryManagedAttributes
+import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -12,13 +13,12 @@ object typesHelperMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? std.Pick<T, std.Exclude<keyof T, U>> : never
     }}}
     */
-  @js.native
-  trait Omit[T, U] extends StObject
+  type Omit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
   
   type Overwrapped[T, U] = Pick[T, Extract[/* keyof T */ String, /* keyof U */ String]]
   

@@ -1,5 +1,7 @@
 package typings.redisTimeSeries
 
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisTimeSeries.distCommandsMgetMod.MGetOptions
 import typings.redisTimeSeries.distCommandsMgetMod.MGetRawReply
 import typings.redisTimeSeries.distCommandsMgetMod.MGetReply
 import typings.redisTimeSeries.distCommandsMod.Filter
@@ -20,12 +22,14 @@ object distCommandsMgetWITHLABELSMod {
   @js.native
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
-  inline def transformArguments(filter: Filter): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def transformArguments(filter: Filter, options: MGetWithLabelsOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def transformArguments(filter: Filter): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+  inline def transformArguments(filter: Filter, options: MGetWithLabelsOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(reply: MGetRawReply): js.Array[MGetWithLabelsReply] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[js.Array[MGetWithLabelsReply]]
   
-  trait MGetWithLabelsOptions extends StObject {
+  trait MGetWithLabelsOptions
+    extends StObject
+       with MGetOptions {
     
     var SELECTED_LABELS: js.UndefOr[SelectedLabels] = js.undefined
   }

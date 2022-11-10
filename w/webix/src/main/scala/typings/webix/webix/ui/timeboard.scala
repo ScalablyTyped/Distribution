@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait timeboard
      with baseview {
   
   @JSName("$getValue")
-  def $getValue(): Any = js.native
+  def $getValue(): String | obj = js.native
   
   @JSName("$prepareValue")
   def $prepareValue(args: Any*): Any = js.native
@@ -33,13 +34,16 @@ trait timeboard
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): Any = js.native
+  def getValue(): String | obj = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
-  def setValue(value: Any): Unit = js.native
+  def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
+  def setValue(value: obj): Unit = js.native
+  def setValue(value: obj, config: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

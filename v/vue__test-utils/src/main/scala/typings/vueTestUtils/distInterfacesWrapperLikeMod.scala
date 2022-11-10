@@ -346,7 +346,6 @@ object distInterfacesWrapperLikeMod {
     
     def findAllComponents(selector: FindAllComponentsSelector): js.Array[WrapperLike] = js.native
     def findAllComponents[T /* <: scala.Nothing */](selector: String): js.Array[WrapperLike] = js.native
-    def findAllComponents[T /* <: DefinedComponent */](selector: Exclude[FindAllComponentsSelector, FunctionalComponent[js.Object, js.Object]]): js.Array[VueWrapper[InstanceType[T]]] = js.native
     def findAllComponents[T /* <: scala.Nothing */](selector: NameSelector): js.Array[
         VueWrapper[
           ComponentPublicInstance[
@@ -365,7 +364,9 @@ object distInterfacesWrapperLikeMod {
         ]
       ] = js.native
     @JSName("findAllComponents")
-    def findAllComponents_T[T /* <: DefinedComponent */](selector: FindAllComponentsSelector | T): js.Array[VueWrapper[InstanceType[T]]] = js.native
+    def findAllComponents_T[T /* <: DefinedComponent */](
+      selector: (Exclude[FindAllComponentsSelector, FunctionalComponent[js.Object, js.Object]]) | FindAllComponentsSelector | T
+    ): js.Array[VueWrapper[InstanceType[T]]] = js.native
     
     @JSName("findAll")
     def findAll_T[T /* <: Element */](selector: String): js.Array[DOMWrapper[T]] = js.native
@@ -712,7 +713,6 @@ object distInterfacesWrapperLikeMod {
     
     def findComponent(selector: FindComponentSelector): WrapperLike = js.native
     def findComponent[T /* <: FunctionalComponent[js.Object, js.Object] */](selector: String): DOMWrapper[Element] = js.native
-    def findComponent[T /* <: DefinedComponent */](selector: Exclude[FindComponentSelector, FunctionalComponent[js.Object, js.Object]]): VueWrapper[InstanceType[T]] = js.native
     def findComponent[T /* <: scala.Nothing */](selector: NameSelector): VueWrapper[
         ComponentPublicInstance[
           js.Object, 
@@ -746,7 +746,9 @@ object distInterfacesWrapperLikeMod {
     @JSName("findComponent")
     def findComponent_T_DOMWrapper[T /* <: FunctionalComponent[js.Object, js.Object] */](selector: T): DOMWrapper[Element] = js.native
     @JSName("findComponent")
-    def findComponent_T_VueWrapper[T /* <: DefinedComponent */](selector: FindComponentSelector | T): VueWrapper[InstanceType[T]] = js.native
+    def findComponent_T_VueWrapper[T /* <: DefinedComponent */](
+      selector: (Exclude[FindComponentSelector, FunctionalComponent[js.Object, js.Object]]) | FindComponentSelector | T
+    ): VueWrapper[InstanceType[T]] = js.native
     @JSName("findComponent")
     def findComponent_T_WrapperLike[T /* <: scala.Nothing */](selector: String): WrapperLike = js.native
     
@@ -1094,9 +1096,10 @@ object distInterfacesWrapperLikeMod {
     def get[T /* <: Element */](selector: String): Omit[DOMWrapper[T], exists] = js.native
     def get[T /* <: Node */](selector: RefSelector): Omit[DOMWrapper[T], exists] = js.native
     
-    def getComponent[T /* <: DefinedComponent */](selector: FindComponentSelector | T): Omit[VueWrapper[InstanceType[T]], exists] = js.native
+    def getComponent[T /* <: DefinedComponent */](
+      selector: (Exclude[FindComponentSelector, FunctionalComponent[js.Object, js.Object]]) | FindComponentSelector | T
+    ): Omit[VueWrapper[InstanceType[T]], exists] = js.native
     def getComponent[T /* <: FunctionalComponent[js.Object, js.Object] */](selector: String): OmitDOMWrapperElementexisAttributes = js.native
-    def getComponent[T /* <: DefinedComponent */](selector: Exclude[FindComponentSelector, FunctionalComponent[js.Object, js.Object]]): Omit[VueWrapper[InstanceType[T]], exists] = js.native
     @JSName("getComponent")
     def getComponent_T_OmitDOMWrapperElementexisAttributes[T /* <: FunctionalComponent[js.Object, js.Object] */](selector: T): OmitDOMWrapperElementexisAttributes = js.native
     @JSName("getComponent")

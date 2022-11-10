@@ -8,12 +8,27 @@ object srcMiscMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Intl.DateTimeFormatOptions extends {  calendar :infer T | undefined} ? T : 'buddhist' | 'chinese' | 'coptic' | 'ethioaa' | 'ethiopic' | 'gregory' | 'hebrew' | 'indian' | 'islamic' | 'islamicc' | 'iso8601' | 'japanese' | 'persian' | 'roc'
     }}}
     */
-  @js.native
+  /* Rewritten from type alias, can be one of: 
+    - typings.luxon.luxonStrings.buddhist
+    - typings.luxon.luxonStrings.chinese
+    - typings.luxon.luxonStrings.coptic
+    - typings.luxon.luxonStrings.ethioaa
+    - typings.luxon.luxonStrings.ethiopic
+    - typings.luxon.luxonStrings.gregory
+    - typings.luxon.luxonStrings.hebrew
+    - typings.luxon.luxonStrings.indian
+    - typings.luxon.luxonStrings.islamic
+    - typings.luxon.luxonStrings.islamicc
+    - typings.luxon.luxonStrings.iso8601
+    - typings.luxon.luxonStrings.japanese
+    - typings.luxon.luxonStrings.persian
+    - typings.luxon.luxonStrings.roc
+  */
   trait CalendarSystem extends StObject
   
   type DateTimeFormatOptions = typings.std.Intl.DateTimeFormatOptions
@@ -52,12 +67,35 @@ object srcMiscMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Intl.DateTimeFormatOptions extends {  numberingSystem :infer T | undefined} ? T : 'arab' | 'arabext' | 'bali' | 'beng' | 'deva' | 'fullwide' | 'gujr' | 'guru' | 'hanidec' | 'khmr' | 'knda' | 'laoo' | 'latn' | 'limb' | 'mlym' | 'mong' | 'mymr' | 'orya' | 'tamldec' | 'telu' | 'thai' | 'tibt'
     }}}
     */
-  @js.native
+  /* Rewritten from type alias, can be one of: 
+    - typings.luxon.luxonStrings.arab
+    - typings.luxon.luxonStrings.arabext
+    - typings.luxon.luxonStrings.bali
+    - typings.luxon.luxonStrings.beng
+    - typings.luxon.luxonStrings.deva
+    - typings.luxon.luxonStrings.fullwide
+    - typings.luxon.luxonStrings.gujr
+    - typings.luxon.luxonStrings.guru
+    - typings.luxon.luxonStrings.hanidec
+    - typings.luxon.luxonStrings.khmr
+    - typings.luxon.luxonStrings.knda
+    - typings.luxon.luxonStrings.laoo
+    - typings.luxon.luxonStrings.latn
+    - typings.luxon.luxonStrings.limb
+    - typings.luxon.luxonStrings.mlym
+    - typings.luxon.luxonStrings.mong
+    - typings.luxon.luxonStrings.mymr
+    - typings.luxon.luxonStrings.orya
+    - typings.luxon.luxonStrings.tamldec
+    - typings.luxon.luxonStrings.telu
+    - typings.luxon.luxonStrings.thai
+    - typings.luxon.luxonStrings.tibt
+  */
   trait NumberingSystem extends StObject
   
   /* Rewritten from type alias, can be one of: 

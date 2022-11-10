@@ -1,7 +1,7 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait resizer
      with baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("config")
   var config_resizer: resizerConfig = js.native
@@ -21,7 +21,7 @@ trait resizer
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[Any] = js.native
+  var on_context: obj = js.native
   
   def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")

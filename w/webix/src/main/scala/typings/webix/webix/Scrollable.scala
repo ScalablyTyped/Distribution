@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Scrollable extends StObject {
   
-  def getScrollState(): Any
+  def getScrollState(): obj
   
   def scrollTo(x: Double, y: Double): Unit
 }
 object Scrollable {
   
-  inline def apply(getScrollState: () => Any, scrollTo: (Double, Double) => Unit): Scrollable = {
+  inline def apply(getScrollState: () => obj, scrollTo: (Double, Double) => Unit): Scrollable = {
     val __obj = js.Dynamic.literal(getScrollState = js.Any.fromFunction0(getScrollState), scrollTo = js.Any.fromFunction2(scrollTo))
     __obj.asInstanceOf[Scrollable]
   }
   
   extension [Self <: Scrollable](x: Self) {
     
-    inline def setGetScrollState(value: () => Any): Self = StObject.set(x, "getScrollState", js.Any.fromFunction0(value))
+    inline def setGetScrollState(value: () => obj): Self = StObject.set(x, "getScrollState", js.Any.fromFunction0(value))
     
     inline def setScrollTo(value: (Double, Double) => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction2(value))
   }

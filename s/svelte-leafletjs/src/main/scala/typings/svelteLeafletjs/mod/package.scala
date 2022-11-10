@@ -47,6 +47,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+/** This is technically not required since we know every property is a function, but TS doesn't know that */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends (args : any): any ? T : never
+  }}}
+  */
+type AssertIsFunction[T] = T
+
 type MapEventKeys = js.Array[
 onlocationfound | ondragstart | onzoomlevelschange | onzoom | ondrag | ondblclick | onbaselayerchange | oncontextmenu | onoverlayadd | onmouseout | onviewreset | onoverlayremove | onzoomstart | onlayerremove | onclick | onresize | onmovestart | onfocus | onmouseup | onmoveend | onmove | onmouseover | onpreclick | onzoomend | onautopanstart | onblur | onload | ondragend | onlocationerror | onpopupopen | onmousemove | onpopupclose | onunload | onlayeradd | onmousedown]
 

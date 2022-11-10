@@ -3,6 +3,7 @@ package typings.propTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.propTypes.propTypesBooleans.`true`
 import typings.std.Exclude
 import typings.std.NonNullable
 import typings.std.Partial
@@ -103,7 +104,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     V extends prop-types.prop-types.Validator<infer T> ? T : any
     }}}
@@ -113,13 +114,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends T ? true : false
     }}}
     */
-  @js.native
-  trait IsOptional[T] extends StObject
+  type IsOptional[T] = `true`
   
   type OptionalKeys[V] = Exclude[/* keyof V */ String, RequiredKeys[V]]
   

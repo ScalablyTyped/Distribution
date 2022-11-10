@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BaseBind extends StObject {
   
-  def bind(target: Any): Unit = js.native
-  def bind(target: Any, rule: Unit, format: String): Unit = js.native
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj): Unit = js.native
+  def bind(target: obj, rule: Unit, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def unbind(): Unit = js.native
 }

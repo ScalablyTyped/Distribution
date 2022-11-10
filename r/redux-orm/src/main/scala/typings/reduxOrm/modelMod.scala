@@ -3,6 +3,7 @@ package typings.reduxOrm
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
+import typings.reduxOrm.anon.GetId
 import typings.reduxOrm.anon.TypeofQuerySet
 import typings.reduxOrm.dbDatabaseMod.QueryClause
 import typings.reduxOrm.dbTableMod.IdAttribute
@@ -20,6 +21,7 @@ import typings.reduxOrm.querySetMod.QuerySet.LookupSpec
 import typings.reduxOrm.querySetMod.QuerySet.QueryBuilder
 import typings.reduxOrm.querySetMod.QuerySet.SortIteratee
 import typings.reduxOrm.querySetMod.QuerySet.SortOrder
+import typings.reduxOrm.reduxOrmStrings.id
 import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Exclude
 import typings.std.Extract
@@ -314,31 +316,23 @@ object modelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     redux-orm.redux-orm/Model.IdType<M> extends number ? redux-orm.redux-orm/Model.IdKey<M> : never
     }}}
     */
-  @js.native
-  trait IdKeyOpt[M /* <: AnyModel */] extends StObject
+  type IdKeyOpt[M /* <: AnyModel */] = id
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reduxOrm.modelMod.IdType[M]
-    - typings.reduxOrm.anon.GetId[M]
-  */
-  trait IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], Any] */] extends StObject
+  type IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], Any] */] = IdType[M] | GetId[M]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     redux-orm.redux-orm/Model.IdKey<M> extends infer U ? U extends keyof redux-orm.redux-orm/Model.ModelFields<M> ? redux-orm.redux-orm/Model.ModelFields<M>[U] extends string | number ? redux-orm.redux-orm/Model.ModelFields<M>[U] : never : number : number
     }}}
     */
-  @js.native
-  trait IdType[M /* <: Model[Instantiable0[AnyModel], Any] */]
-    extends StObject
-       with IdOrModelLike[M]
+  type IdType[M /* <: Model[Instantiable0[AnyModel], Any] */] = Double
   
   @js.native
   trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] extends StObject {
@@ -429,7 +423,7 @@ object modelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     std.ConstructorParameters<redux-orm.redux-orm/Model.ModelClass<M>> extends [infer U] ? U extends redux-orm.redux-orm/Model.ModelFieldMap ? U : never : never
     }}}
@@ -506,13 +500,12 @@ object modelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends keyof redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>> ? redux-orm.redux-orm/Model.Ref<M>[K] : redux-orm.redux-orm/Model.Serializable
     }}}
     */
-  @js.native
-  trait RefPropOrSimple[M /* <: AnyModel */, K /* <: String */] extends StObject
+  type RefPropOrSimple[M /* <: AnyModel */, K /* <: String */] = Serializable
   
   type Serializable = js.UndefOr[Primitive | js.Array[Primitive] | (StringDictionary[Any | js.Array[Any]])]
   
@@ -520,13 +513,15 @@ object modelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     redux-orm.redux-orm/Model.ModelFields<M>[K] extends redux-orm.redux-orm/Model.AnyModel ? redux-orm.redux-orm/Model.SessionBoundModel<redux-orm.redux-orm/Model.ModelFields<M>[K], {}> : redux-orm.redux-orm/Model.ModelFields<M>[K]
     }}}
     */
-  @js.native
-  trait SessionBoundModelField[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] extends StObject
+  type SessionBoundModelField[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] = SessionBoundModel[
+    /* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[K] */ js.Any, 
+    js.Object
+  ]
   
   type UpdateProps[M /* <: AnyModel */] = BlueprintProps[
     M, 

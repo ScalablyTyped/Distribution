@@ -49,6 +49,8 @@ trait InitialParcelOptions extends StObject {
   
   val shouldBuildLazily: js.UndefOr[Boolean] = js.undefined
   
+  val shouldBundleIncrementally: js.UndefOr[Boolean] = js.undefined
+  
   val shouldContentHash: js.UndefOr[Boolean] = js.undefined
   
   val shouldDisableCache: js.UndefOr[Boolean] = js.undefined
@@ -149,6 +151,10 @@ object InitialParcelOptions {
     inline def setShouldBuildLazily(value: Boolean): Self = StObject.set(x, "shouldBuildLazily", value.asInstanceOf[js.Any])
     
     inline def setShouldBuildLazilyUndefined: Self = StObject.set(x, "shouldBuildLazily", js.undefined)
+    
+    inline def setShouldBundleIncrementally(value: Boolean): Self = StObject.set(x, "shouldBundleIncrementally", value.asInstanceOf[js.Any])
+    
+    inline def setShouldBundleIncrementallyUndefined: Self = StObject.set(x, "shouldBundleIncrementally", js.undefined)
     
     inline def setShouldContentHash(value: Boolean): Self = StObject.set(x, "shouldContentHash", value.asInstanceOf[js.Any])
     

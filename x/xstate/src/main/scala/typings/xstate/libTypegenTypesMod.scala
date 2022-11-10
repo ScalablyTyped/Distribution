@@ -57,33 +57,30 @@ object libTypegenTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     xstate.xstate/lib/types.IsAny<TResolvedTypesMeta> extends true ? true : TResolvedTypesMeta extends xstate.xstate/lib/typegenTypes.TypegenEnabled ? xstate.xstate/lib/types.IsNever<xstate.xstate/lib/types.Values<{[ K in keyof TMissingImplementations ]: TMissingImplementations[K]}>> extends true ? true : false : true
     }}}
     */
-  @js.native
-  trait AreAllImplementationsAssumedToBeProvided[TResolvedTypesMeta, TMissingImplementations] extends StObject
+  type AreAllImplementationsAssumedToBeProvided[TResolvedTypesMeta, TMissingImplementations] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TEventType extends any ? {  type :TEventType} & xstate.xstate/lib/types.Prop<TServiceMap, TServiceName> : never
     }}}
     */
-  @js.native
-  trait GenerateServiceEvent[TServiceName, TEventType, TServiceMap /* <: ServiceMap */] extends StObject
+  type GenerateServiceEvent[TServiceName, TEventType, TServiceMap /* <: ServiceMap */] = (/* import warning: importer.ImportType#apply Failed type conversion: {  type :TEventType} */ js.Any) & (Prop[TServiceMap, TServiceName])
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     string extends keyof TServiceMap ? never : xstate.xstate/lib/types.Cast<{[ K in keyof TInvokeSrcNameMap ]: xstate.xstate/lib/typegenTypes.GenerateServiceEvent<K, TInvokeSrcNameMap[K], TServiceMap>}[keyof TInvokeSrcNameMap], xstate.xstate/lib/types.EventObject>
     }}}
     */
-  @js.native
-  trait GenerateServiceEvents[TServiceMap /* <: ServiceMap */, TInvokeSrcNameMap] extends StObject
+  type GenerateServiceEvents[TServiceMap /* <: ServiceMap */, TInvokeSrcNameMap] = EventObject
   
   trait MarkAllImplementationsAsProvided[TResolvedTypesMeta] extends StObject {
     

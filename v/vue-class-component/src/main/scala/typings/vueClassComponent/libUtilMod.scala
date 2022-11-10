@@ -61,7 +61,7 @@ object libUtilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends vue-class-component.vue-class-component/lib/declarations.VueClass<infer V> ? V : never
     }}}
@@ -71,7 +71,7 @@ object libUtilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Mixins extends std.Array<infer T> ? vue-class-component.vue-class-component/lib/declarations.VueClass<vue-class-component.vue-class-component/lib/util.UnionToIntersection<vue-class-component.vue-class-component/lib/util.ExtractInstance<T>>> : never
     }}}
@@ -85,7 +85,7 @@ object libUtilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}

@@ -29,7 +29,6 @@ import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.DxEvent
@@ -67,7 +66,7 @@ trait dxDataGrid[TRowData, TKey]
   /**
     * Adds an empty data row and switches it to the editing state.
     */
-  def addRow(): DxPromise[Unit] = js.native
+  def addRow(): js.Promise[Unit] = js.native
   
   /**
     * Ungroups grid records.
@@ -83,7 +82,7 @@ trait dxDataGrid[TRowData, TKey]
   /**
     * Collapses a group or a master row with a specific key.
     */
-  def collapseRow(key: TKey): DxPromise[Unit] = js.native
+  def collapseRow(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Expands master rows or groups of a specific level. Does not apply if data is remote.
@@ -94,7 +93,7 @@ trait dxDataGrid[TRowData, TKey]
   /**
     * Expands a group or a master row with a specific key.
     */
-  def expandRow(key: TKey): DxPromise[Unit] = js.native
+  def expandRow(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Exports grid data to Excel.
@@ -111,12 +110,12 @@ trait dxDataGrid[TRowData, TKey]
   /**
     * Gets the currently selected rows&apos; keys.
     */
-  def getSelectedRowKeys(): js.Array[TKey] & DxPromise[js.Array[TKey]] = js.native
+  def getSelectedRowKeys(): js.Array[TKey] & js.Promise[js.Array[TKey]] = js.native
   
   /**
     * Gets the selected rows&apos; data objects.
     */
-  def getSelectedRowsData(): js.Array[TRowData] & DxPromise[js.Array[TRowData]] = js.native
+  def getSelectedRowsData(): js.Array[TRowData] & js.Promise[js.Array[TRowData]] = js.native
   
   /**
     * Gets the value of a total summary item.
@@ -5477,9 +5476,9 @@ object dxDataGrid {
     @JSName("scrollWidth")
     var scrollWidth_Original: js.Function0[Double]
     
-    def update(): DxPromise[Unit]
+    def update(): js.Promise[Unit]
     @JSName("update")
-    var update_Original: js.Function0[DxPromise[Unit]]
+    var update_Original: js.Function0[js.Promise[Unit]]
   }
   object Scrollable {
     
@@ -5505,7 +5504,7 @@ object dxDataGrid {
       scrollToElement: /* element */ UserDefinedElement[Element] => Unit,
       scrollTop: () => Double,
       scrollWidth: () => Double,
-      update: () => DxPromise[Unit]
+      update: () => js.Promise[Unit]
     ): Scrollable = {
       val __obj = js.Dynamic.literal($element = js.Any.fromFunction0($element), beginUpdate = js.Any.fromFunction0(beginUpdate), clientHeight = js.Any.fromFunction0(clientHeight), clientWidth = js.Any.fromFunction0(clientWidth), content = js.Any.fromFunction0(content), dispose = js.Any.fromFunction0(dispose), element = js.Any.fromFunction0(element), endUpdate = js.Any.fromFunction0(endUpdate), instance = js.Any.fromFunction0(instance), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), option = js.Any.fromFunction0(option), resetOption = js.Any.fromFunction1(resetOption), scrollBy = js.Any.fromFunction1(scrollBy), scrollHeight = js.Any.fromFunction0(scrollHeight), scrollLeft = js.Any.fromFunction0(scrollLeft), scrollOffset = js.Any.fromFunction0(scrollOffset), scrollTo = js.Any.fromFunction1(scrollTo), scrollToElement = js.Any.fromFunction1(scrollToElement), scrollTop = js.Any.fromFunction0(scrollTop), scrollWidth = js.Any.fromFunction0(scrollWidth), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Scrollable]
@@ -5555,7 +5554,7 @@ object dxDataGrid {
       
       inline def setScrollWidth(value: () => Double): Self = StObject.set(x, "scrollWidth", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: () => DxPromise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   

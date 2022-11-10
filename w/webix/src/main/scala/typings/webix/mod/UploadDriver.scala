@@ -17,9 +17,9 @@ trait UploadDriver extends StObject {
   var $render: Any = js.native
   
   def fileDialog(): Unit = js.native
-  def fileDialog(content: Any): Unit = js.native
+  def fileDialog(content: obj): Unit = js.native
   
-  var html5: Any = js.native
+  var html5: obj = js.native
   
   def send(id: String): Unit = js.native
   def send(id: Double): Unit = js.native

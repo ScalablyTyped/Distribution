@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ open class template ()
      with typings.webix.webix.ui.baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$skin")
   var $skin_Original_template: WebixCallback = js.native
@@ -31,8 +32,8 @@ open class template ()
   def attachEvent(`type`: templateEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: templateEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -43,7 +44,7 @@ open class template ()
   
   def detachEvent(id: String): Unit = js.native
   
-  def getScrollState(): Any = js.native
+  def getScrollState(): obj = js.native
   
   def getValues(): Unit = js.native
   
@@ -51,17 +52,49 @@ open class template ()
   
   def load(url: String): js.Promise[Any] = js.native
   def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
-  def parse(data: Any, `type`: String): Unit = js.native
+  def parse(data: String): Unit = js.native
+  def parse(data: String, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: String, `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any]): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any]): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: obj): Unit = js.native
+  def parse(data: obj, `type`: String): Unit = js.native
+  def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
@@ -69,10 +102,13 @@ open class template ()
   
   def setHTML(html: String): Unit = js.native
   
-  def setValues(obj: Any): Unit = js.native
-  def setValues(obj: Any, update: Boolean): Unit = js.native
+  def setValues(obj: obj): Unit = js.native
+  def setValues(obj: obj, update: Boolean): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

@@ -4,42 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait CardType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "CardType")
-@js.native
-object CardType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CREDIT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DEBIT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREPAID
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STORE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN
+*/
+trait CardType extends StObject
+object CardType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CardType & String] = js.native
+  inline def CREDIT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CREDIT = "CREDIT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CREDIT]
   
-  @js.native
-  sealed trait CREDIT
-    extends StObject
-       with CardType
-  /* "CREDIT" */ val CREDIT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardType.CREDIT & String = js.native
+  inline def DEBIT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DEBIT = "DEBIT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DEBIT]
   
-  @js.native
-  sealed trait DEBIT
-    extends StObject
-       with CardType
-  /* "DEBIT" */ val DEBIT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardType.DEBIT & String = js.native
+  inline def PREPAID: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREPAID = "PREPAID".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREPAID]
   
-  @js.native
-  sealed trait PREPAID
-    extends StObject
-       with CardType
-  /* "PREPAID" */ val PREPAID: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardType.PREPAID & String = js.native
+  inline def STORE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STORE = "STORE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STORE]
   
-  @js.native
-  sealed trait STORE
-    extends StObject
-       with CardType
-  /* "STORE" */ val STORE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardType.STORE & String = js.native
-  
-  @js.native
-  sealed trait UNKNOWN
-    extends StObject
-       with CardType
-  /* "UNKNOWN" */ val UNKNOWN: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardType.UNKNOWN & String = js.native
+  inline def UNKNOWN: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN]
 }

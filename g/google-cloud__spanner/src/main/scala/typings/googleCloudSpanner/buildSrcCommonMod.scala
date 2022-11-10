@@ -89,13 +89,12 @@ object buildSrcCommonMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     R extends void ? @google-cloud/spanner.@google-cloud/spanner/build/src/common.NormalCallback<T> : @google-cloud/spanner.@google-cloud/spanner/build/src/common.PagedCallback<T, R>
     }}}
     */
-  @js.native
-  trait RequestCallback[T, R] extends StObject
+  type RequestCallback[T, R] = NormalCallback[T]
   
   type ResourceCallback[Resource, Response] = js.Function3[
     /* err */ ServiceError | Null, 

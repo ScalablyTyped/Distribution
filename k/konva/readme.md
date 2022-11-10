@@ -1,7 +1,7 @@
 
 # Scala.js typings for konva
 
-Typings are for version 8.3.13
+Typings are for version 8.3.14
 
 ## Library description:
 <p align="center">   <img src="https://konvajs.org/android-chrome-192x192.png" alt="Konva logo" height="180" /> </p>

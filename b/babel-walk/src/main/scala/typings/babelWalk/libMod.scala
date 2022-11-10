@@ -4005,13 +4005,12 @@ object libMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     type extends 'Standardized' | 'Expression' | 'Binary' | 'Scopable' | 'BlockParent' | 'Block' | 'Statement' | 'Terminatorless' | 'CompletionStatement' | 'Conditional' | 'Loop' | 'While' | 'ExpressionWrapper' | 'For' | 'ForXStatement' | 'Function' | 'FunctionParent' | 'Pureish' | 'Declaration' | 'PatternLike' | 'LVal' | 'TSEntityName' | 'Literal' | 'Immutable' | 'UserWhitespacable' | 'Method' | 'ObjectMember' | 'Property' | 'UnaryLike' | 'Pattern' | 'Class' | 'ModuleDeclaration' | 'ExportDeclaration' | 'ModuleSpecifier' | 'Accessor' | 'Private' | 'Flow' | 'FlowType' | 'FlowBaseAnnotation' | 'FlowDeclaration' | 'FlowPredicate' | 'EnumBody' | 'EnumMember' | 'JSX' | 'Miscellaneous' | 'TypeScript' | 'TSTypeElement' | 'TSType' | 'TSBaseType' ? @babel/types.@babel/types.Aliases[type] : std.Extract<@babel/types.@babel/types.Node, {  type :type}>
     }}}
     */
-  @js.native
-  trait NodeType[`type` /* <: String */] extends StObject
+  type NodeType[`type` /* <: String */] = Node
   
   /* Inlined {[ key in keyof @babel/types.@babel/types.Aliases | @babel/types.@babel/types.Node['type'] ]:? (node : babel-walk.babel-walk/lib.NodeType<key>, state : TState, recurse : (node : @babel/types.@babel/types.Node): void): void} */
   trait RecursiveVisitors[TState] extends StObject {

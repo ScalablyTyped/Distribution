@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait colorboard
   var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -37,16 +38,17 @@ trait colorboard
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def moveSelection(direction: String): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
   
   def setValue(value: String): String = js.native
+  def setValue(value: String, config: Any): String = js.native
   
   def unblockEvent(): Unit = js.native
 }

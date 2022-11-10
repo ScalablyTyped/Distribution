@@ -11,13 +11,12 @@ object typesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends babylonjs.babylonjs/types.Primitive ? T : T extends std.Array<infer U> ? babylonjs.babylonjs/types.DeepImmutableArray<U> : babylonjs.babylonjs/types.DeepImmutableObject<T>
     }}}
     */
-  @js.native
-  trait DeepImmutable[T] extends StObject
+  type DeepImmutable[T] = T
   
   /** @internal */
   type DeepImmutableArray[T] = js.Array[DeepImmutable[T]]
@@ -36,13 +35,12 @@ object typesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends babylonjs.babylonjs/types.Primitive ? T : T extends std.Array<infer U> ? std.ReadonlyArray<U> : babylonjs.babylonjs/types.DeepImmutable<T>
     }}}
     */
-  @js.native
-  trait Immutable[T] extends StObject
+  type Immutable[T] = T
   
   type IndicesArray = js.Array[Double] | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array
   

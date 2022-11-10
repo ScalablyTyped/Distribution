@@ -65,7 +65,7 @@ object typesRuntimeStoreMod {
   /** One or more values from `Readable` stores. */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends svelte.svelte/types/runtime/store.Readable<infer U> ? U : {[ K in keyof T ]: T[K] extends svelte.svelte/types/runtime/store.Readable<infer U>? U : never}
     }}}

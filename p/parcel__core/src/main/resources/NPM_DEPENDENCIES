@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@parcel/core" : "2.7.0"
+      "@parcel/core" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@parcel/core" : "2.7.0"
+      "@parcel/core" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

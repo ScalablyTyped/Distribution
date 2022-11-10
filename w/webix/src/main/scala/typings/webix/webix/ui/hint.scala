@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait hint
      with baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   def attachEvent(`type`: hintEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: hintEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -33,7 +34,7 @@ trait hint
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def resume(): Unit = js.native
   def resume(stepNumber: Double): Unit = js.native

@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,19 +15,19 @@ open class portlet ()
      with typings.webix.webix.ui.baseview {
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String = js.native
+  def $drag(source: HTMLElement, ev: Event, pointer: String): String = js.native
   
   @JSName("$skin")
   var $skin_Original_portlet: WebixCallback = js.native
   
-  def addView(view: Any): String | Double = js.native
-  def addView(view: Any, index: Double): String | Double = js.native
+  def addView(view: obj): String | Double = js.native
+  def addView(view: obj, index: Double): String | Double = js.native
   
   def attachEvent(`type`: portletEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: portletEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -39,24 +40,29 @@ open class portlet ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def index(obj: Any): Double = js.native
+  def index(obj: obj): Double = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def markDropArea(target: String, mode: String): Unit = js.native
   
   def movePortlet(target: String, mode: String): Unit = js.native
   
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  
   def reconstruct(): Unit = js.native
   
-  def removeView(id: Any): Unit = js.native
+  def removeView(id: String): Unit = js.native
+  def removeView(id: Double): Unit = js.native
+  def removeView(id: obj): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   
-  def restore(state: Any, factory: WebixCallback): Unit = js.native
+  def restore(state: obj, factory: WebixCallback): Unit = js.native
   
-  def serialize(): Any = js.native
-  def serialize(serializer: WebixCallback): Any = js.native
+  def serialize(): obj = js.native
+  def serialize(serializer: WebixCallback): obj = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

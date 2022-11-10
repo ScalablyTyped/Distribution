@@ -1,7 +1,6 @@
 package typings.devextreme.mod.default
 
 import typings.devextreme.mod.DevExpress.AnimationConfig
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ object fx {
   /**
     * Animates an element.
     */
-  inline def animate(element: Element, config: AnimationConfig): DxPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DxPromise[Unit]]
+  inline def animate(element: Element, config: AnimationConfig): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Checks whether an element is being animated.

@@ -1,10 +1,10 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import typings.webix.webix.WebixTemplate
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait chartConfig extends StObject {
   
   var alpha: js.UndefOr[Double] = js.undefined
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var animateDuration: js.UndefOr[Double] = js.undefined
   
@@ -37,9 +37,9 @@ trait chartConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -48,6 +48,8 @@ trait chartConfig extends StObject {
   var disableLines: js.UndefOr[Boolean] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var donutInnerText: js.UndefOr[String | WebixCallback] = js.undefined
   
   var dynamic: js.UndefOr[Boolean] = js.undefined
   
@@ -67,7 +69,7 @@ trait chartConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var item: js.UndefOr[Any] = js.undefined
+  var item: js.UndefOr[obj] = js.undefined
   
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
@@ -75,9 +77,9 @@ trait chartConfig extends StObject {
   
   var labelOffset: js.UndefOr[Double] = js.undefined
   
-  var legend: js.UndefOr[Any] = js.undefined
+  var legend: js.UndefOr[obj] = js.undefined
   
-  var line: js.UndefOr[Any] = js.undefined
+  var line: js.UndefOr[obj] = js.undefined
   
   var lineColor: js.UndefOr[String] = js.undefined
   
@@ -91,21 +93,25 @@ trait chartConfig extends StObject {
   
   var mouseEventDelay: js.UndefOr[Double] = js.undefined
   
+  var multilevel: js.UndefOr[Boolean] = js.undefined
+  
   var offset: js.UndefOr[Boolean] = js.undefined
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onClick: js.UndefOr[obj] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onContext: js.UndefOr[obj] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
+  
+  var onItemSingleClick: js.UndefOr[WebixCallback] = js.undefined
   
   var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
   var origin: js.UndefOr[Double | String] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[obj] = js.undefined
   
   var pieHeight: js.UndefOr[Double] = js.undefined
   
@@ -119,21 +125,21 @@ trait chartConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[Any] = js.undefined
+  var save: js.UndefOr[String | obj] = js.undefined
   
   var scale: js.UndefOr[String] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
-  var series: js.UndefOr[Any] = js.undefined
+  var series: js.UndefOr[obj] = js.undefined
   
   var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[Any] = js.undefined
+  var tooltip: js.UndefOr[String | Boolean | WebixCallback | obj] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var value: js.UndefOr[String | WebixTemplate] = js.undefined
   
@@ -143,13 +149,13 @@ trait chartConfig extends StObject {
   
   var x: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[Any] = js.undefined
+  var xAxis: js.UndefOr[obj] = js.undefined
   
   var xValue: js.UndefOr[String] = js.undefined
   
   var y: js.UndefOr[Double] = js.undefined
   
-  var yAxis: js.UndefOr[Any] = js.undefined
+  var yAxis: js.UndefOr[obj] = js.undefined
   
   var yValue: js.UndefOr[String] = js.undefined
 }
@@ -166,7 +172,7 @@ object chartConfig {
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateDuration(value: Double): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     
@@ -214,11 +220,11 @@ object chartConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -239,6 +245,10 @@ object chartConfig {
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDonutInnerText(value: String | WebixCallback): Self = StObject.set(x, "donutInnerText", value.asInstanceOf[js.Any])
+    
+    inline def setDonutInnerTextUndefined: Self = StObject.set(x, "donutInnerText", js.undefined)
     
     inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
@@ -276,7 +286,7 @@ object chartConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: obj): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
@@ -292,11 +302,11 @@ object chartConfig {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: obj): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setLine(value: Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: obj): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
@@ -324,23 +334,31 @@ object chartConfig {
     
     inline def setMouseEventDelayUndefined: Self = StObject.set(x, "mouseEventDelay", js.undefined)
     
+    inline def setMultilevel(value: Boolean): Self = StObject.set(x, "multilevel", value.asInstanceOf[js.Any])
+    
+    inline def setMultilevelUndefined: Self = StObject.set(x, "multilevel", js.undefined)
+    
     inline def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: obj): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: obj): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
     inline def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
     
     inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
+    
+    inline def setOnItemSingleClick(value: WebixCallback): Self = StObject.set(x, "onItemSingleClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemSingleClickUndefined: Self = StObject.set(x, "onItemSingleClick", js.undefined)
     
     inline def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
@@ -352,7 +370,7 @@ object chartConfig {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -380,7 +398,7 @@ object chartConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
@@ -388,11 +406,11 @@ object chartConfig {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: obj): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
@@ -400,7 +418,7 @@ object chartConfig {
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | Boolean | WebixCallback | obj): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
@@ -408,7 +426,7 @@ object chartConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
@@ -426,7 +444,7 @@ object chartConfig {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXAxis(value: Any): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: obj): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
@@ -438,7 +456,7 @@ object chartConfig {
     
     inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setYAxis(value: Any): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: obj): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     

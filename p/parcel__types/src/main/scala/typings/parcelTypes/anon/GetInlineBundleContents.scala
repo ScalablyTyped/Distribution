@@ -10,15 +10,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInlineBundleContents[ConfigType] extends StObject {
+trait GetInlineBundleContents[ConfigType, BundleConfigType] extends StObject {
   
   var bundle: NamedBundle = js.native
+  
+  var bundleConfig: BundleConfigType = js.native
   
   var bundleGraph: typings.parcelTypes.mod.BundleGraph[NamedBundle] = js.native
   
   var config: ConfigType = js.native
   
-  def getInlineBundleContents(arg0: typings.parcelTypes.mod.Bundle, arg1: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Async[ContentsBlob] = js.native
+  def getInlineBundleContents(arg0: typings.parcelTypes.mod.Bundle, arg1: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Async[Contents] = js.native
   
   def getSourceMapReference(): Async[js.UndefOr[String | Null]] = js.native
   def getSourceMapReference(map: default): Async[js.UndefOr[String | Null]] = js.native

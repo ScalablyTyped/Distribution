@@ -458,13 +458,12 @@ object mod {
   // Get the right most non-void thing.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Right extends void ? Left : Right
     }}}
     */
-  @js.native
-  trait Specific[Left, Right] extends StObject
+  type Specific[Left, Right] = Left
   
   type TransformCallback[Tree /* <: Node[Data] */] = js.Function3[
     /* error */ js.UndefOr[js.Error | Null], 
@@ -483,7 +482,7 @@ object mod {
   // Create a processor based on the input/output of a plugin.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Output extends unist.unist.Node<unist.unist.Data> ? Input extends string ? // If `Input` is `string` and `Output` is `Node`, then this plugin
   // defines a parser, so set `ParseTree`.
@@ -499,17 +498,17 @@ object mod {
   unified.unified.Processor<ParseTree, CurrentTree, CompileTree, CompileResult>
     }}}
     */
-  @js.native
-  trait UsePlugin[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult, Input, Output] extends StObject
+  type UsePlugin[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult, Input, Output] = // If `Input` is `string` and `Output` is `Node`, then this plugin
+  // defines a parser, so set `ParseTree`.
+  Processor[Output, Specific[Output, CurrentTree], Specific[Output, CompileTree], CompileResult]
   
   /* eslint-disable @typescript-eslint/naming-convention */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Result extends std.Uint8Array ? vfile.vfile.VFile : Result extends object ? vfile.vfile.VFile & {  result :Result} : vfile.vfile.VFile
     }}}
     */
-  @js.native
-  trait VFileWithOutput[Result] extends StObject
+  type VFileWithOutput[Result] = VFile
 }

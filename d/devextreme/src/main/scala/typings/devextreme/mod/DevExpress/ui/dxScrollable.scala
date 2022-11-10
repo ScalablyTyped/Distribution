@@ -3,7 +3,6 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.mod.DevExpress.DOMComponent
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
 import typings.std.Element
 import typings.std.Event
@@ -79,7 +78,7 @@ trait dxScrollable[TProperties]
   /**
     * Updates the scrollable contents&apos; dimensions.
     */
-  def update(): DxPromise[Unit] = js.native
+  def update(): js.Promise[Unit] = js.native
 }
 object dxScrollable {
   

@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
@@ -22,8 +21,8 @@ trait dxPopover[TProperties]
   /**
     * Shows the UI component for a target element.
     */
-  def show(target: String): DxPromise[Boolean] = js.native
-  def show(target: UserDefinedElement[Element]): DxPromise[Boolean] = js.native
+  def show(target: String): js.Promise[Boolean] = js.native
+  def show(target: UserDefinedElement[Element]): js.Promise[Boolean] = js.native
 }
 object dxPopover {
   

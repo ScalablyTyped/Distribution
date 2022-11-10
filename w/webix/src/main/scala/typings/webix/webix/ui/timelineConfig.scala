@@ -1,16 +1,16 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait timelineConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -18,11 +18,11 @@ trait timelineConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+  var dataFeed: js.UndefOr[String | obj | WebixCallback] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +38,7 @@ trait timelineConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var item: js.UndefOr[Any] = js.undefined
+  var item: js.UndefOr[obj] = js.undefined
   
   var layout: js.UndefOr[String] = js.undefined
   
@@ -54,11 +54,13 @@ trait timelineConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onClick: js.UndefOr[obj] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onContext: js.UndefOr[obj] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
+  
+  var onItemSingleClick: js.UndefOr[WebixCallback] = js.undefined
   
   var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
@@ -66,9 +68,9 @@ trait timelineConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[Any] = js.undefined
+  var save: js.UndefOr[String | obj] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
   var scroll: js.UndefOr[Boolean | String] = js.undefined
   
@@ -82,11 +84,11 @@ trait timelineConfig extends StObject {
   
   var templateValue: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var tooltip: js.UndefOr[Any] = js.undefined
+  var tooltip: js.UndefOr[String | Boolean | WebixCallback | obj] = js.undefined
   
-  var `type`: js.UndefOr[Any] = js.undefined
+  var `type`: js.UndefOr[obj | String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -101,7 +103,7 @@ object timelineConfig {
   
   extension [Self <: timelineConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -117,13 +119,13 @@ object timelineConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    inline def setDataFeed(value: String | obj | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
     inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
     
@@ -159,7 +161,7 @@ object timelineConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: obj): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
@@ -189,17 +191,21 @@ object timelineConfig {
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: obj): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: obj): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
     inline def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
     
     inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
+    
+    inline def setOnItemSingleClick(value: WebixCallback): Self = StObject.set(x, "onItemSingleClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemSingleClickUndefined: Self = StObject.set(x, "onItemSingleClick", js.undefined)
     
     inline def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
@@ -215,11 +221,11 @@ object timelineConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -247,15 +253,15 @@ object timelineConfig {
     
     inline def setTemplateValueUndefined: Self = StObject.set(x, "templateValue", js.undefined)
     
-    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | Boolean | WebixCallback | obj): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: obj | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

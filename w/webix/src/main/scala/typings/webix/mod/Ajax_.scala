@@ -1,5 +1,6 @@
 package typings.webix.mod
 
+import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,34 +11,34 @@ trait Ajax_ extends StObject {
   def bind(master: Any): Ajax_ = js.native
   
   def del(url: String): js.Promise[Any] = js.native
-  def del(url: String, params: Any): js.Promise[Any] = js.native
-  def del(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
   def del(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def del(url: String, params: obj): js.Promise[Any] = js.native
+  def del(url: String, params: obj, callback: WebixCallback): js.Promise[Any] = js.native
   
   def get(url: String): js.Promise[Any] = js.native
-  def get(url: String, params: Any): js.Promise[Any] = js.native
-  def get(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
   def get(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def get(url: String, params: obj): js.Promise[Any] = js.native
+  def get(url: String, params: obj, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def getXHR(): Any = js.native
+  def getXHR(): XMLHttpRequest = js.native
   
-  def headers(values: Any): Ajax_ = js.native
+  def headers(values: obj): Ajax_ = js.native
   
-  var master: Any = js.native
+  var master: obj = js.native
   
   def post(url: String): js.Promise[Any] = js.native
-  def post(url: String, params: Any): js.Promise[Any] = js.native
-  def post(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
   def post(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def post(url: String, params: obj): js.Promise[Any] = js.native
+  def post(url: String, params: obj, callback: WebixCallback): js.Promise[Any] = js.native
   
   def put(url: String): js.Promise[Any] = js.native
-  def put(url: String, params: Any): js.Promise[Any] = js.native
-  def put(url: String, params: Any, callback: WebixCallback): js.Promise[Any] = js.native
   def put(url: String, params: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def put(url: String, params: obj): js.Promise[Any] = js.native
+  def put(url: String, params: obj, callback: WebixCallback): js.Promise[Any] = js.native
   
   def response(`type`: String): Ajax_ = js.native
   
-  def stringify(data: Any): String = js.native
+  def stringify(data: obj): String = js.native
   
   def sync(): Ajax_ = js.native
 }

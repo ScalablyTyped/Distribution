@@ -118,11 +118,40 @@ inline def singleton_TBaseTImplTArgs[TBase, TImpl /* <: Impl[TBase] */, TArgs /*
 inline def transient[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transient")().asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]
 inline def transient[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transient")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]
 
+type Args[TBase] = CtorArgs[TBase] | FuncArgs[TBase]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TBase extends new (args : infer TArgs): infer Impl ? TArgs : std.Array<any>
+  }}}
+  */
+type CtorArgs[TBase] = js.Array[Any]
+
 type DependencyCtor[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] = Instantiable1[/* args */ TArgs, TImpl | TBase]
 
 type DependencyCtorOrFunctor[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] = (DependencyCtor[TBase, TImpl, TArgs]) | (DependencyFunctor[TBase, TImpl, TArgs])
 
 type DependencyFunctor[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] = js.Function1[/* args */ TArgs, TImpl | TBase]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TBase extends (args : infer TArgs): infer Impl ? TArgs : std.Array<any>
+  }}}
+  */
+type FuncArgs[TBase] = js.Array[Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  unknown extends TImpl ? any : TImpl
+  }}}
+  */
+type ImplOrAny[TImpl] = TImpl
 
 type Primitive = Boolean | String | Double | js.Symbol | js.Object | (js.Function1[/* repeated */ Any, Any]) | js.Array[Any]
 

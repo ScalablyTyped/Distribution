@@ -473,29 +473,27 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.MockedClass<T> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.MockedFunctionShallow<T> : T extends object ? jest-mock.jest-mock.MockedObjectShallow<T> : T
     }}}
     */
-  @js.native
-  trait MockedShallow[T] extends StObject
+  type MockedShallow[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.MockedClass<T> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.MockedFunction<T> : T extends object ? jest-mock.jest-mock.MockedObject<T> : T
     }}}
     */
-  @js.native
-  trait Mocked_[T] extends StObject
+  type Mocked_[T] = T
   
   type PropertyLikeKeys[T] = Exclude[/* keyof T */ String, ConstructorLikeKeys[T] | MethodLikeKeys[T]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     std.ReturnType<T> extends std.PromiseLike<any> ? unknown : never
     }}}
@@ -505,7 +503,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     std.ReturnType<T> extends std.PromiseLike<infer U> ? U : never
     }}}
@@ -515,13 +513,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpiedClass<T> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.SpiedFunction<T> : never
     }}}
     */
-  @js.native
-  trait Spied[T /* <: ClassLike | FunctionLike */] extends StObject
+  type Spied[T /* <: ClassLike | FunctionLike */] = SpiedClass[T]
   
   type SpiedClass[T /* <: ClassLike */] = MockInstance[js.Function1[/* args */ ConstructorParameters[T], InstanceType[T]]]
   

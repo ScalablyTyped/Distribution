@@ -189,20 +189,36 @@ object postProcessesImageProcessingPostProcessMod {
     def vignetteCameraFov_=(value: Double): Unit = js.native
     
     /**
-      * Gets Vignette centre X Offset.
+      * Vignette center X Offset.
+      */
+    def vignetteCenterX: Double = js.native
+    def vignetteCenterX_=(value: Double): Unit = js.native
+    
+    /**
+      * Vignette center Y Offset.
+      */
+    def vignetteCenterY: Double = js.native
+    def vignetteCenterY_=(value: Double): Unit = js.native
+    
+    /**
+      * Gets Vignette center X Offset.
+      * @deprecated use vignetteCenterX instead
       */
     def vignetteCentreX: Double = js.native
     /**
-      * Sets Vignette centre X Offset.
+      * Sets Vignette center X Offset.
+      * @deprecated use vignetteCenterX instead
       */
     def vignetteCentreX_=(value: Double): Unit = js.native
     
     /**
-      * Gets Vignette centre Y Offset.
+      * Gets Vignette center Y Offset.
+      * @deprecated use vignetteCenterY instead
       */
     def vignetteCentreY: Double = js.native
     /**
-      * Sets Vignette centre Y Offset.
+      * Sets Vignette center Y Offset.
+      * @deprecated use vignetteCenterY instead
       */
     def vignetteCentreY_=(value: Double): Unit = js.native
     

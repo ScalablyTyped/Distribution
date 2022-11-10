@@ -347,6 +347,8 @@ object StackNavigationOptions {
     
     inline def setHeaderLeftContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerLeftContainerStyle", value.asInstanceOf[js.Any])
     
+    inline def setHeaderLeftContainerStyleNull: Self = StObject.set(x, "headerLeftContainerStyle", null)
+    
     inline def setHeaderLeftContainerStyleUndefined: Self = StObject.set(x, "headerLeftContainerStyle", js.undefined)
     
     inline def setHeaderLeftUndefined: Self = StObject.set(x, "headerLeft", js.undefined)
@@ -358,6 +360,8 @@ object StackNavigationOptions {
     inline def setHeaderRight(value: /* props */ `0` => ReactNode): Self = StObject.set(x, "headerRight", js.Any.fromFunction1(value))
     
     inline def setHeaderRightContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerRightContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderRightContainerStyleNull: Self = StObject.set(x, "headerRightContainerStyle", null)
     
     inline def setHeaderRightContainerStyleUndefined: Self = StObject.set(x, "headerRightContainerStyle", js.undefined)
     
@@ -377,6 +381,8 @@ object StackNavigationOptions {
     
     inline def setHeaderStyleInterpolatorUndefined: Self = StObject.set(x, "headerStyleInterpolator", js.undefined)
     
+    inline def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
+    
     inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     inline def setHeaderTintColor(value: String): Self = StObject.set(x, "headerTintColor", value.asInstanceOf[js.Any])
@@ -395,11 +401,15 @@ object StackNavigationOptions {
     
     inline def setHeaderTitleContainerStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "headerTitleContainerStyle", value.asInstanceOf[js.Any])
     
+    inline def setHeaderTitleContainerStyleNull: Self = StObject.set(x, "headerTitleContainerStyle", null)
+    
     inline def setHeaderTitleContainerStyleUndefined: Self = StObject.set(x, "headerTitleContainerStyle", js.undefined)
     
     inline def setHeaderTitleFunction1(value: /* props */ StackHeaderTitleProps => ReactNode): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
     
     inline def setHeaderTitleStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "headerTitleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTitleStyleNull: Self = StObject.set(x, "headerTitleStyle", null)
     
     inline def setHeaderTitleStyleUndefined: Self = StObject.set(x, "headerTitleStyle", js.undefined)
     

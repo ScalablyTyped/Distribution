@@ -22,13 +22,12 @@ object typesAlgoliasearchMod {
   // turns any to unknown, so it can be used as a conditional
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     any extends T ? true : false extends true ? unknown : T
     }}}
     */
-  @js.native
-  trait AnyToUnknown[T] extends StObject
+  type AnyToUnknown[T] = T
   
   type ClientFullV5 = AnyToUnknown[
     // @ts-ignore
@@ -56,13 +55,15 @@ object typesAlgoliasearchMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientLiteV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientLiteV5 : algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientSearchV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientSearchV5 : algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientFullV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientFullV5 : unknown
     }}}
     */
-  @js.native
-  trait ClientV5 extends StObject
+  type ClientV5 = // @ts-ignore
+  ReturnType[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClientSearch.searchClient */ Any
+  ]
   
   type DefaultSearchClient = PickForClient[V3]
   
@@ -74,7 +75,7 @@ object typesAlgoliasearchMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV5 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientShape ? T['v5'] : // @ts-ignore
   algoliasearch-helper.algoliasearch-helper/types/algoliasearch.ClientV3_4 extends algoliasearch-helper.algoliasearch-helper/types/algoliasearch.SearchClientV4Shape ? T['v4'] : T['v3']

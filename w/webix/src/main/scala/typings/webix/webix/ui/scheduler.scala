@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,32 +12,42 @@ trait scheduler
      with baseview {
   
   @JSName("$app")
-  var $app: Any = js.native
+  var $app: obj = js.native
+  
+  @JSName("$exportView")
+  var $exportView: Any = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
-  def app(app: Any): Unit = js.native
+  def app(app: obj): Unit = js.native
   
   def attachEvent(`type`: schedulerEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: schedulerEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: Any): Unit = js.native
+  def bind(target: Any, rule: Unit, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
   def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
+  
+  def clearAll(): Unit = js.native
   
   @JSName("config")
   var config_scheduler: schedulerConfig = js.native
   
   def detachEvent(id: String): Unit = js.native
   
-  def getService(service: String): Any = js.native
+  def getService(service: String): obj = js.native
   
-  def getState(state: Any): Unit = js.native
+  def getState(): obj = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

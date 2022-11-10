@@ -84,3 +84,12 @@ type ValueListenerCallback = js.Function1[/* state */ typings.reactNative.anon.V
 type ValueXYListenerCallback = js.Function1[/* value */ X, Unit]
 
 type WithAnimatedArray[P] = js.Array[WithAnimatedValue[P]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends react-native.react-native.Animated.Builtin | react-native.react-native.Animated.Nullable ? T : T extends react-native.react-native.Animated.Primitive ? T | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> : T extends std.Array<infer P> ? react-native.react-native.Animated.WithAnimatedArray<P> : T extends {} ? react-native.react-native.Animated.WithAnimatedObject<T> : T
+  }}}
+  */
+type WithAnimatedValue[T] = T

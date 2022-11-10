@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "styled-components"
-version := "5.3.6-6287f6"
+version := "5.3.6-28662e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3962e1",
-  "org.scalablytyped" %%% "react-primitives" % "0.6-dt-20211202Z-386d05",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "stylis" % "4.0-dt-20211202Z-b0f6a1")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-83d8b1",
+  "org.scalablytyped" %%% "react-primitives" % "0.6-dt-20211202Z-fe6204",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "stylis" % "4.0-dt-20211202Z-5cc2e9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

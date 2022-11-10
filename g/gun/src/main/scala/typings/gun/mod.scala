@@ -51,51 +51,47 @@ object mod extends Shortcut {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       T extends object ? {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : gun.gun.Gun.AccessObject<T[key]>} : T
       }}}
       */
-    @js.native
-    trait AccessObject[T] extends StObject
+    type AccessObject[T] = T
     
     type AckCallback = js.Function1[/* ack */ Err | Ok, Unit]
     
     /** Gun does not accept Array value, so we need extract to make types correct */
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       gun.gun.Gun.ArrayOf<T> extends never ? T : gun.gun.Gun.ArrayOf<T>
       }}}
       */
-    @js.native
-    trait AllowArray[T] extends StObject
+    type AllowArray[T] = T
     
     /** These types cannot be stored on Gun */
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       T extends (args : ...any): void ? never : T extends {new (args : ...any): any} ? never : gun.gun.Gun.AccessObject<T>
       }}}
       */
-    @js.native
-    trait AlwaysDisallowedType[T] extends StObject
+    type AlwaysDisallowedType[T] = T
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       gun.gun.Gun.ArrayOf<DataType> extends never ? DataType : std.Record<string, any>
       }}}
       */
-    @js.native
-    trait ArrayAsRecord[DataType] extends StObject
+    type ArrayAsRecord[DataType] = DataType
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * You'll have to cast your way around this structure, unfortunately.
       * TS definition: {{{
       T extends std.Array<infer U> ? U : never
       }}}
@@ -610,28 +606,26 @@ object mod extends Shortcut {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       gun.gun.Gun.ArrayOf<T> extends never ? T : never
       }}}
       */
-    @js.native
-    trait DisallowArray[T] extends StObject
+    type DisallowArray[T] = T
     
     /** These types cannot be stored on Gun's root level */
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       Open extends false ? T : T extends string ? never : T extends number ? never : T extends boolean ? never : T extends null ? never : T extends undefined ? never : T
       }}}
       */
-    @js.native
-    trait DisallowPrimitives[Open, T] extends StObject
+    type DisallowPrimitives[Open, T] = T
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * You'll have to cast your way around this structure, unfortunately.
       * TS definition: {{{
       T extends (args : infer P): any ? P : never
       }}}

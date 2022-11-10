@@ -19,19 +19,18 @@ object distTypesJsonSchemaMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     IsPartial extends true ? T | undefined : T
     }}}
     */
-  @js.native
-  trait JSONType[T /* <: String */, IsPartial /* <: Boolean */] extends StObject
+  type JSONType[T /* <: String */, IsPartial /* <: Boolean */] = T
   
   type Known = StringDictionary[Any] | Array[Any] | js.Array[Any] | Double | String | Boolean | Null
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     undefined extends T ? {  nullable :true,   const :null | undefined,   enum :std.Readonly<std.Array<T | null>> | undefined,   default :T | null | undefined} : {  const :T | undefined,   enum :std.Readonly<std.Array<T>> | undefined,   default :T | undefined}
     }}}
@@ -99,13 +98,12 @@ object distTypesJsonSchemaMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends null ? / * template literal string: strictNullChecks must be true in tsconfig to use ${Name} * / string : Type
     }}}
     */
-  @js.native
-  trait StrictNullChecksWrapper[Name /* <: String */, Type] extends StObject
+  type StrictNullChecksWrapper[Name /* <: String */, Type] = Type
   
   trait StringKeywords extends StObject {
     
@@ -164,7 +162,7 @@ object distTypesJsonSchemaMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (_ : U): void : never extends (_ : infer I): void ? I : never
     }}}

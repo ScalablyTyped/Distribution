@@ -31,13 +31,12 @@ object mod {
   // From: https://github.com/microsoft/TypeScript/blob/4f5b3299fee9a54b692aba9df7a9e894bd86e81d/src/lib/es2015.promise.d.ts#L1
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends undefined ? T : T extends std.PromiseLike<infer U> ? U : T
     }}}
     */
-  @js.native
-  trait Awaited[T] extends StObject
+  type Awaited[T] = T
   
   type PromiseFactory[T] = js.Function0[PromiseLike[T]]
 }

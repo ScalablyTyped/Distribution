@@ -245,9 +245,13 @@ object OmitBarCanvasPropsBarDatu {
     
     inline def setGridXValuesUndefined: Self = StObject.set(x, "gridXValues", js.undefined)
     
+    inline def setGridXValuesVarargs(value: Double*): Self = StObject.set(x, "gridXValues", js.Array(value*))
+    
     inline def setGridYValues(value: GridValues[String | Double]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
     
     inline def setGridYValuesUndefined: Self = StObject.set(x, "gridYValues", js.undefined)
+    
+    inline def setGridYValuesVarargs(value: Double*): Self = StObject.set(x, "gridYValues", js.Array(value*))
     
     inline def setGroupMode(value: grouped | stacked): Self = StObject.set(x, "groupMode", value.asInstanceOf[js.Any])
     

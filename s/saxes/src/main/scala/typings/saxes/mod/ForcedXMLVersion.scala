@@ -20,14 +20,16 @@ trait ForcedXMLVersion
 }
 object ForcedXMLVersion {
   
-  inline def apply(defaultXMLVersion: Exclude[js.UndefOr[`1Dot0` | `1Dot1`], Unit]): ForcedXMLVersion = {
-    val __obj = js.Dynamic.literal(defaultXMLVersion = defaultXMLVersion.asInstanceOf[js.Any], forceXMLVersion = true)
+  inline def apply(): ForcedXMLVersion = {
+    val __obj = js.Dynamic.literal(forceXMLVersion = true)
     __obj.asInstanceOf[ForcedXMLVersion]
   }
   
   extension [Self <: ForcedXMLVersion](x: Self) {
     
     inline def setDefaultXMLVersion(value: Exclude[js.UndefOr[`1Dot0` | `1Dot1`], Unit]): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
     
     inline def setForceXMLVersion(value: `true`): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
   }

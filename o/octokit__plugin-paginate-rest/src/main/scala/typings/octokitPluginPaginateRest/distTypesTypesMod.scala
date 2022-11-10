@@ -153,7 +153,7 @@ object distTypesTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     'data' extends keyof T ? T['data'] : unknown
     }}}
@@ -163,7 +163,7 @@ object distTypesTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends {  data :std.Array<any>} ? T['data'] : T extends {  data :object} ? T['data'][@octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.KnownKeysMatching<T['data'], std.Array<any>>] : never
     }}}

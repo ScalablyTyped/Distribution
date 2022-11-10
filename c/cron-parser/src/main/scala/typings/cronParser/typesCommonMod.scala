@@ -1,6 +1,7 @@
 package typings.cronParser
 
 import typings.cronParser.cronParserBooleans.`false`
+import typings.std.IteratorResult
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -291,13 +292,12 @@ object typesCommonMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     IsIterable extends true ? std.IteratorResult<cron-parser.cron-parser/types/common.CronDate, cron-parser.cron-parser/types/common.CronDate> : cron-parser.cron-parser/types/common.CronDate
     }}}
     */
-  @js.native
-  trait IteratorResultOrCronDate[IsIterable /* <: Boolean */] extends StObject
+  type IteratorResultOrCronDate[IsIterable /* <: Boolean */] = IteratorResult[CronDate, CronDate]
   
   trait ParserOptions[IsIterable /* <: Boolean */] extends StObject {
     

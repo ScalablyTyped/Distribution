@@ -1,5 +1,6 @@
 package typings.parcelTypes.mod
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.parcelTypes.mod.ResolvingProgressEvent
   - typings.parcelTypes.mod.TransformingProgressEvent
   - typings.parcelTypes.mod.BundlingProgressEvent
+  - typings.parcelTypes.mod.BundledProgressEvent
   - typings.parcelTypes.mod.PackagingProgressEvent
   - typings.parcelTypes.mod.OptimizingProgressEvent
 */
@@ -15,6 +17,12 @@ trait BuildProgressEvent
   extends StObject
      with ReporterEvent
 object BuildProgressEvent {
+  
+  inline def BundledProgressEvent(bundleGraph: BundleGraph[NamedBundle], changedAssets: Map[String, Asset]): typings.parcelTypes.mod.BundledProgressEvent = {
+    val __obj = js.Dynamic.literal(bundleGraph = bundleGraph.asInstanceOf[js.Any], changedAssets = changedAssets.asInstanceOf[js.Any], phase = "bundled")
+    __obj.updateDynamic("type")("buildProgress")
+    __obj.asInstanceOf[typings.parcelTypes.mod.BundledProgressEvent]
+  }
   
   inline def BundlingProgressEvent(): typings.parcelTypes.mod.BundlingProgressEvent = {
     val __obj = js.Dynamic.literal(phase = "bundling")

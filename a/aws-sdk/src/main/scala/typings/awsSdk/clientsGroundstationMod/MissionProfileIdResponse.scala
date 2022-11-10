@@ -9,7 +9,7 @@ trait MissionProfileIdResponse extends StObject {
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: js.UndefOr[String] = js.undefined
+  var missionProfileId: js.UndefOr[Uuid] = js.undefined
 }
 object MissionProfileIdResponse {
   
@@ -20,7 +20,7 @@ object MissionProfileIdResponse {
   
   extension [Self <: MissionProfileIdResponse](x: Self) {
     
-    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
     inline def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
   }

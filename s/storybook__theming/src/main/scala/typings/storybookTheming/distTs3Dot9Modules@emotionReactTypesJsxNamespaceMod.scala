@@ -1065,7 +1065,7 @@ object `distTs3Dot9Modules@emotionReactTypesJsxNamespaceMod` {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     'className' extends keyof P ? string extends P['className' & keyof P] ? {  css :@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.Theme> | undefined} : {} : {}
     }}}

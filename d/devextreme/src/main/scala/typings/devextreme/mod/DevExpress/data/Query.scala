@@ -1,6 +1,5 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,30 +10,30 @@ trait Query extends StObject {
   /**
     * Calculates a custom summary for all data items.
     */
-  def aggregate(seed: Any, step: js.Function, finalize: js.Function): DxPromise[Any] = js.native
+  def aggregate(seed: Any, step: js.Function, finalize: js.Function): js.Promise[Any] = js.native
   /**
     * Calculates a custom summary for all data items.
     */
-  def aggregate(step: js.Function): DxPromise[Any] = js.native
+  def aggregate(step: js.Function): js.Promise[Any] = js.native
   
   /**
     * Calculates the average of all values. Applies only to numeric arrays.
     */
-  def avg(): DxPromise[Double] = js.native
+  def avg(): js.Promise[Double] = js.native
   /**
     * Calculates the average of all values found using a getter.
     */
-  def avg(getter: Any): DxPromise[Double] = js.native
+  def avg(getter: Any): js.Promise[Double] = js.native
   
   /**
     * Calculates the number of data items.
     */
-  def count(): DxPromise[Double] = js.native
+  def count(): js.Promise[Double] = js.native
   
   /**
     * Executes the Query. This is an asynchronous alternative to the toArray() method.
     */
-  def enumerate(): DxPromise[Any] = js.native
+  def enumerate(): js.Promise[Any] = js.native
   
   /**
     * Filters data items using a filter expression.
@@ -53,20 +52,20 @@ trait Query extends StObject {
   /**
     * Calculates the maximum value. Applies only to numeric arrays.
     */
-  def max(): DxPromise[Double | js.Date] = js.native
+  def max(): js.Promise[Double | js.Date] = js.native
   /**
     * Calculates the maximum of all values found using a getter.
     */
-  def max(getter: Any): DxPromise[Double | js.Date] = js.native
+  def max(getter: Any): js.Promise[Double | js.Date] = js.native
   
   /**
     * Calculates the minimum value. Applies only to numeric arrays.
     */
-  def min(): DxPromise[Double | js.Date] = js.native
+  def min(): js.Promise[Double | js.Date] = js.native
   /**
     * Calculates the minumum of all values found using a getter.
     */
-  def min(getter: Any): DxPromise[Double | js.Date] = js.native
+  def min(getter: Any): js.Promise[Double | js.Date] = js.native
   
   /**
     * Selects individual fields from data objects.
@@ -91,11 +90,11 @@ trait Query extends StObject {
   /**
     * Calculates the sum of all values.
     */
-  def sum(): DxPromise[Double] = js.native
+  def sum(): js.Promise[Double] = js.native
   /**
     * Calculates the sum of all values found using a getter.
     */
-  def sum(getter: Any): DxPromise[Double] = js.native
+  def sum(getter: Any): js.Promise[Double] = js.native
   
   /**
     * Sorts data items by one more getter in ascending order.

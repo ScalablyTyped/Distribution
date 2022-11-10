@@ -25,4 +25,8 @@ object typescriptTupleStrings {
   @js.native
   sealed trait `TupleSet is not finite` extends StObject
   inline def `TupleSet is not finite`: `TupleSet is not finite` = ("TupleSet is not finite").asInstanceOf[`TupleSet is not finite`]
+  
+  @js.native
+  sealed trait equal extends StObject
+  inline def equal: equal = "equal".asInstanceOf[equal]
 }

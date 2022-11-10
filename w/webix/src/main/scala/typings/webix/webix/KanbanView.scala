@@ -1,6 +1,5 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -30,12 +29,12 @@ trait KanbanView extends StObject {
   
   def eachOtherList(code: WebixCallback): Unit = js.native
   
-  def getKanban(): Any = js.native
+  def getKanban(): obj = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Any, details: Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: obj): String = js.native
+  def move(sid: String, tindex: Double, tobj: obj): String = js.native
+  def move(sid: String, tindex: Double, tobj: obj, details: obj): String = js.native
   
-  var on_context: StringDictionary[Any] = js.native
+  var on_context: obj = js.native
 }

@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
@@ -36,7 +35,7 @@ trait dxFileManager
   /**
     * Reloads data and repaints the UI component.
     */
-  def refresh(): DxPromise[Any] = js.native
+  def refresh(): js.Promise[Any] = js.native
 }
 object dxFileManager {
   

@@ -3,13 +3,14 @@ package typings.webix.webix.ui
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait kanbanConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var attachments: js.UndefOr[String] = js.undefined
   
@@ -23,13 +24,13 @@ trait kanbanConfig extends StObject {
   
   var cols: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var comments: js.UndefOr[Any] = js.undefined
+  var comments: js.UndefOr[Boolean | obj] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -39,7 +40,7 @@ trait kanbanConfig extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var editor: js.UndefOr[Any] = js.undefined
+  var editor: js.UndefOr[Boolean | js.Array[Any] | obj] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -67,7 +68,7 @@ trait kanbanConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[Double | obj] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -83,17 +84,17 @@ trait kanbanConfig extends StObject {
   
   var rows: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var save: js.UndefOr[Any] = js.undefined
+  var save: js.UndefOr[String | obj] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
   var tags: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
-  var userList: js.UndefOr[Any] = js.undefined
+  var userList: js.UndefOr[Boolean | obj] = js.undefined
   
   var users: js.UndefOr[js.Array[Any] | String] = js.undefined
   
@@ -112,7 +113,7 @@ object kanbanConfig {
   
   extension [Self <: kanbanConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -146,7 +147,7 @@ object kanbanConfig {
     
     inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
     
-    inline def setComments(value: Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Boolean | obj): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
@@ -154,11 +155,11 @@ object kanbanConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -180,9 +181,11 @@ object kanbanConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Boolean | js.Array[Any] | obj): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setEditorVarargs(value: Any*): Self = StObject.set(x, "editor", js.Array(value*))
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
@@ -236,7 +239,7 @@ object kanbanConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -270,11 +273,11 @@ object kanbanConfig {
     
     inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     
-    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -288,11 +291,11 @@ object kanbanConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUserList(value: Any): Self = StObject.set(x, "userList", value.asInstanceOf[js.Any])
+    inline def setUserList(value: Boolean | obj): Self = StObject.set(x, "userList", value.asInstanceOf[js.Any])
     
     inline def setUserListUndefined: Self = StObject.set(x, "userList", js.undefined)
     

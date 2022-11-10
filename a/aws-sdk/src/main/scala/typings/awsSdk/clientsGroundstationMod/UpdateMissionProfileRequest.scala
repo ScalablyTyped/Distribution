@@ -24,12 +24,12 @@ trait UpdateMissionProfileRequest extends StObject {
   /**
     * Smallest amount of time in seconds that you’d like to see for an available contact. AWS Ground Station will not present you with contacts shorter than this duration.
     */
-  var minimumViableContactDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined
+  var minimumViableContactDurationSeconds: js.UndefOr[PositiveDurationInSeconds] = js.undefined
   
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: String
+  var missionProfileId: Uuid
   
   /**
     * Name of a mission profile.
@@ -43,7 +43,7 @@ trait UpdateMissionProfileRequest extends StObject {
 }
 object UpdateMissionProfileRequest {
   
-  inline def apply(missionProfileId: String): UpdateMissionProfileRequest = {
+  inline def apply(missionProfileId: Uuid): UpdateMissionProfileRequest = {
     val __obj = js.Dynamic.literal(missionProfileId = missionProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMissionProfileRequest]
   }
@@ -64,11 +64,11 @@ object UpdateMissionProfileRequest {
     
     inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value*))
     
-    inline def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setMinimumViableContactDurationSeconds(value: PositiveDurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     
     inline def setMinimumViableContactDurationSecondsUndefined: Self = StObject.set(x, "minimumViableContactDurationSeconds", js.undefined)
     
-    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
     inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

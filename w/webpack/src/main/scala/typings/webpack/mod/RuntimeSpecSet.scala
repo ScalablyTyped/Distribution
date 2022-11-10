@@ -17,5 +17,5 @@ trait RuntimeSpecSet extends StObject {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[RuntimeSpec]] = js.native
   
-  val size: Double = js.native
+  def size: Double = js.native
 }

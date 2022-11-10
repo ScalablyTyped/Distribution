@@ -34,6 +34,9 @@ trait Config extends StObject {
   /** Finds the nearest package.json from the config's searchPath. */
   def getPackage(): js.Promise[js.UndefOr[PackageJSON | Null]] = js.native
   
+  /** Invalidates the config on every build. */
+  def invalidateOnBuild(): Unit = js.native
+  
   /** Invalidates the config when the given environment variable changes. */
   def invalidateOnEnvChange(arg0: String): Unit = js.native
   
@@ -43,7 +46,7 @@ trait Config extends StObject {
   /** Invalidates the config when matched files are created. */
   def invalidateOnFileCreate(arg0: FileCreateInvalidation): Unit = js.native
   
-  /** Invalidates the config when Parcel restarts. */
+  /** Invalidates the config only when Parcel restarts. */
   def invalidateOnStartup(): Unit = js.native
   
   /**

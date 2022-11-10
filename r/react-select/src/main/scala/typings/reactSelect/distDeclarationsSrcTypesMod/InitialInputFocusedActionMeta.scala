@@ -33,5 +33,7 @@ object InitialInputFocusedActionMeta {
     inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setValue(value: OnChangeValue[Option, IsMulti]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueVarargs(value: Option*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

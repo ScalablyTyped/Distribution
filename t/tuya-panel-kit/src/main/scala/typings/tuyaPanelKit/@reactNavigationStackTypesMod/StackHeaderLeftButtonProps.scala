@@ -129,6 +129,8 @@ object StackHeaderLeftButtonProps {
     
     inline def setLabelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
+    inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
+    
     inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)

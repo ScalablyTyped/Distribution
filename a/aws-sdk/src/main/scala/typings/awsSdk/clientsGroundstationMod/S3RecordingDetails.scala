@@ -12,7 +12,7 @@ trait S3RecordingDetails extends StObject {
   var bucketArn: js.UndefOr[BucketArn] = js.undefined
   
   /**
-    * Template of the S3 key used.
+    * Key template used for the S3 Recording Configuration
     */
   var keyTemplate: js.UndefOr[String] = js.undefined
 }

@@ -90,13 +90,12 @@ object distMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     MaybeFunction extends (args : ...any): std.Promise<any> ? MaybeFunction : MaybeFunction extends (args : ...any): any ? gatsby-worker.gatsby-worker/dist.WrapReturnOfAFunctionInAPromise<MaybeFunction> : never
     }}}
     */
-  @js.native
-  trait EnsureFunctionReturnsAPromise[MaybeFunction] extends StObject
+  type EnsureFunctionReturnsAPromise[MaybeFunction] = MaybeFunction
   
   trait IPublicWorkerInfo extends StObject {
     
@@ -148,13 +147,12 @@ object distMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     MaybeFunction extends (args : ...any): any ? (a : std.Parameters<MaybeFunction>): std.Array<std.ReturnType<MaybeFunction>> : never
     }}}
     */
-  @js.native
-  trait WrapReturnInArray[MaybeFunction] extends StObject
+  type WrapReturnInArray[MaybeFunction] = js.Function1[/* a */ Parameters[MaybeFunction], js.Array[ReturnType[MaybeFunction]]]
   
   type WrapReturnOfAFunctionInAPromise[FunctionThatDoesNotReturnAPromise /* <: js.Function1[/* repeated */ Any, Any] */] = js.Function1[
     /* a */ Parameters[FunctionThatDoesNotReturnAPromise], 

@@ -4,24 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Issuer extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "Issuer")
-@js.native
-object Issuer extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CARD_ISSUER_INSTALLMENTS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAYPAL
+*/
+trait Issuer extends StObject
+object Issuer {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Issuer & String] = js.native
+  inline def CARD_ISSUER_INSTALLMENTS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CARD_ISSUER_INSTALLMENTS = "CARD_ISSUER_INSTALLMENTS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CARD_ISSUER_INSTALLMENTS]
   
-  @js.native
-  sealed trait CARD_ISSUER_INSTALLMENTS
-    extends StObject
-       with Issuer
-  /* "CARD_ISSUER_INSTALLMENTS" */ val CARD_ISSUER_INSTALLMENTS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Issuer.CARD_ISSUER_INSTALLMENTS & String = js.native
-  
-  @js.native
-  sealed trait PAYPAL
-    extends StObject
-       with Issuer
-  /* "PAYPAL" */ val PAYPAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.Issuer.PAYPAL & String = js.native
+  inline def PAYPAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAYPAL = "PAYPAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAYPAL]
 }

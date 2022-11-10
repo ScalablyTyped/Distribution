@@ -1,8 +1,10 @@
 package typings.prettier.mod
 
+import typings.prettier.anon.Length
 import typings.prettier.anon._empty
 import typings.prettier.mod.^
 import typings.prettier.mod.doc.builders.Doc
+import typings.prettier.prettierBooleans.`true`
 import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -33,6 +35,15 @@ type BuiltInParser = js.Function2[/* text */ String, /* options */ js.UndefOr[An
 
 type CallCallback[T, U] = js.Function3[/* path */ AstPath[T], /* index */ Double, /* value */ Any, U]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Array<any> ? prettier.prettier.IndexProperties<T> : keyof T
+  }}}
+  */
+type CallProperties[T] = Double
+
 type CustomParser = js.Function3[/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options, AST]
 
 type Doc_ = Doc
@@ -40,6 +51,40 @@ type Doc_ = Doc
 type EachCallback[T] = js.Function3[/* path */ AstPath[ArrayElement[T]], /* index */ Double, /* value */ Any, Unit]
 
 type FastPath[T] = AstPath[T]
+
+// A union of the properties of the given array T that can be used to index it.
+// If the array is a tuple, then that's going to be the explicit indices of the
+// array, otherwise it's going to just be number.
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  prettier.prettier.IsTuple<T> extends true ? std.Exclude<std.Partial<T>['length'], T['length']> : number
+  }}}
+  */
+type IndexProperties[T /* <: Length */] = Double
+
+// Determines if an object T is an array like string[] (in which case this
+// evaluates to false) or a tuple like [string] (in which case this evaluates to
+// true).
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends [] ? true : T extends [infer First, ...infer Remain] ? prettier.prettier.IsTuple<Remain> : false
+  }}}
+  */
+type IsTuple[T] = `true`
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Array<any> ? prettier.prettier.IndexProperties<T> : prettier.prettier.ArrayProperties<T>
+  }}}
+  */
+type IterProperties[T] = Double
 
 type LiteralUnion[T /* <: U */, U] = T | ((Pick[U, scala.Nothing]) & _empty)
 

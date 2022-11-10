@@ -735,6 +735,7 @@ import typings.awsSdk.clientsConnectcampaignsMod._InstanceOnboardingJobFailureCo
 import typings.awsSdk.clientsConnectcampaignsMod._InstanceOnboardingJobStatusCode
 import typings.awsSdk.clientsConnectcasesMod._FieldNamespace
 import typings.awsSdk.clientsConnectcasesMod._RelatedItemType
+import typings.awsSdk.clientsConnectcasesMod._TemplateStatus
 import typings.awsSdk.clientsConnectparticipantMod._ArtifactStatus
 import typings.awsSdk.clientsConnectparticipantMod._ChatItemType
 import typings.awsSdk.clientsConnectparticipantMod._ScanDirection
@@ -1642,6 +1643,9 @@ import typings.awsSdk.clientsGroundstationMod._BandwidthUnits
 import typings.awsSdk.clientsGroundstationMod._ConfigCapabilityType
 import typings.awsSdk.clientsGroundstationMod._ContactStatus
 import typings.awsSdk.clientsGroundstationMod._Criticality
+import typings.awsSdk.clientsGroundstationMod._EphemerisInvalidReason
+import typings.awsSdk.clientsGroundstationMod._EphemerisSource
+import typings.awsSdk.clientsGroundstationMod._EphemerisStatus
 import typings.awsSdk.clientsGroundstationMod._FrequencyUnits
 import typings.awsSdk.clientsGroundstationMod._Polarization
 import typings.awsSdk.clientsGuarddutyMod._CriterionKey
@@ -11502,6 +11506,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsLambdaMod._State
        with typings.awsSdk.clientsComputeoptimizerMod._Status
        with _StatusType
+       with _TemplateStatus
        with _TracingMode
        with _WorkforceStatus
        with _statusType
@@ -15396,7 +15401,6 @@ object awsSdkStrings {
        with _FindingCategory
        with _PatchFilterKey
        with _PatchProperty
-  inline def CLASSIFICATION: CLASSIFICATION = "CLASSIFICATION".asInstanceOf[CLASSIFICATION]
   
   @js.native
   sealed trait CLASS_100
@@ -18286,6 +18290,11 @@ object awsSdkStrings {
        with typings.awsSdk.clientsKeyspacesMod._EncryptionType
   
   @js.native
+  sealed trait CUSTOMER_PROVIDED
+    extends StObject
+       with _EphemerisSource
+  
+  @js.native
   sealed trait CUSTOMER_QUEUE
     extends StObject
        with _ContactFlowType
@@ -19738,7 +19747,6 @@ object awsSdkStrings {
   sealed trait CreateRelationalDatabase
     extends StObject
        with typings.awsSdk.clientsLightsailMod._OperationType
-  inline def CreateRelationalDatabase: CreateRelationalDatabase = "CreateRelationalDatabase".asInstanceOf[CreateRelationalDatabase]
   
   @js.native
   sealed trait CreateRelationalDatabaseFromSnapshot
@@ -22257,6 +22265,7 @@ object awsSdkStrings {
        with _EmbeddedTerminateCaptions
        with _EntitlementStatus
        with _EntityState
+       with _EphemerisStatus
        with _EventIngestion
        with _EventSourceOptInStatus
        with _ExecutionRoleIdentityConfig
@@ -25622,6 +25631,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsQldbMod._EncryptionStatus
        with _EntitlementStatus
        with _EntityState
+       with _EphemerisStatus
        with _EventDataStoreStatus
        with _EventIngestion
        with _EventSourceOptInStatus
@@ -26257,6 +26267,7 @@ object awsSdkStrings {
        with _DeviceAggregatedStatus
        with _DeviceConnectionStatus
        with typings.awsSdk.clientsPanoramaMod._DeviceStatus
+       with _EphemerisStatus
        with _EventSeverity
        with _FieldLogLevel
        with _FleetStatus
@@ -26815,6 +26826,7 @@ object awsSdkStrings {
        with _CertificateAuthorityStatus
        with typings.awsSdk.clientsLightsailMod._CertificateStatus
        with typings.awsSdk.clientsAcmMod._CertificateStatus
+       with _EphemerisStatus
        with _HandshakeState
        with _InvitationStatus
        with _LicenseStatus
@@ -29499,7 +29511,6 @@ object awsSdkStrings {
   sealed trait FORCE_HLG_2020
     extends StObject
        with _ColorSpaceConversion
-  inline def FORCE_HLG_2020: FORCE_HLG_2020 = "FORCE_HLG_2020".asInstanceOf[FORCE_HLG_2020]
   
   @js.native
   sealed trait FORCE_INCLUDE_RENDITIONS
@@ -34897,6 +34908,7 @@ object awsSdkStrings {
     extends StObject
        with _CEStatus
        with _CampaignStatus
+       with _EphemerisStatus
        with _JQStatus
        with _ServerCertificateStatus
   inline def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
@@ -36143,6 +36155,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsLambdaMod._State
        with typings.awsSdk.clientsComputeoptimizerMod._Status
        with _StatusType
+       with _TemplateStatus
        with _statusType
   inline def Inactive_ : Inactive_ = "Inactive".asInstanceOf[Inactive_]
   
@@ -36706,7 +36719,6 @@ object awsSdkStrings {
   sealed trait InvalidNextTokenException
     extends StObject
        with _BatchReadExceptionType
-  inline def InvalidNextTokenException: InvalidNextTokenException = "InvalidNextTokenException".asInstanceOf[InvalidNextTokenException]
   
   @js.native
   sealed trait InvalidParameterException
@@ -37731,6 +37743,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsQldbMod._EncryptionStatus
   inline def KMS_KEY_INACCESSIBLE: KMS_KEY_INACCESSIBLE = "KMS_KEY_INACCESSIBLE".asInstanceOf[KMS_KEY_INACCESSIBLE]
+  
+  @js.native
+  sealed trait KMS_KEY_INVALID
+    extends StObject
+       with _EphemerisInvalidReason
+  inline def KMS_KEY_INVALID: KMS_KEY_INVALID = "KMS_KEY_INVALID".asInstanceOf[KMS_KEY_INVALID]
   
   @js.native
   sealed trait KMS_KEY_NOT_FOUND
@@ -41149,6 +41167,12 @@ object awsSdkStrings {
     extends StObject
        with _ResourceAttribute
   inline def METADATA: METADATA = "METADATA".asInstanceOf[METADATA]
+  
+  @js.native
+  sealed trait METADATA_INVALID
+    extends StObject
+       with _EphemerisInvalidReason
+  inline def METADATA_INVALID: METADATA_INVALID = "METADATA_INVALID".asInstanceOf[METADATA_INVALID]
   
   @js.native
   sealed trait METERED
@@ -44771,7 +44795,6 @@ object awsSdkStrings {
   sealed trait NPM
     extends StObject
        with _PackageManager
-  inline def NPM: NPM = "NPM".asInstanceOf[NPM]
   
   @js.native
   sealed trait NR
@@ -58051,6 +58074,12 @@ object awsSdkStrings {
   inline def SPACE_NAME: SPACE_NAME = "SPACE_NAME".asInstanceOf[SPACE_NAME]
   
   @js.native
+  sealed trait SPACE_TRACK
+    extends StObject
+       with _EphemerisSource
+  inline def SPACE_TRACK: SPACE_TRACK = "SPACE_TRACK".asInstanceOf[SPACE_TRACK]
+  
+  @js.native
   sealed trait SPARK
     extends StObject
        with _DataSourceType
@@ -62934,6 +62963,12 @@ object awsSdkStrings {
        with _ICD10CMEntityType
   
   @js.native
+  sealed trait TIME_RANGE_INVALID
+    extends StObject
+       with _EphemerisInvalidReason
+  inline def TIME_RANGE_INVALID: TIME_RANGE_INVALID = "TIME_RANGE_INVALID".asInstanceOf[TIME_RANGE_INVALID]
+  
+  @js.native
   sealed trait TIME_SERIES_COUNT
     extends StObject
        with _DataQualityMetricType
@@ -63435,6 +63470,12 @@ object awsSdkStrings {
     extends StObject
        with _ProjectVersionStatus
   inline def TRAINING_IN_PROGRESS: TRAINING_IN_PROGRESS = "TRAINING_IN_PROGRESS".asInstanceOf[TRAINING_IN_PROGRESS]
+  
+  @js.native
+  sealed trait TRAJECTORY_INVALID
+    extends StObject
+       with _EphemerisInvalidReason
+  inline def TRAJECTORY_INVALID: TRAJECTORY_INVALID = "TRAJECTORY_INVALID".asInstanceOf[TRAJECTORY_INVALID]
   
   @js.native
   sealed trait TRANSACTIONAL
@@ -65655,7 +65696,6 @@ object awsSdkStrings {
   sealed trait UPLINK_100G
     extends StObject
        with _UplinkGbps
-  inline def UPLINK_100G: UPLINK_100G = "UPLINK_100G".asInstanceOf[UPLINK_100G]
   
   @js.native
   sealed trait UPLINK_10G
@@ -66992,6 +67032,7 @@ object awsSdkStrings {
   sealed trait VALIDATING
     extends StObject
        with _DeploymentState
+       with _EphemerisStatus
        with _FleetStatus
        with _OutboundConnectionStatusCode
        with _OutboundCrossClusterSearchConnectionStatusCode
@@ -67016,6 +67057,7 @@ object awsSdkStrings {
   sealed trait VALIDATION_ERROR
     extends StObject
        with _ClusterStateChangeReasonCode
+       with _EphemerisInvalidReason
        with typings.awsSdk.clientsIottwinmakerMod._ErrorCode
        with typings.awsSdk.clientsIotsitewiseMod._ErrorCode
        with typings.awsSdk.clientsEmrcontainersMod._FailureReason
@@ -67743,7 +67785,6 @@ object awsSdkStrings {
        with typings.awsSdk.clientsApigatewayv2Mod._ConnectionType
        with typings.awsSdk.clientsApigatewayMod._ConnectionType
        with _ErrorResourceType
-  inline def VPC_LINK: VPC_LINK = "VPC_LINK".asInstanceOf[VPC_LINK]
   
   @js.native
   sealed trait VPC_PEERING_CONNECTION
@@ -70119,6 +70160,13 @@ object awsSdkStrings {
        with _ArchitectureType
        with _ArchitectureValues
   inline def arm64_ : arm64_ = "arm64".asInstanceOf[arm64_]
+  
+  @js.native
+  sealed trait arm64_mac
+    extends StObject
+       with _ArchitectureType
+       with _ArchitectureValues
+  inline def arm64_mac: arm64_mac = "arm64_mac".asInstanceOf[arm64_mac]
   
   @js.native
   sealed trait armv6l
@@ -74582,7 +74630,6 @@ object awsSdkStrings {
   sealed trait `failed-import`
     extends StObject
        with _IpamPoolCidrState
-  inline def `failed-import`: `failed-import` = "failed-import".asInstanceOf[`failed-import`]
   
   @js.native
   sealed trait `failed-provision`
@@ -82622,7 +82669,6 @@ object awsSdkStrings {
     extends StObject
        with _EC2InstanceType
        with typings.awsSdk.clientsEc2Mod._InstanceType
-  inline def r5dDot2xlarge: r5dDot2xlarge = "r5d.2xlarge".asInstanceOf[r5dDot2xlarge]
   
   @js.native
   sealed trait r5dDot4xlarge
@@ -85866,6 +85912,18 @@ object awsSdkStrings {
   inline def trim_horizon_ : trim_horizon_ = "trim_horizon".asInstanceOf[trim_horizon_]
   
   @js.native
+  sealed trait trn1Dot2xlarge
+    extends StObject
+       with typings.awsSdk.clientsEc2Mod._InstanceType
+  inline def trn1Dot2xlarge: trn1Dot2xlarge = "trn1.2xlarge".asInstanceOf[trn1Dot2xlarge]
+  
+  @js.native
+  sealed trait trn1Dot32xlarge
+    extends StObject
+       with typings.awsSdk.clientsEc2Mod._InstanceType
+  inline def trn1Dot32xlarge: trn1Dot32xlarge = "trn1.32xlarge".asInstanceOf[trn1Dot32xlarge]
+  
+  @js.native
   sealed trait true__
     extends StObject
        with typings.awsSdk.clientsMemorydbMod._DataTieringStatus
@@ -85917,10 +85975,21 @@ object awsSdkStrings {
        with typings.awsSdk.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait `u-18tb1Dot112xlarge`
+    extends StObject
+       with typings.awsSdk.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait `u-18tb1Dotmetal`
     extends StObject
        with typings.awsSdk.clientsEc2Mod._InstanceType
   inline def `u-18tb1Dotmetal`: `u-18tb1Dotmetal` = "u-18tb1.metal".asInstanceOf[`u-18tb1Dotmetal`]
+  
+  @js.native
+  sealed trait `u-24tb1Dot112xlarge`
+    extends StObject
+       with typings.awsSdk.clientsEc2Mod._InstanceType
+  inline def `u-24tb1Dot112xlarge`: `u-24tb1Dot112xlarge` = "u-24tb1.112xlarge".asInstanceOf[`u-24tb1Dot112xlarge`]
   
   @js.native
   sealed trait `u-24tb1Dotmetal`

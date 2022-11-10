@@ -2,12 +2,14 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bson.mod.Document
+import typings.bson.mod.ObjectId
 import typings.mongodb.anon.Id
 import typings.mongodb.anon.IdInferIdType
 import typings.mongodb.anon.Meta
 import typings.mongodb.anon.Open
 import typings.mongodb.mod.^
 import typings.mongodb.mongodbStrings.ALPNProtocols
+import typings.mongodb.mongodbStrings._empty
 import typings.mongodb.mongodbStrings._id
 import typings.mongodb.mongodbStrings.`1`
 import typings.mongodb.mongodbStrings.awaitData
@@ -138,6 +140,15 @@ inline def ObjectID_ : /* import warning: ResolveTypeQueries.resolve Couldn't re
 
 type ServerApiVersion = `1`
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.ReadonlyArray<infer U> ? T | mongodb.mongodb.RegExpOrString<U> : mongodb.mongodb.RegExpOrString<T>
+  }}}
+  */
+type AlternativeType[T] = T
+
 type AnyError = MongoError | js.Error
 
 type BitwiseFilter = scala.Double | typings.bson.mod.Binary | js.Array[scala.Double]
@@ -152,6 +163,15 @@ type DropDatabaseOptions = CommandOperationOptions
 
 type DropIndexesOptions = CommandOperationOptions
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  string extends keyof TRecordOrUnion ? TRecordOrUnion : TRecordOrUnion extends any ? std.Pick<TRecordOrUnion, std.Exclude<keyof TRecordOrUnion, KeyUnion>> : never
+  }}}
+  */
+type EnhancedOmit[TRecordOrUnion, KeyUnion] = TRecordOrUnion
+
 type EventEmitterWithState = js.Object
 
 type EventsDescription = Record[String, GenericListener]
@@ -160,7 +180,25 @@ type ExplainVerbosityLike = ExplainVerbosity | Boolean
 
 type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>, []>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Record<string, any> ? {[ key in keyof T ]:? mongodb.mongodb.FilterOperators<T[key]>} : mongodb.mongodb.FilterOperators<T>
+  }}}
+  */
+type FilterOperations[T] = FilterOperators[T]
+
 type FinalizeFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* reducedValue */ TValue, TValue]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Type extends std.ReadonlyArray<infer Item> ? Item : Type
+  }}}
+  */
+type Flatten[Type] = Type
 
 type Hint = String | Document
 
@@ -179,7 +217,34 @@ type IndexDirection = _IndexDirection | scala.Double
 type IndexSpecification = OneOrMore[
 String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TSchema extends {  _id :infer IdType} ? std.Record<any, never> extends IdType ? never : IdType : TSchema extends {  _id :infer IdType | undefined} ? unknown extends IdType ? bson.bson.ObjectId : IdType : bson.bson.ObjectId
+  }}}
+  */
+type InferIdType[TSchema] = ObjectId
+
 type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  true extends false & Type ? ResultIfAny : ResultIfNotAny
+  }}}
+  */
+type IsAny[Type, ResultIfAny, ResultIfNotAny] = ResultIfAny
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends [] ? '' : T extends [string | number] ? / * template literal string: ${T[0]} * / string : T extends [string | number, ...infer R] ? / * template literal string: ${T[0]}${D}${Join<R,D>} * / string : string
+  }}}
+  */
+type Join[T /* <: js.Array[Any] */, D /* <: String */] = _empty
 
 type KeysOfAType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: std.NonNullable<TSchema[key]> extends Type? key : never}[keyof TSchema] */ js.Any
 
@@ -192,6 +257,15 @@ type MatchKeysAndValues[TSchema] = (/* import warning: importer.ImportType#apply
 type MongoClientEvents = (Pick[
 TopologyEvents, 
 connectionPoolCreated | connectionPoolReady | connectionPoolCleared | connectionPoolClosed | connectionCreated | connectionReady | connectionClosed | connectionCheckOutStarted | connectionCheckOutFailed | connectionCheckedOut | connectionCheckedIn | commandStarted | commandSucceeded | commandFailed | serverOpening | serverClosed | serverDescriptionChanged | topologyOpening | topologyClosed | topologyDescriptionChanged | error | timeout | close | serverHeartbeatStarted | serverHeartbeatSucceeded | serverHeartbeatFailed]) & Open
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Depth['length'] extends 8 ? [] : Type extends string | number | boolean | std.Date | std.RegExp | node.buffer.<global>.Buffer | std.Uint8Array | (args : ...any): any | {  _bsontype :string} ? [] : Type extends std.ReadonlyArray<infer ArrayType> ? [] | [number, ...mongodb.mongodb.NestedPaths<ArrayType, [...Depth, 1]>] : Type extends std.Map<string, any> ? [string] : Type extends object ? {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends ArrayType? [Key] : ArrayType extends Type? [Key] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] | [Key]}[std.Extract<keyof Type, string>] : []
+  }}}
+  */
+type NestedPaths[Type, Depth /* <: js.Array[scala.Double] */] = js.Array[Any]
 
 type NestedPathsOfType[TSchema, Type] = KeysOfAType[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema, []>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any, 
@@ -213,6 +287,15 @@ type OperationTime = typings.bson.mod.Timestamp
 
 type OptionalId[TSchema] = (EnhancedOmit[TSchema, _id]) & Id[TSchema]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TSchema extends {  _id :any} ? TSchema : mongodb.mongodb.OptionalId<TSchema>
+  }}}
+  */
+type OptionalUnlessRequiredId[TSchema] = TSchema
+
 type ProfilingLevelOptions = CommandOperationOptions
 
 type Projection[TSchema /* <: Document */] = Document
@@ -226,6 +309,15 @@ type PullOperator[TSchema] = (/* import warning: importer.ImportType#apply Faile
 type PushOperator[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, std.ReadonlyArray<any>> ]:? mongodb.mongodb.Flatten<TSchema[key]> | mongodb.mongodb.ArrayOperator<std.Array<mongodb.mongodb.Flatten<TSchema[key]>>>} */ js.Any) & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[ArrayOperator[Any] | Any])
 
 type ReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends string ? bson.bson.BSONRegExp | std.RegExp | T : T
+  }}}
+  */
+type RegExpOrString[T] = T
 
 type RemoveUserOptions = CommandOperationOptions
 

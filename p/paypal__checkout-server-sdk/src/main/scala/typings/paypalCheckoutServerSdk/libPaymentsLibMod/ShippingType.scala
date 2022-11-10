@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ShippingType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "ShippingType")
-@js.native
-object ShippingType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP_IN_PERSON
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SHIPPING
+*/
+trait ShippingType extends StObject
+object ShippingType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShippingType & String] = js.native
+  inline def PICKUP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP = "PICKUP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP]
   
-  @js.native
-  sealed trait PICKUP
-    extends StObject
-       with ShippingType
-  /* "PICKUP" */ val PICKUP: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ShippingType.PICKUP & String = js.native
+  inline def PICKUP_IN_PERSON: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP_IN_PERSON = "PICKUP_IN_PERSON".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PICKUP_IN_PERSON]
   
-  @js.native
-  sealed trait PICKUP_IN_PERSON
-    extends StObject
-       with ShippingType
-  /* "PICKUP_IN_PERSON" */ val PICKUP_IN_PERSON: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ShippingType.PICKUP_IN_PERSON & String = js.native
-  
-  @js.native
-  sealed trait SHIPPING
-    extends StObject
-       with ShippingType
-  /* "SHIPPING" */ val SHIPPING: typings.paypalCheckoutServerSdk.libPaymentsLibMod.ShippingType.SHIPPING & String = js.native
+  inline def SHIPPING: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SHIPPING = "SHIPPING".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SHIPPING]
 }

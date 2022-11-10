@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait EnrollmentStatus extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "EnrollmentStatus")
-@js.native
-object EnrollmentStatus extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B
+*/
+trait EnrollmentStatus extends StObject
+object EnrollmentStatus {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EnrollmentStatus & String] = js.native
+  inline def B: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B = "B".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B]
   
-  @js.native
-  sealed trait B
-    extends StObject
-       with EnrollmentStatus
-  /* "B" */ val B: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.B & String = js.native
+  inline def N: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N = "N".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N]
   
-  @js.native
-  sealed trait N
-    extends StObject
-       with EnrollmentStatus
-  /* "N" */ val N: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.N & String = js.native
+  inline def U: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U = "U".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U]
   
-  @js.native
-  sealed trait U
-    extends StObject
-       with EnrollmentStatus
-  /* "U" */ val U: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.U & String = js.native
-  
-  @js.native
-  sealed trait Y
-    extends StObject
-       with EnrollmentStatus
-  /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.Y & String = js.native
+  inline def Y: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y = "Y".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y]
 }

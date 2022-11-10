@@ -3,13 +3,14 @@ package typings.webix.webix.ui
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait googleMapConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -17,11 +18,11 @@ trait googleMapConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+  var dataFeed: js.UndefOr[String | obj | WebixCallback] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -31,7 +32,7 @@ trait googleMapConfig extends StObject {
   
   var gravity: js.UndefOr[Double] = js.undefined
   
-  var heatmapConfig: js.UndefOr[Any] = js.undefined
+  var heatmapConfig: js.UndefOr[obj] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -59,11 +60,11 @@ trait googleMapConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[Any] = js.undefined
+  var save: js.UndefOr[String | obj] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -80,7 +81,7 @@ object googleMapConfig {
   
   extension [Self <: googleMapConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -98,13 +99,13 @@ object googleMapConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    inline def setDataFeed(value: String | obj | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
     inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
     
@@ -128,7 +129,7 @@ object googleMapConfig {
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    inline def setHeatmapConfig(value: Any): Self = StObject.set(x, "heatmapConfig", value.asInstanceOf[js.Any])
+    inline def setHeatmapConfig(value: obj): Self = StObject.set(x, "heatmapConfig", value.asInstanceOf[js.Any])
     
     inline def setHeatmapConfigUndefined: Self = StObject.set(x, "heatmapConfig", js.undefined)
     
@@ -184,15 +185,15 @@ object googleMapConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

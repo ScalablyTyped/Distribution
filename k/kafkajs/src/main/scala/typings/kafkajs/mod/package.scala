@@ -87,4 +87,13 @@ type SeekEntry = PartitionOffset
 
 type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T | U extends object ? kafkajs.kafkajs.Without<T, U> & U | kafkajs.kafkajs.Without<U, T> & T : T | U
+  }}}
+  */
+type XOR[T, U] = ((Without[T, U]) & U) | ((Without[U, T]) & T)
+
 type logCreator = js.Function1[/* logLevel */ logLevel, js.Function1[/* entry */ LogEntry, Unit]]

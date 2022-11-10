@@ -10,5 +10,5 @@ trait ValidateData extends StObject {
   def clearValidation(): Unit = js.native
   
   def validate(): Boolean = js.native
-  def validate(mode: Any): Boolean = js.native
+  def validate(mode: obj): Boolean = js.native
 }

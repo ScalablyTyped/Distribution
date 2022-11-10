@@ -94,13 +94,22 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TObject extends std.ArrayLike<unknown> ? [arr: TObject, callback: (this : TContext, value : TObject extends std.ArrayLike<infer T> ? T : never, key : number, arr : TObject): TCallbackReturn, context: TContext | undefined] : [obj: TObject, callback: (this : TContext, value : TObject[keyof TObject], key : keyof TObject, obj : TObject): TCallbackReturn, context: TContext | undefined]
     }}}
     */
-  @js.native
-  trait ForEachArgs[TObject /* <: ArrayLike[Any] | js.Object */, TContext, TCallbackReturn /* <: DefaultCallbackReturn */] extends StObject
+  type ForEachArgs[TObject /* <: ArrayLike[Any] | js.Object */, TContext, TCallbackReturn /* <: DefaultCallbackReturn */] = js.Tuple3[
+    /* arr */ TObject, 
+    /* callback */ js.ThisFunction3[
+      /* this */ TContext, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject extends std.ArrayLike<infer T> ? T : never */ /* value */ js.Any, 
+      /* key */ Double, 
+      /* arr */ TObject, 
+      TCallbackReturn
+    ], 
+    /* context */ js.UndefOr[TContext]
+  ]
   
   type ForOfArgs[TValue, TContext, TCallbackReturn /* <: DefaultCallbackReturn */] = js.Tuple3[
     /* iterable */ js.Iterable[TValue], 

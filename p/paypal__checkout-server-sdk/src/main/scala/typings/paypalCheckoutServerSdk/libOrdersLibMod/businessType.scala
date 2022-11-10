@@ -4,156 +4,80 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait businessType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "business_type")
-@js.native
-object businessType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ANY_OTHER_BUSINESS_ENTITY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ASSOCIATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CORPORATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GENERAL_PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GOVERNMENT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PRIVATE_CORPORATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PROPRIETORS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NONPROFIT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONLY_BUY_OR_SEND_MONEY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER_CORPORATE_BODY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_CORPORATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP_CRAFTSMAN
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORY_COMPANY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_COMPANY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_CORPORATION
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_PARTNERSHIP
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REGISTERED_COOPERATIVE
+*/
+trait businessType extends StObject
+object businessType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[businessType & String] = js.native
+  inline def ANY_OTHER_BUSINESS_ENTITY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ANY_OTHER_BUSINESS_ENTITY = "ANY_OTHER_BUSINESS_ENTITY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ANY_OTHER_BUSINESS_ENTITY]
   
-  @js.native
-  sealed trait ANY_OTHER_BUSINESS_ENTITY
-    extends StObject
-       with businessType
-  /* "ANY_OTHER_BUSINESS_ENTITY" */ val ANY_OTHER_BUSINESS_ENTITY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ANY_OTHER_BUSINESS_ENTITY & String = js.native
+  inline def ASSOCIATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ASSOCIATION = "ASSOCIATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ASSOCIATION]
   
-  @js.native
-  sealed trait ASSOCIATION
-    extends StObject
-       with businessType
-  /* "ASSOCIATION" */ val ASSOCIATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ASSOCIATION & String = js.native
+  inline def CORPORATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CORPORATION = "CORPORATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CORPORATION]
   
-  @js.native
-  sealed trait CORPORATION
-    extends StObject
-       with businessType
-  /* "CORPORATION" */ val CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.CORPORATION & String = js.native
+  inline def GENERAL_PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GENERAL_PARTNERSHIP = "GENERAL_PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GENERAL_PARTNERSHIP]
   
-  @js.native
-  sealed trait GENERAL_PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "GENERAL_PARTNERSHIP" */ val GENERAL_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.GENERAL_PARTNERSHIP & String = js.native
+  inline def GOVERNMENT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GOVERNMENT = "GOVERNMENT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GOVERNMENT]
   
-  @js.native
-  sealed trait GOVERNMENT
-    extends StObject
-       with businessType
-  /* "GOVERNMENT" */ val GOVERNMENT: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.GOVERNMENT & String = js.native
+  inline def INDIVIDUAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL = "INDIVIDUAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL]
   
-  @js.native
-  sealed trait INDIVIDUAL
-    extends StObject
-       with businessType
-  /* "INDIVIDUAL" */ val INDIVIDUAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.INDIVIDUAL & String = js.native
+  inline def LIMITED_LIABILITY_PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PARTNERSHIP = "LIMITED_LIABILITY_PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PARTNERSHIP]
   
-  @js.native
-  sealed trait LIMITED_LIABILITY_PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "LIMITED_LIABILITY_PARTNERSHIP" */ val LIMITED_LIABILITY_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PARTNERSHIP & String = js.native
+  inline def LIMITED_LIABILITY_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PRIVATE_CORPORATION = "LIMITED_LIABILITY_PRIVATE_CORPORATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PRIVATE_CORPORATION]
   
-  @js.native
-  sealed trait LIMITED_LIABILITY_PRIVATE_CORPORATION
-    extends StObject
-       with businessType
-  /* "LIMITED_LIABILITY_PRIVATE_CORPORATION" */ val LIMITED_LIABILITY_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PRIVATE_CORPORATION & String = js.native
+  inline def LIMITED_LIABILITY_PROPRIETORS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PROPRIETORS = "LIMITED_LIABILITY_PROPRIETORS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_LIABILITY_PROPRIETORS]
   
-  @js.native
-  sealed trait LIMITED_LIABILITY_PROPRIETORS
-    extends StObject
-       with businessType
-  /* "LIMITED_LIABILITY_PROPRIETORS" */ val LIMITED_LIABILITY_PROPRIETORS: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PROPRIETORS & String = js.native
+  inline def LIMITED_PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP = "LIMITED_PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP]
   
-  @js.native
-  sealed trait LIMITED_PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "LIMITED_PARTNERSHIP" */ val LIMITED_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_PARTNERSHIP & String = js.native
+  inline def LIMITED_PARTNERSHIP_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION = "LIMITED_PARTNERSHIP_PRIVATE_CORPORATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION]
   
-  @js.native
-  sealed trait LIMITED_PARTNERSHIP_PRIVATE_CORPORATION
-    extends StObject
-       with businessType
-  /* "LIMITED_PARTNERSHIP_PRIVATE_CORPORATION" */ val LIMITED_PARTNERSHIP_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION & String = js.native
+  inline def NONPROFIT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NONPROFIT = "NONPROFIT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NONPROFIT]
   
-  @js.native
-  sealed trait NONPROFIT
-    extends StObject
-       with businessType
-  /* "NONPROFIT" */ val NONPROFIT: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.NONPROFIT & String = js.native
+  inline def ONLY_BUY_OR_SEND_MONEY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONLY_BUY_OR_SEND_MONEY = "ONLY_BUY_OR_SEND_MONEY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONLY_BUY_OR_SEND_MONEY]
   
-  @js.native
-  sealed trait ONLY_BUY_OR_SEND_MONEY
-    extends StObject
-       with businessType
-  /* "ONLY_BUY_OR_SEND_MONEY" */ val ONLY_BUY_OR_SEND_MONEY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ONLY_BUY_OR_SEND_MONEY & String = js.native
+  inline def OTHER_CORPORATE_BODY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER_CORPORATE_BODY = "OTHER_CORPORATE_BODY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER_CORPORATE_BODY]
   
-  @js.native
-  sealed trait OTHER_CORPORATE_BODY
-    extends StObject
-       with businessType
-  /* "OTHER_CORPORATE_BODY" */ val OTHER_CORPORATE_BODY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.OTHER_CORPORATE_BODY & String = js.native
+  inline def PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNERSHIP = "PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTNERSHIP]
   
-  @js.native
-  sealed trait PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "PARTNERSHIP" */ val PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PARTNERSHIP & String = js.native
+  inline def PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_CORPORATION = "PRIVATE_CORPORATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_CORPORATION]
   
-  @js.native
-  sealed trait PRIVATE_CORPORATION
-    extends StObject
-       with businessType
-  /* "PRIVATE_CORPORATION" */ val PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PRIVATE_CORPORATION & String = js.native
+  inline def PRIVATE_PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_PARTNERSHIP = "PRIVATE_PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PRIVATE_PARTNERSHIP]
   
-  @js.native
-  sealed trait PRIVATE_PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "PRIVATE_PARTNERSHIP" */ val PRIVATE_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PRIVATE_PARTNERSHIP & String = js.native
+  inline def PROPRIETORSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP = "PROPRIETORSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP]
   
-  @js.native
-  sealed trait PROPRIETORSHIP
-    extends StObject
-       with businessType
-  /* "PROPRIETORSHIP" */ val PROPRIETORSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORSHIP & String = js.native
+  inline def PROPRIETORSHIP_CRAFTSMAN: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP_CRAFTSMAN = "PROPRIETORSHIP_CRAFTSMAN".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORSHIP_CRAFTSMAN]
   
-  @js.native
-  sealed trait PROPRIETORSHIP_CRAFTSMAN
-    extends StObject
-       with businessType
-  /* "PROPRIETORSHIP_CRAFTSMAN" */ val PROPRIETORSHIP_CRAFTSMAN: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORSHIP_CRAFTSMAN & String = js.native
+  inline def PROPRIETORY_COMPANY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORY_COMPANY = "PROPRIETORY_COMPANY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PROPRIETORY_COMPANY]
   
-  @js.native
-  sealed trait PROPRIETORY_COMPANY
-    extends StObject
-       with businessType
-  /* "PROPRIETORY_COMPANY" */ val PROPRIETORY_COMPANY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORY_COMPANY & String = js.native
+  inline def PUBLIC_COMPANY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_COMPANY = "PUBLIC_COMPANY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_COMPANY]
   
-  @js.native
-  sealed trait PUBLIC_COMPANY
-    extends StObject
-       with businessType
-  /* "PUBLIC_COMPANY" */ val PUBLIC_COMPANY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_COMPANY & String = js.native
+  inline def PUBLIC_CORPORATION: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_CORPORATION = "PUBLIC_CORPORATION".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_CORPORATION]
   
-  @js.native
-  sealed trait PUBLIC_CORPORATION
-    extends StObject
-       with businessType
-  /* "PUBLIC_CORPORATION" */ val PUBLIC_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_CORPORATION & String = js.native
+  inline def PUBLIC_PARTNERSHIP: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_PARTNERSHIP = "PUBLIC_PARTNERSHIP".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUBLIC_PARTNERSHIP]
   
-  @js.native
-  sealed trait PUBLIC_PARTNERSHIP
-    extends StObject
-       with businessType
-  /* "PUBLIC_PARTNERSHIP" */ val PUBLIC_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_PARTNERSHIP & String = js.native
-  
-  @js.native
-  sealed trait REGISTERED_COOPERATIVE
-    extends StObject
-       with businessType
-  /* "REGISTERED_COOPERATIVE" */ val REGISTERED_COOPERATIVE: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.REGISTERED_COOPERATIVE & String = js.native
+  inline def REGISTERED_COOPERATIVE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REGISTERED_COOPERATIVE = "REGISTERED_COOPERATIVE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.REGISTERED_COOPERATIVE]
 }

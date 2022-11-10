@@ -3,6 +3,7 @@ package typings.hasura.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.hasura.anon.Type
 import typings.hasura.anon.`0`
+import typings.hasura.hasuraBooleans.`true`
 import typings.hasura.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -21,6 +22,24 @@ inline def XHasuraRole: /* "x-hasura-role" */ String = ^.asInstanceOf[js.Dynamic
 inline def XHasuraUserID: /* "x-hasura-user-id" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraUserID").asInstanceOf[/* "x-hasura-user-id" */ String]
 
 type Aggregate[T] = T & typings.hasura.anon.Aggregate
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  hasura.hasura.NumberScalarKeys<T> extends never ? hasura.hasura.BaseAggregateResult<T> : hasura.hasura.NumberAggregateResult<T, hasura.hasura.NumberScalarKeys<T>>
+  }}}
+  */
+type AggregateResult[T] = BaseAggregateResult[T]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  <T>(): T extends X ? 1 : 2 extends <T>(): T extends Y ? 1 : 2 ? true : false
+  }}}
+  */
+type Equals[X, Y] = `true`
 
 type HasuraDataItem[T /* <: Record[String, Any] */] = T & StringDictionary[Any]
 

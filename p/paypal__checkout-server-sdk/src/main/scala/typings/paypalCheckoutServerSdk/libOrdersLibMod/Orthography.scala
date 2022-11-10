@@ -4,228 +4,116 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Orthography extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "Orthography")
-@js.native
-object Orthography extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Arab
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Armn
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Beng
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cans
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cyrl
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Deva
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Ethi
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Geor
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Grek
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Gujr
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Guru
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hani
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hebr
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Java
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Jpan
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kana
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Khmr
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Knda
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kore
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Laoo
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Latn
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mlym
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mong
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mymr
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Orya
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sinh
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sund
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Syrc
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Taml
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Telu
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thaa
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thai
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Tibt
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Yiii
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zyyy
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zzzz
+*/
+trait Orthography extends StObject
+object Orthography {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Orthography & String] = js.native
+  inline def Arab: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Arab = "Arab".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Arab]
   
-  @js.native
-  sealed trait Arab
-    extends StObject
-       with Orthography
-  /* "Arab" */ val Arab: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Arab & String = js.native
+  inline def Armn: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Armn = "Armn".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Armn]
   
-  @js.native
-  sealed trait Armn
-    extends StObject
-       with Orthography
-  /* "Armn" */ val Armn: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Armn & String = js.native
+  inline def Beng: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Beng = "Beng".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Beng]
   
-  @js.native
-  sealed trait Beng
-    extends StObject
-       with Orthography
-  /* "Beng" */ val Beng: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Beng & String = js.native
+  inline def Cans: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cans = "Cans".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cans]
   
-  @js.native
-  sealed trait Cans
-    extends StObject
-       with Orthography
-  /* "Cans" */ val Cans: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Cans & String = js.native
+  inline def Cyrl: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cyrl = "Cyrl".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Cyrl]
   
-  @js.native
-  sealed trait Cyrl
-    extends StObject
-       with Orthography
-  /* "Cyrl" */ val Cyrl: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Cyrl & String = js.native
+  inline def Deva: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Deva = "Deva".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Deva]
   
-  @js.native
-  sealed trait Deva
-    extends StObject
-       with Orthography
-  /* "Deva" */ val Deva: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Deva & String = js.native
+  inline def Ethi: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Ethi = "Ethi".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Ethi]
   
-  @js.native
-  sealed trait Ethi
-    extends StObject
-       with Orthography
-  /* "Ethi" */ val Ethi: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Ethi & String = js.native
+  inline def Geor: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Geor = "Geor".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Geor]
   
-  @js.native
-  sealed trait Geor
-    extends StObject
-       with Orthography
-  /* "Geor" */ val Geor: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Geor & String = js.native
+  inline def Grek: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Grek = "Grek".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Grek]
   
-  @js.native
-  sealed trait Grek
-    extends StObject
-       with Orthography
-  /* "Grek" */ val Grek: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Grek & String = js.native
+  inline def Gujr: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Gujr = "Gujr".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Gujr]
   
-  @js.native
-  sealed trait Gujr
-    extends StObject
-       with Orthography
-  /* "Gujr" */ val Gujr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Gujr & String = js.native
+  inline def Guru: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Guru = "Guru".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Guru]
   
-  @js.native
-  sealed trait Guru
-    extends StObject
-       with Orthography
-  /* "Guru" */ val Guru: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Guru & String = js.native
+  inline def Hani: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hani = "Hani".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hani]
   
-  @js.native
-  sealed trait Hani
-    extends StObject
-       with Orthography
-  /* "Hani" */ val Hani: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Hani & String = js.native
+  inline def Hebr: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hebr = "Hebr".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Hebr]
   
-  @js.native
-  sealed trait Hebr
-    extends StObject
-       with Orthography
-  /* "Hebr" */ val Hebr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Hebr & String = js.native
+  inline def Java: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Java = "Java".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Java]
   
-  @js.native
-  sealed trait Java
-    extends StObject
-       with Orthography
-  /* "Java" */ val Java: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Java & String = js.native
+  inline def Jpan: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Jpan = "Jpan".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Jpan]
   
-  @js.native
-  sealed trait Jpan
-    extends StObject
-       with Orthography
-  /* "Jpan" */ val Jpan: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Jpan & String = js.native
+  inline def Kana: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kana = "Kana".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kana]
   
-  @js.native
-  sealed trait Kana
-    extends StObject
-       with Orthography
-  /* "Kana" */ val Kana: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Kana & String = js.native
+  inline def Khmr: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Khmr = "Khmr".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Khmr]
   
-  @js.native
-  sealed trait Khmr
-    extends StObject
-       with Orthography
-  /* "Khmr" */ val Khmr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Khmr & String = js.native
+  inline def Knda: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Knda = "Knda".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Knda]
   
-  @js.native
-  sealed trait Knda
-    extends StObject
-       with Orthography
-  /* "Knda" */ val Knda: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Knda & String = js.native
+  inline def Kore: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kore = "Kore".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Kore]
   
-  @js.native
-  sealed trait Kore
-    extends StObject
-       with Orthography
-  /* "Kore" */ val Kore: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Kore & String = js.native
+  inline def Laoo: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Laoo = "Laoo".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Laoo]
   
-  @js.native
-  sealed trait Laoo
-    extends StObject
-       with Orthography
-  /* "Laoo" */ val Laoo: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Laoo & String = js.native
+  inline def Latn: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Latn = "Latn".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Latn]
   
-  @js.native
-  sealed trait Latn
-    extends StObject
-       with Orthography
-  /* "Latn" */ val Latn: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Latn & String = js.native
+  inline def Mlym: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mlym = "Mlym".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mlym]
   
-  @js.native
-  sealed trait Mlym
-    extends StObject
-       with Orthography
-  /* "Mlym" */ val Mlym: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mlym & String = js.native
+  inline def Mong: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mong = "Mong".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mong]
   
-  @js.native
-  sealed trait Mong
-    extends StObject
-       with Orthography
-  /* "Mong" */ val Mong: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mong & String = js.native
+  inline def Mymr: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mymr = "Mymr".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Mymr]
   
-  @js.native
-  sealed trait Mymr
-    extends StObject
-       with Orthography
-  /* "Mymr" */ val Mymr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mymr & String = js.native
+  inline def Orya: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Orya = "Orya".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Orya]
   
-  @js.native
-  sealed trait Orya
-    extends StObject
-       with Orthography
-  /* "Orya" */ val Orya: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Orya & String = js.native
+  inline def Sinh: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sinh = "Sinh".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sinh]
   
-  @js.native
-  sealed trait Sinh
-    extends StObject
-       with Orthography
-  /* "Sinh" */ val Sinh: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Sinh & String = js.native
+  inline def Sund: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sund = "Sund".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Sund]
   
-  @js.native
-  sealed trait Sund
-    extends StObject
-       with Orthography
-  /* "Sund" */ val Sund: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Sund & String = js.native
+  inline def Syrc: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Syrc = "Syrc".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Syrc]
   
-  @js.native
-  sealed trait Syrc
-    extends StObject
-       with Orthography
-  /* "Syrc" */ val Syrc: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Syrc & String = js.native
+  inline def Taml: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Taml = "Taml".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Taml]
   
-  @js.native
-  sealed trait Taml
-    extends StObject
-       with Orthography
-  /* "Taml" */ val Taml: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Taml & String = js.native
+  inline def Telu: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Telu = "Telu".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Telu]
   
-  @js.native
-  sealed trait Telu
-    extends StObject
-       with Orthography
-  /* "Telu" */ val Telu: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Telu & String = js.native
+  inline def Thaa: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thaa = "Thaa".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thaa]
   
-  @js.native
-  sealed trait Thaa
-    extends StObject
-       with Orthography
-  /* "Thaa" */ val Thaa: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Thaa & String = js.native
+  inline def Thai: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thai = "Thai".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Thai]
   
-  @js.native
-  sealed trait Thai
-    extends StObject
-       with Orthography
-  /* "Thai" */ val Thai: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Thai & String = js.native
+  inline def Tibt: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Tibt = "Tibt".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Tibt]
   
-  @js.native
-  sealed trait Tibt
-    extends StObject
-       with Orthography
-  /* "Tibt" */ val Tibt: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Tibt & String = js.native
+  inline def Yiii: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Yiii = "Yiii".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Yiii]
   
-  @js.native
-  sealed trait Yiii
-    extends StObject
-       with Orthography
-  /* "Yiii" */ val Yiii: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Yiii & String = js.native
+  inline def Zyyy: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zyyy = "Zyyy".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zyyy]
   
-  @js.native
-  sealed trait Zyyy
-    extends StObject
-       with Orthography
-  /* "Zyyy" */ val Zyyy: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Zyyy & String = js.native
-  
-  @js.native
-  sealed trait Zzzz
-    extends StObject
-       with Orthography
-  /* "Zzzz" */ val Zzzz: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Zzzz & String = js.native
+  inline def Zzzz: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zzzz = "Zzzz".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Zzzz]
 }

@@ -1,5 +1,7 @@
 package typings.typeZoo
 
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,51 +10,47 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends U ? never : T
     }}}
     */
-  @js.native
-  trait ExcludeStrict[T, U /* <: T */] extends StObject
+  type ExcludeStrict[T, U /* <: T */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends U ? T : never
     }}}
     */
-  @js.native
-  trait ExtractStrict[T, U /* <: T */] extends StObject
+  type ExtractStrict[T, U /* <: T */] = T
   
   type NoInfer[T] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any)
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? std.Pick<T, std.Exclude<keyof T, K>> : never
     }}}
     */
-  @js.native
-  trait Omit[T, K /* <: /* keyof any */ String */] extends StObject
+  type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? std.Pick<T, std.Exclude<keyof T, K>> : never
     }}}
     */
-  @js.native
-  trait OmitStrict[T, K /* <: /* keyof T */ String */] extends StObject
+  type OmitStrict[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   type Overwrite[T, U] = (Omit[T, /* keyof T */ String]) & U
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Func extends (a : infer T, args : ...any): any ? T : never
     }}}
@@ -62,7 +60,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Func extends (a : any, b : infer T, args : ...any): any ? T : never
     }}}
@@ -72,7 +70,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Func extends (a : any, b : any, c : infer T, args : ...any): any ? T : never
     }}}
@@ -82,7 +80,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Func extends (a : any, b : any, c : any, d : infer T, args : ...any): any ? T : never
     }}}
@@ -92,7 +90,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     F extends (): any ? {} : F extends (p0 : infer P0): any ? [P0] : F extends (p0 : infer P0, p1 : infer P1): any ? [P0, P1] : F extends (p0 : infer P0, p1 : infer P1, p2 : infer P2): any ? [P0, P1, P2] : F extends (p0 : infer P0, p1 : infer P1, p2 : infer P2, p3 : infer P3): any ? [P0, P1, P2, P3] : never
     }}}

@@ -3,6 +3,7 @@ package typings.babelPluginReactHtmlAttrs.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.babelPluginReactHtmlAttrs.anon.Default
+import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsBooleans.`true`
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.input
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.mount
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.update
@@ -468,6 +469,15 @@ type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
 type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentClass<infer P, babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentState> ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.PropsWithoutRef<P> & babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.RefAttributes<std.InstanceType<T>> : babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.PropsWithRef<babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentProps<T>>
+  }}}
+  */
+type ComponentPropsWithRef[T /* <: ElementType[Any] */] = ComponentProps[T]
+
 type ComponentPropsWithoutRef[T /* <: ElementType[Any] */] = PropsWithoutRef[ComponentProps[T]]
 
 type ComponentState = Any
@@ -477,6 +487,19 @@ type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[
 type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
 type Consumer[T] = ExoticComponent[ConsumerProps[T]]
+
+// Any prop that has a default prop becomes optional, but its type is unchanged
+// Undeclared default props are augmented into the resulting allowable attributes
+// If declared props have indexed properties, ignore default props entirely as keyof gets widened
+// Wrap in an outer-level conditional type to allow distribution over props that are unions
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  P extends any ? string extends keyof P ? P : std.Pick<P, std.Exclude<keyof P, keyof D>> & std.Partial<std.Pick<P, std.Extract<keyof P, keyof D>>> & std.Partial<std.Pick<D, std.Exclude<keyof D, keyof P>>> : never
+  }}}
+  */
+type Defaultize[P, D] = P
 
 // TODO (TypeScript 3.0): ReadonlyArray<unknown>
 type DependencyList = js.Array[Any]
@@ -495,6 +518,38 @@ type DragEventHandler[T] = EventHandler[DragEvent[T]]
 // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
 // The destructor is itself only allowed to return void.
 type EffectCallback = js.Function0[Unit | js.Function0[js.UndefOr[Unit]]]
+
+/**
+  * Gets the instance type for a React element. The instance will be different for various component types:
+  *
+  * - React class components will be the class instance. So if you had `class Foo extends React.Component<{}> {}`
+  *   and used `React.ElementRef<typeof Foo>` then the type would be the instance of `Foo`.
+  * - React stateless functional components do not have a backing instance and so `React.ElementRef<typeof Bar>`
+  *   (when `Bar` is `function Bar() {}`) will give you the `undefined` type.
+  * - JSX intrinsics like `div` will give you their DOM instance. For `React.ElementRef<'div'>` that would be
+  *   `HTMLDivElement`. For `React.ElementRef<'input'>` that would be `HTMLInputElement`.
+  * - React stateless functional components that forward a `ref` will give you the `ElementRef` of the forwarded
+  *   to component.
+  *
+  * `C` must be the type _of_ a React component so you need to use typeof as in `React.ElementRef<typeof MyComponent>`.
+  *
+  * @todo In Flow, this works a little different with forwarded refs and the `AbstractComponent` that
+  *       `React.forwardRef()` returns.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  C extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ForwardRefExoticComponent<infer FP> ? FP extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.RefAttributes<infer FC> ? FC : never : C extends {new (props : any): babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Component<any, {}, any>} ? std.InstanceType<C> : C extends (props : any, context : any | undefined): babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<any, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> | null ? undefined : C extends 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.<global>.JSX.IntrinsicElements[C] extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.DOMAttributes<infer E> ? E : never : never
+  }}}
+  */
+type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.babelPluginReactHtmlAttrs.mod.ForwardRefExoticComponent[scala.Any], typings.babelPluginReactHtmlAttrs.anon.Instantiable, js.Function2[
+/ * props * / scala.Any, 
+/ * context * / js.UndefOr[scala.Any], 
+(typings.babelPluginReactHtmlAttrs.mod.ReactElement[
+  scala.Any, 
+  java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[scala.Any]
+]) | scala.Null] */ Any */] = Unit
 
 //
 // React Elements
@@ -533,6 +588,17 @@ js.Function2[/* nextProps */ P, /* prevState */ S, Partial[S] | Null]
 
 type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
 
+// naked 'any' type in a conditional type will short circuit and union both the then/else branches
+// so boolean is only resolved for T = any
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  boolean extends T extends never ? true : false ? true : false
+  }}}
+  */
+type IsExactlyAny[T] = `true`
+
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, (ReactElement[Any, String | Any]) | Null]) | (Instantiable1[/* props */ P, Component[P, Any, Any]])
 
 type Key = String | Double
@@ -540,6 +606,19 @@ type Key = String | Double
 type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
 
 type LegacyRef[T] = String | Ref[T]
+
+// Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  // Distribute over P in case it is a union type
+P extends any ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.IsExactlyAny<P> extends true ? T : string extends keyof P ? P : std.Pick<P, babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.NotExactlyAnyPropertyKeys<P>> & // For props which are exactly any, use the type inferred from propTypes if present
+std.Pick<T, std.Exclude<keyof T, babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.NotExactlyAnyPropertyKeys<P>>> & // Keep leftover props not specified in propTypes
+std.Pick<P, std.Exclude<keyof P, keyof T>> : never
+  }}}
+  */
+type MergePropTypes[P, T] = T
 
 type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
@@ -586,6 +665,26 @@ Unit]
 
 type PropsWithChildren[P] = P & typings.babelPluginReactHtmlAttrs.anon.Children
 
+/** Ensures that the props do not include string ref, which cannot be forwarded */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  'ref' extends keyof P ? P extends {  ref :infer R | undefined} ? string extends R ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.PropsWithoutRef<P> & {  ref :std.Exclude<R, string> | undefined} : P : P : P
+  }}}
+  */
+type PropsWithRef[P] = P
+
+/** Ensures that the props do not include ref at all */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  'ref' extends keyof P ? std.Pick<P, std.Exclude<keyof P, 'ref'>> : P
+  }}}
+  */
+type PropsWithoutRef[P] = P
+
 // NOTE: only the Context object itself can get a displayName
 // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
@@ -605,6 +704,15 @@ type ReactHTMLElement[T /* <: HTMLElement */] = DetailedReactHTMLElement[AllHTML
 // Component API
 // ----------------------------------------------------------------------
 type ReactInstance = (Component[Any, js.Object, Any]) | Element
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  C extends {  propTypes :infer T,   defaultProps :infer D} ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Defaultize<babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.MergePropTypes<P, prop-types.prop-types.InferProps<T>>, D> : C extends {  propTypes :infer T} ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.MergePropTypes<P, prop-types.prop-types.InferProps<T>> : C extends {  defaultProps :infer D} ? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Defaultize<P, D> : P
+  }}}
+  */
+type ReactManagedAttributes[C, P] = P
 
 type ReactNode = js.UndefOr[Any | ReactFragment | ReactPortal | Boolean | Null]
 

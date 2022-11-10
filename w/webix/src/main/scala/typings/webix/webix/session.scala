@@ -4,15 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait session extends StObject {
+trait session
+  extends StObject
+     with WebixStorage {
   
   def clear(): Unit
-  
-  def get(name: String): Any
-  
-  def put(name: String, value: Any): Unit
-  
-  def remove(name: String): Unit
 }
 object session {
   
@@ -24,11 +20,5 @@ object session {
   extension [Self <: session](x: Self) {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
-    
-    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-    
-    inline def setPut(value: (String, Any) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
-    
-    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

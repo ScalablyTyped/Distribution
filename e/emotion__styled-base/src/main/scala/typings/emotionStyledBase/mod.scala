@@ -727,14 +727,13 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // this "reversed" condition checks if StyledInstanceTheme was already parametrized when using CreateStyled
   object extends StyledInstanceTheme ? @emotion/styled-base.@emotion/styled-base.CreateStyledComponentBaseThemeless<InnerProps, ExtraProps> : @emotion/styled-base.@emotion/styled-base.CreateStyledComponentBaseThemed<InnerProps, ExtraProps, StyledInstanceTheme>
     }}}
     */
-  @js.native
-  trait CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject
+  type CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] = CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
   
   @js.native
   trait CreateStyledComponentBaseThemed[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] extends StObject {
@@ -1432,13 +1431,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     P extends {  theme :infer Theme} ? P & {  theme :std.Exclude<Theme, undefined>} : P & {  theme :T}
     }}}
     */
-  @js.native
-  trait WithTheme[P, T] extends StObject
+  type WithTheme[P, T] = P & (/* import warning: importer.ImportType#apply Failed type conversion: {  theme :T} */ js.Any)
   
   type _To = CreateStyled[Any]
   

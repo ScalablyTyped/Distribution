@@ -28,6 +28,7 @@ import typings.react.mod.SVGAttributes
 import typings.react.mod.global.JSX.IntrinsicElements
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Element
+import typings.std.Exclude
 import typings.std.Extract
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -174,12 +175,30 @@ inline def withTheme[C /* <: ComponentType[Any] */](component: C): FC[AddOptiona
 
 type AddOptionalTo[T, U] = (DistributiveOmit[T, U]) & (Partial[Pick[T, Extract[/* keyof T */ String, U]]])
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  object extends StyledInstanceTheme ? @storybook/theming.@storybook/theming.CreateStyledComponentBaseThemeless<InnerProps, ExtraProps> : @storybook/theming.@storybook/theming.CreateStyledComponentBaseThemed<InnerProps, ExtraProps, StyledInstanceTheme>
+  }}}
+  */
+type CreateStyledComponentBase[InnerProps, ExtraProps, StyledInstanceTheme /* <: js.Object */] = CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
+
 type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
 
 type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @storybook/theming.@storybook/theming.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.storybookTheming.storybookThemingStrings.a_, typings.storybookTheming.storybookThemingStrings.abbr, typings.storybookTheming.storybookThemingStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
 /* import warning: importer.ImportType#apply Failed type conversion: @storybook/theming.@storybook/theming.JSXInEl[Tag] */ js.Any, 
 ExtraProps, 
 Theme]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends any ? std.Pick<T, std.Exclude<keyof T, U>> : never
+  }}}
+  */
+type DistributiveOmit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
 
 type JSXInEl = IntrinsicElements
 
@@ -194,3 +213,12 @@ type Return = StringDictionary[StringDictionary[Value]]
 type TextSize = Double | String
 
 type Value = String | Double
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  P extends {  theme :infer Theme} ? P & {  theme :std.Exclude<Theme, undefined>} : P & {  theme :T}
+  }}}
+  */
+type WithTheme_[P, T] = P & (/* import warning: importer.ImportType#apply Failed type conversion: {  theme :T} */ js.Any)

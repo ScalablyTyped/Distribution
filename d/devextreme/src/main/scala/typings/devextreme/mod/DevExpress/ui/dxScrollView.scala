@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -24,7 +23,7 @@ trait dxScrollView
   /**
     * Notifies the ScrollView that data loading is finished.
     */
-  def release(preventScrollBottom: Boolean): DxPromise[Unit] = js.native
+  def release(preventScrollBottom: Boolean): js.Promise[Unit] = js.native
 }
 object dxScrollView {
   

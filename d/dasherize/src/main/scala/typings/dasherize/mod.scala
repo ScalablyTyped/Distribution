@@ -1,5 +1,6 @@
 package typings.dasherize
 
+import typings.dasherize.dasherizeStrings._empty
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,43 +16,39 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends '' ? '' : / * template literal string: ${T}- * / string
     }}}
     */
-  @js.native
-  trait AddHyphenSuffixIfNotTheEmptyString[T /* <: String */] extends StObject
+  type AddHyphenSuffixIfNotTheEmptyString[T /* <: String */] = _empty
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TStringToParse extends / * template literal string: ${inferF}${inferR} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify F * / any extends std.Lowercase</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify F * / any> ? dasherize.dasherize.DashCase</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any, / * template literal string: ${TAlreadyParsedString}${F} * / string> : dasherize.dasherize.DashCase<dasherize.dasherize.LowerCasedFirstWord</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any>, / * template literal string: ${AddHyphenSuffixIfNotTheEmptyString<TAlreadyParsedString>}${Lowercase<F>} * / string> : TAlreadyParsedString
     }}}
     */
-  @js.native
-  trait DashCase[TStringToParse /* <: String */, TAlreadyParsedString /* <: String */] extends StObject
+  type DashCase[TStringToParse /* <: String */, TAlreadyParsedString /* <: String */] = TAlreadyParsedString
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string ? dasherize.dasherize.DashCase<T, string> : T extends std.Record<string, unknown> ? dasherize.dasherize.ParseObjToDashCase<T> : T extends std.Array<infer TArrayData> ? std.Array<dasherize.dasherize.DasherizeReturnType<TArrayData>> : T
     }}}
     */
-  @js.native
-  trait DasherizeReturnType[T] extends StObject
+  type DasherizeReturnType[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends / * template literal string: ${inferF}${inferR} * / string ? / * template literal string: ${FextendsLowercase<F>?${F}${R}:${Lowercase<F>}${LowerCasedFirstWord<R>}} * / string : ''
     }}}
     */
-  @js.native
-  trait LowerCasedFirstWord[T /* <: String */] extends StObject
+  type LowerCasedFirstWord[T /* <: String */] = /* template literal string: ${FextendsLowercase<F>?${F}${R}:${Lowercase<F>}${LowerCasedFirstWord<R>}} */ String
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

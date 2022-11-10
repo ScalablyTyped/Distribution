@@ -33,7 +33,7 @@ trait LazySet[T] extends StObject {
   
   def serialize(__0: Write): Unit = js.native
   
-  val size: Double = js.native
+  def size: Double = js.native
   
   def values(): IterableIterator[T] = js.native
 }

@@ -164,6 +164,8 @@ object anon {
       
       inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
       
+      inline def setPositionalsVarargs(value: Any*): Self = StObject.set(x, "positionals", js.Array(value*))
+      
       inline def setTokens(value: ParsedTokens[T]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
       inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind)*): Self = StObject.set(x, "tokens", js.Array(value*))
@@ -188,6 +190,8 @@ object anon {
     extension [Self <: Values[?], T /* <: ParseArgsConfig */](x: Self & Values[T]) {
       
       inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
+      
+      inline def setPositionalsVarargs(value: Any*): Self = StObject.set(x, "positionals", js.Array(value*))
       
       inline def setValues(value: ParsedValues[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }

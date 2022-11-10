@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Dependency extends StObject {
   
-  val category: String = js.native
+  def category: String = js.native
   
   def couldAffectReferencingModule(): Boolean | js.Symbol = js.native
   
@@ -18,7 +18,7 @@ trait Dependency extends StObject {
   
   def deserialize(__0: Read): Unit = js.native
   
-  val disconnect: Any = js.native
+  def disconnect: Any = js.native
   
   def getCondition(moduleGraph: ModuleGraph): Null | `false` | (js.Function2[/* arg0 */ ModuleGraphConnection, /* arg1 */ RuntimeSpec, ConnectionState]) = js.native
   
@@ -83,7 +83,7 @@ trait Dependency extends StObject {
   def setLoc(startLine: Unit, startColumn: Unit, endLine: Any, endColumn: Any): Unit = js.native
   def setLoc(startLine: Unit, startColumn: Unit, endLine: Unit, endColumn: Any): Unit = js.native
   
-  val `type`: String = js.native
+  def `type`: String = js.native
   
   /**
   	 * Update the hash

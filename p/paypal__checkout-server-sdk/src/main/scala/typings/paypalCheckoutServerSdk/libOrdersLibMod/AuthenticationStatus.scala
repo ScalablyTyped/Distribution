@@ -4,60 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait AuthenticationStatus extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "AuthenticationStatus")
-@js.native
-object AuthenticationStatus extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I
+*/
+trait AuthenticationStatus extends StObject
+object AuthenticationStatus {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AuthenticationStatus & String] = js.native
+  inline def A: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A = "A".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A]
   
-  @js.native
-  sealed trait A
-    extends StObject
-       with AuthenticationStatus
-  /* "A" */ val A: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.A & String = js.native
+  inline def C: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C = "C".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C]
   
-  @js.native
-  sealed trait C
-    extends StObject
-       with AuthenticationStatus
-  /* "C" */ val C: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.C & String = js.native
+  inline def D: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D = "D".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D]
   
-  @js.native
-  sealed trait D
-    extends StObject
-       with AuthenticationStatus
-  /* "D" */ val D: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.D & String = js.native
+  inline def I: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I = "I".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I]
   
-  @js.native
-  sealed trait I
-    extends StObject
-       with AuthenticationStatus
-  /* "I" */ val I: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.I & String = js.native
+  inline def N: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N = "N".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N]
   
-  @js.native
-  sealed trait N
-    extends StObject
-       with AuthenticationStatus
-  /* "N" */ val N: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.N & String = js.native
+  inline def R: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R = "R".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R]
   
-  @js.native
-  sealed trait R
-    extends StObject
-       with AuthenticationStatus
-  /* "R" */ val R: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.R & String = js.native
+  inline def U: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U = "U".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U]
   
-  @js.native
-  sealed trait U
-    extends StObject
-       with AuthenticationStatus
-  /* "U" */ val U: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.U & String = js.native
-  
-  @js.native
-  sealed trait Y
-    extends StObject
-       with AuthenticationStatus
-  /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.Y & String = js.native
+  inline def Y: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y = "Y".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y]
 }

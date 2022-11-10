@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "micromark-util-events-to-acorn"
-version := "1.2.0-80c506"
+version := "1.2.0-f16c69"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "acorn" % "8.8.1-bfd3ad",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
-  "org.scalablytyped" %%% "estree-util-visit" % "1.2.0-45d89b",
-  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-bd4ab8",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-ecc657")
+  "org.scalablytyped" %%% "acorn" % "8.8.1-3fee69",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-1ed7c2",
+  "org.scalablytyped" %%% "estree-util-visit" % "1.2.0-8aadbc",
+  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-572d0c",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-cacd8c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

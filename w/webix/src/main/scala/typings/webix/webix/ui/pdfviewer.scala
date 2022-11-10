@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait pdfviewer
   var $pageNum: Double = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   def attachEvent(`type`: pdfviewerEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: pdfviewerEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -49,11 +50,26 @@ trait pdfviewer
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def nextPage(): Unit = js.native
   
-  def parse(data: Any, `type`: String): Unit = js.native
+  def parse(data: String): Unit = js.native
+  def parse(data: String, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: String, `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any]): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any]): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: obj): Unit = js.native
+  def parse(data: obj, `type`: String): Unit = js.native
+  def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
   
   def prevPage(): Unit = js.native
   

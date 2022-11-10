@@ -29,11 +29,6 @@ object deviceInputInputDevicesDeviceSourceManagerMod {
     
     /* CompleteClass */
     override def _addDevice(deviceSource: DeviceSource[DeviceType]): Unit = js.native
-    /**
-      * @param deviceSource - Source to add
-      * @internal
-      */
-    def _addDevice(deviceSource: DeviceSourceType): Unit = js.native
     
     /* private */ val _devices: Any = js.native
     

@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onAfterSpan
   - typings.webix.webixStrings.onAfterSplit
   - typings.webix.webixStrings.onBeforeCommentShow
+  - typings.webix.webixStrings.onBeforeConditionSet
+  - typings.webix.webixStrings.onBeforeFormatChange
   - typings.webix.webixStrings.onBeforeLoad
   - typings.webix.webixStrings.onBeforeSheetShow
   - typings.webix.webixStrings.onBeforeSpan
@@ -21,14 +23,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onBindRequest
   - typings.webix.webixStrings.onCellChange
   - typings.webix.webixStrings.onChange
+  - typings.webix.webixStrings.onColumnOperation
   - typings.webix.webixStrings.onCommentHide
   - typings.webix.webixStrings.onComponentInit
+  - typings.webix.webixStrings.onContextMenuConfig
   - typings.webix.webixStrings.onDataParse
   - typings.webix.webixStrings.onDataSerialize
   - typings.webix.webixStrings.onDestruct
+  - typings.webix.webixStrings.onFormatChange
   - typings.webix.webixStrings.onLoadError
   - typings.webix.webixStrings.onMathRefresh
   - typings.webix.webixStrings.onReset
+  - typings.webix.webixStrings.onRowOperation
   - typings.webix.webixStrings.onSheetAdd
   - typings.webix.webixStrings.onSheetRemove
   - typings.webix.webixStrings.onSheetRename
@@ -57,6 +63,10 @@ object spreadsheetEventName {
   
   inline def onBeforeCommentShow: typings.webix.webixStrings.onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[typings.webix.webixStrings.onBeforeCommentShow]
   
+  inline def onBeforeConditionSet: typings.webix.webixStrings.onBeforeConditionSet = "onBeforeConditionSet".asInstanceOf[typings.webix.webixStrings.onBeforeConditionSet]
+  
+  inline def onBeforeFormatChange: typings.webix.webixStrings.onBeforeFormatChange = "onBeforeFormatChange".asInstanceOf[typings.webix.webixStrings.onBeforeFormatChange]
+  
   inline def onBeforeLoad: typings.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typings.webix.webixStrings.onBeforeLoad]
   
   inline def onBeforeSheetShow: typings.webix.webixStrings.onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[typings.webix.webixStrings.onBeforeSheetShow]
@@ -73,9 +83,13 @@ object spreadsheetEventName {
   
   inline def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   
+  inline def onColumnOperation: typings.webix.webixStrings.onColumnOperation = "onColumnOperation".asInstanceOf[typings.webix.webixStrings.onColumnOperation]
+  
   inline def onCommentHide: typings.webix.webixStrings.onCommentHide = "onCommentHide".asInstanceOf[typings.webix.webixStrings.onCommentHide]
   
   inline def onComponentInit: typings.webix.webixStrings.onComponentInit = "onComponentInit".asInstanceOf[typings.webix.webixStrings.onComponentInit]
+  
+  inline def onContextMenuConfig: typings.webix.webixStrings.onContextMenuConfig = "onContextMenuConfig".asInstanceOf[typings.webix.webixStrings.onContextMenuConfig]
   
   inline def onDataParse: typings.webix.webixStrings.onDataParse = "onDataParse".asInstanceOf[typings.webix.webixStrings.onDataParse]
   
@@ -83,11 +97,15 @@ object spreadsheetEventName {
   
   inline def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   
+  inline def onFormatChange: typings.webix.webixStrings.onFormatChange = "onFormatChange".asInstanceOf[typings.webix.webixStrings.onFormatChange]
+  
   inline def onLoadError: typings.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typings.webix.webixStrings.onLoadError]
   
   inline def onMathRefresh: typings.webix.webixStrings.onMathRefresh = "onMathRefresh".asInstanceOf[typings.webix.webixStrings.onMathRefresh]
   
   inline def onReset: typings.webix.webixStrings.onReset = "onReset".asInstanceOf[typings.webix.webixStrings.onReset]
+  
+  inline def onRowOperation: typings.webix.webixStrings.onRowOperation = "onRowOperation".asInstanceOf[typings.webix.webixStrings.onRowOperation]
   
   inline def onSheetAdd: typings.webix.webixStrings.onSheetAdd = "onSheetAdd".asInstanceOf[typings.webix.webixStrings.onSheetAdd]
   

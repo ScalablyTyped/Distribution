@@ -24,7 +24,7 @@ trait GetMissionProfileResponse extends StObject {
   /**
     * Smallest amount of time in seconds that you’d like to see for an available contact. AWS Ground Station will not present you with contacts shorter than this duration.
     */
-  var minimumViableContactDurationSeconds: js.UndefOr[DurationInSeconds] = js.undefined
+  var minimumViableContactDurationSeconds: js.UndefOr[PositiveDurationInSeconds] = js.undefined
   
   /**
     * ARN of a mission profile.
@@ -34,17 +34,17 @@ trait GetMissionProfileResponse extends StObject {
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: js.UndefOr[String] = js.undefined
+  var missionProfileId: js.UndefOr[Uuid] = js.undefined
   
   /**
     * Name of a mission profile.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[SafeName] = js.undefined
   
   /**
     * Region of a mission profile.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[AWSRegion] = js.undefined
   
   /**
     * Tags assigned to a mission profile.
@@ -79,7 +79,7 @@ object GetMissionProfileResponse {
     
     inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value*))
     
-    inline def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setMinimumViableContactDurationSeconds(value: PositiveDurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     
     inline def setMinimumViableContactDurationSecondsUndefined: Self = StObject.set(x, "minimumViableContactDurationSeconds", js.undefined)
     
@@ -87,15 +87,15 @@ object GetMissionProfileResponse {
     
     inline def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
-    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
     inline def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: AWSRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     

@@ -48,56 +48,50 @@ trait OptionalInterfaceILifetim extends StObject {
 object OptionalInterfaceILifetim {
   
   inline def apply(
-    onAddToFavorites: Optional[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]],
-    onHide: Optional[js.Function0[Unit | js.Promise[Unit]]],
-    onLoad: Optional[
-      js.Function1[/* query */ Record[String, js.UndefOr[String]], Unit | js.Promise[Unit]]
-    ],
-    onPageScroll: Optional[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]],
-    onPullDownRefresh: Optional[js.Function0[Unit | js.Promise[Unit]]],
-    onReachBottom: Optional[js.Function0[Unit | js.Promise[Unit]]],
-    onReady: Optional[js.Function0[Unit | js.Promise[Unit]]],
-    onResize: Optional[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]],
-    onShareAppMessage: Optional[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]],
-    onShareTimeline: Optional[js.Function0[ICustomTimelineContent | Unit]],
-    onShow: Optional[js.Function0[Unit | js.Promise[Unit]]],
-    onTabItemTap: Optional[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]],
-    onUnload: Optional[js.Function0[Unit | js.Promise[Unit]]]
+    onAddToFavorites: /* options */ IAddToFavoritesOption => IAddToFavoritesContent,
+    onHide: () => Unit | js.Promise[Unit],
+    onLoad: /* query */ Record[String, js.UndefOr[String]] => Unit | js.Promise[Unit],
+    onPageScroll: /* options */ IPageScrollOption => Unit | js.Promise[Unit],
+    onPullDownRefresh: () => Unit | js.Promise[Unit],
+    onReachBottom: () => Unit | js.Promise[Unit],
+    onReady: () => Unit | js.Promise[Unit],
+    onResize: /* options */ IResizeOption => Unit | js.Promise[Unit],
+    onShareAppMessage: /* options */ IShareAppMessageOption => ICustomShareContent | Unit,
+    onShareTimeline: () => ICustomTimelineContent | Unit,
+    onShow: () => Unit | js.Promise[Unit],
+    onTabItemTap: /* options */ ITabItemTapOption => Unit | js.Promise[Unit],
+    onUnload: () => Unit | js.Promise[Unit]
   ): OptionalInterfaceILifetim = {
-    val __obj = js.Dynamic.literal(onAddToFavorites = onAddToFavorites.asInstanceOf[js.Any], onHide = onHide.asInstanceOf[js.Any], onLoad = onLoad.asInstanceOf[js.Any], onPageScroll = onPageScroll.asInstanceOf[js.Any], onPullDownRefresh = onPullDownRefresh.asInstanceOf[js.Any], onReachBottom = onReachBottom.asInstanceOf[js.Any], onReady = onReady.asInstanceOf[js.Any], onResize = onResize.asInstanceOf[js.Any], onShareAppMessage = onShareAppMessage.asInstanceOf[js.Any], onShareTimeline = onShareTimeline.asInstanceOf[js.Any], onShow = onShow.asInstanceOf[js.Any], onTabItemTap = onTabItemTap.asInstanceOf[js.Any], onUnload = onUnload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onAddToFavorites = js.Any.fromFunction1(onAddToFavorites), onHide = js.Any.fromFunction0(onHide), onLoad = js.Any.fromFunction1(onLoad), onPageScroll = js.Any.fromFunction1(onPageScroll), onPullDownRefresh = js.Any.fromFunction0(onPullDownRefresh), onReachBottom = js.Any.fromFunction0(onReachBottom), onReady = js.Any.fromFunction0(onReady), onResize = js.Any.fromFunction1(onResize), onShareAppMessage = js.Any.fromFunction1(onShareAppMessage), onShareTimeline = js.Any.fromFunction0(onShareTimeline), onShow = js.Any.fromFunction0(onShow), onTabItemTap = js.Any.fromFunction1(onTabItemTap), onUnload = js.Any.fromFunction0(onUnload))
     __obj.asInstanceOf[OptionalInterfaceILifetim]
   }
   
   extension [Self <: OptionalInterfaceILifetim](x: Self) {
     
-    inline def setOnAddToFavorites(value: Optional[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]]): Self = StObject.set(x, "onAddToFavorites", value.asInstanceOf[js.Any])
+    inline def setOnAddToFavorites(value: /* options */ IAddToFavoritesOption => IAddToFavoritesContent): Self = StObject.set(x, "onAddToFavorites", js.Any.fromFunction1(value))
     
-    inline def setOnHide(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+    inline def setOnHide(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    inline def setOnLoad(
-      value: Optional[
-          js.Function1[/* query */ Record[String, js.UndefOr[String]], Unit | js.Promise[Unit]]
-        ]
-    ): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+    inline def setOnLoad(value: /* query */ Record[String, js.UndefOr[String]] => Unit | js.Promise[Unit]): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    inline def setOnPageScroll(value: Optional[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onPageScroll", value.asInstanceOf[js.Any])
+    inline def setOnPageScroll(value: /* options */ IPageScrollOption => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
-    inline def setOnPullDownRefresh(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
+    inline def setOnPullDownRefresh(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
     
-    inline def setOnReachBottom(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReachBottom", value.asInstanceOf[js.Any])
+    inline def setOnReachBottom(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
     
-    inline def setOnReady(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onReady", value.asInstanceOf[js.Any])
+    inline def setOnReady(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    inline def setOnResize(value: Optional[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    inline def setOnResize(value: /* options */ IResizeOption => Unit | js.Promise[Unit]): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
-    inline def setOnShareAppMessage(value: Optional[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]]): Self = StObject.set(x, "onShareAppMessage", value.asInstanceOf[js.Any])
+    inline def setOnShareAppMessage(value: /* options */ IShareAppMessageOption => ICustomShareContent | Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
-    inline def setOnShareTimeline(value: Optional[js.Function0[ICustomTimelineContent | Unit]]): Self = StObject.set(x, "onShareTimeline", value.asInstanceOf[js.Any])
+    inline def setOnShareTimeline(value: () => ICustomTimelineContent | Unit): Self = StObject.set(x, "onShareTimeline", js.Any.fromFunction0(value))
     
-    inline def setOnShow(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    inline def setOnTabItemTap(value: Optional[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onTabItemTap", value.asInstanceOf[js.Any])
+    inline def setOnTabItemTap(value: /* options */ ITabItemTapOption => Unit | js.Promise[Unit]): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
-    inline def setOnUnload(value: Optional[js.Function0[Unit | js.Promise[Unit]]]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
+    inline def setOnUnload(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
   }
 }

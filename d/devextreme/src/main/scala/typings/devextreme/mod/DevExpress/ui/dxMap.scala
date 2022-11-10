@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -18,31 +17,31 @@ trait dxMap
   extends StObject
      with Widget[dxMapOptions] {
   
-  def addMarker(markerOptions: js.Array[Any]): DxPromise[Any] = js.native
+  def addMarker(markerOptions: js.Array[Any]): js.Promise[Any] = js.native
   /**
     * Adds a marker to the map.
     */
-  def addMarker(markerOptions: Any): DxPromise[Any] = js.native
+  def addMarker(markerOptions: Any): js.Promise[Any] = js.native
   
-  def addRoute(options: js.Array[Any]): DxPromise[Any] = js.native
+  def addRoute(options: js.Array[Any]): js.Promise[Any] = js.native
   /**
     * Adds a route to the map.
     */
-  def addRoute(options: Any): DxPromise[Any] = js.native
+  def addRoute(options: Any): js.Promise[Any] = js.native
   
-  def removeMarker(marker: js.Array[Any]): DxPromise[Unit] = js.native
+  def removeMarker(marker: js.Array[Any]): js.Promise[Unit] = js.native
   /**
     * Removes a marker from the map.
     */
-  def removeMarker(marker: Any): DxPromise[Unit] = js.native
-  def removeMarker(marker: Double): DxPromise[Unit] = js.native
+  def removeMarker(marker: Any): js.Promise[Unit] = js.native
+  def removeMarker(marker: Double): js.Promise[Unit] = js.native
   
-  def removeRoute(route: js.Array[Any]): DxPromise[Unit] = js.native
+  def removeRoute(route: js.Array[Any]): js.Promise[Unit] = js.native
   /**
     * Removes a route from the map.
     */
-  def removeRoute(route: Any): DxPromise[Unit] = js.native
-  def removeRoute(route: Double): DxPromise[Unit] = js.native
+  def removeRoute(route: Any): js.Promise[Unit] = js.native
+  def removeRoute(route: Double): js.Promise[Unit] = js.native
 }
 object dxMap {
   

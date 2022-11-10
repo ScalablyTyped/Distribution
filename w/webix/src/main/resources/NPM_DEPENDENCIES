@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webix" : "9.4.0"
+      "webix" : "10.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "webix" : "9.4.0"
+      "webix" : "10.0.1"
     }
   ],
   "compile-devDependencies" : [

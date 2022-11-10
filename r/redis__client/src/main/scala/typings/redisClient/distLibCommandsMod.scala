@@ -13,23 +13,21 @@ object distLibCommandsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Type extends @redis/client.@redis/client/dist/lib/commands.RedisCommandArgument ? Type extends string & ToType ? Type : ToType : Type extends std.Set<infer Member> ? std.Set<@redis/client.@redis/client/dist/lib/commands.ConvertArgumentType<Member, ToType>> : Type extends std.Map<infer Key, infer Value> ? std.Map<Key, @redis/client.@redis/client/dist/lib/commands.ConvertArgumentType<Value, ToType>> : Type extends std.Array<infer Member> ? std.Array<@redis/client.@redis/client/dist/lib/commands.ConvertArgumentType<Member, ToType>> : Type extends std.Date ? Type : Type extends std.Record<std.PropertyKey, any> ? {[ Property in keyof Type ]: @redis/client.@redis/client/dist/lib/commands.ConvertArgumentType<Type[Property], ToType>} : Type
     }}}
     */
-  @js.native
-  trait ConvertArgumentType[Type, ToType] extends StObject
+  type ConvertArgumentType[Type, ToType] = Type
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     string extends S ? never : S
     }}}
     */
-  @js.native
-  trait ExcludeMappedString[S] extends StObject
+  type ExcludeMappedString[S] = S
   
   trait RedisCommand extends StObject {
     
@@ -84,13 +82,12 @@ object distLibCommandsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     C['transformReply'] extends (args : any): infer T ? T : @redis/client.@redis/client/dist/lib/commands.RedisCommandRawReply
     }}}
     */
-  @js.native
-  trait RedisCommandReply[C /* <: RedisCommand */] extends StObject
+  type RedisCommandReply[C /* <: RedisCommand */] = RedisCommandRawReply
   
   type RedisCommandSignature[Command /* <: RedisCommand */, Params /* <: js.Array[Any] */] = js.Function1[
     /* args */ Params | (/* import warning: importer.ImportType#apply c repeated non-array type: Params */ /* rest */ js.Array[Params]), 

@@ -8,13 +8,13 @@ trait PagingAbility extends StObject {
   
   def getPage(): Double
   
-  def getPager(): Any
+  def getPager(): obj
   
   def setPage(page: Double): Unit
 }
 object PagingAbility {
   
-  inline def apply(getPage: () => Double, getPager: () => Any, setPage: Double => Unit): PagingAbility = {
+  inline def apply(getPage: () => Double, getPager: () => obj, setPage: Double => Unit): PagingAbility = {
     val __obj = js.Dynamic.literal(getPage = js.Any.fromFunction0(getPage), getPager = js.Any.fromFunction0(getPager), setPage = js.Any.fromFunction1(setPage))
     __obj.asInstanceOf[PagingAbility]
   }
@@ -23,7 +23,7 @@ object PagingAbility {
     
     inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
-    inline def setGetPager(value: () => Any): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
+    inline def setGetPager(value: () => obj): Self = StObject.set(x, "getPager", js.Any.fromFunction0(value))
     
     inline def setSetPage(value: Double => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
   }

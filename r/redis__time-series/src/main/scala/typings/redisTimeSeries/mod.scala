@@ -273,29 +273,51 @@ object mod {
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType & String] = js.native
     
-    /* "avg" */ val AVERAGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
+    /* "AVG" */ val AVERAGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
     
-    /* "count" */ val COUNT: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.COUNT & String = js.native
+    /* "AVG" */ val AVG: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.AVG & String = js.native
     
-    /* "first" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.FIRST & String = js.native
+    /* "COUNT" */ val COUNT: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.COUNT & String = js.native
     
-    /* "last" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.LAST & String = js.native
+    /* "FIRST" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.FIRST & String = js.native
     
-    /* "max" */ val MAXIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
+    /* "LAST" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.LAST & String = js.native
     
-    /* "min" */ val MINIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
+    /* "MAX" */ val MAX: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MAX & String = js.native
     
-    /* "range" */ val RANGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.RANGE & String = js.native
+    /* "MAX" */ val MAXIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
     
-    /* "std.p" */ val STD_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_P & String = js.native
+    /* "MIN" */ val MIN: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MIN & String = js.native
     
-    /* "std.s" */ val STD_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_S & String = js.native
+    /* "MIN" */ val MINIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
     
-    /* "sum" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.SUM & String = js.native
+    /* "RANGE" */ val RANGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.RANGE & String = js.native
     
-    /* "var.p" */ val VAR_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
+    /* "STD.P" */ val STD_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_P & String = js.native
     
-    /* "var.s" */ val VAR_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
+    /* "STD.S" */ val STD_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_S & String = js.native
+    
+    /* "SUM" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.SUM & String = js.native
+    
+    /* "TWA" */ val TWA: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.TWA & String = js.native
+    
+    /* "VAR.P" */ val VAR_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
+    
+    /* "VAR.S" */ val VAR_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
+  }
+  
+  @JSImport("@redis/time-series", "TimeSeriesBucketTimestamp")
+  @js.native
+  object TimeSeriesBucketTimestamp extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesBucketTimestamp & String] = js.native
+    
+    /* "+" */ val HIGH: typings.redisTimeSeries.distCommandsMod.TimeSeriesBucketTimestamp.HIGH & String = js.native
+    
+    /* "-" */ val LOW: typings.redisTimeSeries.distCommandsMod.TimeSeriesBucketTimestamp.LOW & String = js.native
+    
+    /* "~" */ val MID: typings.redisTimeSeries.distCommandsMod.TimeSeriesBucketTimestamp.MID & String = js.native
   }
   
   @JSImport("@redis/time-series", "TimeSeriesDuplicatePolicies")
@@ -328,5 +350,37 @@ object mod {
     /* "COMPRESSED" */ val COMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.COMPRESSED & String = js.native
     
     /* "UNCOMPRESSED" */ val UNCOMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.UNCOMPRESSED & String = js.native
+  }
+  
+  @JSImport("@redis/time-series", "TimeSeriesReducers")
+  @js.native
+  object TimeSeriesReducers extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers & String] = js.native
+    
+    /* "AVG" */ val AVG: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.AVG & String = js.native
+    
+    /* "COUNT" */ val COUNT: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.COUNT & String = js.native
+    
+    /* "MAX" */ val MAX: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.MAX & String = js.native
+    
+    /* "MAX" */ val MAXIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.MAXIMUM & String = js.native
+    
+    /* "MIN" */ val MIN: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.MIN & String = js.native
+    
+    /* "MIN" */ val MINIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.MINIMUM & String = js.native
+    
+    /* "range" */ val RANGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.RANGE & String = js.native
+    
+    /* "STD.P" */ val STD_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.STD_P & String = js.native
+    
+    /* "STD.S" */ val STD_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.STD_S & String = js.native
+    
+    /* "SUM" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.SUM & String = js.native
+    
+    /* "VAR.P" */ val VAR_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.VAR_P & String = js.native
+    
+    /* "VAR.S" */ val VAR_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesReducers.VAR_S & String = js.native
   }
 }

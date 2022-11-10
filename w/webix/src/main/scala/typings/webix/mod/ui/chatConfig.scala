@@ -2,17 +2,18 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait chatConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
-  
-  var body: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
+  var calls: js.UndefOr[Boolean] = js.undefined
   
   var chatId: js.UndefOr[Double] = js.undefined
   
@@ -24,9 +25,13 @@ trait chatConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var emojis: js.UndefOr[Boolean] = js.undefined
+  
+  var files: js.UndefOr[Boolean] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -36,9 +41,7 @@ trait chatConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  
-  var locale: js.UndefOr[Any] = js.undefined
+  var locale: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -53,6 +56,8 @@ trait chatConfig extends StObject {
   var on: js.UndefOr[EventHash] = js.undefined
   
   var `override`: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var reactions: js.UndefOr[Boolean] = js.undefined
   
   var search: js.UndefOr[String] = js.undefined
   
@@ -75,17 +80,17 @@ object chatConfig {
   
   extension [Self <: chatConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setCalls(value: Boolean): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    
+    inline def setCallsUndefined: Self = StObject.set(x, "calls", js.undefined)
     
     inline def setChatId(value: Double): Self = StObject.set(x, "chatId", value.asInstanceOf[js.Any])
     
@@ -107,13 +112,21 @@ object chatConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEmojis(value: Boolean): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+    
+    inline def setEmojisUndefined: Self = StObject.set(x, "emojis", js.undefined)
+    
+    inline def setFiles(value: Boolean): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
@@ -131,11 +144,7 @@ object chatConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
-    
-    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
-    
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -168,6 +177,10 @@ object chatConfig {
     inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
     inline def setOverrideVarargs(value: Any*): Self = StObject.set(x, "override", js.Array(value*))
+    
+    inline def setReactions(value: Boolean): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    
+    inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
     inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

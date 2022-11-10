@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait buttonConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var autowidth: js.UndefOr[Boolean] = js.undefined
   
@@ -23,7 +24,7 @@ trait buttonConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -65,7 +66,7 @@ trait buttonConfig extends StObject {
   
   var popup: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[Any] = js.undefined
+  var tooltip: js.UndefOr[String | Boolean | WebixCallback | obj] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -88,7 +89,7 @@ object buttonConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -112,7 +113,7 @@ object buttonConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -196,7 +197,7 @@ object buttonConfig {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | Boolean | WebixCallback | obj): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     

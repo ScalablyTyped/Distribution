@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "vue__compiler-sfc"
-version := "3.2.42-3dfbff"
+version := "3.2.44-bc6ed8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.3-021aec",
-  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
-  "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
-  "org.scalablytyped" %%% "source-map-js" % "1.0.2-fbe867",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.42-74700c",
-  "org.scalablytyped" %%% "vue__reactivity-transform" % "3.2.42-6889fb")
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-97fb28",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-2e222a",
+  "org.scalablytyped" %%% "magic-string" % "0.26.7-1fe3cb",
+  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-cd43b3",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.44-bd7f3f",
+  "org.scalablytyped" %%% "vue__reactivity-transform" % "3.2.44-a0fdb9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

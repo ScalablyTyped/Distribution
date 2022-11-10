@@ -54,3 +54,12 @@ type SelectorStoreUpdater[T] = js.Function2[/* store */ RecordSourceSelectorProx
 type Snapshot = TypedSnapshot[SelectorData]
 
 type StoreUpdater = js.Function1[/* store */ RecordSourceProxy, Unit]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Array<infer U> | std.ReadonlyArray<infer U> ? U : T
+  }}}
+  */
+type Unarray[T] = T

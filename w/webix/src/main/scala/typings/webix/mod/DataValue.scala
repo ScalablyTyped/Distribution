@@ -11,10 +11,10 @@ trait DataValue extends StObject {
   def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any): Unit = js.native
-  def bind(target: Any, rule: Unit, format: String): Unit = js.native
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj): Unit = js.native
+  def bind(target: obj, rule: Unit, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -28,13 +28,14 @@ trait DataValue extends StObject {
   
   def isVisible(): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   var name: String = js.native
   
   def refresh(): Unit = js.native
   
   def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
   def unbind(): Unit = js.native
   

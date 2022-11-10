@@ -12,7 +12,7 @@ trait EndpointDetails extends StObject {
   var endpoint: js.UndefOr[DataflowEndpoint] = js.undefined
   
   /**
-    * Endpoint security details.
+    * Endpoint security details including a list of subnets, a list of security groups and a role to connect streams to instances.
     */
   var securityDetails: js.UndefOr[SecurityDetails] = js.undefined
 }

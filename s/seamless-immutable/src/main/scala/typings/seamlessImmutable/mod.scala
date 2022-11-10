@@ -60,8 +60,7 @@ object mod {
   inline def from[T](obj: T): Immutable[T, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[Immutable[T, js.Object]]
   inline def from[T](obj: T, options: Options): Immutable[T, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[T, js.Object]]
   
-  inline def isImmutable[T](target: T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
-  inline def isImmutable[T](target: Immutable[T, js.Object]): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
+  inline def isImmutable[T](target: (Immutable[T, js.Object]) | T): /* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImmutable")(target.asInstanceOf[js.Any]).asInstanceOf[/* is seamless-immutable.seamless-immutable.Immutable<T, {}> */ Boolean]
   
   inline def replace[T, S](obj: Immutable[T, js.Object], valueObj: S): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
   inline def replace[T, S](obj: Immutable[T, js.Object], valueObj: S, options: ReplaceConfig): Immutable[S, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(obj.asInstanceOf[js.Any], valueObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Immutable[S, js.Object]]
@@ -93,15 +92,6 @@ object mod {
   @js.native
   trait DeepPartial[T] extends StObject
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
-    * TS definition: {{{
-    T extends std.Promise<infer U> ? std.Promise<seamless-immutable.seamless-immutable.Immutable.MakeImmutable<U, O>> : seamless-immutable.seamless-immutable.Immutable.MakeImmutable<T, O>
-    }}}
-    */
-  @js.native
-  trait Immutable[T, O /* <: js.Object */] extends StObject
   object Immutable {
     
     type AlreadyImmutable[O /* <: js.Object */] = ImmutableObject[O] | ImmutableArray[Any] | ImmutableDate
@@ -116,16 +106,23 @@ object mod {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       T extends seamless-immutable.seamless-immutable.Immutable.CannotMakeImmutable<O> ? T : T extends std.Array<infer Element> ? seamless-immutable.seamless-immutable.ImmutableArray<Element> : T extends std.Date ? seamless-immutable.seamless-immutable.ImmutableDate : seamless-immutable.seamless-immutable.ImmutableObject<T>
       }}}
       */
-    @js.native
-    trait MakeImmutable[T, O /* <: js.Object */] extends StObject
+    type MakeImmutable[T, O /* <: js.Object */] = T
     
     type Primitive = js.UndefOr[Boolean | Double | String | js.Symbol | AnyFunction | Null]
   }
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    T extends std.Promise<infer U> ? std.Promise<seamless-immutable.seamless-immutable.Immutable.MakeImmutable<U, O>> : seamless-immutable.seamless-immutable.Immutable.MakeImmutable<T, O>
+    }}}
+    */
+  type Immutable[T, O /* <: js.Object */] = T
   
   object ImmutableArray {
     

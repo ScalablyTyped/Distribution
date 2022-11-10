@@ -27,6 +27,11 @@ trait GetTemplateResponse extends StObject {
   var requiredFields: js.UndefOr[RequiredFieldList] = js.undefined
   
   /**
+    * The status of the template.
+    */
+  var status: TemplateStatus
+  
+  /**
     * A map of of key-value pairs that represent tags on a resource. Tags are used to organize, track, or control access for this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
@@ -43,8 +48,8 @@ trait GetTemplateResponse extends StObject {
 }
 object GetTemplateResponse {
   
-  inline def apply(name: TemplateName, templateArn: TemplateArn, templateId: TemplateId): GetTemplateResponse = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], templateArn = templateArn.asInstanceOf[js.Any], templateId = templateId.asInstanceOf[js.Any])
+  inline def apply(name: TemplateName, status: TemplateStatus, templateArn: TemplateArn, templateId: TemplateId): GetTemplateResponse = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], templateArn = templateArn.asInstanceOf[js.Any], templateId = templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateResponse]
   }
   
@@ -65,6 +70,8 @@ object GetTemplateResponse {
     inline def setRequiredFieldsUndefined: Self = StObject.set(x, "requiredFields", js.undefined)
     
     inline def setRequiredFieldsVarargs(value: RequiredField*): Self = StObject.set(x, "requiredFields", js.Array(value*))
+    
+    inline def setStatus(value: TemplateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

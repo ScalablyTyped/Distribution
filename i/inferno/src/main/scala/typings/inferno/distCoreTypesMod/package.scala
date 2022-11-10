@@ -17,6 +17,15 @@ type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
 type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  P extends any ? string extends keyof P ? P : std.Pick<P, std.Exclude<keyof P, keyof D>> & std.Partial<std.Pick<P, std.Extract<keyof P, keyof D>>> & std.Partial<std.Pick<D, std.Exclude<keyof D, keyof P>>> : never
+  }}}
+  */
+type Defaultize[P, D] = P
+
 type DragEvent[T] = InfernoMouseEvent[T] & NativeDragEvent
 
 type DragEventHandler[T] = EventHandler[DragEvent[T]]
@@ -30,6 +39,15 @@ type FormEvent[T] = SemiSyntheticEvent[T]
 type FormEventHandler[T] = EventHandler[FormEvent[T]]
 
 type InfernoEventHandler[T] = EventHandler[SemiSyntheticEvent[T]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  C extends {  defaultProps :infer D} ? inferno.inferno/dist/core/types.Defaultize<P, D> : P
+  }}}
+  */
+type InfernoManagedAttributes[C, P] = P
 
 type InfernoWheelEvent[T] = InfernoMouseEvent[T] & WheelEvent
 

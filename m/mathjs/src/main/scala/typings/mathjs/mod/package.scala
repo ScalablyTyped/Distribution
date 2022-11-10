@@ -42,6 +42,15 @@ type MathNumericType = _MathNumericType | Double | BigNumber
 */
 type MathType = _MathType | MathCollection | Double | BigNumber
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends number ? number : T extends string ? string : T extends boolean ? boolean : T
+  }}}
+  */
+type NoLiteralType[T] = T
+
 /* Rewritten from type alias, can be one of: 
   - typings.mathjs.anon.Assuming
   - typings.mathjs.anon.ImposeContext

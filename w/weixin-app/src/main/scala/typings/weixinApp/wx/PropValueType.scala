@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-  * You'll have to cast your way around this structure, unfortunately. 
+  * You'll have to cast your way around this structure, unfortunately.
   * TS definition: {{{
   Def extends {type (args : ...any): infer T,   value :infer T | undefined} ? T : Def extends (args : ...any): infer T ? T : never
   }}}

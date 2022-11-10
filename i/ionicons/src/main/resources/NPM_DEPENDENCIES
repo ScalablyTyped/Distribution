@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ionicons" : "6.0.3"
+      "ionicons" : "6.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "ionicons" : "6.0.3"
+      "ionicons" : "6.0.4"
     }
   ],
   "compile-devDependencies" : [

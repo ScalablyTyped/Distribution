@@ -176,6 +176,15 @@ type ParamsCookieValue = String | Replace
 */
 type RefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = _RefinedBatchRequest[RT] | String | ArrayRefinedBatchRequest[RT]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  RT extends 'binary' ? k6.k6.bytes : RT extends 'none' ? null : RT extends 'text' ? string : RT extends undefined ? string | null : never
+  }}}
+  */
+type RefinedResponseBody[RT /* <: js.UndefOr[ResponseType] */] = bytes
+
 type RequestBody = String | StructuredRequestBody | js.typedarray.ArrayBuffer
 
 type ResponseBody = String | bytes | Null

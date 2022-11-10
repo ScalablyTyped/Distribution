@@ -129,6 +129,24 @@ type ConnectedComponentClass[TProps, TProvidedProps, TExposedProps] = ComponentC
 
 type ConnectorProvided[TProvided] = CreateURL & TProvided
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TItem extends string ? std.Array<react-instantsearch-core.react-instantsearch-core.HighlightResultPrimitive> : std.Array<react-instantsearch-core.react-instantsearch-core.HighlightResult<TItem>>
+  }}}
+  */
+type HighlightResultArray[TItem] = js.Array[HighlightResultPrimitive]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TField extends std.Array<infer TItem> ? react-instantsearch-core.react-instantsearch-core.HighlightResultArray<TItem> : TField extends string ? react-instantsearch-core.react-instantsearch-core.HighlightResultPrimitive : react-instantsearch-core.react-instantsearch-core.HighlightResult<TField>
+  }}}
+  */
+type HighlightResultField[TField] = js.Array[HighlightResultPrimitive]
+
 type Hit[TDoc] = TDoc & typings.reactInstantsearchCore.anon.HighlightResult[TDoc]
 
 type InsightsClient = js.Function2[/* method */ InsightsClientMethod, /* payload */ InsightsClientPayload, Unit]

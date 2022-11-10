@@ -1,6 +1,7 @@
 package typings.redisTimeSeries
 
 import typings.redisTimeSeries.distCommandsMod.Labels
+import typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies
 import typings.redisTimeSeries.redisTimeSeriesStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,6 +24,10 @@ object distCommandsAlterMod {
   
   trait AlterOptions extends StObject {
     
+    var CHUNK_SIZE: js.UndefOr[Double] = js.undefined
+    
+    var DUPLICATE_POLICY: js.UndefOr[TimeSeriesDuplicatePolicies] = js.undefined
+    
     var LABELS: js.UndefOr[Labels] = js.undefined
     
     var RETENTION: js.UndefOr[Double] = js.undefined
@@ -35,6 +40,14 @@ object distCommandsAlterMod {
     }
     
     extension [Self <: AlterOptions](x: Self) {
+      
+      inline def setCHUNK_SIZE(value: Double): Self = StObject.set(x, "CHUNK_SIZE", value.asInstanceOf[js.Any])
+      
+      inline def setCHUNK_SIZEUndefined: Self = StObject.set(x, "CHUNK_SIZE", js.undefined)
+      
+      inline def setDUPLICATE_POLICY(value: TimeSeriesDuplicatePolicies): Self = StObject.set(x, "DUPLICATE_POLICY", value.asInstanceOf[js.Any])
+      
+      inline def setDUPLICATE_POLICYUndefined: Self = StObject.set(x, "DUPLICATE_POLICY", js.undefined)
       
       inline def setLABELS(value: Labels): Self = StObject.set(x, "LABELS", value.asInstanceOf[js.Any])
       

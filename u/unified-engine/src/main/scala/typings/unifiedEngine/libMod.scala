@@ -541,25 +541,8 @@ object libMod {
   }
   object Settings {
     
-    inline def apply(
-      cwd: Exclude[js.UndefOr[String | URL], js.UndefOr[URL]],
-      extensions: Exclude[js.UndefOr[js.Array[String]], Unit],
-      files: js.Array[String | VFile],
-      ignorePatterns: Exclude[js.UndefOr[js.Array[String]], Unit],
-      ignoreUnconfigured: Exclude[js.UndefOr[Boolean], Unit],
-      processor: () => Processor,
-      settings: Exclude[
-          js.UndefOr[
-            /* import warning: importer.ImportType#apply Failed type conversion: unified-engine.unified-engine/lib.Preset['settings'] */ js.Any
-          ], 
-          Unit
-        ],
-      silentlyIgnore: Exclude[js.UndefOr[Boolean], Unit],
-      streamError: Exclude[js.UndefOr[WritableStream], Unit],
-      streamIn: Exclude[js.UndefOr[ReadableStream], Unit],
-      streamOut: Exclude[js.UndefOr[WritableStream], Unit]
-    ): Settings = {
-      val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], ignorePatterns = ignorePatterns.asInstanceOf[js.Any], ignoreUnconfigured = ignoreUnconfigured.asInstanceOf[js.Any], processor = js.Any.fromFunction0(processor), settings = settings.asInstanceOf[js.Any], silentlyIgnore = silentlyIgnore.asInstanceOf[js.Any], streamError = streamError.asInstanceOf[js.Any], streamIn = streamIn.asInstanceOf[js.Any], streamOut = streamOut.asInstanceOf[js.Any])
+    inline def apply(files: js.Array[String | VFile], processor: () => Processor): Settings = {
+      val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], processor = js.Any.fromFunction0(processor))
       __obj.asInstanceOf[Settings]
     }
     
@@ -583,6 +566,8 @@ object libMod {
       
       inline def setCwd(value: Exclude[js.UndefOr[String | URL], js.UndefOr[URL]]): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      
       inline def setDefaultConfig(value: typings.unifiedEngine.libConfigurationMod.Preset): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       
       inline def setDefaultConfigUndefined: Self = StObject.set(x, "defaultConfig", js.undefined)
@@ -596,6 +581,10 @@ object libMod {
       inline def setDetectIgnoreUndefined: Self = StObject.set(x, "detectIgnore", js.undefined)
       
       inline def setExtensions(value: Exclude[js.UndefOr[js.Array[String]], Unit]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -623,7 +612,13 @@ object libMod {
       
       inline def setIgnorePatterns(value: Exclude[js.UndefOr[js.Array[String]], Unit]): Self = StObject.set(x, "ignorePatterns", value.asInstanceOf[js.Any])
       
+      inline def setIgnorePatternsUndefined: Self = StObject.set(x, "ignorePatterns", js.undefined)
+      
+      inline def setIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "ignorePatterns", js.Array(value*))
+      
       inline def setIgnoreUnconfigured(value: Exclude[js.UndefOr[Boolean], Unit]): Self = StObject.set(x, "ignoreUnconfigured", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreUnconfiguredUndefined: Self = StObject.set(x, "ignoreUnconfigured", js.undefined)
       
       inline def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
       
@@ -686,6 +681,8 @@ object libMod {
             ]
       ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      
       inline def setSilent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: unified-engine.unified-engine/lib.VFileReporterOptions['silent'] */ js.Any
       ): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
@@ -694,11 +691,19 @@ object libMod {
       
       inline def setSilentlyIgnore(value: Exclude[js.UndefOr[Boolean], Unit]): Self = StObject.set(x, "silentlyIgnore", value.asInstanceOf[js.Any])
       
+      inline def setSilentlyIgnoreUndefined: Self = StObject.set(x, "silentlyIgnore", js.undefined)
+      
       inline def setStreamError(value: Exclude[js.UndefOr[WritableStream], Unit]): Self = StObject.set(x, "streamError", value.asInstanceOf[js.Any])
+      
+      inline def setStreamErrorUndefined: Self = StObject.set(x, "streamError", js.undefined)
       
       inline def setStreamIn(value: Exclude[js.UndefOr[ReadableStream], Unit]): Self = StObject.set(x, "streamIn", value.asInstanceOf[js.Any])
       
+      inline def setStreamInUndefined: Self = StObject.set(x, "streamIn", js.undefined)
+      
       inline def setStreamOut(value: Exclude[js.UndefOr[WritableStream], Unit]): Self = StObject.set(x, "streamOut", value.asInstanceOf[js.Any])
+      
+      inline def setStreamOutUndefined: Self = StObject.set(x, "streamOut", js.undefined)
       
       inline def setTree(value: Boolean): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       

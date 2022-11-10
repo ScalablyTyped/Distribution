@@ -422,19 +422,19 @@ trait Mesh
     * This method returns nothing but really modifies the mesh even if it's originally not set as updatable.
     * Note that, under the hood, this method sets a new VertexBuffer each call.
     * @see https://doc.babylonjs.com/resources/baking_transformations
-    * @param bakeIndependenlyOfChildren indicates whether to preserve all child nodes' World Matrix during baking
+    * @param bakeIndependentlyOfChildren indicates whether to preserve all child nodes' World Matrix during baking
     * @returns the current mesh
     */
   def bakeCurrentTransformIntoVertices(): Mesh = js.native
-  def bakeCurrentTransformIntoVertices(bakeIndependenlyOfChildren: Boolean): Mesh = js.native
+  def bakeCurrentTransformIntoVertices(bakeIndependentlyOfChildren: Boolean): Mesh = js.native
   
   /**
     * Modifies the mesh geometry according to the passed transformation matrix.
-    * This method returns nothing but it really modifies the mesh even if it's originally not set as updatable.
+    * This method returns nothing, but it really modifies the mesh even if it's originally not set as updatable.
     * The mesh normals are modified using the same transformation.
     * Note that, under the hood, this method sets a new VertexBuffer each call.
     * @param transform defines the transform matrix to use
-    * @see https://doc.babylonjs.com/resources/baking_transformations
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/bakingTransforms
     * @returns the current mesh
     */
   def bakeTransformIntoVertices(transform: Matrix): Mesh = js.native

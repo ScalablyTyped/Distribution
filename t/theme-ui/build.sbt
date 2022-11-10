@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "theme-ui"
-version := "0.15.3-1ab441"
+version := "0.15.3-16c1fd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "emotion__react" % "11.10.5-8a4ba8",
-  "org.scalablytyped" %%% "emotion__serialize" % "1.1.1-039de7",
-  "org.scalablytyped" %%% "emotion__utils" % "1.2.0-86e76d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "theme-ui__color-modes" % "0.15.3-c4da37",
-  "org.scalablytyped" %%% "theme-ui__components" % "0.15.3-77c9ec",
-  "org.scalablytyped" %%% "theme-ui__core" % "0.15.3-19fe5a")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
+  "org.scalablytyped" %%% "emotion__react" % "11.10.5-eff810",
+  "org.scalablytyped" %%% "emotion__serialize" % "1.1.1-91b0cb",
+  "org.scalablytyped" %%% "emotion__utils" % "1.2.0-32a920",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "theme-ui__color-modes" % "0.15.3-bba88a",
+  "org.scalablytyped" %%% "theme-ui__components" % "0.15.3-884e34",
+  "org.scalablytyped" %%% "theme-ui__core" % "0.15.3-798299")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

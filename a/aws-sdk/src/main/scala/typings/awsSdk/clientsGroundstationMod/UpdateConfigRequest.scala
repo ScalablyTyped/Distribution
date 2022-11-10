@@ -14,7 +14,7 @@ trait UpdateConfigRequest extends StObject {
   /**
     * UUID of a Config.
     */
-  var configId: String
+  var configId: Uuid
   
   /**
     * Type of a Config.
@@ -28,7 +28,7 @@ trait UpdateConfigRequest extends StObject {
 }
 object UpdateConfigRequest {
   
-  inline def apply(configData: ConfigTypeData, configId: String, configType: ConfigCapabilityType, name: SafeName): UpdateConfigRequest = {
+  inline def apply(configData: ConfigTypeData, configId: Uuid, configType: ConfigCapabilityType, name: SafeName): UpdateConfigRequest = {
     val __obj = js.Dynamic.literal(configData = configData.asInstanceOf[js.Any], configId = configId.asInstanceOf[js.Any], configType = configType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigRequest]
   }
@@ -37,7 +37,7 @@ object UpdateConfigRequest {
     
     inline def setConfigData(value: ConfigTypeData): Self = StObject.set(x, "configData", value.asInstanceOf[js.Any])
     
-    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: Uuid): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
     inline def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     

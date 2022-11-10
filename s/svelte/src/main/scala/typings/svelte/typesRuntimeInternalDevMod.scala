@@ -333,7 +333,7 @@ object typesRuntimeInternalDevMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Component extends svelte.svelte/types/runtime/internal/dev.SvelteComponentTyped<any, infer Events, any> ? Events : never
     }}}
@@ -343,7 +343,7 @@ object typesRuntimeInternalDevMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Component extends svelte.svelte/types/runtime/internal/dev.SvelteComponentTyped<infer Props, any, any> ? Props : never
     }}}

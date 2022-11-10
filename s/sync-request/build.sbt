@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "sync-request"
-version := "6.1.0-5cd080"
+version := "6.1.0-b98934"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "form-data" % "4.0.0-7ba683",
-  "org.scalablytyped" %%% "http-basic" % "8.1.3-50c0fd",
-  "org.scalablytyped" %%% "http-response-object" % "3.0.2-38325e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "promise" % "8.3.0-842797",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "then-request" % "6.0.2-f338f2")
+  "org.scalablytyped" %%% "form-data" % "4.0.0-61f56e",
+  "org.scalablytyped" %%% "http-basic" % "8.1.3-b58df9",
+  "org.scalablytyped" %%% "http-response-object" % "3.0.2-d0b38b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "promise" % "8.3.0-39311f",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "then-request" % "6.0.2-b52e40")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

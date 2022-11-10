@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-  * You'll have to cast your way around this structure, unfortunately. 
+  * You'll have to cast your way around this structure, unfortunately.
   * TS definition: {{{
   'ref' extends keyof react.react.ComponentPropsWithRef<C> ? std.NonNullable<react.react.ComponentPropsWithRef<C>['ref']> extends react.react.Ref<infer Instance> ? Instance : never : never
   }}}

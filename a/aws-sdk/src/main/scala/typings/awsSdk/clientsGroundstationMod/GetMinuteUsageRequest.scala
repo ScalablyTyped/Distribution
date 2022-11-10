@@ -9,24 +9,24 @@ trait GetMinuteUsageRequest extends StObject {
   /**
     * The month being requested, with a value of 1-12.
     */
-  var month: Integer
+  var month: Month
   
   /**
     * The year being requested, in the format of YYYY.
     */
-  var year: Integer
+  var year: Year
 }
 object GetMinuteUsageRequest {
   
-  inline def apply(month: Integer, year: Integer): GetMinuteUsageRequest = {
+  inline def apply(month: Month, year: Year): GetMinuteUsageRequest = {
     val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMinuteUsageRequest]
   }
   
   extension [Self <: GetMinuteUsageRequest](x: Self) {
     
-    inline def setMonth(value: Integer): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Month): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    inline def setYear(value: Integer): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Year): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

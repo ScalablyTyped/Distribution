@@ -2,6 +2,7 @@ package typings.webix.mod.ui
 
 import typings.webix.mod.DataCollection
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class comments ()
   extends StObject
      with typings.webix.webix.ui.baseview {
+  
+  @JSName("$configForm")
+  def $configForm(args: Any*): Any = js.native
+  @JSName("$configForm")
+  var $configForm_Original: WebixCallback = js.native
+  
+  @JSName("$configList")
+  def $configList(args: Any*): Any = js.native
+  @JSName("$configList")
+  var $configList_Original: WebixCallback = js.native
   
   @JSName("$exportView")
   def $exportView(): typings.webix.webix.ui.baseview = js.native
@@ -26,8 +37,8 @@ open class comments ()
   def attachEvent(`type`: commentsEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: commentsEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -43,7 +54,7 @@ open class comments ()
   
   def focus(): Unit = js.native
   
-  def getMenu(): Any = js.native
+  def getMenu(): obj = js.native
   
   def getUsers(): DataCollection = js.native
   
@@ -51,12 +62,34 @@ open class comments ()
   
   def load(url: String): js.Promise[Any] = js.native
   def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
-  def parse(data: Any, `type`: String): Unit = js.native
+  def parse(data: String): Unit = js.native
+  def parse(data: String, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: String, `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any]): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any]): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: obj): Unit = js.native
+  def parse(data: obj, `type`: String): Unit = js.native
+  def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def setCurrentUser(id: String): Unit = js.native
   def setCurrentUser(id: Double): Unit = js.native

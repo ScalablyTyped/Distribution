@@ -1,36 +1,36 @@
 organization := "org.scalablytyped"
 name := "storybook__manager-webpack4"
-version := "6.5.13-cd3005"
+version := "6.5.13-618e1a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-efd9cc",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.3-021aec",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-744489",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
-  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
-  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-4cfc23",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "fork-ts-checker-webpack-plugin" % "7.2.13-9117e2",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-0a8cda",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-aeb792",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-97fb28",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-0c7c84",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-7d45e9",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-2e222a",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-1ed7c2",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-c87c96",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a7050d",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-2c076a",
+  "org.scalablytyped" %%% "fork-ts-checker-webpack-plugin" % "7.2.13-b9268d",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aa50bf",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-e2d669",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "node-abort-controller" % "3.0.1-879d06",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-3da904",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3b575f",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-10a3c2",
-  "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
-  "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",
-  "org.scalablytyped" %%% "webpack" % "5.74.0-3f97e9")
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-c05674",
+  "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-16f8fb",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-9d2495",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-c88f3d",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-8e2762",
+  "org.scalablytyped" %%% "typescript" % "4.8.4-227bad",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-af3fab",
+  "org.scalablytyped" %%% "webpack" % "5.75.0-4fd6d9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

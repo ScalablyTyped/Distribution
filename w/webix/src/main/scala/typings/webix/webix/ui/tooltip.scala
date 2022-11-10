@@ -1,8 +1,8 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait tooltip extends StObject {
   var $height: Double = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setNode")
   var $setNode: Any = js.native
@@ -47,7 +47,7 @@ trait tooltip extends StObject {
   
   var config: tooltipConfig = js.native
   
-  def customize(obj: Any): Unit = js.native
+  def customize(obj: obj): Unit = js.native
   
   def define(property: String, value: Any): Unit = js.native
   
@@ -63,9 +63,9 @@ trait tooltip extends StObject {
   
   def getFormView(): baseview = js.native
   
-  def getNode(): Any = js.native
+  def getNode(): obj = js.native
   
-  def getParentView(): Any = js.native
+  def getParentView(): obj = js.native
   
   def getTopParentView(): baseview = js.native
   
@@ -77,21 +77,35 @@ trait tooltip extends StObject {
   
   def isVisible(): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   var name: String = js.native
   
-  def queryView(config: Any): Any = js.native
-  def queryView(config: Any, mode: String): Any = js.native
+  def queryView(config: String): obj | js.Array[Any] = js.native
+  def queryView(config: String, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: obj): obj | js.Array[Any] = js.native
+  def queryView(config: obj, mode: String): obj | js.Array[Any] = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def resize(): Unit = js.native
   
-  def show(data: Any, position: Any): Unit = js.native
+  def show(data: obj, position: obj): Unit = js.native
   
-  var `type`: StringDictionary[Any] = js.native
+  var `type`: obj = js.native
   
   def unblockEvent(): Unit = js.native
 }

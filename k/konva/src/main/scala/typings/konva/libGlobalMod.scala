@@ -131,6 +131,11 @@ object libGlobalMod {
     
     inline def pointerListenClick_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_pointerListenClick")(x.asInstanceOf[js.Any])
     
+    @JSImport("konva/lib/Global", "Konva.releaseCanvasOnDestroy")
+    @js.native
+    def releaseCanvasOnDestroy: Boolean = js.native
+    inline def releaseCanvasOnDestroy_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("releaseCanvasOnDestroy")(x.asInstanceOf[js.Any])
+    
     @JSImport("konva/lib/Global", "Konva.showWarnings")
     @js.native
     def showWarnings: Boolean = js.native

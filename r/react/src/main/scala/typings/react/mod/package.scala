@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Default
 import typings.react.anon.UNDEFINEDVOIDONLY
 import typings.react.mod.^
+import typings.react.reactBooleans.`true`
 import typings.react.reactStrings.input
 import typings.react.reactStrings.mount
 import typings.react.reactStrings.update
@@ -525,6 +526,15 @@ type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
 type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<P> & react.react.RefAttributes<std.InstanceType<T>> : react.react.PropsWithRef<react.react.ComponentProps<T>>
+  }}}
+  */
+type ComponentPropsWithRef[T /* <: ElementType[Any] */] = ComponentProps[T]
+
 type ComponentPropsWithoutRef[T /* <: ElementType[Any] */] = PropsWithoutRef[ComponentProps[T]]
 
 type ComponentState = Any
@@ -534,6 +544,19 @@ type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[
 type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
 type Consumer[T] = ExoticComponent[ConsumerProps[T]]
+
+// Any prop that has a default prop becomes optional, but its type is unchanged
+// Undeclared default props are augmented into the resulting allowable attributes
+// If declared props have indexed properties, ignore default props entirely as keyof gets widened
+// Wrap in an outer-level conditional type to allow distribution over props that are unions
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  P extends any ? string extends keyof P ? P : std.Pick<P, std.Exclude<keyof P, keyof D>> & react.react.InexactPartial<std.Pick<P, std.Extract<keyof P, keyof D>>> & react.react.InexactPartial<std.Pick<D, std.Exclude<keyof D, keyof P>>> : never
+  }}}
+  */
+type Defaultize[P, D] = P
 
 type DependencyList = js.Array[Any]
 
@@ -632,6 +655,17 @@ type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes
 */
 type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
 
+// naked 'any' type in a conditional type will short circuit and union both the then/else branches
+// so boolean is only resolved for T = any
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  boolean extends T extends never ? true : false ? true : false
+  }}}
+  */
+type IsExactlyAny[T] = `true`
+
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | Null]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
 
 type Key = String | Double
@@ -639,6 +673,18 @@ type Key = String | Double
 type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
 
 type LegacyRef[T] = String | Ref[T]
+
+// Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  // Distribute over P in case it is a union type
+P extends any ? react.react.IsExactlyAny<P> extends true ? T : // If declared props have indexed properties, ignore inferred props entirely as keyof gets widened
+string extends keyof P ? P : std.Pick<P, react.react.NotExactlyAnyPropertyKeys<P>> & std.Pick<T, std.Exclude<keyof T, react.react.NotExactlyAnyPropertyKeys<P>>> & std.Pick<P, std.Exclude<keyof P, keyof T>> : never
+  }}}
+  */
+type MergePropTypes[P, T] = T
 
 type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
@@ -685,6 +731,29 @@ Unit]
 
 type PropsWithChildren[P] = P & typings.react.anon.Children
 
+/** Ensures that the props do not include string ref, which cannot be forwarded */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  'ref' extends keyof P ? P extends {  ref :infer R | undefined} ? string extends R ? react.react.PropsWithoutRef<P> & {  ref :std.Exclude<R, string> | undefined} : P : P : P
+  }}}
+  */
+type PropsWithRef[P] = P
+
+/** Ensures that the props do not include ref at all */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  // Pick would not be sufficient for this. We'd like to avoid unnecessary mapping and need a distributive conditional to support unions.
+// see: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types
+// https://github.com/Microsoft/TypeScript/issues/28339
+P extends any ? 'ref' extends keyof P ? std.Pick<P, std.Exclude<keyof P, 'ref'>> : P : P
+  }}}
+  */
+type PropsWithoutRef[P] = P
+
 // NOTE: only the Context object itself can get a displayName
 // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
@@ -707,6 +776,15 @@ type ReactHTMLElement[T /* <: HTMLElement */] = DetailedReactHTMLElement[AllHTML
 // Component API
 // ----------------------------------------------------------------------
 type ReactInstance = (Component[Any, js.Object, Any]) | Element
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  C extends {  propTypes :infer T,   defaultProps :infer D} ? react.react.Defaultize<react.react.MergePropTypes<P, prop-types.prop-types.InferProps<T>>, D> : C extends {  propTypes :infer T} ? react.react.MergePropTypes<P, prop-types.prop-types.InferProps<T>> : C extends {  defaultProps :infer D} ? react.react.Defaultize<P, D> : P
+  }}}
+  */
+type ReactManagedAttributes[C, P] = P
 
 /* Rewritten from type alias, can be one of: 
   - typings.react.mod.ReactElement

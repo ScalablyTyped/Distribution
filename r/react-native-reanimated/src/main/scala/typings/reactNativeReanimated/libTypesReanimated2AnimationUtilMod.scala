@@ -7,6 +7,7 @@ import typings.reactNativeReanimated.libTypesReanimated2CommonTypesMod.AnimatedS
 import typings.reactNativeReanimated.libTypesReanimated2CommonTypesMod.Animation
 import typings.reactNativeReanimated.libTypesReanimated2CommonTypesMod.AnimationObject
 import typings.reactNativeReanimated.libTypesReanimated2CommonTypesMod.SharedValue
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +28,12 @@ object libTypesReanimated2AnimationUtilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.StyleLayoutAnimation ? std.Record<string, unknown> : T extends react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.DelayAnimation ? react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.NextAnimation<react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.DelayAnimation> : T extends react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.RepeatAnimation ? react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.NextAnimation<react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.RepeatAnimation> : T extends react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.SequenceAnimation ? react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.NextAnimation<react-native-reanimated.react-native-reanimated/lib/types/reanimated2/animation/commonTypes.SequenceAnimation> : react-native-reanimated.react-native-reanimated/lib/types/reanimated2/commonTypes.AnimatableValue | T
     }}}
     */
-  @js.native
-  trait AnimationToDecoration[T /* <: AnimationObject | StyleLayoutAnimation */] extends StObject
+  type AnimationToDecoration[T /* <: AnimationObject | StyleLayoutAnimation */] = Record[String, Any]
   
   type UserUpdater = js.Function0[AnimatedStyle]
 }

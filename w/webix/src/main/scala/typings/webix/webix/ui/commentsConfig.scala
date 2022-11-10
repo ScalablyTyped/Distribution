@@ -4,23 +4,24 @@ import typings.std.HTMLElement
 import typings.webix.webix.DataCollection
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait commentsConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var currentUser: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -36,15 +37,21 @@ trait commentsConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var listItem: js.UndefOr[Any] = js.undefined
+  var keepButtonVisible: js.UndefOr[Boolean] = js.undefined
+  
+  var listItem: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
+  var maxInputHeight: js.UndefOr[Double] = js.undefined
   
   var maxWidth: js.UndefOr[Double] = js.undefined
   
   var mentions: js.UndefOr[Boolean] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
+  
+  var minInputHeight: js.UndefOr[Any] = js.undefined
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
@@ -54,7 +61,7 @@ trait commentsConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[Double | obj] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -62,13 +69,13 @@ trait commentsConfig extends StObject {
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
   var sendAction: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var users: js.UndefOr[js.Array[Any] | String | DataCollection] = js.undefined
   
@@ -85,7 +92,7 @@ object commentsConfig {
   
   extension [Self <: commentsConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -97,7 +104,7 @@ object commentsConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -105,7 +112,7 @@ object commentsConfig {
     
     inline def setCurrentUserUndefined: Self = StObject.set(x, "currentUser", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -139,13 +146,21 @@ object commentsConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setListItem(value: Any): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    inline def setKeepButtonVisible(value: Boolean): Self = StObject.set(x, "keepButtonVisible", value.asInstanceOf[js.Any])
+    
+    inline def setKeepButtonVisibleUndefined: Self = StObject.set(x, "keepButtonVisible", js.undefined)
+    
+    inline def setListItem(value: obj): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
     inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxInputHeight(value: Double): Self = StObject.set(x, "maxInputHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxInputHeightUndefined: Self = StObject.set(x, "maxInputHeight", js.undefined)
     
     inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
@@ -158,6 +173,10 @@ object commentsConfig {
     inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinInputHeight(value: Any): Self = StObject.set(x, "minInputHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinInputHeightUndefined: Self = StObject.set(x, "minInputHeight", js.undefined)
     
     inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
@@ -175,7 +194,7 @@ object commentsConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -191,7 +210,7 @@ object commentsConfig {
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -203,7 +222,7 @@ object commentsConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

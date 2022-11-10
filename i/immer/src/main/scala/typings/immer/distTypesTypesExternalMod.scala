@@ -30,24 +30,22 @@ object distTypesTypesExternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends immer.immer/dist/types/types-external.PrimitiveType ? T : T extends immer.immer/dist/types/types-external.AtomicObject ? T : T extends immer.immer/dist/types/types-external.IfAvailable<std.ReadonlyMap<infer K, infer V>, void> ? std.Map<immer.immer/dist/types/types-external.Draft<K>, immer.immer/dist/types/types-external.Draft<V>> : T extends immer.immer/dist/types/types-external.IfAvailable<std.ReadonlySet<infer V>, void> ? std.Set<immer.immer/dist/types/types-external.Draft<V>> : T extends immer.immer/dist/types/types-external.WeakReferences ? T : T extends object ? immer.immer/dist/types/types-external.WritableDraft<T> : T
     }}}
     */
-  @js.native
-  trait Draft[T] extends StObject
+  type Draft[T] = T
   
   /** Converts `nothing` into `undefined` */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends immer.immer/dist/internal.Nothing ? undefined : T
     }}}
     */
-  @js.native
-  trait FromNothing[T] extends StObject
+  type FromNothing[T] = T
   
   @js.native
   trait IProduce extends StObject {
@@ -88,27 +86,25 @@ object distTypesTypesExternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     true | false extends T extends never ? true : false ? Fallback : keyof T extends never ? Fallback : T
     }}}
     */
-  @js.native
-  trait IfAvailable[T, Fallback] extends StObject
+  type IfAvailable[T, Fallback] = Fallback
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends immer.immer/dist/types/types-external.PrimitiveType ? T : T extends immer.immer/dist/types/types-external.AtomicObject ? T : T extends immer.immer/dist/types/types-external.IfAvailable<std.ReadonlyMap<infer K, infer V>, void> ? std.ReadonlyMap<immer.immer/dist/types/types-external.Immutable<K>, immer.immer/dist/types/types-external.Immutable<V>> : T extends immer.immer/dist/types/types-external.IfAvailable<std.ReadonlySet<infer V>, void> ? std.ReadonlySet<immer.immer/dist/types/types-external.Immutable<V>> : T extends immer.immer/dist/types/types-external.WeakReferences ? T : T extends object ? {readonly [ K in keyof T ]: immer.immer/dist/types/types-external.Immutable<T[K]>} : T
     }}}
     */
-  @js.native
-  trait Immutable[T] extends StObject
+  type Immutable[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Recipe extends (draft : immer.immer/dist/types/types-external.Draft<State>, rest : infer RestArgs): immer.immer/dist/types/types-external.ValidRecipeReturnTypePossiblyPromise<State> ? (base : State | undefined, args : RestArgs): immer.immer/dist/types/types-external.PromisifyReturnIfNeeded<State, Recipe, UsePatches> : never
     }}}
@@ -118,7 +114,7 @@ object distTypesTypesExternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Recipe extends (draft : infer DraftState, args : infer RestArgs): any ? std.ReturnType<Recipe> extends immer.immer/dist/types/types-external.ValidRecipeReturnTypePossiblyPromise<DraftState> ? (base : immer.immer/dist/types/types-external.Immutable<DraftState>, args : RestArgs): immer.immer/dist/types/types-external.PromisifyReturnIfNeeded<DraftState, Recipe, UsePatches> : never : never
     }}}
@@ -128,7 +124,7 @@ object distTypesTypesExternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Curried extends (base : infer State, rest : ...any): any ? State : never
     }}}
@@ -141,7 +137,7 @@ object distTypesTypesExternalMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Curried extends (base : infer State, rest : infer Args): any ? std.ReturnType<Curried> extends State ? (draft : immer.immer/dist/types/types-external.Draft<State>, rest : Args): immer.immer/dist/types/types-external.ValidRecipeReturnType<immer.immer/dist/types/types-external.Draft<State>> : never : never
     }}}
@@ -189,23 +185,21 @@ object distTypesTypesExternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Return extends void ? Base : Return extends std.Promise<infer Result> ? std.Promise<Result extends void ? Base : immer.immer/dist/types/types-external.FromNothing<Result>> : immer.immer/dist/types/types-external.FromNothing<Return>
     }}}
     */
-  @js.native
-  trait Produced[Base, Return] extends StObject
+  type Produced[Base, Return] = Base
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.ReturnType<Recipe> extends std.Promise<any> ? std.Promise<UsePatches extends true ? immer.immer/dist/types/types-external.PatchesTuple<State> : State> : UsePatches extends true ? immer.immer/dist/types/types-external.PatchesTuple<State> : State
     }}}
     */
-  @js.native
-  trait PromisifyReturnIfNeeded[State, Recipe /* <: AnyFunc */, UsePatches /* <: Boolean */] extends StObject
+  type PromisifyReturnIfNeeded[State, Recipe /* <: AnyFunc */, UsePatches /* <: Boolean */] = State
   
   type ValidRecipeReturnType[State] = js.UndefOr[
     State | Unit | (/* import warning: importer.ImportType#apply Failed type conversion: State extends undefined ? immer.immer/dist/internal.Nothing : never */ js.Any)

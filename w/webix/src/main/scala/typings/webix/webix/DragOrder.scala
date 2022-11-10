@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DragOrder extends StObject {
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String
+  def $drag(source: HTMLElement, ev: Event, pointer: String): String
   
   @JSName("$dragDestroy")
   var $dragDestroy: Unit
@@ -34,7 +34,7 @@ trait DragOrder extends StObject {
 object DragOrder {
   
   inline def apply(
-    $drag: (HTMLElement, Event) => String,
+    $drag: (HTMLElement, Event, String) => String,
     $dragDestroy: Unit,
     $dragIn: (HTMLElement, HTMLElement, Event) => HTMLElement,
     $dragMark: Boolean,
@@ -42,13 +42,13 @@ object DragOrder {
     $dragPos: WebixCallback,
     $drop: (HTMLElement, HTMLElement, Event) => Unit
   ): DragOrder = {
-    val __obj = js.Dynamic.literal($drag = js.Any.fromFunction2($drag), $dragDestroy = $dragDestroy.asInstanceOf[js.Any], $dragIn = js.Any.fromFunction3($dragIn), $dragMark = $dragMark.asInstanceOf[js.Any], $dragOut = js.Any.fromFunction3($dragOut), $dragPos = $dragPos.asInstanceOf[js.Any], $drop = js.Any.fromFunction3($drop))
+    val __obj = js.Dynamic.literal($drag = js.Any.fromFunction3($drag), $dragDestroy = $dragDestroy.asInstanceOf[js.Any], $dragIn = js.Any.fromFunction3($dragIn), $dragMark = $dragMark.asInstanceOf[js.Any], $dragOut = js.Any.fromFunction3($dragOut), $dragPos = $dragPos.asInstanceOf[js.Any], $drop = js.Any.fromFunction3($drop))
     __obj.asInstanceOf[DragOrder]
   }
   
   extension [Self <: DragOrder](x: Self) {
     
-    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    inline def set$drag(value: (HTMLElement, Event, String) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction3(value))
     
     inline def set$dragDestroy(value: Unit): Self = StObject.set(x, "$dragDestroy", value.asInstanceOf[js.Any])
     

@@ -36,6 +36,15 @@ type Classes[Name /* <: String | Double | js.Symbol */] = Record[Name, String]
 
 type CreateGenerateId_ = js.Function1[/* options */ js.UndefOr[CreateGenerateIdOptions], GenerateId]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends undefined ? (data : P): R : (data : P & {  theme :T}): R
+  }}}
+  */
+type Func[P, T, R] = js.Function1[/* data */ P, R]
+
 type GenerateId = js.Function2[/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]], String]
 
 type InsertionPoint = String | HTMLElement | Comment
@@ -48,3 +57,12 @@ type JssValue = String | (Double & js.Object) | (js.Array[String | Double | (js.
 type Keyframes[Name /* <: String */] = Record[Name, String]
 
 type NormalCssProperties = Properties[String | Double, String]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends keyof jss.jss.NormalCssProperties ? jss.jss.NormalCssProperties[K] : jss.jss.JssValue
+  }}}
+  */
+type NormalCssValues[K] = JssValue

@@ -1,6 +1,5 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.ODataContext.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,12 +11,12 @@ trait ODataContext extends StObject {
   /**
     * Invokes an OData operation that returns a value.
     */
-  def get(operationName: String, params: Any): DxPromise[Any] = js.native
+  def get(operationName: String, params: Any): js.Promise[Any] = js.native
   
   /**
     * Invokes an OData operation that returns nothing.
     */
-  def invoke(operationName: String, params: Any, httpMethod: HttpMethod): DxPromise[Unit] = js.native
+  def invoke(operationName: String, params: Any, httpMethod: HttpMethod): js.Promise[Unit] = js.native
   
   def objectLink(entityAlias: String, key: String): Any = js.native
   /**

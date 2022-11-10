@@ -1,5 +1,6 @@
 package typings.webpack.mod
 
+import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,12 @@ trait ExperimentsNormalizedExtra extends StObject {
   /**
   	 * Enable css support.
   	 */
-  var css: js.UndefOr[CssExperimentOptions] = js.undefined
+  var css: js.UndefOr[`false` | CssExperimentOptions] = js.undefined
   
   /**
   	 * Compile entrypoints and import()s only when they are accessed.
   	 */
-  var lazyCompilation: js.UndefOr[LazyCompilationOptions] = js.undefined
+  var lazyCompilation: js.UndefOr[`false` | LazyCompilationOptions] = js.undefined
 }
 object ExperimentsNormalizedExtra {
   
@@ -37,11 +38,11 @@ object ExperimentsNormalizedExtra {
     
     inline def setBuildHttpUndefined: Self = StObject.set(x, "buildHttp", js.undefined)
     
-    inline def setCss(value: CssExperimentOptions): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: `false` | CssExperimentOptions): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setLazyCompilation(value: LazyCompilationOptions): Self = StObject.set(x, "lazyCompilation", value.asInstanceOf[js.Any])
+    inline def setLazyCompilation(value: `false` | LazyCompilationOptions): Self = StObject.set(x, "lazyCompilation", value.asInstanceOf[js.Any])
     
     inline def setLazyCompilationUndefined: Self = StObject.set(x, "lazyCompilation", js.undefined)
   }

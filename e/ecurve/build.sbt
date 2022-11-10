@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ecurve"
-version := "1.0-dt-20211202Z-52ff8c"
+version := "1.0-dt-20211202Z-5d65d8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bigi" % "1.4-dt-20220606Z-320eeb",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "bigi" % "1.4-dt-20220606Z-ab087f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

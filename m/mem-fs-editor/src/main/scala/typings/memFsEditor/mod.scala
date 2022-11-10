@@ -163,6 +163,8 @@ object mod {
       
       inline def setDefaults(value: ReadRawContents): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
+      inline def setDefaultsNull: Self = StObject.set(x, "defaults", null)
+      
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
       inline def setRaw(value: `true`): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])

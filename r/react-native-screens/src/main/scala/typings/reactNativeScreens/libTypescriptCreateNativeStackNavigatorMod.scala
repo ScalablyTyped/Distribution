@@ -91,6 +91,8 @@ object libTypescriptCreateNativeStackNavigatorMod {
       
       inline def setHeaderBackTitleStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "headerBackTitleStyle", value.asInstanceOf[js.Any])
       
+      inline def setHeaderBackTitleStyleNull: Self = StObject.set(x, "headerBackTitleStyle", null)
+      
       inline def setHeaderBackTitleStyleUndefined: Self = StObject.set(x, "headerBackTitleStyle", js.undefined)
       
       inline def setHeaderPressColorAndroid(value: String): Self = StObject.set(x, "headerPressColorAndroid", value.asInstanceOf[js.Any])

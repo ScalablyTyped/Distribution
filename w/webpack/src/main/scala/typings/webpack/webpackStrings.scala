@@ -24,8 +24,232 @@ object webpackStrings {
   inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
   
   @js.native
+  sealed trait __webpack_exports__ extends StObject
+  inline def __webpack_exports__ : __webpack_exports__ = "__webpack_exports__".asInstanceOf[__webpack_exports__]
+  
+  @js.native
   sealed trait __webpack_require__ extends StObject
   inline def __webpack_require__ : __webpack_require__ = "__webpack_require__".asInstanceOf[__webpack_require__]
+  
+  @js.native
+  sealed trait __webpack_require__DotAsterisk extends StObject
+  inline def __webpack_require__DotAsterisk: __webpack_require__DotAsterisk = "__webpack_require__.*".asInstanceOf[__webpack_require__DotAsterisk]
+  
+  @js.native
+  sealed trait __webpack_require__DotC extends StObject
+  inline def __webpack_require__DotC: __webpack_require__DotC = "__webpack_require__.C".asInstanceOf[__webpack_require__DotC]
+  
+  @js.native
+  sealed trait __webpack_require__DotE extends StObject
+  inline def __webpack_require__DotE: __webpack_require__DotE = "__webpack_require__.E".asInstanceOf[__webpack_require__DotE]
+  
+  @js.native
+  sealed trait __webpack_require__DotF extends StObject
+  inline def __webpack_require__DotF: __webpack_require__DotF = "__webpack_require__.F".asInstanceOf[__webpack_require__DotF]
+  
+  @js.native
+  sealed trait __webpack_require__DotG extends StObject
+  inline def __webpack_require__DotG: __webpack_require__DotG = "__webpack_require__.G".asInstanceOf[__webpack_require__DotG]
+  
+  @js.native
+  sealed trait __webpack_require__DotH extends StObject
+  inline def __webpack_require__DotH: __webpack_require__DotH = "__webpack_require__.H".asInstanceOf[__webpack_require__DotH]
+  
+  @js.native
+  sealed trait __webpack_require__DotI extends StObject
+  inline def __webpack_require__DotI: __webpack_require__DotI = "__webpack_require__.I".asInstanceOf[__webpack_require__DotI]
+  
+  @js.native
+  sealed trait __webpack_require__DotO extends StObject
+  inline def __webpack_require__DotO: __webpack_require__DotO = "__webpack_require__.O".asInstanceOf[__webpack_require__DotO]
+  
+  @js.native
+  sealed trait __webpack_require__DotR extends StObject
+  inline def __webpack_require__DotR: __webpack_require__DotR = "__webpack_require__.R".asInstanceOf[__webpack_require__DotR]
+  
+  @js.native
+  sealed trait __webpack_require__DotS extends StObject
+  inline def __webpack_require__DotS: __webpack_require__DotS = "__webpack_require__.S".asInstanceOf[__webpack_require__DotS]
+  
+  @js.native
+  sealed trait __webpack_require__DotSystem extends StObject
+  inline def __webpack_require__DotSystem: __webpack_require__DotSystem = "__webpack_require__.System".asInstanceOf[__webpack_require__DotSystem]
+  
+  @js.native
+  sealed trait __webpack_require__DotU extends StObject
+  inline def __webpack_require__DotU: __webpack_require__DotU = "__webpack_require__.U".asInstanceOf[__webpack_require__DotU]
+  
+  @js.native
+  sealed trait __webpack_require__DotX extends StObject
+  inline def __webpack_require__DotX: __webpack_require__DotX = "__webpack_require__.X".asInstanceOf[__webpack_require__DotX]
+  
+  @js.native
+  sealed trait __webpack_require__Dota extends StObject
+  inline def __webpack_require__Dota: __webpack_require__Dota = "__webpack_require__.a".asInstanceOf[__webpack_require__Dota]
+  
+  @js.native
+  sealed trait __webpack_require__DotamdD extends StObject
+  inline def __webpack_require__DotamdD: __webpack_require__DotamdD = "__webpack_require__.amdD".asInstanceOf[__webpack_require__DotamdD]
+  
+  @js.native
+  sealed trait __webpack_require__DotamdO extends StObject
+  inline def __webpack_require__DotamdO: __webpack_require__DotamdO = "__webpack_require__.amdO".asInstanceOf[__webpack_require__DotamdO]
+  
+  @js.native
+  sealed trait __webpack_require__Dotb extends StObject
+  inline def __webpack_require__Dotb: __webpack_require__Dotb = "__webpack_require__.b".asInstanceOf[__webpack_require__Dotb]
+  
+  @js.native
+  sealed trait __webpack_require__Dotc extends StObject
+  inline def __webpack_require__Dotc: __webpack_require__Dotc = "__webpack_require__.c".asInstanceOf[__webpack_require__Dotc]
+  
+  @js.native
+  sealed trait __webpack_require__Dotcn extends StObject
+  inline def __webpack_require__Dotcn: __webpack_require__Dotcn = "__webpack_require__.cn".asInstanceOf[__webpack_require__Dotcn]
+  
+  @js.native
+  sealed trait __webpack_require__Dotd extends StObject
+  inline def __webpack_require__Dotd: __webpack_require__Dotd = "__webpack_require__.d".asInstanceOf[__webpack_require__Dotd]
+  
+  @js.native
+  sealed trait __webpack_require__Dote extends StObject
+  inline def __webpack_require__Dote: __webpack_require__Dote = "__webpack_require__.e".asInstanceOf[__webpack_require__Dote]
+  
+  @js.native
+  sealed trait __webpack_require__Dotf extends StObject
+  inline def __webpack_require__Dotf: __webpack_require__Dotf = "__webpack_require__.f".asInstanceOf[__webpack_require__Dotf]
+  
+  @js.native
+  sealed trait __webpack_require__Dotg extends StObject
+  inline def __webpack_require__Dotg: __webpack_require__Dotg = "__webpack_require__.g".asInstanceOf[__webpack_require__Dotg]
+  
+  @js.native
+  sealed trait __webpack_require__Doth extends StObject
+  inline def __webpack_require__Doth: __webpack_require__Doth = "__webpack_require__.h".asInstanceOf[__webpack_require__Doth]
+  
+  @js.native
+  sealed trait __webpack_require__Dothk extends StObject
+  inline def __webpack_require__Dothk: __webpack_require__Dothk = "__webpack_require__.hk".asInstanceOf[__webpack_require__Dothk]
+  
+  @js.native
+  sealed trait __webpack_require__Dothmd extends StObject
+  inline def __webpack_require__Dothmd: __webpack_require__Dothmd = "__webpack_require__.hmd".asInstanceOf[__webpack_require__Dothmd]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrC extends StObject
+  inline def __webpack_require__DothmrC: __webpack_require__DothmrC = "__webpack_require__.hmrC".asInstanceOf[__webpack_require__DothmrC]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrD extends StObject
+  inline def __webpack_require__DothmrD: __webpack_require__DothmrD = "__webpack_require__.hmrD".asInstanceOf[__webpack_require__DothmrD]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrF extends StObject
+  inline def __webpack_require__DothmrF: __webpack_require__DothmrF = "__webpack_require__.hmrF".asInstanceOf[__webpack_require__DothmrF]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrI extends StObject
+  inline def __webpack_require__DothmrI: __webpack_require__DothmrI = "__webpack_require__.hmrI".asInstanceOf[__webpack_require__DothmrI]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrM extends StObject
+  inline def __webpack_require__DothmrM: __webpack_require__DothmrM = "__webpack_require__.hmrM".asInstanceOf[__webpack_require__DothmrM]
+  
+  @js.native
+  sealed trait __webpack_require__DothmrS extends StObject
+  inline def __webpack_require__DothmrS: __webpack_require__DothmrS = "__webpack_require__.hmrS".asInstanceOf[__webpack_require__DothmrS]
+  
+  @js.native
+  sealed trait __webpack_require__Dothu extends StObject
+  inline def __webpack_require__Dothu: __webpack_require__Dothu = "__webpack_require__.hu".asInstanceOf[__webpack_require__Dothu]
+  
+  @js.native
+  sealed trait __webpack_require__Doti extends StObject
+  inline def __webpack_require__Doti: __webpack_require__Doti = "__webpack_require__.i".asInstanceOf[__webpack_require__Doti]
+  
+  @js.native
+  sealed trait __webpack_require__Dotj extends StObject
+  inline def __webpack_require__Dotj: __webpack_require__Dotj = "__webpack_require__.j".asInstanceOf[__webpack_require__Dotj]
+  
+  @js.native
+  sealed trait __webpack_require__Dotk extends StObject
+  inline def __webpack_require__Dotk: __webpack_require__Dotk = "__webpack_require__.k".asInstanceOf[__webpack_require__Dotk]
+  
+  @js.native
+  sealed trait __webpack_require__Dotl extends StObject
+  inline def __webpack_require__Dotl: __webpack_require__Dotl = "__webpack_require__.l".asInstanceOf[__webpack_require__Dotl]
+  
+  @js.native
+  sealed trait __webpack_require__Dotm extends StObject
+  inline def __webpack_require__Dotm: __webpack_require__Dotm = "__webpack_require__.m".asInstanceOf[__webpack_require__Dotm]
+  
+  @js.native
+  sealed trait __webpack_require__Dotn extends StObject
+  inline def __webpack_require__Dotn: __webpack_require__Dotn = "__webpack_require__.n".asInstanceOf[__webpack_require__Dotn]
+  
+  @js.native
+  sealed trait __webpack_require__Dotnc extends StObject
+  inline def __webpack_require__Dotnc: __webpack_require__Dotnc = "__webpack_require__.nc".asInstanceOf[__webpack_require__Dotnc]
+  
+  @js.native
+  sealed trait __webpack_require__Dotnmd extends StObject
+  inline def __webpack_require__Dotnmd: __webpack_require__Dotnmd = "__webpack_require__.nmd".asInstanceOf[__webpack_require__Dotnmd]
+  
+  @js.native
+  sealed trait __webpack_require__Doto extends StObject
+  inline def __webpack_require__Doto: __webpack_require__Doto = "__webpack_require__.o".asInstanceOf[__webpack_require__Doto]
+  
+  @js.native
+  sealed trait __webpack_require__Dotoe extends StObject
+  inline def __webpack_require__Dotoe: __webpack_require__Dotoe = "__webpack_require__.oe".asInstanceOf[__webpack_require__Dotoe]
+  
+  @js.native
+  sealed trait __webpack_require__Dotp extends StObject
+  inline def __webpack_require__Dotp: __webpack_require__Dotp = "__webpack_require__.p".asInstanceOf[__webpack_require__Dotp]
+  
+  @js.native
+  sealed trait __webpack_require__Dotr extends StObject
+  inline def __webpack_require__Dotr: __webpack_require__Dotr = "__webpack_require__.r".asInstanceOf[__webpack_require__Dotr]
+  
+  @js.native
+  sealed trait __webpack_require__Dots extends StObject
+  inline def __webpack_require__Dots: __webpack_require__Dots = "__webpack_require__.s".asInstanceOf[__webpack_require__Dots]
+  
+  @js.native
+  sealed trait __webpack_require__Dott extends StObject
+  inline def __webpack_require__Dott: __webpack_require__Dott = "__webpack_require__.t".asInstanceOf[__webpack_require__Dott]
+  
+  @js.native
+  sealed trait __webpack_require__Dotts extends StObject
+  inline def __webpack_require__Dotts: __webpack_require__Dotts = "__webpack_require__.ts".asInstanceOf[__webpack_require__Dotts]
+  
+  @js.native
+  sealed trait __webpack_require__Dottt extends StObject
+  inline def __webpack_require__Dottt: __webpack_require__Dottt = "__webpack_require__.tt".asInstanceOf[__webpack_require__Dottt]
+  
+  @js.native
+  sealed trait __webpack_require__Dottu extends StObject
+  inline def __webpack_require__Dottu: __webpack_require__Dottu = "__webpack_require__.tu".asInstanceOf[__webpack_require__Dottu]
+  
+  @js.native
+  sealed trait __webpack_require__Dotu extends StObject
+  inline def __webpack_require__Dotu: __webpack_require__Dotu = "__webpack_require__.u".asInstanceOf[__webpack_require__Dotu]
+  
+  @js.native
+  sealed trait __webpack_require__Dotv extends StObject
+  inline def __webpack_require__Dotv: __webpack_require__Dotv = "__webpack_require__.v".asInstanceOf[__webpack_require__Dotv]
+  
+  @js.native
+  sealed trait __webpack_require__Dotw extends StObject
+  inline def __webpack_require__Dotw: __webpack_require__Dotw = "__webpack_require__.w".asInstanceOf[__webpack_require__Dotw]
+  
+  @js.native
+  sealed trait __webpack_require__Dotx extends StObject
+  inline def __webpack_require__Dotx: __webpack_require__Dotx = "__webpack_require__.x".asInstanceOf[__webpack_require__Dotx]
+  
+  @js.native
+  sealed trait __webpack_require__Doty extends StObject
+  inline def __webpack_require__Doty: __webpack_require__Doty = "__webpack_require__.y".asInstanceOf[__webpack_require__Doty]
   
   @js.native
   sealed trait abort
@@ -260,6 +484,10 @@ object webpackStrings {
   inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
   @js.native
+  sealed trait `has css modules` extends StObject
+  inline def `has css modules`: `has css modules` = ("has css modules").asInstanceOf[`has css modules`]
+  
+  @js.native
   sealed trait hashed extends StObject
   inline def hashed: hashed = "hashed".asInstanceOf[hashed]
   
@@ -350,6 +578,14 @@ object webpackStrings {
     extends StObject
        with ExternalsType
   inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
+  sealed trait moduleDotid extends StObject
+  inline def moduleDotid: moduleDotid = "module.id".asInstanceOf[moduleDotid]
+  
+  @js.native
+  sealed trait moduleDotloaded extends StObject
+  inline def moduleDotloaded: moduleDotloaded = "module.loaded".asInstanceOf[moduleDotloaded]
   
   @js.native
   sealed trait modules extends StObject
@@ -482,6 +718,10 @@ object webpackStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
+  sealed trait `return-exports-from-runtime` extends StObject
+  inline def `return-exports-from-runtime`: `return-exports-from-runtime` = "return-exports-from-runtime".asInstanceOf[`return-exports-from-runtime`]
+  
+  @js.native
   sealed trait `root-of-chunk` extends StObject
   inline def `root-of-chunk`: `root-of-chunk` = "root-of-chunk".asInstanceOf[`root-of-chunk`]
   
@@ -562,6 +802,10 @@ object webpackStrings {
   inline def `this`: `this` = "this".asInstanceOf[`this`]
   
   @js.native
+  sealed trait `top-level-this-exports` extends StObject
+  inline def `top-level-this-exports`: `top-level-this-exports` = "top-level-this-exports".asInstanceOf[`top-level-this-exports`]
+  
+  @js.native
   sealed trait `total-size` extends StObject
   inline def `total-size`: `total-size` = "total-size".asInstanceOf[`total-size`]
   
@@ -636,6 +880,10 @@ object webpackStrings {
     extends StObject
        with ContextMode
   inline def weak: weak = "weak".asInstanceOf[weak]
+  
+  @js.native
+  sealed trait webpackChunk extends StObject
+  inline def webpackChunk: webpackChunk = "webpackChunk".asInstanceOf[webpackChunk]
   
   @js.native
   sealed trait window

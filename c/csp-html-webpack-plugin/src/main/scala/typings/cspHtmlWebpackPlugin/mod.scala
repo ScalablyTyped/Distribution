@@ -134,7 +134,7 @@ object mod {
   // which we're using and infer the generic type variable inside.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     html-webpack-plugin.html-webpack-plugin.Hooks extends csp-html-webpack-plugin.csp-html-webpack-plugin.HtmlPluginDataHookV3<infer T> ? T : html-webpack-plugin.html-webpack-plugin.Hooks extends csp-html-webpack-plugin.csp-html-webpack-plugin.HtmlPluginDataHookV4<infer U> ? U : any
     }}}

@@ -3,7 +3,6 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.ColumnPath
 import typings.devextreme.anon.keyinEventNameFunctionFieldsPrepared
 import typings.devextreme.devextremeStrings.string_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.EventName
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.Field
 import org.scalablytyped.runtime.StObject
@@ -92,7 +91,7 @@ trait PivotGridDataSource extends StObject {
   /**
     * Starts loading data.
     */
-  def load(): DxPromise[Any] = js.native
+  def load(): js.Promise[Any] = js.native
   
   /**
     * Detaches all event handlers from a single event.
@@ -115,7 +114,7 @@ trait PivotGridDataSource extends StObject {
   /**
     * Clears the loaded PivotGridDataSource data and calls the load() method.
     */
-  def reload(): DxPromise[Any] = js.native
+  def reload(): js.Promise[Any] = js.native
   
   /**
     * Gets the current PivotGridDataSource state. Part of the PivotGrid UI component&apos;s state storing feature.

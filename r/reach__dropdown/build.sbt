@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "reach__dropdown"
-version := "0.18.0-980fe8"
+version := "0.18.0-11bd48"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "reach__descendants" % "0.18.0-ef2e3e",
-  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-57eccd",
-  "org.scalablytyped" %%% "reach__popover" % "0.18.0-c334a1",
-  "org.scalablytyped" %%% "reach__rect" % "0.18.0-0a36b4",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
+  "org.scalablytyped" %%% "reach__descendants" % "0.18.0-9587c2",
+  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-0129e9",
+  "org.scalablytyped" %%% "reach__popover" % "0.18.0-ff2d3e",
+  "org.scalablytyped" %%% "reach__rect" % "0.18.0-232da6",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "draco3dgltf"
-version := "1.4-dt-20211202Z-cf7118"
+version := "1.4-dt-20211202Z-38962a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "draco3d" % "1.4-dt-20221106Z-f9f01a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "draco3d" % "1.4-dt-20221106Z-942d7a",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

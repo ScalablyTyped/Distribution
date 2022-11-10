@@ -658,8 +658,26 @@ type CreateIndex = js.Function2[
 ], 
 SearchIndex & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof {readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any} extends string? keyof {readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any} : never ]: std.ReturnType<{readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any}[key]>} */ js.Any)]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  THit extends string | number ? @algolia/client-search.@algolia/client-search.HighlightMatch : {[ KAttribute in keyof THit ]:? @algolia/client-search.@algolia/client-search.HighlightResult<THit[KAttribute]>}
+  }}}
+  */
+type HighlightResult[THit] = HighlightMatch
+
 type Hit[THit] = THit & DistinctSeqID[THit]
 
 type Indice = Index
 
 type RequireAtLeastOne[TType] = /* import warning: importer.ImportType#apply Failed type conversion: {[ TKey in keyof TType ]: -? std.Required<std.Pick<TType, TKey>> & std.Partial<std.Pick<TType, std.Exclude<keyof TType, TKey>>>}[keyof TType] */ js.Any
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  THit extends string | number ? @algolia/client-search.@algolia/client-search.SnippetMatch : {[ KAttribute in keyof THit ]: @algolia/client-search.@algolia/client-search.SnippetResult<THit[KAttribute]>}
+  }}}
+  */
+type SnippetResult[THit] = SnippetMatch

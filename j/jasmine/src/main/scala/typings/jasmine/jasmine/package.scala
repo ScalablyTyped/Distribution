@@ -60,5 +60,23 @@ type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], Unit]
 
 type SpyObj[T] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends jasmine.jasmine.Func? T[K] & jasmine.jasmine.Spy<T[K]> : T[K]} */ js.Any)
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends undefined ? std.ReadonlyArray<string> | {[methodName: string] : any} : std.ReadonlyArray<keyof T> | {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
+  }}}
+  */
+type SpyObjMethodNames[T] = js.Array[String] | StringDictionary[scala.Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends undefined ? std.ReadonlyArray<string> | {[propertyName: string] : any} : std.ReadonlyArray<keyof T> | {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type SpyObjPropertyNames[T] = js.Array[String] | StringDictionary[scala.Any]
+
 /** @deprecated use JasmineStartedInfo instead */
 type SuiteInfo = JasmineStartedInfo

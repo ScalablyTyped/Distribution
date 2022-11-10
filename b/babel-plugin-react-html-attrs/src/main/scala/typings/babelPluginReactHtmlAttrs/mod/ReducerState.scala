@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // to a supertype common with the second argument to useReducer()
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-  * You'll have to cast your way around this structure, unfortunately. 
+  * You'll have to cast your way around this structure, unfortunately.
   * TS definition: {{{
   R extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Reducer<infer S, any> ? S : never
   }}}

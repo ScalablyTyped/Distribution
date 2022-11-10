@@ -57,6 +57,20 @@ trait GroundStation extends Service {
   ): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   
   /**
+    * Creates an Ephemeris with the specified EphemerisData.
+    */
+  def createEphemeris(): Request[EphemerisIdResponse, AWSError] = js.native
+  def createEphemeris(callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]): Request[EphemerisIdResponse, AWSError] = js.native
+  /**
+    * Creates an Ephemeris with the specified EphemerisData.
+    */
+  def createEphemeris(params: CreateEphemerisRequest): Request[EphemerisIdResponse, AWSError] = js.native
+  def createEphemeris(
+    params: CreateEphemerisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]
+  ): Request[EphemerisIdResponse, AWSError] = js.native
+  
+  /**
     * Creates a mission profile.  dataflowEdges is a list of lists of strings. Each lower level list of strings has two elements: a from ARN and a to ARN.
     */
   def createMissionProfile(): Request[MissionProfileIdResponse, AWSError] = js.native
@@ -99,6 +113,20 @@ trait GroundStation extends Service {
   ): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   
   /**
+    * Deletes an ephemeris
+    */
+  def deleteEphemeris(): Request[EphemerisIdResponse, AWSError] = js.native
+  def deleteEphemeris(callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]): Request[EphemerisIdResponse, AWSError] = js.native
+  /**
+    * Deletes an ephemeris
+    */
+  def deleteEphemeris(params: DeleteEphemerisRequest): Request[EphemerisIdResponse, AWSError] = js.native
+  def deleteEphemeris(
+    params: DeleteEphemerisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]
+  ): Request[EphemerisIdResponse, AWSError] = js.native
+  
+  /**
     * Deletes a mission profile.
     */
   def deleteMissionProfile(): Request[MissionProfileIdResponse, AWSError] = js.native
@@ -125,6 +153,20 @@ trait GroundStation extends Service {
     params: DescribeContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactResponse, Unit]
   ): Request[DescribeContactResponse, AWSError] = js.native
+  
+  /**
+    * Describes an existing ephemeris.
+    */
+  def describeEphemeris(): Request[DescribeEphemerisResponse, AWSError] = js.native
+  def describeEphemeris(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEphemerisResponse, Unit]): Request[DescribeEphemerisResponse, AWSError] = js.native
+  /**
+    * Describes an existing ephemeris.
+    */
+  def describeEphemeris(params: DescribeEphemerisRequest): Request[DescribeEphemerisResponse, AWSError] = js.native
+  def describeEphemeris(
+    params: DescribeEphemerisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEphemerisResponse, Unit]
+  ): Request[DescribeEphemerisResponse, AWSError] = js.native
   
   /**
     * Returns Config information. Only one Config response can be returned.
@@ -239,6 +281,20 @@ trait GroundStation extends Service {
   ): Request[ListDataflowEndpointGroupsResponse, AWSError] = js.native
   
   /**
+    * List existing ephemerides.
+    */
+  def listEphemerides(): Request[ListEphemeridesResponse, AWSError] = js.native
+  def listEphemerides(callback: js.Function2[/* err */ AWSError, /* data */ ListEphemeridesResponse, Unit]): Request[ListEphemeridesResponse, AWSError] = js.native
+  /**
+    * List existing ephemerides.
+    */
+  def listEphemerides(params: ListEphemeridesRequest): Request[ListEphemeridesResponse, AWSError] = js.native
+  def listEphemerides(
+    params: ListEphemeridesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEphemeridesResponse, Unit]
+  ): Request[ListEphemeridesResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of ground stations. 
     */
   def listGroundStations(): Request[ListGroundStationsResponse, AWSError] = js.native
@@ -349,6 +405,20 @@ trait GroundStation extends Service {
     params: UpdateConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
+  
+  /**
+    * Updates an existing ephemeris
+    */
+  def updateEphemeris(): Request[EphemerisIdResponse, AWSError] = js.native
+  def updateEphemeris(callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]): Request[EphemerisIdResponse, AWSError] = js.native
+  /**
+    * Updates an existing ephemeris
+    */
+  def updateEphemeris(params: UpdateEphemerisRequest): Request[EphemerisIdResponse, AWSError] = js.native
+  def updateEphemeris(
+    params: UpdateEphemerisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EphemerisIdResponse, Unit]
+  ): Request[EphemerisIdResponse, AWSError] = js.native
   
   /**
     * Updates a mission profile. Updating a mission profile will not update the execution parameters for existing future contacts.

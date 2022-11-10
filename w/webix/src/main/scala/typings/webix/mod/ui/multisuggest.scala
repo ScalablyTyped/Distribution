@@ -1,7 +1,9 @@
 package typings.webix.mod.ui
 
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +15,7 @@ open class multisuggest ()
      with typings.webix.webix.ui.baseview {
   
   @JSName("$dragCreate")
-  def $dragCreate(args: Any*): Any = js.native
-  @JSName("$dragCreate")
-  var $dragCreate_Original: WebixCallback = js.native
+  def $dragCreate(source: HTMLElement, event: Event, pointer: String): HTMLElement = js.native
   
   @JSName("$dragDestroy")
   def $dragDestroy(args: Any*): Any = js.native
@@ -33,7 +33,7 @@ open class multisuggest ()
   var $enterKey_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$skin")
   var $skin_Original_multisuggest: WebixCallback = js.native
@@ -41,8 +41,8 @@ open class multisuggest ()
   def attachEvent(`type`: multisuggestEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: multisuggestEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -53,11 +53,11 @@ open class multisuggest ()
   
   def detachEvent(id: String): Unit = js.native
   
-  def getBody(): Any = js.native
+  def getBody(): obj = js.native
   
   def getButton(): typings.webix.webix.ui.baseview = js.native
   
-  def getHead(): Any = js.native
+  def getHead(): obj = js.native
   
   def getItemId(text: String): String | Double = js.native
   
@@ -76,7 +76,10 @@ open class multisuggest ()
   
   def linkInput(input: HTMLElement): Unit = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def resizeChildren(): Unit = js.native
   

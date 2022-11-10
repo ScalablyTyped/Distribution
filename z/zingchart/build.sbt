@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zingchart"
-version := "2.8-dt-20221025Z-41386c"
+version := "2.8-dt-20221109Z-41386c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

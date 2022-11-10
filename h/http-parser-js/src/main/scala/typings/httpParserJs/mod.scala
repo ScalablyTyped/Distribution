@@ -251,13 +251,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Mode_0_12 extends true ? (info : http-parser-js.http-parser-js.HeaderInfo<HEADER>): number | void : (versionMajor : number, versionMinor : number, headers : HEADER, method : number, url : string, statusCode : number, statusMessage : string, upgrade : boolean, shouldKeepAlive : boolean): number | void
     }}}
     */
-  @js.native
-  trait OnHeadersCompleteParser[HEADER, Mode_0_12 /* <: Boolean */] extends StObject
+  type OnHeadersCompleteParser[HEADER, Mode_0_12 /* <: Boolean */] = js.Function1[/* info */ HeaderInfo[HEADER], Double | Unit]
   
   type OnHeadersParser = js.Function2[/* headers */ js.Array[String], /* url */ String, Unit]
   

@@ -3,7 +3,6 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.UserDefinedElementsArray
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Scrollable
 import typings.std.Element
@@ -23,7 +22,7 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Gets a data object with a specific key.
     */
-  def byKey(key: TKey): DxPromise[TRowData] = js.native
+  def byKey(key: TKey): js.Promise[TRowData] = js.native
   
   /**
     * Discards changes that a user made to data.
@@ -116,12 +115,12 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Clears the selection of all rows on all pages or the currently rendered page only.
     */
-  def deselectAll(): DxPromise[Unit] = js.native
+  def deselectAll(): js.Promise[Unit] = js.native
   
   /**
     * Cancels the selection of rows with specific keys.
     */
-  def deselectRows(keys: js.Array[Any]): DxPromise[Any] = js.native
+  def deselectRows(keys: js.Array[Any]): js.Promise[Any] = js.native
   
   /**
     * Switches a cell with a specific row index and a data field to the editing state. Takes effect only if the editing mode is &apos;batch&apos; or &apos;cell&apos;.
@@ -241,7 +240,7 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Navigates to a row with the specified key.
     */
-  def navigateToRow(key: TKey): DxPromise[Unit] = js.native
+  def navigateToRow(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Gets the total page count.
@@ -255,7 +254,7 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Switches the UI component to a specific page using a zero-based index.
     */
-  def pageIndex(newIndex: Double): DxPromise[Unit] = js.native
+  def pageIndex(newIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * Gets the current page size.
@@ -269,11 +268,11 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Reloads data and repaints data rows.
     */
-  def refresh(): DxPromise[Unit] = js.native
+  def refresh(): js.Promise[Unit] = js.native
   /**
     * Reloads data and repaints all or only updated data rows.
     */
-  def refresh(changesOnly: Boolean): DxPromise[Unit] = js.native
+  def refresh(changesOnly: Boolean): js.Promise[Unit] = js.native
   
   /**
     * Repaints specific rows.
@@ -283,7 +282,7 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Saves changes that a user made to data.
     */
-  def saveEditData(): DxPromise[Unit] = js.native
+  def saveEditData(): js.Promise[Unit] = js.native
   
   /**
     * Seeks a search string in the columns whose allowSearch property is true.
@@ -293,17 +292,17 @@ trait GridBase[TRowData, TKey] extends StObject {
   /**
     * Selects all rows.
     */
-  def selectAll(): DxPromise[Unit] = js.native
+  def selectAll(): js.Promise[Unit] = js.native
   
   /**
     * Selects rows with specific keys.
     */
-  def selectRows(keys: js.Array[TKey], preserve: Boolean): DxPromise[js.Array[TRowData]] = js.native
+  def selectRows(keys: js.Array[TKey], preserve: Boolean): js.Promise[js.Array[TRowData]] = js.native
   
   /**
     * Selects rows with specific indexes.
     */
-  def selectRowsByIndexes(indexes: js.Array[Double]): DxPromise[js.Array[TRowData]] = js.native
+  def selectRowsByIndexes(indexes: js.Array[Double]): js.Promise[js.Array[TRowData]] = js.native
   
   /**
     * Shows the column chooser.

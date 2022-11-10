@@ -9,17 +9,17 @@ trait ListTagsForResourceRequest extends StObject {
   /**
     * ARN of a resource.
     */
-  var resourceArn: String
+  var resourceArn: AnyArn
 }
 object ListTagsForResourceRequest {
   
-  inline def apply(resourceArn: String): ListTagsForResourceRequest = {
+  inline def apply(resourceArn: AnyArn): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
   
   extension [Self <: ListTagsForResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: AnyArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

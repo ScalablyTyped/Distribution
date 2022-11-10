@@ -22,6 +22,8 @@ import typings.xstate.libTypegenTypesMod.ResolveTypegenMeta
 import typings.xstate.libTypegenTypesMod.TypegenConstraint
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import typings.xstate.xstateBooleans.`false`
+import typings.xstate.xstateBooleans.`true`
+import typings.xstate.xstateStrings.`type`
 import typings.xstate.xstateStrings.actions
 import typings.xstate.xstateStrings.delays
 import typings.xstate.xstateStrings.guards
@@ -91,6 +93,15 @@ type BaseAction[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionO
 
 type BaseActions[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] = SingleOrArray[BaseAction[TContext, TEvent, TAction]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  A extends B ? A : B
+  }}}
+  */
+type Cast[A, B] = A
+
 type Compute[A /* <: Any */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: A[K]} */ js.Any) & Any
 
 type Condition[TContext, TEvent /* <: EventObject */] = String | (ConditionPredicate[TContext, TEvent]) | (Guard[TContext, TEvent])
@@ -118,9 +129,27 @@ type DelayedTransitions[TContext, TEvent /* <: EventObject */] = (Record[String 
 
 type DisposeActivityFunction = js.Function0[Unit]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  <A>(): A extends A2 ? true : false extends <A>(): A extends A1 ? true : false ? true : false
+  }}}
+  */
+type Equals[A1 /* <: Any */, A2 /* <: Any */] = `true`
+
 type Event[TEvent /* <: EventObject */] = (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | TEvent
 
 type EventData = (Record[String, Any]) & `1`
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  xstate.xstate/lib/types.IsNever<K> extends true ? TEvent : xstate.xstate/lib/types.ExtractEvent<TEvent, K>
+  }}}
+  */
+type EventFrom[T, K /* <: Prop[TEvent, `type`] */, TEvent /* <: EventObject */] = TEvent
 
 type EventType = String
 
@@ -136,6 +165,33 @@ type ExcludeType[A] = A
 type Expr[TContext, TEvent /* <: EventObject */, T] = js.Function2[/* context */ TContext, /* event */ TEvent, T]
 
 type ExprWithMeta[TContext, TEvent /* <: EventObject */, T] = js.Function3[/* context */ TContext, /* event */ TEvent, /* meta */ SCXMLEventMeta[TEvent], T]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TEvent extends any ? TEventType extends TEvent['type'] ? TEvent : never : never
+  }}}
+  */
+type ExtractEvent[TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] = TEvent
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  A extends {  type :T} ? xstate.xstate/lib/types.ExcludeType<A> : never
+  }}}
+  */
+type ExtractExtraParameters[A, T] = ExcludeType[A]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends any ? {  type :T['type']} extends T ? T : never : never
+  }}}
+  */
+type ExtractWithSimpleSupport[T /* <: TypeString */] = T
 
 type GenerateActionsConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[actions, Prop[TMissingImplementations, actions], TRequireMissingImplementations]) & (`2`[TContext, TResolvedTypesMeta])
 
@@ -163,6 +219,15 @@ PromiseLike[TFinalContext] | (StateMachine[TFinalContext, Any, Any, Any, Any, An
 
 type IsAny[T] = Equals[T, Any]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [T] extends [never] ? true : false
+  }}}
+  */
+type IsNever[T] = `true`
+
 type LogExpr[TContext, TEvent /* <: EventObject */] = ExprWithMeta[TContext, TEvent, Any]
 
 type LowInfer[T] = T & js.Object
@@ -182,6 +247,15 @@ type Mapper[TContext, TEvent /* <: EventObject */, TParams /* <: js.Object */] =
 type Merge[M, N] = (Omit[M, /* keyof N */ String]) & N
 
 type MetaObject = Record[String, Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  {} extends T ? never : T
+  }}}
+  */
+type NeverIfEmpty[T] = T
 
 type NoInfer[T] = /* import warning: importer.ImportType#apply Failed type conversion: [T][T extends any ? 0 : any] */ js.Any
 
@@ -203,6 +277,15 @@ Unit]
 
 type Receiver[TEvent /* <: EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, Unit], Unit]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends xstate.xstate/lib/types.AnyFunction ? std.ReturnType<T> : T
+  }}}
+  */
+type ReturnTypeOrValue[T] = T
+
 type SendExpr[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] = ExprWithMeta[TContext, TEvent, TSentEvent]
 
 type Sender[TEvent /* <: EventObject */] = js.Function1[/* event */ Event[TEvent], Unit]
@@ -210,6 +293,18 @@ type Sender[TEvent /* <: EventObject */] = js.Function1[/* event */ Event[TEvent
 type ServiceConfig[TContext, TEvent /* <: EventObject */] = String | AnyStateMachine | (InvokeCreator[TContext, TEvent, Any, Any, TEvent])
 
 type ServiceMap = Record[String, DataAny]
+
+/**
+  * Extracts action objects that have no extra properties.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  xstate.xstate/lib/types.ActionObject<any, any> extends T ? T : xstate.xstate/lib/types.ExtractWithSimpleSupport<T>
+  }}}
+  */
+type SimpleActionsOf[T /* <: BaseActionObject */] = T
 
 type SimpleEventsOf[TEvent /* <: EventObject */] = ExtractWithSimpleSupport[TEvent]
 

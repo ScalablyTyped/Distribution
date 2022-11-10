@@ -162,7 +162,7 @@ object Curve3 {
     * @param t1 (Vector3) the tangent vector at the origin point
     * @param p2 (Vector3) the end point of the Hermite Spline
     * @param t2 (Vector3) the tangent vector at the end point
-    * @param nbPoints (integer) the wanted number of points in the curve
+    * @param nSeg (integer) the number of curve segments or nSeg + 1 points in the array
     * @returns the created Curve3
     */
   inline def CreateHermiteSpline(
@@ -170,8 +170,8 @@ object Curve3 {
     t1: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     p2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
     t2: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
-    nbPoints: Double
-  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHermiteSpline")(p1.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], nbPoints.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
+    nSeg: Double
+  ): typings.babylonjs.BABYLON.Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateHermiteSpline")(p1.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], nSeg.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Curve3]
   
   /**
     * Returns a Curve3 object along a Quadratic Bezier curve : https://doc.babylonjs.com/how_to/how_to_use_curve3#quadratic-bezier-curve

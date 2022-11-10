@@ -115,6 +115,15 @@ type Hooks[D /* <: js.Object */] = UseTableHooks[D]
 
 type IdType[D] = StringKey[D] | String
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [Extension] extends [never] ? M : M & Extension
+  }}}
+  */
+type Meta[D /* <: js.Object */, Extension, M] = M
+
 type OrderByFn[D /* <: js.Object */] = js.Function2[/* rowA */ Row[D], /* rowB */ Row[D], Double]
 
 type PropGetter[D /* <: js.Object */, Props, T /* <: js.Object */, P] = (js.Function2[/* props */ P, /* meta */ Meta[D, T, MetaBase[D]], P | js.Array[P]]) | P | js.Array[P]

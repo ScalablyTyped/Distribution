@@ -3,7 +3,9 @@ package typings.meteor
 import org.scalablytyped.runtime.StringDictionary
 import typings.meteor.Blaze.TemplateInstance
 import typings.node.NodeJS.ReadableStream
+import typings.std.Exclude
 import typings.std.HTMLElement
+import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,5 +47,14 @@ js.UndefOr[
   * @template T Template interface with custom properties and methods that extends the template instance
   */
 type TemplateStaticTyped[N /* <: String */, D /* <: Any */, T /* <: Record[String, Any] */] = (TemplateStatic[D, T & TemplateInstance[D]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in N ]: meteor.Blaze.Template<D, T & meteor.Blaze.TemplateInstance<D>>} */ js.Any)
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends T ? std.Pick<T, std.Exclude<keyof T, K>> : never
+  }}}
+  */
+type UnionOmit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 
 type globalError = js.Error

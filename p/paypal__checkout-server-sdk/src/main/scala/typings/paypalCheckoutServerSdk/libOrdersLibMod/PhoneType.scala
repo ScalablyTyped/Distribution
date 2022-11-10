@@ -4,48 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PhoneType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "PhoneType")
-@js.native
-object PhoneType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FAX
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOME
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MOBILE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAGER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WORK
+*/
+trait PhoneType extends StObject
+object PhoneType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PhoneType & String] = js.native
+  inline def FAX: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FAX = "FAX".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FAX]
   
-  @js.native
-  sealed trait FAX
-    extends StObject
-       with PhoneType
-  /* "FAX" */ val FAX: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.FAX & String = js.native
+  inline def HOME: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOME = "HOME".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOME]
   
-  @js.native
-  sealed trait HOME
-    extends StObject
-       with PhoneType
-  /* "HOME" */ val HOME: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.HOME & String = js.native
+  inline def MOBILE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MOBILE = "MOBILE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MOBILE]
   
-  @js.native
-  sealed trait MOBILE
-    extends StObject
-       with PhoneType
-  /* "MOBILE" */ val MOBILE: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.MOBILE & String = js.native
+  inline def OTHER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER = "OTHER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OTHER]
   
-  @js.native
-  sealed trait OTHER
-    extends StObject
-       with PhoneType
-  /* "OTHER" */ val OTHER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.OTHER & String = js.native
+  inline def PAGER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAGER = "PAGER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PAGER]
   
-  @js.native
-  sealed trait PAGER
-    extends StObject
-       with PhoneType
-  /* "PAGER" */ val PAGER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.PAGER & String = js.native
-  
-  @js.native
-  sealed trait WORK
-    extends StObject
-       with PhoneType
-  /* "WORK" */ val WORK: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.WORK & String = js.native
+  inline def WORK: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WORK = "WORK".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WORK]
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onBeforeRender
   - typings.webix.webixStrings.onBindRequest
   - typings.webix.webixStrings.onBlur
+  - typings.webix.webixStrings.onChange
   - typings.webix.webixStrings.onDestruct
   - typings.webix.webixStrings.onEnter
   - typings.webix.webixStrings.onFocus
@@ -37,6 +38,8 @@ object colorboardEventName {
   inline def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   
   inline def onBlur: typings.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typings.webix.webixStrings.onBlur]
+  
+  inline def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   
   inline def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   

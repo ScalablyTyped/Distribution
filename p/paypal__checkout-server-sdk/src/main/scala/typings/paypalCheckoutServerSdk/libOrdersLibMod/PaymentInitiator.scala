@@ -4,24 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PaymentInitiator extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "PaymentInitiator")
-@js.native
-object PaymentInitiator extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CUSTOMER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MERCHANT
+*/
+trait PaymentInitiator extends StObject
+object PaymentInitiator {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PaymentInitiator & String] = js.native
+  inline def CUSTOMER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CUSTOMER = "CUSTOMER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CUSTOMER]
   
-  @js.native
-  sealed trait CUSTOMER
-    extends StObject
-       with PaymentInitiator
-  /* "CUSTOMER" */ val CUSTOMER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentInitiator.CUSTOMER & String = js.native
-  
-  @js.native
-  sealed trait MERCHANT
-    extends StObject
-       with PaymentInitiator
-  /* "MERCHANT" */ val MERCHANT: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentInitiator.MERCHANT & String = js.native
+  inline def MERCHANT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MERCHANT = "MERCHANT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MERCHANT]
 }

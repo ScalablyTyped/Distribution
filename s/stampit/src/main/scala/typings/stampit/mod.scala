@@ -5,6 +5,8 @@ import typings.stampit.mod.stampit.Composable
 import typings.stampit.mod.stampit.Composer
 import typings.stampit.mod.stampit.Descriptor
 import typings.stampit.mod.stampit.Initializer
+import typings.stampit.mod.stampit.Stamp
+import typings.stampit.stampitBooleans.`false`
 import typings.std.PropertyDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -652,13 +654,12 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Original extends / * disallowed types * / bigint | boolean | number | string | symbol ? never : stampit.stampit.stampit.IsADescriptor<Original> extends true ? Original extends stampit.stampit.stampit.ExtendedDescriptor<infer Obj, any> ? Obj : never : unknown extends Original ? Original : Original extends stampit.stampit.StampSignature ? Original extends stampit.stampit.stampit.Stamp<infer Obj> ? Obj extends stampit.stampit.stampit.Stamp<infer Obj> ? Obj : Obj : any : Original extends stampit.stampit.stampit.ExtendedDescriptor<infer Obj, any> ? Obj : Original extends stampit.stampit.Pojo ? Original : never
     }}}
     */
-  @js.native
-  trait StampObjectType[Original] extends StObject
+  type StampObjectType[Original] = Original
   
   // { [s: string]: any; }
   /** @internal Signature common to every `Stamp`s. */
@@ -677,13 +678,12 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Original extends [] | bigint ? never : stampit.stampit.stampit.IsADescriptor<Original> extends true ? Original extends stampit.stampit.stampit.ExtendedDescriptor<infer Obj, infer Stamp> ? Stamp : never : unknown extends Original ? stampit.stampit.stampit.Stamp<Original> : Original extends stampit.stampit.StampSignature ? Original : Original extends stampit.stampit.stampit.ExtendedDescriptor<infer Obj, any> ? stampit.stampit.stampit.Stamp<Obj> : Original extends stampit.stampit.Pojo ? stampit.stampit.stampit.Stamp<Original> : never
     }}}
     */
-  @js.native
-  trait StampType[Original] extends StObject
+  type StampType[Original] = Stamp[Original]
   
   object stampit {
     
@@ -957,13 +957,12 @@ object mod {
     // TODO: Improve test by checking the type of common keys
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       unknown extends Type ? keyof Type extends never ? false : keyof Type extends infer K ? K extends keyof stampit.stampit.stampit.ExtendedDescriptor<unknown, stampit.stampit.stampit.Stamp<unknown>> ? true : false : false : false
       }}}
       */
-    @js.native
-    trait IsADescriptor[Type] extends StObject
+    type IsADescriptor[Type] = `false`
     
     /**
       * A factory function to create plain object instances.

@@ -705,6 +705,8 @@ object mod {
       
       inline def radToDeg(rad: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radToDeg")(rad.asInstanceOf[js.Any]).asInstanceOf[Double]
       
+      inline def releaseCanvas(canvases: HTMLCanvasElement*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseCanvas")(canvases.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+      
       inline def requestAnimFrame(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def rgbColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_rgbColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]

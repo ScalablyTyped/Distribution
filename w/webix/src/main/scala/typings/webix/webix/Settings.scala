@@ -1,13 +1,12 @@
 package typings.webix.webix
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Settings extends StObject {
   
-  var config: StringDictionary[Any]
+  var config: obj
   
   def define(property: String, value: Any): Unit
   
@@ -15,14 +14,14 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  inline def apply(config: StringDictionary[Any], define: (String, Any) => Unit, name: String): Settings = {
+  inline def apply(config: obj, define: (String, Any) => Unit, name: String): Settings = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], define = js.Any.fromFunction2(define), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
   
   extension [Self <: Settings](x: Self) {
     
-    inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: obj): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setDefine(value: (String, Any) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
     

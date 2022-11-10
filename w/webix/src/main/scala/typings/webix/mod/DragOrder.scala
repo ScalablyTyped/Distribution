@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DragOrder extends StObject {
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String
+  def $drag(source: HTMLElement, ev: Event, pointer: String): String
   
   @JSName("$dragDestroy")
   var $dragDestroy: Unit
@@ -39,7 +39,7 @@ object DragOrder {
   
   extension [Self <: DragOrder](x: Self) {
     
-    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    inline def set$drag(value: (HTMLElement, Event, String) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction3(value))
     
     inline def set$dragDestroy(value: Unit): Self = StObject.set(x, "$dragDestroy", value.asInstanceOf[js.Any])
     

@@ -53,13 +53,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TInput extends codecs.codecs.BaseCodec<any, any> ? TInput : TInput extends null | undefined ? TFallback : TInput extends keyof TCodecs ? TCodecs[TInput] extends codecs.codecs.BaseCodec<any, any> ? TCodecs[TInput] : TFallback : TFallback
     }}}
     */
-  @js.native
-  trait Codec[TInput, TFallback, TCodecs] extends StObject
+  type Codec[TInput, TFallback, TCodecs] = TInput
   
   type CodecInput = (BaseCodec[Any, Any]) | CodecNames
   
@@ -142,13 +141,12 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TInput extends null | undefined ? TFallback['name'] : TInput extends codecs.codecs.NamedCodec<string, any, any> ? TInput['name'] : TInput extends codecs.codecs.BaseCodec<any, any> ? undefined : TInput extends keyof TCodecs ? TCodecs[TInput] extends codecs.codecs.NamedCodec<infer Name, any, any> ? Name : undefined : TFallback['name']
     }}}
     */
-  @js.native
-  trait CodecName[TInput /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] extends StObject
+  type CodecName[TInput /* <: MaybeCodecInput */, TFallback /* <: NamedCodec[String, Any, Any] */, TCodecs] = Unit
   
   /* Rewritten from type alias, can be one of: 
     - typings.codecs.codecsStrings.ascii
@@ -208,7 +206,7 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     codecs.codecs.Codec<TCodec, TFallback, TCodecs> extends codecs.codecs.BaseCodec<infer T, any> ? T : unknown
     }}}
@@ -266,7 +264,7 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     codecs.codecs.Codec<TCodec, TFallback, TCodecs> extends codecs.codecs.BaseCodec<any, infer T> ? T : unknown
     }}}

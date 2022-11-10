@@ -26,6 +26,8 @@ object `7` {
     
     inline def setToFunction2(value: (/* start */ StartFn[T], /* stop */ StopFn[T]) => js.Promise[Any] | Unit): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     
+    inline def setToNull: Self = StObject.set(x, "to", null)
+    
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     inline def setToVarargs(

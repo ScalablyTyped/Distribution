@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino-pretty
 
-Typings are for version 4.7
+Typings are for version 9.1.1
 
 ## Library description:
 Prettifier for Pino log lines
@@ -24,7 +24,7 @@ Prettifier for Pino log lines
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

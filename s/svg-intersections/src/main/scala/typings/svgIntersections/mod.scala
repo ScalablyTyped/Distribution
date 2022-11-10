@@ -313,11 +313,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends 'line' ? svg-intersections.svg-intersections.LineProps : T extends 'rect' ? svg-intersections.svg-intersections.RectProps : T extends 'circle' ? svg-intersections.svg-intersections.CircleProps : T extends 'ellipse' ? svg-intersections.svg-intersections.EllipseProps : T extends 'polygon' ? svg-intersections.svg-intersections.PolygonProps : T extends 'polyline' ? svg-intersections.svg-intersections.PolylineProps : T extends 'path' ? svg-intersections.svg-intersections.PathProps : never
     }}}
     */
-  @js.native
-  trait SvgProperties[T /* <: SvgElements */] extends StObject
+  type SvgProperties[T /* <: SvgElements */] = LineProps
 }

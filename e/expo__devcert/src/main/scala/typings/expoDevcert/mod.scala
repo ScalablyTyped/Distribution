@@ -80,23 +80,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O['getCaBuffer'] extends true ? @expo/devcert.@expo/devcert.ICaBuffer : false
     }}}
     */
-  @js.native
-  trait IReturnCa[O /* <: Options */] extends StObject
+  type IReturnCa[O /* <: Options */] = ICaBuffer
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O['getCaPath'] extends true ? @expo/devcert.@expo/devcert.ICaPath : false
     }}}
     */
-  @js.native
-  trait IReturnCaPath[O /* <: Options */] extends StObject
+  type IReturnCaPath[O /* <: Options */] = ICaPath
   
   type IReturnData[O /* <: Options */] = IDomainData & IReturnCa[O] & IReturnCaPath[O]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Source extends StObject {
   
   /**
-    * Additional details for a Config, if type is dataflow endpoint or antenna demod decode.
+    * Additional details for a Config, if type is dataflow-endpoint or antenna-downlink-demod-decode 
     */
   var configDetails: js.UndefOr[ConfigDetails] = js.undefined
   

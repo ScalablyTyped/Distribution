@@ -12,7 +12,7 @@ open class MultiStats () extends StObject {
   
   def hasWarnings(): Boolean = js.native
   
-  val hash: String = js.native
+  def hash: String = js.native
   
   var stats: js.Array[Stats] = js.native
   

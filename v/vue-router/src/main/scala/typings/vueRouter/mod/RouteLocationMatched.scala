@@ -1,6 +1,5 @@
 package typings.vueRouter.mod
 
-import typings.std.Exclude
 import typings.std.Record
 import typings.std.Set
 import typings.vueRouter.vueRouterBooleans.`false`
@@ -41,12 +40,11 @@ object RouteLocationMatched {
       ]
     ],
     leaveGuards: Set[NavigationGuard],
-    meta: Exclude[js.UndefOr[RouteMeta], Unit],
     path: String,
     props: Record[String, RouteRecordProps],
     updateGuards: Set[NavigationGuard]
   ): RouteLocationMatched = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], enterCallbacks = enterCallbacks.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], leaveGuards = leaveGuards.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], updateGuards = updateGuards.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], enterCallbacks = enterCallbacks.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], leaveGuards = leaveGuards.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], updateGuards = updateGuards.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteLocationMatched]
   }
   

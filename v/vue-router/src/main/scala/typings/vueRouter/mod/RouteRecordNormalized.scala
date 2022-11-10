@@ -131,12 +131,11 @@ object RouteRecordNormalized {
       ]
     ],
     leaveGuards: Set[NavigationGuard],
-    meta: Exclude[js.UndefOr[RouteMeta], Unit],
     path: String,
     props: Record[String, RouteRecordProps],
     updateGuards: Set[NavigationGuard]
   ): RouteRecordNormalized = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], enterCallbacks = enterCallbacks.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], leaveGuards = leaveGuards.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], updateGuards = updateGuards.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], enterCallbacks = enterCallbacks.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], leaveGuards = leaveGuards.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], updateGuards = updateGuards.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteRecordNormalized]
   }
   
@@ -188,6 +187,8 @@ object RouteRecordNormalized {
     inline def setLeaveGuards(value: Set[NavigationGuard]): Self = StObject.set(x, "leaveGuards", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: Exclude[js.UndefOr[RouteMeta], Unit]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     inline def setName(value: RouteRecordName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

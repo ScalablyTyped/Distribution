@@ -20,8 +20,15 @@ object distCommandsCreateruleMod {
     sourceKey: String,
     destinationKey: String,
     aggregationType: TimeSeriesAggregationType,
-    timeBucket: Double
-  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(sourceKey.asInstanceOf[js.Any], destinationKey.asInstanceOf[js.Any], aggregationType.asInstanceOf[js.Any], timeBucket.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    bucketDuration: Double
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(sourceKey.asInstanceOf[js.Any], destinationKey.asInstanceOf[js.Any], aggregationType.asInstanceOf[js.Any], bucketDuration.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def transformArguments(
+    sourceKey: String,
+    destinationKey: String,
+    aggregationType: TimeSeriesAggregationType,
+    bucketDuration: Double,
+    alignTimestamp: Double
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(sourceKey.asInstanceOf[js.Any], destinationKey.asInstanceOf[js.Any], aggregationType.asInstanceOf[js.Any], bucketDuration.asInstanceOf[js.Any], alignTimestamp.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def transformReply(): OK = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[OK]
 }

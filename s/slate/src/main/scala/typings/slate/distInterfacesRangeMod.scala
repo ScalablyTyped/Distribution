@@ -71,11 +71,12 @@ object distInterfacesRangeMod {
       another: typings.slate.distInterfacesRangeMod.Range
     ): Boolean = js.native
     
+    def includes(range: typings.slate.distInterfacesRangeMod.Range, target: Path): Boolean = js.native
+    def includes(range: typings.slate.distInterfacesRangeMod.Range, target: Point): Boolean = js.native
     def includes(
       range: typings.slate.distInterfacesRangeMod.Range,
-      target: Point | typings.slate.distInterfacesRangeMod.Range
+      target: typings.slate.distInterfacesRangeMod.Range
     ): Boolean = js.native
-    def includes(range: typings.slate.distInterfacesRangeMod.Range, target: Path): Boolean = js.native
     
     def intersection(
       range: typings.slate.distInterfacesRangeMod.Range,

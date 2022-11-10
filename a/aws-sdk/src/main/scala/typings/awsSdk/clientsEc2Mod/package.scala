@@ -207,6 +207,7 @@ type ApplianceModeSupportValue = _ApplianceModeSupportValue | java.lang.String
   - typings.awsSdk.awsSdkStrings.x86_64_
   - typings.awsSdk.awsSdkStrings.arm64_
   - typings.awsSdk.awsSdkStrings.x86_64_mac
+  - typings.awsSdk.awsSdkStrings.arm64_mac
   - java.lang.String
 */
 type ArchitectureType = _ArchitectureType | java.lang.String
@@ -220,6 +221,7 @@ type ArchitectureTypeSet = js.Array[ArchitectureType]
   - typings.awsSdk.awsSdkStrings.x86_64_
   - typings.awsSdk.awsSdkStrings.arm64_
   - typings.awsSdk.awsSdkStrings.x86_64_mac
+  - typings.awsSdk.awsSdkStrings.arm64_mac
   - java.lang.String
 */
 type ArchitectureValues = _ArchitectureValues | java.lang.String
@@ -2278,6 +2280,10 @@ type InstanceTagKeySet = js.Array[String]
   - typings.awsSdk.awsSdkStrings.r6aDotmetal
   - typings.awsSdk.awsSdkStrings.p4deDot24xlarge
   - typings.awsSdk.awsSdkStrings.`u-3tb1Dot56xlarge`
+  - typings.awsSdk.awsSdkStrings.`u-18tb1Dot112xlarge`
+  - typings.awsSdk.awsSdkStrings.`u-24tb1Dot112xlarge`
+  - typings.awsSdk.awsSdkStrings.trn1Dot2xlarge
+  - typings.awsSdk.awsSdkStrings.trn1Dot32xlarge
   - java.lang.String
 */
 type InstanceType = _InstanceType | java.lang.String

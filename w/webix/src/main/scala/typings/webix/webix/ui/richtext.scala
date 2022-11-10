@@ -2,6 +2,7 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +12,13 @@ trait richtext
   extends StObject
      with baseview {
   
+  @JSName("$prepareValue")
+  def $prepareValue(args: Any*): Any = js.native
+  @JSName("$prepareValue")
+  var $prepareValue_Original: WebixCallback = js.native
+  
   @JSName("$$")
-  var DollarDollar: Any = js.native
+  var DollarDollar: obj = js.native
   
   def attachEvent(`type`: richtextEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: richtextEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -37,13 +43,13 @@ trait richtext
   def innerId(id: String): Double | String = js.native
   def innerId(id: Double): Double | String = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def refresh(): Unit = js.native
   
   def setValue(value: String): Unit = js.native
   
-  def ui(view: Any): baseview = js.native
+  def ui(view: obj): baseview = js.native
   
   def unblockEvent(): Unit = js.native
 }

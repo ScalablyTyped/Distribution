@@ -1,7 +1,7 @@
 
 # Scala.js typings for parcel__watcher
 
-Typings are for version 2.0.5
+Typings are for version 2.0.7
 
 ## Library description:
 A native C++ Node module for querying and subscribing to filesystem events. Used by Parcel 2.

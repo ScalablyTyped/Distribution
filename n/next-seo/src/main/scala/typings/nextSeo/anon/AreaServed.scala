@@ -16,6 +16,8 @@ trait AreaServed extends StObject {
   
   var contactType: String
   
+  var email: js.UndefOr[String] = js.undefined
+  
   var telephone: String
 }
 object AreaServed {
@@ -49,6 +51,10 @@ object AreaServed {
     inline def setContactOptionVarargs(value: String*): Self = StObject.set(x, "contactOption", js.Array(value*))
     
     inline def setContactType(value: String): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setTelephone(value: String): Self = StObject.set(x, "telephone", value.asInstanceOf[js.Any])
   }

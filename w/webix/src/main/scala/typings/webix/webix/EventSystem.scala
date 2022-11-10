@@ -18,7 +18,7 @@ trait EventSystem extends StObject {
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

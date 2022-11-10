@@ -68,7 +68,7 @@ open class Module protected ()
   
   def chunkCondition(chunk: Chunk, compilation: Compilation): Boolean = js.native
   
-  val chunksIterable: js.Iterable[Chunk] = js.native
+  def chunksIterable: js.Iterable[Chunk] = js.native
   
   /**
   	 * Assuming this module is in the cache. Remove internal references to allow freeing some memory.
@@ -102,9 +102,9 @@ open class Module protected ()
   /* CompleteClass */
   override def deserialize(__0: Read): Unit = js.native
   
-  val errors: Any = js.native
+  def errors: Any = js.native
   
-  val exportsArgument: String = js.native
+  def exportsArgument: String = js.native
   
   var factoryMeta: js.UndefOr[js.Object] = js.native
   
@@ -139,13 +139,13 @@ open class Module protected ()
   
   def hasChunkCondition(): Boolean = js.native
   
-  val hasEqualsChunks: Any = js.native
+  def hasEqualsChunks: Any = js.native
   
   def hasReasonForChunk(chunk: Chunk, moduleGraph: ModuleGraph, chunkGraph: ChunkGraph): Boolean = js.native
   
   def hasReasons(moduleGraph: ModuleGraph, runtime: RuntimeSpec): Boolean = js.native
   
-  val hash: String = js.native
+  def hash: String = js.native
   
   var id: String | Double = js.native
   
@@ -172,7 +172,7 @@ open class Module protected ()
   
   def isProvided(exportName: String): Null | Boolean = js.native
   
-  val isUsed: Any = js.native
+  def isUsed: Any = js.native
   
   var issuer: Null | Module = js.native
   
@@ -180,7 +180,7 @@ open class Module protected ()
   
   def libIdent(options: LibIdentOptions): Null | String = js.native
   
-  val moduleArgument: String = js.native
+  def moduleArgument: String = js.native
   
   def nameForCondition(): Null | String = js.native
   
@@ -193,9 +193,9 @@ open class Module protected ()
   
   def needRebuild(fileTimestamps: Map[String, Null | Double], contextTimestamps: Map[String, Null | Double]): Boolean = js.native
   
-  val optimizationBailout: js.Array[String | (js.Function1[/* requestShortener */ RequestShortener, String])] = js.native
+  def optimizationBailout: js.Array[String | (js.Function1[/* requestShortener */ RequestShortener, String])] = js.native
   
-  val optional: Boolean = js.native
+  def optional: Boolean = js.native
   
   def originalSource(): Null | Source = js.native
   
@@ -214,7 +214,7 @@ open class Module protected ()
   /* CompleteClass */
   override def removeDependency(dependency: Dependency): Unit = js.native
   
-  val renderedHash: String = js.native
+  def renderedHash: String = js.native
   
   var resolveOptions: ResolveOptionsWebpackOptions = js.native
   
@@ -245,7 +245,7 @@ open class Module protected ()
   
   var used: Any = js.native
   
-  val usedExports: Null | Boolean | SortableSet[String] = js.native
+  def usedExports: Null | Boolean | SortableSet[String] = js.native
   
-  val warnings: Any = js.native
+  def warnings: Any = js.native
 }

@@ -43,6 +43,15 @@ CSSObjectWithLabel]
 
 type MultiValue[Option] = js.Array[Option]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  IsMulti extends true ? react-select.react-select/dist/declarations/src/types.MultiValue<Option> : react-select.react-select/dist/declarations/src/types.SingleValue<Option>
+  }}}
+  */
+type OnChangeValue[Option, IsMulti /* <: Boolean */] = MultiValue[Option]
+
 type Options[Option] = js.Array[Option]
 
 type OptionsOrGroups[Option, Group /* <: GroupBase[Option] */] = js.Array[Option | Group]

@@ -1,7 +1,7 @@
 package typings.webix.mod.ui
 
-import typings.webix.mod.Date
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +21,13 @@ open class daterange ()
   var $skin_Original_daterange: WebixCallback = js.native
   
   def addToRange(dates: String): Unit = js.native
-  def addToRange(dates: Date): Unit = js.native
+  def addToRange(dates: js.Date): Unit = js.native
   
   def attachEvent(`type`: daterangeEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: daterangeEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -38,15 +38,19 @@ open class daterange ()
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): Any = js.native
+  def getValue(format: String): obj = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def refresh(): Unit = js.native
   
-  def setValue(range: Any): Unit = js.native
+  def setValue(range: obj): Unit = js.native
+  def setValue(range: obj, config: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

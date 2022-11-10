@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "material__dialog"
-version := "14.0.0-16fab2"
+version := "14.0.0-1b4227"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "material__base" % "14.0.0-47bd03",
-  "org.scalablytyped" %%% "material__dom" % "14.0.0-c98dfd",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "material__base" % "14.0.0-fb3775",
+  "org.scalablytyped" %%% "material__dom" % "14.0.0-7fe567",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

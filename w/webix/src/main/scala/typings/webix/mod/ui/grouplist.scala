@@ -1,11 +1,11 @@
 package typings.webix.mod.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.DataStore
 import typings.webix.mod.WebixCallback
 import typings.webix.mod.WebixTemplate
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ open class grouplist ()
   var $customPrint_Original: WebixCallback = js.native
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String = js.native
+  def $drag(source: HTMLElement, ev: Event, pointer: String): String = js.native
   
   @JSName("$dragHTML")
   def $dragHTML(args: Any*): Any = js.native
@@ -33,7 +33,7 @@ open class grouplist ()
   def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
   
   @JSName("$dragMark")
-  def $dragMark(context: Any, ev: Event): Boolean = js.native
+  def $dragMark(context: obj, ev: Event): Boolean = js.native
   
   @JSName("$dragOut")
   def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
@@ -52,7 +52,7 @@ open class grouplist ()
   var $dropHTML_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$skin")
   var $skin_Original_grouplist: WebixCallback = js.native
@@ -66,10 +66,10 @@ open class grouplist ()
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   
-  def add(obj: Any): String = js.native
-  def add(obj: Any, index: Double): String = js.native
-  def add(obj: Any, index: Double, parentId: String): String = js.native
-  def add(obj: Any, index: Unit, parentId: String): String = js.native
+  def add(obj: obj): String = js.native
+  def add(obj: obj, index: Double): String = js.native
+  def add(obj: obj, index: Double, parentId: String): String = js.native
+  def add(obj: obj, index: Unit, parentId: String): String = js.native
   
   def addCss(id: String, css: String): Unit = js.native
   def addCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -79,8 +79,8 @@ open class grouplist ()
   def attachEvent(`type`: grouplistEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: grouplistEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -98,17 +98,17 @@ open class grouplist ()
   var config_grouplist: grouplistConfig = js.native
   
   def copy(sid: String, tindex: Double): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Any, details: Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: obj): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: obj): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: obj, details: obj): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Any, details: Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: obj): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: obj): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: obj, details: obj): Unit = js.native
   
   def count(): Double = js.native
   
-  def customize(obj: Any): Unit = js.native
+  def customize(obj: obj): Unit = js.native
   
   var data: DataStore = js.native
   
@@ -136,8 +136,8 @@ open class grouplist ()
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): Any = js.native
+  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
   
   def getFirstId(): Double | String = js.native
   
@@ -147,8 +147,8 @@ open class grouplist ()
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): Any = js.native
-  def getItem(id: Double): Any = js.native
+  def getItem(id: String): obj = js.native
+  def getItem(id: Double): obj = js.native
   
   def getItemNode(id: String): HTMLElement = js.native
   def getItemNode(id: Double): HTMLElement = js.native
@@ -158,26 +158,28 @@ open class grouplist ()
   def getNextId(id: String, step: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
-  def getOpenState(): Any = js.native
+  def getOpenState(): obj = js.native
   
   def getPage(): Double = js.native
   
-  def getPager(): Any = js.native
+  def getPager(): obj = js.native
   
   def getPrevId(id: String, step: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
-  def getScrollState(): Any = js.native
+  def getScrollState(): obj = js.native
   
+  def getSelectedId(): String | js.Array[Any] = js.native
   def getSelectedId(as_array: Boolean): String | js.Array[Any] = js.native
   
-  def getSelectedItem(as_array: Boolean): Any = js.native
+  def getSelectedItem(): obj = js.native
+  def getSelectedItem(as_array: Boolean): obj = js.native
   
   def getVisibleCount(): Double = js.native
   
-  def group(config: Any): Unit = js.native
-  def group(config: Any, target: String): Unit = js.native
-  def group(config: Any, target: Double): Unit = js.native
+  def group(config: obj): Unit = js.native
+  def group(config: obj, target: String): Unit = js.native
+  def group(config: obj, target: Double): Unit = js.native
   
   def hasCss(id: String, css: String): Boolean = js.native
   def hasCss(id: Double, css: String): Boolean = js.native
@@ -191,19 +193,24 @@ open class grouplist ()
   
   def load(url: String): js.Promise[Any] = js.native
   def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean, clear: Boolean): js.Promise[Any] = js.native
   
   def locate(e: Event): String | Double = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Any, details: Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: obj): String = js.native
+  def move(sid: String, tindex: Double, tobj: obj): String = js.native
+  def move(sid: String, tindex: Double, tobj: obj, details: obj): String = js.native
   
   def moveBottom(id: String): Unit = js.native
   def moveBottom(id: Double): Unit = js.native
@@ -223,7 +230,7 @@ open class grouplist ()
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[Any] = js.native
+  var on_context: obj = js.native
   
   def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")
@@ -233,7 +240,25 @@ open class grouplist ()
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
   
-  def parse(data: Any, `type`: String): Unit = js.native
+  def parse(data: String): Unit = js.native
+  def parse(data: String, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: String, `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any]): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any]): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Promise[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: obj): Unit = js.native
+  def parse(data: obj, `type`: String): Unit = js.native
+  def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
@@ -248,8 +273,8 @@ open class grouplist ()
   def removeCss(id: Double, css: String): Unit = js.native
   def removeCss(id: Double, css: String, silent: Boolean): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
@@ -264,6 +289,9 @@ open class grouplist ()
   def serialize(): js.Array[Any] = js.native
   def serialize(all: Boolean): js.Array[Any] = js.native
   
+  def setOpenState(id: String): Unit = js.native
+  def setOpenState(id: Double): Unit = js.native
+  
   def setPage(page: Double): Unit = js.native
   
   def showItem(id: String): Unit = js.native
@@ -274,11 +302,11 @@ open class grouplist ()
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
-  var `type`: StringDictionary[Any] = js.native
+  var `type`: obj = js.native
   
-  var types: StringDictionary[Any] = js.native
+  var types: obj = js.native
   
   def unblockEvent(): Unit = js.native
   
@@ -289,8 +317,8 @@ open class grouplist ()
   
   def unselectAll(): Unit = js.native
   
-  def updateItem(id: String, data: Any): Unit = js.native
-  def updateItem(id: Double, data: Any): Unit = js.native
+  def updateItem(id: String, data: obj): Unit = js.native
+  def updateItem(id: Double, data: obj): Unit = js.native
   
   def validate(): Boolean = js.native
   def validate(id: String): Boolean = js.native

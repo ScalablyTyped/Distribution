@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "stripe-checkout"
-version := "1.0-dt-20211202Z-5a403e"
+version := "1.0-dt-20211202Z-febf9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "stripe-v3" % "3.1-dt-20220818Z-465eaa")
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "stripe-v3" % "3.1-dt-20220818Z-4a3254")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,6 +6,8 @@ import typings.callstackReactThemeProvider.anon.`1`
 import typings.callstackReactThemeProvider.callstackReactThemeProviderStrings.theme
 import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
+import typings.std.Exclude
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,11 +46,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? std.Pick<T, std.Exclude<keyof T, K>> : never
     }}}
     */
-  @js.native
-  trait Without[T, K /* <: /* keyof any */ String */] extends StObject
+  type Without[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

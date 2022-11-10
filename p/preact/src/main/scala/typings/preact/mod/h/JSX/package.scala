@@ -42,6 +42,15 @@ type GenericEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod
 
 type KeyboardEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Component extends {  defaultProps :infer Defaults} ? preact.preact/src/jsx.Defaultize<Props, Defaults> : Props
+  }}}
+  */
+type LibraryManagedAttributes[Component, Props] = Props
+
 type MouseEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target]]
 
 type PointerEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target]]

@@ -9,7 +9,7 @@ trait DataflowEndpointGroupIdResponse extends StObject {
   /**
     * UUID of a dataflow endpoint group.
     */
-  var dataflowEndpointGroupId: js.UndefOr[String] = js.undefined
+  var dataflowEndpointGroupId: js.UndefOr[Uuid] = js.undefined
 }
 object DataflowEndpointGroupIdResponse {
   
@@ -20,7 +20,7 @@ object DataflowEndpointGroupIdResponse {
   
   extension [Self <: DataflowEndpointGroupIdResponse](x: Self) {
     
-    inline def setDataflowEndpointGroupId(value: String): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointGroupId(value: Uuid): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
     
     inline def setDataflowEndpointGroupIdUndefined: Self = StObject.set(x, "dataflowEndpointGroupId", js.undefined)
   }

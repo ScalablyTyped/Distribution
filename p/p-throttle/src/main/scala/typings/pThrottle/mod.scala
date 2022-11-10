@@ -77,7 +77,7 @@ object mod {
   // TODO: Use the `Awaited` utility instead when targeting TS 4.5.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     ValueType extends std.PromiseLike<infer ValueType> ? std.Promise<ValueType> : std.Promise<ValueType>
     }}}

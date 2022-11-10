@@ -134,7 +134,7 @@ object typesEtcMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends 'any' ? any : T extends @jimp/core.@jimp/core/types/etc.ChangeName ? {  eventName :'before-change' | 'changed',   methodName :T, [key: string] : any} : {  eventName :T,   methodName :T extends 'initialized' ? 'constructor' : T extends 'before-change' | 'changed' ? @jimp/core.@jimp/core/types/etc.ChangeName : T extends 'before-clone' | 'cloned' ? 'clone' : any}
     }}}

@@ -168,13 +168,12 @@ object esmUsePopperMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @popperjs/core.@popperjs/core/lib/types.Obj ? T : @popperjs/core.@popperjs/core/lib/types.Obj
     }}}
     */
-  @js.native
-  trait OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] extends StObject
+  type OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] = T
   
   type Placement = typings.popperjsCore.libEnumsMod.Placement
   

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "web3-shh"
-version := "1.8.0-2a4bc3"
+version := "1.8.0-fe23c0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bignumber_dot_js" % "9.1.0-08f9c6",
-  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-509689",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "web3-core" % "1.8.0-36e37c",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.8.0-756c8a",
-  "org.scalablytyped" %%% "web3-core-method" % "1.8.0-05697e",
-  "org.scalablytyped" %%% "web3-net" % "1.8.0-12f46d")
+  "org.scalablytyped" %%% "bignumber_dot_js" % "9.1.0-85e343",
+  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-7779ac",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "web3-core" % "1.8.0-a89af5",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.8.0-7b3c7c",
+  "org.scalablytyped" %%% "web3-core-method" % "1.8.0-fab06e",
+  "org.scalablytyped" %%% "web3-net" % "1.8.0-53f0d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

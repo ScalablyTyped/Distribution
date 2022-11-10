@@ -3,7 +3,9 @@ package typings.jestWorker.mod
 import typings.jestWorker.mod.^
 import typings.node.processMod.global.NodeJS.Process
 import typings.std.Exclude
+import typings.std.Parameters
 import typings.std.Record
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,6 +48,15 @@ type OnEnd = js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
 type OnStart = js.Function1[/* worker */ WorkerInterface, Unit]
 
 type OnStateChangeHandler = js.Function2[/* state */ WorkerStates, /* oldState */ WorkerStates, Unit]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  std.ReturnType<T> extends std.Promise<infer R> ? (args : std.Parameters<T>): std.Promise<R> : (args : std.Parameters<T>): std.Promise<std.ReturnType<T>>
+  }}}
+  */
+type Promisify[T /* <: FunctionLike */] = js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]]]
 
 type WorkerCallback = js.Function5[
 /* workerId */ Double, 

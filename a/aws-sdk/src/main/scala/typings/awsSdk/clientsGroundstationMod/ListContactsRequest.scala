@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListContactsRequest extends StObject {
   
   /**
-    * End time of a contact.
+    * End time of a contact in UTC.
     */
   var endTime: js.Date
   
   /**
     * Name of a ground station.
     */
-  var groundStation: js.UndefOr[String] = js.undefined
+  var groundStation: js.UndefOr[GroundStationName] = js.undefined
   
   /**
     * Maximum number of contacts returned.
     */
-  var maxResults: js.UndefOr[Integer] = js.undefined
+  var maxResults: js.UndefOr[PaginationMaxResults] = js.undefined
   
   /**
     * ARN of a mission profile.
@@ -29,7 +29,7 @@ trait ListContactsRequest extends StObject {
   /**
     * Next token returned in the request of a previous ListContacts call. Used to get the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.undefined
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * ARN of a satellite.
@@ -37,7 +37,7 @@ trait ListContactsRequest extends StObject {
   var satelliteArn: js.UndefOr[typings.awsSdk.clientsGroundstationMod.satelliteArn] = js.undefined
   
   /**
-    * Start time of a contact.
+    * Start time of a contact in UTC.
     */
   var startTime: js.Date
   
@@ -57,11 +57,11 @@ object ListContactsRequest {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setGroundStation(value: String): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
+    inline def setGroundStation(value: GroundStationName): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
     
     inline def setGroundStationUndefined: Self = StObject.set(x, "groundStation", js.undefined)
     
-    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
@@ -69,7 +69,7 @@ object ListContactsRequest {
     
     inline def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     

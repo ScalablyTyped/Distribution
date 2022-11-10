@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait AccountTier extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "AccountTier")
-@js.native
-object AccountTier extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUSINESS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PERSONAL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREMIER
+*/
+trait AccountTier extends StObject
+object AccountTier {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AccountTier & String] = js.native
+  inline def BUSINESS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUSINESS = "BUSINESS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BUSINESS]
   
-  @js.native
-  sealed trait BUSINESS
-    extends StObject
-       with AccountTier
-  /* "BUSINESS" */ val BUSINESS: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.BUSINESS & String = js.native
+  inline def PERSONAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PERSONAL = "PERSONAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PERSONAL]
   
-  @js.native
-  sealed trait PERSONAL
-    extends StObject
-       with AccountTier
-  /* "PERSONAL" */ val PERSONAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.PERSONAL & String = js.native
-  
-  @js.native
-  sealed trait PREMIER
-    extends StObject
-       with AccountTier
-  /* "PREMIER" */ val PREMIER: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.PREMIER & String = js.native
+  inline def PREMIER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREMIER = "PREMIER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PREMIER]
 }

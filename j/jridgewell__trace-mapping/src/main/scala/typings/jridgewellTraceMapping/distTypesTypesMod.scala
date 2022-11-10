@@ -233,13 +233,12 @@ object distTypesTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<infer V> ? std.Array<V> | std.Readonly<std.Array<V>> | @jridgewell/trace-mapping.@jridgewell/trace-mapping/dist/types/types.RoArray<V> | std.Readonly<@jridgewell/trace-mapping.@jridgewell/trace-mapping/dist/types/types.RoArray<V>> : T extends object ? T | std.Readonly<T> | @jridgewell/trace-mapping.@jridgewell/trace-mapping/dist/types/types.RoObject<T> | std.Readonly<@jridgewell/trace-mapping.@jridgewell/trace-mapping/dist/types/types.RoObject<T>> : T
     }}}
     */
-  @js.native
-  trait Ro[T] extends StObject
+  type Ro[T] = T
   
   type RoArray[T] = js.Array[Ro[T]]
   

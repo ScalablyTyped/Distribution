@@ -4,60 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Method extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "Method")
-@js.native
-object Method extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONNECT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELETE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GET
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HEAD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OPTIONS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PATCH
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POST
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUT
+*/
+trait Method extends StObject
+object Method {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Method & String] = js.native
+  inline def CONNECT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONNECT = "CONNECT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONNECT]
   
-  @js.native
-  sealed trait CONNECT
-    extends StObject
-       with Method
-  /* "CONNECT" */ val CONNECT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.CONNECT & String = js.native
+  inline def DELETE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELETE = "DELETE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELETE]
   
-  @js.native
-  sealed trait DELETE
-    extends StObject
-       with Method
-  /* "DELETE" */ val DELETE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.DELETE & String = js.native
+  inline def GET: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GET = "GET".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.GET]
   
-  @js.native
-  sealed trait GET
-    extends StObject
-       with Method
-  /* "GET" */ val GET: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.GET & String = js.native
+  inline def HEAD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HEAD = "HEAD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HEAD]
   
-  @js.native
-  sealed trait HEAD
-    extends StObject
-       with Method
-  /* "HEAD" */ val HEAD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.HEAD & String = js.native
+  inline def OPTIONS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.OPTIONS]
   
-  @js.native
-  sealed trait OPTIONS
-    extends StObject
-       with Method
-  /* "OPTIONS" */ val OPTIONS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.OPTIONS & String = js.native
+  inline def PATCH: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PATCH = "PATCH".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PATCH]
   
-  @js.native
-  sealed trait PATCH
-    extends StObject
-       with Method
-  /* "PATCH" */ val PATCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.PATCH & String = js.native
+  inline def POST: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POST = "POST".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POST]
   
-  @js.native
-  sealed trait POST
-    extends StObject
-       with Method
-  /* "POST" */ val POST: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.POST & String = js.native
-  
-  @js.native
-  sealed trait PUT
-    extends StObject
-       with Method
-  /* "PUT" */ val PUT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.Method.PUT & String = js.native
+  inline def PUT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUT = "PUT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PUT]
 }

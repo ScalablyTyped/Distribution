@@ -58,7 +58,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     SWRKey extends (): [...infer Args] | null | undefined | false ? (args : [...Args]): swr.swr/dist/types.FetcherResponse<Data> : SWRKey extends [...infer Args] ? (args : [...Args]): swr.swr/dist/types.FetcherResponse<Data> : SWRKey extends (): infer Arg | null | undefined | false ? (args : [Arg]): swr.swr/dist/types.FetcherResponse<Data> : SWRKey extends null | undefined | false ? never : SWRKey extends infer Arg ? (args : [Arg]): swr.swr/dist/types.FetcherResponse<Data> : never
     }}}
@@ -173,7 +173,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Fn extends (args : [...infer Parameters]): infer Result ? Parameters[3] extends boolean ? Result : Parameters[3] extends / * Inlined std.Required<std.Pick<swr.swr/dist/types.MutatorOptions<any>, 'populateCache'>> * /
   {  populateCache :boolean | (result : any, currentData : any): any} ? Parameters[3]['populateCache'] extends false ? never : Result : Result : never

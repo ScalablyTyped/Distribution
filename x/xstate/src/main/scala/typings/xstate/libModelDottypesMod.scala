@@ -27,13 +27,12 @@ object libModelDottypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Return extends object ? Return extends {  type :any} ? 'An action creator can't return an object with a type property' : Self : 'An action creator must return an object'
     }}}
     */
-  @js.native
-  trait ActionCreator[Self /* <: AnyFunction */, Return] extends StObject
+  type ActionCreator[Self /* <: AnyFunction */, Return] = Self
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -47,13 +46,12 @@ object libModelDottypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Return extends object ? Return extends {  type :any} ? 'An event creator can't return an object with a type property' : Self : 'An event creator must return an object'
     }}}
     */
-  @js.native
-  trait EventCreator[Self /* <: AnyFunction */, Return] extends StObject
+  type EventCreator[Self /* <: AnyFunction */, Return] = Self
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -159,7 +157,7 @@ object libModelDottypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TModel extends xstate.xstate/lib/model.types.Model<any, any, infer TAction, any> ? TAction : never
     }}}
@@ -169,7 +167,7 @@ object libModelDottypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TModel extends xstate.xstate/lib/model.types.Model<infer TContext, any, any, any> ? TContext : never
     }}}
@@ -204,23 +202,21 @@ object libModelDottypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TModel extends xstate.xstate/lib/model.types.Model<any, infer TEvent, any, any> ? TEvent : xstate.xstate/lib/types.EventObject
     }}}
     */
-  @js.native
-  trait ModelEventsFrom[TModel /* <: js.UndefOr[Model[Any, Any, Any, Any]] */] extends StObject
+  type ModelEventsFrom[TModel /* <: js.UndefOr[Model[Any, Any, Any, Any]] */] = EventObject
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TEvent extends {  type :TEventType} ? TEvent : never
     }}}
     */
-  @js.native
-  trait SimplisticExtractEvent[TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] extends StObject
+  type SimplisticExtractEvent[TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] = TEvent
   
   type UnionFromCreatorsReturnTypes[TCreators] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TCreators ]: TCreators[K] extends xstate.xstate/lib/types.AnyFunction? std.ReturnType<TCreators[K]> : never}[keyof TCreators] */ js.Any
 }

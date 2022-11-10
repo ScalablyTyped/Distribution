@@ -305,12 +305,11 @@ object apiParserMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends / * Inlined @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Attribute & {  type :'boolean'} * /
   {  source :'attribute',   selector :string | undefined,   attribute :string,   type :'string' | 'boolean' | undefined,   type :'boolean'} ? boolean | undefined : T extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Children ? std.Array<react.react.ReactChild> : T extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Node ? react.react.<global>.JSX.Element | null : T extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Tag ? keyof std.HTMLElementTagNameMap & std.SVGElementTagNameMap | undefined : T extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer U> ? {[ k in keyof U ]: U[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<V>> : @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<U[k]>} : string | undefined
     }}}
     */
-  @js.native
-  trait SourceReturnValue[T] extends StObject
+  type SourceReturnValue[T] = js.UndefOr[Boolean]
 }

@@ -45,13 +45,12 @@ object core {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends devextreme.devextreme.DevExpress.core.Scalar ? T : {[ P in keyof T ]:? devextreme.devextreme.DevExpress.core.DeepPartial<T[P]>}
     }}}
     */
-  @js.native
-  trait DeepPartial[T] extends StObject
+  type DeepPartial[T] = T
   
   trait DefaultOptionsRule[T] extends StObject {
     
@@ -82,13 +81,12 @@ object core {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {} extends devextreme.devextreme.DevExpress.core.Condition ? T : devextreme.devextreme.DevExpress.core.ElementWrapper<T>
     }}}
     */
-  @js.native
-  trait DxElement_[T /* <: Element */] extends StObject
+  type DxElement_[T /* <: Element */] = T
   
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
@@ -173,23 +171,21 @@ object core {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {} extends devextreme.devextreme.DevExpress.core.Condition ? T : devextreme.devextreme.DevExpress.core.ElementWrapper<T> | T
     }}}
     */
-  @js.native
-  trait UserDefinedElement[T /* <: Element */] extends StObject
+  type UserDefinedElement[T /* <: Element */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {} extends devextreme.devextreme.DevExpress.core.Condition ? std.Array<std.Element> : devextreme.devextreme.DevExpress.core.ElementsArrayWrapper<std.Element>
     }}}
     */
-  @js.native
-  trait UserDefinedElementsArray extends StObject
+  type UserDefinedElementsArray = js.Array[Element]
   
   type dxElement = DxElement_[HTMLElement]
   
@@ -223,16 +219,15 @@ object core {
   
   object utils {
     
-    type DxExtendedPromise[T] = DxPromise[T] & Then[T]
+    type DxExtendedPromise[T] = js.Promise[T] & Then[T]
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       {} extends devextreme.devextreme.DevExpress.core.PromiseType<T> ? std.Promise<T> : devextreme.devextreme.DevExpress.core.PromiseType<T>
       }}}
       */
-    @js.native
-    trait DxPromise[T] extends StObject
+    type DxPromise[T] = js.Promise[T]
   }
 }

@@ -10,12 +10,6 @@ trait DeviceSourceManager
      with IDisposable
      with IObservableManager {
   
-  /**
-    * @param deviceSource - Source to add
-    * @internal
-    */
-  def _addDevice(deviceSource: DeviceSourceType): Unit = js.native
-  
   /* private */ val _devices: Any = js.native
   
   /* private */ var _engine: Any = js.native

@@ -217,6 +217,7 @@ import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MessageEvent
 import typings.std.MouseEvent
+import typings.std.Omit
 import typings.std.PageTransitionEvent
 import typings.std.Partial
 import typings.std.PointerEvent
@@ -1844,13 +1845,12 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     BaseType extends any ? std.Omit<BaseType, Key> : never
     }}}
     */
-  @js.native
-  trait DistributiveOmit[BaseType, Key /* <: PropertyKey */] extends StObject
+  type DistributiveOmit[BaseType, Key /* <: PropertyKey */] = Omit[BaseType, Key]
   
   /* Inlined std.HTMLElementTagNameMap & std.Pick<std.SVGElementTagNameMap, std.Exclude<keyof std.SVGElementTagNameMap, keyof std.HTMLElementTagNameMap>> */
   trait ElementTagNameMap extends StObject {

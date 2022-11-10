@@ -102,13 +102,12 @@ object libRpcTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends (args : infer A): infer R ? R extends std.Promise<any> ? (args : A): R : (args : A): std.Promise<R> : (args : ...unknown): std.Promise<unknown>
     }}}
     */
-  @js.native
-  trait RpcRemoteMethod[T /* <: RpcMethod */] extends StObject
+  type RpcRemoteMethod[T /* <: RpcMethod */] = js.Function1[/* repeated */ Any, js.Promise[Any]]
   
   trait RpcResolveMessage
     extends StObject

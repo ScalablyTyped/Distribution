@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,10 +34,10 @@ open class uploader ()
   var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$renderInput")
-  def $renderInput(config: Any): HTMLElement = js.native
+  def $renderInput(config: obj): HTMLElement = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -60,14 +61,16 @@ open class uploader ()
   
   def addDropZone(element: HTMLElement): Unit = js.native
   
-  def addFile(name: Any, size: Double): Unit = js.native
-  def addFile(name: Any, size: Double, `type`: String): Unit = js.native
+  def addFile(name: String, size: Double): Unit = js.native
+  def addFile(name: String, size: Double, `type`: String): Unit = js.native
+  def addFile(name: obj, size: Double): Unit = js.native
+  def addFile(name: obj, size: Double, `type`: String): Unit = js.native
   
   def attachEvent(`type`: uploaderEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: uploaderEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -81,9 +84,9 @@ open class uploader ()
   def detachEvent(id: String): Unit = js.native
   
   def fileDialog(): Unit = js.native
-  def fileDialog(content: Any): Unit = js.native
+  def fileDialog(content: obj): Unit = js.native
   
-  var files: Any = js.native
+  var files: obj = js.native
   
   def focus(): Unit = js.native
   
@@ -95,27 +98,44 @@ open class uploader ()
   
   def isUploaded(): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  
   def refresh(): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def send(id: String): Unit = js.native
   def send(id: Double): Unit = js.native
   def send(id: WebixCallback): Unit = js.native
   
   def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
   def stopUpload(id: String): Unit = js.native
   def stopUpload(id: Double): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jaeger-client"
-version := "3.18-dt-20221107Z-6ea8a4"
+version := "3.18-dt-20221107Z-275151"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "opentracing" % "0.14.7-ba5170",
-  "org.scalablytyped" %%% "prom-client" % "14.1.0-07d7e9",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "opentracing" % "0.14.7-7d5fa3",
+  "org.scalablytyped" %%% "prom-client" % "14.1.0-410b58",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

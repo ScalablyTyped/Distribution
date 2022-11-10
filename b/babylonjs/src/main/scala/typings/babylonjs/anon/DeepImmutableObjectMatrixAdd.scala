@@ -161,261 +161,161 @@ object DeepImmutableObjectMatrixAdd {
     _isIdentityDirty: DeepImmutable[Any],
     _m: DeepImmutable[Any],
     _updateIdentityStatus: DeepImmutable[Any],
-    add: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]],
-    addAtIndex: DeepImmutable[
-      js.Function2[/* index */ Double, /* value */ Double, DeepImmutableObjectMatrixAdd]
-    ],
-    addToRef: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]],
-    addToSelf: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]],
-    addTranslationFromFloats: DeepImmutable[
-      js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, DeepImmutableObjectMatrixAdd]
-    ],
-    asArray: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]],
-    clone_ : DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    copyFrom: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]],
-    copyToArray: DeepImmutable[
-      js.Function2[
-        /* array */ js.typedarray.Float32Array | js.Array[Double], 
-        /* offset */ js.UndefOr[Double], 
-        DeepImmutableObjectMatrixAdd
-      ]
-    ],
-    decompose: DeepImmutable[
-      js.Function4[
-        /* scale */ js.UndefOr[Vector3], 
-        /* rotation */ js.UndefOr[Quaternion], 
-        /* translation */ js.UndefOr[Vector3], 
-        /* preserveScalingNode */ js.UndefOr[TransformNode], 
-        Boolean
-      ]
-    ],
-    decomposeToTransformNode: DeepImmutable[js.Function1[/* node */ TransformNode, Boolean]],
-    determinant: DeepImmutable[js.Function0[Double]],
-    equals_ : DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]],
-    getClassName: DeepImmutable[js.Function0[String]],
-    getHashCode: DeepImmutable[js.Function0[Double]],
-    getRotationMatrix: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    getRotationMatrixToRef: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]],
-    getRow: DeepImmutable[js.Function1[/* index */ Double, Nullable[Vector4]]],
-    getRowToRef: DeepImmutable[js.Function2[/* index */ Double, /* rowVector */ Vector4, Vector4]],
-    getTranslation: DeepImmutable[js.Function0[Vector3]],
-    getTranslationToRef: DeepImmutable[js.Function1[/* result */ Vector3, Vector3]],
-    invert: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    invertToRef: DeepImmutable[js.Function1[/* other */ Matrix, Matrix]],
-    isIdentity: DeepImmutable[js.Function0[Boolean]],
-    isIdentityAs3x2: DeepImmutable[js.Function0[Boolean]],
-    m: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]],
-    markAsUpdated: DeepImmutable[js.Function0[Unit]],
-    multiply: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]],
-    multiplyAtIndex: DeepImmutable[
-      js.Function2[/* index */ Double, /* value */ Double, DeepImmutableObjectMatrixAdd]
-    ],
-    multiplyToArray: DeepImmutable[
-      js.Function3[
-        /* other */ DeepImmutable[Matrix], 
-        /* result */ js.typedarray.Float32Array | js.Array[Double], 
-        /* offset */ Double, 
-        DeepImmutableObjectMatrixAdd
-      ]
-    ],
-    multiplyToRef: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]],
-    removeRotationAndScaling: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    reset: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    scale: DeepImmutable[js.Function1[/* scale */ Double, DeepImmutableObjectMatrixAdd]],
-    scaleAndAddToRef: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]],
-    scaleToRef: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]],
-    setRow: DeepImmutable[
-      js.Function2[/* index */ Double, /* row */ Vector4, DeepImmutableObjectMatrixAdd]
-    ],
-    setRowFromFloats: DeepImmutable[
-      js.Function5[
-        /* index */ Double, 
-        /* x */ Double, 
-        /* y */ Double, 
-        /* z */ Double, 
-        /* w */ Double, 
-        DeepImmutableObjectMatrixAdd
-      ]
-    ],
-    setTranslation: DeepImmutable[js.Function1[/* vector3 */ DeepImmutable[Vector3], DeepImmutableObjectMatrixAdd]],
-    setTranslationFromFloats: DeepImmutable[
-      js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, DeepImmutableObjectMatrixAdd]
-    ],
-    toArray: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]],
-    toNormalMatrix: DeepImmutable[js.Function1[/* ref */ Matrix, Matrix]],
-    toggleModelMatrixHandInPlace: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    toggleProjectionMatrixHandInPlace: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    transpose: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]],
-    transposeToRef: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]],
+    add: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd,
+    addAtIndex: (/* index */ Double, /* value */ Double) => DeepImmutableObjectMatrixAdd,
+    addToRef: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix,
+    addToSelf: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd,
+    addTranslationFromFloats: (/* x */ Double, /* y */ Double, /* z */ Double) => DeepImmutableObjectMatrixAdd,
+    asArray: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
+    clone_ : () => DeepImmutableObjectMatrixAdd,
+    copyFrom: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd,
+    copyToArray: (/* array */ js.typedarray.Float32Array | js.Array[Double], /* offset */ js.UndefOr[Double]) => DeepImmutableObjectMatrixAdd,
+    decompose: (/* scale */ js.UndefOr[Vector3], /* rotation */ js.UndefOr[Quaternion], /* translation */ js.UndefOr[Vector3], /* preserveScalingNode */ js.UndefOr[TransformNode]) => Boolean,
+    decomposeToTransformNode: /* node */ TransformNode => Boolean,
+    determinant: () => Double,
+    equals_ : /* value */ DeepImmutable[Matrix] => Boolean,
+    getClassName: () => String,
+    getHashCode: () => Double,
+    getRotationMatrix: () => DeepImmutableObjectMatrixAdd,
+    getRotationMatrixToRef: /* result */ Matrix => Matrix,
+    getRow: /* index */ Double => Nullable[Vector4],
+    getRowToRef: (/* index */ Double, /* rowVector */ Vector4) => Vector4,
+    getTranslation: () => Vector3,
+    getTranslationToRef: /* result */ Vector3 => Vector3,
+    invert: () => DeepImmutableObjectMatrixAdd,
+    invertToRef: /* other */ Matrix => Matrix,
+    isIdentity: () => Boolean,
+    isIdentityAs3x2: () => Boolean,
+    m: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
+    markAsUpdated: () => Unit,
+    multiply: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd,
+    multiplyAtIndex: (/* index */ Double, /* value */ Double) => DeepImmutableObjectMatrixAdd,
+    multiplyToArray: (/* other */ DeepImmutable[Matrix], /* result */ js.typedarray.Float32Array | js.Array[Double], /* offset */ Double) => DeepImmutableObjectMatrixAdd,
+    multiplyToRef: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix,
+    removeRotationAndScaling: () => DeepImmutableObjectMatrixAdd,
+    reset: () => DeepImmutableObjectMatrixAdd,
+    scale: /* scale */ Double => DeepImmutableObjectMatrixAdd,
+    scaleAndAddToRef: (/* scale */ Double, /* result */ Matrix) => Matrix,
+    scaleToRef: (/* scale */ Double, /* result */ Matrix) => Matrix,
+    setRow: (/* index */ Double, /* row */ Vector4) => DeepImmutableObjectMatrixAdd,
+    setRowFromFloats: (/* index */ Double, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double) => DeepImmutableObjectMatrixAdd,
+    setTranslation: /* vector3 */ DeepImmutable[Vector3] => DeepImmutableObjectMatrixAdd,
+    setTranslationFromFloats: (/* x */ Double, /* y */ Double, /* z */ Double) => DeepImmutableObjectMatrixAdd,
+    toArray: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]],
+    toNormalMatrix: /* ref */ Matrix => Matrix,
+    toggleModelMatrixHandInPlace: () => DeepImmutableObjectMatrixAdd,
+    toggleProjectionMatrixHandInPlace: () => DeepImmutableObjectMatrixAdd,
+    transpose: () => DeepImmutableObjectMatrixAdd,
+    transposeToRef: /* result */ Matrix => Matrix,
     updateFlag: DeepImmutable[Double]
   ): DeepImmutableObjectMatrixAdd = {
-    val __obj = js.Dynamic.literal(_isIdentity = _isIdentity.asInstanceOf[js.Any], _isIdentity3x2 = _isIdentity3x2.asInstanceOf[js.Any], _isIdentity3x2Dirty = _isIdentity3x2Dirty.asInstanceOf[js.Any], _isIdentityDirty = _isIdentityDirty.asInstanceOf[js.Any], _m = _m.asInstanceOf[js.Any], _updateIdentityStatus = _updateIdentityStatus.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], addAtIndex = addAtIndex.asInstanceOf[js.Any], addToRef = addToRef.asInstanceOf[js.Any], addToSelf = addToSelf.asInstanceOf[js.Any], addTranslationFromFloats = addTranslationFromFloats.asInstanceOf[js.Any], asArray = asArray.asInstanceOf[js.Any], copyFrom = copyFrom.asInstanceOf[js.Any], copyToArray = copyToArray.asInstanceOf[js.Any], decompose = decompose.asInstanceOf[js.Any], decomposeToTransformNode = decomposeToTransformNode.asInstanceOf[js.Any], determinant = determinant.asInstanceOf[js.Any], getClassName = getClassName.asInstanceOf[js.Any], getHashCode = getHashCode.asInstanceOf[js.Any], getRotationMatrix = getRotationMatrix.asInstanceOf[js.Any], getRotationMatrixToRef = getRotationMatrixToRef.asInstanceOf[js.Any], getRow = getRow.asInstanceOf[js.Any], getRowToRef = getRowToRef.asInstanceOf[js.Any], getTranslation = getTranslation.asInstanceOf[js.Any], getTranslationToRef = getTranslationToRef.asInstanceOf[js.Any], invert = invert.asInstanceOf[js.Any], invertToRef = invertToRef.asInstanceOf[js.Any], isIdentity = isIdentity.asInstanceOf[js.Any], isIdentityAs3x2 = isIdentityAs3x2.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], markAsUpdated = markAsUpdated.asInstanceOf[js.Any], multiply = multiply.asInstanceOf[js.Any], multiplyAtIndex = multiplyAtIndex.asInstanceOf[js.Any], multiplyToArray = multiplyToArray.asInstanceOf[js.Any], multiplyToRef = multiplyToRef.asInstanceOf[js.Any], removeRotationAndScaling = removeRotationAndScaling.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleAndAddToRef = scaleAndAddToRef.asInstanceOf[js.Any], scaleToRef = scaleToRef.asInstanceOf[js.Any], setRow = setRow.asInstanceOf[js.Any], setRowFromFloats = setRowFromFloats.asInstanceOf[js.Any], setTranslation = setTranslation.asInstanceOf[js.Any], setTranslationFromFloats = setTranslationFromFloats.asInstanceOf[js.Any], toArray = toArray.asInstanceOf[js.Any], toNormalMatrix = toNormalMatrix.asInstanceOf[js.Any], toggleModelMatrixHandInPlace = toggleModelMatrixHandInPlace.asInstanceOf[js.Any], toggleProjectionMatrixHandInPlace = toggleProjectionMatrixHandInPlace.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], transposeToRef = transposeToRef.asInstanceOf[js.Any], updateFlag = updateFlag.asInstanceOf[js.Any])
-    __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
-    __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_isIdentity = _isIdentity.asInstanceOf[js.Any], _isIdentity3x2 = _isIdentity3x2.asInstanceOf[js.Any], _isIdentity3x2Dirty = _isIdentity3x2Dirty.asInstanceOf[js.Any], _isIdentityDirty = _isIdentityDirty.asInstanceOf[js.Any], _m = _m.asInstanceOf[js.Any], _updateIdentityStatus = _updateIdentityStatus.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addAtIndex = js.Any.fromFunction2(addAtIndex), addToRef = js.Any.fromFunction2(addToRef), addToSelf = js.Any.fromFunction1(addToSelf), addTranslationFromFloats = js.Any.fromFunction3(addTranslationFromFloats), asArray = js.Any.fromFunction0(asArray), copyFrom = js.Any.fromFunction1(copyFrom), copyToArray = js.Any.fromFunction2(copyToArray), decompose = js.Any.fromFunction4(decompose), decomposeToTransformNode = js.Any.fromFunction1(decomposeToTransformNode), determinant = js.Any.fromFunction0(determinant), getClassName = js.Any.fromFunction0(getClassName), getHashCode = js.Any.fromFunction0(getHashCode), getRotationMatrix = js.Any.fromFunction0(getRotationMatrix), getRotationMatrixToRef = js.Any.fromFunction1(getRotationMatrixToRef), getRow = js.Any.fromFunction1(getRow), getRowToRef = js.Any.fromFunction2(getRowToRef), getTranslation = js.Any.fromFunction0(getTranslation), getTranslationToRef = js.Any.fromFunction1(getTranslationToRef), invert = js.Any.fromFunction0(invert), invertToRef = js.Any.fromFunction1(invertToRef), isIdentity = js.Any.fromFunction0(isIdentity), isIdentityAs3x2 = js.Any.fromFunction0(isIdentityAs3x2), m = js.Any.fromFunction0(m), markAsUpdated = js.Any.fromFunction0(markAsUpdated), multiply = js.Any.fromFunction1(multiply), multiplyAtIndex = js.Any.fromFunction2(multiplyAtIndex), multiplyToArray = js.Any.fromFunction3(multiplyToArray), multiplyToRef = js.Any.fromFunction2(multiplyToRef), removeRotationAndScaling = js.Any.fromFunction0(removeRotationAndScaling), reset = js.Any.fromFunction0(reset), scale = js.Any.fromFunction1(scale), scaleAndAddToRef = js.Any.fromFunction2(scaleAndAddToRef), scaleToRef = js.Any.fromFunction2(scaleToRef), setRow = js.Any.fromFunction2(setRow), setRowFromFloats = js.Any.fromFunction5(setRowFromFloats), setTranslation = js.Any.fromFunction1(setTranslation), setTranslationFromFloats = js.Any.fromFunction3(setTranslationFromFloats), toArray = js.Any.fromFunction0(toArray), toNormalMatrix = js.Any.fromFunction1(toNormalMatrix), toggleModelMatrixHandInPlace = js.Any.fromFunction0(toggleModelMatrixHandInPlace), toggleProjectionMatrixHandInPlace = js.Any.fromFunction0(toggleProjectionMatrixHandInPlace), transpose = js.Any.fromFunction0(transpose), transposeToRef = js.Any.fromFunction1(transposeToRef), updateFlag = updateFlag.asInstanceOf[js.Any])
+    __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[DeepImmutableObjectMatrixAdd]
   }
   
   extension [Self <: DeepImmutableObjectMatrixAdd](x: Self) {
     
-    inline def setAdd(
-      value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]]
-    ): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddAtIndex(
-      value: DeepImmutable[
-          js.Function2[/* index */ Double, /* value */ Double, DeepImmutableObjectMatrixAdd]
-        ]
-    ): Self = StObject.set(x, "addAtIndex", value.asInstanceOf[js.Any])
+    inline def setAddAtIndex(value: (/* index */ Double, /* value */ Double) => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "addAtIndex", js.Any.fromFunction2(value))
     
-    inline def setAddToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = StObject.set(x, "addToRef", value.asInstanceOf[js.Any])
+    inline def setAddToRef(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = StObject.set(x, "addToRef", js.Any.fromFunction2(value))
     
-    inline def setAddToSelf(
-      value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]]
-    ): Self = StObject.set(x, "addToSelf", value.asInstanceOf[js.Any])
+    inline def setAddToSelf(value: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "addToSelf", js.Any.fromFunction1(value))
     
-    inline def setAddTranslationFromFloats(
-      value: DeepImmutable[
-          js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, DeepImmutableObjectMatrixAdd]
-        ]
-    ): Self = StObject.set(x, "addTranslationFromFloats", value.asInstanceOf[js.Any])
+    inline def setAddTranslationFromFloats(value: (/* x */ Double, /* y */ Double, /* z */ Double) => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "addTranslationFromFloats", js.Any.fromFunction3(value))
     
-    inline def setAsArray(value: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
+    inline def setAsArray(value: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
-    inline def setClone_(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    inline def setClone_(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    inline def setCopyFrom(
-      value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]]
-    ): Self = StObject.set(x, "copyFrom", value.asInstanceOf[js.Any])
+    inline def setCopyFrom(value: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     
     inline def setCopyToArray(
-      value: DeepImmutable[
-          js.Function2[
-            /* array */ js.typedarray.Float32Array | js.Array[Double], 
-            /* offset */ js.UndefOr[Double], 
-            DeepImmutableObjectMatrixAdd
-          ]
-        ]
-    ): Self = StObject.set(x, "copyToArray", value.asInstanceOf[js.Any])
+      value: (/* array */ js.typedarray.Float32Array | js.Array[Double], /* offset */ js.UndefOr[Double]) => DeepImmutableObjectMatrixAdd
+    ): Self = StObject.set(x, "copyToArray", js.Any.fromFunction2(value))
     
     inline def setDecompose(
-      value: DeepImmutable[
-          js.Function4[
-            /* scale */ js.UndefOr[Vector3], 
-            /* rotation */ js.UndefOr[Quaternion], 
-            /* translation */ js.UndefOr[Vector3], 
-            /* preserveScalingNode */ js.UndefOr[TransformNode], 
-            Boolean
-          ]
-        ]
-    ): Self = StObject.set(x, "decompose", value.asInstanceOf[js.Any])
+      value: (/* scale */ js.UndefOr[Vector3], /* rotation */ js.UndefOr[Quaternion], /* translation */ js.UndefOr[Vector3], /* preserveScalingNode */ js.UndefOr[TransformNode]) => Boolean
+    ): Self = StObject.set(x, "decompose", js.Any.fromFunction4(value))
     
-    inline def setDecomposeToTransformNode(value: DeepImmutable[js.Function1[/* node */ TransformNode, Boolean]]): Self = StObject.set(x, "decomposeToTransformNode", value.asInstanceOf[js.Any])
+    inline def setDecomposeToTransformNode(value: /* node */ TransformNode => Boolean): Self = StObject.set(x, "decomposeToTransformNode", js.Any.fromFunction1(value))
     
-    inline def setDeterminant(value: DeepImmutable[js.Function0[Double]]): Self = StObject.set(x, "determinant", value.asInstanceOf[js.Any])
+    inline def setDeterminant(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
     
-    inline def setEquals_(value: DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+    inline def setEquals_(value: /* value */ DeepImmutable[Matrix] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    inline def setGetClassName(value: DeepImmutable[js.Function0[String]]): Self = StObject.set(x, "getClassName", value.asInstanceOf[js.Any])
+    inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
-    inline def setGetHashCode(value: DeepImmutable[js.Function0[Double]]): Self = StObject.set(x, "getHashCode", value.asInstanceOf[js.Any])
+    inline def setGetHashCode(value: () => Double): Self = StObject.set(x, "getHashCode", js.Any.fromFunction0(value))
     
-    inline def setGetRotationMatrix(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "getRotationMatrix", value.asInstanceOf[js.Any])
+    inline def setGetRotationMatrix(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "getRotationMatrix", js.Any.fromFunction0(value))
     
-    inline def setGetRotationMatrixToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = StObject.set(x, "getRotationMatrixToRef", value.asInstanceOf[js.Any])
+    inline def setGetRotationMatrixToRef(value: /* result */ Matrix => Matrix): Self = StObject.set(x, "getRotationMatrixToRef", js.Any.fromFunction1(value))
     
-    inline def setGetRow(value: DeepImmutable[js.Function1[/* index */ Double, Nullable[Vector4]]]): Self = StObject.set(x, "getRow", value.asInstanceOf[js.Any])
+    inline def setGetRow(value: /* index */ Double => Nullable[Vector4]): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
     
-    inline def setGetRowToRef(value: DeepImmutable[js.Function2[/* index */ Double, /* rowVector */ Vector4, Vector4]]): Self = StObject.set(x, "getRowToRef", value.asInstanceOf[js.Any])
+    inline def setGetRowToRef(value: (/* index */ Double, /* rowVector */ Vector4) => Vector4): Self = StObject.set(x, "getRowToRef", js.Any.fromFunction2(value))
     
-    inline def setGetTranslation(value: DeepImmutable[js.Function0[Vector3]]): Self = StObject.set(x, "getTranslation", value.asInstanceOf[js.Any])
+    inline def setGetTranslation(value: () => Vector3): Self = StObject.set(x, "getTranslation", js.Any.fromFunction0(value))
     
-    inline def setGetTranslationToRef(value: DeepImmutable[js.Function1[/* result */ Vector3, Vector3]]): Self = StObject.set(x, "getTranslationToRef", value.asInstanceOf[js.Any])
+    inline def setGetTranslationToRef(value: /* result */ Vector3 => Vector3): Self = StObject.set(x, "getTranslationToRef", js.Any.fromFunction1(value))
     
-    inline def setInvert(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
     
-    inline def setInvertToRef(value: DeepImmutable[js.Function1[/* other */ Matrix, Matrix]]): Self = StObject.set(x, "invertToRef", value.asInstanceOf[js.Any])
+    inline def setInvertToRef(value: /* other */ Matrix => Matrix): Self = StObject.set(x, "invertToRef", js.Any.fromFunction1(value))
     
-    inline def setIsIdentity(value: DeepImmutable[js.Function0[Boolean]]): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
+    inline def setIsIdentity(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
     
-    inline def setIsIdentityAs3x2(value: DeepImmutable[js.Function0[Boolean]]): Self = StObject.set(x, "isIdentityAs3x2", value.asInstanceOf[js.Any])
+    inline def setIsIdentityAs3x2(value: () => Boolean): Self = StObject.set(x, "isIdentityAs3x2", js.Any.fromFunction0(value))
     
-    inline def setM(value: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]): Self = StObject.set(x, "m", js.Any.fromFunction0(value))
     
-    inline def setMarkAsUpdated(value: DeepImmutable[js.Function0[Unit]]): Self = StObject.set(x, "markAsUpdated", value.asInstanceOf[js.Any])
+    inline def setMarkAsUpdated(value: () => Unit): Self = StObject.set(x, "markAsUpdated", js.Any.fromFunction0(value))
     
-    inline def setMultiply(
-      value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], DeepImmutableObjectMatrixAdd]]
-    ): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
+    inline def setMultiply(value: /* other */ DeepImmutable[Matrix] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
-    inline def setMultiplyAtIndex(
-      value: DeepImmutable[
-          js.Function2[/* index */ Double, /* value */ Double, DeepImmutableObjectMatrixAdd]
-        ]
-    ): Self = StObject.set(x, "multiplyAtIndex", value.asInstanceOf[js.Any])
+    inline def setMultiplyAtIndex(value: (/* index */ Double, /* value */ Double) => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "multiplyAtIndex", js.Any.fromFunction2(value))
     
     inline def setMultiplyToArray(
-      value: DeepImmutable[
-          js.Function3[
-            /* other */ DeepImmutable[Matrix], 
-            /* result */ js.typedarray.Float32Array | js.Array[Double], 
-            /* offset */ Double, 
-            DeepImmutableObjectMatrixAdd
-          ]
-        ]
-    ): Self = StObject.set(x, "multiplyToArray", value.asInstanceOf[js.Any])
+      value: (/* other */ DeepImmutable[Matrix], /* result */ js.typedarray.Float32Array | js.Array[Double], /* offset */ Double) => DeepImmutableObjectMatrixAdd
+    ): Self = StObject.set(x, "multiplyToArray", js.Any.fromFunction3(value))
     
-    inline def setMultiplyToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = StObject.set(x, "multiplyToRef", value.asInstanceOf[js.Any])
+    inline def setMultiplyToRef(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = StObject.set(x, "multiplyToRef", js.Any.fromFunction2(value))
     
-    inline def setRemoveRotationAndScaling(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "removeRotationAndScaling", value.asInstanceOf[js.Any])
+    inline def setRemoveRotationAndScaling(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "removeRotationAndScaling", js.Any.fromFunction0(value))
     
-    inline def setReset(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    inline def setScale(value: DeepImmutable[js.Function1[/* scale */ Double, DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: /* scale */ Double => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
-    inline def setScaleAndAddToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = StObject.set(x, "scaleAndAddToRef", value.asInstanceOf[js.Any])
+    inline def setScaleAndAddToRef(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = StObject.set(x, "scaleAndAddToRef", js.Any.fromFunction2(value))
     
-    inline def setScaleToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = StObject.set(x, "scaleToRef", value.asInstanceOf[js.Any])
+    inline def setScaleToRef(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = StObject.set(x, "scaleToRef", js.Any.fromFunction2(value))
     
-    inline def setSetRow(
-      value: DeepImmutable[
-          js.Function2[/* index */ Double, /* row */ Vector4, DeepImmutableObjectMatrixAdd]
-        ]
-    ): Self = StObject.set(x, "setRow", value.asInstanceOf[js.Any])
+    inline def setSetRow(value: (/* index */ Double, /* row */ Vector4) => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "setRow", js.Any.fromFunction2(value))
     
     inline def setSetRowFromFloats(
-      value: DeepImmutable[
-          js.Function5[
-            /* index */ Double, 
-            /* x */ Double, 
-            /* y */ Double, 
-            /* z */ Double, 
-            /* w */ Double, 
-            DeepImmutableObjectMatrixAdd
-          ]
-        ]
-    ): Self = StObject.set(x, "setRowFromFloats", value.asInstanceOf[js.Any])
+      value: (/* index */ Double, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double) => DeepImmutableObjectMatrixAdd
+    ): Self = StObject.set(x, "setRowFromFloats", js.Any.fromFunction5(value))
     
-    inline def setSetTranslation(
-      value: DeepImmutable[js.Function1[/* vector3 */ DeepImmutable[Vector3], DeepImmutableObjectMatrixAdd]]
-    ): Self = StObject.set(x, "setTranslation", value.asInstanceOf[js.Any])
+    inline def setSetTranslation(value: /* vector3 */ DeepImmutable[Vector3] => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "setTranslation", js.Any.fromFunction1(value))
     
-    inline def setSetTranslationFromFloats(
-      value: DeepImmutable[
-          js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, DeepImmutableObjectMatrixAdd]
-        ]
-    ): Self = StObject.set(x, "setTranslationFromFloats", value.asInstanceOf[js.Any])
+    inline def setSetTranslationFromFloats(value: (/* x */ Double, /* y */ Double, /* z */ Double) => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "setTranslationFromFloats", js.Any.fromFunction3(value))
     
-    inline def setToArray(value: DeepImmutable[js.Function0[DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+    inline def setToArray(value: () => DeepImmutable[js.typedarray.Float32Array | js.Array[Double]]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
-    inline def setToNormalMatrix(value: DeepImmutable[js.Function1[/* ref */ Matrix, Matrix]]): Self = StObject.set(x, "toNormalMatrix", value.asInstanceOf[js.Any])
+    inline def setToNormalMatrix(value: /* ref */ Matrix => Matrix): Self = StObject.set(x, "toNormalMatrix", js.Any.fromFunction1(value))
     
-    inline def setToggleModelMatrixHandInPlace(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "toggleModelMatrixHandInPlace", value.asInstanceOf[js.Any])
+    inline def setToggleModelMatrixHandInPlace(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "toggleModelMatrixHandInPlace", js.Any.fromFunction0(value))
     
-    inline def setToggleProjectionMatrixHandInPlace(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "toggleProjectionMatrixHandInPlace", value.asInstanceOf[js.Any])
+    inline def setToggleProjectionMatrixHandInPlace(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "toggleProjectionMatrixHandInPlace", js.Any.fromFunction0(value))
     
-    inline def setTranspose(value: DeepImmutable[js.Function0[DeepImmutableObjectMatrixAdd]]): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
+    inline def setTranspose(value: () => DeepImmutableObjectMatrixAdd): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
     
-    inline def setTransposeToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = StObject.set(x, "transposeToRef", value.asInstanceOf[js.Any])
+    inline def setTransposeToRef(value: /* result */ Matrix => Matrix): Self = StObject.set(x, "transposeToRef", js.Any.fromFunction1(value))
     
     inline def setUpdateFlag(value: DeepImmutable[Double]): Self = StObject.set(x, "updateFlag", value.asInstanceOf[js.Any])
     

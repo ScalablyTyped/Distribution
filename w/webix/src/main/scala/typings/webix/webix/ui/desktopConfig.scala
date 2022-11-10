@@ -1,0 +1,181 @@
+package typings.webix.webix.ui
+
+import typings.std.HTMLElement
+import typings.webix.webix.EventHash
+import typings.webix.webix.obj
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait desktopConfig extends StObject {
+  
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
+  
+  var appIconPath: js.UndefOr[String] = js.undefined
+  
+  var apps: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var barPosition: js.UndefOr[String] = js.undefined
+  
+  var body: js.UndefOr[obj] = js.undefined
+  
+  var borderless: js.UndefOr[Boolean] = js.undefined
+  
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
+  
+  var css: js.UndefOr[String | obj] = js.undefined
+  
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var gravity: js.UndefOr[Double] = js.undefined
+  
+  var grid: js.UndefOr[Boolean] = js.undefined
+  
+  var height: js.UndefOr[Double] = js.undefined
+  
+  var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  var id: js.UndefOr[String | Double] = js.undefined
+  
+  var locale: js.UndefOr[obj] = js.undefined
+  
+  var maxHeight: js.UndefOr[Double] = js.undefined
+  
+  var maxWidth: js.UndefOr[Double] = js.undefined
+  
+  var minHeight: js.UndefOr[Double] = js.undefined
+  
+  var minWidth: js.UndefOr[Double] = js.undefined
+  
+  var on: js.UndefOr[EventHash] = js.undefined
+  
+  var `override`: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var systemParams: js.UndefOr[obj] = js.undefined
+  
+  var tileAlign: js.UndefOr[String] = js.undefined
+  
+  var tileLayout: js.UndefOr[String] = js.undefined
+  
+  var view: js.UndefOr[String] = js.undefined
+  
+  var width: js.UndefOr[Double] = js.undefined
+}
+object desktopConfig {
+  
+  inline def apply(): desktopConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[desktopConfig]
+  }
+  
+  extension [Self <: desktopConfig](x: Self) {
+    
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setAppIconPath(value: String): Self = StObject.set(x, "appIconPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppIconPathUndefined: Self = StObject.set(x, "appIconPath", js.undefined)
+    
+    inline def setApps(value: js.Array[Any]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+    
+    inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
+    
+    inline def setAppsVarargs(value: Any*): Self = StObject.set(x, "apps", js.Array(value*))
+    
+    inline def setBarPosition(value: String): Self = StObject.set(x, "barPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBarPositionUndefined: Self = StObject.set(x, "barPosition", js.undefined)
+    
+    inline def setBody(value: obj): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setOverride(value: js.Array[Any]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
+    inline def setOverrideVarargs(value: Any*): Self = StObject.set(x, "override", js.Array(value*))
+    
+    inline def setSystemParams(value: obj): Self = StObject.set(x, "systemParams", value.asInstanceOf[js.Any])
+    
+    inline def setSystemParamsUndefined: Self = StObject.set(x, "systemParams", js.undefined)
+    
+    inline def setTileAlign(value: String): Self = StObject.set(x, "tileAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTileAlignUndefined: Self = StObject.set(x, "tileAlign", js.undefined)
+    
+    inline def setTileLayout(value: String): Self = StObject.set(x, "tileLayout", value.asInstanceOf[js.Any])
+    
+    inline def setTileLayoutUndefined: Self = StObject.set(x, "tileLayout", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
+}

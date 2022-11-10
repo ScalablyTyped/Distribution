@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "octokit__request-error"
-version := "3.0.2-92e2c5"
+version := "3.0.2-26a0bb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "octokit__openapi-types" % "14.0.0-2cc2d3",
-  "org.scalablytyped" %%% "octokit__types" % "8.0.0-848637",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "octokit__openapi-types" % "14.0.0-9e71ba",
+  "org.scalablytyped" %%% "octokit__types" % "8.0.0-bead66",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

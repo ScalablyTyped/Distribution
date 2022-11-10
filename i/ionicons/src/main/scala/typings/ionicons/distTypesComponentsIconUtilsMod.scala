@@ -1,6 +1,7 @@
 package typings.ionicons
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicons.anon.PickHTMLElementdir
 import typings.ionicons.distTypesComponentsIconIconMod.Icon
 import typings.std.HTMLElement
 import typings.std.Map
@@ -58,6 +59,9 @@ object distTypesComponentsIconUtilsMod {
   
   inline def inheritAttributes(el: HTMLElement): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def inheritAttributes(el: HTMLElement, attributes: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  
+  inline def isRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")().asInstanceOf[Boolean]
+  inline def isRTL(hostEl: PickHTMLElementdir): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")(hostEl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isSrc(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSrc")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

@@ -36,11 +36,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.String ? string : T extends std.Number ? number : T extends std.Boolean ? boolean : T extends std.Symbol ? symbol : T extends std.BigInt ? bigint : never
     }}}
     */
-  @js.native
-  trait Unbox[T /* <: Boxed */] extends StObject
+  type Unbox[T /* <: Boxed */] = String
 }

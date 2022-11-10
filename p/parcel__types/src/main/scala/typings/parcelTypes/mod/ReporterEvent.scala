@@ -46,6 +46,12 @@ object ReporterEvent {
     __obj.asInstanceOf[typings.parcelTypes.mod.BuildSuccessEvent]
   }
   
+  inline def BundledProgressEvent(bundleGraph: BundleGraph[NamedBundle], changedAssets: Map[String, Asset]): typings.parcelTypes.mod.BundledProgressEvent = {
+    val __obj = js.Dynamic.literal(bundleGraph = bundleGraph.asInstanceOf[js.Any], changedAssets = changedAssets.asInstanceOf[js.Any], phase = "bundled")
+    __obj.updateDynamic("type")("buildProgress")
+    __obj.asInstanceOf[typings.parcelTypes.mod.BundledProgressEvent]
+  }
+  
   inline def BundlingProgressEvent(): typings.parcelTypes.mod.BundlingProgressEvent = {
     val __obj = js.Dynamic.literal(phase = "bundling")
     __obj.updateDynamic("type")("buildProgress")

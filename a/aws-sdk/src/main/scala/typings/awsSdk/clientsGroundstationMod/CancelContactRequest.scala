@@ -9,17 +9,17 @@ trait CancelContactRequest extends StObject {
   /**
     * UUID of a contact.
     */
-  var contactId: String
+  var contactId: Uuid
 }
 object CancelContactRequest {
   
-  inline def apply(contactId: String): CancelContactRequest = {
+  inline def apply(contactId: Uuid): CancelContactRequest = {
     val __obj = js.Dynamic.literal(contactId = contactId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelContactRequest]
   }
   
   extension [Self <: CancelContactRequest](x: Self) {
     
-    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: Uuid): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
   }
 }

@@ -37,13 +37,17 @@ object distDeclarationsSrcTypesFunctionsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Item extends undefined ? (result : @react-spring/core.@react-spring/core/dist/declarations/src/types/objects.AnimationResult<TResult>, ctrl : TSource, item : Item | undefined): void : (result : @react-spring/core.@react-spring/core/dist/declarations/src/types/objects.AnimationResult<TResult>, ctrl : TSource, item : Item): void
     }}}
     */
-  @js.native
-  trait EventHandler[TResult /* <: Readable[Any] */, TSource, Item] extends StObject
+  type EventHandler[TResult /* <: Readable[Any] */, TSource, Item] = js.Function3[
+    /* result */ AnimationResult[TResult], 
+    /* ctrl */ TSource, 
+    /* item */ js.UndefOr[Item], 
+    Unit
+  ]
   
   type OnChange[TResult /* <: Readable[Any] */, TSource, Item] = EventHandler[TResult, TSource, Item]
   
@@ -63,17 +67,16 @@ object distDeclarationsSrcTypesFunctionsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @react-spring/core.@react-spring/core/dist/declarations/src/types/common.IsPlainObject<T> ? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.UpdateValuesFn<T> : @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.UpdateValueFn<T>
     }}}
     */
-  @js.native
-  trait SpringUpdateFn[T] extends StObject
+  type SpringUpdateFn[T] = UpdateValuesFn[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     @react-spring/core.@react-spring/core/dist/declarations/src/types/internal.InferTarget<T> extends {  start :infer T} ? T : never
     }}}
@@ -83,7 +86,7 @@ object distDeclarationsSrcTypesFunctionsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     @react-spring/core.@react-spring/core/dist/declarations/src/types/internal.InferTarget<T> extends {  stop :infer T} ? T : never
     }}}

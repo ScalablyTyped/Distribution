@@ -1263,7 +1263,7 @@ object global {
     // let's assume it's reasonable to do a single Rax.lazy() around a single Rax.memo() / vice-versa
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * You'll have to cast your way around this structure, unfortunately.
       * TS definition: {{{
       C extends rax.rax.MemoExoticComponent<infer T> ? T extends rax.rax.MemoExoticComponent<infer U> ? rax.rax.RaxManagedAttributes<U, P> : rax.rax.RaxManagedAttributes<T, P> : rax.rax.RaxManagedAttributes<C, P>
       }}}

@@ -4197,6 +4197,10 @@ object blueprintjsIconsStrings {
   inline def ZoomToFit: ZoomToFit = "ZoomToFit".asInstanceOf[ZoomToFit]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait _underscore
     extends StObject
        with WordSeparators

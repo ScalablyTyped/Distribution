@@ -513,23 +513,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {  _ :{}} extends {  _ :TPayload} ? (payload : TPayload | undefined): std.PromiseLike<any> : (payload : TPayload): std.PromiseLike<any>
     }}}
     */
-  @js.native
-  trait BoundPromiseCreator[TPayload] extends StObject
+  type BoundPromiseCreator[TPayload] = js.Function1[/* payload */ js.UndefOr[TPayload], PromiseLike[Any]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {  _ :{}} extends {  _ :TPayload} ? {} | undefined : TPayload
     }}}
     */
-  @js.native
-  trait PayloadTypeOrUndefinable[TPayload] extends StObject
+  type PayloadTypeOrUndefinable[TPayload] = TPayload
   
   type PromiseCreator[TPayload] = js.Function2[
     /* payload */ PayloadTypeOrUndefinable[TPayload], 
@@ -560,93 +558,84 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TMetaCreator extends redux-actions.redux-actions.ActionFunction0<TMeta> ? redux-actions.redux-actions.ActionFunction0<redux-actions.redux-actions.ActionMeta<any, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction1<TArg1, TMeta> ? redux-actions.redux-actions.ActionFunction1<TArg1, redux-actions.redux-actions.ActionMeta<any, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, TMeta> ? redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, redux-actions.redux-actions.ActionMeta<any, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, TMeta> ? redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, redux-actions.redux-actions.ActionMeta<any, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, TMeta> ? redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, redux-actions.redux-actions.ActionMeta<any, TMeta>> : redux-actions.redux-actions.ActionFunctionAny<redux-actions.redux-actions.ActionMeta<any, TMeta>>
     }}}
     */
-  @js.native
-  trait ResolveActionCreatorByMeta[TMetaCreator, TMeta, TArg1, TArg2, TArg3, TArg4] extends StObject
+  type ResolveActionCreatorByMeta[TMetaCreator, TMeta, TArg1, TArg2, TArg3, TArg4] = ActionFunction0[ActionMeta[Any, TMeta]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TPayloadCreator extends redux-actions.redux-actions.ActionFunction0<TPayload> ? redux-actions.redux-actions.ActionFunction0<redux-actions.redux-actions.Action<TPayload>> : TPayloadCreator extends redux-actions.redux-actions.ActionFunction1<TArg1, TPayload> ? redux-actions.redux-actions.ActionFunction1<TArg1, redux-actions.redux-actions.Action<TPayload>> : TPayloadCreator extends redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, TPayload> ? redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, redux-actions.redux-actions.Action<TPayload>> : TPayloadCreator extends redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, TPayload> ? redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, redux-actions.redux-actions.Action<TPayload>> : TPayloadCreator extends redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, TPayload> ? redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, redux-actions.redux-actions.Action<TPayload>> : redux-actions.redux-actions.ActionFunctionAny<redux-actions.redux-actions.Action<TPayload>>
     }}}
     */
-  @js.native
-  trait ResolveActionCreatorByPayload[TPayloadCreator, TPayload, TArg1, TArg2, TArg3, TArg4] extends StObject
+  type ResolveActionCreatorByPayload[TPayloadCreator, TPayload, TArg1, TArg2, TArg3, TArg4] = ActionFunction0[Action[TPayload]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TMetaCreator extends redux-actions.redux-actions.ActionFunction0<TMeta> ? redux-actions.redux-actions.ActionFunction0<redux-actions.redux-actions.ActionMeta<TPayload, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction1<TArg1, TMeta> ? redux-actions.redux-actions.ActionFunction1<TArg1, redux-actions.redux-actions.ActionMeta<TPayload, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, TMeta> ? redux-actions.redux-actions.ActionFunction2<TArg1, TArg2, redux-actions.redux-actions.ActionMeta<TPayload, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, TMeta> ? redux-actions.redux-actions.ActionFunction3<TArg1, TArg2, TArg3, redux-actions.redux-actions.ActionMeta<TPayload, TMeta>> : TMetaCreator extends redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, TMeta> ? redux-actions.redux-actions.ActionFunction4<TArg1, TArg2, TArg3, TArg4, redux-actions.redux-actions.ActionMeta<TPayload, TMeta>> : redux-actions.redux-actions.ActionFunctionAny<redux-actions.redux-actions.ActionMeta<TPayload, TMeta>>
     }}}
     */
-  @js.native
-  trait ResolveActionCreatorByPayloadMeta[TPayloadCreator, TMetaCreator, TPayload, TMeta, TArg1, TArg2, TArg3, TArg4] extends StObject
+  type ResolveActionCreatorByPayloadMeta[TPayloadCreator, TMetaCreator, TPayload, TMeta, TArg1, TArg2, TArg3, TArg4] = ActionFunction0[ActionMeta[TPayload, TMeta]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunction extends (arg1 : infer TArg1, args : ...any): any ? TArg1 : undefined
     }}}
     */
-  @js.native
-  trait ResolveFunctionArg1Type[TFunction] extends StObject
+  type ResolveFunctionArg1Type[TFunction] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunction extends (arg1 : any, arg2 : infer TArg1, args : ...any): any ? TArg1 : undefined
     }}}
     */
-  @js.native
-  trait ResolveFunctionArg2Type[TFunction] extends StObject
+  type ResolveFunctionArg2Type[TFunction] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunction extends (arg1 : any, arg2 : any, arg3 : infer TArg1, args : ...any): any ? TArg1 : undefined
     }}}
     */
-  @js.native
-  trait ResolveFunctionArg3Type[TFunction] extends StObject
+  type ResolveFunctionArg3Type[TFunction] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunction extends (arg1 : any, arg2 : any, arg3 : any, arg4 : infer TArg1, args : ...any): any ? TArg1 : undefined
     }}}
     */
-  @js.native
-  trait ResolveFunctionArg4Type[TFunction] extends StObject
+  type ResolveFunctionArg4Type[TFunction] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunction extends (args : ...any): infer TReturn ? TReturn : undefined
     }}}
     */
-  @js.native
-  trait ResolveFunctionReturnType[TFunction] extends StObject
+  type ResolveFunctionReturnType[TFunction] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TActionCreator extends (args : ...any): redux-actions.redux-actions.Action<infer TPayload> ? TPayload : undefined
     }}}
     */
-  @js.native
-  trait ResolvePayloadByActionCreator[TActionCreator] extends StObject
+  type ResolvePayloadByActionCreator[TActionCreator] = Unit
   
   type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator & keyinRoutineStagesstring & (Failure[
     TTriggerActionCreator, 

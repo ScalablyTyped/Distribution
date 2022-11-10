@@ -24,7 +24,7 @@ trait CreateMissionProfileRequest extends StObject {
   /**
     * Smallest amount of time in seconds that you’d like to see for an available contact. AWS Ground Station will not present you with contacts shorter than this duration.
     */
-  var minimumViableContactDurationSeconds: DurationInSeconds
+  var minimumViableContactDurationSeconds: PositiveDurationInSeconds
   
   /**
     * Name of a mission profile.
@@ -45,7 +45,7 @@ object CreateMissionProfileRequest {
   
   inline def apply(
     dataflowEdges: DataflowEdgeList,
-    minimumViableContactDurationSeconds: DurationInSeconds,
+    minimumViableContactDurationSeconds: PositiveDurationInSeconds,
     name: SafeName,
     trackingConfigArn: ConfigArn
   ): CreateMissionProfileRequest = {
@@ -67,7 +67,7 @@ object CreateMissionProfileRequest {
     
     inline def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value*))
     
-    inline def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setMinimumViableContactDurationSeconds(value: PositiveDurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     
     inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

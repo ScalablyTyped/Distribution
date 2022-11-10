@@ -125,7 +125,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     R extends redux.redux.Reducer<any, infer A> ? A : never
     }}}
@@ -135,7 +135,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     M extends redux.redux.ReducersMapObject<any, any> ? redux.redux.ActionFromReducer<redux.redux.ReducerFromReducersMapObject<M>> : never
     }}}
@@ -264,19 +264,18 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Required<S> extends redux.redux.EmptyObject ? S extends redux.redux.CombinedState<infer S1> ? {[ K in keyof S1 ]:? S1[K] extends object? redux.redux.PreloadedState<S1[K]> : S1[K]} : S : {[ K in keyof S ]: S[K] extends string | number | boolean | symbol? S[K] : redux.redux.PreloadedState<S[K]>}
     }}}
     */
-  @js.native
-  trait PreloadedState[S] extends StObject
+  type PreloadedState[S] = S
   
   type Reducer[S, A /* <: Action[Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     M extends {[ P in keyof M ]: infer R} ? R extends redux.redux.Reducer<any, any> ? R : never : never
     }}}
@@ -296,7 +295,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     M extends redux.redux.ReducersMapObject<any, any> ? {[ P in keyof M ]: M[P] extends redux.redux.Reducer<infer S, any>? S : never} : never
     }}}

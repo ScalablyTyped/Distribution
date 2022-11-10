@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PaymentType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "PaymentType")
-@js.native
-object PaymentType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONE_TIME
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECURRING
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNSCHEDULED
+*/
+trait PaymentType extends StObject
+object PaymentType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PaymentType & String] = js.native
+  inline def ONE_TIME: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONE_TIME = "ONE_TIME".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ONE_TIME]
   
-  @js.native
-  sealed trait ONE_TIME
-    extends StObject
-       with PaymentType
-  /* "ONE_TIME" */ val ONE_TIME: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.ONE_TIME & String = js.native
+  inline def RECURRING: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECURRING = "RECURRING".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.RECURRING]
   
-  @js.native
-  sealed trait RECURRING
-    extends StObject
-       with PaymentType
-  /* "RECURRING" */ val RECURRING: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.RECURRING & String = js.native
-  
-  @js.native
-  sealed trait UNSCHEDULED
-    extends StObject
-       with PaymentType
-  /* "UNSCHEDULED" */ val UNSCHEDULED: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.UNSCHEDULED & String = js.native
+  inline def UNSCHEDULED: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNSCHEDULED = "UNSCHEDULED".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNSCHEDULED]
 }

@@ -10,6 +10,7 @@ import typings.commitlintTypes.libRulesMod.LengthRuleConfig
 import typings.commitlintTypes.libRulesMod.Rule
 import typings.commitlintTypes.libRulesMod.RuleConfig
 import typings.commitlintTypes.libRulesMod.RuleConfigQuality.Qualified
+import typings.commitlintTypes.libRulesMod.RuleConfigSeverity.Disabled
 import typings.commitlintTypes.libRulesMod.SyncRule
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -244,137 +245,205 @@ object libLoadMod {
       
       inline def `setBody-caseUndefined`: Self = StObject.set(x, "body-case", js.undefined)
       
+      inline def `setBody-caseVarargs`(value: Disabled*): Self = StObject.set(x, "body-case", js.Array(value*))
+      
       inline def `setBody-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "body-empty", value.asInstanceOf[js.Any])
       
       inline def `setBody-emptyUndefined`: Self = StObject.set(x, "body-empty", js.undefined)
+      
+      inline def `setBody-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "body-empty", js.Array(value*))
       
       inline def `setBody-full-stop`(value: RuleConfig[Qualified, String]): Self = StObject.set(x, "body-full-stop", value.asInstanceOf[js.Any])
       
       inline def `setBody-full-stopUndefined`: Self = StObject.set(x, "body-full-stop", js.undefined)
       
+      inline def `setBody-full-stopVarargs`(value: Disabled*): Self = StObject.set(x, "body-full-stop", js.Array(value*))
+      
       inline def `setBody-leading-blank`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "body-leading-blank", value.asInstanceOf[js.Any])
       
       inline def `setBody-leading-blankUndefined`: Self = StObject.set(x, "body-leading-blank", js.undefined)
+      
+      inline def `setBody-leading-blankVarargs`(value: Disabled*): Self = StObject.set(x, "body-leading-blank", js.Array(value*))
       
       inline def `setBody-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "body-max-length", value.asInstanceOf[js.Any])
       
       inline def `setBody-max-lengthUndefined`: Self = StObject.set(x, "body-max-length", js.undefined)
       
+      inline def `setBody-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "body-max-length", js.Array(value*))
+      
       inline def `setBody-max-line-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "body-max-line-length", value.asInstanceOf[js.Any])
       
       inline def `setBody-max-line-lengthUndefined`: Self = StObject.set(x, "body-max-line-length", js.undefined)
+      
+      inline def `setBody-max-line-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "body-max-line-length", js.Array(value*))
       
       inline def `setBody-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "body-min-length", value.asInstanceOf[js.Any])
       
       inline def `setBody-min-lengthUndefined`: Self = StObject.set(x, "body-min-length", js.undefined)
       
+      inline def `setBody-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "body-min-length", js.Array(value*))
+      
       inline def `setFooter-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "footer-empty", value.asInstanceOf[js.Any])
       
       inline def `setFooter-emptyUndefined`: Self = StObject.set(x, "footer-empty", js.undefined)
+      
+      inline def `setFooter-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "footer-empty", js.Array(value*))
       
       inline def `setFooter-leading-blank`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "footer-leading-blank", value.asInstanceOf[js.Any])
       
       inline def `setFooter-leading-blankUndefined`: Self = StObject.set(x, "footer-leading-blank", js.undefined)
       
+      inline def `setFooter-leading-blankVarargs`(value: Disabled*): Self = StObject.set(x, "footer-leading-blank", js.Array(value*))
+      
       inline def `setFooter-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "footer-max-length", value.asInstanceOf[js.Any])
       
       inline def `setFooter-max-lengthUndefined`: Self = StObject.set(x, "footer-max-length", js.undefined)
+      
+      inline def `setFooter-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "footer-max-length", js.Array(value*))
       
       inline def `setFooter-max-line-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "footer-max-line-length", value.asInstanceOf[js.Any])
       
       inline def `setFooter-max-line-lengthUndefined`: Self = StObject.set(x, "footer-max-line-length", js.undefined)
       
+      inline def `setFooter-max-line-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "footer-max-line-length", js.Array(value*))
+      
       inline def `setFooter-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "footer-min-length", value.asInstanceOf[js.Any])
       
       inline def `setFooter-min-lengthUndefined`: Self = StObject.set(x, "footer-min-length", js.undefined)
+      
+      inline def `setFooter-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "footer-min-length", js.Array(value*))
       
       inline def `setHeader-case`(value: CaseRuleConfig[Qualified]): Self = StObject.set(x, "header-case", value.asInstanceOf[js.Any])
       
       inline def `setHeader-caseUndefined`: Self = StObject.set(x, "header-case", js.undefined)
       
+      inline def `setHeader-caseVarargs`(value: Disabled*): Self = StObject.set(x, "header-case", js.Array(value*))
+      
       inline def `setHeader-full-stop`(value: RuleConfig[Qualified, String]): Self = StObject.set(x, "header-full-stop", value.asInstanceOf[js.Any])
       
       inline def `setHeader-full-stopUndefined`: Self = StObject.set(x, "header-full-stop", js.undefined)
+      
+      inline def `setHeader-full-stopVarargs`(value: Disabled*): Self = StObject.set(x, "header-full-stop", js.Array(value*))
       
       inline def `setHeader-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "header-max-length", value.asInstanceOf[js.Any])
       
       inline def `setHeader-max-lengthUndefined`: Self = StObject.set(x, "header-max-length", js.undefined)
       
+      inline def `setHeader-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "header-max-length", js.Array(value*))
+      
       inline def `setHeader-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "header-min-length", value.asInstanceOf[js.Any])
       
       inline def `setHeader-min-lengthUndefined`: Self = StObject.set(x, "header-min-length", js.undefined)
+      
+      inline def `setHeader-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "header-min-length", js.Array(value*))
       
       inline def `setReferences-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "references-empty", value.asInstanceOf[js.Any])
       
       inline def `setReferences-emptyUndefined`: Self = StObject.set(x, "references-empty", js.undefined)
       
+      inline def `setReferences-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "references-empty", js.Array(value*))
+      
       inline def `setScope-case`(value: CaseRuleConfig[Qualified]): Self = StObject.set(x, "scope-case", value.asInstanceOf[js.Any])
       
       inline def `setScope-caseUndefined`: Self = StObject.set(x, "scope-case", js.undefined)
+      
+      inline def `setScope-caseVarargs`(value: Disabled*): Self = StObject.set(x, "scope-case", js.Array(value*))
       
       inline def `setScope-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "scope-empty", value.asInstanceOf[js.Any])
       
       inline def `setScope-emptyUndefined`: Self = StObject.set(x, "scope-empty", js.undefined)
       
+      inline def `setScope-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "scope-empty", js.Array(value*))
+      
       inline def `setScope-enum`(value: EnumRuleConfig[Qualified]): Self = StObject.set(x, "scope-enum", value.asInstanceOf[js.Any])
       
       inline def `setScope-enumUndefined`: Self = StObject.set(x, "scope-enum", js.undefined)
+      
+      inline def `setScope-enumVarargs`(value: Disabled*): Self = StObject.set(x, "scope-enum", js.Array(value*))
       
       inline def `setScope-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "scope-max-length", value.asInstanceOf[js.Any])
       
       inline def `setScope-max-lengthUndefined`: Self = StObject.set(x, "scope-max-length", js.undefined)
       
+      inline def `setScope-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "scope-max-length", js.Array(value*))
+      
       inline def `setScope-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "scope-min-length", value.asInstanceOf[js.Any])
       
       inline def `setScope-min-lengthUndefined`: Self = StObject.set(x, "scope-min-length", js.undefined)
+      
+      inline def `setScope-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "scope-min-length", js.Array(value*))
       
       inline def `setSigned-off-by`(value: RuleConfig[Qualified, String]): Self = StObject.set(x, "signed-off-by", value.asInstanceOf[js.Any])
       
       inline def `setSigned-off-byUndefined`: Self = StObject.set(x, "signed-off-by", js.undefined)
       
+      inline def `setSigned-off-byVarargs`(value: Disabled*): Self = StObject.set(x, "signed-off-by", js.Array(value*))
+      
       inline def `setSubject-case`(value: CaseRuleConfig[Qualified]): Self = StObject.set(x, "subject-case", value.asInstanceOf[js.Any])
       
       inline def `setSubject-caseUndefined`: Self = StObject.set(x, "subject-case", js.undefined)
+      
+      inline def `setSubject-caseVarargs`(value: Disabled*): Self = StObject.set(x, "subject-case", js.Array(value*))
       
       inline def `setSubject-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "subject-empty", value.asInstanceOf[js.Any])
       
       inline def `setSubject-emptyUndefined`: Self = StObject.set(x, "subject-empty", js.undefined)
       
+      inline def `setSubject-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "subject-empty", js.Array(value*))
+      
       inline def `setSubject-full-stop`(value: RuleConfig[Qualified, String]): Self = StObject.set(x, "subject-full-stop", value.asInstanceOf[js.Any])
       
       inline def `setSubject-full-stopUndefined`: Self = StObject.set(x, "subject-full-stop", js.undefined)
+      
+      inline def `setSubject-full-stopVarargs`(value: Disabled*): Self = StObject.set(x, "subject-full-stop", js.Array(value*))
       
       inline def `setSubject-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "subject-max-length", value.asInstanceOf[js.Any])
       
       inline def `setSubject-max-lengthUndefined`: Self = StObject.set(x, "subject-max-length", js.undefined)
       
+      inline def `setSubject-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "subject-max-length", js.Array(value*))
+      
       inline def `setSubject-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "subject-min-length", value.asInstanceOf[js.Any])
       
       inline def `setSubject-min-lengthUndefined`: Self = StObject.set(x, "subject-min-length", js.undefined)
+      
+      inline def `setSubject-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "subject-min-length", js.Array(value*))
       
       inline def `setTrailer-exists`(value: RuleConfig[Qualified, String]): Self = StObject.set(x, "trailer-exists", value.asInstanceOf[js.Any])
       
       inline def `setTrailer-existsUndefined`: Self = StObject.set(x, "trailer-exists", js.undefined)
       
+      inline def `setTrailer-existsVarargs`(value: Disabled*): Self = StObject.set(x, "trailer-exists", js.Array(value*))
+      
       inline def `setType-case`(value: CaseRuleConfig[Qualified]): Self = StObject.set(x, "type-case", value.asInstanceOf[js.Any])
       
       inline def `setType-caseUndefined`: Self = StObject.set(x, "type-case", js.undefined)
+      
+      inline def `setType-caseVarargs`(value: Disabled*): Self = StObject.set(x, "type-case", js.Array(value*))
       
       inline def `setType-empty`(value: RuleConfig[Qualified, Unit]): Self = StObject.set(x, "type-empty", value.asInstanceOf[js.Any])
       
       inline def `setType-emptyUndefined`: Self = StObject.set(x, "type-empty", js.undefined)
       
+      inline def `setType-emptyVarargs`(value: Disabled*): Self = StObject.set(x, "type-empty", js.Array(value*))
+      
       inline def `setType-enum`(value: EnumRuleConfig[Qualified]): Self = StObject.set(x, "type-enum", value.asInstanceOf[js.Any])
       
       inline def `setType-enumUndefined`: Self = StObject.set(x, "type-enum", js.undefined)
+      
+      inline def `setType-enumVarargs`(value: Disabled*): Self = StObject.set(x, "type-enum", js.Array(value*))
       
       inline def `setType-max-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "type-max-length", value.asInstanceOf[js.Any])
       
       inline def `setType-max-lengthUndefined`: Self = StObject.set(x, "type-max-length", js.undefined)
       
+      inline def `setType-max-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "type-max-length", js.Array(value*))
+      
       inline def `setType-min-length`(value: LengthRuleConfig[Qualified]): Self = StObject.set(x, "type-min-length", value.asInstanceOf[js.Any])
       
       inline def `setType-min-lengthUndefined`: Self = StObject.set(x, "type-min-length", js.undefined)
+      
+      inline def `setType-min-lengthVarargs`(value: Disabled*): Self = StObject.set(x, "type-min-length", js.Array(value*))
     }
   }
   

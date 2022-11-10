@@ -3,6 +3,8 @@ package typings.findMyWay
 import org.scalablytyped.runtime.StringDictionary
 import typings.findMyWay.anon.CommonPrefix
 import typings.findMyWay.anon.Del
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -555,23 +557,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends find-my-way.find-my-way.HTTPVersion.V1 ? node.http.IncomingMessage : node.http2.Http2ServerRequest
     }}}
     */
-  @js.native
-  trait Req[V] extends StObject
+  type Req[V] = IncomingMessage
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends find-my-way.find-my-way.HTTPVersion.V1 ? node.http.ServerResponse<node.http.IncomingMessage> : node.http2.Http2ServerResponse
     }}}
     */
-  @js.native
-  trait Res[V] extends StObject
+  type Res[V] = ServerResponse[IncomingMessage]
   
   trait RouteOptions extends StObject {
     

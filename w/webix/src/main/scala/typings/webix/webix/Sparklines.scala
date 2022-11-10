@@ -12,7 +12,7 @@ trait Sparklines extends StObject {
   
   var radius: Double
   
-  def template(item: Any, common: String, data: js.Array[Any], column: Any, index: Double): String
+  def template(item: obj, common: String, data: js.Array[Any], column: obj, index: Double): String
 }
 object Sparklines {
   
@@ -20,7 +20,7 @@ object Sparklines {
     paddingX: Double,
     paddingY: Double,
     radius: Double,
-    template: (Any, String, js.Array[Any], Any, Double) => String
+    template: (obj, String, js.Array[Any], obj, Double) => String
   ): Sparklines = {
     val __obj = js.Dynamic.literal(paddingX = paddingX.asInstanceOf[js.Any], paddingY = paddingY.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], template = js.Any.fromFunction5(template))
     __obj.asInstanceOf[Sparklines]
@@ -34,6 +34,6 @@ object Sparklines {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setTemplate(value: (Any, String, js.Array[Any], Any, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
+    inline def setTemplate(value: (obj, String, js.Array[Any], obj, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
   }
 }

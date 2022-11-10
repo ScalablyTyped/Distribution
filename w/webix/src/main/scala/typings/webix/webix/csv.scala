@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait csv extends StObject {
   
-  var delimiter: Any = js.native
+  var delimiter: DelimiterConfig = js.native
   
   var escape: Boolean = js.native
   
   def parse(text: String): js.Array[Any] = js.native
-  def parse(text: String, delimiter: Any): js.Array[Any] = js.native
+  def parse(text: String, delimiter: DelimiterConfig): js.Array[Any] = js.native
   
   def stringify(data: js.Array[Any]): String = js.native
-  def stringify(data: js.Array[Any], delimiter: Any): String = js.native
+  def stringify(data: js.Array[Any], delimiter: DelimiterConfig): String = js.native
 }

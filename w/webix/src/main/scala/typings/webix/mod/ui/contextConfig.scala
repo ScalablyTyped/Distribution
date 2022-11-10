@@ -3,25 +3,26 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait contextConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var autofit: js.UndefOr[Boolean] = js.undefined
   
   var autofocus: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
+  var body: js.UndefOr[String | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -29,7 +30,7 @@ trait contextConfig extends StObject {
   
   var gravity: js.UndefOr[Double] = js.undefined
   
-  var head: js.UndefOr[Any] = js.undefined
+  var head: js.UndefOr[obj | String] = js.undefined
   
   var headHeight: js.UndefOr[Double] = js.undefined
   
@@ -88,7 +89,7 @@ object contextConfig {
   
   extension [Self <: contextConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -100,7 +101,7 @@ object contextConfig {
     
     inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
     
-    inline def setBody(value: String | typings.webix.webix.ui.baseview): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | obj): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -112,7 +113,7 @@ object contextConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -128,7 +129,7 @@ object contextConfig {
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    inline def setHead(value: Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: obj | String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     inline def setHeadHeight(value: Double): Self = StObject.set(x, "headHeight", value.asInstanceOf[js.Any])
     

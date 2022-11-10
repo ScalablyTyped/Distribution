@@ -10,7 +10,7 @@ object distTypeDefsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends 'text' ? @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.KnobPlus<T, / * Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.TextTypeKnob, 'value'> * /
   {  value :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Text.TextTypeKnobValue | undefined}> : T extends 'boolean' ? @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.KnobPlus<T, / * Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.BooleanTypeKnob, 'value'> * /
@@ -26,8 +26,11 @@ object distTypeDefsMod {
   {  options :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsTypeOptionsProp<any>,   value :any,   optionsObj :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptions}> : never
     }}}
     */
-  @js.native
-  trait Knob[T /* <: KnobType */] extends StObject
+  type Knob[T /* <: KnobType */] = KnobPlus[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.TextTypeKnob, 'value'> * /
+  {  value :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Text.TextTypeKnobValue | undefined} */ js.Any
+  ]
   
   type KnobPlus[T /* <: KnobType */, K] = K & DisableDebounce[T]
   

@@ -198,6 +198,8 @@ object NodeMaterialBuildStateSharedData {
     
     inline def setFragmentOutputNodes(value: Immutable[js.Array[NodeMaterialBlock]]): Self = StObject.set(x, "fragmentOutputNodes", value.asInstanceOf[js.Any])
     
+    inline def setFragmentOutputNodesVarargs(value: NodeMaterialBlock*): Self = StObject.set(x, "fragmentOutputNodes", js.Array(value*))
+    
     inline def setHints(value: NeedAlphaBlending): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
     inline def setInputBlocks(value: js.Array[InputBlock]): Self = StObject.set(x, "inputBlocks", value.asInstanceOf[js.Any])

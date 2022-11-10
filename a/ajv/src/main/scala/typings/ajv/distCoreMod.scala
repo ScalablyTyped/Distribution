@@ -406,19 +406,15 @@ object distCoreMod {
     
     def addVocabulary(definitions: Vocabulary): Ajv = js.native
     
-    def compile[T](schema: JSONSchemaType[T]): ValidateFunction[T] = js.native
-    def compile[T](schema: JSONSchemaType[T], _meta: Boolean): ValidateFunction[T] = js.native
-    def compile[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]]): ValidateFunction[T] = js.native
-    def compile[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]], _meta: Boolean): ValidateFunction[T] = js.native
+    def compile[T](schema: JSONSchemaType[T] | (JTDSchemaType[T, Record[String, scala.Nothing]])): ValidateFunction[T] = js.native
+    def compile[T](schema: JSONSchemaType[T] | (JTDSchemaType[T, Record[String, scala.Nothing]]), _meta: Boolean): ValidateFunction[T] = js.native
     def compile[T](schema: AsyncSchema): AsyncValidateFunction[T] = js.native
     def compile[T](schema: AsyncSchema, _meta: Boolean): AsyncValidateFunction[T] = js.native
     def compile[T](schema: Schema): ValidateFunction[T] = js.native
     def compile[T](schema: Schema, _meta: Boolean): ValidateFunction[T] = js.native
     
-    def compileAsync[T](schema: JSONSchemaType[T]): js.Promise[ValidateFunction[T]] = js.native
-    def compileAsync[T](schema: JSONSchemaType[T], _meta: Boolean): js.Promise[ValidateFunction[T]] = js.native
-    def compileAsync[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]]): js.Promise[ValidateFunction[T]] = js.native
-    def compileAsync[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]], _meta: Boolean): js.Promise[ValidateFunction[T]] = js.native
+    def compileAsync[T](schema: JSONSchemaType[T] | (JTDSchemaType[T, Record[String, scala.Nothing]])): js.Promise[ValidateFunction[T]] = js.native
+    def compileAsync[T](schema: JSONSchemaType[T] | (JTDSchemaType[T, Record[String, scala.Nothing]]), _meta: Boolean): js.Promise[ValidateFunction[T]] = js.native
     def compileAsync[T](schema: AnySchemaObject): js.Promise[AnyValidateFunction[T]] = js.native
     def compileAsync[T](schema: AnySchemaObject, meta: Boolean): js.Promise[AnyValidateFunction[T]] = js.native
     def compileAsync[T](schema: AsyncSchema): js.Promise[AsyncValidateFunction[T]] = js.native
@@ -476,8 +472,7 @@ object distCoreMod {
     
     def validate(schemaKeyRef: String, data: Any): Boolean | js.Promise[Any] = js.native
     def validate(schemaKeyRef: AnySchema, data: Any): Boolean | js.Promise[Any] = js.native
-    def validate[T](schema: JSONSchemaType[T], data: Any): /* is T */ Boolean = js.native
-    def validate[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]], data: Any): /* is T */ Boolean = js.native
+    def validate[T](schema: JSONSchemaType[T] | (JTDSchemaType[T, Record[String, scala.Nothing]]), data: Any): /* is T */ Boolean = js.native
     def validate[T](schema: AsyncSchema, data: Any | T): js.Promise[T] = js.native
     
     def validateSchema(schema: AnySchema): Boolean | js.Promise[Any] = js.native

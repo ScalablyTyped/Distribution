@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.abstractLeveldown.mod.AbstractBatch
+import typings.abstractLeveldown.mod.AbstractGetOptions
 import typings.abstractLeveldown.mod.AbstractIterator
 import typings.abstractLeveldown.mod.AbstractIteratorOptions
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
@@ -96,53 +97,48 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     DB extends {clear (options : infer O, callback : std.ErrorCallback): void} ? levelup.levelup.LevelUpClear<O> : levelup.levelup.LevelUpClear<levelup.levelup.AbstractClearOptions<any>>
     }}}
     */
-  @js.native
-  trait InferDBClear[DB] extends StObject
+  type InferDBClear[DB] = LevelUpClear[AbstractClearOptions[Any]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     DB extends {del (key : infer K, options : infer O, callback : std.ErrorCallback): void} ? levelup.levelup.LevelUpDel<K, O> : levelup.levelup.LevelUpDel<any, abstract-leveldown.abstract-leveldown.AbstractOptions>
     }}}
     */
-  @js.native
-  trait InferDBDel[DB] extends StObject
+  type InferDBDel[DB] = LevelUpDel[Any, AbstractOptions]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     DB extends {get (key : infer K, options : infer O, callback : abstract-leveldown.abstract-leveldown.ErrorValueCallback<infer V>): void} ? levelup.levelup.LevelUpGet<K, V, O> : levelup.levelup.LevelUpGet<any, any, abstract-leveldown.abstract-leveldown.AbstractGetOptions>
     }}}
     */
-  @js.native
-  trait InferDBGet[DB] extends StObject
+  type InferDBGet[DB] = LevelUpGet[Any, Any, AbstractGetOptions]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     DB extends {getMany (keys : std.Array<infer K>, options : infer O, callback : abstract-leveldown.abstract-leveldown.ErrorValueCallback<std.Array<infer V>>): void} ? levelup.levelup.LevelUpGetMany<K, V, O> : levelup.levelup.LevelUpGetMany<any, any, abstract-leveldown.abstract-leveldown.AbstractGetOptions>
     }}}
     */
-  @js.native
-  trait InferDBGetMany[DB] extends StObject
+  type InferDBGetMany[DB] = LevelUpGetMany[Any, Any, AbstractGetOptions]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     DB extends {put (key : infer K, value : infer V, options : infer O, cb : any): void} ? levelup.levelup.LevelUpPut<K, V, O> : levelup.levelup.LevelUpPut<any, any, abstract-leveldown.abstract-leveldown.AbstractOptions>
     }}}
     */
-  @js.native
-  trait InferDBPut[DB] extends StObject
+  type InferDBPut[DB] = LevelUpPut[Any, Any, AbstractOptions]
   
   @js.native
   trait LevelUp[DB, Iterator] extends EventEmitter {

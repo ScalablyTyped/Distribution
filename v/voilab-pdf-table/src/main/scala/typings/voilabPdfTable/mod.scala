@@ -3,6 +3,7 @@ package typings.voilabPdfTable
 import org.scalablytyped.runtime.StringDictionary
 import typings.pdfkit.PDFKit.Mixins.TextOptions
 import typings.pdfkit.PDFKit.PDFDocument
+import typings.std.Omit
 import typings.std.Partial
 import typings.voilabPdfTable.anon.Align
 import typings.voilabPdfTable.anon.Cancel
@@ -28,13 +29,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends unknown ? std.Omit<T, K> : never
     }}}
     */
-  @js.native
-  trait DistributiveOmit[T, K /* <: /* keyof T */ String */] extends StObject
+  type DistributiveOmit[T, K /* <: /* keyof T */ String */] = Omit[T, K]
   
   @js.native
   trait VoilabPdfTable[T] extends StObject {

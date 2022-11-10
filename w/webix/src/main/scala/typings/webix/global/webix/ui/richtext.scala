@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.richtext because var conflicts: $height, $setNode, $skin_Original, $view, $width, DollarDollar, config, name. Inlined  */ @JSGlobal("webix.ui.richtext")
+- typings.webix.webix.ui.richtext because var conflicts: $height, $prepareValue_Original, $setNode, $skin_Original, $view, $width, DollarDollar, config, name. Inlined  */ @JSGlobal("webix.ui.richtext")
 @js.native
 open class richtext ()
   extends typings.webix.mod.ui.richtext

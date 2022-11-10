@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -57,7 +56,7 @@ trait dxForm
   /**
     * Updates the dimensions of the UI component contents.
     */
-  def updateDimensions(): DxPromise[Unit] = js.native
+  def updateDimensions(): js.Promise[Unit] = js.native
   
   /**
     * Validates the values of all editors on the form against the list of the validation rules specified for each form item.

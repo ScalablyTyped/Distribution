@@ -111,13 +111,12 @@ object buildMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Output extends Input ? Output : never
     }}}
     */
-  @js.native
-  trait SubType[Input, Output] extends StObject
+  type SubType[Input, Output] = Output
   
   type WeakAssert = js.Function2[/* input */ Any, /* message */ js.UndefOr[String], Unit]
 }

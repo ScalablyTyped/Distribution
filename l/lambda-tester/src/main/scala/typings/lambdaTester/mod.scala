@@ -46,7 +46,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? std.NonNullable<std.Parameters<aws-lambda.aws-lambda/handler.Callback<TResult>>['0']> : never
     }}}
@@ -56,7 +56,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends aws-lambda.aws-lambda/handler.Handler<infer TEvent, any> ? TEvent : never
     }}}
@@ -66,7 +66,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? TResult : never
     }}}
@@ -76,13 +76,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends lambda-tester.lambda-tester.HandlerError<aws-lambda.aws-lambda/handler.Handler<any, any>> ? S extends string ? lambda-tester.lambda-tester.VerifierFn<string> : S extends std.Error ? lambda-tester.lambda-tester.VerifierFn<std.Error> : never : lambda-tester.lambda-tester.VerifierFn<S>
     }}}
     */
-  @js.native
-  trait Verifier[S] extends StObject
+  type Verifier[S] = VerifierFn[String]
   
   @js.native
   trait VerifierFn[S] extends StObject {

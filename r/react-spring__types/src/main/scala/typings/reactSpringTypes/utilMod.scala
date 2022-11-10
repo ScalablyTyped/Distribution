@@ -2,6 +2,7 @@ package typings.reactSpringTypes
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentState
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactElement
@@ -21,19 +22,18 @@ object utilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? keyof T : never
     }}}
     */
-  @js.native
-  trait AllKeys[T] extends StObject
+  type AllKeys[T] = /* keyof T */ String
   
   type AnyFn[In /* <: js.Array[scala.Any] */, Out] = js.Function1[/* args */ In, Out]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T, T] extends [infer T, infer DT] ? DT extends std.ReadonlyArray<any> ? std.Array<DT[number]> extends DT ? std.ReadonlyArray<T extends std.ReadonlyArray<infer U> ? U : T> : DT : std.ReadonlyArray<T extends std.ReadonlyArray<infer U> ? U : T> : never
     }}}
@@ -43,7 +43,7 @@ object utilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends object ? U extends object ? {[ P in std.Extract<keyof T, keyof U> ]: T[P] extends U[P]? P : never}[std.Extract<keyof T, keyof U>] : never : never
     }}}
@@ -53,25 +53,23 @@ object utilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<P> & react.react.RefAttributes<std.InstanceType<T>> : react.react.PropsWithRef<react.react.ComponentProps<T>>
     }}}
     */
-  @js.native
-  trait ComponentPropsWithRef[T /* <: ElementType[scala.Any] */] extends StObject
+  type ComponentPropsWithRef[T /* <: ElementType[scala.Any] */] = ComponentProps[T]
   
   type ComponentType[P] = (ComponentClass[P, ComponentState]) | LeafFunctionComponent[P]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [@react-spring/types.@react-spring/types/util.Any] ? U : [T] extends [U] ? T : U
     }}}
     */
-  @js.native
-  trait Constrain[T, U] extends StObject
+  type Constrain[T, U] = U
   
   trait Disposable extends StObject {
     
@@ -94,7 +92,7 @@ object utilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     @react-spring/types.@react-spring/types/util.AllKeys<T> extends infer K ? T extends any ? @react-spring/types.@react-spring/types/util.Remap<@react-spring/types.@react-spring/types/util.LoosePick<T, K> & {[ P in std.Exclude<K & keyof any, keyof T> ]:? undefined}> : never : never
     }}}
@@ -107,7 +105,7 @@ object utilMod {
   /** Convert a union to an intersection */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}
@@ -146,13 +144,12 @@ object utilMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? T : {}
     }}}
     */
-  @js.native
-  trait ObjectType[T] extends StObject
+  type ObjectType[T] = T
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   

@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait scrollview
      with baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   def attachEvent(`type`: scrollviewEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: scrollviewEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -25,13 +26,13 @@ trait scrollview
   
   def detachEvent(id: String): Unit = js.native
   
-  def getBody(): Any = js.native
+  def getBody(): obj = js.native
   
-  def getScrollState(): Any = js.native
+  def getScrollState(): obj = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   

@@ -109,6 +109,16 @@ inline def universal(opts: NamespaceOptions[String]): Any = ^.asInstanceOf[js.Dy
 
 type AsyncProcessor[Transform] = ProcessorFn[PromiseLike[Transform]]
 
+// A type that's T but not U.
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? never : T
+  }}}
+  */
+type Diff[T, U] = T
+
 type ProcessorFn[ReturnType] = js.Function1[/* root */ Root_, ReturnType]
 
 type QuoteMark = Quotationmark | (/* ' */ String) | Null

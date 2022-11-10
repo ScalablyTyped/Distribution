@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress.data
 
 import typings.devextreme.anon.CustomQueryParams
 import typings.devextreme.anon.Expand
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait ODataStore[TItem, TKey]
   /**
     * Gets an entity with a specific key.
     */
-  def byKey(key: TKey, extraOptions: Expand): DxPromise[TItem] = js.native
+  def byKey(key: TKey, extraOptions: Expand): js.Promise[TItem] = js.native
   
   /**
     * Creates a Query for the OData endpoint.

@@ -16,6 +16,15 @@ type CanViewElementSource = js.Function1[/* inspectedElement */ InspectedElement
 
 type Context = FetchFileWithCaching | Null
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Array<any> ? T : never
+  }}}
+  */
+type EventParams[T] = T
+
 type FBSourceMetadata = js.Tuple2[js.UndefOr[Any], js.UndefOr[ReactSourceMetadata | Null]]
 
 type FBSourcesArray = js.Array[js.UndefOr[FBSourceMetadata | Null]]

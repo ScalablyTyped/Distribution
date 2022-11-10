@@ -1,6 +1,8 @@
 package typings.reactSpringCore
 
+import typings.reactSpringCore.distDeclarationsSrcSpringValueMod.SpringValue
 import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.AnimationResult
+import typings.reactSpringTypes.utilMod.Lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,17 +100,16 @@ object distDeclarationsSrcTypesInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<infer State> ? @react-spring/core.@react-spring/core/dist/declarations/src/types/props.ControllerUpdate<State, undefined> : T extends @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<infer U> ? @react-spring/core.@react-spring/core/dist/declarations/src/types/props.SpringUpdate<U> : @react-spring/types.@react-spring/types/util.Lookup<any>
     }}}
     */
-  @js.native
-  trait InferProps[T /* <: Readable[Any] */] extends StObject
+  type InferProps[T /* <: Readable[Any] */] = Lookup[Any]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<infer State> ? State : T extends @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<infer U> ? U : unknown
     }}}
@@ -118,13 +119,12 @@ object distDeclarationsSrcTypesInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? T extends std.ReadonlyArray<number | string> ? @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<T> : @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<T> : @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<T>
     }}}
     */
-  @js.native
-  trait InferTarget[T] extends StObject
+  type InferTarget[T] = SpringValue[T]
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

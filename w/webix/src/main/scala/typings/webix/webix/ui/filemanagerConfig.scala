@@ -2,17 +2,18 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait filemanagerConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var clipboard: js.UndefOr[Any] = js.undefined
+  var clipboard: js.UndefOr[obj] = js.undefined
   
   var compact: js.UndefOr[Boolean] = js.undefined
   
@@ -20,7 +21,7 @@ trait filemanagerConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -34,7 +35,7 @@ trait filemanagerConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var locale: js.UndefOr[Any] = js.undefined
+  var locale: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -73,7 +74,7 @@ object filemanagerConfig {
   
   extension [Self <: filemanagerConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -81,7 +82,7 @@ object filemanagerConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setClipboard(value: Any): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    inline def setClipboard(value: obj): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
     
     inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
     
@@ -97,7 +98,7 @@ object filemanagerConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -125,7 +126,7 @@ object filemanagerConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

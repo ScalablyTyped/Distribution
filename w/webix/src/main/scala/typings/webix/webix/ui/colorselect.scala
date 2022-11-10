@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait colorselect
   var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -37,7 +38,9 @@ trait colorselect
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
+  
+  def moveSelection(direction: String): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
@@ -45,7 +48,8 @@ trait colorselect
   
   def render(): Unit = js.native
   
-  def setValue(): String = js.native
+  def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

@@ -12,6 +12,9 @@ trait color extends StObject {
   
   def hsvToRgb(h: Double, s: Double, v: Double): js.Array[Any] = js.native
   
+  def rgbToHex(rgb: String): String = js.native
+  def rgbToHex(rgb: js.Array[String | Double]): String = js.native
+  
   def rgbToHsv(r: Double, g: Double, b: Double): js.Array[Any] = js.native
   
   def toHex(number: Double): String = js.native

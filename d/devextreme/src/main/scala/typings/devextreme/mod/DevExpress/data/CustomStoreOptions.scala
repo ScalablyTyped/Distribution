@@ -3,7 +3,6 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.anon.Filter
 import typings.devextreme.devextremeStrings.processed
 import typings.devextreme.devextremeStrings.raw
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.CustomStore.GroupItem
 import typings.devextreme.mod.DevExpress.data.CustomStore.ResolvedData
 import typings.std.PromiseLike
@@ -33,7 +32,7 @@ trait CustomStoreOptions[TItem, TKey]
   /**
     * Specifies a custom implementation of the load(options) method.
     */
-  def load(options: LoadOptions[TItem]): DxPromise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
+  def load(options: LoadOptions[TItem]): js.Promise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
   
   /**
     * Specifies how data returned by the load function is treated.
@@ -63,7 +62,7 @@ trait CustomStoreOptions[TItem, TKey]
 object CustomStoreOptions {
   
   inline def apply[TItem, TKey](
-    load: LoadOptions[TItem] => DxPromise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
+    load: LoadOptions[TItem] => js.Promise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
   ): CustomStoreOptions[TItem, TKey] = {
     val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load))
     __obj.asInstanceOf[CustomStoreOptions[TItem, TKey]]
@@ -84,7 +83,7 @@ object CustomStoreOptions {
     inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     inline def setLoad(
-      value: LoadOptions[TItem] => DxPromise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
+      value: LoadOptions[TItem] => js.Promise[ResolvedData[TItem]] | PromiseLike[ResolvedData[TItem]] | (js.Array[GroupItem[Any] | TItem])
     ): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadMode(value: processed | raw): Self = StObject.set(x, "loadMode", value.asInstanceOf[js.Any])

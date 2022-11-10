@@ -24,30 +24,28 @@ object complexTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Tree extends unist.unist.Parent<unist.unist.Node<unist.unist.Data>, unist.unist.NodeData<unist.unist.Node<unist.unist.Data>>> ? Tree | unist-util-visit-parents.unist-util-visit-parents/complex-types.InclusiveDescendant<std.Exclude<Tree['children'][number], Found | Tree>, Found | Tree> : Tree
     }}}
     */
-  @js.native
-  trait InclusiveDescendant[Tree /* <: Node[Data] */, Found] extends StObject
+  type InclusiveDescendant[Tree /* <: Node[Data] */, Found] = Tree
   
   type Index = Double
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Is this a list?
   Check extends std.Array<any> ? unist-util-visit-parents.unist-util-visit-parents/complex-types.MatchesOne<Value, Check[keyof Check]> : unist-util-visit-parents.unist-util-visit-parents/complex-types.MatchesOne<Value, Check>
     }}}
     */
-  @js.native
-  trait Matches[Value, Check] extends StObject
+  type Matches[Value, Check] = Value
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Is this a node?
   Value extends unist.unist.Node<unist.unist.Data> ? // No test.
@@ -58,18 +56,16 @@ object complexTypesMod {
   Value extends Check ? Value : never : never
     }}}
     */
-  @js.native
-  trait MatchesOne[Value, Check] extends StObject
+  type MatchesOne[Value, Check] = Value
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Fn extends (value : any): value is infer Thing ? Thing : Fallback
     }}}
     */
-  @js.native
-  trait Predicate[Fn, Fallback] extends StObject
+  type Predicate[Fn, Fallback] = Fallback
   
   type Visitor[Visited /* <: Node[Data] */, Ancestor /* <: Parent[Node[Data], NodeData[Node[Data]]] */] = js.Function2[/* node */ Visited, /* ancestors */ js.Array[Ancestor], VisitorResult]
   

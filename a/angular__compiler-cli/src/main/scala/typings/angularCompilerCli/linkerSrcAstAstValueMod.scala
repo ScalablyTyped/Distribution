@@ -224,7 +224,7 @@ object linkerSrcAstAstValueMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.Array<infer R> ? R : never
     }}}
@@ -238,13 +238,12 @@ object linkerSrcAstAstValueMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Actual extends Expected ? This : never
     }}}
     */
-  @js.native
-  trait ConformsTo[This, Actual, Expected] extends StObject
+  type ConformsTo[This, Actual, Expected] = This
   
   /**
     * Ensures that `This` is an `AstValue` whose generic type conforms to `Expected`, to disallow
@@ -252,13 +251,12 @@ object linkerSrcAstAstValueMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     This extends @angular/compiler-cli.@angular/compiler-cli/linker/src/ast/ast_value.AstValue<infer Actual, any> ? @angular/compiler-cli.@angular/compiler-cli/linker/src/ast/ast_value.ConformsTo<This, Actual, Expected> : never
     }}}
     */
-  @js.native
-  trait HasValueType[This, Expected] extends StObject
+  type HasValueType[This, Expected] = This
   
   /**
     * Represents only those types in `T` that are object types.
@@ -270,7 +268,7 @@ object linkerSrcAstAstValueMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.Record<string, infer R> ? R : never
     }}}

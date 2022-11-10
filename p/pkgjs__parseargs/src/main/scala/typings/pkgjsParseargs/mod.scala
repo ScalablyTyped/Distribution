@@ -28,13 +28,12 @@ object mod {
   // we put the `extends false` condition first here because `undefined` compares like `any` when `strictNullChecks: false`
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends false ? IfFalse : T extends true ? IfTrue : IfFalse
     }}}
     */
-  @js.native
-  trait IfDefaultsFalse[T, IfTrue, IfFalse] extends StObject
+  type IfDefaultsFalse[T, IfTrue, IfFalse] = IfFalse
   
   /*
   IfDefaultsTrue and IfDefaultsFalse are helpers to handle default values for missing boolean properties.
@@ -47,13 +46,12 @@ object mod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends true ? IfTrue : T extends false ? IfFalse : IfTrue
     }}}
     */
-  @js.native
-  trait IfDefaultsTrue[T, IfTrue, IfFalse] extends StObject
+  type IfDefaultsTrue[T, IfTrue, IfFalse] = IfTrue
   
   /* Rewritten from type alias, can be one of: 
     - typings.pkgjsParseargs.anon.Index
@@ -193,13 +191,12 @@ object mod {
   // So we can't rely on the `"not definitely present" implies "definitely not present"` assumption mentioned above.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     @pkgjs/parseargs.@pkgjs/parseargs.ParseArgsConfig extends T ? {  values :{[longOption: string] : undefined | string | boolean | std.Array<string | boolean>},   positionals :std.Array<string>,   tokens :std.Array<@pkgjs/parseargs.@pkgjs/parseargs.Token> | undefined} : @pkgjs/parseargs.@pkgjs/parseargs.PreciseParsedResults<T>
     }}}
     */
-  @js.native
-  trait ParsedResults[T /* <: ParseArgsConfig */] extends StObject
+  type ParsedResults[T /* <: ParseArgsConfig */] = Values[T]
   
   type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind]
   
@@ -217,13 +214,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O['type'] extends 'string' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :string,   inlineValue :boolean} : O['type'] extends 'boolean' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :undefined,   inlineValue :undefined} : @pkgjs/parseargs.@pkgjs/parseargs.OptionToken & {  name :K}
     }}}
     */
-  @js.native
-  trait PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] extends StObject
+  type PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] = OptionToken & (/* import warning: importer.ImportType#apply Failed type conversion: {  name :K} */ js.Any)
   
   /* Rewritten from type alias, can be one of: 
     - typings.pkgjsParseargs.mod.OptionToken
@@ -256,11 +252,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends unknown ? T['options'] extends @pkgjs/parseargs.@pkgjs/parseargs.ParseArgsOptionsConfig ? @pkgjs/parseargs.@pkgjs/parseargs.PreciseTokenForOptions<K & string, T['options'][K]> : @pkgjs/parseargs.@pkgjs/parseargs.OptionToken : never
     }}}
     */
-  @js.native
-  trait TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] extends StObject
+  type TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] = OptionToken
 }

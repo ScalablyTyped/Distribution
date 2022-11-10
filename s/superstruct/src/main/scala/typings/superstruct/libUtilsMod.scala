@@ -54,83 +54,75 @@ object libUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     B extends true ? Then : Else
     }}}
     */
-  @js.native
-  trait If[B /* <: Boolean */, Then, Else] extends StObject
+  type If[B /* <: Boolean */, Then, Else] = Then
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Length extends Length ? number extends Length ? Tuple : superstruct.superstruct/lib/utils._InferTuple<Tuple, Length, [], []['length']> : never
     }}}
     */
-  @js.native
-  trait InferStructTuple[Tuple /* <: js.Array[AnyStruct] */, Length /* <: Double */] extends StObject
+  type InferStructTuple[Tuple /* <: js.Array[AnyStruct] */, Length /* <: Double */] = Tuple
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Index extends Length ? Accumulated : superstruct.superstruct/lib/utils._InferTuple<Tuple, Length, [...Accumulated, superstruct.superstruct/lib/struct.Infer<Tuple[Index]>], [...Accumulated, superstruct.superstruct/lib/struct.Infer<Tuple[Index]>]['length']>
     }}}
     */
-  @js.native
-  trait InferTuple[Tuple /* <: js.Array[AnyStruct] */, Length /* <: Double */, Accumulated /* <: js.Array[Any] */, Index /* <: Double */] extends StObject
+  type InferTuple[Tuple /* <: js.Array[AnyStruct] */, Length /* <: Double */, Accumulated /* <: js.Array[Any] */, Index /* <: Double */] = Accumulated
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     <G>(): G extends T ? 1 : 2 extends <G>(): G extends U ? 1 : 2 ? T : never
     }}}
     */
-  @js.native
-  trait IsExactMatch[T, U] extends StObject
+  type IsExactMatch[T, U] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends G ? G extends T ? T : never : never
     }}}
     */
-  @js.native
-  trait IsMatch[T, G] extends StObject
+  type IsMatch[T, G] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? string extends keyof T ? T : never : never
     }}}
     */
-  @js.native
-  trait IsRecord[T] extends StObject
+  type IsRecord[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [any] ? T : T extends [any, any] ? T : T extends [any, any, any] ? T : T extends [any, any, any, any] ? T : T extends [any, any, any, any, any] ? T : never
     }}}
     */
-  @js.native
-  trait IsTuple[T] extends StObject
+  type IsTuple[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? U extends T ? false : true : false extends false ? never : T
     }}}
     */
-  @js.native
-  trait IsUnion[T, U /* <: T */] extends StObject
+  type IsUnion[T, U /* <: T */] = T
   
   type ObjectSchema = Record[String, Struct[Any, Any]]
   
@@ -164,23 +156,21 @@ object libUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> | std.Date ? T : {[ K in keyof T ]: T[K]} & {}
     }}}
     */
-  @js.native
-  trait Simplify[T] extends StObject
+  type Simplify[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [string | undefined] ? [T] extends [superstruct.superstruct/lib/utils.IsMatch<T, string | undefined>] ? null : [T] extends [superstruct.superstruct/lib/utils.IsUnion<T, T>] ? superstruct.superstruct/lib/utils.EnumSchema<T> : T : [T] extends [number | undefined] ? [T] extends [superstruct.superstruct/lib/utils.IsMatch<T, number | undefined>] ? null : [T] extends [superstruct.superstruct/lib/utils.IsUnion<T, T>] ? superstruct.superstruct/lib/utils.EnumSchema<T> : T : [T] extends [boolean] ? [T] extends [superstruct.superstruct/lib/utils.IsExactMatch<T, boolean>] ? null : T : T extends bigint | symbol | undefined | null | std.Function | std.Date | std.Error | std.RegExp | std.Map<any, any> | std.WeakMap<any, any> | std.Set<any> | std.WeakSet<any> | std.Promise<any> ? null : T extends std.Array<infer E> ? T extends superstruct.superstruct/lib/utils.IsTuple<T> ? null : superstruct.superstruct/lib/struct.Struct<E, unknown> : T extends object ? T extends superstruct.superstruct/lib/utils.IsRecord<T> ? null : {[ K in keyof T ]: superstruct.superstruct/lib/struct.Describe<T[K]>} : null
     }}}
     */
-  @js.native
-  trait StructSchema[T] extends StObject
+  type StructSchema[T] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -194,7 +184,7 @@ object libUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (arg : U): any : never extends (arg : infer I): void ? I : never
     }}}

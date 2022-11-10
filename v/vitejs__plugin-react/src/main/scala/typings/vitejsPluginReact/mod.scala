@@ -545,13 +545,8 @@ object mod {
   }
   object ReactBabelOptions {
     
-    inline def apply(
-      overrides: Extract[js.UndefOr[js.Array[TransformOptions]], js.Array[Any]],
-      parserOpts: ParserOptionspluginsExtra,
-      plugins: Extract[js.UndefOr[js.Array[PluginItem] | Null], js.Array[Any]],
-      presets: Extract[js.UndefOr[js.Array[PluginItem] | Null], js.Array[Any]]
-    ): ReactBabelOptions = {
-      val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any], parserOpts = parserOpts.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], presets = presets.asInstanceOf[js.Any])
+    inline def apply(parserOpts: ParserOptionspluginsExtra): ReactBabelOptions = {
+      val __obj = js.Dynamic.literal(parserOpts = parserOpts.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactBabelOptions]
     }
     
@@ -559,11 +554,27 @@ object mod {
       
       inline def setOverrides(value: Extract[js.UndefOr[js.Array[TransformOptions]], js.Array[Any]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      
+      inline def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value*))
+      
       inline def setParserOpts(value: ParserOptionspluginsExtra): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
       
       inline def setPlugins(value: Extract[js.UndefOr[js.Array[PluginItem] | Null], js.Array[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
+      inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value*))
+      
       inline def setPresets(value: Extract[js.UndefOr[js.Array[PluginItem] | Null], js.Array[Any]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsNull: Self = StObject.set(x, "presets", null)
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value*))
     }
   }
   

@@ -64,7 +64,7 @@ object domEventsMod {
   // the copy below in a Node environment.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     / * globalThis * / any extends {  onmessage :any,   Event :any} ? {} : { readonly bubbles :boolean, cancelBubble (): void,  readonly cancelable :boolean,  readonly composed :boolean, composedPath (): [std.EventTarget | undefined],  readonly currentTarget :std.EventTarget | null,  readonly defaultPrevented :boolean,  readonly eventPhase :0 | 2,  readonly isTrusted :boolean, preventDefault (): void,   returnValue :boolean,  readonly srcElement :std.EventTarget | null, stopImmediatePropagation (): void, stopPropagation (): void,  readonly target :std.EventTarget | null,  readonly timeStamp :number,  readonly type :string}
     }}}
@@ -145,7 +145,7 @@ object domEventsMod {
   // See comment above explaining conditional type
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     / * globalThis * / any extends {  onmessage :any,   EventTarget :any} ? {} : {addEventListener (type : string, listener : node.node/dom-events.EventListener): void, addEventListener (type : string, listener : node.node/dom-events.EventListenerObject): void, addEventListener (type : string, listener : node.node/dom-events.EventListener, options : node.node/dom-events.AddEventListenerOptions): void, addEventListener (type : string, listener : node.node/dom-events.EventListenerObject, options : node.node/dom-events.AddEventListenerOptions): void, addEventListener (type : string, listener : node.node/dom-events.EventListener, options : boolean): void, addEventListener (type : string, listener : node.node/dom-events.EventListenerObject, options : boolean): void, dispatchEvent (event : std.Event): boolean, removeEventListener (type : string, listener : node.node/dom-events.EventListener): void, removeEventListener (type : string, listener : node.node/dom-events.EventListenerObject): void, removeEventListener (type : string, listener : node.node/dom-events.EventListener, options : node.node/dom-events.EventListenerOptions): void, removeEventListener (type : string, listener : node.node/dom-events.EventListenerObject, options : node.node/dom-events.EventListenerOptions): void, removeEventListener (type : string, listener : node.node/dom-events.EventListener, options : boolean): void, removeEventListener (type : string, listener : node.node/dom-events.EventListenerObject, options : boolean): void}
     }}}

@@ -226,6 +226,10 @@ object konvaStrings {
   inline def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   
   @js.native
+  sealed trait fillStyle extends StObject
+  inline def fillStyle: fillStyle = "fillStyle".asInstanceOf[fillStyle]
+  
+  @js.native
   sealed trait focus extends StObject
   inline def focus: focus = "focus".asInstanceOf[focus]
   
@@ -238,8 +242,20 @@ object konvaStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
+  
+  @js.native
   sealed trait formdata extends StObject
   inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
+  sealed trait globalAlpha extends StObject
+  inline def globalAlpha: globalAlpha = "globalAlpha".asInstanceOf[globalAlpha]
+  
+  @js.native
+  sealed trait globalCompositeOperation extends StObject
+  inline def globalCompositeOperation: globalCompositeOperation = "globalCompositeOperation".asInstanceOf[globalCompositeOperation]
   
   @js.native
   sealed trait gotpointercapture extends StObject
@@ -256,6 +272,10 @@ object konvaStrings {
     extends StObject
        with globalCompositeOperationType
   inline def hue: hue = "hue".asInstanceOf[hue]
+  
+  @js.native
+  sealed trait imageSmoothingEnabled extends StObject
+  inline def imageSmoothingEnabled: imageSmoothingEnabled = "imageSmoothingEnabled".asInstanceOf[imageSmoothingEnabled]
   
   @js.native
   sealed trait input extends StObject
@@ -294,6 +314,22 @@ object konvaStrings {
   inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
+  sealed trait lineCap extends StObject
+  inline def lineCap: lineCap = "lineCap".asInstanceOf[lineCap]
+  
+  @js.native
+  sealed trait lineDashOffset extends StObject
+  inline def lineDashOffset: lineDashOffset = "lineDashOffset".asInstanceOf[lineDashOffset]
+  
+  @js.native
+  sealed trait lineJoin extends StObject
+  inline def lineJoin: lineJoin = "lineJoin".asInstanceOf[lineJoin]
+  
+  @js.native
+  sealed trait lineWidth extends StObject
+  inline def lineWidth: lineWidth = "lineWidth".asInstanceOf[lineWidth]
+  
+  @js.native
   sealed trait load extends StObject
   inline def load: load = "load".asInstanceOf[load]
   
@@ -324,6 +360,10 @@ object konvaStrings {
     extends StObject
        with LineJoin
   inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
+  sealed trait miterLimit extends StObject
+  inline def miterLimit: miterLimit = "miterLimit".asInstanceOf[miterLimit]
   
   @js.native
   sealed trait mousedown extends StObject
@@ -481,6 +521,22 @@ object konvaStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait shadowBlur extends StObject
+  inline def shadowBlur: shadowBlur = "shadowBlur".asInstanceOf[shadowBlur]
+  
+  @js.native
+  sealed trait shadowColor extends StObject
+  inline def shadowColor: shadowColor = "shadowColor".asInstanceOf[shadowColor]
+  
+  @js.native
+  sealed trait shadowOffsetX extends StObject
+  inline def shadowOffsetX: shadowOffsetX = "shadowOffsetX".asInstanceOf[shadowOffsetX]
+  
+  @js.native
+  sealed trait shadowOffsetY extends StObject
+  inline def shadowOffsetY: shadowOffsetY = "shadowOffsetY".asInstanceOf[shadowOffsetY]
+  
+  @js.native
   sealed trait slotchange extends StObject
   inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
@@ -529,12 +585,24 @@ object konvaStrings {
   inline def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native
+  sealed trait strokeStyle extends StObject
+  inline def strokeStyle: strokeStyle = "strokeStyle".asInstanceOf[strokeStyle]
+  
+  @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait suspend extends StObject
   inline def suspend: suspend = "suspend".asInstanceOf[suspend]
+  
+  @js.native
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
+  
+  @js.native
+  sealed trait textBaseline extends StObject
+  inline def textBaseline: textBaseline = "textBaseline".asInstanceOf[textBaseline]
   
   @js.native
   sealed trait timeupdate extends StObject

@@ -14,7 +14,7 @@ trait ListGroundStationsResponse extends StObject {
   /**
     * Next token that can be supplied in the next call to get the next page of ground stations.
     */
-  var nextToken: js.UndefOr[String] = js.undefined
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListGroundStationsResponse {
   
@@ -31,7 +31,7 @@ object ListGroundStationsResponse {
     
     inline def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }

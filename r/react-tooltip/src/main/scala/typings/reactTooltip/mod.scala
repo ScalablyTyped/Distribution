@@ -158,6 +158,9 @@ object mod {
     // Manually disable the tooltip behavior
     var disable: js.UndefOr[Boolean] = js.undefined
     
+    // Set internal style as optional
+    var disableInternalStyle: js.UndefOr[Boolean] = js.undefined
+    
     // Behavior of tooltip
     var effect: js.UndefOr[Effect] = js.undefined
     
@@ -215,6 +218,9 @@ object mod {
           Left
         ]
       ] = js.undefined
+    
+    // Padding attribute
+    var padding: js.UndefOr[String] = js.undefined
     
     // Placement of tooltip
     var place: js.UndefOr[Place] = js.undefined
@@ -319,6 +325,10 @@ object mod {
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
+      inline def setDisableInternalStyle(value: Boolean): Self = StObject.set(x, "disableInternalStyle", value.asInstanceOf[js.Any])
+      
+      inline def setDisableInternalStyleUndefined: Self = StObject.set(x, "disableInternalStyle", js.undefined)
+      
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
       inline def setEffect(value: Effect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
@@ -378,6 +388,10 @@ object mod {
       ): Self = StObject.set(x, "overridePosition", js.Any.fromFunction8(value))
       
       inline def setOverridePositionUndefined: Self = StObject.set(x, "overridePosition", js.undefined)
+      
+      inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
       inline def setPlace(value: Place): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
       

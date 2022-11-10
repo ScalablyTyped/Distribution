@@ -4,6 +4,8 @@ import typings.reactSpringCore.distDeclarationsSrcSpringValueMod.SpringValue
 import typings.reactSpringCore.distDeclarationsSrcTypesInternalMod.Readable
 import typings.reactSpringTypes.interpolationMod.EasingFunction
 import typings.reactSpringTypes.utilMod.Lookup
+import typings.std.Exclude
+import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -168,23 +170,26 @@ object distDeclarationsSrcTypesObjectsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [@react-spring/types.@react-spring/types.Any] ? @react-spring/types.@react-spring/types/util.Lookup<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<unknown> | undefined> : {[ P in keyof T ]: @react-spring/core.@react-spring/core/dist/declarations/src/types/objects.SpringWrap<T[P]>}
     }}}
     */
-  @js.native
-  trait SpringValues[T /* <: Lookup[Any] */] extends StObject
+  type SpringValues[T /* <: Lookup[Any] */] = Lookup[js.UndefOr[SpringValue[Any]]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [std.Exclude<T, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue * / any>, std.Extract<T, std.Array<any>>] extends [object | void, never] ? never : @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<std.Exclude<T, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue * / any | void>> | std.Extract<T, void>
     }}}
     */
-  @js.native
-  trait SpringWrap[T] extends StObject
+  type SpringWrap[T] = (SpringValue[
+    Exclude[
+      T, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue */ Any) | Unit
+    ]
+  ]) | (Extract[T, Unit])
   
   type Springify[T] = Lookup[js.UndefOr[SpringValue[Any]]] & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P] | @react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<T[P]>} */ js.Any)
 }

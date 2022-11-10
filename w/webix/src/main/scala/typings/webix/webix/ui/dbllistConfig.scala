@@ -2,13 +2,15 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait dbllistConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -16,9 +18,9 @@ trait dbllistConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -40,7 +42,7 @@ trait dbllistConfig extends StObject {
   
   var labelRight: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[Any] = js.undefined
+  var list: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -52,7 +54,7 @@ trait dbllistConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[Any] = js.undefined
+  var padding: js.UndefOr[Double | obj] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -60,7 +62,7 @@ trait dbllistConfig extends StObject {
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var value: js.UndefOr[String | js.Array[Any]] = js.undefined
   
@@ -77,7 +79,7 @@ object dbllistConfig {
   
   extension [Self <: dbllistConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -93,11 +95,11 @@ object dbllistConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -143,7 +145,7 @@ object dbllistConfig {
     
     inline def setLabelRightUndefined: Self = StObject.set(x, "labelRight", js.undefined)
     
-    inline def setList(value: Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: obj): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
@@ -167,7 +169,7 @@ object dbllistConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | obj): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -183,7 +185,7 @@ object dbllistConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

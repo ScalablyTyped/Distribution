@@ -241,7 +241,11 @@ object distTypesTypesMod {
       
       inline def setGridXValues(value: GridValues[String | Double]): Self = StObject.set(x, "gridXValues", value.asInstanceOf[js.Any])
       
+      inline def setGridXValuesVarargs(value: Double*): Self = StObject.set(x, "gridXValues", js.Array(value*))
+      
       inline def setGridYValues(value: GridValues[Double]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
+      
+      inline def setGridYValuesVarargs(value: Double*): Self = StObject.set(x, "gridYValues", js.Array(value*))
       
       inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
       
@@ -744,9 +748,13 @@ object distTypesTypesMod {
       
       inline def setGridXValuesUndefined: Self = StObject.set(x, "gridXValues", js.undefined)
       
+      inline def setGridXValuesVarargs(value: Double*): Self = StObject.set(x, "gridXValues", js.Array(value*))
+      
       inline def setGridYValues(value: GridValues[Double]): Self = StObject.set(x, "gridYValues", value.asInstanceOf[js.Any])
       
       inline def setGridYValuesUndefined: Self = StObject.set(x, "gridYValues", js.undefined)
+      
+      inline def setGridYValuesVarargs(value: Double*): Self = StObject.set(x, "gridYValues", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

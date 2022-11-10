@@ -36,25 +36,23 @@ object vanillaMod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends keyof T ? T[K] : F
     }}}
     */
-  @js.native
-  trait Get[T, K, F] extends StObject
+  type Get[T, K, F] = F
   
   type GetState[T /* <: State */] = js.Function0[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Ms extends [] ? S : Ms extends [[infer Mi, infer Ma], ...infer Mrs] ? zustand.zustand/vanilla.Mutate<zustand.zustand/vanilla.StoreMutators<S, Ma>[Mi & zustand.zustand/vanilla.StoreMutatorIdentifier], Mrs> : never
     }}}
     */
-  @js.native
-  trait Mutate[S, Ms] extends StObject
+  type Mutate[S, Ms] = S
   
   type PartialState[T /* <: State */] = Partial[T] | (js.Function1[/* state */ T, Partial[T]])
   

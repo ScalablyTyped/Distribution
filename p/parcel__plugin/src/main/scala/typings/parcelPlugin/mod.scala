@@ -26,14 +26,14 @@ object mod {
   
   @JSImport("@parcel/plugin", "Optimizer")
   @js.native
-  open class Optimizer[T] protected () extends StObject {
-    def this(opts: typings.parcelTypes.mod.Optimizer[T]) = this()
+  open class Optimizer[C, B] protected () extends StObject {
+    def this(opts: typings.parcelTypes.mod.Optimizer[C, B]) = this()
   }
   
   @JSImport("@parcel/plugin", "Packager")
   @js.native
-  open class Packager[T] protected () extends StObject {
-    def this(opts: typings.parcelTypes.mod.Packager[T]) = this()
+  open class Packager[C, B] protected () extends StObject {
+    def this(opts: typings.parcelTypes.mod.Packager[C, B]) = this()
   }
   
   @JSImport("@parcel/plugin", "Reporter")

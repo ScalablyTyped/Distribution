@@ -4,156 +4,80 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait AVSCode extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "AVSCode")
-@js.native
-object AVSCode extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.E
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.F
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.G
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.M
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.P
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.S
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.W
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.X
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Z
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Null
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`2`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`3`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`4`
+*/
+trait AVSCode extends StObject
+object AVSCode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AVSCode & String] = js.native
+  inline def `0`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0` = "0".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`0`]
   
-  @js.native
-  sealed trait A
-    extends StObject
-       with AVSCode
-  /* "A" */ val A: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.A & String = js.native
+  inline def `1`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1` = "1".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`1`]
   
-  @js.native
-  sealed trait B
-    extends StObject
-       with AVSCode
-  /* "B" */ val B: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.B & String = js.native
+  inline def `2`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`2` = "2".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`2`]
   
-  @js.native
-  sealed trait C
-    extends StObject
-       with AVSCode
-  /* "C" */ val C: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.C & String = js.native
+  inline def `3`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`3` = "3".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`3`]
   
-  @js.native
-  sealed trait D
-    extends StObject
-       with AVSCode
-  /* "D" */ val D: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.D & String = js.native
+  inline def `4`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`4` = "4".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`4`]
   
-  @js.native
-  sealed trait E
-    extends StObject
-       with AVSCode
-  /* "E" */ val E: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.E & String = js.native
+  inline def A: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A = "A".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.A]
   
-  @js.native
-  sealed trait F
-    extends StObject
-       with AVSCode
-  /* "F" */ val F: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.F & String = js.native
+  inline def B: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B = "B".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.B]
   
-  @js.native
-  sealed trait G
-    extends StObject
-       with AVSCode
-  /* "G" */ val G: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.G & String = js.native
+  inline def C: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C = "C".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.C]
   
-  @js.native
-  sealed trait I
-    extends StObject
-       with AVSCode
-  /* "I" */ val I: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.I & String = js.native
+  inline def D: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D = "D".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.D]
   
-  @js.native
-  sealed trait M
-    extends StObject
-       with AVSCode
-  /* "M" */ val M: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.M & String = js.native
+  inline def E: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.E = "E".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.E]
   
-  @js.native
-  sealed trait MAESTRO_ALL_MATCHES
-    extends StObject
-       with AVSCode
-  /* "0" */ val MAESTRO_ALL_MATCHES: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_ALL_MATCHES & String = js.native
+  inline def F: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.F = "F".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.F]
   
-  @js.native
-  sealed trait MAESTRO_NONE_MATCHES
-    extends StObject
-       with AVSCode
-  /* "1" */ val MAESTRO_NONE_MATCHES: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_NONE_MATCHES & String = js.native
+  inline def G: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.G = "G".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.G]
   
-  @js.native
-  sealed trait MAESTRO_NOT_AVAILABLE
-    extends StObject
-       with AVSCode
-  /* "4" */ val MAESTRO_NOT_AVAILABLE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_NOT_AVAILABLE & String = js.native
+  inline def I: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I = "I".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.I]
   
-  @js.native
-  sealed trait MAESTRO_NOT_PROCESSED
-    extends StObject
-       with AVSCode
-  /* "3" */ val MAESTRO_NOT_PROCESSED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_NOT_PROCESSED & String = js.native
+  inline def M: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.M = "M".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.M]
   
-  @js.native
-  sealed trait MAESTRO_NOT_RESPONSE
-    extends StObject
-       with AVSCode
-  /* "Null" */ val MAESTRO_NOT_RESPONSE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_NOT_RESPONSE & String = js.native
+  inline def N: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N = "N".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.N]
   
-  @js.native
-  sealed trait MAESTRO_PART_MATCHES
-    extends StObject
-       with AVSCode
-  /* "2" */ val MAESTRO_PART_MATCHES: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.MAESTRO_PART_MATCHES & String = js.native
+  inline def Null: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Null = "Null".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Null]
   
-  @js.native
-  sealed trait N
-    extends StObject
-       with AVSCode
-  /* "N" */ val N: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.N & String = js.native
+  inline def P: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.P = "P".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.P]
   
-  @js.native
-  sealed trait P
-    extends StObject
-       with AVSCode
-  /* "P" */ val P: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.P & String = js.native
+  inline def R: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R = "R".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.R]
   
-  @js.native
-  sealed trait R
-    extends StObject
-       with AVSCode
-  /* "R" */ val R: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.R & String = js.native
+  inline def S: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.S = "S".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.S]
   
-  @js.native
-  sealed trait S
-    extends StObject
-       with AVSCode
-  /* "S" */ val S: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.S & String = js.native
+  inline def U: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U = "U".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.U]
   
-  @js.native
-  sealed trait U
-    extends StObject
-       with AVSCode
-  /* "U" */ val U: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.U & String = js.native
+  inline def W: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.W = "W".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.W]
   
-  @js.native
-  sealed trait W
-    extends StObject
-       with AVSCode
-  /* "W" */ val W: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.W & String = js.native
+  inline def X: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.X = "X".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.X]
   
-  @js.native
-  sealed trait X
-    extends StObject
-       with AVSCode
-  /* "X" */ val X: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.X & String = js.native
+  inline def Y: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y = "Y".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Y]
   
-  @js.native
-  sealed trait Y
-    extends StObject
-       with AVSCode
-  /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.Y & String = js.native
-  
-  @js.native
-  sealed trait Z
-    extends StObject
-       with AVSCode
-  /* "Z" */ val Z: typings.paypalCheckoutServerSdk.libPaymentsLibMod.AVSCode.Z & String = js.native
+  inline def Z: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Z = "Z".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.Z]
 }

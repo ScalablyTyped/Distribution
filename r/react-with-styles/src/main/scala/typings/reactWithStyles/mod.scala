@@ -145,7 +145,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     C extends new (props : infer P, context : any | undefined): any ? P : never
     }}}
@@ -157,7 +157,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     C extends react.react.ComponentClass<any, react.react.ComponentState> ? react-with-styles.react-with-styles.ComponentClassProps<C> : C extends react.react.FC<any> ? react-with-styles.react-with-styles.SFCProps<C> : any
     }}}
@@ -171,7 +171,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     C extends (props : infer P & {  children :react.react.ReactNode | undefined}, context : any | undefined): any ? P : never
     }}}

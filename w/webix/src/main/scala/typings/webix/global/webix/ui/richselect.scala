@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.richselect because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.richselect")
+- typings.webix.webix.ui.richselect because var conflicts: $allowsClear, $compareValue_Original, $height, $onBlur_Original, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.richselect")
 @js.native
 open class richselect ()
   extends typings.webix.mod.ui.richselect

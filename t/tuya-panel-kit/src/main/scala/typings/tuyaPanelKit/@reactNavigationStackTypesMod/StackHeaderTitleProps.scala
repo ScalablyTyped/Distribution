@@ -56,6 +56,8 @@ object StackHeaderTitleProps {
     
     inline def setStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])

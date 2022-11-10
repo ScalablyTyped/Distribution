@@ -71,11 +71,10 @@ object Observer {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     E extends 'widgets.comments.new_comment' | 'widgets.comments.delete_comment' ? (num : number, lastComment : string, date : string, sign : string): void : E extends 'widgets.like.liked' | 'widgets.like.unliked' ? (likes : number): void : E extends 'widgets.like.shared' | 'widgets.like.unshared' ? (shares : number): void : E extends 'widgets.allowMessagesFromCommunity.allowed' | 'widgets.allowMessagesFromCommunity.denied' ? (uid : number): void : (): void
     }}}
     */
-  @js.native
-  trait ObserverEventHandler[E /* <: ObserverEvent */] extends StObject
+  type ObserverEventHandler[E /* <: ObserverEvent */] = js.Function4[/* num */ Double, /* lastComment */ String, /* date */ String, /* sign */ String, Unit]
 }

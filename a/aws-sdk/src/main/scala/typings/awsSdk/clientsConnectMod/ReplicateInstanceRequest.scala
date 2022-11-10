@@ -12,7 +12,7 @@ trait ReplicateInstanceRequest extends StObject {
   var ClientToken: js.UndefOr[typings.awsSdk.clientsConnectMod.ClientToken] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance. You can provide the InstanceId, or the entire ARN.
     */
   var InstanceId: InstanceIdOrArn
   

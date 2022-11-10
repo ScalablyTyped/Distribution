@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCaseRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var clientToken: js.UndefOr[CreateCaseRequestClientTokenString] = js.undefined
   

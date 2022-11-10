@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@parcel/workers" : "2.7.0"
+      "@parcel/workers" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@parcel/workers" : "2.7.0"
+      "@parcel/workers" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

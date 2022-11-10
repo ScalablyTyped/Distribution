@@ -62,10 +62,46 @@ type CoroutineStep[T] = IteratorResult[Unit, T]
 
 type DataArray = js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babylonjs.BABYLON.Primitive ? T : T extends std.Array<infer U> ? babylonjs.BABYLON.DeepImmutableArray<U> : babylonjs.BABYLON.DeepImmutableObject<T>
+  }}}
+  */
+type DeepImmutable[T] = T
+
 /** @internal */
 type DeepImmutableArray[T] = js.Array[DeepImmutable[T]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babylonjs.BABYLON.DeviceType.Keyboard | babylonjs.BABYLON.DeviceType.Generic ? number : T extends babylonjs.BABYLON.DeviceType.Mouse | babylonjs.BABYLON.DeviceType.Touch ? std.Exclude<babylonjs.BABYLON.PointerInput, babylonjs.BABYLON.PointerInput.Move | babylonjs.BABYLON.PointerInput.MouseWheelX | babylonjs.BABYLON.PointerInput.MouseWheelY | babylonjs.BABYLON.PointerInput.MouseWheelZ> : T extends babylonjs.BABYLON.DeviceType.DualShock ? babylonjs.BABYLON.DualShockInput : T extends babylonjs.BABYLON.DeviceType.Xbox ? babylonjs.BABYLON.XboxInput : T extends babylonjs.BABYLON.DeviceType.Switch ? babylonjs.BABYLON.SwitchInput : T extends babylonjs.BABYLON.DeviceType.DualSense ? babylonjs.BABYLON.DualSenseInput : never
+  }}}
+  */
+type DeviceInput[T /* <: DeviceType */] = Double
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babylonjs.BABYLON.DeviceType.Keyboard ? babylonjs.BABYLON.IKeyboardEvent : T extends babylonjs.BABYLON.DeviceType.Mouse ? babylonjs.BABYLON.IWheelEvent | babylonjs.BABYLON.IPointerEvent : T extends babylonjs.BABYLON.DeviceType.Touch ? babylonjs.BABYLON.IPointerEvent : never
+  }}}
+  */
+type DeviceSourceEvent[T /* <: DeviceType */] = IKeyboardEvent
+
 type DeviceSourceType = Distribute[DeviceType]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babylonjs.BABYLON.DeviceType ? babylonjs.BABYLON.DeviceSource<T> : never
+  }}}
+  */
+type Distribute[T] = DeviceSource[T]
 
 type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
 
@@ -80,6 +116,15 @@ type ISceneLoaderPluginExtensions = /**
   * Defines the list of supported extensions
   */
 org.scalablytyped.runtime.StringDictionary[IsBinary]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends babylonjs.BABYLON.Primitive ? T : T extends std.Array<infer U> ? std.ReadonlyArray<U> : babylonjs.BABYLON.DeepImmutable<T>
+  }}}
+  */
+type Immutable[T] = T
 
 type IndicesArray = js.Array[Double] | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array
 

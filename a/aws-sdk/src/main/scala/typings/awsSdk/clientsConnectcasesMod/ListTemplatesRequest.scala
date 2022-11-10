@@ -20,6 +20,11 @@ trait ListTemplatesRequest extends StObject {
     * The token for the next set of results. Use the value returned in the previous response in the next request to retrieve the next set of results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
+  
+  /**
+    * A list of status values to filter on.
+    */
+  var status: js.UndefOr[TemplateStatusFilters] = js.undefined
 }
 object ListTemplatesRequest {
   
@@ -39,5 +44,11 @@ object ListTemplatesRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setStatus(value: TemplateStatusFilters): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setStatusVarargs(value: TemplateStatus*): Self = StObject.set(x, "status", js.Array(value*))
   }
 }

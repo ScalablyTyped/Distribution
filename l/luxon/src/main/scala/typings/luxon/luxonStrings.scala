@@ -6,8 +6,10 @@ import typings.luxon.srcDatetimeMod.DateTimeUnit
 import typings.luxon.srcDatetimeMod.ToRelativeUnit
 import typings.luxon.srcDurationMod.DurationUnit
 import typings.luxon.srcDurationMod.ToISOFormat
+import typings.luxon.srcMiscMod.CalendarSystem
 import typings.luxon.srcMiscMod.HourCycle
 import typings.luxon.srcMiscMod.NumberUnitLength
+import typings.luxon.srcMiscMod.NumberingSystem
 import typings.luxon.srcMiscMod.StringUnitLength
 import typings.luxon.srcMiscMod.UnitLength
 import typings.luxon.srcZoneMod.ZoneOffsetFormat
@@ -113,10 +115,40 @@ object luxonStrings {
   inline def TIME_WITH_SHORT_OFFSET: TIME_WITH_SHORT_OFFSET = "TIME_WITH_SHORT_OFFSET".asInstanceOf[TIME_WITH_SHORT_OFFSET]
   
   @js.native
+  sealed trait arab
+    extends StObject
+       with NumberingSystem
+  inline def arab: arab = "arab".asInstanceOf[arab]
+  
+  @js.native
+  sealed trait arabext
+    extends StObject
+       with NumberingSystem
+  inline def arabext: arabext = "arabext".asInstanceOf[arabext]
+  
+  @js.native
+  sealed trait bali
+    extends StObject
+       with NumberingSystem
+  inline def bali: bali = "bali".asInstanceOf[bali]
+  
+  @js.native
   sealed trait basic
     extends StObject
        with ToISOFormat
   inline def basic: basic = "basic".asInstanceOf[basic]
+  
+  @js.native
+  sealed trait beng
+    extends StObject
+       with NumberingSystem
+  inline def beng: beng = "beng".asInstanceOf[beng]
+  
+  @js.native
+  sealed trait buddhist
+    extends StObject
+       with CalendarSystem
+  inline def buddhist: buddhist = "buddhist".asInstanceOf[buddhist]
   
   @js.native
   sealed trait casual
@@ -125,8 +157,20 @@ object luxonStrings {
   inline def casual: casual = "casual".asInstanceOf[casual]
   
   @js.native
+  sealed trait chinese
+    extends StObject
+       with CalendarSystem
+  inline def chinese: chinese = "chinese".asInstanceOf[chinese]
+  
+  @js.native
   sealed trait constructor extends StObject
   inline def constructor: constructor = "constructor".asInstanceOf[constructor]
+  
+  @js.native
+  sealed trait coptic
+    extends StObject
+       with CalendarSystem
+  inline def coptic: coptic = "coptic".asInstanceOf[coptic]
   
   @js.native
   sealed trait day
@@ -150,6 +194,12 @@ object luxonStrings {
   inline def daysInYear: daysInYear = "daysInYear".asInstanceOf[daysInYear]
   
   @js.native
+  sealed trait deva
+    extends StObject
+       with NumberingSystem
+  inline def deva: deva = "deva".asInstanceOf[deva]
+  
+  @js.native
   sealed trait diff extends StObject
   inline def diff: diff = "diff".asInstanceOf[diff]
   
@@ -164,6 +214,18 @@ object luxonStrings {
   @js.native
   sealed trait equals extends StObject
   inline def equals: equals = "equals".asInstanceOf[equals]
+  
+  @js.native
+  sealed trait ethioaa
+    extends StObject
+       with CalendarSystem
+  inline def ethioaa: ethioaa = "ethioaa".asInstanceOf[ethioaa]
+  
+  @js.native
+  sealed trait ethiopic
+    extends StObject
+       with CalendarSystem
+  inline def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
   
   @js.native
   sealed trait expandFormat extends StObject
@@ -224,8 +286,32 @@ object luxonStrings {
   inline def fromStringExplain: fromStringExplain = "fromStringExplain".asInstanceOf[fromStringExplain]
   
   @js.native
+  sealed trait fullwide
+    extends StObject
+       with NumberingSystem
+  inline def fullwide: fullwide = "fullwide".asInstanceOf[fullwide]
+  
+  @js.native
   sealed trait get extends StObject
   inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
+  sealed trait gregory
+    extends StObject
+       with CalendarSystem
+  inline def gregory: gregory = "gregory".asInstanceOf[gregory]
+  
+  @js.native
+  sealed trait gujr
+    extends StObject
+       with NumberingSystem
+  inline def gujr: gujr = "gujr".asInstanceOf[gujr]
+  
+  @js.native
+  sealed trait guru
+    extends StObject
+       with NumberingSystem
+  inline def guru: guru = "guru".asInstanceOf[guru]
   
   @js.native
   sealed trait h11
@@ -252,8 +338,20 @@ object luxonStrings {
   inline def h24: h24 = "h24".asInstanceOf[h24]
   
   @js.native
+  sealed trait hanidec
+    extends StObject
+       with NumberingSystem
+  inline def hanidec: hanidec = "hanidec".asInstanceOf[hanidec]
+  
+  @js.native
   sealed trait hasSame extends StObject
   inline def hasSame: hasSame = "hasSame".asInstanceOf[hasSame]
+  
+  @js.native
+  sealed trait hebrew
+    extends StObject
+       with CalendarSystem
+  inline def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
   
   @js.native
   sealed trait hour
@@ -267,6 +365,12 @@ object luxonStrings {
     extends StObject
        with ToRelativeUnit
   inline def hours: hours = "hours".asInstanceOf[hours]
+  
+  @js.native
+  sealed trait indian
+    extends StObject
+       with CalendarSystem
+  inline def indian: indian = "indian".asInstanceOf[indian]
   
   @js.native
   sealed trait invalid extends StObject
@@ -299,6 +403,60 @@ object luxonStrings {
   @js.native
   sealed trait isValid extends StObject
   inline def isValid: isValid = "isValid".asInstanceOf[isValid]
+  
+  @js.native
+  sealed trait islamic
+    extends StObject
+       with CalendarSystem
+  inline def islamic: islamic = "islamic".asInstanceOf[islamic]
+  
+  @js.native
+  sealed trait islamicc
+    extends StObject
+       with CalendarSystem
+  inline def islamicc: islamicc = "islamicc".asInstanceOf[islamicc]
+  
+  @js.native
+  sealed trait iso8601
+    extends StObject
+       with CalendarSystem
+  inline def iso8601: iso8601 = "iso8601".asInstanceOf[iso8601]
+  
+  @js.native
+  sealed trait japanese
+    extends StObject
+       with CalendarSystem
+  inline def japanese: japanese = "japanese".asInstanceOf[japanese]
+  
+  @js.native
+  sealed trait khmr
+    extends StObject
+       with NumberingSystem
+  inline def khmr: khmr = "khmr".asInstanceOf[khmr]
+  
+  @js.native
+  sealed trait knda
+    extends StObject
+       with NumberingSystem
+  inline def knda: knda = "knda".asInstanceOf[knda]
+  
+  @js.native
+  sealed trait laoo
+    extends StObject
+       with NumberingSystem
+  inline def laoo: laoo = "laoo".asInstanceOf[laoo]
+  
+  @js.native
+  sealed trait latn
+    extends StObject
+       with NumberingSystem
+  inline def latn: latn = "latn".asInstanceOf[latn]
+  
+  @js.native
+  sealed trait limb
+    extends StObject
+       with NumberingSystem
+  inline def limb: limb = "limb".asInstanceOf[limb]
   
   @js.native
   sealed trait local extends StObject
@@ -355,6 +513,18 @@ object luxonStrings {
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
+  sealed trait mlym
+    extends StObject
+       with NumberingSystem
+  inline def mlym: mlym = "mlym".asInstanceOf[mlym]
+  
+  @js.native
+  sealed trait mong
+    extends StObject
+       with NumberingSystem
+  inline def mong: mong = "mong".asInstanceOf[mong]
+  
+  @js.native
   sealed trait month
     extends StObject
        with DateTimeUnit
@@ -374,6 +544,12 @@ object luxonStrings {
     extends StObject
        with ToRelativeUnit
   inline def months: months = "months".asInstanceOf[months]
+  
+  @js.native
+  sealed trait mymr
+    extends StObject
+       with NumberingSystem
+  inline def mymr: mymr = "mymr".asInstanceOf[mymr]
   
   @js.native
   sealed trait narrow
@@ -416,12 +592,24 @@ object luxonStrings {
   inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
   @js.native
+  sealed trait orya
+    extends StObject
+       with NumberingSystem
+  inline def orya: orya = "orya".asInstanceOf[orya]
+  
+  @js.native
   sealed trait outputCalendar extends StObject
   inline def outputCalendar: outputCalendar = "outputCalendar".asInstanceOf[outputCalendar]
   
   @js.native
   sealed trait parseFormatForOpts extends StObject
   inline def parseFormatForOpts: parseFormatForOpts = "parseFormatForOpts".asInstanceOf[parseFormatForOpts]
+  
+  @js.native
+  sealed trait persian
+    extends StObject
+       with CalendarSystem
+  inline def persian: persian = "persian".asInstanceOf[persian]
   
   @js.native
   sealed trait plus extends StObject
@@ -447,6 +635,12 @@ object luxonStrings {
   @js.native
   sealed trait resolvedLocaleOptions extends StObject
   inline def resolvedLocaleOptions: resolvedLocaleOptions = "resolvedLocaleOptions".asInstanceOf[resolvedLocaleOptions]
+  
+  @js.native
+  sealed trait roc
+    extends StObject
+       with CalendarSystem
+  inline def roc: roc = "roc".asInstanceOf[roc]
   
   @js.native
   sealed trait second
@@ -487,10 +681,34 @@ object luxonStrings {
   inline def startOf: startOf = "startOf".asInstanceOf[startOf]
   
   @js.native
+  sealed trait tamldec
+    extends StObject
+       with NumberingSystem
+  inline def tamldec: tamldec = "tamldec".asInstanceOf[tamldec]
+  
+  @js.native
   sealed trait techie
     extends StObject
        with ZoneOffsetFormat
   inline def techie: techie = "techie".asInstanceOf[techie]
+  
+  @js.native
+  sealed trait telu
+    extends StObject
+       with NumberingSystem
+  inline def telu: telu = "telu".asInstanceOf[telu]
+  
+  @js.native
+  sealed trait thai
+    extends StObject
+       with NumberingSystem
+  inline def thai: thai = "thai".asInstanceOf[thai]
+  
+  @js.native
+  sealed trait tibt
+    extends StObject
+       with NumberingSystem
+  inline def tibt: tibt = "tibt".asInstanceOf[tibt]
   
   @js.native
   sealed trait toBSON extends StObject

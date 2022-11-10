@@ -2,13 +2,14 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait carouselConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -16,7 +17,7 @@ trait carouselConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +39,7 @@ trait carouselConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
-  var navigation: js.UndefOr[Any] = js.undefined
+  var navigation: js.UndefOr[obj] = js.undefined
   
   var on: js.UndefOr[EventHash] = js.undefined
   
@@ -61,7 +62,7 @@ object carouselConfig {
   
   extension [Self <: carouselConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -79,7 +80,7 @@ object carouselConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -123,7 +124,7 @@ object carouselConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: obj): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     

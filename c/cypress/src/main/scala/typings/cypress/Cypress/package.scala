@@ -162,6 +162,15 @@ type Task = js.Function1[/* value */ Any, Any]
 
 type Tasks = StringDictionary[Task]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  R extends void ? cypress.Cypress.Chainable<S> : R extends R | undefined ? cypress.Cypress.Chainable<S | std.Exclude<R, undefined>> : cypress.Cypress.Chainable<S>
+  }}}
+  */
+type ThenReturn[S, R] = Chainable[S]
+
 /**
   * Public interface for the global "cy" object. If you want to add
   * a custom property to this object, you should extend this interface.

@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress
 
 import typings.devextreme.mod.DevExpress.core.UserDefinedElementsArray
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ trait TransitionExecutor extends StObject {
   /**
     * Starts all the animations registered using the enter(elements, animation) and leave(elements, animation) methods beforehand.
     */
-  def start(): DxPromise[Unit] = js.native
+  def start(): js.Promise[Unit] = js.native
   
   /**
     * Stops all started animations.

@@ -167,6 +167,15 @@ type ComputedWriteFunction[T, TTarget] = js.ThisFunction1[/* this */ TTarget, /*
 
 type Extender[T /* <: Subscribable_[Any] */, O] = js.Function2[/* target */ T, /* options */ O, T]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Array<infer U> ? U : T
+  }}}
+  */
+type Flatten[T] = T
+
 type MaybeComputed[T] = T | Computed_[T]
 
 type MaybeObservable[T] = T | Observable_[T]
@@ -186,3 +195,14 @@ js.Function0[Unit]]
 type Subscribable_[T] = SubscribableFunctions[T]
 
 type SubscriptionCallback[T, TTarget] = js.ThisFunction1[/* this */ TTarget, /* val */ T, Unit]
+
+//#endregion
+//#region subscribables/mappingHelpers.js
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends knockout.knockout.Subscribable<infer R> ? R : T extends std.Record<any, any> ? {[ P in keyof T ]: knockout.knockout.Unwrapped<T[P]>} : T
+  }}}
+  */
+type Unwrapped[T] = T

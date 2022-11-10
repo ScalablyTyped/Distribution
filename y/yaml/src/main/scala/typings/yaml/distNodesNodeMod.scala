@@ -1,5 +1,6 @@
 package typings.yaml
 
+import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesYamlmapMod.YAMLMap
 import typings.yaml.distNodesYamlmapMod.YAMLMap.Parsed
 import typings.yaml.distParseCstMod.Token
@@ -110,13 +111,12 @@ object distNodesNodeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string | number | bigint | boolean | null ? yaml.yaml/dist/nodes/Scalar.Scalar<T> : T extends std.Array<any> ? yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<yaml.yaml/dist/nodes/Node.NodeType<T[number]>> : T extends {[key: string] : any} ? yaml.yaml/dist/nodes/YAMLMap.YAMLMap<yaml.yaml/dist/nodes/Node.NodeType<keyof T>, yaml.yaml/dist/nodes/Node.NodeType<T[keyof T]>> : T extends {[key: number] : any} ? yaml.yaml/dist/nodes/YAMLMap.YAMLMap<yaml.yaml/dist/nodes/Node.NodeType<keyof T>, yaml.yaml/dist/nodes/Node.NodeType<T[keyof T]>> : yaml.yaml/dist/nodes/Node.Node<unknown>
     }}}
     */
-  @js.native
-  trait NodeType[T] extends StObject
+  type NodeType[T] = Scalar[T]
   
   /* Rewritten from type alias, can be one of: 
     - typings.yaml.distNodesAliasMod.Alias.Parsed

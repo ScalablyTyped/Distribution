@@ -4,108 +4,56 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait CardBrand extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "CardBrand")
-@js.native
-object CardBrand extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.AMEX
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CB_NATIONALE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CETELEM
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHINA_UNION_PAY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIDIS
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIGOGA
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELTA
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DISCOVER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ELECTRON
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.JCB
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MAESTRO
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MASTERCARD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOLO
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STAR
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SWITCH
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VISA
+*/
+trait CardBrand extends StObject
+object CardBrand {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CardBrand & String] = js.native
+  inline def AMEX: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.AMEX = "AMEX".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.AMEX]
   
-  @js.native
-  sealed trait AMEX
-    extends StObject
-       with CardBrand
-  /* "AMEX" */ val AMEX: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.AMEX & String = js.native
+  inline def CB_NATIONALE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CB_NATIONALE = "CB_NATIONALE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CB_NATIONALE]
   
-  @js.native
-  sealed trait CB_NATIONALE
-    extends StObject
-       with CardBrand
-  /* "CB_NATIONALE" */ val CB_NATIONALE: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.CB_NATIONALE & String = js.native
+  inline def CETELEM: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CETELEM = "CETELEM".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CETELEM]
   
-  @js.native
-  sealed trait CETELEM
-    extends StObject
-       with CardBrand
-  /* "CETELEM" */ val CETELEM: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.CETELEM & String = js.native
+  inline def CHINA_UNION_PAY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHINA_UNION_PAY = "CHINA_UNION_PAY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CHINA_UNION_PAY]
   
-  @js.native
-  sealed trait CHINA_UNION_PAY
-    extends StObject
-       with CardBrand
-  /* "CHINA_UNION_PAY" */ val CHINA_UNION_PAY: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.CHINA_UNION_PAY & String = js.native
+  inline def CONFIDIS: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIDIS = "CONFIDIS".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIDIS]
   
-  @js.native
-  sealed trait CONFIDIS
-    extends StObject
-       with CardBrand
-  /* "CONFIDIS" */ val CONFIDIS: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.CONFIDIS & String = js.native
+  inline def CONFIGOGA: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIGOGA = "CONFIGOGA".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CONFIGOGA]
   
-  @js.native
-  sealed trait CONFIGOGA
-    extends StObject
-       with CardBrand
-  /* "CONFIGOGA" */ val CONFIGOGA: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.CONFIGOGA & String = js.native
+  inline def DELTA: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELTA = "DELTA".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELTA]
   
-  @js.native
-  sealed trait DELTA
-    extends StObject
-       with CardBrand
-  /* "DELTA" */ val DELTA: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.DELTA & String = js.native
+  inline def DISCOVER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DISCOVER = "DISCOVER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DISCOVER]
   
-  @js.native
-  sealed trait DISCOVER
-    extends StObject
-       with CardBrand
-  /* "DISCOVER" */ val DISCOVER: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.DISCOVER & String = js.native
+  inline def ELECTRON: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ELECTRON = "ELECTRON".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ELECTRON]
   
-  @js.native
-  sealed trait ELECTRON
-    extends StObject
-       with CardBrand
-  /* "ELECTRON" */ val ELECTRON: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.ELECTRON & String = js.native
+  inline def JCB: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.JCB = "JCB".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.JCB]
   
-  @js.native
-  sealed trait JCB
-    extends StObject
-       with CardBrand
-  /* "JCB" */ val JCB: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.JCB & String = js.native
+  inline def MAESTRO: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MAESTRO = "MAESTRO".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MAESTRO]
   
-  @js.native
-  sealed trait MAESTRO
-    extends StObject
-       with CardBrand
-  /* "MAESTRO" */ val MAESTRO: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.MAESTRO & String = js.native
+  inline def MASTERCARD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MASTERCARD = "MASTERCARD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.MASTERCARD]
   
-  @js.native
-  sealed trait MASTERCARD
-    extends StObject
-       with CardBrand
-  /* "MASTERCARD" */ val MASTERCARD: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.MASTERCARD & String = js.native
+  inline def SOLO: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOLO = "SOLO".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOLO]
   
-  @js.native
-  sealed trait SOLO
-    extends StObject
-       with CardBrand
-  /* "SOLO" */ val SOLO: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.SOLO & String = js.native
+  inline def STAR: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STAR = "STAR".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.STAR]
   
-  @js.native
-  sealed trait STAR
-    extends StObject
-       with CardBrand
-  /* "STAR" */ val STAR: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.STAR & String = js.native
+  inline def SWITCH: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SWITCH = "SWITCH".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SWITCH]
   
-  @js.native
-  sealed trait SWITCH
-    extends StObject
-       with CardBrand
-  /* "SWITCH" */ val SWITCH: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.SWITCH & String = js.native
-  
-  @js.native
-  sealed trait VISA
-    extends StObject
-       with CardBrand
-  /* "VISA" */ val VISA: typings.paypalCheckoutServerSdk.libPaymentsLibMod.CardBrand.VISA & String = js.native
+  inline def VISA: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VISA = "VISA".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.VISA]
 }

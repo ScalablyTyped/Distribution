@@ -1,5 +1,22 @@
 package typings.konva
 
+import typings.konva.konvaStrings.fillStyle
+import typings.konva.konvaStrings.font
+import typings.konva.konvaStrings.globalAlpha
+import typings.konva.konvaStrings.globalCompositeOperation
+import typings.konva.konvaStrings.imageSmoothingEnabled
+import typings.konva.konvaStrings.lineCap
+import typings.konva.konvaStrings.lineDashOffset
+import typings.konva.konvaStrings.lineJoin
+import typings.konva.konvaStrings.lineWidth
+import typings.konva.konvaStrings.miterLimit
+import typings.konva.konvaStrings.shadowBlur
+import typings.konva.konvaStrings.shadowColor
+import typings.konva.konvaStrings.shadowOffsetX
+import typings.konva.konvaStrings.shadowOffsetY
+import typings.konva.konvaStrings.strokeStyle
+import typings.konva.konvaStrings.textAlign
+import typings.konva.konvaStrings.textBaseline
 import typings.konva.libCanvasMod.Canvas
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
@@ -9,6 +26,7 @@ import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
 import typings.std.ImageData
 import typings.std.Path2D
+import typings.std.Pick
 import typings.std.TextMetrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +34,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libContextMod {
   
-  @JSImport("konva/lib/Context", "Context")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in 'fillStyle' | 'strokeStyle' | 'shadowColor' | 'shadowBlur' | 'shadowOffsetX' | 'shadowOffsetY' | 'lineCap' | 'lineDashOffset' | 'lineJoin' | 'lineWidth' | 'miterLimit' | 'font' | 'textAlign' | 'textBaseline' | 'globalAlpha' | 'globalCompositeOperation' | 'imageSmoothingEnabled' ]: std.CanvasRenderingContext2D[P]} */ @JSImport("konva/lib/Context", "Context")
   @js.native
   open class Context protected () extends StObject {
     def this(canvas: Canvas) = this()
@@ -175,4 +194,9 @@ object libContextMod {
     
     def _strokeLinearGradient(shape: Any): Unit = js.native
   }
+  
+  type CanvasContextProps = Pick[
+    CanvasRenderingContext2D, 
+    fillStyle | strokeStyle | shadowColor | shadowBlur | shadowOffsetX | shadowOffsetY | lineCap | lineDashOffset | lineJoin | lineWidth | miterLimit | font | textAlign | textBaseline | globalAlpha | globalCompositeOperation | imageSmoothingEnabled
+  ]
 }

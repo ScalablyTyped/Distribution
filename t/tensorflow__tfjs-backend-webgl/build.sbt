@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-backend-webgl"
-version := "4.0.0-b53e16"
+version := "4.0.0-829922"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-6cf76a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "tensorflow__tfjs-backend-cpu" % "4.0.0-311179",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "4.0.0-a8303f",
-  "org.scalablytyped" %%% "webgpu__types" % "0.1.22-b31380")
+  "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-096bcd",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
+  "org.scalablytyped" %%% "tensorflow__tfjs-backend-cpu" % "4.0.0-41b269",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "4.0.0-b46190",
+  "org.scalablytyped" %%% "webgpu__types" % "0.1.22-6e87a0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

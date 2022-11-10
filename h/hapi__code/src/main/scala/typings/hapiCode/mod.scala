@@ -63,23 +63,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? @hapi/code.@hapi/code.RecursivePartial<T> & {[key: string] : any} : T
     }}}
     */
-  @js.native
-  trait Loosely[T] extends StObject
+  type Loosely[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? {[ P in keyof T ]:? T[P] extends std.Array<infer I>? std.Array<@hapi/code.@hapi/code.RecursivePartial<I>> : @hapi/code.@hapi/code.RecursivePartial<T[P]>} : T
     }}}
     */
-  @js.native
-  trait RecursivePartial[T] extends StObject
+  type RecursivePartial[T] = T
   
   trait Settings_ extends StObject {
     
@@ -118,25 +116,23 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<infer U> ? U : T
     }}}
     */
-  @js.native
-  trait UnpackArray[T] extends StObject
+  type UnpackArray[T] = T
   
   object expect {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       TTest extends std.Function ? @hapi/code.@hapi/code.expect.FunctionAssertion<T> : TTest extends string ? @hapi/code.@hapi/code.expect.StringAssertion<T> : TTest extends number | bigint ? @hapi/code.@hapi/code.expect.NumberAssertion<T> : TTest extends std.Promise<any> ? @hapi/code.@hapi/code.expect.PromiseAssertion<T> : @hapi/code.@hapi/code.expect.BaseAssertion<T, T>
       }}}
       */
-    @js.native
-    trait Assertion[T, TTest /* <: T */] extends StObject
+    type Assertion[T, TTest /* <: T */] = FunctionAssertion[T]
     
     @js.native
     trait BaseAssertion[T, TTest /* <: T */] extends StObject {
@@ -235,15 +231,6 @@ object mod {
       def equal(value: RecursivePartial[T]): Assertion[T, T] = js.native
       def equal(value: RecursivePartial[T], options: Options): Assertion[T, T] = js.native
       
-      /**
-        * Asserts that the reference value equals the provided value.
-        *
-        * @param value - the value to match.
-        * @param options - comparison options.
-        *
-        * @returns assertion chain object.
-        */
-      def equals(value: RecursivePartial[T]): Assertion[T, T] = js.native
       def equals(value: RecursivePartial[T], options: Options): Assertion[T, T] = js.native
       
       def error(): Assertion[T, T] = js.native

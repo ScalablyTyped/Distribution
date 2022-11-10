@@ -105,6 +105,15 @@ type LineElement = typings.blessed.mod.Widgets.LineElement
 
 type ListElement = typings.blessed.mod.Widgets.ListElement
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends react-blessed.react-blessed.ListElement ? react-blessed.react-blessed.ProgressBarEventProps & {  style :react-blessed.react-blessed.ListStyle | undefined,   selected :number | undefined} : {}
+  }}}
+  */
+type ListProps[T] = ProgressBarEventProps & (/* import warning: importer.ImportType#apply Failed type conversion: {  style :react-blessed.react-blessed.ListStyle | undefined,   selected :number | undefined} */ js.Any)
+
 type ListTableElement = typings.blessed.mod.Widgets.ListTableElement
 
 type ListbarElement = typings.blessed.mod.Widgets.ListbarElement
@@ -135,6 +144,15 @@ type ProgressBarEventHandler = EventHandler[ProgressBarEvent]
 type ProgressBarEventNames = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-blessed.anon.FnCall>[0] */ js.Any
 
 type ProgressBarEventProps = EventHandlerProp[ProgressBarEventNames, ProgressBarEventHandler]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends react-blessed.react-blessed.ProgressBarElement ? react-blessed.react-blessed.ProgressBarEventProps & {  style :react-blessed.react-blessed.ProgressBarStyle | undefined} : {}
+  }}}
+  */
+type ProgressBarProps[T] = ProgressBarEventProps & (/* import warning: importer.ImportType#apply Failed type conversion: {  style :react-blessed.react-blessed.ProgressBarStyle | undefined} */ js.Any)
 
 type PromptElement = typings.blessed.mod.Widgets.PromptElement
 

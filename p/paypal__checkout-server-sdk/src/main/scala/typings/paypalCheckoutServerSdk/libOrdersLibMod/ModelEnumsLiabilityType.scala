@@ -4,24 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ModelEnumsLiabilityType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "ModelEnumsLiabilityType")
-@js.native
-object ModelEnumsLiabilityType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FULL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTIAL
+*/
+trait ModelEnumsLiabilityType extends StObject
+object ModelEnumsLiabilityType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ModelEnumsLiabilityType & String] = js.native
+  inline def FULL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FULL = "FULL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.FULL]
   
-  @js.native
-  sealed trait FULL
-    extends StObject
-       with ModelEnumsLiabilityType
-  /* "FULL" */ val FULL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsLiabilityType.FULL & String = js.native
-  
-  @js.native
-  sealed trait PARTIAL
-    extends StObject
-       with ModelEnumsLiabilityType
-  /* "PARTIAL" */ val PARTIAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsLiabilityType.PARTIAL & String = js.native
+  inline def PARTIAL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTIAL = "PARTIAL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PARTIAL]
 }

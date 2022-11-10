@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xxhash-wasm" : "1.0.1"
+      "xxhash-wasm" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "xxhash-wasm" : "1.0.1"
+      "xxhash-wasm" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

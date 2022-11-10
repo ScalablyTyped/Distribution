@@ -362,13 +362,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends undefined ? never : T extends std.Array<any> ? T[0] : T
     }}}
     */
-  @js.native
-  trait ExtractContext[T /* <: AnyContext */] extends StObject
+  type ExtractContext[T /* <: AnyContext */] = T
   
   type FilterCallback[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */, S /* <: T */] = js.Function3[
     /* ptr */ Iteratee[T, D], 
@@ -381,13 +380,15 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends undefined ? never : T extends std.Array<any> ? clownface.clownface.AnyPointer<T[0], D> : clownface.clownface.AnyPointer<T, D>
     }}}
     */
-  @js.native
-  trait Iteratee[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] extends StObject
+  type Iteratee[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] = AnyPointer[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
+    D
+  ]
   
   @js.native
   trait ListPointer[T /* <: Term */, D /* <: DatasetCore[Quad, Quad] */]
@@ -454,7 +455,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends undefined ? never : T extends std.Array<any> ? clownface.clownface.Iteratee<T[0], D> : clownface.clownface.Iteratee<T, D>
     }}}

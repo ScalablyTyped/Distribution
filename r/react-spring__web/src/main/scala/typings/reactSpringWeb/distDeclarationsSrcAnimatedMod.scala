@@ -196,7 +196,7 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     @react-spring/web.@react-spring/web/dist/declarations/src/animated.NonObject<T> extends infer U ? [U] extends [never] ? never : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue<U> * / any : never
     }}}
@@ -917,13 +917,12 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T, T] extends [infer T, infer DT] ? [DT] extends [never] ? never : DT extends void ? undefined : DT extends string | number ? DT | @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedLeaf<T> : DT extends object ? [@react-spring/web.@react-spring/web/dist/declarations/src/animated.ValidStyleProps<DT>] extends [never] ? DT extends std.ReadonlyArray<any> ? @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedStyles<DT> : DT : @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedStyle<T> : DT | @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedLeaf<T> : never
     }}}
     */
-  @js.native
-  trait AnimatedProp[T] extends StObject
+  type AnimatedProp[T] = Unit
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -937,13 +936,12 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T, T] extends [infer T, infer DT] ? DT extends void ? undefined : [DT] extends [never] ? never : DT extends string | number ? DT | @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedLeaf<T> : DT extends object ? @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedObject<DT> : DT | @react-spring/web.@react-spring/web/dist/declarations/src/animated.AnimatedLeaf<T> : never
     }}}
     */
-  @js.native
-  trait AnimatedStyle[T] extends StObject
+  type AnimatedStyle[T] = Unit
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

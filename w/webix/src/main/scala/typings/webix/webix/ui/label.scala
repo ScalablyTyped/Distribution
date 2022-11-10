@@ -3,6 +3,7 @@ package typings.webix.webix.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +30,13 @@ trait label
   def $render(args: Any*): Any = js.native
   
   @JSName("$renderInput")
-  def $renderInput(config: Any): HTMLElement = js.native
+  def $renderInput(config: obj): HTMLElement = js.native
   
   @JSName("$render")
   var $render_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -71,7 +72,7 @@ trait label
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def on_click(args: Any*): Any = js.native
   @JSName("on_click")
@@ -79,14 +80,28 @@ trait label
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def setHTML(html: String): Unit = js.native
   
   def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

@@ -2,15 +2,14 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait schedulerConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
-  
-  var body: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -22,11 +21,15 @@ trait schedulerConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var copypaste: js.UndefOr[Boolean] = js.undefined
   
-  var date: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
+  
+  var date: js.UndefOr[obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var dragCreate: js.UndefOr[Boolean] = js.undefined
   
   var dynamic: js.UndefOr[String] = js.undefined
   
@@ -38,9 +41,7 @@ trait schedulerConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  
-  var locale: js.UndefOr[Any] = js.undefined
+  var locale: js.UndefOr[obj] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -62,6 +63,12 @@ trait schedulerConfig extends StObject {
   
   var serverUTC: js.UndefOr[Boolean] = js.undefined
   
+  var timeline: js.UndefOr[Boolean] = js.undefined
+  
+  var timelineMode: js.UndefOr[String] = js.undefined
+  
+  var units: js.UndefOr[Boolean] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
@@ -77,13 +84,9 @@ object schedulerConfig {
   
   extension [Self <: schedulerConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
@@ -105,17 +108,25 @@ object schedulerConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCopypaste(value: Boolean): Self = StObject.set(x, "copypaste", value.asInstanceOf[js.Any])
+    
+    inline def setCopypasteUndefined: Self = StObject.set(x, "copypaste", js.undefined)
+    
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: obj): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDragCreate(value: Boolean): Self = StObject.set(x, "dragCreate", value.asInstanceOf[js.Any])
+    
+    inline def setDragCreateUndefined: Self = StObject.set(x, "dragCreate", js.undefined)
     
     inline def setDynamic(value: String): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
@@ -137,11 +148,7 @@ object schedulerConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
-    
-    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
-    
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -186,6 +193,18 @@ object schedulerConfig {
     inline def setServerUTC(value: Boolean): Self = StObject.set(x, "serverUTC", value.asInstanceOf[js.Any])
     
     inline def setServerUTCUndefined: Self = StObject.set(x, "serverUTC", js.undefined)
+    
+    inline def setTimeline(value: Boolean): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineMode(value: String): Self = StObject.set(x, "timelineMode", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineModeUndefined: Self = StObject.set(x, "timelineMode", js.undefined)
+    
+    inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    
+    inline def setUnits(value: Boolean): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

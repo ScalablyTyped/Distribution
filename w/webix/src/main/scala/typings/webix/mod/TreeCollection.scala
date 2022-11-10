@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TreeCollection extends StObject {
   
-  def add(obj: Any): String = js.native
-  def add(obj: Any, index: Double): String = js.native
-  def add(obj: Any, index: Double, parentId: String): String = js.native
-  def add(obj: Any, index: Unit, parentId: String): String = js.native
+  def add(obj: obj): String = js.native
+  def add(obj: obj, index: Double): String = js.native
+  def add(obj: obj, index: Double, parentId: String): String = js.native
+  def add(obj: obj, index: Unit, parentId: String): String = js.native
   
-  def addBind(source: Any, rule: String, format: String): Unit = js.native
+  def addBind(source: obj, rule: String, format: String): Unit = js.native
   
   def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any): Unit = js.native
-  def bind(target: Any, rule: Unit, format: String): Unit = js.native
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj): Unit = js.native
+  def bind(target: obj, rule: Unit, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -36,13 +36,13 @@ trait TreeCollection extends StObject {
   var config: TreeCollectionConfig = js.native
   
   def copy(sid: String, tindex: Double): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Any, details: Any): Unit = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: obj): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: obj): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: obj, details: obj): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Any, details: Any): Unit = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: obj): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: obj): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: obj, details: obj): Unit = js.native
   
   def count(): Double = js.native
   
@@ -70,18 +70,16 @@ trait TreeCollection extends StObject {
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): Any = js.native
+  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
   
+  def getBindData(key: String): Unit = js.native
   def getBindData(key: String, update: Boolean): Unit = js.native
+  def getBindData(key: Double): Unit = js.native
   def getBindData(key: Double, update: Boolean): Unit = js.native
   
   def getBranchIndex(id: String): Double = js.native
-  def getBranchIndex(id: String, parent: String): Double = js.native
-  def getBranchIndex(id: String, parent: Double): Double = js.native
   def getBranchIndex(id: Double): Double = js.native
-  def getBranchIndex(id: Double, parent: String): Double = js.native
-  def getBranchIndex(id: Double, parent: Double): Double = js.native
   
   def getCursor(): Double = js.native
   
@@ -96,8 +94,8 @@ trait TreeCollection extends StObject {
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): Any = js.native
-  def getItem(id: Double): Any = js.native
+  def getItem(id: String): obj = js.native
+  def getItem(id: Double): obj = js.native
   
   def getLastId(): Double | String = js.native
   
@@ -125,24 +123,29 @@ trait TreeCollection extends StObject {
   
   def load(url: String): js.Promise[Any] = js.native
   def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean, clear: Boolean): js.Promise[Any] = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def move(sid: String, tindex: Double): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: obj): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: baseview, details: Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: baseview, details: obj): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: Unit, details: obj): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: baseview, details: Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: baseview, details: obj): String | Double = js.native
   
   def moveBottom(id: String): Unit = js.native
   def moveBottom(id: Double): Unit = js.native
@@ -152,7 +155,12 @@ trait TreeCollection extends StObject {
   
   var name: String = js.native
   
-  def parse(data: Any, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String): Unit = js.native
+  def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String): Unit = js.native
+  def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: String): Unit = js.native
+  def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
@@ -164,15 +172,15 @@ trait TreeCollection extends StObject {
   def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
-  def removeBind(source: Any): Unit = js.native
+  def removeBind(source: obj): Unit = js.native
   
   def saveBatch(handler: WebixCallback): Unit = js.native
   
   def serialize(): js.Array[Any] = js.native
   def serialize(all: Boolean): js.Array[Any] = js.native
   
-  def setBindData(data: Any, key: String): Unit = js.native
-  def setBindData(data: Any, key: Double): Unit = js.native
+  def setBindData(data: obj, key: String): Unit = js.native
+  def setBindData(data: obj, key: Double): Unit = js.native
   
   def setCursor(cursor: String): Unit = js.native
   def setCursor(cursor: Double): Unit = js.native
@@ -182,14 +190,14 @@ trait TreeCollection extends StObject {
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unbind(): Unit = js.native
   
   def unblockEvent(): Unit = js.native
   
-  def updateItem(id: String, data: Any): Unit = js.native
-  def updateItem(id: Double, data: Any): Unit = js.native
+  def updateItem(id: String, data: obj): Unit = js.native
+  def updateItem(id: Double, data: obj): Unit = js.native
   
   def validate(): Boolean = js.native
   def validate(id: String): Boolean = js.native

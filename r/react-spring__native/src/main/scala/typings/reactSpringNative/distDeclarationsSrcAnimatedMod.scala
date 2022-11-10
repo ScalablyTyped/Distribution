@@ -42,7 +42,7 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     std.Exclude<T, object | void> | std.Extract<T, std.ReadonlyArray<number | string>> extends infer U ? [U] extends [never] ? never : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue<U | Exclude<T, object | void>> * / any : never
     }}}
@@ -82,13 +82,12 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T, T] extends [infer T, infer DT] ? [DT] extends [never] ? never : DT extends void ? undefined : DT extends std.ReadonlyArray<number | string> ? @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedArray<DT> | @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedLeaf<T> : DT extends std.ReadonlyArray<any> ? @react-spring/native.@react-spring/native/dist/declarations/src/animated.TransformArray extends DT ? @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedTransform : @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedStyles<DT> : [@react-spring/types.@react-spring/types/util.AssignableKeys<DT, react-native.react-native.ViewStyle>] extends [never] ? DT | @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedLeaf<T> : @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedStyle<DT> : never
     }}}
     */
-  @js.native
-  trait AnimatedProp[T] extends StObject
+  type AnimatedProp[T] = Unit
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -102,17 +101,16 @@ object distDeclarationsSrcAnimatedMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T, T] extends [infer T, infer DT] ? DT extends void ? undefined : [DT] extends [never] ? never : DT extends object ? {[ P in keyof T ]: P extends 'transform'? @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedTransform : @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedStyle<T[P]>} : DT | @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedLeaf<T> : never
     }}}
     */
-  @js.native
-  trait AnimatedStyle[T] extends StObject
+  type AnimatedStyle[T] = Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     unknown & T extends react-native.react-native.RecursiveArray<infer U> ? {[ P in keyof T ]: react-native.react-native.RecursiveArray<@react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedProp<U>>}[keyof T] : {[ P in keyof T ]: [T[P]] extends [infer DT]? DT extends std.ReadonlyArray<any>? @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedStyles<DT> : DT extends object? [@react-spring/types.@react-spring/types/util.AssignableKeys<DT, react-native.react-native.ViewStyle>] extends [never]? @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedProp<DT> : {[ P in keyof DT ]: @react-spring/native.@react-spring/native/dist/declarations/src/animated.AnimatedProp<DT[P]>} : DT : never}
     }}}

@@ -6,7 +6,6 @@ import typings.devextreme.mod.DevExpress.common.grids.DataChange
 import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.DxEvent
@@ -68,21 +67,21 @@ trait dxTreeList[TRowData, TKey]
   /**
     * Adds an empty data row to the highest hierarchical level and switches it to the editing state.
     */
-  def addRow(): DxPromise[Unit] = js.native
+  def addRow(): js.Promise[Unit] = js.native
   /**
     * Adds an empty data row to a specified parent row.
     */
-  def addRow(parentId: TKey): DxPromise[Unit] = js.native
+  def addRow(parentId: TKey): js.Promise[Unit] = js.native
   
   /**
     * Collapses a row with a specific key.
     */
-  def collapseRow(key: TKey): DxPromise[Unit] = js.native
+  def collapseRow(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Expands a row with a specific key.
     */
-  def expandRow(key: TKey): DxPromise[Unit] = js.native
+  def expandRow(key: TKey): js.Promise[Unit] = js.native
   
   /**
     * Sets focus on the UI component.
@@ -149,15 +148,15 @@ trait dxTreeList[TRowData, TKey]
   /**
     * Loads all root node descendants (all data items). Takes effect only if data has the plain structure and remoteOperations.filtering is true.
     */
-  def loadDescendants(): DxPromise[Unit] = js.native
+  def loadDescendants(): js.Promise[Unit] = js.native
   /**
     * Loads a specific node&apos;s descendants. Takes effect only if data has the plain structure and remoteOperations.filtering is true.
     */
-  def loadDescendants(keys: js.Array[TKey]): DxPromise[Unit] = js.native
+  def loadDescendants(keys: js.Array[TKey]): js.Promise[Unit] = js.native
   /**
     * Loads all or only direct descendants of specific nodes. Takes effect only if data has the plain structure and remoteOperations.filtering is true.
     */
-  def loadDescendants(keys: js.Array[TKey], childrenOnly: Boolean): DxPromise[Unit] = js.native
+  def loadDescendants(keys: js.Array[TKey], childrenOnly: Boolean): js.Promise[Unit] = js.native
 }
 object dxTreeList {
   
@@ -2484,9 +2483,9 @@ object dxTreeList {
     @JSName("scrollWidth")
     var scrollWidth_Original: js.Function0[Double]
     
-    def update(): DxPromise[Unit]
+    def update(): js.Promise[Unit]
     @JSName("update")
-    var update_Original: js.Function0[DxPromise[Unit]]
+    var update_Original: js.Function0[js.Promise[Unit]]
   }
   object Scrollable {
     
@@ -2512,7 +2511,7 @@ object dxTreeList {
       scrollToElement: /* element */ UserDefinedElement[Element] => Unit,
       scrollTop: () => Double,
       scrollWidth: () => Double,
-      update: () => DxPromise[Unit]
+      update: () => js.Promise[Unit]
     ): Scrollable = {
       val __obj = js.Dynamic.literal($element = js.Any.fromFunction0($element), beginUpdate = js.Any.fromFunction0(beginUpdate), clientHeight = js.Any.fromFunction0(clientHeight), clientWidth = js.Any.fromFunction0(clientWidth), content = js.Any.fromFunction0(content), dispose = js.Any.fromFunction0(dispose), element = js.Any.fromFunction0(element), endUpdate = js.Any.fromFunction0(endUpdate), instance = js.Any.fromFunction0(instance), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), option = js.Any.fromFunction0(option), resetOption = js.Any.fromFunction1(resetOption), scrollBy = js.Any.fromFunction1(scrollBy), scrollHeight = js.Any.fromFunction0(scrollHeight), scrollLeft = js.Any.fromFunction0(scrollLeft), scrollOffset = js.Any.fromFunction0(scrollOffset), scrollTo = js.Any.fromFunction1(scrollTo), scrollToElement = js.Any.fromFunction1(scrollToElement), scrollTop = js.Any.fromFunction0(scrollTop), scrollWidth = js.Any.fromFunction0(scrollWidth), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Scrollable]
@@ -2562,7 +2561,7 @@ object dxTreeList {
       
       inline def setScrollWidth(value: () => Double): Self = StObject.set(x, "scrollWidth", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: () => DxPromise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   

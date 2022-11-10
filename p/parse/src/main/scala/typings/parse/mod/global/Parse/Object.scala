@@ -9,6 +9,7 @@ import typings.parse.mod.global.Parse.Object.ToJSON
 import typings.parse.parseBooleans.`false`
 import typings.std.Extract
 import typings.std.Pick
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -229,14 +230,15 @@ object Object extends Shortcut {
   // From https://github.com/parse-community/Parse-SDK-JS/blob/master/src/encode.js
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes> ? std.ReturnType<T['toJSON']> | parse.parse.<global>.Parse.Pointer : T extends parse.parse.<global>.Parse.ACL | parse.parse.<global>.Parse.GeoPoint | parse.parse.<global>.Parse.Polygon | parse.parse.<global>.Parse.Relation<parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>, parse.parse.<global>.Parse.Object<parse.parse.<global>.Parse.Attributes>> | parse.parse.<global>.Parse.File ? std.ReturnType<T['toJSON']> : T extends std.Date ? {  __type :'Date',   iso :string} : T extends std.RegExp ? string : T extends std.Array<infer R> ? // This recursion is unsupported in <=3.6
   std.Array<parse.parse.<global>.Parse.Object.Encode<R>> : T extends object ? parse.parse.<global>.Parse.Object.ToJSON<T> : T
     }}}
     */
-  @js.native
-  trait Encode[T] extends StObject
+  type Encode[T] = (ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] */ js.Any
+  ]) | Pointer
   
   trait FetchAllOptions
     extends StObject

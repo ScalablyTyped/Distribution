@@ -13,5 +13,7 @@ object distStringifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stringifySelectorAst(value: ImmutableNthSelectorList | ImmutableSelectorList | ImmutableSelectorNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySelectorAst(value: ImmutableNthSelectorList): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySelectorAst(value: ImmutableSelectorList): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySelectorAst(value: ImmutableSelectorNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelectorAst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

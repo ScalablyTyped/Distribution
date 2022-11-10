@@ -14434,17 +14434,18 @@ object distTypesGeneratedEndpointsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     'responses' extends keyof R ? @octokit/types.@octokit/types/dist-types/generated/Endpoints.SuccessResponseDataType<R['responses']> extends never ? @octokit/types.@octokit/types/dist-types/generated/Endpoints.RedirectResponseDataType<R['responses']> extends never ? @octokit/types.@octokit/types/dist-types/generated/Endpoints.EmptyResponseDataType<R['responses']> : @octokit/types.@octokit/types/dist-types/generated/Endpoints.RedirectResponseDataType<R['responses']> : @octokit/types.@octokit/types/dist-types/generated/Endpoints.SuccessResponseDataType<R['responses']> : unknown
     }}}
     */
-  @js.native
-  trait ExtractOctokitResponse[R] extends StObject
+  type ExtractOctokitResponse[R] = EmptyResponseDataType[
+    /* import warning: importer.ImportType#apply Failed type conversion: R['responses'] */ js.Any
+  ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     'parameters' extends keyof T ? @octokit/types.@octokit/types/dist-types/generated/Endpoints.UnionToIntersection<{[ K in keyof T['parameters'] ]: T['parameters'][K]}[keyof T['parameters']]> : {}
     }}}
@@ -14454,7 +14455,7 @@ object distTypesGeneratedEndpointsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     'requestBody' extends keyof T ? 'content' extends keyof T['requestBody'] ? 'application/json' extends keyof T['requestBody']['content'] ? T['requestBody']['content']['application/json'] : {  data :{[ K in keyof T['requestBody']['content'] ]: T['requestBody']['content'][K]}[keyof T['requestBody']['content']]} : 'application/json' extends keyof T['requestBody'] ? T['requestBody']['application/json'] : {  data :{[ K in keyof T['requestBody'] ]: T['requestBody'][K]}[keyof T['requestBody']]} : {}
     }}}
@@ -14464,13 +14465,14 @@ object distTypesGeneratedEndpointsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     'content' extends keyof T ? @octokit/types.@octokit/types/dist-types/generated/Endpoints.DataType<T['content']> : @octokit/types.@octokit/types/dist-types/generated/Endpoints.DataType<T>
     }}}
     */
-  @js.native
-  trait GetContentKeyIfPresent[T] extends StObject
+  type GetContentKeyIfPresent[T] = DataType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['content'] */ js.Any
+  ]
   
   /* Rewritten from type alias, can be one of: 
     - typings.octokitTypes.octokitTypesStrings.applicationSlashjson
@@ -14581,7 +14583,7 @@ object distTypesGeneratedEndpointsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends string ? {  mediaType :{  previews :[T, ...std.Array<string>]}} : {}
     }}}
@@ -14613,7 +14615,7 @@ object distTypesGeneratedEndpointsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}

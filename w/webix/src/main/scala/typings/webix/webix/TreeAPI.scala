@@ -14,7 +14,7 @@ trait TreeAPI extends StObject {
   
   def getOpenItems(): js.Array[Any] = js.native
   
-  def getState(): Any = js.native
+  def getState(): obj = js.native
   
   def isBranchOpen(id: String): Boolean = js.native
   def isBranchOpen(id: Double): Boolean = js.native
@@ -26,5 +26,5 @@ trait TreeAPI extends StObject {
   
   def openAll(): Unit = js.native
   
-  def setState(state: Any): Unit = js.native
+  def setState(state: obj): Unit = js.native
 }

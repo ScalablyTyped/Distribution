@@ -9,17 +9,17 @@ trait GroundStationData extends StObject {
   /**
     * UUID of a ground station.
     */
-  var groundStationId: js.UndefOr[String] = js.undefined
+  var groundStationId: js.UndefOr[GroundStationName] = js.undefined
   
   /**
     * Name of a ground station.
     */
-  var groundStationName: js.UndefOr[String] = js.undefined
+  var groundStationName: js.UndefOr[GroundStationName] = js.undefined
   
   /**
     * Ground station Region.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[AWSRegion] = js.undefined
 }
 object GroundStationData {
   
@@ -30,15 +30,15 @@ object GroundStationData {
   
   extension [Self <: GroundStationData](x: Self) {
     
-    inline def setGroundStationId(value: String): Self = StObject.set(x, "groundStationId", value.asInstanceOf[js.Any])
+    inline def setGroundStationId(value: GroundStationName): Self = StObject.set(x, "groundStationId", value.asInstanceOf[js.Any])
     
     inline def setGroundStationIdUndefined: Self = StObject.set(x, "groundStationId", js.undefined)
     
-    inline def setGroundStationName(value: String): Self = StObject.set(x, "groundStationName", value.asInstanceOf[js.Any])
+    inline def setGroundStationName(value: GroundStationName): Self = StObject.set(x, "groundStationName", value.asInstanceOf[js.Any])
     
     inline def setGroundStationNameUndefined: Self = StObject.set(x, "groundStationName", js.undefined)
     
-    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: AWSRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }

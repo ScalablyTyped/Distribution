@@ -168,13 +168,12 @@ object wsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ET extends 'close' ? k6.k6/ws.CloseEventHandler : ET extends 'error' ? k6.k6/ws.ErrorEventHandler : ET extends 'message' ? k6.k6/ws.MessageEventHandler : ET extends 'binaryMessage' ? k6.k6/ws.BinaryMessageEventHandler : ET extends 'open' ? k6.k6/ws.OpenEventHandler : ET extends 'ping' ? k6.k6/ws.PingEventHandler : ET extends 'pong' ? k6.k6/ws.PongEventHandler : never
     }}}
     */
-  @js.native
-  trait EventHandler[ET /* <: EventType */] extends StObject
+  type EventHandler[ET /* <: EventType */] = CloseEventHandler
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.close

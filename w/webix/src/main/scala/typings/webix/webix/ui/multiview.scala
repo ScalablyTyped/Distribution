@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +11,8 @@ trait multiview
   extends StObject
      with baseview {
   
-  def addView(view: Any): String | Double = js.native
-  def addView(view: Any, index: Double): String | Double = js.native
+  def addView(view: obj): String | Double = js.native
+  def addView(view: obj, index: Double): String | Double = js.native
   
   def attachEvent(`type`: multiviewEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: multiviewEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -33,13 +34,15 @@ trait multiview
   
   def hasEvent(name: String): Boolean = js.native
   
-  def index(obj: Any): Double = js.native
+  def index(obj: obj): Double = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def reconstruct(): Unit = js.native
   
-  def removeView(id: Any): Unit = js.native
+  def removeView(id: String): Unit = js.native
+  def removeView(id: Double): Unit = js.native
+  def removeView(id: obj): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   

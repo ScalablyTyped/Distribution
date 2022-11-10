@@ -122,10 +122,8 @@ object anon {
   }
   object ParserOptionspluginsExtra {
     
-    inline def apply(
-      plugins: js.UndefOr[js.Array[ParserPlugin]] & (Extract[js.UndefOr[js.Array[ParserPlugin]], js.Array[Any]])
-    ): ParserOptionspluginsExtra = {
-      val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
+    inline def apply(): ParserOptionspluginsExtra = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptionspluginsExtra]
     }
     
@@ -166,6 +164,10 @@ object anon {
       inline def setPlugins(
         value: js.UndefOr[js.Array[ParserPlugin]] & (Extract[js.UndefOr[js.Array[ParserPlugin]], js.Array[Any]])
       ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       

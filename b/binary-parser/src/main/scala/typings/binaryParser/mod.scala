@@ -432,13 +432,12 @@ object mod {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       O extends undefined ? {} : O
       }}}
       */
-    @js.native
-    trait Parsed[O /* <: js.UndefOr[js.Object] */] extends StObject
+    type Parsed[O /* <: js.UndefOr[js.Object] */] = O
     
     trait StringOptions
       extends StObject
@@ -487,13 +486,12 @@ object mod {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       O extends undefined ? P : O & P
       }}}
       */
-    @js.native
-    trait Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] extends StObject
+    type Valid[O /* <: js.UndefOr[js.Object] */, P /* <: js.Object */] = P
     
     type _To = ParserConstructor
     

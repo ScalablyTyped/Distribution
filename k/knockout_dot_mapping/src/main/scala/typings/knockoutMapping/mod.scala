@@ -329,7 +329,7 @@ object mod extends Shortcut {
     // Could not get this to return any when T is any. It returns a Union type of the possible values.
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * You'll have to cast your way around this structure, unfortunately.
       * TS definition: {{{
       T extends knockout.mapping.knockout.mapping.Primitives ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> * / any : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<KnockoutObservableType<T>> * / any
       }}}
@@ -380,7 +380,7 @@ object mod extends Shortcut {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * You'll have to cast your way around this structure, unfortunately.
       * TS definition: {{{
       T extends knockout.mapping.knockout.mapping.Primitives ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutReadonlyObservableArray<T> * / any : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutReadonlyObservableArray<KnockoutObservableType<T>> * / any
       }}}
@@ -408,12 +408,11 @@ object mod extends Shortcut {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       [T] extends [knockout.mapping.knockout.mapping.Primitives] ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> * / any : [T] extends [object] ? knockout.mapping.knockout.mapping.<global>.KnockoutObservableType<T> : any
       }}}
       */
-    @js.native
-    trait MappedType[T] extends StObject
+    type MappedType[T] = KnockoutObservableType[T]
   }
 }

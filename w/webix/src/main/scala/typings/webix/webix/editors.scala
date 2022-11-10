@@ -1,54 +1,63 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait editors extends StObject {
+trait editors
+  extends StObject
+     with /* name */ StringDictionary[WebixEditor] {
   
   @JSName("$popup")
-  var $popup: Any
+  var $popup: obj
   
-  var checkbox: String
+  var checkbox: checkboxEditor
   
-  var color: String
+  var color: colorEditor
   
-  var combo: String
+  var combo: comboEditor
   
-  var date: String
+  var date: dateEditor
   
-  var `inline-checkbox`: String
+  var excel_date: js.UndefOr[excelDateEditor] = js.undefined
   
-  var `inline-text`: String
+  var gantt_numeditor: js.UndefOr[ganttNumEditor] = js.undefined
   
-  var multiselect: String
+  var `inline-checkbox`: inlineCheckboxEditor
   
-  var password: String
+  var `inline-text`: inlineTextEditor
   
-  var popup: String
+  var multiselect: multiselectEditor
   
-  var richselect: String
+  var password: passwordEditor
   
-  var select: String
+  var popup: popupEditor
   
-  var text: String
+  var richselect: richselectEditor
+  
+  var select: selectEditor
+  
+  var ss_richselect: js.UndefOr[ssRichselectEditor] = js.undefined
+  
+  var text: textEditor
 }
 object editors {
   
   inline def apply(
-    $popup: Any,
-    checkbox: String,
-    color: String,
-    combo: String,
-    date: String,
-    `inline-checkbox`: String,
-    `inline-text`: String,
-    multiselect: String,
-    password: String,
-    popup: String,
-    richselect: String,
-    select: String,
-    text: String
+    $popup: obj,
+    checkbox: checkboxEditor,
+    color: colorEditor,
+    combo: comboEditor,
+    date: dateEditor,
+    `inline-checkbox`: inlineCheckboxEditor,
+    `inline-text`: inlineTextEditor,
+    multiselect: multiselectEditor,
+    password: passwordEditor,
+    popup: popupEditor,
+    richselect: richselectEditor,
+    select: selectEditor,
+    text: textEditor
   ): editors = {
     val __obj = js.Dynamic.literal($popup = $popup.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], combo = combo.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], multiselect = multiselect.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], richselect = richselect.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("inline-checkbox")(`inline-checkbox`.asInstanceOf[js.Any])
@@ -58,30 +67,42 @@ object editors {
   
   extension [Self <: editors](x: Self) {
     
-    inline def set$popup(value: Any): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
+    inline def set$popup(value: obj): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
     
-    inline def setCheckbox(value: String): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    inline def setCheckbox(value: checkboxEditor): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: colorEditor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
+    inline def setCombo(value: comboEditor): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateEditor): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def `setInline-checkbox`(value: String): Self = StObject.set(x, "inline-checkbox", value.asInstanceOf[js.Any])
+    inline def setExcel_date(value: excelDateEditor): Self = StObject.set(x, "excel_date", value.asInstanceOf[js.Any])
     
-    inline def `setInline-text`(value: String): Self = StObject.set(x, "inline-text", value.asInstanceOf[js.Any])
+    inline def setExcel_dateUndefined: Self = StObject.set(x, "excel_date", js.undefined)
     
-    inline def setMultiselect(value: String): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    inline def setGantt_numeditor(value: ganttNumEditor): Self = StObject.set(x, "gantt_numeditor", value.asInstanceOf[js.Any])
     
-    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setGantt_numeditorUndefined: Self = StObject.set(x, "gantt_numeditor", js.undefined)
     
-    inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def `setInline-checkbox`(value: inlineCheckboxEditor): Self = StObject.set(x, "inline-checkbox", value.asInstanceOf[js.Any])
     
-    inline def setRichselect(value: String): Self = StObject.set(x, "richselect", value.asInstanceOf[js.Any])
+    inline def `setInline-text`(value: inlineTextEditor): Self = StObject.set(x, "inline-text", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setMultiselect(value: multiselectEditor): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
-    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setPassword(value: passwordEditor): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPopup(value: popupEditor): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    
+    inline def setRichselect(value: richselectEditor): Self = StObject.set(x, "richselect", value.asInstanceOf[js.Any])
+    
+    inline def setSelect(value: selectEditor): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSs_richselect(value: ssRichselectEditor): Self = StObject.set(x, "ss_richselect", value.asInstanceOf[js.Any])
+    
+    inline def setSs_richselectUndefined: Self = StObject.set(x, "ss_richselect", js.undefined)
+    
+    inline def setText(value: textEditor): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -50,4 +50,22 @@ type SubscribableOrPromise[T] = (Subscribable[scala.Nothing | T]) | PromiseLike[
 */
 type TeardownLogic = _TeardownLogic | js.Function0[Unit] | Unit
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends rxjs.rxjs/dist/types/internal/types.Falsy ? never : T
+  }}}
+  */
+type TruthyTypesOf[T] = T
+
 type UnaryFunction[T, R] = js.Function1[/* source */ T, R]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends {  kind :'N' | 'E' | 'C'} ? T extends rxjs.rxjs/dist/types/internal/types.NextNotification<any> ? T extends {  value :infer V} ? V : undefined : never : never
+  }}}
+  */
+type ValueFromNotification[T] = Unit

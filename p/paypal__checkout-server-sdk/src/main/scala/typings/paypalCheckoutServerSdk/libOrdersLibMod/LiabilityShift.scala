@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait LiabilityShift extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "LiabilityShift")
-@js.native
-object LiabilityShift extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POSSIBLE
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.YES
+*/
+trait LiabilityShift extends StObject
+object LiabilityShift {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[LiabilityShift & String] = js.native
+  inline def NO: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO = "NO".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO]
   
-  @js.native
-  sealed trait NO
-    extends StObject
-       with LiabilityShift
-  /* "NO" */ val NO: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.NO & String = js.native
+  inline def POSSIBLE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POSSIBLE = "POSSIBLE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.POSSIBLE]
   
-  @js.native
-  sealed trait POSSIBLE
-    extends StObject
-       with LiabilityShift
-  /* "POSSIBLE" */ val POSSIBLE: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.POSSIBLE & String = js.native
+  inline def UNKNOWN: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.UNKNOWN]
   
-  @js.native
-  sealed trait UNKNOWN
-    extends StObject
-       with LiabilityShift
-  /* "UNKNOWN" */ val UNKNOWN: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.UNKNOWN & String = js.native
-  
-  @js.native
-  sealed trait YES
-    extends StObject
-       with LiabilityShift
-  /* "YES" */ val YES: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.YES & String = js.native
+  inline def YES: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.YES = "YES".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.YES]
 }

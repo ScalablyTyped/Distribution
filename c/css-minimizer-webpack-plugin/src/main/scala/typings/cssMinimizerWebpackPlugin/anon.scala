@@ -1,5 +1,8 @@
 package typings.cssMinimizerWebpackPlugin
 
+import typings.cssMinimizerWebpackPlugin.mod.InferDefaultType
+import typings.cssMinimizerWebpackPlugin.mod.Input
+import typings.cssMinimizerWebpackPlugin.mod.MinimizedResult
 import typings.cssMinimizerWebpackPlugin.mod.MinimizerImplementation
 import typings.cssMinimizerWebpackPlugin.mod.MinimizerOptions
 import typings.cssMinimizerWebpackPlugin.mod.Parser
@@ -153,14 +156,19 @@ object anon {
   }
   object Implementation {
     
-    inline def apply[T](implementation: MinimizerImplementation[T], options: MinimizerOptions[T]): Implementation[T] = {
-      val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    inline def apply[T](
+      implementation: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult],
+      options: MinimizerOptions[T]
+    ): Implementation[T] = {
+      val __obj = js.Dynamic.literal(implementation = js.Any.fromFunction3(implementation), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Implementation[T]]
     }
     
     extension [Self <: Implementation[?], T](x: Self & Implementation[T]) {
       
-      inline def setImplementation(value: MinimizerImplementation[T]): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(
+        value: (/* input */ Input, /* sourceMap */ js.UndefOr[RawSourceMap], /* minifyOptions */ InferDefaultType[T]) => js.Promise[MinimizedResult]
+      ): Self = StObject.set(x, "implementation", js.Any.fromFunction3(value))
       
       inline def setOptions(value: MinimizerOptions[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }

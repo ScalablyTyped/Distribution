@@ -297,6 +297,8 @@ object TypeaheadProps {
     
     inline def setLabelKey(value: TypeaheadLabelKey[T]): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
+    inline def setLabelKeyFunction1(value: T => String): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
+    
     inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])

@@ -594,7 +594,13 @@ object WithAnimatedObjectViewSty {
     
     inline def setTransformMatrixUndefined: Self = StObject.set(x, "transformMatrix", js.undefined)
     
+    inline def setTransformMatrixVarargs(value: Double*): Self = StObject.set(x, "transformMatrix", js.Array(value*))
+    
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setTransformVarargs(
+      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
+    ): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setTranslateX(value: WithAnimatedValue[js.UndefOr[Double]]): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     

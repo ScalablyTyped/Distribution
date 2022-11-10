@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cheerio-select"
-version := "2.1.0-0bb4f1"
+version := "2.1.0-72cf2c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "css-select" % "5.1.0-893397",
-  "org.scalablytyped" %%% "css-what" % "6.1.0-7d79d6",
+  "org.scalablytyped" %%% "css-select" % "5.1.0-57f82d",
+  "org.scalablytyped" %%% "css-what" % "6.1.0-c3ba0b",
   "org.scalablytyped" %%% "domelementtype" % "2.3.0-b522a9",
-  "org.scalablytyped" %%% "domhandler" % "5.0.3-1b82ef",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "domhandler" % "5.0.3-79fef0",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

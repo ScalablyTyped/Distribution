@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SatelliteListItem extends StObject {
   
   /**
+    * The current ephemeris being used to compute the trajectory of the satellite.
+    */
+  var currentEphemeris: js.UndefOr[EphemerisMetaData] = js.undefined
+  
+  /**
     * A list of ground stations to which the satellite is on-boarded.
     */
   var groundStations: js.UndefOr[GroundStationIdList] = js.undefined
@@ -35,11 +40,15 @@ object SatelliteListItem {
   
   extension [Self <: SatelliteListItem](x: Self) {
     
+    inline def setCurrentEphemeris(value: EphemerisMetaData): Self = StObject.set(x, "currentEphemeris", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentEphemerisUndefined: Self = StObject.set(x, "currentEphemeris", js.undefined)
+    
     inline def setGroundStations(value: GroundStationIdList): Self = StObject.set(x, "groundStations", value.asInstanceOf[js.Any])
     
     inline def setGroundStationsUndefined: Self = StObject.set(x, "groundStations", js.undefined)
     
-    inline def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value*))
+    inline def setGroundStationsVarargs(value: GroundStationName*): Self = StObject.set(x, "groundStations", js.Array(value*))
     
     inline def setNoradSatelliteID(value: noradSatelliteID): Self = StObject.set(x, "noradSatelliteID", value.asInstanceOf[js.Any])
     

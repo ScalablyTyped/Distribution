@@ -36,7 +36,8 @@ object mod {
       @JSImport("leaflet", "Canvas.Tile")
       @js.native
       open class Tile protected ()
-        extends typings.leaflet.mod.Canvas_ {
+        extends typings.leaflet.mod.Canvas_
+           with GetVectorGridRendererHelper[Any] {
         def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TileParameters is not an array type */ args: TileParameters) = this()
         
         var _container: HTMLCanvasElement = js.native
@@ -70,7 +71,8 @@ object mod {
       @JSImport("leaflet", "SVG.Tile")
       @js.native
       open class Tile protected ()
-        extends typings.leaflet.mod.SVG_ {
+        extends typings.leaflet.mod.SVG_
+           with GetVectorGridRendererHelper[Any] {
         def this(props: TileProps) = this()
         
         def _addPath(layer: Layer): Unit = js.native
@@ -253,12 +255,15 @@ object mod {
     
     /** NOTE: Conditional type definitions are impossible to translate to Scala.
       * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
+      * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
       * TS definition: {{{
       T extends std.HTMLCanvasElement | std.SVGViewElement ? leaflet.vectorgrid.leaflet.vectorgrid.leaflet.Canvas.Tile | leaflet.vectorgrid.leaflet.vectorgrid.leaflet.SVG.Tile : T extends std.HTMLCanvasElement ? leaflet.vectorgrid.leaflet.vectorgrid.leaflet.Canvas.Tile : leaflet.vectorgrid.leaflet.vectorgrid.leaflet.SVG.Tile
       }}}
       */
-    @js.native
+    /* Rewritten from type alias, can be one of: 
+      - typings.leafletVectorgrid.mod.leafletAugmentingMod.Canvas_.Tile
+      - typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile
+    */
     trait GetVectorGridRendererHelper[T /* <: HTMLCanvasElement | SVGViewElement */] extends StObject
     
     type TileFactoryFunction[T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */] = js.Function1[/* args */ TileParameters, T]

@@ -27,24 +27,24 @@ trait DragControl extends StObject {
   @JSName("$drop")
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
   
-  def addDrag(node: String, ctrl: Any): Unit = js.native
-  def addDrag(node: Double, ctrl: Any): Unit = js.native
-  def addDrag(node: HTMLElement, ctrl: Any): Unit = js.native
+  def addDrag(node: String, ctrl: obj): Unit = js.native
+  def addDrag(node: Double, ctrl: obj): Unit = js.native
+  def addDrag(node: HTMLElement, ctrl: obj): Unit = js.native
   
-  def addDrop(node: String, ctrl: Any): Unit = js.native
-  def addDrop(node: String, ctrl: Any, master_mode: Boolean): Unit = js.native
-  def addDrop(node: Double, ctrl: Any): Unit = js.native
-  def addDrop(node: Double, ctrl: Any, master_mode: Boolean): Unit = js.native
-  def addDrop(node: HTMLElement, ctrl: Any): Unit = js.native
-  def addDrop(node: HTMLElement, ctrl: Any, master_mode: Boolean): Unit = js.native
+  def addDrop(node: String, ctrl: obj): Unit = js.native
+  def addDrop(node: String, ctrl: obj, master_mode: Boolean): Unit = js.native
+  def addDrop(node: Double, ctrl: obj): Unit = js.native
+  def addDrop(node: Double, ctrl: obj, master_mode: Boolean): Unit = js.native
+  def addDrop(node: HTMLElement, ctrl: obj): Unit = js.native
+  def addDrop(node: HTMLElement, ctrl: obj, master_mode: Boolean): Unit = js.native
   
-  def createDrag(event: Event): Unit = js.native
+  def createDrag(event: Event, pointer: String): Unit = js.native
   
   def destroyDrag(): Unit = js.native
   
-  def getContext(): Any = js.native
+  def getContext(): obj = js.native
   
-  def getMaster(target: Any): Any = js.native
+  def getMaster(target: obj): obj = js.native
   
   def getNode(): HTMLElement = js.native
   
@@ -54,7 +54,7 @@ trait DragControl extends StObject {
   
   var top: Double = js.native
   
-  def unlink(id: Any): Unit = js.native
+  def unlink(id: obj): Unit = js.native
 }
 object DragControl {
   

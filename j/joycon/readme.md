@@ -1,7 +1,7 @@
 
 # Scala.js typings for joycon
 
-Typings are for version 2.2.5
+Typings are for version 3.1.1
 
 ## Library description:
 Load config with ease.

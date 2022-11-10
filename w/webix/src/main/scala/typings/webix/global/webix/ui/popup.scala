@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.popup because var conflicts: $dragCreate_Original, $dragDestroy_Original, $dragPos_Original, $height, $scope, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.popup")
+- typings.webix.webix.ui.popup because var conflicts: $dragDestroy_Original, $dragPos_Original, $height, $scope, $setNode, $skin_Original, $view, $width, config, name. Inlined  */ @JSGlobal("webix.ui.popup")
 @js.native
 open class popup ()
   extends typings.webix.mod.ui.popup

@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
@@ -23,23 +22,23 @@ trait dxDropDownButton
   /**
     * Closes the drop-down menu.
     */
-  def close(): DxPromise[Unit] = js.native
+  def close(): js.Promise[Unit] = js.native
   
   def getDataSource(): DataSource[Any, Any] = js.native
   
   /**
     * Opens the drop-down menu.
     */
-  def open(): DxPromise[Unit] = js.native
+  def open(): js.Promise[Unit] = js.native
   
   /**
     * Opens or closes the drop-down menu, reversing the current state.
     */
-  def toggle(): DxPromise[Unit] = js.native
+  def toggle(): js.Promise[Unit] = js.native
   /**
     * Opens or closes the drop-down menu, depending on the argument.
     */
-  def toggle(visibility: Boolean): DxPromise[Unit] = js.native
+  def toggle(visibility: Boolean): js.Promise[Unit] = js.native
 }
 object dxDropDownButton {
   

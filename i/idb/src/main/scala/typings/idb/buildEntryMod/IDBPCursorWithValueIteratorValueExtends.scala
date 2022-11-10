@@ -53,7 +53,11 @@ object IDBPCursorWithValueIteratorValueExtends {
     
     inline def setKey(value: CursorKey[DBTypes, StoreName, IndexName]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setKeyVarargs(value: Any*): Self = StObject.set(x, "key", js.Array(value*))
+    
     inline def setPrimaryKey(value: StoreKey[DBTypes, StoreName]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryKeyVarargs(value: Any*): Self = StObject.set(x, "primaryKey", js.Array(value*))
     
     inline def setRequest(value: IDBRequest[Any]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

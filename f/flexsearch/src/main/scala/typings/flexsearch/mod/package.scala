@@ -15,6 +15,24 @@ inline def registerCharset(name: String, charset: CharsetOptions): Unit = (^.asI
 
 inline def registerLanguage(name: String, language: LanguageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends undefined ? (): void : (result : T): void
+  }}}
+  */
+type AsyncCallback[T] = js.Function0[Unit]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [Store, Enrich] extends [flexsearch.flexsearch.EnrichStoreOption, true] ? std.Array<flexsearch.flexsearch.EnrichedDocumentSearchResultSetUnit<T>> : std.Array<flexsearch.flexsearch.SimpleDocumentSearchResultSetUnit>
+  }}}
+  */
+type DocumentSearchResult[T, Store /* <: StoreOption */, Enrich /* <: Boolean */] = js.Array[EnrichedDocumentSearchResultSetUnit[T]]
+
 /* Rewritten from type alias, can be one of: 
   - typings.flexsearch.flexsearchBooleans.`false`
   - typings.flexsearch.flexsearchStrings.default

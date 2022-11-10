@@ -28,11 +28,11 @@ open class MultiCompiler protected () extends StObject {
   
   var intermediateFileSystem: IntermediateFileSystem = js.native
   
-  val options: js.Array[WebpackOptionsNormalized] & MultiCompilerOptions = js.native
+  def options: js.Array[WebpackOptionsNormalized] & MultiCompilerOptions = js.native
   
   var outputFileSystem: OutputFileSystem = js.native
   
-  val outputPath: String = js.native
+  def outputPath: String = js.native
   
   def purgeInputFileSystem(): Unit = js.native
   

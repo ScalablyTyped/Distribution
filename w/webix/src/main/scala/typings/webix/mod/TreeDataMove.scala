@@ -15,22 +15,22 @@ trait TreeDataMove extends StObject {
   var $dropAllow_Original: WebixCallback = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: obj): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview, details: Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: baseview, details: obj): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: obj): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview, details: Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: baseview, details: obj): Double = js.native
   
   def move(sid: String, tindex: Double): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: obj): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: baseview, details: Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: baseview, details: obj): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: Unit, details: Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: Unit, details: obj): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: baseview, details: Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: baseview, details: obj): String | Double = js.native
 }
 object TreeDataMove {
   

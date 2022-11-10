@@ -100,6 +100,8 @@ trait Assign extends StObject {
   
   def radToDeg(rad: Double): Double
   
+  def releaseCanvas(canvases: HTMLCanvasElement*): Unit
+  
   def requestAnimFrame(callback: js.Function): Unit
   
   def `throw`(str: String): scala.Nothing
@@ -152,11 +154,12 @@ object Assign {
     isObject: Any => /* is std.Object */ Boolean,
     isValidSelector: Any => Boolean,
     radToDeg: Double => Double,
+    releaseCanvas: /* repeated */ HTMLCanvasElement => Unit,
     requestAnimFrame: js.Function => Unit,
     `throw`: String => scala.Nothing,
     warn: String => Unit
   ): Assign = {
-    val __obj = js.Dynamic.literal(_assign = js.Any.fromFunction2(_assign), _capitalize = js.Any.fromFunction1(_capitalize), _degToRad = js.Any.fromFunction1(_degToRad), _getFirstPointerId = js.Any.fromFunction1(_getFirstPointerId), _getProjectionToLine = js.Any.fromFunction3(_getProjectionToLine), _getProjectionToSegment = js.Any.fromFunction6(_getProjectionToSegment), _getRotation = js.Any.fromFunction1(_getRotation), _hex3ColorToRGBA = js.Any.fromFunction1(_hex3ColorToRGBA), _hex6ColorToRGBA = js.Any.fromFunction1(_hex6ColorToRGBA), _hexToRgb = js.Any.fromFunction1(_hexToRgb), _hslColorToRGBA = js.Any.fromFunction1(_hslColorToRGBA), _inRange = js.Any.fromFunction3(_inRange), _isArray = js.Any.fromFunction1(_isArray), _isBoolean = js.Any.fromFunction1(_isBoolean), _isElement = js.Any.fromFunction1(_isElement), _isFunction = js.Any.fromFunction1(_isFunction), _isInDocument = js.Any.fromFunction1(_isInDocument), _isNumber = js.Any.fromFunction1(_isNumber), _isPlainObject = js.Any.fromFunction1(_isPlainObject), _isString = js.Any.fromFunction1(_isString), _namedColorToRBA = js.Any.fromFunction1(_namedColorToRBA), _prepareArrayForTween = js.Any.fromFunction3(_prepareArrayForTween), _prepareToStringify = js.Any.fromFunction1(_prepareToStringify), _radToDeg = js.Any.fromFunction1(_radToDeg), _rgbColorToRGBA = js.Any.fromFunction1(_rgbColorToRGBA), _rgbToHex = js.Any.fromFunction3(_rgbToHex), _rgbaColorToRGBA = js.Any.fromFunction1(_rgbaColorToRGBA), _sign = js.Any.fromFunction1(_sign), _urlToImage = js.Any.fromFunction2(_urlToImage), cloneArray = js.Any.fromFunction1(cloneArray), cloneObject = js.Any.fromFunction1(cloneObject), colorToRGBA = js.Any.fromFunction1(colorToRGBA), createCanvasElement = js.Any.fromFunction0(createCanvasElement), createImageElement = js.Any.fromFunction0(createImageElement), degToRad = js.Any.fromFunction1(degToRad), each = js.Any.fromFunction2(each), error = js.Any.fromFunction1(error), getRGB = js.Any.fromFunction1(getRGB), getRandomColor = js.Any.fromFunction0(getRandomColor), haveIntersection = js.Any.fromFunction2(haveIntersection), isObject = js.Any.fromFunction1(isObject), isValidSelector = js.Any.fromFunction1(isValidSelector), radToDeg = js.Any.fromFunction1(radToDeg), requestAnimFrame = js.Any.fromFunction1(requestAnimFrame), warn = js.Any.fromFunction1(warn))
+    val __obj = js.Dynamic.literal(_assign = js.Any.fromFunction2(_assign), _capitalize = js.Any.fromFunction1(_capitalize), _degToRad = js.Any.fromFunction1(_degToRad), _getFirstPointerId = js.Any.fromFunction1(_getFirstPointerId), _getProjectionToLine = js.Any.fromFunction3(_getProjectionToLine), _getProjectionToSegment = js.Any.fromFunction6(_getProjectionToSegment), _getRotation = js.Any.fromFunction1(_getRotation), _hex3ColorToRGBA = js.Any.fromFunction1(_hex3ColorToRGBA), _hex6ColorToRGBA = js.Any.fromFunction1(_hex6ColorToRGBA), _hexToRgb = js.Any.fromFunction1(_hexToRgb), _hslColorToRGBA = js.Any.fromFunction1(_hslColorToRGBA), _inRange = js.Any.fromFunction3(_inRange), _isArray = js.Any.fromFunction1(_isArray), _isBoolean = js.Any.fromFunction1(_isBoolean), _isElement = js.Any.fromFunction1(_isElement), _isFunction = js.Any.fromFunction1(_isFunction), _isInDocument = js.Any.fromFunction1(_isInDocument), _isNumber = js.Any.fromFunction1(_isNumber), _isPlainObject = js.Any.fromFunction1(_isPlainObject), _isString = js.Any.fromFunction1(_isString), _namedColorToRBA = js.Any.fromFunction1(_namedColorToRBA), _prepareArrayForTween = js.Any.fromFunction3(_prepareArrayForTween), _prepareToStringify = js.Any.fromFunction1(_prepareToStringify), _radToDeg = js.Any.fromFunction1(_radToDeg), _rgbColorToRGBA = js.Any.fromFunction1(_rgbColorToRGBA), _rgbToHex = js.Any.fromFunction3(_rgbToHex), _rgbaColorToRGBA = js.Any.fromFunction1(_rgbaColorToRGBA), _sign = js.Any.fromFunction1(_sign), _urlToImage = js.Any.fromFunction2(_urlToImage), cloneArray = js.Any.fromFunction1(cloneArray), cloneObject = js.Any.fromFunction1(cloneObject), colorToRGBA = js.Any.fromFunction1(colorToRGBA), createCanvasElement = js.Any.fromFunction0(createCanvasElement), createImageElement = js.Any.fromFunction0(createImageElement), degToRad = js.Any.fromFunction1(degToRad), each = js.Any.fromFunction2(each), error = js.Any.fromFunction1(error), getRGB = js.Any.fromFunction1(getRGB), getRandomColor = js.Any.fromFunction0(getRandomColor), haveIntersection = js.Any.fromFunction2(haveIntersection), isObject = js.Any.fromFunction1(isObject), isValidSelector = js.Any.fromFunction1(isValidSelector), radToDeg = js.Any.fromFunction1(radToDeg), releaseCanvas = js.Any.fromFunction1(releaseCanvas), requestAnimFrame = js.Any.fromFunction1(requestAnimFrame), warn = js.Any.fromFunction1(warn))
     __obj.updateDynamic("throw")(js.Any.fromFunction1(`throw`))
     __obj.asInstanceOf[Assign]
   }
@@ -190,6 +193,8 @@ object Assign {
     inline def setIsValidSelector(value: Any => Boolean): Self = StObject.set(x, "isValidSelector", js.Any.fromFunction1(value))
     
     inline def setRadToDeg(value: Double => Double): Self = StObject.set(x, "radToDeg", js.Any.fromFunction1(value))
+    
+    inline def setReleaseCanvas(value: /* repeated */ HTMLCanvasElement => Unit): Self = StObject.set(x, "releaseCanvas", js.Any.fromFunction1(value))
     
     inline def setRequestAnimFrame(value: js.Function => Unit): Self = StObject.set(x, "requestAnimFrame", js.Any.fromFunction1(value))
     

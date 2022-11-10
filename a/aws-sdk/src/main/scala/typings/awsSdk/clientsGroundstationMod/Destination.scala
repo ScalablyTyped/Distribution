@@ -14,7 +14,7 @@ trait Destination extends StObject {
   /**
     * UUID of a Config.
     */
-  var configId: js.UndefOr[String] = js.undefined
+  var configId: js.UndefOr[Uuid] = js.undefined
   
   /**
     * Type of a Config.
@@ -39,7 +39,7 @@ object Destination {
     
     inline def setConfigDetailsUndefined: Self = StObject.set(x, "configDetails", js.undefined)
     
-    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: Uuid): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
     inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     

@@ -86,8 +86,9 @@ object mod {
       key: Key,
       defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[Key] */ js.Any
     ): /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[Key] */ js.Any = js.native
-    def get[Key /* <: String */, Value](key: Exclude[Key, /* keyof T */ String]): Value = js.native
     def get[Key /* <: String */, Value](key: Exclude[Key, /* keyof T */ String], defaultValue: Value): Value = js.native
+    @JSName("get")
+    def get_KeyValue_Value[Key /* <: String */, Value](key: Exclude[Key, /* keyof T */ String]): Value = js.native
     
     /**
       Check if an item exists.

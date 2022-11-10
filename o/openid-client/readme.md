@@ -1,7 +1,7 @@
 
 # Scala.js typings for openid-client
 
-Typings are for version 5.2.1
+Typings are for version 5.3.0
 
 ## Library description:
 OpenID Connect Relying Party (RP, Client) implementation for Node.js runtime, supports passportjs

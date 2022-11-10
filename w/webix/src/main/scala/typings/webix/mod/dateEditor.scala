@@ -1,0 +1,15 @@
+package typings.webix.mod
+
+import typings.webix.webixStrings.date
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait dateEditor
+  extends StObject
+     with popupEditor {
+  
+  @JSName("popupType")
+  var popupType_dateEditor: date = js.native
+}

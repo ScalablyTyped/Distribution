@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait PaymentAdviceCode extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "PaymentAdviceCode")
-@js.native
-object PaymentAdviceCode extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`01`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`02`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`03`
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`21`
+*/
+trait PaymentAdviceCode extends StObject
+object PaymentAdviceCode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PaymentAdviceCode & String] = js.native
+  inline def `01`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`01` = "01".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`01`]
   
-  @js.native
-  sealed trait MASTERCARD_ACCOUNT_CLOSED
-    extends StObject
-       with PaymentAdviceCode
-  /* "03" */ val MASTERCARD_ACCOUNT_CLOSED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.PaymentAdviceCode.MASTERCARD_ACCOUNT_CLOSED & String = js.native
+  inline def `02`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`02` = "02".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`02`]
   
-  @js.native
-  sealed trait MASTERCARD_CREDIT_LIMIT
-    extends StObject
-       with PaymentAdviceCode
-  /* "02" */ val MASTERCARD_CREDIT_LIMIT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.PaymentAdviceCode.MASTERCARD_CREDIT_LIMIT & String = js.native
+  inline def `03`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`03` = "03".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`03`]
   
-  @js.native
-  sealed trait MASTERCARD_EXPIRED
-    extends StObject
-       with PaymentAdviceCode
-  /* "01" */ val MASTERCARD_EXPIRED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.PaymentAdviceCode.MASTERCARD_EXPIRED & String = js.native
-  
-  @js.native
-  sealed trait MASTERCARD_UNSUCCESSFUL
-    extends StObject
-       with PaymentAdviceCode
-  /* "21" */ val MASTERCARD_UNSUCCESSFUL: typings.paypalCheckoutServerSdk.libPaymentsLibMod.PaymentAdviceCode.MASTERCARD_UNSUCCESSFUL & String = js.native
+  inline def `21`: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`21` = "21".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.`21`]
 }

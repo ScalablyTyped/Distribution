@@ -11,7 +11,6 @@ import typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter
 import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.DxEvent
@@ -149,7 +148,7 @@ trait dxGantt
   /**
     * Reloads data and repaints the Gantt component.
     */
-  def refresh(): DxPromise[Unit] = js.native
+  def refresh(): js.Promise[Unit] = js.native
   
   def scrollToDate(date: String): Unit = js.native
   /**

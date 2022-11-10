@@ -8,7 +8,6 @@ import typings.puppeteerCore.libEsmPuppeteerCommonInputMod.MouseButton
 import typings.puppeteerCore.libEsmPuppeteerCommonTypesMod.EvaluateFunc
 import typings.puppeteerCore.libEsmPuppeteerCommonTypesMod.HandleFor
 import typings.puppeteerCore.libEsmPuppeteerCommonTypesMod.HandleOr
-import typings.puppeteerCore.libEsmPuppeteerCommonTypesMod._HandleOr
 import typings.std.Awaited
 import typings.std.Map
 import typings.std.Node
@@ -21,9 +20,7 @@ object libEsmPuppeteerCommonJshandleMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/JSHandle", "JSHandle")
   @js.native
-  open class JSHandle[T] protected ()
-    extends StObject
-       with _HandleOr[T] {
+  open class JSHandle[T] protected () extends StObject {
     /**
       * @internal
       */

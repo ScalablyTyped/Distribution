@@ -24,13 +24,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [...infer U, unknown] ? U : []
     }}}
     */
-  @js.native
-  trait DropLastArrayElement[T /* <: js.Array[Any] */] extends StObject
+  type DropLastArrayElement[T /* <: js.Array[Any] */] = js.Array[Any]
   
   trait InternalOptions[Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */] extends StObject {
     
@@ -63,7 +62,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [...any, infer L] ? L : never
     }}}
@@ -137,11 +136,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${infer_}${X} * / string ? true : false
     }}}
     */
-  @js.native
-  trait StringEndsWith[S, X /* <: String */] extends StObject
+  type StringEndsWith[S, X /* <: String */] = `true`
 }

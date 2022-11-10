@@ -172,7 +172,7 @@ object libGuardMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     G extends io-ts.io-ts/lib/Guard.Guard<infer I, any> ? I : never
     }}}
@@ -182,7 +182,7 @@ object libGuardMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     G extends io-ts.io-ts/lib/Guard.Guard<any, infer A> ? A : never
     }}}

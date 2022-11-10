@@ -154,6 +154,15 @@ type CorsOrigin = Boolean | String | js.RegExp | (js.Array[String | js.RegExp])
 
 type FilterPattern = (js.Array[String | js.RegExp]) | String | js.RegExp | Null
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends rollup.rollup.ObjectHook<infer H, {}> ? H : T
+  }}}
+  */
+type HookHandler[T] = T
+
 type IndexHtmlTransform = IndexHtmlTransformHook | Enforce
 
 type IndexHtmlTransformHook = js.ThisFunction2[
@@ -165,6 +174,15 @@ IndexHtmlTransformResult | Unit | (js.Promise[IndexHtmlTransformResult | Unit])]
 type IndexHtmlTransformResult = String | js.Array[HtmlTagDescriptor] | Html
 
 type Manifest = Record[String, ManifestChunk]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Function ? T : never
+  }}}
+  */
+type MapToFunction[T] = T
 
 type Matcher = AnymatchPattern | js.Array[AnymatchPattern]
 

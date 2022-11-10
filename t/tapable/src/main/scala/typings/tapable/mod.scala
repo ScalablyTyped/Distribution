@@ -130,13 +130,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? T : [T]
     }}}
     */
-  @js.native
-  trait AsArray[T] extends StObject
+  type AsArray[T] = T
   
   @js.native
   trait AsyncHook[T, R, AdditionalOptions]
@@ -157,13 +156,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends 0 ? std.Array<void> : std.ReadonlyArray<U> & {  0 :U,   length :T}
     }}}
     */
-  @js.native
-  trait FixedSizeArray[T /* <: Double */, U] extends StObject
+  type FixedSizeArray[T /* <: Double */, U] = js.Array[Unit]
   
   trait FullTap
     extends StObject
@@ -300,25 +298,23 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     X extends tapable.tapable.UnsetAdditionalOptions ? {} : X
     }}}
     */
-  @js.native
-  trait IfSet[X] extends StObject
+  type IfSet[X] = X
   
   type InnerCallback[E, T] = js.Function2[/* error */ js.UndefOr[E | Null | `false`], /* result */ js.UndefOr[T], Unit]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 ? T : never
     }}}
     */
-  @js.native
-  trait Measure[T /* <: Double */] extends StObject
+  type Measure[T /* <: Double */] = T
   
   trait Tap
     extends StObject

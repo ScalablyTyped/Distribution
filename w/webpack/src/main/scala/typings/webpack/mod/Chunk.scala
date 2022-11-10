@@ -41,7 +41,7 @@ open class Chunk () extends StObject {
   
   def disconnectFromGroups(): Unit = js.native
   
-  val entryModule: js.UndefOr[Module] = js.native
+  def entryModule: Module = js.native
   
   var extraAsync: Boolean = js.native
   
@@ -90,7 +90,7 @@ open class Chunk () extends StObject {
   
   def getNumberOfModules(): Double = js.native
   
-  val groupsIterable: js.Iterable[ChunkGroup] = js.native
+  def groupsIterable: js.Iterable[ChunkGroup] = js.native
   
   def hasAsyncChunks(): Boolean = js.native
   
@@ -122,7 +122,7 @@ open class Chunk () extends StObject {
   
   def isOnlyInitial(): Boolean = js.native
   
-  val modulesIterable: js.Iterable[Module] = js.native
+  def modulesIterable: js.Iterable[Module] = js.native
   
   def modulesSize(): Double = js.native
   

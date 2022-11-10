@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Hash extends StObject {
   
   /**
-  	 * Calculates the digest {@link https ://nodejs.org/api/crypto.html#crypto_hash_digest_encoding}
+  	 * Calculates the digest {@link https://nodejs.org/api/crypto.html#crypto_hash_digest_encoding}
   	 */
   def digest(): String | Buffer = js.native
   def digest(encoding: String): String | Buffer = js.native
   
   /**
-  	 * Update hash {@link https ://nodejs.org/api/crypto.html#crypto_hash_update_data_inputencoding}
+  	 * Update hash {@link https://nodejs.org/api/crypto.html#crypto_hash_update_data_inputencoding}
   	 */
   def update(data: String): Hash = js.native
   def update(data: String, inputEncoding: String): Hash = js.native

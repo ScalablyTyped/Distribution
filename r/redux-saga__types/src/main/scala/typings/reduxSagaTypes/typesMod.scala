@@ -32,23 +32,21 @@ object typesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     P extends @redux-saga/types.@redux-saga/types/types.ActionSubPattern<@redux-saga/types.@redux-saga/types/types.Action<string>> ? @redux-saga/types.@redux-saga/types/types.ActionMatchingSubPattern<P> : P extends std.Array<@redux-saga/types.@redux-saga/types/types.ActionSubPattern<@redux-saga/types.@redux-saga/types/types.Action<string>>> ? @redux-saga/types.@redux-saga/types/types.ActionMatchingSubPattern<P[number]> : never
     }}}
     */
-  @js.native
-  trait ActionMatchingPattern[P /* <: ActionPattern[Action[String]] */] extends StObject
+  type ActionMatchingPattern[P /* <: ActionPattern[Action[String]] */] = Action[String]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     P extends @redux-saga/types.@redux-saga/types/types.GuardPredicate<infer A, @redux-saga/types.@redux-saga/types/types.Action<string>> ? A : P extends @redux-saga/types.@redux-saga/types/types.StringableActionCreator<infer A> ? A : @redux-saga/types.@redux-saga/types/types.Action<string>
     }}}
     */
-  @js.native
-  trait ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[String]] */] extends StObject
+  type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[String]] */] = Action[String]
   
   type ActionPattern[Guard /* <: Action[String] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
   

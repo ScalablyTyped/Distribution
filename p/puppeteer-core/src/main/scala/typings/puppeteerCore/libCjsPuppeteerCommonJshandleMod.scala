@@ -8,7 +8,6 @@ import typings.puppeteerCore.libCjsPuppeteerCommonInputMod.MouseButton
 import typings.puppeteerCore.libCjsPuppeteerCommonTypesMod.EvaluateFunc
 import typings.puppeteerCore.libCjsPuppeteerCommonTypesMod.HandleFor
 import typings.puppeteerCore.libCjsPuppeteerCommonTypesMod.HandleOr
-import typings.puppeteerCore.libCjsPuppeteerCommonTypesMod._HandleOr
 import typings.std.Awaited
 import typings.std.Map
 import typings.std.Node
@@ -21,9 +20,7 @@ object libCjsPuppeteerCommonJshandleMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/JSHandle", "JSHandle")
   @js.native
-  open class JSHandle[T] protected ()
-    extends StObject
-       with _HandleOr[T] {
+  open class JSHandle[T] protected () extends StObject {
     /**
       * @internal
       */

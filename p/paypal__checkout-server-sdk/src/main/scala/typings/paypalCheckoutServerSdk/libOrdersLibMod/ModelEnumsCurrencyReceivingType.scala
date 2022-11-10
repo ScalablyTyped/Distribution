@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ModelEnumsCurrencyReceivingType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "ModelEnumsCurrencyReceivingType")
-@js.native
-object ModelEnumsCurrencyReceivingType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT_OPEN
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DENY
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOLD
+*/
+trait ModelEnumsCurrencyReceivingType extends StObject
+object ModelEnumsCurrencyReceivingType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ModelEnumsCurrencyReceivingType & String] = js.native
+  inline def ACCEPT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT = "ACCEPT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT]
   
-  @js.native
-  sealed trait ACCEPT
-    extends StObject
-       with ModelEnumsCurrencyReceivingType
-  /* "ACCEPT" */ val ACCEPT: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT & String = js.native
+  inline def ACCEPT_OPEN: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT_OPEN = "ACCEPT_OPEN".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.ACCEPT_OPEN]
   
-  @js.native
-  sealed trait ACCEPT_OPEN
-    extends StObject
-       with ModelEnumsCurrencyReceivingType
-  /* "ACCEPT_OPEN" */ val ACCEPT_OPEN: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT_OPEN & String = js.native
+  inline def DENY: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DENY = "DENY".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DENY]
   
-  @js.native
-  sealed trait DENY
-    extends StObject
-       with ModelEnumsCurrencyReceivingType
-  /* "DENY" */ val DENY: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.DENY & String = js.native
-  
-  @js.native
-  sealed trait HOLD
-    extends StObject
-       with ModelEnumsCurrencyReceivingType
-  /* "HOLD" */ val HOLD: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.HOLD & String = js.native
+  inline def HOLD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOLD = "HOLD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.HOLD]
 }

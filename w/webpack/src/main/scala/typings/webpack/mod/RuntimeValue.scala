@@ -8,44 +8,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait RuntimeValue extends StObject {
   
-  def exec(parser: JavascriptParser, valueCacheVersions: Map[String, String | Set[String]], key: String): CodeValuePrimitive
+  def exec(parser: JavascriptParser, valueCacheVersions: Map[String, String | Set[String]], key: String): CodeValuePrimitive = js.native
   
-  val fileDependencies: js.UndefOr[`true` | js.Array[String]] = js.undefined
+  def fileDependencies: `true` | js.Array[String] = js.native
   
-  def fn(arg0: Key): CodeValuePrimitive
+  def fn(arg0: Key): CodeValuePrimitive = js.native
   
-  def getCacheVersion(): js.UndefOr[String]
+  def getCacheVersion(): js.UndefOr[String] = js.native
   
-  var options: `true` | RuntimeValueOptions
-}
-object RuntimeValue {
-  
-  inline def apply(
-    exec: (JavascriptParser, Map[String, String | Set[String]], String) => CodeValuePrimitive,
-    fn: Key => CodeValuePrimitive,
-    getCacheVersion: () => js.UndefOr[String],
-    options: `true` | RuntimeValueOptions
-  ): RuntimeValue = {
-    val __obj = js.Dynamic.literal(exec = js.Any.fromFunction3(exec), fn = js.Any.fromFunction1(fn), getCacheVersion = js.Any.fromFunction0(getCacheVersion), options = options.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RuntimeValue]
-  }
-  
-  extension [Self <: RuntimeValue](x: Self) {
-    
-    inline def setExec(value: (JavascriptParser, Map[String, String | Set[String]], String) => CodeValuePrimitive): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
-    
-    inline def setFileDependencies(value: `true` | js.Array[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
-    
-    inline def setFileDependenciesUndefined: Self = StObject.set(x, "fileDependencies", js.undefined)
-    
-    inline def setFileDependenciesVarargs(value: String*): Self = StObject.set(x, "fileDependencies", js.Array(value*))
-    
-    inline def setFn(value: Key => CodeValuePrimitive): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
-    
-    inline def setGetCacheVersion(value: () => js.UndefOr[String]): Self = StObject.set(x, "getCacheVersion", js.Any.fromFunction0(value))
-    
-    inline def setOptions(value: `true` | RuntimeValueOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-  }
+  var options: `true` | RuntimeValueOptions = js.native
 }

@@ -1311,7 +1311,25 @@ Unit]
 
 type DirectiveModifiers = Record[String, Boolean]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Options extends std.Array<infer V> ? (event : V, args : ...any): void : {} extends Options ? (event : string, args : ...any): void : @vue/shared.@vue/shared.UnionToIntersection<{[ key in Event ]: Options[key] extends (args : infer Args): any? (event : key, args : Args): void : (event : key, args : ...any): void}[Event]>
+  }}}
+  */
+type EmitFn[Options, Event /* <: /* keyof Options */ String */] = js.Function2[/* event */ String, /* repeated */ Any, Unit]
+
 type EmitsOptions = ObjectEmitsOptions | js.Array[String]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends void ? {} : T
+  }}}
+  */
+type EnsureNonVoid[T] = T
 
 type ErrorCapturedHook[TError] = js.Function3[
 /* err */ TError, 
@@ -1339,10 +1357,46 @@ type HMRComponent = (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, A
 
 type Hook[T] = T | js.Array[T]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null | number | string | boolean | symbol | std.Function ? T | (props : P): T : (props : P): T
+  }}}
+  */
+type InferDefault[P, T] = T | (js.Function1[/* props */ P, T])
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [T] extends [null] ? any : [T] extends [{  type :null | true}] ? any : [T] extends [std.ObjectConstructor | {readonly type (): any, readonly type (value : any): any,   type :std.ObjectConstructor}] ? std.Record<string, any> : [T] extends [std.BooleanConstructor | {readonly type <T>(): boolean, readonly type <T>(value : T): boolean,   type :std.BooleanConstructor}] ? boolean : [T] extends [std.DateConstructor | {readonly type (): string,   type :std.DateConstructor}] ? std.Date : [T] extends [std.Array<infer U> | {  type :std.Array<infer U>}] ? U extends std.DateConstructor ? std.Date | @vue/runtime-core.@vue/runtime-core.InferPropType<U> : @vue/runtime-core.@vue/runtime-core.InferPropType<U> : [T] extends [@vue/runtime-core.@vue/runtime-core.Prop<infer V, infer D>] ? unknown extends V ? @vue/shared.@vue/shared.IfAny<V, V, D> : V : T
+  }}}
+  */
+type InferPropType[T] = Record[String, Any]
+
 type InjectionKey[T] = js.Symbol
 
 /* Excluded from this release type: InternalRenderFunction */
 type InternalSlots = StringDictionary[js.UndefOr[Slot]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  @vue/runtime-core.@vue/runtime-core.IsDefaultMixinComponent<T> extends true ? @vue/runtime-core.@vue/runtime-core.OptionTypesType<{}, {}, {}, {}, {}, {}> : @vue/shared.@vue/shared.UnionToIntersection<@vue/runtime-core.@vue/runtime-core.ExtractMixin<T>>
+  }}}
+  */
+type IntersectionMixin[T] = OptionTypesType[js.Object, js.Object, js.Object, js.Object, js.Object, js.Object]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends @vue/runtime-core.@vue/runtime-core.ComponentOptionsMixin ? @vue/runtime-core.@vue/runtime-core.ComponentOptionsMixin extends T ? true : false : false
+  }}}
+  */
+type IsDefaultMixinComponent[T] = `true`
 
 type LegacyPublicInstance = (ComponentPublicInstance[
 js.Object, 
@@ -1397,6 +1451,15 @@ type NormalizedProp = Null | PropOptionsanyanyshouldCa
 type NormalizedProps = Record[String, NormalizedProp]
 
 type NormalizedPropsOptions = (js.Tuple2[NormalizedProps, js.Array[String]]) | js.Array[Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends undefined ? never : T
+  }}}
+  */
+type NotUndefined[T] = T
 
 type ObjectEmitsOptions = Record[String, (js.Function1[/* repeated */ Any, Any]) | Null]
 

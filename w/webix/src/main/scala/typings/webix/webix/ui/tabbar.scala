@@ -3,6 +3,7 @@ package typings.webix.webix.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,20 +38,20 @@ trait tabbar
   var $renderIcon_Original: WebixCallback = js.native
   
   @JSName("$renderInput")
-  def $renderInput(obj: Any, html: String, id: String): String = js.native
+  def $renderInput(obj: obj, html: String, id: String): String = js.native
   @JSName("$renderInput")
-  def $renderInput(obj: Any, html: String, id: Double): String = js.native
+  def $renderInput(obj: obj, html: String, id: Double): String = js.native
   
   @JSName("$renderLabel")
-  def $renderLabel(config: Any, id: String): String = js.native
+  def $renderLabel(config: obj, id: String): String = js.native
   @JSName("$renderLabel")
-  def $renderLabel(config: Any, id: Double): String = js.native
+  def $renderLabel(config: obj, id: Double): String = js.native
   
   @JSName("$render")
   var $render_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -97,8 +98,8 @@ trait tabbar
   
   def getInputNode(): HTMLElement = js.native
   
-  def getOption(id: String): Any = js.native
-  def getOption(id: Double): Any = js.native
+  def getOption(id: String): obj = js.native
+  def getOption(id: Double): obj = js.native
   
   def getPopup(): baseview = js.native
   
@@ -109,7 +110,7 @@ trait tabbar
   def hideOption(id: String): Unit = js.native
   def hideOption(id: Double): Unit = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def on_click(args: Any*): Any = js.native
   @JSName("on_click")
@@ -123,12 +124,23 @@ trait tabbar
   def removeOption(id: String): Unit = js.native
   def removeOption(id: Double): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def setBottomText(text: String): Unit = js.native
   
   def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
   def setValueHere(value: String): Unit = js.native
   def setValueHere(value: Double): Unit = js.native
@@ -136,7 +148,10 @@ trait tabbar
   def showOption(id: String): Unit = js.native
   def showOption(id: Double): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

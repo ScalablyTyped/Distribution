@@ -4,24 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait TaxIdType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "TaxIdType")
-@js.native
-object TaxIdType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CNPJ
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CPF
+*/
+trait TaxIdType extends StObject
+object TaxIdType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TaxIdType & String] = js.native
+  inline def BR_CNPJ: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CNPJ = "BR_CNPJ".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CNPJ]
   
-  @js.native
-  sealed trait BR_CNPJ
-    extends StObject
-       with TaxIdType
-  /* "BR_CNPJ" */ val BR_CNPJ: typings.paypalCheckoutServerSdk.libPaymentsLibMod.TaxIdType.BR_CNPJ & String = js.native
-  
-  @js.native
-  sealed trait BR_CPF
-    extends StObject
-       with TaxIdType
-  /* "BR_CPF" */ val BR_CPF: typings.paypalCheckoutServerSdk.libPaymentsLibMod.TaxIdType.BR_CPF & String = js.native
+  inline def BR_CPF: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CPF = "BR_CPF".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BR_CPF]
 }

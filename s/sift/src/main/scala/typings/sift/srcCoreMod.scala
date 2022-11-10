@@ -405,7 +405,7 @@ object srcCoreMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TItemSchema extends sift.sift/src/core.NotObject ? {} : {[ k in keyof TItemSchema ]:? TItemSchema[k] | sift.sift/src/core.ValueQuery<TItemSchema[k]>}
     }}}
@@ -423,21 +423,19 @@ object srcCoreMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<infer U> ? U : T
     }}}
     */
-  @js.native
-  trait Unpacked[T] extends StObject
+  type Unpacked[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TValue extends std.Array<any> ? sift.sift/src/core.ArrayValueQuery<sift.sift/src/core.Unpacked<TValue>> : sift.sift/src/core.BasicValueQuery<TValue>
     }}}
     */
-  @js.native
-  trait ValueQuery[TValue] extends StObject
+  type ValueQuery[TValue] = ArrayValueQuery[Unpacked[TValue]]
 }

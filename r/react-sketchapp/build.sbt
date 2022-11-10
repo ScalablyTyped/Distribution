@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-sketchapp"
-version := "3.2.6-3d3e4e"
+version := "3.2.6-da4a38"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
-  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-4af8b1",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
+  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-6d095b",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "yoga-layout" % "1.9-dt-20211202Z-cd6365")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

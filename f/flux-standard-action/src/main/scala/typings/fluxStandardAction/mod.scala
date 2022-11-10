@@ -51,13 +51,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Meta extends undefined ? flux-standard-action.flux-standard-action.ErrorFluxStandardActionWithPayload<Type, CustomError, Meta> : flux-standard-action.flux-standard-action.ErrorFluxStandardActionWithPayloadAndMeta<Type, CustomError, Meta>
     }}}
     */
-  @js.native
-  trait ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] extends StObject
+  type ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] = ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
@@ -158,13 +157,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Payload extends undefined ? Meta extends undefined ? flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> : flux-standard-action.flux-standard-action.FluxStandardActionWithMeta<Type, Payload, Meta> : Meta extends undefined ? flux-standard-action.flux-standard-action.FluxStandardActionWithPayload<Type, Payload, Meta> : flux-standard-action.flux-standard-action.FluxStandardActionWithPayloadAndMeta<Type, Payload, Meta>
     }}}
     */
-  @js.native
-  trait FluxStandardActionAuto[Type /* <: String */, Payload, Meta] extends StObject
+  type FluxStandardActionAuto[Type /* <: String */, Payload, Meta] = FluxStandardAction[Type, Payload, Meta]
   
   trait FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta]
     extends StObject

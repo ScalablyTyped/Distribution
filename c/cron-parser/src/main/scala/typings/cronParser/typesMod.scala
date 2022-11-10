@@ -34,23 +34,21 @@ object typesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Accu['length'] extends End ? Current : cron-parser.cron-parser/types.BuildRange<Current | Accu['length'], End, [number, ...Accu]>
     }}}
     */
-  @js.native
-  trait BuildRange[Current /* <: Double */, End /* <: Double */, Accu /* <: Array[Double] */] extends StObject
+  type BuildRange[Current /* <: Double */, End /* <: Double */, Accu /* <: Array[Double] */] = Current
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Current['length'] extends Count ? Current : cron-parser.cron-parser/types.BuildRangeTuple<[number, ...Current], Count>
     }}}
     */
-  @js.native
-  trait BuildRangeTuple[Current /* <: Array[Double] */, Count /* <: Double */] extends StObject
+  type BuildRangeTuple[Current /* <: Array[Double] */, Count /* <: Double */] = Current
   
   type CronExpression[IsIterable /* <: Boolean */] = ICronExpression[CronFields, IsIterable]
   

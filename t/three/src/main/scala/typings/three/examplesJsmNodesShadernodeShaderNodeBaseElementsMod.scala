@@ -774,13 +774,12 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     P extends [...std.Array<unknown>] ? three.three/examples/jsm/nodes/shadernode/ShaderNode.ProxiedTuple<P> : [three.three/examples/jsm/nodes/shadernode/ShaderNode.ProxiedObject<P>]
     }}}
     */
-  @js.native
-  trait Fn_[P /* <: FunctionNodeArguments */] extends StObject
+  type Fn_[P /* <: FunctionNodeArguments */] = ProxiedTuple[P]
   
   @js.native
   trait Operator extends StObject {

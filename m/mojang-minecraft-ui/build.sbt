@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mojang-minecraft-ui"
-version := "0.1-dt-20220516Z-99649d"
+version := "0.1-dt-20220516Z-ca854d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "mojang-minecraft" % "0.1-dt-20220829Z-e50199",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "mojang-minecraft" % "0.1-dt-20220829Z-c71598",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

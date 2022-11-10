@@ -127,6 +127,15 @@ type ApiClientObjectMap[T] = StringDictionary[T]
 
 type AuthTokenFactory = js.Function0[String]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  V extends std.Record<string, unknown> ? @firebase/firestore.@firebase/firestore/dist/lite/internal.AddPrefixToKeys<K, @firebase/firestore.@firebase/firestore/dist/lite/internal.UpdateData<V>> : never
+  }}}
+  */
+type ChildUpdateFields[K /* <: String */, V] = AddPrefixToKeys[K, UpdateData[V]]
+
 /**
   * A Listener for credential change events. The listener should fetch a new
   * token and may need to invalidate other state if the current user has also
@@ -147,6 +156,15 @@ type PartialWithFieldValue[T] = Partial[T] | (/* import warning: importer.Import
 type Primitive = js.UndefOr[String | Double | Boolean | Null]
 
 type Timestamp2 = String | Seconds
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends @firebase/firestore.@firebase/firestore/dist/lite/internal.Primitive ? T : T extends {} ? {[ K in keyof T ]:? @firebase/firestore.@firebase/firestore/dist/lite/internal.UpdateData<T[K]> | @firebase/firestore.@firebase/firestore/dist/lite/internal.FieldValue} & @firebase/firestore.@firebase/firestore/dist/lite/internal.NestedUpdateFields<T> : std.Partial<T>
+  }}}
+  */
+type UpdateData[T] = T
 
 type Value = typings.firebaseFirestore.distLiteInternalMod.firestoreV1ApiClientInterfaces.Value
 

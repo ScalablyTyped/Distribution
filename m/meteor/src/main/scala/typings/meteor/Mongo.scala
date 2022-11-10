@@ -770,13 +770,12 @@ object Mongo {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Transform extends (args : any): any ? std.ReturnType<Transform> : Transform extends null ? T : U
     }}}
     */
-  @js.native
-  trait DispatchTransform[Transform, T, U] extends StObject
+  type DispatchTransform[Transform, T, U] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -1029,13 +1028,12 @@ object Mongo {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? T[0] : T
     }}}
     */
-  @js.native
-  trait Flatten[T] extends StObject
+  type Flatten[T] = T
   
   type Modifier[T] = T | CurrentDate[T]
   
@@ -1187,23 +1185,23 @@ object Mongo {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? T : never
     }}}
     */
-  @js.native
-  trait OnlyArrays[T] extends StObject
+  type OnlyArrays[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? std.Partial<T[0]> : never
     }}}
     */
-  @js.native
-  trait OnlyElementsOfArrays[T] extends StObject
+  type OnlyElementsOfArrays[T] = Partial[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+  ]
   
   type OptionalId[TSchema] = (UnionOmit[TSchema, _id]) & Id
   

@@ -6,6 +6,7 @@ import typings.levelTranscoder.levelTranscoderStrings.view
 import typings.levelTranscoder.libFormatsMod.BufferFormat
 import typings.levelTranscoder.libFormatsMod.UTF8Format
 import typings.levelTranscoder.libFormatsMod.ViewFormat
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -206,13 +207,12 @@ object libEncodingMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     N extends 'utf8' ? string | node.buffer.<global>.Buffer | std.Uint8Array : N extends 'buffer' ? node.buffer.<global>.Buffer | std.Uint8Array | string : N extends 'view' ? std.Uint8Array | string : N extends 'json' ? any : N extends 'hex' ? node.buffer.<global>.Buffer | string : N extends 'base64' ? node.buffer.<global>.Buffer | string : never
     }}}
     */
-  @js.native
-  trait KnownEncodingInput[N /* <: KnownEncodingName */] extends StObject
+  type KnownEncodingInput[N /* <: KnownEncodingName */] = String | Buffer | js.typedarray.Uint8Array
   
   /* Rewritten from type alias, can be one of: 
     - typings.levelTranscoder.levelTranscoderStrings.utf8
@@ -240,13 +240,12 @@ object libEncodingMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     N extends 'utf8' ? string : N extends 'buffer' ? node.buffer.<global>.Buffer : N extends 'view' ? std.Uint8Array : N extends 'json' ? any : N extends 'hex' ? string : N extends 'base64' ? string : never
     }}}
     */
-  @js.native
-  trait KnownEncodingOutput[N /* <: KnownEncodingName */] extends StObject
+  type KnownEncodingOutput[N /* <: KnownEncodingName */] = String
   
   /* Rewritten from type alias, can be one of: 
     - typings.levelTranscoder.libEncodingMod.IEncoding[TIn, TFormat, TOut]

@@ -14,17 +14,17 @@ trait MissionProfileListItem extends StObject {
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: js.UndefOr[String] = js.undefined
+  var missionProfileId: js.UndefOr[Uuid] = js.undefined
   
   /**
     * Name of a mission profile.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[SafeName] = js.undefined
   
   /**
     * Region of a mission profile.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[AWSRegion] = js.undefined
 }
 object MissionProfileListItem {
   
@@ -39,15 +39,15 @@ object MissionProfileListItem {
     
     inline def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
-    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
     inline def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: AWSRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }

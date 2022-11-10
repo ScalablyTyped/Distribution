@@ -1,7 +1,7 @@
 
 # Scala.js typings for redis__time-series
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 This package provides support for the [RedisTimeSeries](https://redistimeseries.io) module, which adds a time series data structure to Redis. It extends the [Node Redis client](https://github.com/redis/node-redis) to include functions for each of the Redi

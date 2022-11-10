@@ -303,6 +303,15 @@ type AuthTokenFactory = js.Function0[String]
   */
 type BatchId = Double
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  V extends std.Record<string, unknown> ? @firebase/firestore.@firebase/firestore/dist/internal.AddPrefixToKeys<K, @firebase/firestore.@firebase/firestore/dist/internal.UpdateData<V>> : never
+  }}}
+  */
+type ChildUpdateFields[K /* <: String */, V] = AddPrefixToKeys[K, UpdateData[V]]
+
 /**
   * A randomly-generated key assigned to each Firestore instance at startup.
   */
@@ -401,6 +410,15 @@ type TargetId = Double
 type Timestamp2 = String | Seconds
 
 type Unsubscribe = js.Function0[Unit]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends @firebase/firestore.@firebase/firestore/dist/internal.Primitive ? T : T extends {} ? {[ K in keyof T ]:? @firebase/firestore.@firebase/firestore/dist/internal.UpdateData<T[K]> | @firebase/firestore.@firebase/firestore/dist/internal.FieldValue} & @firebase/firestore.@firebase/firestore/dist/internal.NestedUpdateFields<T> : std.Partial<T>
+  }}}
+  */
+type UpdateData[T] = T
 
 type Value = typings.firebaseFirestore.distInternalMod.firestoreV1ApiClientInterfaces.Value
 

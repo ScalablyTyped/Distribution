@@ -44,6 +44,15 @@ type AnyArrayOfOddLengthMin3 = /* import warning: importer.ImportType#apply c re
   */
 type MAXIMUM_ALLOWED_BOUNDARY = `80`
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Count['length'] extends json-logic-js.json-logic-js.MAXIMUM_ALLOWED_BOUNDARY ? Result : Tuple extends [] ? [] : Result extends [] ? json-logic-js.json-logic-js.Mapped<Tuple, Tuple, [...Count, 1]> : json-logic-js.json-logic-js.Mapped<Tuple, Result | [...Result, ...Tuple], [...Count, 1]>
+  }}}
+  */
+type Mapped[Tuple /* <: js.Array[Any] */, Result /* <: js.Array[Any] */, Count /* <: js.Array[Double] */] = Result
+
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
   - java.lang.String

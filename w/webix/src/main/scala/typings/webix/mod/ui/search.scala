@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,20 +39,20 @@ open class search ()
   var $renderIcon_Original: WebixCallback = js.native
   
   @JSName("$renderInput")
-  def $renderInput(obj: Any, html: String, id: String): String = js.native
+  def $renderInput(obj: obj, html: String, id: String): String = js.native
   @JSName("$renderInput")
-  def $renderInput(obj: Any, html: String, id: Double): String = js.native
+  def $renderInput(obj: obj, html: String, id: Double): String = js.native
   
   @JSName("$renderLabel")
-  def $renderLabel(config: Any, id: String): String = js.native
+  def $renderLabel(config: obj, id: String): String = js.native
   @JSName("$renderLabel")
-  def $renderLabel(config: Any, id: Double): String = js.native
+  def $renderLabel(config: obj, id: Double): String = js.native
   
   @JSName("$render")
   var $render_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -71,8 +72,8 @@ open class search ()
   def attachEvent(`type`: searchEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: searchEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -93,25 +94,42 @@ open class search ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  
   def refresh(): Unit = js.native
   
-  def render(id: String, data: Any, `type`: String): Unit = js.native
-  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  def render(): Unit = js.native
+  def render(id: String): Unit = js.native
+  def render(id: String, data: Unit, `type`: String): Unit = js.native
+  def render(id: String, data: obj): Unit = js.native
+  def render(id: String, data: obj, `type`: String): Unit = js.native
+  def render(id: Double): Unit = js.native
+  def render(id: Double, data: Unit, `type`: String): Unit = js.native
+  def render(id: Double, data: obj): Unit = js.native
+  def render(id: Double, data: obj, `type`: String): Unit = js.native
+  def render(id: Unit, data: Unit, `type`: String): Unit = js.native
+  def render(id: Unit, data: obj): Unit = js.native
+  def render(id: Unit, data: obj, `type`: String): Unit = js.native
   
   def setBottomText(text: String): Unit = js.native
   
   def setValue(value: String): Unit = js.native
+  def setValue(value: String, config: Any): Unit = js.native
   
   def setValueHere(value: String): Unit = js.native
   def setValueHere(value: Double): Unit = js.native
   
-  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
+  def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

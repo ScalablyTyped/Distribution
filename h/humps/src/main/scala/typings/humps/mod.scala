@@ -52,13 +52,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferT}${inferU} * / string ? / * template literal string: ${TextendsCapitalize<T>?_:}${Lowercase<T>}${CamelToSnakeCase<U>} * / string : S
     }}}
     */
-  @js.native
-  trait CamelToSnakeCase[S /* <: String */] extends StObject
+  type CamelToSnakeCase[S /* <: String */] = S
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -136,13 +135,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferT1}${inferT2}${inferU} * / string ? / * template literal string: ${T2extendsCapitalize<T2>?_:}${Lowercase<T1>}${Lowercase<T2>}${CamelToSnakeCase<U>} * / string : S
     }}}
     */
-  @js.native
-  trait PascalToSnakeCase[S /* <: String */] extends StObject
+  type PascalToSnakeCase[S /* <: String */] = S
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -156,21 +154,19 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferP1}_${inferP2}${inferP3} * / string ? / * template literal string: ${P1}${Uppercase<P2>}${SnakeToCamelCase<P3>} * / string : S
     }}}
     */
-  @js.native
-  trait SnakeToCamelCase[S /* <: String */] extends StObject
+  type SnakeToCamelCase[S /* <: String */] = S
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferP1}_${inferP2}${inferP3} * / string ? / * template literal string: ${Capitalize<P1>}${Uppercase<P2>}${SnakeToPascalCase<P3>} * / string : S
     }}}
     */
-  @js.native
-  trait SnakeToPascalCase[S /* <: String */] extends StObject
+  type SnakeToPascalCase[S /* <: String */] = S
 }

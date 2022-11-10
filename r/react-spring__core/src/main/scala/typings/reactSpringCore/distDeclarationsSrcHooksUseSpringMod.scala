@@ -31,7 +31,7 @@ object distDeclarationsSrcHooksUseSpringMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     unknown & @react-spring/core.@react-spring/core/dist/declarations/src/types/props.PickAnimated<Props, true> extends infer State ? State extends @react-spring/types.@react-spring/types/util.Lookup<any> ? @react-spring/types.@react-spring/types/util.Remap<@react-spring/core.@react-spring/core/dist/declarations/src/types/props.ControllerUpdate<State, undefined> & {  ref :@react-spring/core.@react-spring/core/dist/declarations/src/SpringRef.SpringRef<State> | undefined}> : never : never
     }}}

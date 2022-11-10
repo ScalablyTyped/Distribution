@@ -17,7 +17,7 @@ object libIslotsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TUnion extends @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotProp<infer TProps, never> ? TProps : never
     }}}
@@ -27,13 +27,12 @@ object libIslotsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TUnion extends boolean ? boolean : TUnion extends number ? number : TUnion extends string ? string : never
     }}}
     */
-  @js.native
-  trait ExtractShorthand[TUnion] extends StObject
+  type ExtractShorthand[TUnion] = Boolean
   
   trait IDefaultSlotProps[TSlots] extends StObject {
     

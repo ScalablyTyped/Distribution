@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron" : "21.2.2"
+      "electron" : "21.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "electron" : "21.2.2"
+      "electron" : "21.2.3"
     }
   ],
   "compile-devDependencies" : [

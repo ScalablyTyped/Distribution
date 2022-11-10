@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
 import typings.puppeteerCore.anon.PartialBrowserFetcherOptiPath
 import typings.puppeteerCore.mod.^
 import typings.std.Capitalize
+import typings.std.Element
 import typings.std.Lowercase
 import typings.std.PromiseLike
 import typings.std.Uppercase
@@ -43,12 +44,16 @@ type EvaluateFunc[T /* <: js.Array[Any] */] = js.Function1[/* params */ InnerPar
 
 type EventType = String | js.Symbol
 
-/* Rewritten from type alias, can be one of: 
-  - typings.puppeteerCore.mod.HandleFor[T]
-  - typings.puppeteerCore.mod.JSHandle[T]
-  - T
-*/
-type HandleOr[T] = _HandleOr[T] | T
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends std.Node ? puppeteer-core.puppeteer-core.ElementHandle<T> : puppeteer-core.puppeteer-core.JSHandle<T>
+  }}}
+  */
+type HandleFor[T] = ElementHandle[T]
+
+type HandleOr[T] = HandleFor[T] | JSHandle[T] | T
 
 type Handler[T] = js.Function1[/* event */ js.UndefOr[T], Unit]
 
@@ -309,6 +314,15 @@ type InterceptResolutionStrategy = InterceptResolutionAction
   - typings.puppeteerCore.puppeteerCoreStrings.VolumeUp
 */
 type KeyInput = _KeyInput | (/* \ */ String)
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Selector extends 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'slot' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' ? std.HTMLElementTagNameMap[Selector] : Selector extends 'a' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'script' | 'set' | 'stop' | 'style' | 'svg' | 'switch' | 'symbol' | 'text' | 'textPath' | 'title' | 'tspan' | 'use' | 'view' ? std.SVGElementTagNameMap[Selector] : std.Element
+  }}}
+  */
+type NodeFor[Selector /* <: String */] = Element
 
 type PaperFormat = Uppercase[LowerCasePaperFormat] | Capitalize[LowerCasePaperFormat] | LowerCasePaperFormat
 

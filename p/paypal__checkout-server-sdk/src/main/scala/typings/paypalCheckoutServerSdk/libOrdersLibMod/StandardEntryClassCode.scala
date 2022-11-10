@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait StandardEntryClassCode extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "StandardEntryClassCode")
-@js.native
-object StandardEntryClassCode extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CCD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TEL
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WEB
+*/
+trait StandardEntryClassCode extends StObject
+object StandardEntryClassCode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[StandardEntryClassCode & String] = js.native
+  inline def CCD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CCD = "CCD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.CCD]
   
-  @js.native
-  sealed trait CCD
-    extends StObject
-       with StandardEntryClassCode
-  /* "CCD" */ val CCD: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.CCD & String = js.native
+  inline def PPD: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD = "PPD".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PPD]
   
-  @js.native
-  sealed trait PP
-    extends StObject
-       with StandardEntryClassCode
-  /* "PPD" */ val PP: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.PP & String = js.native
+  inline def TEL: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TEL = "TEL".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TEL]
   
-  @js.native
-  sealed trait TEL
-    extends StObject
-       with StandardEntryClassCode
-  /* "TEL" */ val TEL: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.TEL & String = js.native
-  
-  @js.native
-  sealed trait WEB
-    extends StObject
-       with StandardEntryClassCode
-  /* "WEB" */ val WEB: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.WEB & String = js.native
+  inline def WEB: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WEB = "WEB".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.WEB]
 }

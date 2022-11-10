@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,15 +19,15 @@ trait dxOverlay[TProperties]
   /**
     * Hides the UI component.
     */
-  def hide(): DxPromise[Boolean] = js.native
+  def hide(): js.Promise[Boolean] = js.native
   
   /**
     * Shows the UI component.
     */
-  def show(): DxPromise[Boolean] = js.native
+  def show(): js.Promise[Boolean] = js.native
   
   /**
     * Shows or hides the UI component depending on the argument.
     */
-  def toggle(showing: Boolean): DxPromise[Boolean] = js.native
+  def toggle(showing: Boolean): js.Promise[Boolean] = js.native
 }

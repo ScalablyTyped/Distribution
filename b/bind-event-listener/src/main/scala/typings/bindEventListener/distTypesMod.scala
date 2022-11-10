@@ -39,23 +39,21 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     MaybeFn extends (this : any, event : infer MaybeEvent): any ? MaybeEvent extends std.Event ? MaybeEvent : std.Event : never
     }}}
     */
-  @js.native
-  trait ExtractEventTypeFromHandler[MaybeFn /* <: Any */] extends StObject
+  type ExtractEventTypeFromHandler[MaybeFn /* <: Any */] = Event
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     / * template literal string: on${EventName} * / string extends keyof Target ? bind-event-listener.bind-event-listener/dist/types.ExtractEventTypeFromHandler<Target[/ * template literal string: on${EventName} * / string]> : std.Event
     }}}
     */
-  @js.native
-  trait GetEventType[Target /* <: EventTarget */, EventName /* <: String */] extends StObject
+  type GetEventType[Target /* <: EventTarget */, EventName /* <: String */] = Event
   
   type Listener[Target /* <: EventTarget */, EventName /* <: String */] = (ListenerObject[GetEventType[Target, EventName]]) | (js.ThisFunction1[/* this */ Target, /* e */ GetEventType[Target, EventName], Unit])
   

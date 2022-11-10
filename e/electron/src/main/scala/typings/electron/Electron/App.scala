@@ -454,7 +454,7 @@ trait App
     * response:
     *
     * Using `basic` should be preferred if only basic information like `vendorId` or
-    * `driverId` is needed.
+    * `deviceId` is needed.
     */
   def getGPUInfo(infoType: basic | complete): js.Promise[Any] = js.native
   

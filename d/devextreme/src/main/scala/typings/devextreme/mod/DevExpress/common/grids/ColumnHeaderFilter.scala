@@ -59,6 +59,8 @@ object ColumnHeaderFilter {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
     inline def setGroupInterval(value: HeaderFilterGroupInterval | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
     
     inline def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)

@@ -2,23 +2,24 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait multiviewConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cells: js.UndefOr[Any] = js.undefined
+  var cells: js.UndefOr[obj] = js.undefined
   
   var cols: js.UndefOr[js.Array[Any]] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -63,7 +64,7 @@ object multiviewConfig {
   
   extension [Self <: multiviewConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -71,7 +72,7 @@ object multiviewConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setCells(value: Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: obj): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
@@ -85,7 +86,7 @@ object multiviewConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     

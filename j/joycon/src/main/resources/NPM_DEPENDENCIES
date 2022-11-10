@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "joycon" : "2.2.5"
+      "joycon" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "joycon" : "2.2.5"
+      "joycon" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

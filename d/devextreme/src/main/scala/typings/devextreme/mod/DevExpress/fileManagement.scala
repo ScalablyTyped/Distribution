@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress
 
 import typings.devextreme.anon.FormData
 import typings.devextreme.anon.`3`
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.std.Blob
 import typings.std.File
 import typings.std.PromiseLike
@@ -321,22 +320,22 @@ object fileManagement {
     /**
       * Cancels the file upload.
       */
-    def abortFileUpload(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): DxPromise[Any]
+    def abortFileUpload(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): js.Promise[Any]
     
     /**
       * Copies files or directories.
       */
-    def copyItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[DxPromise[Any]]
+    def copyItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[js.Promise[Any]]
     
     /**
       * Creates a directory.
       */
-    def createDirectory(parentDirectory: FileSystemItem, name: String): DxPromise[Any]
+    def createDirectory(parentDirectory: FileSystemItem, name: String): js.Promise[Any]
     
     /**
       * Deletes files or directories.
       */
-    def deleteItems(items: js.Array[FileSystemItem]): js.Array[DxPromise[Any]]
+    def deleteItems(items: js.Array[FileSystemItem]): js.Array[js.Promise[Any]]
     
     /**
       * Downloads files.
@@ -346,41 +345,41 @@ object fileManagement {
     /**
       * Gets file system items.
       */
-    def getItems(parentDirectory: FileSystemItem): DxPromise[js.Array[FileSystemItem]]
+    def getItems(parentDirectory: FileSystemItem): js.Promise[js.Array[FileSystemItem]]
     
     /**
       * Gets items content.
       */
-    def getItemsContent(items: js.Array[FileSystemItem]): DxPromise[Any]
+    def getItemsContent(items: js.Array[FileSystemItem]): js.Promise[Any]
     
     /**
       * Moves files and directories.
       */
-    def moveItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[DxPromise[Any]]
+    def moveItems(items: js.Array[FileSystemItem], destinationDirectory: FileSystemItem): js.Array[js.Promise[Any]]
     
     /**
       * Renames a file or directory.
       */
-    def renameItem(item: FileSystemItem, newName: String): DxPromise[Any]
+    def renameItem(item: FileSystemItem, newName: String): js.Promise[Any]
     
     /**
       * Uploads a file in chunks.
       */
-    def uploadFileChunk(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): DxPromise[Any]
+    def uploadFileChunk(fileData: File, uploadInfo: UploadInfo, destinationDirectory: FileSystemItem): js.Promise[Any]
   }
   object FileSystemProviderBase {
     
     inline def apply(
-      abortFileUpload: (File, UploadInfo, FileSystemItem) => DxPromise[Any],
-      copyItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]],
-      createDirectory: (FileSystemItem, String) => DxPromise[Any],
-      deleteItems: js.Array[FileSystemItem] => js.Array[DxPromise[Any]],
+      abortFileUpload: (File, UploadInfo, FileSystemItem) => js.Promise[Any],
+      copyItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[js.Promise[Any]],
+      createDirectory: (FileSystemItem, String) => js.Promise[Any],
+      deleteItems: js.Array[FileSystemItem] => js.Array[js.Promise[Any]],
       downloadItems: js.Array[FileSystemItem] => Unit,
-      getItems: FileSystemItem => DxPromise[js.Array[FileSystemItem]],
-      getItemsContent: js.Array[FileSystemItem] => DxPromise[Any],
-      moveItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]],
-      renameItem: (FileSystemItem, String) => DxPromise[Any],
-      uploadFileChunk: (File, UploadInfo, FileSystemItem) => DxPromise[Any]
+      getItems: FileSystemItem => js.Promise[js.Array[FileSystemItem]],
+      getItemsContent: js.Array[FileSystemItem] => js.Promise[Any],
+      moveItems: (js.Array[FileSystemItem], FileSystemItem) => js.Array[js.Promise[Any]],
+      renameItem: (FileSystemItem, String) => js.Promise[Any],
+      uploadFileChunk: (File, UploadInfo, FileSystemItem) => js.Promise[Any]
     ): FileSystemProviderBase = {
       val __obj = js.Dynamic.literal(abortFileUpload = js.Any.fromFunction3(abortFileUpload), copyItems = js.Any.fromFunction2(copyItems), createDirectory = js.Any.fromFunction2(createDirectory), deleteItems = js.Any.fromFunction1(deleteItems), downloadItems = js.Any.fromFunction1(downloadItems), getItems = js.Any.fromFunction1(getItems), getItemsContent = js.Any.fromFunction1(getItemsContent), moveItems = js.Any.fromFunction2(moveItems), renameItem = js.Any.fromFunction2(renameItem), uploadFileChunk = js.Any.fromFunction3(uploadFileChunk))
       __obj.asInstanceOf[FileSystemProviderBase]
@@ -388,25 +387,25 @@ object fileManagement {
     
     extension [Self <: FileSystemProviderBase](x: Self) {
       
-      inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => DxPromise[Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
+      inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => js.Promise[Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
-      inline def setCopyItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]]): Self = StObject.set(x, "copyItems", js.Any.fromFunction2(value))
+      inline def setCopyItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[js.Promise[Any]]): Self = StObject.set(x, "copyItems", js.Any.fromFunction2(value))
       
-      inline def setCreateDirectory(value: (FileSystemItem, String) => DxPromise[Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
+      inline def setCreateDirectory(value: (FileSystemItem, String) => js.Promise[Any]): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
-      inline def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[DxPromise[Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
+      inline def setDeleteItems(value: js.Array[FileSystemItem] => js.Array[js.Promise[Any]]): Self = StObject.set(x, "deleteItems", js.Any.fromFunction1(value))
       
       inline def setDownloadItems(value: js.Array[FileSystemItem] => Unit): Self = StObject.set(x, "downloadItems", js.Any.fromFunction1(value))
       
-      inline def setGetItems(value: FileSystemItem => DxPromise[js.Array[FileSystemItem]]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: FileSystemItem => js.Promise[js.Array[FileSystemItem]]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      inline def setGetItemsContent(value: js.Array[FileSystemItem] => DxPromise[Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: js.Array[FileSystemItem] => js.Promise[Any]): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
-      inline def setMoveItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[DxPromise[Any]]): Self = StObject.set(x, "moveItems", js.Any.fromFunction2(value))
+      inline def setMoveItems(value: (js.Array[FileSystemItem], FileSystemItem) => js.Array[js.Promise[Any]]): Self = StObject.set(x, "moveItems", js.Any.fromFunction2(value))
       
-      inline def setRenameItem(value: (FileSystemItem, String) => DxPromise[Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
+      inline def setRenameItem(value: (FileSystemItem, String) => js.Promise[Any]): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
-      inline def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => DxPromise[Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
+      inline def setUploadFileChunk(value: (File, UploadInfo, FileSystemItem) => js.Promise[Any]): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
     }
   }
   

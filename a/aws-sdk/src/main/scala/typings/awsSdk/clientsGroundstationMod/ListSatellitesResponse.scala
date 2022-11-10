@@ -9,7 +9,7 @@ trait ListSatellitesResponse extends StObject {
   /**
     * Next token that can be supplied in the next call to get the next page of satellites.
     */
-  var nextToken: js.UndefOr[String] = js.undefined
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * List of satellites.
@@ -25,7 +25,7 @@ object ListSatellitesResponse {
   
   extension [Self <: ListSatellitesResponse](x: Self) {
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     

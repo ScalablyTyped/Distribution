@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "material__tab-bar"
-version := "14.0.0-674db4"
+version := "14.0.0-a35ca9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "material__base" % "14.0.0-47bd03",
-  "org.scalablytyped" %%% "material__ripple" % "14.0.0-2ac12b",
-  "org.scalablytyped" %%% "material__tab" % "14.0.0-3da770",
-  "org.scalablytyped" %%% "material__tab-indicator" % "14.0.0-cabf24",
-  "org.scalablytyped" %%% "material__tab-scroller" % "14.0.0-5bc5cf",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "material__base" % "14.0.0-fb3775",
+  "org.scalablytyped" %%% "material__ripple" % "14.0.0-3421ae",
+  "org.scalablytyped" %%% "material__tab" % "14.0.0-455386",
+  "org.scalablytyped" %%% "material__tab-indicator" % "14.0.0-b7dc95",
+  "org.scalablytyped" %%% "material__tab-scroller" % "14.0.0-4271dc",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -591,6 +591,24 @@ type HoistTransform = js.Function3[
 /* parent */ ParentNode2, 
 Unit]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends symbol ? @vue/compiler-core.@vue/compiler-core.RenderSlotCall : @vue/compiler-core.@vue/compiler-core.CallExpression
+  }}}
+  */
+type InferCodegenNodeType[T] = RenderSlotCall
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends @vue/compiler-core.@vue/compiler-core.ErrorCodes ? @vue/compiler-core.@vue/compiler-core.CoreCompilerError : @vue/compiler-core.@vue/compiler-core.CompilerError
+  }}}
+  */
+type InferCompilerError[T] = CoreCompilerError
+
 type Namespace = Double
 
 type Namespaces = `0`

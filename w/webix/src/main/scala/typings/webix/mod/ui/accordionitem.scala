@@ -1,7 +1,7 @@
 package typings.webix.mod.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ open class accordionitem ()
      with typings.webix.webix.ui.baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   @JSName("$skin")
   var $skin_Original_accordionitem: WebixCallback = js.native
@@ -21,8 +21,8 @@ open class accordionitem ()
   def attachEvent(`type`: accordionitemEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: accordionitemEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
@@ -39,13 +39,13 @@ open class accordionitem ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[Any] = js.native
+  var on_context: obj = js.native
   
   def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")
@@ -54,6 +54,9 @@ open class accordionitem ()
   def on_mouse_move(args: Any*): Any = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
+  
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
   
   def refresh(): Unit = js.native
   

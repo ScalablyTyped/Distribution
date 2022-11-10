@@ -86,6 +86,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onSubViewRender
   - typings.webix.webixStrings.onSwipeX
   - typings.webix.webixStrings.onSwipeY
+  - typings.webix.webixStrings.onSyncScroll
   - typings.webix.webixStrings.onTabFocus
   - typings.webix.webixStrings.onTimedKeyPress
   - typings.webix.webixStrings.onTouchEnd
@@ -260,6 +261,8 @@ object datatableEventName {
   inline def onSwipeX: typings.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typings.webix.webixStrings.onSwipeX]
   
   inline def onSwipeY: typings.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typings.webix.webixStrings.onSwipeY]
+  
+  inline def onSyncScroll: typings.webix.webixStrings.onSyncScroll = "onSyncScroll".asInstanceOf[typings.webix.webixStrings.onSyncScroll]
   
   inline def onTabFocus: typings.webix.webixStrings.onTabFocus = "onTabFocus".asInstanceOf[typings.webix.webixStrings.onTabFocus]
   

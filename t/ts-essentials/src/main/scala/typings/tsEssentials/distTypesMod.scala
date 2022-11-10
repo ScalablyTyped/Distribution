@@ -3,11 +3,15 @@ package typings.tsEssentials
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Exclude
 import typings.std.Extract
+import typings.std.NonNullable
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.PromiseLike
 import typings.std.Record
+import typings.std.Required
+import typings.tsEssentials.tsEssentialsBooleans.`false`
+import typings.tsEssentials.tsEssentialsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +28,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.AsyncOrSync<infer PT> ? PT : never
     }}}
@@ -34,7 +38,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.PromiseLike<infer PT> ? PT : never
     }}}
@@ -50,93 +54,84 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? std.NonNullable<T> : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepNonNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNonNullable<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepNonNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNonNullable<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepNonNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNonNullable<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepNonNullable<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepNonNullable<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepNonNullable<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepNonNullable<U>> : T extends {} ? {[ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepNonNullable<T[K]>} : std.NonNullable<T>
     }}}
     */
-  @js.native
-  trait DeepNonNullable[T] extends StObject
+  type DeepNonNullable[T] = NonNullable[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T | null : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNullable<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNullable<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepNullable<K>, ts-essentials.ts-essentials/dist/types.DeepNullable<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepNullable<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepNullable<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepNullable<U>> : T extends std.Array<infer U> ? T extends ts-essentials.ts-essentials/dist/types.IsTuple<T> ? {[ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepNullable<T[K]> | null} : std.Array<ts-essentials.ts-essentials/dist/types.DeepNullable<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepNullable<U>> : T extends {} ? {[ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepNullable<T[K]>} : T | null
     }}}
     */
-  @js.native
-  trait DeepNullable[T] extends StObject
+  type DeepNullable[T] = T | Null
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer KeyType, infer ValueType> ? Filter extends std.Map<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.Map<KeyType, ts-essentials.ts-essentials/dist/types.DeepOmit<ValueType, FilterValueType>> : T : T : T extends std.ReadonlyMap<infer KeyType, infer ValueType> ? Filter extends std.ReadonlyMap<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.ReadonlyMap<KeyType, ts-essentials.ts-essentials/dist/types.DeepOmit<ValueType, FilterValueType>> : T : T : T extends std.WeakMap<infer KeyType, infer ValueType> ? Filter extends std.WeakMap<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.WeakMap<KeyType, ts-essentials.ts-essentials/dist/types.DeepOmit<ValueType, FilterValueType>> : T : T : T extends std.Set<infer ItemType> ? Filter extends std.Set<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepOmit<ItemType, FilterItemType>> : T : T : T extends std.ReadonlySet<infer ItemType> ? Filter extends std.ReadonlySet<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepOmit<ItemType, FilterItemType>> : T : T : T extends std.WeakSet<infer ItemType> ? Filter extends std.WeakSet<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepOmit<ItemType, FilterItemType>> : T : T : T extends std.Array<infer ItemType> ? Filter extends std.Array<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Array<ts-essentials.ts-essentials/dist/types.DeepOmit<ItemType, FilterItemType>> : T : T : T extends std.Promise<infer ItemType> ? Filter extends std.Promise<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepOmit<ItemType, FilterItemType>> : T : T : Filter extends ts-essentials.ts-essentials/dist/types.AnyRecord<any> ? {[ K in keyof T as K extends keyof Filter? Filter[K] extends true? never : K : K ]: K extends keyof Filter? Filter[K] extends ts-essentials.ts-essentials/dist/types.DeepModify<T[K]>? ts-essentials.ts-essentials/dist/types.DeepOmit<T[K], Filter[K]> : T[K] : T[K]} : never
     }}}
     */
-  @js.native
-  trait DeepOmit[T, Filter /* <: DeepModify[T] */] extends StObject
+  type DeepOmit[T, Filter /* <: DeepModify[T] */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepPartial<K>, ts-essentials.ts-essentials/dist/types.DeepPartial<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepPartial<K>, ts-essentials.ts-essentials/dist/types.DeepPartial<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepPartial<K>, ts-essentials.ts-essentials/dist/types.DeepPartial<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepPartial<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepPartial<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepPartial<U>> : T extends std.Array<infer U> ? T extends ts-essentials.ts-essentials/dist/types.IsTuple<T> ? {[ K in keyof T ]:? ts-essentials.ts-essentials/dist/types.DeepPartial<T[K]>} : std.Array<ts-essentials.ts-essentials/dist/types.DeepPartial<U> | undefined> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepPartial<U>> : T extends {} ? {[ K in keyof T ]:? ts-essentials.ts-essentials/dist/types.DeepPartial<T[K]>} : ts-essentials.ts-essentials/dist/types.IsUnknown<T> extends true ? unknown : std.Partial<T>
     }}}
     */
-  @js.native
-  trait DeepPartial[T] extends StObject
+  type DeepPartial[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer KeyType, infer ValueType> ? Filter extends std.Map<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.Map<KeyType, ts-essentials.ts-essentials/dist/types.DeepPick<ValueType, FilterValueType>> : T : T : T extends std.ReadonlyMap<infer KeyType, infer ValueType> ? Filter extends std.ReadonlyMap<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.ReadonlyMap<KeyType, ts-essentials.ts-essentials/dist/types.DeepPick<ValueType, FilterValueType>> : T : T : T extends std.WeakMap<infer KeyType, infer ValueType> ? Filter extends std.WeakMap<KeyType, infer FilterValueType> ? FilterValueType extends ts-essentials.ts-essentials/dist/types.DeepModify<ValueType> ? std.WeakMap<KeyType, ts-essentials.ts-essentials/dist/types.DeepPick<ValueType, FilterValueType>> : T : T : T extends std.Set<infer ItemType> ? Filter extends std.Set<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepPick<ItemType, FilterItemType>> : T : T : T extends std.ReadonlySet<infer ItemType> ? Filter extends std.ReadonlySet<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepPick<ItemType, FilterItemType>> : T : T : T extends std.WeakSet<infer ItemType> ? Filter extends std.WeakSet<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepPick<ItemType, FilterItemType>> : T : T : T extends std.Array<infer ItemType> ? Filter extends std.Array<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Array<ts-essentials.ts-essentials/dist/types.DeepPick<ItemType, FilterItemType>> : T : T : T extends std.Promise<infer ItemType> ? Filter extends std.Promise<infer FilterItemType> ? FilterItemType extends ts-essentials.ts-essentials/dist/types.DeepModify<ItemType> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepPick<ItemType, FilterItemType>> : T : T : Filter extends ts-essentials.ts-essentials/dist/types.AnyRecord<any> ? {[ K in keyof T as K extends keyof Filter? K : never ]: Filter[K & keyof Filter] extends true? T[K] : K extends keyof Filter? Filter[K] extends ts-essentials.ts-essentials/dist/types.DeepModify<T[K]>? ts-essentials.ts-essentials/dist/types.DeepPick<T[K], Filter[K]> : never : never} : never
     }}}
     */
-  @js.native
-  trait DeepPick[T, Filter /* <: DeepModify[T] */] extends StObject
+  type DeepPick[T, Filter /* <: DeepModify[T] */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepReadonly<K>, ts-essentials.ts-essentials/dist/types.DeepReadonly<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepReadonly<K>, ts-essentials.ts-essentials/dist/types.DeepReadonly<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepReadonly<K>, ts-essentials.ts-essentials/dist/types.DeepReadonly<V>> : T extends std.Set<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepReadonly<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepReadonly<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepReadonly<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepReadonly<U>> : T extends ts-essentials.ts-essentials/dist/types.AnyArray<infer U> ? T extends ts-essentials.ts-essentials/dist/types.IsTuple<T> ? {readonly [ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepReadonly<T[K]>} : std.ReadonlyArray<ts-essentials.ts-essentials/dist/types.DeepReadonly<U>> : T extends {} ? {readonly [ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepReadonly<T[K]>} : ts-essentials.ts-essentials/dist/types.IsUnknown<T> extends true ? unknown : std.Readonly<T>
     }}}
     */
-  @js.native
-  trait DeepReadonly[T] extends StObject
+  type DeepReadonly[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Error ? std.Required<T> : T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepRequired<K>, ts-essentials.ts-essentials/dist/types.DeepRequired<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepRequired<K>, ts-essentials.ts-essentials/dist/types.DeepRequired<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepRequired<K>, ts-essentials.ts-essentials/dist/types.DeepRequired<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepRequired<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepRequired<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepRequired<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepRequired<U>> : T extends {} ? {[ K in keyof T ]: -? ts-essentials.ts-essentials/dist/types.DeepRequired<T[K]>} : std.Required<T>
     }}}
     */
-  @js.native
-  trait DeepRequired[T] extends StObject
+  type DeepRequired[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T | undefined : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepUndefinable<K>, ts-essentials.ts-essentials/dist/types.DeepUndefinable<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.ReadonlyMap<ts-essentials.ts-essentials/dist/types.DeepUndefinable<K>, ts-essentials.ts-essentials/dist/types.DeepUndefinable<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepUndefinable<K>, ts-essentials.ts-essentials/dist/types.DeepUndefinable<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepUndefinable<U>> : T extends std.ReadonlySet<infer U> ? std.ReadonlySet<ts-essentials.ts-essentials/dist/types.DeepUndefinable<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepUndefinable<U>> : T extends std.Array<infer U> ? T extends ts-essentials.ts-essentials/dist/types.IsTuple<T> ? {[ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepUndefinable<T[K]> | undefined} : std.Array<ts-essentials.ts-essentials/dist/types.DeepUndefinable<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepUndefinable<U>> : T extends {} ? {[ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepUndefinable<T[K]>} : T | undefined
     }}}
     */
-  @js.native
-  trait DeepUndefinable[T] extends StObject
+  type DeepUndefinable[T] = js.UndefOr[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.Builtin ? T : T extends std.Map<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepWritable<K>, ts-essentials.ts-essentials/dist/types.DeepWritable<V>> : T extends std.ReadonlyMap<infer K, infer V> ? std.Map<ts-essentials.ts-essentials/dist/types.DeepWritable<K>, ts-essentials.ts-essentials/dist/types.DeepWritable<V>> : T extends std.WeakMap<infer K, infer V> ? std.WeakMap<ts-essentials.ts-essentials/dist/types.DeepWritable<K>, ts-essentials.ts-essentials/dist/types.DeepWritable<V>> : T extends std.Set<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepWritable<U>> : T extends std.ReadonlySet<infer U> ? std.Set<ts-essentials.ts-essentials/dist/types.DeepWritable<U>> : T extends std.WeakSet<infer U> ? std.WeakSet<ts-essentials.ts-essentials/dist/types.DeepWritable<U>> : T extends std.Promise<infer U> ? std.Promise<ts-essentials.ts-essentials/dist/types.DeepWritable<U>> : T extends {} ? {-readonly [ K in keyof T ]: ts-essentials.ts-essentials/dist/types.DeepWritable<T[K]>} : T
     }}}
     */
-  @js.native
-  trait DeepWritable[T] extends StObject
+  type DeepWritable[T] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -152,7 +147,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.Array<infer ET> ? ET : never
     }}}
@@ -162,17 +157,16 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends SHAPE ? std.Exclude<keyof T, keyof SHAPE> extends never ? T : never : never
     }}}
     */
-  @js.native
-  trait Exact[T, SHAPE] extends StObject
+  type Exact[T, SHAPE] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T['length'] extends 0 ? never : T[0]
     }}}
@@ -182,23 +176,21 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     0 extends 1 & T ? true : false
     }}}
     */
-  @js.native
-  trait IsAny[T] extends StObject
+  type IsAny[T] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     <T>(): T extends X ? 1 : 2 extends <T>(): T extends Y ? 1 : 2 ? true : false
     }}}
     */
-  @js.native
-  trait IsEqualConsideringWritability[X, Y] extends StObject
+  type IsEqualConsideringWritability[X, Y] = `true`
   
   type IsFullyWritable[T /* <: js.Object */] = IsEqualConsideringWritability[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ Q in keyof T ]: T[Q]} */ js.Any, 
@@ -209,75 +201,68 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] ? true : false
     }}}
     */
-  @js.native
-  trait IsNever[T] extends StObject
+  type IsNever[T] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? std.Array<any> extends T ? never : T : never
     }}}
     */
-  @js.native
-  trait IsTuple[T] extends StObject
+  type IsTuple[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-essentials.ts-essentials/dist/types.IsAny<T> extends true ? false : unknown extends T ? true : false
     }}}
     */
-  @js.native
-  trait IsUnknown[T] extends StObject
+  type IsUnknown[T] = `false`
   
   type KeyofBase = /* keyof any */ String
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? std.Omit<T, K> & std.Partial<std.Pick<T, K>> : never
     }}}
     */
-  @js.native
-  trait MarkOptional[T, K /* <: /* keyof T */ String */] extends StObject
+  type MarkOptional[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Partial[Pick[T, K]])
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? std.Omit<T, K> & std.Readonly<std.Pick<T, K>> : never
     }}}
     */
-  @js.native
-  trait MarkReadonly[T, K /* <: /* keyof T */ String */] extends StObject
+  type MarkReadonly[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Pick[T, K])
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? std.Omit<T, RK> & std.Required<std.Pick<T, RK>> : never
     }}}
     */
-  @js.native
-  trait MarkRequired[T, RK /* <: /* keyof T */ String */] extends StObject
+  type MarkRequired[T, RK /* <: /* keyof T */ String */] = (Omit[T, RK]) & (Required[Pick[T, RK]])
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? std.Omit<T, K> & ts-essentials.ts-essentials/dist/types.Writable<std.Pick<T, K>> : never
     }}}
     */
-  @js.native
-  trait MarkWritable[T, K /* <: /* keyof T */ String */] extends StObject
+  type MarkWritable[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Writable[Pick[T, K]])
   
   type Merge[M, N] = (Omit[M, /* keyof N */ String]) & N
   
@@ -292,13 +277,12 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof T extends never ? never : T
     }}}
     */
-  @js.native
-  trait NonEmptyObject[T /* <: js.Object */] extends StObject
+  type NonEmptyObject[T /* <: js.Object */] = T
   
   type NonNever[T /* <: js.Object */] = Pick[
     T, 
@@ -307,29 +291,27 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends undefined ? never : T
     }}}
     */
-  @js.native
-  trait NonUndefinable[T] extends StObject
+  type NonUndefinable[T] = T
   
   type OmitProperties[T, P] = Omit[T, PickKeysByValue[T, P]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Token extends ts-essentials.ts-essentials/dist/types.StringLiteral<Token> ? Type & {readonly [__OPAQUE_TYPE__] : Token} : never
     }}}
     */
-  @js.native
-  trait Opaque[Type, Token /* <: String */] extends StObject
+  type Opaque[Type, Token /* <: String */] = Type & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [__OPAQUE_TYPE__] : Token} */ js.Any)
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends unknown ? {[ K in keyof T ]: -? undefined extends {[ K2 in keyof T ]: K2}[K]? K : never}[keyof T] : never
     }}}
@@ -354,7 +336,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends (target : any, rest : ...any): target is infer P ? P : never
     }}}
@@ -370,13 +352,12 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends unknown ? std.Exclude<keyof T, ts-essentials.ts-essentials/dist/types.OptionalKeys<T>> : never
     }}}
     */
-  @js.native
-  trait RequiredKeys[T] extends StObject
+  type RequiredKeys[T] = /* keyof T */ String
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -394,27 +375,25 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends ts-essentials.ts-essentials/dist/types.AnyArray<any> ? never : std.Omit<T, K>
     }}}
     */
-  @js.native
-  trait StrictOmit[T /* <: AnyRecord[Any] */, K /* <: /* keyof T */ String */] extends StObject
+  type StrictOmit[T /* <: AnyRecord[Any] */, K /* <: /* keyof T */ String */] = Omit[T, K]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string ? string extends T ? never : T : never
     }}}
     */
-  @js.native
-  trait StringLiteral[T] extends StObject
+  type StringLiteral[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [any, ...infer Rest] ? Rest : never
     }}}
@@ -426,7 +405,7 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}
@@ -460,21 +439,19 @@ object distTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T | U extends object ? ts-essentials.ts-essentials/dist/types.Without<T, U> & U | ts-essentials.ts-essentials/dist/types.Without<U, T> & T : T | U
     }}}
     */
-  @js.native
-  trait XOR[T, U] extends StObject
+  type XOR[T, U] = ((Without[T, U]) & U) | ((Without[U, T]) & T)
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [infer Head, ...infer Tail] ? ts-essentials.ts-essentials/dist/types._MergeN<Tail, ts-essentials.ts-essentials/dist/types.Merge<Result, Head>> : Result
     }}}
     */
-  @js.native
-  trait _MergeN[T /* <: js.Array[Any] */, Result] extends StObject
+  type _MergeN[T /* <: js.Array[Any] */, Result] = Result
 }

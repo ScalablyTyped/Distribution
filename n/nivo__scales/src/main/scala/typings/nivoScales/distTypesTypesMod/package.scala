@@ -2,10 +2,20 @@ package typings.nivoScales.distTypesTypesMod
 
 import typings.nivoScales.anon.`2`
 import typings.nivoScales.anon.`3`
+import typings.nivoScales.nivoScalesStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Axis extends 'x' ? 'y' : 'x'
+  }}}
+  */
+type OtherScaleAxis[Axis /* <: ScaleAxis */] = y
 
 /* Rewritten from type alias, can be one of: 
   - typings.nivoScales.distTypesTypesMod.NumericValue

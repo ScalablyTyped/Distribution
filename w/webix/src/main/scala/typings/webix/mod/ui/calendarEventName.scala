@@ -23,8 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onDestruct
   - typings.webix.webixStrings.onEnter
   - typings.webix.webixStrings.onFocus
-  - typings.webix.webixStrings.onItemClick
-  - typings.webix.webixStrings.onItemDblClick
   - typings.webix.webixStrings.onKeyPress
   - typings.webix.webixStrings.onLongTouch
   - typings.webix.webixStrings.onMouseMove
@@ -78,10 +76,6 @@ object calendarEventName {
   inline def onEnter: typings.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typings.webix.webixStrings.onEnter]
   
   inline def onFocus: typings.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typings.webix.webixStrings.onFocus]
-  
-  inline def onItemClick: typings.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typings.webix.webixStrings.onItemClick]
-  
-  inline def onItemDblClick: typings.webix.webixStrings.onItemDblClick = "onItemDblClick".asInstanceOf[typings.webix.webixStrings.onItemDblClick]
   
   inline def onKeyPress: typings.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typings.webix.webixStrings.onKeyPress]
   

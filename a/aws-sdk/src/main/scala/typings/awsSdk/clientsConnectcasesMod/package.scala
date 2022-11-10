@@ -186,6 +186,15 @@ type TemplateId = java.lang.String
 
 type TemplateName = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - java.lang.String
+*/
+type TemplateStatus = _TemplateStatus | java.lang.String
+
+type TemplateStatusFilters = js.Array[TemplateStatus]
+
 type UpdateCaseRequestFieldsList = js.Array[FieldValue]
 
 type Value = java.lang.String

@@ -10,6 +10,9 @@ import typings.redisClient.redisClientStrings.EXAT
 import typings.redisClient.redisClientStrings.PX
 import typings.redisClient.redisClientStrings.PXAT
 import typings.redisClient.redisClientStrings.XX
+import typings.std.Exclude
+import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,13 +36,12 @@ object distLibCommandsSetMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends keyof T ? {[ P in K ]:? T[K]} & std.Partial<std.Record<std.Exclude<keyof T, K>, never>> : never
     }}}
     */
-  @js.native
-  trait MaximumOneOf[T, K /* <: /* keyof T */ String */] extends StObject
+  type MaximumOneOf[T, K /* <: /* keyof T */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]:? T[K]} */ js.Any) & (Partial[Record[Exclude[/* keyof T */ String, K], scala.Nothing]])
   
   trait SetCommonOptions extends StObject {
     

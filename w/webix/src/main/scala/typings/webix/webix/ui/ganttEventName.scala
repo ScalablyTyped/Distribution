@@ -6,18 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.webix.webixStrings.onAfterScroll
-  - typings.webix.webixStrings.onBindRequest
+  - typings.webix.webixStrings.onBeforeDrag
+  - typings.webix.webixStrings.onBeforeDrop
   - typings.webix.webixStrings.onBlur
   - typings.webix.webixStrings.onDestruct
   - typings.webix.webixStrings.onEnter
   - typings.webix.webixStrings.onFocus
   - typings.webix.webixStrings.onInit
-  - typings.webix.webixStrings.onKeyPress
   - typings.webix.webixStrings.onLongTouch
   - typings.webix.webixStrings.onSwipeX
   - typings.webix.webixStrings.onSwipeY
-  - typings.webix.webixStrings.onTabFocus
-  - typings.webix.webixStrings.onTimedKeyPress
   - typings.webix.webixStrings.onTouchEnd
   - typings.webix.webixStrings.onTouchMove
   - typings.webix.webixStrings.onTouchStart
@@ -29,7 +27,9 @@ object ganttEventName {
   
   inline def onAfterScroll: typings.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typings.webix.webixStrings.onAfterScroll]
   
-  inline def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
+  inline def onBeforeDrag: typings.webix.webixStrings.onBeforeDrag = "onBeforeDrag".asInstanceOf[typings.webix.webixStrings.onBeforeDrag]
+  
+  inline def onBeforeDrop: typings.webix.webixStrings.onBeforeDrop = "onBeforeDrop".asInstanceOf[typings.webix.webixStrings.onBeforeDrop]
   
   inline def onBlur: typings.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typings.webix.webixStrings.onBlur]
   
@@ -41,17 +41,11 @@ object ganttEventName {
   
   inline def onInit: typings.webix.webixStrings.onInit = "onInit".asInstanceOf[typings.webix.webixStrings.onInit]
   
-  inline def onKeyPress: typings.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typings.webix.webixStrings.onKeyPress]
-  
   inline def onLongTouch: typings.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typings.webix.webixStrings.onLongTouch]
   
   inline def onSwipeX: typings.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typings.webix.webixStrings.onSwipeX]
   
   inline def onSwipeY: typings.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typings.webix.webixStrings.onSwipeY]
-  
-  inline def onTabFocus: typings.webix.webixStrings.onTabFocus = "onTabFocus".asInstanceOf[typings.webix.webixStrings.onTabFocus]
-  
-  inline def onTimedKeyPress: typings.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typings.webix.webixStrings.onTimedKeyPress]
   
   inline def onTouchEnd: typings.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typings.webix.webixStrings.onTouchEnd]
   

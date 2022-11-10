@@ -3795,7 +3795,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends (args : infer A): any ? bluebird.bluebird.PromiseMethod<A, bluebird.bluebird.ExtractCallbackValueType<bluebird.bluebird.Last<std.Required<A>>>[0]> : never
     }}}
@@ -3805,7 +3805,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends (error : any, data : infer D): any ? D : never
     }}}
@@ -3902,7 +3902,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [...std.Array<any>, infer L] ? L : never
     }}}
@@ -3922,13 +3922,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TReturn extends never ? never : (args : bluebird.bluebird.WithoutLast<TArgs>): std.Promise<TReturn>
     }}}
     */
-  @js.native
-  trait PromiseMethod[TArgs, TReturn] extends StObject
+  type PromiseMethod[TArgs, TReturn] = js.Function1[/* args */ WithoutLast[TArgs], js.Promise[TReturn]]
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -3942,13 +3941,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string ? / * template literal string: ${T}Async * / string : never
     }}}
     */
-  @js.native
-  trait PromisifyAllKeys[T] extends StObject
+  type PromisifyAllKeys[T] = /* template literal string: ${T}Async */ String
   
   trait PromisifyAllOptions[T]
     extends StObject
@@ -4091,11 +4089,10 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends [...infer A, any] ? A : []
     }}}
     */
-  @js.native
-  trait WithoutLast[T] extends StObject
+  type WithoutLast[T] = js.Array[Any]
 }

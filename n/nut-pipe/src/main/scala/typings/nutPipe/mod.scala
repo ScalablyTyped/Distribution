@@ -23,7 +23,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends nut-pipe.nut-pipe.AsyncBasicHandler<infer TContext, infer TResult> ? (context : TContext, next : nut-pipe.nut-pipe.AsyncBasicHandler<TContext, TResult>): std.Promise<TResult> : never
     }}}
@@ -33,7 +33,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends nut-pipe.nut-pipe.AsyncBasicHandler<infer TContext, infer TResult> ? (context : TContext, services : std.Record<string, any>, next : nut-pipe.nut-pipe.AsyncBasicHandler<TContext, TResult>): std.Promise<TResult | std.Error> : never
     }}}
@@ -56,7 +56,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends nut-pipe.nut-pipe.AsyncLambdaHandler<infer TEvent, infer TContext, infer TResult> ? (event : TEvent, context : TContext, next : T): std.Promise<TResult | std.Error> : never
     }}}
@@ -66,7 +66,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends nut-pipe.nut-pipe.AsyncLambdaHandler<infer TEvent, infer TContext, infer TResult> ? (event : TEvent, context : TContext, services : std.Record<string, any>, next : T): std.Promise<TResult | std.Error> : never
     }}}

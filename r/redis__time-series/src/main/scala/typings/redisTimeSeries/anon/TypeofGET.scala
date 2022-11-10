@@ -1,5 +1,7 @@
 package typings.redisTimeSeries.anon
 
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisTimeSeries.distCommandsGetMod.GetOptions
 import typings.redisTimeSeries.distCommandsMod.SampleRawReply
 import typings.redisTimeSeries.distCommandsMod.SampleReply
 import org.scalablytyped.runtime.StObject
@@ -13,7 +15,8 @@ trait TypeofGET extends StObject {
   
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
-  def transformArguments(key: String): js.Array[String] = js.native
+  def transformArguments(key: String): RedisCommandArguments = js.native
+  def transformArguments(key: String, options: GetOptions): RedisCommandArguments = js.native
   
   def transformReply(reply: js.Array[Any]): Null | SampleReply = js.native
   def transformReply(reply: SampleRawReply): Null | SampleReply = js.native

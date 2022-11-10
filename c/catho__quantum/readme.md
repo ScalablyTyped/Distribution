@@ -1,7 +1,7 @@
 
 # Scala.js typings for catho__quantum
 
-Typings are for version 9.7.0
+Typings are for version 9.8.0
 
 ## Library description:
 Catho react components

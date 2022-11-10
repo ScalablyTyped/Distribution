@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait LandingPage extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "LandingPage")
-@js.native
-object LandingPage extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LOGIN
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BILLING
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO_PREFERENCE
+*/
+trait LandingPage extends StObject
+object LandingPage {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[LandingPage & String] = js.native
+  inline def BILLING: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BILLING = "BILLING".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.BILLING]
   
-  @js.native
-  sealed trait BILLING
-    extends StObject
-       with LandingPage
-  /* "BILLING" */ val BILLING: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.BILLING & String = js.native
+  inline def LOGIN: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LOGIN = "LOGIN".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.LOGIN]
   
-  @js.native
-  sealed trait LOGIN
-    extends StObject
-       with LandingPage
-  /* "LOGIN" */ val LOGIN: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.LOGIN & String = js.native
-  
-  @js.native
-  sealed trait NO_PREFERENCE
-    extends StObject
-       with LandingPage
-  /* "NO_PREFERENCE" */ val NO_PREFERENCE: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.NO_PREFERENCE & String = js.native
+  inline def NO_PREFERENCE: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO_PREFERENCE = "NO_PREFERENCE".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NO_PREFERENCE]
 }

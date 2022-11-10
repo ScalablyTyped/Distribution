@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait rules extends StObject {
   
-  def isChecked(): Boolean
+  def isChecked(value: Any): Boolean
   
-  def isEmail(): Boolean
+  def isEmail(value: Any): Boolean
   
-  def isNotEmpty(): Boolean
+  def isNotEmpty(value: Any): Boolean
   
-  def isNumber(): Boolean
+  def isNumber(value: Any): Boolean
 }
 object rules {
   
   inline def apply(
-    isChecked: () => Boolean,
-    isEmail: () => Boolean,
-    isNotEmpty: () => Boolean,
-    isNumber: () => Boolean
+    isChecked: Any => Boolean,
+    isEmail: Any => Boolean,
+    isNotEmpty: Any => Boolean,
+    isNumber: Any => Boolean
   ): rules = {
-    val __obj = js.Dynamic.literal(isChecked = js.Any.fromFunction0(isChecked), isEmail = js.Any.fromFunction0(isEmail), isNotEmpty = js.Any.fromFunction0(isNotEmpty), isNumber = js.Any.fromFunction0(isNumber))
+    val __obj = js.Dynamic.literal(isChecked = js.Any.fromFunction1(isChecked), isEmail = js.Any.fromFunction1(isEmail), isNotEmpty = js.Any.fromFunction1(isNotEmpty), isNumber = js.Any.fromFunction1(isNumber))
     __obj.asInstanceOf[rules]
   }
   
   extension [Self <: rules](x: Self) {
     
-    inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+    inline def setIsChecked(value: Any => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction1(value))
     
-    inline def setIsEmail(value: () => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction0(value))
+    inline def setIsEmail(value: Any => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
     
-    inline def setIsNotEmpty(value: () => Boolean): Self = StObject.set(x, "isNotEmpty", js.Any.fromFunction0(value))
+    inline def setIsNotEmpty(value: Any => Boolean): Self = StObject.set(x, "isNotEmpty", js.Any.fromFunction1(value))
     
-    inline def setIsNumber(value: () => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction0(value))
+    inline def setIsNumber(value: Any => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
   }
 }

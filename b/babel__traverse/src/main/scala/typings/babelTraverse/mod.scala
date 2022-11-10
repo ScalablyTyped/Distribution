@@ -2778,13 +2778,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<@babel/types.@babel/types.Node> ? {-readonly [ K in keyof T ]: @babel/traverse.@babel/traverse.NodePath<std.Extract<T[K], @babel/types.@babel/types.Node>>} : T extends @babel/types.@babel/types.Node ? [@babel/traverse.@babel/traverse.NodePath<T>] : never
     }}}
     */
-  @js.native
-  trait NodePaths[T /* <: Node | js.Array[Node] */] extends StObject
+  type NodePaths[T /* <: Node | js.Array[Node] */] = js.Array[NodePath[T]]
   
   /* Inlined @babel/traverse.@babel/traverse.Node['type'] | keyof @babel/types.@babel/types.Aliases */
   /* Rewritten from type alias, can be one of: 

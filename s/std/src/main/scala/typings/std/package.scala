@@ -23,6 +23,23 @@ type AudioWorklet = Worklet
 
 type AutoKeyword = auto
 
+/**
+  * Recursively unwraps the "awaited type" of a type. Non-promise "thenables" should resolve to `never`. This emulates the behavior of `await`.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null | undefined ? T : // special case for `null | undefined` when not in `--strictNullChecks` mode
+T extends object & {then (onfulfilled : infer F): any} ? // `await` only unwraps object types with a callable `then`. Non-object types are not unwrapped
+F extends (value : infer V, args : any): any ? // if the argument to `then` is callable, extracts the first argument
+std.Awaited<V> : // recursively unwrap the value
+never : // the argument to `then` was not callable
+T
+  }}}
+  */
+type Awaited[T] = T
+
 type BigInteger = js.typedarray.Uint8Array
 
 type BinaryData = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
@@ -105,6 +122,30 @@ type EvalError = js.Error
 type EventListener = js.Function1[/* evt */ Event, Unit]
 
 type EventListenerOrEventListenerObject = EventListener | EventListenerObject
+
+/**
+  * Exclude from T those types that are assignable to U
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? never : T
+  }}}
+  */
+type Exclude[T, U] = T
+
+/**
+  * Extract from T those types that are assignable to U
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? T : never
+  }}}
+  */
+type Extract[T, U] = T
 
 type FileCallback = js.Function1[/* file */ File, Unit]
 
@@ -212,6 +253,18 @@ type NotificationPermissionCallback = js.Function1[/* permission */ Notification
   * Construct a type with the properties of T except for those in type K.
   */
 type Omit[T, K /* <: /* keyof any */ java.lang.String */] = Pick[T, Exclude[/* keyof T */ java.lang.String, K]]
+
+/**
+  * Removes the 'this' parameter from a function type.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  unknown extends std.ThisParameterType<T> ? T : T extends (args : infer A): infer R ? (args : A): R : T
+  }}}
+  */
+type OmitThisParameter[T] = T
 
 type OnBeforeUnloadEventHandler = OnBeforeUnloadEventHandlerNonNull | Null
 

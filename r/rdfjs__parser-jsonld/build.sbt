@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rdfjs__parser-jsonld"
-version := "1.2-dt-20211202Z-7636cd"
+version := "1.2-dt-20211202Z-42c33a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsonld" % "1.5-dt-20221012Z-5cc61b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-ffba73",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "jsonld" % "1.5-dt-20221012Z-b6587a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-2458e7",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

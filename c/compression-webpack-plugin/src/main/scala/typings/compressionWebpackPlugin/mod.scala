@@ -340,7 +340,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends compression-webpack-plugin.compression-webpack-plugin.ZlibOptions ? {  algorithm :string | compression-webpack-plugin.compression-webpack-plugin.AlgorithmFunction<T> | undefined,   compressionOptions :compression-webpack-plugin.compression-webpack-plugin.CompressionOptions<T> | undefined} : {  algorithm :string | compression-webpack-plugin.compression-webpack-plugin.AlgorithmFunction<T>,   compressionOptions :compression-webpack-plugin.compression-webpack-plugin.CompressionOptions<T> | undefined}
     }}}
@@ -354,13 +354,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends infer U ? U : compression-webpack-plugin.compression-webpack-plugin.CustomOptions
     }}}
     */
-  @js.native
-  trait InferDefaultType[T] extends StObject
+  type InferDefaultType[T] = CustomOptions
   
   trait InternalPluginOptions[T]
     extends StObject

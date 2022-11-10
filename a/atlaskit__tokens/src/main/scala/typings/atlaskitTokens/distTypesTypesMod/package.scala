@@ -38,6 +38,15 @@ type ExperimentalTokenState = experimental
 
 type Id[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P]} */ js.Any)
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends any ? T extends object ? @atlaskit/tokens.@atlaskit/tokens/dist/types/types.Id<@atlaskit/tokens.@atlaskit/tokens/dist/types/types.DeepOmit<T, K>> : T : never
+  }}}
+  */
+type OmitDistributive[T, K /* <: PropertyKey */] = T
+
 type OpacityToken = DesignToken[String, opacity]
 
 type PaintToken[BaseToken] = DesignToken[BaseToken, paint]

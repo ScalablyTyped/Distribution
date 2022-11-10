@@ -1,20 +1,21 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait resizerConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -36,7 +37,9 @@ trait resizerConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onContext: js.UndefOr[obj] = js.undefined
+  
+  var onItemSingleClick: js.UndefOr[WebixCallback] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -51,7 +54,7 @@ object resizerConfig {
   
   extension [Self <: resizerConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -63,7 +66,7 @@ object resizerConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -107,9 +110,13 @@ object resizerConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: obj): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
+    
+    inline def setOnItemSingleClick(value: WebixCallback): Self = StObject.set(x, "onItemSingleClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemSingleClickUndefined: Self = StObject.set(x, "onItemSingleClick", js.undefined)
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

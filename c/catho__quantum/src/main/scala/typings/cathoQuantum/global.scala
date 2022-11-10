@@ -82,6 +82,10 @@ object global {
   @js.native
   val Icon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponent<typeof IconComponent, IconProps> */ Any = js.native
   
+  @JSGlobal("InfiniteScroll")
+  @js.native
+  val InfiniteScroll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponent<typeof InfiniteScrollComponent, InfiniteScrollProps> */ Any = js.native
+  
   @JSGlobal("Input")
   @js.native
   val Input: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponent<typeof InputComponent, InputProps> */ Any = js.native

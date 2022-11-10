@@ -16,6 +16,7 @@ import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.OnRest
 import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.OnResume
 import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.OnStart
 import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.SpringToFn
+import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.AnimationResult
 import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.SpringConfig
 import typings.reactSpringCore.reactSpringCoreStrings.callId
 import typings.reactSpringCore.reactSpringCoreStrings.cancel
@@ -248,11 +249,19 @@ object distDeclarationsSrcTypesPropsMod {
         value: (OnChange[SpringValue[State], Controller[State], Item]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof State ]:? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.OnChange<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<State[P]>, @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<State>, Item>} */ js.Any)
       ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
+      inline def setOnChangeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnPause(
         value: (OnPause[SpringValue[State], Controller[State], Item]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof State ]:? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.OnPause<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<State[P]>, @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<State>, Item>} */ js.Any)
       ): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
+      
+      inline def setOnPauseFunction3(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onPause", js.Any.fromFunction3(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
@@ -264,7 +273,9 @@ object distDeclarationsSrcTypesPropsMod {
       
       inline def setOnPropsUndefined: Self = StObject.set(x, "onProps", js.undefined)
       
-      inline def setOnResolve(value: OnResolve[SpringValue[State], Controller[State], Item]): Self = StObject.set(x, "onResolve", value.asInstanceOf[js.Any])
+      inline def setOnResolve(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onResolve", js.Any.fromFunction3(value))
       
       inline def setOnResolveUndefined: Self = StObject.set(x, "onResolve", js.undefined)
       
@@ -272,17 +283,29 @@ object distDeclarationsSrcTypesPropsMod {
         value: (OnRest[SpringValue[State], Controller[State], Item]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof State ]:? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.OnRest<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<State[P]>, @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<State>, Item>} */ js.Any)
       ): Self = StObject.set(x, "onRest", value.asInstanceOf[js.Any])
       
+      inline def setOnRestFunction3(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onRest", js.Any.fromFunction3(value))
+      
       inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
       inline def setOnResume(
         value: (OnResume[SpringValue[State], Controller[State], Item]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof State ]:? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.OnResume<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<State[P]>, @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<State>, Item>} */ js.Any)
       ): Self = StObject.set(x, "onResume", value.asInstanceOf[js.Any])
       
+      inline def setOnResumeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onResume", js.Any.fromFunction3(value))
+      
       inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
       
       inline def setOnStart(
         value: (OnStart[SpringValue[State], Controller[State], Item]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof State ]:? @react-spring/core.@react-spring/core/dist/declarations/src/types/functions.OnStart<@react-spring/core.@react-spring/core/dist/declarations/src/SpringValue.SpringValue<State[P]>, @react-spring/core.@react-spring/core/dist/declarations/src/Controller.Controller<State>, Item>} */ js.Any)
       ): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      
+      inline def setOnStartFunction3(
+        value: (/* result */ AnimationResult[SpringValue[State]], Controller[State], /* item */ js.UndefOr[Item]) => Unit
+      ): Self = StObject.set(x, "onStart", js.Any.fromFunction3(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
@@ -305,13 +328,12 @@ object distDeclarationsSrcTypesPropsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [@react-spring/core.@react-spring/core/dist/declarations/src/types/common.IsPlainObject<T>] ? @react-spring/core.@react-spring/core/dist/declarations/src/types/props.GoalValues<T> | @react-spring/types.@react-spring/types/util.Falsy : @react-spring/core.@react-spring/core/dist/declarations/src/types/props.GoalValue<T>
     }}}
     */
-  @js.native
-  trait GoalProp[T] extends StObject
+  type GoalProp[T] = GoalValues[T] | Falsy
   
   type GoalValue[T] = js.UndefOr[
     T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidValue<T> */ Any) | UnknownProps | Null
@@ -319,7 +341,7 @@ object distDeclarationsSrcTypesPropsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FluidProps<T> * / any extends infer Props ? {[ P in keyof Props ]:? Props[P] | null} : never
     }}}
@@ -623,9 +645,17 @@ object distDeclarationsSrcTypesPropsMod {
       
       inline def setOnChange(value: EventProp[OnChange[SpringValue[T], SpringValue[T], Unit]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
+      inline def setOnChangeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnPause(value: EventProp[OnPause[SpringValue[T], SpringValue[T], Unit]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
+      
+      inline def setOnPauseFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onPause", js.Any.fromFunction3(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
@@ -637,13 +667,25 @@ object distDeclarationsSrcTypesPropsMod {
       
       inline def setOnRest(value: EventProp[OnRest[SpringValue[T], SpringValue[T], Unit]]): Self = StObject.set(x, "onRest", value.asInstanceOf[js.Any])
       
+      inline def setOnRestFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onRest", js.Any.fromFunction3(value))
+      
       inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
       inline def setOnResume(value: EventProp[OnResume[SpringValue[T], SpringValue[T], Unit]]): Self = StObject.set(x, "onResume", value.asInstanceOf[js.Any])
       
+      inline def setOnResumeFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onResume", js.Any.fromFunction3(value))
+      
       inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
       
       inline def setOnStart(value: EventProp[OnStart[SpringValue[T], SpringValue[T], Unit]]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      
+      inline def setOnStartFunction3(
+        value: (/* result */ AnimationResult[SpringValue[T]], SpringValue[T], /* item */ js.UndefOr[Unit]) => Unit
+      ): Self = StObject.set(x, "onStart", js.Any.fromFunction3(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
@@ -668,11 +710,10 @@ object distDeclarationsSrcTypesPropsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.ReadonlyArray<number | string> ? std.Array<number> : number
     }}}
     */
-  @js.native
-  trait VelocityProp[T] extends StObject
+  type VelocityProp[T] = js.Array[Double]
 }

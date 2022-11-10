@@ -8,6 +8,7 @@ import typings.materialUiLab.materialUiLabStrings.mouse
 import typings.materialUiLab.materialUiLabStrings.start
 import typings.materialUiLab.materialUiLabStrings.touch
 import typings.react.mod.ChangeEvent
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,13 +82,12 @@ object useAutocompleteUseAutocompleteMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     FreeSolo extends true ? string : never
     }}}
     */
-  @js.native
-  trait AutocompleteFreeSoloValueMapping[FreeSolo] extends StObject
+  type AutocompleteFreeSoloValueMapping[FreeSolo] = String
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.keyboard
@@ -610,11 +610,10 @@ object useAutocompleteUseAutocompleteMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Multiple extends undefined | false ? DisableClearable extends true ? std.NonNullable<T | @material-ui/lab.@material-ui/lab/useAutocomplete/useAutocomplete.AutocompleteFreeSoloValueMapping<FreeSolo>> : T | null | @material-ui/lab.@material-ui/lab/useAutocomplete/useAutocomplete.AutocompleteFreeSoloValueMapping<FreeSolo> : std.Array<T | @material-ui/lab.@material-ui/lab/useAutocomplete/useAutocomplete.AutocompleteFreeSoloValueMapping<FreeSolo>>
     }}}
     */
-  @js.native
-  trait Value[T, Multiple, DisableClearable, FreeSolo] extends StObject
+  type Value[T, Multiple, DisableClearable, FreeSolo] = NonNullable[T | AutocompleteFreeSoloValueMapping[FreeSolo]]
 }

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "docker-events"
-version := "0.0-dt-20211202Z-af11e1"
+version := "0.0-dt-20211202Z-55a343"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "docker-modem" % "3.0-dt-20211202Z-47729f",
-  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20221027Z-bbbab1",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20221103Z-6ae419",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "docker-modem" % "3.0-dt-20211202Z-0c19b7",
+  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20221027Z-831a9c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20221103Z-acbd5d",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

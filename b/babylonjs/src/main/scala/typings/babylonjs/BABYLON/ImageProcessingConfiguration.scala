@@ -236,14 +236,28 @@ trait ImageProcessingConfiguration extends StObject {
   var vignetteCameraFov: Double = js.native
   
   /**
-    * Vignette centre X Offset.
+    * Vignette center X Offset.
     */
-  var vignetteCentreX: Double = js.native
+  var vignetteCenterX: Double = js.native
   
   /**
-    * Vignette centre Y Offset.
+    * Vignette center Y Offset.
     */
-  var vignetteCentreY: Double = js.native
+  var vignetteCenterY: Double = js.native
+  
+  /**
+    * Back Compat: Vignette center X Offset.
+    * @deprecated use vignetteCenterX instead
+    */
+  def vignetteCentreX: Double = js.native
+  def vignetteCentreX_=(value: Double): Unit = js.native
+  
+  /**
+    * Back Compat: Vignette center Y Offset.
+    * @deprecated use vignetteCenterY instead
+    */
+  def vignetteCentreY: Double = js.native
+  def vignetteCentreY_=(value: Double): Unit = js.native
   
   /**
     * Color of the vignette applied on the screen through the chosen blend mode (vignetteBlendMode)

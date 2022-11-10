@@ -14,7 +14,7 @@ trait ListMissionProfilesResponse extends StObject {
   /**
     * Next token returned in the response of a previous ListMissionProfiles call. Used to get the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.undefined
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListMissionProfilesResponse {
   
@@ -31,7 +31,7 @@ object ListMissionProfilesResponse {
     
     inline def setMissionProfileListVarargs(value: MissionProfileListItem*): Self = StObject.set(x, "missionProfileList", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }

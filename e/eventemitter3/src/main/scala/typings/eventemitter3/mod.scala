@@ -123,23 +123,21 @@ object mod extends Shortcut {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string | symbol ? (args : ...any): void : (args : eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>]): void
     }}}
     */
-  @js.native
-  trait EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] extends StObject
+  type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[/* repeated */ Any, Unit]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends string | symbol ? T : keyof T
     }}}
     */
-  @js.native
-  trait EventNames[T /* <: ValidEventTypes */] extends StObject
+  type EventNames[T /* <: ValidEventTypes */] = T
   
   type ListenerFn[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, Unit]
   

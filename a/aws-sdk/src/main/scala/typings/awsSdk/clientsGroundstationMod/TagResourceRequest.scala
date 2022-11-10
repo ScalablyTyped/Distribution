@@ -9,7 +9,7 @@ trait TagResourceRequest extends StObject {
   /**
     * ARN of a resource tag.
     */
-  var resourceArn: String
+  var resourceArn: AnyArn
   
   /**
     * Tags assigned to a resource.
@@ -18,14 +18,14 @@ trait TagResourceRequest extends StObject {
 }
 object TagResourceRequest {
   
-  inline def apply(resourceArn: String, tags: TagsMap): TagResourceRequest = {
+  inline def apply(resourceArn: AnyArn, tags: TagsMap): TagResourceRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceRequest]
   }
   
   extension [Self <: TagResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: AnyArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }

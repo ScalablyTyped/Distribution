@@ -1,6 +1,7 @@
 package typings.scheduler
 
 import typings.scheduler.anon.Cancel
+import typings.scheduler.schedulerBooleans.`false`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,13 +41,12 @@ object tracingMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     scheduler.scheduler/tracing.Build extends {  type :infer BuildType} ? BuildType extends 'production' | 'profiling' ? false : BuildType extends 'development' ? true : undefined : undefined
     }}}
     */
-  @js.native
-  trait EnableSchedulerTracing extends StObject
+  type EnableSchedulerTracing = `false`
   
   type IfSchedulerTracing[WhenTrue, WhenFalse] = TypeByBuildFlag[EnableSchedulerTracing, WhenTrue, WhenFalse]
   
@@ -190,13 +190,12 @@ object tracingMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Flag extends undefined ? WhenTrue | WhenFalse : Flag extends true ? WhenTrue : WhenFalse
     }}}
     */
-  @js.native
-  trait TypeByBuildFlag[Flag /* <: js.UndefOr[Boolean] */, WhenTrue, WhenFalse] extends StObject
+  type TypeByBuildFlag[Flag /* <: js.UndefOr[Boolean] */, WhenTrue, WhenFalse] = WhenTrue
   
   type WrappedFunction[T /* <: js.Function1[/* repeated */ Any, Any] */] = T & Cancel
 }

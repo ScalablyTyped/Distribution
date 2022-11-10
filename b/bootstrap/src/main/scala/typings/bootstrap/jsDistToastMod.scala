@@ -96,6 +96,11 @@ object jsDistToastMod {
     def hide(): Unit = js.native
     
     /**
+      * Returns a boolean according to toast’s visibility state.
+      */
+    def isShown(): Boolean = js.native
+    
+    /**
       * Reveals an element’s toast. Returns to the caller before the toast has actually
       * been shown (i.e. before the shown.bs.toast event occurs).
       * You have to manually call this method, instead your toast won’t show.

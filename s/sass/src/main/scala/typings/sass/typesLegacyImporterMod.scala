@@ -64,13 +64,12 @@ object typesLegacyImporterMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     sync extends 'async' ? sass.sass/types/legacy/importer.LegacySyncImporter | sass.sass/types/legacy/importer.LegacyAsyncImporter : sass.sass/types/legacy/importer.LegacySyncImporter
     }}}
     */
-  @js.native
-  trait LegacyImporter[sync] extends StObject
+  type LegacyImporter[sync] = LegacySyncImporter | LegacyAsyncImporter
   
   /* Rewritten from type alias, can be one of: 
     - typings.sass.anon.File

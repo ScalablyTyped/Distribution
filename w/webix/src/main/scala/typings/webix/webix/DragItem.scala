@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DragItem extends StObject {
   
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String
+  def $drag(source: HTMLElement, ev: Event, pointer: String): String
   
   @JSName("$dragHTML")
   def $dragHTML(args: Any*): Any
@@ -20,7 +20,7 @@ trait DragItem extends StObject {
   def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement
   
   @JSName("$dragMark")
-  def $dragMark(context: Any, ev: Event): Boolean
+  def $dragMark(context: obj, ev: Event): Boolean
   
   @JSName("$dragOut")
   def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit
@@ -41,28 +41,28 @@ trait DragItem extends StObject {
 object DragItem {
   
   inline def apply(
-    $drag: (HTMLElement, Event) => String,
+    $drag: (HTMLElement, Event, String) => String,
     $dragHTML: WebixCallback,
     $dragIn: (HTMLElement, HTMLElement, Event) => HTMLElement,
-    $dragMark: (Any, Event) => Boolean,
+    $dragMark: (obj, Event) => Boolean,
     $dragOut: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit,
     $drop: (HTMLElement, HTMLElement, Event) => Unit,
     $dropAllow: WebixCallback,
     $dropHTML: WebixCallback
   ): DragItem = {
-    val __obj = js.Dynamic.literal($drag = js.Any.fromFunction2($drag), $dragHTML = $dragHTML.asInstanceOf[js.Any], $dragIn = js.Any.fromFunction3($dragIn), $dragMark = js.Any.fromFunction2($dragMark), $dragOut = js.Any.fromFunction4($dragOut), $drop = js.Any.fromFunction3($drop), $dropAllow = $dropAllow.asInstanceOf[js.Any], $dropHTML = $dropHTML.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($drag = js.Any.fromFunction3($drag), $dragHTML = $dragHTML.asInstanceOf[js.Any], $dragIn = js.Any.fromFunction3($dragIn), $dragMark = js.Any.fromFunction2($dragMark), $dragOut = js.Any.fromFunction4($dragOut), $drop = js.Any.fromFunction3($drop), $dropAllow = $dropAllow.asInstanceOf[js.Any], $dropHTML = $dropHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragItem]
   }
   
   extension [Self <: DragItem](x: Self) {
     
-    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    inline def set$drag(value: (HTMLElement, Event, String) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction3(value))
     
     inline def set$dragHTML(value: WebixCallback): Self = StObject.set(x, "$dragHTML", value.asInstanceOf[js.Any])
     
     inline def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
     
-    inline def set$dragMark(value: (Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
+    inline def set$dragMark(value: (obj, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
     
     inline def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction4(value))
     

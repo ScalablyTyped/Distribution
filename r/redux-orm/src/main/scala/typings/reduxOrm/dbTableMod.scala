@@ -64,13 +64,12 @@ object dbTableMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     MClass['options'] extends (): {[ P in K ]: infer R} ? R extends string ? R : DefaultValue : MClass['options'] extends {[ P in K ]: infer R} ? R extends string ? R : DefaultValue : DefaultValue
     }}}
     */
-  @js.native
-  trait ExtractModelOption[MClass /* <: Instantiable0[AnyModel] */, K /* <: idAttribute | arrName | mapName | fields */, DefaultValue /* <: String */] extends StObject
+  type ExtractModelOption[MClass /* <: Instantiable0[AnyModel] */, K /* <: idAttribute | arrName | mapName | fields */, DefaultValue /* <: String */] = DefaultValue
   
   type IdAttribute[MClass /* <: Instantiable0[AnyModel] */] = ExtractModelOption[MClass, idAttribute, id]
   

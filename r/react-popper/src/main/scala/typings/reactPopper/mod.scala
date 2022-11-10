@@ -159,13 +159,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Name extends react-popper.react-popper.StrictModifierNames ? react-popper.react-popper.StrictModifier<Name> : std.Partial<@popperjs/core.@popperjs/core/lib/types.Modifier<Name, Options>>
     }}}
     */
-  @js.native
-  trait Modifier[Name, Options /* <: js.Object */] extends StObject
+  type Modifier[Name, Options /* <: js.Object */] = StrictModifier[Name]
   
   trait PopperArrowProps extends StObject {
     
@@ -375,11 +374,10 @@ object mod {
   // Utility type
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     U extends M ? U : never
     }}}
     */
-  @js.native
-  trait UnionWhere[U, M] extends StObject
+  type UnionWhere[U, M] = U
 }

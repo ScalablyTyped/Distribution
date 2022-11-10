@@ -131,6 +131,8 @@ object distLibClusterMod {
     
     var password: js.UndefOr[String] = js.undefined
     
+    var pingInterval: js.UndefOr[Double] = js.undefined
+    
     var readonly: js.UndefOr[Boolean] = js.undefined
     
     var socket: js.UndefOr[RedisSocketOptions] = js.undefined
@@ -171,6 +173,10 @@ object distLibClusterMod {
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      
+      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+      
+      inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
       
       inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       

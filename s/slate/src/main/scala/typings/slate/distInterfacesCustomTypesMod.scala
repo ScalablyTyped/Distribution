@@ -65,11 +65,10 @@ object distInterfacesCustomTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     unknown extends slate.slate/dist/interfaces/custom-types.CustomTypes[K] ? B : slate.slate/dist/interfaces/custom-types.CustomTypes[K]
     }}}
     */
-  @js.native
-  trait ExtendedType[K /* <: ExtendableTypes */, B] extends StObject
+  type ExtendedType[K /* <: ExtendableTypes */, B] = B
 }

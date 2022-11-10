@@ -1,25 +1,82 @@
 package typings.pinoPretty
 
-import typings.pino.mod.LogDescriptor
+import typings.node.NodeJS.WritableStream
+import typings.node.streamMod.Transform
+import typings.pino.mod.DestinationStream
+import typings.pino.mod.Level
+import typings.pinoAbstractTransport.mod.OnUnknown
+import typings.pinoPretty.anon.Call
+import typings.pinoPretty.mod.PinoPretty.MessageFormatFunc
+import typings.pinoPretty.mod.PinoPretty.Prettifier
+import typings.pinoPretty.mod.PinoPretty.PrettyStream
 import typings.pinoPretty.pinoPrettyBooleans.`false`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): Prettifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Prettifier]
-  inline def apply(options: PrettyOptions): Prettifier = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Prettifier]
-  
   @JSImport("pino-pretty", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type MessageFormatFunc = js.Function3[/* log */ LogDescriptor, /* messageKey */ String, /* levelLabel */ String, String]
+  object default {
+    
+    inline def apply(): PrettyStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PrettyStream]
+    inline def apply(options: PrettyOptions): PrettyStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PrettyStream]
+    
+    @JSImport("pino-pretty", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
   
-  type Prettifier = js.Function1[/* inputData */ String | js.Object, String]
+  inline def colorizerFactory(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")().asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Boolean, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: js.Array[js.Tuple2[Double, String]], useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def colorizerFactory(useColors: Unit, customColors: Unit, useOnlyCustomProps: Boolean): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("colorizerFactory")(useColors.asInstanceOf[js.Any], customColors.asInstanceOf[js.Any], useOnlyCustomProps.asInstanceOf[js.Any])).asInstanceOf[Call]
+  
+  inline def prettyFactory(options: PrettyOptions): js.Function1[/* inputData */ Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyFactory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* inputData */ Any, String]]
+  
+  type LogDescriptor = Record[String, Any]
+  
+  object PinoPretty {
+    
+    type ColorizerFactory = js.Function3[
+        /* useColors */ js.UndefOr[Boolean], 
+        /* customColors */ js.UndefOr[js.Array[js.Tuple2[Double, String]]], 
+        /* useOnlyCustomProps */ js.UndefOr[Boolean], 
+        Call
+      ]
+    
+    type MessageFormatFunc = js.Function3[/* log */ LogDescriptor, /* messageKey */ String, /* levelLabel */ String, String]
+    
+    type Prettifier = js.Function1[/* inputData */ String | js.Object, String]
+    
+    type PrettyFactory = js.Function1[
+        /* options */ typings.pinoPretty.mod.PrettyOptions, 
+        js.Function1[/* inputData */ Any, String]
+      ]
+    
+    type PrettyOptions = typings.pinoPretty.mod.PrettyOptions
+    
+    @js.native
+    trait PrettyStream
+      extends Transform
+         with OnUnknown
+  }
   
   trait PrettyOptions extends StObject {
+    
+    /**
+      * Opens the file with the 'a' flag.
+      * @default true
+      */
+    var append: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, will add color information to the formatted output message.
@@ -32,6 +89,34 @@ object mod {
       * @default false
       */
     var crlf: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Provides the ability to add a custom prettify function for specific log properties.
+      * `customPrettifiers` is an object, where keys are log properties that will be prettified
+      * and value is the prettify function itself.
+      * For example, if a log line contains a query property, you can specify a prettifier for it:
+      * @default {}
+      *
+      * @example
+      * ```typescript
+      * {
+      *   customPrettifiers: {
+      *     query: prettifyQuery
+      *   }
+      * }
+      * //...
+      * const prettifyQuery = value => {
+      *  // do some prettify magic
+      * }
+      * ```
+      */
+    var customPrettifiers: js.UndefOr[Record[String, Prettifier]] = js.undefined
+    
+    /**
+      * The file, file descriptor, or stream to write to.  Defaults to 1 (stdout).
+      * @default 1
+      */
+    var destination: js.UndefOr[String | Double | DestinationStream | WritableStream] = js.undefined
     
     /**
       * Define the log keys that are associated with error like objects.
@@ -54,9 +139,16 @@ object mod {
     
     /**
       * Ignore one or several keys.
+      * Will be overridden by the option include if include is presented.
       * @example "time,hostname"
       */
     var ignore: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Include one or several keys.
+      * @example "time,level"
+      */
+    var include: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, it will print the name of the log level as the first field in the log line.
@@ -100,15 +192,28 @@ object mod {
     var messageKey: js.UndefOr[String] = js.undefined
     
     /**
-      * Specify a search pattern according to {@link http://jmespath.org|jmespath}
+      * The minimum log level to include in the output.
+      * @default "trace"
       */
-    var search: js.UndefOr[String] = js.undefined
+    var minimumLevel: js.UndefOr[Level] = js.undefined
+    
+    /**
+      * Ensure directory for destination file exists.
+      * @default false
+      */
+    var mkdir: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Print each log message on a single line (errors will still be multi-line).
       * @default false
       */
     var singleLine: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Makes messaging synchronous.
+      * @default false
+      */
+    var sync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key in the JSON object to use for timestamp display.
@@ -136,6 +241,10 @@ object mod {
     
     extension [Self <: PrettyOptions](x: Self) {
       
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      
       inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
       inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
@@ -143,6 +252,14 @@ object mod {
       inline def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
       
       inline def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
+      
+      inline def setCustomPrettifiers(value: Record[String, Prettifier]): Self = StObject.set(x, "customPrettifiers", value.asInstanceOf[js.Any])
+      
+      inline def setCustomPrettifiersUndefined: Self = StObject.set(x, "customPrettifiers", js.undefined)
+      
+      inline def setDestination(value: String | Double | DestinationStream | WritableStream): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
       inline def setErrorLikeObjectKeys(value: js.Array[String]): Self = StObject.set(x, "errorLikeObjectKeys", value.asInstanceOf[js.Any])
       
@@ -161,6 +278,10 @@ object mod {
       inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      
+      inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
       inline def setLevelFirst(value: Boolean): Self = StObject.set(x, "levelFirst", value.asInstanceOf[js.Any])
       
@@ -184,13 +305,21 @@ object mod {
       
       inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
       
-      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setMinimumLevel(value: Level): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
       
-      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
+      
+      inline def setMkdir(value: Boolean): Self = StObject.set(x, "mkdir", value.asInstanceOf[js.Any])
+      
+      inline def setMkdirUndefined: Self = StObject.set(x, "mkdir", js.undefined)
       
       inline def setSingleLine(value: Boolean): Self = StObject.set(x, "singleLine", value.asInstanceOf[js.Any])
       
       inline def setSingleLineUndefined: Self = StObject.set(x, "singleLine", js.undefined)
+      
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
       inline def setTimestampKey(value: String): Self = StObject.set(x, "timestampKey", value.asInstanceOf[js.Any])
       

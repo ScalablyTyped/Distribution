@@ -13,6 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def pushChunkSizeArgument(args: RedisCommandArguments): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("pushChunkSizeArgument")(args.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
 inline def pushChunkSizeArgument(args: RedisCommandArguments, chunkSize: Double): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushChunkSizeArgument")(args.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
 
+inline def pushDuplicatePolicy(args: RedisCommandArguments): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("pushDuplicatePolicy")(args.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+inline def pushDuplicatePolicy(args: RedisCommandArguments, duplicatePolicy: TimeSeriesDuplicatePolicies): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushDuplicatePolicy")(args.asInstanceOf[js.Any], duplicatePolicy.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+
 inline def pushEncodingArgument(args: RedisCommandArguments): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("pushEncodingArgument")(args.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
 inline def pushEncodingArgument(args: RedisCommandArguments, encoding: TimeSeriesEncoding): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushEncodingArgument")(args.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
 
@@ -21,6 +24,9 @@ inline def pushFilterArgument(args: RedisCommandArguments, filter: js.Array[Stri
 
 inline def pushLabelsArgument(args: RedisCommandArguments): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("pushLabelsArgument")(args.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
 inline def pushLabelsArgument(args: RedisCommandArguments, labels: Labels): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushLabelsArgument")(args.asInstanceOf[js.Any], labels.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+
+inline def pushLatestArgument(args: RedisCommandArguments): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("pushLatestArgument")(args.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+inline def pushLatestArgument(args: RedisCommandArguments, latest: Boolean): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushLatestArgument")(args.asInstanceOf[js.Any], latest.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
 
 inline def pushMRangeArguments(args: RedisCommandArguments, fromTimestamp: Timestamp, toTimestamp: Timestamp, filter: Filter): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushMRangeArguments")(args.asInstanceOf[js.Any], fromTimestamp.asInstanceOf[js.Any], toTimestamp.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
 inline def pushMRangeArguments(

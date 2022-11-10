@@ -35,6 +35,8 @@ object libTypescriptSrcVendorViewsHeaderHeaderBackgroundMod {
       
       inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }

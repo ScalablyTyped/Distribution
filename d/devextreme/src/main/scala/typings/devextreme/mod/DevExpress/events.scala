@@ -65,13 +65,12 @@ object events {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     {} extends devextreme.devextreme.DevExpress.events.EventType ? devextreme.devextreme.DevExpress.events.EventObject & TNativeEvent : devextreme.devextreme.DevExpress.events.EventType
     }}}
     */
-  @js.native
-  trait DxEvent[TNativeEvent] extends StObject
+  type DxEvent[TNativeEvent] = EventObject & TNativeEvent
   
   trait EventInfo[TComponent] extends StObject {
     

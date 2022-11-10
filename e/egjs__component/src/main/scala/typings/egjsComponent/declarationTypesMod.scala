@@ -57,13 +57,12 @@ object declarationTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T[K] extends @egjs/component.@egjs/component/declaration/types.NoArguments ? (): any : T[K] extends @egjs/component.@egjs/component/declaration/types.AnyFunction ? T[K] : T[K] extends @egjs/component.@egjs/component/declaration/ComponentEvent.ComponentEvent<infer PROPS, string, any> ? (event : @egjs/component.@egjs/component/declaration/ComponentEvent.ComponentEvent<PROPS, K, THIS>): any : (event : T[K]): any
     }}}
     */
-  @js.native
-  trait EventCallback[T /* <: EventMap */, K /* <: EventKey[T] */, THIS] extends StObject
+  type EventCallback[T /* <: EventMap */, K /* <: EventKey[T] */, THIS] = js.Function0[Any]
   
   type EventHash[T /* <: EventMap */, THIS] = Partial[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in @egjs/component.@egjs/component/declaration/types.EventKey<T> ]: @egjs/component.@egjs/component/declaration/types.EventCallback<T, K, THIS>} */ js.Any
@@ -75,13 +74,12 @@ object declarationTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T[K] extends @egjs/component.@egjs/component/declaration/types.NoArguments ? std.Array<void> : T[K] extends @egjs/component.@egjs/component/declaration/types.AnyFunction ? std.Parameters<T[K]> : [T[K]]
     }}}
     */
-  @js.native
-  trait EventTriggerParams[T, K /* <: EventKey[T] */] extends StObject
+  type EventTriggerParams[T, K /* <: EventKey[T] */] = js.Array[Unit]
   
   type NoArguments = js.UndefOr[Null | Unit]
 }

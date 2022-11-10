@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.deviceInputInputDevicesDeviceEnumsMod.DeviceType
 import typings.babylonjs.deviceInputInputDevicesDeviceTypesMod.DeviceInput
 import typings.babylonjs.deviceInputInputInterfacesMod.IDeviceInputSystem
+import typings.babylonjs.eventsDeviceInputEventsMod.IKeyboardEvent
 import typings.babylonjs.miscObservableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,11 +53,10 @@ object deviceInputInputDevicesDeviceSourceMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends babylonjs.babylonjs/DeviceInput/InputDevices/deviceEnums.DeviceType.Keyboard ? babylonjs.babylonjs/Events/deviceInputEvents.IKeyboardEvent : T extends babylonjs.babylonjs/DeviceInput/InputDevices/deviceEnums.DeviceType.Mouse ? babylonjs.babylonjs/Events/deviceInputEvents.IWheelEvent | babylonjs.babylonjs/Events/deviceInputEvents.IPointerEvent : T extends babylonjs.babylonjs/DeviceInput/InputDevices/deviceEnums.DeviceType.Touch ? babylonjs.babylonjs/Events/deviceInputEvents.IPointerEvent : never
     }}}
     */
-  @js.native
-  trait DeviceSourceEvent[T /* <: DeviceType */] extends StObject
+  type DeviceSourceEvent[T /* <: DeviceType */] = IKeyboardEvent
 }

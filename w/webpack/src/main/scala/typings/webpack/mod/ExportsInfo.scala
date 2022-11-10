@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExportsInfo extends StObject {
   
-  val exports: js.Iterable[ExportInfo] = js.native
+  def exports: js.Iterable[ExportInfo] = js.native
   
   def getExportInfo(name: String): ExportInfo = js.native
   
@@ -49,13 +49,13 @@ trait ExportsInfo extends StObject {
   
   def isUsed(runtime: RuntimeSpec): Boolean = js.native
   
-  val orderedExports: js.Iterable[ExportInfo] = js.native
+  def orderedExports: js.Iterable[ExportInfo] = js.native
   
-  val orderedOwnedExports: js.Iterable[ExportInfo] = js.native
+  def orderedOwnedExports: js.Iterable[ExportInfo] = js.native
   
-  val otherExportsInfo: ExportInfo = js.native
+  def otherExportsInfo: ExportInfo = js.native
   
-  val ownedExports: js.Iterable[ExportInfo] = js.native
+  def ownedExports: js.Iterable[ExportInfo] = js.native
   
   def restoreProvided(__0: OtherCanMangleProvide): Unit = js.native
   

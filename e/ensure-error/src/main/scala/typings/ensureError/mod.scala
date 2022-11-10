@@ -29,13 +29,12 @@ object mod {
   // https://stackoverflow.com/a/49928360/4135063
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     0 extends 1 & T ? ThenType : ElseType
     }}}
     */
-  @js.native
-  trait IfAny[T, ThenType, ElseType] extends StObject
+  type IfAny[T, ThenType, ElseType] = ThenType
   
   trait NonError
     extends StObject

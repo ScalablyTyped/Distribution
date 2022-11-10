@@ -26,7 +26,7 @@ object distCommandsInfoDEBUGMod {
   
   inline def transformReply(rawReply: InfoDebugRawReply): InfoDebugReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(rawReply.asInstanceOf[js.Any]).asInstanceOf[InfoDebugReply]
   
-  type InfoDebugRawReply = /* import warning: importer.ImportType#apply c repeated non-array type: [_: string, totalSamples: number, _: string, memoryUsage: number, _: string, firstTimestamp: number, _: string, lastTimestamp: number, _: string, retentionTime: number, _: string, chunkCount: number, _: string, chunkSize: number, _: string, chunkType: string, _: string, duplicatePolicy: @redis/time-series.@redis/time-series/dist/commands.TimeSeriesDuplicatePolicies | null, _: string, labels: std.Array<[name: string, value: string]>, _: string, sourceKey: string | null, _: string, rules: std.Array<[key: string, timeBucket: number, aggregationType: @redis/time-series.@redis/time-series/dist/commands.TimeSeriesAggregationType]>] */ /* infoArgs */ js.Array[js.Array[Any]]
+  type InfoDebugRawReply = /* import warning: importer.ImportType#apply c repeated non-array type: ['totalSamples', number, 'memoryUsage', number, 'firstTimestamp', number, 'lastTimestamp', number, 'retentionTime', number, 'chunkCount', number, 'chunkSize', number, 'chunkType', string, 'duplicatePolicy', @redis/time-series.@redis/time-series/dist/commands.TimeSeriesDuplicatePolicies | null, 'labels', std.Array<[name: string, value: string]>, 'sourceKey', string | null, 'rules', std.Array<[key: string, timeBucket: number, aggregationType: @redis/time-series.@redis/time-series/dist/commands.TimeSeriesAggregationType]>] */ js.Array[js.Array[Any]]
   
   trait InfoDebugReply
     extends StObject

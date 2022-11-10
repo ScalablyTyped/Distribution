@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReserveContactRequest extends StObject {
   
   /**
-    * End time of a contact.
+    * End time of a contact in UTC.
     */
   var endTime: js.Date
   
   /**
     * Name of a ground station.
     */
-  var groundStation: String
+  var groundStation: GroundStationName
   
   /**
     * ARN of a mission profile.
@@ -27,7 +27,7 @@ trait ReserveContactRequest extends StObject {
   var satelliteArn: typings.awsSdk.clientsGroundstationMod.satelliteArn
   
   /**
-    * Start time of a contact.
+    * Start time of a contact in UTC.
     */
   var startTime: js.Date
   
@@ -40,7 +40,7 @@ object ReserveContactRequest {
   
   inline def apply(
     endTime: js.Date,
-    groundStation: String,
+    groundStation: GroundStationName,
     missionProfileArn: MissionProfileArn,
     satelliteArn: satelliteArn,
     startTime: js.Date
@@ -53,7 +53,7 @@ object ReserveContactRequest {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setGroundStation(value: String): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
+    inline def setGroundStation(value: GroundStationName): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
     
     inline def setMissionProfileArn(value: MissionProfileArn): Self = StObject.set(x, "missionProfileArn", value.asInstanceOf[js.Any])
     

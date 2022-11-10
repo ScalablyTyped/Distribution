@@ -27,7 +27,7 @@ trait RuntimeSpecMap[T] extends StObject {
   def set(runtime: Any, value: Any): Unit = js.native
   def set(runtime: Unit, value: Any): Unit = js.native
   
-  val size: js.UndefOr[Double] = js.native
+  def size: Double = js.native
   
   def update(): Unit = js.native
   def update(runtime: Any): Unit = js.native

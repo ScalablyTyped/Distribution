@@ -1178,13 +1178,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends 'clientInformation' | 'closed' | 'customElements' | 'devicePixelRatio' | 'document' | 'event' | 'external' | 'frameElement' | 'frames' | 'history' | 'innerHeight' | 'innerWidth' | 'length' | 'locationbar' | 'menubar' | 'name' | 'navigator' | 'ondevicemotion' | 'ondeviceorientation' | 'onorientationchange' | 'opener' | 'orientation' | 'outerHeight' | 'outerWidth' | 'pageXOffset' | 'pageYOffset' | 'parent' | 'personalbar' | 'screen' | 'screenLeft' | 'screenTop' | 'screenX' | 'screenY' | 'scrollX' | 'scrollY' | 'scrollbars' | 'self' | 'speechSynthesis' | 'status' | 'statusbar' | 'toolbar' | 'top' | 'visualViewport' | 'window' ? std.Window[T] : T
     }}}
     */
-  @js.native
-  trait EventListenerThisType[T /* <: EventTarget | WindowEventTargets */] extends StObject
+  type EventListenerThisType[T /* <: EventTarget | WindowEventTargets */] = T
   
   /* Inlined parent std.Pick<std.AddEventListenerOptions, 'capture' | 'passive'> */
   trait EventOptions extends StObject {
@@ -1214,13 +1213,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.OnErrorEventHandlerNonNull extends (args : infer A): any ? A : []
     }}}
     */
-  @js.native
-  trait OnErrorEventHandlerArgs extends StObject
+  type OnErrorEventHandlerArgs = js.Array[Any]
   
   type WindowEventTargets = js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: std.BarProp extends std.EventTarget ? 'locationbar' : never */ js.Any

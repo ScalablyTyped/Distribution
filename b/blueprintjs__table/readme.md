@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__table
 
-Typings are for version 4.7.8
+Typings are for version 4.7.9
 
 ## Library description:
 Scalable interactive table component

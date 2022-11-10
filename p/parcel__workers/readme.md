@@ -1,7 +1,7 @@
 
 # Scala.js typings for parcel__workers
 
-Typings are for version 2.7.0
+Typings are for version 2.8.0
 
 ## Library description:
 Blazing fast, zero configuration web application bundler

@@ -107,7 +107,7 @@ object distTypesTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends @octokit/core.@octokit/core/dist-types/types.AnyFunction ? std.ReturnType<T> : T extends std.Array<@octokit/core.@octokit/core/dist-types/types.AnyFunction> ? @octokit/core.@octokit/core/dist-types/types.UnionToIntersection<std.Exclude<std.ReturnType<T[number]>, void>> : never
     }}}
@@ -117,7 +117,7 @@ object distTypesTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Union extends any ? (argument : Union): void : never extends (argument : infer Intersection): void ? Intersection : never
     }}}

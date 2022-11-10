@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
@@ -26,17 +25,17 @@ trait dxActionSheet[TItem /* <: ItemLike[TKey] */, TKey]
   /**
     * Hides the UI component.
     */
-  def hide(): DxPromise[Unit] = js.native
+  def hide(): js.Promise[Unit] = js.native
   
   /**
     * Shows the UI component.
     */
-  def show(): DxPromise[Unit] = js.native
+  def show(): js.Promise[Unit] = js.native
   
   /**
     * Shows or hides the UI component depending on the argument.
     */
-  def toggle(showing: Boolean): DxPromise[Unit] = js.native
+  def toggle(showing: Boolean): js.Promise[Unit] = js.native
 }
 object dxActionSheet {
   

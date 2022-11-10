@@ -7993,13 +7993,12 @@ object withStylesWithStylesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     StylesOrClassKey extends string ? StylesOrClassKey : StylesOrClassKey extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.StyleRulesCallback<any, any, infer ClassKey> ? ClassKey : StylesOrClassKey extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.StyleRules<any, infer ClassKey> ? ClassKey : never
     }}}
     */
-  @js.native
-  trait ClassKeyOfStyles[StylesOrClassKey] extends StObject
+  type ClassKeyOfStyles[StylesOrClassKey] = StylesOrClassKey
   
   type ClassNameMap[ClassKey /* <: String */] = Record[ClassKey, String]
   
@@ -8067,7 +8066,7 @@ object withStylesWithStylesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     StylesType extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.Styles<any, infer Props, string> ? Props : {}
     }}}
@@ -8118,7 +8117,7 @@ object withStylesWithStylesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     StylesType extends @material-ui/styles.@material-ui/styles/withStyles/withStyles.Styles<infer Theme, any, string> ? Theme : {}
     }}}

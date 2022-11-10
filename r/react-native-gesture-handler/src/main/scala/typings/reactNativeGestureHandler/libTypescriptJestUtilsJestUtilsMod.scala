@@ -67,17 +67,16 @@ object libTypescriptJestUtilsJestUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/gestures/gesture.BaseGesture<infer TGesturePayload> ? TGesturePayload : T extends react-native-gesture-handler.react-native-gesture-handler/lib/typescript/jestUtils/jestUtils.ClassComponentConstructor<infer THandlerProps> ? react-native-gesture-handler.react-native-gesture-handler/lib/typescript/jestUtils/jestUtils.ExtractPayloadFromProps<THandlerProps> : std.Record<string, unknown>
     }}}
     */
-  @js.native
-  trait ExtractConfig[T] extends StObject
+  type ExtractConfig[T] = Record[String, Any]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/gestureHandlerCommon.BaseGestureHandlerProps<infer TPayload> ? TPayload : never
     }}}

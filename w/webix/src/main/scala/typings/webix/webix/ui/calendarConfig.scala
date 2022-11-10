@@ -1,17 +1,16 @@
 package typings.webix.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
-import typings.webix.webix.Date
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait calendarConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var blockDates: js.UndefOr[WebixCallback] = js.undefined
   
@@ -29,9 +28,9 @@ trait calendarConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var date: js.UndefOr[Date | String] = js.undefined
+  var date: js.UndefOr[js.Date | String] = js.undefined
   
   var dayTemplate: js.UndefOr[WebixCallback] = js.undefined
   
@@ -47,13 +46,13 @@ trait calendarConfig extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[Any] = js.undefined
+  var icons: js.UndefOr[Boolean | obj] = js.undefined
   
   var id: js.UndefOr[String | Double] = js.undefined
   
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String] = js.undefined
+  var maxDate: js.UndefOr[js.Date | String] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -61,7 +60,7 @@ trait calendarConfig extends StObject {
   
   var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | String] = js.undefined
+  var minDate: js.UndefOr[js.Date | String] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
   
@@ -83,15 +82,15 @@ trait calendarConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onClick: js.UndefOr[obj] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onContext: js.UndefOr[obj] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
-  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
+  var onItemSingleClick: js.UndefOr[WebixCallback] = js.undefined
   
-  var select: js.UndefOr[Boolean] = js.undefined
+  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
   var skipEmptyWeeks: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +119,7 @@ object calendarConfig {
   
   extension [Self <: calendarConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -156,11 +155,11 @@ object calendarConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -192,7 +191,7 @@ object calendarConfig {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Boolean | obj): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
@@ -204,7 +203,7 @@ object calendarConfig {
     
     inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
     
-    inline def setMaxDate(value: Date | String): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date | String): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
@@ -220,7 +219,7 @@ object calendarConfig {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMinDate(value: Date | String): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date | String): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -262,11 +261,11 @@ object calendarConfig {
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: obj): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: obj): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
@@ -274,15 +273,15 @@ object calendarConfig {
     
     inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
+    inline def setOnItemSingleClick(value: WebixCallback): Self = StObject.set(x, "onItemSingleClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemSingleClickUndefined: Self = StObject.set(x, "onItemSingleClick", js.undefined)
+    
     inline def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
-    
-    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
-    
-    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     inline def setSkipEmptyWeeks(value: Boolean): Self = StObject.set(x, "skipEmptyWeeks", value.asInstanceOf[js.Any])
     

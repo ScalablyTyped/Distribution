@@ -4,48 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait IdentityDocumentType extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/orders/lib", "IdentityDocumentType")
-@js.native
-object IdentityDocumentType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NATIONAL_IDENTIFICATION_NUMBER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PASSPORT_NUMBER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOCIAL_SECURITY_NUMBER
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SSN4
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TAX_IDENTIFICATION_NUMBER
+*/
+trait IdentityDocumentType extends StObject
+object IdentityDocumentType {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[IdentityDocumentType & String] = js.native
+  inline def INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER = "INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER]
   
-  @js.native
-  sealed trait INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER
-    extends StObject
-       with IdentityDocumentType
-  /* "INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER" */ val INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER & String = js.native
+  inline def NATIONAL_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NATIONAL_IDENTIFICATION_NUMBER = "NATIONAL_IDENTIFICATION_NUMBER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.NATIONAL_IDENTIFICATION_NUMBER]
   
-  @js.native
-  sealed trait NATIONAL_IDENTIFICATION_NUMBER
-    extends StObject
-       with IdentityDocumentType
-  /* "NATIONAL_IDENTIFICATION_NUMBER" */ val NATIONAL_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.NATIONAL_IDENTIFICATION_NUMBER & String = js.native
+  inline def PASSPORT_NUMBER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PASSPORT_NUMBER = "PASSPORT_NUMBER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.PASSPORT_NUMBER]
   
-  @js.native
-  sealed trait PASSPORT_NUMBER
-    extends StObject
-       with IdentityDocumentType
-  /* "PASSPORT_NUMBER" */ val PASSPORT_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.PASSPORT_NUMBER & String = js.native
+  inline def SOCIAL_SECURITY_NUMBER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOCIAL_SECURITY_NUMBER = "SOCIAL_SECURITY_NUMBER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SOCIAL_SECURITY_NUMBER]
   
-  @js.native
-  sealed trait SOCIAL_SECURITY_NUMBER
-    extends StObject
-       with IdentityDocumentType
-  /* "SOCIAL_SECURITY_NUMBER" */ val SOCIAL_SECURITY_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.SOCIAL_SECURITY_NUMBER & String = js.native
+  inline def SSN4: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SSN4 = "SSN4".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.SSN4]
   
-  @js.native
-  sealed trait SSN4
-    extends StObject
-       with IdentityDocumentType
-  /* "SSN4" */ val SSN4: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.SSN4 & String = js.native
-  
-  @js.native
-  sealed trait TAX_IDENTIFICATION_NUMBER
-    extends StObject
-       with IdentityDocumentType
-  /* "TAX_IDENTIFICATION_NUMBER" */ val TAX_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.TAX_IDENTIFICATION_NUMBER & String = js.native
+  inline def TAX_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TAX_IDENTIFICATION_NUMBER = "TAX_IDENTIFICATION_NUMBER".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.TAX_IDENTIFICATION_NUMBER]
 }

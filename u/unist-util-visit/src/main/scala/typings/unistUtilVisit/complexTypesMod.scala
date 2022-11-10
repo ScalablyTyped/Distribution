@@ -26,13 +26,12 @@ object complexTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Ancestor extends unist.unist.Parent<unist.unist.Node<unist.unist.Data>, unist.unist.NodeData<unist.unist.Node<unist.unist.Data>>> ? Child extends Ancestor['children'][number] ? Ancestor : never : never
     }}}
     */
-  @js.native
-  trait ParentsOf[Ancestor /* <: Node[Data] */, Child /* <: Node[Data] */] extends StObject
+  type ParentsOf[Ancestor /* <: Node[Data] */, Child /* <: Node[Data] */] = Ancestor
   
   type Visitor[Visited /* <: Node[Data] */, Ancestor /* <: Parent[Node[Data], NodeData[Node[Data]]] */] = js.Function3[
     /* node */ Visited, 

@@ -2,6 +2,7 @@ package typings.webix.mod.ui
 
 import typings.std.HTMLElement
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,10 +35,10 @@ trait baseview extends StObject {
   
   def adjust(): Unit = js.native
   
-  def bind(target: Any): Unit = js.native
-  def bind(target: Any, rule: Unit, format: String): Unit = js.native
-  def bind(target: Any, rule: WebixCallback): Unit = js.native
-  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: obj): Unit = js.native
+  def bind(target: obj, rule: Unit, format: String): Unit = js.native
+  def bind(target: obj, rule: WebixCallback): Unit = js.native
+  def bind(target: obj, rule: WebixCallback, format: String): Unit = js.native
   
   var config: baseviewConfig = js.native
   
@@ -53,9 +54,9 @@ trait baseview extends StObject {
   
   def getFormView(): typings.webix.webix.ui.baseview = js.native
   
-  def getNode(): Any = js.native
+  def getNode(): obj = js.native
   
-  def getParentView(): Any = js.native
+  def getParentView(): obj = js.native
   
   def getTopParentView(): typings.webix.webix.ui.baseview = js.native
   
@@ -67,8 +68,12 @@ trait baseview extends StObject {
   
   var name: String = js.native
   
-  def queryView(config: Any): Any = js.native
-  def queryView(config: Any, mode: String): Any = js.native
+  def queryView(config: String): obj | js.Array[Any] = js.native
+  def queryView(config: String, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: obj): obj | js.Array[Any] = js.native
+  def queryView(config: obj, mode: String): obj | js.Array[Any] = js.native
   
   def resize(): Unit = js.native
   

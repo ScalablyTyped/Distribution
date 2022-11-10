@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataState extends StObject {
   
-  def getState(): Any
+  def getState(): obj
   
-  def setState(state: Any): Unit
+  def setState(state: obj): Unit
 }
 object DataState {
   
@@ -18,8 +18,8 @@ object DataState {
   
   extension [Self <: DataState](x: Self) {
     
-    inline def setGetState(value: () => Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => obj): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    inline def setSetState(value: Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    inline def setSetState(value: obj => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
   }
 }

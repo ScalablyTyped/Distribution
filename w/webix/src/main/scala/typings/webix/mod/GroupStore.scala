@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroupStore extends StObject {
   
-  def group(config: Any): Unit = js.native
-  def group(config: Any, target: String): Unit = js.native
+  def group(config: obj): Unit = js.native
+  def group(config: obj, target: String): Unit = js.native
   
   def ungroup(): Unit = js.native
 }

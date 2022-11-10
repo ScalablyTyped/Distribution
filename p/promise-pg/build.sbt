@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "promise-pg"
-version := "0.0-unknown-dt-20220818Z-13047c"
+version := "0.0-unknown-dt-20220818Z-1d4f52"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "pg" % "8.6-dt-20220307Z-bc3914",
-  "org.scalablytyped" %%% "pg-protocol" % "1.5.0-ba274d",
-  "org.scalablytyped" %%% "pg-types" % "4.0.0-66853a",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
+  "org.scalablytyped" %%% "pg" % "8.6-dt-20220307Z-3b9a6d",
+  "org.scalablytyped" %%% "pg-protocol" % "1.5.0-84a761",
+  "org.scalablytyped" %%% "pg-types" % "4.0.0-3f47aa",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-934aed",
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

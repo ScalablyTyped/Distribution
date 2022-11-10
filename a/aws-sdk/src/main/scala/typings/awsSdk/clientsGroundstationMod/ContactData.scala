@@ -9,7 +9,7 @@ trait ContactData extends StObject {
   /**
     * UUID of a contact.
     */
-  var contactId: js.UndefOr[String] = js.undefined
+  var contactId: js.UndefOr[Uuid] = js.undefined
   
   /**
     * Status of a contact.
@@ -17,7 +17,7 @@ trait ContactData extends StObject {
   var contactStatus: js.UndefOr[ContactStatus] = js.undefined
   
   /**
-    * End time of a contact.
+    * End time of a contact in UTC.
     */
   var endTime: js.UndefOr[js.Date] = js.undefined
   
@@ -62,7 +62,7 @@ trait ContactData extends StObject {
   var satelliteArn: js.UndefOr[typings.awsSdk.clientsGroundstationMod.satelliteArn] = js.undefined
   
   /**
-    * Start time of a contact.
+    * Start time of a contact in UTC.
     */
   var startTime: js.UndefOr[js.Date] = js.undefined
   
@@ -80,7 +80,7 @@ object ContactData {
   
   extension [Self <: ContactData](x: Self) {
     
-    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: Uuid): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     inline def setContactIdUndefined: Self = StObject.set(x, "contactId", js.undefined)
     

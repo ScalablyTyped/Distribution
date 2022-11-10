@@ -81,7 +81,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Type extends 'progress' | 'money' | 'percent' | 'image' ? {  type :Type,   status :'normal' | 'active' | 'success' | 'exception' | undefined,   locale :string | undefined,   showSymbol :(value : any): boolean | boolean | undefined,   showColor :boolean | undefined,   precision :number | undefined,   moneySymbol :boolean | undefined,   request :@ant-design/pro-utils.@ant-design/pro-utils/es/typing.ProFieldRequestData<any> | undefined,   width :number | undefined} : never
     }}}
@@ -302,13 +302,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Type extends any ? Type extends @ant-design/pro-utils.@ant-design/pro-utils/es/types.ProFieldValueType ? never : Type : never
     }}}
     */
-  @js.native
-  trait UnionSameValueType[Type] extends StObject
+  type UnionSameValueType[Type] = Type
   
   type ValueTypeWithFieldProps[Entity, ComponentsType, ExtraProps, ValueType] = ValueTypeWithFieldPropsBase[
     Entity, 

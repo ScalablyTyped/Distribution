@@ -1,7 +1,7 @@
 
 # Scala.js typings for redis__client
 
-Typings are for version 1.3.1
+Typings are for version 1.4.0
 
 ## Library description:
 The source code and documentation for this package are in the main [node-redis](https://github.com/redis/node-redis) repo.

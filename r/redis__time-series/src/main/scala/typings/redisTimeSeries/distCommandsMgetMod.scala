@@ -20,8 +20,28 @@ object distCommandsMgetMod {
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
   inline def transformArguments(filter: Filter): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+  inline def transformArguments(filter: Filter, options: MGetOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(filter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(reply: MGetRawReply): js.Array[MGetReply] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[js.Array[MGetReply]]
+  
+  trait MGetOptions extends StObject {
+    
+    var LATEST: js.UndefOr[Boolean] = js.undefined
+  }
+  object MGetOptions {
+    
+    inline def apply(): MGetOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MGetOptions]
+    }
+    
+    extension [Self <: MGetOptions](x: Self) {
+      
+      inline def setLATEST(value: Boolean): Self = StObject.set(x, "LATEST", value.asInstanceOf[js.Any])
+      
+      inline def setLATESTUndefined: Self = StObject.set(x, "LATEST", js.undefined)
+    }
+  }
   
   type MGetRawReply = js.Array[js.Tuple3[/* key */ String, /* labels */ RawLabels, /* sample */ SampleRawReply]]
   

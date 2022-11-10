@@ -23,13 +23,12 @@ object distSharedSrcForwardRefMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends react.react.ElementType<any> ? react.react.ElementRef<T> : T
     }}}
     */
-  @js.native
-  trait AsRef[T] extends StObject
+  type AsRef[T] = T
   
   type MergeWithAs[T, P] = RightJoinProps[PropsOf[T], (OmitCommonProps[P, slot]) & Datatestid]
   
@@ -53,13 +52,12 @@ object distSharedSrcForwardRefMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     'children' extends keyof P ? std.Pick<P, std.Exclude<keyof P, 'children'>> : P
     }}}
     */
-  @js.native
-  trait PropsWithoutChildren[P] extends StObject
+  type PropsWithoutChildren[P] = P
   
   type RightJoinProps[SourceProps /* <: Record[String, Any] */, OverrideProps /* <: Record[String, Any] */] = (OmitCommonProps[SourceProps, /* keyof OverrideProps */ String]) & OverrideProps
 }

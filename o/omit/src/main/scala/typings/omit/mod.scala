@@ -46,13 +46,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     K extends std.Array<string> ? K[number] : K
     }}}
     */
-  @js.native
-  trait KeyAsStringType[K /* <: Key */] extends StObject
+  type KeyAsStringType[K /* <: Key */] = K
   
   type MaybeOmitMultiple[T, K /* <: Key */] = (OmitMultiple[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in std.Extract<keyof T, omit.omit.KeyAsStringType<K>> ]:? T[P]} */ js.Any)
   

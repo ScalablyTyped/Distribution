@@ -78,3 +78,21 @@ type HtmlElementAttr[Tag /* <: String */] = (/* import warning: importer.ImportT
   * Added here so that we can support older versions of TypeScript.
   */
 type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+/**
+  * @internal
+  * Empty mapped types (`Pick<{}, never>`) are almost identical to the empty
+  * object type (`{}`). However, TypeScript seems to treat them differently for
+  * the purposes of checking `JSX.LibraryManagedAttributes`.
+  *
+  * This type alias converts any empty-ish type to a plain empty object type, so
+  * that we can work around said behavior.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  {} extends T ? {} : T
+  }}}
+  */
+type SafeEmptyType[T] = T

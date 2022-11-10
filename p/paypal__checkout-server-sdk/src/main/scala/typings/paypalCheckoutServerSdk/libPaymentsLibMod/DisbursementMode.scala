@@ -4,24 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait DisbursementMode extends StObject
-@JSImport("@paypal/checkout-server-sdk/lib/payments/lib", "DisbursementMode")
-@js.native
-object DisbursementMode extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELAYED
+  - typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INSTANT
+*/
+trait DisbursementMode extends StObject
+object DisbursementMode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DisbursementMode & String] = js.native
+  inline def DELAYED: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELAYED = "DELAYED".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.DELAYED]
   
-  @js.native
-  sealed trait DELAYED
-    extends StObject
-       with DisbursementMode
-  /* "DELAYED" */ val DELAYED: typings.paypalCheckoutServerSdk.libPaymentsLibMod.DisbursementMode.DELAYED & String = js.native
-  
-  @js.native
-  sealed trait INSTANT
-    extends StObject
-       with DisbursementMode
-  /* "INSTANT" */ val INSTANT: typings.paypalCheckoutServerSdk.libPaymentsLibMod.DisbursementMode.INSTANT & String = js.native
+  inline def INSTANT: typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INSTANT = "INSTANT".asInstanceOf[typings.paypalCheckoutServerSdk.paypalCheckoutServerSdkStrings.INSTANT]
 }

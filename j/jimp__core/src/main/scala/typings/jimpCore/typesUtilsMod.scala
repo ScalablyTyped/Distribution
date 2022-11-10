@@ -20,7 +20,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Q extends / * Inlined std.Required<{  class :any}> * /
   {  class :any} | / * Inlined std.Required<{  constants :any}> * /
@@ -32,7 +32,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Q extends / * Inlined std.Required<{  class :any}> * /
   {  class :any} | / * Inlined std.Required<{  constants :any}> * /
@@ -44,7 +44,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Q extends / * Inlined std.Required<{  class :any}> * /
   {  class :any} | / * Inlined std.Required<{  constants :any}> * /
@@ -56,7 +56,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Given an array of types infer `Q` (Q should be the type value)
   PluginFuncArr extends std.ReadonlyArray<infer F> ? F extends (): infer Q ? // Get the plugin constants, may be ill-formed or well-formed
@@ -64,12 +64,12 @@ object typesUtilsMod {
   undefined : undefined
     }}}
     */
-  @js.native
-  trait GetPluginFuncArrConsts[PluginFuncArr] extends StObject
+  type GetPluginFuncArrConsts[PluginFuncArr] = // This should never be reached
+  Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Given an array of types infer `Q` (Q should be the type value)
   PluginFuncArr extends std.ReadonlyArray<infer F> ? F extends (): infer Q ? // Get the plugin decoders, may be ill-formed or well-formed
@@ -77,12 +77,12 @@ object typesUtilsMod {
   undefined : undefined
     }}}
     */
-  @js.native
-  trait GetPluginFuncArrDecoders[PluginFuncArr] extends StObject
+  type GetPluginFuncArrDecoders[PluginFuncArr] = // This should never be reached
+  Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Given an array of types infer `Q` (Q should be the type value)
   PluginFuncArr extends std.ReadonlyArray<infer F> ? F extends (): infer Q ? // Get the plugin encoders, may be ill-formed or well-formed
@@ -90,12 +90,12 @@ object typesUtilsMod {
   undefined : undefined
     }}}
     */
-  @js.native
-  trait GetPluginFuncArrEncoders[PluginFuncArr] extends StObject
+  type GetPluginFuncArrEncoders[PluginFuncArr] = // This should never be reached
+  Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Given an array of types infer `Q` (Q should be the type value)
   PluginFuncArr extends std.ReadonlyArray<infer F> ? F extends (): infer Q ? // Get the plugin value, may be ill-formed or well-formed
@@ -103,26 +103,25 @@ object typesUtilsMod {
   undefined : undefined
     }}}
     */
-  @js.native
-  trait GetPluginFuncArrValues[PluginFuncArr] extends StObject
+  type GetPluginFuncArrValues[PluginFuncArr] = // This should never be reached
+  Unit
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Q extends / * Inlined std.Required<{  class :any}> * /
   {  class :any} | / * Inlined std.Required<{  constants :any}> * /
   {  constants :any} ? @jimp/core.@jimp/core/types/utils.WellFormedValues<Q> : Q
     }}}
     */
-  @js.native
-  trait GetPluginVal[Q] extends StObject
+  type GetPluginVal[Q] = Q
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     U extends any ? (k : U): void : never extends (k : infer I): void ? I : never
     }}}
@@ -132,7 +131,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends {  constants :infer Constants} ? Constants : {}
     }}}
@@ -142,7 +141,7 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends {  class :infer Class} ? Class : {}
     }}}

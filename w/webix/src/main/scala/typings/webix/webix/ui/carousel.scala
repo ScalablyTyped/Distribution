@@ -1,6 +1,7 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,10 @@ trait carousel
      with baseview {
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
-  def addView(view: Any): String | Double = js.native
-  def addView(view: Any, index: Double): String | Double = js.native
+  def addView(view: obj): String | Double = js.native
+  def addView(view: obj, index: Double): String | Double = js.native
   
   def adjustScroll(): Unit = js.native
   
@@ -34,13 +35,15 @@ trait carousel
   
   def getActiveIndex(): Double = js.native
   
-  def getLayout(): Any = js.native
+  def getLayout(): obj = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
-  def removeView(id: Any): Unit = js.native
+  def removeView(id: String): Unit = js.native
+  def removeView(id: Double): Unit = js.native
+  def removeView(id: obj): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   

@@ -30,13 +30,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TEntry extends number ? {  x :number,   y :number,   index :number,   value :number} : TEntry & {  x :number,   y :number,   index :number}
     }}}
     */
-  @js.native
-  trait SparklineDatapoint[TEntry] extends StObject
+  type SparklineDatapoint[TEntry] = TEntry & (/* import warning: importer.ImportType#apply Failed type conversion: {  x :number,   y :number,   index :number} */ js.Any)
   
   type SparklineNativeEntry = Double | Value
   

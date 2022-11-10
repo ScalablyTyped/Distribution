@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -23,17 +22,17 @@ trait dxDrawer
   /**
     * Closes the drawer.
     */
-  def hide(): DxPromise[Unit] = js.native
+  def hide(): js.Promise[Unit] = js.native
   
   /**
     * Opens the drawer.
     */
-  def show(): DxPromise[Unit] = js.native
+  def show(): js.Promise[Unit] = js.native
   
   /**
     * Opens or closes the drawer, reversing the current state.
     */
-  def toggle(): DxPromise[Unit] = js.native
+  def toggle(): js.Promise[Unit] = js.native
 }
 object dxDrawer {
   

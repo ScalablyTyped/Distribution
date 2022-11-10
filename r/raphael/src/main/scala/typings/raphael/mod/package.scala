@@ -146,6 +146,15 @@ js.ThisFunction1[/* this */ RaphaelSet[TTechnology], /* args */ TArgs, TRetVal]
 
 type RaphaelTransformSegment = (js.Tuple3[t_ | s_, Double, Double]) | (js.Tuple5[s_, Double, Double, Double, Double]) | (js.Tuple4[r_, Double, Double, Double]) | (js.Tuple2[r_, Double]) | (js.Tuple7[m_, Double, Double, Double, Double, Double, Double])
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  TBase extends raphael.raphael.RaphaelSet<TTechnology> ? raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> : TBase
+  }}}
+  */
+type RaphaelUnwrapElement[TTechnology /* <: RaphaelTechnology */, TBase /* <: RaphaelBaseElement[TTechnology] */] = TBase
+
 type VMLCircleElement = VMLElement
 
 type VMLElement = Element

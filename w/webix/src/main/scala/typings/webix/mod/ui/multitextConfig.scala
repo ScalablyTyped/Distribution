@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ trait multitextConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
-  var attributes: js.UndefOr[Any] = js.undefined
+  var attributes: js.UndefOr[obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -25,11 +26,11 @@ trait multitextConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[Any] = js.undefined
+  var format: js.UndefOr[String | obj] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -63,7 +64,7 @@ trait multitextConfig extends StObject {
   
   var labelPosition: js.UndefOr[String] = js.undefined
   
-  var labelWidth: js.UndefOr[Double] = js.undefined
+  var labelWidth: js.UndefOr[Double | String] = js.undefined
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
@@ -91,11 +92,11 @@ trait multitextConfig extends StObject {
   
   var separator: js.UndefOr[String] = js.undefined
   
-  var subConfig: js.UndefOr[Any] = js.undefined
+  var subConfig: js.UndefOr[obj] = js.undefined
   
-  var suggest: js.UndefOr[Any] = js.undefined
+  var suggest: js.UndefOr[String | obj] = js.undefined
   
-  var tooltip: js.UndefOr[Any] = js.undefined
+  var tooltip: js.UndefOr[String | Boolean | WebixCallback | obj] = js.undefined
   
   var validate: js.UndefOr[WebixCallback] = js.undefined
   
@@ -120,11 +121,11 @@ object multitextConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: obj): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -148,7 +149,7 @@ object multitextConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -156,7 +157,7 @@ object multitextConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | obj): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -224,7 +225,7 @@ object multitextConfig {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+    inline def setLabelWidth(value: Double | String): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
     
     inline def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
     
@@ -280,15 +281,15 @@ object multitextConfig {
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    inline def setSubConfig(value: Any): Self = StObject.set(x, "subConfig", value.asInstanceOf[js.Any])
+    inline def setSubConfig(value: obj): Self = StObject.set(x, "subConfig", value.asInstanceOf[js.Any])
     
     inline def setSubConfigUndefined: Self = StObject.set(x, "subConfig", js.undefined)
     
-    inline def setSuggest(value: Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+    inline def setSuggest(value: String | obj): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     
     inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
     
-    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | Boolean | WebixCallback | obj): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     

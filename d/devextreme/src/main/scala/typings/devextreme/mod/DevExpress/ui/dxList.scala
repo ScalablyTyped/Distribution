@@ -2,7 +2,6 @@ package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.Group
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -35,22 +34,22 @@ trait dxList[TItem /* <: ItemLike */, TKey]
   /**
     * Collapses a group with a specific index.
     */
-  def collapseGroup(groupIndex: Double): DxPromise[Unit] = js.native
+  def collapseGroup(groupIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * Removes an item found using its DOM node.
     */
-  def deleteItem(itemElement: Element): DxPromise[Unit] = js.native
-  def deleteItem(itemIndex: Any): DxPromise[Unit] = js.native
+  def deleteItem(itemElement: Element): js.Promise[Unit] = js.native
+  def deleteItem(itemIndex: Any): js.Promise[Unit] = js.native
   /**
     * Removes an item with a specific index.
     */
-  def deleteItem(itemIndex: Double): DxPromise[Unit] = js.native
+  def deleteItem(itemIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * Expands a group with a specific index.
     */
-  def expandGroup(groupIndex: Double): DxPromise[Unit] = js.native
+  def expandGroup(groupIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * Checks whether an item found using its DOM node is selected.
@@ -70,14 +69,14 @@ trait dxList[TItem /* <: ItemLike */, TKey]
   /**
     * Reorders items found using their DOM nodes.
     */
-  def reorderItem(itemElement: Element, toItemElement: Element): DxPromise[Unit] = js.native
-  def reorderItem(itemIndex: Any, toItemIndex: Any): DxPromise[Unit] = js.native
-  def reorderItem(itemIndex: Any, toItemIndex: Double): DxPromise[Unit] = js.native
-  def reorderItem(itemIndex: Double, toItemIndex: Any): DxPromise[Unit] = js.native
+  def reorderItem(itemElement: Element, toItemElement: Element): js.Promise[Unit] = js.native
+  def reorderItem(itemIndex: Any, toItemIndex: Any): js.Promise[Unit] = js.native
+  def reorderItem(itemIndex: Any, toItemIndex: Double): js.Promise[Unit] = js.native
+  def reorderItem(itemIndex: Double, toItemIndex: Any): js.Promise[Unit] = js.native
   /**
     * Reorders items with specific indexes.
     */
-  def reorderItem(itemIndex: Double, toItemIndex: Double): DxPromise[Unit] = js.native
+  def reorderItem(itemIndex: Double, toItemIndex: Double): js.Promise[Unit] = js.native
   
   /**
     * Scrolls the content by a specified distance.
@@ -142,7 +141,7 @@ trait dxList[TItem /* <: ItemLike */, TKey]
   /**
     * Updates the UI component scrollbar according to UI component content size.
     */
-  def updateDimensions(): DxPromise[Unit] = js.native
+  def updateDimensions(): js.Promise[Unit] = js.native
 }
 object dxList {
   

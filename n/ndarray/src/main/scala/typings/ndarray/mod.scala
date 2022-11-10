@@ -1,5 +1,6 @@
 package typings.ndarray
 
+import typings.ndarray.ndarrayStrings.int8
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,23 +23,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends number ? ndarray.ndarray.GenericArray<T> | std.Array<T> | ndarray.ndarray.TypedArray : T extends bigint ? ndarray.ndarray.GenericArray<T> | std.Array<T> | ndarray.ndarray.MaybeBigInt64Array | ndarray.ndarray.MaybeBigUint64Array : ndarray.ndarray.GenericArray<T> | std.Array<T>
     }}}
     */
-  @js.native
-  trait Data[T] extends StObject
+  type Data[T] = GenericArray[T] | js.Array[T] | TypedArray
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     D extends std.Int8Array ? 'int8' : D extends std.Int16Array ? 'int16' : D extends std.Int32Array ? 'int32' : D extends std.Uint8Array ? 'uint8' : D extends std.Uint8ClampedArray ? 'uint8_clamped' : D extends std.Uint16Array ? 'uint16' : D extends std.Uint32Array ? 'uint32' : D extends std.Float32Array ? 'float32' : D extends std.Float64Array ? 'float64' : D extends ndarray.ndarray.MaybeBigInt64Array ? 'bigint64' : D extends ndarray.ndarray.MaybeBigUint64Array ? 'biguint64' : D extends ndarray.ndarray.GenericArray<unknown> ? 'generic' : 'array'
     }}}
     */
-  @js.native
-  trait DataType[D /* <: Data[Any] */] extends StObject
+  type DataType[D /* <: Data[Any] */] = int8
   
   trait GenericArray[T] extends StObject {
     
@@ -182,7 +181,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     D extends ndarray.ndarray.GenericArray<infer T> | std.Record<number, infer T> ? T : never
     }}}

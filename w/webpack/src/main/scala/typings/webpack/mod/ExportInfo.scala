@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExportInfo extends StObject {
   
-  val canMangle: js.UndefOr[Boolean] = js.native
+  def canMangle: Boolean = js.native
   
   /**
   	 * true: it can be mangled

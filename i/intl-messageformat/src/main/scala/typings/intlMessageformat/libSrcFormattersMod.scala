@@ -202,13 +202,12 @@ object libSrcFormattersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Source extends keyof intl-messageformat.intl-messageformat/src/formatters.<global>.FormatjsIntl.Formats ? intl-messageformat.intl-messageformat/src/formatters.<global>.FormatjsIntl.Formats[Source] : string
     }}}
     */
-  @js.native
-  trait Format[Source] extends StObject
+  type Format[Source] = String
   
   type FormatXMLElementFn[T, R] = js.Function1[/* parts */ js.Array[String | T], R]
   

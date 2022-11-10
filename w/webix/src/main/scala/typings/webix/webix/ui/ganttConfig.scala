@@ -2,15 +2,19 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ganttConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
-  var body: js.UndefOr[Any] = js.undefined
+  var baseline: js.UndefOr[Boolean] = js.undefined
+  
+  var body: js.UndefOr[obj] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -20,9 +24,15 @@ trait ganttConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var criticalPath: js.UndefOr[Boolean] = js.undefined
+  
+  var css: js.UndefOr[String | obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var display: js.UndefOr[String] = js.undefined
+  
+  var excludeHolidays: js.UndefOr[Boolean] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -32,9 +42,11 @@ trait ganttConfig extends StObject {
   
   var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
+  var isHoliday: js.UndefOr[WebixCallback] = js.undefined
   
-  var locale: js.UndefOr[Any] = js.undefined
+  var links: js.UndefOr[Any] = js.undefined
+  
+  var locale: js.UndefOr[obj] = js.undefined
   
   var markers: js.UndefOr[js.Array[Any] | Boolean] = js.undefined
   
@@ -52,15 +64,29 @@ trait ganttConfig extends StObject {
   
   var preciseTimeUnit: js.UndefOr[Boolean] = js.undefined
   
+  var projects: js.UndefOr[Boolean] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
+  var resourceCalendars: js.UndefOr[Boolean] = js.undefined
+  
+  var resources: js.UndefOr[Boolean] = js.undefined
+  
+  var resourcesDiagram: js.UndefOr[Boolean] = js.undefined
   
   var scaleCellWidth: js.UndefOr[Double] = js.undefined
   
-  var scaleEnd: js.UndefOr[Any] = js.undefined
+  var scaleEnd: js.UndefOr[obj] = js.undefined
   
-  var scaleStart: js.UndefOr[Any] = js.undefined
+  var scaleStart: js.UndefOr[obj] = js.undefined
   
   var scales: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var serverUTC: js.UndefOr[Boolean] = js.undefined
+  
+  var split: js.UndefOr[Boolean] = js.undefined
+  
+  var treeWidth: js.UndefOr[Double] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
   
@@ -77,11 +103,15 @@ object ganttConfig {
   
   extension [Self <: ganttConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: Boolean): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    
+    inline def setBody(value: obj): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -101,13 +131,25 @@ object ganttConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCriticalPath(value: Boolean): Self = StObject.set(x, "criticalPath", value.asInstanceOf[js.Any])
+    
+    inline def setCriticalPathUndefined: Self = StObject.set(x, "criticalPath", js.undefined)
+    
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setExcludeHolidays(value: Boolean): Self = StObject.set(x, "excludeHolidays", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeHolidaysUndefined: Self = StObject.set(x, "excludeHolidays", js.undefined)
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
@@ -125,11 +167,15 @@ object ganttConfig {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
+    inline def setIsHoliday(value: WebixCallback): Self = StObject.set(x, "isHoliday", value.asInstanceOf[js.Any])
     
-    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
+    inline def setIsHolidayUndefined: Self = StObject.set(x, "isHoliday", js.undefined)
     
-    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
+    inline def setLocale(value: obj): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -169,19 +215,35 @@ object ganttConfig {
     
     inline def setPreciseTimeUnitUndefined: Self = StObject.set(x, "preciseTimeUnit", js.undefined)
     
+    inline def setProjects(value: Boolean): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setResourceCalendars(value: Boolean): Self = StObject.set(x, "resourceCalendars", value.asInstanceOf[js.Any])
+    
+    inline def setResourceCalendarsUndefined: Self = StObject.set(x, "resourceCalendars", js.undefined)
+    
+    inline def setResources(value: Boolean): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesDiagram(value: Boolean): Self = StObject.set(x, "resourcesDiagram", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesDiagramUndefined: Self = StObject.set(x, "resourcesDiagram", js.undefined)
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     inline def setScaleCellWidth(value: Double): Self = StObject.set(x, "scaleCellWidth", value.asInstanceOf[js.Any])
     
     inline def setScaleCellWidthUndefined: Self = StObject.set(x, "scaleCellWidth", js.undefined)
     
-    inline def setScaleEnd(value: Any): Self = StObject.set(x, "scaleEnd", value.asInstanceOf[js.Any])
+    inline def setScaleEnd(value: obj): Self = StObject.set(x, "scaleEnd", value.asInstanceOf[js.Any])
     
     inline def setScaleEndUndefined: Self = StObject.set(x, "scaleEnd", js.undefined)
     
-    inline def setScaleStart(value: Any): Self = StObject.set(x, "scaleStart", value.asInstanceOf[js.Any])
+    inline def setScaleStart(value: obj): Self = StObject.set(x, "scaleStart", value.asInstanceOf[js.Any])
     
     inline def setScaleStartUndefined: Self = StObject.set(x, "scaleStart", js.undefined)
     
@@ -190,6 +252,18 @@ object ganttConfig {
     inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
     inline def setScalesVarargs(value: Any*): Self = StObject.set(x, "scales", js.Array(value*))
+    
+    inline def setServerUTC(value: Boolean): Self = StObject.set(x, "serverUTC", value.asInstanceOf[js.Any])
+    
+    inline def setServerUTCUndefined: Self = StObject.set(x, "serverUTC", js.undefined)
+    
+    inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    
+    inline def setTreeWidth(value: Double): Self = StObject.set(x, "treeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTreeWidthUndefined: Self = StObject.set(x, "treeWidth", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

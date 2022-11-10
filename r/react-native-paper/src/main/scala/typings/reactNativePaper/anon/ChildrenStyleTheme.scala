@@ -37,6 +37,8 @@ object ChildrenStyleTheme {
     
     inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

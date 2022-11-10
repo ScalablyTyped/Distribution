@@ -9,17 +9,17 @@ trait GetSatelliteRequest extends StObject {
   /**
     * UUID of a satellite.
     */
-  var satelliteId: String
+  var satelliteId: Uuid
 }
 object GetSatelliteRequest {
   
-  inline def apply(satelliteId: String): GetSatelliteRequest = {
+  inline def apply(satelliteId: Uuid): GetSatelliteRequest = {
     val __obj = js.Dynamic.literal(satelliteId = satelliteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSatelliteRequest]
   }
   
   extension [Self <: GetSatelliteRequest](x: Self) {
     
-    inline def setSatelliteId(value: String): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
+    inline def setSatelliteId(value: Uuid): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
   }
 }

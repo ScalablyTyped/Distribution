@@ -1,6 +1,7 @@
 package typings.useGestureCore
 
 import typings.std.Omit
+import typings.std.UIEvent
 import typings.useGestureCore.anon.Event
 import typings.useGestureCore.anon.SharedGestureStateeventun
 import typings.useGestureCore.anon.SharedGestureStateeventunAltKey
@@ -3068,13 +3069,12 @@ object distDeclarationsSrcTypesHandlersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.DOMHandlers[Key] extends @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.EventHandler<infer EventType> | undefined ? EventType : std.UIEvent
     }}}
     */
-  @js.native
-  trait GetEventType[Key /* <: NativeHandlersKeys */] extends StObject
+  type GetEventType[Key /* <: NativeHandlersKeys */] = UIEvent
   
   type Handler[Key /* <: GestureKey */, EventType] = js.Function1[/* state */ (Omit[FullGestureState[Key], event]) & Event[EventType], Any | Unit]
   
@@ -5533,7 +5533,7 @@ object distDeclarationsSrcTypesHandlersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     undefined extends T[Key] ? @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.EventTypes[Key] : T[Key]
     }}}

@@ -19,12 +19,14 @@ trait TooltipControl extends StObject {
   @JSName("$tooltipOut")
   def $tooltipOut(previousTarget: HTMLElement, target: HTMLElement, event: Event): Unit = js.native
   
-  def addTooltip(target: String, config: Any): Unit = js.native
-  def addTooltip(target: HTMLElement, config: Any): Unit = js.native
+  def addTooltip(target: String, config: String): Unit = js.native
+  def addTooltip(target: String, config: obj): Unit = js.native
+  def addTooltip(target: HTMLElement, config: String): Unit = js.native
+  def addTooltip(target: HTMLElement, config: obj): Unit = js.native
   
   var delay: Double = js.native
   
-  def getMaster(target: HTMLElement): Any = js.native
+  def getMaster(target: HTMLElement): obj = js.native
   
   def getTooltip(): baseview = js.native
   

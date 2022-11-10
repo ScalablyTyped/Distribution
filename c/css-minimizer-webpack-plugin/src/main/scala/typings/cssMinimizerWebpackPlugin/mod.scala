@@ -351,7 +351,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.CssNanoOptionsExtended ? {  minify :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerImplementation<T> | undefined,   minimizerOptions :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerOptions<T> | undefined} : {  minify :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerImplementation<T>,   minimizerOptions :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerOptions<T> | undefined}
     }}}
@@ -396,13 +396,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends infer U ? U : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.CustomOptions
     }}}
     */
-  @js.native
-  trait InferDefaultType[T] extends StObject
+  type InferDefaultType[T] = CustomOptions
   
   type Input = StringDictionary[String]
   
@@ -534,23 +533,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? T extends infer T_1 ? {[ P in keyof T_1 ]: css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T[P]>} : never : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T>
     }}}
     */
-  @js.native
-  trait MinimizerImplementation[T] extends StObject
+  type MinimizerImplementation[T] = BasicMinimizerImplementation[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? T extends infer T_1 ? {[ P in keyof T_1 ]:? css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T[P]> | undefined} : never : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T>
     }}}
     */
-  @js.native
-  trait MinimizerOptions[T] extends StObject
+  type MinimizerOptions[T] = CustomOptions
   
   @js.native
   trait MinimizerWorker[T]

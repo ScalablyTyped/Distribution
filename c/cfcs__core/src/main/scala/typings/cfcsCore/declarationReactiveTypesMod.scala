@@ -29,13 +29,12 @@ object declarationReactiveTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T[K] extends @cfcs/core.@cfcs/core/declaration/reactive/types.NoArguments ? (): any : T[K] extends @cfcs/core.@cfcs/core/declaration/reactive/types.AnyFunction ? T[K] : T[K] extends @egjs/component.@egjs/component/declaration/ComponentEvent.ComponentEvent<infer PROPS, string, any> ? (event : @egjs/component.@egjs/component/declaration/ComponentEvent.ComponentEvent<PROPS, K, any>): any : (event : T[K]): any
     }}}
     */
-  @js.native
-  trait ReactiveEventCallback[T /* <: Record[String, Any] */, K /* <: EventKey[T] */] extends StObject
+  type ReactiveEventCallback[T /* <: Record[String, Any] */, K /* <: EventKey[T] */] = js.Function0[Any]
   
   type ReactiveEventParameters[Events /* <: Record[String, Any] */, EventName /* <: EventKey[Events] */] = UnknwonToAnyArray[Parameters[ReactiveEventCallback[Events, EventName]]]
   
@@ -50,11 +49,10 @@ object declarationReactiveTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Array<unknown> extends Arr ? std.Array<any> : Arr
     }}}
     */
-  @js.native
-  trait UnknwonToAnyArray[Arr] extends StObject
+  type UnknwonToAnyArray[Arr] = Arr
 }

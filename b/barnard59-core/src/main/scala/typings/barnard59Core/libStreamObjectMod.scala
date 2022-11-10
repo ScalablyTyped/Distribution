@@ -66,13 +66,12 @@ object libStreamObjectMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof barnard59-core.barnard59-core/lib/StreamObject.Variables extends never ? string : keyof barnard59-core.barnard59-core/lib/StreamObject.Variables
     }}}
     */
-  @js.native
-  trait Keys extends StObject
+  type Keys = String
   
   trait StreamObject extends StObject {
     
@@ -149,13 +148,12 @@ object libStreamObjectMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof barnard59-core.barnard59-core/lib/StreamObject.Variables extends never ? std.Map<string, any> : barnard59-core.barnard59-core/lib/StreamObject.TypedMap
     }}}
     */
-  @js.native
-  trait VariableMap extends StObject
+  type VariableMap = Map[String, Any]
   
   trait Variables extends StObject
 }

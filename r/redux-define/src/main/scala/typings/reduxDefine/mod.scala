@@ -18,23 +18,21 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     SubAction extends string ? redux-define.redux-define.PlainAction<OwnAction, Namespace> & redux-define.redux-define.SubActionProps<SubAction, SubActions, Namespace, OwnAction> : redux-define.redux-define.PlainAction<OwnAction, Namespace>
     }}}
     */
-  @js.native
-  trait Action[OwnAction /* <: String */, SubAction /* <: js.UndefOr[String] */, Namespace /* <: js.UndefOr[String] */, SubActions /* <: js.Array[SubAction] */] extends StObject
+  type Action[OwnAction /* <: String */, SubAction /* <: js.UndefOr[String] */, Namespace /* <: js.UndefOr[String] */, SubActions /* <: js.Array[SubAction] */] = (PlainAction[OwnAction, Namespace]) & (SubActionProps[SubAction, SubActions, Namespace, OwnAction])
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Namespace extends redux-define.redux-define.Action<string, undefined, undefined, std.Array<undefined>> ? Namespace['ACTION'] : Namespace
     }}}
     */
-  @js.native
-  trait NamespaceString[Namespace /* <: (Action[String, Unit, Unit, js.Array[Unit]]) | String */] extends StObject
+  type NamespaceString[Namespace /* <: (Action[String, Unit, Unit, js.Array[Unit]]) | String */] = Namespace
   
   trait PlainAction[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] extends StObject {
     
@@ -106,13 +104,12 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Namespace extends string ? / * template literal string: ${Namespace}/${OwnAction} * / string : OwnAction
     }}}
     */
-  @js.native
-  trait WithNamespace[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] extends StObject
+  type WithNamespace[OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] = OwnAction
   
   type defineChildAction = js.ThisFunction1[
     /* this */ Action[String, Unit, Unit, js.Array[Unit]], 

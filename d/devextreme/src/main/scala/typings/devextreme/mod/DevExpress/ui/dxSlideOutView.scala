@@ -1,7 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
@@ -23,7 +22,7 @@ trait dxSlideOutView
   /**
     * Hides the UI component&apos;s slide-out menu.
     */
-  def hideMenu(): DxPromise[Unit] = js.native
+  def hideMenu(): js.Promise[Unit] = js.native
   
   /**
     * Gets the slide-out menu&apos;s content.
@@ -33,13 +32,13 @@ trait dxSlideOutView
   /**
     * Shows the slide-out menu.
     */
-  def showMenu(): DxPromise[Unit] = js.native
+  def showMenu(): js.Promise[Unit] = js.native
   
   /**
     * Shows or hides the slide-out menu depending on the argument.
     */
-  def toggleMenuVisibility(): DxPromise[Unit] = js.native
-  def toggleMenuVisibility(showing: Boolean): DxPromise[Unit] = js.native
+  def toggleMenuVisibility(): js.Promise[Unit] = js.native
+  def toggleMenuVisibility(showing: Boolean): js.Promise[Unit] = js.native
 }
 object dxSlideOutView {
   

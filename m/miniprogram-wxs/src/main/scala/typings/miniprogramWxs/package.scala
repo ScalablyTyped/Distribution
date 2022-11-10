@@ -9,6 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ClassDecorator = js.Function1[/* target */ Function, Function | Unit]
 
+/**
+  * Exclude from T those types that are assignable to U
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? never : T
+  }}}
+  */
+type Exclude[T, U] = T
+
+/**
+  * Extract from T those types that are assignable to U
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? T : never
+  }}}
+  */
+type Extract[T, U] = T
+
 type MethodDecorator = js.Function3[
 /* target */ Object, 
 /* propertyKey */ java.lang.String | js.Symbol, 
@@ -16,9 +40,33 @@ type MethodDecorator = js.Function3[
 TypedPropertyDescriptor[Any] | Unit]
 
 /**
+  * Exclude null and undefined from T
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null | undefined ? never : T
+  }}}
+  */
+type NonNullable[T] = T
+
+/**
   * Construct a type with the properties of T except for those in type K.
   */
 type Omit[T, K /* <: /* keyof any */ java.lang.String */] = Pick[T, Exclude[/* keyof T */ java.lang.String, K]]
+
+/**
+  * Removes the 'this' parameter from a function type.
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  unknown extends miniprogram-wxs.ThisParameterType<T> ? T : T extends (args : infer A): infer R ? (args : A): R : T
+  }}}
+  */
+type OmitThisParameter[T] = T
 
 type ParameterDecorator = js.Function3[
 /* target */ Object, 

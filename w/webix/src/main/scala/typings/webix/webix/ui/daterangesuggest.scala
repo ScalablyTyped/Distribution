@@ -1,7 +1,9 @@
 package typings.webix.webix.ui
 
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +14,7 @@ trait daterangesuggest
      with baseview {
   
   @JSName("$dragCreate")
-  def $dragCreate(args: Any*): Any = js.native
-  @JSName("$dragCreate")
-  var $dragCreate_Original: WebixCallback = js.native
+  def $dragCreate(source: HTMLElement, event: Event, pointer: String): HTMLElement = js.native
   
   @JSName("$dragDestroy")
   def $dragDestroy(args: Any*): Any = js.native
@@ -32,7 +32,7 @@ trait daterangesuggest
   var $enterKey_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: Any = js.native
+  var $scope: obj = js.native
   
   def attachEvent(`type`: daterangesuggestEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: daterangesuggestEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -46,11 +46,11 @@ trait daterangesuggest
   
   def detachEvent(id: String): Unit = js.native
   
-  def getBody(): Any = js.native
+  def getBody(): obj = js.native
   
   def getButton(): baseview = js.native
   
-  def getHead(): Any = js.native
+  def getHead(): obj = js.native
   
   def getItemId(text: String): String | Double = js.native
   
@@ -71,7 +71,7 @@ trait daterangesuggest
   
   def linkInput(input: HTMLElement): Unit = js.native
   
-  def mapEvent(map: Any): Unit = js.native
+  def mapEvent(map: obj): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   

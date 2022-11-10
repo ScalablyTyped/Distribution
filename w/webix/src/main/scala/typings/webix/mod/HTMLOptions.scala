@@ -23,8 +23,8 @@ trait HTMLOptions extends StObject {
   def enableOption(id: String): Unit = js.native
   def enableOption(id: Double): Unit = js.native
   
-  def getOption(id: String): Any = js.native
-  def getOption(id: Double): Any = js.native
+  def getOption(id: String): obj = js.native
+  def getOption(id: Double): obj = js.native
   
   def hideOption(id: String): Unit = js.native
   def hideOption(id: Double): Unit = js.native

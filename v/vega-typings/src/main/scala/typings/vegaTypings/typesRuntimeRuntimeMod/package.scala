@@ -12,6 +12,15 @@ type Binding = Signal & typings.vegaTypings.typesSpecBindMod.Binding
 
 type ID = String | Double
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends T ? keyof T : never
+  }}}
+  */
+type KeysOfUnion[T] = /* keyof T */ String
+
 type ObjectOrAny[T /* <: js.Object */] = T | js.Array[Any] | ((Record[String, Any]) & (Partial[Record[KeysOfUnion[T], scala.Nothing]])) | Primitive
 
 type ObjectOrListObjectOrAny[T /* <: js.Object */] = T | js.Array[ObjectOrAny[T]] | ((Record[String, Any]) & (Partial[Record[KeysOfUnion[T], scala.Nothing]])) | Primitive

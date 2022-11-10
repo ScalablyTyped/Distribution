@@ -54,6 +54,24 @@ type DictionaryIterator[T, TResult] = ObjectIterator[Dictionary[T], TResult]
 
 type DictionaryIteratorTypeGuard[T, S /* <: T */] = ObjectIteratorTypeGuard[Dictionary[T], S]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends {  __trapAny :any} ? cypress.cypress/types/lodash.CollectionChain<any> & cypress.cypress/types/lodash.FunctionChain<any> & cypress.cypress/types/lodash.ObjectChain<any> & cypress.cypress/types/lodash.PrimitiveChain<any> & cypress.cypress/types/lodash.StringChain : T extends null | undefined ? never : T extends string ? cypress.cypress/types/lodash.StringChain : T extends string | null | undefined ? cypress.cypress/types/lodash.StringNullableChain : T extends (args : any): any ? cypress.cypress/types/lodash.FunctionChain<T> : T extends cypress.cypress/types/lodash.List<infer U> | null | undefined ? cypress.cypress/types/lodash.CollectionChain<U> : T extends object | null | undefined ? cypress.cypress/types/lodash.ObjectChain<T> : cypress.cypress/types/lodash.PrimitiveChain<T>
+  }}}
+  */
+type ExpChain[T] = CollectionChain[Any] & FunctionChain[Any] & ObjectChain[Any] & PrimitiveChain[Any] & StringChain
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends string ? T : T extends cypress.cypress/types/lodash.List<any> ? never : T
+  }}}
+  */
+type Flat[T] = T
+
 type Function0[R] = js.Function0[R]
 
 type Function1[T1, R] = js.Function1[/* t1 */ T1, R]
@@ -65,6 +83,15 @@ type Function3[T1, T2, T3, R] = js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ 
 type Function4[T1, T2, T3, T4, R] = js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]
 
 type FunctionBase = GlobalFunction
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends {  __trapAny :any} ? cypress.cypress/types/lodash.Collection<any> & cypress.cypress/types/lodash.Function<any> & cypress.cypress/types/lodash.Object<any> & cypress.cypress/types/lodash.Primitive<any> & cypress.cypress/types/lodash.String : T extends null | undefined ? never : T extends string | null | undefined ? cypress.cypress/types/lodash.String : T extends (args : any): any ? cypress.cypress/types/lodash.Function<T> : T extends cypress.cypress/types/lodash.List<infer U> | null | undefined ? cypress.cypress/types/lodash.Collection<U> : T extends object | null | undefined ? cypress.cypress/types/lodash.Object<T> : cypress.cypress/types/lodash.Primitive<T>
+  }}}
+  */
+type ImpChain[T] = Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String
 
 type IsEqualCustomizer = js.Function6[
 /* value */ Any, 
@@ -202,6 +229,15 @@ type StringIterator[TResult] = js.Function3[
 /* index */ Double, 
 /* string */ java.lang.String, 
 TResult]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null | undefined | false | '' | 0 ? never : T
+  }}}
+  */
+type Truthy[T] = T
 
 type ValueIteratee[T] = (js.Function1[/* value */ T, NotVoid]) | IterateeShorthand[T]
 

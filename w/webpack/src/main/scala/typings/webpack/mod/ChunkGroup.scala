@@ -26,13 +26,13 @@ trait ChunkGroup extends StObject {
   
   def addParent(parentChunk: ChunkGroup): Boolean = js.native
   
-  val asyncEntrypointsIterable: SortableSet[ChunkGroup] = js.native
+  def asyncEntrypointsIterable: SortableSet[ChunkGroup] = js.native
   
-  val blocksIterable: js.Iterable[AsyncDependenciesBlock] = js.native
+  def blocksIterable: js.Iterable[AsyncDependenciesBlock] = js.native
   
   def checkConstraints(): Unit = js.native
   
-  val childrenIterable: SortableSet[ChunkGroup] = js.native
+  def childrenIterable: SortableSet[ChunkGroup] = js.native
   
   var chunks: js.Array[Chunk] = js.native
   
@@ -45,7 +45,7 @@ trait ChunkGroup extends StObject {
   /**
   	 * get a uniqueId for ChunkGroup, made up of its member Chunk debugId's
   	 */
-  val debugId: String = js.native
+  def debugId: String = js.native
   
   def getBlocks(): js.Array[Any] = js.native
   
@@ -87,7 +87,7 @@ trait ChunkGroup extends StObject {
   /**
   	 * get a unique id for ChunkGroup, made up of its member Chunk id's
   	 */
-  val id: String = js.native
+  def id: String = js.native
   
   var index: Double = js.native
   
@@ -108,7 +108,7 @@ trait ChunkGroup extends StObject {
   
   var origins: js.Array[OriginRecord] = js.native
   
-  val parentsIterable: SortableSet[ChunkGroup] = js.native
+  def parentsIterable: SortableSet[ChunkGroup] = js.native
   
   /**
   	 * add a chunk into ChunkGroup. Is pushed on or prepended

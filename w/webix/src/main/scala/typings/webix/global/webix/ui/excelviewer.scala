@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.excelviewer because var conflicts: $customPrint_Original, $dragHTML_Original, $dropAllow_Original, $dropHTML_Original, $height, $scope, $setNode, $skin_Original, $touch_Original, $view, $width, config, data, headerContent, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, waitData. Inlined  */ @JSGlobal("webix.ui.excelviewer")
+- typings.webix.webix.ui.excelviewer because var conflicts: $customPrint_Original, $dragHTML_Original, $dropAllow_Original, $dropHTML_Original, $hasYScroll, $height, $scope, $setNode, $skin_Original, $touch_Original, $view, $width, config, data, headerContent, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, waitData. Inlined  */ @JSGlobal("webix.ui.excelviewer")
 @js.native
 open class excelviewer ()
   extends typings.webix.mod.ui.excelviewer

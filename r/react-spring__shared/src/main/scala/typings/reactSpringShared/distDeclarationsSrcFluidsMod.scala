@@ -92,7 +92,7 @@ object distDeclarationsSrcFluidsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends object ? {[ P in keyof T ]: T[P] | @react-spring/shared.@react-spring/shared/dist/declarations/src/fluids.FluidValue<std.Exclude<T[P], void>, any>} : unknown
     }}}

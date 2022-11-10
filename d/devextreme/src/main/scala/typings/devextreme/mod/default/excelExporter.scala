@@ -1,6 +1,5 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.excelExporter.CellRange
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelExportDataGridProps
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelExportPivotGridProps
@@ -14,7 +13,7 @@ object excelExporter {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exportDataGrid(options: ExcelExportDataGridProps): DxPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[DxPromise[CellRange]]
+  inline def exportDataGrid(options: ExcelExportDataGridProps): js.Promise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CellRange]]
   
-  inline def exportPivotGrid(options: ExcelExportPivotGridProps): DxPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[DxPromise[CellRange]]
+  inline def exportPivotGrid(options: ExcelExportPivotGridProps): js.Promise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CellRange]]
 }

@@ -117,13 +117,12 @@ object mod {
   // tslint:disable-next-line void-return
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [R] extends [void] ? (err : E): void : (err : E, result : R): void
     }}}
     */
-  @js.native
-  trait Callback[R, E] extends StObject
+  type Callback[R, E] = js.Function1[/* err */ E, Unit]
   
   /* Inlined parent std.Omit<gensync.gensync.SyncOptions<A, R>, 'errback'> */
   trait ErrbackOptions[A /* <: js.Array[Any] */, R, E]
@@ -222,7 +221,7 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends gensync.gensync.Handler<infer U> ? U : never
     }}}

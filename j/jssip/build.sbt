@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jssip"
-version := "3.10.0-bf7027"
+version := "3.10.0-69c1ce"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-4cfc23",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-03d2f5",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-c87c96",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

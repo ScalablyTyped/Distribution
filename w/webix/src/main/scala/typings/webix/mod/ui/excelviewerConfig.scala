@@ -1,16 +1,17 @@
 package typings.webix.mod.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.WebixTemplate
+import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait excelviewerConfig extends StObject {
   
-  var animate: js.UndefOr[Any] = js.undefined
+  var animate: js.UndefOr[Boolean | obj] = js.undefined
   
   var areaselect: js.UndefOr[Boolean] = js.undefined
   
@@ -34,9 +35,9 @@ trait excelviewerConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[Any] = js.undefined
+  var css: js.UndefOr[String | obj] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
   var datafetch: js.UndefOr[Double] = js.undefined
   
@@ -44,7 +45,7 @@ trait excelviewerConfig extends StObject {
   
   var datatype: js.UndefOr[String] = js.undefined
   
-  var delimiter: js.UndefOr[Any] = js.undefined
+  var delimiter: js.UndefOr[obj] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -66,7 +67,7 @@ trait excelviewerConfig extends StObject {
   
   var externalData: js.UndefOr[WebixCallback] = js.undefined
   
-  var filterMode: js.UndefOr[Any] = js.undefined
+  var filterMode: js.UndefOr[obj] = js.undefined
   
   var fixedRowHeight: js.UndefOr[Boolean] = js.undefined
   
@@ -80,7 +81,7 @@ trait excelviewerConfig extends StObject {
   
   var headerRowHeight: js.UndefOr[Double] = js.undefined
   
-  var headermenu: js.UndefOr[Any] = js.undefined
+  var headermenu: js.UndefOr[Boolean | obj] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -98,7 +99,7 @@ trait excelviewerConfig extends StObject {
   
   var loadahead: js.UndefOr[Double] = js.undefined
   
-  var map: js.UndefOr[Any] = js.undefined
+  var map: js.UndefOr[obj] = js.undefined
   
   var math: js.UndefOr[Boolean] = js.undefined
   
@@ -126,15 +127,17 @@ trait excelviewerConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onClick: js.UndefOr[obj] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  var onContext: js.UndefOr[obj] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
+  var onItemSingleClick: js.UndefOr[WebixCallback] = js.undefined
+  
   var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
-  var pager: js.UndefOr[Any] = js.undefined
+  var pager: js.UndefOr[String | obj] = js.undefined
   
   var prerender: js.UndefOr[Boolean] = js.undefined
   
@@ -142,9 +145,9 @@ trait excelviewerConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var resizeColumn: js.UndefOr[Any] = js.undefined
+  var resizeColumn: js.UndefOr[Boolean | obj] = js.undefined
   
-  var resizeRow: js.UndefOr[Any] = js.undefined
+  var resizeRow: js.UndefOr[Boolean | obj] = js.undefined
   
   var rightSplit: js.UndefOr[Double] = js.undefined
   
@@ -152,11 +155,11 @@ trait excelviewerConfig extends StObject {
   
   var rowLineHeight: js.UndefOr[Double] = js.undefined
   
-  var rules: js.UndefOr[Any] = js.undefined
+  var rules: js.UndefOr[obj] = js.undefined
   
-  var save: js.UndefOr[Any] = js.undefined
+  var save: js.UndefOr[String | obj] = js.undefined
   
-  var scheme: js.UndefOr[Any] = js.undefined
+  var scheme: js.UndefOr[obj] = js.undefined
   
   var scroll: js.UndefOr[Boolean | String] = js.undefined
   
@@ -174,7 +177,7 @@ trait excelviewerConfig extends StObject {
   
   var subRowHeight: js.UndefOr[String] = js.undefined
   
-  var subrow: js.UndefOr[String] = js.undefined
+  var subrow: js.UndefOr[String | WebixTemplate] = js.undefined
   
   var subview: js.UndefOr[typings.webix.webix.ui.baseview | WebixCallback] = js.undefined
   
@@ -182,15 +185,15 @@ trait excelviewerConfig extends StObject {
   
   var toolbar: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[Any] = js.undefined
+  var tooltip: js.UndefOr[String | Boolean | WebixCallback | obj] = js.undefined
   
   var topSplit: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Any] = js.undefined
+  var `type`: js.UndefOr[obj] = js.undefined
   
   var undo: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[Any] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -207,7 +210,7 @@ object excelviewerConfig {
   
   extension [Self <: excelviewerConfig](x: Self) {
     
-    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -257,11 +260,11 @@ object excelviewerConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | obj): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -279,7 +282,7 @@ object excelviewerConfig {
     
     inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    inline def setDelimiter(value: Any): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: obj): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
@@ -323,7 +326,7 @@ object excelviewerConfig {
     
     inline def setExternalDataUndefined: Self = StObject.set(x, "externalData", js.undefined)
     
-    inline def setFilterMode(value: Any): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+    inline def setFilterMode(value: obj): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
     inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
     
@@ -351,7 +354,7 @@ object excelviewerConfig {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeadermenu(value: Any): Self = StObject.set(x, "headermenu", value.asInstanceOf[js.Any])
+    inline def setHeadermenu(value: Boolean | obj): Self = StObject.set(x, "headermenu", value.asInstanceOf[js.Any])
     
     inline def setHeadermenuUndefined: Self = StObject.set(x, "headermenu", js.undefined)
     
@@ -387,7 +390,7 @@ object excelviewerConfig {
     
     inline def setLoadaheadUndefined: Self = StObject.set(x, "loadahead", js.undefined)
     
-    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: obj): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
@@ -441,11 +444,11 @@ object excelviewerConfig {
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: obj): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: obj): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
@@ -453,13 +456,17 @@ object excelviewerConfig {
     
     inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
+    inline def setOnItemSingleClick(value: WebixCallback): Self = StObject.set(x, "onItemSingleClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemSingleClickUndefined: Self = StObject.set(x, "onItemSingleClick", js.undefined)
+    
     inline def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: String | obj): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
     inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
@@ -475,11 +482,11 @@ object excelviewerConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setResizeColumn(value: Any): Self = StObject.set(x, "resizeColumn", value.asInstanceOf[js.Any])
+    inline def setResizeColumn(value: Boolean | obj): Self = StObject.set(x, "resizeColumn", value.asInstanceOf[js.Any])
     
     inline def setResizeColumnUndefined: Self = StObject.set(x, "resizeColumn", js.undefined)
     
-    inline def setResizeRow(value: Any): Self = StObject.set(x, "resizeRow", value.asInstanceOf[js.Any])
+    inline def setResizeRow(value: Boolean | obj): Self = StObject.set(x, "resizeRow", value.asInstanceOf[js.Any])
     
     inline def setResizeRowUndefined: Self = StObject.set(x, "resizeRow", js.undefined)
     
@@ -495,15 +502,15 @@ object excelviewerConfig {
     
     inline def setRowLineHeightUndefined: Self = StObject.set(x, "rowLineHeight", js.undefined)
     
-    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: obj): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: obj): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
@@ -541,7 +548,7 @@ object excelviewerConfig {
     
     inline def setSubRowHeightUndefined: Self = StObject.set(x, "subRowHeight", js.undefined)
     
-    inline def setSubrow(value: String): Self = StObject.set(x, "subrow", value.asInstanceOf[js.Any])
+    inline def setSubrow(value: String | WebixTemplate): Self = StObject.set(x, "subrow", value.asInstanceOf[js.Any])
     
     inline def setSubrowUndefined: Self = StObject.set(x, "subrow", js.undefined)
     
@@ -557,7 +564,7 @@ object excelviewerConfig {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String | Boolean | WebixCallback | obj): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
@@ -565,7 +572,7 @@ object excelviewerConfig {
     
     inline def setTopSplitUndefined: Self = StObject.set(x, "topSplit", js.undefined)
     
-    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: obj): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -573,7 +580,7 @@ object excelviewerConfig {
     
     inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
-    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
