@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "alpinejs__focus"
-version := "3.10-dt-20221017Z-1fd884"
+version := "3.10-dt-20221017Z-ccb2cd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "alpinejs" % "3.7-dt-20221028Z-6e887d",
+  "org.scalablytyped" %%% "alpinejs" % "3.7-dt-20221028Z-0abdf9",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.44-4ce39a",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.44-7c9b23")
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-9276fd",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-f2d292")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

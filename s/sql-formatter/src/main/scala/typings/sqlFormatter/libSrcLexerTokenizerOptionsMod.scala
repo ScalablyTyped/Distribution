@@ -149,8 +149,29 @@ object libSrcLexerTokenizerOptionsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.PlainQuoteType
     - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.PrefixedQuoteType
+    - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.RegexPattern
   */
   trait QuoteType extends StObject
+  
+  trait RegexPattern
+    extends StObject
+       with QuoteType
+       with VariableType {
+    
+    var regex: String
+  }
+  object RegexPattern {
+    
+    inline def apply(regex: String): RegexPattern = {
+      val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegexPattern]
+    }
+    
+    extension [Self <: RegexPattern](x: Self) {
+      
+      inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait TokenizerOptions extends StObject {
     
@@ -298,27 +319,8 @@ object libSrcLexerTokenizerOptionsMod {
     }
   }
   
-  trait VariableRegex
-    extends StObject
-       with VariableType {
-    
-    var regex: String
-  }
-  object VariableRegex {
-    
-    inline def apply(regex: String): VariableRegex = {
-      val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VariableRegex]
-    }
-    
-    extension [Self <: VariableRegex](x: Self) {
-      
-      inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Rewritten from type alias, can be one of: 
-    - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.VariableRegex
+    - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.RegexPattern
     - typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.PrefixedQuoteType
   */
   trait VariableType extends StObject
@@ -329,9 +331,9 @@ object libSrcLexerTokenizerOptionsMod {
       __obj.asInstanceOf[typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.PrefixedQuoteType]
     }
     
-    inline def VariableRegex(regex: String): typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.VariableRegex = {
+    inline def RegexPattern(regex: String): typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.RegexPattern = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.VariableRegex]
+      __obj.asInstanceOf[typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.RegexPattern]
     }
   }
 }

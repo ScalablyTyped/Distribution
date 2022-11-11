@@ -330,6 +330,12 @@ object vueCompilerCoreInts {
   inline def `50`: `50` = 50.asInstanceOf[`50`]
   
   @js.native
+  sealed trait `51`
+    extends StObject
+       with ErrorCodes
+  inline def `51`: `51` = 51.asInstanceOf[`51`]
+  
+  @js.native
   sealed trait `6`
     extends StObject
        with ErrorCodes

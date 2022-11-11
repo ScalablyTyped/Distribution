@@ -13,11 +13,6 @@ trait ComponentInternalInstance extends StObject {
   
   var attrs: Data
   
-  /**
-    * custom element specific HMR method
-    */
-  var ceReload: js.UndefOr[js.Function1[/* newStyles */ js.UndefOr[js.Array[String]], Unit]] = js.undefined
-  
   /* Excluded from this release type: withProxy */
   /* Excluded from this release type: ctx */
   var data: Data
@@ -36,42 +31,6 @@ trait ComponentInternalInstance extends StObject {
   
   var exposed: (Record[String, Any]) | Null
   
-  /* Excluded from this release type: bc */
-  /* Excluded from this release type: c */
-  /* Excluded from this release type: bm */
-  /* Excluded from this release type: m */
-  /* Excluded from this release type: bu */
-  /* Excluded from this release type: u */
-  /* Excluded from this release type: bum */
-  /* Excluded from this release type: um */
-  /* Excluded from this release type: rtc */
-  /* Excluded from this release type: rtg */
-  /* Excluded from this release type: a */
-  /* Excluded from this release type: da */
-  /* Excluded from this release type: ec */
-  /* Excluded from this release type: sp */
-  /**
-    * For caching bound $forceUpdate on public proxy access
-    */
-  var f: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  /* Excluded from this release type: render */
-  /* Excluded from this release type: ssrRender */
-  /* Excluded from this release type: provides */
-  /* Excluded from this release type: scope */
-  /* Excluded from this release type: accessCache */
-  /* Excluded from this release type: renderCache */
-  /* Excluded from this release type: components */
-  /* Excluded from this release type: directives */
-  /* Excluded from this release type: filters */
-  /* Excluded from this release type: propsOptions */
-  /* Excluded from this release type: emitsOptions */
-  /* Excluded from this release type: inheritAttrs */
-  /**
-    * is custom element?
-    */
-  var isCE: js.UndefOr[Boolean] = js.undefined
-  
   var isDeactivated: Boolean
   
   /* Excluded from this release type: emitted */
@@ -87,15 +46,24 @@ trait ComponentInternalInstance extends StObject {
   
   var isUnmounted: Boolean
   
-  /**
-    * For caching bound $nextTick on public proxy access
-    */
-  var n: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
-  
   var parent: ComponentInternalInstance | Null
   
   var props: Data
   
+  /* Excluded from this release type: render */
+  /* Excluded from this release type: ssrRender */
+  /* Excluded from this release type: provides */
+  /* Excluded from this release type: scope */
+  /* Excluded from this release type: accessCache */
+  /* Excluded from this release type: renderCache */
+  /* Excluded from this release type: components */
+  /* Excluded from this release type: directives */
+  /* Excluded from this release type: filters */
+  /* Excluded from this release type: propsOptions */
+  /* Excluded from this release type: emitsOptions */
+  /* Excluded from this release type: inheritAttrs */
+  /* Excluded from this release type: isCE */
+  /* Excluded from this release type: ceReload */
   var proxy: (ComponentPublicInstance[
     js.Object, 
     js.Object, 
@@ -168,10 +136,6 @@ object ComponentInternalInstance {
     
     inline def setAttrs(value: Data): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    inline def setCeReload(value: /* newStyles */ js.UndefOr[js.Array[String]] => Unit): Self = StObject.set(x, "ceReload", js.Any.fromFunction1(value))
-    
-    inline def setCeReloadUndefined: Self = StObject.set(x, "ceReload", js.undefined)
-    
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEffect(value: typings.vueReactivity.mod.ReactiveEffect[Any]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
@@ -186,23 +150,11 @@ object ComponentInternalInstance {
     
     inline def setExposedNull: Self = StObject.set(x, "exposed", null)
     
-    inline def setF(value: () => Unit): Self = StObject.set(x, "f", js.Any.fromFunction0(value))
-    
-    inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
-    
-    inline def setIsCE(value: Boolean): Self = StObject.set(x, "isCE", value.asInstanceOf[js.Any])
-    
-    inline def setIsCEUndefined: Self = StObject.set(x, "isCE", js.undefined)
-    
     inline def setIsDeactivated(value: Boolean): Self = StObject.set(x, "isDeactivated", value.asInstanceOf[js.Any])
     
     inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
     
     inline def setIsUnmounted(value: Boolean): Self = StObject.set(x, "isUnmounted", value.asInstanceOf[js.Any])
-    
-    inline def setN(value: () => js.Promise[Unit]): Self = StObject.set(x, "n", js.Any.fromFunction0(value))
-    
-    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     inline def setParent(value: ComponentInternalInstance): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

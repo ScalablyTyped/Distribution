@@ -71,7 +71,6 @@ import typings.vueCompilerCore.mod.TransformContext
 import typings.vueCompilerCore.mod.TransformOptions
 import typings.vueCompilerCore.mod.TransformPreset
 import typings.vueCompilerCore.mod.VNodeCall
-import typings.vueCompilerDom.vueCompilerDomInts.`50`
 import typings.vueCompilerDom.vueCompilerDomInts.`51`
 import typings.vueCompilerDom.vueCompilerDomInts.`52`
 import typings.vueCompilerDom.vueCompilerDomInts.`53`
@@ -83,6 +82,7 @@ import typings.vueCompilerDom.vueCompilerDomInts.`58`
 import typings.vueCompilerDom.vueCompilerDomInts.`59`
 import typings.vueCompilerDom.vueCompilerDomInts.`60`
 import typings.vueCompilerDom.vueCompilerDomInts.`61`
+import typings.vueCompilerDom.vueCompilerDomInts.`62`
 import typings.vueCompilerDom.vueCompilerDomStrings.component
 import typings.vueCompilerDom.vueCompilerDomStrings.directive
 import typings.vueCompilerDom.vueCompilerDomStrings.filter
@@ -858,7 +858,6 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueCompilerDom.vueCompilerDomInts.`50`
     - typings.vueCompilerDom.vueCompilerDomInts.`51`
     - typings.vueCompilerDom.vueCompilerDomInts.`52`
     - typings.vueCompilerDom.vueCompilerDomInts.`53`
@@ -870,32 +869,33 @@ object mod {
     - typings.vueCompilerDom.vueCompilerDomInts.`59`
     - typings.vueCompilerDom.vueCompilerDomInts.`60`
     - typings.vueCompilerDom.vueCompilerDomInts.`61`
+    - typings.vueCompilerDom.vueCompilerDomInts.`62`
   */
   trait DOMErrorCodes extends StObject
   object DOMErrorCodes {
     
-    inline def X_IGNORED_SIDE_EFFECT_TAG: `60` = 60.asInstanceOf[`60`]
+    inline def X_IGNORED_SIDE_EFFECT_TAG: `61` = 61.asInstanceOf[`61`]
     
-    inline def X_TRANSITION_INVALID_CHILDREN: `59` = 59.asInstanceOf[`59`]
+    inline def X_TRANSITION_INVALID_CHILDREN: `60` = 60.asInstanceOf[`60`]
     
-    inline def X_V_HTML_NO_EXPRESSION: `50` = 50.asInstanceOf[`50`]
+    inline def X_V_HTML_NO_EXPRESSION: `51` = 51.asInstanceOf[`51`]
     
-    inline def X_V_HTML_WITH_CHILDREN: `51` = 51.asInstanceOf[`51`]
+    inline def X_V_HTML_WITH_CHILDREN: `52` = 52.asInstanceOf[`52`]
     
-    inline def X_V_MODEL_ARG_ON_ELEMENT: `55` = 55.asInstanceOf[`55`]
+    inline def X_V_MODEL_ARG_ON_ELEMENT: `56` = 56.asInstanceOf[`56`]
     
-    inline def X_V_MODEL_ON_FILE_INPUT_ELEMENT: `56` = 56.asInstanceOf[`56`]
+    inline def X_V_MODEL_ON_FILE_INPUT_ELEMENT: `57` = 57.asInstanceOf[`57`]
     
-    inline def X_V_MODEL_ON_INVALID_ELEMENT: `54` = 54.asInstanceOf[`54`]
+    inline def X_V_MODEL_ON_INVALID_ELEMENT: `55` = 55.asInstanceOf[`55`]
     
-    inline def X_V_MODEL_UNNECESSARY_VALUE: `57` = 57.asInstanceOf[`57`]
+    inline def X_V_MODEL_UNNECESSARY_VALUE: `58` = 58.asInstanceOf[`58`]
     
-    inline def X_V_SHOW_NO_EXPRESSION: `58` = 58.asInstanceOf[`58`]
+    inline def X_V_SHOW_NO_EXPRESSION: `59` = 59.asInstanceOf[`59`]
     
-    inline def X_V_TEXT_NO_EXPRESSION: `52` = 52.asInstanceOf[`52`]
+    inline def X_V_TEXT_NO_EXPRESSION: `53` = 53.asInstanceOf[`53`]
     
-    inline def X_V_TEXT_WITH_CHILDREN: `53` = 53.asInstanceOf[`53`]
+    inline def X_V_TEXT_WITH_CHILDREN: `54` = 54.asInstanceOf[`54`]
     
-    inline def __EXTEND_POINT__ : `61` = 61.asInstanceOf[`61`]
+    inline def __EXTEND_POINT__ : `62` = 62.asInstanceOf[`62`]
   }
 }

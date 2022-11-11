@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue" : "3.2.44"
+      "vue" : "3.2.45"
     }
   ],
   "test-dependencies" : [
     {
-      "vue" : "3.2.44"
+      "vue" : "3.2.45"
     }
   ],
   "compile-devDependencies" : [

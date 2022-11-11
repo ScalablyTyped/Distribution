@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sql-formatter"
-version := "11.0.2-4c917e"
+version := "12.0.0-a98e9d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

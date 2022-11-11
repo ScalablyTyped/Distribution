@@ -32,6 +32,8 @@ open class VueElement protected () extends StObject {
     */
   /* private */ var _resolveDef: Any = js.native
   
+  /* private */ var _resolveProps: Any = js.native
+  
   /* private */ var _resolved: Any = js.native
   
   /* protected */ def _setAttr(key: String): Unit = js.native

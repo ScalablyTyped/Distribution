@@ -1,7 +1,7 @@
 package typings.sqlFormatter
 
+import typings.sqlFormatter.libSrcDialectMod.Dialect
 import typings.sqlFormatter.libSrcFormatOptionsMod.FormatOptions
-import typings.sqlFormatter.libSrcFormatterExpressionFormatterMod.DialectFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +13,13 @@ object libSrcFormatterFormatterMod {
   open class default protected ()
     extends StObject
        with Formatter {
-    def this(cfg: FormatOptions) = this()
-    
-    /* private */ /* CompleteClass */
-    var cachedTokenizer: Any = js.native
+    def this(dialect: Dialect, cfg: FormatOptions) = this()
     
     /* private */ /* CompleteClass */
     var cfg: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var dialect: Any = js.native
     
     /**
       * Formats an SQL query.
@@ -32,12 +32,6 @@ object libSrcFormatterFormatterMod {
     /* private */ /* CompleteClass */
     var formatAst: Any = js.native
     
-    /**
-      * Dialect-specific formatting configuration, optionally provided by subclass.
-      */
-    /* protected */ /* CompleteClass */
-    override def formatOptions(): DialectFormatOptions = js.native
-    
     /* private */ /* CompleteClass */
     var formatStatement: Any = js.native
     
@@ -49,19 +43,13 @@ object libSrcFormatterFormatterMod {
     
     /* private */ /* CompleteClass */
     var postFormat: Any = js.native
-    
-    /**
-      * SQL Tokenizer for this formatter, provided by subclasses.
-      */
-    /* protected */ /* CompleteClass */
-    override def tokenizer(): typings.sqlFormatter.libSrcLexerTokenizerMod.default = js.native
   }
   
   trait Formatter extends StObject {
     
-    /* private */ var cachedTokenizer: Any
-    
     /* private */ var cfg: Any
+    
+    /* private */ var dialect: Any
     
     /**
       * Formats an SQL query.
@@ -72,11 +60,6 @@ object libSrcFormatterFormatterMod {
     
     /* private */ var formatAst: Any
     
-    /**
-      * Dialect-specific formatting configuration, optionally provided by subclass.
-      */
-    /* protected */ def formatOptions(): DialectFormatOptions
-    
     /* private */ var formatStatement: Any
     
     /* private */ var params: Any
@@ -84,41 +67,32 @@ object libSrcFormatterFormatterMod {
     /* private */ var parse: Any
     
     /* private */ var postFormat: Any
-    
-    /**
-      * SQL Tokenizer for this formatter, provided by subclasses.
-      */
-    /* protected */ def tokenizer(): typings.sqlFormatter.libSrcLexerTokenizerMod.default
   }
   object Formatter {
     
     inline def apply(
-      cachedTokenizer: Any,
       cfg: Any,
+      dialect: Any,
       format: String => String,
       formatAst: Any,
-      formatOptions: () => DialectFormatOptions,
       formatStatement: Any,
       params: Any,
       parse: Any,
-      postFormat: Any,
-      tokenizer: () => typings.sqlFormatter.libSrcLexerTokenizerMod.default
+      postFormat: Any
     ): Formatter = {
-      val __obj = js.Dynamic.literal(cachedTokenizer = cachedTokenizer.asInstanceOf[js.Any], cfg = cfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAst = formatAst.asInstanceOf[js.Any], formatOptions = js.Any.fromFunction0(formatOptions), formatStatement = formatStatement.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], postFormat = postFormat.asInstanceOf[js.Any], tokenizer = js.Any.fromFunction0(tokenizer))
+      val __obj = js.Dynamic.literal(cfg = cfg.asInstanceOf[js.Any], dialect = dialect.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAst = formatAst.asInstanceOf[js.Any], formatStatement = formatStatement.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], postFormat = postFormat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Formatter]
     }
     
     extension [Self <: Formatter](x: Self) {
       
-      inline def setCachedTokenizer(value: Any): Self = StObject.set(x, "cachedTokenizer", value.asInstanceOf[js.Any])
-      
       inline def setCfg(value: Any): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
+      
+      inline def setDialect(value: Any): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       inline def setFormatAst(value: Any): Self = StObject.set(x, "formatAst", value.asInstanceOf[js.Any])
-      
-      inline def setFormatOptions(value: () => DialectFormatOptions): Self = StObject.set(x, "formatOptions", js.Any.fromFunction0(value))
       
       inline def setFormatStatement(value: Any): Self = StObject.set(x, "formatStatement", value.asInstanceOf[js.Any])
       
@@ -127,8 +101,6 @@ object libSrcFormatterFormatterMod {
       inline def setParse(value: Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
       inline def setPostFormat(value: Any): Self = StObject.set(x, "postFormat", value.asInstanceOf[js.Any])
-      
-      inline def setTokenizer(value: () => typings.sqlFormatter.libSrcLexerTokenizerMod.default): Self = StObject.set(x, "tokenizer", js.Any.fromFunction0(value))
     }
   }
 }

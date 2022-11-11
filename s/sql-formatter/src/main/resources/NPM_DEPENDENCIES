@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sql-formatter" : "11.0.2"
+      "sql-formatter" : "12.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sql-formatter" : "11.0.2"
+      "sql-formatter" : "12.0.0"
     }
   ],
   "compile-devDependencies" : [

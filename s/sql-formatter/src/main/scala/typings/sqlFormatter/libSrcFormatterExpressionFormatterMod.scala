@@ -2,6 +2,7 @@ package typings.sqlFormatter
 
 import typings.sqlFormatter.libSrcFormatOptionsMod.FormatOptions
 import typings.sqlFormatter.libSrcParserAstMod.AstNode
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +48,15 @@ object libSrcFormatterExpressionFormatterMod {
     
     /* private */ /* CompleteClass */
     var formatClause: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var formatClauseInIndentedStyle: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var formatClauseInOnelineStyle: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var formatClauseInTabularStyle: Any = js.native
     
     /* private */ /* CompleteClass */
     var formatComma: Any = js.native
@@ -118,6 +128,9 @@ object libSrcFormatterExpressionFormatterMod {
     var isMultilineBlockComment: Any = js.native
     
     /* private */ /* CompleteClass */
+    var isOnelineClause: Any = js.native
+    
+    /* private */ /* CompleteClass */
     var layout: Any = js.native
     
     /* private */ /* CompleteClass */
@@ -142,11 +155,13 @@ object libSrcFormatterExpressionFormatterMod {
   trait DialectFormatOptions extends StObject {
     
     var alwaysDenseOperators: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var onelineClauses: js.Array[String]
   }
   object DialectFormatOptions {
     
-    inline def apply(): DialectFormatOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(onelineClauses: js.Array[String]): DialectFormatOptions = {
+      val __obj = js.Dynamic.literal(onelineClauses = onelineClauses.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialectFormatOptions]
     }
     
@@ -157,6 +172,10 @@ object libSrcFormatterExpressionFormatterMod {
       inline def setAlwaysDenseOperatorsUndefined: Self = StObject.set(x, "alwaysDenseOperators", js.undefined)
       
       inline def setAlwaysDenseOperatorsVarargs(value: String*): Self = StObject.set(x, "alwaysDenseOperators", js.Array(value*))
+      
+      inline def setOnelineClauses(value: js.Array[String]): Self = StObject.set(x, "onelineClauses", value.asInstanceOf[js.Any])
+      
+      inline def setOnelineClausesVarargs(value: String*): Self = StObject.set(x, "onelineClauses", js.Array(value*))
     }
   }
   
@@ -183,6 +202,12 @@ object libSrcFormatterExpressionFormatterMod {
     /* private */ var formatCaseWhen: Any
     
     /* private */ var formatClause: Any
+    
+    /* private */ var formatClauseInIndentedStyle: Any
+    
+    /* private */ var formatClauseInOnelineStyle: Any
+    
+    /* private */ var formatClauseInTabularStyle: Any
     
     /* private */ var formatComma: Any
     
@@ -230,6 +255,8 @@ object libSrcFormatterExpressionFormatterMod {
     
     /* private */ var isMultilineBlockComment: Any
     
+    /* private */ var isOnelineClause: Any
+    
     /* private */ var layout: Any
     
     /* private */ var nodes: Any
@@ -258,6 +285,9 @@ object libSrcFormatterExpressionFormatterMod {
       formatCaseExpression: Any,
       formatCaseWhen: Any,
       formatClause: Any,
+      formatClauseInIndentedStyle: Any,
+      formatClauseInOnelineStyle: Any,
+      formatClauseInTabularStyle: Any,
       formatComma: Any,
       formatComments: Any,
       formatFunctionCall: Any,
@@ -281,6 +311,7 @@ object libSrcFormatterExpressionFormatterMod {
       index: Any,
       `inline`: Any,
       isMultilineBlockComment: Any,
+      isOnelineClause: Any,
       layout: Any,
       nodes: Any,
       params: Any,
@@ -289,7 +320,7 @@ object libSrcFormatterExpressionFormatterMod {
       splitBlockComment: Any,
       withComments: Any
     ): ExpressionFormatter = {
-      val __obj = js.Dynamic.literal(cfg = cfg.asInstanceOf[js.Any], dialectCfg = dialectCfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAllColumnsAsterisk = formatAllColumnsAsterisk.asInstanceOf[js.Any], formatArraySubscript = formatArraySubscript.asInstanceOf[js.Any], formatBetweenPredicate = formatBetweenPredicate.asInstanceOf[js.Any], formatBlockComment = formatBlockComment.asInstanceOf[js.Any], formatCaseElse = formatCaseElse.asInstanceOf[js.Any], formatCaseExpression = formatCaseExpression.asInstanceOf[js.Any], formatCaseWhen = formatCaseWhen.asInstanceOf[js.Any], formatClause = formatClause.asInstanceOf[js.Any], formatComma = formatComma.asInstanceOf[js.Any], formatComments = formatComments.asInstanceOf[js.Any], formatFunctionCall = formatFunctionCall.asInstanceOf[js.Any], formatIdentifier = formatIdentifier.asInstanceOf[js.Any], formatInlineExpression = formatInlineExpression.asInstanceOf[js.Any], formatJoin = formatJoin.asInstanceOf[js.Any], formatKeyword = formatKeyword.asInstanceOf[js.Any], formatKeywordNode = formatKeywordNode.asInstanceOf[js.Any], formatLimitClause = formatLimitClause.asInstanceOf[js.Any], formatLineComment = formatLineComment.asInstanceOf[js.Any], formatLiteral = formatLiteral.asInstanceOf[js.Any], formatLogicalOperator = formatLogicalOperator.asInstanceOf[js.Any], formatNode = formatNode.asInstanceOf[js.Any], formatNodeWithoutComments = formatNodeWithoutComments.asInstanceOf[js.Any], formatOperator = formatOperator.asInstanceOf[js.Any], formatParameter = formatParameter.asInstanceOf[js.Any], formatParenthesis = formatParenthesis.asInstanceOf[js.Any], formatPropertyAccess = formatPropertyAccess.asInstanceOf[js.Any], formatSetOperation = formatSetOperation.asInstanceOf[js.Any], formatSubExpression = formatSubExpression.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isMultilineBlockComment = isMultilineBlockComment.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], showKw = showKw.asInstanceOf[js.Any], showNonTabularKw = showNonTabularKw.asInstanceOf[js.Any], splitBlockComment = splitBlockComment.asInstanceOf[js.Any], withComments = withComments.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cfg = cfg.asInstanceOf[js.Any], dialectCfg = dialectCfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAllColumnsAsterisk = formatAllColumnsAsterisk.asInstanceOf[js.Any], formatArraySubscript = formatArraySubscript.asInstanceOf[js.Any], formatBetweenPredicate = formatBetweenPredicate.asInstanceOf[js.Any], formatBlockComment = formatBlockComment.asInstanceOf[js.Any], formatCaseElse = formatCaseElse.asInstanceOf[js.Any], formatCaseExpression = formatCaseExpression.asInstanceOf[js.Any], formatCaseWhen = formatCaseWhen.asInstanceOf[js.Any], formatClause = formatClause.asInstanceOf[js.Any], formatClauseInIndentedStyle = formatClauseInIndentedStyle.asInstanceOf[js.Any], formatClauseInOnelineStyle = formatClauseInOnelineStyle.asInstanceOf[js.Any], formatClauseInTabularStyle = formatClauseInTabularStyle.asInstanceOf[js.Any], formatComma = formatComma.asInstanceOf[js.Any], formatComments = formatComments.asInstanceOf[js.Any], formatFunctionCall = formatFunctionCall.asInstanceOf[js.Any], formatIdentifier = formatIdentifier.asInstanceOf[js.Any], formatInlineExpression = formatInlineExpression.asInstanceOf[js.Any], formatJoin = formatJoin.asInstanceOf[js.Any], formatKeyword = formatKeyword.asInstanceOf[js.Any], formatKeywordNode = formatKeywordNode.asInstanceOf[js.Any], formatLimitClause = formatLimitClause.asInstanceOf[js.Any], formatLineComment = formatLineComment.asInstanceOf[js.Any], formatLiteral = formatLiteral.asInstanceOf[js.Any], formatLogicalOperator = formatLogicalOperator.asInstanceOf[js.Any], formatNode = formatNode.asInstanceOf[js.Any], formatNodeWithoutComments = formatNodeWithoutComments.asInstanceOf[js.Any], formatOperator = formatOperator.asInstanceOf[js.Any], formatParameter = formatParameter.asInstanceOf[js.Any], formatParenthesis = formatParenthesis.asInstanceOf[js.Any], formatPropertyAccess = formatPropertyAccess.asInstanceOf[js.Any], formatSetOperation = formatSetOperation.asInstanceOf[js.Any], formatSubExpression = formatSubExpression.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isMultilineBlockComment = isMultilineBlockComment.asInstanceOf[js.Any], isOnelineClause = isOnelineClause.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], showKw = showKw.asInstanceOf[js.Any], showNonTabularKw = showNonTabularKw.asInstanceOf[js.Any], splitBlockComment = splitBlockComment.asInstanceOf[js.Any], withComments = withComments.asInstanceOf[js.Any])
       __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpressionFormatter]
     }
@@ -317,6 +348,12 @@ object libSrcFormatterExpressionFormatterMod {
       inline def setFormatCaseWhen(value: Any): Self = StObject.set(x, "formatCaseWhen", value.asInstanceOf[js.Any])
       
       inline def setFormatClause(value: Any): Self = StObject.set(x, "formatClause", value.asInstanceOf[js.Any])
+      
+      inline def setFormatClauseInIndentedStyle(value: Any): Self = StObject.set(x, "formatClauseInIndentedStyle", value.asInstanceOf[js.Any])
+      
+      inline def setFormatClauseInOnelineStyle(value: Any): Self = StObject.set(x, "formatClauseInOnelineStyle", value.asInstanceOf[js.Any])
+      
+      inline def setFormatClauseInTabularStyle(value: Any): Self = StObject.set(x, "formatClauseInTabularStyle", value.asInstanceOf[js.Any])
       
       inline def setFormatComma(value: Any): Self = StObject.set(x, "formatComma", value.asInstanceOf[js.Any])
       
@@ -364,6 +401,8 @@ object libSrcFormatterExpressionFormatterMod {
       
       inline def setIsMultilineBlockComment(value: Any): Self = StObject.set(x, "isMultilineBlockComment", value.asInstanceOf[js.Any])
       
+      inline def setIsOnelineClause(value: Any): Self = StObject.set(x, "isOnelineClause", value.asInstanceOf[js.Any])
+      
       inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setNodes(value: Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
@@ -384,7 +423,7 @@ object libSrcFormatterExpressionFormatterMod {
     
     var cfg: FormatOptions
     
-    var dialectCfg: DialectFormatOptions
+    var dialectCfg: ProcessedDialectFormatOptions
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
@@ -396,7 +435,7 @@ object libSrcFormatterExpressionFormatterMod {
     
     inline def apply(
       cfg: FormatOptions,
-      dialectCfg: DialectFormatOptions,
+      dialectCfg: ProcessedDialectFormatOptions,
       layout: typings.sqlFormatter.libSrcFormatterLayoutMod.default,
       params: typings.sqlFormatter.libSrcFormatterParamsMod.default
     ): ExpressionFormatterParams = {
@@ -408,7 +447,7 @@ object libSrcFormatterExpressionFormatterMod {
       
       inline def setCfg(value: FormatOptions): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       
-      inline def setDialectCfg(value: DialectFormatOptions): Self = StObject.set(x, "dialectCfg", value.asInstanceOf[js.Any])
+      inline def setDialectCfg(value: ProcessedDialectFormatOptions): Self = StObject.set(x, "dialectCfg", value.asInstanceOf[js.Any])
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -417,6 +456,29 @@ object libSrcFormatterExpressionFormatterMod {
       inline def setLayout(value: typings.sqlFormatter.libSrcFormatterLayoutMod.default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setParams(value: typings.sqlFormatter.libSrcFormatterParamsMod.default): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ProcessedDialectFormatOptions extends StObject {
+    
+    var alwaysDenseOperators: js.Array[String]
+    
+    var onelineClauses: Record[String, Boolean]
+  }
+  object ProcessedDialectFormatOptions {
+    
+    inline def apply(alwaysDenseOperators: js.Array[String], onelineClauses: Record[String, Boolean]): ProcessedDialectFormatOptions = {
+      val __obj = js.Dynamic.literal(alwaysDenseOperators = alwaysDenseOperators.asInstanceOf[js.Any], onelineClauses = onelineClauses.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProcessedDialectFormatOptions]
+    }
+    
+    extension [Self <: ProcessedDialectFormatOptions](x: Self) {
+      
+      inline def setAlwaysDenseOperators(value: js.Array[String]): Self = StObject.set(x, "alwaysDenseOperators", value.asInstanceOf[js.Any])
+      
+      inline def setAlwaysDenseOperatorsVarargs(value: String*): Self = StObject.set(x, "alwaysDenseOperators", js.Array(value*))
+      
+      inline def setOnelineClauses(value: Record[String, Boolean]): Self = StObject.set(x, "onelineClauses", value.asInstanceOf[js.Any])
     }
   }
 }

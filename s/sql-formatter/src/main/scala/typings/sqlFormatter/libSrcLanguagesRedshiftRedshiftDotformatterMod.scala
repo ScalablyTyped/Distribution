@@ -1,16 +1,13 @@
 package typings.sqlFormatter
 
+import typings.sqlFormatter.libSrcDialectMod.DialectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libSrcLanguagesRedshiftRedshiftDotformatterMod {
   
-  @JSImport("sql-formatter/lib/src/languages/redshift/redshift.formatter", JSImport.Default)
+  @JSImport("sql-formatter/lib/src/languages/redshift/redshift.formatter", "redshift")
   @js.native
-  open class default () extends RedshiftFormatter
-  
-  @js.native
-  trait RedshiftFormatter
-    extends typings.sqlFormatter.libSrcFormatterFormatterMod.default
+  val redshift: DialectOptions = js.native
 }

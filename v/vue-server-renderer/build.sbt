@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-server-renderer"
-version := "2.7.14-9aa3c2"
+version := "2.7.14-27839c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,9 +14,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "tapable" % "2.2.1-8e2762",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-af3fab",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.44-4ce39a",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.44-b59ec8",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.44-7c9b23",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-9276fd",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-b92a42",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-f2d292",
   "org.scalablytyped" %%% "webpack" % "5.75.0-4fd6d9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

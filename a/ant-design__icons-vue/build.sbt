@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons-vue"
-version := "6.1.0-738030"
+version := "6.1.0-463416"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-537456",
   "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.44-4ce39a",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.44-b59ec8",
-  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.44-214b60",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.44-7c9b23")
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-9276fd",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-b92a42",
+  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.45-9a61bf",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-f2d292")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

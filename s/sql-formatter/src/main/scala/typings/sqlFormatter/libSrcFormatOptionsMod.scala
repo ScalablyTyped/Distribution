@@ -1,10 +1,7 @@
 package typings.sqlFormatter
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.sqlFormatter.libSrcFormatterFormatterMod.default
 import typings.sqlFormatter.libSrcFormatterParamsMod.ParamItems
 import typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.ParamTypes
-import typings.sqlFormatter.libSrcSqlFormatterMod.SqlLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,8 +35,6 @@ object libSrcFormatOptionsMod {
     
     var keywordCase: KeywordCase
     
-    var language: SqlLanguage | (Instantiable1[/* cfg */ FormatOptions, default])
-    
     var linesBetweenQueries: Double
     
     var logicalOperatorNewline: LogicalOperatorNewline
@@ -64,7 +59,6 @@ object libSrcFormatOptionsMod {
       expressionWidth: Double,
       indentStyle: IndentStyle,
       keywordCase: KeywordCase,
-      language: SqlLanguage | (Instantiable1[/* cfg */ FormatOptions, default]),
       linesBetweenQueries: Double,
       logicalOperatorNewline: LogicalOperatorNewline,
       newlineBeforeSemicolon: Boolean,
@@ -72,7 +66,7 @@ object libSrcFormatOptionsMod {
       tabulateAlias: Boolean,
       useTabs: Boolean
     ): FormatOptions = {
-      val __obj = js.Dynamic.literal(commaPosition = commaPosition.asInstanceOf[js.Any], denseOperators = denseOperators.asInstanceOf[js.Any], expressionWidth = expressionWidth.asInstanceOf[js.Any], indentStyle = indentStyle.asInstanceOf[js.Any], keywordCase = keywordCase.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], linesBetweenQueries = linesBetweenQueries.asInstanceOf[js.Any], logicalOperatorNewline = logicalOperatorNewline.asInstanceOf[js.Any], newlineBeforeSemicolon = newlineBeforeSemicolon.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], tabulateAlias = tabulateAlias.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commaPosition = commaPosition.asInstanceOf[js.Any], denseOperators = denseOperators.asInstanceOf[js.Any], expressionWidth = expressionWidth.asInstanceOf[js.Any], indentStyle = indentStyle.asInstanceOf[js.Any], keywordCase = keywordCase.asInstanceOf[js.Any], linesBetweenQueries = linesBetweenQueries.asInstanceOf[js.Any], logicalOperatorNewline = logicalOperatorNewline.asInstanceOf[js.Any], newlineBeforeSemicolon = newlineBeforeSemicolon.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], tabulateAlias = tabulateAlias.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatOptions]
     }
     
@@ -87,8 +81,6 @@ object libSrcFormatOptionsMod {
       inline def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "indentStyle", value.asInstanceOf[js.Any])
       
       inline def setKeywordCase(value: KeywordCase): Self = StObject.set(x, "keywordCase", value.asInstanceOf[js.Any])
-      
-      inline def setLanguage(value: SqlLanguage | (Instantiable1[/* cfg */ FormatOptions, default])): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
       inline def setLinesBetweenQueries(value: Double): Self = StObject.set(x, "linesBetweenQueries", value.asInstanceOf[js.Any])
       

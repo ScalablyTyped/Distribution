@@ -1,7 +1,5 @@
 package typings.svgo
 
-import typings.svgo.anon.FloatPrecision
-import typings.svgo.svgoStrings.`preset-default`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +16,6 @@ object mod {
   
   inline def optimize(input: String): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("optimize")(input.asInstanceOf[js.Any]).asInstanceOf[Output]
   inline def optimize(input: String, config: Config): Output = (^.asInstanceOf[js.Dynamic].applyDynamic("optimize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Output]
-  
-  type BuiltinPluginWithOptionalParams = DefaultPlugin | PresetDefault | (Usage[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_cleanupListOfValues.js */ Any
-  ])
-  
-  type BuiltinPluginWithRequiredParams = UsageReqParams[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_addAttributesToSVGElement.js */ Any
-  ]
   
   trait Config extends StObject {
     
@@ -99,9 +89,7 @@ object mod {
     }
   }
   
-  trait CustomPlugin
-    extends StObject
-       with _PluginConfig {
+  trait CustomPlugin extends StObject {
     
     var fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFn<void> */ Any
     
@@ -127,10 +115,6 @@ object mod {
     }
   }
   
-  type DefaultPlugin = Usage[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_cleanupAttrs.js */ Any
-  ]
-  
   trait Output extends StObject {
     
     var data: String
@@ -148,126 +132,5 @@ object mod {
     }
   }
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately.
-    * TS definition: {{{
-    T extends svgo.svgo.DefaultPlugin ? {[ key in T['name'] ]:? T['params'] | false} : never
-    }}}
-    */
-  @js.native
-  trait Overrides[T] extends StObject
-  
-  /* Rewritten from type alias, can be one of: 
-    - / * import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_cleanupAttrs.js * / any['name'] * / js.Any
-    - typings.svgo.svgoStrings.`preset-default`
-    - typings.svgo.mod.BuiltinPluginWithOptionalParams
-    - typings.svgo.mod.BuiltinPluginWithRequiredParams
-    - typings.svgo.mod.CustomPlugin
-  */
-  type PluginConfig = _PluginConfig | (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imported_cleanupAttrs.js * / any['name'] */ js.Any) | BuiltinPluginWithOptionalParams | BuiltinPluginWithRequiredParams
-  
-  trait PluginDef extends StObject {
-    
-    var fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFn<unknown> */ Any
-    
-    var name: String
-  }
-  object PluginDef {
-    
-    inline def apply(
-      fn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFn<unknown> */ Any,
-      name: String
-    ): PluginDef = {
-      val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PluginDef]
-    }
-    
-    extension [Self <: PluginDef](x: Self) {
-      
-      inline def setFn(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginFn<unknown> */ Any
-      ): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait PresetDefault extends StObject {
-    
-    var name: `preset-default`
-    
-    var params: js.UndefOr[FloatPrecision] = js.undefined
-  }
-  object PresetDefault {
-    
-    inline def apply(): PresetDefault = {
-      val __obj = js.Dynamic.literal(name = "preset-default")
-      __obj.asInstanceOf[PresetDefault]
-    }
-    
-    extension [Self <: PresetDefault](x: Self) {
-      
-      inline def setName(value: `preset-default`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setParams(value: FloatPrecision): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-      
-      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
-    }
-  }
-  
-  trait Usage[T /* <: PluginDef */] extends StObject {
-    
-    var name: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any
-    
-    var params: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['fn']>[1] */ js.Any
-      ] = js.undefined
-  }
-  object Usage {
-    
-    inline def apply[T /* <: PluginDef */](name: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any): Usage[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Usage[T]]
-    }
-    
-    extension [Self <: Usage[?], T /* <: PluginDef */](x: Self & Usage[T]) {
-      
-      inline def setName(value: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setParams(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['fn']>[1] */ js.Any
-      ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-      
-      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
-    }
-  }
-  
-  trait UsageReqParams[T /* <: PluginDef */] extends StObject {
-    
-    var name: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any
-    
-    var params: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['fn']>[1] */ js.Any
-  }
-  object UsageReqParams {
-    
-    inline def apply[T /* <: PluginDef */](
-      name: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any,
-      params: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['fn']>[1] */ js.Any
-    ): UsageReqParams[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UsageReqParams[T]]
-    }
-    
-    extension [Self <: UsageReqParams[?], T /* <: PluginDef */](x: Self & UsageReqParams[T]) {
-      
-      inline def setName(value: /* import warning: importer.ImportType#apply Failed type conversion: T['name'] */ js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setParams(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['fn']>[1] */ js.Any
-      ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait _PluginConfig extends StObject
+  type PluginConfig = (/* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuiltinsWithOptionalParams * / any */ String) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Name in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuiltinsWithOptionalParams * / any ]: {  name :Name,   params :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuiltinsWithOptionalParams * / any[Name] | undefined}}[keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuiltinsWithOptionalParams * / any] */ js.Any) | CustomPlugin
 }

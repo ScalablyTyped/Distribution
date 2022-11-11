@@ -46,6 +46,7 @@ import typings.vueCompilerCore.vueCompilerCoreInts.`48`
 import typings.vueCompilerCore.vueCompilerCoreInts.`49`
 import typings.vueCompilerCore.vueCompilerCoreInts.`4`
 import typings.vueCompilerCore.vueCompilerCoreInts.`50`
+import typings.vueCompilerCore.vueCompilerCoreInts.`51`
 import typings.vueCompilerCore.vueCompilerCoreInts.`5`
 import typings.vueCompilerCore.vueCompilerCoreInts.`6`
 import typings.vueCompilerCore.vueCompilerCoreInts.`7`
@@ -107,6 +108,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.vueCompilerCoreInts.`48`
   - typings.vueCompilerCore.vueCompilerCoreInts.`49`
   - typings.vueCompilerCore.vueCompilerCoreInts.`50`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`51`
 */
 trait ErrorCodes extends StObject
 object ErrorCodes {
@@ -157,13 +159,13 @@ object ErrorCodes {
   
   inline def UNEXPECTED_SOLIDUS_IN_TAG: `22` = 22.asInstanceOf[`22`]
   
-  inline def X_CACHE_HANDLER_NOT_SUPPORTED: `48` = 48.asInstanceOf[`48`]
+  inline def X_CACHE_HANDLER_NOT_SUPPORTED: `49` = 49.asInstanceOf[`49`]
   
   inline def X_INVALID_END_TAG: `23` = 23.asInstanceOf[`23`]
   
-  inline def X_INVALID_EXPRESSION: `44` = 44.asInstanceOf[`44`]
+  inline def X_INVALID_EXPRESSION: `45` = 45.asInstanceOf[`45`]
   
-  inline def X_KEEP_ALIVE_INVALID_CHILDREN: `45` = 45.asInstanceOf[`45`]
+  inline def X_KEEP_ALIVE_INVALID_CHILDREN: `46` = 46.asInstanceOf[`46`]
   
   inline def X_MISSING_DIRECTIVE_NAME: `26` = 26.asInstanceOf[`26`]
   
@@ -173,11 +175,11 @@ object ErrorCodes {
   
   inline def X_MISSING_INTERPOLATION_END: `25` = 25.asInstanceOf[`25`]
   
-  inline def X_MODULE_MODE_NOT_SUPPORTED: `47` = 47.asInstanceOf[`47`]
+  inline def X_MODULE_MODE_NOT_SUPPORTED: `48` = 48.asInstanceOf[`48`]
   
-  inline def X_PREFIX_ID_NOT_SUPPORTED: `46` = 46.asInstanceOf[`46`]
+  inline def X_PREFIX_ID_NOT_SUPPORTED: `47` = 47.asInstanceOf[`47`]
   
-  inline def X_SCOPE_ID_NOT_SUPPORTED: `49` = 49.asInstanceOf[`49`]
+  inline def X_SCOPE_ID_NOT_SUPPORTED: `50` = 50.asInstanceOf[`50`]
   
   inline def X_V_BIND_NO_EXPRESSION: `34` = 34.asInstanceOf[`34`]
   
@@ -197,6 +199,8 @@ object ErrorCodes {
   
   inline def X_V_MODEL_NO_EXPRESSION: `41` = 41.asInstanceOf[`41`]
   
+  inline def X_V_MODEL_ON_PROPS: `44` = 44.asInstanceOf[`44`]
+  
   inline def X_V_MODEL_ON_SCOPE_VARIABLE: `43` = 43.asInstanceOf[`43`]
   
   inline def X_V_ON_NO_EXPRESSION: `35` = 35.asInstanceOf[`35`]
@@ -211,5 +215,5 @@ object ErrorCodes {
   
   inline def X_V_SLOT_UNEXPECTED_DIRECTIVE_ON_SLOT_OUTLET: `36` = 36.asInstanceOf[`36`]
   
-  inline def __EXTEND_POINT__ : `50` = 50.asInstanceOf[`50`]
+  inline def __EXTEND_POINT__ : `51` = 51.asInstanceOf[`51`]
 }

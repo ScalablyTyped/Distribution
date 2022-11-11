@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "svgo" : "3.0.0"
+      "svgo" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "svgo" : "3.0.0"
+      "svgo" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

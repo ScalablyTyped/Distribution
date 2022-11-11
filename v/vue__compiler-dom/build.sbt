@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__compiler-dom"
-version := "3.2.44-1cbba7"
+version := "3.2.45-631af0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__types" % "7.20.2-2e222a",
   "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.44-bd7f3f")
+  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.45-d8ef2e")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

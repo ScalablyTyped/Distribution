@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__vue"
-version := "6.6.1-ca0600"
+version := "6.6.1-e8c869"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,13 +13,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-a763a4",
-  "org.scalablytyped" %%% "vue" % "3.2.44-ea8928",
-  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.44-bd7f3f",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.44-4ce39a",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.44-b59ec8",
-  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.44-214b60",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.44-7c9b23",
-  "org.scalablytyped" %%% "vue__test-utils" % "2.2.1-1f011d")
+  "org.scalablytyped" %%% "vue" % "3.2.45-d93ea3",
+  "org.scalablytyped" %%% "vue__compiler-core" % "3.2.45-d8ef2e",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-9276fd",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-b92a42",
+  "org.scalablytyped" %%% "vue__runtime-dom" % "3.2.45-9a61bf",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-f2d292",
+  "org.scalablytyped" %%% "vue__test-utils" % "2.2.1-173c7d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
