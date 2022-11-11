@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jwks-rsa"
-version := "2.1.5-0801c4"
+version := "3.0.0-f9f75d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

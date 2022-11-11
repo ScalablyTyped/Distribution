@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-eth-contract"
-version := "1.8.0-a1ebbe"
+version := "1.8.1-c983e2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-7779ac",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "web3-core" % "1.8.0-a89af5",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.8.0-7b3c7c",
-  "org.scalablytyped" %%% "web3-core-method" % "1.8.0-fab06e",
-  "org.scalablytyped" %%% "web3-eth-accounts" % "1.8.0-c0dcca",
-  "org.scalablytyped" %%% "web3-utils" % "1.8.0-e54cbe")
+  "org.scalablytyped" %%% "web3-core" % "1.8.1-3826da",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.8.1-68b6a5",
+  "org.scalablytyped" %%% "web3-core-method" % "1.8.1-d8d97a",
+  "org.scalablytyped" %%% "web3-eth-accounts" % "1.8.1-577ff5",
+  "org.scalablytyped" %%% "web3-utils" % "1.8.1-1bdeec")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

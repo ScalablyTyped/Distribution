@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/types" : "7.18.0"
+      "@sentry/types" : "7.19.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/types" : "7.18.0"
+      "@sentry/types" : "7.19.0"
     }
   ],
   "compile-devDependencies" : [

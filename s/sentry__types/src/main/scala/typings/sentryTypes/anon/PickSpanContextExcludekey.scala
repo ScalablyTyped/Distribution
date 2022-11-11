@@ -1,6 +1,7 @@
 package typings.sentryTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesMiscMod.Primitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +15,8 @@ trait PickSpanContextExcludekey extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   var endTimestamp: js.UndefOr[Double] = js.undefined
+  
+  var instrumenter: js.UndefOr[Instrumenter] = js.undefined
   
   var op: js.UndefOr[String] = js.undefined
   
@@ -45,6 +48,10 @@ object PickSpanContextExcludekey {
     inline def setEndTimestamp(value: Double): Self = StObject.set(x, "endTimestamp", value.asInstanceOf[js.Any])
     
     inline def setEndTimestampUndefined: Self = StObject.set(x, "endTimestamp", js.undefined)
+    
+    inline def setInstrumenter(value: Instrumenter): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+    
+    inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
     
     inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     

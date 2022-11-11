@@ -401,6 +401,8 @@ type PortMappingList = js.Array[PortMapping]
 */
 type PropagateTags = _PropagateTags | java.lang.String
 
+type ProtectedTasks = js.Array[ProtectedTask]
+
 type ProxyConfigurationProperties = js.Array[KeyValuePair]
 
 type ProxyConfigurationType = APPMESH | java.lang.String

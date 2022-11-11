@@ -164,6 +164,7 @@ type AllocationState = _AllocationState | java.lang.String
   - typings.awsSdk.awsSdkStrings.diversified
   - typings.awsSdk.awsSdkStrings.capacityOptimized
   - typings.awsSdk.awsSdkStrings.capacityOptimizedPrioritized
+  - typings.awsSdk.awsSdkStrings.priceCapacityOptimized
   - java.lang.String
 */
 type AllocationStrategy = _AllocationStrategy | java.lang.String
@@ -3687,6 +3688,7 @@ type SnapshotState = _SnapshotState | java.lang.String
   - typings.awsSdk.awsSdkStrings.diversified
   - typings.awsSdk.awsSdkStrings.`capacity-optimized`
   - typings.awsSdk.awsSdkStrings.`capacity-optimized-prioritized`
+  - typings.awsSdk.awsSdkStrings.`price-capacity-optimized`
   - java.lang.String
 */
 type SpotAllocationStrategy = _SpotAllocationStrategy | java.lang.String

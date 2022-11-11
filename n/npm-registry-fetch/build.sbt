@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "npm-registry-fetch"
-version := "8.0-dt-20220214Z-38e932"
+version := "8.0-dt-20220214Z-f5d88b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-975c5a",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-581983",
+  "org.scalablytyped" %%% "node-fetch" % "3.3.0-d782a8",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-262b19",
   "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-7a4bbe",
   "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-81c7b7",

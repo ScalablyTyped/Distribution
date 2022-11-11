@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__config-resolver
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/config-resolver/latest.svg)](https://www.npmjs.com/package/@aws-sdk/config-resolver) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/config-resolver.svg)](https://www.npmjs.com/package/@aws-sd

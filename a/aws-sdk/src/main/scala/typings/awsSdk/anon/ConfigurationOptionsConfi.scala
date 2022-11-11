@@ -708,6 +708,8 @@ trait ConfigurationOptionsConfi
   
   var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.ClientConfiguration] = js.undefined
   
+  var scheduler: js.UndefOr[typings.awsSdk.clientsSchedulerMod.ClientConfiguration] = js.undefined
+  
   var schemas: js.UndefOr[typings.awsSdk.clientsSchemasMod.ClientConfiguration] = js.undefined
   
   /**
@@ -2065,6 +2067,10 @@ object ConfigurationOptionsConfi {
     inline def setSavingsplans(value: typings.awsSdk.clientsSavingsplansMod.ClientConfiguration): Self = StObject.set(x, "savingsplans", value.asInstanceOf[js.Any])
     
     inline def setSavingsplansUndefined: Self = StObject.set(x, "savingsplans", js.undefined)
+    
+    inline def setScheduler(value: typings.awsSdk.clientsSchedulerMod.ClientConfiguration): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     
     inline def setSchemas(value: typings.awsSdk.clientsSchemasMod.ClientConfiguration): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     

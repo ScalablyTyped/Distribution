@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.anon.HeightWidth
+import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.Width
 import typings.seleniumWebdriver.mod.WebElement
 import org.scalablytyped.runtime.StObject
@@ -210,16 +210,16 @@ trait WebDriverProtocolCommandContexts extends StObject {
     *   }
     * }
     */
-  def windowRect(options: Width): this.type = js.native
+  def windowRect(options: Height): this.type = js.native
   def windowRect(
-    options: Width,
+    options: Height,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   
   def windowSize(windowHandle: String): this.type = js.native
   def windowSize(
     windowHandle: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
   ): this.type = js.native
   /**
     * Change or get the size of the specified window. If the second argument is a function it will be used as a callback and the call will perform a get request to retrieve the existing window size.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase-admin
 
-Typings are for version 11.2.0
+Typings are for version 11.2.1
 
 ## Library description:
 Firebase admin SDK for Node.js

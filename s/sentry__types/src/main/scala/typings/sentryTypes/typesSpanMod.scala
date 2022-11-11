@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.anon.Data
 import typings.sentryTypes.anon.Description
 import typings.sentryTypes.anon.PickSpanContextExcludekey
+import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesMiscMod.Primitive
 import typings.sentryTypes.typesTransactionMod.Transaction
 import org.scalablytyped.runtime.StObject
@@ -32,6 +33,12 @@ object typesSpanMod {
     
     /** Convert the object to JSON for w. spans array info only */
     def getTraceContext(): Data = js.native
+    
+    /**
+      * The instrumenter that created this span.
+      */
+    @JSName("instrumenter")
+    var instrumenter_Span: Instrumenter = js.native
     
     /**
       * Determines whether span was successful (HTTP200)
@@ -135,6 +142,11 @@ object typesSpanMod {
     var endTimestamp: js.UndefOr[Double] = js.undefined
     
     /**
+      * The instrumenter that created this span.
+      */
+    var instrumenter: js.UndefOr[Instrumenter] = js.undefined
+    
+    /**
       * Operation of the Span.
       */
     var op: js.UndefOr[String] = js.undefined
@@ -195,6 +207,10 @@ object typesSpanMod {
       inline def setEndTimestamp(value: Double): Self = StObject.set(x, "endTimestamp", value.asInstanceOf[js.Any])
       
       inline def setEndTimestampUndefined: Self = StObject.set(x, "endTimestamp", js.undefined)
+      
+      inline def setInstrumenter(value: Instrumenter): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
       
       inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       

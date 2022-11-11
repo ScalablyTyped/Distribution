@@ -101,6 +101,8 @@ object distNodeEsmSrcImplementationErrorMod {
   
   inline def invalidUrl(url: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidUrl")(url.asInstanceOf[js.Any]).asInstanceOf[StorageError]
   
+  inline def missingPolyFill(polyFill: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("missingPolyFill")(polyFill.asInstanceOf[js.Any]).asInstanceOf[StorageError]
+  
   inline def noDefaultBucket(): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("noDefaultBucket")().asInstanceOf[StorageError]
   
   inline def noDownloadURL(): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("noDownloadURL")().asInstanceOf[StorageError]

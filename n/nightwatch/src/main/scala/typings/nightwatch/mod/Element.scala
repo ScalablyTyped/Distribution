@@ -1,5 +1,6 @@
 package typings.nightwatch.mod
 
+import typings.nightwatch.anon.AwaitableNightwatchAPIWeb
 import typings.nightwatch.anon.Fn0
 import typings.nightwatch.anon.Fn1
 import typings.nightwatch.anon.Fn2
@@ -9,7 +10,7 @@ import typings.nightwatch.anon.FnCallUsingSelectorCallback
 import typings.nightwatch.anon.FnCallUsingSelectorCssPropertyCallback
 import typings.nightwatch.anon.FnCallUsingSelectorInputValueCallback
 import typings.nightwatch.anon.FnCallUsingSelectorPropertyCallback
-import typings.nightwatch.anon.Height
+import typings.nightwatch.anon.X
 import typings.nightwatch.nightwatchStrings.string
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebElement
@@ -78,6 +79,7 @@ open class Element ()
   
   def findAll(selector: Definition): Any = js.native
   
+  def findElement(): AwaitableNightwatchAPIWeb = js.native
   def findElement(selector: Definition): Awaitable[this.type, JSON_WEB_OBJECT] = js.native
   def findElement(
     selector: Definition,
@@ -98,7 +100,7 @@ open class Element ()
     ]
   ): Awaitable[this.type, JSON_WEB_OBJECT] = js.native
   @JSName("findElement")
-  var findElement_Original: FnCall = js.native
+  var findElement_Original: FnCall & js.Function0[AwaitableNightwatchAPIWeb] = js.native
   
   def findElements(selector: Definition): Awaitable[this.type, js.Array[JSON_WEB_OBJECT]] = js.native
   def findElements(
@@ -314,7 +316,7 @@ open class Element ()
   
   var pseudoSelector: Null = js.native
   
-  def rect(): Height = js.native
+  def rect(): X = js.native
   
   var resolvedElement: Any = js.native
   

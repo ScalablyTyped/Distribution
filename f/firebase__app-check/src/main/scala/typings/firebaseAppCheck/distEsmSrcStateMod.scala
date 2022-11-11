@@ -25,9 +25,9 @@ object distEsmSrcStateMod {
   
   inline def getDebugState(): DebugState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDebugState")().asInstanceOf[DebugState]
   
-  inline def getState(app: FirebaseApp): AppCheckState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")(app.asInstanceOf[js.Any]).asInstanceOf[AppCheckState]
+  inline def getStateReference(app: FirebaseApp): AppCheckState = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateReference")(app.asInstanceOf[js.Any]).asInstanceOf[AppCheckState]
   
-  inline def setState(app: FirebaseApp, state: AppCheckState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setState")(app.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setInitialState(app: FirebaseApp, state: AppCheckState): AppCheckState = (^.asInstanceOf[js.Dynamic].applyDynamic("setInitialState")(app.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AppCheckState]
   
   trait AppCheckState extends StObject {
     

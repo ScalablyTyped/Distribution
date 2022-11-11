@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-imds
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 AWS credential provider that sources credentials from the EC2 instance metadata service and ECS container metadata service

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__hash-node
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-node.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node)

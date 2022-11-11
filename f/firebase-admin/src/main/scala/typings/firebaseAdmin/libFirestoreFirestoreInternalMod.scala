@@ -25,11 +25,11 @@ object libFirestoreFirestoreInternalMod {
       */
     def app: App = js.native
     
-    /* private */ var appInternal: Any = js.native
+    /* private */ val appInternal: Any = js.native
     
-    def client: Firestore = js.native
+    /* private */ val databases: Any = js.native
     
-    /* private */ var firestoreClient: Any = js.native
+    def getDatabase(databaseId: String): Firestore = js.native
   }
   
   inline def getFirestoreOptions(app: App): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirestoreOptions")(app.asInstanceOf[js.Any]).asInstanceOf[Settings]

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethereumjs/rlp" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethereumjs/rlp" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

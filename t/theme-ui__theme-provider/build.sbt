@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "theme-ui__theme-provider"
-version := "0.15.3-1051ec"
+version := "0.15.4-11b2e3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

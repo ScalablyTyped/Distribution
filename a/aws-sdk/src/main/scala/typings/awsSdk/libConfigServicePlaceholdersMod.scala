@@ -552,6 +552,8 @@ object libConfigServicePlaceholdersMod {
     
     var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.ClientConfiguration] = js.native
     
+    var scheduler: js.UndefOr[typings.awsSdk.clientsSchedulerMod.ClientConfiguration] = js.native
+    
     var schemas: js.UndefOr[typings.awsSdk.clientsSchemasMod.ClientConfiguration] = js.native
     
     var secretsmanager: js.UndefOr[typings.awsSdk.clientsSecretsmanagerMod.ClientConfiguration] = js.native
@@ -1194,6 +1196,8 @@ object libConfigServicePlaceholdersMod {
     var sagemakerruntime: js.UndefOr[typings.awsSdk.clientsSagemakerruntimeMod.apiVersion] = js.undefined
     
     var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.apiVersion] = js.undefined
+    
+    var scheduler: js.UndefOr[typings.awsSdk.clientsSchedulerMod.apiVersion] = js.undefined
     
     var schemas: js.UndefOr[typings.awsSdk.clientsSchemasMod.apiVersion] = js.undefined
     
@@ -2383,6 +2387,10 @@ object libConfigServicePlaceholdersMod {
       inline def setSavingsplans(value: typings.awsSdk.clientsSavingsplansMod.apiVersion): Self = StObject.set(x, "savingsplans", value.asInstanceOf[js.Any])
       
       inline def setSavingsplansUndefined: Self = StObject.set(x, "savingsplans", js.undefined)
+      
+      inline def setScheduler(value: typings.awsSdk.clientsSchedulerMod.apiVersion): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+      
+      inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
       
       inline def setSchemas(value: typings.awsSdk.clientsSchemasMod.apiVersion): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       

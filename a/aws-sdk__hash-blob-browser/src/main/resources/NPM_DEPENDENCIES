@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/hash-blob-browser" : "3.204.0"
+      "@aws-sdk/hash-blob-browser" : "3.208.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/hash-blob-browser" : "3.204.0"
+      "@aws-sdk/hash-blob-browser" : "3.208.0"
     }
   ],
   "compile-devDependencies" : [

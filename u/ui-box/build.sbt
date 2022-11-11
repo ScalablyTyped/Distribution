@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ui-box"
-version := "5.2.0-f63c19"
+version := "5.2.1-00f365"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

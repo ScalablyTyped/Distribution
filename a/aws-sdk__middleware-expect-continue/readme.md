@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-expect-continue
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-expect-continue/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-expect-continue) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-expect-continue.svg)](http

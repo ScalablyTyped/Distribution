@@ -1,5 +1,6 @@
 package typings.consoleStamp
 
+import typings.consoleStamp.mod.SpyStream
 import typings.consoleStamp.mod.Token
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.std.Record
@@ -19,9 +20,9 @@ object anon {
     
     var level: js.UndefOr[String] = js.undefined
     
-    var stderr: js.UndefOr[WriteStream] = js.undefined
+    var stderr: js.UndefOr[WriteStream | SpyStream] = js.undefined
     
-    var stdout: js.UndefOr[WriteStream] = js.undefined
+    var stdout: js.UndefOr[WriteStream | SpyStream] = js.undefined
     
     var tokens: js.UndefOr[Record[String, Token]] = js.undefined
     
@@ -54,11 +55,11 @@ object anon {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream | SpyStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
       inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream | SpyStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
       inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       

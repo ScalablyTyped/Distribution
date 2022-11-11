@@ -46,12 +46,15 @@ object mod {
     var events: Any = js.native
     
     def getPastEvents(event: String): js.Promise[js.Array[EventData]] = js.native
-    def getPastEvents(event: String, callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]): js.Promise[js.Array[EventData]] = js.native
+    def getPastEvents(
+      event: String,
+      callback: js.Function2[/* error */ js.Error, /* events */ js.Array[EventData], Unit]
+    ): js.Promise[js.Array[EventData]] = js.native
     def getPastEvents(event: String, options: PastEventOptions): js.Promise[js.Array[EventData]] = js.native
     def getPastEvents(
       event: String,
       options: PastEventOptions,
-      callback: js.Function2[/* error */ js.Error, /* event */ EventData, Unit]
+      callback: js.Function2[/* error */ js.Error, /* events */ js.Array[EventData], Unit]
     ): js.Promise[js.Array[EventData]] = js.native
     
     var handleRevert: Boolean = js.native

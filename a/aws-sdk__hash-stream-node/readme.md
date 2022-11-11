@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__hash-stream-node
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-stream-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/hash-stream-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-stream-node.svg)](https://www.npmjs.com/package/@aws

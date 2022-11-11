@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "theme-ui__color-modes"
-version := "0.15.3-bba88a"
+version := "0.15.4-1b3b9c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

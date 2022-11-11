@@ -16,6 +16,8 @@ trait Log extends StObject {
   
   var logIndex: Double
   
+  var removed: Boolean
+  
   var topics: js.Array[String]
   
   var transactionHash: String
@@ -30,11 +32,12 @@ object Log {
     blockNumber: Double,
     data: String,
     logIndex: Double,
+    removed: Boolean,
     topics: js.Array[String],
     transactionHash: String,
     transactionIndex: Double
   ): Log = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
   
@@ -49,6 +52,8 @@ object Log {
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

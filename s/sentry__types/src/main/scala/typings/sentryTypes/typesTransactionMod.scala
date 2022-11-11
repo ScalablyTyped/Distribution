@@ -6,6 +6,8 @@ import typings.sentryTypes.anon.Description
 import typings.sentryTypes.anon.PartialDynamicSamplingCon
 import typings.sentryTypes.anon.PartialTransactionMetadat
 import typings.sentryTypes.anon.PickSpanContextExcludekey
+import typings.sentryTypes.typesContextMod.Context
+import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesMeasurementMod.MeasurementUnit
 import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
 import typings.sentryTypes.typesMiscMod.Primitive
@@ -105,7 +107,7 @@ object typesTransactionMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sentryTypes.typesSpanMod.SpanContext because Already inherited
-  - typings.sentryTypes.typesSpanMod.Span because var conflicts: data, description, endTimestamp, op, parentSpanId, sampled, spanId, startTimestamp, status, tags, traceId. Inlined transaction, finish, finish, setTag, setData, setStatus, setHttpStatus, startChild, startChild, isSuccess, toTraceparent, toContext, updateWithContext, getTraceContext, toJSON */ @js.native
+  - typings.sentryTypes.typesSpanMod.Span because var conflicts: data, description, endTimestamp, instrumenter, op, parentSpanId, sampled, spanId, startTimestamp, status, tags, traceId. Inlined transaction, finish, finish, setTag, setData, setStatus, setHttpStatus, startChild, startChild, isSuccess, toTraceparent, toContext, updateWithContext, getTraceContext, toJSON */ @js.native
   trait Transaction
     extends StObject
        with TransactionContext {
@@ -130,6 +132,12 @@ object typesTransactionMod {
     def getTraceContext(): Data = js.native
     
     /**
+      * The instrumenter that created this transaction.
+      */
+    @JSName("instrumenter")
+    var instrumenter_Transaction: Instrumenter = js.native
+    
+    /**
       * Determines whether span was successful (HTTP200)
       */
     def isSuccess(): Boolean = js.native
@@ -139,6 +147,11 @@ object typesTransactionMod {
       */
     @JSName("metadata")
     var metadata_Transaction: TransactionMetadata = js.native
+    
+    /**
+      * Set the context of a transaction event
+      */
+    def setContext(key: String, context: Context): Unit = js.native
     
     /**
       * Sets the data attribute on the current span

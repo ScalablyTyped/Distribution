@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sentry__core"
-version := "7.18.0-426d0e"
+version := "7.19.0-a40fdf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "sentry__types" % "7.18.0-22e902",
-  "org.scalablytyped" %%% "sentry__utils" % "7.18.0-de690f",
+  "org.scalablytyped" %%% "sentry__types" % "7.19.0-d206e2",
+  "org.scalablytyped" %%% "sentry__utils" % "7.19.0-e8941e",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

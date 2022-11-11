@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "theme-ui"
-version := "0.15.3-16c1fd"
+version := "0.15.4-9815d3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,9 +13,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "theme-ui__color-modes" % "0.15.3-bba88a",
-  "org.scalablytyped" %%% "theme-ui__components" % "0.15.3-884e34",
-  "org.scalablytyped" %%% "theme-ui__core" % "0.15.3-798299")
+  "org.scalablytyped" %%% "theme-ui__color-modes" % "0.15.4-1b3b9c",
+  "org.scalablytyped" %%% "theme-ui__components" % "0.15.4-82f598",
+  "org.scalablytyped" %%% "theme-ui__core" % "0.15.4-4b2a81")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

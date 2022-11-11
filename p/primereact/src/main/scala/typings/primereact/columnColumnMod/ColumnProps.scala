@@ -41,6 +41,8 @@ trait ColumnProps extends StObject {
   
   var expander: js.UndefOr[ColumnExpanderType] = js.undefined
   
+  var exportField: js.UndefOr[String] = js.undefined
+  
   var exportable: js.UndefOr[Boolean] = js.undefined
   
   var field: js.UndefOr[String] = js.undefined
@@ -253,6 +255,10 @@ object ColumnProps {
     inline def setExpanderFunction2(value: (/* data */ Any, /* options */ ColumnBodyOptions) => Boolean): Self = StObject.set(x, "expander", js.Any.fromFunction2(value))
     
     inline def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
+    
+    inline def setExportField(value: String): Self = StObject.set(x, "exportField", value.asInstanceOf[js.Any])
+    
+    inline def setExportFieldUndefined: Self = StObject.set(x, "exportField", js.undefined)
     
     inline def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     

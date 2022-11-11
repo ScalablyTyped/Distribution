@@ -315,6 +315,20 @@ trait ECS
   ): Request[ExecuteCommandResponse, AWSError] = js.native
   
   /**
+    * Retrieves the protection status of tasks in an Amazon ECS service.
+    */
+  def getTaskProtection(): Request[GetTaskProtectionResponse, AWSError] = js.native
+  def getTaskProtection(callback: js.Function2[/* err */ AWSError, /* data */ GetTaskProtectionResponse, Unit]): Request[GetTaskProtectionResponse, AWSError] = js.native
+  /**
+    * Retrieves the protection status of tasks in an Amazon ECS service.
+    */
+  def getTaskProtection(params: GetTaskProtectionRequest): Request[GetTaskProtectionResponse, AWSError] = js.native
+  def getTaskProtection(
+    params: GetTaskProtectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTaskProtectionResponse, Unit]
+  ): Request[GetTaskProtectionResponse, AWSError] = js.native
+  
+  /**
     * Lists the account settings for a specified principal.
     */
   def listAccountSettings(): Request[ListAccountSettingsResponse, AWSError] = js.native
@@ -733,6 +747,20 @@ trait ECS
     params: UpdateServicePrimaryTaskSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServicePrimaryTaskSetResponse, Unit]
   ): Request[UpdateServicePrimaryTaskSetResponse, AWSError] = js.native
+  
+  /**
+    * Updates the protection status of a task. You can set protectionEnabled to true to protect your task from termination during scale-in events from Service Autoscaling or deployments. Task-protection, by default, expires after 2 hours at which point Amazon ECS unsets the protectionEnabled property making the task eligible for termination by a subsequent scale-in event. You can specify a custom expiration period for task protection from 1 minute to up to 2,880 minutes (48 hours). To specify the custom expiration period, set the expiresInMinutes property. The expiresInMinutes property is always reset when you invoke this operation for a task that already has protectionEnabled set to true. You can keep extending the protection expiration period of a task by invoking this operation repeatedly. To learn more about Amazon ECS task protection, see Task scale-in protection in the Amazon Elastic Container Service Developer Guide.  This operation is only supported for tasks belonging to an Amazon ECS service. Invoking this operation for a standalone task will result in an TASK_NOT_VALID failure. For more information, see API failure reasons.   If you prefer to set task protection from within the container, we recommend using the Amazon ECS container agent endpoint. 
+    */
+  def updateTaskProtection(): Request[UpdateTaskProtectionResponse, AWSError] = js.native
+  def updateTaskProtection(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTaskProtectionResponse, Unit]): Request[UpdateTaskProtectionResponse, AWSError] = js.native
+  /**
+    * Updates the protection status of a task. You can set protectionEnabled to true to protect your task from termination during scale-in events from Service Autoscaling or deployments. Task-protection, by default, expires after 2 hours at which point Amazon ECS unsets the protectionEnabled property making the task eligible for termination by a subsequent scale-in event. You can specify a custom expiration period for task protection from 1 minute to up to 2,880 minutes (48 hours). To specify the custom expiration period, set the expiresInMinutes property. The expiresInMinutes property is always reset when you invoke this operation for a task that already has protectionEnabled set to true. You can keep extending the protection expiration period of a task by invoking this operation repeatedly. To learn more about Amazon ECS task protection, see Task scale-in protection in the Amazon Elastic Container Service Developer Guide.  This operation is only supported for tasks belonging to an Amazon ECS service. Invoking this operation for a standalone task will result in an TASK_NOT_VALID failure. For more information, see API failure reasons.   If you prefer to set task protection from within the container, we recommend using the Amazon ECS container agent endpoint. 
+    */
+  def updateTaskProtection(params: UpdateTaskProtectionRequest): Request[UpdateTaskProtectionResponse, AWSError] = js.native
+  def updateTaskProtection(
+    params: UpdateTaskProtectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTaskProtectionResponse, Unit]
+  ): Request[UpdateTaskProtectionResponse, AWSError] = js.native
   
   /**
     * Modifies a task set. This is used when a service uses the EXTERNAL deployment controller type. For more information, see Amazon ECS Deployment Types in the Amazon Elastic Container Service Developer Guide.

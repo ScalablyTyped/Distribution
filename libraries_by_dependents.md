@@ -181,7 +181,6 @@
 | 0.0 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess
 | 0.0 | [angular-material](./a/angular-material) | **
 | 0.0 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
-| 0.0 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.0 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 0.0 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.0 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app
@@ -1461,7 +1460,6 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
-| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1748,7 +1746,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -2447,8 +2444,6 @@
 | 0.0 | [ethereumjs-util](./e/ethereumjs-util) | A collection of utility functions for Ethereum
 | 0.0 | [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation
 | 0.0 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys
-| 0.0 | [ethereumjs__common](./e/ethereumjs__common) | Resources common to all Ethereum implementations
-| 0.0 | [ethereumjs__tx](./e/ethereumjs__tx) | A simple module for creating, manipulating and sig
 | 0.0 | [ethers](./e/ethers) | Umbrella package for most common Ethers libraries.
 | 0.0 | [ethersproject__abi](./e/ethersproject__abi) | Utilities and Classes for parsing, formatting and 
 | 0.0 | [ethersproject__abstract-p](./e/ethersproject__abstract-provider) | An Abstract Class for describing an Ethereum Provi
@@ -4444,6 +4439,7 @@
 | 0.0 | [js-nacl](./j/js-nacl) | High-level API to libsodium.
 | 0.0 | [js-priority-queue](./j/js-priority-queue) | Priority queue data structures
 | 0.0 | [js-quantities](./j/js-quantities) | JavaScript library for quantity calculation and un
+| 0.0 | [js-rijndael](./j/js-rijndael) | Javascript implementation of the rijndael block ci
 | 0.0 | [js-roman-numerals](./j/js-roman-numerals) | Roman Numerals - JS Library
 | 0.0 | [js-schema](./j/js-schema) | A simple and intuitive object validation library
 | 0.0 | [js-sdsl](./j/js-sdsl) | javascript standard data structure library which b
@@ -6066,7 +6062,6 @@
 | 0.0 | [metascraper-url](./m/metascraper-url) | Get url property from HTML markup
 | 0.0 | [metascraper-video](./m/metascraper-video) | Get video property from HTML markup
 | 0.0 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube
-| 0.0 | [meteor](./m/meteor) | Install Meteor
 | 0.0 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha
 | 0.0 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor
 | 0.0 | [method-override](./m/method-override) | Override HTTP verbs
@@ -9173,7 +9168,6 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
-| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9469,7 +9463,6 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
-| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10190,7 +10183,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th

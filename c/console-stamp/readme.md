@@ -1,7 +1,7 @@
 
 # Scala.js typings for console-stamp
 
-Typings are for version 3.0.6
+Typings are for version 3.1.0
 
 ## Library description:
 Patch NodeJS console methods in order to add timestamp information by pattern

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-kms-node"
-version := "0.1.0-preview.2-562af0"
+version := "0.1.0-preview.2-757aa6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.201.0-c5e1b2",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

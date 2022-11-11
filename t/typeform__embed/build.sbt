@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typeform__embed"
-version := "2.0.1-3de708"
+version := "2.1.0-f1c85e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

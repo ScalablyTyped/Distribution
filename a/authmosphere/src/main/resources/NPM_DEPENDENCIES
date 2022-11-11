@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "authmosphere" : "4.0.4"
+      "authmosphere" : "4.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "authmosphere" : "4.0.4"
+      "authmosphere" : "4.0.5"
     }
   ],
   "compile-devDependencies" : [

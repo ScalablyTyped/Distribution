@@ -29,15 +29,23 @@ trait WebDriverProtocolElements extends StObject {
     *
     *   'es6 async demo Test': async function(browser) {
     *     const result = await browser.element('css selector', 'body');
-    *     console.log('result value is:', result.value);
+    *     console.log('result value is:', result);
+    *   },
+    *
+    *   'demo Test with page object': function(browser) {
+    *     const loginPage = browser.page.login();
+    *     loginPage.api.element('@resultContainer', function(result) {
+    *       console.log(result.value)
+    *     });
     *   }
     * }
     */
+  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ELEMENTKEY] = js.native
   def element(
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, ELEMENTKEY] = js.native
   
   /**
     * Get the element on the page that currently has focus. The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) JSON object.
@@ -178,7 +186,7 @@ trait WebDriverProtocolElements extends StObject {
     *
     *   'es6 async demo Test': async function(browser) {
     *     const result = await browser.elements('css selector', 'ul li');
-    *     console.log('result value is:', result.value);
+    *     console.log('result value is:', result);
     *   },
     *
     *   'page object demo Test': function (browser) {
@@ -195,6 +203,7 @@ trait WebDriverProtocolElements extends StObject {
     *   }
     * }
     */
+  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
   def elements(
     `using`: LocateStrategy,
     value: String,
@@ -203,5 +212,5 @@ trait WebDriverProtocolElements extends StObject {
       /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
 }

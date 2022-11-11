@@ -268,7 +268,9 @@ object utilsUtilsMod {
     inline def getCurrent(key: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def set(key: String, el: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def set(key: String, el: HTMLElement, baseZIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], el.asInstanceOf[js.Any], baseZIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, el: HTMLElement, autoZIndex: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], el.asInstanceOf[js.Any], autoZIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, el: HTMLElement, autoZIndex: Boolean, baseZIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], el.asInstanceOf[js.Any], autoZIndex.asInstanceOf[js.Any], baseZIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, el: HTMLElement, autoZIndex: Unit, baseZIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], el.asInstanceOf[js.Any], autoZIndex.asInstanceOf[js.Any], baseZIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   inline def classNames(args: Any*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[String]]

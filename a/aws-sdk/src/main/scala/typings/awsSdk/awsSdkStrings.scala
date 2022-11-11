@@ -3608,6 +3608,8 @@ import typings.awsSdk.clientsSavingsplansMod._SavingsPlanRateUnit
 import typings.awsSdk.clientsSavingsplansMod._SavingsPlanState
 import typings.awsSdk.clientsSavingsplansMod._SavingsPlanType
 import typings.awsSdk.clientsSavingsplansMod._SavingsPlansFilterName
+import typings.awsSdk.clientsSchedulerMod._FlexibleTimeWindowMode
+import typings.awsSdk.clientsSchedulerMod._ScheduleGroupState
 import typings.awsSdk.clientsSchemasMod._CodeGenerationStatus
 import typings.awsSdk.clientsSchemasMod._DiscovererState
 import typings.awsSdk.clientsSecretsmanagerMod._FilterNameStringType
@@ -5774,6 +5776,12 @@ object awsSdkStrings {
   inline def `2021-06-17`: `2021-06-17` = "2021-06-17".asInstanceOf[`2021-06-17`]
   
   @js.native
+  sealed trait `2021-06-30`
+    extends StObject
+       with typings.awsSdk.clientsSchedulerMod._apiVersion
+  inline def `2021-06-30`: `2021-06-30` = "2021-06-30".asInstanceOf[`2021-06-30`]
+  
+  @js.native
   sealed trait `2021-07-13`
     extends StObject
        with typings.awsSdk.clientsEmrserverlessMod._apiVersion
@@ -6480,6 +6488,7 @@ object awsSdkStrings {
        with _ScalingStatusType
        with _ScanStatus
        with _ScanStatusCode
+       with _ScheduleGroupState
        with _ScheduleState
        with _ScheduledActionState
        with _SchemaStatus
@@ -6522,6 +6531,7 @@ object awsSdkStrings {
        with _VocabularyState
        with _VpcConnectorStatus
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
        with _WorkspaceStatus
        with _WorkspaceStatusCode
        with _configStatus
@@ -8358,7 +8368,6 @@ object awsSdkStrings {
   sealed trait APPIUM_WEB_RUBY
     extends StObject
        with _TestType
-  inline def APPIUM_WEB_RUBY: APPIUM_WEB_RUBY = "APPIUM_WEB_RUBY".asInstanceOf[APPIUM_WEB_RUBY]
   
   @js.native
   sealed trait APPIUM_WEB_RUBY_TEST_PACKAGE
@@ -10837,6 +10846,7 @@ object awsSdkStrings {
     extends StObject
        with _OrganizationResourceCollectionType
        with typings.awsSdk.clientsOpensearchMod._PrincipalType
+       with typings.awsSdk.clientsEsMod._PrincipalType
        with _ProvisionTargetType
   inline def AWS_ACCOUNT: AWS_ACCOUNT = "AWS_ACCOUNT".asInstanceOf[AWS_ACCOUNT]
   
@@ -11112,6 +11122,7 @@ object awsSdkStrings {
        with _DestinationType
        with _OrganizationResourceCollectionType
        with typings.awsSdk.clientsOpensearchMod._PrincipalType
+       with typings.awsSdk.clientsEsMod._PrincipalType
        with _ResourceCollectionType
   inline def AWS_SERVICE: AWS_SERVICE = "AWS_SERVICE".asInstanceOf[AWS_SERVICE]
   
@@ -17588,6 +17599,7 @@ object awsSdkStrings {
        with _StudioComponentState
        with _StudioState
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
   inline def CREATE_FAILED: CREATE_FAILED = "CREATE_FAILED".asInstanceOf[CREATE_FAILED]
   
   @js.native
@@ -17862,6 +17874,7 @@ object awsSdkStrings {
        with _UserStatus
        with _VolumeLifecycle
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
        with _WorkgroupStatus
        with _WorkspaceStatus
        with _WorkspaceStatusCode
@@ -21095,6 +21108,7 @@ object awsSdkStrings {
        with _StudioComponentState
        with _StudioState
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
   inline def DELETE_FAILED: DELETE_FAILED = "DELETE_FAILED".asInstanceOf[DELETE_FAILED]
   
   @js.native
@@ -21352,6 +21366,7 @@ object awsSdkStrings {
        with _RouteState
        with _RuleGroupsNamespaceStatusCode
        with _ScalingStatusType
+       with _ScheduleGroupState
        with _SchemaStatus
        with typings.awsSdk.clientsGlueMod._SchemaStatus
        with _SchemaVersionStatus
@@ -21382,6 +21397,7 @@ object awsSdkStrings {
        with _VehicleState
        with _VolumeLifecycle
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
        with _VpcLinkStatus
        with typings.awsSdk.clientsApigatewayMod._VpcLinkStatus
        with _WorkgroupStatus
@@ -22193,6 +22209,7 @@ object awsSdkStrings {
        with _AssignPublicIp
        with typings.awsSdk.clientsEcsMod._AssignPublicIp
        with typings.awsSdk.clientsBatchMod._AssignPublicIp
+       with typings.awsSdk.clientsSchedulerMod._AssignPublicIp
        with typings.awsSdk.clientsEventbridgeMod._AssignPublicIp
        with typings.awsSdk.clientsQuicksightMod._AssignmentStatus
        with _AudioDurationCorrection
@@ -22380,6 +22397,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._SSEStatus
        with typings.awsSdk.clientsDaxMod._SSEStatus
        with _SamlStatusEnum
+       with typings.awsSdk.clientsSchedulerMod._ScheduleState
        with _ScheduledActionState
        with _ScheduledQueryState
        with _Scte20Convert608To708
@@ -24878,6 +24896,7 @@ object awsSdkStrings {
        with _HostEnvironment
        with _LaunchType
        with typings.awsSdk.clientsEcsMod._LaunchType
+       with typings.awsSdk.clientsSchedulerMod._LaunchType
        with typings.awsSdk.clientsEventbridgeMod._LaunchType
        with _PlatformCapability
        with _ResourceScanType
@@ -25571,6 +25590,7 @@ object awsSdkStrings {
        with _AssignPublicIp
        with typings.awsSdk.clientsEcsMod._AssignPublicIp
        with typings.awsSdk.clientsBatchMod._AssignPublicIp
+       with typings.awsSdk.clientsSchedulerMod._AssignPublicIp
        with typings.awsSdk.clientsEventbridgeMod._AssignPublicIp
        with typings.awsSdk.clientsQuicksightMod._AssignmentStatus
        with _AutoRenew
@@ -25732,6 +25752,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._SSEStatus
        with typings.awsSdk.clientsDaxMod._SSEStatus
        with _SamlStatusEnum
+       with typings.awsSdk.clientsSchedulerMod._ScheduleState
        with _ScheduledQueryState
        with _SettablePolicyStateValues
        with _SimulateReservedQueue
@@ -25965,6 +25986,7 @@ object awsSdkStrings {
   sealed trait ENDPOINT_NOT_FOUND
     extends StObject
        with _VpcEndpointErrorCode
+       with typings.awsSdk.clientsEsMod._VpcEndpointErrorCode
   inline def ENDPOINT_NOT_FOUND: ENDPOINT_NOT_FOUND = "ENDPOINT_NOT_FOUND".asInstanceOf[ENDPOINT_NOT_FOUND]
   
   @js.native
@@ -26991,6 +27013,7 @@ object awsSdkStrings {
        with _KnowledgeBaseType
        with _LaunchType
        with typings.awsSdk.clientsEcsMod._LaunchType
+       with typings.awsSdk.clientsSchedulerMod._LaunchType
        with typings.awsSdk.clientsEventbridgeMod._LaunchType
        with _MovReference
        with _OriginType
@@ -28498,6 +28521,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsEcsMod._Compatibility
        with _LaunchType
        with typings.awsSdk.clientsEcsMod._LaunchType
+       with typings.awsSdk.clientsSchedulerMod._LaunchType
        with typings.awsSdk.clientsEventbridgeMod._LaunchType
        with _PlatformCapability
   inline def FARGATE: FARGATE = "FARGATE".asInstanceOf[FARGATE]
@@ -29181,6 +29205,11 @@ object awsSdkStrings {
     extends StObject
        with _ExecutionClass
   inline def FLEX: FLEX = "FLEX".asInstanceOf[FLEX]
+  
+  @js.native
+  sealed trait FLEXIBLE
+    extends StObject
+       with _FlexibleTimeWindowMode
   
   @js.native
   sealed trait `FLINK-1_11`
@@ -45613,6 +45642,7 @@ object awsSdkStrings {
        with _DeviceDefenderIndexingMode
        with _DiagnosticsMode
        with _EmbeddedScte20Detection
+       with _FlexibleTimeWindowMode
        with _H264AdaptiveQuantization
        with typings.awsSdk.clientsMedialiveMod._H264AdaptiveQuantization
        with _H265AdaptiveQuantization
@@ -56642,6 +56672,7 @@ object awsSdkStrings {
   sealed trait SERVER_ERROR
     extends StObject
        with _VpcEndpointErrorCode
+       with typings.awsSdk.clientsEsMod._VpcEndpointErrorCode
   inline def SERVER_ERROR: SERVER_ERROR = "SERVER_ERROR".asInstanceOf[SERVER_ERROR]
   
   @js.native
@@ -58374,7 +58405,6 @@ object awsSdkStrings {
   sealed trait SQUASH_MERGE
     extends StObject
        with _MergeOptionTypeEnum
-  inline def SQUASH_MERGE: SQUASH_MERGE = "SQUASH_MERGE".asInstanceOf[SQUASH_MERGE]
   
   @js.native
   sealed trait SR
@@ -65411,6 +65441,7 @@ object awsSdkStrings {
        with _StudioComponentState
        with _StudioState
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
        with _WorkspaceStatus
   inline def UPDATE_FAILED: UPDATE_FAILED = "UPDATE_FAILED".asInstanceOf[UPDATE_FAILED]
   
@@ -65662,6 +65693,7 @@ object awsSdkStrings {
        with _ThesaurusStatus
        with _TriggerState
        with _VpcEndpointStatus
+       with typings.awsSdk.clientsEsMod._VpcEndpointStatus
        with _WorkspaceState
        with _WorkspaceStatus
        with _WorkspaceStatusCode
@@ -70611,6 +70643,7 @@ object awsSdkStrings {
     extends StObject
        with _PlacementStrategyType
        with typings.awsSdk.clientsEcsMod._PlacementStrategyType
+       with typings.awsSdk.clientsSchedulerMod._PlacementStrategyType
        with typings.awsSdk.clientsEventbridgeMod._PlacementStrategyType
   
   @js.native
@@ -73661,6 +73694,7 @@ object awsSdkStrings {
     extends StObject
        with _PlacementConstraintType
        with typings.awsSdk.clientsEcsMod._PlacementConstraintType
+       with typings.awsSdk.clientsSchedulerMod._PlacementConstraintType
        with typings.awsSdk.clientsEventbridgeMod._PlacementConstraintType
   inline def distinctInstance: distinctInstance = "distinctInstance".asInstanceOf[distinctInstance]
   
@@ -77276,6 +77310,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsLightsailMod._apiVersion
        with typings.awsSdk.clientsMediaconvertMod._apiVersion
        with typings.awsSdk.clientsXrayMod._apiVersion
+       with typings.awsSdk.clientsSchedulerMod._apiVersion
        with typings.awsSdk.clientsWellarchitectedMod._apiVersion
        with typings.awsSdk.clientsCustomerprofilesMod._apiVersion
        with typings.awsSdk.clientsImagebuilderMod._apiVersion
@@ -78987,6 +79022,7 @@ object awsSdkStrings {
     extends StObject
        with _PlacementConstraintType
        with typings.awsSdk.clientsEcsMod._PlacementConstraintType
+       with typings.awsSdk.clientsSchedulerMod._PlacementConstraintType
        with typings.awsSdk.clientsEventbridgeMod._PlacementConstraintType
   inline def memberOf: memberOf = "memberOf".asInstanceOf[memberOf]
   
@@ -81670,7 +81706,6 @@ object awsSdkStrings {
        with _VirtualInterfaceState
        with _VpcState
        with _VpnState
-  inline def pending__ : pending__ = "pending".asInstanceOf[pending__]
   
   @js.native
   sealed trait pending_fulfillment
@@ -81858,6 +81893,18 @@ object awsSdkStrings {
        with _InstanceGeneration
        with typings.awsSdk.clientsAutoscalingMod._InstanceGeneration
   inline def previous_ : previous_ = "previous".asInstanceOf[previous_]
+  
+  @js.native
+  sealed trait `price-capacity-optimized`
+    extends StObject
+       with _SpotAllocationStrategy
+  inline def `price-capacity-optimized`: `price-capacity-optimized` = "price-capacity-optimized".asInstanceOf[`price-capacity-optimized`]
+  
+  @js.native
+  sealed trait priceCapacityOptimized
+    extends StObject
+       with _AllocationStrategy
+  inline def priceCapacityOptimized: priceCapacityOptimized = "priceCapacityOptimized".asInstanceOf[priceCapacityOptimized]
   
   @js.native
   sealed trait `primary-region`
@@ -83214,6 +83261,7 @@ object awsSdkStrings {
     extends StObject
        with _PlacementStrategyType
        with typings.awsSdk.clientsEcsMod._PlacementStrategyType
+       with typings.awsSdk.clientsSchedulerMod._PlacementStrategyType
        with typings.awsSdk.clientsEventbridgeMod._PlacementStrategyType
   inline def random__ : random__ = "random".asInstanceOf[random__]
   
@@ -84672,6 +84720,7 @@ object awsSdkStrings {
        with _PlacementStrategy
        with _PlacementStrategyType
        with typings.awsSdk.clientsEcsMod._PlacementStrategyType
+       with typings.awsSdk.clientsSchedulerMod._PlacementStrategyType
        with typings.awsSdk.clientsEventbridgeMod._PlacementStrategyType
   inline def spread_ : spread_ = "spread".asInstanceOf[spread_]
   

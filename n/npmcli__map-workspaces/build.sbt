@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npmcli__map-workspaces"
-version := "3.0-dt-20221024Z-2a060a"
+version := "3.0-dt-20221024Z-288be2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,13 +9,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "8.0-dt-20220830Z-dbe92e",
   "org.scalablytyped" %%% "minimatch" % "5.1-dt-20220831Z-25b5f6",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-581983",
+  "org.scalablytyped" %%% "node-fetch" % "3.3.0-d782a8",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-262b19",
-  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-38e932",
-  "org.scalablytyped" %%% "npmcli__arborist" % "5.6-dt-20221020Z-b7d259",
+  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-f5d88b",
+  "org.scalablytyped" %%% "npmcli__arborist" % "5.6-dt-20221020Z-bd645b",
   "org.scalablytyped" %%% "npmcli__package-json" % "2.0-dt-20220510Z-f01a4d",
   "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-7a4bbe",
-  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-7de7cb",
+  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-df66ce",
   "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-81c7b7",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

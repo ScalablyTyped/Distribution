@@ -1,0 +1,34 @@
+package typings.awsSdk.clientsEsMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ListVpcEndpointsResponse extends StObject {
+  
+  /**
+    * Provides an identifier to allow retrieval of paginated results.
+    */
+  var NextToken: typings.awsSdk.clientsEsMod.NextToken
+  
+  /**
+    * Information about each endpoint.
+    */
+  var VpcEndpointSummaryList: typings.awsSdk.clientsEsMod.VpcEndpointSummaryList
+}
+object ListVpcEndpointsResponse {
+  
+  inline def apply(NextToken: NextToken, VpcEndpointSummaryList: VpcEndpointSummaryList): ListVpcEndpointsResponse = {
+    val __obj = js.Dynamic.literal(NextToken = NextToken.asInstanceOf[js.Any], VpcEndpointSummaryList = VpcEndpointSummaryList.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListVpcEndpointsResponse]
+  }
+  
+  extension [Self <: ListVpcEndpointsResponse](x: Self) {
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setVpcEndpointSummaryList(value: VpcEndpointSummaryList): Self = StObject.set(x, "VpcEndpointSummaryList", value.asInstanceOf[js.Any])
+    
+    inline def setVpcEndpointSummaryListVarargs(value: VpcEndpointSummary*): Self = StObject.set(x, "VpcEndpointSummaryList", js.Array(value*))
+  }
+}

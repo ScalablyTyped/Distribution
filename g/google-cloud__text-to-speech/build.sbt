@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__text-to-speech"
-version := "4.0.3-7be9e5"
+version := "4.0.4-8adb29"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

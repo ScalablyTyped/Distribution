@@ -1,7 +1,8 @@
 package typings.consoleStamp
 
 import typings.consoleStamp.anon.Extend
-import typings.std.Console
+import typings.consoleStamp.mod.global.Console
+import typings.node.nodeColonttyMod.WriteStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,6 +16,18 @@ object mod {
   
   inline def default(console: Console): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(console.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def default(console: Console, options: Extend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(console.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @js.native
+  trait SpyStream extends WriteStream {
+    
+    var asArray: js.Array[String] = js.native
+    
+    def flush(): Unit = js.native
+    
+    var last: String = js.native
+    
+    var length: Double = js.native
+  }
   
   type Token = js.Function1[/* payload */ js.UndefOr[TokenPayload], String | Double]
   
@@ -51,6 +64,32 @@ object mod {
       inline def setParamsVarargs(value: (String | Double)*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setTokens(value: Record[String, Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  object global {
+    
+    trait Console extends StObject {
+      
+      @JSName("org")
+      var org_ : Console
+      
+      def reset(): Unit
+    }
+    object Console {
+      
+      inline def apply(org_ : Console, reset: () => Unit): Console = {
+        val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset))
+        __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Console]
+      }
+      
+      extension [Self <: Console](x: Self) {
+        
+        inline def setOrg_(value: Console): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+        
+        inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      }
     }
   }
 }

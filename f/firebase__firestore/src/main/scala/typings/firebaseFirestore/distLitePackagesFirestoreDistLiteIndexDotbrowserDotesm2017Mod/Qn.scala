@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Qn
   extends StObject
-     with n {
+     with Dn {
   
   def _toFieldTransform(t: Any): Pe
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "telnet-client"
-version := "2.0.4-f1f5c9"
+version := "2.0.6-e57ce6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

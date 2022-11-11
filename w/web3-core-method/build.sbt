@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-core-method"
-version := "1.8.0-fab06e"
+version := "1.8.1-d8d97a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

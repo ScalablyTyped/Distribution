@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "firebase" : "9.13.0"
+      "firebase" : "9.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "firebase" : "9.13.0"
+      "firebase" : "9.14.0"
     }
   ],
   "compile-devDependencies" : [

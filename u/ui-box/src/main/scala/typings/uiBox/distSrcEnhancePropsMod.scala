@@ -16,6 +16,8 @@ object distSrcEnhancePropsMod {
   
   inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
   inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String, parentProperty: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: Unit, parentProperty: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
   
   trait EnhancedPropsResult extends StObject {
     

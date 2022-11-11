@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Width extends StObject {
   
-  var height: js.UndefOr[Double] = js.undefined
+  var height: Double
   
-  var width: js.UndefOr[Double] = js.undefined
-  
-  var x: js.UndefOr[Double] = js.undefined
-  
-  var y: js.UndefOr[Double] = js.undefined
+  var width: Double
 }
 object Width {
   
-  inline def apply(): Width = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(height: Double, width: Double): Width = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Width]
   }
   
@@ -25,18 +21,6 @@ object Width {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    
-    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

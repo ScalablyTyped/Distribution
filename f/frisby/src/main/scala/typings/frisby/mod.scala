@@ -214,6 +214,9 @@ object mod {
       
       inline def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
       
+      inline def json(data: Any): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(data.asInstanceOf[js.Any]).asInstanceOf[typings.nodeFetch.mod.Response]
+      inline def json(data: Any, init: ResponseInit): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(data.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
+      
       inline def redirect(url: String): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.nodeFetch.mod.Response]
       inline def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
     }

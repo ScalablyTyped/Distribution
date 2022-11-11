@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-textarea-autosize"
-version := "8.3.4-7e77e3"
+version := "8.4.0-becb7c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

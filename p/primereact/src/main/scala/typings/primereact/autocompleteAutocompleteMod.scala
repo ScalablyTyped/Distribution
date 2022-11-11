@@ -698,6 +698,8 @@ object autocompleteAutocompleteMod {
     
     var selectedItemTemplate: js.UndefOr[AutoCompleteSelectedItemTemplateType] = js.undefined
     
+    var selectionLimit: js.UndefOr[Double] = js.undefined
+    
     var showEmptyMessage: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
@@ -1666,6 +1668,10 @@ object autocompleteAutocompleteMod {
       inline def setSelectedItemTemplateFunction1(value: /* value */ Any => ReactNode): Self = StObject.set(x, "selectedItemTemplate", js.Any.fromFunction1(value))
       
       inline def setSelectedItemTemplateUndefined: Self = StObject.set(x, "selectedItemTemplate", js.undefined)
+      
+      inline def setSelectionLimit(value: Double): Self = StObject.set(x, "selectionLimit", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionLimitUndefined: Self = StObject.set(x, "selectionLimit", js.undefined)
       
       inline def setShowEmptyMessage(value: Boolean): Self = StObject.set(x, "showEmptyMessage", value.asInstanceOf[js.Any])
       

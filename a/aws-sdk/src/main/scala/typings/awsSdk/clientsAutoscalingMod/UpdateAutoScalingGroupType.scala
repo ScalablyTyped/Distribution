@@ -47,7 +47,7 @@ trait UpdateAutoScalingGroupType extends StObject {
   var DesiredCapacityType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed Elastic Load Balancing or custom health check. This is useful if your instances do not immediately pass these health checks after they enter the InService state. For more information, see Health check grace period in the Amazon EC2 Auto Scaling User Guide.
+    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed Elastic Load Balancing or custom health check. This is useful if your instances do not immediately pass these health checks after they enter the InService state. For more information, see Set the health check grace period for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide.
     */
   var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.HealthCheckGracePeriod] = js.undefined
   

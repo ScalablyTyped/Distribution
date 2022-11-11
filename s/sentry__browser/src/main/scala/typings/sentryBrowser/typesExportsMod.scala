@@ -250,7 +250,7 @@ object typesExportsMod {
   
   @JSImport("@sentry/browser/types/exports", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.18.0" */ String = js.native
+  val SDK_VERSION: /* "7.19.0" */ String = js.native
   
   @JSImport("@sentry/browser/types/exports", "Scope")
   @js.native

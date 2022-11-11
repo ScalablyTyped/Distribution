@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-config-provider
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 Utilities package for configuration providers

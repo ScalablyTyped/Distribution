@@ -61,6 +61,20 @@ trait ES extends Service {
   ): Request[AssociatePackageResponse, AWSError] = js.native
   
   /**
+    * Provides access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def authorizeVpcEndpointAccess(): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  def authorizeVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeVpcEndpointAccessResponse, Unit]): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Provides access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def authorizeVpcEndpointAccess(params: AuthorizeVpcEndpointAccessRequest): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  def authorizeVpcEndpointAccess(
+    params: AuthorizeVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeVpcEndpointAccessResponse, Unit]
+  ): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
     * Cancels a scheduled service software update for an Amazon ES domain. You can only perform this operation before the AutomatedUpdateDate and when the UpdateStatus is in the PENDING_UPDATE state.
     */
   def cancelElasticsearchServiceSoftwareUpdate(): Request[CancelElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
@@ -138,6 +152,20 @@ trait ES extends Service {
     params: CreatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePackageResponse, Unit]
   ): Request[CreatePackageResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon OpenSearch Service-managed VPC endpoint.
+    */
+  def createVpcEndpoint(): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  def createVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResponse, Unit]): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon OpenSearch Service-managed VPC endpoint.
+    */
+  def createVpcEndpoint(params: CreateVpcEndpointRequest): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  def createVpcEndpoint(
+    params: CreateVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResponse, Unit]
+  ): Request[CreateVpcEndpointResponse, AWSError] = js.native
   
   /**
     * Permanently deletes the specified Elasticsearch domain and all of its data. Once a domain is deleted, it cannot be recovered.
@@ -220,6 +248,20 @@ trait ES extends Service {
     params: DeletePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResponse, Unit]
   ): Request[DeletePackageResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def deleteVpcEndpoint(): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  def deleteVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointResponse, Unit]): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def deleteVpcEndpoint(params: DeleteVpcEndpointRequest): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  def deleteVpcEndpoint(
+    params: DeleteVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointResponse, Unit]
+  ): Request[DeleteVpcEndpointResponse, AWSError] = js.native
   
   /**
     * Provides scheduled Auto-Tune action details for the Elasticsearch domain, such as Auto-Tune action type, description, severity, and scheduled date.
@@ -412,6 +454,20 @@ trait ES extends Service {
   ): Request[DescribeReservedElasticsearchInstancesResponse, AWSError] = js.native
   
   /**
+    * Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+    */
+  def describeVpcEndpoints(): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  def describeVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResponse, Unit]): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  /**
+    * Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+    */
+  def describeVpcEndpoints(params: DescribeVpcEndpointsRequest): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  def describeVpcEndpoints(
+    params: DescribeVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResponse, Unit]
+  ): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  
+  /**
     * Dissociates a package from the Amazon ES domain.
     */
   def dissociatePackage(): Request[DissociatePackageResponse, AWSError] = js.native
@@ -570,6 +626,48 @@ trait ES extends Service {
   ): Request[ListTagsResponse, AWSError] = js.native
   
   /**
+    * Retrieves information about each principal that is allowed to access a given Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def listVpcEndpointAccess(): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  def listVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointAccessResponse, Unit]): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Retrieves information about each principal that is allowed to access a given Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def listVpcEndpointAccess(params: ListVpcEndpointAccessRequest): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  def listVpcEndpointAccess(
+    params: ListVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointAccessResponse, Unit]
+  ): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current account and Region.
+    */
+  def listVpcEndpoints(): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  def listVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsResponse, Unit]): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current account and Region.
+    */
+  def listVpcEndpoints(params: ListVpcEndpointsRequest): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  def listVpcEndpoints(
+    params: ListVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsResponse, Unit]
+  ): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a particular domain.
+    */
+  def listVpcEndpointsForDomain(): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  def listVpcEndpointsForDomain(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsForDomainResponse, Unit]): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a particular domain.
+    */
+  def listVpcEndpointsForDomain(params: ListVpcEndpointsForDomainRequest): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  def listVpcEndpointsForDomain(
+    params: ListVpcEndpointsForDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsForDomainResponse, Unit]
+  ): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  
+  /**
     * Allows you to purchase reserved Elasticsearch instances.
     */
   def purchaseReservedElasticsearchInstanceOffering(): Request[PurchaseReservedElasticsearchInstanceOfferingResponse, AWSError] = js.native
@@ -629,6 +727,20 @@ trait ES extends Service {
   def removeTags(params: RemoveTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
+    * Revokes access to an Amazon OpenSearch Service domain that was provided through an interface VPC endpoint.
+    */
+  def revokeVpcEndpointAccess(): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  def revokeVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ RevokeVpcEndpointAccessResponse, Unit]): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Revokes access to an Amazon OpenSearch Service domain that was provided through an interface VPC endpoint.
+    */
+  def revokeVpcEndpointAccess(params: RevokeVpcEndpointAccessRequest): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  def revokeVpcEndpointAccess(
+    params: RevokeVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeVpcEndpointAccessResponse, Unit]
+  ): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
     * Schedules a service software update for an Amazon ES domain.
     */
   def startElasticsearchServiceSoftwareUpdate(): Request[StartElasticsearchServiceSoftwareUpdateResponse, AWSError] = js.native
@@ -673,6 +785,20 @@ trait ES extends Service {
     params: UpdatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageResponse, Unit]
   ): Request[UpdatePackageResponse, AWSError] = js.native
+  
+  /**
+    * Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def updateVpcEndpoint(): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  def updateVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcEndpointResponse, Unit]): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def updateVpcEndpoint(params: UpdateVpcEndpointRequest): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  def updateVpcEndpoint(
+    params: UpdateVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcEndpointResponse, Unit]
+  ): Request[UpdateVpcEndpointResponse, AWSError] = js.native
   
   /**
     * Allows you to either upgrade your domain or perform an Upgrade eligibility check to a compatible Elasticsearch version.

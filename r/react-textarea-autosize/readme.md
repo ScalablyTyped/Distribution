@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-textarea-autosize
 
-Typings are for version 8.3.4
+Typings are for version 8.4.0
 
 ## Library description:
 textarea component for React which grows with content

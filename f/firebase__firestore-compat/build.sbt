@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore-compat"
-version := "0.2.2-e36ead"
+version := "0.2.3-35f1a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app" % "0.8.3-17b6e3",
+  "org.scalablytyped" %%% "firebase__app" % "0.8.4-b8bdad",
   "org.scalablytyped" %%% "firebase__app-check-interop-types" % "0.1.1-9a6d1a",
   "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-1b99ae",
   "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-dacf77",
   "org.scalablytyped" %%% "firebase__component" % "0.5.21-905454",
-  "org.scalablytyped" %%% "firebase__firestore" % "3.7.2-8c3f79",
+  "org.scalablytyped" %%% "firebase__firestore" % "3.7.3-15ec1d",
   "org.scalablytyped" %%% "firebase__firestore-types" % "2.5.1-9e9839",
   "org.scalablytyped" %%% "firebase__logger" % "0.3.4-d9a3b0",
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-4a44ae",

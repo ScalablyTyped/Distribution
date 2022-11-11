@@ -108,6 +108,8 @@ object inputtextareaInputtextareaMod {
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(props: InputTextareaProps, context: Any) = this()
+    
+    var value: js.UndefOr[String] = js.native
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'ref'> */
@@ -278,6 +280,10 @@ object inputtextareaInputtextareaMod {
     var itemType: js.UndefOr[String] = js.undefined
     
     var key: js.UndefOr[Key | Null] = js.undefined
+    
+    var keyfilter: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyFilterType */ Any
+      ] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
@@ -843,6 +849,12 @@ object inputtextareaInputtextareaMod {
       inline def setKeyNull: Self = StObject.set(x, "key", null)
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setKeyfilter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyFilterType */ Any
+      ): Self = StObject.set(x, "keyfilter", value.asInstanceOf[js.Any])
+      
+      inline def setKeyfilterUndefined: Self = StObject.set(x, "keyfilter", js.undefined)
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       

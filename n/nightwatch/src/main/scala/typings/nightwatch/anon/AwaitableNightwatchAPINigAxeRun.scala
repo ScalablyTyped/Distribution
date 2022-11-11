@@ -358,11 +358,12 @@ trait AwaitableNightwatchAPINigAxeRun extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
+  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ELEMENTKEY] = js.native
   def element(
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, ELEMENTKEY] = js.native
   
   def elementActive(): this.type = js.native
   def elementActive(
@@ -630,13 +631,13 @@ trait AwaitableNightwatchAPINigAxeRun extends StObject {
   def elementIdSize(id: String): this.type = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
   ): this.type = js.native
   @JSName("elementIdSize")
   var elementIdSize_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
     ], 
     this.type
   ] = js.native
@@ -681,10 +682,13 @@ trait AwaitableNightwatchAPINigAxeRun extends StObject {
   var element_Original: js.Function3[
     /* using */ LocateStrategy, 
     /* value */ String, 
-    /* callback */ js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit], 
-    this.type
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
+    ], 
+    Awaitable[this.type, ELEMENTKEY]
   ] = js.native
   
+  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
   def elements(
     `using`: LocateStrategy,
     value: String,
@@ -693,17 +697,19 @@ trait AwaitableNightwatchAPINigAxeRun extends StObject {
       /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
   @JSName("elements")
   var elements_Original: js.Function3[
     /* using */ LocateStrategy, 
     /* value */ String, 
-    /* callback */ js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
-      Unit
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[ELEMENTKEY]]
   ] = js.native
   
   def enablePerformanceMetrics(): Awaitable[this.type, Null] = js.native
@@ -3872,14 +3878,14 @@ trait AwaitableNightwatchAPINigAxeRun extends StObject {
     this.type
   ] = js.native
   
-  def windowRect(options: Width): this.type = js.native
+  def windowRect(options: Height): this.type = js.native
   def windowRect(
-    options: Width,
+    options: Height,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   @JSName("windowRect")
   var windowRect_Original: js.Function2[
-    /* options */ Width, 
+    /* options */ Height, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
     ], 

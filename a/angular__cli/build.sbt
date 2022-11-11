@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__cli"
-version := "14.2.6-c439c6"
+version := "14.2.6-a75f39"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,11 +15,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-0c8670",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-1fe3cb",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-581983",
+  "org.scalablytyped" %%% "node-fetch" % "3.3.0-d782a8",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-262b19",
-  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-38e932",
+  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-f5d88b",
   "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-7a4bbe",
-  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-7de7cb",
+  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-df66ce",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
   "org.scalablytyped" %%% "rxjs" % "7.5.7-9dc6db",
   "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",

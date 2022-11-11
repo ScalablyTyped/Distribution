@@ -593,20 +593,20 @@ object distTypesSsoclientMod {
     var disableHostPrefix: Boolean = js.native
     
     /**
-      * Resolved value for input {@link EndpointsInputConfig.endpoint}
-      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead
+      * Custom endpoint provided by the user.
+      * This is normalized to a single interface from the various acceptable types.
+      * This field will be undefined if a custom endpoint is not provided.
+      *
+      * As of endpoints 2.0, this config method can not be used to resolve
+      * the endpoint for a service and region.
+      *
+      * @see https://github.com/aws/aws-sdk-js-v3/issues/4122
+      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead.
       */
-    def endpoint(): js.Promise[Endpoint] = js.native
+    var endpoint: js.UndefOr[Provider[Endpoint]] & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]) = js.native
     
     def endpointProvider(params: EndpointParameters): EndpointV2 = js.native
     def endpointProvider(params: EndpointParameters, context: typings.awsSdkMiddlewareEndpoint.anon.Logger): EndpointV2 = js.native
-    
-    /**
-      * Resolved value for input {@link EndpointsInputConfig.endpoint}
-      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead
-      */
-    @JSName("endpoint")
-    var endpoint_Original: Provider[Endpoint] & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]) = js.native
     
     /**
       * Whether the endpoint is specified by caller.

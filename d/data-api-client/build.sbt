@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "data-api-client"
-version := "1.2-dt-20220906Z-fc0e8c"
+version := "1.2-dt-20220906Z-887277"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1251.0-cd7d73",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1252.0-f18c8e",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

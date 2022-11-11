@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAutoScalingGroupType extends StObject {
   
   /**
-    * The name of the Auto Scaling group. This name must be unique per Region per account.
+    * The name of the Auto Scaling group. This name must be unique per Region per account. The name can contain any ASCII character 33 to 126 including most punctuation characters, digits, and upper and lowercased letters.  You cannot use a colon (:) in the name. 
     */
   var AutoScalingGroupName: XmlStringMaxLen255
   
@@ -47,7 +47,7 @@ trait CreateAutoScalingGroupType extends StObject {
   var DesiredCapacityType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed Elastic Load Balancing or custom health check. This is useful if your instances do not immediately pass these health checks after they enter the InService state. For more information, see Health check grace period in the Amazon EC2 Auto Scaling User Guide. Default: 0 seconds
+    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed Elastic Load Balancing or custom health check. This is useful if your instances do not immediately pass these health checks after they enter the InService state. For more information, see Set the health check grace period for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide. Default: 0 seconds
     */
   var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.HealthCheckGracePeriod] = js.undefined
   

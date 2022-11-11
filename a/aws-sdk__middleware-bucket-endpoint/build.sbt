@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__middleware-bucket-endpoint"
-version := "3.201.0-ca8066"
+version := "3.208.0-ef1927"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.201.0-700122",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.201.0-a14da3",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.201.0-c5e1b2",
-  "org.scalablytyped" %%% "aws-sdk__util-arn-parser" % "3.201.0-de7558",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.208.0-62bd6b",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.208.0-64edc2",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
+  "org.scalablytyped" %%% "aws-sdk__util-arn-parser" % "3.208.0-5716b9",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

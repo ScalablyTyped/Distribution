@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__theme-provider
 
-Typings are for version 0.15.3
+Typings are for version 0.15.4
 
 ## Library description:
 **Note:** This package is a hack to fix export order produced by microbundle. Use the main `theme-ui` package or `@theme-ui/core` instead.

@@ -1536,6 +1536,18 @@ object twilioStrings {
   inline def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
   
   @js.native
+  sealed trait experimental_conversations
+    extends StObject
+       with GatherSpeechModel
+  inline def experimental_conversations: experimental_conversations = "experimental_conversations".asInstanceOf[experimental_conversations]
+  
+  @js.native
+  sealed trait experimental_utterances
+    extends StObject
+       with GatherSpeechModel
+  inline def experimental_utterances: experimental_utterances = "experimental_utterances".asInstanceOf[experimental_utterances]
+  
+  @js.native
   sealed trait `expiration-date`
     extends StObject
        with PromptFor

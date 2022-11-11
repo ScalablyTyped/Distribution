@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@theme-ui/components" : "0.15.3"
+      "@theme-ui/components" : "0.15.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@theme-ui/components" : "0.15.3"
+      "@theme-ui/components" : "0.15.4"
     }
   ],
   "compile-devDependencies" : [

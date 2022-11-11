@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-accounts
 
-Typings are for version 1.8.0
+Typings are for version 1.8.1
 
 ## Library description:
 Web3 module to generate Ethereum accounts and sign data and transactions.

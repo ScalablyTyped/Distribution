@@ -147,8 +147,6 @@ object mod {
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var sendTimeout: js.UndefOr[Double] = js.undefined
-    
     var sock: js.UndefOr[Socket] = js.undefined
     
     var socketConnectOptions: js.UndefOr[SocketConnectOpts] = js.undefined
@@ -245,10 +243,6 @@ object mod {
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      inline def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
       
       inline def setSock(value: Socket): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
       
@@ -365,6 +359,8 @@ object mod {
     
     var ors: js.UndefOr[String] = js.undefined
     
+    var sendTimeout: js.UndefOr[Double] = js.undefined
+    
     var shellPrompt: js.UndefOr[String | js.RegExp] = js.undefined
     
     var stripControls: js.UndefOr[Boolean] = js.undefined
@@ -396,6 +392,10 @@ object mod {
       inline def setOrs(value: String): Self = StObject.set(x, "ors", value.asInstanceOf[js.Any])
       
       inline def setOrsUndefined: Self = StObject.set(x, "ors", js.undefined)
+      
+      inline def setSendTimeout(value: Double): Self = StObject.set(x, "sendTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setSendTimeoutUndefined: Self = StObject.set(x, "sendTimeout", js.undefined)
       
       inline def setShellPrompt(value: String | js.RegExp): Self = StObject.set(x, "shellPrompt", value.asInstanceOf[js.Any])
       

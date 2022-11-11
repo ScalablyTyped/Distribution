@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-eth-ens" : "1.8.0"
+      "web3-eth-ens" : "1.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-eth-ens" : "1.8.0"
+      "web3-eth-ens" : "1.8.1"
     }
   ],
   "compile-devDependencies" : [

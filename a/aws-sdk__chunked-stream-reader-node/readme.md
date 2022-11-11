@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__chunked-stream-reader-node
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/chunked-stream-reader-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/chunked-stream-reader-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/chunked-stream-reader-node.svg)](http

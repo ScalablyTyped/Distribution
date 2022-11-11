@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/abort-controller" : "3.201.0"
+      "@aws-sdk/abort-controller" : "3.208.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/abort-controller" : "3.201.0"
+      "@aws-sdk/abort-controller" : "3.208.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-providers"
-version := "3.192.0-0b509a"
+version := "3.192.0-5a3409"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.204.0-4aebdf",
-  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.204.0-ddff8e",
-  "org.scalablytyped" %%% "aws-sdk__client-sts" % "3.204.0-7192e7",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-cognito-identity" % "3.204.0-1877f8",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.201.0-5134f0",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.204.0-3c7ba3",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-node" % "3.204.0-04258c",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-process" % "3.201.0-aa4df2",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.204.0-ef371e",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.201.0-9ba3f1",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.204.0-50ba81",
-  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.201.0-5e68af",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.201.0-700122",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.201.0-12889c",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.201.0-26c475",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.201.0-a14da3",
-  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.201.0-b44dae",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.201.0-b50391",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.201.0-c5e1b2",
-  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.202.0-d8689b",
+  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.208.0-a1a36a",
+  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.208.0-43752b",
+  "org.scalablytyped" %%% "aws-sdk__client-sts" % "3.208.0-bba1e1",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-cognito-identity" % "3.208.0-1f5796",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.208.0-f80778",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.208.0-340e9b",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-node" % "3.208.0-e10984",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-process" % "3.208.0-f49635",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.208.0-855e17",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.208.0-50866b",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.208.0-5b733e",
+  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.208.0-140325",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.208.0-62bd6b",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.208.0-54d092",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.208.0-137956",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.208.0-64edc2",
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.208.0-73cef6",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.208.0-707075",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.208.0-c6269c",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

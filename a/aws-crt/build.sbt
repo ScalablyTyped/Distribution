@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-crt"
-version := "1.14.5-ad531e"
+version := "1.14.7-b16ea4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

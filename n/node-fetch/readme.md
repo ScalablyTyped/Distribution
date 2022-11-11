@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-fetch
 
-Typings are for version 3.2.10
+Typings are for version 3.3.0
 
 ## Library description:
 A light-weight module that brings Fetch API to node.js

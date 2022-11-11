@@ -336,6 +336,8 @@ object inputnumberInputnumberMod {
     
     var maxFractionDigits: js.UndefOr[Double] = js.undefined
     
+    var maxLength: js.UndefOr[Double] = js.undefined
+    
     var min: js.UndefOr[Double] = js.undefined
     
     var minFractionDigits: js.UndefOr[Double] = js.undefined
@@ -970,6 +972,10 @@ object inputnumberInputnumberMod {
       inline def setMaxFractionDigits(value: Double): Self = StObject.set(x, "maxFractionDigits", value.asInstanceOf[js.Any])
       
       inline def setMaxFractionDigitsUndefined: Self = StObject.set(x, "maxFractionDigits", js.undefined)
+      
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       

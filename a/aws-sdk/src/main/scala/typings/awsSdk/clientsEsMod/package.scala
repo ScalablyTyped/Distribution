@@ -11,9 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ARN = java.lang.String
 
+type AWSAccount = java.lang.String
+
 type AdditionalLimitList = js.Array[AdditionalLimit]
 
 type AdvancedOptions = StringDictionary[String]
+
+type AuthorizedPrincipalList = js.Array[AuthorizedPrincipal]
 
 type AutoTuneDate = js.Date
 
@@ -53,6 +57,8 @@ type ChangeProgressStageList = js.Array[ChangeProgressStage]
 type ChangeProgressStageName = java.lang.String
 
 type ChangeProgressStageStatus = java.lang.String
+
+type ClientToken = java.lang.String
 
 type CloudWatchLogsLogGroupArn = java.lang.String
 
@@ -99,6 +105,8 @@ type DescribePackagesFilterValues = js.Array[DescribePackagesFilterValue]
 type Description = java.lang.String
 
 type DisableTimestamp = js.Date
+
+type DomainArn = java.lang.String
 
 type DomainId = java.lang.String
 
@@ -205,6 +213,8 @@ type ElasticsearchInstanceTypeList = js.Array[ESPartitionInstanceType]
 type ElasticsearchVersionList = js.Array[ElasticsearchVersionString]
 
 type ElasticsearchVersionString = java.lang.String
+
+type Endpoint = java.lang.String
 
 type EndpointsMap = StringDictionary[ServiceUrl]
 
@@ -350,6 +360,13 @@ type Password = java.lang.String
 
 type PolicyDocument = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_ACCOUNT
+  - typings.awsSdk.awsSdkStrings.AWS_SERVICE
+  - java.lang.String
+*/
+type PrincipalType = _PrincipalType | java.lang.String
+
 type RecurringChargeList = js.Array[RecurringCharge]
 
 type ReferencePath = java.lang.String
@@ -480,6 +497,35 @@ type ValueStringList = js.Array[NonEmptyString]
   - java.lang.String
 */
 type VolumeType = _VolumeType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENDPOINT_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.SERVER_ERROR
+  - java.lang.String
+*/
+type VpcEndpointErrorCode = _VpcEndpointErrorCode | java.lang.String
+
+type VpcEndpointErrorList = js.Array[VpcEndpointError]
+
+type VpcEndpointId = java.lang.String
+
+type VpcEndpointIdList = js.Array[VpcEndpointId]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+  - java.lang.String
+*/
+type VpcEndpointStatus = _VpcEndpointStatus | java.lang.String
+
+type VpcEndpointSummaryList = js.Array[VpcEndpointSummary]
+
+type VpcEndpoints = js.Array[VpcEndpoint]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-01-01`

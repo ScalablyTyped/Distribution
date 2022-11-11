@@ -1,7 +1,7 @@
 
 # Scala.js typings for idb
 
-Typings are for version 7.1.0
+Typings are for version 7.1.1
 
 ## Library description:
 A small wrapper that makes IndexedDB usable

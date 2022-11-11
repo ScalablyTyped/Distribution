@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-utf8-node
 
-Typings are for version 3.201.0
+Typings are for version 3.208.0
 
 ## Library description:
 A Node.JS UTF-8 string <-> UInt8Array converter

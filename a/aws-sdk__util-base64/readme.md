@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-base64
 
-Typings are for version 3.202.0
+Typings are for version 3.208.0
 
 
 

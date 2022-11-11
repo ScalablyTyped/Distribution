@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-sso
 
-Typings are for version 3.204.0
+Typings are for version 3.208.0
 
 ## Library description:
 AWS credential provider that exchanges a resolved SSO login token file for temporary AWS credentials

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-check
 
-Typings are for version 0.5.16
+Typings are for version 0.5.17
 
 ## Library description:
 The App Check component of the Firebase JS SDK

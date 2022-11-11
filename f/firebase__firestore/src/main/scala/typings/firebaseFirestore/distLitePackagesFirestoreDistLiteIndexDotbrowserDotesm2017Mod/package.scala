@@ -164,7 +164,7 @@ inline def endBefore(t: Any*): Er = ^.asInstanceOf[js.Dynamic].applyDynamic("end
   * @returns A Promise that will be resolved with the count; the count can be
   * retrieved from `snapshot.data().count`, where `snapshot` is the
   * `AggregateQuerySnapshot` to which the returned Promise resolves.
-  */ inline def getCount(t: Any): js.Promise[_n] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[_n]]
+  */ inline def getCount(t: Any): js.Promise[n] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[n]]
 
 /**
   * Reads the document referred to by the specified document reference.

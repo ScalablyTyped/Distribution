@@ -8,5 +8,5 @@ object typesVersionMod {
   
   @JSImport("@sentry/core/types/version", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.18.0" */ String = js.native
+  val SDK_VERSION: /* "7.19.0" */ String = js.native
 }

@@ -27,7 +27,11 @@ object libRestFlexApiV1Mod {
     
     val flexFlow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlexFlowListInstance */ Any = js.native
     
+    val goodData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GoodDataListInstance */ Any = js.native
+    
     val interaction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InteractionListInstance */ Any = js.native
+    
+    val userRoles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserRolesListInstance */ Any = js.native
     
     val webChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebChannelListInstance */ Any = js.native
   }

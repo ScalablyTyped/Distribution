@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-utils"
-version := "1.8.0-e54cbe"
+version := "1.8.1-1bdeec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
