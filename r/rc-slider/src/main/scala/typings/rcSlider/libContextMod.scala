@@ -32,6 +32,8 @@ object libContextMod extends Shortcut {
     
     var includedStart: Double
     
+    var keyboard: js.UndefOr[Boolean] = js.undefined
+    
     var max: Double
     
     var min: Double
@@ -91,6 +93,10 @@ object libContextMod extends Shortcut {
       inline def setIncludedStart(value: Double): Self = StObject.set(x, "includedStart", value.asInstanceOf[js.Any])
       
       inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+      
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

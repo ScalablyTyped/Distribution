@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-minimizer-webpack-plugin"
-version := "4.2.2-10c333"
+version := "4.2.2-01e8f5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jest-worker" % "29.3.1-b71083",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aa50bf",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-d08411",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-16f8fb",
   "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss" : "8.4.18"
+      "postcss" : "8.4.19"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss" : "8.4.18"
+      "postcss" : "8.4.19"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-slider" : "10.0.1"
+      "rc-slider" : "10.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-slider" : "10.0.1"
+      "rc-slider" : "10.1.0"
     }
   ],
   "compile-devDependencies" : [

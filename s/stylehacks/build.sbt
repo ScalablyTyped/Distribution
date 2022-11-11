@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "stylehacks"
-version := "5.1.1-c0dcab"
+version := "5.1.1-472203"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-d08411",
   "org.scalablytyped" %%% "postcss-selector-parser" % "6.0.10-9690ec",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-cd43b3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")

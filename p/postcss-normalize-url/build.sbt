@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "postcss-normalize-url"
-version := "5.1.0-8a6da7"
+version := "5.1.0-b955b9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "normalize-url" % "8.0.0-1a1f20",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-d08411",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-cd43b3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

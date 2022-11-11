@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cssnano-preset-default"
-version := "5.2.13-d344cc"
+version := "5.2.13-3087c3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "browserslist" % "4.21.4-c975f5",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-d08411",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-cd43b3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

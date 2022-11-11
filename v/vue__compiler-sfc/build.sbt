@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__compiler-sfc"
-version := "3.2.44-bc6ed8"
+version := "3.2.44-17e6d1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__parser" % "7.20.3-97fb28",
   "org.scalablytyped" %%% "babel__types" % "7.20.2-2e222a",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-1fe3cb",
-  "org.scalablytyped" %%% "postcss" % "8.4.18-a8f9f5",
+  "org.scalablytyped" %%% "postcss" % "8.4.19-d08411",
   "org.scalablytyped" %%% "source-map" % "0.7.4-114bc3",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-cd43b3",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",

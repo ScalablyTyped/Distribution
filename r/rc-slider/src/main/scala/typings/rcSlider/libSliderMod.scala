@@ -58,6 +58,8 @@ object libSliderMod extends Shortcut {
     
     var included: js.UndefOr[Boolean] = js.undefined
     
+    var keyboard: js.UndefOr[Boolean] = js.undefined
+    
     var marks: js.UndefOr[Record[String | Double, ReactNode | MarkObj]] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
@@ -188,6 +190,10 @@ object libSliderMod extends Shortcut {
       inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       
       inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+      
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
       inline def setMarks(value: Record[String | Double, ReactNode | MarkObj]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
