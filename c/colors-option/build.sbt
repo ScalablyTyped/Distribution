@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "colors-option"
-version := "4.4.0-c47bf7"
+version := "4.5.0-8b3c85"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

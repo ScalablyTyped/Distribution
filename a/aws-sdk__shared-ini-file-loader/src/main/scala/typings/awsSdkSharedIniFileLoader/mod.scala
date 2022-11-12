@@ -29,9 +29,9 @@ object mod {
   
   inline def getProfileName(init: Profile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileName")(init.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getSSOTokenFilepath(ssoStartUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFilepath")(ssoStartUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSSOTokenFilepath(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFilepath")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getSSOTokenFromFile(ssoStartUrl: String): js.Promise[SSOToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFromFile")(ssoStartUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SSOToken]]
+  inline def getSSOTokenFromFile(id: String): js.Promise[SSOToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFromFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SSOToken]]
   
   inline def loadSharedConfigFiles(): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")().asInstanceOf[js.Promise[SharedConfigFiles]]
   inline def loadSharedConfigFiles(init: SharedConfigInit): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SharedConfigFiles]]

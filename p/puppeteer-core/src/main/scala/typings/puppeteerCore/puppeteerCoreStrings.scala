@@ -3603,8 +3603,16 @@ object puppeteerCoreStrings {
   inline def StorageDotclearDataForStorageKey: StorageDotclearDataForStorageKey = "Storage.clearDataForStorageKey".asInstanceOf[StorageDotclearDataForStorageKey]
   
   @js.native
+  sealed trait StorageDotclearSharedStorageEntries extends StObject
+  inline def StorageDotclearSharedStorageEntries: StorageDotclearSharedStorageEntries = "Storage.clearSharedStorageEntries".asInstanceOf[StorageDotclearSharedStorageEntries]
+  
+  @js.native
   sealed trait StorageDotclearTrustTokens extends StObject
   inline def StorageDotclearTrustTokens: StorageDotclearTrustTokens = "Storage.clearTrustTokens".asInstanceOf[StorageDotclearTrustTokens]
+  
+  @js.native
+  sealed trait StorageDotdeleteSharedStorageEntry extends StObject
+  inline def StorageDotdeleteSharedStorageEntry: StorageDotdeleteSharedStorageEntry = "Storage.deleteSharedStorageEntry".asInstanceOf[StorageDotdeleteSharedStorageEntry]
   
   @js.native
   sealed trait StorageDotgetCookies extends StObject
@@ -3645,6 +3653,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait StorageDotsetInterestGroupTracking extends StObject
   inline def StorageDotsetInterestGroupTracking: StorageDotsetInterestGroupTracking = "Storage.setInterestGroupTracking".asInstanceOf[StorageDotsetInterestGroupTracking]
+  
+  @js.native
+  sealed trait StorageDotsetSharedStorageEntry extends StObject
+  inline def StorageDotsetSharedStorageEntry: StorageDotsetSharedStorageEntry = "Storage.setSharedStorageEntry".asInstanceOf[StorageDotsetSharedStorageEntry]
   
   @js.native
   sealed trait StorageDotsetSharedStorageTracking extends StObject

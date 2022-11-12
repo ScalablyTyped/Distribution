@@ -48,6 +48,8 @@ object distTypesTypesMod {
     
     var sso_role_name: String
     
+    var sso_session: js.UndefOr[String] = js.undefined
+    
     var sso_start_url: String
   }
   object SsoProfile {
@@ -64,6 +66,10 @@ object distTypesTypesMod {
       inline def setSso_region(value: String): Self = StObject.set(x, "sso_region", value.asInstanceOf[js.Any])
       
       inline def setSso_role_name(value: String): Self = StObject.set(x, "sso_role_name", value.asInstanceOf[js.Any])
+      
+      inline def setSso_session(value: String): Self = StObject.set(x, "sso_session", value.asInstanceOf[js.Any])
+      
+      inline def setSso_sessionUndefined: Self = StObject.set(x, "sso_session", js.undefined)
       
       inline def setSso_start_url(value: String): Self = StObject.set(x, "sso_start_url", value.asInstanceOf[js.Any])
     }

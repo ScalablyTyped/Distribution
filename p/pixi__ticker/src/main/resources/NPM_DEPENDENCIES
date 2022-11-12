@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/ticker" : "7.0.3"
+      "@pixi/ticker" : "7.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/ticker" : "7.0.3"
+      "@pixi/ticker" : "7.0.4"
     }
   ],
   "compile-devDependencies" : [

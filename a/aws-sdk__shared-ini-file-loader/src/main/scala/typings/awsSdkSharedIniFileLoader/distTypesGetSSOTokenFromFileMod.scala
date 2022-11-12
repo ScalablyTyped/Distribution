@@ -10,7 +10,7 @@ object distTypesGetSSOTokenFromFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSSOTokenFromFile(ssoStartUrl: String): js.Promise[SSOToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFromFile")(ssoStartUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SSOToken]]
+  inline def getSSOTokenFromFile(id: String): js.Promise[SSOToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFromFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SSOToken]]
   
   trait SSOToken extends StObject {
     

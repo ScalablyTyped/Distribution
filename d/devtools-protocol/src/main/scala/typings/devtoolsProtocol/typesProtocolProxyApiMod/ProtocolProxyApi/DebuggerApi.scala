@@ -229,8 +229,8 @@ trait DebuggerApi extends StObject {
   def setInstrumentationBreakpoint(params: SetInstrumentationBreakpointRequest): js.Promise[SetInstrumentationBreakpointResponse] = js.native
   
   /**
-    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
-    * no exceptions. Initial pause on exceptions state is `none`.
+    * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions,
+    * or caught exceptions, no exceptions. Initial pause on exceptions state is `none`.
     */
   def setPauseOnExceptions(params: SetPauseOnExceptionsRequest): js.Promise[Unit] = js.native
   

@@ -59,6 +59,16 @@ trait Slide
   def load(propertyNames: js.Array[String]): Slide = js.native
   
   /**
+    * Selects the specified shapes. Existing shape selection is replaced with the new selection.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    *
+    * @param shapeIds List of shape IDs to select in the slide. If the list is empty, the selection is cleared.
+    */
+  def setSelectedShapes(shapeIds: js.Array[String]): Unit = js.native
+  
+  /**
     * Returns a collection of shapes in the slide.
     *
     * @remarks

@@ -58,6 +58,14 @@ trait TextFrame
   def deleteText(): Unit = js.native
   
   /**
+    * Returns the parent {@link PowerPoint.Shape} object that holds this `TextFrame`.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentShape(): Shape = js.native
+  
+  /**
     * Specifies if the text frame contains text.
     *
     * @remarks

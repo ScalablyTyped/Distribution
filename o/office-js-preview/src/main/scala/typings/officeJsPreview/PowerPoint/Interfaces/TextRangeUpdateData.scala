@@ -12,8 +12,7 @@ trait TextRangeUpdateData extends StObject {
     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   var length: js.UndefOr[Double] = js.undefined
   
@@ -22,8 +21,7 @@ trait TextRangeUpdateData extends StObject {
     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   var start: js.UndefOr[Double] = js.undefined
   

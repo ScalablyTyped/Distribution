@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Label extends StObject {
   
   /**
+    * A list of potential aliases for a given label.
+    */
+  var Aliases: js.UndefOr[LabelAliases] = js.undefined
+  
+  /**
+    * A list of the categories associated with a given label.
+    */
+  var Categories: js.UndefOr[LabelCategories] = js.undefined
+  
+  /**
     * Level of confidence.
     */
   var Confidence: js.UndefOr[Percent] = js.undefined
@@ -34,6 +44,18 @@ object Label {
   }
   
   extension [Self <: Label](x: Self) {
+    
+    inline def setAliases(value: LabelAliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: LabelAlias*): Self = StObject.set(x, "Aliases", js.Array(value*))
+    
+    inline def setCategories(value: LabelCategories): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: LabelCategory*): Self = StObject.set(x, "Categories", js.Array(value*))
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

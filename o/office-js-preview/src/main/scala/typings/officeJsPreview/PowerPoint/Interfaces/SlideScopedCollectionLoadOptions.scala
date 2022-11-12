@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a collection of slides in the presentation.
   *
   * @remarks
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: PowerPointApi 1.2]
   */
 trait SlideScopedCollectionLoadOptions extends StObject {
   

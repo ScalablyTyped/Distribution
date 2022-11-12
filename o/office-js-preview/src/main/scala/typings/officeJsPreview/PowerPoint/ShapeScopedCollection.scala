@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a collection of shapes.
   *
   * @remarks
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: PowerPointApi 1.5]
   */
 @js.native
 trait ShapeScopedCollection
@@ -30,8 +29,7 @@ trait ShapeScopedCollection
     * Gets the number of shapes in the collection.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     * @returns The number of shapes in the collection.
     */
   def getCount(): ClientResult[Double] = js.native
@@ -40,8 +38,7 @@ trait ShapeScopedCollection
     * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param key The ID of the shape.
     * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
@@ -52,8 +49,7 @@ trait ShapeScopedCollection
     * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param index The index of the shape in the collection.
     * @returns The shape at the given index. An error is thrown if index is out of range.
@@ -64,8 +60,7 @@ trait ShapeScopedCollection
     * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param id The ID of the shape.
     * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.

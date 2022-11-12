@@ -791,6 +791,12 @@ type IsDisabled = scala.Boolean
 
 type IsSuppressed = scala.Boolean
 
+type IssuerCertificateSerialNumber = java.lang.String
+
+type IssuerCertificateSubject = java.lang.String
+
+type IssuerId = java.lang.String
+
 type JobArn = java.lang.String
 
 type JobDescription = java.lang.String
@@ -1201,6 +1207,7 @@ type ResourceLogicalId = java.lang.String
   - typings.awsSdk.awsSdkStrings.ACCOUNT_SETTINGS
   - typings.awsSdk.awsSdkStrings.ROLE_ALIAS
   - typings.awsSdk.awsSdkStrings.IAM_ROLE
+  - typings.awsSdk.awsSdkStrings.ISSUER_CERTIFICATE
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String

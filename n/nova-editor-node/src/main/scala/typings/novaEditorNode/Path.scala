@@ -21,6 +21,8 @@ trait Path extends StObject {
   
   def normalize(path: String): String
   
+  def relative(from: String, to: String): String
+  
   def split(path: String): js.Array[String]
   
   def splitext(path: String): js.Tuple2[String, String]
@@ -35,10 +37,11 @@ object Path {
     isAbsolute: String => Boolean,
     join: /* repeated */ String => String,
     normalize: String => String,
+    relative: (String, String) => String,
     split: String => js.Array[String],
     splitext: String => js.Tuple2[String, String]
   ): Path = {
-    val __obj = js.Dynamic.literal(basename = js.Any.fromFunction1(basename), dirname = js.Any.fromFunction1(dirname), expanduser = js.Any.fromFunction1(expanduser), extname = js.Any.fromFunction1(extname), isAbsolute = js.Any.fromFunction1(isAbsolute), join = js.Any.fromFunction1(join), normalize = js.Any.fromFunction1(normalize), split = js.Any.fromFunction1(split), splitext = js.Any.fromFunction1(splitext))
+    val __obj = js.Dynamic.literal(basename = js.Any.fromFunction1(basename), dirname = js.Any.fromFunction1(dirname), expanduser = js.Any.fromFunction1(expanduser), extname = js.Any.fromFunction1(extname), isAbsolute = js.Any.fromFunction1(isAbsolute), join = js.Any.fromFunction1(join), normalize = js.Any.fromFunction1(normalize), relative = js.Any.fromFunction2(relative), split = js.Any.fromFunction1(split), splitext = js.Any.fromFunction1(splitext))
     __obj.asInstanceOf[Path]
   }
   
@@ -57,6 +60,8 @@ object Path {
     inline def setJoin(value: /* repeated */ String => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
     inline def setNormalize(value: String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    
+    inline def setRelative(value: (String, String) => String): Self = StObject.set(x, "relative", js.Any.fromFunction2(value))
     
     inline def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     

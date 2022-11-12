@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "set-error-message"
-version := "1.3.1-1897ae"
+version := "1.5.0-2722fa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

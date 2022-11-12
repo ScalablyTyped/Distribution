@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__mixin-get-child-by-name
 
-Typings are for version 7.0.3
+Typings are for version 7.0.4
 
 ## Library description:
 Mixin function to find a child DisplayObject by name

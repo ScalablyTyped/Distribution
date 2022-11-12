@@ -406,5 +406,7 @@ trait TransmuxerInterface extends StObject {
   
   /* private */ var transmuxer: Any = js.native
   
+  /* private */ var useWorker: Any = js.native
+  
   /* private */ var worker: Any = js.native
 }

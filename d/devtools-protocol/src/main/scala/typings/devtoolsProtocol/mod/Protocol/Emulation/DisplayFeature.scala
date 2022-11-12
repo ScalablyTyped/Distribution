@@ -1,7 +1,7 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
-import typings.devtoolsProtocol.devtoolsProtocolStrings.horizontal
-import typings.devtoolsProtocol.devtoolsProtocolStrings.vertical
+import typings.devtoolsProtocol.devtoolsProtocolStrings.horizontal_
+import typings.devtoolsProtocol.devtoolsProtocolStrings.vertical_
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,11 +25,11 @@ trait DisplayFeature extends StObject {
   /**
     * Orientation of a display feature in relation to screen (DisplayFeatureOrientation enum)
     */
-  var orientation: vertical | horizontal
+  var orientation: vertical_ | horizontal_
 }
 object DisplayFeature {
   
-  inline def apply(maskLength: integer, offset: integer, orientation: vertical | horizontal): DisplayFeature = {
+  inline def apply(maskLength: integer, offset: integer, orientation: vertical_ | horizontal_): DisplayFeature = {
     val __obj = js.Dynamic.literal(maskLength = maskLength.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayFeature]
   }
@@ -40,6 +40,6 @@ object DisplayFeature {
     
     inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: vertical_ | horizontal_): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

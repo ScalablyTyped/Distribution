@@ -19,6 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BrowserStackCapabilities extends StObject {
   
+  /**
+    * Ignore invalid certificate errors.
+    *
+    * @default false
+    */
   var acceptSslCerts: js.UndefOr[Boolean] = js.undefined
   
   var accessKey: js.UndefOr[String] = js.undefined
@@ -27,8 +32,19 @@ trait BrowserStackCapabilities extends StObject {
   
   var appiumVersion: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify a custom delay between the execution of Selenium commands.
+    *
+    * @default 20
+    */
   var autoWait: js.UndefOr[Double] = js.undefined
   
+  /**
+    * IE 11 uses cached pages when navigating using the backward or forward buttons.
+    * To disable page caching, set this value to 1.
+    *
+    * @default 0
+    */
   var bfcache: js.UndefOr[`0` | `1`] = js.undefined
   
   var browser: js.UndefOr[String] = js.undefined
@@ -39,29 +55,66 @@ trait BrowserStackCapabilities extends StObject {
   
   var browser_version: js.UndefOr[String] = js.undefined
   
+  /**
+    * Mask the data sent or retrieved by certain commands.
+    *
+    * Note: Multiple commands can be passed in a single array, separated by commas.
+    */
   @JSName("browserstack.maskCommands")
   var browserstackDotmaskCommands: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("browserstack.sendKeys")
   var browserstackDotsendKeys: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specify a name for a logical group of tests.
+    */
   var buildName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Use this capability to add a custom tag to the builds.
+    * These tags can be used to filter the builds on the Automate dashboard.
+    */
+  var buildTag: js.UndefOr[String] = js.undefined
   
   var chrome: js.UndefOr[Driver] = js.undefined
   
+  /**
+    * Capture browser console logs at various steps in the test.
+    * Console Logs are available for Selenium tests on Desktop Chrome
+    * and Mobile Chrome (Android devices).
+    *
+    * @default 'errors'
+    */
   var consoleLogs: js.UndefOr[disable | errors | warnings | info_ | verbose] = js.undefined
   
   var customNetwork: js.UndefOr[String] = js.undefined
   
+  /**
+    * Generate screenshots at various steps of the test.
+    *
+    * @default false
+    */
   var debug: js.UndefOr[Boolean] = js.undefined
   
   var desired: js.UndefOr[DesiredCapabilities] = js.undefined
   
   var device: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify a particular mobile device for the test environment.
+    */
   var deviceName: js.UndefOr[String] = js.undefined
   
   var deviceOrientation: js.UndefOr[portrait | landscape] = js.undefined
+  
+  /**
+    * Use this capability to disable cross origin restrictions in Safari.
+    * Available for Monterey, Big Sur, Catalina and Mojave.
+    *
+    * @default false
+    */
+  var disableCorsRestrictions: js.UndefOr[Boolean] = js.undefined
   
   var edge: js.UndefOr[EnablePopups] = js.undefined
   
@@ -69,16 +122,42 @@ trait BrowserStackCapabilities extends StObject {
   
   var geoLocation: js.UndefOr[String] = js.undefined
   
+  /**
+    * Add a host entry (/etc/hosts) to the remote BrowserStack machine.
+    *
+    * Format: ip_address domain_name
+    * @example
+    * { "bstack:options": { hosts: "1.2.3.4 staging.website.com" } }
+    */
   var hosts: js.UndefOr[String] = js.undefined
   
+  /**
+    * BrowerStack triggers `BROWSERSTACK_IDLE_TIMEOUT` error when a session
+    * is left idle for more than `idleTimeout` seconds. This happens as BrowserStack by
+    * default waits for the timeout duration for additional steps or commands
+    * to run. If no command is received during that time, the session is stopped,
+    * changing the session status to `TIMEOUT` on the Automate dashboard.
+    *
+    * Valid range: 0-300 seconds.
+    *
+    * @default 90
+    */
   var idleTimeout: js.UndefOr[Double] = js.undefined
   
   var ie: js.UndefOr[Arch] = js.undefined
   
+  /**
+    * Test locally hosted websites on BrowserStack.
+    * To enable access to the local machine you need to setup the
+    * [BrowserStack Local Binary](https://www.browserstack.com/local-testing/automate).
+    */
   var local: js.UndefOr[Boolean] = js.undefined
   
   var localIdentifier: js.UndefOr[String] = js.undefined
   
+  /**
+    * Mask credentials from test logs if using basic authentication.
+    */
   var maskBasicAuth: js.UndefOr[Boolean] = js.undefined
   
   var networkLogs: js.UndefOr[Boolean] = js.undefined
@@ -91,10 +170,21 @@ trait BrowserStackCapabilities extends StObject {
   
   var os_version: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify a name for a logical group of builds.
+    */
   var projectName: js.UndefOr[String] = js.undefined
   
+  /**
+    * Use this flag to test on a physical mobile device.
+    *
+    * @default false
+    */
   var realMobile: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Set the resolution of the VM.
+    */
   var resolution: js.UndefOr[String] = js.undefined
   
   var safari: js.UndefOr[AllowAllCookies] = js.undefined
@@ -103,6 +193,9 @@ trait BrowserStackCapabilities extends StObject {
   
   var seleniumVersion: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specify an identifier for the test run.
+    */
   var sessionName: js.UndefOr[String] = js.undefined
   
   var timezone: js.UndefOr[String] = js.undefined
@@ -116,6 +209,14 @@ trait BrowserStackCapabilities extends StObject {
     */
   var wdioService: js.UndefOr[String] = js.undefined
   
+  /**
+    * Enable WSS (WebSocket Secure) connections to work with Network Logs
+    * on Chrome v71 and above.
+    *
+    * Note: if using `localhost` in your test, change it to `bs-local.com`.
+    *
+    * @default false
+    */
   var wsLocalSupport: js.UndefOr[Boolean] = js.undefined
 }
 object BrowserStackCapabilities {
@@ -181,6 +282,10 @@ object BrowserStackCapabilities {
     
     inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
     
+    inline def setBuildTag(value: String): Self = StObject.set(x, "buildTag", value.asInstanceOf[js.Any])
+    
+    inline def setBuildTagUndefined: Self = StObject.set(x, "buildTag", js.undefined)
+    
     inline def setChrome(value: Driver): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
     inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
@@ -212,6 +317,10 @@ object BrowserStackCapabilities {
     inline def setDeviceOrientationUndefined: Self = StObject.set(x, "deviceOrientation", js.undefined)
     
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    
+    inline def setDisableCorsRestrictions(value: Boolean): Self = StObject.set(x, "disableCorsRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setDisableCorsRestrictionsUndefined: Self = StObject.set(x, "disableCorsRestrictions", js.undefined)
     
     inline def setEdge(value: EnablePopups): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

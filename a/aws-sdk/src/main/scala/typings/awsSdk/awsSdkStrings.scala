@@ -3247,6 +3247,7 @@ import typings.awsSdk.clientsRekognitionMod._BodyPart
 import typings.awsSdk.clientsRekognitionMod._CelebrityRecognitionSortBy
 import typings.awsSdk.clientsRekognitionMod._ContentModerationSortBy
 import typings.awsSdk.clientsRekognitionMod._DatasetStatusMessageCode
+import typings.awsSdk.clientsRekognitionMod._DetectLabelsFeatureName
 import typings.awsSdk.clientsRekognitionMod._EmotionName
 import typings.awsSdk.clientsRekognitionMod._FaceAttributes
 import typings.awsSdk.clientsRekognitionMod._FaceSearchSortBy
@@ -30625,6 +30626,12 @@ object awsSdkStrings {
   inline def GENERAL: GENERAL = "GENERAL".asInstanceOf[GENERAL]
   
   @js.native
+  sealed trait GENERAL_LABELS
+    extends StObject
+       with _DetectLabelsFeatureName
+  inline def GENERAL_LABELS: GENERAL_LABELS = "GENERAL_LABELS".asInstanceOf[GENERAL_LABELS]
+  
+  @js.native
   sealed trait GENERAL_PURPOSE
     extends StObject
        with _CertificateAuthorityUsageMode
@@ -33519,6 +33526,12 @@ object awsSdkStrings {
   inline def IMAGE_NOT_FOUND: IMAGE_NOT_FOUND = "IMAGE_NOT_FOUND".asInstanceOf[IMAGE_NOT_FOUND]
   
   @js.native
+  sealed trait IMAGE_PROPERTIES
+    extends StObject
+       with _DetectLabelsFeatureName
+  inline def IMAGE_PROPERTIES: IMAGE_PROPERTIES = "IMAGE_PROPERTIES".asInstanceOf[IMAGE_PROPERTIES]
+  
+  @js.native
   sealed trait IMAGE_SIZE_EXCEEDED
     extends StObject
        with _ScanStatusReason
@@ -34083,7 +34096,6 @@ object awsSdkStrings {
        with typings.awsSdk.clientsIoteventsMod._LoggingLevel
        with typings.awsSdk.clientsIotsitewiseMod._LoggingLevel
        with _UpdateAgentLogLevel
-  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
   sealed trait INFORMAL
@@ -35745,6 +35757,12 @@ object awsSdkStrings {
        with typings.awsSdk.clientsLightsailMod._CertificateStatus
        with typings.awsSdk.clientsAcmMod._CertificateStatus
        with _LoadBalancerTlsCertificateStatus
+  
+  @js.native
+  sealed trait ISSUER_CERTIFICATE
+    extends StObject
+       with _ResourceType
+  inline def ISSUER_CERTIFICATE: ISSUER_CERTIFICATE = "ISSUER_CERTIFICATE".asInstanceOf[ISSUER_CERTIFICATE]
   
   @js.native
   sealed trait ISSUE_DETECTION
@@ -43448,7 +43466,6 @@ object awsSdkStrings {
   sealed trait NETWORK_FIREWALL
     extends StObject
        with _SecurityServiceType
-  inline def NETWORK_FIREWALL: NETWORK_FIREWALL = "NETWORK_FIREWALL".asInstanceOf[NETWORK_FIREWALL]
   
   @js.native
   sealed trait NETWORK_FIREWALL_POLICY_MODIFIED
@@ -67957,7 +67974,6 @@ object awsSdkStrings {
   sealed trait VersionCount
     extends StObject
        with _ProductViewSortBy
-  inline def VersionCount: VersionCount = "VersionCount".asInstanceOf[VersionCount]
   
   @js.native
   sealed trait VersionId

@@ -37,6 +37,8 @@ object anon {
     
     var ssoRoleName: js.UndefOr[String] = js.undefined
     
+    var ssoSession: js.UndefOr[String] = js.undefined
+    
     var ssoStartUrl: js.UndefOr[String] = js.undefined
   }
   object FromSSOInitPartialSsoCred {
@@ -75,6 +77,10 @@ object anon {
       inline def setSsoRoleName(value: String): Self = StObject.set(x, "ssoRoleName", value.asInstanceOf[js.Any])
       
       inline def setSsoRoleNameUndefined: Self = StObject.set(x, "ssoRoleName", js.undefined)
+      
+      inline def setSsoSession(value: String): Self = StObject.set(x, "ssoSession", value.asInstanceOf[js.Any])
+      
+      inline def setSsoSessionUndefined: Self = StObject.set(x, "ssoSession", js.undefined)
       
       inline def setSsoStartUrl(value: String): Self = StObject.set(x, "ssoStartUrl", value.asInstanceOf[js.Any])
       

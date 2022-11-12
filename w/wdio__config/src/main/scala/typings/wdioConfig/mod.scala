@@ -34,10 +34,10 @@ object mod {
     /**
       * returns a flattened list of globbed files
       *
-      * @param  {String[] | String[][]} filenames list of files to glob
-      * @param  {Boolean} flag to indicate omission of warnings
-      * @param  {FileSystemPathService} file system path service for expanding globbed file names
-      * @param  {number} hierarchy depth to prevent recursive calling beyond a depth of 1
+      * @param  {String[] | String[][]} patterns list of files to glob
+      * @param  {Boolean} omitWarnings to indicate omission of warnings
+      * @param  {FileSystemPathService} findAndGlob system path service for expanding globbed file names
+      * @param  {number} hierarchyDepth depth to prevent recursive calling beyond a depth of 1
       * @return {String[] | String[][]} list of files
       */
     inline def getFilePaths(patterns: js.Array[Spec]): js.Array[Spec] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilePaths")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Spec]]

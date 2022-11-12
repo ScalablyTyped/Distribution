@@ -12,7 +12,7 @@ trait PersonDetection extends StObject {
   var Person: js.UndefOr[PersonDetail] = js.undefined
   
   /**
-    * The time, in milliseconds from the start of the video, that the person's path was tracked.
+    * The time, in milliseconds from the start of the video, that the person's path was tracked. Note that Timestamp is not guaranteed to be accurate to the individual frame where the person's path first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

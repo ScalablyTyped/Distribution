@@ -1,7 +1,7 @@
 
 # Scala.js typings for dompurify
 
-Typings are for version 2.3
+Typings are for version 2.4
 
 ## Library description:
 DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. It's written in JavaScript and works in all modern browsers (Safari, Opera (15+), Internet Explorer (10+), Firefox and Chrome - as well as almost anything else usin

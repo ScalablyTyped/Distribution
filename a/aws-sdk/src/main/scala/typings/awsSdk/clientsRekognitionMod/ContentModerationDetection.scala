@@ -12,7 +12,7 @@ trait ContentModerationDetection extends StObject {
   var ModerationLabel: js.UndefOr[typings.awsSdk.clientsRekognitionMod.ModerationLabel] = js.undefined
   
   /**
-    * Time, in milliseconds from the beginning of the video, that the content moderation label was detected.
+    * Time, in milliseconds from the beginning of the video, that the content moderation label was detected. Note that Timestamp is not guaranteed to be accurate to the individual frame where the moderated content first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

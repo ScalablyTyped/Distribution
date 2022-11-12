@@ -53,10 +53,10 @@ object buildLibConfigParserMod {
     /**
       * returns a flattened list of globbed files
       *
-      * @param  {String[] | String[][]} filenames list of files to glob
-      * @param  {Boolean} flag to indicate omission of warnings
-      * @param  {FileSystemPathService} file system path service for expanding globbed file names
-      * @param  {number} hierarchy depth to prevent recursive calling beyond a depth of 1
+      * @param  {String[] | String[][]} patterns list of files to glob
+      * @param  {Boolean} omitWarnings to indicate omission of warnings
+      * @param  {FileSystemPathService} findAndGlob system path service for expanding globbed file names
+      * @param  {number} hierarchyDepth depth to prevent recursive calling beyond a depth of 1
       * @return {String[] | String[][]} list of files
       */
     inline def getFilePaths(patterns: js.Array[Spec]): js.Array[Spec] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilePaths")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Spec]]
@@ -115,12 +115,13 @@ object buildLibConfigParserMod {
     def getConfig(): RequiredTestrunner = js.native
     
     /**
-      * get excluded files from config pattern
+      * determine what specs to run based on the spec(s), suite(s), exclude
+      * attributes from CLI, config and capabilities
       */
     def getSpecs(): js.Array[Spec] = js.native
-    def getSpecs(capSpecs: js.Array[String]): js.Array[Spec] = js.native
-    def getSpecs(capSpecs: js.Array[String], capExclude: js.Array[String]): js.Array[Spec] = js.native
-    def getSpecs(capSpecs: Unit, capExclude: js.Array[String]): js.Array[Spec] = js.native
+    def getSpecs(capSpecs: js.Array[Spec]): js.Array[Spec] = js.native
+    def getSpecs(capSpecs: js.Array[Spec], capExclude: js.Array[Spec]): js.Array[Spec] = js.native
+    def getSpecs(capSpecs: Unit, capExclude: js.Array[Spec]): js.Array[Spec] = js.native
     
     /**
       * merge external object with config object

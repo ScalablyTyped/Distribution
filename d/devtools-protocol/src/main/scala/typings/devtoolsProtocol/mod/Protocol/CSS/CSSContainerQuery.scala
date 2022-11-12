@@ -1,5 +1,7 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import typings.devtoolsProtocol.mod.Protocol.DOM.LogicalAxes
+import typings.devtoolsProtocol.mod.Protocol.DOM.PhysicalAxes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSSContainerQuery extends StObject {
   
   /**
+    * Optional logical axes queried for the container.
+    */
+  var logicalAxes: js.UndefOr[LogicalAxes] = js.undefined
+  
+  /**
     * Optional name for the container.
     */
   var name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional physical axes queried for the container.
+    */
+  var physicalAxes: js.UndefOr[PhysicalAxes] = js.undefined
   
   /**
     * The associated rule header range in the enclosing stylesheet (if
@@ -36,9 +48,17 @@ object CSSContainerQuery {
   
   extension [Self <: CSSContainerQuery](x: Self) {
     
+    inline def setLogicalAxes(value: LogicalAxes): Self = StObject.set(x, "logicalAxes", value.asInstanceOf[js.Any])
+    
+    inline def setLogicalAxesUndefined: Self = StObject.set(x, "logicalAxes", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPhysicalAxes(value: PhysicalAxes): Self = StObject.set(x, "physicalAxes", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicalAxesUndefined: Self = StObject.set(x, "physicalAxes", js.undefined)
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

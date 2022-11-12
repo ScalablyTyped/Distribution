@@ -19,8 +19,23 @@ object rebaseMod {
     
     def abort(): Double = js.native
     
-    def commit(author: Signature, committer: Signature, messageEncoding: String, message: String): Oid = js.native
+    def commit(author: Null, committer: Signature): js.Promise[Oid] = js.native
+    def commit(author: Null, committer: Signature, messageEncoding: String): js.Promise[Oid] = js.native
+    def commit(author: Null, committer: Signature, messageEncoding: String, message: String): js.Promise[Oid] = js.native
+    def commit(author: Null, committer: Signature, messageEncoding: Null, message: String): js.Promise[Oid] = js.native
+    def commit(author: Null, committer: Signature, messageEncoding: Unit, message: String): js.Promise[Oid] = js.native
+    def commit(author: Unit, committer: Signature): js.Promise[Oid] = js.native
+    def commit(author: Unit, committer: Signature, messageEncoding: String): js.Promise[Oid] = js.native
+    def commit(author: Unit, committer: Signature, messageEncoding: String, message: String): js.Promise[Oid] = js.native
+    def commit(author: Unit, committer: Signature, messageEncoding: Null, message: String): js.Promise[Oid] = js.native
+    def commit(author: Unit, committer: Signature, messageEncoding: Unit, message: String): js.Promise[Oid] = js.native
+    def commit(author: Signature, committer: Signature): js.Promise[Oid] = js.native
+    def commit(author: Signature, committer: Signature, messageEncoding: String): js.Promise[Oid] = js.native
+    def commit(author: Signature, committer: Signature, messageEncoding: String, message: String): js.Promise[Oid] = js.native
+    def commit(author: Signature, committer: Signature, messageEncoding: Null, message: String): js.Promise[Oid] = js.native
+    def commit(author: Signature, committer: Signature, messageEncoding: Unit, message: String): js.Promise[Oid] = js.native
     
+    def finish(): Double = js.native
     def finish(signature: Signature): Double = js.native
     
     def inmemoryIndex(index: Index): Double = js.native
@@ -40,13 +55,12 @@ object rebaseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def init(repo: Repository, branch: AnnotatedCommit, upstream: AnnotatedCommit, onto: AnnotatedCommit): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
     inline def init(
       repo: Repository,
-      branch: AnnotatedCommit,
-      upstream: AnnotatedCommit,
-      onto: AnnotatedCommit,
-      opts: RebaseOptions
+      branch: js.UndefOr[AnnotatedCommit | Null],
+      upstream: js.UndefOr[AnnotatedCommit | Null],
+      onto: js.UndefOr[AnnotatedCommit | Null],
+      opts: js.UndefOr[RebaseOptions | Null]
     ): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
     
     inline def initOptions(opts: RebaseOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]

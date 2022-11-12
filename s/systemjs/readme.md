@@ -1,7 +1,7 @@
 
 # Scala.js typings for systemjs
 
-Typings are for version 6.1
+Typings are for version 6.13
 
 ## Library description:
 Dynamic ES module loader

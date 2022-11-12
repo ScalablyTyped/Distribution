@@ -12,7 +12,7 @@ trait AwsBackupBackupPlanRuleDetails extends StObject {
   var CompletionWindowMinutes: js.UndefOr[Long] = js.undefined
   
   /**
-    * An array of CopyAction objects, which contains the details of the copy operation. 
+    * An array of CopyAction objects, each of which contains details of the copy operation. 
     */
   var CopyActions: js.UndefOr[AwsBackupBackupPlanRuleCopyActionsList] = js.undefined
   

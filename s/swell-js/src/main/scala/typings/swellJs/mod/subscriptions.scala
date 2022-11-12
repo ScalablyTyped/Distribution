@@ -16,7 +16,7 @@ object subscriptions {
   
   inline def get(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def list(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[Any]]
+  inline def list(): js.Promise[ListResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[ListResult[Any]]]
   
   inline def removeItem(id: String, itemId: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItem")(id.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   

@@ -1,28 +1,28 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageTrackingRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageEntryRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `217` extends StObject {
   
-  var paramsType: js.Array[SetSharedStorageTrackingRequest]
+  var paramsType: js.Array[SetSharedStorageEntryRequest]
   
   var returnType: Unit
 }
 object `217` {
   
-  inline def apply(paramsType: js.Array[SetSharedStorageTrackingRequest], returnType: Unit): `217` = {
+  inline def apply(paramsType: js.Array[SetSharedStorageEntryRequest], returnType: Unit): `217` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`217`]
   }
   
   extension [Self <: `217`](x: Self) {
     
-    inline def setParamsType(value: js.Array[SetSharedStorageTrackingRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetSharedStorageEntryRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetSharedStorageTrackingRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: SetSharedStorageEntryRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

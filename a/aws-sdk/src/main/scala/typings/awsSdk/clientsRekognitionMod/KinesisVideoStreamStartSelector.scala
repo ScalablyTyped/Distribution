@@ -12,7 +12,7 @@ trait KinesisVideoStreamStartSelector extends StObject {
   var FragmentNumber: js.UndefOr[KinesisVideoStreamFragmentNumber] = js.undefined
   
   /**
-    *  The timestamp from the producer corresponding to the fragment. 
+    *  The timestamp from the producer corresponding to the fragment, in milliseconds, expressed in unix time format. 
     */
   var ProducerTimestamp: js.UndefOr[ULong] = js.undefined
 }

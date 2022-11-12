@@ -22,6 +22,43 @@ trait Presentation
   var context_Presentation: RequestContext = js.native
   
   /**
+    * Returns the selected shapes in the current slide of the presentation.
+    If no shapes are selected, an empty collection is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getSelectedShapes(): ShapeScopedCollection = js.native
+  
+  /**
+    * Returns the selected slides in the current view of the presentation.
+    The first item in the collection is the active slide that is visible in the editing area.
+    If no slides are selected, an empty collection is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getSelectedSlides(): SlideScopedCollection = js.native
+  
+  /**
+    * Returns the selected {@link PowerPoint.TextRange} in the current view of the presentation.
+    Throws an exception if no text is selected.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getSelectedTextRange(): TextRange = js.native
+  
+  /**
+    * Returns the selected {@link PowerPoint.TextRange} in the current view of the presentation.
+    If no text is selected, an object with an `isNullObject` property set to `true` is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getSelectedTextRangeOrNullObject(): TextRange = js.native
+  
+  /**
     * Inserts the specified slides from a presentation into the current presentation.
     *
     * @remarks
@@ -43,6 +80,16 @@ trait Presentation
   def load(propertyNamesAndPaths: Expand): Presentation = js.native
   def load(propertyNames: String): Presentation = js.native
   def load(propertyNames: js.Array[String]): Presentation = js.native
+  
+  /**
+    * Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new selection.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    *
+    * @param slideIds List of slide IDs to select in the presentation. If the list is empty, selection is cleared.
+    */
+  def setSelectedSlides(slideIds: js.Array[String]): Unit = js.native
   
   /**
     * Returns the collection of `SlideMaster` objects that are in the presentation.

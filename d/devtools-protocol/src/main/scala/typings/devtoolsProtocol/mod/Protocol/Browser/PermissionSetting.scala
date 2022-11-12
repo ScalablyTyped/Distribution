@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.granted
   - typings.devtoolsProtocol.devtoolsProtocolStrings.denied
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.prompt
 */
 trait PermissionSetting extends StObject
 object PermissionSetting {
@@ -15,6 +14,4 @@ object PermissionSetting {
   inline def denied: typings.devtoolsProtocol.devtoolsProtocolStrings.denied = "denied".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.denied]
   
   inline def granted: typings.devtoolsProtocol.devtoolsProtocolStrings.granted = "granted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.granted]
-  
-  inline def prompt: typings.devtoolsProtocol.devtoolsProtocolStrings.prompt = "prompt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.prompt]
 }

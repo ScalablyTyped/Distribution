@@ -3,7 +3,7 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`catch`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`wasm-expression-stack`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`with`
-import typings.devtoolsProtocol.devtoolsProtocolStrings.block
+import typings.devtoolsProtocol.devtoolsProtocolStrings.block_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.closure
 import typings.devtoolsProtocol.devtoolsProtocolStrings.eval
 import typings.devtoolsProtocol.devtoolsProtocolStrings.global
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`with`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.closure
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`catch`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.block
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.block_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.script_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.eval
   - typings.devtoolsProtocol.devtoolsProtocolStrings.module
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScopeType extends StObject
 object ScopeType {
   
-  inline def Block: block = "block".asInstanceOf[block]
+  inline def Block: block_ = "block".asInstanceOf[block_]
   
   inline def Catch: `catch` = "catch".asInstanceOf[`catch`]
   

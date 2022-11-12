@@ -3,7 +3,10 @@ package typings.meteorDburlesCollectionHelpers
 import typings.meteorDburlesCollectionHelpers.meteorDburlesCollectionHelpersStrings._meteor_dburles_collection_helpers_allowPartial
 import typings.meteorDburlesCollectionHelpers.meteorDburlesCollectionHelpersStrings._meteor_dburles_collection_helpers_brand
 import typings.meteorDburlesCollectionHelpers.meteorDburlesCollectionHelpersStrings._meteor_dburles_collection_helpers_flavor
+import typings.std.Exclude
 import typings.std.Partial
+import typings.std.Pick
+import typings.std.Required
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,13 +44,12 @@ object meteorDburlesColoncollectionHelpersMod {
   // apply HelpersFlavor, but only if the resulting type wouldn't be never or weak
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [TToFlavor] extends [TToFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelpersFlavor<TOriginal>] ? TToFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelpersFlavor<TOriginal> : TToFlavor
     }}}
     */
-  @js.native
-  trait FlavorAsHelpers[TOriginal, TToFlavor] extends StObject
+  type FlavorAsHelpers[TOriginal, TToFlavor] = TToFlavor
   
   // types where HelperBrand will be used instead of HelperFlavor
   type FlavorUnsupportedTypes = js.UndefOr[Null]
@@ -62,13 +64,12 @@ object meteorDburlesColoncollectionHelpersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? T extends meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.FlavorUnsupportedTypes ? T | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand : T & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor : never
     }}}
     */
-  @js.native
-  trait Helper[T] extends StObject
+  type Helper[T] = T | HelperBrand
   
   // for types where (T & HelperFlavor) === never, (T | HelperBrand) is used instead,
   // and the HelperBrand is stripped off in HelpersOf
@@ -79,7 +80,9 @@ object meteorDburlesColoncollectionHelpersMod {
   // however, this appears to be a limitation of Typescript (with strict null checks on, null and undefined
   // simply *can't* extend anything besides themselves (and void in undefined's case), so there's no way to
   // flavor them)
-  trait HelperBrand extends StObject {
+  trait HelperBrand
+    extends StObject
+       with _OptionalHelper[Any] {
     
     var _meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand
   }
@@ -125,7 +128,7 @@ object meteorDburlesColoncollectionHelpersMod {
   // The names of all properties of T with either a HelperBrand or a HelperFlavor (whether required or optional)
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends T ? {[ K in keyof T ]: std.Exclude<T[K], undefined> extends infer NoUndefined? [meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand] extends [NoUndefined]? K : [meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperBrand] extends [NoUndefined]? K : [std.Required<NoUndefined>] extends [/ * Inlined std.Required<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor> * /
   {  _meteor_dburles_collection_helpers_isHelper :meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Flavor}]? K : [std.Required<NoUndefined>] extends [/ * Inlined std.Required<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperFlavor> * /
@@ -166,56 +169,75 @@ object meteorDburlesColoncollectionHelpersMod {
   // Make anything not marked optional required, and anything marked optional optional.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.RemoveHelperBrands<std.Required<std.Pick<T, std.Exclude<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.PropertyNamesMatching<std.Required<T>, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Func> | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperNames<std.Required<T>>, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperNames<std.Required<T>>>>> & std.Partial<std.Pick<T, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperNames<std.Required<T>>>>> : never
     }}}
     */
-  @js.native
-  trait HelpersOf[T] extends StObject
+  type HelpersOf[T] = RemoveHelperBrands[
+    (Required[
+      Pick[
+        T, 
+        Exclude[
+          (PropertyNamesMatching[Required[T], Func]) | HelperNames[Required[T]], 
+          OptionalHelperNames[Required[T]]
+        ]
+      ]
+    ]) & (Partial[Pick[T, OptionalHelperNames[Required[T]]]])
+  ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.DataFlavor<infer U> ? U : T
     }}}
     */
-  @js.native
-  trait NonData[T] extends StObject
+  type NonData[T] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelpersFlavor<infer U> ? U : T
     }}}
     */
-  @js.native
-  trait NonHelpers[T] extends StObject
+  type NonHelpers[T] = T
   
   // All the members of T that aren't helpers
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? std.Pick<T, std.Exclude<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.PropertyNamesNotMatching<std.Required<T>, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Func>, meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperNames<std.Required<T>> | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperNames<std.Required<T>>>> : never
     }}}
     */
-  @js.native
-  trait NonHelpersOf[T] extends StObject
+  type NonHelpersOf[T] = Pick[
+    T, 
+    Exclude[
+      PropertyNamesNotMatching[Required[T], Func], 
+      HelperNames[Required[T]] | OptionalHelperNames[Required[T]]
+    ]
+  ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? T extends meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.FlavorUnsupportedTypes ? T | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperBrand | undefined : T & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperFlavor | undefined : never
     }}}
     */
-  @js.native
-  trait OptionalHelper[T] extends StObject
+  /* Rewritten from type alias, can be one of: 
+    - T
+    - typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.HelperBrand
+    - typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.OptionalHelperBrand
+    - scala.Unit
+  */
+  type OptionalHelper[T] = js.UndefOr[_OptionalHelper[T] | T]
   
-  trait OptionalHelperBrand extends StObject {
+  trait OptionalHelperBrand
+    extends StObject
+       with _OptionalHelper[Any] {
     
     var _meteor_dburles_collection_helpers_isBrandUnsupportedOptionalHelper: js.UndefOr[Brand] = js.undefined
   }
@@ -255,7 +277,7 @@ object meteorDburlesColoncollectionHelpersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends T ? {[ K in keyof T ]: std.Exclude<T[K], undefined> extends infer NoUndefined? [meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperBrand | meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperBrand] extends [NoUndefined]? K : [std.Required<NoUndefined>] extends [/ * Inlined std.Required<meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.OptionalHelperFlavor> * /
   {  _meteor_dburles_collection_helpers_isHelper :meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Flavor,   _meteor_dburles_collection_helpers_isOptionalHelper :meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.Flavor}]? K : never : never}[keyof T] : never
@@ -292,11 +314,24 @@ object meteorDburlesColoncollectionHelpersMod {
   // tslint:disable-next-line void-return
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends void & meteor-dburles-collection-helpers.meteor/dburles:collection-helpers.HelperFlavor ? void : T
     }}}
     */
-  @js.native
-  trait RemoveHelperFlavorForVoid[T] extends StObject
+  type RemoveHelperFlavorForVoid[T] = T
+  
+  trait _OptionalHelper[T] extends StObject
+  object _OptionalHelper {
+    
+    inline def HelperBrand(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper: Brand): typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.HelperBrand = {
+      val __obj = js.Dynamic.literal(_meteor_dburles_collection_helpers_isBrandUnsupportedHelper = _meteor_dburles_collection_helpers_isBrandUnsupportedHelper.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.HelperBrand]
+    }
+    
+    inline def OptionalHelperBrand(): typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.OptionalHelperBrand = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.OptionalHelperBrand]
+    }
+  }
 }

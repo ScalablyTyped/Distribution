@@ -12,8 +12,8 @@ object products {
   
   inline def get(productId: String): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(productId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
   
-  inline def list(input: Query): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
-  inline def list(input: SearchQuery): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
+  inline def list(input: Query): js.Promise[ListResult[Product]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Product]]]
+  inline def list(input: SearchQuery): js.Promise[ListResult[Product]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Product]]]
   
   inline def variation(productId: String, options: CartOption): js.Promise[Product] = (^.asInstanceOf[js.Dynamic].applyDynamic("variation")(productId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Product]]
 }

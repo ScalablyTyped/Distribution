@@ -25,11 +25,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`scrollbar-corner`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.resizer
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`input-list-button`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-container`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-image-wrapper`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-outgoing-image`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-incoming-image`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-group`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-image-pair`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-old`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-new`
 */
 trait PseudoType extends StObject
 object PseudoType {
@@ -54,16 +54,6 @@ object PseudoType {
   
   inline def marker: typings.devtoolsProtocol.devtoolsProtocolStrings.marker = "marker".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.marker]
   
-  inline def `page-transition`: typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition` = "page-transition".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition`]
-  
-  inline def `page-transition-container`: typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-container` = "page-transition-container".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-container`]
-  
-  inline def `page-transition-image-wrapper`: typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-image-wrapper` = "page-transition-image-wrapper".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-image-wrapper`]
-  
-  inline def `page-transition-incoming-image`: typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-incoming-image` = "page-transition-incoming-image".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-incoming-image`]
-  
-  inline def `page-transition-outgoing-image`: typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-outgoing-image` = "page-transition-outgoing-image".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`page-transition-outgoing-image`]
-  
   inline def resizer: typings.devtoolsProtocol.devtoolsProtocolStrings.resizer = "resizer".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.resizer]
   
   inline def scrollbar: typings.devtoolsProtocol.devtoolsProtocolStrings.scrollbar = "scrollbar".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.scrollbar]
@@ -83,4 +73,14 @@ object PseudoType {
   inline def `spelling-error`: typings.devtoolsProtocol.devtoolsProtocolStrings.`spelling-error` = "spelling-error".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`spelling-error`]
   
   inline def `target-text`: typings.devtoolsProtocol.devtoolsProtocolStrings.`target-text` = "target-text".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`target-text`]
+  
+  inline def `view-transition`: typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition` = "view-transition".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition`]
+  
+  inline def `view-transition-group`: typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-group` = "view-transition-group".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-group`]
+  
+  inline def `view-transition-image-pair`: typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-image-pair` = "view-transition-image-pair".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-image-pair`]
+  
+  inline def `view-transition-new`: typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-new` = "view-transition-new".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-new`]
+  
+  inline def `view-transition-old`: typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-old` = "view-transition-old".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`view-transition-old`]
 }

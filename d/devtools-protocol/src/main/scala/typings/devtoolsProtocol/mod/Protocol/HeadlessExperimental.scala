@@ -94,26 +94,6 @@ object HeadlessExperimental {
     }
   }
   
-  trait NeedsBeginFramesChangedEvent extends StObject {
-    
-    /**
-      * True if BeginFrames are needed, false otherwise.
-      */
-    var needsBeginFrames: Boolean
-  }
-  object NeedsBeginFramesChangedEvent {
-    
-    inline def apply(needsBeginFrames: Boolean): NeedsBeginFramesChangedEvent = {
-      val __obj = js.Dynamic.literal(needsBeginFrames = needsBeginFrames.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NeedsBeginFramesChangedEvent]
-    }
-    
-    extension [Self <: NeedsBeginFramesChangedEvent](x: Self) {
-      
-      inline def setNeedsBeginFrames(value: Boolean): Self = StObject.set(x, "needsBeginFrames", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait ScreenshotParams extends StObject {
     
     /**

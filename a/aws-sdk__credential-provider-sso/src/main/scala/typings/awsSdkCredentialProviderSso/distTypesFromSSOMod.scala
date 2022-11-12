@@ -56,6 +56,12 @@ object distTypesFromSSOMod {
     var ssoRoleName: String
     
     /**
+      * SSO session identifier.
+      * Presence implies usage of the SSOTokenProvider.
+      */
+    var ssoSession: js.UndefOr[String] = js.undefined
+    
+    /**
       * The URL to the AWS SSO service.
       */
     var ssoStartUrl: String
@@ -74,6 +80,10 @@ object distTypesFromSSOMod {
       inline def setSsoRegion(value: String): Self = StObject.set(x, "ssoRegion", value.asInstanceOf[js.Any])
       
       inline def setSsoRoleName(value: String): Self = StObject.set(x, "ssoRoleName", value.asInstanceOf[js.Any])
+      
+      inline def setSsoSession(value: String): Self = StObject.set(x, "ssoSession", value.asInstanceOf[js.Any])
+      
+      inline def setSsoSessionUndefined: Self = StObject.set(x, "ssoSession", js.undefined)
       
       inline def setSsoStartUrl(value: String): Self = StObject.set(x, "ssoStartUrl", value.asInstanceOf[js.Any])
     }

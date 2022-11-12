@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.wdioTypes.buildCapabilitiesMod.AppiumXCUITestCapabilities because var conflicts: appiumColonapp, appiumColondeviceName, appiumColonenablePerformanceLogging, appiumColonnativeWebTap, appiumColonplatformName, appiumColonudid. Inlined appiumColonbrowserName, appiumColoncalendarFormat, appiumColonbundleId, appiumColonautoAcceptAlerts, appiumColonautoDismissAlerts, appiumColonsafariInitialUrl, appiumColonsafariAllowPopups, appiumColonsafariIgnoreFraudWarning, appiumColonsafariOpenLinksInBackground, appiumColonsafariShowFullResponse, appiumColonkeepKeyChains, appiumColonlocationServicesEnabled, appiumColonlocationServicesAuthorized, appiumColonresetLocationService, appiumColonlocalizableStringsDir, appiumColonprocessArguments, appiumColonshowIOSLog, appiumColonwebviewConnectRetries, appiumColonclearSystemFiles, appiumColoncustomSSLCert, appiumColonwebkitResponseTimeout, appiumColonwebkitDebugProxyPort, appiumColonremoteDebugProxy, appiumColonenableAsyncExecuteFromHttps, appiumColonfullContextList, appiumColonignoreAboutBlankUrl, appiumColonskipLogCapture, appiumColonshowXcodeLog, appiumColonwdaLocalPort, appiumColonwdaBaseUrl, appiumColoniosInstallPause, appiumColonxcodeConfigFile, appiumColonxcodeOrgId, appiumColonxcodeSigningId, appiumColonkeychainPath, appiumColonkeychainPassword, appiumColonbootstrapPath, appiumColonagentPath, appiumColontapWithShortPressDuration, appiumColonscaleFactor, appiumColonusePrebuiltWDA, appiumColonwebDriverAgentUrl, appiumColonderivedDataPath, appiumColonlaunchWithIDB, appiumColonuseNewWDA, appiumColonwdaLaunchTimeout, appiumColonwdaConnectionTimeout, appiumColonupdatedWDABundleId, appiumColonresetOnSessionStartOnly, appiumColoncommandTimeouts, appiumColonwdaStartupRetries, appiumColonwdaStartupRetryInterval, appiumColonprebuildWDA, appiumColonconnectHardwareKeyboard, appiumColonforceTurnOnSoftwareKeyboardSimulator, appiumColonsimulatorPasteboardAutomaticSync, appiumColonsimulatorDevicesSetPath, appiumColoncalendarAccessAuthorized, appiumColonuseSimpleBuildTest, appiumColonwaitForQuiescence, appiumColonmaxTypingFrequency, appiumColonnativeTyping, appiumColonsimpleIsVisibleCheck, appiumColonshouldUseSingletonTestManager, appiumColonisHeadless, appiumColonuseXctestrunFile, appiumColonabsoluteWebLocations, appiumColonsimulatorWindowCenter, appiumColonsimulatorStartupTimeout, appiumColonsimulatorTracePointer, appiumColonuseJSONSource, appiumColonenforceFreshSimulatorCreation, appiumColonshutdownOtherSimulators, appiumColonkeychainsExcludePatterns, appiumColonshowSafariConsoleLog, appiumColonshowSafariNetworkLog, appiumColonsafariGarbageCollect, appiumColonsafariGlobalPreferences, appiumColonsafariLogAllCommunication, appiumColonsafariLogAllCommunicationHexDump, appiumColonsafariSocketChunkSize, appiumColonmjpegServerPort, appiumColonreduceMotion, appiumColonmjpegScreenshotUrl, appiumColonpermissions, appiumColonscreenshotQuality, appiumColonwdaEventloopIdleDelay, appiumColonotherApps, appiumColonincludeSafariInWebviews, appiumColonadditionalWebviewBundleIds, appiumColonwebviewConnectTimeout, appiumColoniosSimulatorLogsPredicate, appiumColonappPushTimeout, appiumColonnativeWebTapStrict, appiumColonsafariWebInspectorMaxFrameLength, appiumColonallowProvisioningDeviceRegistration, appiumColonwaitForIdleTimeout, appiumColonresultBundlePath, appiumColonresultBundleVersion, appiumColonsafariIgnoreWebHostnames, appiumColonincludeDeviceCapsToSessionInfo, appiumColondisableAutomaticScreenshots, appiumColonshouldTerminateApp, appiumColonforceAppLaunch, appiumColonuseNativeCachingStrategy, appiumColonappInstallStrategy, appiumColonappArguments
-- typings.wdioTypes.buildCapabilitiesMod.BrowserStackCapabilities because var conflicts: appiumVersion, browserName, browserVersion, deviceName, idleTimeout, projectName, seleniumVersion. Inlined browser, browser_version, os, os_version, osVersion, desired, device, buildName, sessionName, local, debug, networkLogs, ie, userName, accessKey, localIdentifier, consoleLogs, appiumLogs, video, seleniumLogs, geoLocation, timezone, resolution, browserstackDotmaskCommands, maskBasicAuth, autoWait, hosts, bfcache, wsLocalSupport, realMobile, deviceOrientation, customNetwork, networkProfile, chrome, edge, browserstackDotsendKeys, safari, firefox, acceptSslCerts, wdioService
+- typings.wdioTypes.buildCapabilitiesMod.BrowserStackCapabilities because var conflicts: appiumVersion, browserName, browserVersion, deviceName, idleTimeout, projectName, seleniumVersion. Inlined browser, browser_version, os, os_version, osVersion, desired, device, buildName, sessionName, local, debug, networkLogs, ie, userName, accessKey, localIdentifier, consoleLogs, appiumLogs, video, seleniumLogs, geoLocation, timezone, resolution, browserstackDotmaskCommands, maskBasicAuth, autoWait, hosts, bfcache, wsLocalSupport, disableCorsRestrictions, buildTag, realMobile, deviceOrientation, customNetwork, networkProfile, chrome, edge, browserstackDotsendKeys, safari, firefox, acceptSslCerts, wdioService
 - typings.wdioTypes.buildCapabilitiesMod.SeleniumRCCapabilities because var conflicts: avoidProxy. Inlined commandLineFlags, executablePath, timeoutInSeconds, onlyProxySeleniumTraffic, proxyEverything, proxyRequired, browserSideLog, optionsSet, singleWindow, dontInjectRegex, userJSInjection, userExtensions
 - typings.wdioTypes.buildCapabilitiesMod.TestingbotCapabilities because var conflicts: build, name, public, tags. Inlined `tunnel-identifier` */ trait DesiredCapabilities
   extends StObject
@@ -368,8 +368,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var applicationCacheEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specify a custom delay between the execution of Selenium commands.
+    *
+    * @default 20
+    */
   var autoWait: js.UndefOr[Double] = js.undefined
   
+  /**
+    * IE 11 uses cached pages when navigating using the backward or forward buttons.
+    * To disable page caching, set this value to 1.
+    *
+    * @default 0
+    */
   var bfcache: js.UndefOr[`0` | `1`] = js.undefined
   
   var browser: js.UndefOr[String] = js.undefined
@@ -380,18 +391,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var browser_version: js.UndefOr[String] = js.undefined
   
+  /**
+    * Mask the data sent or retrieved by certain commands.
+    *
+    * Note: Multiple commands can be passed in a single array, separated by commas.
+    */
   @JSName("browserstack.maskCommands")
   var browserstackDotmaskCommands: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("browserstack.sendKeys")
   var browserstackDotsendKeys: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specify a name for a logical group of tests.
+    */
   var buildName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Use this capability to add a custom tag to the builds.
+    * These tags can be used to filter the builds on the Automate dashboard.
+    */
+  var buildTag: js.UndefOr[String] = js.undefined
   
   var chrome: js.UndefOr[Driver] = js.undefined
   
   var commandLineFlags: js.UndefOr[String] = js.undefined
   
+  /**
+    * Capture browser console logs at various steps in the test.
+    * Console Logs are available for Selenium tests on Desktop Chrome
+    * and Mobile Chrome (Android devices).
+    *
+    * @default 'errors'
+    */
   var consoleLogs: js.UndefOr[disable | errors | warnings | info_ | verbose] = js.undefined
   
   var cssSelectorsEnabled: js.UndefOr[Boolean] = js.undefined
@@ -400,6 +432,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var databaseEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Generate screenshots at various steps of the test.
+    *
+    * @default false
+    */
   var debug: js.UndefOr[Boolean] = js.undefined
   
   var desired: js.UndefOr[DesiredCapabilities] = js.undefined
@@ -407,6 +444,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var device: js.UndefOr[String] = js.undefined
   
   var deviceOrientation: js.UndefOr[portrait | landscape] = js.undefined
+  
+  /**
+    * Use this capability to disable cross origin restrictions in Safari.
+    * Available for Monterey, Big Sur, Catalina and Mojave.
+    *
+    * @default false
+    */
+  var disableCorsRestrictions: js.UndefOr[Boolean] = js.undefined
   
   var dontInjectRegex: js.UndefOr[js.RegExp] = js.undefined
   
@@ -426,12 +471,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var handlesAlerts: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Add a host entry (/etc/hosts) to the remote BrowserStack machine.
+    *
+    * Format: ip_address domain_name
+    * @example
+    * { "bstack:options": { hosts: "1.2.3.4 staging.website.com" } }
+    */
   var hosts: js.UndefOr[String] = js.undefined
   
   var ie: js.UndefOr[Arch] = js.undefined
   
   var javascriptEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Test locally hosted websites on BrowserStack.
+    * To enable access to the local machine you need to setup the
+    * [BrowserStack Local Binary](https://www.browserstack.com/local-testing/automate).
+    */
   var local: js.UndefOr[Boolean] = js.undefined
   
   var localIdentifier: js.UndefOr[String] = js.undefined
@@ -440,6 +497,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var loggingPrefs: js.UndefOr[Browser] = js.undefined
   
+  /**
+    * Mask credentials from test logs if using basic authentication.
+    */
   var maskBasicAuth: js.UndefOr[Boolean] = js.undefined
   
   var nativeEvents: js.UndefOr[Boolean] = js.undefined
@@ -467,8 +527,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("public")
   var public_DesiredCapabilities: js.UndefOr[Any] = js.undefined
   
+  /**
+    * Use this flag to test on a physical mobile device.
+    *
+    * @default false
+    */
   var realMobile: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Set the resolution of the VM.
+    */
   var resolution: js.UndefOr[String] = js.undefined
   
   var rotatable: js.UndefOr[Boolean] = js.undefined
@@ -480,6 +548,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var seleniumLogs: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specify an identifier for the test run.
+    */
   var sessionName: js.UndefOr[String] = js.undefined
   
   var singleWindow: js.UndefOr[Boolean] = js.undefined
@@ -517,6 +588,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   @JSName("webdriver.remote.sessionid")
   var webdriverDotremoteDotsessionid: js.UndefOr[String] = js.undefined
   
+  /**
+    * Enable WSS (WebSocket Secure) connections to work with Network Logs
+    * on Chrome v71 and above.
+    *
+    * Note: if using `localhost` in your test, change it to `bs-local.com`.
+    *
+    * @default false
+    */
   var wsLocalSupport: js.UndefOr[Boolean] = js.undefined
 }
 object DesiredCapabilities {
@@ -1012,6 +1091,10 @@ object DesiredCapabilities {
     
     inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
     
+    inline def setBuildTag(value: String): Self = StObject.set(x, "buildTag", value.asInstanceOf[js.Any])
+    
+    inline def setBuildTagUndefined: Self = StObject.set(x, "buildTag", js.undefined)
+    
     inline def setChrome(value: Driver): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
     inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
@@ -1051,6 +1134,10 @@ object DesiredCapabilities {
     inline def setDeviceOrientationUndefined: Self = StObject.set(x, "deviceOrientation", js.undefined)
     
     inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    
+    inline def setDisableCorsRestrictions(value: Boolean): Self = StObject.set(x, "disableCorsRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setDisableCorsRestrictionsUndefined: Self = StObject.set(x, "disableCorsRestrictions", js.undefined)
     
     inline def setDontInjectRegex(value: js.RegExp): Self = StObject.set(x, "dontInjectRegex", value.asInstanceOf[js.Any])
     

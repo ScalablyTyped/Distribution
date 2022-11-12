@@ -116,6 +116,12 @@ object mod {
     trait BaseContext extends StObject {
       
       /**
+        * This is a special method that you can use to clear the cache for a specific key
+        * @param key The cache key you want to invalidate
+        */
+      def cashClear(key: String): Unit = js.native
+      
+      /**
         * This is how you enable a route to be cached. If you don't call await ctx.cashed(),
         * then this route will not be cached nor will it attempt to serve the request from the cache.
         *

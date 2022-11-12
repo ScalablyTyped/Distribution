@@ -32,6 +32,14 @@ trait TextRange
   val font: ShapeFont = js.native
   
   /**
+    * Returns the parent {@link PowerPoint.TextFrame} object that holds this `TextRange`.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentTextFrame(): TextFrame = js.native
+  
+  /**
     * Returns a `TextRange` object for the substring in the given range.
     *
     * @remarks
@@ -42,6 +50,15 @@ trait TextRange
     */
   def getSubstring(start: Double): TextRange = js.native
   def getSubstring(start: Double, length: Double): TextRange = js.native
+  
+  /**
+    * Gets or sets the length of the range that this `TextRange` represents.
+    Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  var length: Double = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -61,6 +78,23 @@ trait TextRange
     * [Api set: PowerPointApi 1.4]
     */
   val paragraphFormat: ParagraphFormat = js.native
+  
+  /**
+    * Selects this `TextRange` in the current view.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def setSelected(): Unit = js.native
+  
+  /**
+    * Gets or sets zero-based index, relative to the parent text frame, for the starting position of the range that this `TextRange` represents.
+    Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  var start: Double = js.native
   
   /**
     * Represents the plain text content of the text range.

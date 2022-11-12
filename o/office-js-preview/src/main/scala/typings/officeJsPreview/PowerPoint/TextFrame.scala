@@ -61,8 +61,7 @@ trait TextFrame
     * Returns the parent {@link PowerPoint.Shape} object that holds this `TextFrame`.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getParentShape(): Shape = js.native
   

@@ -54,12 +54,12 @@ trait LicenseManager extends Service {
   ): Request[CheckoutBorrowLicenseResponse, AWSError] = js.native
   
   /**
-    * Checks out the specified license.
+    * Checks out the specified license.  If the account that created the license is the same that is performing the check out, you must specify the account as the beneficiary. 
     */
   def checkoutLicense(): Request[CheckoutLicenseResponse, AWSError] = js.native
   def checkoutLicense(callback: js.Function2[/* err */ AWSError, /* data */ CheckoutLicenseResponse, Unit]): Request[CheckoutLicenseResponse, AWSError] = js.native
   /**
-    * Checks out the specified license.
+    * Checks out the specified license.  If the account that created the license is the same that is performing the check out, you must specify the account as the beneficiary. 
     */
   def checkoutLicense(params: CheckoutLicenseRequest): Request[CheckoutLicenseResponse, AWSError] = js.native
   def checkoutLicense(
@@ -543,6 +543,22 @@ trait LicenseManager extends Service {
   ): Request[ListReceivedGrantsResponse, AWSError] = js.native
   
   /**
+    * Lists the grants received for all accounts in the organization.
+    */
+  def listReceivedGrantsForOrganization(): Request[ListReceivedGrantsForOrganizationResponse, AWSError] = js.native
+  def listReceivedGrantsForOrganization(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedGrantsForOrganizationResponse, Unit]
+  ): Request[ListReceivedGrantsForOrganizationResponse, AWSError] = js.native
+  /**
+    * Lists the grants received for all accounts in the organization.
+    */
+  def listReceivedGrantsForOrganization(params: ListReceivedGrantsForOrganizationRequest): Request[ListReceivedGrantsForOrganizationResponse, AWSError] = js.native
+  def listReceivedGrantsForOrganization(
+    params: ListReceivedGrantsForOrganizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedGrantsForOrganizationResponse, Unit]
+  ): Request[ListReceivedGrantsForOrganizationResponse, AWSError] = js.native
+  
+  /**
     * Lists received licenses.
     */
   def listReceivedLicenses(): Request[ListReceivedLicensesResponse, AWSError] = js.native
@@ -555,6 +571,22 @@ trait LicenseManager extends Service {
     params: ListReceivedLicensesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedLicensesResponse, Unit]
   ): Request[ListReceivedLicensesResponse, AWSError] = js.native
+  
+  /**
+    * Lists the licenses received for all accounts in the organization.
+    */
+  def listReceivedLicensesForOrganization(): Request[ListReceivedLicensesForOrganizationResponse, AWSError] = js.native
+  def listReceivedLicensesForOrganization(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedLicensesForOrganizationResponse, Unit]
+  ): Request[ListReceivedLicensesForOrganizationResponse, AWSError] = js.native
+  /**
+    * Lists the licenses received for all accounts in the organization.
+    */
+  def listReceivedLicensesForOrganization(params: ListReceivedLicensesForOrganizationRequest): Request[ListReceivedLicensesForOrganizationResponse, AWSError] = js.native
+  def listReceivedLicensesForOrganization(
+    params: ListReceivedLicensesForOrganizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedLicensesForOrganizationResponse, Unit]
+  ): Request[ListReceivedLicensesForOrganizationResponse, AWSError] = js.native
   
   /**
     * Lists resources managed using Systems Manager inventory.

@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a collection of slides in the presentation.
   *
   * @remarks
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: PowerPointApi 1.5]
   */
 @js.native
 trait SlideScopedCollection
@@ -30,8 +29,7 @@ trait SlideScopedCollection
     * Gets the number of slides in the collection.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     * @returns The number of slides in the collection.
     */
   def getCount(): ClientResult[Double] = js.native
@@ -40,8 +38,7 @@ trait SlideScopedCollection
     * Gets a slide using its unique ID.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param key The ID of the slide.
     * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.
@@ -52,8 +49,7 @@ trait SlideScopedCollection
     * Gets a slide using its zero-based index in the collection.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param index The index of the slide in the collection.
     * @returns The slide at the given index. An error is thrown if index is out of range.
@@ -66,8 +62,7 @@ trait SlideScopedCollection
     and properties}.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param id The ID of the slide.
     * @returns The slide with the unique ID.

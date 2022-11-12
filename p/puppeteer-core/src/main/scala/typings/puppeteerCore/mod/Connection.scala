@@ -26,7 +26,7 @@ open class Connection protected () extends EventEmitter {
   /* private */ var `private`: Any = js.native
   
   @JSName("send")
-  def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotclearMessages, typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotdisable, typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotenable */ Any */](
+  def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotclearMessages, typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotdisable, typings.puppeteerCore.puppeteerCoreStrings.ConsoleDotenable */ Any */](
     method: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param paramArgs because its type ProtocolMapping.Commands[T]['paramsType'] is not an array type */ paramArgs: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'] */ js.Any
   ): js.Promise[

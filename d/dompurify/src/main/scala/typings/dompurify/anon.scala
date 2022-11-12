@@ -60,6 +60,8 @@ object anon {
     
     var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
+    var ALLOWED_NAMESPACES: js.UndefOr[js.Array[String]] = js.undefined
+    
     var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
     var ALLOWED_URI_REGEXP: js.UndefOr[js.RegExp] = js.undefined
@@ -156,6 +158,12 @@ object anon {
       inline def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
       
       inline def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value*))
+      
+      inline def setALLOWED_NAMESPACES(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_NAMESPACES", value.asInstanceOf[js.Any])
+      
+      inline def setALLOWED_NAMESPACESUndefined: Self = StObject.set(x, "ALLOWED_NAMESPACES", js.undefined)
+      
+      inline def setALLOWED_NAMESPACESVarargs(value: String*): Self = StObject.set(x, "ALLOWED_NAMESPACES", js.Array(value*))
       
       inline def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
       
@@ -268,6 +276,8 @@ object anon {
     
     var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
+    var ALLOWED_NAMESPACES: js.UndefOr[js.Array[String]] = js.undefined
+    
     var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
     var ALLOWED_URI_REGEXP: js.UndefOr[js.RegExp] = js.undefined
@@ -361,6 +371,12 @@ object anon {
       inline def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
       
       inline def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value*))
+      
+      inline def setALLOWED_NAMESPACES(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_NAMESPACES", value.asInstanceOf[js.Any])
+      
+      inline def setALLOWED_NAMESPACESUndefined: Self = StObject.set(x, "ALLOWED_NAMESPACES", js.undefined)
+      
+      inline def setALLOWED_NAMESPACESVarargs(value: String*): Self = StObject.set(x, "ALLOWED_NAMESPACES", js.Array(value*))
       
       inline def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
       
@@ -475,6 +491,8 @@ object anon {
     
     var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
+    var ALLOWED_NAMESPACES: js.UndefOr[js.Array[String]] = js.undefined
+    
     var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
     var ALLOWED_URI_REGEXP: js.UndefOr[js.RegExp] = js.undefined
@@ -568,6 +586,12 @@ object anon {
       inline def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
       
       inline def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value*))
+      
+      inline def setALLOWED_NAMESPACES(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_NAMESPACES", value.asInstanceOf[js.Any])
+      
+      inline def setALLOWED_NAMESPACESUndefined: Self = StObject.set(x, "ALLOWED_NAMESPACES", js.undefined)
+      
+      inline def setALLOWED_NAMESPACESVarargs(value: String*): Self = StObject.set(x, "ALLOWED_NAMESPACES", js.Array(value*))
       
       inline def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
       
@@ -682,6 +706,8 @@ object anon {
     
     var ALLOWED_ATTR: js.UndefOr[js.Array[String]] = js.undefined
     
+    var ALLOWED_NAMESPACES: js.UndefOr[js.Array[String]] = js.undefined
+    
     var ALLOWED_TAGS: js.UndefOr[js.Array[String]] = js.undefined
     
     var ALLOWED_URI_REGEXP: js.UndefOr[js.RegExp] = js.undefined
@@ -775,6 +801,12 @@ object anon {
       inline def setALLOWED_ATTRUndefined: Self = StObject.set(x, "ALLOWED_ATTR", js.undefined)
       
       inline def setALLOWED_ATTRVarargs(value: String*): Self = StObject.set(x, "ALLOWED_ATTR", js.Array(value*))
+      
+      inline def setALLOWED_NAMESPACES(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_NAMESPACES", value.asInstanceOf[js.Any])
+      
+      inline def setALLOWED_NAMESPACESUndefined: Self = StObject.set(x, "ALLOWED_NAMESPACES", js.undefined)
+      
+      inline def setALLOWED_NAMESPACESVarargs(value: String*): Self = StObject.set(x, "ALLOWED_NAMESPACES", js.Array(value*))
       
       inline def setALLOWED_TAGS(value: js.Array[String]): Self = StObject.set(x, "ALLOWED_TAGS", value.asInstanceOf[js.Any])
       

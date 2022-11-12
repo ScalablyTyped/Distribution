@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@paypal/paypal-js" : "5.1.1"
+      "@paypal/paypal-js" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@paypal/paypal-js" : "5.1.1"
+      "@paypal/paypal-js" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

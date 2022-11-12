@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-base64-node
 
-Typings are for version 3.208.0
+Typings are for version 3.209.0
 
 ## Library description:
 A Node.JS Base64 <-> UInt8Array converter

@@ -8,7 +8,11 @@ trait GetContainerForNodeRequest extends StObject {
   
   var containerName: js.UndefOr[String] = js.undefined
   
+  var logicalAxes: js.UndefOr[LogicalAxes] = js.undefined
+  
   var nodeId: NodeId
+  
+  var physicalAxes: js.UndefOr[PhysicalAxes] = js.undefined
 }
 object GetContainerForNodeRequest {
   
@@ -23,6 +27,14 @@ object GetContainerForNodeRequest {
     
     inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
+    inline def setLogicalAxes(value: LogicalAxes): Self = StObject.set(x, "logicalAxes", value.asInstanceOf[js.Any])
+    
+    inline def setLogicalAxesUndefined: Self = StObject.set(x, "logicalAxes", js.undefined)
+    
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicalAxes(value: PhysicalAxes): Self = StObject.set(x, "physicalAxes", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicalAxesUndefined: Self = StObject.set(x, "physicalAxes", js.undefined)
   }
 }

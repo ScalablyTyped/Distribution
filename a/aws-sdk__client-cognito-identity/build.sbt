@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-cognito-identity"
-version := "3.208.0-a1a36a"
+version := "3.209.0-e8d37a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.208.0-54d092",
   "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.208.0-137956",
   "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.208.0-73cef6",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.208.0-707075",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.209.0-7dd4f2",
   "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
-  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.208.0-c6269c",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.209.0-baa626",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

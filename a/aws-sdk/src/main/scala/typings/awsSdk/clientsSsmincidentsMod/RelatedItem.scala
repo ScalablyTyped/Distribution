@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelatedItem extends StObject {
   
   /**
+    * A unique ID for a RelatedItem.  Don't specify this parameter when you add a RelatedItem by using the UpdateRelatedItems API action. 
+    */
+  var generatedId: js.UndefOr[GeneratedId] = js.undefined
+  
+  /**
     * Details about the related item.
     */
   var identifier: ItemIdentifier
@@ -24,6 +29,10 @@ object RelatedItem {
   }
   
   extension [Self <: RelatedItem](x: Self) {
+    
+    inline def setGeneratedId(value: GeneratedId): Self = StObject.set(x, "generatedId", value.asInstanceOf[js.Any])
+    
+    inline def setGeneratedIdUndefined: Self = StObject.set(x, "generatedId", js.undefined)
     
     inline def setIdentifier(value: ItemIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

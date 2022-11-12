@@ -2366,6 +2366,22 @@ trait Iot extends Service {
   ): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
   
   /**
+    * The related resources of an Audit finding. The following resources can be returned from calling this API:   DEVICE_CERTIFICATE   CA_CERTIFICATE   IOT_POLICY   COGNITO_IDENTITY_POOL   CLIENT_ID   ACCOUNT_SETTINGS   ROLE_ALIAS   IAM_ROLE   ISSUER_CERTIFICATE    This API is similar to DescribeAuditFinding's RelatedResources but provides pagination and is not limited to 10 resources. When calling DescribeAuditFinding for the intermediate CA revoked for active device certificates check, RelatedResources will not be populated. You must use this API, ListRelatedResourcesForAuditFinding, to list the certificates. 
+    */
+  def listRelatedResourcesForAuditFinding(): Request[ListRelatedResourcesForAuditFindingResponse, AWSError] = js.native
+  def listRelatedResourcesForAuditFinding(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRelatedResourcesForAuditFindingResponse, Unit]
+  ): Request[ListRelatedResourcesForAuditFindingResponse, AWSError] = js.native
+  /**
+    * The related resources of an Audit finding. The following resources can be returned from calling this API:   DEVICE_CERTIFICATE   CA_CERTIFICATE   IOT_POLICY   COGNITO_IDENTITY_POOL   CLIENT_ID   ACCOUNT_SETTINGS   ROLE_ALIAS   IAM_ROLE   ISSUER_CERTIFICATE    This API is similar to DescribeAuditFinding's RelatedResources but provides pagination and is not limited to 10 resources. When calling DescribeAuditFinding for the intermediate CA revoked for active device certificates check, RelatedResources will not be populated. You must use this API, ListRelatedResourcesForAuditFinding, to list the certificates. 
+    */
+  def listRelatedResourcesForAuditFinding(params: ListRelatedResourcesForAuditFindingRequest): Request[ListRelatedResourcesForAuditFindingResponse, AWSError] = js.native
+  def listRelatedResourcesForAuditFinding(
+    params: ListRelatedResourcesForAuditFindingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRelatedResourcesForAuditFindingResponse, Unit]
+  ): Request[ListRelatedResourcesForAuditFindingResponse, AWSError] = js.native
+  
+  /**
     * Lists the role aliases registered in your account. Requires permission to access the ListRoleAliases action.
     */
   def listRoleAliases(): Request[ListRoleAliasesResponse, AWSError] = js.native
@@ -2564,12 +2580,12 @@ trait Iot extends Service {
   ): Request[ListThingTypesResponse, AWSError] = js.native
   
   /**
-    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red.  Requires permission to access the ListThings action.  You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
+    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. For more information, see List Things from the Amazon Web Services IoT Core Developer Guide. Requires permission to access the ListThings action.  You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
     */
   def listThings(): Request[ListThingsResponse, AWSError] = js.native
   def listThings(callback: js.Function2[/* err */ AWSError, /* data */ ListThingsResponse, Unit]): Request[ListThingsResponse, AWSError] = js.native
   /**
-    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red.  Requires permission to access the ListThings action.  You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
+    * Lists your things. Use the attributeName and attributeValue parameters to filter your things. For example, calling ListThings with attributeName=Color and attributeValue=Red retrieves all things in the registry that contain an attribute Color with the value Red. For more information, see List Things from the Amazon Web Services IoT Core Developer Guide. Requires permission to access the ListThings action.  You will not be charged for calling this API if an Access denied error is returned. You will also not be charged if no attributes or pagination token was provided in request and no pagination token and no results were returned. 
     */
   def listThings(params: ListThingsRequest): Request[ListThingsResponse, AWSError] = js.native
   def listThings(

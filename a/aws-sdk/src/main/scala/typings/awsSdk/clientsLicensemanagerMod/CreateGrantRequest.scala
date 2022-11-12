@@ -32,7 +32,7 @@ trait CreateGrantRequest extends StObject {
   var LicenseArn: Arn
   
   /**
-    * The grant principals.
+    * The grant principals. This value should be specified as an Amazon Resource Name (ARN).
     */
   var Principals: PrincipalArnList
 }

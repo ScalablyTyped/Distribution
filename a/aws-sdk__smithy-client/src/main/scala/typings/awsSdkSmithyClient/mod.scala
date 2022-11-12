@@ -45,6 +45,11 @@ object mod {
     inline def fromObject(`object`: Any): typings.awsSdkSmithyClient.distTypesLazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.distTypesLazyJsonMod.LazyJsonString]
   }
   
+  @JSImport("@aws-sdk/smithy-client", "NoOpLogger")
+  @js.native
+  open class NoOpLogger ()
+    extends typings.awsSdkSmithyClient.distTypesNoOpLoggerMod.NoOpLogger
+  
   @JSImport("@aws-sdk/smithy-client", "SENSITIVE_STRING")
   @js.native
   val SENSITIVE_STRING: /* "***SensitiveInformation***" */ String = js.native

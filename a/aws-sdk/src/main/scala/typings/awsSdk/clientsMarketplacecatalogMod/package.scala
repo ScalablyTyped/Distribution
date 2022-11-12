@@ -68,6 +68,8 @@ type NextToken = String
 
 type RequestedChangeList = js.Array[Change]
 
+type ResourceARN = String
+
 type ResourceId = String
 
 type ResourceIdList = js.Array[ResourceId]
@@ -80,6 +82,14 @@ type SortBy = String
   - java.lang.String
 */
 type SortOrder = _SortOrder | String
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
+
+type TagValue = String
 
 type ValueList = js.Array[FilterValueContent]
 

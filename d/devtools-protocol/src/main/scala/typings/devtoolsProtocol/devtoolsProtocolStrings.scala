@@ -35,6 +35,8 @@ import typings.devtoolsProtocol.mod.Protocol.Console.ConsoleMessageLevel
 import typings.devtoolsProtocol.mod.Protocol.Console.ConsoleMessageSource
 import typings.devtoolsProtocol.mod.Protocol.DOM.CompatibilityMode
 import typings.devtoolsProtocol.mod.Protocol.DOM.EnableRequestIncludeWhitespace
+import typings.devtoolsProtocol.mod.Protocol.DOM.LogicalAxes
+import typings.devtoolsProtocol.mod.Protocol.DOM.PhysicalAxes
 import typings.devtoolsProtocol.mod.Protocol.DOM.PseudoType
 import typings.devtoolsProtocol.mod.Protocol.DOM.ShadowRootType
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.CSPViolationType
@@ -337,6 +339,12 @@ object devtoolsProtocolStrings {
   inline def Beacon: Beacon = "Beacon".asInstanceOf[Beacon]
   
   @js.native
+  sealed trait Block
+    extends StObject
+       with LogicalAxes
+  inline def Block: Block = "Block".asInstanceOf[Block]
+  
+  @js.native
   sealed trait BlockFromInsecureToMorePrivate
     extends StObject
        with PrivateNetworkRequestPolicy
@@ -372,6 +380,13 @@ object devtoolsProtocolStrings {
     extends StObject
        with InspectorIssueCode
   inline def BlockedByResponseIssue: BlockedByResponseIssue = "BlockedByResponseIssue".asInstanceOf[BlockedByResponseIssue]
+  
+  @js.native
+  sealed trait Both
+    extends StObject
+       with LogicalAxes
+       with PhysicalAxes
+  inline def Both: Both = "Both".asInstanceOf[Both]
   
   @js.native
   sealed trait BroadcastChannel
@@ -1260,6 +1275,12 @@ object devtoolsProtocolStrings {
   inline def High: High = "High".asInstanceOf[High]
   
   @js.native
+  sealed trait Horizontal
+    extends StObject
+       with PhysicalAxes
+  inline def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
+  
+  @js.native
   sealed trait HostCandidateAttributeGetter
     extends StObject
        with DeprecationIssueType
@@ -1367,6 +1388,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def InjectedStyleSheet: InjectedStyleSheet = "InjectedStyleSheet".asInstanceOf[InjectedStyleSheet]
+  
+  @js.native
+  sealed trait Inline
+    extends StObject
+       with LogicalAxes
+  inline def Inline: Inline = "Inline".asInstanceOf[Inline]
   
   @js.native
   sealed trait Insecure
@@ -3119,6 +3146,12 @@ object devtoolsProtocolStrings {
   inline def ValidTokenNotProvided: ValidTokenNotProvided = "ValidTokenNotProvided".asInstanceOf[ValidTokenNotProvided]
   
   @js.native
+  sealed trait Vertical
+    extends StObject
+       with PhysicalAxes
+  inline def Vertical: Vertical = "Vertical".asInstanceOf[Vertical]
+  
+  @js.native
   sealed trait VeryHigh
     extends StObject
        with ResourcePriority
@@ -3786,10 +3819,10 @@ object devtoolsProtocolStrings {
   inline def ble: ble = "ble".asInstanceOf[ble]
   
   @js.native
-  sealed trait block
+  sealed trait block_
     extends StObject
        with ScopeType
-  inline def block: block = "block".asInstanceOf[block]
+  inline def block_ : block_ = "block".asInstanceOf[block_]
   
   @js.native
   sealed trait blockable
@@ -3932,6 +3965,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ScopeType
   inline def `catch`: `catch` = "catch".asInstanceOf[`catch`]
+  
+  @js.native
+  sealed trait caught
+    extends StObject
+       with SetPauseOnExceptionsRequestState
+  inline def caught: caught = "caught".asInstanceOf[caught]
   
   @js.native
   sealed trait cellular2g
@@ -5086,10 +5125,10 @@ object devtoolsProtocolStrings {
   inline def highlight: highlight = "highlight".asInstanceOf[highlight]
   
   @js.native
-  sealed trait horizontal
+  sealed trait horizontal_
     extends StObject
        with DisplayFeatureOrientation
-  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal_ : horizontal_ = "horizontal".asInstanceOf[horizontal_]
   
   @js.native
   sealed trait hsl
@@ -5597,6 +5636,12 @@ object devtoolsProtocolStrings {
   inline def `local-fonts`: `local-fonts` = "local-fonts".asInstanceOf[`local-fonts`]
   
   @js.native
+  sealed trait localFonts
+    extends StObject
+       with PermissionType
+  inline def localFonts: localFonts = "localFonts".asInstanceOf[localFonts]
+  
+  @js.native
   sealed trait local_
     extends StObject
        with ScopeType
@@ -5824,10 +5869,6 @@ object devtoolsProtocolStrings {
   @js.native
   sealed trait navigatedWithinDocument extends StObject
   inline def navigatedWithinDocument: navigatedWithinDocument = "navigatedWithinDocument".asInstanceOf[navigatedWithinDocument]
-  
-  @js.native
-  sealed trait needsBeginFramesChanged extends StObject
-  inline def needsBeginFramesChanged: needsBeginFramesChanged = "needsBeginFramesChanged".asInstanceOf[needsBeginFramesChanged]
   
   @js.native
   sealed trait network
@@ -6091,36 +6132,6 @@ object devtoolsProtocolStrings {
   inline def owns: owns = "owns".asInstanceOf[owns]
   
   @js.native
-  sealed trait `page-transition`
-    extends StObject
-       with PseudoType
-  inline def `page-transition`: `page-transition` = "page-transition".asInstanceOf[`page-transition`]
-  
-  @js.native
-  sealed trait `page-transition-container`
-    extends StObject
-       with PseudoType
-  inline def `page-transition-container`: `page-transition-container` = "page-transition-container".asInstanceOf[`page-transition-container`]
-  
-  @js.native
-  sealed trait `page-transition-image-wrapper`
-    extends StObject
-       with PseudoType
-  inline def `page-transition-image-wrapper`: `page-transition-image-wrapper` = "page-transition-image-wrapper".asInstanceOf[`page-transition-image-wrapper`]
-  
-  @js.native
-  sealed trait `page-transition-incoming-image`
-    extends StObject
-       with PseudoType
-  inline def `page-transition-incoming-image`: `page-transition-incoming-image` = "page-transition-incoming-image".asInstanceOf[`page-transition-incoming-image`]
-  
-  @js.native
-  sealed trait `page-transition-outgoing-image`
-    extends StObject
-       with PseudoType
-  inline def `page-transition-outgoing-image`: `page-transition-outgoing-image` = "page-transition-outgoing-image".asInstanceOf[`page-transition-outgoing-image`]
-  
-  @js.native
   sealed trait pageBlockInterstitial
     extends StObject
        with ClientNavigationReason
@@ -6284,7 +6295,6 @@ object devtoolsProtocolStrings {
   sealed trait prompt
     extends StObject
        with DialogType
-       with PermissionSetting
   inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
@@ -6886,6 +6896,12 @@ object devtoolsProtocolStrings {
   inline def `storage-access`: `storage-access` = "storage-access".asInstanceOf[`storage-access`]
   
   @js.native
+  sealed trait storageAccess
+    extends StObject
+       with PermissionType
+  inline def storageAccess: storageAccess = "storageAccess".asInstanceOf[storageAccess]
+  
+  @js.native
   sealed trait `strict-origin`
     extends StObject
        with RequestReferrerPolicy
@@ -7277,16 +7293,16 @@ object devtoolsProtocolStrings {
   inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
-  sealed trait vertical
-    extends StObject
-       with DisplayFeatureOrientation
-  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
-  
-  @js.native
   sealed trait `vertical-scroll`
     extends StObject
        with PermissionsPolicyFeature
   inline def `vertical-scroll`: `vertical-scroll` = "vertical-scroll".asInstanceOf[`vertical-scroll`]
+  
+  @js.native
+  sealed trait vertical_
+    extends StObject
+       with DisplayFeatureOrientation
+  inline def vertical_ : vertical_ = "vertical".asInstanceOf[vertical_]
   
   @js.native
   sealed trait videoCapture
@@ -7299,6 +7315,36 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionType
   inline def videoCapturePanTiltZoom: videoCapturePanTiltZoom = "videoCapturePanTiltZoom".asInstanceOf[videoCapturePanTiltZoom]
+  
+  @js.native
+  sealed trait `view-transition`
+    extends StObject
+       with PseudoType
+  inline def `view-transition`: `view-transition` = "view-transition".asInstanceOf[`view-transition`]
+  
+  @js.native
+  sealed trait `view-transition-group`
+    extends StObject
+       with PseudoType
+  inline def `view-transition-group`: `view-transition-group` = "view-transition-group".asInstanceOf[`view-transition-group`]
+  
+  @js.native
+  sealed trait `view-transition-image-pair`
+    extends StObject
+       with PseudoType
+  inline def `view-transition-image-pair`: `view-transition-image-pair` = "view-transition-image-pair".asInstanceOf[`view-transition-image-pair`]
+  
+  @js.native
+  sealed trait `view-transition-new`
+    extends StObject
+       with PseudoType
+  inline def `view-transition-new`: `view-transition-new` = "view-transition-new".asInstanceOf[`view-transition-new`]
+  
+  @js.native
+  sealed trait `view-transition-old`
+    extends StObject
+       with PseudoType
+  inline def `view-transition-old`: `view-transition-old` = "view-transition-old".asInstanceOf[`view-transition-old`]
   
   @js.native
   sealed trait violation
@@ -7466,6 +7512,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionsPolicyFeature
   inline def `window-placement`: `window-placement` = "window-placement".asInstanceOf[`window-placement`]
+  
+  @js.native
+  sealed trait windowManagement
+    extends StObject
+       with PermissionType
+  inline def windowManagement: windowManagement = "windowManagement".asInstanceOf[windowManagement]
   
   @js.native
   sealed trait windowOpen extends StObject

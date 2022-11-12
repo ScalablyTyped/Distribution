@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-defaults-mode-node"
-version := "3.208.0-4b4350"
+version := "3.209.0-b2108c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.208.0-62bd6b",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.208.0-64edc2",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.208.0-707075",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.209.0-9ba2e9",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.209.0-05f31a",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.209.0-7dd4f2",
   "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")

@@ -17,6 +17,9 @@ import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.StatusChangedBy
 import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.UserExperienceFlow
 import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod._Category
 import typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.FUNDING_SOURCE
+import typings.paypalPaypalJs.typesComponentsHostedFieldsMod.HostedFieldEventType
+import typings.paypalPaypalJs.typesComponentsHostedFieldsMod.HostedFieldsCardTypeName
+import typings.paypalPaypalJs.typesComponentsHostedFieldsMod.HostedFieldsHostedFieldsFieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -3579,6 +3582,12 @@ object paypalPaypalJsStrings {
   inline def alternative: alternative = "alternative".asInstanceOf[alternative]
   
   @js.native
+  sealed trait amex
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def amex: amex = "amex".asInstanceOf[amex]
+  
+  @js.native
   sealed trait applepay
     extends StObject
        with FUNDING_SOURCE
@@ -3605,6 +3614,12 @@ object paypalPaypalJsStrings {
   inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
+  sealed trait blur
+    extends StObject
+       with HostedFieldEventType
+  inline def blur: blur = "blur".asInstanceOf[blur]
+  
+  @js.native
   sealed trait boletobancario
     extends StObject
        with FUNDING_SOURCE
@@ -3619,6 +3634,18 @@ object paypalPaypalJsStrings {
     extends StObject
        with FUNDING_SOURCE
   inline def card: card = "card".asInstanceOf[card]
+  
+  @js.native
+  sealed trait cardTypeChange
+    extends StObject
+       with HostedFieldEventType
+  inline def cardTypeChange: cardTypeChange = "cardTypeChange".asInstanceOf[cardTypeChange]
+  
+  @js.native
+  sealed trait cardholderName
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def cardholderName: cardholderName = "cardholderName".asInstanceOf[cardholderName]
   
   @js.native
   sealed trait cart extends StObject
@@ -3647,8 +3674,32 @@ object paypalPaypalJsStrings {
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
+  sealed trait cvv
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def cvv: cvv = "cvv".asInstanceOf[cvv]
+  
+  @js.native
+  sealed trait discover
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def discover: discover = "discover".asInstanceOf[discover]
+  
+  @js.native
   sealed trait donate extends StObject
   inline def donate: donate = "donate".asInstanceOf[donate]
+  
+  @js.native
+  sealed trait elo
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def elo: elo = "elo".asInstanceOf[elo]
+  
+  @js.native
+  sealed trait empty
+    extends StObject
+       with HostedFieldEventType
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait eps
@@ -3657,8 +3708,32 @@ object paypalPaypalJsStrings {
   inline def eps: eps = "eps".asInstanceOf[eps]
   
   @js.native
+  sealed trait expirationDate
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def expirationDate: expirationDate = "expirationDate".asInstanceOf[expirationDate]
+  
+  @js.native
+  sealed trait expirationMonth
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def expirationMonth: expirationMonth = "expirationMonth".asInstanceOf[expirationMonth]
+  
+  @js.native
+  sealed trait expirationYear
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def expirationYear: expirationYear = "expirationYear".asInstanceOf[expirationYear]
+  
+  @js.native
   sealed trait flex extends StObject
   inline def flex: flex = "flex".asInstanceOf[flex]
+  
+  @js.native
+  sealed trait focus
+    extends StObject
+       with HostedFieldEventType
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait giropay
@@ -3673,6 +3748,12 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait grayscale extends StObject
   inline def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
+  
+  @js.native
+  sealed trait hiper
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def hiper: hiper = "hiper".asInstanceOf[hiper]
   
   @js.native
   sealed trait home extends StObject
@@ -3693,6 +3774,12 @@ object paypalPaypalJsStrings {
   inline def inline_ : inline_ = "inline".asInstanceOf[inline_]
   
   @js.native
+  sealed trait inputSubmitRequest
+    extends StObject
+       with HostedFieldEventType
+  inline def inputSubmitRequest: inputSubmitRequest = "inputSubmitRequest".asInstanceOf[inputSubmitRequest]
+  
+  @js.native
   sealed trait installment extends StObject
   inline def installment: installment = "installment".asInstanceOf[installment]
   
@@ -3703,8 +3790,20 @@ object paypalPaypalJsStrings {
   inline def itau: itau = "itau".asInstanceOf[itau]
   
   @js.native
+  sealed trait jcb
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def jcb: jcb = "jcb".asInstanceOf[jcb]
+  
+  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait mastercard
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
   
   @js.native
   sealed trait maxima
@@ -3737,6 +3836,18 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait none_ extends StObject
   inline def none_ : none_ = "none".asInstanceOf[none_]
+  
+  @js.native
+  sealed trait notEmpty
+    extends StObject
+       with HostedFieldEventType
+  inline def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
+  
+  @js.native
+  sealed trait number
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait oxxo
@@ -3779,6 +3890,12 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait pill extends StObject
   inline def pill: pill = "pill".asInstanceOf[pill]
+  
+  @js.native
+  sealed trait postalCode
+    extends StObject
+       with HostedFieldsHostedFieldsFieldName
+  inline def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
   @js.native
   sealed trait primary extends StObject
@@ -3831,6 +3948,12 @@ object paypalPaypalJsStrings {
   inline def trustly: trustly = "trustly".asInstanceOf[trustly]
   
   @js.native
+  sealed trait validityChange
+    extends StObject
+       with HostedFieldEventType
+  inline def validityChange: validityChange = "validityChange".asInstanceOf[validityChange]
+  
+  @js.native
   sealed trait venmo
     extends StObject
        with FUNDING_SOURCE
@@ -3845,6 +3968,12 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait visa
+    extends StObject
+       with HostedFieldsCardTypeName
+  inline def visa: visa = "visa".asInstanceOf[visa]
   
   @js.native
   sealed trait wechatpay

@@ -1,7 +1,7 @@
 
 # Scala.js typings for set-error-message
 
-Typings are for version 1.3.1
+Typings are for version 1.5.0
 
 
 

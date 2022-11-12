@@ -12,6 +12,11 @@ trait EventSummary extends StObject {
   var eventId: UUID
   
   /**
+    * A list of references in a TimelineEvent.
+    */
+  var eventReferences: js.UndefOr[EventReferenceList] = js.undefined
+  
+  /**
     * The time that the event occurred.
     */
   var eventTime: js.Date
@@ -47,6 +52,12 @@ object EventSummary {
   extension [Self <: EventSummary](x: Self) {
     
     inline def setEventId(value: UUID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    
+    inline def setEventReferences(value: EventReferenceList): Self = StObject.set(x, "eventReferences", value.asInstanceOf[js.Any])
+    
+    inline def setEventReferencesUndefined: Self = StObject.set(x, "eventReferences", js.undefined)
+    
+    inline def setEventReferencesVarargs(value: EventReference*): Self = StObject.set(x, "eventReferences", js.Array(value*))
     
     inline def setEventTime(value: js.Date): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     

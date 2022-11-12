@@ -23,11 +23,16 @@ object CacheStorage {
       * Security origin of the cache.
       */
     var securityOrigin: String
+    
+    /**
+      * Storage key of the cache.
+      */
+    var storageKey: String
   }
   object Cache {
     
-    inline def apply(cacheId: CacheId, cacheName: String, securityOrigin: String): Cache = {
-      val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any], cacheName = cacheName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
+    inline def apply(cacheId: CacheId, cacheName: String, securityOrigin: String, storageKey: String): Cache = {
+      val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any], cacheName = cacheName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
     
@@ -38,6 +43,8 @@ object CacheStorage {
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
       inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     }
   }
   

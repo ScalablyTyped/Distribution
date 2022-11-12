@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-color-matrix
 
-Typings are for version 7.0.3
+Typings are for version 7.0.4
 
 ## Library description:
 Filter that lets you change RGBA via a 5x4 matrix transformation

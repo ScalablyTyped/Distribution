@@ -45,6 +45,54 @@ trait Shape
   val fill: ShapeFill = js.native
   
   /**
+    * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. Throws an exception if this shape does not belong to a `Slide`.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlide(): Slide = js.native
+  
+  /**
+    * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideLayout`.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlideLayout(): SlideLayout = js.native
+  
+  /**
+    * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. If this shape does not belong to a `SlideLayout`, an object with an `isNullObject` property set to `true` is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlideLayoutOrNullObject(): SlideLayout = js.native
+  
+  /**
+    * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideMaster`.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlideMaster(): SlideMaster = js.native
+  
+  /**
+    * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. If this shape does not belong to a `SlideMaster`, an object with an `isNullObject` property set to `true` is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlideMasterOrNullObject(): SlideMaster = js.native
+  
+  /**
+    * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. If this shape does not belong to a `Slide`, an object with an `isNullObject` property set to `true` is returned.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  def getParentSlideOrNullObject(): Slide = js.native
+  
+  /**
     * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
     *
     * @remarks

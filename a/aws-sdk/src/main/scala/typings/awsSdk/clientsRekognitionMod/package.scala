@@ -129,7 +129,20 @@ type DateTime = js.Date
 
 type Degree = Double
 
+type DetectLabelsFeatureList = js.Array[DetectLabelsFeatureName]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GENERAL_LABELS
+  - typings.awsSdk.awsSdkStrings.IMAGE_PROPERTIES
+  - java.lang.String
+*/
+type DetectLabelsFeatureName = _DetectLabelsFeatureName | java.lang.String
+
+type DetectLabelsMaxDominantColors = Double
+
 type DistributeDatasetMetadataList = js.Array[DistributeDataset]
+
+type DominantColors = js.Array[DominantColor]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HAPPY
@@ -194,6 +207,10 @@ type FlowDefinitionArn = java.lang.String
 */
 type GenderType = _GenderType | java.lang.String
 
+type GeneralLabelsFilterList = js.Array[GeneralLabelsFilterValue]
+
+type GeneralLabelsFilterValue = java.lang.String
+
 type GroundTruthBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 type HasErrors = scala.Boolean
@@ -240,6 +257,10 @@ type KmsKeyId = java.lang.String
   - java.lang.String
 */
 type KnownGenderType = _KnownGenderType | java.lang.String
+
+type LabelAliases = js.Array[LabelAlias]
+
+type LabelCategories = js.Array[LabelCategory]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAME

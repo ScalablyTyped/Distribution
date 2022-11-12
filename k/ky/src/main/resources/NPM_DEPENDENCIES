@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ky" : "0.31.4"
+      "ky" : "0.32.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ky" : "0.31.4"
+      "ky" : "0.32.2"
     }
   ],
   "compile-devDependencies" : [

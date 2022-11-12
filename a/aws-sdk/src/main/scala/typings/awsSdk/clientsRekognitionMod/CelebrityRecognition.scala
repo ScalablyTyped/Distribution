@@ -12,7 +12,7 @@ trait CelebrityRecognition extends StObject {
   var Celebrity: js.UndefOr[CelebrityDetail] = js.undefined
   
   /**
-    * The time, in milliseconds from the start of the video, that the celebrity was recognized.
+    * The time, in milliseconds from the start of the video, that the celebrity was recognized. Note that Timestamp is not guaranteed to be accurate to the individual frame where the celebrity first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

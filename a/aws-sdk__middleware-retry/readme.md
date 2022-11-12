@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-retry
 
-Typings are for version 3.208.0
+Typings are for version 3.209.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-retry/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-retry) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-retry.svg)](https://www.npmjs.com/package/@aws

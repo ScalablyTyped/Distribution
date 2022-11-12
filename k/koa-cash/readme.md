@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-cash
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 HTTP response caching for Koa. HTTP response caching for Koa.  Supports Redis, in-memory store, and more!

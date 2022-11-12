@@ -15,6 +15,11 @@ trait Instance extends StObject {
     * The confidence that Amazon Rekognition has in the accuracy of the bounding box.
     */
   var Confidence: js.UndefOr[Percent] = js.undefined
+  
+  /**
+    * The dominant colors found in an individual instance of a label.
+    */
+  var DominantColors: js.UndefOr[typings.awsSdk.clientsRekognitionMod.DominantColors] = js.undefined
 }
 object Instance {
   
@@ -32,5 +37,11 @@ object Instance {
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    
+    inline def setDominantColors(value: DominantColors): Self = StObject.set(x, "DominantColors", value.asInstanceOf[js.Any])
+    
+    inline def setDominantColorsUndefined: Self = StObject.set(x, "DominantColors", js.undefined)
+    
+    inline def setDominantColorsVarargs(value: DominantColor*): Self = StObject.set(x, "DominantColors", js.Array(value*))
   }
 }

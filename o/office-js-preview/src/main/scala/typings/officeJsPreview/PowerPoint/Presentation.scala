@@ -26,8 +26,7 @@ trait Presentation
     If no shapes are selected, an empty collection is returned.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getSelectedShapes(): ShapeScopedCollection = js.native
   
@@ -37,8 +36,7 @@ trait Presentation
     If no slides are selected, an empty collection is returned.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getSelectedSlides(): SlideScopedCollection = js.native
   
@@ -47,8 +45,7 @@ trait Presentation
     Throws an exception if no text is selected.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getSelectedTextRange(): TextRange = js.native
   
@@ -57,8 +54,7 @@ trait Presentation
     If no text is selected, an object with an `isNullObject` property set to `true` is returned.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getSelectedTextRangeOrNullObject(): TextRange = js.native
   
@@ -89,8 +85,7 @@ trait Presentation
     * Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new selection.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param slideIds List of slide IDs to select in the presentation. If the list is empty, selection is cleared.
     */

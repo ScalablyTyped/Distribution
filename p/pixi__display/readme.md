@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__display
 
-Typings are for version 7.0.3
+Typings are for version 7.0.4
 
 ## Library description:
 Core display functionality

@@ -1136,10 +1136,6 @@ object chromeRemoteInterfaceStrings {
   inline def HeadlessExperimentalDotenable: HeadlessExperimentalDotenable = "HeadlessExperimental.enable".asInstanceOf[HeadlessExperimentalDotenable]
   
   @js.native
-  sealed trait HeadlessExperimentalDotneedsBeginFramesChanged extends StObject
-  inline def HeadlessExperimentalDotneedsBeginFramesChanged: HeadlessExperimentalDotneedsBeginFramesChanged = "HeadlessExperimental.needsBeginFramesChanged".asInstanceOf[HeadlessExperimentalDotneedsBeginFramesChanged]
-  
-  @js.native
   sealed trait HeapProfilerDotaddHeapSnapshotChunk extends StObject
   inline def HeapProfilerDotaddHeapSnapshotChunk: HeapProfilerDotaddHeapSnapshotChunk = "HeapProfiler.addHeapSnapshotChunk".asInstanceOf[HeapProfilerDotaddHeapSnapshotChunk]
   
@@ -2508,8 +2504,16 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotclearDataForStorageKey: StorageDotclearDataForStorageKey = "Storage.clearDataForStorageKey".asInstanceOf[StorageDotclearDataForStorageKey]
   
   @js.native
+  sealed trait StorageDotclearSharedStorageEntries extends StObject
+  inline def StorageDotclearSharedStorageEntries: StorageDotclearSharedStorageEntries = "Storage.clearSharedStorageEntries".asInstanceOf[StorageDotclearSharedStorageEntries]
+  
+  @js.native
   sealed trait StorageDotclearTrustTokens extends StObject
   inline def StorageDotclearTrustTokens: StorageDotclearTrustTokens = "Storage.clearTrustTokens".asInstanceOf[StorageDotclearTrustTokens]
+  
+  @js.native
+  sealed trait StorageDotdeleteSharedStorageEntry extends StObject
+  inline def StorageDotdeleteSharedStorageEntry: StorageDotdeleteSharedStorageEntry = "Storage.deleteSharedStorageEntry".asInstanceOf[StorageDotdeleteSharedStorageEntry]
   
   @js.native
   sealed trait StorageDotgetCookies extends StObject
@@ -2562,6 +2566,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait StorageDotsetInterestGroupTracking extends StObject
   inline def StorageDotsetInterestGroupTracking: StorageDotsetInterestGroupTracking = "Storage.setInterestGroupTracking".asInstanceOf[StorageDotsetInterestGroupTracking]
+  
+  @js.native
+  sealed trait StorageDotsetSharedStorageEntry extends StObject
+  inline def StorageDotsetSharedStorageEntry: StorageDotsetSharedStorageEntry = "Storage.setSharedStorageEntry".asInstanceOf[StorageDotsetSharedStorageEntry]
   
   @js.native
   sealed trait StorageDotsetSharedStorageTracking extends StObject

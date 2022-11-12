@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodegit"
-version := "0.27-dt-20220705Z-77bbdb"
+version := "0.28-dt-20221111Z-166b80"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "log-process-errors"
-version := "10.1.1-2b6947"
+version := "10.2.0-f67118"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

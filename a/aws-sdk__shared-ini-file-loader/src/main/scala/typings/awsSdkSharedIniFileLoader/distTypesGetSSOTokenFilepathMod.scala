@@ -10,5 +10,5 @@ object distTypesGetSSOTokenFilepathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSSOTokenFilepath(ssoStartUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFilepath")(ssoStartUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSSOTokenFilepath(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSSOTokenFilepath")(id.asInstanceOf[js.Any]).asInstanceOf[String]
 }

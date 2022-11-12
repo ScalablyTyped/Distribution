@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-noise
 
-Typings are for version 7.0.3
+Typings are for version 7.0.4
 
 ## Library description:
 Filter that applies noise to a display object

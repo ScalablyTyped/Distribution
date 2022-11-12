@@ -12,7 +12,7 @@ trait TextDetectionResult extends StObject {
   var TextDetection: js.UndefOr[typings.awsSdk.clientsRekognitionMod.TextDetection] = js.undefined
   
   /**
-    * The time, in milliseconds from the start of the video, that the text was detected.
+    * The time, in milliseconds from the start of the video, that the text was detected. Note that Timestamp is not guaranteed to be accurate to the individual frame where the text first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

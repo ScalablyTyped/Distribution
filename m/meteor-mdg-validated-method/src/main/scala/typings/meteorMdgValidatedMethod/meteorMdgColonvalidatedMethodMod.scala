@@ -23,13 +23,12 @@ object meteorMdgColonvalidatedMethodMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TFunc extends (args : infer TArgs): any ? TArgs extends [infer TArg] ? TArg : meteor-mdg-validated-method.meteor/mdg:validated-method.NoArguments : never
     }}}
     */
-  @js.native
-  trait Argument[TFunc] extends StObject
+  type Argument[TFunc] = NoArguments
   
   type GenericMixin = js.Function1[
     /* options */ ValidatedMethodOptions[String, js.Function1[/* repeated */ Any, Any]], 
@@ -45,7 +44,7 @@ object meteorMdgColonvalidatedMethodMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TFunc extends (args : ...any): infer TReturn ? TReturn : never
     }}}
@@ -55,17 +54,16 @@ object meteorMdgColonvalidatedMethodMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends meteor-mdg-validated-method.meteor/mdg:validated-method.ValidatedMethod<string, infer TRun> ? meteor-mdg-validated-method.meteor/mdg:validated-method.Argument<TRun> : never
     }}}
     */
-  @js.native
-  trait ValidatedMethodArg[T] extends StObject
+  type ValidatedMethodArg[T] = NoArguments
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends meteor-mdg-validated-method.meteor/mdg:validated-method.ValidatedMethod<infer TName, any> ? TName : never
     }}}
@@ -116,19 +114,18 @@ object meteorMdgColonvalidatedMethodMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TOptions extends meteor-mdg-validated-method.meteor/mdg:validated-method.ValidatedMethodOptions<any, infer TRun> ? meteor-mdg-validated-method.meteor/mdg:validated-method.Argument<TRun> : never
     }}}
     */
-  @js.native
-  trait ValidatedMethodOptionsArgument[TOptions /* <: ValidatedMethodOptions[Any, Any] */] extends StObject
+  type ValidatedMethodOptionsArgument[TOptions /* <: ValidatedMethodOptions[Any, Any] */] = NoArguments
   
   trait ValidatedMethodOptionsMixinFields[TRunArg, TRunReturn] extends StObject
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TOptions extends meteor-mdg-validated-method.meteor/mdg:validated-method.ValidatedMethodOptions<any, infer TRun> ? meteor-mdg-validated-method.meteor/mdg:validated-method.Return<TRun> : never
     }}}
@@ -164,7 +161,7 @@ object meteorMdgColonvalidatedMethodMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends meteor-mdg-validated-method.meteor/mdg:validated-method.ValidatedMethod<string, infer TRun> ? meteor-mdg-validated-method.meteor/mdg:validated-method.Return<TRun> : never
     }}}

@@ -12,7 +12,7 @@ trait LabelDetection extends StObject {
   var Label: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Label] = js.undefined
   
   /**
-    * Time, in milliseconds from the start of the video, that the label was detected.
+    * Time, in milliseconds from the start of the video, that the label was detected. Note that Timestamp is not guaranteed to be accurate to the individual frame where the label first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

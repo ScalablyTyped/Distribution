@@ -2,6 +2,7 @@ package typings.systemjs
 
 import typings.systemjs.System.DeclareFn
 import typings.systemjs.System.ImportFn
+import typings.systemjs.System.ImportMap
 import typings.systemjs.System.Module
 import typings.systemjs.System.UpdateModuleFn
 import typings.systemjs.systemjsBooleans.`false`
@@ -16,6 +17,12 @@ object global {
     @JSGlobal("System")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Dynamically extend additional mappings into the import map at any time.
+      * Any existing map entries will be overridden with the new values.
+      */
+    inline def addImportMap(importMap: ImportMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addImportMap")(importMap.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Delete a module from the module registry. Note that the moduleId almost always must be a full url and that

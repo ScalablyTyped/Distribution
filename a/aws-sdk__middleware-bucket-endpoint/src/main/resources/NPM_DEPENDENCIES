@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/middleware-bucket-endpoint" : "3.208.0"
+      "@aws-sdk/middleware-bucket-endpoint" : "3.209.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/middleware-bucket-endpoint" : "3.208.0"
+      "@aws-sdk/middleware-bucket-endpoint" : "3.209.0"
     }
   ],
   "compile-devDependencies" : [

@@ -29,6 +29,10 @@ object distSrcMetaMod {
     
     /* private */ var apiSecret: Any = js.native
     
+    /* private */ var authPromise: Any = js.native
+    
+    /* private */ var authPromiseResolve: Any = js.native
+    
     /* private */ var authorize: Any = js.native
     
     def call[T](endpoint: String): js.Promise[T] = js.native

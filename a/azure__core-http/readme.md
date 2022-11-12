@@ -3,6 +3,24 @@
 
 Typings are for version 2.2.7
 
+## Library description:
+Isomorphic client Runtime for Typescript/node.js/browser javascript client libraries generated using AutoRest
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @azure/core-http |
+| Keywords           | isomorphic, browser, javascript, node, microsoft, autorest, clientruntime, azure, cloud |
+| # releases         | 124 |
+| # dependents       | 0.0 |
+| # downloads        | 5349536.666666667 |
+| # stars            | ? |
+
+## Links
+- [Homepage](https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/core/core-http/README.md)
+- [Bugs](https://github.com/Azure/azure-sdk-for-js/issues)
+- [Repository](https://github.com/Azure/azure-sdk-for-js)
+- [Npm](https://www.npmjs.com/package/%40azure%2Fcore-http)
+    
 
 
 ## Note

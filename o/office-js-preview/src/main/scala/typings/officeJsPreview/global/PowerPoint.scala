@@ -872,8 +872,7 @@ object PowerPoint {
     * Represents a collection of shapes.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   @JSGlobal("PowerPoint.ShapeScopedCollection")
   @js.native
@@ -1065,8 +1064,7 @@ object PowerPoint {
     * Represents a collection of slides in the presentation.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   @JSGlobal("PowerPoint.SlideScopedCollection")
   @js.native

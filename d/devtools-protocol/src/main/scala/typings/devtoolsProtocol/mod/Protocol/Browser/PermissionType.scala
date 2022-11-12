@@ -15,6 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage
   - typings.devtoolsProtocol.devtoolsProtocolStrings.flash
   - typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.localFonts
   - typings.devtoolsProtocol.devtoolsProtocolStrings.midi
   - typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex
   - typings.devtoolsProtocol.devtoolsProtocolStrings.nfc
@@ -23,11 +25,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync
   - typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier
   - typings.devtoolsProtocol.devtoolsProtocolStrings.sensors
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess
   - typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture
   - typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection
   - typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen
   - typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.windowManagement
 */
 trait PermissionType extends StObject
 object PermissionType {
@@ -54,6 +57,8 @@ object PermissionType {
   
   inline def idleDetection: typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection = "idleDetection".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection]
   
+  inline def localFonts: typings.devtoolsProtocol.devtoolsProtocolStrings.localFonts = "localFonts".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.localFonts]
+  
   inline def midi: typings.devtoolsProtocol.devtoolsProtocolStrings.midi = "midi".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midi]
   
   inline def midiSysex: typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex = "midiSysex".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex]
@@ -70,6 +75,8 @@ object PermissionType {
   
   inline def sensors: typings.devtoolsProtocol.devtoolsProtocolStrings.sensors = "sensors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.sensors]
   
+  inline def storageAccess: typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess = "storageAccess".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.storageAccess]
+  
   inline def videoCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture = "videoCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture]
   
   inline def videoCapturePanTiltZoom: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom = "videoCapturePanTiltZoom".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom]
@@ -77,4 +84,6 @@ object PermissionType {
   inline def wakeLockScreen: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen = "wakeLockScreen".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen]
   
   inline def wakeLockSystem: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem = "wakeLockSystem".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem]
+  
+  inline def windowManagement: typings.devtoolsProtocol.devtoolsProtocolStrings.windowManagement = "windowManagement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.windowManagement]
 }

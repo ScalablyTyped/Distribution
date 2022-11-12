@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-process-errors
 
-Typings are for version 10.1.1
+Typings are for version 10.2.0
 
 ## Library description:
 Show some ❤️ to process errors

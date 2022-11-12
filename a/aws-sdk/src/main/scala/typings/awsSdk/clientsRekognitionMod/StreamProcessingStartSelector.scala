@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamProcessingStartSelector extends StObject {
   
   /**
-    *  Specifies the starting point in the stream to start processing. This can be done with a timestamp or a fragment number in a Kinesis stream. 
+    *  Specifies the starting point in the stream to start processing. This can be done with a producer timestamp or a fragment number in a Kinesis stream. 
     */
   var KVSStreamStartSelector: js.UndefOr[KinesisVideoStreamStartSelector] = js.undefined
 }

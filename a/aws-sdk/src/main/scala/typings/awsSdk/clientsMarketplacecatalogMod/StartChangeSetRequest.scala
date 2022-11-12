@@ -22,6 +22,11 @@ trait StartChangeSetRequest extends StObject {
   var ChangeSetName: js.UndefOr[typings.awsSdk.clientsMarketplacecatalogMod.ChangeSetName] = js.undefined
   
   /**
+    * A list of objects specifying each key name and value for the ChangeSetTags property.
+    */
+  var ChangeSetTags: js.UndefOr[TagList] = js.undefined
+  
+  /**
     * A unique token to identify the request to ensure idempotency.
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.clientsMarketplacecatalogMod.ClientRequestToken] = js.undefined
@@ -42,6 +47,12 @@ object StartChangeSetRequest {
     inline def setChangeSetName(value: ChangeSetName): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
     inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
+    
+    inline def setChangeSetTags(value: TagList): Self = StObject.set(x, "ChangeSetTags", value.asInstanceOf[js.Any])
+    
+    inline def setChangeSetTagsUndefined: Self = StObject.set(x, "ChangeSetTags", js.undefined)
+    
+    inline def setChangeSetTagsVarargs(value: Tag*): Self = StObject.set(x, "ChangeSetTags", js.Array(value*))
     
     inline def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value*))
     

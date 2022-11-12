@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/sprite-tiling" : "7.0.3"
+      "@pixi/sprite-tiling" : "7.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/sprite-tiling" : "7.0.3"
+      "@pixi/sprite-tiling" : "7.0.4"
     }
   ],
   "compile-devDependencies" : [

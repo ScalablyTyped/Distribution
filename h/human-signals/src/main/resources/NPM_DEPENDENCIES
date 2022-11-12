@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "human-signals" : "4.2.0"
+      "human-signals" : "4.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "human-signals" : "4.2.0"
+      "human-signals" : "4.3.0"
     }
   ],
   "compile-devDependencies" : [

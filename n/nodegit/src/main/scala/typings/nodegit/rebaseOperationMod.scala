@@ -17,11 +17,11 @@ object rebaseOperationMod {
   @js.native
   open class RebaseOperation () extends StObject {
     
-    var exec: String = js.native
+    def exec(): String | Null = js.native
     
-    var id: Oid = js.native
+    def id(): Oid = js.native
     
-    var `type`: Double = js.native
+    def `type`(): Double | Null = js.native
   }
   object RebaseOperation {
     

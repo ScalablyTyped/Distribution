@@ -1157,12 +1157,12 @@ trait Glue extends Service {
   ): Request[GetDevEndpointResponse, AWSError] = js.native
   
   /**
-    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this Amazon Web Services account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoints(): Request[GetDevEndpointsResponse, AWSError] = js.native
   def getDevEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ GetDevEndpointsResponse, Unit]): Request[GetDevEndpointsResponse, AWSError] = js.native
   /**
-    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this Amazon Web Services account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoints(params: GetDevEndpointsRequest): Request[GetDevEndpointsResponse, AWSError] = js.native
   def getDevEndpoints(
@@ -1182,12 +1182,12 @@ trait Glue extends Service {
   def getJob(params: GetJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetJobResponse, Unit]): Request[GetJobResponse, AWSError] = js.native
   
   /**
-    * Returns information on a job bookmark entry.
+    * Returns information on a job bookmark entry. For more information about enabling and using job bookmarks, see:    Tracking processed data using job bookmarks     Job parameters used by Glue     Job structure   
     */
   def getJobBookmark(): Request[GetJobBookmarkResponse, AWSError] = js.native
   def getJobBookmark(callback: js.Function2[/* err */ AWSError, /* data */ GetJobBookmarkResponse, Unit]): Request[GetJobBookmarkResponse, AWSError] = js.native
   /**
-    * Returns information on a job bookmark entry.
+    * Returns information on a job bookmark entry. For more information about enabling and using job bookmarks, see:    Tracking processed data using job bookmarks     Job parameters used by Glue     Job structure   
     */
   def getJobBookmark(params: GetJobBookmarkRequest): Request[GetJobBookmarkResponse, AWSError] = js.native
   def getJobBookmark(
@@ -2056,12 +2056,12 @@ trait Glue extends Service {
   ): Request[RemoveSchemaVersionMetadataResponse, AWSError] = js.native
   
   /**
-    * Resets a bookmark entry.
+    * Resets a bookmark entry. For more information about enabling and using job bookmarks, see:    Tracking processed data using job bookmarks     Job parameters used by Glue     Job structure   
     */
   def resetJobBookmark(): Request[ResetJobBookmarkResponse, AWSError] = js.native
   def resetJobBookmark(callback: js.Function2[/* err */ AWSError, /* data */ ResetJobBookmarkResponse, Unit]): Request[ResetJobBookmarkResponse, AWSError] = js.native
   /**
-    * Resets a bookmark entry.
+    * Resets a bookmark entry. For more information about enabling and using job bookmarks, see:    Tracking processed data using job bookmarks     Job parameters used by Glue     Job structure   
     */
   def resetJobBookmark(params: ResetJobBookmarkRequest): Request[ResetJobBookmarkResponse, AWSError] = js.native
   def resetJobBookmark(

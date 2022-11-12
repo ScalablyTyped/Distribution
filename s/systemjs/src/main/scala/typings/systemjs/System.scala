@@ -1,6 +1,7 @@
 package typings.systemjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import typings.systemjs.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -83,6 +84,32 @@ object System {
   
   // tslint:disable-next-line no-unnecessary-generics
   type ImportFn = js.Function2[/* moduleId */ String, /* parentUrl */ js.UndefOr[String], js.Promise[Module]]
+  
+  /** The importmap standard is defined here: https://github.com/WICG/import-maps */
+  trait ImportMap extends StObject {
+    
+    var imports: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var scopes: js.UndefOr[Record[String, Record[String, String]]] = js.undefined
+  }
+  object ImportMap {
+    
+    inline def apply(): ImportMap = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ImportMap]
+    }
+    
+    extension [Self <: ImportMap](x: Self) {
+      
+      inline def setImports(value: Record[String, String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      
+      inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+      
+      inline def setScopes(value: Record[String, Record[String, String]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    }
+  }
   
   trait Module
     extends StObject

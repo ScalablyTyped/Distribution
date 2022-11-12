@@ -23,7 +23,7 @@ open class CDPSession () extends EventEmitter {
   def id(): String = js.native
   
   @JSName("send")
-  def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.puppeteer.puppeteerStrings.ConsoleDotclearMessages, typings.puppeteer.puppeteerStrings.ConsoleDotdisable, typings.puppeteer.puppeteerStrings.ConsoleDotenable */ Any */](
+  def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.puppeteer.puppeteerStrings.ConsoleDotclearMessages, typings.puppeteer.puppeteerStrings.ConsoleDotdisable, typings.puppeteer.puppeteerStrings.ConsoleDotenable */ Any */](
     method: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param paramArgs because its type ProtocolMapping.Commands[T]['paramsType'] is not an array type */ paramArgs: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'] */ js.Any
   ): js.Promise[

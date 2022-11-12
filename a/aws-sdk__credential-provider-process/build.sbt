@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-process"
-version := "3.208.0-f49635"
+version := "3.209.0-f14ede"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.208.0-64edc2",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.209.0-05f31a",
   "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

@@ -12,7 +12,7 @@ trait FaceDetection extends StObject {
   var Face: js.UndefOr[FaceDetail] = js.undefined
   
   /**
-    * Time, in milliseconds from the start of the video, that the face was detected.
+    * Time, in milliseconds from the start of the video, that the face was detected. Note that Timestamp is not guaranteed to be accurate to the individual frame where the face first appears.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.clientsRekognitionMod.Timestamp] = js.undefined
 }

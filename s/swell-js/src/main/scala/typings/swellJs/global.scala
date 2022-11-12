@@ -7,6 +7,7 @@ import typings.swellJs.mod.CartOption
 import typings.swellJs.mod.Cart_
 import typings.swellJs.mod.CreateAccountInput
 import typings.swellJs.mod.InitOptions
+import typings.swellJs.mod.ListResult
 import typings.swellJs.mod.Order
 import typings.swellJs.mod.Product
 import typings.swellJs.mod.Query
@@ -73,7 +74,7 @@ object global {
       
       inline def get(input: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
       
-      inline def list(input: js.Object): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+      inline def list(input: js.Object): js.Promise[ListResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Any]]]
     }
     
     object card {
@@ -130,7 +131,7 @@ object global {
       
       inline def get(input: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
       
-      inline def list(input: js.Object): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+      inline def list(input: js.Object): js.Promise[ListResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Any]]]
     }
     
     object currency {
@@ -141,7 +142,7 @@ object global {
       
       inline def format(input: Double, format: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      inline def list(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[Any]]
+      inline def list(): js.Promise[ListResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[ListResult[Any]]]
       
       inline def select(input: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
       
@@ -185,8 +186,8 @@ object global {
       
       inline def get(productId: String): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(productId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
       
-      inline def list(input: Query): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
-      inline def list(input: SearchQuery): js.Promise[Product] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Product]]
+      inline def list(input: Query): js.Promise[ListResult[Product]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Product]]]
+      inline def list(input: SearchQuery): js.Promise[ListResult[Product]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult[Product]]]
       
       inline def variation(productId: String, options: CartOption): js.Promise[Product] = (^.asInstanceOf[js.Dynamic].applyDynamic("variation")(productId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Product]]
     }
@@ -221,7 +222,7 @@ object global {
       
       inline def get(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
       
-      inline def list(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[Any]]
+      inline def list(): js.Promise[ListResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[ListResult[Any]]]
       
       inline def removeItem(id: String, itemId: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItem")(id.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
       

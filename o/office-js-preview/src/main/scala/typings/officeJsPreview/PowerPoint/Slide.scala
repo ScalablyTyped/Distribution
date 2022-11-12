@@ -62,8 +62,7 @@ trait Slide
     * Selects the specified shapes. Existing shape selection is replaced with the new selection.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     *
     * @param shapeIds List of shape IDs to select in the slide. If the list is empty, the selection is cleared.
     */

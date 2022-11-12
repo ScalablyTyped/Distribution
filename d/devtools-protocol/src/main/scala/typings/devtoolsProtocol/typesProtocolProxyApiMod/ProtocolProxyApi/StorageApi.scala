@@ -11,8 +11,10 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageListUpdatedEven
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearDataForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearDataForStorageKeyRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.ClearSharedStorageEntriesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearTrustTokensRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearTrustTokensResponse
+import typings.devtoolsProtocol.mod.Protocol.Storage.DeleteSharedStorageEntryRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetInterestGroupDetailsRequest
@@ -32,6 +34,7 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.OverrideQuotaForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetInterestGroupTrackingRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageEntryRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageTrackingRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SharedStorageAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackCacheStorageForOriginRequest
@@ -63,10 +66,20 @@ trait StorageApi extends StObject {
   def clearDataForStorageKey(params: ClearDataForStorageKeyRequest): js.Promise[Unit] = js.native
   
   /**
+    * Clears all entries for a given origin's shared storage.
+    */
+  def clearSharedStorageEntries(params: ClearSharedStorageEntriesRequest): js.Promise[Unit] = js.native
+  
+  /**
     * Removes all Trust Tokens issued by the provided issuerOrigin.
     * Leaves other stored data, including the issuer's Redemption Records, intact.
     */
   def clearTrustTokens(params: ClearTrustTokensRequest): js.Promise[ClearTrustTokensResponse] = js.native
+  
+  /**
+    * Deletes entry for `key` (if it exists) for a given origin's shared storage.
+    */
+  def deleteSharedStorageEntry(params: DeleteSharedStorageEntryRequest): js.Promise[Unit] = js.native
   
   /**
     * Returns all browser cookies.
@@ -165,6 +178,11 @@ trait StorageApi extends StObject {
     * Enables/Disables issuing of interestGroupAccessed events.
     */
   def setInterestGroupTracking(params: SetInterestGroupTrackingRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Sets entry with `key` and `value` for a given origin's shared storage.
+    */
+  def setSharedStorageEntry(params: SetSharedStorageEntryRequest): js.Promise[Unit] = js.native
   
   /**
     * Enables/disables issuing of sharedStorageAccessed events.

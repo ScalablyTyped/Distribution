@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a collection of shapes.
   *
   * @remarks
-  * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: PowerPointApi 1.3]
   */
 trait ShapeScopedCollectionLoadOptions extends StObject {
   

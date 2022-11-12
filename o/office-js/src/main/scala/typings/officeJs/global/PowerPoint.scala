@@ -869,6 +869,30 @@ object PowerPoint {
   }
   
   /**
+    * Represents a collection of shapes.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  @JSGlobal("PowerPoint.ShapeScopedCollection")
+  @js.native
+  open class ShapeScopedCollection ()
+    extends StObject
+       with typings.officeJs.PowerPoint.ShapeScopedCollection {
+    
+    /** The request context associated with the object */
+    /* CompleteClass */
+    var context: ClientRequestContext = js.native
+    
+    /**
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
+      * isNullObject property.
+      */
+    /* CompleteClass */
+    var isNullObject: Boolean = js.native
+  }
+  
+  /**
     * Specifies the type of a shape.
     *
     * @remarks
@@ -1023,6 +1047,30 @@ object PowerPoint {
   open class SlideMasterCollection ()
     extends StObject
        with typings.officeJs.PowerPoint.SlideMasterCollection {
+    
+    /** The request context associated with the object */
+    /* CompleteClass */
+    var context: ClientRequestContext = js.native
+    
+    /**
+      *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
+      * isNullObject property.
+      */
+    /* CompleteClass */
+    var isNullObject: Boolean = js.native
+  }
+  
+  /**
+    * Represents a collection of slides in the presentation.
+    *
+    * @remarks
+    * [Api set: PowerPointApi 1.5]
+    */
+  @JSGlobal("PowerPoint.SlideScopedCollection")
+  @js.native
+  open class SlideScopedCollection ()
+    extends StObject
+       with typings.officeJs.PowerPoint.SlideScopedCollection {
     
     /** The request context associated with the object */
     /* CompleteClass */

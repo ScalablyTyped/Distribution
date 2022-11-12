@@ -31,6 +31,11 @@ trait RequestWillBeSentExtraInfoEvent extends StObject {
     * Request identifier. Used to match this information to an existing requestWillBeSent event.
     */
   var requestId: RequestId
+  
+  /**
+    * Whether the site has partitioned cookies stored in a partition different than the current one.
+    */
+  var siteHasCookieInOtherPartition: js.UndefOr[Boolean] = js.undefined
 }
 object RequestWillBeSentExtraInfoEvent {
   
@@ -59,5 +64,9 @@ object RequestWillBeSentExtraInfoEvent {
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setSiteHasCookieInOtherPartition(value: Boolean): Self = StObject.set(x, "siteHasCookieInOtherPartition", value.asInstanceOf[js.Any])
+    
+    inline def setSiteHasCookieInOtherPartitionUndefined: Self = StObject.set(x, "siteHasCookieInOtherPartition", js.undefined)
   }
 }

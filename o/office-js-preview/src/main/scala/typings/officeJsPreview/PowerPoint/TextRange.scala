@@ -35,8 +35,7 @@ trait TextRange
     * Returns the parent {@link PowerPoint.TextFrame} object that holds this `TextRange`.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def getParentTextFrame(): TextFrame = js.native
   
@@ -57,8 +56,7 @@ trait TextRange
     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   var length: Double = js.native
   
@@ -85,8 +83,7 @@ trait TextRange
     * Selects this `TextRange` in the current view.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   def setSelected(): Unit = js.native
   
@@ -95,8 +92,7 @@ trait TextRange
     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
     *
     * @remarks
-    * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: PowerPointApi 1.5]
     */
   var start: Double = js.native
   

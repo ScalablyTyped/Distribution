@@ -25,6 +25,11 @@ trait Change extends StObject {
     * The entity to be changed.
     */
   var Entity: typings.awsSdk.clientsMarketplacecatalogMod.Entity
+  
+  /**
+    * The tags associated with the change.
+    */
+  var EntityTags: js.UndefOr[TagList] = js.undefined
 }
 object Change {
   
@@ -44,5 +49,11 @@ object Change {
     inline def setDetails(value: Json): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "Entity", value.asInstanceOf[js.Any])
+    
+    inline def setEntityTags(value: TagList): Self = StObject.set(x, "EntityTags", value.asInstanceOf[js.Any])
+    
+    inline def setEntityTagsUndefined: Self = StObject.set(x, "EntityTags", js.undefined)
+    
+    inline def setEntityTagsVarargs(value: Tag*): Self = StObject.set(x, "EntityTags", js.Array(value*))
   }
 }

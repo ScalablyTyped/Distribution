@@ -15,6 +15,8 @@ object anon {
     
     var sso_role_name: js.UndefOr[String] = js.undefined
     
+    var sso_session: js.UndefOr[String] = js.undefined
+    
     var sso_start_url: js.UndefOr[String] = js.undefined
   }
   object PartialSsoProfile {
@@ -37,6 +39,10 @@ object anon {
       inline def setSso_role_name(value: String): Self = StObject.set(x, "sso_role_name", value.asInstanceOf[js.Any])
       
       inline def setSso_role_nameUndefined: Self = StObject.set(x, "sso_role_name", js.undefined)
+      
+      inline def setSso_session(value: String): Self = StObject.set(x, "sso_session", value.asInstanceOf[js.Any])
+      
+      inline def setSso_sessionUndefined: Self = StObject.set(x, "sso_session", js.undefined)
       
       inline def setSso_start_url(value: String): Self = StObject.set(x, "sso_start_url", value.asInstanceOf[js.Any])
       

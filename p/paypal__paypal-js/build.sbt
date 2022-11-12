@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "paypal__paypal-js"
-version := "5.1.1-d67c01"
+version := "5.1.2-f036fe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

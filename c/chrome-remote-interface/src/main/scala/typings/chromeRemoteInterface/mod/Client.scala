@@ -46,7 +46,6 @@ import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DebuggerDotscr
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.EmulationDotvirtualTimeBudgetExpired
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.FetchDotauthRequired
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.FetchDotrequestPaused
-import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeadlessExperimentalDotneedsBeginFramesChanged
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeapProfilerDotaddHeapSnapshotChunk
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeapProfilerDotheapStatsUpdate
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeapProfilerDotlastSeenObjectId
@@ -1301,28 +1300,6 @@ trait Client extends StObject {
   
   /** @deprecated this API is experimental. */
   var HeadlessExperimental: HeadlessExperimentalApi = js.native
-  
-  @JSName("HeadlessExperimental.needsBeginFramesChanged")
-  def HeadlessExperimentalDotneedsBeginFramesChanged(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent][0]> : std.Promise<void> */ js.Any = js.native
-  @JSName("HeadlessExperimental.needsBeginFramesChanged")
-  def HeadlessExperimentalDotneedsBeginFramesChanged_0(
-    callback: js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ]
-  ): js.Function0[this.type] = js.native
-  @JSName("HeadlessExperimental.needsBeginFramesChanged")
-  var HeadlessExperimentalDotneedsBeginFramesChanged_Original: (js.Function0[
-    /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent][0]> : std.Promise<void> */ js.Any
-  ]) & (js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent] extends [any] ? [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent][0] : undefined */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ], 
-    js.Function0[this.type]
-  ]) = js.native
   
   /** @deprecated this API is experimental. */
   var HeapProfiler: HeapProfilerApi = js.native
@@ -4563,14 +4540,6 @@ trait Client extends StObject {
     ]
   ): Unit = js.native
   def on(
-    event: HeadlessExperimentalDotneedsBeginFramesChanged,
-    callback: js.Function2[
-      /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent][0] */ /* params */ js.Any, 
-      /* sessionId */ js.UndefOr[String], 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
     event: HeapProfilerDotaddHeapSnapshotChunk,
     callback: js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent][0] */ /* params */ js.Any, 
@@ -5589,36 +5558,36 @@ trait Client extends StObject {
   @JSName("on")
   def on_event(event: event, callback: js.Function1[/* message */ EventMessage, Unit]): Unit = js.native
   
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T): js.Promise[
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
   // client.send(method, [params], [sessionId], [callback])
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, callback: SendCallback[T]): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, callback: SendCallback[T]): Unit = js.native
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     callback: SendCallback[T]
   ): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     sessionId: String
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     sessionId: String,
     callback: SendCallback[T]
   ): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 538, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, params: Unit, sessionId: String): js.Promise[
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 541, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, params: Unit, sessionId: String): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__smithy-client"
-version := "3.208.0-707075"
+version := "3.209.0-7dd4f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

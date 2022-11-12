@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pusher-js"
-version := "7.4.0-279b8e"
+version := "7.4.1-258eb5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

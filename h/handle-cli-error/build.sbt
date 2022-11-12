@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "handle-cli-error"
-version := "3.0.1-c45f1f"
+version := "3.1.0-de9b94"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chalk-string" % "1.1.0-140e7c",
+  "org.scalablytyped" %%% "chalk-string" % "1.2.0-3379af",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

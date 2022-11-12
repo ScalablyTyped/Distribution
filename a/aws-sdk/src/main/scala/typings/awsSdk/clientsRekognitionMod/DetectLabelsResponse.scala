@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DetectLabelsResponse extends StObject {
   
   /**
+    * Information about the properties of the input image, such as brightness, sharpness, contrast, and dominant colors.
+    */
+  var ImageProperties: js.UndefOr[DetectLabelsImageProperties] = js.undefined
+  
+  /**
     * Version number of the label detection model that was used to detect labels.
     */
   var LabelModelVersion: js.UndefOr[String] = js.undefined
@@ -29,6 +34,10 @@ object DetectLabelsResponse {
   }
   
   extension [Self <: DetectLabelsResponse](x: Self) {
+    
+    inline def setImageProperties(value: DetectLabelsImageProperties): Self = StObject.set(x, "ImageProperties", value.asInstanceOf[js.Any])
+    
+    inline def setImagePropertiesUndefined: Self = StObject.set(x, "ImageProperties", js.undefined)
     
     inline def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
     

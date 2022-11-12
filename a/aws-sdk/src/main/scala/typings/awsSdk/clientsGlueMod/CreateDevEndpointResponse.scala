@@ -12,7 +12,7 @@ trait CreateDevEndpointResponse extends StObject {
   var Arguments: js.UndefOr[MapValue] = js.undefined
   
   /**
-    * The AWS Availability Zone where this DevEndpoint is located.
+    * The Amazon Web Services Availability Zone where this DevEndpoint is located.
     */
   var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
   

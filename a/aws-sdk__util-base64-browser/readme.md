@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-base64-browser
 
-Typings are for version 3.208.0
+Typings are for version 3.209.0
 
 ## Library description:
 A pure JS Base64 <-> UInt8Array converter

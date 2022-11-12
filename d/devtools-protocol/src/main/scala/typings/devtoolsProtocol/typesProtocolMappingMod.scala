@@ -358,6 +358,9 @@ import typings.devtoolsProtocol.anon.`241`
 import typings.devtoolsProtocol.anon.`242`
 import typings.devtoolsProtocol.anon.`243`
 import typings.devtoolsProtocol.anon.`244`
+import typings.devtoolsProtocol.anon.`245`
+import typings.devtoolsProtocol.anon.`246`
+import typings.devtoolsProtocol.anon.`247`
 import typings.devtoolsProtocol.anon.`24`
 import typings.devtoolsProtocol.anon.`25`
 import typings.devtoolsProtocol.anon.`26`
@@ -483,7 +486,6 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.ScriptFailedToParseEvent
 import typings.devtoolsProtocol.mod.Protocol.Debugger.ScriptParsedEvent
 import typings.devtoolsProtocol.mod.Protocol.Fetch.AuthRequiredEvent
 import typings.devtoolsProtocol.mod.Protocol.Fetch.RequestPausedEvent
-import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.NeedsBeginFramesChangedEvent
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.HeapStatsUpdateEvent
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.LastSeenObjectIdEvent
@@ -1276,9 +1278,10 @@ object typesProtocolMappingMod {
       var DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse
       
       /**
-        * Returns the container of the given node based on container query conditions.
-        * If containerName is given, it will find the nearest container with a matching name;
-        * otherwise it will find the nearest container regardless of its container name.
+        * Returns the query container of the given node based on container query
+        * conditions: containerName, physical, and logical axes. If no axes are
+        * provided, the style container is returned, which is the direct parent or the
+        * closest element with a matching container-name.
         */
       @JSName("DOM.getContainerForNode")
       var DOMDotgetContainerForNode: ReturnTypeGetContainerForNodeResponse
@@ -1773,8 +1776,8 @@ object typesProtocolMappingMod {
       var DebuggerDotsetInstrumentationBreakpoint: ReturnTypeSetInstrumentationBreakpointResponse
       
       /**
-        * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or
-        * no exceptions. Initial pause on exceptions state is `none`.
+        * Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions,
+        * or caught exceptions, no exceptions. Initial pause on exceptions state is `none`.
         */
       @JSName("Debugger.setPauseOnExceptions")
       var DebuggerDotsetPauseOnExceptions: `5`
@@ -2022,7 +2025,7 @@ object typesProtocolMappingMod {
         * Continues the request, optionally modifying some of its parameters.
         */
       @JSName("Fetch.continueRequest")
-      var FetchDotcontinueRequest: `234`
+      var FetchDotcontinueRequest: `237`
       
       /**
         * Continues loading of the paused response, optionally modifying the
@@ -2030,13 +2033,13 @@ object typesProtocolMappingMod {
         * must be present.
         */
       @JSName("Fetch.continueResponse")
-      var FetchDotcontinueResponse: `236`
+      var FetchDotcontinueResponse: `239`
       
       /**
         * Continues a request supplying authChallengeResponse following authRequired event.
         */
       @JSName("Fetch.continueWithAuth")
-      var FetchDotcontinueWithAuth: `235`
+      var FetchDotcontinueWithAuth: `238`
       
       /**
         * Disables the fetch domain.
@@ -2049,19 +2052,19 @@ object typesProtocolMappingMod {
         * calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.
         */
       @JSName("Fetch.enable")
-      var FetchDotenable: `231`
+      var FetchDotenable: `234`
       
       /**
         * Causes the request to fail with specified reason.
         */
       @JSName("Fetch.failRequest")
-      var FetchDotfailRequest: `232`
+      var FetchDotfailRequest: `235`
       
       /**
         * Provides response to the request.
         */
       @JSName("Fetch.fulfillRequest")
-      var FetchDotfulfillRequest: `233`
+      var FetchDotfulfillRequest: `236`
       
       /**
         * Causes the body of the response to be received from the server and
@@ -3514,11 +3517,23 @@ object typesProtocolMappingMod {
       var StorageDotclearDataForStorageKey: `205`
       
       /**
+        * Clears all entries for a given origin's shared storage.
+        */
+      @JSName("Storage.clearSharedStorageEntries")
+      var StorageDotclearSharedStorageEntries: `219`
+      
+      /**
         * Removes all Trust Tokens issued by the provided issuerOrigin.
         * Leaves other stored data, including the issuer's Redemption Records, intact.
         */
       @JSName("Storage.clearTrustTokens")
       var StorageDotclearTrustTokens: ReturnTypeClearTrustTokensResponse
+      
+      /**
+        * Deletes entry for `key` (if it exists) for a given origin's shared storage.
+        */
+      @JSName("Storage.deleteSharedStorageEntry")
+      var StorageDotdeleteSharedStorageEntry: `218`
       
       /**
         * Returns all browser cookies.
@@ -3582,10 +3597,16 @@ object typesProtocolMappingMod {
       var StorageDotsetInterestGroupTracking: `216`
       
       /**
+        * Sets entry with `key` and `value` for a given origin's shared storage.
+        */
+      @JSName("Storage.setSharedStorageEntry")
+      var StorageDotsetSharedStorageEntry: `217`
+      
+      /**
         * Enables/disables issuing of sharedStorageAccessed events.
         */
       @JSName("Storage.setSharedStorageTracking")
-      var StorageDotsetSharedStorageTracking: `217`
+      var StorageDotsetSharedStorageTracking: `220`
       
       /**
         * Registers origin to be notified when an update occurs to its cache storage list.
@@ -3639,7 +3660,7 @@ object typesProtocolMappingMod {
         * Activates (focuses) the target.
         */
       @JSName("Target.activateTarget")
-      var TargetDotactivateTarget: `218`
+      var TargetDotactivateTarget: `221`
       
       /**
         * Attaches to the browser target, only uses flat sessionId mode.
@@ -3661,7 +3682,7 @@ object typesProtocolMappingMod {
         * `setAutoAttach`. Only available at the Browser target.
         */
       @JSName("Target.autoAttachRelated")
-      var TargetDotautoAttachRelated: `224`
+      var TargetDotautoAttachRelated: `227`
       
       /**
         * Closes the target. If the target is a page that gets closed too.
@@ -3686,14 +3707,14 @@ object typesProtocolMappingMod {
         * Detaches session with given id.
         */
       @JSName("Target.detachFromTarget")
-      var TargetDotdetachFromTarget: `220`
+      var TargetDotdetachFromTarget: `223`
       
       /**
         * Deletes a BrowserContext. All the belonging pages will be closed without calling their
         * beforeunload hooks.
         */
       @JSName("Target.disposeBrowserContext")
-      var TargetDotdisposeBrowserContext: `221`
+      var TargetDotdisposeBrowserContext: `224`
       
       /**
         * Inject object to the target's main frame that provides a communication
@@ -3706,7 +3727,7 @@ object typesProtocolMappingMod {
         * - `binding.onmessage = json => handleMessage(json)` - a callback that will be called for the protocol notifications and command responses.
         */
       @JSName("Target.exposeDevToolsProtocol")
-      var TargetDotexposeDevToolsProtocol: `219`
+      var TargetDotexposeDevToolsProtocol: `222`
       
       /**
         * Returns all browser contexts created with `Target.createBrowserContext` method.
@@ -3732,7 +3753,7 @@ object typesProtocolMappingMod {
         * and crbug.com/991325.
         */
       @JSName("Target.sendMessageToTarget")
-      var TargetDotsendMessageToTarget: `222`
+      var TargetDotsendMessageToTarget: `225`
       
       /**
         * Controls whether to automatically attach to new targets which are considered to be related to
@@ -3742,33 +3763,33 @@ object typesProtocolMappingMod {
         * for creation of related targets.
         */
       @JSName("Target.setAutoAttach")
-      var TargetDotsetAutoAttach: `223`
+      var TargetDotsetAutoAttach: `226`
       
       /**
         * Controls whether to discover available targets and notify via
         * `targetCreated/targetInfoChanged/targetDestroyed` events.
         */
       @JSName("Target.setDiscoverTargets")
-      var TargetDotsetDiscoverTargets: `225`
+      var TargetDotsetDiscoverTargets: `228`
       
       /**
         * Enables target discovery for the specified locations, when `setDiscoverTargets` was set to
         * `true`.
         */
       @JSName("Target.setRemoteLocations")
-      var TargetDotsetRemoteLocations: `226`
+      var TargetDotsetRemoteLocations: `229`
       
       /**
         * Request browser port binding.
         */
       @JSName("Tethering.bind")
-      var TetheringDotbind: `227`
+      var TetheringDotbind: `230`
       
       /**
         * Request browser port unbinding.
         */
       @JSName("Tethering.unbind")
-      var TetheringDotunbind: `228`
+      var TetheringDotunbind: `231`
       
       /**
         * Stop trace events collection.
@@ -3786,7 +3807,7 @@ object typesProtocolMappingMod {
         * Record a clock sync marker in the trace.
         */
       @JSName("Tracing.recordClockSyncMarker")
-      var TracingDotrecordClockSyncMarker: `229`
+      var TracingDotrecordClockSyncMarker: `232`
       
       /**
         * Request a global memory dump.
@@ -3798,7 +3819,7 @@ object typesProtocolMappingMod {
         * Start trace events collection.
         */
       @JSName("Tracing.start")
-      var TracingDotstart: `230`
+      var TracingDotstart: `233`
       
       /**
         * Disables the WebAudio domain.
@@ -3822,7 +3843,7 @@ object typesProtocolMappingMod {
         * Adds the credential to the specified authenticator.
         */
       @JSName("WebAuthn.addCredential")
-      var WebAuthnDotaddCredential: `240`
+      var WebAuthnDotaddCredential: `243`
       
       /**
         * Creates and adds a virtual authenticator.
@@ -3834,7 +3855,7 @@ object typesProtocolMappingMod {
         * Clears all the credentials from the specified device.
         */
       @JSName("WebAuthn.clearCredentials")
-      var WebAuthnDotclearCredentials: `242`
+      var WebAuthnDotclearCredentials: `245`
       
       /**
         * Disable the WebAuthn domain.
@@ -3847,7 +3868,7 @@ object typesProtocolMappingMod {
         * retrieval with a virtual authenticator.
         */
       @JSName("WebAuthn.enable")
-      var WebAuthnDotenable: `237`
+      var WebAuthnDotenable: `240`
       
       /**
         * Returns a single credential stored in the given virtual authenticator that
@@ -3866,33 +3887,33 @@ object typesProtocolMappingMod {
         * Removes a credential from the authenticator.
         */
       @JSName("WebAuthn.removeCredential")
-      var WebAuthnDotremoveCredential: `241`
+      var WebAuthnDotremoveCredential: `244`
       
       /**
         * Removes the given authenticator.
         */
       @JSName("WebAuthn.removeVirtualAuthenticator")
-      var WebAuthnDotremoveVirtualAuthenticator: `239`
+      var WebAuthnDotremoveVirtualAuthenticator: `242`
       
       /**
         * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setAutomaticPresenceSimulation")
-      var WebAuthnDotsetAutomaticPresenceSimulation: `244`
+      var WebAuthnDotsetAutomaticPresenceSimulation: `247`
       
       /**
         * Resets parameters isBogusSignature, isBadUV, isBadUP to false if they are not present.
         */
       @JSName("WebAuthn.setResponseOverrideBits")
-      var WebAuthnDotsetResponseOverrideBits: `238`
+      var WebAuthnDotsetResponseOverrideBits: `241`
       
       /**
         * Sets whether User Verification succeeds or fails for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setUserVerified")
-      var WebAuthnDotsetUserVerified: `243`
+      var WebAuthnDotsetUserVerified: `246`
     }
     object Commands {
       
@@ -4121,13 +4142,13 @@ object typesProtocolMappingMod {
         EmulationDotsetVisibleSize: `100`,
         EventBreakpointsDotremoveInstrumentationBreakpoint: `77`,
         EventBreakpointsDotsetInstrumentationBreakpoint: `76`,
-        FetchDotcontinueRequest: `234`,
-        FetchDotcontinueResponse: `236`,
-        FetchDotcontinueWithAuth: `235`,
+        FetchDotcontinueRequest: `237`,
+        FetchDotcontinueResponse: `239`,
+        FetchDotcontinueWithAuth: `238`,
         FetchDotdisable: ParamsType,
-        FetchDotenable: `231`,
-        FetchDotfailRequest: `232`,
-        FetchDotfulfillRequest: `233`,
+        FetchDotenable: `234`,
+        FetchDotfailRequest: `235`,
+        FetchDotfulfillRequest: `236`,
         FetchDotgetResponseBody: ParamsTypeReturnTypeGetResponseBodyResponse,
         FetchDottakeResponseBodyAsStream: ReturnTypeTakeResponseBodyAsStreamResponse,
         HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse,
@@ -4860,19 +4881,19 @@ object typesProtocolMappingMod {
         
         inline def setEventBreakpointsDotsetInstrumentationBreakpoint(value: `76`): Self = StObject.set(x, "EventBreakpoints.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueRequest(value: `234`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueRequest(value: `237`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueResponse(value: `236`): Self = StObject.set(x, "Fetch.continueResponse", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueResponse(value: `239`): Self = StObject.set(x, "Fetch.continueResponse", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueWithAuth(value: `235`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueWithAuth(value: `238`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
         
         inline def setFetchDotdisable(value: ParamsType): Self = StObject.set(x, "Fetch.disable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotenable(value: `231`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
+        inline def setFetchDotenable(value: `234`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfailRequest(value: `232`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfailRequest(value: `235`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfulfillRequest(value: `233`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfulfillRequest(value: `236`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
         
         inline def setFetchDotgetResponseBody(value: ParamsTypeReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Fetch.getResponseBody", value.asInstanceOf[js.Any])
         
@@ -5370,7 +5391,11 @@ object typesProtocolMappingMod {
         
         inline def setStorageDotclearDataForStorageKey(value: `205`): Self = StObject.set(x, "Storage.clearDataForStorageKey", value.asInstanceOf[js.Any])
         
+        inline def setStorageDotclearSharedStorageEntries(value: `219`): Self = StObject.set(x, "Storage.clearSharedStorageEntries", value.asInstanceOf[js.Any])
+        
         inline def setStorageDotclearTrustTokens(value: ReturnTypeClearTrustTokensResponse): Self = StObject.set(x, "Storage.clearTrustTokens", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotdeleteSharedStorageEntry(value: `218`): Self = StObject.set(x, "Storage.deleteSharedStorageEntry", value.asInstanceOf[js.Any])
         
         inline def setStorageDotgetCookies(value: `206`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
         
@@ -5392,7 +5417,9 @@ object typesProtocolMappingMod {
         
         inline def setStorageDotsetInterestGroupTracking(value: `216`): Self = StObject.set(x, "Storage.setInterestGroupTracking", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetSharedStorageTracking(value: `217`): Self = StObject.set(x, "Storage.setSharedStorageTracking", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetSharedStorageEntry(value: `217`): Self = StObject.set(x, "Storage.setSharedStorageEntry", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotsetSharedStorageTracking(value: `220`): Self = StObject.set(x, "Storage.setSharedStorageTracking", value.asInstanceOf[js.Any])
         
         inline def setStorageDottrackCacheStorageForOrigin(value: `210`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
@@ -5410,13 +5437,13 @@ object typesProtocolMappingMod {
         
         inline def setSystemInfoDotgetProcessInfo(value: ReturnTypeGetProcessInfoResponse): Self = StObject.set(x, "SystemInfo.getProcessInfo", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotactivateTarget(value: `218`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotactivateTarget(value: `221`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToBrowserTarget(value: ReturnTypeAttachToBrowserTargetResponse): Self = StObject.set(x, "Target.attachToBrowserTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToTarget(value: ReturnTypeAttachToTargetResponse): Self = StObject.set(x, "Target.attachToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotautoAttachRelated(value: `224`): Self = StObject.set(x, "Target.autoAttachRelated", value.asInstanceOf[js.Any])
+        inline def setTargetDotautoAttachRelated(value: `227`): Self = StObject.set(x, "Target.autoAttachRelated", value.asInstanceOf[js.Any])
         
         inline def setTargetDotcloseTarget(value: ReturnTypeCloseTargetResponse): Self = StObject.set(x, "Target.closeTarget", value.asInstanceOf[js.Any])
         
@@ -5424,11 +5451,11 @@ object typesProtocolMappingMod {
         
         inline def setTargetDotcreateTarget(value: ReturnTypeCreateTargetResponse): Self = StObject.set(x, "Target.createTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdetachFromTarget(value: `220`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotdetachFromTarget(value: `223`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdisposeBrowserContext(value: `221`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
+        inline def setTargetDotdisposeBrowserContext(value: `224`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotexposeDevToolsProtocol(value: `219`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
+        inline def setTargetDotexposeDevToolsProtocol(value: `222`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
         
         inline def setTargetDotgetBrowserContexts(value: ReturnTypeGetBrowserContextsResponse): Self = StObject.set(x, "Target.getBrowserContexts", value.asInstanceOf[js.Any])
         
@@ -5436,27 +5463,27 @@ object typesProtocolMappingMod {
         
         inline def setTargetDotgetTargets(value: ReturnTypeGetTargetsResponse): Self = StObject.set(x, "Target.getTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsendMessageToTarget(value: `222`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotsendMessageToTarget(value: `225`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetAutoAttach(value: `223`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetAutoAttach(value: `226`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetDiscoverTargets(value: `225`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetDiscoverTargets(value: `228`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetRemoteLocations(value: `226`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetRemoteLocations(value: `229`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotbind(value: `227`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotbind(value: `230`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotunbind(value: `228`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotunbind(value: `231`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
         
         inline def setTracingDotend(value: ParamsType): Self = StObject.set(x, "Tracing.end", value.asInstanceOf[js.Any])
         
         inline def setTracingDotgetCategories(value: ReturnTypeGetCategoriesResponse): Self = StObject.set(x, "Tracing.getCategories", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotrecordClockSyncMarker(value: `229`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
+        inline def setTracingDotrecordClockSyncMarker(value: `232`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
         
         inline def setTracingDotrequestMemoryDump(value: ReturnTypeRequestMemoryDumpResponse): Self = StObject.set(x, "Tracing.requestMemoryDump", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotstart(value: `230`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
+        inline def setTracingDotstart(value: `233`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
         
         inline def setWebAudioDotdisable(value: ParamsType): Self = StObject.set(x, "WebAudio.disable", value.asInstanceOf[js.Any])
         
@@ -5464,29 +5491,29 @@ object typesProtocolMappingMod {
         
         inline def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotaddCredential(value: `240`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddCredential(value: `243`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotclearCredentials(value: `242`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotclearCredentials(value: `245`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotenable(value: `237`): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotenable(value: `240`): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredential(value: ReturnTypeGetCredentialResponse): Self = StObject.set(x, "WebAuthn.getCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveCredential(value: `241`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveCredential(value: `244`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `239`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `242`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `244`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `247`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetResponseOverrideBits(value: `238`): Self = StObject.set(x, "WebAuthn.setResponseOverrideBits", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetResponseOverrideBits(value: `241`): Self = StObject.set(x, "WebAuthn.setResponseOverrideBits", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetUserVerified(value: `243`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetUserVerified(value: `246`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5763,14 +5790,6 @@ object typesProtocolMappingMod {
         */
       @JSName("Fetch.requestPaused")
       var FetchDotrequestPaused: js.Array[RequestPausedEvent]
-      
-      /**
-        * Issued when the target starts or stops needing BeginFrames.
-        * Deprecated. Issue beginFrame unconditionally instead and use result from
-        * beginFrame to detect whether the frames were suppressed.
-        */
-      @JSName("HeadlessExperimental.needsBeginFramesChanged")
-      var HeadlessExperimentalDotneedsBeginFramesChanged: js.Array[NeedsBeginFramesChangedEvent]
       
       @JSName("HeapProfiler.addHeapSnapshotChunk")
       var HeapProfilerDotaddHeapSnapshotChunk: js.Array[AddHeapSnapshotChunkEvent]
@@ -6582,7 +6601,6 @@ object typesProtocolMappingMod {
         EmulationDotvirtualTimeBudgetExpired: js.Array[Any],
         FetchDotauthRequired: js.Array[AuthRequiredEvent],
         FetchDotrequestPaused: js.Array[RequestPausedEvent],
-        HeadlessExperimentalDotneedsBeginFramesChanged: js.Array[NeedsBeginFramesChangedEvent],
         HeapProfilerDotaddHeapSnapshotChunk: js.Array[AddHeapSnapshotChunkEvent],
         HeapProfilerDotheapStatsUpdate: js.Array[HeapStatsUpdateEvent],
         HeapProfilerDotlastSeenObjectId: js.Array[LastSeenObjectIdEvent],
@@ -6758,7 +6776,6 @@ object typesProtocolMappingMod {
         __obj.updateDynamic("Emulation.virtualTimeBudgetExpired")(EmulationDotvirtualTimeBudgetExpired.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.authRequired")(FetchDotauthRequired.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.requestPaused")(FetchDotrequestPaused.asInstanceOf[js.Any])
-        __obj.updateDynamic("HeadlessExperimental.needsBeginFramesChanged")(HeadlessExperimentalDotneedsBeginFramesChanged.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.addHeapSnapshotChunk")(HeapProfilerDotaddHeapSnapshotChunk.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.heapStatsUpdate")(HeapProfilerDotheapStatsUpdate.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.lastSeenObjectId")(HeapProfilerDotlastSeenObjectId.asInstanceOf[js.Any])
@@ -7074,10 +7091,6 @@ object typesProtocolMappingMod {
         inline def setFetchDotrequestPaused(value: js.Array[RequestPausedEvent]): Self = StObject.set(x, "Fetch.requestPaused", value.asInstanceOf[js.Any])
         
         inline def setFetchDotrequestPausedVarargs(value: RequestPausedEvent*): Self = StObject.set(x, "Fetch.requestPaused", js.Array(value*))
-        
-        inline def setHeadlessExperimentalDotneedsBeginFramesChanged(value: js.Array[NeedsBeginFramesChangedEvent]): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", value.asInstanceOf[js.Any])
-        
-        inline def setHeadlessExperimentalDotneedsBeginFramesChangedVarargs(value: NeedsBeginFramesChangedEvent*): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", js.Array(value*))
         
         inline def setHeapProfilerDotaddHeapSnapshotChunk(value: js.Array[AddHeapSnapshotChunkEvent]): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", value.asInstanceOf[js.Any])
         

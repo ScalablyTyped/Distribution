@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__ticker
 
-Typings are for version 7.0.3
+Typings are for version 7.0.4
 
 ## Library description:
 Tickers are control the timings within PixiJS

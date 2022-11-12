@@ -29,11 +29,15 @@ type EngagementSet = js.Array[SsmContactsArn]
 
 type EventData = java.lang.String
 
+type EventReferenceList = js.Array[EventReference]
+
 type EventSummaryList = js.Array[EventSummary]
 
 type FilterKeyString = java.lang.String
 
 type FilterList = js.Array[Filter]
+
+type GeneratedId = java.lang.String
 
 type Impact = Double
 

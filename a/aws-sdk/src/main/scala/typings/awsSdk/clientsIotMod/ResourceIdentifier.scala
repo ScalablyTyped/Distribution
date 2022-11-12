@@ -27,6 +27,11 @@ trait ResourceIdentifier extends StObject {
   var cognitoIdentityPoolId: js.UndefOr[CognitoIdentityPoolId] = js.undefined
   
   /**
+    * The ARN of the identified device certificate.
+    */
+  var deviceCertificateArn: js.UndefOr[CertificateArn] = js.undefined
+  
+  /**
     * The ID of the certificate attached to the resource.
     */
   var deviceCertificateId: js.UndefOr[CertificateId] = js.undefined
@@ -35,6 +40,11 @@ trait ResourceIdentifier extends StObject {
     * The ARN of the IAM role that has overly permissive actions.
     */
   var iamRoleArn: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
+    * The issuer certificate identifier.
+    */
+  var issuerCertificateIdentifier: js.UndefOr[IssuerCertificateIdentifier] = js.undefined
   
   /**
     * The version of the policy associated with the resource.
@@ -71,6 +81,10 @@ object ResourceIdentifier {
     
     inline def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
     
+    inline def setDeviceCertificateArn(value: CertificateArn): Self = StObject.set(x, "deviceCertificateArn", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceCertificateArnUndefined: Self = StObject.set(x, "deviceCertificateArn", js.undefined)
+    
     inline def setDeviceCertificateId(value: CertificateId): Self = StObject.set(x, "deviceCertificateId", value.asInstanceOf[js.Any])
     
     inline def setDeviceCertificateIdUndefined: Self = StObject.set(x, "deviceCertificateId", js.undefined)
@@ -78,6 +92,10 @@ object ResourceIdentifier {
     inline def setIamRoleArn(value: RoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
     
     inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+    
+    inline def setIssuerCertificateIdentifier(value: IssuerCertificateIdentifier): Self = StObject.set(x, "issuerCertificateIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerCertificateIdentifierUndefined: Self = StObject.set(x, "issuerCertificateIdentifier", js.undefined)
     
     inline def setPolicyVersionIdentifier(value: PolicyVersionIdentifier): Self = StObject.set(x, "policyVersionIdentifier", value.asInstanceOf[js.Any])
     

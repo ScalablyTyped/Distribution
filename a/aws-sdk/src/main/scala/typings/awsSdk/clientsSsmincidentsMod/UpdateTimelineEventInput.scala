@@ -22,6 +22,11 @@ trait UpdateTimelineEventInput extends StObject {
   var eventId: UUID
   
   /**
+    * Updates all existing references in a TimelineEvent. A reference can be an Amazon Web Services resource involved in the incident or in some way associated with it. When you specify a reference, you enter the Amazon Resource Name (ARN) of the resource. You can also specify a related item. As an example, you could specify the ARN of an Amazon DynamoDB (DynamoDB) table. The table for this example is the resource. You could also specify a Amazon CloudWatch metric for that table. The metric is the related item.  This update action overrides all existing references. If you want to keep existing references, you must specify them in the call. If you don't, this action removes them and enters only new references. 
+    */
+  var eventReferences: js.UndefOr[EventReferenceList] = js.undefined
+  
+  /**
     * The time that the event occurred.
     */
   var eventTime: js.UndefOr[js.Date] = js.undefined
@@ -54,6 +59,12 @@ object UpdateTimelineEventInput {
     inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
     inline def setEventId(value: UUID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    
+    inline def setEventReferences(value: EventReferenceList): Self = StObject.set(x, "eventReferences", value.asInstanceOf[js.Any])
+    
+    inline def setEventReferencesUndefined: Self = StObject.set(x, "eventReferences", js.undefined)
+    
+    inline def setEventReferencesVarargs(value: EventReference*): Self = StObject.set(x, "eventReferences", js.Array(value*))
     
     inline def setEventTime(value: js.Date): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
