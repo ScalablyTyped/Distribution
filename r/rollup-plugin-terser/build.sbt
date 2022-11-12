@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-terser"
-version := "7.0.2-46bb55"
+version := "7.0.2-ee0955"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "jridgewell__gen-mapping" % "0.3.2-96a273",
   "org.scalablytyped" %%% "jridgewell__trace-mapping" % "0.3.17-39cb8a",
-  "org.scalablytyped" %%% "rollup" % "3.2.5-1d3800",
+  "org.scalablytyped" %%% "rollup" % "3.3.0-ebfd9f",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "terser" % "5.15.1-4e72e1")
 publishArtifact in packageDoc := false

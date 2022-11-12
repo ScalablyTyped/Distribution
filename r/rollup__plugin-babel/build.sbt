@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup__plugin-babel"
-version := "6.0.2-05b989"
+version := "6.0.2-4790ed"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-7d45e9",
   "org.scalablytyped" %%% "babel__types" % "7.20.2-2e222a",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-1ed7c2",
-  "org.scalablytyped" %%% "rollup" % "3.2.5-1d3800",
+  "org.scalablytyped" %%% "rollup" % "3.3.0-ebfd9f",
   "org.scalablytyped" %%% "rollup__pluginutils" % "5.0.2-b6eec5",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

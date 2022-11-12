@@ -35,6 +35,8 @@ trait OutputOptions extends StObject {
   
   var esModule: js.UndefOr[Boolean | `if-default-prop`] = js.undefined
   
+  var experimentalMinChunkSize: js.UndefOr[Double] = js.undefined
+  
   var exports: js.UndefOr[default | named | none | auto] = js.undefined
   
   var extend: js.UndefOr[Boolean] = js.undefined
@@ -164,6 +166,10 @@ object OutputOptions {
     inline def setEsModule(value: Boolean | `if-default-prop`): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
     
     inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
+    
+    inline def setExperimentalMinChunkSize(value: Double): Self = StObject.set(x, "experimentalMinChunkSize", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalMinChunkSizeUndefined: Self = StObject.set(x, "experimentalMinChunkSize", js.undefined)
     
     inline def setExports(value: default | named | none | auto): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     

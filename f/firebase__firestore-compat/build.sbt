@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore-compat"
-version := "0.2.3-35f1a2"
+version := "0.2.3-260fb1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-1b99ae",
   "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-dacf77",
   "org.scalablytyped" %%% "firebase__component" % "0.5.21-905454",
-  "org.scalablytyped" %%% "firebase__firestore" % "3.7.3-15ec1d",
+  "org.scalablytyped" %%% "firebase__firestore" % "3.7.3-ec71e6",
   "org.scalablytyped" %%% "firebase__firestore-types" % "2.5.1-9e9839",
   "org.scalablytyped" %%% "firebase__logger" % "0.3.4-d9a3b0",
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-4a44ae",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "long" % "5.2.1-3917db",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-c82aaa",
-  "org.scalablytyped" %%% "rollup" % "3.2.5-1d3800",
+  "org.scalablytyped" %%% "rollup" % "3.3.0-ebfd9f",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "typescript" % "4.8.4-227bad")
 publishArtifact in packageDoc := false
