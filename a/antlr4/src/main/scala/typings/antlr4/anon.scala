@@ -1,5 +1,8 @@
 package typings.antlr4
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.antlr4.contextParserRuleContextMod.ParserRuleContext
+import typings.antlr4.treeParseTreeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,4 +90,14 @@ object anon {
       ): Self = StObject.set(x, "WildcardTransition", value.asInstanceOf[js.Any])
     }
   }
+  
+  @js.native
+  trait Instantiable[T /* <: default */]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ Any, T]
+  
+  @js.native
+  trait InstantiableT[T /* <: ParserRuleContext */]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ Any, T]
 }

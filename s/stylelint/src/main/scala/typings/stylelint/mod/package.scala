@@ -84,6 +84,8 @@ ReadonlySet[String]]
 
 type Plugin = RuleBase[Any, Any]
 
+type PluginContext = RuleContext
+
 // A meta-type that returns a union over all properties of `T` whose values
 // have type `U`.
 type PropertyNamesOfType[T, U] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? T[K] extends U? K : never}[keyof T] */ js.Any
@@ -93,7 +95,7 @@ type ResultProcessor = js.Function2[/* result */ LintResult, /* file */ js.Undef
 type RuleBase[P, S] = js.Function3[
 /* primaryOption */ P, 
 /* secondaryOptions */ Record[String, S], 
-/* context */ PluginContext, 
+/* context */ RuleContext, 
 js.Function2[/* root */ Root_, /* result */ PostcssResult, js.Promise[Unit] | Unit]]
 
 type RuleMessage = String | RuleMessageFunc

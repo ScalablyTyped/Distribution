@@ -15,7 +15,7 @@ trait CheckAgainstRule extends StObject {
   				 * Useful for third-party code (e.g. plugins) to run a PostCSS Root
   				 * against a specific rule and do something with the warnings
   				 */
-  def checkAgainstRule[T, O /* <: js.Object */](options: Root[T, O], callback: js.Function1[/* warning */ Warning, Unit]): Unit
+  def checkAgainstRule[T, O /* <: js.Object */](options: Context[T, O], callback: js.Function1[/* warning */ Warning, Unit]): Unit
   
   /**
   				 * Report a problem.
@@ -48,7 +48,7 @@ trait CheckAgainstRule extends StObject {
 object CheckAgainstRule {
   
   inline def apply(
-    checkAgainstRule: (Root[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit,
+    checkAgainstRule: (Context[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit,
     report: Problem => Unit,
     ruleMessages: (String, Any) => Any,
     validateOptions: (PostcssResult, String, /* repeated */ RuleOptions) => Boolean
@@ -59,7 +59,7 @@ object CheckAgainstRule {
   
   extension [Self <: CheckAgainstRule](x: Self) {
     
-    inline def setCheckAgainstRule(value: (Root[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit): Self = StObject.set(x, "checkAgainstRule", js.Any.fromFunction2(value))
+    inline def setCheckAgainstRule(value: (Context[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit): Self = StObject.set(x, "checkAgainstRule", js.Any.fromFunction2(value))
     
     inline def setReport(value: Problem => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     

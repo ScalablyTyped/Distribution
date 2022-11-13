@@ -1,5 +1,7 @@
 package typings.antlr4
 
+import typings.antlr4.anon.Instantiable
+import typings.antlr4.anon.InstantiableT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,15 +41,15 @@ object contextParserRuleContextMod {
     
     def exitRule(listener: typings.antlr4.treeParseTreeListenerMod.default): Unit = js.native
     
-    def getChild[T /* <: typings.antlr4.treeParseTreeMod.default */](i: Double, `type`: T): T | Null = js.native
+    def getChild[T /* <: typings.antlr4.treeParseTreeMod.default */](i: Double, `type`: Instantiable[T]): T | Null = js.native
     
     def getToken(ttype: Double, i: Double): typings.antlr4.tokenMod.default = js.native
     
     def getTokens(ttype: Double): js.Array[typings.antlr4.tokenMod.default] = js.native
     
-    def getTypedRuleContext[T /* <: ParserRuleContext */](cxtType: T, i: Double): T = js.native
+    def getTypedRuleContext[T /* <: ParserRuleContext */](cxtType: InstantiableT[T], i: Double): T = js.native
     
-    def getTypedRuleContexts[T /* <: ParserRuleContext */](cxtType: T): js.Array[T] = js.native
+    def getTypedRuleContexts[T /* <: ParserRuleContext */](cxtType: InstantiableT[T]): js.Array[T] = js.native
     
     def removeLastChild(): Unit = js.native
     

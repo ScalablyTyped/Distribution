@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PluginContext extends StObject {
+trait RuleContext extends StObject {
   
   var fix: js.UndefOr[Boolean] = js.undefined
   
   var newline: js.UndefOr[String] = js.undefined
 }
-object PluginContext {
+object RuleContext {
   
-  inline def apply(): PluginContext = {
+  inline def apply(): RuleContext = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PluginContext]
+    __obj.asInstanceOf[RuleContext]
   }
   
-  extension [Self <: PluginContext](x: Self) {
+  extension [Self <: RuleContext](x: Self) {
     
     inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     

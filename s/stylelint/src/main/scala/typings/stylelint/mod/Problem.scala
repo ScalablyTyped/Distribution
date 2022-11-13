@@ -41,6 +41,11 @@ trait Problem extends StObject {
   var ruleName: String
   
   /**
+  			 * Optional severity override for the problem.
+  			 */
+  var severity: js.UndefOr[Severity] = js.undefined
+  
+  /**
   			 * The inclusive start position of the problem, relative to the
   			 * node's source text. If provided, this will be used instead of
   			 * `index`.
@@ -85,6 +90,10 @@ object Problem {
     inline def setResult(value: PostcssResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    
+    inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     inline def setStart(value: Line): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
