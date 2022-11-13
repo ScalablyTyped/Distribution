@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rc-drawer"
-version := "6.0.0-3625de"
+version := "6.0.1-e7fcce"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
-  "org.scalablytyped" %%% "rc-component__portal" % "1.0.1-38642d",
+  "org.scalablytyped" %%% "rc-component__portal" % "1.0.3-2c9c8a",
   "org.scalablytyped" %%% "rc-motion" % "2.6.2-242e78",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",

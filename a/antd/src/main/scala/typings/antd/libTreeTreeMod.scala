@@ -3,9 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.antd.anon.Checked
-import typings.antd.anon.DirectoryTree
 import typings.antd.anon.ShowLeafIcon
-import typings.antd.anon.`6`
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.check
 import typings.antd.antdStrings.select_
@@ -35,14 +33,14 @@ import typings.react.mod.Component
 import typings.react.mod.DragEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
-import typings.react.mod.PropsWithChildren
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.std.Element
@@ -58,7 +56,7 @@ object libTreeTreeMod extends Shortcut {
   
   @JSImport("antd/lib/tree/Tree", JSImport.Default)
   @js.native
-  val default: CompoundedComponent = js.native
+  val default: ForwardRefExoticComponent[TreeProps[DataNode] & RefAttributes[typings.rcTree.mod.default[DataNode]]] = js.native
   
   type AntTreeNode = Component[AntTreeNodeProps, js.Object, Any]
   
@@ -466,8 +464,6 @@ object libTreeTreeMod extends Shortcut {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
-  
-  type CompoundedComponent = (js.Function1[/* props */ PropsWithChildren[TreeProps[DataNode]] & `6`, ReactElement]) & DirectoryTree
   
   trait DraggableConfig extends StObject {
     
@@ -957,8 +953,8 @@ object libTreeTreeMod extends Shortcut {
     }
   }
   
-  type _To = CompoundedComponent
+  type _To = ForwardRefExoticComponent[TreeProps[DataNode] & RefAttributes[typings.rcTree.mod.default[DataNode]]]
   
   /* This means you don't have to write `default`, but can instead just say `libTreeTreeMod.foo` */
-  override def _to: CompoundedComponent = default
+  override def _to: ForwardRefExoticComponent[TreeProps[DataNode] & RefAttributes[typings.rcTree.mod.default[DataNode]]] = default
 }

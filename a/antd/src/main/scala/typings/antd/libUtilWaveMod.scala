@@ -39,6 +39,7 @@ object libUtilWaveMod {
     
     /* private */ var animationStartId: Any = js.native
     
+    def bindAnimationEvent(): js.UndefOr[Cancel] = js.native
     def bindAnimationEvent(node: HTMLElement): js.UndefOr[Cancel] = js.native
     
     /* private */ var clickWaveTimeoutId: Any = js.native

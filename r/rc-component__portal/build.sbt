@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-component__portal"
-version := "1.0.1-38642d"
+version := "1.0.3-2c9c8a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

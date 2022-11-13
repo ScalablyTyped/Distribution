@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "7.2.1-b2b7eb"
+version := "7.2.1-14a109"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-537456",
   "org.scalablytyped" %%% "ant-design__pro-provider" % "2.0.14-8b6486",
   "org.scalablytyped" %%% "ant-design__react-slick" % "0.29.2-65840e",
-  "org.scalablytyped" %%% "antd" % "4.24.1-a8f9a4",
+  "org.scalablytyped" %%% "antd" % "4.24.2-7d4a90",
   "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-22b3a6",
   "org.scalablytyped" %%% "history" % "5.3.0-3fdcf9",
@@ -18,26 +18,26 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
   "org.scalablytyped" %%% "rc-cascader" % "3.7.0-e80e8c",
-  "org.scalablytyped" %%% "rc-component__portal" % "1.0.1-38642d",
+  "org.scalablytyped" %%% "rc-component__portal" % "1.0.3-2c9c8a",
   "org.scalablytyped" %%% "rc-dialog" % "9.0.2-4ecf76",
-  "org.scalablytyped" %%% "rc-drawer" % "6.0.0-3625de",
+  "org.scalablytyped" %%% "rc-drawer" % "6.0.1-e7fcce",
   "org.scalablytyped" %%% "rc-field-form" % "1.27.3-da35a0",
-  "org.scalablytyped" %%% "rc-image" % "5.9.0-7fea97",
+  "org.scalablytyped" %%% "rc-image" % "5.12.0-a27536",
   "org.scalablytyped" %%% "rc-input" % "0.1.4-254a5b",
   "org.scalablytyped" %%% "rc-input-number" % "7.3.9-4441ea",
-  "org.scalablytyped" %%% "rc-mentions" % "1.10.0-635737",
-  "org.scalablytyped" %%% "rc-menu" % "9.7.1-21e1ed",
+  "org.scalablytyped" %%% "rc-mentions" % "1.11.0-7d86f9",
+  "org.scalablytyped" %%% "rc-menu" % "9.7.2-10d10e",
   "org.scalablytyped" %%% "rc-motion" % "2.6.2-242e78",
   "org.scalablytyped" %%% "rc-notification" % "4.6.1-27e145",
-  "org.scalablytyped" %%% "rc-pagination" % "3.1.17-69fde9",
-  "org.scalablytyped" %%% "rc-picker" % "3.0.0-4-e01e0b",
+  "org.scalablytyped" %%% "rc-pagination" % "3.2.0-a1194a",
+  "org.scalablytyped" %%% "rc-picker" % "2.7.0-c7cd48",
   "org.scalablytyped" %%% "rc-rate" % "2.9.2-30aa7f",
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-c25d98",
   "org.scalablytyped" %%% "rc-select" % "14.1.13-2b07cc",
   "org.scalablytyped" %%% "rc-slider" % "10.1.0-98057c",
   "org.scalablytyped" %%% "rc-steps" % "6.0.0-alpha.2-6e9670",
   "org.scalablytyped" %%% "rc-table" % "7.28.1-d2a436",
-  "org.scalablytyped" %%% "rc-tabs" % "12.2.2-227913",
+  "org.scalablytyped" %%% "rc-tabs" % "12.3.0-c877fd",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.6-0d33d5",
   "org.scalablytyped" %%% "rc-tooltip" % "5.2.2-240e29",
   "org.scalablytyped" %%% "rc-tree" % "5.7.0-c088f7",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-picker"
-version := "3.0.0-4-e01e0b"
+version := "2.7.0-c7cd48"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

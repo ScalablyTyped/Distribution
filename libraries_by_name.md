@@ -7967,6 +7967,7 @@
 | [onscan_dot_js](./o/onscan_dot_js) | Framework agnostic onScan event fired when using h | barcode, RFID, scanner, scan |
 | [onsenui](./o/onsenui) | HTML5 Mobile Framework & UI Components | phonegap, cordova, web-components, react, components, angular, vue, hybrid, app, ui, mobile, onsen, onsenui |
 | [ontime](./o/ontime) | a human-readable cron | cron, crontab, cronjob, schedule, scheduler, job scheduler, task scheduler, timer, interval |
+| [oojs](./o/oojs) | Power for object oriented JavaScript libraries. | oo, oop, class, inheritance, library |
 | [ooura](./o/ooura) | Ultra-fast real/complex FFT with simple interface | fft, ooura, audio, ifft, stft, dsp, overlap-add, ola, real, complex |
 | [open](./o/open) | Open stuff like URLs, files, executables. Cross-pl | app, open, opener, opens, launch, start, xdg-open, xdg, default, cmd, browser, editor, executable, exe, url, urls, arguments, args, spawn, exec, child, process, website, file |
 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, emacs, nano |
@@ -12608,6 +12609,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

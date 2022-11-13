@@ -21,4 +21,6 @@ object libTableUtilMod {
   inline def getColumnPos(index: Double, pos: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumnPos")(index.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def renderColumnTitle[RecordType](title: ColumnTitle[RecordType], props: ColumnTitleProps[RecordType]): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("renderColumnTitle")(title.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  inline def safeColumnTitle[RecordType](title: ColumnTitle[RecordType], props: ColumnTitleProps[RecordType]): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("safeColumnTitle")(title.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
 }

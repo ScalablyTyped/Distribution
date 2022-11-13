@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsrender"
-version := "v1.0.11-e8fa75"
+version := "v1.0.12-962980"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

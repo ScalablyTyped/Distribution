@@ -6531,6 +6531,7 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
+| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -10503,6 +10504,7 @@
 | 0.3247085548729147 | [git-rev](./g/git-rev) | get the current git commit hash, tag or branch in 
 | 0.32455924856439844 | [kbm-robot](./k/kbm-robot) | A module to help you emulate system wide keyboard 
 | 0.32423695636412697 | [base64topdf](./b/base64topdf) | base64topdf
+| 0.32402971992172536 | [oojs](./o/oojs) | Power for object oriented JavaScript libraries.
 | 0.3239040351695005 | [semantic-ui-sticky](./s/semantic-ui-sticky) | Single component release of sticky
 | 0.32374878808689045 | [detect-emoji-support](./d/detect-emoji-support) | Detect support for emoji character sets.
 | 0.3235637123745692 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema

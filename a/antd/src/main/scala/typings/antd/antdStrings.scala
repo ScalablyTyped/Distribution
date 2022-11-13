@@ -100,8 +100,8 @@ object antdStrings {
   inline def `404`: `404` = "404".asInstanceOf[`404`]
   
   @js.native
-  sealed trait `4Dot24Dot1` extends StObject
-  inline def `4Dot24Dot1`: `4Dot24Dot1` = "4.24.1".asInstanceOf[`4Dot24Dot1`]
+  sealed trait `4Dot24Dot2` extends StObject
+  inline def `4Dot24Dot2`: `4Dot24Dot2` = "4.24.2".asInstanceOf[`4Dot24Dot2`]
   
   @js.native
   sealed trait `500`

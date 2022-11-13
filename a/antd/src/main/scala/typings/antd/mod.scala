@@ -18,7 +18,7 @@ import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.anon.`3`
 import typings.antd.anon.`4`
-import typings.antd.antdStrings.`4Dot24Dot1`
+import typings.antd.antdStrings.`4Dot24Dot2`
 import typings.antd.antdStrings.picker
 import typings.antd.libAffixMod.AffixProps
 import typings.antd.libAlertErrorBoundaryMod.default
@@ -683,7 +683,7 @@ object mod {
   
   @JSImport("antd", "Tree")
   @js.native
-  val Tree: typings.antd.libTreeTreeMod.CompoundedComponent = js.native
+  val Tree: typings.antd.libTreeMod.CompoundedComponent = js.native
   
   @JSImport("antd", "TreeSelect")
   @js.native
@@ -711,5 +711,5 @@ object mod {
   
   @JSImport("antd", "version")
   @js.native
-  val version: `4Dot24Dot1` = js.native
+  val version: `4Dot24Dot2` = js.native
 }

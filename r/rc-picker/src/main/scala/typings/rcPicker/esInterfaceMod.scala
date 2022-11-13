@@ -22,6 +22,8 @@ object esInterfaceMod {
   trait Components extends StObject {
     
     var button: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
+    
+    var rangeItem: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
   }
   object Components {
     
@@ -35,6 +37,10 @@ object esInterfaceMod {
       inline def setButton(value: ComponentType[js.Object] | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
       inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      
+      inline def setRangeItem(value: ComponentType[js.Object] | String): Self = StObject.set(x, "rangeItem", value.asInstanceOf[js.Any])
+      
+      inline def setRangeItemUndefined: Self = StObject.set(x, "rangeItem", js.undefined)
     }
   }
   
@@ -383,29 +389,6 @@ object esInterfaceMod {
     inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
     
     inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
-  }
-  
-  trait PresetDate[T] extends StObject {
-    
-    var label: ReactNode
-    
-    var value: T
-  }
-  object PresetDate {
-    
-    inline def apply[T](value: T): PresetDate[T] = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PresetDate[T]]
-    }
-    
-    extension [Self <: PresetDate[?], T](x: Self & PresetDate[T]) {
-      
-      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-      
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
   }
   
   type RangeList = js.Array[Label]

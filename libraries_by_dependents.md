@@ -6868,6 +6868,7 @@
 | 0.0 | [onscan_dot_js](./o/onscan_dot_js) | Framework agnostic onScan event fired when using h
 | 0.0 | [onsenui](./o/onsenui) | HTML5 Mobile Framework & UI Components
 | 0.0 | [ontime](./o/ontime) | a human-readable cron
+| 0.0 | [oojs](./o/oojs) | Power for object oriented JavaScript libraries.
 | 0.0 | [ooura](./o/ooura) | Ultra-fast real/complex FFT with simple interface
 | 0.0 | [open](./o/open) | Open stuff like URLs, files, executables. Cross-pl
 | 0.0 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c
@@ -11372,6 +11373,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

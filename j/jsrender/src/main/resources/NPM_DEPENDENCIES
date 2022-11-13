@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jsrender" : "v1.0.11"
+      "jsrender" : "v1.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "jsrender" : "v1.0.11"
+      "jsrender" : "v1.0.12"
     }
   ],
   "compile-devDependencies" : [
