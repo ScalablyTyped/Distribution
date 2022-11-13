@@ -9172,7 +9172,6 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
-| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9468,7 +9467,6 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
-| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10190,7 +10188,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -11373,7 +11370,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
