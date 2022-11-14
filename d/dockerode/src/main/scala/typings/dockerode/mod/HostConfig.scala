@@ -96,6 +96,8 @@ trait HostConfig extends StObject {
   
   var Mounts: js.UndefOr[MountConfig] = js.undefined
   
+  var NanoCpus: js.UndefOr[Double] = js.undefined
+  
   var NetworkMode: js.UndefOr[String] = js.undefined
   
   var OomKillDisable: js.UndefOr[Boolean] = js.undefined
@@ -116,7 +118,7 @@ trait HostConfig extends StObject {
   
   var ReadonlyRootfs: js.UndefOr[Boolean] = js.undefined
   
-  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.undefined
+  var RestartPolicy: js.UndefOr[HostRestartPolicy] = js.undefined
   
   var Runtime: js.UndefOr[String] = js.undefined
   
@@ -345,6 +347,10 @@ object HostConfig {
     
     inline def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value*))
     
+    inline def setNanoCpus(value: Double): Self = StObject.set(x, "NanoCpus", value.asInstanceOf[js.Any])
+    
+    inline def setNanoCpusUndefined: Self = StObject.set(x, "NanoCpus", js.undefined)
+    
     inline def setNetworkMode(value: String): Self = StObject.set(x, "NetworkMode", value.asInstanceOf[js.Any])
     
     inline def setNetworkModeUndefined: Self = StObject.set(x, "NetworkMode", js.undefined)
@@ -387,7 +393,7 @@ object HostConfig {
     
     inline def setReadonlyRootfsUndefined: Self = StObject.set(x, "ReadonlyRootfs", js.undefined)
     
-    inline def setRestartPolicy(value: RestartPolicy): Self = StObject.set(x, "RestartPolicy", value.asInstanceOf[js.Any])
+    inline def setRestartPolicy(value: HostRestartPolicy): Self = StObject.set(x, "RestartPolicy", value.asInstanceOf[js.Any])
     
     inline def setRestartPolicyUndefined: Self = StObject.set(x, "RestartPolicy", js.undefined)
     

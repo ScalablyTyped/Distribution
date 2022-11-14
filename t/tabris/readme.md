@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabris
 
-Typings are for version 3.8.0
+Typings are for version 3.9.0
 
 ## Library description:
 Mobile apps with native UIs in JavaScript

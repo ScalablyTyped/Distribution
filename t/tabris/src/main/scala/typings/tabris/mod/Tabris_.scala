@@ -86,6 +86,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var onStart: Listeners[EventObject[this.type]] = js.native
   
   /**
+    * @constant
+    */
+  var propertyTypes: StringDictionary[PropertyType[Any]] = js.native
+  
+  /**
     * Indicates that the framework has been fully initialized. This happens before the main application
     * module is parsed and executed, so it is only relevant for framework and plug-in developers.
     * @constant

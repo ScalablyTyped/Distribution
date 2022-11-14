@@ -14,6 +14,8 @@ open class Exec protected () extends StObject {
   
   def inspect(): js.Promise[ExecInspectInfo] = js.native
   def inspect(callback: Callback[ExecInspectInfo]): Unit = js.native
+  def inspect(options: ExecInspectOptions): js.Promise[ExecInspectInfo] = js.native
+  def inspect(options: ExecInspectOptions, callback: Callback[ExecInspectInfo]): Unit = js.native
   
   var modem: Any = js.native
   

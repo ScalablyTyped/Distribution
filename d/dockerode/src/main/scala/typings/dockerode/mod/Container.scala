@@ -2,6 +2,8 @@ package typings.dockerode.mod
 
 import typings.dockerode.anon.ContainerLogsOptionsfollo
 import typings.dockerode.anon.ContainerLogsOptionsfolloAbortSignal
+import typings.dockerode.anon.Oneshot
+import typings.dockerode.anon.Stream
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
@@ -109,8 +111,10 @@ open class Container protected () extends StObject {
   
   def stats(): js.Promise[ContainerStats] = js.native
   def stats(callback: Callback[ContainerStats]): Unit = js.native
-  def stats(options: js.Object): js.Promise[ContainerStats] = js.native
-  def stats(options: js.Object, callback: Callback[ContainerStats]): Unit = js.native
+  def stats(options: Oneshot): js.Promise[ContainerStats] = js.native
+  def stats(options: Oneshot, callback: Callback[ContainerStats]): Unit = js.native
+  def stats(options: Stream): js.Promise[ReadableStream] = js.native
+  def stats(options: Stream, callback: Callback[ReadableStream]): Unit = js.native
   
   def stop(): js.Promise[Any] = js.native
   def stop(callback: Callback[Any]): Unit = js.native

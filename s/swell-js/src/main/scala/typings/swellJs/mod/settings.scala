@@ -10,9 +10,9 @@ object settings {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getfunction(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getfunction")().asInstanceOf[js.Promise[Any]]
+  inline def get(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[Any]]
   
-  inline def loadfunction(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadfunction")().asInstanceOf[js.Promise[Any]]
+  inline def load(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[Any]]
   
   inline def menus(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menus")().asInstanceOf[js.Promise[Any]]
   inline def menus(input: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menus")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

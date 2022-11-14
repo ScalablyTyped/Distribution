@@ -174,10 +174,6 @@ object dockerodeStrings {
   inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait replicated extends StObject
-  inline def replicated: replicated = "replicated".asInstanceOf[replicated]
-  
-  @js.native
   sealed trait rollback_completed
     extends StObject
        with UpdateState

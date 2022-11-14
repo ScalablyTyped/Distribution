@@ -23,7 +23,6 @@ import typings.tabris.mod.Properties
 import typings.tabris.mod.RuleSet
 import typings.tabris.mod.Selector
 import typings.tabris.mod.SiblingReferenceValue
-import typings.tabris.mod.TabFolder
 import typings.tabris.mod.Transformation
 import typings.tabris.mod.Widget
 import typings.tabris.mod.WidgetCollection
@@ -121,9 +120,9 @@ trait OmitTabset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `17`[Target], rules: RuleSet[Tab]): Tab
+  def _apply[Target](options: `18`[Target], rules: RuleSet[Tab]): Tab
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `17`[Tab], /* rules */ RuleSet[Tab], Tab]
+  var _apply_Original: js.Function2[/* options */ `18`[Tab], /* rules */ RuleSet[Tab], Tab]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -291,17 +290,17 @@ trait OmitTabset extends StObject {
   
   def append(widgets: Widget[Any]*): Tab
   
-  def appendTo(parent: TabFolder[typings.tabris.mod.Tab]): Tab
+  def appendTo(parent: Composite[Widget[Any]]): Tab
   @JSName("appendTo")
-  var appendTo_Original: js.Function1[/* parent */ TabFolder[typings.tabris.mod.Tab], Tab]
+  var appendTo_Original: js.Function1[/* parent */ Composite[Widget[Any]], Tab]
   
   @JSName("append")
   var append_Original: js.Function1[/* repeated */ Widget[Any], Tab]
   
   @JSName("apply")
-  def apply[Target](options: `17`[Target], rules: RuleSet[Tab]): Tab
+  def apply[Target](options: `18`[Target], rules: RuleSet[Tab]): Tab
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `17`[Tab], /* rules */ RuleSet[Tab], Tab]
+  var apply_Original: js.Function2[/* options */ `18`[Tab], /* rules */ RuleSet[Tab], Tab]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -382,13 +381,13 @@ trait OmitTabset extends StObject {
   
   var image: ImageValue
   
-  def insertAfter(widget: Tab): Tab
+  def insertAfter(widget: Widget[Any]): Tab
   @JSName("insertAfter")
-  var insertAfter_Original: js.Function1[/* widget */ Tab, Tab]
+  var insertAfter_Original: js.Function1[/* widget */ Widget[Any], Tab]
   
-  def insertBefore(widget: Tab): Tab
+  def insertBefore(widget: Widget[Any]): Tab
   @JSName("insertBefore")
-  var insertBefore_Original: js.Function1[/* widget */ Tab, Tab]
+  var insertBefore_Original: js.Function1[/* widget */ Widget[Any], Tab]
   
   def isDisposed(): Boolean
   @JSName("isDisposed")
@@ -557,9 +556,9 @@ trait OmitTabset extends StObject {
   
   var padding: js.UndefOr[BoxDimensions | Null] = js.undefined
   
-  def parent(): TabFolder[typings.tabris.mod.Tab]
+  def parent(): Composite[Widget[Any]]
   @JSName("parent")
-  var parent_Original: js.Function0[TabFolder[typings.tabris.mod.Tab]]
+  var parent_Original: js.Function0[Composite[Widget[Any]]]
   
   var right: ConstraintValue
   
@@ -568,7 +567,10 @@ trait OmitTabset extends StObject {
   def siblings[Result /* <: Widget[Any] */](): WidgetCollection[Result]
   def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("siblings")
-  var siblings_Original: js.Function1[/* selector */ js.UndefOr[Selector[Widget[Any], Tab]], WidgetCollection[Tab]]
+  var siblings_Original: js.Function1[
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
+  ]
   
   var title: String
   
@@ -602,7 +604,7 @@ object OmitTabset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `17`[Tab], /* rules */ RuleSet[Tab]) => Tab,
+    _apply: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -642,8 +644,8 @@ object OmitTabset {
     absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Tab,
-    appendTo: /* parent */ TabFolder[typings.tabris.mod.Tab] => Tab,
-    apply: (/* options */ `17`[Tab], /* rules */ RuleSet[Tab]) => Tab,
+    appendTo: /* parent */ Composite[Widget[Any]] => Tab,
+    apply: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab,
     badge: Double,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
@@ -666,8 +668,8 @@ object OmitTabset {
     height: Dimension | auto,
     highlightOnTouch: Boolean,
     id: String,
-    insertAfter: /* widget */ Tab => Tab,
-    insertBefore: /* widget */ Tab => Tab,
+    insertAfter: /* widget */ Widget[Any] => Tab,
+    insertBefore: /* widget */ Widget[Any] => Tab,
     isDisposed: () => Boolean,
     jsxAttributes: JSXCompositeAttributes[Tab, Widget[Any]],
     layoutData: LayoutDataValue,
@@ -730,9 +732,9 @@ object OmitTabset {
     onWidthChanged: ChangeListeners[Tab, width],
     once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Tab,
     opacity: Double,
-    parent: () => TabFolder[typings.tabris.mod.Tab],
+    parent: () => Composite[Widget[Any]],
     right: ConstraintValue,
-    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Tab]] => WidgetCollection[Tab],
+    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     title: String,
     top: ConstraintValue,
     transform: Transformation,
@@ -772,9 +774,9 @@ object OmitTabset {
     
     inline def setAppend(value: /* repeated */ Widget[Any] => Tab): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAppendTo(value: /* parent */ TabFolder[typings.tabris.mod.Tab] => Tab): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Tab): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `17`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -862,9 +864,9 @@ object OmitTabset {
     
     inline def setImageNull: Self = StObject.set(x, "image", null)
     
-    inline def setInsertAfter(value: /* widget */ Tab => Tab): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* widget */ Widget[Any] => Tab): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
-    inline def setInsertBefore(value: /* widget */ Tab => Tab): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* widget */ Widget[Any] => Tab): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
@@ -1008,7 +1010,7 @@ object OmitTabset {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setParent(value: () => TabFolder[typings.tabris.mod.Tab]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+    inline def setParent(value: () => Composite[Widget[Any]]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
@@ -1016,7 +1018,9 @@ object OmitTabset {
     
     inline def setSelectedImageNull: Self = StObject.set(x, "selectedImage", null)
     
-    inline def setSiblings(value: /* selector */ js.UndefOr[Selector[Widget[Any], Tab]] => WidgetCollection[Tab]): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
+    inline def setSiblings(
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
+    ): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -1036,7 +1040,7 @@ object OmitTabset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `17`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `18`[Tab], /* rules */ RuleSet[Tab]) => Tab): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

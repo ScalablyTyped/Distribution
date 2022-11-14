@@ -1,6 +1,6 @@
 package typings.tabris.global
 
-import typings.tabris.anon.`30`
+import typings.tabris.anon.`32`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +18,8 @@ open class Blob ()
   extends StObject
      with typings.tabris.Blob {
   def this(blobParts: js.Array[Any]) = this()
-  def this(blobParts: js.Array[Any], options: `30`) = this()
-  def this(blobParts: Unit, options: `30`) = this()
+  def this(blobParts: js.Array[Any], options: `32`) = this()
+  def this(blobParts: Unit, options: `32`) = this()
   
   /**
     * Reads the blob data into an ArrayBuffer and returns it in a promise. Each call creates a new

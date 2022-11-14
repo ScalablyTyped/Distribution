@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-custom-properties"
-version := "12.1.10-b332fc"
+version := "13.0.0-d49696"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

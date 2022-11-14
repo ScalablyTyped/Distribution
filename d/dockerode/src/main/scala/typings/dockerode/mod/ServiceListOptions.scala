@@ -1,6 +1,5 @@
 package typings.dockerode.mod
 
-import typings.dockerode.anon.Id
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,12 +9,14 @@ trait ServiceListOptions extends StObject {
   
   var abortSignal: js.UndefOr[AbortSignal] = js.undefined
   
-  var filters: Id
+  var filters: js.UndefOr[String] = js.undefined
+  
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object ServiceListOptions {
   
-  inline def apply(filters: Id): ServiceListOptions = {
-    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
+  inline def apply(): ServiceListOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceListOptions]
   }
   
@@ -25,6 +26,12 @@ object ServiceListOptions {
     
     inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
     
-    inline def setFilters(value: Id): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

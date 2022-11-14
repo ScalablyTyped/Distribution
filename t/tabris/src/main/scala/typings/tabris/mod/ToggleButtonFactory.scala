@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ToggleButtonFactory
   extends Factory[
       ToggleButtonConstructor, 
-      InstanceType[ToggleButtonConstructor], 
+      typings.tabris.mod.ToggleButton, 
       js.Function1[/* repeated */ Any, Widget[Any]]
     ]

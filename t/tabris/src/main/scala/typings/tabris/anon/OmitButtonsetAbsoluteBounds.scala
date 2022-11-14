@@ -330,7 +330,7 @@ trait OmitButtonsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.Button, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `6`
+  ]) & `7`
   
   var layoutData: LayoutDataValue
   
@@ -598,7 +598,7 @@ object OmitButtonsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Button, 
       Omit[typings.tabris.global.tabris.widgets.Button, set | jsxAttributes]
-    ]) & `6`,
+    ]) & `7`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Button,
@@ -789,7 +789,7 @@ object OmitButtonsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Button, 
           Omit[typings.tabris.global.tabris.widgets.Button, set | jsxAttributes]
-        ]) & `6`
+        ]) & `7`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

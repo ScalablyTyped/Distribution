@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swell-js"
-version := "3.17-dt-20221111Z-4eea14"
+version := "3.17-dt-20221114Z-26177c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

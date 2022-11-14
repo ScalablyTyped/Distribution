@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object which may include (in addition to the properties) children, event listeners and layout
   * shorthands.
   */
-/* protected */ open class ContentView_[ChildType /* <: Widget[Any] */] ()
+/* protected */ open class ContentView_[ChildType /* <: AnyWidget */] ()
   extends typings.tabris.mod.widgets.Composite[ChildType] {
   /* protected */ def this(properties: Properties[ContentView_[Widget[Any]], OmitContentViewWidgetanys[ChildType]]) = this()
 }

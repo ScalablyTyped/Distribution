@@ -46,8 +46,8 @@ inline def _empty(attributes: `0`, children: Double): String = (js.Dynamic.globa
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
   * of an object is `'$23'` it can be obtained by `$(23)`. The cid is visible in the log when passing a
-  * NativeObject to any log method, e.g. [`console.log(widget)`](./console.md#logvalues), or
-  * [`console.dirxml(widget)`](./console.md#dirxmlobject). The native object may then be obtained using
+  * NativeObject to any log method, e.g. [`console.log(widget)`](./Console.md#logvalues), or
+  * [`console.dirxml(widget)`](./Console.md#dirxmlobject). The native object may then be obtained using
   * the developer console or the interactive console feature for the tabris CLI serve command.
   * This feature is meant for debugging purposes only. **Using it in production code is dangerous since
   * it allows interfering with the internals of the framework or encapsulated components.** Also, the

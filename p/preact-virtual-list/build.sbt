@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "preact-virtual-list"
-version := "0.3-dt-20211202Z-03eb7d"
+version := "0.3-dt-20211202Z-d17144"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "preact" % "10.11.2-8ae6d7",
+  "org.scalablytyped" %%% "preact" % "10.11.3-4113af",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -37,12 +37,12 @@ import typings.tabris.anon.OmitVideospeedpositiondur
 import typings.tabris.anon.OmitWebViewcanGoBackcanGo
 import typings.tabris.anon.PartialPickPickeritemText
 import typings.tabris.anon.PartialPickthiscellHeightCellHeight
-import typings.tabris.anon.`11`
-import typings.tabris.anon.`14`
+import typings.tabris.anon.`10`
+import typings.tabris.anon.`12`
+import typings.tabris.anon.`15`
 import typings.tabris.anon.`3`
-import typings.tabris.anon.`6`
 import typings.tabris.anon.`7`
-import typings.tabris.anon.`9`
+import typings.tabris.anon.`8`
 import typings.tabris.tabrisBooleans.`false`
 import typings.tabris.tabrisBooleans.`true`
 import typings.tabris.tabrisStrings.Asterisk
@@ -217,30 +217,12 @@ object widgets {
     def this(properties: Properties[typings.tabris.mod.widgets.Action, OmitActionset]) = this()
     
     /**
-      * Appends this widget to the given `NavigationView` instance.
-      * @param parent
-      */
-    def appendTo(parent: typings.tabris.mod.NavigationView[typings.tabris.mod.Page, typings.tabris.mod.Action]): this.type = js.native
-    
-    /**
       * Icon image for the action.
       * On iOS the `image` is tinted with the apps default accent color whereas on Android the `image` is
       * shown as is. When an action is placed into a `NavigationView`, the `NavigationView` property
       * `actionColor` can be used to adjust the action tint color.
       */
     var image: ImageValue = js.native
-    
-    /**
-      * Inserts this widget directly after the given Action.
-      * @param widget
-      */
-    def insertAfter(widget: typings.tabris.mod.widgets.Action): this.type = js.native
-    
-    /**
-      * Inserts this widget directly before the given Action.
-      * @param widget
-      */
-    def insertBefore(widget: typings.tabris.mod.widgets.Action): this.type = js.native
     
     /**
       * @constant
@@ -359,7 +341,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_Button: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `6` = js.native
+    val jsxAttributes_Button: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `7` = js.native
     
     /**
       * Fired when the [*alignment*](#alignment) property has changed.
@@ -883,7 +865,7 @@ object widgets {
     * object which may include (in addition to the properties) children, event listeners and layout
     * shorthands.
     */
-  open class Composite[ChildType /* <: Widget[Any] */] () extends Widget[Any] {
+  open class Composite[ChildType /* <: AnyWidget */] () extends Widget[Any] {
     def this(properties: Properties[
             typings.tabris.mod.widgets.Composite[Widget[Any]], 
             OmitCompositeWidgetanyset[ChildType]
@@ -936,7 +918,7 @@ object widgets {
       * @param options If mode is set to `'strict'` the function checks that all selector match at least one widget, and that id selector match exactly one widget. <br/>A `trigger` is string to be associated with the given rulset. If set to `'update'`, the ruleset will be applied once immediately and then again every time `apply('update')` is called. If set to any event-attribute name, such as `'onTap'`, it will automatically re-apply the ruleset when this event is triggered.
       * @param rules The ruleset to apply. May also be given as a callback which is passed to the widget instance and must return the actual ruleset.
       */
-    /* protected */ def _apply[Target](options: `7`[Target], rules: RuleSet[this.type]): this.type = js.native
+    /* protected */ def _apply[Target](options: `8`[Target], rules: RuleSet[this.type]): this.type = js.native
     /* protected */ @JSName("_apply")
     def _apply_update(trigger: update | Asterisk): this.type = js.native
     
@@ -1039,7 +1021,7 @@ object widgets {
       * @param rules The ruleset to apply. May also be given as a callback which is passed to the widget instance and must return the actual ruleset. This parameter can also be `null` if the `trigger` option is set. This will stop re-applying the ruleset previously associated with that trigger.
       */
     @JSName("apply")
-    def apply[Target](options: `7`[Target], rules: RuleSet[this.type]): this.type = js.native
+    def apply[Target](options: `8`[Target], rules: RuleSet[this.type]): this.type = js.native
     @JSName("apply")
     def apply_update(trigger: update | Asterisk): this.type = js.native
     
@@ -1302,7 +1284,7 @@ object widgets {
       * topmost page as the last element. Same as children(), but only accepts subclasses of `Page`.
       * @param constructor A class to filter the results.
       */
-    def pages[U /* <: typings.tabris.mod.Page */](constructor: `9`[U]): WidgetCollection[U] = js.native
+    def pages[U /* <: typings.tabris.mod.Page */](constructor: `10`[U]): WidgetCollection[U] = js.native
     
     /**
       * The text color used for page titles.
@@ -1345,12 +1327,6 @@ object widgets {
     def this(properties: Properties[typings.tabris.mod.widgets.Page, OmitPageset]) = this()
     
     /**
-      * Appends this widget to the given `NavigationView` instance.
-      * @param parent
-      */
-    def appendTo(parent: typings.tabris.mod.NavigationView[typings.tabris.mod.Page, typings.tabris.mod.Action]): this.type = js.native
-    
-    /**
       * Defines whether this page will be automatically disposed when popped from the NavigationView, e.g.
       * using native back navigation.
       */
@@ -1360,18 +1336,6 @@ object widgets {
       * An image to be displayed in the navigation bar
       */
     var image: ImageValue = js.native
-    
-    /**
-      * Inserts this widget directly after the given `Action`.
-      * @param widget
-      */
-    def insertAfter(widget: typings.tabris.mod.widgets.Page): this.type = js.native
-    
-    /**
-      * Inserts this widget directly before the given `Page`.
-      * @param widget
-      */
-    def insertBefore(widget: typings.tabris.mod.widgets.Page): this.type = js.native
     
     /**
       * Fired when the page is about to become visible, i.e. it has become the active page.
@@ -1420,7 +1384,7 @@ object widgets {
       * @constant
       */
     @JSName("jsxAttributes")
-    val jsxAttributes_PdfView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `11` = js.native
+    val jsxAttributes_PdfView: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `12` = js.native
     
     /**
       * Fired when the document loading has finished.
@@ -1913,7 +1877,7 @@ object widgets {
       * @param options An additional parameter object to control the animation.
       */
     def scrollToX(offset: Double): this.type = js.native
-    def scrollToX(offset: Double, options: `14`): this.type = js.native
+    def scrollToX(offset: Double, options: `15`): this.type = js.native
     
     /**
       * Scrolls to the given vertical offset. Give `{animate: false}` as the second parameter to suppress the
@@ -1922,7 +1886,7 @@ object widgets {
       * @param options An parameter object to control the animation.
       */
     def scrollToY(offset: Double): this.type = js.native
-    def scrollToY(offset: Double, options: `14`): this.type = js.native
+    def scrollToY(offset: Double, options: `15`): this.type = js.native
     
     /**
       * The scroll state of the `ScrollView` in horizontal direction. The following states are supported:
@@ -2197,12 +2161,6 @@ object widgets {
     def this(properties: Properties[typings.tabris.mod.widgets.Tab, OmitTabset]) = this()
     
     /**
-      * Appends this widget to the given `TabFolder` instance.
-      * @param parent
-      */
-    def appendTo(parent: typings.tabris.mod.TabFolder[typings.tabris.mod.Tab]): this.type = js.native
-    
-    /**
       * A badge to attach on the tab. Setting the `badge` to `0` hides the badge. The background color of the
       * badge can be controlled with the `badgeColor` property.
       * On iOS the property only has an effect when the parent `TabFolder` has its `tabBarLocation` set to
@@ -2220,18 +2178,6 @@ object widgets {
       * is set to `top`
       */
     var image: ImageValue = js.native
-    
-    /**
-      * Inserts this widget directly after the given `Tab`.
-      * @param widget
-      */
-    def insertAfter(widget: typings.tabris.mod.widgets.Tab): this.type = js.native
-    
-    /**
-      * Inserts this widget directly before the given `Tab`.
-      * @param widget
-      */
-    def insertBefore(widget: typings.tabris.mod.widgets.Tab): this.type = js.native
     
     /**
       * Fired when the tab will become visible, i.e. the selection of its TabFolder.

@@ -16,7 +16,7 @@ trait ContainerStats extends StObject {
   
   var num_procs: Double
   
-  var pid_stats: js.UndefOr[PidsStats] = js.undefined
+  var pids_stats: js.UndefOr[PidsStats] = js.undefined
   
   var precpu_stats: CPUStats
   
@@ -55,9 +55,9 @@ object ContainerStats {
     
     inline def setNum_procs(value: Double): Self = StObject.set(x, "num_procs", value.asInstanceOf[js.Any])
     
-    inline def setPid_stats(value: PidsStats): Self = StObject.set(x, "pid_stats", value.asInstanceOf[js.Any])
+    inline def setPids_stats(value: PidsStats): Self = StObject.set(x, "pids_stats", value.asInstanceOf[js.Any])
     
-    inline def setPid_statsUndefined: Self = StObject.set(x, "pid_stats", js.undefined)
+    inline def setPids_statsUndefined: Self = StObject.set(x, "pids_stats", js.undefined)
     
     inline def setPrecpu_stats(value: CPUStats): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
     

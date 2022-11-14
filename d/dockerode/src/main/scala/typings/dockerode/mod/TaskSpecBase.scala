@@ -17,7 +17,7 @@ trait TaskSpecBase extends StObject {
   
   var Resources: js.UndefOr[ResourceRequirements] = js.undefined
   
-  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.undefined
+  var RestartPolicy: js.UndefOr[TaskRestartPolicy] = js.undefined
   
   var Runtime: js.UndefOr[String] = js.undefined
 }
@@ -52,7 +52,7 @@ object TaskSpecBase {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setRestartPolicy(value: RestartPolicy): Self = StObject.set(x, "RestartPolicy", value.asInstanceOf[js.Any])
+    inline def setRestartPolicy(value: TaskRestartPolicy): Self = StObject.set(x, "RestartPolicy", value.asInstanceOf[js.Any])
     
     inline def setRestartPolicyUndefined: Self = StObject.set(x, "RestartPolicy", js.undefined)
     

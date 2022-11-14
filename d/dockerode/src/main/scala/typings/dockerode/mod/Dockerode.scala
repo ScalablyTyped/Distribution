@@ -47,9 +47,9 @@ trait Dockerode extends StObject {
   def createSecret(options: js.Object): js.Promise[Any] = js.native
   def createSecret(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def createService(auth: AuthConfig, options: ServiceSpec): js.Promise[ServiceCreateResponse] = js.native
-  def createService(options: CreateServiceOptions): js.Promise[ServiceCreateResponse] = js.native
-  def createService(options: CreateServiceOptions, callback: Callback[ServiceCreateResponse]): Unit = js.native
+  def createService(auth: AuthConfig, options: ServiceSpec): js.Promise[Service] = js.native
+  def createService(options: CreateServiceOptions): js.Promise[Service] = js.native
+  def createService(options: CreateServiceOptions, callback: Callback[Service]): Unit = js.native
   
   def createVolume(): js.Promise[VolumeCreateResponse] = js.native
   def createVolume(callback: Callback[Volume]): Unit = js.native

@@ -126,9 +126,9 @@ trait OmitScrollViewset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `15`[Target], rules: RuleSet[ScrollView]): ScrollView
+  def _apply[Target](options: `16`[Target], rules: RuleSet[ScrollView]): ScrollView
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView], ScrollView]
+  var _apply_Original: js.Function2[/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView], ScrollView]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -304,9 +304,9 @@ trait OmitScrollViewset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], ScrollView]
   
   @JSName("apply")
-  def apply[Target](options: `15`[Target], rules: RuleSet[ScrollView]): ScrollView
+  def apply[Target](options: `16`[Target], rules: RuleSet[ScrollView]): ScrollView
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView], ScrollView]
+  var apply_Original: js.Function2[/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView], ScrollView]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -565,14 +565,14 @@ trait OmitScrollViewset extends StObject {
   var right: ConstraintValue
   
   def scrollToX(offset: Double): ScrollView
-  def scrollToX(offset: Double, options: `14`): ScrollView
+  def scrollToX(offset: Double, options: `15`): ScrollView
   @JSName("scrollToX")
-  var scrollToX_Original: js.Function2[/* offset */ Double, /* options */ js.UndefOr[`14`], ScrollView]
+  var scrollToX_Original: js.Function2[/* offset */ Double, /* options */ js.UndefOr[`15`], ScrollView]
   
   def scrollToY(offset: Double): ScrollView
-  def scrollToY(offset: Double, options: `14`): ScrollView
+  def scrollToY(offset: Double, options: `15`): ScrollView
   @JSName("scrollToY")
-  var scrollToY_Original: js.Function2[/* offset */ Double, /* options */ js.UndefOr[`14`], ScrollView]
+  var scrollToY_Original: js.Function2[/* offset */ Double, /* options */ js.UndefOr[`15`], ScrollView]
   
   var scrollXState: drag | rest | scroll
   
@@ -618,7 +618,7 @@ object OmitScrollViewset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView,
+    _apply: (/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -659,7 +659,7 @@ object OmitScrollViewset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => ScrollView,
     appendTo: /* parent */ Composite[Widget[Any]] => ScrollView,
-    apply: (/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView,
+    apply: (/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -748,8 +748,8 @@ object OmitScrollViewset {
     opacity: Double,
     parent: () => Composite[Widget[Any]],
     right: ConstraintValue,
-    scrollToX: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => ScrollView,
-    scrollToY: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => ScrollView,
+    scrollToX: (/* offset */ Double, /* options */ js.UndefOr[`15`]) => ScrollView,
+    scrollToY: (/* offset */ Double, /* options */ js.UndefOr[`15`]) => ScrollView,
     scrollXState: drag | rest | scroll,
     scrollYState: drag | rest | scroll,
     scrollbarVisible: Boolean,
@@ -794,7 +794,7 @@ object OmitScrollViewset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => ScrollView): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -1024,9 +1024,9 @@ object OmitScrollViewset {
     
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setScrollToX(value: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => ScrollView): Self = StObject.set(x, "scrollToX", js.Any.fromFunction2(value))
+    inline def setScrollToX(value: (/* offset */ Double, /* options */ js.UndefOr[`15`]) => ScrollView): Self = StObject.set(x, "scrollToX", js.Any.fromFunction2(value))
     
-    inline def setScrollToY(value: (/* offset */ Double, /* options */ js.UndefOr[`14`]) => ScrollView): Self = StObject.set(x, "scrollToY", js.Any.fromFunction2(value))
+    inline def setScrollToY(value: (/* offset */ Double, /* options */ js.UndefOr[`15`]) => ScrollView): Self = StObject.set(x, "scrollToY", js.Any.fromFunction2(value))
     
     inline def setScrollXState(value: drag | rest | scroll): Self = StObject.set(x, "scrollXState", value.asInstanceOf[js.Any])
     
@@ -1054,7 +1054,7 @@ object OmitScrollViewset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `15`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `16`[ScrollView], /* rules */ RuleSet[ScrollView]) => ScrollView): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

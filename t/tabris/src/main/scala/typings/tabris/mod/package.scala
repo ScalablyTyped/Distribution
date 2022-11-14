@@ -19,6 +19,7 @@ import typings.tabris.anon.Family
 import typings.tabris.anon.Name
 import typings.tabris.anon.Unsubscribe
 import typings.tabris.anon.`0`
+import typings.tabris.anon.`5`
 import typings.tabris.mod.^
 import typings.tabris.tabrisStrings.`type`
 import typings.tabris.tabrisStrings.constructor
@@ -55,7 +56,7 @@ inline def CollectionView: CollectionViewFactory = ^.asInstanceOf[js.Dynamic].se
 type CollectionView[CellWidgetType /* <: Widget[Any] */] = typings.tabris.mod.widgets.CollectionView[CellWidgetType]
 
 inline def Composite: CompositeFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("Composite").asInstanceOf[CompositeFactory]
-type Composite[ChildType /* <: Widget[Any] */] = typings.tabris.mod.widgets.Composite[ChildType]
+type Composite[ChildType /* <: AnyWidget */] = typings.tabris.mod.widgets.Composite[ChildType]
 
 inline def ImageView: ImageViewFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageView").asInstanceOf[ImageViewFactory]
 type ImageView = typings.tabris.mod.widgets.ImageView
@@ -193,8 +194,8 @@ inline def _empty(attributes: `0`, children: Double): String = (^.asInstanceOf[j
   * Returns the non-disposed `NativeObject` instance (e.g. a widget) associated with the given cid
   * number. The number can be obtained via the [cid](./NativeObject.md#cid) property. Example: If the cid
   * of an object is `'$23'` it can be obtained by `$(23)`. The cid is visible in the log when passing a
-  * NativeObject to any log method, e.g. [`console.log(widget)`](./console.md#logvalues), or
-  * [`console.dirxml(widget)`](./console.md#dirxmlobject). The native object may then be obtained using
+  * NativeObject to any log method, e.g. [`console.log(widget)`](./Console.md#logvalues), or
+  * [`console.dirxml(widget)`](./Console.md#dirxmlobject). The native object may then be obtained using
   * the developer console or the interactive console feature for the tabris CLI serve command.
   * This feature is meant for debugging purposes only. **Using it in production code is dangerous since
   * it allows interfering with the internals of the framework or encapsulated components.** Also, the
@@ -395,7 +396,7 @@ type ImageValue = _ImageValue | Null | String
 
 type ImageViewConstructor = ImageViewFactory
 
-type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U, Omit[U, set]]) & ListenersMap[U] & JSXShorthands[U]
+type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U & typings.tabris.anon.Set, Omit[U & typings.tabris.anon.Set, set]]) & ListenersMap[U] & JSXShorthands[U]
 
 /* Rewritten from type alias, can be one of: 
   - T
@@ -404,9 +405,9 @@ type JSXAttributes[T /* <: JSXCandidate */, U] = (Properties[U, Omit[U, set]]) &
   - typings.tabris.anon.Cid
   - scala.Unit
 */
-type JSXChildren[T /* <: Widget[Any] */] = js.UndefOr[_JSXChildren[T] | (js.Array[T | WidgetCollection[T]]) | T]
+type JSXChildren[T /* <: AnyWidget */] = js.UndefOr[_JSXChildren[T] | (js.Array[T | WidgetCollection[T]]) | T]
 
-type JSXCompositeAttributes[T /* <: typings.tabris.mod.Composite[Widget[Any]] */, U /* <: Widget[Any] */] = (JSXAttributes[T, Omit[T, set | jsxAttributes]]) & (ApplyChildren[T, U])
+type JSXCompositeAttributes[ThisType /* <: JSXCandidate */, ChildType /* <: AnyWidget */] = (JSXAttributes[ThisType, Omit[ThisType, set | jsxAttributes]]) & (ApplyChildren[ThisType, ChildType])
 
 // Tabris.js Helper Types
 type JSXDefaultChildren = Flatten[String | (Cid & js.Object)]
@@ -452,6 +453,8 @@ type Omit[T, K /* <: String | js.Symbol | Double */] = Pick[T, Exclude[/* keyof 
 
 type PageConstructor = PageFactory
 
+type ParentSelector[Candidate /* <: typings.tabris.mod.Composite[Widget[Any]] */, Result /* <: Candidate */] = SelectorString | SelectorFunction[Candidate] | Constructor[Result] | SFC[Result]
+
 type PdfViewConstructor = PdfViewFactory
 
 type PercentString = String
@@ -464,7 +467,7 @@ type PrevString = /* prev() */ String
 
 type ProgressBarConstructor = ProgressBarFactory
 
-type Properties[T /* <: typings.tabris.anon.Set */, U] = (Partial[Omit[U, MethodKeysOf[U] | ReadOnlyWidgetKeys[U]]]) & CidData
+type Properties[T /* <: `5` */, U] = (Partial[Omit[U, MethodKeysOf[U] | ReadOnlyWidgetKeys[U]]]) & CidData
 
 type RadioButtonConstructor = RadioButtonFactory
 
@@ -540,9 +543,9 @@ type SearchActionConstructor = SearchActionFactory
 */
 type Selectable[T] = js.UndefOr[_Selectable[T] | StringDictionary[Any] | T]
 
-type Selector[Candidate /* <: Widget[Any] */, Result /* <: Candidate */] = SelectorString | SelectorFunction[Candidate] | Constructor[Result] | SFC[Result]
+type Selector[Candidate /* <: AnyWidget */, Result /* <: Candidate */] = SelectorString | SelectorFunction[Candidate] | Constructor[Result] | SFC[Result]
 
-type SelectorFunction[Candidate /* <: Widget[Any] */] = js.Function3[
+type SelectorFunction[Candidate /* <: AnyWidget */] = js.Function3[
 /* widget */ Candidate, 
 /* index */ Double, 
 /* collection */ WidgetCollection[Candidate], 

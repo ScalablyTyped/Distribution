@@ -1,7 +1,6 @@
 package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tabris.mod.Action
 import typings.tabris.mod.AnimationOptions
 import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
@@ -17,9 +16,7 @@ import typings.tabris.mod.LayoutDataValue
 import typings.tabris.mod.LinearGradientValue
 import typings.tabris.mod.Listeners
 import typings.tabris.mod.NativeObject
-import typings.tabris.mod.NavigationView
 import typings.tabris.mod.Omit
-import typings.tabris.mod.Page
 import typings.tabris.mod.Properties
 import typings.tabris.mod.SearchActionAcceptEvent
 import typings.tabris.mod.SearchActionInputEvent
@@ -239,10 +236,10 @@ trait OmitSearchActionsetAbsoluteBounds extends StObject {
   @JSName("animate")
   var animate_Original: js.Function2[/* properties */ Opacity, /* options */ AnimationOptions, js.Promise[Unit]]
   
-  def appendTo(parent: NavigationView[Page, Action]): typings.tabris.global.tabris.widgets.SearchAction
+  def appendTo(parent: Composite[Widget[Any]]): typings.tabris.global.tabris.widgets.SearchAction
   @JSName("appendTo")
   var appendTo_Original: js.Function1[
-    /* parent */ NavigationView[Page, Action], 
+    /* parent */ Composite[Widget[Any]], 
     typings.tabris.global.tabris.widgets.SearchAction
   ]
   
@@ -308,19 +305,13 @@ trait OmitSearchActionsetAbsoluteBounds extends StObject {
   
   var image: ImageValue
   
-  def insertAfter(widget: typings.tabris.mod.widgets.Action): typings.tabris.global.tabris.widgets.SearchAction
+  def insertAfter(widget: Widget[Any]): typings.tabris.global.tabris.widgets.SearchAction
   @JSName("insertAfter")
-  var insertAfter_Original: js.Function1[
-    /* widget */ typings.tabris.mod.widgets.Action, 
-    typings.tabris.global.tabris.widgets.SearchAction
-  ]
+  var insertAfter_Original: js.Function1[/* widget */ Widget[Any], typings.tabris.global.tabris.widgets.SearchAction]
   
-  def insertBefore(widget: typings.tabris.mod.widgets.Action): typings.tabris.global.tabris.widgets.SearchAction
+  def insertBefore(widget: Widget[Any]): typings.tabris.global.tabris.widgets.SearchAction
   @JSName("insertBefore")
-  var insertBefore_Original: js.Function1[
-    /* widget */ typings.tabris.mod.widgets.Action, 
-    typings.tabris.global.tabris.widgets.SearchAction
-  ]
+  var insertBefore_Original: js.Function1[/* widget */ Widget[Any], typings.tabris.global.tabris.widgets.SearchAction]
   
   def isDisposed(): Boolean
   @JSName("isDisposed")
@@ -495,9 +486,9 @@ trait OmitSearchActionsetAbsoluteBounds extends StObject {
   
   var padding: js.UndefOr[BoxDimensions | Null] = js.undefined
   
-  def parent(): NavigationView[Page, Action]
+  def parent(): Composite[Widget[Any]]
   @JSName("parent")
-  var parent_Original: js.Function0[NavigationView[Page, Action]]
+  var parent_Original: js.Function0[Composite[Widget[Any]]]
   
   var placement: default | navigation | overflow
   
@@ -509,8 +500,8 @@ trait OmitSearchActionsetAbsoluteBounds extends StObject {
   def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("siblings")
   var siblings_Original: js.Function1[
-    /* selector */ js.UndefOr[Selector[Widget[Any], typings.tabris.mod.widgets.Action | Page]], 
-    WidgetCollection[typings.tabris.mod.widgets.Action | Page]
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
   ]
   
   var text: String
@@ -574,7 +565,7 @@ object OmitSearchActionsetAbsoluteBounds {
     _wasSet: /* propertyName */ String => Boolean,
     absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
-    appendTo: /* parent */ NavigationView[Page, Action] => typings.tabris.global.tabris.widgets.SearchAction,
+    appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.SearchAction,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -594,8 +585,8 @@ object OmitSearchActionsetAbsoluteBounds {
     height: Dimension | auto,
     highlightOnTouch: Boolean,
     id: String,
-    insertAfter: /* widget */ typings.tabris.mod.widgets.Action => typings.tabris.global.tabris.widgets.SearchAction,
-    insertBefore: /* widget */ typings.tabris.mod.widgets.Action => typings.tabris.global.tabris.widgets.SearchAction,
+    insertAfter: /* widget */ Widget[Any] => typings.tabris.global.tabris.widgets.SearchAction,
+    insertBefore: /* widget */ Widget[Any] => typings.tabris.global.tabris.widgets.SearchAction,
     isDisposed: () => Boolean,
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.SearchAction, 
@@ -661,11 +652,11 @@ object OmitSearchActionsetAbsoluteBounds {
     once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.SearchAction,
     opacity: Double,
     open: () => Unit,
-    parent: () => NavigationView[Page, Action],
+    parent: () => Composite[Widget[Any]],
     placement: default | navigation | overflow,
     proposals: js.Array[String],
     right: ConstraintValue,
-    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], typings.tabris.mod.widgets.Action | Page]] => WidgetCollection[typings.tabris.mod.widgets.Action | Page],
+    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     text: String,
     title: String,
     top: ConstraintValue,
@@ -698,9 +689,7 @@ object OmitSearchActionsetAbsoluteBounds {
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
-    inline def setAppendTo(
-      value: /* parent */ NavigationView[Page, Action] => typings.tabris.global.tabris.widgets.SearchAction
-    ): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.SearchAction): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -774,13 +763,9 @@ object OmitSearchActionsetAbsoluteBounds {
     
     inline def setImageNull: Self = StObject.set(x, "image", null)
     
-    inline def setInsertAfter(
-      value: /* widget */ typings.tabris.mod.widgets.Action => typings.tabris.global.tabris.widgets.SearchAction
-    ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* widget */ Widget[Any] => typings.tabris.global.tabris.widgets.SearchAction): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
-    inline def setInsertBefore(
-      value: /* widget */ typings.tabris.mod.widgets.Action => typings.tabris.global.tabris.widgets.SearchAction
-    ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* widget */ Widget[Any] => typings.tabris.global.tabris.widgets.SearchAction): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
@@ -923,7 +908,7 @@ object OmitSearchActionsetAbsoluteBounds {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setParent(value: () => NavigationView[Page, Action]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+    inline def setParent(value: () => Composite[Widget[Any]]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     inline def setPlacement(value: default | navigation | overflow): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
@@ -934,7 +919,7 @@ object OmitSearchActionsetAbsoluteBounds {
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setSiblings(
-      value: /* selector */ js.UndefOr[Selector[Widget[Any], typings.tabris.mod.widgets.Action | Page]] => WidgetCollection[typings.tabris.mod.widgets.Action | Page]
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
     ): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])

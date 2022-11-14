@@ -117,9 +117,9 @@ trait OmitStackset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `16`[Target], rules: RuleSet[Stack]): Stack
+  def _apply[Target](options: `17`[Target], rules: RuleSet[Stack]): Stack
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `16`[Stack], /* rules */ RuleSet[Stack], Stack]
+  var _apply_Original: js.Function2[/* options */ `17`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -297,9 +297,9 @@ trait OmitStackset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Stack]
   
   @JSName("apply")
-  def apply[Target](options: `16`[Target], rules: RuleSet[Stack]): Stack
+  def apply[Target](options: `17`[Target], rules: RuleSet[Stack]): Stack
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `16`[Stack], /* rules */ RuleSet[Stack], Stack]
+  var apply_Original: js.Function2[/* options */ `17`[Stack], /* rules */ RuleSet[Stack], Stack]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -577,7 +577,7 @@ object OmitStackset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack,
+    _apply: (/* options */ `17`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -619,7 +619,7 @@ object OmitStackset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Stack,
     appendTo: /* parent */ Composite[Widget[Any]] => Stack,
-    apply: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack,
+    apply: (/* options */ `17`[Stack], /* rules */ RuleSet[Stack]) => Stack,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -743,7 +743,7 @@ object OmitStackset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Stack): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `17`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -971,7 +971,7 @@ object OmitStackset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `16`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `17`[Stack], /* rules */ RuleSet[Stack]) => Stack): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

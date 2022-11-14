@@ -117,9 +117,9 @@ trait OmitRowset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `13`[Target], rules: RuleSet[Row]): Row
+  def _apply[Target](options: `14`[Target], rules: RuleSet[Row]): Row
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `13`[Row], /* rules */ RuleSet[Row], Row]
+  var _apply_Original: js.Function2[/* options */ `14`[Row], /* rules */ RuleSet[Row], Row]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -297,9 +297,9 @@ trait OmitRowset extends StObject {
   var append_Original: js.Function1[/* repeated */ Widget[Any], Row]
   
   @JSName("apply")
-  def apply[Target](options: `13`[Target], rules: RuleSet[Row]): Row
+  def apply[Target](options: `14`[Target], rules: RuleSet[Row]): Row
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `13`[Row], /* rules */ RuleSet[Row], Row]
+  var apply_Original: js.Function2[/* options */ `14`[Row], /* rules */ RuleSet[Row], Row]
   
   var background: LinearGradientValue | ColorValue | ImageValue
   
@@ -577,7 +577,7 @@ object OmitRowset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `13`[Row], /* rules */ RuleSet[Row]) => Row,
+    _apply: (/* options */ `14`[Row], /* rules */ RuleSet[Row]) => Row,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -619,7 +619,7 @@ object OmitRowset {
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Row,
     appendTo: /* parent */ Composite[Widget[Any]] => Row,
-    apply: (/* options */ `13`[Row], /* rules */ RuleSet[Row]) => Row,
+    apply: (/* options */ `14`[Row], /* rules */ RuleSet[Row]) => Row,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
     bounds: Bounds,
@@ -743,7 +743,7 @@ object OmitRowset {
     
     inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Row): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `13`[Row], /* rules */ RuleSet[Row]) => Row): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `14`[Row], /* rules */ RuleSet[Row]) => Row): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setBackground(value: LinearGradientValue | ColorValue | ImageValue): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -971,7 +971,7 @@ object OmitRowset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `13`[Row], /* rules */ RuleSet[Row]) => Row): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `14`[Row], /* rules */ RuleSet[Row]) => Row): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     

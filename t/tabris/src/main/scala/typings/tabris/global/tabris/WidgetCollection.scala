@@ -1,5 +1,6 @@
 package typings.tabris.global.tabris
 
+import typings.tabris.mod.AnyWidget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * parent. To shorten this common use case the `WidgetCollection` is also available as the alias
   * ["$"](./$.md). This alias still needs to be imported from the tabris module though.
   */
-open class WidgetCollection[WidgetType /* <: typings.tabris.mod.Widget[Any] */] ()
+open class WidgetCollection[WidgetType /* <: AnyWidget */] ()
   extends typings.tabris.mod.WidgetCollection[WidgetType] {
   def this(widgets: js.Array[typings.tabris.mod.Widget[Any]]) = this()
 }

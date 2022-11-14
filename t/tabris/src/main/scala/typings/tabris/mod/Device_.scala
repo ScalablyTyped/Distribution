@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   val cameras: js.Array[Camera] = js.native
   
   /**
-    * The user language configured on the device as an [RFC 4646](http://tools.ietf.org/html/rfc4646)
+    * The user language configured on the device as an [RFC 4646](https://www.ietf.org/rfc/rfc4646.txt)
     * compliant string. For example `"de"`, `"es-ES"`, etc. This property is also available globally as
     * `navigator.language`.  Note: On iOS ≥ 11 it will only return languages declared in
     * [CFBundleLocalizations](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-109552-TPXREF111).

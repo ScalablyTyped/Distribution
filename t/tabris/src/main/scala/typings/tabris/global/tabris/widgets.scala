@@ -34,6 +34,7 @@ import typings.tabris.anon.OmitToggleButtonsetAbsoluteBounds
 import typings.tabris.anon.OmitVideospeedpositiondurAnimate
 import typings.tabris.anon.OmitWebViewcanGoBackcanGoAnimate
 import typings.tabris.anon.PartialPickPickeritemText
+import typings.tabris.mod.AnyWidget
 import typings.tabris.mod.Omit
 import typings.tabris.mod.Properties
 import typings.tabris.tabrisStrings.cellHeight
@@ -177,7 +178,7 @@ object widgets {
     * object which may include (in addition to the properties) children, event listeners and layout
     * shorthands.
     */
-  open class Composite[ChildType /* <: typings.tabris.mod.Widget[Any] */] ()
+  open class Composite[ChildType /* <: AnyWidget */] ()
     extends typings.tabris.mod.widgets.Composite[ChildType] {
     def this(properties: Properties[
             typings.tabris.mod.widgets.Composite[typings.tabris.mod.Widget[Any]], 

@@ -1,27 +1,35 @@
 package typings.tabris.anon
 
-import typings.tabris.mod.Flatten
+import typings.tabris.mod.ListenersKeysOf
+import typings.tabris.tabrisStrings.Asterisk
+import typings.tabris.tabrisStrings.default
+import typings.tabris.tabrisStrings.strict
+import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `11` extends StObject {
+trait `11`[Target] extends StObject {
   
-  var children: js.UndefOr[Flatten[js.Object]] = js.undefined
+  var mode: js.UndefOr[default | strict] = js.undefined
+  
+  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
 }
 object `11` {
   
-  inline def apply(): `11` = {
+  inline def apply[Target](): `11`[Target] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`11`]
+    __obj.asInstanceOf[`11`[Target]]
   }
   
-  extension [Self <: `11`](x: Self) {
+  extension [Self <: `11`[?], Target](x: Self & `11`[Target]) {
     
-    inline def setChildren(value: Flatten[js.Object]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setChildrenVarargs(value: js.Object*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

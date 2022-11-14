@@ -2,7 +2,6 @@ package typings.stringStripHtml
 
 import typings.stringStripHtml.anon.Enabled
 import typings.stringStripHtml.anon.PartialOpts
-import typings.stringStripHtml.anon.PutOnNewLine
 import typings.stringStripHtml.anon.TimeTakenInMilliseconds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,74 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  object defaults {
-    
-    @JSImport("string-strip-html", "defaults")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("string-strip-html", "defaults.cb")
-    @js.native
-    def cb: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
-    inline def cb_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cb")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.dumpLinkHrefsNearby")
-    @js.native
-    def dumpLinkHrefsNearby: PutOnNewLine = js.native
-    inline def dumpLinkHrefsNearby_=(x: PutOnNewLine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dumpLinkHrefsNearby")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.ignoreTags")
-    @js.native
-    def ignoreTags: js.Array[scala.Nothing] = js.native
-    
-    @JSImport("string-strip-html", "defaults.ignoreTagsWithTheirContents")
-    @js.native
-    def ignoreTagsWithTheirContents: js.Array[scala.Nothing] = js.native
-    inline def ignoreTagsWithTheirContents_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreTagsWithTheirContents")(x.asInstanceOf[js.Any])
-    
-    inline def ignoreTags_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreTags")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.onlyStripTags")
-    @js.native
-    def onlyStripTags: js.Array[scala.Nothing] = js.native
-    inline def onlyStripTags_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyStripTags")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.reportProgressFunc")
-    @js.native
-    def reportProgressFunc: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
-    
-    @JSImport("string-strip-html", "defaults.reportProgressFuncFrom")
-    @js.native
-    def reportProgressFuncFrom: Double = js.native
-    inline def reportProgressFuncFrom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reportProgressFuncFrom")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.reportProgressFuncTo")
-    @js.native
-    def reportProgressFuncTo: Double = js.native
-    inline def reportProgressFuncTo_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reportProgressFuncTo")(x.asInstanceOf[js.Any])
-    
-    inline def reportProgressFunc_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reportProgressFunc")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.skipHtmlDecoding")
-    @js.native
-    def skipHtmlDecoding: Boolean = js.native
-    inline def skipHtmlDecoding_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skipHtmlDecoding")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.stripRecognisedHTMLOnly")
-    @js.native
-    def stripRecognisedHTMLOnly: Boolean = js.native
-    inline def stripRecognisedHTMLOnly_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripRecognisedHTMLOnly")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.stripTogetherWithTheirContents")
-    @js.native
-    def stripTogetherWithTheirContents: js.Array[String] = js.native
-    inline def stripTogetherWithTheirContents_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripTogetherWithTheirContents")(x.asInstanceOf[js.Any])
-    
-    @JSImport("string-strip-html", "defaults.trimOnlySpaces")
-    @js.native
-    def trimOnlySpaces: Boolean = js.native
-    inline def trimOnlySpaces_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trimOnlySpaces")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("string-strip-html", "defaults")
+  @js.native
+  val defaults: Opts = js.native
   
   /**
     * Strips HTML tags from strings. No parser, accepts mixed sources.

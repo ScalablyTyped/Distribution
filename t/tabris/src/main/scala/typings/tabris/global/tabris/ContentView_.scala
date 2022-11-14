@@ -1,6 +1,7 @@
 package typings.tabris.global.tabris
 
 import typings.tabris.anon.OmitContentViewWidgetanysAbsoluteBounds
+import typings.tabris.mod.AnyWidget
 import typings.tabris.mod.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object which may include (in addition to the properties) children, event listeners and layout
   * shorthands.
   */
-/* protected */ open class ContentView_[ChildType /* <: typings.tabris.mod.Widget[Any] */] ()
+/* protected */ open class ContentView_[ChildType /* <: AnyWidget */] ()
   extends typings.tabris.mod.ContentView_[ChildType] {
   /* protected */ def this(properties: Properties[
         typings.tabris.mod.ContentView_[typings.tabris.mod.Widget[Any]], 

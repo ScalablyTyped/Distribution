@@ -146,8 +146,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def removeDir(path: String): js.Promise[Unit] = js.native
   
   /**
-    * Removes the given file if it exists. Returns a promise that resolves with `true` on success or with
-    * `false` if no directory exists at that path. If the path points to a directory the promise rejects.
+    * Removes the given file if it exists. Returns a promise that resolves on success or rejects if no file
+    * exists at that path. If the path points to a directory the promise also rejects.
     * @param path The path of the file to remove.
     */
   def removeFile(path: String): js.Promise[Unit] = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/component-compiler-utils" : "3.2.0"
+      "@vue/component-compiler-utils" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/component-compiler-utils" : "3.2.0"
+      "@vue/component-compiler-utils" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

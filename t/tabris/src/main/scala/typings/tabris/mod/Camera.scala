@@ -5,9 +5,13 @@ import typings.tabris.anon.Height
 import typings.tabris.anon.Width
 import typings.tabris.tabrisStrings.active
 import typings.tabris.tabrisStrings.back
+import typings.tabris.tabrisStrings.balanced
 import typings.tabris.tabrisStrings.captureResolution
 import typings.tabris.tabrisStrings.external
 import typings.tabris.tabrisStrings.front
+import typings.tabris.tabrisStrings.performance
+import typings.tabris.tabrisStrings.priority
+import typings.tabris.tabrisStrings.quality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,9 +87,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var onCaptureResolutionChanged: ChangeListeners[this.type, captureResolution] = js.native
   
   /**
+    * Fired when the [*priority*](#priority) property has changed.
+    */
+  var onPriorityChanged: ChangeListeners[this.type, priority] = js.native
+  
+  /**
     * The position of the camera on the device. The `external` position is used for devices like usb
     * cameras.
     * @constant
     */
   val position: front | back | external = js.native
+  
+  /**
+    * Whether to prioritize performance or quality when taking a picture.
+    */
+  var priority: balanced | performance | quality = js.native
 }

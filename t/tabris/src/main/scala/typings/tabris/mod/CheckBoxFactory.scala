@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CheckBoxFactory
   extends Factory[
       CheckBoxConstructor, 
-      InstanceType[CheckBoxConstructor], 
+      typings.tabris.mod.CheckBox, 
       js.Function1[/* repeated */ Any, Widget[Any]]
     ]

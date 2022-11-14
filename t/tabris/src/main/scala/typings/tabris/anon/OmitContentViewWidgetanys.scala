@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.AnyWidget
 import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
@@ -65,7 +66,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tabris.tabris.Omit<tabris.tabris.ContentView<tabris.tabris.Widget<any>>, 'set'> */
-trait OmitContentViewWidgetanys[ChildType /* <: Widget[Any] */] extends StObject {
+trait OmitContentViewWidgetanys[ChildType /* <: AnyWidget */] extends StObject {
   
   @JSName("$children")
   var $children: js.Array[Widget[Any]]
@@ -571,7 +572,7 @@ trait OmitContentViewWidgetanys[ChildType /* <: Widget[Any] */] extends StObject
 }
 object OmitContentViewWidgetanys {
   
-  inline def apply[ChildType /* <: Widget[Any] */](
+  inline def apply[ChildType /* <: AnyWidget */](
     $children: js.Array[Widget[Any]],
     $flushChildren: () => Unit,
     $getProperty: /* name */ String => Any,
@@ -715,7 +716,7 @@ object OmitContentViewWidgetanys {
     __obj.asInstanceOf[OmitContentViewWidgetanys[ChildType]]
   }
   
-  extension [Self <: OmitContentViewWidgetanys[?], ChildType /* <: Widget[Any] */](x: Self & OmitContentViewWidgetanys[ChildType]) {
+  extension [Self <: OmitContentViewWidgetanys[?], ChildType /* <: AnyWidget */](x: Self & OmitContentViewWidgetanys[ChildType]) {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

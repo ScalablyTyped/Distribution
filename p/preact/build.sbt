@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "preact"
-version := "10.11.2-8ae6d7"
+version := "10.11.3-4113af"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -468,7 +468,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * parent matches.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  def parent[Result /* <: typings.tabris.mod.Composite[Widget[Any]] */](selector: Selector[typings.tabris.mod.Composite[Widget[Any]], Result]): Result = js.native
+  def parent[Result /* <: typings.tabris.mod.Composite[Widget[Any]] */](selector: ParentSelector[typings.tabris.mod.Composite[Widget[Any]], Result]): Result = js.native
   
   /**
     * The position of the widget's right edge relative to the parent or a sibling widget.

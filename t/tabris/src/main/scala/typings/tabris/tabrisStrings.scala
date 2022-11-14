@@ -43,6 +43,10 @@ object tabrisStrings {
   inline def `@`: `@` = "@".asInstanceOf[`@`]
   
   @js.native
+  sealed trait `AES-GCM` extends StObject
+  inline def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
+  
+  @js.native
   sealed trait Android extends StObject
   inline def Android: Android = "Android".asInstanceOf[Android]
   
@@ -53,10 +57,22 @@ object tabrisStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
+  sealed trait ECDH extends StObject
+  inline def ECDH: ECDH = "ECDH".asInstanceOf[ECDH]
+  
+  @js.native
   sealed trait Exclamationmark
     extends StObject
        with _ReservedResourceKeys
   inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  
+  @js.native
+  sealed trait HKDF extends StObject
+  inline def HKDF: HKDF = "HKDF".asInstanceOf[HKDF]
+  
+  @js.native
+  sealed trait `P-256` extends StObject
+  inline def `P-256`: `P-256` = "P-256".asInstanceOf[`P-256`]
   
   @js.native
   sealed trait `SHA-1` extends StObject
@@ -183,6 +199,10 @@ object tabrisStrings {
   @js.native
   sealed trait badgeColor extends StObject
   inline def badgeColor: badgeColor = "badgeColor".asInstanceOf[badgeColor]
+  
+  @js.native
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
   sealed trait baseline extends StObject
@@ -1024,6 +1044,10 @@ object tabrisStrings {
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
+  sealed trait performance extends StObject
+  inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
   sealed trait phone extends StObject
   inline def phone: phone = "phone".asInstanceOf[phone]
   
@@ -1038,6 +1062,10 @@ object tabrisStrings {
   @js.native
   sealed trait pixelated extends StObject
   inline def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
+  
+  @js.native
+  sealed trait pkcs8 extends StObject
+  inline def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
   sealed trait placement extends StObject
@@ -1068,12 +1096,32 @@ object tabrisStrings {
   inline def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
   
   @js.native
+  sealed trait priority extends StObject
+  inline def priority: priority = "priority".asInstanceOf[priority]
+  
+  @js.native
+  sealed trait `private` extends StObject
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
+  
+  @js.native
   sealed trait progress extends StObject
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
   sealed trait proposals extends StObject
   inline def proposals: proposals = "proposals".asInstanceOf[proposals]
+  
+  @js.native
+  sealed trait public extends StObject
+  inline def public: public = "public".asInstanceOf[public]
+  
+  @js.native
+  sealed trait quality extends StObject
+  inline def quality: quality = "quality".asInstanceOf[quality]
+  
+  @js.native
+  sealed trait raw extends StObject
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
   sealed trait ready extends StObject
@@ -1160,6 +1208,10 @@ object tabrisStrings {
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
+  sealed trait secret extends StObject
+  inline def secret: secret = "secret".asInstanceOf[secret]
+  
+  @js.native
   sealed trait selectable extends StObject
   inline def selectable: selectable = "selectable".asInstanceOf[selectable]
   
@@ -1218,6 +1270,10 @@ object tabrisStrings {
   @js.native
   sealed trait speed extends StObject
   inline def speed: speed = "speed".asInstanceOf[speed]
+  
+  @js.native
+  sealed trait spki extends StObject
+  inline def spki: spki = "spki".asInstanceOf[spki]
   
   @js.native
   sealed trait square extends StObject

@@ -1,11 +1,11 @@
 package typings.vueComponentCompilerUtils
 
-import typings.vueComponentCompilerUtils.compileStyleMod.StyleCompileOptions
-import typings.vueComponentCompilerUtils.compileStyleMod.StyleCompileResults
-import typings.vueComponentCompilerUtils.compileTemplateMod.TemplateCompileOptions
-import typings.vueComponentCompilerUtils.compileTemplateMod.TemplateCompileResult
-import typings.vueComponentCompilerUtils.parseMod.ParseOptions
-import typings.vueComponentCompilerUtils.parseMod.SFCDescriptor
+import typings.vueComponentCompilerUtils.distCompileStyleMod.StyleCompileOptions
+import typings.vueComponentCompilerUtils.distCompileStyleMod.StyleCompileResults
+import typings.vueComponentCompilerUtils.distCompileTemplateMod.TemplateCompileOptions
+import typings.vueComponentCompilerUtils.distCompileTemplateMod.TemplateCompileResult
+import typings.vueComponentCompilerUtils.distParseMod.ParseOptions
+import typings.vueComponentCompilerUtils.distParseMod.SFCDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

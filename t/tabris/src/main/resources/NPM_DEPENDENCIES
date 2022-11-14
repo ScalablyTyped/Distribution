@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tabris" : "3.8.0"
+      "tabris" : "3.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tabris" : "3.8.0"
+      "tabris" : "3.9.0"
     }
   ],
   "compile-devDependencies" : [

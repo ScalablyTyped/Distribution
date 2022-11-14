@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.AnyWidget
 import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
@@ -64,7 +65,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tabris.tabris.Omit<tabris.tabris.widgets.Composite<tabris.tabris.Widget<any>>, 'set'> */
-trait OmitCompositeWidgetanyset[ChildType /* <: Widget[Any] */] extends StObject {
+trait OmitCompositeWidgetanyset[ChildType /* <: AnyWidget */] extends StObject {
   
   @JSName("$children")
   var $children: js.Array[Widget[Any]]
@@ -574,7 +575,7 @@ trait OmitCompositeWidgetanyset[ChildType /* <: Widget[Any] */] extends StObject
 }
 object OmitCompositeWidgetanyset {
   
-  inline def apply[ChildType /* <: Widget[Any] */](
+  inline def apply[ChildType /* <: AnyWidget */](
     $children: js.Array[Widget[Any]],
     $flushChildren: () => Unit,
     $getProperty: /* name */ String => Any,
@@ -718,7 +719,7 @@ object OmitCompositeWidgetanyset {
     __obj.asInstanceOf[OmitCompositeWidgetanyset[ChildType]]
   }
   
-  extension [Self <: OmitCompositeWidgetanyset[?], ChildType /* <: Widget[Any] */](x: Self & OmitCompositeWidgetanyset[ChildType]) {
+  extension [Self <: OmitCompositeWidgetanyset[?], ChildType /* <: AnyWidget */](x: Self & OmitCompositeWidgetanyset[ChildType]) {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "string-strip-html"
-version := "11.6.20-c476b8"
+version := "12.0.0-8a48e0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

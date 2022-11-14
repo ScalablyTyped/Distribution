@@ -142,35 +142,6 @@ object anon {
     }
   }
   
-  trait PutOnNewLine extends StObject {
-    
-    var enabled: Boolean
-    
-    var putOnNewLine: Boolean
-    
-    var wrapHeads: String
-    
-    var wrapTails: String
-  }
-  object PutOnNewLine {
-    
-    inline def apply(enabled: Boolean, putOnNewLine: Boolean, wrapHeads: String, wrapTails: String): PutOnNewLine = {
-      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], putOnNewLine = putOnNewLine.asInstanceOf[js.Any], wrapHeads = wrapHeads.asInstanceOf[js.Any], wrapTails = wrapTails.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PutOnNewLine]
-    }
-    
-    extension [Self <: PutOnNewLine](x: Self) {
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setPutOnNewLine(value: Boolean): Self = StObject.set(x, "putOnNewLine", value.asInstanceOf[js.Any])
-      
-      inline def setWrapHeads(value: String): Self = StObject.set(x, "wrapHeads", value.asInstanceOf[js.Any])
-      
-      inline def setWrapTails(value: String): Self = StObject.set(x, "wrapTails", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait TimeTakenInMilliseconds extends StObject {
     
     var timeTakenInMilliseconds: Double

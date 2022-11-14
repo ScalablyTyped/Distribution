@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tabris"
-version := "3.8.0-b46c1c"
+version := "3.9.0-8598cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

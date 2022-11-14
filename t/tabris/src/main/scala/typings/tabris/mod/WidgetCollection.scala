@@ -3,7 +3,7 @@ package typings.tabris.mod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.tabris.anon.InstantiableU
 import typings.tabris.anon.Opacity
-import typings.tabris.anon.`5`
+import typings.tabris.anon.`6`
 import typings.tabris.tabrisStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * parent. To shorten this common use case the `WidgetCollection` is also available as the alias
   * ["$"](./$.md). This alias still needs to be imported from the tabris module though.
   */
-open class WidgetCollection[WidgetType /* <: Widget[Any] */] ()
+open class WidgetCollection[WidgetType /* <: AnyWidget */] ()
   extends StObject
      with /**
   * @constant
@@ -124,7 +124,7 @@ open class WidgetCollection[WidgetType /* <: Widget[Any] */] ()
   /**
     * @constant
     */
-  val jsxAttributes: `5`[WidgetType] = js.native
+  val jsxAttributes: `6`[WidgetType] = js.native
   
   /**
     * Returns the last widget in the collection that is matched by the selector. Without selector, it is

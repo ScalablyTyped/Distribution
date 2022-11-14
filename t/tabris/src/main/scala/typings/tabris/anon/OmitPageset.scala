@@ -1,7 +1,6 @@
 package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tabris.mod.Action
 import typings.tabris.mod.AnimationOptions
 import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
@@ -19,7 +18,6 @@ import typings.tabris.mod.LayoutDataValue
 import typings.tabris.mod.LinearGradientValue
 import typings.tabris.mod.Listeners
 import typings.tabris.mod.NativeObject
-import typings.tabris.mod.NavigationView
 import typings.tabris.mod.Omit
 import typings.tabris.mod.Properties
 import typings.tabris.mod.RuleSet
@@ -120,9 +118,9 @@ trait OmitPageset extends StObject {
   @JSName("_addChild")
   var _addChild_Original: js.Function2[/* child */ Widget[Any], /* index */ js.UndefOr[Double], Unit]
   
-  def _apply[Target](options: `10`[Target], rules: RuleSet[Page]): Page
+  def _apply[Target](options: `11`[Target], rules: RuleSet[Page]): Page
   @JSName("_apply")
-  var _apply_Original: js.Function2[/* options */ `10`[Page], /* rules */ RuleSet[Page], Page]
+  var _apply_Original: js.Function2[/* options */ `11`[Page], /* rules */ RuleSet[Page], Page]
   
   def _checkDisposed(): Unit
   @JSName("_checkDisposed")
@@ -290,17 +288,17 @@ trait OmitPageset extends StObject {
   
   def append(widgets: Widget[Any]*): Page
   
-  def appendTo(parent: NavigationView[typings.tabris.mod.Page, Action]): Page
+  def appendTo(parent: Composite[Widget[Any]]): Page
   @JSName("appendTo")
-  var appendTo_Original: js.Function1[/* parent */ NavigationView[typings.tabris.mod.Page, Action], Page]
+  var appendTo_Original: js.Function1[/* parent */ Composite[Widget[Any]], Page]
   
   @JSName("append")
   var append_Original: js.Function1[/* repeated */ Widget[Any], Page]
   
   @JSName("apply")
-  def apply[Target](options: `10`[Target], rules: RuleSet[Page]): Page
+  def apply[Target](options: `11`[Target], rules: RuleSet[Page]): Page
   @JSName("apply")
-  var apply_Original: js.Function2[/* options */ `10`[Page], /* rules */ RuleSet[Page], Page]
+  var apply_Original: js.Function2[/* options */ `11`[Page], /* rules */ RuleSet[Page], Page]
   
   var autoDispose: Boolean
   
@@ -379,13 +377,13 @@ trait OmitPageset extends StObject {
   
   var image: ImageValue
   
-  def insertAfter(widget: Page): Page
+  def insertAfter(widget: Widget[Any]): Page
   @JSName("insertAfter")
-  var insertAfter_Original: js.Function1[/* widget */ Page, Page]
+  var insertAfter_Original: js.Function1[/* widget */ Widget[Any], Page]
   
-  def insertBefore(widget: Page): Page
+  def insertBefore(widget: Widget[Any]): Page
   @JSName("insertBefore")
-  var insertBefore_Original: js.Function1[/* widget */ Page, Page]
+  var insertBefore_Original: js.Function1[/* widget */ Widget[Any], Page]
   
   def isDisposed(): Boolean
   @JSName("isDisposed")
@@ -546,9 +544,9 @@ trait OmitPageset extends StObject {
   
   var padding: js.UndefOr[BoxDimensions | Null] = js.undefined
   
-  def parent(): NavigationView[typings.tabris.mod.Page, Action]
+  def parent(): Composite[Widget[Any]]
   @JSName("parent")
-  var parent_Original: js.Function0[NavigationView[typings.tabris.mod.Page, Action]]
+  var parent_Original: js.Function0[Composite[Widget[Any]]]
   
   var right: ConstraintValue
   
@@ -556,8 +554,8 @@ trait OmitPageset extends StObject {
   def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("siblings")
   var siblings_Original: js.Function1[
-    /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]], 
-    WidgetCollection[Action | Page]
+    /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]], 
+    WidgetCollection[Widget[Any]]
   ]
   
   var title: String
@@ -592,7 +590,7 @@ object OmitPageset {
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _acceptChild: /* child */ Widget[Any] => Boolean,
     _addChild: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit,
-    _apply: (/* options */ `10`[Page], /* rules */ RuleSet[Page]) => Page,
+    _apply: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page,
     _checkDisposed: () => Unit,
     _checkLayout: /* value */ typings.tabris.mod.Layout => Unit,
     _children: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
@@ -632,8 +630,8 @@ object OmitPageset {
     absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     append: /* repeated */ Widget[Any] => Page,
-    appendTo: /* parent */ NavigationView[typings.tabris.mod.Page, Action] => Page,
-    apply: (/* options */ `10`[Page], /* rules */ RuleSet[Page]) => Page,
+    appendTo: /* parent */ Composite[Widget[Any]] => Page,
+    apply: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page,
     autoDispose: Boolean,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
@@ -656,8 +654,8 @@ object OmitPageset {
     height: Dimension | auto,
     highlightOnTouch: Boolean,
     id: String,
-    insertAfter: /* widget */ Page => Page,
-    insertBefore: /* widget */ Page => Page,
+    insertAfter: /* widget */ Widget[Any] => Page,
+    insertBefore: /* widget */ Widget[Any] => Page,
     isDisposed: () => Boolean,
     jsxAttributes: JSXCompositeAttributes[Page, Widget[Any]],
     layoutData: LayoutDataValue,
@@ -716,9 +714,9 @@ object OmitPageset {
     onWidthChanged: ChangeListeners[Page, width],
     once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => Page,
     opacity: Double,
-    parent: () => NavigationView[typings.tabris.mod.Page, Action],
+    parent: () => Composite[Widget[Any]],
     right: ConstraintValue,
-    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]] => WidgetCollection[Action | Page],
+    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]],
     title: String,
     top: ConstraintValue,
     transform: Transformation,
@@ -758,9 +756,9 @@ object OmitPageset {
     
     inline def setAppend(value: /* repeated */ Widget[Any] => Page): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    inline def setAppendTo(value: /* parent */ NavigationView[typings.tabris.mod.Page, Action] => Page): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* parent */ Composite[Widget[Any]] => Page): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
-    inline def setApply(value: (/* options */ `10`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
     inline def setAutoDispose(value: Boolean): Self = StObject.set(x, "autoDispose", value.asInstanceOf[js.Any])
     
@@ -844,9 +842,9 @@ object OmitPageset {
     
     inline def setImageNull: Self = StObject.set(x, "image", null)
     
-    inline def setInsertAfter(value: /* widget */ Page => Page): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* widget */ Widget[Any] => Page): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
-    inline def setInsertBefore(value: /* widget */ Page => Page): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* widget */ Widget[Any] => Page): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
@@ -982,12 +980,12 @@ object OmitPageset {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setParent(value: () => NavigationView[typings.tabris.mod.Page, Action]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+    inline def setParent(value: () => Composite[Widget[Any]]): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setSiblings(
-      value: /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]] => WidgetCollection[Action | Page]
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Widget[Any]]] => WidgetCollection[Widget[Any]]
     ): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -1008,7 +1006,7 @@ object OmitPageset {
     
     inline def set_addChild(value: (/* child */ Widget[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_addChild", js.Any.fromFunction2(value))
     
-    inline def set_apply(value: (/* options */ `10`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
+    inline def set_apply(value: (/* options */ `11`[Page], /* rules */ RuleSet[Page]) => Page): Self = StObject.set(x, "_apply", js.Any.fromFunction2(value))
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     
