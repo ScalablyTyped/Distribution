@@ -1,12 +1,11 @@
 organization := "org.scalablytyped"
 name := "pager__jackrabbit"
-version := "4.8-dt-20220624Z-a3ecda"
+version := "4.8-dt-20220624Z-0af3d2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "amqplib" % "0.8-dt-20211202Z-4dbc55",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-6d7ec9",
+  "org.scalablytyped" %%% "amqplib" % "0.10-dt-20221114Z-6a808b",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false

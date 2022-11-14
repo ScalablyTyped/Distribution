@@ -1,7 +1,7 @@
 
 # Scala.js typings for amqplib
 
-Typings are for version 0.8
+Typings are for version 0.10
 
 ## Library description:
 An AMQP 0-9-1 (e.g., RabbitMQ) library and client.

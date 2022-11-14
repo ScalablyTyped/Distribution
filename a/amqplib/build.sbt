@@ -1,11 +1,10 @@
 organization := "org.scalablytyped"
 name := "amqplib"
-version := "0.8-dt-20211202Z-4dbc55"
+version := "0.10-dt-20221114Z-6a808b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-6d7ec9",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "std" % "4.8-686d1d")
 publishArtifact in packageDoc := false
