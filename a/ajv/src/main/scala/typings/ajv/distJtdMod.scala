@@ -1,5 +1,6 @@
 package typings.ajv
 
+import typings.ajv.anon.PartialErrorObjectstringR
 import typings.ajv.distCompileCodegenCodeMod.Code
 import typings.ajv.distCompileCodegenCodeMod.CodeArg
 import typings.ajv.distCompileCodegenCodeMod._Code
@@ -11,6 +12,7 @@ import typings.ajv.distTypesJtdSchemaMod.JTDSchemaType
 import typings.ajv.distTypesMod.AddedKeywordDefinition
 import typings.ajv.distTypesMod.JTDParser
 import typings.ajv.distTypesMod.SchemaObject
+import typings.ajv.distTypesMod.UriResolver
 import typings.std.Record
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
@@ -44,11 +46,26 @@ object distJtdMod {
     def this(it: SchemaObjCxt, `def`: AddedKeywordDefinition, keyword: String) = this()
   }
   
+  @JSImport("ajv/dist/jtd", "MissingRefError")
+  @js.native
+  open class MissingRefError protected ()
+    extends typings.ajv.distCompileRefErrorMod.default {
+    def this(resolver: UriResolver, baseId: String, ref: String) = this()
+    def this(resolver: UriResolver, baseId: String, ref: String, msg: String) = this()
+  }
+  
   @JSImport("ajv/dist/jtd", "Name")
   @js.native
   open class Name protected ()
     extends typings.ajv.distCompileCodegenCodeMod.Name {
     def this(s: String) = this()
+  }
+  
+  @JSImport("ajv/dist/jtd", "ValidationError")
+  @js.native
+  open class ValidationError protected ()
+    extends typings.ajv.distRuntimeValidationErrorMod.default {
+    def this(errors: js.Array[PartialErrorObjectstringR]) = this()
   }
   
   inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]

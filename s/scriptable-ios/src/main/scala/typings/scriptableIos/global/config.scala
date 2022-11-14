@@ -1,5 +1,8 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.scriptableIosStrings.accessoryCircular
+import typings.scriptableIos.scriptableIosStrings.accessoryInline
+import typings.scriptableIos.scriptableIosStrings.accessoryRectangular
 import typings.scriptableIos.scriptableIosStrings.extraLarge
 import typings.scriptableIos.scriptableIosStrings.large
 import typings.scriptableIos.scriptableIosStrings.medium
@@ -26,6 +29,17 @@ object config {
   @js.native
   def runsFromHomeScreen: Boolean = js.native
   inline def runsFromHomeScreen_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsFromHomeScreen")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Whether the script is running in a widget.
+    *
+    * This is true when running in an accessory widget. These widgets can appear on the Lock Screen. Accessory widgets are only available starting from iOS 16.
+    * @see https://docs.scriptable.app/config/#runsinaccessorywidget
+    */
+  @JSGlobal("config.runsInAccessoryWidget")
+  @js.native
+  def runsInAccessoryWidget: Boolean = js.native
+  inline def runsInAccessoryWidget_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runsInAccessoryWidget")(x.asInstanceOf[js.Any])
   
   /**
     * Whether the script is running in the action extension.
@@ -56,6 +70,8 @@ object config {
   
   /**
     * Whether the script is running in a widget.
+    *
+    * This is true both when running in a widget on the Home Screen and when running in a widget on the Lock Screen.
     * @see https://docs.scriptable.app/config/#runsinwidget
     */
   @JSGlobal("config.runsInWidget")
@@ -75,11 +91,16 @@ object config {
   /**
     * The size of the widget the script is running in.
     *
-    * Possible values are: `small`, `medium`, `large`, `extraLarge` and `null`. The value is `null` when the script is not running in a widget.
+    * Possible values are: `small`, `medium`, `large`, `extraLarge`, `accessoryRectangular`, `accessoryInline`, `accessoryCircular`, and `null`. The value is `null` when the script is
+    * not running in a widget.
+    *
+    * `extraLarge` is only available on iPads running iPadOS 15. `accessoryRectangular`, `accessoryInline`, and `accessoryCircular` are only available starting from iOS 16.
     * @see https://docs.scriptable.app/config/#widgetfamily
     */
   @JSGlobal("config.widgetFamily")
   @js.native
-  def widgetFamily: small | medium | large | extraLarge | Null = js.native
-  inline def widgetFamily_=(x: small | medium | large | extraLarge | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
+  def widgetFamily: small | medium | large | extraLarge | accessoryRectangular | accessoryInline | accessoryCircular | Null = js.native
+  inline def widgetFamily_=(
+    x: small | medium | large | extraLarge | accessoryRectangular | accessoryInline | accessoryCircular | Null
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
 }

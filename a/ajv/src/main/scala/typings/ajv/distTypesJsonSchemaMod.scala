@@ -32,7 +32,7 @@ object distTypesJsonSchemaMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
-    undefined extends T ? {  nullable :true,   const :null | undefined,   enum :std.Readonly<std.Array<T | null>> | undefined,   default :T | null | undefined} : {  const :T | undefined,   enum :std.Readonly<std.Array<T>> | undefined,   default :T | undefined}
+    undefined extends T ? {  nullable :true,   const :null | undefined,   enum :std.Readonly<std.Array<T | null>> | undefined,   default :T | null | undefined} : {  nullable :false | undefined,   const :T | undefined,   enum :std.Readonly<std.Array<T>> | undefined,   default :T | undefined}
     }}}
     */
   @js.native

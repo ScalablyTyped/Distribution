@@ -1,6 +1,7 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.esComponentsPageHeaderMod.PageHeaderProps
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
 import typings.antd.libAvatarAvatarMod.AvatarProps
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.CSSProperties
@@ -29,6 +30,8 @@ trait PartialPageHeaderPropschi extends StObject {
   var childrenContentStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
+  
+  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   
   var extra: js.UndefOr[ReactNode] = js.undefined
   
@@ -86,6 +89,10 @@ object PartialPageHeaderPropschi {
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
     inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.antDesignProLayout
 
+import typings.antDesignProLayout.anon.Desc
 import typings.antDesignProLayout.anon.PrefixCls
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -19,4 +20,6 @@ object esComponentsAppsLogoComponentsMod {
   
   inline def defaultRenderLogo(logo: js.Function0[ReactNode]): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogo")(logo.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   inline def defaultRenderLogo(logo: ReactNode): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogo")(logo.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  
+  type AppsLogoComponentsAppList = js.Array[Desc]
 }

@@ -64,12 +64,12 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.vertical
 import typings.antDesignProLayout.antDesignProLayoutStrings.yes
 import typings.antDesignProLayout.esComponentsSiderMenuBaseMenuMod.MenuMode
 import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
-import typings.antDesignProLayout.esTypingsMod.Route
-import typings.antDesignProLayout.esTypingsMod.StaticContext
-import typings.antDesignProLayout.esTypingsMod.WithFalse
-import typings.antDesignProLayout.esTypingsMod.`match`
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingMod.Route
+import typings.antDesignProLayout.esTypingMod.StaticContext
+import typings.antDesignProLayout.esTypingMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.`match`
 import typings.antd.libMenuHooksUseItemsMod.ItemType
 import typings.antd.libMenuMenuContextMod.MenuTheme
 import typings.antd.libMenuMod.MenuProps
@@ -368,7 +368,7 @@ trait BaseMenuPropsPartialPriva extends StObject {
   
   var location: js.UndefOr[Location | Pathname] = js.undefined
   
-  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]] = js.undefined
+  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingMod.`match`[Record[String, Any]]] = js.undefined
   
   var matchMenuKeys: js.UndefOr[js.Array[String]] = js.undefined
   

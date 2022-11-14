@@ -7,10 +7,10 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.sm
 import typings.antDesignProLayout.antDesignProLayoutStrings.xl
 import typings.antDesignProLayout.antDesignProLayoutStrings.xs
 import typings.antDesignProLayout.antDesignProLayoutStrings.xxl
-import typings.antDesignProLayout.esComponentsAppsLogoComponentsTypesMod.AppsLogoComponentsAppList
+import typings.antDesignProLayout.esComponentsAppsLogoComponentsMod.AppsLogoComponentsAppList
 import typings.antDesignProLayout.esComponentsHeaderMod.HeaderViewProps
 import typings.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.SiderMenuProps
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent

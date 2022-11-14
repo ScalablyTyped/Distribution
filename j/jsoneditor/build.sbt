@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jsoneditor"
-version := "9.9-dt-20220912Z-d6e136"
+version := "9.9-dt-20220912Z-469b16"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20221103Z-1609a2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",

@@ -12,8 +12,8 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.PrivateSiderMenuProps
 import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
@@ -30,7 +30,7 @@ object esComponentsHeaderMod {
   @js.native
   val DefaultHeader: FC[HeaderViewProps & PrivateSiderMenuProps] = js.native
   
-  /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/components/GlobalHeader.GlobalHeaderProps & {  isMobile :boolean | undefined,   logo :react.react.ReactNode | undefined,   headerRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   headerTitleRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(logo : react.react.ReactNode, title : react.react.ReactNode, props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps): react.react.ReactNode> | undefined,   headerContentRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   siderWidth :number | undefined,   hasSiderMenu :boolean | undefined} */
+  /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/components/GlobalHeader.GlobalHeaderProps & {  isMobile :boolean | undefined,   logo :react.react.ReactNode | undefined,   headerRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   headerTitleRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(logo : react.react.ReactNode, title : react.react.ReactNode, props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps): react.react.ReactNode> | undefined,   headerContentRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   siderWidth :number | undefined,   hasSiderMenu :boolean | undefined} */
   trait HeaderViewProps extends StObject {
     
     /** Layout的操作功能列表，不同的 layout 会放到不同的位置 */

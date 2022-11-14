@@ -2,13 +2,13 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem & {  isUrl :boolean} */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem & {  isUrl :boolean} */
 trait MenuDataItemisUrlboolean
   extends StObject
      with /* key */ StringDictionary[Any] {

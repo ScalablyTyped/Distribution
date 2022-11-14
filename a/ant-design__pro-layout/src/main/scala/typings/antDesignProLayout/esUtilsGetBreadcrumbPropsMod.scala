@@ -5,9 +5,9 @@ import typings.antDesignProLayout.anon.BreadcrumbMap
 import typings.antDesignProLayout.anon.Href
 import typings.antDesignProLayout.anon.Pathname
 import typings.antDesignProLayout.esProLayoutMod.ProLayoutProps
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.antd.libBreadcrumbBreadcrumbMod.Route
 import typings.history.mod.Location
 import typings.react.mod.ReactNode

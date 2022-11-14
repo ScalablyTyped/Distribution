@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "angular__http"
-version := "7.2.16-52768a"
+version := "7.2.16-c5eff4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-e3a2c5",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-ec1399",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-debc7c",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-ef164b",
   "org.scalablytyped" %%% "angular__compiler" % "14.2.10-5bb2ee",
   "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-b2c607",
-  "org.scalablytyped" %%% "angular__core" % "14.2.10-553d28",
+  "org.scalablytyped" %%% "angular__core" % "14.2.10-50e0c6",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-0a8cda",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-aeb792",
   "org.scalablytyped" %%% "babel__parser" % "7.20.3-97fb28",

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "develar__schema-utils"
-version := "2.6.5-83c8b5"
+version := "2.6.5-18c43c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aa50bf",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",

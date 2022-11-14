@@ -14,7 +14,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esTypingsMod {
+object esTypingMod {
   
   trait BasicRouteProps[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, C /* <: StaticContext */, S] extends StObject {
     
@@ -22,7 +22,7 @@ object esTypingsMod {
     
     var location: Location
     
-    var `match`: typings.antDesignProLayout.esTypingsMod.`match`[Params]
+    var `match`: typings.antDesignProLayout.esTypingMod.`match`[Params]
     
     var staticContext: js.UndefOr[C] = js.undefined
   }
@@ -236,7 +236,7 @@ object esTypingsMod {
     }
   }
   
-  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem, 'routes'> & {  children :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> | undefined} */
+  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem, 'routes'> & {  children :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route> | undefined} */
   trait Route extends StObject {
     
     var children: js.UndefOr[js.Array[MenuDataItem]] & js.UndefOr[js.Array[Route]]
@@ -328,7 +328,7 @@ object esTypingsMod {
     }
   }
   
-  /* Inlined {  computedMatch :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.match<any> | undefined,   route :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route | undefined,   location :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typings.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] | {  pathname :string | undefined}} & std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typings.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>, 'location'> */
+  /* Inlined {  computedMatch :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.match<any> | undefined,   route :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route | undefined,   location :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typing.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] | {  pathname :string | undefined}} & std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typing.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>, 'location'> */
   trait RouterTypes extends StObject {
     
     var computedMatch: js.UndefOr[`match`[Any]] = js.undefined
@@ -337,7 +337,7 @@ object esTypingsMod {
     
     var location: Location | Pathname
     
-    var `match`: typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]
+    var `match`: typings.antDesignProLayout.esTypingMod.`match`[Record[String, Any]]
     
     var route: js.UndefOr[Route] = js.undefined
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-xlsx" : "0.21.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-xlsx" : "0.21.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

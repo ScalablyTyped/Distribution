@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.esComponentsAppsLogoComponentsTypesMod.AppsLogoComponentsAppList
+import typings.antDesignProLayout.esComponentsAppsLogoComponentsMod.AppsLogoComponentsAppList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

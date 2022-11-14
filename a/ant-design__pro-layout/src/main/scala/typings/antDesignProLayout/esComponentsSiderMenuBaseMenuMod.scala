@@ -67,12 +67,12 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.vertical
 import typings.antDesignProLayout.antDesignProLayoutStrings.yes
 import typings.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.PrivateSiderMenuProps
 import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
-import typings.antDesignProLayout.esTypingsMod.Route
-import typings.antDesignProLayout.esTypingsMod.StaticContext
-import typings.antDesignProLayout.esTypingsMod.WithFalse
-import typings.antDesignProLayout.esTypingsMod.`match`
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingMod.Route
+import typings.antDesignProLayout.esTypingMod.StaticContext
+import typings.antDesignProLayout.esTypingMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.`match`
 import typings.antd.libMenuHooksUseItemsMod.ItemType
 import typings.antd.libMenuMenuContextMod.MenuTheme
 import typings.antd.libMenuMod.MenuProps
@@ -142,7 +142,7 @@ object esComponentsSiderMenuBaseMenuMod {
   @js.native
   val BaseMenu: FC[BaseMenuProps & PrivateSiderMenuProps] = js.native
   
-  /* Inlined {  className :string | undefined,   defaultCollapsed :boolean | undefined,   collapsed :boolean | undefined,   splitMenus :boolean | undefined,   isMobile :boolean | undefined,   menuData :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem> | undefined,   mode :@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.MenuMode | undefined,   onCollapse :(collapsed : boolean): void | undefined,   openKeys :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<std.Array<string>> | undefined,   handleOpenChange :(openKeys : std.Array<string>): void | undefined,   iconPrefixes :string | undefined,   menuProps :antd.antd.MenuProps | undefined,   style :react.react.CSSProperties | undefined,   formatMessage :(message : @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MessageDescriptor): string | undefined,   subMenuItemRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(item : @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem & {  isUrl :boolean}, defaultDom : react.react.ReactNode, menuProps : @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.BaseMenuProps): react.react.ReactNode> | undefined,   menuItemRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(item : @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem & {  isUrl :boolean, onClick (): void}, defaultDom : react.react.ReactNode, menuProps : @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.BaseMenuProps & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.PrivateSiderMenuProps>): react.react.ReactNode> | undefined,   postMenuData :(menusData : std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem> | undefined): std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem> | undefined} & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes> & std.Omit<antd.antd.MenuProps, 'openKeys' | 'onOpenChange' | 'title'> & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.PureSettings> */
+  /* Inlined {  className :string | undefined,   defaultCollapsed :boolean | undefined,   collapsed :boolean | undefined,   splitMenus :boolean | undefined,   isMobile :boolean | undefined,   menuData :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem> | undefined,   mode :@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.MenuMode | undefined,   onCollapse :(collapsed : boolean): void | undefined,   openKeys :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<std.Array<string>> | undefined,   handleOpenChange :(openKeys : std.Array<string>): void | undefined,   iconPrefixes :string | undefined,   menuProps :antd.antd.MenuProps | undefined,   style :react.react.CSSProperties | undefined,   formatMessage :(message : @ant-design/pro-layout.@ant-design/pro-layout/es/typing.MessageDescriptor): string | undefined,   subMenuItemRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(item : @ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem & {  isUrl :boolean}, defaultDom : react.react.ReactNode, menuProps : @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.BaseMenuProps): react.react.ReactNode> | undefined,   menuItemRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(item : @ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem & {  isUrl :boolean, onClick (): void}, defaultDom : react.react.ReactNode, menuProps : @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/BaseMenu.BaseMenuProps & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.PrivateSiderMenuProps>): react.react.ReactNode> | undefined,   postMenuData :(menusData : std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem> | undefined): std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem> | undefined} & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.RouterTypes> & std.Omit<antd.antd.MenuProps, 'openKeys' | 'onOpenChange' | 'title'> & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.PureSettings> */
   trait BaseMenuProps extends StObject {
     
     var _internalRenderMenuItem: js.UndefOr[
@@ -378,7 +378,7 @@ object esComponentsSiderMenuBaseMenuMod {
     
     var location: js.UndefOr[Location | Pathname] = js.undefined
     
-    var `match`: js.UndefOr[typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]] = js.undefined
+    var `match`: js.UndefOr[typings.antDesignProLayout.esTypingMod.`match`[Record[String, Any]]] = js.undefined
     
     var menu: js.UndefOr[AutoClose] = js.undefined
     

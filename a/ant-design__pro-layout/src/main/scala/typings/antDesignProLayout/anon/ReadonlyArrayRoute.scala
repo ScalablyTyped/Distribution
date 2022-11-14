@@ -1,14 +1,14 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutInts.`1`
-import typings.antDesignProLayout.esTypingsMod.Route
+import typings.antDesignProLayout.esTypingMod.Route
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route>> */
+/* Inlined std.Readonly<std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route>> */
 trait ReadonlyArrayRoute extends StObject {
   
   val at: js.Function1[/* index */ Double, js.UndefOr[Route]]
@@ -24,9 +24,9 @@ trait ReadonlyArrayRoute extends StObject {
       /* value */ Route, 
       /* index */ Double, 
       /* array */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
     ], 
-    /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> */ Boolean
+    /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route> */ Boolean
   ]
   
   val fill: js.Function1[/* value */ Route, this.type]
@@ -36,7 +36,7 @@ trait ReadonlyArrayRoute extends StObject {
       /* value */ Route, 
       /* index */ Double, 
       /* array */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
     ], 
     js.Array[Route]
   ]
@@ -47,7 +47,7 @@ trait ReadonlyArrayRoute extends StObject {
       /* value */ Route, 
       /* index */ Double, 
       /* obj */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
     ], 
     js.UndefOr[Route]
   ]
@@ -154,21 +154,21 @@ object ReadonlyArrayRoute {
       /* value */ Route, 
       /* index */ Double, 
       /* array */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
-    ] => /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> */ Boolean,
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
+    ] => /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route> */ Boolean,
     fill: /* value */ Route => ReadonlyArrayRoute,
     filter: /* predicate */ js.Function3[
       /* value */ Route, 
       /* index */ Double, 
       /* array */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
     ] => js.Array[Route],
     find: /* predicate */ js.ThisFunction3[
       /* this */ Unit, 
       /* value */ Route, 
       /* index */ Double, 
       /* obj */ js.Array[Route], 
-      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+      /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
     ] => js.UndefOr[Route],
     findIndex: /* predicate */ js.Function3[/* value */ Route, /* index */ Double, /* obj */ js.Array[Route], Any] => Double,
     flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, `1`]]],
@@ -234,8 +234,8 @@ object ReadonlyArrayRoute {
           /* value */ Route, 
           /* index */ Double, 
           /* array */ js.Array[Route], 
-          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
-        ] => /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> */ Boolean
+          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
+        ] => /* is std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route> */ Boolean
     ): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
     
     inline def setFill(value: /* value */ Route => ReadonlyArrayRoute): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
@@ -245,7 +245,7 @@ object ReadonlyArrayRoute {
           /* value */ Route, 
           /* index */ Double, 
           /* array */ js.Array[Route], 
-          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
         ] => js.Array[Route]
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
@@ -255,7 +255,7 @@ object ReadonlyArrayRoute {
           /* value */ Route, 
           /* index */ Double, 
           /* obj */ js.Array[Route], 
-          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route */ Boolean
+          /* is @ant-design/pro-layout.@ant-design/pro-layout/es/typing.Route */ Boolean
         ] => js.UndefOr[Route]
     ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

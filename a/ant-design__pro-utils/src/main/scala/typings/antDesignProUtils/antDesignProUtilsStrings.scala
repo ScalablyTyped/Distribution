@@ -1,6 +1,5 @@
 package typings.antDesignProUtils
 
-import typings.antDesignProUtils.esComponentsFilterDropdownMod.Placement
 import typings.antDesignProUtils.esConversionMomentValueMod._DateFormatter
 import typings.antDesignProUtils.esTypingMod._ProSchemaComponentTypes
 import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableType
@@ -65,24 +64,6 @@ object antDesignProUtilsStrings {
   @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
-  
-  @js.native
-  sealed trait bottomCenter
-    extends StObject
-       with Placement
-  inline def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
-  
-  @js.native
-  sealed trait bottomLeft
-    extends StObject
-       with Placement
-  inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  
-  @js.native
-  sealed trait bottomRight
-    extends StObject
-       with Placement
-  inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
   sealed trait button extends StObject
@@ -549,24 +530,6 @@ object antDesignProUtilsStrings {
   @js.native
   sealed trait top extends StObject
   inline def top: top = "top".asInstanceOf[top]
-  
-  @js.native
-  sealed trait topCenter
-    extends StObject
-       with Placement
-  inline def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
-  
-  @js.native
-  sealed trait topLeft
-    extends StObject
-       with Placement
-  inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  
-  @js.native
-  sealed trait topRight
-    extends StObject
-       with Placement
-  inline def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
   sealed trait tree extends StObject

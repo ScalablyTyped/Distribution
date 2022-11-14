@@ -36,7 +36,7 @@ object URLScheme {
     *
     * Gets the URL for running the current script. When making a request to the returned URL from another app, e.g. Safari, the current script will run.
     *
-    * Get the query parameters using `args.queryParameters`.
+    * Get the query parameters by using `args.queryParameters`.
     * @see https://docs.scriptable.app/urlscheme/#forrunningscript
     */
   inline def forRunningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forRunningScript")().asInstanceOf[String]

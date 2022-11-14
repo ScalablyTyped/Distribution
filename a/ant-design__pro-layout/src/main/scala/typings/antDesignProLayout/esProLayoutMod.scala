@@ -6,7 +6,7 @@ import typings.antDesignProLayout.anon.Token
 import typings.antDesignProLayout.antDesignProLayoutStrings.collapsed
 import typings.antDesignProLayout.esComponentsHeaderMod.HeaderViewProps
 import typings.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.SiderMenuProps
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
 import typings.react.mod.FC
 import typings.std.Omit
 import typings.std.Record
@@ -20,7 +20,7 @@ object esProLayoutMod {
   @js.native
   val ProLayout: FC[ProLayoutProps] = js.native
   
-  /* Inlined {[ K in 'location' ]: @ant-design/pro-layout.@ant-design/pro-layout/es/ProLayout.ProLayoutProps[K]} & {  breadcrumb :std.Record<string, @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem>} */
+  /* Inlined {[ K in 'location' ]: @ant-design/pro-layout.@ant-design/pro-layout/es/ProLayout.ProLayoutProps[K]} & {  breadcrumb :std.Record<string, @ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem>} */
   trait BasicLayoutContext extends StObject {
     
     var breadcrumb: Record[String, MenuDataItem]

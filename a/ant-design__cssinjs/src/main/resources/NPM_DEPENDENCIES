@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/cssinjs" : "0.0.0-alpha.54"
+      "@ant-design/cssinjs" : "0.0.0-alpha.60"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/cssinjs" : "0.0.0-alpha.54"
+      "@ant-design/cssinjs" : "0.0.0-alpha.60"
     }
   ],
   "compile-devDependencies" : [

@@ -2,6 +2,7 @@ package typings.antDesignProUtils
 
 import typings.antDesignProUtils.antDesignProUtilsBooleans.`false`
 import typings.antDesignProUtils.esComponentsDropdownFooterMod.DropdownFooterProps
+import typings.antd.libTooltipMod.TooltipPlacement
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -40,7 +41,7 @@ object esComponentsFilterDropdownMod {
     
     var padding: js.UndefOr[Double] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.undefined
+    var placement: js.UndefOr[TooltipPlacement] = js.undefined
     
     /**
       * @deprecated use open replace
@@ -96,7 +97,7 @@ object esComponentsFilterDropdownMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: TooltipPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
@@ -111,14 +112,4 @@ object esComponentsFilterDropdownMod {
     /* onClear */ js.UndefOr[js.Function1[/* e */ js.UndefOr[MouseEvent[Element, NativeMouseEvent]], Unit]], 
     typings.react.mod.global.JSX.Element | `false`
   ]) | `false`
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.antDesignProUtils.antDesignProUtilsStrings.topLeft
-    - typings.antDesignProUtils.antDesignProUtilsStrings.topCenter
-    - typings.antDesignProUtils.antDesignProUtilsStrings.topRight
-    - typings.antDesignProUtils.antDesignProUtilsStrings.bottomLeft
-    - typings.antDesignProUtils.antDesignProUtilsStrings.bottomCenter
-    - typings.antDesignProUtils.antDesignProUtilsStrings.bottomRight
-  */
-  trait Placement extends StObject
 }

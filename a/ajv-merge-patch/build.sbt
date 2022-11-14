@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ajv-merge-patch"
-version := "4.1-dt-20211223Z-9cc4bf"
+version := "4.1-dt-20211223Z-3201f3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",

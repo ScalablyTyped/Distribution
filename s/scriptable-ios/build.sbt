@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scriptable-ios"
-version := "1.6-dt-20220624Z-77942c"
+version := "1.7-dt-20221113Z-e52c66"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

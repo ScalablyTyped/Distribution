@@ -698,8 +698,6 @@ object mod {
   
   inline def cvjsExitQuickCount(f_div: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_exitQuickCount")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def cvjsExitRedlineTextModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_exitRedlineTextModal")().asInstanceOf[Unit]
-  
   inline def cvjsExitSearchTextModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_exitSearchTextModal")().asInstanceOf[Unit]
   
   inline def cvjsExitServerFileLoadModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_exitServerFileLoadModal")().asInstanceOf[Unit]
@@ -1002,6 +1000,8 @@ object mod {
   inline def cvjsInsertImageLink(f_div: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_insertImageLink")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def cvjsInsertRedlineText(textString: Any, fontSize: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_insertRedlineText")(textString.asInstanceOf[js.Any], fontSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def cvjsInsertSpaceObjectsCustomMenu(jsonMenu: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_insertSpaceObjectsCustomMenu")(jsonMenu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def cvjsInteractiveLayerOff(f_div: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_interactiveLayerOff")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -1468,7 +1468,9 @@ object mod {
   
   inline def cvjsSetBackgroundColorHex(hex: String, f_div: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setBackgroundColorHex")(hex.asInstanceOf[js.Any], f_div.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cvjsSetCADViewerInterfaceVersion(version: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setCADViewerInterfaceVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cvjsSetCADViewerInterfaceVersion(version: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setCADViewerInterfaceVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def cvjsSetCADViewerSkin(skin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setCADViewerSkin")(skin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def cvjsSetCallbackForModalDisplay(callbackForModalDisplay: Any, customModalPopUpBody: Any, populateMyCustomPopUpBody: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setCallbackForModalDisplay")(callbackForModalDisplay.asInstanceOf[js.Any], customModalPopUpBody.asInstanceOf[js.Any], populateMyCustomPopUpBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1582,7 +1584,7 @@ object mod {
   
   inline def cvjsSetHandlersFrontEnd(handlerType: String, frontEndType: String, f_div: String, controllerPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setHandlers_FrontEnd")(handlerType.asInstanceOf[js.Any], frontEndType.asInstanceOf[js.Any], f_div.asInstanceOf[js.Any], controllerPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cvjsSetIconImageSize(f_div: String, pixelheight: Boolean, pixelheight_large: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setIconImageSize")(f_div.asInstanceOf[js.Any], pixelheight.asInstanceOf[js.Any], pixelheight_large.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cvjsSetIconImageSize(f_div: String, pixelheight: Any, pixelheight_large: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setIconImageSize")(f_div.asInstanceOf[js.Any], pixelheight.asInstanceOf[js.Any], pixelheight_large.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cvjsSetIconInterfaceControlsClassicSkin(mode: Boolean, f_div: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setIconInterfaceControls_ClassicSkin")(mode.asInstanceOf[js.Any], f_div.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1719,9 +1721,11 @@ object mod {
   
   inline def cvjsSetRedlineThicknessViaButton(f_div: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRedlineThicknessViaButton")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def cvjsSetRedlinesAbsolutePath(path: String, serverPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRedlinesAbsolutePath")(path.asInstanceOf[js.Any], serverPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cvjsSetRedlinesAbsolutePath(path: String, serverPath: String, dynamicPathFlag: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRedlinesAbsolutePath")(path.asInstanceOf[js.Any], serverPath.asInstanceOf[js.Any], dynamicPathFlag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cvjsSetRedlinesRelativePath(path: String, serverPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRedlinesRelativePath")(path.asInstanceOf[js.Any], serverPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cvjsSetRedlinesRelativePath(path: String, serverPath: String, dynamicPathFlag: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRedlinesRelativePath")(path.asInstanceOf[js.Any], serverPath.asInstanceOf[js.Any], dynamicPathFlag.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def cvjsSetRelativeConversionFilesFolder(converterfilespath: String, converterfilesurlpath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRelativeConversionFilesFolder")(converterfilespath.asInstanceOf[js.Any], converterfilesurlpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cvjsSetRelativeScriptsPath(scriptsPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setRelativeScriptsPath")(scriptsPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -1887,6 +1891,10 @@ object mod {
   
   inline def cvjsSetUrlSingleDoubleClick(click: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setUrl_singleDoubleClick")(click.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def cvjsSetWatermarks(textline1: String, textline2: String, hexcolor: String, sendtoback: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setWatermarks")(textline1.asInstanceOf[js.Any], textline2.asInstanceOf[js.Any], hexcolor.asInstanceOf[js.Any], sendtoback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def cvjsSetZoomExtentsMode(mode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_setZoomExtentsMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def cvjsSettings(f_div: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_Settings")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def cvjsShowCreationModeModal(f_div: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_showCreationModeModal")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1940,6 +1948,15 @@ object mod {
   inline def cvjsStopCollab(f_div: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_stop_collab")(f_div.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def cvjsStoreFillColors(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_storeFillColors")().asInstanceOf[Unit]
+  
+  inline def cvjsStyleQTipColor(
+    state: Boolean,
+    titlebar: String,
+    content: String,
+    header_1: String,
+    header_info_1: String,
+    header_info_2: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_styleQTip_color")(state.asInstanceOf[js.Any], titlebar.asInstanceOf[js.Any], content.asInstanceOf[js.Any], header_1.asInstanceOf[js.Any], header_info_1.asInstanceOf[js.Any], header_info_2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cvjsSuperimposeBackgroundDrawingPrintOutputAtDualTextbox(f_div: String, backgroundDrawing: String, top: Double, bottom: Double, left: Double, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cvjs_superimposeBackgroundDrawing_PrintOutputAtDualTextbox")(f_div.asInstanceOf[js.Any], backgroundDrawing.asInstanceOf[js.Any], top.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

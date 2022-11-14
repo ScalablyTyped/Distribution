@@ -1,7 +1,7 @@
 package typings.antDesignProLayout
 
 import typings.antDesignProLayout.anon.BlankTarget
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject

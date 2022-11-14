@@ -55,8 +55,8 @@ trait Alert extends StObject {
   /**
     * _Adds a text field prompting for user input._
     *
-    * Adds a text field to the alert controller prompting for user input. Retrieve the value for the text field using textFieldValue() and supply the index of the text field. Indices
-    * for text fields are assigned in the same order as they are added to the alert starting at 0.
+    * Adds a text field to the alert controller prompting for user input. Retrieve the value for the text field using textFieldValue() and supply the index of the text field. Indices for
+    * text fields are assigned in the same order as they are added to the alert starting at 0.
     *
     * Text fields are not supported when using the sheet presentation.
     * @param placeholder - Optional placeholder that will be displayed when the text field is empty.

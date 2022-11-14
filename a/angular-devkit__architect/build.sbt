@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-devkit__architect"
-version := "0.1402.6-d74faf"
+version := "0.1402.6-4437e2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-e3a2c5",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-debc7c",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-0c8670",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",

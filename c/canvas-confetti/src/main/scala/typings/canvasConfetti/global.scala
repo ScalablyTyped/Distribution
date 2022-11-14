@@ -5,6 +5,7 @@ import typings.canvasConfetti.mod.GlobalOptions
 import typings.canvasConfetti.mod.Options
 import typings.canvasConfetti.mod.Reset_
 import typings.std.HTMLCanvasElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,12 +22,13 @@ object global {
     val ^ : js.Any = js.native
     
     /**
-      * You can polyfill promises using any of the popular polyfills. You can also provide a promise implementation to `confetti` through this property.
+      * You can polyfill promises using any of the popular polyfills. You can also provide a promise implementation to `confetti` through
+      * this property.
       */
     @JSGlobal("confetti.Promise")
     @js.native
-    def Promise: Any = js.native
-    inline def Promise_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+    def Promise: js.UndefOr[PromiseLike[Unit] | Null] = js.native
+    inline def Promise_=(x: js.UndefOr[PromiseLike[Unit] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
     /**
       * This method creates an instance of the confetti function that uses a custom canvas.

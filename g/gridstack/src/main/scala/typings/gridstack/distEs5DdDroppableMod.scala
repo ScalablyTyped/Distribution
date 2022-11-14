@@ -2,6 +2,7 @@ package typings.gridstack
 
 import typings.gridstack.distEs5DdBaseImplMod.DDBaseImplement
 import typings.gridstack.distEs5DdBaseImplMod.HTMLElementExtendOpt
+import typings.gridstack.distEs5TypesMod.DDUIData
 import typings.gridstack.gridstackStrings.drop
 import typings.gridstack.gridstackStrings.dropout
 import typings.gridstack.gridstackStrings.dropover
@@ -48,11 +49,11 @@ object distEs5DdDroppableMod {
     
     var accept: js.UndefOr[String | (js.Function1[/* el */ HTMLElement, Boolean])] = js.undefined
     
-    var drop: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ Any, Unit]] = js.undefined
+    var drop: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ DDUIData, Unit]] = js.undefined
     
-    var out: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ Any, Unit]] = js.undefined
+    var out: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ DDUIData, Unit]] = js.undefined
     
-    var over: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ Any, Unit]] = js.undefined
+    var over: js.UndefOr[js.Function2[/* event */ DragEvent, /* ui */ DDUIData, Unit]] = js.undefined
   }
   object DDDroppableOpt {
     
@@ -69,15 +70,15 @@ object distEs5DdDroppableMod {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setDrop(value: (/* event */ DragEvent, /* ui */ Any) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+      inline def setDrop(value: (/* event */ DragEvent, /* ui */ DDUIData) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
       
       inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      inline def setOut(value: (/* event */ DragEvent, /* ui */ Any) => Unit): Self = StObject.set(x, "out", js.Any.fromFunction2(value))
+      inline def setOut(value: (/* event */ DragEvent, /* ui */ DDUIData) => Unit): Self = StObject.set(x, "out", js.Any.fromFunction2(value))
       
       inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
       
-      inline def setOver(value: (/* event */ DragEvent, /* ui */ Any) => Unit): Self = StObject.set(x, "over", js.Any.fromFunction2(value))
+      inline def setOver(value: (/* event */ DragEvent, /* ui */ DDUIData) => Unit): Self = StObject.set(x, "over", js.Any.fromFunction2(value))
       
       inline def setOverUndefined: Self = StObject.set(x, "over", js.undefined)
     }

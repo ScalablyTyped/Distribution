@@ -7,9 +7,9 @@ import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
 import typings.antDesignProLayout.esGetPageTitleMod.GetPageTitleProps
 import typings.antDesignProLayout.esLocalesMod.LocaleType
 import typings.antDesignProLayout.esProLayoutMod.LayoutBreadcrumbProps
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.antd.libBreadcrumbBreadcrumbMod.Route
 import typings.react.mod.CSSProperties
@@ -163,7 +163,7 @@ trait ActionRef extends StObject {
   var onPageChange: js.UndefOr[
     js.Function1[
       /* location */ js.UndefOr[
-        (/* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/typings.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typings.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] */ js.Any) | Pathname
+        (/* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/typing.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typing.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] */ js.Any) | Pathname
       ], 
       Unit
     ]
@@ -301,7 +301,7 @@ object ActionRef {
     
     inline def setOnPageChange(
       value: /* location */ js.UndefOr[
-          (/* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/typings.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typings.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] */ js.Any) | Pathname
+          (/* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/typing.BasicRouteProps<std.Record<string, any>, @ant-design/pro-layout.@ant-design/pro-layout/es/typing.StaticContext, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationState * / any>['location'] */ js.Any) | Pathname
         ] => Unit
     ): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
     

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "express-openapi"
-version := "12.0.2-83fb79"
+version := "12.0.2-914aca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a7050d",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-2c076a",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-e2d669",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "openapi-default-setter" % "12.0.2-e64e3b",
-  "org.scalablytyped" %%% "openapi-framework" % "12.0.2-0b55c8",
+  "org.scalablytyped" %%% "openapi-framework" % "12.0.2-92d017",
   "org.scalablytyped" %%% "openapi-request-coercer" % "12.0.2-c92a3b",
-  "org.scalablytyped" %%% "openapi-request-validator" % "12.0.2-c25639",
-  "org.scalablytyped" %%% "openapi-response-validator" % "12.0.2-9af0e4",
+  "org.scalablytyped" %%% "openapi-request-validator" % "12.0.2-e9e1c1",
+  "org.scalablytyped" %%% "openapi-response-validator" % "12.0.2-695859",
   "org.scalablytyped" %%% "openapi-security-handler" % "12.0.2-f73366",
   "org.scalablytyped" %%% "openapi-types" % "12.0.2-9e241f",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-c05674",

@@ -15,8 +15,10 @@ import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.DateFormat
 import typings.antDesignProUtils.anon.Ellipsis
 import typings.antDesignProUtils.anon.Id
+import typings.antDesignProUtils.anon.Menu
 import typings.antDesignProUtils.anon.OnOpenChange
 import typings.antDesignProUtils.anon.OnVisibleChange
+import typings.antDesignProUtils.anon.Overlay
 import typings.antDesignProUtils.anon.Params
 import typings.antDesignProUtils.anon.ProFormInstanceTypeanyfor
 import typings.antDesignProUtils.anon.SetDataSource
@@ -37,6 +39,7 @@ import typings.antDesignProUtils.esTypingMod.SearchTransformKeyFn
 import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
 import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableConfig
 import typings.antd.libFormHooksUseFormMod.FormInstance
+import typings.antd.libMenuMod.MenuProps
 import typings.dayjs.mod.Dayjs
 import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.rcUtil.anon.DefaultValue
@@ -233,6 +236,8 @@ object mod {
   inline def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def lighten(baseColor: String, brightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(baseColor.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def menuOverlayCompatible(menu: MenuProps): Menu | Overlay = ^.asInstanceOf[js.Dynamic].applyDynamic("menuOverlayCompatible")(menu.asInstanceOf[js.Any]).asInstanceOf[Menu | Overlay]
   
   inline def merge[T](rest: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(rest.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
   

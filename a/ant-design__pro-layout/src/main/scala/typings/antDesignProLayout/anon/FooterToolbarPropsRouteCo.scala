@@ -13,7 +13,7 @@ import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
 import typings.antDesignProLayout.esContextRouteContextMod.RouteContextType
 import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.esDefaultSettingsMod.PureSettings
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
 import typings.antDesignProLayout.esUtilsGetBreadcrumbPropsMod.BreadcrumbListReturn
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.CSSProperties

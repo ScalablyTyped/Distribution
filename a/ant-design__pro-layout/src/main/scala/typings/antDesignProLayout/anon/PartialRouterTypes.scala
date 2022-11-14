@@ -1,8 +1,8 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.esTypingsMod.Route
-import typings.antDesignProLayout.esTypingsMod.StaticContext
-import typings.antDesignProLayout.esTypingsMod.`match`
+import typings.antDesignProLayout.esTypingMod.Route
+import typings.antDesignProLayout.esTypingMod.StaticContext
+import typings.antDesignProLayout.esTypingMod.`match`
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.std.Record
@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes> */
+/* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.RouterTypes> */
 trait PartialRouterTypes extends StObject {
   
   var computedMatch: js.UndefOr[`match`[Any]] = js.undefined
@@ -19,7 +19,7 @@ trait PartialRouterTypes extends StObject {
   
   var location: js.UndefOr[Location | Pathname] = js.undefined
   
-  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingsMod.`match`[Record[String, Any]]] = js.undefined
+  var `match`: js.UndefOr[typings.antDesignProLayout.esTypingMod.`match`[Record[String, Any]]] = js.undefined
   
   var route: js.UndefOr[Route] = js.undefined
   

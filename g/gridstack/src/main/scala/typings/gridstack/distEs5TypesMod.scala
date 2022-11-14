@@ -158,6 +158,8 @@ object distEs5TypesMod {
   
   trait DDUIData extends StObject {
     
+    var draggable: js.UndefOr[HTMLElement] = js.undefined
+    
     var position: js.UndefOr[Position] = js.undefined
     
     var size: js.UndefOr[Size] = js.undefined
@@ -170,6 +172,10 @@ object distEs5TypesMod {
     }
     
     extension [Self <: DDUIData](x: Self) {
+      
+      inline def setDraggable(value: HTMLElement): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
       inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ngtools__webpack"
-version := "14.2.6-02cb9b"
+version := "14.2.6-12572c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "angular__compiler" % "14.2.10-5bb2ee",
   "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-b2c607",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-0a8cda",
@@ -21,13 +21,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "magic-string" % "0.26.7-1fe3cb",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-16f8fb",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-91ce3a",
   "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-2fecb8",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "tapable" % "2.2.1-8e2762",
   "org.scalablytyped" %%% "typescript" % "4.8.4-227bad",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-af3fab",
-  "org.scalablytyped" %%% "webpack" % "5.75.0-4fd6d9")
+  "org.scalablytyped" %%% "webpack" % "5.75.0-87f58a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

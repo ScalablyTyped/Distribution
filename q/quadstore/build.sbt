@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quadstore"
-version := "11.0.6-5a9119"
+version := "11.0.7-24d55a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "angular__cli"
-version := "14.2.6-a75f39"
+version := "14.2.6-22400a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
-  "org.scalablytyped" %%% "angular-devkit__architect" % "0.1402.6-d74faf",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-e3a2c5",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-ec1399",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
+  "org.scalablytyped" %%% "angular-devkit__architect" % "0.1402.6-4437e2",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-debc7c",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-ef164b",
   "org.scalablytyped" %%% "ansi-colors" % "4.1.3-1bec1a",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-975c5a",
   "org.scalablytyped" %%% "inquirer" % "9.0-dt-20221107Z-18de73",

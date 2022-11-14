@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cadviewer"
-version := "7.0-dt-20220712Z-c327c1"
+version := "7.0-dt-20221113Z-1892fc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

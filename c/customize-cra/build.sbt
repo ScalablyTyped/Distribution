@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "customize-cra"
-version := "1.0-dt-20220815Z-a23fb0"
+version := "1.0-dt-20220815Z-3f85ff"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-5adede",
+  "org.scalablytyped" %%% "ajv" % "8.11.2-8ddd54",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-0a8cda",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-aeb792",
   "org.scalablytyped" %%% "babel__parser" % "7.20.3-97fb28",
@@ -16,12 +16,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aa50bf",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
   "org.scalablytyped" %%% "re2" % "1.17.7-349e63",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-16f8fb",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-91ce3a",
   "org.scalablytyped" %%% "std" % "4.8-686d1d",
   "org.scalablytyped" %%% "tapable" % "2.2.1-8e2762",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-af3fab",
-  "org.scalablytyped" %%% "webpack" % "5.75.0-4fd6d9",
-  "org.scalablytyped" %%% "webpack-bundle-analyzer" % "4.6-dt-20221005Z-03edbd",
+  "org.scalablytyped" %%% "webpack" % "5.75.0-87f58a",
+  "org.scalablytyped" %%% "webpack-bundle-analyzer" % "4.6-dt-20221005Z-d101ae",
   "org.scalablytyped" %%% "workbox-webpack-plugin" % "5.1-dt-20211202Z-3fec2f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

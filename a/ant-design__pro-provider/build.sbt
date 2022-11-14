@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-provider"
-version := "2.0.14-8b6486"
+version := "2.0.15-72c61e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ant-design__cssinjs" % "0.0.0-alpha.54-910c3a",
+  "org.scalablytyped" %%% "ant-design__cssinjs" % "0.0.0-alpha.60-3fd431",
   "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",

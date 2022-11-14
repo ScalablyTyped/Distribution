@@ -14,6 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListWidget extends StObject {
   
   /**
+    * _Whether to use an accessory widget background._
+    *
+    * Enable to add an adaptive background that provides a standard appearance based on the widget's environment. Defaults to false.
+    *
+    * This is only available starting from iOS 16.
+    * @see https://docs.scriptable.app/listwidget/#addaccessorywidgetbackground
+    */
+  var addAccessoryWidgetBackground: Boolean = js.native
+  
+  /**
     * _Add date to the widget._
     *
     * Adds a date element to the widget. Use the properties on the returned element to style the date.
@@ -57,6 +67,8 @@ trait ListWidget extends StObject {
   
   /**
     * _Background color of the widget._
+    *
+    * Defaults to a solid color in widgets placed on the Home Screen and a transparent color placed on the Lock Screen.
     * @see https://docs.scriptable.app/listwidget/#backgroundcolor
     */
   var backgroundColor: Color = js.native
@@ -76,11 +88,57 @@ trait ListWidget extends StObject {
   /**
     * _Presents a preview of the widget._
     *
+    * The widget is presented in its circular accessory size that is suitable to be displayed below the clock on the Lock Screen.
+    *
+    * The preview is an estimated representation of the widget and is not accurate. Widgets placed on the Lock Screen change appearance based on the wallpaper and tint color of the Lock
+    * Screen, and as such, they cannot be previewed accurately in Scriptable.
+    *
+    * Widgets on the Lock Screen are updated periodically so while working on your widget you may want to preview it in the app.
+    *
+    * The circular accessory widget is available on iPhones running iOS 16 and newer.
+    * @see https://docs.scriptable.app/listwidget/#-presentaccessorycircular
+    */
+  def presentAccessoryCircular(): js.Promise[Unit] = js.native
+  
+  /**
+    * _Presents a preview of the widget._
+    *
+    * The widget is presented in its accessory inline size that is suitable to be displayed above the clock on the Lock Screen.
+    *
+    * The preview is an estimated representation of the widget and is not accurate. Widgets placed on the Lock Screen change appearance based on the wallpaper and tint color of the Lock
+    * Screen, and as such, they cannot be previewed accurately in Scriptable.
+    *
+    * Widgets on the Lock Screen are updated periodically so while working on your widget you may want to preview it in the app.
+    *
+    * The accessory inline widget is available on iPhones running iOS 16 and newer and can display a single image and a single text. Any additional elements will be filtered away during
+    * presentation.
+    * @see https://docs.scriptable.app/listwidget/#-presentaccessoryinline
+    */
+  def presentAccessoryInline(): js.Promise[Unit] = js.native
+  
+  /**
+    * _Presents a preview of the widget._
+    *
+    * The widget is presented in its rectangular accessory size that is suitable to be displayed below the clock on the Lock Screen.
+    *
+    * The preview is an estimated representation of the widget and is not accurate. Widgets placed on the Lock Screen change appearance based on the wallpaper and tint color of the Lock
+    * Screen, and as such, they cannot be previewed accurately in Scriptable.
+    *
+    * Widgets on the Lock Screen are updated periodically so while working on your widget you may want to preview it in the app.
+    *
+    * The rectangular accessory widget is available on iPhones running iOS 16 and newer.
+    * @see https://docs.scriptable.app/listwidget/#-presentaccessoryrectangular
+    */
+  def presentAccessoryRectangular(): js.Promise[Unit] = js.native
+  
+  /**
+    * _Presents a preview of the widget._
+    *
     * The widget is presented in its extra large size.
     *
-    * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
+    * Widgets on the Home Screen are updated periodically so while working on your widget you may want to preview it in the app.
     *
-    * Please be aware that extra large widgets are only available on iPads running iOS 15 and newer.
+    * The extra large widget is only available on iPads running iOS 15 and newer.
     * @see https://docs.scriptable.app/listwidget/#-presentextralarge
     */
   def presentExtraLarge(): js.Promise[Unit] = js.native
@@ -90,7 +148,7 @@ trait ListWidget extends StObject {
     *
     * The widget is presented in its large size.
     *
-    * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
+    * Widgets on the Home Screen are updated periodically so while working on your widget you may want to preview it in the app.
     * @see https://docs.scriptable.app/listwidget/#-presentlarge
     */
   def presentLarge(): js.Promise[Unit] = js.native
@@ -100,7 +158,7 @@ trait ListWidget extends StObject {
     *
     * The widget is presented in its medium size.
     *
-    * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
+    * Widgets on the Home Screen are updated periodically so while working on your widget you may want to preview it in the app.
     * @see https://docs.scriptable.app/listwidget/#-presentmedium
     */
   def presentMedium(): js.Promise[Unit] = js.native
@@ -110,7 +168,7 @@ trait ListWidget extends StObject {
     *
     * The widget is presented in its small size.
     *
-    * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
+    * Widgets on the Home Screen are updated periodically so while working on your widget you may want to preview it in the app.
     * @see https://docs.scriptable.app/listwidget/#-presentsmall
     */
   def presentSmall(): js.Promise[Unit] = js.native

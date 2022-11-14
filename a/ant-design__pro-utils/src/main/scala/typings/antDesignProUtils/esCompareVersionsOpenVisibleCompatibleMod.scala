@@ -12,6 +12,8 @@ object esCompareVersionsOpenVisibleCompatibleMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  
   inline def openVisibleCompatible(): OnOpenChange | OnVisibleChange = ^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")().asInstanceOf[OnOpenChange | OnVisibleChange]
   inline def openVisibleCompatible(open: Boolean): OnOpenChange | OnVisibleChange = ^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")(open.asInstanceOf[js.Any]).asInstanceOf[OnOpenChange | OnVisibleChange]
   inline def openVisibleCompatible(open: Boolean, onOpenChange: Any): OnOpenChange | OnVisibleChange = (^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")(open.asInstanceOf[js.Any], onOpenChange.asInstanceOf[js.Any])).asInstanceOf[OnOpenChange | OnVisibleChange]

@@ -78,6 +78,10 @@ object mod {
   @js.native
   val EAS: Boolean = js.native
   
+  @JSImport("ci-info", "GERRIT")
+  @js.native
+  val GERRIT: Boolean = js.native
+  
   @JSImport("ci-info", "GITHUB_ACTIONS")
   @js.native
   val GITHUB_ACTIONS: Boolean = js.native
@@ -89,6 +93,14 @@ object mod {
   @JSImport("ci-info", "GOCD")
   @js.native
   val GOCD: Boolean = js.native
+  
+  @JSImport("ci-info", "GOOGLE_CLOUD_BUILD")
+  @js.native
+  val GOOGLE_CLOUD_BUILD: Boolean = js.native
+  
+  @JSImport("ci-info", "HEROKU")
+  @js.native
+  val HEROKU: Boolean = js.native
   
   @JSImport("ci-info", "HUDSON")
   @js.native

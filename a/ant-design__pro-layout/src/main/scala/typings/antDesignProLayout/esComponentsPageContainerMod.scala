@@ -7,7 +7,8 @@ import typings.antDesignProLayout.anon.TabPanePropskeyKeyundefin
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.esComponentsPageContainerStyleMod.pageContainerToken
 import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.antd.libAvatarAvatarMod.AvatarProps
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.antd.libSpinMod.SpinProps
@@ -47,7 +48,7 @@ object esComponentsPageContainerMod {
   
   inline def ProPageHeader(props: PageContainerPropsprefixe): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProPageHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  /* Inlined {  title :react.react.ReactNode | false | undefined,   content :react.react.ReactNode | undefined,   extraContent :react.react.ReactNode | undefined,   prefixCls :string | undefined,   footer :std.Array<react.react.ReactNode> | undefined,   token :@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer/style.pageContainerToken | undefined,   header :std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps> & {  children :react.react.ReactNode | undefined} | undefined,   pageHeaderRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageContainerProps): react.react.ReactNode> | undefined,   affixProps :std.Omit<antd.antd.AffixProps, 'children'> | undefined,   loading :boolean | antd.antd.SpinProps | react.react.ReactNode | undefined,   breadcrumbRender :@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps['breadcrumbRender'] | false | undefined,   waterMarkProps :@ant-design/pro-layout.@ant-design/pro-layout/es/components/WaterMark.WaterMarkProps | undefined,   breadcrumb :antd.antd.BreadcrumbProps | undefined,   children :react.react.ReactNode | undefined} & @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageHeaderTabConfig & std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps, 'title' | 'footer' | 'breadcrumbRender' | 'breadcrumb'> */
+  /* Inlined {  title :react.react.ReactNode | false | undefined,   content :react.react.ReactNode | undefined,   extraContent :react.react.ReactNode | undefined,   prefixCls :string | undefined,   footer :std.Array<react.react.ReactNode> | undefined,   token :@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer/style.pageContainerToken | undefined,   header :std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps> & {  children :react.react.ReactNode | undefined} | undefined,   pageHeaderRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typing.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageContainerProps): react.react.ReactNode> | undefined,   affixProps :std.Omit<antd.antd.AffixProps, 'children'> | undefined,   loading :boolean | antd.antd.SpinProps | react.react.ReactNode | undefined,   breadcrumbRender :@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps['breadcrumbRender'] | false | undefined,   waterMarkProps :@ant-design/pro-layout.@ant-design/pro-layout/es/components/WaterMark.WaterMarkProps | undefined,   breadcrumb :antd.antd.BreadcrumbProps | undefined,   children :react.react.ReactNode | undefined} & @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageHeaderTabConfig & std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps, 'title' | 'footer' | 'breadcrumbRender' | 'breadcrumb'> */
   trait PageContainerProps extends StObject {
     
     /**
@@ -79,6 +80,8 @@ object esComponentsPageContainerMod {
     var className: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[ReactNode] = js.undefined
+    
+    var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
     var extra: js.UndefOr[ReactNode] = js.undefined
     
@@ -197,6 +200,10 @@ object esComponentsPageContainerMod {
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       

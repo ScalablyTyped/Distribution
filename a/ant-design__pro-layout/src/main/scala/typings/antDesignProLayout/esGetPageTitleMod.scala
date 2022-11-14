@@ -32,7 +32,7 @@ object esGetPageTitleMod {
     breadcrumbMap: Map[String, BreadcrumbItem]
   ): BreadcrumbItem = (^.asInstanceOf[js.Dynamic].applyDynamic("matchParamsPath")(pathname.asInstanceOf[js.Any], breadcrumb.asInstanceOf[js.Any], breadcrumbMap.asInstanceOf[js.Any])).asInstanceOf[BreadcrumbItem]
   
-  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem, 'children' | 'routes'> & {  routes :@ant-design/pro-layout.@ant-design/pro-layout/es/getPageTitle.BreadcrumbItem | undefined} */
+  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typing.MenuDataItem, 'children' | 'routes'> & {  routes :@ant-design/pro-layout.@ant-design/pro-layout/es/getPageTitle.BreadcrumbItem | undefined} */
   trait BreadcrumbItem extends StObject {
     
     var disabled: js.UndefOr[Boolean] = js.undefined

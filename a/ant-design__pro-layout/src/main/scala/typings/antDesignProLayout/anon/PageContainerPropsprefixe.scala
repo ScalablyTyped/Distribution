@@ -4,7 +4,8 @@ import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.esComponentsPageContainerMod.PageContainerProps
 import typings.antDesignProLayout.esComponentsPageContainerStyleMod.pageContainerToken
 import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
-import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esTypingMod.WithFalse
 import typings.antd.libAvatarAvatarMod.AvatarProps
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.antd.libSpinMod.SpinProps
@@ -52,6 +53,8 @@ trait PageContainerPropsprefixe extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var content: js.UndefOr[ReactNode] = js.undefined
+  
+  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   
   var extra: js.UndefOr[ReactNode] = js.undefined
   
@@ -172,6 +175,10 @@ object PageContainerPropsprefixe {
     inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    
+    inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
     inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

@@ -3,8 +3,8 @@ package typings.antDesignProLayout
 import typings.antDesignProLayout.anon.Breadcrumb
 import typings.antDesignProLayout.anon.Locale
 import typings.antDesignProLayout.anon.ReadonlyArrayRoute
-import typings.antDesignProLayout.esTypingsMod.MenuDataItem
-import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingMod.MenuDataItem
+import typings.antDesignProLayout.esTypingMod.MessageDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

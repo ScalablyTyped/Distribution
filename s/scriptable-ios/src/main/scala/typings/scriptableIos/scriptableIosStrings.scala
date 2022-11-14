@@ -15,6 +15,18 @@ object scriptableIosStrings {
   inline def accept: accept = "accept".asInstanceOf[accept]
   
   @js.native
+  sealed trait accessoryCircular extends StObject
+  inline def accessoryCircular: accessoryCircular = "accessoryCircular".asInstanceOf[accessoryCircular]
+  
+  @js.native
+  sealed trait accessoryInline extends StObject
+  inline def accessoryInline: accessoryInline = "accessoryInline".asInstanceOf[accessoryInline]
+  
+  @js.native
+  sealed trait accessoryRectangular extends StObject
+  inline def accessoryRectangular: accessoryRectangular = "accessoryRectangular".asInstanceOf[accessoryRectangular]
+  
+  @js.native
   sealed trait alert extends StObject
   inline def alert: alert = "alert".asInstanceOf[alert]
   
