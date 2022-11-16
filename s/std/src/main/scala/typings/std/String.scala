@@ -269,8 +269,8 @@ trait String
   
   /**
     * Replaces text in a string, using a regular expression or search string.
-    * @param searchValue A string to search for.
-    * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
+    * @param searchValue A string or regular expression to search for.
+    * @param replaceValue A string containing the text to replace. When the {@linkcode searchValue} is a `RegExp`, all matches are replaced if the `g` flag is set (or only those matches at the beginning, if the `y` flag is also present). Otherwise, only the first match of {@linkcode searchValue} is replaced.
     */
   /* standard es5 */
   def replace(searchValue: java.lang.String, replaceValue: java.lang.String): java.lang.String = js.native
@@ -290,9 +290,9 @@ trait String
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   /**
-    * Replaces first match with string or all matches with RegExp.
-    * @param searchValue A string or RegExp search value.
-    * @param replaceValue A string containing the text to replace for match.
+    * Passes a string and {@linkcode replaceValue} to the `[Symbol.replace]` method on {@linkcode searchValue}. This method is expected to implement its own replacement algorithm.
+    * @param searchValue An object that supports searching for and replacing matches within a string.
+    * @param replaceValue The replacement text.
     */
   /* standard es2015.symbol.wellknown */
   def replace(searchValue: Replace, replaceValue: java.lang.String): java.lang.String = js.native

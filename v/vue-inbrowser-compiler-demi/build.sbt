@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-inbrowser-compiler-demi"
-version := "4.44.23-07bf3e"
+version := "4.44.23-e32b8b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

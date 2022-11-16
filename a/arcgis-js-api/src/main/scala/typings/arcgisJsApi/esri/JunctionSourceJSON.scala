@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JunctionSourceJSON
-  extends StObject
-     with Object {
+trait JunctionSourceJSON extends StObject {
   
   /**
     * The asset group attribute values for the point layer.
@@ -33,15 +29,8 @@ trait JunctionSourceJSON
 }
 object JunctionSourceJSON {
   
-  inline def apply(
-    assetGroups: js.Array[AssetGroupJSON],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layerId: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    sourceId: Double
-  ): JunctionSourceJSON = {
-    val __obj = js.Dynamic.literal(assetGroups = assetGroups.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerId = layerId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceId = sourceId.asInstanceOf[js.Any])
+  inline def apply(assetGroups: js.Array[AssetGroupJSON], layerId: Double, sourceId: Double): JunctionSourceJSON = {
+    val __obj = js.Dynamic.literal(assetGroups = assetGroups.asInstanceOf[js.Any], layerId = layerId.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[JunctionSourceJSON]
   }
   

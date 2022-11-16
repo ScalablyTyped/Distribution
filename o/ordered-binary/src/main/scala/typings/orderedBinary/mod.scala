@@ -93,5 +93,13 @@ object mod {
   inline def writeKey(key: Key, target: js.typedarray.Uint8Array, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeKey")(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writeKey(key: Key, target: js.typedarray.Uint8Array, position: Double, inSequence: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeKey")(key.asInstanceOf[js.Any], target.asInstanceOf[js.Any], position.asInstanceOf[js.Any], inSequence.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Key = std.Array<ordered-binary.ordered-binary.Key> | string | symbol | number | boolean | std.Uint8Array
+  }}}
+  to avoid circular code involving: 
+  - ordered-binary.ordered-binary.Key
+  */
   type Key = js.Array[Any] | String | js.Symbol | Double | Boolean | js.typedarray.Uint8Array
 }

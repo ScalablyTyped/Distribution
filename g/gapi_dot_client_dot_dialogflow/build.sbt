@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_dialogflow"
-version := "3.0-dt-20220912Z-ba3d85"
+version := "3.0-dt-20220912Z-97d5b6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

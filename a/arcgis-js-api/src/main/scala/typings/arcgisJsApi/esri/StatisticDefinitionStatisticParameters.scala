@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.ASC
 import typings.arcgisJsApi.arcgisJsApiStrings.DESC
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StatisticDefinitionStatisticParameters
-  extends StObject
-     with Object {
+trait StatisticDefinitionStatisticParameters extends StObject {
   
   /**
     * Specify `ASC` (ascending) or `DESC` (descending) to control the order of the data.
@@ -28,13 +24,8 @@ trait StatisticDefinitionStatisticParameters
 }
 object StatisticDefinitionStatisticParameters {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: Double
-  ): StatisticDefinitionStatisticParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(value: Double): StatisticDefinitionStatisticParameters = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatisticDefinitionStatisticParameters]
   }
   

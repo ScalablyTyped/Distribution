@@ -176,4 +176,11 @@ trait Editor
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
     */
   var viewModel: EditorViewModel = js.native
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#visibleElements)
+    */
+  var visibleElements: EditorVisibleElements = js.native
 }

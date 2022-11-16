@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stringor"
-version := "0.1-dt-20211221Z-13aed9"
+version := "0.1-dt-20211221Z-1e4148"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

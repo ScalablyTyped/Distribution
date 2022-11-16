@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ElevationLayer
-import typings.arcgisJsApi.esri.ElevationLayerConstructor
 import typings.arcgisJsApi.esri.ElevationLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SpatialReference
@@ -11,13 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersElevationLayerMod extends Shortcut {
+/* static members */
+object esriLayersElevationLayerMod {
   
-  @JSImport("esri/layers/ElevationLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ElevationLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/ElevationLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersElevationLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ElevationLayer {
     def this(properties: ElevationLayerProperties) = this()
@@ -62,9 +56,9 @@ object esriLayersElevationLayerMod extends Shortcut {
     /* CompleteClass */
     var tileInfo: TileInfo = js.native
   }
+  @JSImport("esri/layers/ElevationLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ElevationLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersElevationLayerMod.foo` */
-  override def _to: js.Object & ElevationLayerConstructor = ^
+  inline def fromJSON(json: Any): ElevationLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ElevationLayer]
 }

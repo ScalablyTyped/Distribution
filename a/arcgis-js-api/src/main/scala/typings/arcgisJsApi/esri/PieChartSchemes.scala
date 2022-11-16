@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PieChartSchemes
-  extends StObject
-     with Object {
+trait PieChartSchemes extends StObject {
   
   /**
     * The ID of the basemap associated with the given schemes.
@@ -43,13 +39,10 @@ object PieChartSchemes {
   inline def apply(
     basemapId: String,
     basemapTheme: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     primaryScheme: PieChartScheme,
-    propertyIsEnumerable: PropertyKey => Boolean,
     secondarySchemes: js.Array[PieChartScheme]
   ): PieChartSchemes = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryScheme = primaryScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondarySchemes = secondarySchemes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], primaryScheme = primaryScheme.asInstanceOf[js.Any], secondarySchemes = secondarySchemes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartSchemes]
   }
   

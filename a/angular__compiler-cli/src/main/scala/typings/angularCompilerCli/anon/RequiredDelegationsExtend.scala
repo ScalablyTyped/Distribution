@@ -85,6 +85,8 @@ trait RequiredDelegationsExtend extends StObject {
     js.UndefOr[SourceFile]
   ]
   
+  var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.undefined
+  
   var readDirectory: js.UndefOr[
     js.Function5[
       /* rootDir */ String, 
@@ -282,6 +284,10 @@ object RequiredDelegationsExtend {
     ): Self = StObject.set(x, "getSourceFileByPath", js.Any.fromFunction5(value))
     
     inline def setGetSourceFileByPathUndefined: Self = StObject.set(x, "getSourceFileByPath", js.undefined)
+    
+    inline def setHasInvalidatedResolutions(value: /* filePath */ Path => Boolean): Self = StObject.set(x, "hasInvalidatedResolutions", js.Any.fromFunction1(value))
+    
+    inline def setHasInvalidatedResolutionsUndefined: Self = StObject.set(x, "hasInvalidatedResolutions", js.undefined)
     
     inline def setReadDirectory(
       value: (/* rootDir */ String, /* extensions */ js.Array[String], /* excludes */ js.UndefOr[js.Array[String]], /* includes */ js.Array[String], /* depth */ js.UndefOr[Double]) => js.Array[String]

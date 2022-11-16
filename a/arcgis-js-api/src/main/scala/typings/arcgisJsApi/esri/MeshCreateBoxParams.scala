@@ -11,15 +11,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshCreateBoxParams
-  extends StObject
-     with Object {
+trait MeshCreateBoxParams extends StObject {
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
@@ -60,12 +56,8 @@ trait MeshCreateBoxParams
 }
 object MeshCreateBoxParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshCreateBoxParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshCreateBoxParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshCreateBoxParams]
   }
   

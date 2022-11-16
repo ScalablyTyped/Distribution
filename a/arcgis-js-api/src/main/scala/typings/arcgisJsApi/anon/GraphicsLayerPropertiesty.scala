@@ -97,7 +97,7 @@ trait GraphicsLayerPropertiesty extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterColormapResult
-  extends StObject
-     with Object {
+trait RasterColormapResult extends StObject {
   
   /**
     * The colormap renderer to apply to the input layer.
@@ -19,13 +15,8 @@ trait RasterColormapResult
 }
 object RasterColormapResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    renderer: RasterColormapRenderer
-  ): RasterColormapResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+  inline def apply(renderer: RasterColormapRenderer): RasterColormapResult = {
+    val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterColormapResult]
   }
   

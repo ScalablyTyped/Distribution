@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.continuous
 import typings.arcgisJsApi.arcgisJsApiStrings.hourly
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowCastViewModelDurationOptionsProperties
-  extends StObject
-     with Object {
+trait ShadowCastViewModelDurationOptionsProperties extends StObject {
   
   /**
     * Color of the shadow cast.
@@ -32,12 +28,8 @@ trait ShadowCastViewModelDurationOptionsProperties
 }
 object ShadowCastViewModelDurationOptionsProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ShadowCastViewModelDurationOptionsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ShadowCastViewModelDurationOptionsProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowCastViewModelDurationOptionsProperties]
   }
   

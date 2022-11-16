@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableDataSource
-  extends StObject
-     with Object {
+trait TableDataSource extends StObject {
   
   /**
     * The name of the table in the registered workspace.
@@ -40,16 +36,8 @@ trait TableDataSource
 }
 object TableDataSource {
   
-  inline def apply(
-    constructor: js.Function,
-    dataSourceName: String,
-    gdbVersion: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
-    workspaceId: String
-  ): TableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSourceName = dataSourceName.asInstanceOf[js.Any], gdbVersion = gdbVersion.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), workspaceId = workspaceId.asInstanceOf[js.Any])
+  inline def apply(dataSourceName: String, gdbVersion: String, `type`: String, workspaceId: String): TableDataSource = {
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName.asInstanceOf[js.Any], gdbVersion = gdbVersion.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDataSource]
   }

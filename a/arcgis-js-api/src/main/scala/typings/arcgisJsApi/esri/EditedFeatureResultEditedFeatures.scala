@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditedFeatureResultEditedFeatures
-  extends StObject
-     with Object {
+trait EditedFeatureResultEditedFeatures extends StObject {
   
   /**
     * Newly added features as a result of editing a feature that participates in a composite relationship.
@@ -40,12 +36,8 @@ trait EditedFeatureResultEditedFeatures
 }
 object EditedFeatureResultEditedFeatures {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): EditedFeatureResultEditedFeatures = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): EditedFeatureResultEditedFeatures = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditedFeatureResultEditedFeatures]
   }
   

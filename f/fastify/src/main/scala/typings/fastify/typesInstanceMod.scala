@@ -86,6 +86,7 @@ import typings.fastify.typesUtilsMod.RawServerBase
 import typings.fastify.typesUtilsMod.RawServerDefault
 import typings.fastifyError.mod.FastifyError
 import typings.findMyWay.mod.ConstraintStrategy
+import typings.findMyWay.mod.HTTPVersion.V1
 import typings.lightMyRequest.mod.CallbackFunc
 import typings.lightMyRequest.mod.Chain
 import typings.lightMyRequest.mod.InjectOptions
@@ -1488,23 +1489,21 @@ object typesInstanceMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     RawServer extends node.http.Server<new (socket : node.node:net.Socket): node.http.IncomingMessage, new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>> ? find-my-way.find-my-way.HTTPVersion.V1 : find-my-way.find-my-way.HTTPVersion.V2
     }}}
     */
-  @js.native
-  trait FindMyWayVersion[RawServer /* <: RawServerBase */] extends StObject
+  type FindMyWayVersion[RawServer /* <: RawServerBase */] = V1
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Key extends keyof _Interface ? never : Key
     }}}
     */
-  @js.native
-  trait NotInInterface[Key, _Interface] extends StObject
+  type NotInInterface[Key, _Interface] = Key
   
   trait PrintRoutesOptions extends StObject {
     

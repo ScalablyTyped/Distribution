@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-animations"
-version := "1.0-dt-20211202Z-a714fb"
+version := "1.0-dt-20211202Z-42f994"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

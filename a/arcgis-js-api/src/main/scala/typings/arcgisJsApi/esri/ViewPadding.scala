@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewPadding
-  extends StObject
-     with Object {
+trait ViewPadding extends StObject {
   
   /**
     * The bottom padding (in pixels).
@@ -40,12 +36,8 @@ trait ViewPadding
 }
 object ViewPadding {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ViewPadding = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ViewPadding = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPadding]
   }
   

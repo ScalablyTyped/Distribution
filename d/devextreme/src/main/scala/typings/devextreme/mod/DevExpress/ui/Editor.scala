@@ -24,6 +24,15 @@ object Editor {
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Properties = devextreme.devextreme.DevExpress.ui.EditorOptions<devextreme.devextreme.DevExpress.ui.Editor.EditorInstance>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.Editor.EditorInstance
+  - devextreme.devextreme.DevExpress.ui.Editor.Properties
+  */
   trait Properties
     extends StObject
        with EditorOptions[EditorInstance]

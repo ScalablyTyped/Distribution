@@ -7,15 +7,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.sigmoid
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait rgbCreateRendererParams
-  extends StObject
-     with Object {
+trait rgbCreateRendererParams extends StObject {
   
   /**
     * When `true`, calculates the renderer's statistics based on the current display extent and recalculates them as you zoom and pan around the image.
@@ -84,13 +80,8 @@ trait rgbCreateRendererParams
 }
 object rgbCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer | WCSLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): rgbCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer | WCSLayer): rgbCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[rgbCreateRendererParams]
   }
   

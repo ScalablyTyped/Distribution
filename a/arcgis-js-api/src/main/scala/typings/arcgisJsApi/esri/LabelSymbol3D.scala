@@ -40,5 +40,5 @@ trait LabelSymbol3D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
-  var verticalOffset: LabelSymbol3DVerticalOffset = js.native
+  var verticalOffset: Symbol3DVerticalOffset = js.native
 }

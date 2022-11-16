@@ -114,11 +114,31 @@ object nextMod {
       }
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type ServerContextJSONArray = std.ReadonlyArray<react.react/next.react.ServerContextJSONArray>
+    }}}
+    to avoid circular code involving: 
+    - react.react.ServerContextJSONArray
+    - react.react.ServerContextJSONValue
+    - react.react/next.react.ServerContextJSONArray
+    */
     @js.native
     trait ServerContextJSONArray
       extends StObject
          with ReadonlyArray[ServerContextJSONArray]
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type ServerContextJSONValue = string | boolean | number | null | react.react/next.react.ServerContextJSONArray | {[key: string] : react.react/next.react.ServerContextJSONValue}
+    }}}
+    to avoid circular code involving: 
+    - react.react.ServerContextJSONValue
+    - react.react/next.react.ServerContextJSONArray
+    - react.react/next.react.ServerContextJSONValue
+    */
     type ServerContextJSONValue = String | Boolean | Double | Null | Any | StringDictionary[Any]
     
     /* Rewritten from type alias, can be one of: 

@@ -162,6 +162,17 @@ object typesInterfaceMod {
     Double
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type OptionalTypeEncoder = (data : any, typ : string, options : cborg.cborg/types/interface.EncodeOptions, refStack : cborg.cborg/types/interface.Reference | undefined): cborg.cborg/types/interface.TokenOrNestedTokens | null
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/cborg.TypeEncoder
+  - cborg.cborg/types/interface.OptionalTypeEncoder
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  - cborg.cborg/types/lib/encode.OptionalTypeEncoder
+  */
   @js.native
   trait OptionalTypeEncoder extends StObject {
     
@@ -182,6 +193,15 @@ object typesInterfaceMod {
     var parent: js.UndefOr[Reference] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StrictTypeEncoder = (data : any, typ : string, options : cborg.cborg/types/interface.EncodeOptions, refStack : cborg.cborg/types/interface.Reference | undefined): cborg.cborg/types/interface.TokenOrNestedTokens
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/interface.StrictTypeEncoder
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  */
   @js.native
   trait StrictTypeEncoder extends StObject {
     
@@ -191,6 +211,14 @@ object typesInterfaceMod {
   
   type TagDecoder = js.Function1[/* inner */ Any, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TokenOrNestedTokens = cborg.cborg/types/lib/token.Token | std.Array<cborg.cborg/types/lib/token.Token> | std.Array<cborg.cborg/types/interface.TokenOrNestedTokens>
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  */
   type TokenOrNestedTokens = Token | (js.Array[Any | Token])
   
   @js.native

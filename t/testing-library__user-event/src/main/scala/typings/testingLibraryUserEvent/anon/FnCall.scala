@@ -11,6 +11,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animations
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.beforeinput_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cancel
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplay_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplaythrough_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.change
@@ -175,6 +176,10 @@ trait FnCall extends StObject {
   def apply(target: Element, `type`: blur, init: Unit, preventDefault: Boolean): Boolean = js.native
   def apply(target: Element, `type`: blur, init: EventTypeInit[blur]): Boolean = js.native
   def apply(target: Element, `type`: blur, init: EventTypeInit[blur], preventDefault: Boolean): Boolean = js.native
+  def apply(target: Element, `type`: cancel): Boolean = js.native
+  def apply(target: Element, `type`: cancel, init: Unit, preventDefault: Boolean): Boolean = js.native
+  def apply(target: Element, `type`: cancel, init: EventTypeInit[cancel]): Boolean = js.native
+  def apply(target: Element, `type`: cancel, init: EventTypeInit[cancel], preventDefault: Boolean): Boolean = js.native
   def apply(target: Element, `type`: canplay_): Boolean = js.native
   def apply(target: Element, `type`: canplay_, init: Unit, preventDefault: Boolean): Boolean = js.native
   def apply(target: Element, `type`: canplay_, init: EventTypeInit[canplay_]): Boolean = js.native

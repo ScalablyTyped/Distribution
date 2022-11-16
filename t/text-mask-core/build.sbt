@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "text-mask-core"
-version := "5.1.2-77bc8e"
+version := "5.1.2-e57b95"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

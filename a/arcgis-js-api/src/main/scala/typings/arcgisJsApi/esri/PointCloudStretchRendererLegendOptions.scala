@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudStretchRendererLegendOptions
-  extends StObject
-     with Object {
+trait PointCloudStretchRendererLegendOptions extends StObject {
   
   /**
     * Describes the variable driving the visualization.
@@ -19,12 +15,8 @@ trait PointCloudStretchRendererLegendOptions
 }
 object PointCloudStretchRendererLegendOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PointCloudStretchRendererLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): PointCloudStretchRendererLegendOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudStretchRendererLegendOptions]
   }
   

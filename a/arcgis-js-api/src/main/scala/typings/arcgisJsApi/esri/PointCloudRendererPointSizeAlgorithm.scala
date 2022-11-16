@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`fixed-size`
 import typings.arcgisJsApi.arcgisJsApiStrings.splat
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudRendererPointSizeAlgorithm
-  extends StObject
-     with Object {
+trait PointCloudRendererPointSizeAlgorithm extends StObject {
   
   /**
     * Specifies the scale factor that is applied to the size estimated by the density.
@@ -44,13 +40,8 @@ trait PointCloudRendererPointSizeAlgorithm
 }
 object PointCloudRendererPointSizeAlgorithm {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `fixed-size` | splat
-  ): PointCloudRendererPointSizeAlgorithm = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(`type`: `fixed-size` | splat): PointCloudRendererPointSizeAlgorithm = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudRendererPointSizeAlgorithm]
   }

@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.BookmarksViewModel
-import typings.arcgisJsApi.esri.BookmarksViewModelConstructor
 import typings.arcgisJsApi.esri.BookmarksViewModelProperties
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.MapView
@@ -11,13 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsBookmarksBookmarksViewModelMod extends Shortcut {
+object esriWidgetsBookmarksBookmarksViewModelMod {
   
-  @JSImport("esri/widgets/Bookmarks/BookmarksViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BookmarksViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Bookmarks/BookmarksViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsBookmarksBookmarksViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BookmarksViewModel {
     def this(properties: BookmarksViewModelProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsBookmarksBookmarksViewModelMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & BookmarksViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsBookmarksBookmarksViewModelMod.foo` */
-  override def _to: js.Object & BookmarksViewModelConstructor = ^
 }

@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.WCSLayer
-import typings.arcgisJsApi.esri.WCSLayerConstructor
 import typings.arcgisJsApi.esri.WCSLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersWcslayerMod extends Shortcut {
+/* static members */
+object esriLayersWcslayerMod {
   
-  @JSImport("esri/layers/WCSLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WCSLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/WCSLayer", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriLayersWcslayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WCSLayer {
     def this(properties: WCSLayerProperties) = this()
@@ -56,9 +50,9 @@ object esriLayersWcslayerMod extends Shortcut {
     /* CompleteClass */
     var portalItem: PortalItem = js.native
   }
+  @JSImport("esri/layers/WCSLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WCSLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersWcslayerMod.foo` */
-  override def _to: js.Object & WCSLayerConstructor = ^
+  inline def fromJSON(json: Any): WCSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WCSLayer]
 }

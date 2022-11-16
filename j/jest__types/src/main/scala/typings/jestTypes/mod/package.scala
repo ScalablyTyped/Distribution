@@ -3,6 +3,7 @@ package typings.jestTypes.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.jestTypes.anon.FakeTimersConfignowExclud
 import typings.std.Generator
+import typings.std.Partial
 import typings.std.Record
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
@@ -41,6 +42,19 @@ type ConcurrentTestFn = js.Function0[js.Promise[Any]]
 type ConcurrentTestFn2 = ConcurrentTestFn
 
 type ConfigGlobals = StringDictionary[Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends @jest/types.@jest/types.CoverageReporterName ? istanbul-reports.istanbul-reports.ReportOptions[K] extends never ? never : [K, std.Partial<istanbul-reports.istanbul-reports.ReportOptions[K]>] : never
+  }}}
+  */
+type CoverageReporterWithOptions[K] = js.Tuple2[
+K, 
+Partial[
+  /* import warning: importer.ImportType#apply Failed type conversion: istanbul-reports.istanbul-reports.ReportOptions[K] */ js.Any
+]]
 
 type CoverageReporters = js.Array[CoverageReporterName | CoverageReporterWithOptions[CoverageReporterName]]
 

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BufferParametersConstructor
   extends StObject
-     with /**
-  * Sets the distances, units, and other parameters for the [buffer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#buffer) method on the [geometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html)
-  */
-Instantiable0[BufferParameters]
+     with Instantiable0[BufferParameters]
      with Instantiable1[/* properties */ BufferParametersProperties, BufferParameters] {
   
   def fromJSON(json: Any): BufferParameters = js.native

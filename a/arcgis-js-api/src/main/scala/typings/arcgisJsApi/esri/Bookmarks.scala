@@ -85,7 +85,7 @@ trait Bookmarks
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView | SceneView = js.native
   
   /**
     * The view model for this widget.

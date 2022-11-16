@@ -142,6 +142,15 @@ object `distTs3Dot9Modules@emotionCacheTypesIndexMod` {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StylisPlugin = (element : @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisElement, index : number, children : std.Array<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisElement>, callback : @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisPluginCallback): string | void
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisPlugin
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisPluginCallback
+  */
   @js.native
   trait StylisPlugin extends StObject {
     
@@ -153,6 +162,14 @@ object `distTs3Dot9Modules@emotionCacheTypesIndexMod` {
     ): String | Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StylisPluginCallback = (element : @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisElement, index : number, children : std.Array<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisElement>, callback : @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisPluginCallback): string | void
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-cache-types-index.StylisPluginCallback
+  */
   @js.native
   trait StylisPluginCallback extends StObject {
     

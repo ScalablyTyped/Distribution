@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorCreatePCContinuousRendererParams
-  extends StObject
-     with Object {
+trait colorCreatePCContinuousRendererParams extends StObject {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
@@ -75,14 +71,8 @@ trait colorCreatePCContinuousRendererParams
 }
 object colorCreatePCContinuousRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: PointCloudLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): colorCreatePCContinuousRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(field: String, layer: PointCloudLayer): colorCreatePCContinuousRendererParams = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorCreatePCContinuousRendererParams]
   }
   

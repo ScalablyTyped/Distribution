@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExpressionContentConstructor
   extends StObject
-     with /**
-  * An ExpressionContent element allows you to define a popup content element with an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html)
-  */
-Instantiable0[ExpressionContent]
+     with Instantiable0[ExpressionContent]
      with Instantiable1[/* properties */ ExpressionContentProperties, ExpressionContent] {
   
   def fromJSON(json: Any): ExpressionContent = js.native

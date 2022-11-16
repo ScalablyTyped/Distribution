@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SummaryStatisticsResult
-  extends StObject
-     with Object {
+trait SummaryStatisticsResult extends StObject {
   
   /**
     * The average of all values returned from the field or expression.
@@ -77,18 +73,15 @@ object SummaryStatisticsResult {
   
   inline def apply(
     avg: Double,
-    constructor: js.Function,
     count: Double,
-    hasOwnProperty: PropertyKey => Boolean,
     max: Double,
     median: Double,
     min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     stddev: Double,
     sum: Double,
     variance: Double
   ): SummaryStatisticsResult = {
-    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], median = median.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], median = median.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], stddev = stddev.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryStatisticsResult]
   }
   

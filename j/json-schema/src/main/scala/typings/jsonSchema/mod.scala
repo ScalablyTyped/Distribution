@@ -381,6 +381,16 @@ object mod {
   
   type JSONSchema4Array = js.Array[JSONSchema4Type]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema4Object = {[key: string] : json-schema.json-schema.JSONSchema4Type}
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema4Array
+  - json-schema.json-schema.JSONSchema4Object
+  - json-schema.json-schema.JSONSchema4Type
+  */
   trait JSONSchema4Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema4Type]
@@ -392,6 +402,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema4Type = string | number | boolean | json-schema.json-schema.JSONSchema4Object | json-schema.json-schema.JSONSchema4Array | null
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema4Array
+  - json-schema.json-schema.JSONSchema4Type
+  */
   type JSONSchema4Type = String | Double | Boolean | JSONSchema4Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 
@@ -877,6 +896,16 @@ object mod {
   
   type JSONSchema6Definition = JSONSchema6 | Boolean
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema6Object = {[key: string] : json-schema.json-schema.JSONSchema6Type}
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema6Array
+  - json-schema.json-schema.JSONSchema6Object
+  - json-schema.json-schema.JSONSchema6Type
+  */
   trait JSONSchema6Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema6Type]
@@ -888,6 +917,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema6Type = string | number | boolean | json-schema.json-schema.JSONSchema6Object | json-schema.json-schema.JSONSchema6Array | null
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema6Array
+  - json-schema.json-schema.JSONSchema6Type
+  */
   type JSONSchema6Type = String | Double | Boolean | JSONSchema6Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 
@@ -1283,6 +1321,16 @@ object mod {
   
   type JSONSchema7Definition = JSONSchema7 | Boolean
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema7Object = {[key: string] : json-schema.json-schema.JSONSchema7Type}
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema7Array
+  - json-schema.json-schema.JSONSchema7Object
+  - json-schema.json-schema.JSONSchema7Type
+  */
   trait JSONSchema7Object
     extends StObject
        with /* key */ StringDictionary[JSONSchema7Type]
@@ -1294,6 +1342,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONSchema7Type = string | number | boolean | json-schema.json-schema.JSONSchema7Object | json-schema.json-schema.JSONSchema7Array | null
+  }}}
+  to avoid circular code involving: 
+  - json-schema.json-schema.JSONSchema7Array
+  - json-schema.json-schema.JSONSchema7Type
+  */
   type JSONSchema7Type = String | Double | Boolean | JSONSchema7Object | Any | Null
   
   /* Rewritten from type alias, can be one of: 

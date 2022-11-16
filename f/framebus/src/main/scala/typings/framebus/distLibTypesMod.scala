@@ -50,6 +50,16 @@ object distLibTypesMod {
   
   type FramebusReplyHandler = js.Function1[/* data */ Any, Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FramebusSubscribeHandler = (data : framebus.framebus/dist/lib/types.FramebusSubscriberArg | framebus.framebus/dist/lib/types.FramebusSubscribeHandler | undefined, reply : framebus.framebus/dist/lib/types.FramebusSubscribeHandler | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - framebus.framebus/dist/lib/types.FramebusSubscribeHandler
+  - framebus.framebus/dist/lib/types.FramebusSubscriber
+  - framebus.framebus/dist/lib/types.FramebusSubscription
+  */
   @js.native
   trait FramebusSubscribeHandler extends StObject {
     

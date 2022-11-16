@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_chromeuxreport"
-version := "1.0-dt-20220912Z-f89c17"
+version := "1.0-dt-20220912Z-ad790f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

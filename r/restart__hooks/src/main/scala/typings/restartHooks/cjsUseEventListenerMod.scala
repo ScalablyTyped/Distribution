@@ -9,6 +9,7 @@ import typings.restartHooks.restartHooksStrings.animationstart
 import typings.restartHooks.restartHooksStrings.auxclick
 import typings.restartHooks.restartHooksStrings.beforeinput
 import typings.restartHooks.restartHooksStrings.blur
+import typings.restartHooks.restartHooksStrings.cancel
 import typings.restartHooks.restartHooksStrings.canplay
 import typings.restartHooks.restartHooksStrings.canplaythrough
 import typings.restartHooks.restartHooksStrings.change
@@ -312,6 +313,18 @@ object cjsUseEventListenerMod {
     eventTarget: js.Function0[T],
     event: blur,
     listener: EventHandler[T, blur],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: cancel, listener: EventHandler[T, cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: cancel, listener: EventHandler[T, cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: cancel,
+    listener: EventHandler[T, cancel],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FeatureLayerSource
-import typings.arcgisJsApi.esri.FeatureLayerSourceConstructor
 import typings.arcgisJsApi.esri.FeatureLayerSourceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebdocGeotriggersInfoFeatureLayerSourceMod extends Shortcut {
+/* static members */
+object esriWebdocGeotriggersInfoFeatureLayerSourceMod {
   
-  @JSImport("esri/webdoc/geotriggersInfo/FeatureLayerSource", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FeatureLayerSourceConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/geotriggersInfo/FeatureLayerSource", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWebdocGeotriggersInfoFeatureLayerSourceMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FeatureLayerSource {
     def this(properties: FeatureLayerSourceProperties) = this()
@@ -35,9 +29,9 @@ object esriWebdocGeotriggersInfoFeatureLayerSourceMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/webdoc/geotriggersInfo/FeatureLayerSource", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FeatureLayerSourceConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWebdocGeotriggersInfoFeatureLayerSourceMod.foo` */
-  override def _to: js.Object & FeatureLayerSourceConstructor = ^
+  inline def fromJSON(json: Any): FeatureLayerSource = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FeatureLayerSource]
 }

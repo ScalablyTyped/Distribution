@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-conflict-json"
-version := "1.1-dt-20211202Z-fdf4e4"
+version := "1.1-dt-20211202Z-134b77"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

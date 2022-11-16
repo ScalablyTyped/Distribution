@@ -2,6 +2,7 @@ package typings.jsdom
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsdom.anon.Instantiable
+import typings.jsdom.anon.TypeofAbortSignal
 import typings.jsdom.anon.TypeofCSSRule
 import typings.jsdom.anon.TypeofDOMException
 import typings.jsdom.anon.TypeofFileReader
@@ -95,6 +96,7 @@ import typings.std.IDBFactory
 import typings.std.IdleRequestCallback
 import typings.std.ImageBitmap
 import typings.std.ImageBitmapSource
+import typings.std.InputEvent
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
@@ -549,7 +551,7 @@ object mod {
     
     var AbortController: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AbortController */ Any = js.native
     
-    var AbortSignal: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AbortSignal */ Any = js.native
+    var AbortSignal: TypeofAbortSignal = js.native
     
     var AbstractRange: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AbstractRange */ Any = js.native
     
@@ -1314,11 +1316,15 @@ object mod {
     
     var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.native
     
+    var onbeforeinput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null] = js.native
+    
     var onbeforeprint: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.native
     
     var onbeforeunload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]) | Null] = js.native
     
     var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.native
+    
+    var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.native
     
     var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.native
     

@@ -73,6 +73,14 @@ object buildSrcMakeClientMod {
   
   type Deserialize[T] = js.Function1[/* bytes */ Buffer, T]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GrpcObject = {[index: string] : @grpc/grpc-js.@grpc/grpc-js/build/src/make-client.GrpcObject | @grpc/grpc-js.@grpc/grpc-js/build/src/make-client.ServiceClientConstructor | @grpc/grpc-js.@grpc/grpc-js/build/src/make-client.ProtobufTypeDefinition}
+  }}}
+  to avoid circular code involving: 
+  - @grpc/grpc-js.@grpc/grpc-js/build/src/make-client.GrpcObject
+  */
   trait GrpcObject
     extends StObject
        with /* index */ StringDictionary[GrpcObject | ServiceClientConstructor | ProtobufTypeDefinition]

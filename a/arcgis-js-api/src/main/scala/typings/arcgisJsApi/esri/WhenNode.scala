@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`when-clause`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WhenNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -30,14 +27,8 @@ trait WhenNode
 }
 object WhenNode {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    operand: SQLNode,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: SQLNode
-  ): WhenNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operand = operand.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(operand: SQLNode, value: SQLNode): WhenNode = {
+    val __obj = js.Dynamic.literal(operand = operand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("when-clause")
     __obj.asInstanceOf[WhenNode]
   }

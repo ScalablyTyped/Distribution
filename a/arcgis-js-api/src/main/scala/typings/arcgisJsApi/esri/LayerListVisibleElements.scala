@@ -1,14 +1,17 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerListVisibleElements
-  extends StObject
-     with Object {
+trait LayerListVisibleElements extends StObject {
+  
+  /**
+    * _Since 4.25_ Indicates whether layer load errors will be displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#VisibleElements)
+    */
+  var errors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the status indicators will be displayed.
@@ -19,16 +22,16 @@ trait LayerListVisibleElements
 }
 object LayerListVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LayerListVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): LayerListVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerListVisibleElements]
   }
   
   extension [Self <: LayerListVisibleElements](x: Self) {
+    
+    inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     inline def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
     

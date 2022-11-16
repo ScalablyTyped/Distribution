@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tempfile"
-version := "4.0.0-fd0d16"
+version := "4.0.0-a081a8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

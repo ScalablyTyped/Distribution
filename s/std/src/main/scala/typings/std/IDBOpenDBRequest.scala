@@ -14,17 +14,20 @@ trait IDBOpenDBRequest
   
   /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_blocked(`type`: blocked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  def addEventListener_blocked(
+    `type`: blocked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blocked(
     `type`: blocked,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blocked(
     `type`: blocked,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -46,24 +49,27 @@ trait IDBOpenDBRequest
   ): Unit = js.native
   
   /* standard dom */
-  var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
+  var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]) | Null = js.native
   
   /* standard dom */
   var onupgradeneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]) | Null = js.native
   
   /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_blocked(`type`: blocked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  def removeEventListener_blocked(
+    `type`: blocked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blocked(
     `type`: blocked,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blocked(
     `type`: blocked,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

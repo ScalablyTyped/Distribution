@@ -62,7 +62,7 @@ trait BingMapsLayer
   var region: String = js.native
   
   /**
-    * For more information on Bing map styles please visit: https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
+    * For more information on Bing map styles please visit: https://learn.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
     *
     * @default "road"
     *

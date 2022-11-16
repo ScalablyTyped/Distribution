@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Config_
-  extends StObject
-     with Object {
+trait Config_ extends StObject {
   
   /**
     * The display field.
@@ -47,14 +43,8 @@ trait Config_
 }
 object Config_ {
   
-  inline def apply(
-    constructor: js.Function,
-    fields: js.Array[Field],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    title: String
-  ): Config_ = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
+  inline def apply(fields: js.Array[Field], title: String): Config_ = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config_]
   }
   

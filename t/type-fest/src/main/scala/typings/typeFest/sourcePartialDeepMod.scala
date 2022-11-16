@@ -12,13 +12,12 @@ object sourcePartialDeepMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/internal.BuiltIns ? T : T extends std.Map<infer KeyType, infer ValueType> ? type-fest.type-fest/source/partial-deep.PartialMapDeep<KeyType, ValueType, Options> : T extends std.Set<infer ItemType> ? type-fest.type-fest/source/partial-deep.PartialSetDeep<ItemType, Options> : T extends std.ReadonlyMap<infer KeyType, infer ValueType> ? type-fest.type-fest/source/partial-deep.PartialReadonlyMapDeep<KeyType, ValueType, Options> : T extends std.ReadonlySet<infer ItemType> ? type-fest.type-fest/source/partial-deep.PartialReadonlySetDeep<ItemType, Options> : T extends (arguments : ...any): unknown ? T | undefined : T extends object ? T extends std.ReadonlyArray<infer ItemType> ? Options['recurseIntoArrays'] extends true ? std.Array<ItemType> extends T ? std.Array<ItemType> extends T ? std.ReadonlyArray<type-fest.type-fest/source/partial-deep.PartialDeep<ItemType | undefined, Options>> : std.Array<type-fest.type-fest/source/partial-deep.PartialDeep<ItemType | undefined, Options>> : type-fest.type-fest/source/partial-deep.PartialObjectDeep<T, Options> : T : type-fest.type-fest/source/partial-deep.PartialObjectDeep<T, Options> : unknown
     }}}
     */
-  @js.native
-  trait PartialDeep[T, Options /* <: PartialDeepOptions */] extends StObject
+  type PartialDeep[T, Options /* <: PartialDeepOptions */] = T
   
   trait PartialDeepOptions extends StObject {
     

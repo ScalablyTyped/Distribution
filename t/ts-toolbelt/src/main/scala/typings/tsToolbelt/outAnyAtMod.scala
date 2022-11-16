@@ -9,11 +9,12 @@ object outAnyAtMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     A extends ts-toolbelt.ts-toolbelt/out/List/List.List<any> ? number extends A['length'] ? K extends number | / * template literal string: ${number} * / string ? A[never] | undefined : undefined : K extends keyof A ? A[K] : undefined : unknown extends A ? unknown : K extends keyof A ? A[K] : undefined
     }}}
     */
-  @js.native
-  trait At[A /* <: Any */, K /* <: Key */] extends StObject
+  type At[A /* <: Any */, K /* <: Key */] = js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: A[never] */ js.Any
+  ]
 }

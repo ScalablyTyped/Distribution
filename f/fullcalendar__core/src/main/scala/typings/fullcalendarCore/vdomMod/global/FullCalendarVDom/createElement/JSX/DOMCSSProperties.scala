@@ -41,6 +41,8 @@ trait DOMCSSProperties extends StObject {
   
   var aspectRatio: js.UndefOr[String | Double | Null] = js.undefined
   
+  var backdropFilter: js.UndefOr[String | Double | Null] = js.undefined
+  
   var backfaceVisibility: js.UndefOr[String | Double | Null] = js.undefined
   
   var background: js.UndefOr[String | Double | Null] = js.undefined
@@ -247,6 +249,12 @@ trait DOMCSSProperties extends StObject {
   
   var contain: js.UndefOr[String | Double | Null] = js.undefined
   
+  var container: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var containerName: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var containerType: js.UndefOr[String | Double | Null] = js.undefined
+  
   var content: js.UndefOr[String | Double | Null] = js.undefined
   
   var counterIncrement: js.UndefOr[String | Double | Null] = js.undefined
@@ -306,6 +314,8 @@ trait DOMCSSProperties extends StObject {
   var fontKerning: js.UndefOr[String | Double | Null] = js.undefined
   
   var fontOpticalSizing: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var fontPalette: js.UndefOr[String | Double | Null] = js.undefined
   
   var fontSize: js.UndefOr[String | Double | Null] = js.undefined
   
@@ -374,6 +384,8 @@ trait DOMCSSProperties extends StObject {
   var gridTemplateRows: js.UndefOr[String | Double | Null] = js.undefined
   
   var height: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var hyphenateCharacter: js.UndefOr[String | Double | Null] = js.undefined
   
   var hyphens: js.UndefOr[String | Double | Null] = js.undefined
   
@@ -524,6 +536,8 @@ trait DOMCSSProperties extends StObject {
   var overflow: js.UndefOr[String | Double | Null] = js.undefined
   
   var overflowAnchor: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var overflowClipMargin: js.UndefOr[String | Double | Null] = js.undefined
   
   var overflowWrap: js.UndefOr[String | Double | Null] = js.undefined
   
@@ -1033,6 +1047,12 @@ object DOMCSSProperties {
     inline def setAspectRatioNull: Self = StObject.set(x, "aspectRatio", null)
     
     inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
+    inline def setBackdropFilter(value: String | Double): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
+    
+    inline def setBackdropFilterNull: Self = StObject.set(x, "backdropFilter", null)
+    
+    inline def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
     
     inline def setBackfaceVisibility(value: String | Double): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
@@ -1652,6 +1672,24 @@ object DOMCSSProperties {
     
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
+    inline def setContainer(value: String | Double): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerName(value: String | Double): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNameNull: Self = StObject.set(x, "containerName", null)
+    
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContainerType(value: String | Double): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerTypeNull: Self = StObject.set(x, "containerType", null)
+    
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
     inline def setContent(value: String | Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
@@ -1829,6 +1867,12 @@ object DOMCSSProperties {
     inline def setFontOpticalSizingNull: Self = StObject.set(x, "fontOpticalSizing", null)
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
+    
+    inline def setFontPalette(value: String | Double): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+    
+    inline def setFontPaletteNull: Self = StObject.set(x, "fontPalette", null)
+    
+    inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
     
     inline def setFontSize(value: String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -2035,6 +2079,12 @@ object DOMCSSProperties {
     inline def setHeightNull: Self = StObject.set(x, "height", null)
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHyphenateCharacter(value: String | Double): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateCharacterNull: Self = StObject.set(x, "hyphenateCharacter", null)
+    
+    inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
     
     inline def setHyphens(value: String | Double): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
@@ -2481,6 +2531,12 @@ object DOMCSSProperties {
     inline def setOverflowAnchorNull: Self = StObject.set(x, "overflowAnchor", null)
     
     inline def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
+    
+    inline def setOverflowClipMargin(value: String | Double): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowClipMarginNull: Self = StObject.set(x, "overflowClipMargin", null)
+    
+    inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
     
     inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
     

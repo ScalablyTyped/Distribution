@@ -10,15 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`top-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`top-trailing`
 import typings.arcgisJsApi.arcgisJsApiStrings.manual
 import typings.std.HTMLElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UIAddComponent
-  extends StObject
-     with Object {
+trait UIAddComponent extends StObject {
   
   /**
     * The component to add to the UI.
@@ -45,13 +41,8 @@ trait UIAddComponent
 }
 object UIAddComponent {
   
-  inline def apply(
-    component: Widget_ | HTMLElement | String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): UIAddComponent = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(component: Widget_ | HTMLElement | String): UIAddComponent = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIAddComponent]
   }
   

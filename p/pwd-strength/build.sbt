@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pwd-strength"
-version := "1.1-dt-20211202Z-267c83"
+version := "1.1-dt-20211202Z-e9aa6f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISMapServiceCapabilitiesExportTiles
-  extends StObject
-     with Object {
+trait ArcGISMapServiceCapabilitiesExportTiles extends StObject {
   
   /**
     * Specifies the maximum number of tiles that can be exported to a cache dataset or a tile package.
@@ -19,13 +15,8 @@ trait ArcGISMapServiceCapabilitiesExportTiles
 }
 object ArcGISMapServiceCapabilitiesExportTiles {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    maxExportTilesCount: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ArcGISMapServiceCapabilitiesExportTiles = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxExportTilesCount = maxExportTilesCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(maxExportTilesCount: Double): ArcGISMapServiceCapabilitiesExportTiles = {
+    val __obj = js.Dynamic.literal(maxExportTilesCount = maxExportTilesCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportTiles]
   }
   

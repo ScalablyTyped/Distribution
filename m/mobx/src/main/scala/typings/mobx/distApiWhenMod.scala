@@ -3,6 +3,7 @@ package typings.mobx
 import typings.mobx.anon.Promisevoidcancelvoid
 import typings.mobx.distCoreReactionMod.IReactionDisposer
 import typings.mobx.distUtilsUtilsMod.Lambda
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +25,8 @@ object distApiWhenMod {
     
     var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
     var timeout: js.UndefOr[Double] = js.undefined
   }
   object IWhenOptions {
@@ -42,6 +45,10 @@ object distApiWhenMod {
       inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

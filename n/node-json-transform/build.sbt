@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-json-transform"
-version := "1.x-dt-20220712Z-21db4a"
+version := "1.x-dt-20220712Z-30ea48"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

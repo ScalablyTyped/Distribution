@@ -1,12 +1,10 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.measured
 import typings.arcgisJsApi.arcgisJsApiStrings.measuring
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModel
-import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelConstructor
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelMeasurement
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelMeasurementLabel
 import typings.arcgisJsApi.esri.MapView
@@ -15,21 +13,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod extends Shortcut {
+object esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod {
   
   @JSImport("esri/widgets/AreaMeasurement2D/AreaMeasurement2DViewModel", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & AreaMeasurement2DViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/widgets/AreaMeasurement2D/AreaMeasurement2DViewModel", JSImport.Namespace)
-  @js.native
-  /**
-    * Provides the logic for the [AreaMeasurement2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html)
-    */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with AreaMeasurement2DViewModel {
     def this(properties: Any) = this()
@@ -110,9 +98,4 @@ object esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod extends Shortcu
     /* CompleteClass */
     var view: MapView = js.native
   }
-  
-  type _To = js.Object & AreaMeasurement2DViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsAreaMeasurement2DAreaMeasurement2DViewModelMod.foo` */
-  override def _to: js.Object & AreaMeasurement2DViewModelConstructor = ^
 }

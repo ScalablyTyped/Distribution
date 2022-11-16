@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SizeStop
-import typings.arcgisJsApi.esri.SizeStopConstructor
 import typings.arcgisJsApi.esri.SizeStopProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersVisualVariablesSupportSizeStopMod extends Shortcut {
+/* static members */
+object esriRenderersVisualVariablesSupportSizeStopMod {
   
-  @JSImport("esri/renderers/visualVariables/support/SizeStop", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SizeStopConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/visualVariables/support/SizeStop", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersVisualVariablesSupportSizeStopMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-support-SizeStop.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SizeStop {
     def this(properties: SizeStopProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersVisualVariablesSupportSizeStopMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/visualVariables/support/SizeStop", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SizeStopConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersVisualVariablesSupportSizeStopMod.foo` */
-  override def _to: js.Object & SizeStopConstructor = ^
+  inline def fromJSON(json: Any): SizeStop = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SizeStop]
 }

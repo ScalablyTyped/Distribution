@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchVisibleElements
-  extends StObject
-     with Object {
+trait SketchVisibleElements extends StObject {
   
   /**
     * The available sketch tools within the widget.
@@ -43,7 +39,7 @@ trait SketchVisibleElements
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
     */
-  var snappingControlsElements: js.UndefOr[VisibleElementsSnappingControlsElements] = js.undefined
+  var snappingControlsElements: js.UndefOr[SketchVisibleElementsSnappingControlsElements] = js.undefined
   
   /**
     * Indicates whether to display the undo/redo menu within the widget.
@@ -54,12 +50,8 @@ trait SketchVisibleElements
 }
 object SketchVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SketchVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SketchVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchVisibleElements]
   }
   
@@ -79,7 +71,7 @@ object SketchVisibleElements {
     
     inline def setSnappingControls(value: Boolean): Self = StObject.set(x, "snappingControls", value.asInstanceOf[js.Any])
     
-    inline def setSnappingControlsElements(value: VisibleElementsSnappingControlsElements): Self = StObject.set(x, "snappingControlsElements", value.asInstanceOf[js.Any])
+    inline def setSnappingControlsElements(value: SketchVisibleElementsSnappingControlsElements): Self = StObject.set(x, "snappingControlsElements", value.asInstanceOf[js.Any])
     
     inline def setSnappingControlsElementsUndefined: Self = StObject.set(x, "snappingControlsElements", js.undefined)
     

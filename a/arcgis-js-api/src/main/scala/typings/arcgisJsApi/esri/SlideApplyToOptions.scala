@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlideApplyToOptions
-  extends StObject
-     with Object {
+trait SlideApplyToOptions extends StObject {
   
   /**
     * Indicates whether to animate the slide transition.
@@ -61,12 +57,8 @@ trait SlideApplyToOptions
 }
 object SlideApplyToOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SlideApplyToOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SlideApplyToOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlideApplyToOptions]
   }
   

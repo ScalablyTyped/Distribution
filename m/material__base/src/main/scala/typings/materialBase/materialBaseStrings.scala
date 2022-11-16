@@ -63,6 +63,12 @@ object materialBaseStrings {
   inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
+  sealed trait cancel
+    extends StObject
+       with EventType
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay
     extends StObject
        with EventType

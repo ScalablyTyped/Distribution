@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LocationSchemeForPolygon
   extends StObject
-     with Object
      with LocationScheme {
   
   /**
@@ -34,15 +31,8 @@ trait LocationSchemeForPolygon
 }
 object LocationSchemeForPolygon {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    opacity: Double,
-    outline: LocationSchemeForPolygonOutline,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LocationSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(color: Color_, opacity: Double, outline: LocationSchemeForPolygonOutline): LocationSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationSchemeForPolygon]
   }
   

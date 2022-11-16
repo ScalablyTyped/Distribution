@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PredominantCategoriesResultPredominantCategoryInfos
-  extends StObject
-     with Object {
+trait PredominantCategoriesResultPredominantCategoryInfos extends StObject {
   
   /**
     * The number of features belonging to the predominant category.
@@ -33,14 +29,8 @@ trait PredominantCategoriesResultPredominantCategoryInfos
 }
 object PredominantCategoriesResultPredominantCategoryInfos {
   
-  inline def apply(
-    constructor: js.Function,
-    count: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String | Double
-  ): PredominantCategoriesResultPredominantCategoryInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(count: Double, value: String | Double): PredominantCategoriesResultPredominantCategoryInfos = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredominantCategoriesResultPredominantCategoryInfos]
   }
   

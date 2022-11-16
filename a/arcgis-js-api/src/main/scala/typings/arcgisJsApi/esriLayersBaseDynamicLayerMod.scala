@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -33,20 +32,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.BaseDynamicLayer
-import typings.arcgisJsApi.esri.BaseDynamicLayerConstructor
 import typings.arcgisJsApi.esri.BaseDynamicLayerProperties
 import typings.arcgisJsApi.esri.Effect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersBaseDynamicLayerMod extends Shortcut {
+object esriLayersBaseDynamicLayerMod {
   
-  @JSImport("esri/layers/BaseDynamicLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BaseDynamicLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/BaseDynamicLayer", JSImport.Namespace)
   @js.native
   /**
@@ -54,7 +47,7 @@ object esriLayersBaseDynamicLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseDynamicLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BaseDynamicLayer {
     def this(properties: BaseDynamicLayerProperties) = this()
@@ -117,9 +110,4 @@ object esriLayersBaseDynamicLayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
-  
-  type _To = js.Object & BaseDynamicLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersBaseDynamicLayerMod.foo` */
-  override def _to: js.Object & BaseDynamicLayerConstructor = ^
 }

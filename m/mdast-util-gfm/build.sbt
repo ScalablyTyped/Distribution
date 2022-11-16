@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "mdast-util-gfm"
-version := "2.0.1-baf4de"
+version := "2.0.1-8b2d98"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "markdown-table" % "3.0.2-be031f",
-  "org.scalablytyped" %%% "mdast" % "3.0-dt-20211202Z-aaf55e",
-  "org.scalablytyped" %%% "mdast-util-from-markdown" % "1.2.0-9867da",
-  "org.scalablytyped" %%% "mdast-util-gfm-table" % "1.0.6-9dae0e",
-  "org.scalablytyped" %%% "mdast-util-to-markdown" % "1.3.0-6d29ff",
-  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-572d0c",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-cacd8c")
+  "org.scalablytyped" %%% "markdown-table" % "3.0.2-440082",
+  "org.scalablytyped" %%% "mdast" % "3.0-dt-20211202Z-627ab0",
+  "org.scalablytyped" %%% "mdast-util-from-markdown" % "1.2.0-f0ca54",
+  "org.scalablytyped" %%% "mdast-util-gfm-table" % "1.0.6-50f4dd",
+  "org.scalablytyped" %%% "mdast-util-to-markdown" % "1.3.0-baeeb7",
+  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-dfb004",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-b11504")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

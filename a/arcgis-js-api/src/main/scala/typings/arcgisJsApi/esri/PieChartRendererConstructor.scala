@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PieChartRendererConstructor
   extends StObject
-     with /**
-  * PieChartRenderer allows you to create a pie chart for each feature in the layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html)
-  */
-Instantiable0[PieChartRenderer]
+     with Instantiable0[PieChartRenderer]
      with Instantiable1[/* properties */ PieChartRendererProperties, PieChartRenderer] {
   
   def fromJSON(json: Any): PieChartRenderer = js.native

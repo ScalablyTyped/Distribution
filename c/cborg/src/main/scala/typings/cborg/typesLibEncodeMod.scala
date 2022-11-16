@@ -64,13 +64,38 @@ object typesLibEncodeMod {
   
   type Reference = typings.cborg.typesInterfaceMod.Reference
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StrictTypeEncoder = cborg.cborg/types/interface.StrictTypeEncoder
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/interface.StrictTypeEncoder
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  - cborg.cborg/types/lib/encode.StrictTypeEncoder
+  */
   @js.native
-  trait StrictTypeEncoder
-    extends StObject
-       with typings.cborg.typesInterfaceMod.StrictTypeEncoder
+  trait StrictTypeEncoder extends StObject {
+    
+    def apply(data: Any, typ: String, options: typings.cborg.typesInterfaceMod.EncodeOptions): typings.cborg.typesInterfaceMod.TokenOrNestedTokens = js.native
+    def apply(
+      data: Any,
+      typ: String,
+      options: typings.cborg.typesInterfaceMod.EncodeOptions,
+      refStack: typings.cborg.typesInterfaceMod.Reference
+    ): typings.cborg.typesInterfaceMod.TokenOrNestedTokens = js.native
+  }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped cborg.cborg/types/lib/token.Token | std.Array<cborg.cborg/types/lib/token.Token> | std.Array<any> */ trait TokenOrNestedTokens extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TokenOrNestedTokens = cborg.cborg/types/interface.TokenOrNestedTokens
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  - cborg.cborg/types/lib/encode.TokenOrNestedTokens
+  */
+  type TokenOrNestedTokens = Any
   
   type TokenTypeEncoder = typings.cborg.typesInterfaceMod.TokenTypeEncoder
 }

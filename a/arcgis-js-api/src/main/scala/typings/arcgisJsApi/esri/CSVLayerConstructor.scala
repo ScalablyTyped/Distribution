@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CSVLayerConstructor
   extends StObject
-     with /**
-  * The CSVLayer is a point layer based on a CSV file (.csv, .txt).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html)
-  */
-Instantiable0[CSVLayer]
+     with Instantiable0[CSVLayer]
      with Instantiable1[/* properties */ CSVLayerProperties, CSVLayer] {
   
   def fromJSON(json: Any): CSVLayer = js.native

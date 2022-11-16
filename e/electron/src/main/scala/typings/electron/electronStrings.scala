@@ -351,6 +351,10 @@ object electronStrings {
   inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait cancelled extends StObject
   inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   

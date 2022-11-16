@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-html-detailed-reporter"
-version := "2.1-dt-20211202Z-540cca"
+version := "2.1-dt-20211202Z-d1e564"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

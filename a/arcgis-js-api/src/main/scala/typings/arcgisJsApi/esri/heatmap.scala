@@ -17,16 +17,28 @@ trait heatmap extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
     */
   def createRenderer(params: heatmapCreateRendererParams): js.Promise[HeatmapRendererResult]
+  
+  /**
+    * Allows you to update the [colorStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops) of a [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) with opacity, making the low density areas of the heat map to fade out.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#updateRenderer)
+    */
+  def updateRenderer(params: heatmapUpdateRendererParams): HeatmapRenderer
 }
 object heatmap {
   
-  inline def apply(createRenderer: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): heatmap = {
-    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
+  inline def apply(
+    createRenderer: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult],
+    updateRenderer: heatmapUpdateRendererParams => HeatmapRenderer
+  ): heatmap = {
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), updateRenderer = js.Any.fromFunction1(updateRenderer))
     __obj.asInstanceOf[heatmap]
   }
   
   extension [Self <: heatmap](x: Self) {
     
     inline def setCreateRenderer(value: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    
+    inline def setUpdateRenderer(value: heatmapUpdateRendererParams => HeatmapRenderer): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction1(value))
   }
 }

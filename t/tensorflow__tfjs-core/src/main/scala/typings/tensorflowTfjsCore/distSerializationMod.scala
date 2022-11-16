@@ -84,6 +84,17 @@ object distSerializationMod {
   
   inline def registerClass[T /* <: Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ConfigDict = {[key: string] : @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictValue}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDict
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictArray
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictValue
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.FromConfigMethod
+  */
   trait ConfigDict
     extends StObject
        with /* key */ StringDictionary[ConfigDictValue]
@@ -97,6 +108,15 @@ object distSerializationMod {
   
   type ConfigDictArray = js.Array[ConfigDictValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ConfigDictValue = boolean | number | string | null | @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictArray | @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDict
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictArray
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/serialization.ConfigDictValue
+  */
   type ConfigDictValue = Boolean | Double | String | Null | Any | ConfigDict
   
   type FromConfigMethod[T /* <: Serializable */] = js.Function2[/* cls */ SerializableConstructor[T], /* config */ ConfigDict, T]

@@ -10,4 +10,5 @@ trait WebGLRenderingContext
   extends StObject
      with WebGLRenderingContextBase
      with WebGLRenderingContextOverloads
+     with OffscreenRenderingContext
      with RenderingContext

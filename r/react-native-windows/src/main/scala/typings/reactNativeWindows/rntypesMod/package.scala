@@ -371,6 +371,15 @@ type SliderIOS = Slider
 
 type SnapshotViewIOSComponent = Component[SnapshotViewIOSProps, js.Object, Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type StyleProp = T | react-native-windows.react-native-windows/rntypes.RegisteredStyle<T> | react-native-windows.react-native-windows/rntypes.RecursiveArray<T | react-native-windows.react-native-windows/rntypes.RegisteredStyle<T> | react-native-windows.react-native-windows/rntypes.Falsy> | react-native-windows.react-native-windows/rntypes.Falsy
+}}}
+to avoid circular code involving: 
+- react-native-windows.react-native-windows/rntypes.RecursiveArray
+- react-native-windows.react-native-windows/rntypes.StyleProp
+*/
 type StyleProp[T] = T | RegisteredStyle[T] | Any | Falsy
 
 /**

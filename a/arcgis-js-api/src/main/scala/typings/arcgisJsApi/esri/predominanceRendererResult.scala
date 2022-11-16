@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominanceRendererResult
-  extends StObject
-     with Object {
+trait predominanceRendererResult extends StObject {
   
   /**
     * The ID of the basemap used to determine the optimal fill color of the features.
@@ -71,15 +67,12 @@ object predominanceRendererResult {
   inline def apply(
     basemapId: String,
     basemapTheme: String,
-    constructor: js.Function,
     excludedCategoryInfos: js.Array[Any],
-    hasOwnProperty: PropertyKey => Boolean,
     predominanceScheme: PredominanceScheme,
     predominantCategoryInfos: js.Array[typeUniqueValueInfo],
-    propertyIsEnumerable: PropertyKey => Boolean,
     renderer: UniqueValueRenderer
   ): predominanceRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], excludedCategoryInfos = excludedCategoryInfos.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme.asInstanceOf[js.Any], predominantCategoryInfos = predominantCategoryInfos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], excludedCategoryInfos = excludedCategoryInfos.asInstanceOf[js.Any], predominanceScheme = predominanceScheme.asInstanceOf[js.Any], predominantCategoryInfos = predominantCategoryInfos.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[predominanceRendererResult]
   }
   

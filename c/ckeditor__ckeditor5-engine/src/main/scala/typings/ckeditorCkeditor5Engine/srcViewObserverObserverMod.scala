@@ -9,6 +9,7 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.animations
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.auxclick
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.beforeinput
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.blur
+import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.cancel
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.canplay
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.canplaythrough
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.change
@@ -210,6 +211,8 @@ object srcViewObserverObserverMod {
     @JSName("fire")
     def fire_blur(name: blur, event: FocusEvent): Any = js.native
     @JSName("fire")
+    def fire_cancel(name: cancel, event: Event): Any = js.native
+    @JSName("fire")
     def fire_canplay(name: canplay, event: Event): Any = js.native
     @JSName("fire")
     def fire_canplaythrough(name: canplaythrough, event: Event): Any = js.native
@@ -400,7 +403,7 @@ object srcViewObserverObserverMod {
     def isEnabled: Boolean = js.native
     /* protected */ def isEnabled_=(value: Boolean): Unit = js.native
     
-    def listenTo[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenchange, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenerror, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.copy */ Any */, E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
+    def listenTo[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenchange, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenerror, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.copy */ Any */, E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
       emitter: E,
       event: K,
       callback: js.ThisFunction2[
@@ -410,7 +413,7 @@ object srcViewObserverObserverMod {
           Unit
         ]
     ): Unit = js.native
-    def listenTo[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenchange, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenerror, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.copy */ Any */, E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
+    def listenTo[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenchange, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.fullscreenerror, typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.copy */ Any */, E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
       emitter: E,
       event: K,
       callback: js.ThisFunction2[
@@ -538,6 +541,16 @@ object srcViewObserverObserverMod {
           /* this */ this.type, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
           /* event */ FocusEvent, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("off")
+    def off_cancel(
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
+          /* event */ Event, 
           Unit
         ]
     ): Unit = js.native
@@ -1650,6 +1663,27 @@ object srcViewObserverObserverMod {
       options: UseCapture
     ): Unit = js.native
     @JSName("on")
+    def on_cancel(
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
+          /* event */ Event, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("on")
+    def on_cancel(
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
+          /* event */ Event, 
+          Unit
+        ],
+      options: UseCapture
+    ): Unit = js.native
+    @JSName("on")
     def on_canplay(
       event: canplay,
       callback: js.ThisFunction2[
@@ -3765,6 +3799,27 @@ object srcViewObserverObserverMod {
           /* this */ this.type, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
           /* event */ FocusEvent, 
+          Unit
+        ],
+      options: UseCapture
+    ): Unit = js.native
+    @JSName("once")
+    def once_cancel(
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
+          /* event */ Event, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("once")
+    def once_cancel(
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<this, K> */ /* info */ Any, 
+          /* event */ Event, 
           Unit
         ],
       options: UseCapture
@@ -5989,6 +6044,32 @@ object srcViewObserverObserverMod {
           /* this */ this.type, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<E, K> */ /* info */ Any, 
           /* event */ FocusEvent, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("stopListening")
+    def stopListening_cancel[E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](emitter: E, event: cancel): Unit = js.native
+    @JSName("stopListening")
+    def stopListening_cancel[E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
+      emitter: E,
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<E, K> */ /* info */ Any, 
+          /* event */ Event, 
+          Unit
+        ]
+    ): Unit = js.native
+    @JSName("stopListening")
+    def stopListening_cancel[E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](emitter: Unit, event: cancel): Unit = js.native
+    @JSName("stopListening")
+    def stopListening_cancel[E /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window | typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default */](
+      emitter: Unit,
+      event: cancel,
+      callback: js.ThisFunction2[
+          /* this */ this.type, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInfo<E, K> */ /* info */ Any, 
+          /* event */ Event, 
           Unit
         ]
     ): Unit = js.native

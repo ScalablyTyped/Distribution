@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneLayerCapabilitiesEditing
-  extends StObject
-     with Object {
+trait SceneLayerCapabilitiesEditing extends StObject {
   
   /**
     * Indicates if the geometry of the features in the layer can be edited.
@@ -33,15 +29,8 @@ trait SceneLayerCapabilitiesEditing
 }
 object SceneLayerCapabilitiesEditing {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supportsGeometryUpdate: Boolean,
-    supportsGlobalId: Boolean,
-    supportsRollbackOnFailure: Boolean
-  ): SceneLayerCapabilitiesEditing = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsGeometryUpdate = supportsGeometryUpdate.asInstanceOf[js.Any], supportsGlobalId = supportsGlobalId.asInstanceOf[js.Any], supportsRollbackOnFailure = supportsRollbackOnFailure.asInstanceOf[js.Any])
+  inline def apply(supportsGeometryUpdate: Boolean, supportsGlobalId: Boolean, supportsRollbackOnFailure: Boolean): SceneLayerCapabilitiesEditing = {
+    val __obj = js.Dynamic.literal(supportsGeometryUpdate = supportsGeometryUpdate.asInstanceOf[js.Any], supportsGlobalId = supportsGlobalId.asInstanceOf[js.Any], supportsRollbackOnFailure = supportsRollbackOnFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerCapabilitiesEditing]
   }
   

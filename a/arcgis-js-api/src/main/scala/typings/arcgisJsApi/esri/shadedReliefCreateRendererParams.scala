@@ -5,15 +5,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.adjusted
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.traditional
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait shadedReliefCreateRendererParams
-  extends StObject
-     with Object {
+trait shadedReliefCreateRendererParams extends StObject {
   
   /**
     * The color ramp to apply to the renderer.
@@ -61,13 +57,8 @@ trait shadedReliefCreateRendererParams
 }
 object shadedReliefCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): shadedReliefCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer): shadedReliefCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[shadedReliefCreateRendererParams]
   }
   

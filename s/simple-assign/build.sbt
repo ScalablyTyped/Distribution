@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-assign"
-version := "0.1.0-dt-20220818Z-cbfa35"
+version := "0.1.0-dt-20220818Z-e10d1f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

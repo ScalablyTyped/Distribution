@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplateItemConstructor
   extends StObject
-     with /**
-  * The item displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html)
-  */
-Instantiable0[TemplateItem]
+     with Instantiable0[TemplateItem]
      with Instantiable1[/* properties */ TemplateItemProperties, TemplateItem] {
   
   /**

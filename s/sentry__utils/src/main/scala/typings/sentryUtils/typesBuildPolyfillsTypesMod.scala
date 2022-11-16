@@ -16,6 +16,16 @@ object typesBuildPolyfillsTypesMod {
     def apply(args: Any*): Value = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GenericObject = {[key: string] : @sentry/utils.@sentry/utils/types/buildPolyfills/types.Value}
+  }}}
+  to avoid circular code involving: 
+  - @sentry/utils.@sentry/utils/types/buildPolyfills/types.GenericObject
+  - @sentry/utils.@sentry/utils/types/buildPolyfills/types.RequireResult
+  - @sentry/utils.@sentry/utils/types/buildPolyfills/types.Value
+  */
   trait GenericObject
     extends StObject
        with /* key */ StringDictionary[Value]

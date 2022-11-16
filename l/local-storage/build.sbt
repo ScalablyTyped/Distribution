@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "local-storage"
-version := "2.0.0-642c7a"
+version := "2.0.0-89ba5a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

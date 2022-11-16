@@ -1,7 +1,7 @@
 
 # Scala.js typings for gm
 
-Typings are for version 1.18
+Typings are for version 1.25
 
 ## Library description:
 GraphicsMagick and ImageMagick for node.js

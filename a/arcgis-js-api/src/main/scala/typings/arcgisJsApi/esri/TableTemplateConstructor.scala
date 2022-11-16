@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TableTemplateConstructor
   extends StObject
-     with /**
-  * A TableTemplate formats and defines the content of a [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-TableTemplate.html)
-  */
-Instantiable0[TableTemplate]
+     with Instantiable0[TableTemplate]
      with Instantiable1[/* properties */ TableTemplateProperties, TableTemplate] {
   
   def fromJSON(json: Any): TableTemplate = js.native

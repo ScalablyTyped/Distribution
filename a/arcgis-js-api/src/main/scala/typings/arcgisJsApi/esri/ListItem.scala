@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ListItem
   extends StObject
-     with Accessor {
+     with Accessor
+     with Identifiable {
   
   /**
     * Whether the actions panel is open in the LayerList.
@@ -106,6 +107,15 @@ trait ListItem
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#parent)
     */
   var parent: ListItem = js.native
+  
+  /**
+    * Value is `true` when the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#layer) is being published.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#publishing)
+    */
+  val publishing: Boolean = js.native
   
   /**
     * Indicates if the list item (or layer in the map) can be sorted or moved/reordered.

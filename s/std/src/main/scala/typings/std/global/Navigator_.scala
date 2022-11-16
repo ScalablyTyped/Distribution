@@ -66,6 +66,7 @@ open class Navigator_ ()
   /* CompleteClass */
   override val pdfViewerEnabled: scala.Boolean = js.native
   
+  /** @deprecated */
   /* standard dom */
   /* CompleteClass */
   override val platform: java.lang.String = js.native
@@ -93,6 +94,7 @@ open class Navigator_ ()
   /* CompleteClass */
   override val userAgent: java.lang.String = js.native
   
+  /** @deprecated */
   /* standard dom */
   /* CompleteClass */
   override val vendor: java.lang.String = js.native

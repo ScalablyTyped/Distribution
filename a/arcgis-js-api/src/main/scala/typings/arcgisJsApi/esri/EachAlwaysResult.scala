@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EachAlwaysResult
-  extends StObject
-     with Object {
+trait EachAlwaysResult extends StObject {
   
   /**
     * The error with which the promise rejected.
@@ -33,13 +29,8 @@ trait EachAlwaysResult
 }
 object EachAlwaysResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    promise: js.Promise[Any],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): EachAlwaysResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), promise = promise.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(promise: js.Promise[Any]): EachAlwaysResult = {
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EachAlwaysResult]
   }
   

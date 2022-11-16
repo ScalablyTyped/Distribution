@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendViewModelLayerInfos
-  extends StObject
-     with Object {
+trait LegendViewModelLayerInfos extends StObject {
   
   /**
     * A layer to add to the legend.
@@ -26,12 +22,8 @@ trait LegendViewModelLayerInfos
 }
 object LegendViewModelLayerInfos {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LegendViewModelLayerInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): LegendViewModelLayerInfos = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendViewModelLayerInfos]
   }
   

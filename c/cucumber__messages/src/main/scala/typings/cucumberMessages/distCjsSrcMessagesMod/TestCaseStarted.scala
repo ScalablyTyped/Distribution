@@ -15,4 +15,6 @@ open class TestCaseStarted () extends StObject {
   var testCaseId: String = js.native
   
   var timestamp: Timestamp = js.native
+  
+  var workerId: js.UndefOr[String] = js.native
 }

@@ -18,6 +18,14 @@ object mod {
   
   type BeforeParse = js.Function1[/* data */ String, String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = string | number | boolean | null | {[ Key in string ]:? load-json-file.load-json-file.JsonValue} | std.Array<load-json-file.load-json-file.JsonValue>
+  }}}
+  to avoid circular code involving: 
+  - load-json-file.load-json-file.JsonValue
+  */
   type JsonValue = String | Double | Boolean | Null | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? any} */ js.Any) | js.Array[Any]
   
   trait Options extends StObject {

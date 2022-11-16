@@ -22,6 +22,11 @@ trait ListDeploymentsRequest extends StObject {
   var nextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
+    * The parent deployment's target ARN within a subdeployment.
+    */
+  var parentTargetArn: js.UndefOr[ThingGroupARN] = js.undefined
+  
+  /**
     * The ARN of the target IoT thing or thing group.
     */
   var targetArn: js.UndefOr[TargetARN] = js.undefined
@@ -46,6 +51,10 @@ object ListDeploymentsRequest {
     inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setParentTargetArn(value: ThingGroupARN): Self = StObject.set(x, "parentTargetArn", value.asInstanceOf[js.Any])
+    
+    inline def setParentTargetArnUndefined: Self = StObject.set(x, "parentTargetArn", js.undefined)
     
     inline def setTargetArn(value: TargetARN): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
     

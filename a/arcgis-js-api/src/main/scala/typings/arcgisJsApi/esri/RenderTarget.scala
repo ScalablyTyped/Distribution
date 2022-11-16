@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderTarget
-  extends StObject
-     with Object {
+trait RenderTarget extends StObject {
   
   /**
     * The framebuffer where the [render()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render) method should direct its output.
@@ -26,14 +22,8 @@ trait RenderTarget
 }
 object RenderTarget {
   
-  inline def apply(
-    constructor: js.Function,
-    framebuffer: Any,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    viewport: js.Array[Double]
-  ): RenderTarget = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], framebuffer = framebuffer.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), viewport = viewport.asInstanceOf[js.Any])
+  inline def apply(framebuffer: Any, viewport: js.Array[Double]): RenderTarget = {
+    val __obj = js.Dynamic.literal(framebuffer = framebuffer.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderTarget]
   }
   

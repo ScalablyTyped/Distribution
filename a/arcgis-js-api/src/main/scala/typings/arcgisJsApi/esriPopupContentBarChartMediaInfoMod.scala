@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.BarChartMediaInfo
-import typings.arcgisJsApi.esri.BarChartMediaInfoConstructor
 import typings.arcgisJsApi.esri.BarChartMediaInfoProperties
 import typings.arcgisJsApi.esri.ChartMediaInfoValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriPopupContentBarChartMediaInfoMod extends Shortcut {
+/* static members */
+object esriPopupContentBarChartMediaInfoMod {
   
-  @JSImport("esri/popup/content/BarChartMediaInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BarChartMediaInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/content/BarChartMediaInfo", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriPopupContentBarChartMediaInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-BarChartMediaInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BarChartMediaInfo {
     def this(properties: BarChartMediaInfoProperties) = this()
@@ -68,9 +62,9 @@ object esriPopupContentBarChartMediaInfoMod extends Shortcut {
     /* CompleteClass */
     var value: ChartMediaInfoValue = js.native
   }
+  @JSImport("esri/popup/content/BarChartMediaInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & BarChartMediaInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriPopupContentBarChartMediaInfoMod.foo` */
-  override def _to: js.Object & BarChartMediaInfoConstructor = ^
+  inline def fromJSON(json: Any): BarChartMediaInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[BarChartMediaInfo]
 }

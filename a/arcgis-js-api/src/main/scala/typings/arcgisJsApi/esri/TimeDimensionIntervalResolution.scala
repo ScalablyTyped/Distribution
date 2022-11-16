@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeDimensionIntervalResolution
-  extends StObject
-     with Object {
+trait TimeDimensionIntervalResolution extends StObject {
   
   /**
     * Number of days.
@@ -54,18 +50,8 @@ trait TimeDimensionIntervalResolution
 }
 object TimeDimensionIntervalResolution {
   
-  inline def apply(
-    constructor: js.Function,
-    days: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    hours: Double,
-    minutes: Double,
-    months: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    seconds: Double,
-    years: Double
-  ): TimeDimensionIntervalResolution = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), seconds = seconds.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
+  inline def apply(days: Double, hours: Double, minutes: Double, months: Double, seconds: Double, years: Double): TimeDimensionIntervalResolution = {
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeDimensionIntervalResolution]
   }
   

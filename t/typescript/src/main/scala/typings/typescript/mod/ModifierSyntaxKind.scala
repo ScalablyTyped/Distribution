@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.mod.SyntaxKind.AbstractKeyword
+  - typings.typescript.mod.SyntaxKind.AccessorKeyword
   - typings.typescript.mod.SyntaxKind.AsyncKeyword
   - typings.typescript.mod.SyntaxKind.ConstKeyword
   - typings.typescript.mod.SyntaxKind.DeclareKeyword

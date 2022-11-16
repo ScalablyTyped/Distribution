@@ -13,8 +13,10 @@ object Product {
   
   inline def ProductCamelCase(
     attributes: Any,
+    content: Any,
     description: String,
     id: String,
+    images: js.Array[ImageCamelCase],
     name: String,
     price: Double,
     sale: Boolean,
@@ -24,14 +26,16 @@ object Product {
     stockPurchasable: Boolean,
     stockTracking: Boolean
   ): typings.swellJs.mod.ProductCamelCase = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], sale = sale.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], stockLevel = stockLevel.asInstanceOf[js.Any], stockPurchasable = stockPurchasable.asInstanceOf[js.Any], stockTracking = stockTracking.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], sale = sale.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], stockLevel = stockLevel.asInstanceOf[js.Any], stockPurchasable = stockPurchasable.asInstanceOf[js.Any], stockTracking = stockTracking.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.swellJs.mod.ProductCamelCase]
   }
   
   inline def ProductSnakeCase(
     attributes: Any,
+    content: Any,
     description: String,
     id: String,
+    images: js.Array[ImageSnakeCase],
     name: String,
     price: Double,
     sale: Boolean,
@@ -41,7 +45,7 @@ object Product {
     stock_purchasable: Boolean,
     stock_tracking: Boolean
   ): typings.swellJs.mod.ProductSnakeCase = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], sale = sale.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], stock_level = stock_level.asInstanceOf[js.Any], stock_purchasable = stock_purchasable.asInstanceOf[js.Any], stock_tracking = stock_tracking.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], sale = sale.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], stock_level = stock_level.asInstanceOf[js.Any], stock_purchasable = stock_purchasable.asInstanceOf[js.Any], stock_tracking = stock_tracking.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.swellJs.mod.ProductSnakeCase]
   }
 }

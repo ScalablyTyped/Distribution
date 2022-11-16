@@ -22,7 +22,8 @@ trait OGCFeatureLayer
      with PortalLayer
      with RefreshableLayer
      with ScaleRangeLayer
-     with FeatureEffectLayer {
+     with FeatureEffectLayer
+     with FeatureReductionLayer {
   
   /**
     * The unique identifier of the collection on the server.
@@ -66,13 +67,6 @@ trait OGCFeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
   var elevationInfo: OGCFeatureLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   
   /**
     * An array of fields in the layer.
@@ -126,6 +120,15 @@ trait OGCFeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
+  
+  /**
+    * Explicitly set the maximum number of features that can be returned in a single request.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#maxRecordCount)
+    */
+  var maxRecordCount: Double = js.native
   
   /**
     * The OGCFeatureLayer requires that each feature be uniquely identified with an object id.

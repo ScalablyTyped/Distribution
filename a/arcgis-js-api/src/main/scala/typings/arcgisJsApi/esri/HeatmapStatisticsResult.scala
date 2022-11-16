@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeatmapStatisticsResult
-  extends StObject
-     with Object {
+trait HeatmapStatisticsResult extends StObject {
   
   /**
     * The maximum density value of all pixels in the view.
@@ -33,14 +29,8 @@ trait HeatmapStatisticsResult
 }
 object HeatmapStatisticsResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): HeatmapStatisticsResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(max: Double, min: Double): HeatmapStatisticsResult = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapStatisticsResult]
   }
   

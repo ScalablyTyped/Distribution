@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MosaicRuleConstructor
   extends StObject
-     with /**
-  * Specifies the mosaic rule when defining how individual images should be mosaicked.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html)
-  */
-Instantiable0[MosaicRule]
+     with Instantiable0[MosaicRule]
      with Instantiable1[/* properties */ MosaicRuleProperties, MosaicRule] {
   
   def fromJSON(json: Any): MosaicRule = js.native

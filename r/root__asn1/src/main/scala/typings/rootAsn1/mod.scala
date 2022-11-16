@@ -39,10 +39,34 @@ object mod {
   inline def parseVerbose(buf: js.typedarray.Uint8Array, opts: Json): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVerbose")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
   inline def parseVerbose(buf: js.typedarray.Uint8Array, opts: `0`): ElementHex = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVerbose")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ElementHex]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ArrBuffer = [number, std.Uint8Array | std.Array<@root/asn1.@root/asn1.ArrBuffer>]
+  }}}
+  to avoid circular code involving: 
+  - @root/asn1.@root/asn1.ArrBuffer
+  */
   type ArrBuffer = js.Tuple2[Double, js.typedarray.Uint8Array | js.Array[Any]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ArrInput = [string | number, string | std.Uint8Array | std.Array<@root/asn1.@root/asn1.ArrInput>]
+  }}}
+  to avoid circular code involving: 
+  - @root/asn1.@root/asn1.ArrInput
+  */
   type ArrInput = js.Tuple2[String | Double, String | js.typedarray.Uint8Array | js.Array[Any]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ArrJson = [string, string | std.Array<@root/asn1.@root/asn1.ArrJson>]
+  }}}
+  to avoid circular code involving: 
+  - @root/asn1.@root/asn1.ArrJson
+  */
   type ArrJson = js.Tuple2[String, String | js.Array[Any]]
   
   trait Element[V /* <: String | js.typedarray.Uint8Array */] extends StObject {

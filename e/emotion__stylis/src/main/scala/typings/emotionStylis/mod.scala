@@ -94,6 +94,15 @@ object mod extends Shortcut {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Plugable = undefined | null | boolean | @emotion/stylis.@emotion/stylis.Plugin | @emotion/stylis.@emotion/stylis.ArrayPlugable
+  }}}
+  to avoid circular code involving: 
+  - @emotion/stylis.@emotion/stylis.ArrayPlugable
+  - @emotion/stylis.@emotion/stylis.Plugable
+  */
   type Plugable = js.UndefOr[Null | Boolean | Plugin | Any]
   
   type Plugin = js.ThisFunction9[
@@ -142,12 +151,30 @@ object mod extends Shortcut {
        with Instantiable0[Stylis]
        with Instantiable1[/* options */ Options, Stylis]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StylisSet = (options : @emotion/stylis.@emotion/stylis.Options): @emotion/stylis.@emotion/stylis.StylisSet
+  }}}
+  to avoid circular code involving: 
+  - @emotion/stylis.@emotion/stylis.StylisSet
+  */
   @js.native
   trait StylisSet extends StObject {
     
     def apply(options: Options): StylisSet = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StylisUse = (plugin : @emotion/stylis.@emotion/stylis.Plugable | undefined): @emotion/stylis.@emotion/stylis.StylisUse
+  }}}
+  to avoid circular code involving: 
+  - @emotion/stylis.@emotion/stylis.ArrayPlugable
+  - @emotion/stylis.@emotion/stylis.Plugable
+  - @emotion/stylis.@emotion/stylis.StylisUse
+  */
   @js.native
   trait StylisUse extends StObject {
     

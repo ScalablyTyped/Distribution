@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelatedRecordsInfoConstructor
   extends StObject
-     with /**
-  * The `RelatedRecordsInfo` class provides additional sorting options when working with related records in a layer's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-RelatedRecordsInfo.html)
-  */
-Instantiable0[RelatedRecordsInfo]
+     with Instantiable0[RelatedRecordsInfo]
      with Instantiable1[/* properties */ RelatedRecordsInfoProperties, RelatedRecordsInfo] {
   
   def fromJSON(json: Any): RelatedRecordsInfo = js.native

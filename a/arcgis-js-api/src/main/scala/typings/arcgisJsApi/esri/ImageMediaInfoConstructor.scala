@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageMediaInfoConstructor
   extends StObject
-     with /**
-  * An `ImageMediaInfo` is a type of media element that represents images to display within a popup.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html)
-  */
-Instantiable0[ImageMediaInfo]
+     with Instantiable0[ImageMediaInfo]
      with Instantiable1[/* properties */ ImageMediaInfoProperties, ImageMediaInfo] {
   
   def fromJSON(json: Any): ImageMediaInfo = js.native

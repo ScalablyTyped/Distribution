@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.WMTSStyle
-import typings.arcgisJsApi.esri.WMTSStyleConstructor
 import typings.arcgisJsApi.esri.WMTSStyleProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportWmtsstyleMod extends Shortcut {
+/* static members */
+object esriLayersSupportWmtsstyleMod {
   
-  @JSImport("esri/layers/support/WMTSStyle", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WMTSStyleConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/WMTSStyle", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportWmtsstyleMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSStyle.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WMTSStyle {
     def this(properties: WMTSStyleProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportWmtsstyleMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/WMTSStyle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WMTSStyleConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportWmtsstyleMod.foo` */
-  override def _to: js.Object & WMTSStyleConstructor = ^
+  inline def fromJSON(json: Any): WMTSStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WMTSStyle]
 }

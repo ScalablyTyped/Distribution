@@ -145,7 +145,7 @@ trait PopupProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
     */
-  var maxInlineActions: js.UndefOr[Double | Any] = js.undefined
+  var maxInlineActions: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * An array of pending Promises that have not yet been fulfilled.
@@ -267,7 +267,9 @@ object PopupProperties {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setMaxInlineActions(value: Double | Any): Self = StObject.set(x, "maxInlineActions", value.asInstanceOf[js.Any])
+    inline def setMaxInlineActions(value: Double): Self = StObject.set(x, "maxInlineActions", value.asInstanceOf[js.Any])
+    
+    inline def setMaxInlineActionsNull: Self = StObject.set(x, "maxInlineActions", null)
     
     inline def setMaxInlineActionsUndefined: Self = StObject.set(x, "maxInlineActions", js.undefined)
     

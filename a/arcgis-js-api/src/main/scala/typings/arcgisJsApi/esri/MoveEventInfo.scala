@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`move-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`move-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.move
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MoveEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -44,16 +41,8 @@ trait MoveEventInfo
 }
 object MoveEventInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    dx: Double,
-    dy: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    mover: Graphic,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `move-start` | move | `move-stop`
-  ): MoveEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mover = mover.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(dx: Double, dy: Double, mover: Graphic, `type`: `move-start` | move | `move-stop`): MoveEventInfo = {
+    val __obj = js.Dynamic.literal(dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], mover = mover.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveEventInfo]
   }

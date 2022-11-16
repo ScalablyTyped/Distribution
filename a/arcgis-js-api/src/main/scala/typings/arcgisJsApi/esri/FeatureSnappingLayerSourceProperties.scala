@@ -1,9 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.BuildingSceneLayerPropert
 import typings.arcgisJsApi.anon.CSVLayerPropertiestypecsv
 import typings.arcgisJsApi.anon.FeatureLayerPropertiestyp
 import typings.arcgisJsApi.anon.GeoJSONLayerPropertiestyp
 import typings.arcgisJsApi.anon.GraphicsLayerPropertiesty
+import typings.arcgisJsApi.anon.MapNotesLayerPropertiesty
+import typings.arcgisJsApi.anon.SceneLayerPropertiestypes
 import typings.arcgisJsApi.anon.WFSLayerPropertiestypewfs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +29,7 @@ trait FeatureSnappingLayerSourceProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#layer)
     */
   var layer: js.UndefOr[
-    FeatureLayerPropertiestyp | GraphicsLayerPropertiesty | GeoJSONLayerPropertiestyp | CSVLayerPropertiestypecsv | WFSLayerPropertiestypewfs
+    BuildingSceneLayerPropert | CSVLayerPropertiestypecsv | FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | GraphicsLayerPropertiesty | MapNotesLayerPropertiesty | SceneLayerPropertiestypes | WFSLayerPropertiestypewfs
   ] = js.undefined
 }
 object FeatureSnappingLayerSourceProperties {
@@ -43,7 +46,7 @@ object FeatureSnappingLayerSourceProperties {
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     inline def setLayer(
-      value: FeatureLayerPropertiestyp | GraphicsLayerPropertiesty | GeoJSONLayerPropertiestyp | CSVLayerPropertiestypecsv | WFSLayerPropertiestypewfs
+      value: BuildingSceneLayerPropert | CSVLayerPropertiestypecsv | FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | GraphicsLayerPropertiesty | MapNotesLayerPropertiesty | SceneLayerPropertiestypes | WFSLayerPropertiestypewfs
     ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)

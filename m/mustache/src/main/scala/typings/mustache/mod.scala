@@ -501,6 +501,14 @@ object mod {
   
   type TemplateSpanType = RAW_VALUE | ESCAPED_VALUE | SECTION | UNESCAPED_VALUE | INVERTED | COMMENT | PARTIAL | EQUAL
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TemplateSpans = std.Array<[mustache.mustache.TemplateSpanType, string, number, number] | [mustache.mustache.TemplateSpanType, string, number, number, mustache.mustache.TemplateSpans, number] | [mustache.mustache.TemplateSpanType, string, number, number, string, number, boolean]>
+  }}}
+  to avoid circular code involving: 
+  - mustache.mustache.TemplateSpans
+  */
   @js.native
   trait TemplateSpans
     extends StObject

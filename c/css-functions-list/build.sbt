@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-functions-list"
-version := "3.1.0-76538b"
+version := "3.1.0-cb3643"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

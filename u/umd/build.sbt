@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umd"
-version := "3.0-dt-20221103Z-ecbac8"
+version := "3.0-dt-20221103Z-47f55d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

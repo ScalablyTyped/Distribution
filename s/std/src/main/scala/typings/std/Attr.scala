@@ -29,6 +29,7 @@ trait Attr
   /* standard dom */
   val prefix: java.lang.String | Null = js.native
   
+  /** @deprecated */
   /* standard dom */
   val specified: scala.Boolean = js.native
   

@@ -1,5 +1,17 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
+import typings.arcgisJsApi.arcgisJsApiStrings.centimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.decimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.feet_
+import typings.arcgisJsApi.arcgisJsApiStrings.imperial
+import typings.arcgisJsApi.arcgisJsApiStrings.inches
+import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
+import typings.arcgisJsApi.arcgisJsApiStrings.meters_
+import typings.arcgisJsApi.arcgisJsApiStrings.metric
+import typings.arcgisJsApi.arcgisJsApiStrings.miles_
+import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,6 +127,13 @@ trait Directions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
   var stopSymbols: DirectionsStopSymbols = js.native
+  
+  /**
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#unit)
+    */
+  var unit: imperial | metric | centimeters | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | yards = js.native
   
   /**
     * The view from which the widget will operate.

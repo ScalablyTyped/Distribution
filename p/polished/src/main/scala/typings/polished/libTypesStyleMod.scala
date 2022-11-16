@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libTypesStyleMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Styles = {[ruleOrSelector: string] : string | number | polished.polished/lib/types/style.Styles}
+  }}}
+  to avoid circular code involving: 
+  - polished.polished/lib/types/style.Styles
+  */
   trait Styles
     extends StObject
        with /* ruleOrSelector */ StringDictionary[String | Double | Styles]

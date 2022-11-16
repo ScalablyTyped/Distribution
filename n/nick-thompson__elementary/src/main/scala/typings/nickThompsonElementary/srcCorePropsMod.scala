@@ -15,13 +15,12 @@ object srcCorePropsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Parameters<T> extends [] ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.KeyProps : std.Parameters<T> extends [infer IProps, ...any] ? IProps extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.KeyProps : IProps & @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.KeyProps : never
     }}}
     */
-  @js.native
-  trait CompositeNodeProps[T /* <: CompositeNodeType */] extends StObject
+  type CompositeNodeProps[T /* <: CompositeNodeType */] = KeyProps
   
   trait ConstProps
     extends StObject
@@ -155,13 +154,12 @@ object srcCorePropsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.NodeType extends T ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.Props : T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.NativeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.NativeNodeProps<T> : T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.CompositeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/props.CompositeNodeProps<T> : never
     }}}
     */
-  @js.native
-  trait NodeProps[T /* <: NodeType */] extends StObject
+  type NodeProps[T /* <: NodeType */] = Props
   
   type Props = StringDictionary[Any]
   

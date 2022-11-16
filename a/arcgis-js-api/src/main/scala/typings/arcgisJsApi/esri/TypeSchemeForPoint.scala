@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeSchemeForPoint
   extends StObject
-     with Object
      with TypeScheme {
   
   /**
@@ -64,17 +61,14 @@ object TypeSchemeForPoint {
   
   inline def apply(
     colors: js.Array[Color_],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
     noDataColor: Color_,
     opacity: Double,
     outline: TypeSchemeForPointOutline,
-    propertyIsEnumerable: PropertyKey => Boolean,
     size: Double,
     tags: js.Array[String]
   ): TypeSchemeForPoint = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeSchemeForPoint]
   }
   

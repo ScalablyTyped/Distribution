@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MapNotesLayerConstructor
   extends StObject
-     with /**
-  * The MapNotesLayer lets you display and modify map notes (features sketched on a web map) from the [Map Viewer](https://www.arcgis.com/apps/mapviewer/index.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapNotesLayer.html)
-  */
-Instantiable0[MapNotesLayer]
+     with Instantiable0[MapNotesLayer]
      with Instantiable1[/* properties */ MapNotesLayerProperties, MapNotesLayer] {
   
   def fromJSON(json: Any): MapNotesLayer = js.native

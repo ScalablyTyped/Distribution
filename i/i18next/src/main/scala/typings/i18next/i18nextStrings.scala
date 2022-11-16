@@ -27,6 +27,10 @@ object i18nextStrings {
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait added extends StObject
   inline def added: added = "added".asInstanceOf[added]
   

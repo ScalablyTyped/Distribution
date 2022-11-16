@@ -7,6 +7,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type SendMessage = (header : {  msg :steam-client.steam-client.EMsg,   proto :steam-client.steam-client.CMsgProtoBufHeader | false | undefined}, body : node.buffer.<global>.Buffer | / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer * / any, callback : steam-client.steam-client.SendMessage | false | undefined): void
+}}}
+to avoid circular code involving: 
+- steam-client.steam-client.SendMessage
+*/
 @js.native
 trait SendMessage extends StObject {
   

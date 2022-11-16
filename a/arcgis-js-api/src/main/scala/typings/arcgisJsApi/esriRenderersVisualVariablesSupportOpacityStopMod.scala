@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.OpacityStop
-import typings.arcgisJsApi.esri.OpacityStopConstructor
 import typings.arcgisJsApi.esri.OpacityStopProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersVisualVariablesSupportOpacityStopMod extends Shortcut {
+/* static members */
+object esriRenderersVisualVariablesSupportOpacityStopMod {
   
-  @JSImport("esri/renderers/visualVariables/support/OpacityStop", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & OpacityStopConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/visualVariables/support/OpacityStop", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersVisualVariablesSupportOpacityStopMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-support-OpacityStop.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with OpacityStop {
     def this(properties: OpacityStopProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersVisualVariablesSupportOpacityStopMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/visualVariables/support/OpacityStop", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & OpacityStopConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersVisualVariablesSupportOpacityStopMod.foo` */
-  override def _to: js.Object & OpacityStopConstructor = ^
+  inline def fromJSON(json: Any): OpacityStop = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[OpacityStop]
 }

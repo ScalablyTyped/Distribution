@@ -60,6 +60,13 @@ trait TableListProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#viewModel)
     */
   var viewModel: js.UndefOr[TableListViewModel] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[TableListVisibleElements] = js.undefined
 }
 object TableListProperties {
   
@@ -99,5 +106,9 @@ object TableListProperties {
     inline def setViewModel(value: TableListViewModel): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setVisibleElements(value: TableListVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

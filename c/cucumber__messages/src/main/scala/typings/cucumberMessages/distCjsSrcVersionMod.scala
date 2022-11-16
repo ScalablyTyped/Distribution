@@ -8,5 +8,5 @@ object distCjsSrcVersionMod {
   
   @JSImport("@cucumber/messages/dist/cjs/src/version", "version")
   @js.native
-  val version: /* "19.1.4" */ String = js.native
+  val version: /* "20.0.0" */ String = js.native
 }

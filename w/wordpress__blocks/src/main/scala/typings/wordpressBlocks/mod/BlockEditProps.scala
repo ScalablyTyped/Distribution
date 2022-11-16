@@ -10,8 +10,6 @@ trait BlockEditProps[T /* <: Record[String, Any] */]
   extends StObject
      with BlockSaveProps[T] {
   
-  val className: String
-  
   val clientId: String
   
   val isSelected: Boolean
@@ -32,8 +30,6 @@ object BlockEditProps {
   }
   
   extension [Self <: BlockEditProps[?], T /* <: Record[String, Any] */](x: Self & BlockEditProps[T]) {
-    
-    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

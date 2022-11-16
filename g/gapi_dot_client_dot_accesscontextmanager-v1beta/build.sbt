@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_accesscontextmanager-v1beta"
-version := "0.0-dt-20220912Z-ba100b"
+version := "0.0-dt-20220912Z-6c3cd3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

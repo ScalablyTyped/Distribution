@@ -1618,6 +1618,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.animationTimingFunction
     - typings.domHelpers.domHelpersStrings.appearance
     - typings.domHelpers.domHelpersStrings.aspectRatio
+    - typings.domHelpers.domHelpersStrings.backdropFilter
     - typings.domHelpers.domHelpersStrings.backfaceVisibility
     - typings.domHelpers.domHelpersStrings.background
     - typings.domHelpers.domHelpersStrings.backgroundAttachment
@@ -1721,6 +1722,9 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.columnWidth
     - typings.domHelpers.domHelpersStrings.columns
     - typings.domHelpers.domHelpersStrings.contain
+    - typings.domHelpers.domHelpersStrings.container
+    - typings.domHelpers.domHelpersStrings.containerName
+    - typings.domHelpers.domHelpersStrings.containerType
     - typings.domHelpers.domHelpersStrings.content
     - typings.domHelpers.domHelpersStrings.counterIncrement
     - typings.domHelpers.domHelpersStrings.counterReset
@@ -1751,6 +1755,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.fontFeatureSettings
     - typings.domHelpers.domHelpersStrings.fontKerning
     - typings.domHelpers.domHelpersStrings.fontOpticalSizing
+    - typings.domHelpers.domHelpersStrings.fontPalette
     - typings.domHelpers.domHelpersStrings.fontSize
     - typings.domHelpers.domHelpersStrings.fontSizeAdjust
     - typings.domHelpers.domHelpersStrings.fontStretch
@@ -1785,6 +1790,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.gridTemplateColumns
     - typings.domHelpers.domHelpersStrings.gridTemplateRows
     - typings.domHelpers.domHelpersStrings.height
+    - typings.domHelpers.domHelpersStrings.hyphenateCharacter
     - typings.domHelpers.domHelpersStrings.hyphens
     - typings.domHelpers.domHelpersStrings.imageOrientation
     - typings.domHelpers.domHelpersStrings.imageRendering
@@ -1860,6 +1866,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.outlineWidth
     - typings.domHelpers.domHelpersStrings.overflow
     - typings.domHelpers.domHelpersStrings.overflowAnchor
+    - typings.domHelpers.domHelpersStrings.overflowClipMargin
     - typings.domHelpers.domHelpersStrings.overflowWrap
     - typings.domHelpers.domHelpersStrings.overflowX
     - typings.domHelpers.domHelpersStrings.overflowY

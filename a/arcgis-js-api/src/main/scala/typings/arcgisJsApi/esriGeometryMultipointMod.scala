@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Multipoint
-import typings.arcgisJsApi.esri.MultipointConstructor
 import typings.arcgisJsApi.esri.MultipointProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriGeometryMultipointMod extends Shortcut {
+/* static members */
+object esriGeometryMultipointMod {
   
-  @JSImport("esri/geometry/Multipoint", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MultipointConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry/Multipoint", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriGeometryMultipointMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Multipoint {
     def this(properties: MultipointProperties) = this()
@@ -35,9 +29,9 @@ object esriGeometryMultipointMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/geometry/Multipoint", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & MultipointConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriGeometryMultipointMod.foo` */
-  override def _to: js.Object & MultipointConstructor = ^
+  inline def fromJSON(json: Any): Multipoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Multipoint]
 }

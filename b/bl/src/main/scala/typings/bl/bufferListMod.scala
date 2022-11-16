@@ -743,6 +743,15 @@ object bufferListMod {
     def this(initData: BufferListAcceptedTypes) = this()
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type BufferListAcceptedTypes = node.buffer.<global>.Buffer | bl.bl/BufferList.BufferList | std.Uint8Array | std.Array<bl.bl/BufferList.BufferListAcceptedTypes> | string | number
+  }}}
+  to avoid circular code involving: 
+  - bl.bl.BufferListStreamInit
+  - bl.bl/BufferList.BufferListAcceptedTypes
+  */
   type BufferListAcceptedTypes = Buffer | typings.bl.bufferListMod.BufferList | js.typedarray.Uint8Array | js.Array[Any] | String | Double
   
   @js.native

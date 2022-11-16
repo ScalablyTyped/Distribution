@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeatmapRampStop
-  extends StObject
-     with Object {
+trait HeatmapRampStop extends StObject {
   
   /**
     * The color of the pixel corresponding to the appropriate pixel `ratio`.
@@ -40,16 +36,8 @@ trait HeatmapRampStop
 }
 object HeatmapRampStop {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    label: String,
-    offset: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    ratio: Double
-  ): HeatmapRampStop = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ratio = ratio.asInstanceOf[js.Any])
+  inline def apply(color: Color_, label: String, offset: Double, ratio: Double): HeatmapRampStop = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapRampStop]
   }
   

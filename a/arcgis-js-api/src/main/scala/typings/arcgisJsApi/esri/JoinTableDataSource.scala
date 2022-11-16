@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`join-table`
 import typings.arcgisJsApi.arcgisJsApiStrings.`left-inner-join`
 import typings.arcgisJsApi.arcgisJsApiStrings.`left-outer-join`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JoinTableDataSource
-  extends StObject
-     with Object {
+trait JoinTableDataSource extends StObject {
   
   /**
     * The type of join that will be performed.
@@ -58,16 +54,13 @@ trait JoinTableDataSource
 object JoinTableDataSource {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     joinType: `left-outer-join` | `left-inner-join`,
     leftTableKey: String,
     leftTableSource: DynamicMapLayer | DynamicDataLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     rightTableKey: String,
     rightTableSource: DynamicMapLayer | DynamicDataLayer
   ): JoinTableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), joinType = joinType.asInstanceOf[js.Any], leftTableKey = leftTableKey.asInstanceOf[js.Any], leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rightTableKey = rightTableKey.asInstanceOf[js.Any], rightTableSource = rightTableSource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(joinType = joinType.asInstanceOf[js.Any], leftTableKey = leftTableKey.asInstanceOf[js.Any], leftTableSource = leftTableSource.asInstanceOf[js.Any], rightTableKey = rightTableKey.asInstanceOf[js.Any], rightTableSource = rightTableSource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("join-table")
     __obj.asInstanceOf[JoinTableDataSource]
   }

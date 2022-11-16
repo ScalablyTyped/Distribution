@@ -7,6 +7,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RouteSegment = {[urlSegment: string] : swaggerize-express.swaggerize-express.RouteSegment | express.express.RequestHandler</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary * / any, any, any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query * / any, std.Record<string, any>> | std.Array<express.express.RequestHandler</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary * / any, any, any, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query * / any, std.Record<string, any>>>}
+}}}
+to avoid circular code involving: 
+- swaggerize-express.swaggerize-express.RouteSegment
+*/
 trait RouteSegment
   extends StObject
      with /* urlSegment */ StringDictionary[

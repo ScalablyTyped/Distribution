@@ -1,9 +1,7 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SceneLayer
-import typings.arcgisJsApi.esri.SceneLayerConstructor
 import typings.arcgisJsApi.esri.SceneLayerProperties
 import typings.arcgisJsApi.esri.SceneServiceVersion
 import typings.arcgisJsApi.esri.SpatialReference
@@ -11,13 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSceneLayerMod extends Shortcut {
+/* static members */
+object esriLayersSceneLayerMod {
   
-  @JSImport("esri/layers/SceneLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SceneLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/SceneLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersSceneLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SceneLayer {
     def this(properties: SceneLayerProperties) = this()
@@ -106,9 +100,9 @@ object esriLayersSceneLayerMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/SceneLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SceneLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSceneLayerMod.foo` */
-  override def _to: js.Object & SceneLayerConstructor = ^
+  inline def fromJSON(json: Any): SceneLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SceneLayer]
 }

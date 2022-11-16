@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerSaveOptions
-  extends StObject
-     with Object {
+trait FeatureLayerSaveOptions extends StObject {
   
   /**
     * Options for validating the save operation.
@@ -19,12 +15,8 @@ trait FeatureLayerSaveOptions
 }
 object FeatureLayerSaveOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureLayerSaveOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FeatureLayerSaveOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureLayerSaveOptions]
   }
   

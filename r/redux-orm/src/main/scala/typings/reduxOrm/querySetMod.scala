@@ -9,6 +9,8 @@ import typings.reduxOrm.modelMod.Ref
 import typings.reduxOrm.modelMod.SessionBoundModel
 import typings.reduxOrm.modelMod.UpdateProps
 import typings.reduxOrm.querySetMod.QuerySet.QueryBuilder
+import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,15 +147,32 @@ object querySetMod {
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped {[ P in keyof redux-orm.redux-orm/Model.Ref<M> ]:? redux-orm.redux-orm/Model.Ref<M>[P]}
-    - Dropped {[ P in string ]: redux-orm.redux-orm/Model.Serializable} */ trait LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] extends StObject
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type LookupProps = std.Partial<redux-orm.redux-orm/Model.Ref<M>> & std.Record<string, redux-orm.redux-orm/Model.Serializable>
+    }}}
+    to avoid circular code involving: 
+    - redux-orm.redux-orm/Model.Serializable
+    - redux-orm.redux-orm/QuerySet.QuerySet.LookupProps
+    */
+    type LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] = Partial[Ref[M]] & (Record[String, Any])
     
     /**
       * A union of lookup clauses.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type LookupSpec = redux-orm.redux-orm/QuerySet.QuerySet.LookupProps<M> | redux-orm.redux-orm/QuerySet.QuerySet.LookupPredicate<M>
+    }}}
+    to avoid circular code involving: 
+    - redux-orm.redux-orm/Model.Serializable
+    - redux-orm.redux-orm/QuerySet.QuerySet.LookupProps
+    - redux-orm.redux-orm/QuerySet.QuerySet.LookupSpec
+    */
     type LookupSpec[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] = Any | LookupPredicate[M]
     
     /**

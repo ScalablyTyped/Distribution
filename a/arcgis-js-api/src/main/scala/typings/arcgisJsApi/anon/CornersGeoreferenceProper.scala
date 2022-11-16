@@ -45,13 +45,13 @@ trait CornersGeoreferenceProper extends StObject {
     */
   var topRight: js.UndefOr[PointProperties] = js.undefined
   
-  var `type`: js.UndefOr[corners] & corners
+  var `type`: corners
 }
 object CornersGeoreferenceProper {
   
-  inline def apply(`type`: js.UndefOr[corners] & corners): CornersGeoreferenceProper = {
+  inline def apply(): CornersGeoreferenceProper = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("corners")
     __obj.asInstanceOf[CornersGeoreferenceProper]
   }
   
@@ -73,6 +73,6 @@ object CornersGeoreferenceProper {
     
     inline def setTopRightUndefined: Self = StObject.set(x, "topRight", js.undefined)
     
-    inline def setType(value: js.UndefOr[corners] & corners): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: corners): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

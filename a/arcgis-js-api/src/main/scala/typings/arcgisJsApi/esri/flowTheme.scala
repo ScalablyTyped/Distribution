@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait flowTheme
-  extends StObject
-     with Object {
+trait flowTheme extends StObject {
   
   /**
     * The Esri basemaps that pair well with the given theme.
@@ -40,16 +36,8 @@ trait flowTheme
 }
 object flowTheme {
   
-  inline def apply(
-    basemaps: js.Array[String],
-    constructor: js.Function,
-    description: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    label: String,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): flowTheme = {
-    val __obj = js.Dynamic.literal(basemaps = basemaps.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(basemaps: js.Array[String], description: String, label: String, name: String): flowTheme = {
+    val __obj = js.Dynamic.literal(basemaps = basemaps.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[flowTheme]
   }
   

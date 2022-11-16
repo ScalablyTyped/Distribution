@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClosestFacilityParametersConstructor
   extends StObject
-     with /**
-  * Input parameters for [closestFacility](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-closestFacility.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html)
-  */
-Instantiable0[ClosestFacilityParameters]
+     with Instantiable0[ClosestFacilityParameters]
      with Instantiable1[/* properties */ ClosestFacilityParametersProperties, ClosestFacilityParameters] {
   
   def fromJSON(json: Any): ClosestFacilityParameters = js.native

@@ -12,9 +12,6 @@ trait RTCReceivedRtpStreamStats
   var jitter: js.UndefOr[Double] = js.undefined
   
   /* standard dom */
-  var packetsDiscarded: js.UndefOr[Double] = js.undefined
-  
-  /* standard dom */
   var packetsLost: js.UndefOr[Double] = js.undefined
   
   /* standard dom */
@@ -39,10 +36,6 @@ object RTCReceivedRtpStreamStats {
     inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
-    
-    inline def setPacketsDiscarded(value: Double): Self = StObject.set(x, "packetsDiscarded", value.asInstanceOf[js.Any])
-    
-    inline def setPacketsDiscardedUndefined: Self = StObject.set(x, "packetsDiscarded", js.undefined)
     
     inline def setPacketsLost(value: Double): Self = StObject.set(x, "packetsLost", value.asInstanceOf[js.Any])
     

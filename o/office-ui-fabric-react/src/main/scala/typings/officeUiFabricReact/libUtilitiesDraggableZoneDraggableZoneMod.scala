@@ -134,6 +134,7 @@ object libUtilitiesDraggableZoneDraggableZoneMod {
     /* standard dom */
     val NONE: Double = js.native
     
+    /** @deprecated */
     /* standard dom */
     var cancelBubble: Boolean = js.native
     

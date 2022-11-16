@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.MouseEvent
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewHitTestResult
-  extends StObject
-     with Object {
+trait SceneViewHitTestResult extends StObject {
   
   /**
     * Ground intersection result.
@@ -35,14 +31,11 @@ trait SceneViewHitTestResult
 object SceneViewHitTestResult {
   
   inline def apply(
-    constructor: js.Function,
     ground: HitTestResultGround,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     results: js.Array[SceneViewViewHit],
     screenPoint: SceneViewScreenPoint | MouseEvent
   ): SceneViewHitTestResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], ground = ground.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ground = ground.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewHitTestResult]
   }
   

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectLineMeasurement3DViewModelMeasurementValue
-  extends StObject
-     with Object {
+trait DirectLineMeasurement3DViewModelMeasurementValue extends StObject {
   
   /**
     * State of the measured value.
@@ -26,14 +22,8 @@ trait DirectLineMeasurement3DViewModelMeasurementValue
 }
 object DirectLineMeasurement3DViewModelMeasurementValue {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    state: String,
-    text: String
-  ): DirectLineMeasurement3DViewModelMeasurementValue = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(state: String, text: String): DirectLineMeasurement3DViewModelMeasurementValue = {
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurementValue]
   }
   

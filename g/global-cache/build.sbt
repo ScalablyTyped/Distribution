@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "global-cache"
-version := "1.2-dt-20221107Z-073674"
+version := "1.2-dt-20221107Z-dfa454"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

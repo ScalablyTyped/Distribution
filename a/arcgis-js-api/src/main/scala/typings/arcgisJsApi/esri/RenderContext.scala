@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderContext
-  extends StObject
-     with Object {
+trait RenderContext extends StObject {
   
   /**
     * Binds the color and depth buffers an external renderer is supposed to render into.
@@ -51,14 +47,11 @@ object RenderContext {
   inline def apply(
     bindRenderTarget: () => scala.Unit,
     camera: RenderCamera,
-    constructor: js.Function,
     gl: WebGLRenderingContext,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     resetWebGLState: () => scala.Unit,
     sunLight: SunLight
   ): RenderContext = {
-    val __obj = js.Dynamic.literal(bindRenderTarget = js.Any.fromFunction0(bindRenderTarget), camera = camera.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resetWebGLState = js.Any.fromFunction0(resetWebGLState), sunLight = sunLight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindRenderTarget = js.Any.fromFunction0(bindRenderTarget), camera = camera.asInstanceOf[js.Any], gl = gl.asInstanceOf[js.Any], resetWebGLState = js.Any.fromFunction0(resetWebGLState), sunLight = sunLight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderContext]
   }
   

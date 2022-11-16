@@ -27,9 +27,6 @@ trait RTCTransportStats
   var remoteCertificateId: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
-  var rtcpTransportStatsId: js.UndefOr[java.lang.String] = js.undefined
-  
-  /* standard dom */
   var selectedCandidatePairId: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
@@ -74,10 +71,6 @@ object RTCTransportStats {
     inline def setRemoteCertificateId(value: java.lang.String): Self = StObject.set(x, "remoteCertificateId", value.asInstanceOf[js.Any])
     
     inline def setRemoteCertificateIdUndefined: Self = StObject.set(x, "remoteCertificateId", js.undefined)
-    
-    inline def setRtcpTransportStatsId(value: java.lang.String): Self = StObject.set(x, "rtcpTransportStatsId", value.asInstanceOf[js.Any])
-    
-    inline def setRtcpTransportStatsIdUndefined: Self = StObject.set(x, "rtcpTransportStatsId", js.undefined)
     
     inline def setSelectedCandidatePairId(value: java.lang.String): Self = StObject.set(x, "selectedCandidatePairId", value.asInstanceOf[js.Any])
     

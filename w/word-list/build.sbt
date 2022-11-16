@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "word-list"
-version := "3.1.0-0c0378"
+version := "3.1.0-b21f31"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

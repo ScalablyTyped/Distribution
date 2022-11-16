@@ -274,6 +274,14 @@ object mod extends Shortcut {
     def xyz(`val`: Double*): Color[ColorParam] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ColorParam = color.color.Color<color.color.ColorParam> | string | std.ArrayLike<number> | number | {[key: string] : any}
+  }}}
+  to avoid circular code involving: 
+  - color.color.ColorParam
+  */
   type ColorParam = Color[Any] | String | ArrayLike[Double] | Double | StringDictionary[Any]
   
   type _To = js.Object & ColorConstructor

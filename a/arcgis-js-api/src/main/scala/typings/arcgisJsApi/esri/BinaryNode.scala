@@ -21,15 +21,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`-_`
 import typings.arcgisJsApi.arcgisJsApiStrings.`NOT IN`
 import typings.arcgisJsApi.arcgisJsApiStrings.`NOT LIKE`
 import typings.arcgisJsApi.arcgisJsApiStrings.`binary-expression`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BinaryNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -65,14 +62,11 @@ trait BinaryNode
 object BinaryNode {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     left: SQLNode,
     operator: AND | OR | IS | ISNOT | IN | (`NOT IN`) | BETWEEN | NOTBETWEEN | LIKE | (`NOT LIKE`) | LessthansignGreaterthansign | Lessthansign | Greaterthansign | GreaterthansignEqualssign | LessthansignEqualssign | Equalssign | Asterisk | `-_` | Plussign | Slash,
-    propertyIsEnumerable: PropertyKey => Boolean,
     right: SQLNode
   ): BinaryNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("binary-expression")
     __obj.asInstanceOf[BinaryNode]
   }

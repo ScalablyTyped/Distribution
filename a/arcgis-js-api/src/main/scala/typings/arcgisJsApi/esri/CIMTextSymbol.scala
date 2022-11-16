@@ -9,15 +9,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Left
 import typings.arcgisJsApi.arcgisJsApiStrings.Regular
 import typings.arcgisJsApi.arcgisJsApiStrings.Right
 import typings.arcgisJsApi.arcgisJsApiStrings.Top
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMTextSymbol
-  extends StObject
-     with Object {
+trait CIMTextSymbol extends StObject {
   
   /**
     * The amount of rotation applied to the text symbol, measured in degrees, around the geometry.
@@ -114,16 +110,8 @@ trait CIMTextSymbol
 }
 object CIMTextSymbol {
   
-  inline def apply(
-    constructor: js.Function,
-    fontFamilyName: String,
-    haloSymbol: CIMPolygonSymbol,
-    hasOwnProperty: PropertyKey => Boolean,
-    height: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbol: CIMPolygonSymbol
-  ): CIMTextSymbol = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fontFamilyName = fontFamilyName.asInstanceOf[js.Any], haloSymbol = haloSymbol.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
+  inline def apply(fontFamilyName: String, haloSymbol: CIMPolygonSymbol, height: Double, symbol: CIMPolygonSymbol): CIMTextSymbol = {
+    val __obj = js.Dynamic.literal(fontFamilyName = fontFamilyName.asInstanceOf[js.Any], haloSymbol = haloSymbol.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMTextSymbol")
     __obj.asInstanceOf[CIMTextSymbol]
   }

@@ -27,13 +27,13 @@ trait ExtentAndRotationGeorefer extends StObject {
     */
   var rotation: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[`extent-and-rotation`] & `extent-and-rotation`
+  var `type`: `extent-and-rotation`
 }
 object ExtentAndRotationGeorefer {
   
-  inline def apply(`type`: js.UndefOr[`extent-and-rotation`] & `extent-and-rotation`): ExtentAndRotationGeorefer = {
+  inline def apply(): ExtentAndRotationGeorefer = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("extent-and-rotation")
     __obj.asInstanceOf[ExtentAndRotationGeorefer]
   }
   
@@ -47,6 +47,6 @@ object ExtentAndRotationGeorefer {
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    inline def setType(value: js.UndefOr[`extent-and-rotation`] & `extent-and-rotation`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `extent-and-rotation`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

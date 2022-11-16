@@ -82,6 +82,16 @@ object typesJsonMod {
   
   type JSONArray = js.Array[JSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[key: string] : @lumino/coreutils.@lumino/coreutils/types/json.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.JSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.JSONObject
+  - @lumino/coreutils.@lumino/coreutils/types/json.JSONValue
+  */
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[JSONValue]
@@ -95,10 +105,29 @@ object typesJsonMod {
   
   type JSONPrimitive = Boolean | Double | String | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive | @lumino/coreutils.@lumino/coreutils/types/json.JSONObject | @lumino/coreutils.@lumino/coreutils/types/json.JSONArray
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.JSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.JSONValue
+  */
   type JSONValue = JSONPrimitive | JSONObject | Any
   
   type PartialJSONArray = js.Array[PartialJSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PartialJSONObject = {[key: string] : @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONValue | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONObject
+  - @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONValue
+  */
   trait PartialJSONObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[PartialJSONValue]]
@@ -110,10 +139,29 @@ object typesJsonMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PartialJSONValue = @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive | @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONObject | @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONArray
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.PartialJSONValue
+  */
   type PartialJSONValue = JSONPrimitive | PartialJSONObject | Any
   
   type ReadonlyJSONArray = js.Array[ReadonlyJSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReadonlyJSONObject = {readonly [key: string] : @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONValue}
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONObject
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONValue
+  */
   trait ReadonlyJSONObject
     extends StObject
        with /* key */ StringDictionary[ReadonlyJSONValue]
@@ -125,10 +173,29 @@ object typesJsonMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReadonlyJSONValue = @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive | @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONObject | @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONArray
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyJSONValue
+  */
   type ReadonlyJSONValue = JSONPrimitive | ReadonlyJSONObject | Any
   
   type ReadonlyPartialJSONArray = js.Array[ReadonlyPartialJSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReadonlyPartialJSONObject = {readonly [key: string] : @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONValue | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONObject
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONValue
+  */
   trait ReadonlyPartialJSONObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[ReadonlyPartialJSONValue]]
@@ -140,5 +207,14 @@ object typesJsonMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReadonlyPartialJSONValue = @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive | @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONObject | @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONArray
+  }}}
+  to avoid circular code involving: 
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONArray
+  - @lumino/coreutils.@lumino/coreutils/types/json.ReadonlyPartialJSONValue
+  */
   type ReadonlyPartialJSONValue = JSONPrimitive | ReadonlyPartialJSONObject | Any
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-extra-dimensions-android"
-version := "1.2-dt-20211202Z-b29803"
+version := "1.2-dt-20211202Z-d0d104"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

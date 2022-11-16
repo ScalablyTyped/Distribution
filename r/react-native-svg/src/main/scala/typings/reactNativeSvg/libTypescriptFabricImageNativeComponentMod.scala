@@ -69,7 +69,7 @@ object libTypescriptFabricImageNativeComponentMod extends Shortcut {
     
     var meetOrSlice: js.UndefOr[Int32] = js.undefined
     
-    var src: js.UndefOr[ImageSourcePropType] = js.undefined
+    var src: js.UndefOr[ImageSourcePropType | Null] = js.undefined
     
     var width: js.UndefOr[String] = js.undefined
     
@@ -99,6 +99,8 @@ object libTypescriptFabricImageNativeComponentMod extends Shortcut {
       inline def setMeetOrSliceUndefined: Self = StObject.set(x, "meetOrSlice", js.undefined)
       
       inline def setSrc(value: ImageSourcePropType): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setSrcNull: Self = StObject.set(x, "src", null)
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       

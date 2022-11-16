@@ -65,6 +65,16 @@ object mod {
   
   type JsonArray = js.Array[Boolean | js.Date | Double | JsonMap | String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonMap = {[key: string] : @iarna/toml.@iarna/toml.AnyJson}
+  }}}
+  to avoid circular code involving: 
+  - @iarna/toml.@iarna/toml.AnyJson
+  - @iarna/toml.@iarna/toml.JsonArray
+  - @iarna/toml.@iarna/toml.JsonMap
+  */
   trait JsonMap
     extends StObject
        with /* key */ StringDictionary[AnyJson]

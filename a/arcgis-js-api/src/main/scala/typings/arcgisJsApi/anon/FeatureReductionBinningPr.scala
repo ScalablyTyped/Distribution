@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.binning
 import typings.arcgisJsApi.esri.AggregateFieldProperties
 import typings.arcgisJsApi.esri.LabelClassProperties
 import typings.arcgisJsApi.esri.PopupTemplateProperties
+import typings.arcgisJsApi.esri.RendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureReductionBinningPr extends StObject {
   
   /**
-    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) of features contained within each bin.
+    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) from features contained within each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fields)
     */
@@ -60,6 +61,13 @@ trait FeatureReductionBinningPr extends StObject {
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * The renderer used to style the bins.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#renderer)
+    */
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
+  /**
     * The feature reduction type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#type)
@@ -103,6 +111,10 @@ object FeatureReductionBinningPr {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     inline def setType(value: js.UndefOr[binning] & binning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

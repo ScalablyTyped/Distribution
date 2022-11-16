@@ -232,6 +232,14 @@ object JQuerySortable {
   
   type Dimensions = js.Array[Double]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GenericEventHandler = ($item : jquery-sortable.JQuery | undefined, container : jquery-sortable.JQuerySortable.Container | undefined, _super : jquery-sortable.JQuerySortable.GenericEventHandler | undefined, event : std.Event | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - jquery-sortable.JQuerySortable.GenericEventHandler
+  */
   @js.native
   trait GenericEventHandler extends StObject {
     
@@ -385,6 +393,14 @@ object JQuerySortable {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type OnCancelHandler = ($item : jquery-sortable.JQuery | undefined, container : jquery-sortable.JQuerySortable.Container | undefined, _super : jquery-sortable.JQuerySortable.OnCancelHandler | undefined, event : std.Event | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - jquery-sortable.JQuerySortable.OnCancelHandler
+  */
   @js.native
   trait OnCancelHandler extends StObject {
     
@@ -406,6 +422,14 @@ object JQuerySortable {
     def apply($item: JQuery, container: Container, _super: OnCancelHandler, event: Event): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type OnDragEventHandler = ($item : jquery-sortable.JQuery | undefined, position : jquery-sortable.JQuerySortable.Position | undefined, _super : jquery-sortable.JQuerySortable.OnDragEventHandler | undefined, event : std.Event | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - jquery-sortable.JQuerySortable.OnDragEventHandler
+  */
   @js.native
   trait OnDragEventHandler extends StObject {
     
@@ -427,6 +451,14 @@ object JQuerySortable {
     def apply($item: JQuery, position: Position, _super: OnDragEventHandler, event: Event): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type OnMousedownHandler = ($item : jquery-sortable.JQuery | undefined, _super : jquery-sortable.JQuerySortable.OnMousedownHandler | undefined, event : std.Event | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - jquery-sortable.JQuerySortable.OnMousedownHandler
+  */
   @js.native
   trait OnMousedownHandler extends StObject {
     

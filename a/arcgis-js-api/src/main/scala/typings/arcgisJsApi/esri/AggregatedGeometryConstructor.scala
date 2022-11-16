@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AggregatedGeometryConstructor
   extends StObject
-     with /**
-  * A class that defines an aggregation of geometries.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html)
-  */
-Instantiable0[AggregatedGeometry]
+     with Instantiable0[AggregatedGeometry]
      with Instantiable1[/* properties */ AggregatedGeometryProperties, AggregatedGeometry] {
   
   def fromJSON(json: Any): AggregatedGeometry = js.native

@@ -1,38 +1,38 @@
 organization := "org.scalablytyped"
 name := "libp2p__kad-dht"
-version := "5.0.1-3d52af"
+version := "5.0.1-e0b3dc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-76d703",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-3076aa",
-  "org.scalablytyped" %%% "interface-datastore" % "7.0.1-b04ef9",
-  "org.scalablytyped" %%% "interface-store" % "3.0.1-ade001",
-  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-d5d4ca",
-  "org.scalablytyped" %%% "libp2p__interface-address-manager" % "2.0.0-cb45f2",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-ed0c26",
-  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-4de9fe",
-  "org.scalablytyped" %%% "libp2p__interface-dht" % "1.0.2-a0aa43",
-  "org.scalablytyped" %%% "libp2p__interface-metrics" % "3.0.0-32f542",
-  "org.scalablytyped" %%% "libp2p__interface-peer-discovery" % "1.0.1-ad59cd",
-  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-ba3d3a",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-5f08ec",
-  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-922b0a",
-  "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-d40858",
-  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-c9c430",
-  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-9299fd",
-  "org.scalablytyped" %%% "libp2p__logger" % "2.0.2-29e220",
-  "org.scalablytyped" %%% "libp2p__peer-collections" % "2.2.0-dd0655",
-  "org.scalablytyped" %%% "libp2p__record" % "2.0.3-9e7590",
-  "org.scalablytyped" %%% "multiformats" % "10.0.2-ebf5dc",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-446616",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "p-queue" % "7.3.0-fb1e87",
-  "org.scalablytyped" %%% "protons-runtime" % "4.0.1-27c2f8",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-24328f",
-  "org.scalablytyped" %%% "uint8arrays" % "4.0.2-cf12ab")
+  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-1d5233",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-5bff7d",
+  "org.scalablytyped" %%% "interface-datastore" % "7.0.1-126aa3",
+  "org.scalablytyped" %%% "interface-store" % "3.0.1-c00699",
+  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-d3f578",
+  "org.scalablytyped" %%% "libp2p__interface-address-manager" % "2.0.0-29f137",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-4f1a18",
+  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-304325",
+  "org.scalablytyped" %%% "libp2p__interface-dht" % "1.0.2-1ac20d",
+  "org.scalablytyped" %%% "libp2p__interface-metrics" % "3.0.0-03bb66",
+  "org.scalablytyped" %%% "libp2p__interface-peer-discovery" % "1.0.1-810e3c",
+  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-7d8c71",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-0bad38",
+  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-13e8cc",
+  "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-0d2489",
+  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-cd6482",
+  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-03f126",
+  "org.scalablytyped" %%% "libp2p__logger" % "2.0.2-f3e9e0",
+  "org.scalablytyped" %%% "libp2p__peer-collections" % "2.2.0-9daa4d",
+  "org.scalablytyped" %%% "libp2p__record" % "2.0.3-2fad40",
+  "org.scalablytyped" %%% "multiformats" % "10.0.2-04b3d3",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-6e66b6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "p-queue" % "7.3.0-2ae15d",
+  "org.scalablytyped" %%% "protons-runtime" % "4.0.1-26818f",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-d35278",
+  "org.scalablytyped" %%% "uint8arrays" % "4.0.2-9a5439")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

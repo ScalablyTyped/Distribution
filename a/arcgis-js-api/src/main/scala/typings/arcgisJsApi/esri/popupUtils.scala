@@ -35,4 +35,11 @@ trait popupUtils extends StObject {
     */
   def createPopupTemplate(config: Config_): PopupTemplate = js.native
   def createPopupTemplate(config: Config_, options: CreatePopupTemplateOptions): PopupTemplate = js.native
+  
+  /**
+    * Creates a default popup template to use for [FeatureReductionBinning](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html) or [FeatureReductionCluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) visualizations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
+    */
+  def createPopupTemplateForFeatureReduction(params: popupUtilsCreatePopupTemplateForFeatureReductionParams): PopupTemplate = js.native
 }

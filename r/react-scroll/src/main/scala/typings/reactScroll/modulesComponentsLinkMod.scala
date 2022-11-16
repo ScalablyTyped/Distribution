@@ -1523,6 +1523,8 @@ object modulesComponentsLinkMod {
     
     var hashSpy: js.UndefOr[Boolean] = js.undefined
     
+    var horizontal: js.UndefOr[Boolean] = js.undefined
+    
     var ignoreCancelEvents: js.UndefOr[Boolean] = js.undefined
     
     var isDynamic: js.UndefOr[Boolean] = js.undefined
@@ -1577,6 +1579,10 @@ object modulesComponentsLinkMod {
       inline def setHashSpy(value: Boolean): Self = StObject.set(x, "hashSpy", value.asInstanceOf[js.Any])
       
       inline def setHashSpyUndefined: Self = StObject.set(x, "hashSpy", js.undefined)
+      
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
       inline def setIgnoreCancelEvents(value: Boolean): Self = StObject.set(x, "ignoreCancelEvents", value.asInstanceOf[js.Any])
       

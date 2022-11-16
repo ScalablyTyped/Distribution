@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "merge-deep"
-version := "3.0-dt-20211202Z-8ba774"
+version := "3.0-dt-20211202Z-57a669"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

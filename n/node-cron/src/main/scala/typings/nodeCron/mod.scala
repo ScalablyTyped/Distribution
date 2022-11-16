@@ -1,5 +1,6 @@
 package typings.nodeCron
 
+import typings.node.eventsMod.EventEmitter
 import typings.nodeCron.nodeCronStrings.manual
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -80,8 +81,7 @@ object mod {
   }
   
   @js.native
-  trait ScheduledTask
-    extends typings.node.eventsMod.^ {
+  trait ScheduledTask extends EventEmitter {
     
     def now(): Unit = js.native
     def now(now: js.Date): Unit = js.native

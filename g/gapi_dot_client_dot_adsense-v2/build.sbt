@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_adsense-v2"
-version := "0.0-dt-20220912Z-ae3fae"
+version := "0.0-dt-20220912Z-576d4e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

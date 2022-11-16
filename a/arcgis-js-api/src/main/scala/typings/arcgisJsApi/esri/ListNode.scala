@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`expression-list`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ListNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -23,13 +20,8 @@ trait ListNode
 }
 object ListNode {
   
-  inline def apply(
-    constructor: js.Function,
-    expr: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ListNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(expr: SQLNode): ListNode = {
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("expression-list")
     __obj.asInstanceOf[ListNode]
   }

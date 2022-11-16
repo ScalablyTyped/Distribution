@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SynthesizeAssociationGeometriesParametersConstructor
   extends StObject
-     with /**
-  * This class describes the parameters required to execute the synthesizeAssociationGeometries function which synthesizes and returns the associations geometries in a given extent.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-SynthesizeAssociationGeometriesParameters.html)
-  */
-Instantiable0[SynthesizeAssociationGeometriesParameters]
+     with Instantiable0[SynthesizeAssociationGeometriesParameters]
      with Instantiable1[
       /* properties */ SynthesizeAssociationGeometriesParametersProperties, 
       SynthesizeAssociationGeometriesParameters

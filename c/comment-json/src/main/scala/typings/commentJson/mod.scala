@@ -57,6 +57,14 @@ object mod {
   */
   type CommentDescriptor = _CommentDescriptor | (/* template literal string: ${CommentPrefix}:${string} */ String)
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CommentJSONValue = number | string | null | boolean | comment-json.comment-json.CommentArray<comment-json.comment-json.CommentJSONValue> | comment-json.comment-json.CommentObject
+  }}}
+  to avoid circular code involving: 
+  - comment-json.comment-json.CommentJSONValue
+  */
   type CommentJSONValue = Double | String | Null | Boolean | CommentArray[Any] | CommentObject
   
   trait CommentLocation extends StObject {

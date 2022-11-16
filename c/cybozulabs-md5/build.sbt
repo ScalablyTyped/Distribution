@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cybozulabs-md5"
-version := "0.0-unknown-dt-20220818Z-82afe3"
+version := "0.0-unknown-dt-20220818Z-680ced"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

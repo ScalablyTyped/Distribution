@@ -6,15 +6,11 @@ import typings.arcgisJsApi.anon.RainyWeatherPropertiestyp
 import typings.arcgisJsApi.anon.SnowyWeatherPropertiestyp
 import typings.arcgisJsApi.anon.SunLightingPropertiestype
 import typings.arcgisJsApi.anon.SunnyWeatherPropertiestyp
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewEnvironmentProperties
-  extends StObject
-     with Object {
+trait SceneViewEnvironmentProperties extends StObject {
   
   /**
     * Atmosphere conditions of the scene.
@@ -70,12 +66,8 @@ trait SceneViewEnvironmentProperties
 }
 object SceneViewEnvironmentProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneViewEnvironmentProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SceneViewEnvironmentProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewEnvironmentProperties]
   }
   

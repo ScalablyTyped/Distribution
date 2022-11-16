@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "expo__config"
-version := "7.0.3-37eeba"
+version := "7.0.3-0f9332"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "expo__config-types" % "47.0.0-be915c",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "expo__config-types" % "47.0.0-1c771e",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

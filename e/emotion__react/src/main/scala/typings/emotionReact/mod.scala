@@ -1159,6 +1159,15 @@ object mod {
   
   type ArrayClassNamesArg = js.Array[ClassNamesArg]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ClassNamesArg = undefined | null | string | boolean | {[className: string] : boolean | null | undefined} | @emotion/react.@emotion/react.ArrayClassNamesArg
+  }}}
+  to avoid circular code involving: 
+  - @emotion/react.@emotion/react.ArrayClassNamesArg
+  - @emotion/react.@emotion/react.ClassNamesArg
+  */
   type ClassNamesArg = js.UndefOr[Null | String | Boolean | (StringDictionary[js.UndefOr[Boolean | Null]]) | Any]
   
   @js.native

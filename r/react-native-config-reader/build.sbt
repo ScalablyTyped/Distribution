@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-config-reader"
-version := "4.1-dt-20211202Z-c988dd"
+version := "4.1-dt-20211202Z-c6a04d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -63,6 +63,15 @@ object mod extends Shortcut {
       }
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type TransitionGroupProps = react-addons-transition-group.react-addons-transition-group.react.HTMLTransitionGroupProps<react-addons-transition-group.react-addons-transition-group.ReactTransitionGroup>
+    }}}
+    to avoid circular code involving: 
+    - react-addons-transition-group.react-addons-transition-group.ReactTransitionGroup
+    - react-addons-transition-group.react-addons-transition-group.react.TransitionGroupProps
+    */
     trait TransitionGroupProps
       extends StObject
          with HTMLTransitionGroupProps[ReactTransitionGroup]

@@ -11,8 +11,25 @@ object google {
   
   object script {
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Parameter = number | boolean | string | {[index: number] : google.script.client-side.google.script.Parameter} | {[key: string] : google.script.client-side.google.script.Parameter} | null | undefined
+    }}}
+    to avoid circular code involving: 
+    - google.script.client-side.google.script.Parameter
+    */
     type Parameter = js.UndefOr[Double | Boolean | String | NumberDictionary[Any] | StringDictionary[Any] | Null]
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type PublicEndpoints = {[functionName: string] : (first : google.script.client-side.google.script.Parameter | std.HTMLFormElement | undefined, rest : ...google.script.client-side.google.script.Parameter): void}
+    }}}
+    to avoid circular code involving: 
+    - google.script.client-side.google.script.Parameter
+    - google.script.client-side.google.script.PublicEndpoints
+    */
     trait PublicEndpoints
       extends StObject
          with /**

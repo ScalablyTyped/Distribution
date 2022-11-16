@@ -32,7 +32,7 @@ trait SceneView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#analyses)
     */
   var analyses: Collection[
-    DirectLineMeasurementAnalysis | AreaMeasurementAnalysis | SliceAnalysis | LineOfSightAnalysis
+    DimensionAnalysis | DirectLineMeasurementAnalysis | AreaMeasurementAnalysis | SliceAnalysis | LineOfSightAnalysis
   ] = js.native
   
   /**
@@ -194,6 +194,12 @@ trait SceneView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
     */
   def whenAnalysisView(analysis: AreaMeasurementAnalysis): js.Promise[AreaMeasurementAnalysisView3D] = js.native
+  /**
+    * Gets the analysis view created for the given analysis object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
+    */
+  def whenAnalysisView(analysis: DimensionAnalysis): js.Promise[DimensionAnalysisView] = js.native
   /**
     * Gets the analysis view created for the given analysis object.
     *

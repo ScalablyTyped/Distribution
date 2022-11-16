@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerInfo
-  extends StObject
-     with Object {
+trait LayerInfo extends StObject {
   
   /**
     * Indicates whether to enable the ability to create new features.
@@ -23,6 +19,13 @@ trait LayerInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
     */
   var allowAttachments: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether to enable or disable attribute update from the feature's form.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+    */
+  var attributeUpdatesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to enable the ability to delete features.
@@ -46,6 +49,13 @@ trait LayerInfo
   var formTemplate: js.UndefOr[FormTemplate] = js.undefined
   
   /**
+    * Indicates whether to enable or disable geometry updates.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+    */
+  var geometryUpdatesEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The associated feature layer containing the editable fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
@@ -61,13 +71,8 @@ trait LayerInfo
 }
 object LayerInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LayerInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: FeatureLayer): LayerInfo = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerInfo]
   }
   
@@ -81,6 +86,10 @@ object LayerInfo {
     
     inline def setAllowAttachmentsUndefined: Self = StObject.set(x, "allowAttachments", js.undefined)
     
+    inline def setAttributeUpdatesEnabled(value: Boolean): Self = StObject.set(x, "attributeUpdatesEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeUpdatesEnabledUndefined: Self = StObject.set(x, "attributeUpdatesEnabled", js.undefined)
+    
     inline def setDeleteEnabled(value: Boolean): Self = StObject.set(x, "deleteEnabled", value.asInstanceOf[js.Any])
     
     inline def setDeleteEnabledUndefined: Self = StObject.set(x, "deleteEnabled", js.undefined)
@@ -92,6 +101,10 @@ object LayerInfo {
     inline def setFormTemplate(value: FormTemplate): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
     inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
+    
+    inline def setGeometryUpdatesEnabled(value: Boolean): Self = StObject.set(x, "geometryUpdatesEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryUpdatesEnabledUndefined: Self = StObject.set(x, "geometryUpdatesEnabled", js.undefined)
     
     inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

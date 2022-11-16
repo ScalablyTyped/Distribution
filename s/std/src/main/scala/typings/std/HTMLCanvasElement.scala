@@ -90,6 +90,9 @@ trait HTMLCanvasElement
   def toDataURL(`type`: java.lang.String, quality: Any): java.lang.String = js.native
   def toDataURL(`type`: Unit, quality: Any): java.lang.String = js.native
   
+  /* standard dom */
+  def transferControlToOffscreen(): OffscreenCanvas = js.native
+  
   /** Gets or sets the width of a canvas element on a document. */
   /* standard dom */
   var width: Double = js.native

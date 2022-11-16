@@ -364,6 +364,8 @@ type WorkflowType = APPFLOW_INTEGRATION | String
 */
 type ZendeskConnectorOperator = _ZendeskConnectorOperator | String
 
+type additionalSearchKeysList = js.Array[AdditionalSearchKey]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-08-15`
   - typings.awsSdk.awsSdkStrings.latest_
@@ -374,6 +376,15 @@ type apiVersion = _apiVersion | String
 type encryptionKey = String
 
 type expirationDaysInteger = scala.Double
+
+type foundByList = js.Array[FoundByKeyValue]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AND
+  - typings.awsSdk.awsSdkStrings.OR
+  - java.lang.String
+*/
+type logicalOperator = _logicalOperator | String
 
 type long = scala.Double
 

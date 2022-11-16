@@ -21,5 +21,5 @@ trait Content_
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html#type)
     */
-  val `type`: text | fields | media | attachments | custom_ | expression = js.native
+  val `type`: text | fields | media | attachments | custom_ | expression | typings.arcgisJsApi.arcgisJsApiStrings.relationship = js.native
 }

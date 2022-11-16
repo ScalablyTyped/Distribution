@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Helps you find service areas around any location on a network.
+  * With the Service area service, you can find the area that can be reached from the input location within a given travel time or travel distance.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-serviceArea.html)
   */

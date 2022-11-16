@@ -7,6 +7,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type KnuddelsJson = {[x: string] : knuddels-userapps-api.knuddels-userapps-api.KnuddelsJsonData | undefined}
+}}}
+to avoid circular code involving: 
+- knuddels-userapps-api.knuddels-userapps-api.<global>.KnuddelsJson
+- knuddels-userapps-api.knuddels-userapps-api.<global>.KnuddelsJsonArray
+- knuddels-userapps-api.knuddels-userapps-api.KnuddelsJsonData
+*/
 trait KnuddelsJson
   extends StObject
      with /* x */ StringDictionary[js.UndefOr[KnuddelsJsonData]]

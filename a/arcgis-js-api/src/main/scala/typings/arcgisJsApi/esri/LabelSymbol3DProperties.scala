@@ -28,7 +28,7 @@ trait LabelSymbol3DProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
-  var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.undefined
+  var verticalOffset: js.UndefOr[Symbol3DVerticalOffsetProperties] = js.undefined
 }
 object LabelSymbol3DProperties {
   
@@ -49,7 +49,7 @@ object LabelSymbol3DProperties {
     
     inline def setSymbolLayersVarargs(value: TextSymbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
     
-    inline def setVerticalOffset(value: LabelSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: Symbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
     inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
   }

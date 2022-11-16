@@ -35,7 +35,7 @@ trait CarouselProps extends StObject {
   
   var beforeSlide: js.UndefOr[js.Function2[/* currentSlideIndex */ Double, /* endSlideIndex */ Double, Unit]] = js.undefined
   
-  var cellAlign: js.UndefOr[Alignment] = js.undefined
+  var cellAlign: js.UndefOr[CellAlign] = js.undefined
   
   var cellSpacing: js.UndefOr[Double] = js.undefined
   
@@ -178,7 +178,7 @@ object CarouselProps {
     
     inline def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
     
-    inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+    inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
     
     inline def setCellAlignUndefined: Self = StObject.set(x, "cellAlign", js.undefined)
     

@@ -48,13 +48,13 @@ object libTypescriptLocalSvgMod {
   inline def isUriAnAndroidResourceIdentifier(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUriAnAndroidResourceIdentifier")().asInstanceOf[Boolean]
   inline def isUriAnAndroidResourceIdentifier(uri: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUriAnAndroidResourceIdentifier")(uri.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def loadAndroidRawResource(uri: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAndroidRawResource")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def loadAndroidRawResource(uri: String): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAndroidRawResource")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   @JSImport("react-native-svg/lib/typescript/LocalSvg", "loadLocalRawResource")
   @js.native
-  val loadLocalRawResource: js.Function1[/* source */ ImageSourcePropType, js.Promise[Any]] = js.native
+  val loadLocalRawResource: js.Function1[/* source */ ImageSourcePropType, js.Promise[String | Null]] = js.native
   
-  inline def loadLocalRawResourceAndroid(source: ImageSourcePropType): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLocalRawResourceAndroid")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def loadLocalRawResourceAndroid(source: ImageSourcePropType): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLocalRawResourceAndroid")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   inline def loadLocalRawResourceDefault(source: ImageSourcePropType): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLocalRawResourceDefault")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   

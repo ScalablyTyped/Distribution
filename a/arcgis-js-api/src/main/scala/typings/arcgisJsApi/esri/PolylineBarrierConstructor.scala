@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PolylineBarrierConstructor
   extends StObject
-     with /**
-  * A polyline barrier to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html)
-  */
-Instantiable0[PolylineBarrier]
+     with Instantiable0[PolylineBarrier]
      with Instantiable1[/* properties */ PolylineBarrierProperties, PolylineBarrier] {
   
   /**

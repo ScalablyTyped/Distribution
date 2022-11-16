@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FieldElement
-import typings.arcgisJsApi.esri.FieldElementConstructor
 import typings.arcgisJsApi.esri.FieldElementProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriFormElementsFieldElementMod extends Shortcut {
+/* static members */
+object esriFormElementsFieldElementMod {
   
-  @JSImport("esri/form/elements/FieldElement", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FieldElementConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/form/elements/FieldElement", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriFormElementsFieldElementMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FieldElement {
     def this(properties: FieldElementProperties) = this()
@@ -35,9 +29,9 @@ object esriFormElementsFieldElementMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/form/elements/FieldElement", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FieldElementConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriFormElementsFieldElementMod.foo` */
-  override def _to: js.Object & FieldElementConstructor = ^
+  inline def fromJSON(json: Any): FieldElement = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FieldElement]
 }

@@ -14,6 +14,7 @@ import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
 import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
+import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
@@ -206,6 +207,14 @@ object anon {
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: TaggedEventHandler[cancel],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: TaggedEventHandler[canplay]): Unit = js.native
@@ -1224,6 +1233,14 @@ object anon {
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: EventHandler[cancel],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = js.native
     def apply(
@@ -2087,6 +2104,10 @@ object anon {
     def apply(node: Null, eventName: blur, bubbles: Boolean): Unit = js.native
     def apply(node: Null, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = js.native
     def apply(node: Null, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cancel): Unit = js.native
+    def apply(node: Null, eventName: cancel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
     def apply(node: Null, eventName: canplay): Unit = js.native
     def apply(node: Null, eventName: canplay, bubbles: Boolean): Unit = js.native
     def apply(node: Null, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = js.native
@@ -2487,6 +2508,10 @@ object anon {
     def apply(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, bubbles: Boolean): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = js.native
@@ -2947,6 +2972,14 @@ object anon {
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = js.native
+    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: TaggedEventHandler[cancel],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: TaggedEventHandler[canplay]): Unit = js.native
@@ -3926,7 +3959,7 @@ object anon {
     def apply(
       selector: String,
       handler: EventHandler[
-          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointermove | pointerout | pointerover | pointerup | progress | ratechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
+          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | cancel | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointermove | pointerout | pointerover | pointerup | progress | ratechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
         ]
     ): EventHandler[fullscreenchange] = js.native
   }

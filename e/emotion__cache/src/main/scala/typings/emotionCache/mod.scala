@@ -151,6 +151,15 @@ object mod {
     String | Unit
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StylisPluginCallback = (element : @emotion/cache.@emotion/cache.StylisElement, index : number, children : std.Array<@emotion/cache.@emotion/cache.StylisElement>, callback : @emotion/cache.@emotion/cache.StylisPluginCallback): string | void
+  }}}
+  to avoid circular code involving: 
+  - @emotion/cache.@emotion/cache.StylisPlugin
+  - @emotion/cache.@emotion/cache.StylisPluginCallback
+  */
   @js.native
   trait StylisPluginCallback extends StObject {
     

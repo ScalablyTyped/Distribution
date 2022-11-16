@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,10 +34,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
 import typings.arcgisJsApi.esri.FeatureLayer
-import typings.arcgisJsApi.esri.FeatureLayerConstructor
 import typings.arcgisJsApi.esri.FeatureLayerProperties
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PortalItem
+import typings.arcgisJsApi.esri.PublishingInfo
 import typings.arcgisJsApi.esri.TimeExtent
 import typings.arcgisJsApi.esri.TimeInfo
 import typings.arcgisJsApi.esri.TimeInterval
@@ -46,13 +48,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersFeatureLayerMod extends Shortcut {
+/* static members */
+object esriLayersFeatureLayerMod {
   
-  @JSImport("esri/layers/FeatureLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FeatureLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/FeatureLayer", JSImport.Namespace)
   @js.native
   /**
@@ -60,7 +58,7 @@ object esriLayersFeatureLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FeatureLayer {
     def this(properties: FeatureLayerProperties) = this()
@@ -110,6 +108,14 @@ object esriLayersFeatureLayerMod extends Shortcut {
     var featureEffect: FeatureEffect = js.native
     
     /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
+    
+    /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
       *
       * @default 0
@@ -146,6 +152,14 @@ object esriLayersFeatureLayerMod extends Shortcut {
       */
     /* CompleteClass */
     var portalItem: PortalItem = js.native
+    
+    /**
+      * Checks layer's publishing status while the layer is being published to the portal.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
+      */
+    /* CompleteClass */
+    override val publishingInfo: PublishingInfo = js.native
     
     /**
       * The layer's time extent.
@@ -187,9 +201,9 @@ object esriLayersFeatureLayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
+  @JSImport("esri/layers/FeatureLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FeatureLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersFeatureLayerMod.foo` */
-  override def _to: js.Object & FeatureLayerConstructor = ^
+  inline def fromJSON(json: Any): FeatureLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FeatureLayer]
 }

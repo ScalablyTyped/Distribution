@@ -19,6 +19,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.beforeinput
 import typings.oracleOraclejet.oracleOraclejetStrings.blur
 import typings.oracleOraclejet.oracleOraclejetStrings.borderRadius
 import typings.oracleOraclejet.oracleOraclejetStrings.borderRadiusChanged
+import typings.oracleOraclejet.oracleOraclejetStrings.cancel
 import typings.oracleOraclejet.oracleOraclejetStrings.canplay
 import typings.oracleOraclejet.oracleOraclejetStrings.canplaythrough
 import typings.oracleOraclejet.oracleOraclejetStrings.change
@@ -351,6 +352,14 @@ trait ojGanttTask
   def addEventListener_borderRadiusChanged(
     `type`: borderRadiusChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

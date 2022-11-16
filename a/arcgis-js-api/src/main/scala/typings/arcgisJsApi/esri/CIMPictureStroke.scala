@@ -5,15 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Butt
 import typings.arcgisJsApi.arcgisJsApiStrings.Miter
 import typings.arcgisJsApi.arcgisJsApiStrings.Round
 import typings.arcgisJsApi.arcgisJsApiStrings.Square
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMPictureStroke
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -97,15 +94,8 @@ trait CIMPictureStroke
 }
 object CIMPictureStroke {
   
-  inline def apply(
-    constructor: js.Function,
-    enable: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    url: String,
-    width: Double
-  ): CIMPictureStroke = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(enable: Boolean, url: String, width: Double): CIMPictureStroke = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPictureStroke")
     __obj.asInstanceOf[CIMPictureStroke]
   }

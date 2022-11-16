@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.BoundingBoxCenter
 import typings.arcgisJsApi.arcgisJsApiStrings.CenterOfMass
 import typings.arcgisJsApi.arcgisJsApiStrings.OnPolygon
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMMarkerPlacementPolygonCenter
   extends StObject
-     with Object
      with MarkerPlacement {
   
   /**
@@ -60,12 +57,8 @@ trait CIMMarkerPlacementPolygonCenter
 }
 object CIMMarkerPlacementPolygonCenter {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMMarkerPlacementPolygonCenter = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): CIMMarkerPlacementPolygonCenter = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementPolygonCenter")
     __obj.asInstanceOf[CIMMarkerPlacementPolygonCenter]
   }

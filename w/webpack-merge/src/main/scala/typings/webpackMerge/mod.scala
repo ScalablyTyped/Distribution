@@ -66,6 +66,14 @@ object mod {
   
   inline def unique(key: String, uniques: js.Array[String], getter: js.Function1[/* a */ js.Object, String]): js.Function3[/* a */ js.Array[Any], /* b */ js.Array[Any], /* k */ String, `false` | js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(key.asInstanceOf[js.Any], uniques.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* a */ js.Array[Any], /* b */ js.Array[Any], /* k */ String, `false` | js.Array[Any]]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Rules = {[s: string] : webpack-merge.webpack-merge/dist/types.CustomizeRule | webpack-merge.webpack-merge/dist/types.CustomizeRuleString | webpack-merge.webpack-merge.Rules}
+  }}}
+  to avoid circular code involving: 
+  - webpack-merge.webpack-merge.Rules
+  */
   trait Rules
     extends StObject
        with /* s */ StringDictionary[CustomizeRule | CustomizeRuleString | Rules]

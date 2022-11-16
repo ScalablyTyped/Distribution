@@ -36,6 +36,14 @@ object mod {
     inline def newName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newName")().asInstanceOf[String]
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StyleSpec = {[propOrSelector: string] : string | number | style-mod.style-mod.StyleSpec | null}
+  }}}
+  to avoid circular code involving: 
+  - style-mod.style-mod.StyleSpec
+  */
   trait StyleSpec
     extends StObject
        with /* propOrSelector */ StringDictionary[String | Double | StyleSpec | Null]

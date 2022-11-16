@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleDependentStops
-  extends StObject
-     with Object {
+trait ScaleDependentStops extends StObject {
   
   /**
     * An array of objects that define the size of the icon (or alternatively the width of the polygon outline) at the given scale `value`.
@@ -40,15 +36,8 @@ trait ScaleDependentStops
 }
 object ScaleDependentStops {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    stops: js.Array[SizeStop],
-    `type`: String,
-    valueExpression: String
-  ): ScaleDependentStops = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stops = stops.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
+  inline def apply(stops: js.Array[SizeStop], `type`: String, valueExpression: String): ScaleDependentStops = {
+    val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleDependentStops]
   }

@@ -113,7 +113,7 @@ object errors {
     var received: Double = js.native
     
     // extended properties:
-    var result: IResult = js.native
+    var result: IResult[Any] = js.native
     
     @JSName("stack")
     var stack_QueryResultError: String = js.native

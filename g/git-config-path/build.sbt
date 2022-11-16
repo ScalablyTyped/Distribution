@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "git-config-path"
-version := "2.0-dt-20211202Z-8ca39f"
+version := "2.0-dt-20211202Z-29d8dd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

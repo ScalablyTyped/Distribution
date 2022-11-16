@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait locatorAddressToLocationsParams
-  extends StObject
-     with Object {
+trait locatorAddressToLocationsParams extends StObject {
   
   /**
     * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service.
@@ -89,13 +85,8 @@ trait locatorAddressToLocationsParams
 }
 object locatorAddressToLocationsParams {
   
-  inline def apply(
-    address: Any,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): locatorAddressToLocationsParams = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(address: Any): locatorAddressToLocationsParams = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[locatorAddressToLocationsParams]
   }
   

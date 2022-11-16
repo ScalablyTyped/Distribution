@@ -64,6 +64,20 @@ trait HeatmapRendererProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#referenceScale)
     */
   var referenceScale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression)
+    */
+  var valueExpression: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The title identifying and describing the [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpressionTitle)
+    */
+  var valueExpressionTitle: js.UndefOr[String] = js.undefined
 }
 object HeatmapRendererProperties {
   
@@ -103,5 +117,13 @@ object HeatmapRendererProperties {
     inline def setReferenceScale(value: Double): Self = StObject.set(x, "referenceScale", value.asInstanceOf[js.Any])
     
     inline def setReferenceScaleUndefined: Self = StObject.set(x, "referenceScale", js.undefined)
+    
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

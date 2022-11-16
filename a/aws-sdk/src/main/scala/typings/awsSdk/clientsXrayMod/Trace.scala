@@ -17,7 +17,7 @@ trait Trace extends StObject {
   var Id: js.UndefOr[TraceId] = js.undefined
   
   /**
-    * LimitExceeded is set to true when the trace has exceeded one of the defined quotas. For more information about quotas, see Amazon Web Services X-Ray endpoints and quotas.
+    * LimitExceeded is set to true when the trace has exceeded the Trace document size limit. For more information about this limit and other X-Ray limits and quotas, see Amazon Web Services X-Ray endpoints and quotas.
     */
   var LimitExceeded: js.UndefOr[NullableBoolean] = js.undefined
   

@@ -3,7 +3,6 @@ package typings.awsSdk.clientsWorkdocsMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.ACTIVE
 import typings.awsSdk.awsSdkStrings.ALL
-import typings.awsSdk.awsSdkStrings.HTTPS
 import typings.awsSdk.awsSdkStrings.SHARED_WITH_ME
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -252,6 +251,8 @@ type RolePermissionType = _RolePermissionType | String
 */
 type RoleType = _RoleType | String
 
+type SearchMarkerType = String
+
 type SearchQueryType = String
 
 type SharePrincipalList = js.Array[SharePrincipal]
@@ -284,7 +285,12 @@ type SubscriptionEndPointType = String
 
 type SubscriptionList = js.Array[Subscription]
 
-type SubscriptionProtocolType = HTTPS | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HTTPS
+  - typings.awsSdk.awsSdkStrings.SQS
+  - java.lang.String
+*/
+type SubscriptionProtocolType = _SubscriptionProtocolType | String
 
 type SubscriptionType = ALL | String
 

@@ -35,7 +35,7 @@ trait NavigationToggle
   def toggle(): scala.Unit = js.native
   
   /**
-    * A reference to the SceneView.
+    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#view)
     */

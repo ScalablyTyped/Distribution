@@ -21,6 +21,15 @@ type IDString = String
 
 type JSONArray = js.Array[JSONValue]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JSONValue = string | number | boolean | null | sharedb.sharedb/lib/sharedb.JSONObject | sharedb.sharedb/lib/sharedb.JSONArray
+}}}
+to avoid circular code involving: 
+- sharedb.sharedb/lib/sharedb.JSONArray
+- sharedb.sharedb/lib/sharedb.JSONValue
+*/
 type JSONValue = String | Double | Boolean | Null | JSONObject | Any
 
 type Path = js.Array[String | Double]

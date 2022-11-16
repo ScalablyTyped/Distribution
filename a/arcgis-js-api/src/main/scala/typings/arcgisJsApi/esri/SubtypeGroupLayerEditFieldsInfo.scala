@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerEditFieldsInfo
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerEditFieldsInfo extends StObject {
   
   /**
     * The name of the field that stores the date and time the feature was created.
@@ -40,16 +36,8 @@ trait SubtypeGroupLayerEditFieldsInfo
 }
 object SubtypeGroupLayerEditFieldsInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    creationDateField: String,
-    creatorField: String,
-    editDateField: String,
-    editorField: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubtypeGroupLayerEditFieldsInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], creationDateField = creationDateField.asInstanceOf[js.Any], creatorField = creatorField.asInstanceOf[js.Any], editDateField = editDateField.asInstanceOf[js.Any], editorField = editorField.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(creationDateField: String, creatorField: String, editDateField: String, editorField: String): SubtypeGroupLayerEditFieldsInfo = {
+    val __obj = js.Dynamic.literal(creationDateField = creationDateField.asInstanceOf[js.Any], creatorField = creatorField.asInstanceOf[js.Any], editDateField = editDateField.asInstanceOf[js.Any], editorField = editorField.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerEditFieldsInfo]
   }
   

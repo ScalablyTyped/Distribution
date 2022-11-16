@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RouteInfoConstructor
   extends StObject
-     with /**
-  * A RouteInfo contains information about a solved route including the routes geometry and overall distance and time.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html)
-  */
-Instantiable0[RouteInfo]
+     with Instantiable0[RouteInfo]
      with Instantiable1[/* properties */ RouteInfoProperties, RouteInfo] {
   
   /**

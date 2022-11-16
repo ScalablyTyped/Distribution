@@ -2,15 +2,12 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.Absolute
 import typings.arcgisJsApi.arcgisJsApiStrings.Relative
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMPictureMarker
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -143,15 +140,8 @@ trait CIMPictureMarker
 }
 object CIMPictureMarker {
   
-  inline def apply(
-    constructor: js.Function,
-    enable: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    size: Double,
-    url: String
-  ): CIMPictureMarker = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(enable: Boolean, size: Double, url: String): CIMPictureMarker = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPictureMarker")
     __obj.asInstanceOf[CIMPictureMarker]
   }

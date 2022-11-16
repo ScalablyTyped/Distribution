@@ -79,16 +79,6 @@ open class FormRecord[TControl /* <: AbstractControl[Any, Any] */] protected () 
   def addControl(name: String, control: TControl, options: `0`): Unit = js.native
   
   /**
-    * Patches the value of the `FormRecord`. It accepts an object with control
-    * names as keys, and does its best to match the values to the correct controls
-    * in the group.
-    *
-    * See `FormGroup#patchValue` for additional information.
-    */
-  def patchValue(value: StringDictionary[ɵValue[TControl]]): Unit = js.native
-  def patchValue(value: StringDictionary[ɵValue[TControl]], options: EmitEvent): Unit = js.native
-  
-  /**
     * Registers a control with the records's list of controls.
     *
     * See `FormGroup#registerControl` for additional information.
@@ -105,13 +95,4 @@ open class FormRecord[TControl /* <: AbstractControl[Any, Any] */] protected () 
     */
   def setControl(name: String, control: TControl): Unit = js.native
   def setControl(name: String, control: TControl, options: `0`): Unit = js.native
-  
-  /**
-    * Sets the value of the `FormRecord`. It accepts an object that matches
-    * the structure of the group, with control names as keys.
-    *
-    * See `FormGroup#setValue` for additional information.
-    */
-  def setValue(value: StringDictionary[ɵValue[TControl]]): Unit = js.native
-  def setValue(value: StringDictionary[ɵValue[TControl]], options: EmitEvent): Unit = js.native
 }

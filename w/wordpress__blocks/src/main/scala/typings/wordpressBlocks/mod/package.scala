@@ -253,4 +253,12 @@ inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): /
 
 type BlockAttributes = Record[String, Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type InnerBlockTemplate = [string, @wordpress/blocks.@wordpress/blocks.BlockAttributes | undefined, std.Array<@wordpress/blocks.@wordpress/blocks.InnerBlockTemplate> | undefined]
+}}}
+to avoid circular code involving: 
+- @wordpress/blocks.@wordpress/blocks.InnerBlockTemplate
+*/
 type InnerBlockTemplate = js.Tuple3[String, js.UndefOr[BlockAttributes], js.UndefOr[js.Array[Any]]]

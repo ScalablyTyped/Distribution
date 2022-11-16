@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VertexAddEventInfo
   extends StObject
-     with Object
      with CreateToolEventInfo
      with UpdateToolEventInfo {
   
@@ -36,14 +33,8 @@ trait VertexAddEventInfo
 }
 object VertexAddEventInfo {
   
-  inline def apply(
-    added: js.Array[Double],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    vertices: js.Array[VertexAddEventInfoVertices]
-  ): VertexAddEventInfo = {
-    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertices = vertices.asInstanceOf[js.Any])
+  inline def apply(added: js.Array[Double], vertices: js.Array[VertexAddEventInfoVertices]): VertexAddEventInfo = {
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("vertex-add")
     __obj.asInstanceOf[VertexAddEventInfo]
   }

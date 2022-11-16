@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.Block
 import typings.arcgisJsApi.arcgisJsApiStrings.Crossed
 import typings.arcgisJsApi.arcgisJsApiStrings.OpenEnded
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectArrow
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -39,14 +36,8 @@ trait CIMGeometricEffectArrow
 }
 object CIMGeometricEffectArrow {
   
-  inline def apply(
-    constructor: js.Function,
-    geometricEffectArrowType: OpenEnded | Block | Crossed,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    width: Double
-  ): CIMGeometricEffectArrow = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometricEffectArrowType = geometricEffectArrowType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
+  inline def apply(geometricEffectArrowType: OpenEnded | Block | Crossed, width: Double): CIMGeometricEffectArrow = {
+    val __obj = js.Dynamic.literal(geometricEffectArrowType = geometricEffectArrowType.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectArrow")
     __obj.asInstanceOf[CIMGeometricEffectArrow]
   }

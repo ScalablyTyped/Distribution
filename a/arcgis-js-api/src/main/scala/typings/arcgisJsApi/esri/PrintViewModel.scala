@@ -97,16 +97,6 @@ trait PrintViewModel
   var printServiceUrl: String = js.native
   
   /**
-    * Define whether the printed map should preserve map scale or map extent.
-    *
-    * @default false
-    * @deprecated since version 4.22. Instead, use {@link module:esri/widgets/Print/TemplateOptions#scaleEnabled} if using the Print widget, or {@link module:esri/rest/support/PrintTemplate#scalePreserved} if calling [print()](#print) directly.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#scaleEnabled)
-    */
-  var scaleEnabled: Boolean = js.native
-  
-  /**
     * The view model's state.
     *
     * @default disabled

@@ -1,9 +1,7 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.KVP
 import typings.arcgisJsApi.arcgisJsApiStrings.RESTful
-import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.arcgisJsApi.arcgisJsApiStrings.wmts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,9 +50,6 @@ trait WMTSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#findSublayerById)
     */
   def findSublayerById(id: String): WMTSSublayer = js.native
-  
-  @JSName("on")
-  def on_refresh(name: refresh, eventHandler: WMTSLayerRefreshEventHandler): IHandle = js.native
   
   /**
     * The service mode for the WMTS layer.

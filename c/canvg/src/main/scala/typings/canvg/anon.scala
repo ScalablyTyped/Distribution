@@ -16,9 +16,9 @@ import typings.canvg.distDocumentTextPathElementMod.ICachedPoint
 import typings.canvg.distPathParserMod.PathParser
 import typings.canvg.distPresetsNodeMod.Fetch
 import typings.canvg.distPresetsTypesMod.DOMParser
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.HTMLElement
 import typings.std.ImageBitmap
+import typings.std.OffscreenCanvas
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response

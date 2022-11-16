@@ -132,6 +132,10 @@ object typedQuerySelectorStrings {
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait _underscore
     extends StObject
        with _IdentifierFirstChar

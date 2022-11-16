@@ -15,6 +15,10 @@ object angularFormsStrings {
   inline def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
   
   @js.native
+  sealed trait Dot extends StObject
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
+  
+  @js.native
   sealed trait INVALID
     extends StObject
        with FormControlStatus

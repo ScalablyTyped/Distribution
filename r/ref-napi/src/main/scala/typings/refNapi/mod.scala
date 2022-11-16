@@ -740,7 +740,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     ref-napi.ref-napi.UnderlyingType<T> extends ref-napi.ref-napi.Pointer<infer U> ? ref-napi.ref-napi.Type<U> : never
     }}}
@@ -937,7 +937,7 @@ object mod {
   // Helper type that trims leading and trailing spaces from a string
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     // NOTE: look for double and single space characters to reduce recursion
   S extends / * template literal string:   ${inferU} * / string ? ref-napi.ref-napi.Trim</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U * / any> : S extends / * template literal string:  ${inferU} * / string ? ref-napi.ref-napi.Trim</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U * / any> : S extends / * template literal string: ${inferU}   * / string ? ref-napi.ref-napi.Trim</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U * / any> : S extends / * template literal string: ${inferU}  * / string ? ref-napi.ref-napi.Trim</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U * / any> : S
@@ -1289,7 +1289,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends ref-napi.ref-napi.Type<infer U> ? U : // Allow for user-defined type overrides
   T extends keyof ref-napi.ref-napi.UnderlyingTypeOverrideRegistry ? ref-napi.ref-napi.UnderlyingTypeOverrideRegistry[T] : // Use default type map

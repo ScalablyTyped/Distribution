@@ -1,37 +1,37 @@
 organization := "org.scalablytyped"
 name := "homeworks"
-version := "1.0.50-5c44ca"
+version := "1.0.50-f77661"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-8f5b27",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-27a8c8",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.9-c4304c",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-6a9f2c",
-  "org.scalablytyped" %%% "angular__core" % "14.2.9-e12767",
-  "org.scalablytyped" %%% "angular__forms" % "14.2.9-cdd767",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-efd9cc",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.3-021aec",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-744489",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
-  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
-  "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-ed3b05",
-  "org.scalablytyped" %%% "dependency-graph" % "0.11.0-efd2dc",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
-  "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",
-  "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-6ac0e4",
-  "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-e709b4",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
-  "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")
+  "org.scalablytyped" %%% "ajv" % "8.11.2-3b5adf",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-907acd",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-cb0e83",
+  "org.scalablytyped" %%% "angular__compiler" % "14.2.10-0d3c41",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-5452a5",
+  "org.scalablytyped" %%% "angular__core" % "14.2.10-2cfec3",
+  "org.scalablytyped" %%% "angular__forms" % "14.2.10-21975c",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-61b7b8",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-42cbbf",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-c798fc",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-3669d2",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b1d659",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-8b54ca",
+  "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-192e06",
+  "org.scalablytyped" %%% "dependency-graph" % "0.11.0-e152f4",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-20efda",
+  "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-4430b6",
+  "org.scalablytyped" %%% "magic-string" % "0.26.7-240be7",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "re2" % "1.17.7-7b689a",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-2ac93e",
+  "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-8bcab9",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-224716",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-c99616",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "typescript" % "4.9.3-1dab2c",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-9ebd39")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

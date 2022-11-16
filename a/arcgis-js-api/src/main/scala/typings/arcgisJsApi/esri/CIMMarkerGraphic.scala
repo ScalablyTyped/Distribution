@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMMarkerGraphic
-  extends StObject
-     with Object {
+trait CIMMarkerGraphic extends StObject {
   
   /**
     * The geometry of the marker.
@@ -42,14 +38,8 @@ trait CIMMarkerGraphic
 }
 object CIMMarkerGraphic {
   
-  inline def apply(
-    constructor: js.Function,
-    geometry: Any,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbol: CIMPointSymbol | CIMLineSymbol | CIMPolygonSymbol | CIMTextSymbol
-  ): CIMMarkerGraphic = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
+  inline def apply(geometry: Any, symbol: CIMPointSymbol | CIMLineSymbol | CIMPolygonSymbol | CIMTextSymbol): CIMMarkerGraphic = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMMarkerGraphic")
     __obj.asInstanceOf[CIMMarkerGraphic]
   }

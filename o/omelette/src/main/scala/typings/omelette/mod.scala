@@ -121,6 +121,14 @@ object mod extends Shortcut {
   
   type TreeCallback[V] = js.Function0[V]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreeValue = {[key: string] : omelette.omelette.TreeValue | omelette.omelette.Choices | omelette.omelette.TreeCallback<omelette.omelette.Choices>}
+  }}}
+  to avoid circular code involving: 
+  - omelette.omelette.TreeValue
+  */
   trait TreeValue
     extends StObject
        with /* key */ StringDictionary[TreeValue | Choices | TreeCallback[Choices]]

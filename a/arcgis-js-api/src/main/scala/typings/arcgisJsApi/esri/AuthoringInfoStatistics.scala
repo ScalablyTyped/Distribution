@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthoringInfoStatistics
-  extends StObject
-     with Object {
+trait AuthoringInfoStatistics extends StObject {
   
   /**
     * The maximum data value of the attribute represented by the renderer.
@@ -26,14 +22,8 @@ trait AuthoringInfoStatistics
 }
 object AuthoringInfoStatistics {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AuthoringInfoStatistics = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(max: Double, min: Double): AuthoringInfoStatistics = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthoringInfoStatistics]
   }
   

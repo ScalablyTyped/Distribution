@@ -93,4 +93,12 @@ inline def softline: Softline_ = ^.asInstanceOf[js.Dynamic].selectDynamic("softl
 /** @see [trim](https://github.com/prettier/prettier/blob/main/commands.md#trim) */
 inline def trim: Trim_ = ^.asInstanceOf[js.Dynamic].selectDynamic("trim").asInstanceOf[Trim_]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Doc = string | std.Array<prettier.prettier/doc.builders.Doc> | prettier.prettier/doc.builders.DocCommand
+}}}
+to avoid circular code involving: 
+- prettier.prettier/doc.builders.Doc
+*/
 type Doc = String | js.Array[Any] | DocCommand

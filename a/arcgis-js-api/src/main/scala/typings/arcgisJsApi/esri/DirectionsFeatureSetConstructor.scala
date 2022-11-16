@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DirectionsFeatureSetConstructor
   extends StObject
-     with /**
-  * A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) that has properties specific to routing.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html)
-  */
-Instantiable0[DirectionsFeatureSet]
+     with Instantiable0[DirectionsFeatureSet]
      with Instantiable1[/* properties */ DirectionsFeatureSetProperties, DirectionsFeatureSet] {
   
   def fromJSON(json: Any): DirectionsFeatureSet = js.native

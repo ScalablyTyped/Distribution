@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalConstructor
   extends StObject
-     with /**
-  * The Portal class is part of the [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/) that provides a way to build applications that work with content from [ArcGIS Online](https://www.arcgis.com/home/) or an [ArcGIS Enterprise portal](https://enterprise.arcgis.com/en/portal/).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html)
-  */
-Instantiable0[Portal]
+     with Instantiable0[Portal]
      with Instantiable1[/* properties */ PortalProperties, Portal] {
   
   /**

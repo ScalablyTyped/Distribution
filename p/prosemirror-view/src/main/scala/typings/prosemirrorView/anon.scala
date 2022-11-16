@@ -781,6 +781,10 @@ object anon {
         js.ThisFunction2[/* this */ Any, /* view */ this.type, /* event */ FocusEvent, Boolean | Unit]
       ] = js.undefined
     
+    var cancel: js.UndefOr[
+        js.ThisFunction2[/* this */ Any, /* view */ this.type, /* event */ Event, Boolean | Unit]
+      ] = js.undefined
+    
     var canplay: js.UndefOr[
         js.ThisFunction2[/* this */ Any, /* view */ this.type, /* event */ Event, Boolean | Unit]
       ] = js.undefined
@@ -1215,6 +1219,12 @@ object anon {
       ): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      
+      inline def setCancel(
+        value: js.ThisFunction2[/* this */ Any, eventinkeyofDOMEventMapth, /* event */ Event, Boolean | Unit]
+      ): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       inline def setCanplay(
         value: js.ThisFunction2[/* this */ Any, eventinkeyofDOMEventMapth, /* event */ Event, Boolean | Unit]

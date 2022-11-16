@@ -14,15 +14,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.months
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait sizeCreateAgeRendererParams
-  extends StObject
-     with Object {
+trait sizeCreateAgeRendererParams extends StObject {
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
@@ -145,15 +141,12 @@ trait sizeCreateAgeRendererParams
 object sizeCreateAgeRendererParams {
   
   inline def apply(
-    constructor: js.Function,
     endTime: js.Date | String | Double,
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     startTime: js.Date | String | Double,
     view: View
   ): sizeCreateAgeRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeCreateAgeRendererParams]
   }
   

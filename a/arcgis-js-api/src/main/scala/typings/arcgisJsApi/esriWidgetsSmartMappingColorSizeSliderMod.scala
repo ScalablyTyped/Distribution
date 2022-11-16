@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ColorSizeSlider
-import typings.arcgisJsApi.esri.ColorSizeSliderConstructor
 import typings.arcgisJsApi.esri.ColorSizeSliderProperties
+import typings.arcgisJsApi.esri.HistogramResult
+import typings.arcgisJsApi.esri.univariateColorSizeContinuousRendererResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsSmartMappingColorSizeSliderMod extends Shortcut {
+/* static members */
+object esriWidgetsSmartMappingColorSizeSliderMod {
   
-  @JSImport("esri/widgets/smartMapping/ColorSizeSlider", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ColorSizeSliderConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/smartMapping/ColorSizeSlider", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,20 @@ object esriWidgetsSmartMappingColorSizeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ColorSizeSlider {
     def this(properties: ColorSizeSliderProperties) = this()
   }
+  @JSImport("esri/widgets/smartMapping/ColorSizeSlider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ColorSizeSliderConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsSmartMappingColorSizeSliderMod.foo` */
-  override def _to: js.Object & ColorSizeSliderConstructor = ^
+  /**
+    * A convenience function used to create a ColorSizeSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult) of the [univariateColorSize.createContinuousRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer) method.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#fromRendererResult)
+    */
+  inline def fromRendererResult(rendererResult: univariateColorSizeContinuousRendererResult): ColorSizeSlider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any]).asInstanceOf[ColorSizeSlider]
+  inline def fromRendererResult(rendererResult: univariateColorSizeContinuousRendererResult, histogramResult: HistogramResult): ColorSizeSlider = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any], histogramResult.asInstanceOf[js.Any])).asInstanceOf[ColorSizeSlider]
 }

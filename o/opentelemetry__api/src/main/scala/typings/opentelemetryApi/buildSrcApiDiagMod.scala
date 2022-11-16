@@ -1,9 +1,10 @@
 package typings.opentelemetryApi
 
+import typings.opentelemetryApi.anon.FnCall
 import typings.opentelemetryApi.buildSrcDiagTypesMod.ComponentLoggerOptions
 import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogFunction
-import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogLevel
 import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogger
+import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLoggerApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,8 @@ object buildSrcApiDiagMod {
     */
   /* private */ open class DiagAPI ()
     extends StObject
-       with DiagLogger {
+       with DiagLogger
+       with DiagLoggerApi {
     
     /**
       *
@@ -72,16 +74,8 @@ object buildSrcApiDiagMod {
     @JSName("info")
     var info_Original: DiagLogFunction = js.native
     
-    /**
-      * Set the global DiagLogger and DiagLogLevel.
-      * If a global diag logger is already set, this will override it.
-      *
-      * @param logger - [Optional] The DiagLogger instance to set as the default logger.
-      * @param logLevel - [Optional] The DiagLogLevel used to filter logs sent to the logger. If not provided it will default to INFO.
-      * @returns true if the logger was successfully registered, else false
-      */
-    def setLogger(logger: DiagLogger): Boolean = js.native
-    def setLogger(logger: DiagLogger, logLevel: DiagLogLevel): Boolean = js.native
+    @JSName("setLogger")
+    var setLogger_Original: FnCall = js.native
     
     /**
       * Log a detailed (verbose) trace level logging that can be used to identify failures

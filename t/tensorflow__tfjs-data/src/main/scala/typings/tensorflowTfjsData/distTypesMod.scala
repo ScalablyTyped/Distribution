@@ -155,6 +155,19 @@ object distTypesMod {
   
   type ContainerArray[T] = js.Array[ContainerOrT[T]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ContainerObject = {[x: string] : @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerOrT<T>}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/dataset.DatasetContainer
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/iterators/lazy_iterator.IteratorContainer
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.Container
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerArray
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerObject
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerOrT
+  */
   trait ContainerObject[T]
     extends StObject
        with /* x */ StringDictionary[ContainerOrT[T]]
@@ -166,6 +179,18 @@ object distTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ContainerOrT = @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.Container<T> | T
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/dataset.DatasetContainer
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/iterators/lazy_iterator.IteratorContainer
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.Container
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerArray
+  - @tensorflow/tfjs-data.@tensorflow/tfjs-data/dist/types.ContainerOrT
+  */
   type ContainerOrT[T] = Any | T
   
   type FileElement = File | Blob | js.typedarray.Uint8Array

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unescape-js"
-version := "1.0-dt-20221108Z-f7a07e"
+version := "1.0-dt-20221108Z-763b07"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -25,6 +25,16 @@ type ChildArray = js.Array[Children]
 
 type ChildArrayOrPrimitive = ChildArray | String | Double | Boolean
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Children = mithril.mithril.Child | mithril.mithril.ChildArray
+}}}
+to avoid circular code involving: 
+- mithril.mithril.ChildArray
+- mithril.mithril.ChildArrayOrPrimitive
+- mithril.mithril.Children
+*/
 type Children = Child | Any
 
 /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-set-interval"
-version := "1.0-dt-20211202Z-9b0d64"
+version := "1.0-dt-20211202Z-b55c1d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

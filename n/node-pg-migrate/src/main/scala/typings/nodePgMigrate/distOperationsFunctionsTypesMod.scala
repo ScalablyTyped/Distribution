@@ -34,6 +34,15 @@ object distOperationsFunctionsTypesMod {
     var reverse_Original: CreateFunctionFn = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CreateFunctionFn = (functionName : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Name, functionParams : std.Array<node-pg-migrate.node-pg-migrate/dist/operations/functionsTypes.FunctionParam>, functionOptions : node-pg-migrate.node-pg-migrate/dist/operations/functionsTypes.FunctionOptions & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions, definition : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value): string | std.Array<string>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/functionsTypes.CreateFunctionFn
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  */
   @js.native
   trait CreateFunctionFn extends StObject {
     

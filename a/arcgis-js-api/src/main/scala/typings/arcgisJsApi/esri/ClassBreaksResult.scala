@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassBreaksResult
-  extends StObject
-     with Object {
+trait ClassBreaksResult extends StObject {
   
   /**
     * An array of objects describing the class breaks generated from the [classBreaks()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks) method.
@@ -42,14 +38,11 @@ object ClassBreaksResult {
   
   inline def apply(
     classBreakInfos: js.Array[ClassBreak],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     maxValue: Double,
     minValue: Double,
-    normalizationTotal: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
+    normalizationTotal: Double
   ): ClassBreaksResult = {
-    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], normalizationTotal = normalizationTotal.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], normalizationTotal = normalizationTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassBreaksResult]
   }
   

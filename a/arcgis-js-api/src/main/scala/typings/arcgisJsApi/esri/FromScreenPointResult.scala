@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FromScreenPointResult
-  extends StObject
-     with Object {
+trait FromScreenPointResult extends StObject {
   
   /**
     * The map point of the point associated with the given screen point.
@@ -26,14 +22,8 @@ trait FromScreenPointResult
 }
 object FromScreenPointResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mapPoint: Point,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    vertex: js.Array[Double]
-  ): FromScreenPointResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertex = vertex.asInstanceOf[js.Any])
+  inline def apply(mapPoint: Point, vertex: js.Array[Double]): FromScreenPointResult = {
+    val __obj = js.Dynamic.literal(mapPoint = mapPoint.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromScreenPointResult]
   }
   

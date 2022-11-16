@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClassedSizeSliderConstructor
   extends StObject
-     with /**
-  * The ClassedSizeSlider widget is designed for authoring and exploring data-driven visualizations in any layer that can be rendered with size in a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html)
-  */
-Instantiable0[ClassedSizeSlider]
+     with Instantiable0[ClassedSizeSlider]
      with Instantiable1[/* properties */ ClassedSizeSliderProperties, ClassedSizeSlider] {
   
   /**

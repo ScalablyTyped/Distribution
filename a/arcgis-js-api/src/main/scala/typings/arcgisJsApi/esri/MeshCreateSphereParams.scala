@@ -11,15 +11,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshCreateSphereParams
-  extends StObject
-     with Object {
+trait MeshCreateSphereParams extends StObject {
   
   /**
     * The additional number of subdivisions for generating the mesh representing a sphere.
@@ -60,12 +56,8 @@ trait MeshCreateSphereParams
 }
 object MeshCreateSphereParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshCreateSphereParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshCreateSphereParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshCreateSphereParams]
   }
   

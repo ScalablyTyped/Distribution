@@ -17,15 +17,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.south
 import typings.arcgisJsApi.arcgisJsApiStrings.up
 import typings.arcgisJsApi.arcgisJsApiStrings.west
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshCreatePlaneParams
-  extends StObject
-     with Object {
+trait MeshCreatePlaneParams extends StObject {
   
   /**
     * Direction the plane is facing.
@@ -68,12 +64,8 @@ trait MeshCreatePlaneParams
 }
 object MeshCreatePlaneParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshCreatePlaneParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshCreatePlaneParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshCreatePlaneParams]
   }
   

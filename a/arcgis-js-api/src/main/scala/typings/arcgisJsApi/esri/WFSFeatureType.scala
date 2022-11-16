@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WFSFeatureType
-  extends StObject
-     with Object {
+trait WFSFeatureType extends StObject {
   
   /**
     * The description of the featureType.
@@ -69,19 +65,16 @@ trait WFSFeatureType
 object WFSFeatureType {
   
   inline def apply(
-    constructor: js.Function,
     description: String,
     extent: Extent,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
     namespacePrefix: String,
     namespaceUri: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportedSpatialReferences: js.Array[Double],
     title: String,
     typeName: String
   ): WFSFeatureType = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], namespacePrefix = namespacePrefix.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportedSpatialReferences = supportedSpatialReferences.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespacePrefix = namespacePrefix.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], supportedSpatialReferences = supportedSpatialReferences.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSFeatureType]
   }
   

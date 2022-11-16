@@ -835,6 +835,14 @@ object mod extends Shortcut {
         def versionInfo(): String = js.native
       }
       
+      /** 
+      NOTE: Rewritten from type alias:
+      {{{
+      type ITranslationTable = {[key: string] : string | angular-translate.angular-translate.angular.translate.ITranslationTable}
+      }}}
+      to avoid circular code involving: 
+      - angular-translate.angular-translate.angular.translate.ITranslationTable
+      */
       trait ITranslationTable
         extends StObject
            with /* key */ StringDictionary[String | ITranslationTable]

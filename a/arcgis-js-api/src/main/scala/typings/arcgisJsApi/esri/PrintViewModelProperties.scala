@@ -55,16 +55,6 @@ trait PrintViewModelProperties extends StObject {
   var printServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Define whether the printed map should preserve map scale or map extent.
-    *
-    * @default false
-    * @deprecated since version 4.22. Instead, use {@link module:esri/widgets/Print/TemplateOptions#scaleEnabled} if using the Print widget, or {@link module:esri/rest/support/PrintTemplate#scalePreserved} if calling [print()](#print) directly.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#scaleEnabled)
-    */
-  var scaleEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * An object containing an array of `customTextElements` name-value pair objects for each print template in a custom print service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#templateCustomTextElements)
@@ -123,10 +113,6 @@ object PrintViewModelProperties {
     inline def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
     
     inline def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
-    
-    inline def setScaleEnabled(value: Boolean): Self = StObject.set(x, "scaleEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setScaleEnabledUndefined: Self = StObject.set(x, "scaleEnabled", js.undefined)
     
     inline def setTemplateCustomTextElements(value: js.Array[Any]): Self = StObject.set(x, "templateCustomTextElements", value.asInstanceOf[js.Any])
     

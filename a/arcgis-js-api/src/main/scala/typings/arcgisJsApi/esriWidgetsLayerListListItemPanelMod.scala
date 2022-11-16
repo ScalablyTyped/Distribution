@@ -1,30 +1,18 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ListItem
 import typings.arcgisJsApi.esri.ListItemPanel
-import typings.arcgisJsApi.esri.ListItemPanelConstructor
 import typings.arcgisJsApi.esri.Widget_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsLayerListListItemPanelMod extends Shortcut {
+object esriWidgetsLayerListListItemPanelMod {
   
   @JSImport("esri/widgets/LayerList/ListItemPanel", JSImport.Namespace)
   @js.native
-  val ^ : ListItemPanelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/widgets/LayerList/ListItemPanel", JSImport.Namespace)
-  @js.native
-  /**
-    * This class allows you to display custom content for each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html)
-    */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ListItemPanel {
     
@@ -45,6 +33,14 @@ object esriWidgetsLayerListListItemPanelMod extends Shortcut {
       */
     /* CompleteClass */
     var content: Widget_ | HTMLElement | String | js.Array[Any] = js.native
+    
+    /**
+      * If `true`, disables the ListItem's panel so the user cannot open or interact with it.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#disabled)
+      */
+    /* CompleteClass */
+    var disabled: Boolean = js.native
     
     /**
       * The URL or data URI of an image used to represent the panel.
@@ -90,9 +86,4 @@ object esriWidgetsLayerListListItemPanelMod extends Shortcut {
     /* CompleteClass */
     var visible: Boolean = js.native
   }
-  
-  type _To = ListItemPanelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsLayerListListItemPanelMod.foo` */
-  override def _to: ListItemPanelConstructor = ^
 }

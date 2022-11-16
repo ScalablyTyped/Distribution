@@ -1,11 +1,11 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.ImageBitmap
 import typings.std.ImageData
+import typings.std.OffscreenCanvas
 import typings.std.WebGL2RenderingContext
 import typings.std.WebGLBuffer
 import typings.std.WebGLFramebuffer
@@ -42,8 +42,8 @@ object distWebglMod {
   @js.native
   open class MathBackendWebGL ()
     extends typings.tensorflowTfjsBackendWebgl.distBackendWebglMod.MathBackendWebGL {
-    def this(gpuResource: OffscreenCanvas) = this()
     def this(gpuResource: HTMLCanvasElement) = this()
+    def this(gpuResource: OffscreenCanvas) = this()
     def this(gpuResource: typings.tensorflowTfjsBackendWebgl.distGpgpuContextMod.GPGPUContext) = this()
   }
   /* static members */

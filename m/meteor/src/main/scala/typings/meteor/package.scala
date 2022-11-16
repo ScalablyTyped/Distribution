@@ -14,6 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Callback = js.Function1[/* sink */ Sink, js.Promise[Any] | Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Content = string | std.Array<meteor.Content> | node.NodeJS.ReadableStream | std.HTMLElement
+}}}
+to avoid circular code involving: 
+- meteor.Content
+*/
 type Content = String | js.Array[Any] | ReadableStream | HTMLElement
 
 type EJSON = EJSONable

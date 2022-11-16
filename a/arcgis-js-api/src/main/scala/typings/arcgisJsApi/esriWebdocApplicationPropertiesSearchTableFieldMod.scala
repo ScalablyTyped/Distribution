@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SearchTableField
-import typings.arcgisJsApi.esri.SearchTableFieldConstructor
 import typings.arcgisJsApi.esri.SearchTableFieldProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebdocApplicationPropertiesSearchTableFieldMod extends Shortcut {
+object esriWebdocApplicationPropertiesSearchTableFieldMod {
   
-  @JSImport("esri/webdoc/applicationProperties/SearchTableField", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SearchTableFieldConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/applicationProperties/SearchTableField", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriWebdocApplicationPropertiesSearchTableFieldMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SearchTableField {
     def this(properties: SearchTableFieldProperties) = this()
   }
-  
-  type _To = js.Object & SearchTableFieldConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWebdocApplicationPropertiesSearchTableFieldMod.foo` */
-  override def _to: js.Object & SearchTableFieldConstructor = ^
 }

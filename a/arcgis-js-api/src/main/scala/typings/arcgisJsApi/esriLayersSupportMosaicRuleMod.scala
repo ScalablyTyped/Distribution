@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.MosaicRule
-import typings.arcgisJsApi.esri.MosaicRuleConstructor
 import typings.arcgisJsApi.esri.MosaicRuleProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportMosaicRuleMod extends Shortcut {
+/* static members */
+object esriLayersSupportMosaicRuleMod {
   
-  @JSImport("esri/layers/support/MosaicRule", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MosaicRuleConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/MosaicRule", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportMosaicRuleMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with MosaicRule {
     def this(properties: MosaicRuleProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportMosaicRuleMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/MosaicRule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & MosaicRuleConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportMosaicRuleMod.foo` */
-  override def _to: js.Object & MosaicRuleConstructor = ^
+  inline def fromJSON(json: Any): MosaicRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[MosaicRule]
 }

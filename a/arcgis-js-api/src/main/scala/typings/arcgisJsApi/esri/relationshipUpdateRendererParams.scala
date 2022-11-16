@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait relationshipUpdateRendererParams
-  extends StObject
-     with Object {
+trait relationshipUpdateRendererParams extends StObject {
   
   /**
     * The array of colors to be used by the symbols in the uniqueValueInfos of the renderer.
@@ -56,15 +52,12 @@ object relationshipUpdateRendererParams {
   
   inline def apply(
     colors: js.Array[Color_],
-    constructor: js.Function,
     field1: relationshipUpdateRendererParamsField1,
     field2: relationshipUpdateRendererParamsField2,
-    hasOwnProperty: PropertyKey => Boolean,
     numClasses: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     renderer: UniqueValueRenderer
   ): relationshipUpdateRendererParams = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numClasses = numClasses.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], numClasses = numClasses.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipUpdateRendererParams]
   }
   

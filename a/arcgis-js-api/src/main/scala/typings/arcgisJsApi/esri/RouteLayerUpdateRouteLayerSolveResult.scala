@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteLayerUpdateRouteLayerSolveResult
-  extends StObject
-     with Object {
+trait RouteLayerUpdateRouteLayerSolveResult extends StObject {
   
   /**
     * Collection of direction polylines associated with line segments between turns.
@@ -62,18 +58,15 @@ trait RouteLayerUpdateRouteLayerSolveResult
 object RouteLayerUpdateRouteLayerSolveResult {
   
   inline def apply(
-    constructor: js.Function,
     directionLines: Collection[DirectionLine],
     directionPoints: Collection[DirectionPoint],
-    hasOwnProperty: PropertyKey => Boolean,
     polygonBarriers: Collection[PolygonBarrier],
     polylineBarriers: Collection[PolylineBarrier],
-    propertyIsEnumerable: PropertyKey => Boolean,
     readPointBarriers: Collection[PointBarrier],
     routeInfo: RouteInfo,
     stops: Collection[Stop]
   ): RouteLayerUpdateRouteLayerSolveResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], directionLines = directionLines.asInstanceOf[js.Any], directionPoints = directionPoints.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), readPointBarriers = readPointBarriers.asInstanceOf[js.Any], routeInfo = routeInfo.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directionLines = directionLines.asInstanceOf[js.Any], directionPoints = directionPoints.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], readPointBarriers = readPointBarriers.asInstanceOf[js.Any], routeInfo = routeInfo.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteLayerUpdateRouteLayerSolveResult]
   }
   

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -37,19 +36,14 @@ import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.Sublayer
 import typings.arcgisJsApi.esri.TileLayer
-import typings.arcgisJsApi.esri.TileLayerConstructor
 import typings.arcgisJsApi.esri.TileLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersTileLayerMod extends Shortcut {
+/* static members */
+object esriLayersTileLayerMod {
   
-  @JSImport("esri/layers/TileLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TileLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/TileLayer", JSImport.Namespace)
   @js.native
   /**
@@ -57,7 +51,7 @@ object esriLayersTileLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TileLayer {
     def this(properties: TileLayerProperties) = this()
@@ -160,9 +154,9 @@ object esriLayersTileLayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/TileLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TileLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersTileLayerMod.foo` */
-  override def _to: js.Object & TileLayerConstructor = ^
+  inline def fromJSON(json: Any): TileLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TileLayer]
 }

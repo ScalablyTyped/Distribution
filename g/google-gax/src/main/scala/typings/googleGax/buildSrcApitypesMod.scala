@@ -94,6 +94,15 @@ object buildSrcApitypesMod {
   
   type RawResponseType = Operation_ | js.Object | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RequestType = {[index: string] : string | number | google-gax.google-gax/build/src/apitypes.RequestType | std.Array<string | number | google-gax.google-gax/build/src/apitypes.RequestType>}
+  }}}
+  to avoid circular code involving: 
+  - google-gax.google-gax/build/src/apitypes.RequestType
+  - google-gax.google-gax/build/src/apitypes.SimpleCallbackFunction
+  */
   trait RequestType
     extends StObject
        with /* index */ StringDictionary[String | Double | RequestType | (js.Array[String | Double | RequestType])]

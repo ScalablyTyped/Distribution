@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait typeUniqueValueInfo
-  extends StObject
-     with Object {
+trait typeUniqueValueInfo extends StObject {
   
   /**
     * The number of features with the given `value` (or belonging to the given category).
@@ -40,16 +36,8 @@ trait typeUniqueValueInfo
 }
 object typeUniqueValueInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    count: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    label: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbol: Symbol,
-    value: String | Double
-  ): typeUniqueValueInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(count: Double, label: String, symbol: Symbol, value: String | Double): typeUniqueValueInfo = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeUniqueValueInfo]
   }
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "warn-once"
-version := "0.1.1-421765"
+version := "0.1.1-aee3f1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

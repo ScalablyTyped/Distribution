@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__client-cognito-identity
 
-Typings are for version 3.209.0
+Typings are for version 3.211.0
 
 ## Library description:
 AWS SDK for JavaScript Cognito Identity Client for Node.js, Browser and React Native

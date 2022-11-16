@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decode-named-character-reference"
-version := "1.0.2-314973"
+version := "1.0.2-f9fe41"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

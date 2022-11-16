@@ -179,6 +179,20 @@ object libTransportTeamSpeakQueryMod {
     
     type Response = js.Array[ResponseEntry]
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type ResponseEntry = {[x: string] : ts3-nodejs-library.ts3-nodejs-library/lib/transport/TeamSpeakQuery.TeamSpeakQuery.ValueTypes}
+    }}}
+    to avoid circular code involving: 
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/Command.Command.ResponseParser
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/Command.Command.multiOpts
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/Command.Command.options
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/TeamSpeakQuery.TeamSpeakQuery.Response
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/TeamSpeakQuery.TeamSpeakQuery.ResponseEntry
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/TeamSpeakQuery.TeamSpeakQuery.ValueTypes
+    - ts3-nodejs-library.ts3-nodejs-library/lib/transport/TeamSpeakQuery.TeamSpeakQuery.executeArgs
+    */
     trait ResponseEntry
       extends StObject
          with /* x */ StringDictionary[ValueTypes]

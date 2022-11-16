@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "morsee"
-version := "1.0-dt-20220325Z-359894"
+version := "1.0-dt-20220325Z-705a6e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

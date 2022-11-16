@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.intlifyCoreBase.anon.Number
 import typings.intlifyCoreBase.intlifyCoreBaseBooleans.`false`
+import typings.intlifyCoreBase.intlifyCoreBaseBooleans.`true`
 import typings.intlifyCoreBase.intlifyCoreBaseInts.`15`
 import typings.intlifyCoreBase.intlifyCoreBaseStrings.`en-US`
 import typings.intlifyCoreBase.intlifyCoreBaseStrings.toString
@@ -2258,6 +2259,33 @@ type FallbackLocales[Locales] = Locales | js.Array[Locales] | (/* import warning
 
 type First[T /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [keyof T] extends [never] ? true : false
+  }}}
+  */
+type IsEmptyObject[T] = `true`
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [T] extends [never] ? true : false
+  }}}
+  */
+type IsNever[T] = `true`
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends B ? [B] extends [T] ? false : true : never
+  }}}
+  */
+type IsUnion[T, B] = `false`
+
 type LinkedModifiers[T] = StringDictionary[LinkedModify[T]]
 
 type LinkedModify[T] = js.Function2[/* value */ T, /* type */ String, MessageType[T]]
@@ -2292,9 +2320,27 @@ js.Array[Locale]]
 
 type LocaleMessage[Message] = Record[String, LocaleMessageValue[Message]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends string ? string : T extends (): std.Promise<infer P> ? @intlify/core-base.@intlify/core-base.LocaleMessageDictionary<P, Message> : T extends (args : infer Arguments): any ? (args : Arguments): std.ReturnType<T> : T extends std.Record<string, any> ? @intlify/core-base.@intlify/core-base.LocaleMessageDictionary<T, Message> : T extends std.Array<T> ? {[ K in keyof T ]: T[K]} : T
+  }}}
+  */
+type LocaleMessageType[T, Message] = String
+
 type LocaleMessageValue[Message] = (LocaleMessageDictionary[Any, Message]) | String
 
 type LocaleMessages[Schema, Locales, Message] = LocaleRecord[UnionToTuple[Locales, LastInUnion[Locales]], Schema]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends @intlify/core-base.@intlify/core-base.IsUnion<T, T> ? T : T extends string ? T : R
+  }}}
+  */
+type LocaleParamsType[T, R] = T
 
 type MessageCompiler[Message] = js.Function2[
 /* source */ String, 
@@ -2312,6 +2358,15 @@ type MessageInterpolate[T] = js.Function1[/* val */ Any, MessageType[T]]
 type MessageNormalize[T] = js.Function1[/* values */ js.Array[MessageType[String | T]], MessageType[T | js.Array[T]]]
 
 type MessageResolveFunction[T] = js.Function1[/* key */ String, MessageFunction[T]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends string ? string : @intlify/core-base.@intlify/core-base.StringConvertable<T>
+  }}}
+  */
+type MessageType[T] = T
 
 type MetaInfo = StringDictionary[Any]
 
@@ -2332,11 +2387,48 @@ type NumberFormats[Schema, Locales] = LocaleRecord[UnionToTuple[Locales, LastInU
 
 type Path = String
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type PathValue = string | number | boolean | std.Function | null | {[key: string] : @intlify/core-base.@intlify/core-base.PathValue} | std.Array<@intlify/core-base.@intlify/core-base.PathValue>
+}}}
+to avoid circular code involving: 
+- @intlify/core-base.@intlify/core-base.PathValue
+*/
 type PathValue = String | Double | Boolean | js.Function | Null | StringDictionary[Any] | js.Array[Any]
 
 type PickupFallbackLocales[T /* <: js.Array[Any] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any) | (/* template literal string: ${T[number]}! */ String)
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends string ? @intlify/core-base.@intlify/core-base.ResourceFormatPath<T[K]> : never
+  }}}
+  */
+type PickupFormatKeys[T /* <: Record[String, Any] */, K] = _ResourceFormatPath[
+/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
+
 type PickupFormatPathKeys[T /* <: js.Object */] = ResourceFormatPath[T]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends string ? @intlify/core-base.@intlify/core-base.ResourcePath<T[K]> : never
+  }}}
+  */
+type PickupKeys[T /* <: Record[String, Any] */, K] = _ResourcePath[
+/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends string ? K : never
+  }}}
+  */
+type PickupLocales[T /* <: Record[String, Any] */, K] = K
 
 type PickupPaths[T /* <: js.Object */] = ResourcePath[T]
 
@@ -2344,6 +2436,60 @@ type PluralizationRules = StringDictionary[PluralizationRule]
 
 type PostTranslationHandler[Message] = js.Function2[/* translated */ MessageType[Message], /* key */ String, MessageType[Message]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  @intlify/core-base.@intlify/core-base._ResourceFormatPath<T> extends string | keyof T ? @intlify/core-base.@intlify/core-base._ResourceFormatPath<T> : keyof T
+  }}}
+  */
+type ResourceFormatPath[T] = _ResourceFormatPath[T]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  @intlify/core-base.@intlify/core-base._ResourcePath<T> extends string | keyof T ? @intlify/core-base.@intlify/core-base._ResourcePath<T> : keyof T
+  }}}
+  */
+type ResourcePath[T] = _ResourcePath[T]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  @intlify/core-base.@intlify/core-base.ExtractToStringKey<T> extends never ? unknown : @intlify/core-base.@intlify/core-base.ExtractToStringFunction<T> extends (args : any): string ? T : unknown
+  }}}
+  */
+type StringConvertable[T] = T
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [U] extends [never] ? [] : [...@intlify/core-base.@intlify/core-base.UnionToTuple<std.Exclude<U, Last>, @intlify/core-base.@intlify/core-base.LastInUnion<std.Exclude<U, Last>>>, Last]
+  }}}
+  */
+type UnionToTuple[U, Last] = js.Array[Any]
+
 type _ResourceFormatPath[T] = (__ResourceFormatPath[T, /* keyof T */ String]) | (/* keyof T */ String)
 
 type _ResourcePath[T] = (__ResourcePath[T, /* keyof T */ String]) | (/* keyof T */ String)
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Key extends string ? T[Key] extends std.Record<string, any> ? / * template literal string: ${Key} * / string : never : never
+  }}}
+  */
+type __ResourceFormatPath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key} */ String
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Key extends string ? T[Key] extends std.Record<string, any> ? / * template literal string: ${Key}.${__ResourcePath<T[Key],Exclude<keyofT[Key],keyofany[]>>&string} * / string : never : never
+  }}}
+  */
+type __ResourcePath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key}.${__ResourcePath<T[Key],Exclude<keyofT[Key],keyofany[]>>&string} */ String

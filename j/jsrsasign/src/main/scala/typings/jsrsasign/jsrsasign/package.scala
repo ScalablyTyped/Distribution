@@ -10,6 +10,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ASN1HEXParseResult = {  bool :boolean} | {  int :{  hex :string}} | {  bitstr :{  obj :jsrsasign.jsrsasign.ASN1HEXParseResult}} | {  bitstr :{  hex :string}} | {  bitstr :{  bin :string}} | {  octstr :{  obj :jsrsasign.jsrsasign.ASN1HEXParseResult}} | {  octstr :{  hex :string}} | {  null :''} | {  oid :string} | {  enum :{  hex :string}} | {  enum :number} | {[tagName: string] : std.Array<jsrsasign.jsrsasign.ASN1HEXParseResult>} | {[tagName: string] : {  str :string}} | {  tag :{  tag :string,   explicit :boolean,   hex :string}} | {  tag :{  tag :string,   explicit :false,   str :string}} | {  tag :{  tag :string,   explicit :true,   obj :jsrsasign.jsrsasign.ASN1HEXParseResult}} | {  asn1 :{  tlv :string}} | std.Array<jsrsasign.jsrsasign.ASN1HEXParseResult>
+}}}
+to avoid circular code involving: 
+- jsrsasign.jsrsasign.ASN1HEXParseResult
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.jsrsasign.anon.Bool
   - typings.jsrsasign.anon.IntHex

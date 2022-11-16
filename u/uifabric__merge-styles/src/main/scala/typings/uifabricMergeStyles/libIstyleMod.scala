@@ -22,6 +22,15 @@ object libIstyleMod {
   */
   type IStyleBase = js.UndefOr[_IStyleBase | String | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type IStyleBaseArray = std.Array<@uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle>
+  }}}
+  to avoid circular code involving: 
+  - @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle
+  - @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyleBaseArray
+  */
   @js.native
   trait IStyleBaseArray
     extends StObject

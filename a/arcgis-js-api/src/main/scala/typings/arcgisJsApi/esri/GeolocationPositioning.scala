@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeolocationPositioning extends StObject {
   
   /**
-    * The HTML5 Geolocation Position options for locating.
+    * An object used for setting optional position parameters.
     *
-    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
@@ -32,7 +32,7 @@ trait GeolocationPositioning extends StObject {
   var graphic: Graphic
   
   /**
-    * The scale to set on the view when navigating to the position of the geolocated result.
+    * Indicates the scale to set on the view when navigating to the position of the geolocated result, after a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#event-track) event.
     *
     * @default null
     *

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshVertexAttributesProperties
-  extends StObject
-     with Object {
+trait MeshVertexAttributesProperties extends StObject {
   
   /**
     * **Since: 4.9**  A flat array of the vertex colors (4 elements per vertex ranging from 0 to 255).
@@ -47,12 +43,8 @@ trait MeshVertexAttributesProperties
 }
 object MeshVertexAttributesProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshVertexAttributesProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshVertexAttributesProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshVertexAttributesProperties]
   }
   

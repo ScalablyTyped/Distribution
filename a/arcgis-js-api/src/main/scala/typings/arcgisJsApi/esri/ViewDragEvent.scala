@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiInts.`0`
+import typings.arcgisJsApi.arcgisJsApiInts.`1`
+import typings.arcgisJsApi.arcgisJsApiInts.`2`
 import typings.arcgisJsApi.arcgisJsApiStrings.added
 import typings.arcgisJsApi.arcgisJsApiStrings.drag
 import typings.arcgisJsApi.arcgisJsApiStrings.end
@@ -16,7 +19,7 @@ trait ViewDragEvent extends StObject {
   
   var angle: Double
   
-  var button: Any
+  var button: `0` | `1` | `2`
   
   var buttons: Double
   
@@ -41,7 +44,7 @@ object ViewDragEvent {
   inline def apply(
     action: start | added | update | removed | end,
     angle: Double,
-    button: Any,
+    button: `0` | `1` | `2`,
     buttons: Double,
     native: Any,
     origin: ViewDragEventOrigin,
@@ -62,7 +65,7 @@ object ViewDragEvent {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    inline def setButton(value: Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: `0` | `1` | `2`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

@@ -39,11 +39,13 @@ object CustomContentProperties {
   
   extension [Self <: CustomContentProperties](x: Self) {
     
-    inline def setCreator(value: /* graphic */ Graphic => String | HTMLElement | Widget_ | js.Promise[Any]): Self = StObject.set(x, "creator", js.Any.fromFunction1(value))
+    inline def setCreator(
+      value: /* event */ js.UndefOr[PopupTemplateCreatorEvent] => String | HTMLElement | Widget_ | js.Promise[Any]
+    ): Self = StObject.set(x, "creator", js.Any.fromFunction1(value))
     
     inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    inline def setDestroyer(value: /* graphic */ Graphic => scala.Unit): Self = StObject.set(x, "destroyer", js.Any.fromFunction1(value))
+    inline def setDestroyer(value: /* event */ js.UndefOr[PopupTemplateCreatorEvent] => scala.Unit): Self = StObject.set(x, "destroyer", js.Any.fromFunction1(value))
     
     inline def setDestroyerUndefined: Self = StObject.set(x, "destroyer", js.undefined)
     

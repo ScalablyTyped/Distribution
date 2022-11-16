@@ -8,7 +8,7 @@ object esVersionedTypesTs47MergeParametersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     N extends keyof T ? T[N] : unknown
     }}}
@@ -38,7 +38,7 @@ object esVersionedTypesTs47MergeParametersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [] ? unknown : T extends [infer H, ...infer T] ? H & reselect.reselect/es/versionedTypes/ts47-mergeParameters.Intersect<T> : T[number]
     }}}
@@ -48,7 +48,7 @@ object esVersionedTypesTs47MergeParametersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [infer U] ? U : T extends [infer U, ...infer R] ? reselect.reselect/es/versionedTypes/ts47-mergeParameters.MostProperties<U, reselect.reselect/es/versionedTypes/ts47-mergeParameters.LongestTuple<R>> : never
     }}}
@@ -58,13 +58,12 @@ object esVersionedTypesTs47MergeParametersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     '0' extends keyof T ? reselect.reselect/es/versionedTypes/ts47-mergeParameters.MergeTuples<reselect.reselect/es/versionedTypes/ts47-mergeParameters.ExtractParameters<T>, reselect.reselect/es/versionedTypes/ts47-mergeParameters.LongestTuple<reselect.reselect/es/versionedTypes/ts47-mergeParameters.ExtractParameters<T>>> : std.Parameters<T[number]>
     }}}
     */
-  @js.native
-  trait MergeParameters[T /* <: js.Array[UnknownFunction] */] extends StObject
+  type MergeParameters[T /* <: js.Array[UnknownFunction] */] = MergeTuples[ExtractParameters[T], LongestTuple[ExtractParameters[T]]]
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -78,13 +77,12 @@ object esVersionedTypesTs47MergeParametersMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof U extends keyof T ? T : U
     }}}
     */
-  @js.native
-  trait MostProperties[T, U] extends StObject
+  type MostProperties[T, U] = T
   
   @js.native
   trait UnknownFunction extends StObject {

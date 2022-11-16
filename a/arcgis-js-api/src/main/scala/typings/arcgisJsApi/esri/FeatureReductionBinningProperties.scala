@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureReductionBinningProperties extends StObject {
   
   /**
-    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) of features contained within each bin.
+    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) from features contained within each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fields)
     */
@@ -56,6 +56,13 @@ trait FeatureReductionBinningProperties extends StObject {
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * The renderer used to style the bins.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#renderer)
+    */
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
+  /**
     * The feature reduction type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#type)
@@ -98,6 +105,10 @@ object FeatureReductionBinningProperties {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     inline def setType(value: binning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

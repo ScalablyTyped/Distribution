@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TerminalConstructor
   extends StObject
-     with /**
-  * A device feature can be assigned a terminal configuration, which could have one or more terminals.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html)
-  */
-Instantiable0[Terminal]
+     with Instantiable0[Terminal]
      with Instantiable1[/* properties */ TerminalProperties, Terminal] {
   
   def fromJSON(json: Any): Terminal = js.native

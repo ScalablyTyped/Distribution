@@ -26,6 +26,15 @@ object apiTemplatesMod {
   
   type Template = js.Tuple3[String, js.UndefOr[Record[String, Any]], js.UndefOr[TemplateArray]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TemplateArray = std.ReadonlyArray<@wordpress/blocks.@wordpress/blocks/api/templates.Template>
+  }}}
+  to avoid circular code involving: 
+  - @wordpress/blocks.@wordpress/blocks/api/templates.Template
+  - @wordpress/blocks.@wordpress/blocks/api/templates.TemplateArray
+  */
   @js.native
   trait TemplateArray
     extends StObject

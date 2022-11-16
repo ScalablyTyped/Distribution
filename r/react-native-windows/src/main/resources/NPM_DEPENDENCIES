@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-windows" : "0.70.5"
+      "react-native-windows" : "0.70.6"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-windows" : "0.70.5"
+      "react-native-windows" : "0.70.6"
     }
   ],
   "compile-devDependencies" : [

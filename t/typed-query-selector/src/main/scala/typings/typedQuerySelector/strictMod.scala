@@ -1,6 +1,7 @@
 package typings.typedQuerySelector
 
 import typings.std.Uppercase
+import typings.typedQuerySelector.typedQuerySelectorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,33 +62,30 @@ object strictMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferH}${inferRest} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H * / any extends typed-query-selector.typed-query-selector/strict.IdentifierChar ? typed-query-selector.typed-query-selector/strict.IsValidRestChars</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : false : true
     }}}
     */
-  @js.native
-  trait IsValidRestChars[S /* <: String */] extends StObject
+  type IsValidRestChars[S /* <: String */] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferH}${inferRest} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H * / any extends typed-query-selector.typed-query-selector/strict.IdentifierFirstChar ? typed-query-selector.typed-query-selector/strict.IsValidRestChars</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : false : false
     }}}
     */
-  @js.native
-  trait IsValidTagName[S] extends StObject
+  type IsValidTagName[S] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends [infer H, ...infer Rest] ? H extends '' | '*' ? typed-query-selector.typed-query-selector/strict.IsValidTags<Rest> : typed-query-selector.typed-query-selector/strict.IsValidTagName<H> extends true ? typed-query-selector.typed-query-selector/strict.IsValidTags<Rest> : false : true
     }}}
     */
-  @js.native
-  trait IsValidTags[S] extends StObject
+  type IsValidTags[S] = `true`
   
   // Specification is here: https://drafts.csswg.org/css-syntax-3/#ident-token-diagram
   // but we don't plan to comply that fully,
@@ -181,7 +179,7 @@ object strictMod {
   // no characters left, so it's OK
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     typed-query-selector.typed-query-selector/parser.ParseSelectorToTagNames<S> extends infer Tags ? Tags extends [] ? typed-query-selector.typed-query-selector/parser.TagNameToElement<'', typed-query-selector.typed-query-selector/strict.<global>.Element> : Tags extends std.Array<string> ? typed-query-selector.typed-query-selector/strict.IsValidTags<Tags> extends true ? typed-query-selector.typed-query-selector/parser.TagNameToElement<Tags[number], typed-query-selector.typed-query-selector/strict.<global>.Element> : never : never : never
     }}}

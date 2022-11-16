@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.AggregatedGeometry
-import typings.arcgisJsApi.esri.AggregatedGeometryConstructor
 import typings.arcgisJsApi.esri.AggregatedGeometryProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestNetworksSupportAggregatedGeometryMod extends Shortcut {
+/* static members */
+object esriRestNetworksSupportAggregatedGeometryMod {
   
-  @JSImport("esri/rest/networks/support/AggregatedGeometry", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & AggregatedGeometryConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/networks/support/AggregatedGeometry", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestNetworksSupportAggregatedGeometryMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with AggregatedGeometry {
     def this(properties: AggregatedGeometryProperties) = this()
@@ -35,9 +29,9 @@ object esriRestNetworksSupportAggregatedGeometryMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/networks/support/AggregatedGeometry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & AggregatedGeometryConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestNetworksSupportAggregatedGeometryMod.foo` */
-  override def _to: js.Object & AggregatedGeometryConstructor = ^
+  inline def fromJSON(json: Any): AggregatedGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AggregatedGeometry]
 }

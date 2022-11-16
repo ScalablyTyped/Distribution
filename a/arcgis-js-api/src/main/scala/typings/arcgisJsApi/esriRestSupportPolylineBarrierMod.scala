@@ -1,20 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
+import typings.arcgisJsApi.esri.Graphic
 import typings.arcgisJsApi.esri.PolylineBarrier
-import typings.arcgisJsApi.esri.PolylineBarrierConstructor
 import typings.arcgisJsApi.esri.PolylineBarrierProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportPolylineBarrierMod extends Shortcut {
+/* static members */
+object esriRestSupportPolylineBarrierMod {
   
-  @JSImport("esri/rest/support/PolylineBarrier", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PolylineBarrierConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/PolylineBarrier", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +17,7 @@ object esriRestSupportPolylineBarrierMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PolylineBarrier {
     def this(properties: PolylineBarrierProperties) = this()
@@ -35,9 +30,17 @@ object esriRestSupportPolylineBarrierMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/PolylineBarrier", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PolylineBarrierConstructor
+  /**
+    * Creates a [PolylineBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html#fromGraphic)
+    */
+  inline def fromGraphic(): PolylineBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")().asInstanceOf[PolylineBarrier]
+  inline def fromGraphic(graphic: Graphic): PolylineBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")(graphic.asInstanceOf[js.Any]).asInstanceOf[PolylineBarrier]
   
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportPolylineBarrierMod.foo` */
-  override def _to: js.Object & PolylineBarrierConstructor = ^
+  inline def fromJSON(json: Any): PolylineBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PolylineBarrier]
 }

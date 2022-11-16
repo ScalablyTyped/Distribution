@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PredominanceSchemeForPolyline
   extends StObject
-     with Object
      with PredominanceScheme {
   
   /**
@@ -64,17 +61,14 @@ object PredominanceSchemeForPolyline {
   
   inline def apply(
     colors: js.Array[Color_],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
     noDataColor: Color_,
     opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     sizeScheme: SizeSchemeForPolyline,
     tags: js.Array[String],
     width: Double
   ): PredominanceSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], sizeScheme = sizeScheme.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredominanceSchemeForPolyline]
   }
   

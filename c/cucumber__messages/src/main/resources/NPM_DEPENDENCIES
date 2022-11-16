@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/messages" : "19.1.4"
+      "@cucumber/messages" : "20.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/messages" : "19.1.4"
+      "@cucumber/messages" : "20.0.0"
     }
   ],
   "compile-devDependencies" : [

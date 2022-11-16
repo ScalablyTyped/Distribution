@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AggregateFieldConstructor
   extends StObject
-     with /**
-  * Defines the aggregate fields used in a layer visualized with [binning](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AggregateField.html)
-  */
-Instantiable0[AggregateField]
+     with Instantiable0[AggregateField]
      with Instantiable1[/* properties */ AggregateFieldProperties, AggregateField] {
   
   def fromJSON(json: Any): AggregateField = js.native

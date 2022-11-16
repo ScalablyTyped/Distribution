@@ -1,8 +1,11 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
+import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
 import typings.reactBootstrap.libDropdownMod.DropdownBaseProps
+import typings.reactBootstrap.mod.Omit
+import typings.reactBootstrap.reactBootstrapStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,15 +58,14 @@ object libNavDropdownMod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown>[P]} */ trait NavDropdownProps
-    extends StObject
-       with NavDropdownBaseProps
-  object NavDropdownProps {
-    
-    inline def apply(id: String): NavDropdownProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NavDropdownProps]
-    }
-  }
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NavDropdownProps = react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdownBaseProps & react-bootstrap.react-bootstrap.Omit<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown>, 'title'>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown
+  - react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdownProps
+  */
+  type NavDropdownProps = NavDropdownBaseProps & (Omit[HTMLProps[Any], title])
 }

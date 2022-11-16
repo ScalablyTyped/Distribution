@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unidecode"
-version := "0.1-dt-20211202Z-49fe6d"
+version := "0.1-dt-20211202Z-a23e51"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

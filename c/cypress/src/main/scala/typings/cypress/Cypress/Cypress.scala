@@ -664,7 +664,7 @@ trait Cypress extends StObject {
     })
     ```
     */
-  def config(Object: ConfigOptions[Any]): Unit = js.native
+  def config(Object: TestConfigOverrides): Unit = js.native
   @JSName("config")
   def config_animationDistanceThreshold(key: animationDistanceThreshold): Unit = js.native
   @JSName("config")

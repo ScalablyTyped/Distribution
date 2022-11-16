@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KMLLayerConstructor
   extends StObject
-     with /**
-  * The KMLLayer class is used to create a layer based on a KML file (.kml, .kmz).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html)
-  */
-Instantiable0[KMLLayer]
+     with Instantiable0[KMLLayer]
      with Instantiable1[/* properties */ KMLLayerProperties, KMLLayer] {
   
   def fromJSON(json: Any): KMLLayer = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-headroom
 
-Typings are for version 2.2
+Typings are for version 3.2
 
 ## Library description:
 Hide your header until you need it. React.js port of headroom.js

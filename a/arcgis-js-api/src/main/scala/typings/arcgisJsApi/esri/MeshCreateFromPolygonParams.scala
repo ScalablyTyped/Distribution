@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshCreateFromPolygonParams
-  extends StObject
-     with Object {
+trait MeshCreateFromPolygonParams extends StObject {
   
   /**
     * The material to be used for the mesh.
@@ -19,12 +15,8 @@ trait MeshCreateFromPolygonParams
 }
 object MeshCreateFromPolygonParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshCreateFromPolygonParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshCreateFromPolygonParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshCreateFromPolygonParams]
   }
   

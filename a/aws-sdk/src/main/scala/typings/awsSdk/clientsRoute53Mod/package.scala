@@ -99,6 +99,7 @@ type CloudWatchLogsLogGroupArn = String
   - typings.awsSdk.awsSdkStrings.`cn-north-1`
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
+  - typings.awsSdk.awsSdkStrings.`eu-south-2`
   - typings.awsSdk.awsSdkStrings.`us-gov-west-1`
   - typings.awsSdk.awsSdkStrings.`us-gov-east-1`
   - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
@@ -353,6 +354,7 @@ type ResourceRecordSetMultiValueAnswer = Boolean
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
+  - typings.awsSdk.awsSdkStrings.`eu-south-2`
   - java.lang.String
 */
 type ResourceRecordSetRegion = _ResourceRecordSetRegion | String
@@ -491,6 +493,7 @@ type VPCId = String
   - typings.awsSdk.awsSdkStrings.`cn-north-1`
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
+  - typings.awsSdk.awsSdkStrings.`eu-south-2`
   - java.lang.String
 */
 type VPCRegion = _VPCRegion | String

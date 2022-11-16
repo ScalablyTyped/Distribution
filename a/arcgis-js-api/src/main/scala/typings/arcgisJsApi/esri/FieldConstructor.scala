@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldConstructor
   extends StObject
-     with /**
-  * Information about each field in a layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html)
-  */
-Instantiable0[Field]
+     with Instantiable0[Field]
      with Instantiable1[/* properties */ FieldProperties, Field] {
   
   def fromJSON(json: Any): Field = js.native

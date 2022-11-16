@@ -1,5 +1,15 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`feature-reduction-popup-element`
+import typings.arcgisJsApi.arcgisJsApiStrings.`feature-reduction-popup`
+import typings.arcgisJsApi.arcgisJsApiStrings.`feature-z`
+import typings.arcgisJsApi.arcgisJsApiStrings.`field-calculation`
+import typings.arcgisJsApi.arcgisJsApiStrings.`form-calculation`
+import typings.arcgisJsApi.arcgisJsApiStrings.`popup-element`
+import typings.arcgisJsApi.arcgisJsApiStrings.constraint
+import typings.arcgisJsApi.arcgisJsApiStrings.labeling
+import typings.arcgisJsApi.arcgisJsApiStrings.popup
+import typings.arcgisJsApi.arcgisJsApiStrings.visualization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,16 +27,32 @@ trait arcade extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeExecutor)
     */
   def createArcadeExecutor(script: String, profile: Profile): js.Promise[ArcadeExecutor]
+  
+  /**
+    * Creates a [Profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#Profile) definition for an Arcade profile implemented in the ArcGIS API for JavaScript.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeProfile)
+    */
+  def createArcadeProfile(
+    profileName: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
+  ): Profile
 }
 object arcade {
   
-  inline def apply(createArcadeExecutor: (String, Profile) => js.Promise[ArcadeExecutor]): arcade = {
-    val __obj = js.Dynamic.literal(createArcadeExecutor = js.Any.fromFunction2(createArcadeExecutor))
+  inline def apply(
+    createArcadeExecutor: (String, Profile) => js.Promise[ArcadeExecutor],
+    createArcadeProfile: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization => Profile
+  ): arcade = {
+    val __obj = js.Dynamic.literal(createArcadeExecutor = js.Any.fromFunction2(createArcadeExecutor), createArcadeProfile = js.Any.fromFunction1(createArcadeProfile))
     __obj.asInstanceOf[arcade]
   }
   
   extension [Self <: arcade](x: Self) {
     
     inline def setCreateArcadeExecutor(value: (String, Profile) => js.Promise[ArcadeExecutor]): Self = StObject.set(x, "createArcadeExecutor", js.Any.fromFunction2(value))
+    
+    inline def setCreateArcadeProfile(
+      value: constraint | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization => Profile
+    ): Self = StObject.set(x, "createArcadeProfile", js.Any.fromFunction1(value))
   }
 }

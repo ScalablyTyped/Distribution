@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapUpdateFromOptions
-  extends StObject
-     with Object {
+trait WebMapUpdateFromOptions extends StObject {
   
   /**
     * When `true`, the view's background will not be updated for the webmap.
@@ -54,12 +50,8 @@ trait WebMapUpdateFromOptions
 }
 object WebMapUpdateFromOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WebMapUpdateFromOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): WebMapUpdateFromOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebMapUpdateFromOptions]
   }
   

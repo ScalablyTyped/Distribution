@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LocationSchemeForPolyline
   extends StObject
-     with Object
      with LocationScheme {
   
   /**
@@ -34,15 +31,8 @@ trait LocationSchemeForPolyline
 }
 object LocationSchemeForPolyline {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    width: Double
-  ): LocationSchemeForPolyline = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
+  inline def apply(color: Color_, opacity: Double, width: Double): LocationSchemeForPolyline = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationSchemeForPolyline]
   }
   

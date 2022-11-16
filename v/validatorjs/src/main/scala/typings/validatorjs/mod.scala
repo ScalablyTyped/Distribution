@@ -28,6 +28,14 @@ object mod extends Shortcut {
   
   type AttributeNames = StringDictionary[String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ErrorMessages = {[key: string] : string | validatorjs.validatorjs.ErrorMessages}
+  }}}
+  to avoid circular code involving: 
+  - validatorjs.validatorjs.ErrorMessages
+  */
   trait ErrorMessages
     extends StObject
        with /* key */ StringDictionary[String | ErrorMessages]
@@ -98,6 +106,14 @@ object mod extends Shortcut {
     Boolean
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Rules = {[attribute: string] : string | std.Array<string | validatorjs.validatorjs.TypeCheckingRule> | validatorjs.validatorjs.Rules}
+  }}}
+  to avoid circular code involving: 
+  - validatorjs.validatorjs.Rules
+  */
   trait Rules
     extends StObject
        with /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules]

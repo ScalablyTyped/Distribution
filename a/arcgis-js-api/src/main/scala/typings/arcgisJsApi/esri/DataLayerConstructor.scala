@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DataLayerConstructor
   extends StObject
-     with /**
-  * Input for properties of ClosestFacilityParameters, RouteParameters or ServiceAreaParameters.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html)
-  */
-Instantiable0[DataLayer]
+     with Instantiable0[DataLayer]
      with Instantiable1[/* properties */ DataLayerProperties, DataLayer] {
   
   def fromJSON(json: Any): DataLayer = js.native

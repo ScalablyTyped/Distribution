@@ -141,6 +141,14 @@ inline def when(ref: Schema, options: WhenSchemaOptions): AlternativesSchema = (
 
 type ExtensionBoundSchema = Schema & CreateError
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type LanguageOptions = string | boolean | null | {[key: string] : react-native-joi.react-native-joi.LanguageOptions}
+}}}
+to avoid circular code involving: 
+- react-native-joi.react-native-joi.LanguageOptions
+*/
 type LanguageOptions = String | Boolean | Null | StringDictionary[Any]
 
 type LazySchema = AnySchema

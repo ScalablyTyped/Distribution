@@ -11,27 +11,29 @@ object ModifierFlags extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.typescript.mod.ModifierFlags & Double] = js.native
   
-  /* 128 */ val Abstract: typings.typescript.mod.ModifierFlags.Abstract & Double = js.native
+  /* 256 */ val Abstract: typings.typescript.mod.ModifierFlags.Abstract & Double = js.native
   
   /* 28 */ val AccessibilityModifier: typings.typescript.mod.ModifierFlags.AccessibilityModifier & Double = js.native
   
-  /* 257023 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
+  /* 128 */ val Accessor: typings.typescript.mod.ModifierFlags.Accessor & Double = js.native
+  
+  /* 258047 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
   
   /* 2 */ val Ambient: typings.typescript.mod.ModifierFlags.Ambient & Double = js.native
   
-  /* 256 */ val Async: typings.typescript.mod.ModifierFlags.Async & Double = js.native
+  /* 512 */ val Async: typings.typescript.mod.ModifierFlags.Async & Double = js.native
   
   /* 2048 */ val Const: typings.typescript.mod.ModifierFlags.Const & Double = js.native
   
   /* 131072 */ val Decorator: typings.typescript.mod.ModifierFlags.Decorator & Double = js.native
   
-  /* 512 */ val Default: typings.typescript.mod.ModifierFlags.Default & Double = js.native
+  /* 1024 */ val Default: typings.typescript.mod.ModifierFlags.Default & Double = js.native
   
   /* 8192 */ val Deprecated: typings.typescript.mod.ModifierFlags.Deprecated & Double = js.native
   
   /* 1 */ val Export: typings.typescript.mod.ModifierFlags.Export & Double = js.native
   
-  /* 513 */ val ExportDefault: typings.typescript.mod.ModifierFlags.ExportDefault & Double = js.native
+  /* 1025 */ val ExportDefault: typings.typescript.mod.ModifierFlags.ExportDefault & Double = js.native
   
   /* 536870912 */ val HasComputedFlags: typings.typescript.mod.ModifierFlags.HasComputedFlags & Double = js.native
   
@@ -39,7 +41,7 @@ object ModifierFlags extends StObject {
   
   /* 32768 */ val In: typings.typescript.mod.ModifierFlags.In & Double = js.native
   
-  /* 125951 */ val Modifier: typings.typescript.mod.ModifierFlags.Modifier & Double = js.native
+  /* 126975 */ val Modifier: typings.typescript.mod.ModifierFlags.Modifier & Double = js.native
   
   /* 24 */ val NonPublicAccessibilityModifier: typings.typescript.mod.ModifierFlags.NonPublicAccessibilityModifier & Double = js.native
   
@@ -61,5 +63,5 @@ object ModifierFlags extends StObject {
   
   /* 32 */ val Static: typings.typescript.mod.ModifierFlags.Static & Double = js.native
   
-  /* 116958 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
+  /* 117086 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
 }

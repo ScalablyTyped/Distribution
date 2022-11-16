@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array_dot_prototype_dot_flatmap"
-version := "1.2-dt-20220624Z-c844bd"
+version := "1.2-dt-20220624Z-c76b14"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

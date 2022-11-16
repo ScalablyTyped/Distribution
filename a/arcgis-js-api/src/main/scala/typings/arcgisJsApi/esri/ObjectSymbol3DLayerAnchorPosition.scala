@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectSymbol3DLayerAnchorPosition
-  extends StObject
-     with Object {
+trait ObjectSymbol3DLayerAnchorPosition extends StObject {
   
   /**
     * Value defining the position relative to the x axis of the bounding box.
@@ -33,15 +29,8 @@ trait ObjectSymbol3DLayerAnchorPosition
 }
 object ObjectSymbol3DLayerAnchorPosition {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    x: Double,
-    y: Double,
-    z: Double
-  ): ObjectSymbol3DLayerAnchorPosition = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+  inline def apply(x: Double, y: Double, z: Double): ObjectSymbol3DLayerAnchorPosition = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSymbol3DLayerAnchorPosition]
   }
   

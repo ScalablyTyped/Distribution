@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WMTSSublayerConstructor
   extends StObject
-     with /**
-  * Represents a sublayer in a [WMTSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html)
-  */
-Instantiable0[WMTSSublayer]
+     with Instantiable0[WMTSSublayer]
      with Instantiable1[/* properties */ WMTSSublayerProperties, WMTSSublayer] {
   
   def fromJSON(json: Any): WMTSSublayer = js.native

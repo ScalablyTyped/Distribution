@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.std.Intl.NumberFormatOptions
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubstituteNumberFormatOptions
-  extends StObject
-     with Object {
+trait SubstituteNumberFormatOptions extends StObject {
   
   /**
     * The Intl number format options for the [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat) object.
@@ -28,13 +24,8 @@ trait SubstituteNumberFormatOptions
 }
 object SubstituteNumberFormatOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    intlOptions: NumberFormatOptions,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubstituteNumberFormatOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), intlOptions = intlOptions.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(intlOptions: NumberFormatOptions): SubstituteNumberFormatOptions = {
+    val __obj = js.Dynamic.literal(intlOptions = intlOptions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[SubstituteNumberFormatOptions]
   }

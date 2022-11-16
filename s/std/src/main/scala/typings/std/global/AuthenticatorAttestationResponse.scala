@@ -1,5 +1,6 @@
 package typings.std.global
 
+import typings.std.COSEAlgorithmIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,4 +20,20 @@ open class AuthenticatorAttestationResponse ()
   /* standard dom */
   /* CompleteClass */
   override val clientDataJSON: js.typedarray.ArrayBuffer = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override def getAuthenticatorData(): js.typedarray.ArrayBuffer = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override def getPublicKey(): js.typedarray.ArrayBuffer | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override def getPublicKeyAlgorithm(): COSEAlgorithmIdentifier = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override def getTransports(): js.Array[java.lang.String] = js.native
 }

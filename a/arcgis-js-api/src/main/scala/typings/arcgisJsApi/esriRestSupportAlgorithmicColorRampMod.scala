@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.AlgorithmicColorRamp
-import typings.arcgisJsApi.esri.AlgorithmicColorRampConstructor
 import typings.arcgisJsApi.esri.AlgorithmicColorRampProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportAlgorithmicColorRampMod extends Shortcut {
+/* static members */
+object esriRestSupportAlgorithmicColorRampMod {
   
-  @JSImport("esri/rest/support/AlgorithmicColorRamp", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & AlgorithmicColorRampConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/AlgorithmicColorRamp", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportAlgorithmicColorRampMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with AlgorithmicColorRamp {
     def this(properties: AlgorithmicColorRampProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportAlgorithmicColorRampMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/AlgorithmicColorRamp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & AlgorithmicColorRampConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportAlgorithmicColorRampMod.foo` */
-  override def _to: js.Object & AlgorithmicColorRampConstructor = ^
+  inline def fromJSON(json: Any): AlgorithmicColorRamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AlgorithmicColorRamp]
 }

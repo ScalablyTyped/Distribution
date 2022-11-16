@@ -81,12 +81,33 @@ object srcNgtscPartialEvaluatorSrcResultMod {
     _ResolvedValue | Reference[Node] | SyntheticValue[Any] | DynamicValue[Any] | Double | Boolean | String | Null
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ResolvedValueArray = std.Array<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue>
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/interpreter.Scope
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValueArray
+  */
   @js.native
   trait ResolvedValueArray
     extends StObject
        with Array[ResolvedValue]
        with _ResolvedValue
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ResolvedValueMap = std.Map<string, @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue>
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/interpreter.Scope
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValueArray
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValueMap
+  */
   @js.native
   trait ResolvedValueMap
     extends StObject

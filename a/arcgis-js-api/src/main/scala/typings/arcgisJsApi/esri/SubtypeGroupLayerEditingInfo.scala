@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerEditingInfo
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerEditingInfo extends StObject {
   
   /**
     * Indicates the last time the layer was edited.
@@ -19,13 +15,8 @@ trait SubtypeGroupLayerEditingInfo
 }
 object SubtypeGroupLayerEditingInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    lastEditDate: js.Date,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubtypeGroupLayerEditingInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lastEditDate = lastEditDate.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(lastEditDate: js.Date): SubtypeGroupLayerEditingInfo = {
+    val __obj = js.Dynamic.literal(lastEditDate = lastEditDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerEditingInfo]
   }
   

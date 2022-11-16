@@ -847,7 +847,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: T[P][2] extends undefined? ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>> : T[P][2] extends {  varargs :true}? ffi-napi.ffi-napi.VariadicForeignFunction<T[P][0], T[P][1]> : T[P][2] extends {  async :true}? (args : [...ref-napi.ref-napi.UnderlyingTypes<T[P][1]>, (err : any, value : ref-napi.ref-napi.UnderlyingType<T[P][0]>): void]): void : ffi-napi.ffi-napi.ForeignFunction<ref-napi.ref-napi.UnderlyingType<T[P][0]>, ref-napi.ref-napi.UnderlyingTypes<T[P][1]>>}
@@ -869,7 +869,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: [retType: ref-napi.ref-napi.CoerceType<T[P][0]>, argTypes: ref-napi.ref-napi.CoerceTypes<T[P][1]>, opts: T[P][2]]}

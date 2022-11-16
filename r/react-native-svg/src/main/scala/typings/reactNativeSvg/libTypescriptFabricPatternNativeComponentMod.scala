@@ -172,7 +172,7 @@ object libTypescriptFabricPatternNativeComponentMod extends Shortcut {
     
     var patternContentUnits: js.UndefOr[Int32] = js.undefined
     
-    var patternTransform: js.UndefOr[js.Array[Float]] = js.undefined
+    var patternTransform: js.UndefOr[js.Array[Float] | Null] = js.undefined
     
     var patternUnits: js.UndefOr[Int32] = js.undefined
     
@@ -220,6 +220,8 @@ object libTypescriptFabricPatternNativeComponentMod extends Shortcut {
       inline def setPatternContentUnitsUndefined: Self = StObject.set(x, "patternContentUnits", js.undefined)
       
       inline def setPatternTransform(value: js.Array[Float]): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+      
+      inline def setPatternTransformNull: Self = StObject.set(x, "patternTransform", null)
       
       inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
       
@@ -298,7 +300,7 @@ object libTypescriptFabricPatternNativeComponentMod extends Shortcut {
     
     var mask: js.UndefOr[String] = js.undefined
     
-    var matrix: js.UndefOr[js.Array[Float]] = js.undefined
+    var matrix: js.UndefOr[js.Array[Float] | Null] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -348,6 +350,8 @@ object libTypescriptFabricPatternNativeComponentMod extends Shortcut {
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
       inline def setMatrix(value: js.Array[Float]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      
+      inline def setMatrixNull: Self = StObject.set(x, "matrix", null)
       
       inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
       

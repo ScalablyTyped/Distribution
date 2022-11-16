@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpacitySliderStyleProperties
-  extends StObject
-     with Object {
+trait OpacitySliderStyleProperties extends StObject {
   
   /**
     * The color of the slider's track.
@@ -21,12 +17,8 @@ trait OpacitySliderStyleProperties
 }
 object OpacitySliderStyleProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): OpacitySliderStyleProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): OpacitySliderStyleProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpacitySliderStyleProperties]
   }
   

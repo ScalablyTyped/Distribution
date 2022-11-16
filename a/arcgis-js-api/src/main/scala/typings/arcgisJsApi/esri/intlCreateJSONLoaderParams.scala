@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait intlCreateJSONLoaderParams
-  extends StObject
-     with Object {
+trait intlCreateJSONLoaderParams extends StObject {
   
   /**
     * Used to calculate the relative path of the file to load.
@@ -33,15 +29,8 @@ trait intlCreateJSONLoaderParams
 }
 object intlCreateJSONLoaderParams {
   
-  inline def apply(
-    base: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    location: String | Any | js.Function,
-    pattern: String | js.RegExp,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): intlCreateJSONLoaderParams = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(base: String, location: String | Any | js.Function, pattern: String | js.RegExp): intlCreateJSONLoaderParams = {
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[intlCreateJSONLoaderParams]
   }
   

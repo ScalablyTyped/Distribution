@@ -123,6 +123,14 @@ type ListrGetRendererTaskOptions[T /* <: ListrRendererValue */] = ListrSimpleRen
 type ListrGetRendererValueFromClass[T /* <: ListrRendererFactory */] = ListrDefaultRendererValue
 
 /** A renderer factory from the current type */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ListrRendererFactory = {  rendererOptions :std.Record<std.PropertyKey, any>,   rendererTaskOptions :std.Record<std.PropertyKey, any>,   nonTTY :boolean} & new (tasks : std.Array<listr2.listr2.Task<any, listr2.listr2.ListrRendererFactory>>, options : typeof ListrRenderer.rendererOptions, renderHook$ : rxjs.rxjs.Subject<void> | undefined): listr2.listr2.ListrRenderer
+}}}
+to avoid circular code involving: 
+- listr2.listr2.ListrRendererFactory
+*/
 type ListrRendererFactory = TypeofListrRenderer & (Instantiable3[
 /* tasks */ js.Array[Task[Any, Any]], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ListrRenderer.rendererOptions */ /* options */ js.Any, 
@@ -133,6 +141,15 @@ ListrRenderer])
   * Listr2 can process either the integrated renderers as string aliases,
   * or utilize a compatible style renderer that extends the ListrRenderer abstract class.
   */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ListrRendererValue = listr2.listr2.ListrSilentRendererValue | listr2.listr2.ListrDefaultRendererValue | listr2.listr2.ListrSimpleRendererValue | listr2.listr2.ListrFallbackRendererValue | listr2.listr2.ListrRendererFactory
+}}}
+to avoid circular code involving: 
+- listr2.listr2.ListrRendererFactory
+- listr2.listr2.ListrRendererValue
+*/
 type ListrRendererValue = ListrSilentRendererValue | ListrDefaultRendererValue | ListrSimpleRendererValue | ListrFallbackRendererValue | Any
 
 /** Typeof silent renderer */
@@ -166,6 +183,16 @@ type ListrSimpleRendererValue = simple
 /**
   * Task can be set of sync or async function, an Observable or a stream.
   */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ListrTaskResult = string | std.Promise<any> | listr2.listr2.Listr<Ctx, listr2.listr2.ListrRendererValue, any> | node.stream.Readable | node.NodeJS.ReadableStream | rxjs.rxjs.Observable<any>
+}}}
+to avoid circular code involving: 
+- listr2.listr2.ListrRendererFactory
+- listr2.listr2.ListrRendererValue
+- listr2.listr2.ListrTaskResult
+*/
 type ListrTaskResult[Ctx] = String | js.Promise[Any] | (Listr[Ctx, Any, Any]) | Readable | ReadableStream | Observable_[Any]
 
 /** Returns all the prompt options depending on the type selected. */

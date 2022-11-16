@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneServiceVersion
-  extends StObject
-     with Object {
+trait SceneServiceVersion extends StObject {
   
   /**
     * The major version of the scene layer.
@@ -33,15 +29,8 @@ trait SceneServiceVersion
 }
 object SceneServiceVersion {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    major: Double,
-    minor: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    versionString: String
-  ): SceneServiceVersion = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), versionString = versionString.asInstanceOf[js.Any])
+  inline def apply(major: Double, minor: Double, versionString: String): SceneServiceVersion = {
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], versionString = versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneServiceVersion]
   }
   

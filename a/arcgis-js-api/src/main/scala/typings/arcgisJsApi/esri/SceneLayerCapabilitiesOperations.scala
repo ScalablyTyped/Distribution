@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneLayerCapabilitiesOperations
-  extends StObject
-     with Object {
+trait SceneLayerCapabilitiesOperations extends StObject {
   
   /**
     * Indicates if new features can be [added](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits) to the layer.
@@ -40,16 +36,8 @@ trait SceneLayerCapabilitiesOperations
 }
 object SceneLayerCapabilitiesOperations {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supportsAdd: Boolean,
-    supportsDelete: Boolean,
-    supportsEditing: Boolean,
-    supportsUpdate: Boolean
-  ): SceneLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdd = supportsAdd.asInstanceOf[js.Any], supportsDelete = supportsDelete.asInstanceOf[js.Any], supportsEditing = supportsEditing.asInstanceOf[js.Any], supportsUpdate = supportsUpdate.asInstanceOf[js.Any])
+  inline def apply(supportsAdd: Boolean, supportsDelete: Boolean, supportsEditing: Boolean, supportsUpdate: Boolean): SceneLayerCapabilitiesOperations = {
+    val __obj = js.Dynamic.literal(supportsAdd = supportsAdd.asInstanceOf[js.Any], supportsDelete = supportsDelete.asInstanceOf[js.Any], supportsEditing = supportsEditing.asInstanceOf[js.Any], supportsUpdate = supportsUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerCapabilitiesOperations]
   }
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "robust-segment-intersect"
-version := "1.0-dt-20220624Z-eaf1ac"
+version := "1.0-dt-20220624Z-b84b94"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

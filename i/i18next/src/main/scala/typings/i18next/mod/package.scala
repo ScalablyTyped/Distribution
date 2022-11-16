@@ -2,7 +2,11 @@ package typings.i18next.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.i18next.anon.PickInitOptionsfallbackLn
+import typings.i18next.i18nextBooleans.`false`
+import typings.i18next.i18nextBooleans.`true`
+import typings.i18next.i18nextStrings.Colon
 import typings.i18next.i18nextStrings.Dot
+import typings.i18next.i18nextStrings._empty
 import typings.i18next.i18nextStrings.translation
 import typings.i18next.mod.^
 import typings.std.Exclude
@@ -97,7 +101,7 @@ type CallbackError = js.UndefOr[js.Error | Null]
 
 type DefaultNamespace = translation
 
-type DefaultTFuncReturn = js.UndefOr[String | Null]
+type DefaultTFuncReturn = String | (/* import warning: importer.ImportType#apply Failed type conversion: true extends true ? null : never */ js.Any)
 
 type DefaultTFuncReturnWithObject = DefaultTFuncReturn | js.Object | (js.Array[String | js.Object])
 
@@ -109,6 +113,15 @@ Boolean]
 type FallbackLng = String | js.Array[String] | FallbackLngObjList | (js.Function1[/* code */ String, String | js.Array[String] | FallbackLngObjList])
 
 type FallbackLngObjList = StringDictionary[js.Array[String]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [T] extends [never] ? F : T
+  }}}
+  */
+type FallbackOrNS[F, T] = F
 
 type FormatFunction = js.Function4[
 /* value */ Any, 
@@ -140,6 +153,42 @@ R,
 /* import warning: importer.ImportType#apply Failed type conversion: Options['returnNull'] */ js.Any, 
 Null]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  V extends / * template literal string: ${inferN}:${inferR} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify N * / any extends keyof T ? i18next.i18next.NormalizeReturn<T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify N * / any], / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any, '.'> : never : never
+  }}}
+  */
+type NormalizeMultiReturn[T, V] = NormalizeByTypeOptions[
+/* import warning: importer.ImportType#apply Failed type conversion: T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify N * / any][/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any] */ js.Any, 
+TypeOptions, 
+TypeOptionsFallback[
+  /* import warning: importer.ImportType#apply Failed type conversion: T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify N * / any][/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any] */ js.Any, 
+  `true`, 
+  _empty
+]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  V extends keyof T ? i18next.i18next.NormalizeByTypeOptions<T[V], i18next.i18next.TypeOptions, i18next.i18next.TypeOptionsFallback<T[V], true, ''>> : S extends false ? V : V extends / * template literal string: ${inferK}${S}${inferR} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K * / any extends keyof T ? i18next.i18next.NormalizeReturn<T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K * / any], / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any, '.'> : never : i18next.i18next.StringIfPlural<keyof T>
+  }}}
+  */
+type NormalizeReturn[T, V, S /* <: String | `false` */] = V
+
+// Normalize single namespace with key prefix
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends / * template literal string: ${inferK1}${S}${inferK2} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K1 * / any extends keyof T ? i18next.i18next.NormalizeWithKeyPrefix<T[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K1 * / any], / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify K2 * / any, '.'> : never : K extends keyof T ? T[K] extends string ? never : i18next.i18next.Normalize<T[K]> : never
+  }}}
+  */
+type NormalizeWithKeyPrefix[T, K, S /* <: String */] = Normalize[
+/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
+
 type ReadCallback = js.Function2[/* err */ CallbackError, /* data */ js.UndefOr[ResourceKey | Boolean | Null], Unit]
 
 type Resource = StringDictionary[ResourceLanguage]
@@ -150,6 +199,73 @@ type ResourceLanguage = StringDictionary[ResourceKey]
 
 type Resources = /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TypeOptions['resources'] */ js.Any
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  'v4' extends 'v4' ? T extends / * template literal string: ${string}_${PluralSuffix} * / string ? string : never : never
+  }}}
+  */
+type StringIfPlural[T] = String
+
 type StringMap = StringDictionary[Any]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  N extends std.Array<keyof T> | std.Readonly<std.Array<keyof T>> ? i18next.i18next.NormalizeMulti<T, N[number], i18next.i18next.LastOf<N[number]>> : N extends keyof T ? TKPrefix extends undefined ? i18next.i18next.Normalize<T[N]> : i18next.i18next.NormalizeWithKeyPrefix<T[N], TKPrefix, '.'> : string
+  }}}
+  */
+type TFuncKey[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix, T] = (KeyWithNSSeparator[
+LastOf[
+  /* import warning: importer.ImportType#apply Failed type conversion: N[number] */ js.Any
+], 
+Normalize[
+  /* import warning: importer.ImportType#apply Failed type conversion: T[i18next.i18next.LastOf<N[number]>] */ js.Any
+], 
+Colon]) | (NormalizeMulti[
+T, 
+Exclude[
+  /* import warning: importer.ImportType#apply Failed type conversion: N[number] */ js.Any, 
+  LastOf[
+    /* import warning: importer.ImportType#apply Failed type conversion: N[number] */ js.Any
+  ]
+], 
+LastOf[
+  Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: N[number] */ js.Any, 
+    LastOf[
+      /* import warning: importer.ImportType#apply Failed type conversion: N[number] */ js.Any
+    ]
+  ]
+]])
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  N extends std.Array<keyof T> ? i18next.i18next.NormalizeMultiReturn<T, TKeys> : N extends keyof T ? TKPrefix extends undefined ? i18next.i18next.NormalizeReturn<T[N], TKeys, '.'> : i18next.i18next.NormalizeReturn<T[N], i18next.i18next.KeysWithSeparator<TKPrefix, TKeys, '.'>, '.'> : TDefaultResult
+  }}}
+  */
+type TFuncReturn[N, TKeys, TDefaultResult, TKPrefix, T] = TDefaultResult
+
 type TOptions[TInterpolationMap /* <: js.Object */] = TOptionsBase & TInterpolationMap
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Option extends false ? TranslationValue extends MatchingValue ? string : TranslationValue : TranslationValue
+  }}}
+  */
+type TypeOptionsFallback[TranslationValue, Option, MatchingValue] = TranslationValue
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  'v4' extends 'v4' ? K extends / * template literal string: ${inferB}_${PluralSuffix} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify B * / any | K : K : K
+  }}}
+  */
+type WithOrWithoutPlural[K] = K

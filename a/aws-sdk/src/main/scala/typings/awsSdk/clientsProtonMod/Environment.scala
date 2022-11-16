@@ -12,9 +12,14 @@ trait Environment extends StObject {
   var arn: EnvironmentArn
   
   /**
+    * The Amazon Resource Name (ARN) of the IAM service role that allows Proton to provision infrastructure using CodeBuild-based provisioning on your behalf.
+    */
+  var codebuildRoleArn: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in this environment. It determines the scope of infrastructure that a component can provision. The environment must have a componentRoleArn to allow directly defined components to be associated with the environment. For more information about components, see Proton components in the Proton User Guide.
     */
-  var componentRoleArn: js.UndefOr[Arn] = js.undefined
+  var componentRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The time when the environment was created.
@@ -37,7 +42,7 @@ trait Environment extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The ID of the environment account connection that's used to provision infrastructure resources in an environment account.
+    * The ID of the environment account connection that Proton uses to provision infrastructure resources in an environment account.
     */
   var environmentAccountConnectionId: js.UndefOr[EnvironmentAccountConnectionId] = js.undefined
   
@@ -62,7 +67,7 @@ trait Environment extends StObject {
   var name: ResourceName
   
   /**
-    * The Amazon Resource Name (ARN) of the Proton service role that allows Proton to make calls to other services on your behalf.
+    * The Amazon Resource Name (ARN) of the IAM service role that allows Proton to provision infrastructure using Amazon Web Services-managed provisioning and CloudFormation on your behalf.
     */
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -117,7 +122,11 @@ object Environment {
     
     inline def setArn(value: EnvironmentArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    inline def setComponentRoleArn(value: Arn): Self = StObject.set(x, "componentRoleArn", value.asInstanceOf[js.Any])
+    inline def setCodebuildRoleArn(value: RoleArn): Self = StObject.set(x, "codebuildRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setCodebuildRoleArnUndefined: Self = StObject.set(x, "codebuildRoleArn", js.undefined)
+    
+    inline def setComponentRoleArn(value: RoleArn): Self = StObject.set(x, "componentRoleArn", value.asInstanceOf[js.Any])
     
     inline def setComponentRoleArnUndefined: Self = StObject.set(x, "componentRoleArn", js.undefined)
     

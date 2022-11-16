@@ -1,6 +1,7 @@
 package typings.reactTagInput
 
 import typings.react.mod.Component
+import typings.react.mod.FC
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.ReactChild
 import typings.reactTagInput.anon.ActiveSuggestion
@@ -113,7 +114,7 @@ object mod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var removeComponent: js.UndefOr[Component[Any, Any, Any]] = js.undefined
+    var removeComponent: js.UndefOr[(Component[Any, Any, Any]) | FC[Any]] = js.undefined
     
     var renderSuggestion: js.UndefOr[js.Function2[/* tag */ Tag, /* query */ String, ReactChild | Unit]] = js.undefined
     
@@ -240,7 +241,7 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRemoveComponent(value: Component[Any, Any, Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
+      inline def setRemoveComponent(value: (Component[Any, Any, Any]) | FC[Any]): Self = StObject.set(x, "removeComponent", value.asInstanceOf[js.Any])
       
       inline def setRemoveComponentUndefined: Self = StObject.set(x, "removeComponent", js.undefined)
       

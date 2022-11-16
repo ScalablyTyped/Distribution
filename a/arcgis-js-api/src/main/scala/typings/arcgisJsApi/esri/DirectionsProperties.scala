@@ -2,6 +2,18 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.anon.MapViewPropertiestype2d
 import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
+import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
+import typings.arcgisJsApi.arcgisJsApiStrings.centimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.decimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.feet_
+import typings.arcgisJsApi.arcgisJsApiStrings.imperial
+import typings.arcgisJsApi.arcgisJsApiStrings.inches
+import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
+import typings.arcgisJsApi.arcgisJsApiStrings.meters_
+import typings.arcgisJsApi.arcgisJsApiStrings.metric
+import typings.arcgisJsApi.arcgisJsApiStrings.miles_
+import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,6 +99,15 @@ trait DirectionsProperties
   var stopSymbols: js.UndefOr[DirectionsStopSymbols] = js.undefined
   
   /**
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#unit)
+    */
+  var unit: js.UndefOr[
+    imperial | metric | centimeters | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | yards
+  ] = js.undefined
+  
+  /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#view)
@@ -151,6 +172,12 @@ object DirectionsProperties {
     inline def setStopSymbols(value: DirectionsStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
     
     inline def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
+    
+    inline def setUnit(
+      value: imperial | metric | centimeters | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | yards
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

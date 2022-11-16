@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait locatorLocationToAddressParams
-  extends StObject
-     with Object {
+trait locatorLocationToAddressParams extends StObject {
   
   /**
     * The point at which to search for the closest address.
@@ -33,13 +29,8 @@ trait locatorLocationToAddressParams
 }
 object locatorLocationToAddressParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    location: Point,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): locatorLocationToAddressParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(location: Point): locatorLocationToAddressParams = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[locatorLocationToAddressParams]
   }
   

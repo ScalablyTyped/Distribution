@@ -10,6 +10,7 @@ import typings.delegatedEvents.delegatedEventsStrings.animationstart
 import typings.delegatedEvents.delegatedEventsStrings.auxclick
 import typings.delegatedEvents.delegatedEventsStrings.beforeinput
 import typings.delegatedEvents.delegatedEventsStrings.blur
+import typings.delegatedEvents.delegatedEventsStrings.cancel
 import typings.delegatedEvents.delegatedEventsStrings.canplay
 import typings.delegatedEvents.delegatedEventsStrings.canplaythrough
 import typings.delegatedEvents.delegatedEventsStrings.change
@@ -263,6 +264,18 @@ object mod {
     name: blur,
     selector: String,
     listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_cancel(
+    name: cancel,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_cancel(
+    name: cancel,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

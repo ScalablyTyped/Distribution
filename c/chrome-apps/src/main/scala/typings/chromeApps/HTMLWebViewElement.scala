@@ -39,6 +39,7 @@ import typings.chromeApps.chromeAppsStrings.animationstart
 import typings.chromeApps.chromeAppsStrings.auxclick
 import typings.chromeApps.chromeAppsStrings.beforeinput
 import typings.chromeApps.chromeAppsStrings.blur
+import typings.chromeApps.chromeAppsStrings.cancel
 import typings.chromeApps.chromeAppsStrings.canplay
 import typings.chromeApps.chromeAppsStrings.canplaythrough
 import typings.chromeApps.chromeAppsStrings.change
@@ -371,6 +372,20 @@ trait HTMLWebViewElement
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2466,6 +2481,20 @@ trait HTMLWebViewElement
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

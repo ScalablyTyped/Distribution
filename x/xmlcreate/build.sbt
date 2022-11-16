@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xmlcreate"
-version := "2.0.4-fa9ce9"
+version := "2.0.4-968669"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

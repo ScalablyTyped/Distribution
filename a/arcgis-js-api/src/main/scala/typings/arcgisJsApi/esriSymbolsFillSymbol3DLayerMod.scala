@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FillSymbol3DLayer
-import typings.arcgisJsApi.esri.FillSymbol3DLayerConstructor
 import typings.arcgisJsApi.esri.FillSymbol3DLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsFillSymbol3DLayerMod extends Shortcut {
+/* static members */
+object esriSymbolsFillSymbol3DLayerMod {
   
-  @JSImport("esri/symbols/FillSymbol3DLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FillSymbol3DLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/FillSymbol3DLayer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsFillSymbol3DLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FillSymbol3DLayer {
     def this(properties: FillSymbol3DLayerProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsFillSymbol3DLayerMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/FillSymbol3DLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FillSymbol3DLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsFillSymbol3DLayerMod.foo` */
-  override def _to: js.Object & FillSymbol3DLayerConstructor = ^
+  inline def fromJSON(json: Any): FillSymbol3DLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FillSymbol3DLayer]
 }

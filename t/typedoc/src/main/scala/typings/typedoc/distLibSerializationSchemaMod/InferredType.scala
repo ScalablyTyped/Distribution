@@ -16,12 +16,8 @@ trait InferredType extends StObject {
 }
 object InferredType {
   
-  inline def apply(
-    constraint: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]],
-    name: ToSerialized[String],
-    `type`: ToSerialized[/* "inferred" */ String]
-  ): InferredType = {
-    val __obj = js.Dynamic.literal(constraint = constraint.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(name: ToSerialized[String], `type`: ToSerialized[/* "inferred" */ String]): InferredType = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferredType]
   }
@@ -29,6 +25,8 @@ object InferredType {
   extension [Self <: InferredType](x: Self) {
     
     inline def setConstraint(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

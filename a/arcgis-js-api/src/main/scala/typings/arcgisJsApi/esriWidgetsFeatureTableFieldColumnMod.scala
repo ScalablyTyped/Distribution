@@ -1,22 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ButtonMenu
 import typings.arcgisJsApi.esri.ButtonMenuItemConfig
 import typings.arcgisJsApi.esri.FieldColumn
-import typings.arcgisJsApi.esri.FieldColumnConstructor
 import typings.arcgisJsApi.esri.FieldColumnProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsFeatureTableFieldColumnMod extends Shortcut {
+object esriWidgetsFeatureTableFieldColumnMod {
   
-  @JSImport("esri/widgets/FeatureTable/FieldColumn", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FieldColumnConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/FeatureTable/FieldColumn", JSImport.Namespace)
   @js.native
   /**
@@ -24,7 +17,7 @@ object esriWidgetsFeatureTableFieldColumnMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FieldColumn {
     def this(properties: FieldColumnProperties) = this()
@@ -55,9 +48,4 @@ object esriWidgetsFeatureTableFieldColumnMod extends Shortcut {
     /* CompleteClass */
     override val resizable: Boolean = js.native
   }
-  
-  type _To = js.Object & FieldColumnConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsFeatureTableFieldColumnMod.foo` */
-  override def _to: js.Object & FieldColumnConstructor = ^
 }

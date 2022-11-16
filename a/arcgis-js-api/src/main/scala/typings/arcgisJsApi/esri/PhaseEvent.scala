@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PhaseEvent
-  extends StObject
-     with Object {
+trait PhaseEvent extends StObject {
   
   /**
     * The elapsed time since the last animation frame.
@@ -33,15 +29,8 @@ trait PhaseEvent
 }
 object PhaseEvent {
   
-  inline def apply(
-    constructor: js.Function,
-    deltaTime: Double,
-    elapsedFrameTime: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    time: Double
-  ): PhaseEvent = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], deltaTime = deltaTime.asInstanceOf[js.Any], elapsedFrameTime = elapsedFrameTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), time = time.asInstanceOf[js.Any])
+  inline def apply(deltaTime: Double, elapsedFrameTime: Double, time: Double): PhaseEvent = {
+    val __obj = js.Dynamic.literal(deltaTime = deltaTime.asInstanceOf[js.Any], elapsedFrameTime = elapsedFrameTime.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhaseEvent]
   }
   

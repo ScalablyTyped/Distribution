@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_baremetalsolution-v1"
-version := "0.0-dt-20220912Z-89d35e"
+version := "0.0-dt-20220912Z-cb5719"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

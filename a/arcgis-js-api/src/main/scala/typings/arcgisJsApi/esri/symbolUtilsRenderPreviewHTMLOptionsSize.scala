@@ -1,24 +1,20 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsRenderPreviewHTMLOptionsSize
-  extends StObject
-     with Object {
+trait symbolUtilsRenderPreviewHTMLOptionsSize extends StObject {
   
   /**
-    * The height of the SimpleLineSymbol or SimpleFillSymbol preview in points.
+    * The height of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the SimpleLineSymbol or SimpleFillSymbol preview in points.
+    * The width of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
@@ -26,12 +22,8 @@ trait symbolUtilsRenderPreviewHTMLOptionsSize
 }
 object symbolUtilsRenderPreviewHTMLOptionsSize {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): symbolUtilsRenderPreviewHTMLOptionsSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): symbolUtilsRenderPreviewHTMLOptionsSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptionsSize]
   }
   

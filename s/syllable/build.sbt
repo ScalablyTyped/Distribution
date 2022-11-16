@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "syllable"
-version := "5.0.1-85a520"
+version := "5.0.1-c2bd8d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

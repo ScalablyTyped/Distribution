@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,18 +35,15 @@ trait DirectionsViewModelLastRoute
 object DirectionsViewModelLastRoute {
   
   inline def apply(
-    constructor: js.Function,
     directionLines: Collection[DirectionLine],
     directionPoints: Collection[DirectionPoint],
-    hasOwnProperty: PropertyKey => Boolean,
     pointBarriers: Collection[PointBarrier],
     polygonBarriers: Collection[PolygonBarrier],
     polylineBarriers: Collection[PolylineBarrier],
-    propertyIsEnumerable: PropertyKey => Boolean,
     routeInfo: RouteInfo,
     stops: Collection[Stop]
   ): DirectionsViewModelLastRoute = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], directionLines = directionLines.asInstanceOf[js.Any], directionPoints = directionPoints.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pointBarriers = pointBarriers.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeInfo = routeInfo.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directionLines = directionLines.asInstanceOf[js.Any], directionPoints = directionPoints.asInstanceOf[js.Any], pointBarriers = pointBarriers.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], routeInfo = routeInfo.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelLastRoute]
   }
   

@@ -21,6 +21,15 @@ object mod {
   
   inline def asTree(treeObj: TreeObject, showValues: Boolean, hideFunctions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asTree")(treeObj.asInstanceOf[js.Any], showValues.asInstanceOf[js.Any], hideFunctions.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreeObject = {[k: string] : treeify.treeify.TreeValue}
+  }}}
+  to avoid circular code involving: 
+  - treeify.treeify.TreeObject
+  - treeify.treeify.TreeValue
+  */
   trait TreeObject
     extends StObject
        with /* k */ StringDictionary[TreeValue]

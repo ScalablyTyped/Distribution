@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-escaper"
-version := "3.0-dt-20211202Z-c9e866"
+version := "3.0-dt-20211202Z-b9dd76"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

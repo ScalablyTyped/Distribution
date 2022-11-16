@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AddressCandidateConstructor
   extends StObject
-     with /**
-  * Represents the result of a geocode service operation as a list of address candidates.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html)
-  */
-Instantiable0[AddressCandidate]
+     with Instantiable0[AddressCandidate]
      with Instantiable1[/* properties */ AddressCandidateProperties, AddressCandidate] {
   
   def fromJSON(json: Any): AddressCandidate = js.native

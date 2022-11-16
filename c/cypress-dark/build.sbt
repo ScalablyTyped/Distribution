@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress-dark"
-version := "1.8-dt-20211202Z-686ebb"
+version := "1.8-dt-20211202Z-11724b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for classify-poetry
 
-Typings are for version 1.0.2
+Typings are for version 2.0.0
 
 ## Library description:
 recognize type poetry in a given text excerpt

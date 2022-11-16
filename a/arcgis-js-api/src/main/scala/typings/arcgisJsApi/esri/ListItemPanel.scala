@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListItemPanel extends StObject {
+trait ListItemPanel
+  extends StObject
+     with Identifiable {
   
   /**
     * Adds a CSS class used to style a node that represents the panel.
@@ -22,6 +24,13 @@ trait ListItemPanel extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
     */
   var content: Widget_ | HTMLElement | String | js.Array[Any]
+  
+  /**
+    * If `true`, disables the ListItem's panel so the user cannot open or interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#disabled)
+    */
+  var disabled: Boolean
   
   /**
     * The URL or data URI of an image used to represent the panel.
@@ -67,13 +76,14 @@ object ListItemPanel {
   inline def apply(
     className: String,
     content: Widget_ | HTMLElement | String | js.Array[Any],
+    disabled: Boolean,
     image: String,
     listItem: ListItem,
     open: Boolean,
     title: String,
     visible: Boolean
   ): ListItemPanel = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], listItem = listItem.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], listItem = listItem.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemPanel]
   }
   
@@ -84,6 +94,8 @@ object ListItemPanel {
     inline def setContent(value: Widget_ | HTMLElement | String | js.Array[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentVarargs(value: Any*): Self = StObject.set(x, "content", js.Array(value*))
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

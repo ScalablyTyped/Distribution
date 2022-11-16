@@ -9,7 +9,7 @@ object outNumberAbsoluteMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     N extends unknown ? ts-toolbelt.ts-toolbelt/out/Number/Absolute._Absolute<ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<N>>[0] : never
     }}}

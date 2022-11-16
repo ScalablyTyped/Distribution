@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AssociationConstructor
   extends StObject
-     with /**
-  * The utility network associations model connectivity, containment and structure relations between assets.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html)
-  */
-Instantiable0[Association]
+     with Instantiable0[Association]
      with Instantiable1[/* properties */ AssociationProperties, Association] {
   
   def fromJSON(json: Any): Association = js.native

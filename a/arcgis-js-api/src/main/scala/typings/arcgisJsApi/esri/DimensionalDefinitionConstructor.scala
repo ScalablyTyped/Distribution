@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DimensionalDefinitionConstructor
   extends StObject
-     with /**
-  * A dimensional definition defines a filter based on one variable and one dimension.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html)
-  */
-Instantiable0[DimensionalDefinition]
+     with Instantiable0[DimensionalDefinition]
      with Instantiable1[/* properties */ DimensionalDefinitionProperties, DimensionalDefinition] {
   
   def fromJSON(json: Any): DimensionalDefinition = js.native

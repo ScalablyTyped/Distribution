@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "jest__globals"
-version := "29.3.1-b3b5c7"
+version := "29.3.1-4f5cca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "expect" % "29.3.1-91e738",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-395f8b",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-32acec",
-  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
-  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
-  "org.scalablytyped" %%% "jest-diff" % "29.3.1-602a83",
-  "org.scalablytyped" %%% "jest-haste-map" % "29.3.1-4bc640",
-  "org.scalablytyped" %%% "jest-matcher-utils" % "29.3.1-e79c0c",
-  "org.scalablytyped" %%% "jest-mock" % "29.3.1-a8eb32",
-  "org.scalablytyped" %%% "jest-snapshot" % "29.3.1-242e9b",
-  "org.scalablytyped" %%% "jest__expect" % "29.3.1-807304",
-  "org.scalablytyped" %%% "jest__expect-utils" % "29.3.1-7d3f28",
-  "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
-  "org.scalablytyped" %%% "jest__types" % "29.3.1-61f653",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "pretty-format" % "29.3.1-ebbec4",
-  "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-8e6dfd",
-  "org.scalablytyped" %%% "std" % "4.8-837c43")
+  "org.scalablytyped" %%% "expect" % "29.3.1-f2fecf",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-37daa3",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-daefdc",
+  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-01386c",
+  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-5a5cdb",
+  "org.scalablytyped" %%% "jest-diff" % "29.3.1-750906",
+  "org.scalablytyped" %%% "jest-haste-map" % "29.3.1-1a3e4f",
+  "org.scalablytyped" %%% "jest-matcher-utils" % "29.3.1-cb96c3",
+  "org.scalablytyped" %%% "jest-mock" % "29.3.1-a0e686",
+  "org.scalablytyped" %%% "jest-snapshot" % "29.3.1-72e562",
+  "org.scalablytyped" %%% "jest__expect" % "29.3.1-639444",
+  "org.scalablytyped" %%% "jest__expect-utils" % "29.3.1-d26e03",
+  "org.scalablytyped" %%% "jest__schemas" % "29.0.0-0dfc9a",
+  "org.scalablytyped" %%% "jest__types" % "29.3.1-8f7762",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "pretty-format" % "29.3.1-6e3e57",
+  "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-047c8e",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

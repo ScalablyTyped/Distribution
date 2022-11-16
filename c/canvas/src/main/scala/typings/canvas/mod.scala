@@ -45,6 +45,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.std.CanvasDirection
+import typings.std.CanvasFontKerning
 import typings.std.CanvasTextAlign
 import typings.std.CanvasTextBaseline
 import typings.std.GlobalCompositeOperation
@@ -238,6 +239,10 @@ object mod {
     /* standard dom */
     /* CompleteClass */
     var font: String = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var fontKerning: CanvasFontKerning = js.native
     
     /* standard dom */
     /* CompleteClass */

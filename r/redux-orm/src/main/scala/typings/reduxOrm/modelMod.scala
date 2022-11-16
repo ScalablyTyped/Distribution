@@ -410,6 +410,16 @@ object modelMod {
   
   type ModelField = (typings.reduxOrm.querySetMod.default[Any, js.Object]) | (SessionBoundModel[Any, js.Object]) | Serializable
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ModelFieldMap = {[K: string] : redux-orm.redux-orm/Model.ModelField}
+  }}}
+  to avoid circular code involving: 
+  - redux-orm.redux-orm/Model.ModelField
+  - redux-orm.redux-orm/Model.ModelFieldMap
+  - redux-orm.redux-orm/Model.Serializable
+  */
   trait ModelFieldMap
     extends StObject
        with /* K */ StringDictionary[ModelField]
@@ -507,6 +517,15 @@ object modelMod {
     */
   type RefPropOrSimple[M /* <: AnyModel */, K /* <: String */] = Serializable
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Serializable = redux-orm.redux-orm/Model.Primitive | std.Array<redux-orm.redux-orm/Model.Primitive> | undefined | {[K: string] : redux-orm.redux-orm/Model.Serializable | std.Array<redux-orm.redux-orm/Model.Serializable>}
+  }}}
+  to avoid circular code involving: 
+  - redux-orm.redux-orm/Model.ModelField
+  - redux-orm.redux-orm/Model.Serializable
+  */
   type Serializable = js.UndefOr[Primitive | js.Array[Primitive] | (StringDictionary[Any | js.Array[Any]])]
   
   type SessionBoundModel[M /* <: Model[Instantiable0[AnyModel], Any] */, InstanceProps /* <: js.Object */] = M & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof redux-orm.redux-orm/Model.ModelFields<M> ]: redux-orm.redux-orm/Model.SessionBoundModelField<M, K>} */ js.Any) & InstanceProps

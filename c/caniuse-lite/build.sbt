@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "caniuse-lite"
-version := "1.0-dt-20211202Z-dc9a03"
+version := "1.0-dt-20211202Z-64f321"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

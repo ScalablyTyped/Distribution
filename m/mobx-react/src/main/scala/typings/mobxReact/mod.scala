@@ -93,7 +93,7 @@ object mod {
     /* target */ IReactComponent[Any], 
     IReactComponent[Any] & (/* import warning: importer.ImportType#apply Failed type conversion: mobx-react.mobx-react/dist/types/IReactComponent.IReactComponent<any> extends mobx-react.mobx-react/dist/types/IReactComponent.IReactComponent<infer P> ? mobx-react.mobx-react/dist/types/IWrappedComponent.IWrappedComponent<P> : never */ js.Any)
   ]]
-  inline def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]]]
+  inline def inject[S /* <: IValueMap */, P /* <: IValueMap */, I /* <: IValueMap */, C /* <: IValueMap */](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]]]
   
   inline def isUsingStaticRendering(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingStaticRendering")().asInstanceOf[Boolean]
   

@@ -501,13 +501,12 @@ object distTypesUtilityTypesUnionMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Exclude<T, mobx-state-tree.mobx-state-tree/dist/types/utility-types/snapshotProcessor._NotCustomized> extends never ? mobx-state-tree.mobx-state-tree/dist/types/utility-types/snapshotProcessor._NotCustomized : std.Exclude<T, mobx-state-tree.mobx-state-tree/dist/types/utility-types/snapshotProcessor._NotCustomized>
     }}}
     */
-  @js.native
-  trait CustomCSProcessor[T] extends StObject
+  type CustomCSProcessor[T] = T
   
   type ITypeDispatcher = js.Function1[/* snapshot */ Any, IAnyType]
   

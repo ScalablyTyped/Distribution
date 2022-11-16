@@ -16,7 +16,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.FeatureLayerBase because var conflicts: fullExtent. Inlined copyright, definitionExpression, displayField, editFieldsInfo, editingInfo, elevationInfo, floorInfo, gdbVersion, geometryFieldsInfo, geometryType, hasM, hasZ, historicMoment, isTable, layerId, objectIdField, returnM, returnZ, serviceDefinitionExpression, sourceJSON, spatialReference, url, version */ @js.native
 trait FeatureLayer
   extends StObject
      with Layer
@@ -28,6 +29,8 @@ trait FeatureLayer
      with CustomParametersMixin
      with APIKeyMixin
      with FeatureEffectLayer
+     with FeatureReductionLayer
+     with PublishableLayer
      with _ProfileVariableInstanceType {
   
   def addAttachment(feature: Graphic, attachment: FormData): js.Promise[FeatureEditResult] = js.native
@@ -56,7 +59,7 @@ trait FeatureLayer
   /**
     * Copyright information for the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#copyright)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
     */
   var copyright: String = js.native
   
@@ -87,7 +90,7 @@ trait FeatureLayer
   /**
     * The SQL where clause used to filter features on the client.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#definitionExpression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
     */
   var definitionExpression: String = js.native
   
@@ -101,7 +104,7 @@ trait FeatureLayer
   /**
     * The name of the layer's primary display field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#displayField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
     */
   var displayField: String = js.native
   
@@ -115,7 +118,7 @@ trait FeatureLayer
   /**
     * The editor tracking fields, which record who adds or edits the data through the feature service and when edits are made.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editFieldsInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#editFieldsInfo)
     */
   val editFieldsInfo: EditFieldsInfo = js.native
   
@@ -129,25 +132,18 @@ trait FeatureLayer
   var editingEnabled: Boolean = js.native
   
   /**
-    * If present, this value specifies information about editing.
+    * The editor tracking fields, which record who adds or edits the data through the feature service and when edits are made.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editingInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#editingInfo)
     */
-  val editingInfo: EditingInfo = js.native
+  val editingInfo: EditFieldsInfo = js.native
   
   /**
     * Specifies how features are placed on the vertical axis (z).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
     */
-  var elevationInfo: FeatureLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
+  var elevationInfo: FeatureLayerBaseElevationInfo = js.native
   
   /**
     * An array of fields in the layer.
@@ -166,7 +162,7 @@ trait FeatureLayer
   /**
     * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#floorInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
     */
   var floorInfo: LayerFloorInfo = js.native
   
@@ -180,21 +176,21 @@ trait FeatureLayer
   /**
     * The version of the geodatabase of the feature service data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#gdbVersion)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
     */
   var gdbVersion: String = js.native
   
   /**
     * Provides information on the system maintained area and length fields along with their respective units.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryFieldsInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryFieldsInfo)
     */
   val geometryFieldsInfo: GeometryFieldsInfo = js.native
   
   /**
     * The geometry type of features in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
     */
   var geometryType: point | multipoint | polyline | polygon | multipatch | mesh = js.native
   
@@ -225,7 +221,7 @@ trait FeatureLayer
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
     */
   var hasM: Boolean = js.native
   
@@ -234,14 +230,14 @@ trait FeatureLayer
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
     */
   var hasZ: Boolean = js.native
   
   /**
     * The historic moment to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#historicMoment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
     */
   var historicMoment: js.Date = js.native
   
@@ -250,7 +246,7 @@ trait FeatureLayer
     *
     * @default false
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#isTable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#isTable)
     */
   val isTable: Boolean = js.native
   
@@ -273,7 +269,7 @@ trait FeatureLayer
   /**
     * The layer ID, or layer index, of a Feature Service layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
     */
   var layerId: Double = js.native
   
@@ -287,9 +283,9 @@ trait FeatureLayer
   var legendEnabled: Boolean = js.native
   
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) containing a unique value or identifier for each feature in the layer.
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
     */
   var objectIdField: String = js.native
   
@@ -479,7 +475,7 @@ trait FeatureLayer
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
     */
   var returnM: Boolean = js.native
   
@@ -488,7 +484,7 @@ trait FeatureLayer
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
     */
   var returnZ: Boolean = js.native
   
@@ -522,7 +518,7 @@ trait FeatureLayer
   /**
     * The service definition expression limits the features available for display and query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#serviceDefinitionExpression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#serviceDefinitionExpression)
     */
   val serviceDefinitionExpression: String = js.native
   
@@ -536,14 +532,14 @@ trait FeatureLayer
   /**
     * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
     */
   var sourceJSON: Any = js.native
   
   /**
     * The spatial reference of the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
     */
   var spatialReference: SpatialReference = js.native
   
@@ -582,14 +578,14 @@ trait FeatureLayer
   /**
     * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
     */
   var url: String = js.native
   
   /**
     * The version of ArcGIS Server in which the layer is published.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#version)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#version)
     */
   val version: Double = js.native
 }

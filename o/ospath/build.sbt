@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ospath"
-version := "1.2-dt-20211202Z-8901a5"
+version := "1.2-dt-20211202Z-6240cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

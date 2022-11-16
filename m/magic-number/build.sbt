@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "magic-number"
-version := "0.0-unknown-dt-20220818Z-5a63d3"
+version := "0.0-unknown-dt-20220818Z-ae032d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`map-layer`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicMapLayer
-  extends StObject
-     with Object {
+trait DynamicMapLayer extends StObject {
   
   /**
     * An optional property for specifying the GDB version.
@@ -34,14 +30,8 @@ trait DynamicMapLayer
 }
 object DynamicMapLayer {
   
-  inline def apply(
-    constructor: js.Function,
-    gdbVersion: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    mapLayerId: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DynamicMapLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], gdbVersion = gdbVersion.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapLayerId = mapLayerId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(gdbVersion: String, mapLayerId: Double): DynamicMapLayer = {
+    val __obj = js.Dynamic.literal(gdbVersion = gdbVersion.asInstanceOf[js.Any], mapLayerId = mapLayerId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("map-layer")
     __obj.asInstanceOf[DynamicMapLayer]
   }

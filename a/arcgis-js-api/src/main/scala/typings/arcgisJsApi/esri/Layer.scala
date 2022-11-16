@@ -24,6 +24,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`subtype-group`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.`web-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.csv
+import typings.arcgisJsApi.arcgisJsApiStrings.dimension
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
 import typings.arcgisJsApi.arcgisJsApiStrings.feature
 import typings.arcgisJsApi.arcgisJsApiStrings.geojson
@@ -54,6 +55,7 @@ trait Layer
      with Accessor
      with Loadable
      with Evented
+     with Identifiable
      with IntersectItem
      with _HitTestItem {
   
@@ -89,7 +91,7 @@ trait Layer
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -132,7 +134,7 @@ trait Layer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#type)
     */
-  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` = js.native
+  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | dimension | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` = js.native
   
   /**
     * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).

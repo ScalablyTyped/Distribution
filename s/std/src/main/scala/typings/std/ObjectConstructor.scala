@@ -105,12 +105,6 @@ Instantiable0[js.Object]
   
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
-    * @param a Object on which to lock the attributes.
-    */
-  /* standard es5 */
-  def freeze[T](a: js.Array[T]): js.Array[T] = js.native
-  /**
-    * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param f Object on which to lock the attributes.
     */
   /* standard es5 */

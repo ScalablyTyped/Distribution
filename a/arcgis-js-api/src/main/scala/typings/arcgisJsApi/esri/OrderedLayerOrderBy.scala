@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.ascending
 import typings.arcgisJsApi.arcgisJsApiStrings.descending
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OrderedLayerOrderBy
-  extends StObject
-     with Object {
+trait OrderedLayerOrderBy extends StObject {
   
   /**
     * The number or date field whose values will be used to sort features.
@@ -37,12 +33,8 @@ trait OrderedLayerOrderBy
 }
 object OrderedLayerOrderBy {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): OrderedLayerOrderBy = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): OrderedLayerOrderBy = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderedLayerOrderBy]
   }
   

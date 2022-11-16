@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ColorVariable
-import typings.arcgisJsApi.esri.ColorVariableConstructor
 import typings.arcgisJsApi.esri.ColorVariableProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersVisualVariablesColorVariableMod extends Shortcut {
+/* static members */
+object esriRenderersVisualVariablesColorVariableMod {
   
-  @JSImport("esri/renderers/visualVariables/ColorVariable", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ColorVariableConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/visualVariables/ColorVariable", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersVisualVariablesColorVariableMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ColorVariable {
     def this(properties: ColorVariableProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersVisualVariablesColorVariableMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/visualVariables/ColorVariable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ColorVariableConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersVisualVariablesColorVariableMod.foo` */
-  override def _to: js.Object & ColorVariableConstructor = ^
+  inline def fromJSON(json: Any): ColorVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ColorVariable]
 }

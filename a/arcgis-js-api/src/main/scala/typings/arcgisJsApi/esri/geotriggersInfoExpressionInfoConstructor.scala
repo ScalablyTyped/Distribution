@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait geotriggersInfoExpressionInfoConstructor
   extends StObject
-     with /**
-  * Defines a script expression that can be used to compute values.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html)
-  */
-Instantiable0[geotriggersInfoExpressionInfo]
+     with Instantiable0[geotriggersInfoExpressionInfo]
      with Instantiable1[
       /* properties */ geotriggersInfoExpressionInfoProperties, 
       geotriggersInfoExpressionInfo

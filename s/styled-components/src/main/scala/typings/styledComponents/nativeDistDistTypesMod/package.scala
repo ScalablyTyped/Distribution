@@ -37,6 +37,14 @@ PropsToBeInjectedIntoActualComponent,
 */
 type FlattenerResult[Props] = _FlattenerResult[Props] | js.Array[String] | (IStyledComponent[Any, Any]) | Double | String
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Interpolation = styled-components.styled-components/native/dist/dist/types.StyleFunction<Props> | styled-components.styled-components/native/dist/dist/types.StyledObject | string | number | styled-components.styled-components/native/dist/dist/types.Keyframes | styled-components.styled-components/native/dist/dist/types.IStyledComponent<any, any> | std.Array<styled-components.styled-components/native/dist/dist/types.Interpolation<Props>>
+}}}
+to avoid circular code involving: 
+- styled-components.styled-components/native/dist/dist/types.Interpolation
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.styledComponents.nativeDistDistTypesMod.StyleFunction[Props]
   - typings.styledComponents.nativeDistDistTypesMod.StyledObject

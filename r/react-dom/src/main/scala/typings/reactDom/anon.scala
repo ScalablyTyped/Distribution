@@ -29,9 +29,9 @@ object anon {
     
     val Simulate: TypeofSimulate = js.native
     
-    def act(callback: js.Function0[VoidOrUndefinedOnly]): Unit = js.native
+    def act(callback: js.Function0[VoidOrUndefinedOnly]): js.Promise[Unit] = js.native
     @JSName("act")
-    def act_Promise(callback: js.Function0[js.Promise[Unit]]): js.Promise[Unit] = js.native
+    def act_T[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = js.native
     
     def createRenderer(): ShallowRenderer = js.native
     

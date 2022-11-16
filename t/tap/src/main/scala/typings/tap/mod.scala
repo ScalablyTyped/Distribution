@@ -2320,6 +2320,14 @@ object mod extends Shortcut {
           }
         }
         
+        /** 
+        NOTE: Rewritten from type alias:
+        {{{
+        type Spec = {[pathname: string] : string | node.buffer.<global>.Buffer | tap.tap.<global>.Tap.Fixture.Instance | tap.tap.<global>.Tap.Fixture.Spec}
+        }}}
+        to avoid circular code involving: 
+        - tap.tap.<global>.Tap.Fixture.Spec
+        */
         trait Spec
           extends StObject
              with /* pathname */ StringDictionary[String | Buffer | Instance | Spec]

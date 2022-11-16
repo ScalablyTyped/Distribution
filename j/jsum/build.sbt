@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsum"
-version := "0.1-dt-20220624Z-b3d2e2"
+version := "0.1-dt-20220624Z-273d56"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

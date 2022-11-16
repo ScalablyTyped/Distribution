@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeometryFieldsInfoConstructor
   extends StObject
-     with /**
-  * The `GeometryFieldsInfo` class returns information about the system maintained geometry information associated with a specific feature in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html)
-  */
-Instantiable0[GeometryFieldsInfo]
+     with Instantiable0[GeometryFieldsInfo]
      with Instantiable1[/* properties */ GeometryFieldsInfoProperties, GeometryFieldsInfo] {
   
   def fromJSON(json: Any): GeometryFieldsInfo = js.native

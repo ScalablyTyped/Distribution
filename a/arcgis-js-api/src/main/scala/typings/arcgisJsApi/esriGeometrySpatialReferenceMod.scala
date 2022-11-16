@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SpatialReference
-import typings.arcgisJsApi.esri.SpatialReferenceConstructor
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriGeometrySpatialReferenceMod extends Shortcut {
+/* static members */
+object esriGeometrySpatialReferenceMod {
   
-  @JSImport("esri/geometry/SpatialReference", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SpatialReferenceConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry/SpatialReference", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriGeometrySpatialReferenceMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SpatialReference {
     def this(properties: SpatialReferenceProperties) = this()
@@ -35,9 +29,29 @@ object esriGeometrySpatialReferenceMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/geometry/SpatialReference", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SpatialReferenceConstructor
+  /**
+    * A convenience spatial reference instance for WGS84.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WGS84)
+    */
+  @JSImport("esri/geometry/SpatialReference", "WGS84")
+  @js.native
+  def WGS84: SpatialReference = js.native
+  inline def WGS84_=(x: SpatialReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WGS84")(x.asInstanceOf[js.Any])
   
-  /* This means you don't have to write `^`, but can instead just say `esriGeometrySpatialReferenceMod.foo` */
-  override def _to: js.Object & SpatialReferenceConstructor = ^
+  /**
+    * A convenience spatial reference instance for Web Mercator.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WebMercator)
+    */
+  @JSImport("esri/geometry/SpatialReference", "WebMercator")
+  @js.native
+  def WebMercator: SpatialReference = js.native
+  inline def WebMercator_=(x: SpatialReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebMercator")(x.asInstanceOf[js.Any])
+  
+  inline def fromJSON(json: Any): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
 }

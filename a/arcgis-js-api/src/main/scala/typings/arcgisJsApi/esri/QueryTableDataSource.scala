@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryTableDataSource
-  extends StObject
-     with Object {
+trait QueryTableDataSource extends StObject {
   
   /**
     * The geometry type of each record in the table.
@@ -61,16 +57,13 @@ trait QueryTableDataSource
 object QueryTableDataSource {
   
   inline def apply(
-    constructor: js.Function,
     geometryType: point | multipoint | polyline | polygon | multipatch,
-    hasOwnProperty: PropertyKey => Boolean,
     oidFields: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     query: String,
     spatialReference: SpatialReference,
     workspaceId: String
   ): QueryTableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), oidFields = oidFields.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any], oidFields = oidFields.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("query-table")
     __obj.asInstanceOf[QueryTableDataSource]
   }

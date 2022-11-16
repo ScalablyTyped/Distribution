@@ -1,20 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
+import typings.arcgisJsApi.esri.Graphic
 import typings.arcgisJsApi.esri.PointBarrier
-import typings.arcgisJsApi.esri.PointBarrierConstructor
 import typings.arcgisJsApi.esri.PointBarrierProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportPointBarrierMod extends Shortcut {
+/* static members */
+object esriRestSupportPointBarrierMod {
   
-  @JSImport("esri/rest/support/PointBarrier", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointBarrierConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/PointBarrier", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +17,7 @@ object esriRestSupportPointBarrierMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointBarrier {
     def this(properties: PointBarrierProperties) = this()
@@ -35,9 +30,17 @@ object esriRestSupportPointBarrierMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/PointBarrier", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointBarrierConstructor
+  /**
+    * Creates a [PointBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fromGraphic)
+    */
+  inline def fromGraphic(): PointBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")().asInstanceOf[PointBarrier]
+  inline def fromGraphic(graphic: Graphic): PointBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")(graphic.asInstanceOf[js.Any]).asInstanceOf[PointBarrier]
   
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportPointBarrierMod.foo` */
-  override def _to: js.Object & PointBarrierConstructor = ^
+  inline def fromJSON(json: Any): PointBarrier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointBarrier]
 }

@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`ease-out`
 import typings.arcgisJsApi.arcgisJsApiStrings.ease
 import typings.arcgisJsApi.arcgisJsApiStrings.linear
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GoToOptions2D
-  extends StObject
-     with Object {
+trait GoToOptions2D extends StObject {
   
   /**
     * Indicates if the transition to the new view should be animated.
@@ -46,12 +42,8 @@ trait GoToOptions2D
 }
 object GoToOptions2D {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GoToOptions2D = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): GoToOptions2D = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoToOptions2D]
   }
   

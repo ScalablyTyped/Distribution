@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imsi-grok"
-version := "1.0-dt-20211202Z-f2be03"
+version := "1.0-dt-20211202Z-13423e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

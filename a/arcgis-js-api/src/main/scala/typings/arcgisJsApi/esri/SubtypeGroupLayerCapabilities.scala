@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerCapabilities
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerCapabilities extends StObject {
   
   /**
     * Describes what attachment capabilities are enabled on the layer.
@@ -63,17 +59,14 @@ object SubtypeGroupLayerCapabilities {
   
   inline def apply(
     attachment: SubtypeGroupLayerCapabilitiesAttachment,
-    constructor: js.Function,
     data: SubtypeGroupLayerCapabilitiesData,
     editing: SubtypeGroupLayerCapabilitiesEditing,
-    hasOwnProperty: PropertyKey => Boolean,
     metadata: SubtypeGroupLayerCapabilitiesMetadata,
     operations: SubtypeGroupLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean,
     query: SubtypeGroupLayerCapabilitiesQuery,
     queryRelated: SubtypeGroupLayerCapabilitiesQueryRelated
   ): SubtypeGroupLayerCapabilities = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerCapabilities]
   }
   

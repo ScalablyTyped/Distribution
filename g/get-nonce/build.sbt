@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "get-nonce"
-version := "1.0.1-f58440"
+version := "1.0.1-198556"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -45,7 +45,7 @@ trait RasterShadedReliefRenderer
   /**
     * The type of hillshading being applied on the elevation surface.
     *
-    * @default "multi-directional"
+    * @default "traditional"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#hillshadeType)
     */

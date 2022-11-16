@@ -1,5 +1,6 @@
 package typings.std
 
+import typings.std.anon.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,12 @@ trait ReadableStream[R] extends StObject {
   
   /* standard dom */
   def getReader(): ReadableStreamDefaultReader[R] = js.native
+  def getReader(options: ReadableStreamGetReaderOptions): ReadableStreamReader[R] = js.native
+  /* standard dom */
+  def getReader(options: Mode): ReadableStreamBYOBReader = js.native
+  /* standard dom */
+  @JSName("getReader")
+  def getReader_ReadableStreamReader(): ReadableStreamReader[R] = js.native
   
   /* standard dom */
   val locked: scala.Boolean = js.native

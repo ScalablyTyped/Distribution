@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.geotriggersInfoFeatureFilter
-import typings.arcgisJsApi.esri.geotriggersInfoFeatureFilterConstructor
 import typings.arcgisJsApi.esri.geotriggersInfoFeatureFilterProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebdocGeotriggersInfoFeatureFilterMod extends Shortcut {
+/* static members */
+object esriWebdocGeotriggersInfoFeatureFilterMod {
   
-  @JSImport("esri/webdoc/geotriggersInfo/FeatureFilter", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & geotriggersInfoFeatureFilterConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/geotriggersInfo/FeatureFilter", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWebdocGeotriggersInfoFeatureFilterMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with geotriggersInfoFeatureFilter {
     def this(properties: geotriggersInfoFeatureFilterProperties) = this()
@@ -35,9 +29,9 @@ object esriWebdocGeotriggersInfoFeatureFilterMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/webdoc/geotriggersInfo/FeatureFilter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & geotriggersInfoFeatureFilterConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWebdocGeotriggersInfoFeatureFilterMod.foo` */
-  override def _to: js.Object & geotriggersInfoFeatureFilterConstructor = ^
+  inline def fromJSON(json: Any): geotriggersInfoFeatureFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[geotriggersInfoFeatureFilter]
 }

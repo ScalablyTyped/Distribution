@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formatcoords"
-version := "1.1-dt-20211202Z-a34ea8"
+version := "1.1-dt-20211202Z-9b7e7f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -33,6 +33,8 @@ object anon {
     
     var blur: js.UndefOr[String] = js.undefined
     
+    var cancel: js.UndefOr[String] = js.undefined
+    
     var canplay: js.UndefOr[String] = js.undefined
     
     var canplaythrough: js.UndefOr[String] = js.undefined
@@ -295,6 +297,10 @@ object anon {
       inline def setBlur(value: String): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       inline def setCanplay(value: String): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
       

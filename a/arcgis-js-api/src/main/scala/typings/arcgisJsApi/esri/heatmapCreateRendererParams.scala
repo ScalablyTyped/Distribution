@@ -1,18 +1,23 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait heatmapCreateRendererParams
-  extends StObject
-     with Object {
+trait heatmapCreateRendererParams extends StObject {
   
   /**
-    * Indicates whether to fade the lower color stops to a transparent color to create a fuzzy boundary on the edge of the heatmap.
+    * Indicates how much to fade the lower color stops with transparency to create a fuzzy boundary on the edge of the heatmap.
+    *
+    * @default 0.2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#createRenderer)
+    */
+  var fadeRatio: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Indicates whether the heatmap should fade its colors to transparent.
     *
     * @default true
     *
@@ -92,17 +97,18 @@ trait heatmapCreateRendererParams
 object heatmapCreateRendererParams {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView | SceneView
   ): heatmapCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapCreateRendererParams]
   }
   
   extension [Self <: heatmapCreateRendererParams](x: Self) {
+    
+    inline def setFadeRatio(value: Double): Self = StObject.set(x, "fadeRatio", value.asInstanceOf[js.Any])
+    
+    inline def setFadeRatioUndefined: Self = StObject.set(x, "fadeRatio", js.undefined)
     
     inline def setFadeToTransparent(value: Boolean): Self = StObject.set(x, "fadeToTransparent", value.asInstanceOf[js.Any])
     

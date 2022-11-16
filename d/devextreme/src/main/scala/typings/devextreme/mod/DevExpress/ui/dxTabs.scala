@@ -199,6 +199,18 @@ object dxTabs {
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TabsInstance = devextreme.devextreme.DevExpress.ui.dxTabs<devextreme.devextreme.DevExpress.ui.dxTabs.Properties<TItem, TKey>, TItem, TKey>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxTabs.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxTabs.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxTabs.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxTabs.Properties
+  - devextreme.devextreme.DevExpress.ui.dxTabs.TabsInstance
+  */
   @js.native
   trait TabsInstance[TItem, TKey]
     extends StObject

@@ -8,9 +8,12 @@ import typings.std.stdStrings.EXT_float_blend
 import typings.std.stdStrings.EXT_frag_depth
 import typings.std.stdStrings.EXT_sRGB
 import typings.std.stdStrings.EXT_shader_texture_lod
+import typings.std.stdStrings.EXT_texture_compression_bptc
+import typings.std.stdStrings.EXT_texture_compression_rgtc
 import typings.std.stdStrings.EXT_texture_filter_anisotropic
 import typings.std.stdStrings.KHR_parallel_shader_compile
 import typings.std.stdStrings.OES_element_index_uint
+import typings.std.stdStrings.OES_fbo_render_mipmap
 import typings.std.stdStrings.OES_standard_derivatives
 import typings.std.stdStrings.OES_texture_float
 import typings.std.stdStrings.OES_texture_float_linear
@@ -29,6 +32,7 @@ import typings.std.stdStrings.WEBGL_debug_shaders
 import typings.std.stdStrings.WEBGL_depth_texture
 import typings.std.stdStrings.WEBGL_draw_buffers
 import typings.std.stdStrings.WEBGL_lose_context
+import typings.std.stdStrings.WEBGL_multi_draw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -965,7 +969,7 @@ trait WebGLRenderingContextBase extends StObject {
   def blendFuncSeparate(srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum): Unit = js.native
   
   /* standard dom */
-  val canvas: HTMLCanvasElement = js.native
+  val canvas: HTMLCanvasElement | OffscreenCanvas = js.native
   
   /* standard dom */
   def checkFramebufferStatus(target: GLenum): GLenum = js.native
@@ -1162,6 +1166,12 @@ trait WebGLRenderingContextBase extends StObject {
   def getExtension_EXTshadertexturelod(extensionName: EXT_shader_texture_lod): EXTShaderTextureLod | Null = js.native
   /* standard dom */
   @JSName("getExtension")
+  def getExtension_EXTtexturecompressionbptc(extensionName: EXT_texture_compression_bptc): EXTTextureCompressionBptc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  def getExtension_EXTtexturecompressionrgtc(extensionName: EXT_texture_compression_rgtc): EXTTextureCompressionRgtc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
   def getExtension_EXTtexturefilteranisotropic(extensionName: EXT_texture_filter_anisotropic): EXTTextureFilterAnisotropic | Null = js.native
   /* standard dom */
   @JSName("getExtension")
@@ -1169,6 +1179,9 @@ trait WebGLRenderingContextBase extends StObject {
   /* standard dom */
   @JSName("getExtension")
   def getExtension_OESelementindexuint(extensionName: OES_element_index_uint): OESElementIndexUint | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  def getExtension_OESfborendermipmap(extensionName: OES_fbo_render_mipmap): OESFboRenderMipmap | Null = js.native
   /* standard dom */
   @JSName("getExtension")
   def getExtension_OESstandardderivatives(extensionName: OES_standard_derivatives): OESStandardDerivatives | Null = js.native
@@ -1223,6 +1236,9 @@ trait WebGLRenderingContextBase extends StObject {
   /* standard dom */
   @JSName("getExtension")
   def getExtension_WEBGLlosecontext(extensionName: WEBGL_lose_context): WEBGLLoseContext | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
+  def getExtension_WEBGLmultidraw(extensionName: WEBGL_multi_draw): WEBGLMultiDraw | Null = js.native
   
   /* standard dom */
   def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): Any = js.native

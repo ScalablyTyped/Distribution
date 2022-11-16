@@ -132,6 +132,13 @@ trait InputField
   val `type`: number | text | date | unsupported = js.native
   
   /**
+    * If this `InputField` has a value defined for `valueExpression` or `editableExpression`, this property will be true whenever one or both of these expressions is currently being executed; otherwise, it will be false.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#updating)
+    */
+  val updating: Boolean = js.native
+  
+  /**
     * When `true`, the input value is valid.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#valid)
@@ -143,7 +150,7 @@ trait InputField
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#value)
     */
-  val value: Double | String | Any = js.native
+  val value: Double | String | Null = js.native
   
   /**
     * When `true`, the field is displayed.

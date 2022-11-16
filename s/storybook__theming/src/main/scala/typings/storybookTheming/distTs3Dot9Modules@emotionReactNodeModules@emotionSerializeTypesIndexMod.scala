@@ -565,6 +565,15 @@ object `distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod
   
   type ArrayInterpolation[Props] = js.Array[Interpolation[Props]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.InterpolationPrimitive | @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayCSSInterpolation
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayCSSInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.CSSInterpolation
+  */
   type CSSInterpolation = InterpolationPrimitive | Any
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -591,6 +600,16 @@ object `distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSOthersObject = {[propertiesName: string] : @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.CSSInterpolation}
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayCSSInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.CSSInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.CSSOthersObject
+  */
   trait CSSOthersObject
     extends StObject
        with /* propertiesName */ StringDictionary[CSSInterpolation]
@@ -23023,6 +23042,16 @@ object `distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionInterpolation = (props : Props): @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.FunctionInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation
+  */
   @js.native
   trait FunctionInterpolation[Props]
     extends StObject
@@ -23031,6 +23060,15 @@ object `distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod
     def apply(props: Props): Interpolation[Props] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.InterpolationPrimitive | @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayInterpolation<Props> | @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.FunctionInterpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.ArrayInterpolation
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.InterpolationPrimitive
     - scala.Any

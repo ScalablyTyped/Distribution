@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.number
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +31,7 @@ trait popupExpressionInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#returnType)
     */
-  var returnType: String | Double = js.native
+  var returnType: string_ | number = js.native
   
   /**
     * The title used to describe the value returned by the expression in the popup.

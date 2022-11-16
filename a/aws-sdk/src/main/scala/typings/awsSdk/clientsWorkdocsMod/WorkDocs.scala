@@ -113,14 +113,14 @@ trait WorkDocs extends Service {
   ): Request[CreateLabelsResponse, AWSError] = js.native
   
   /**
-    * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
+    * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Setting up notifications for an IAM user or role in the Amazon WorkDocs Developer Guide.
     */
   def createNotificationSubscription(): Request[CreateNotificationSubscriptionResponse, AWSError] = js.native
   def createNotificationSubscription(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNotificationSubscriptionResponse, Unit]
   ): Request[CreateNotificationSubscriptionResponse, AWSError] = js.native
   /**
-    * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
+    * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Setting up notifications for an IAM user or role in the Amazon WorkDocs Developer Guide.
     */
   def createNotificationSubscription(params: CreateNotificationSubscriptionRequest): Request[CreateNotificationSubscriptionResponse, AWSError] = js.native
   def createNotificationSubscription(
@@ -195,6 +195,20 @@ trait WorkDocs extends Service {
   def deleteDocument(params: DeleteDocumentRequest): Request[js.Object, AWSError] = js.native
   def deleteDocument(
     params: DeleteDocumentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a version of an Amazon WorkDocs document. Use the DeletePriorVersions parameter to delete prior versions.
+    */
+  def deleteDocumentVersion(): Request[js.Object, AWSError] = js.native
+  def deleteDocumentVersion(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a version of an Amazon WorkDocs document. Use the DeletePriorVersions parameter to delete prior versions.
+    */
+  def deleteDocumentVersion(params: DeleteDocumentVersionRequest): Request[js.Object, AWSError] = js.native
+  def deleteDocumentVersion(
+    params: DeleteDocumentVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -530,6 +544,20 @@ trait WorkDocs extends Service {
   def removeResourcePermission(params: RemoveResourcePermissionRequest): Request[js.Object, AWSError] = js.native
   def removeResourcePermission(
     params: RemoveResourcePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Recovers a deleted version of an Amazon WorkDocs document.
+    */
+  def restoreDocumentVersions(): Request[js.Object, AWSError] = js.native
+  def restoreDocumentVersions(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Recovers a deleted version of an Amazon WorkDocs document.
+    */
+  def restoreDocumentVersions(params: RestoreDocumentVersionsRequest): Request[js.Object, AWSError] = js.native
+  def restoreDocumentVersions(
+    params: RestoreDocumentVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   

@@ -23,5 +23,5 @@ trait FeatureSnappingLayerSource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#layer)
     */
-  val layer: FeatureLayer | GraphicsLayer | GeoJSONLayer | CSVLayer | WFSLayer = js.native
+  val layer: BuildingSceneLayer | CSVLayer | FeatureLayer | GeoJSONLayer | GraphicsLayer | MapNotesLayer | SceneLayer | WFSLayer = js.native
 }

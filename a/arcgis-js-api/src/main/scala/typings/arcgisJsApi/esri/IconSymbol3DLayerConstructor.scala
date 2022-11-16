@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IconSymbol3DLayerConstructor
   extends StObject
-     with /**
-  * IconSymbol3DLayer is used to render [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries using a flat 2D icon (e.g.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html)
-  */
-Instantiable0[IconSymbol3DLayer]
+     with Instantiable0[IconSymbol3DLayer]
      with Instantiable1[/* properties */ IconSymbol3DLayerProperties, IconSymbol3DLayer] {
   
   def fromJSON(json: Any): IconSymbol3DLayer = js.native

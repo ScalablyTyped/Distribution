@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroupLayerConstructor
   extends StObject
-     with /**
-  * GroupLayer provides the ability to organize several sublayers into one common layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html)
-  */
-Instantiable0[GroupLayer]
+     with Instantiable0[GroupLayer]
      with Instantiable1[/* properties */ GroupLayerProperties, GroupLayer] {
   
   def fromJSON(json: Any): GroupLayer = js.native

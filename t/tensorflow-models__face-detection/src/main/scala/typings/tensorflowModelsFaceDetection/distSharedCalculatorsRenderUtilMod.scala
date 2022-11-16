@@ -1,9 +1,9 @@
 package typings.tensorflowModelsFaceDetection
 
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.CanvasImageSource
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
+import typings.std.OffscreenCanvas
 import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.Color
 import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.PixelInput
 import typings.tensorflowModelsFaceDetection.distSharedCalculatorsInterfacesCommonInterfacesMod.Segmentation

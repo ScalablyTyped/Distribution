@@ -15,6 +15,15 @@ object libModelMod {
   */
   type DocumentType = _DocumentType | Scalar
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type List = std.Array<aws-sdk.aws-sdk/lib/model.DocumentType>
+  }}}
+  to avoid circular code involving: 
+  - aws-sdk.aws-sdk/lib/model.DocumentType
+  - aws-sdk.aws-sdk/lib/model.List
+  */
   @js.native
   trait List
     extends StObject
@@ -23,6 +32,16 @@ object libModelMod {
   
   type Scalar = String | Double | Boolean | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Structure = {[member: string] : aws-sdk.aws-sdk/lib/model.DocumentType}
+  }}}
+  to avoid circular code involving: 
+  - aws-sdk.aws-sdk/lib/model.DocumentType
+  - aws-sdk.aws-sdk/lib/model.List
+  - aws-sdk.aws-sdk/lib/model.Structure
+  */
   trait Structure
     extends StObject
        with /* member */ StringDictionary[DocumentType]

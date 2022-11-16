@@ -38,6 +38,10 @@ open class HTMLSpanElement ()
   
   /* standard dom */
   /* CompleteClass */
+  var ariaColIndexText: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   var ariaColSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -59,6 +63,10 @@ open class HTMLSpanElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaHidden: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var ariaInvalid: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -126,6 +134,10 @@ open class HTMLSpanElement ()
   
   /* standard dom */
   /* CompleteClass */
+  var ariaRowIndexText: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -189,6 +201,10 @@ open class HTMLSpanElement ()
   /* standard dom */
   /* CompleteClass */
   override val previousElementSibling: typings.std.Element | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var role: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */

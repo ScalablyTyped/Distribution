@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Profile
-  extends StObject
-     with Object {
+trait Profile extends StObject {
   
   /**
     * The Arcade type definitions for profile variables used as input to the compiled expression.
@@ -19,13 +15,8 @@ trait Profile
 }
 object Profile {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    variables: js.Array[ProfileVariable]
-  ): Profile = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), variables = variables.asInstanceOf[js.Any])
+  inline def apply(variables: js.Array[ProfileVariable]): Profile = {
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
   

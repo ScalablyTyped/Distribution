@@ -28,6 +28,14 @@ object sourceAsYouTypeFormatterDotPatternParserMod {
   //
   type Character_ = character
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MatchTree = libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.Character | libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.OneOfCharacters | std.Array<libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.MatchTree> | libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.OrCondition<libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.MatchTree>
+  }}}
+  to avoid circular code involving: 
+  - libphonenumber-js.libphonenumber-js/source/AsYouTypeFormatter.PatternParser.MatchTree
+  */
   type MatchTree = Character_ | OneOfCharacters | js.Array[Any] | OrCondition[Any]
   
   // Matches one of characters.

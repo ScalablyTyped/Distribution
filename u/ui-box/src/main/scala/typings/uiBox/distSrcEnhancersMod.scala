@@ -10,6 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcEnhancersMod {
   
+  object animation {
+    
+    @JSImport("ui-box/dist/src/enhancers", "animation.propAliases")
+    @js.native
+    val propAliases: PropAliases = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "animation.propEnhancers")
+    @js.native
+    val propEnhancers: PropEnhancers = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "animation.propTypes")
+    @js.native
+    val propTypes: PropTypesMapping = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "animation.propValidators")
+    @js.native
+    val propValidators: PropValidators = js.native
+  }
+  
   object background {
     
     @JSImport("ui-box/dist/src/enhancers", "background.propAliases")

@@ -50,7 +50,7 @@ trait FieldProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: js.UndefOr[Double | String | Any] = js.undefined
+  var defaultValue: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * Contains information describing the purpose of each field.
@@ -139,7 +139,9 @@ object FieldProperties {
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    inline def setDefaultValue(value: Double | String | Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BuildingFieldStatistics
-  extends StObject
-     with Object {
+trait BuildingFieldStatistics extends StObject {
   
   /**
     * Name of the field.
@@ -62,18 +58,15 @@ trait BuildingFieldStatistics
 object BuildingFieldStatistics {
   
   inline def apply(
-    constructor: js.Function,
     fieldName: String,
-    hasOwnProperty: PropertyKey => Boolean,
     label: String,
     max: Double,
     min: Double,
     modelName: String,
     mostFrequentValues: js.Array[Double | String],
-    propertyIsEnumerable: PropertyKey => Boolean,
     subLayerIds: js.Array[Double]
   ): BuildingFieldStatistics = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], mostFrequentValues = mostFrequentValues.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), subLayerIds = subLayerIds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], mostFrequentValues = mostFrequentValues.asInstanceOf[js.Any], subLayerIds = subLayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingFieldStatistics]
   }
   

@@ -174,8 +174,25 @@ object distCommandsMod {
   
   type QueryOptionsBackwardCompatible = QueryOptions | Double
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type QueryParam = null | string | number | boolean | @redis/graph.@redis/graph/dist/commands.QueryParams | std.Array<@redis/graph.@redis/graph/dist/commands.QueryParam>
+  }}}
+  to avoid circular code involving: 
+  - @redis/graph.@redis/graph/dist/commands.QueryParam
+  */
   type QueryParam = Null | String | Double | Boolean | QueryParams | js.Array[Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type QueryParams = {[key: string] : @redis/graph.@redis/graph/dist/commands.QueryParam}
+  }}}
+  to avoid circular code involving: 
+  - @redis/graph.@redis/graph/dist/commands.QueryParam
+  - @redis/graph.@redis/graph/dist/commands.QueryParams
+  */
   trait QueryParams
     extends StObject
        with /* key */ StringDictionary[QueryParam]

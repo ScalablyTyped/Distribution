@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fetch-headers"
-version := "2.0-dt-20211202Z-f5f609"
+version := "2.0-dt-20211202Z-fe71ee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

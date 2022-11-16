@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proposal-relative-indexing-method"
-version := "0.1-dt-20211202Z-13fd5c"
+version := "0.1-dt-20211202Z-70b8dc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

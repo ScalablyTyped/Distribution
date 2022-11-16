@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "github-url-to-object"
-version := "4.0-dt-20211202Z-94ece8"
+version := "4.0-dt-20211202Z-c212b5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -115,5 +115,14 @@ object libToggleButtonGroupMod {
   
   type ToggleButtonGroup = Component[ToggleButtonGroupProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ToggleButtonGroupProps = react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.RadioProps & react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.BaseProps & react-bootstrap.react-bootstrap.Omit<react-bootstrap.react-bootstrap/lib/ButtonGroup.ButtonGroupProps, 'onChange'> & react-bootstrap.react-bootstrap.Omit<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.ToggleButtonGroup>, 'defaultValue' | 'type' | 'value' | 'onChange'> | react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.CheckboxProps & react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.BaseProps & react-bootstrap.react-bootstrap.Omit<react-bootstrap.react-bootstrap/lib/ButtonGroup.ButtonGroupProps, 'onChange'> & react-bootstrap.react-bootstrap.Omit<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.ToggleButtonGroup>, 'defaultValue' | 'type' | 'value' | 'onChange'>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.ToggleButtonGroup
+  - react-bootstrap.react-bootstrap/lib/ToggleButtonGroup.ToggleButtonGroupProps
+  */
   type ToggleButtonGroupProps = (RadioProps & BaseProps & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[Any], defaultValue | `type` | value | onChange])) | (CheckboxProps & BaseProps & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[Any], defaultValue | `type` | value | onChange]))
 }

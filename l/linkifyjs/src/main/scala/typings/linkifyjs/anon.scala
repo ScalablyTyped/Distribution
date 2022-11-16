@@ -7,6 +7,7 @@ import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.FormDataEvent
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.OnErrorEventHandler
@@ -47,7 +48,11 @@ object anon {
     
     var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
     
+    var onbeforeinput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null] = js.undefined
+    
     var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.undefined
+    
+    var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
     var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
@@ -276,11 +281,23 @@ object anon {
       
       inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
       
+      inline def setOnbeforeinput(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ InputEvent, Any]): Self = StObject.set(x, "onbeforeinput", value.asInstanceOf[js.Any])
+      
+      inline def setOnbeforeinputNull: Self = StObject.set(x, "onbeforeinput", null)
+      
+      inline def setOnbeforeinputUndefined: Self = StObject.set(x, "onbeforeinput", js.undefined)
+      
       inline def setOnblur(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ FocusEvent, Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
       
       inline def setOnblurNull: Self = StObject.set(x, "onblur", null)
       
       inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
+      
+      inline def setOncancel(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+      
+      inline def setOncancelNull: Self = StObject.set(x, "oncancel", null)
+      
+      inline def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
       
       inline def setOncanplay(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
       

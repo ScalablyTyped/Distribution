@@ -95,7 +95,7 @@ object srcTransformersApiMod {
   inline def isTsDiagnostic(diagnostic: Any): /* is typescript.typescript.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTsDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Diagnostic */ Boolean]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, readDirectory, realpath, resolveModuleNames, resolveTypeReferenceDirectives, trace, useCaseSensitiveFileNames, writeFile_Original. Inlined resourceNameToFileName, readResource, getModifiedResourceFiles, transformResource, fileNameToModuleName */ @js.native
+  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, hasInvalidatedResolutions, readDirectory, realpath, resolveModuleNames, resolveTypeReferenceDirectives, trace, useCaseSensitiveFileNames, writeFile_Original. Inlined resourceNameToFileName, readResource, getModifiedResourceFiles, transformResource, fileNameToModuleName */ @js.native
   trait CompilerHost
     extends StObject
        with typings.typescript.mod.CompilerHost {

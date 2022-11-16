@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Scheme
-  extends StObject
-     with Object {
+trait Scheme extends StObject {
   
   /**
     * The suggested [featureReduction.clusterMinSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMinSize) required to fit labels within clusters.
@@ -40,16 +36,8 @@ trait Scheme
 }
 object Scheme {
   
-  inline def apply(
-    clusterMinSize: Double,
-    constructor: js.Function,
-    fieldName: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    labelingInfo: js.Array[LabelClass],
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): Scheme = {
-    val __obj = js.Dynamic.literal(clusterMinSize = clusterMinSize.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), labelingInfo = labelingInfo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(clusterMinSize: Double, fieldName: String, labelingInfo: js.Array[LabelClass], name: String): Scheme = {
+    val __obj = js.Dynamic.literal(clusterMinSize = clusterMinSize.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], labelingInfo = labelingInfo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scheme]
   }
   

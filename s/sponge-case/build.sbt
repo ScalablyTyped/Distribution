@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sponge-case"
-version := "1.0.1-48a5cb"
+version := "1.0.1-6e7cf0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

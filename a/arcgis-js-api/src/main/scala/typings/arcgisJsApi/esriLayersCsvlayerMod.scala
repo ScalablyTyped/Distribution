@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -33,10 +32,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.CSVLayer
-import typings.arcgisJsApi.esri.CSVLayerConstructor
 import typings.arcgisJsApi.esri.CSVLayerProperties
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.TimeExtent
@@ -46,13 +47,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersCsvlayerMod extends Shortcut {
+/* static members */
+object esriLayersCsvlayerMod {
   
-  @JSImport("esri/layers/CSVLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CSVLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/CSVLayer", JSImport.Namespace)
   @js.native
   /**
@@ -60,7 +57,7 @@ object esriLayersCsvlayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with CSVLayer {
     def this(properties: CSVLayerProperties) = this()
@@ -92,6 +89,14 @@ object esriLayersCsvlayerMod extends Shortcut {
       */
     /* CompleteClass */
     var featureEffect: FeatureEffect = js.native
+    
+    /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
     
     /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -171,9 +176,9 @@ object esriLayersCsvlayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
+  @JSImport("esri/layers/CSVLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & CSVLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersCsvlayerMod.foo` */
-  override def _to: js.Object & CSVLayerConstructor = ^
+  inline def fromJSON(json: Any): CSVLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[CSVLayer]
 }

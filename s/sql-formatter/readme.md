@@ -1,7 +1,7 @@
 
 # Scala.js typings for sql-formatter
 
-Typings are for version 12.0.0
+Typings are for version 12.0.1
 
 ## Library description:
 Format whitespace in a SQL query to make it more readable

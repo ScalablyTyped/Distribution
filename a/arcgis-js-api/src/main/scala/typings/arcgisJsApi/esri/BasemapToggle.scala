@@ -1,7 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.IHandle
-import typings.arcgisJsApi.arcgisJsApiStrings.toggle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,15 +23,12 @@ trait BasemapToggle
     */
   var nextBasemap: Basemap = js.native
   
-  @JSName("on")
-  def on_toggle(name: toggle, eventHandler: BasemapToggleToggleEventHandler): IHandle = js.native
-  
   /**
     * Toggles to the [next basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#nextBasemap).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#toggle)
     */
-  def toggle(): scala.Unit = js.native
+  def toggle(): js.Promise[Any] = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

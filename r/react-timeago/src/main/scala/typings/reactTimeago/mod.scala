@@ -14,6 +14,14 @@ object mod {
   open class ^[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] ()
     extends Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Formatter = (value : number, unit : react-timeago.react-timeago.Unit, suffix : react-timeago.react-timeago.Suffix, epochMiliseconds : number, nextFormatter : react-timeago.react-timeago.Formatter | undefined): react.react.ReactNode
+  }}}
+  to avoid circular code involving: 
+  - react-timeago.react-timeago.Formatter
+  */
   @js.native
   trait Formatter extends StObject {
     

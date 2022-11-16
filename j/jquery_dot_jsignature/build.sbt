@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_jsignature"
-version := "2.0-dt-20211202Z-2b88ae"
+version := "2.0-dt-20211202Z-b1b534"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

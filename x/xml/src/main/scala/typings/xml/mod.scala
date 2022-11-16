@@ -98,6 +98,16 @@ object mod {
   */
   type XmlDesc = _XmlDesc | js.Array[XmlAtom] | XmlAtom
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type XmlDescArray = {[index: number] : {  _attr :xml.xml.XmlAttrs} | xml.xml.XmlObject}
+  }}}
+  to avoid circular code involving: 
+  - xml.xml.XmlDesc
+  - xml.xml.XmlDescArray
+  - xml.xml.XmlObject
+  */
   trait XmlDescArray
     extends StObject
        with /* index */ NumberDictionary[Attr | XmlObject]

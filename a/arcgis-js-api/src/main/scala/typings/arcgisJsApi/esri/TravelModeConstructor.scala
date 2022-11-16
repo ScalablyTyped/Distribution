@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TravelModeConstructor
   extends StObject
-     with /**
-  * A TravelMode is a set of characteristics that define how an object like a vehicle, bicycle, or pedestrian moves along a street network.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html)
-  */
-Instantiable0[TravelMode]
+     with Instantiable0[TravelMode]
      with Instantiable1[/* properties */ TravelModeProperties, TravelMode] {
   
   def fromJSON(json: Any): TravelMode = js.native

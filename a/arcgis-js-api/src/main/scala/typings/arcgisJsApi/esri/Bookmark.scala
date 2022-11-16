@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Bookmark
   extends StObject
-     with Accessor {
+     with Accessor
+     with Identifiable {
   
   /**
     * The name of the bookmark item.

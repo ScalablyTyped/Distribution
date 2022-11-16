@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMHatchFill
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -78,15 +75,8 @@ trait CIMHatchFill
 }
 object CIMHatchFill {
   
-  inline def apply(
-    constructor: js.Function,
-    enable: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    lineSymbol: CIMLineSymbol,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    separation: Double
-  ): CIMHatchFill = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lineSymbol = lineSymbol.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), separation = separation.asInstanceOf[js.Any])
+  inline def apply(enable: Boolean, lineSymbol: CIMLineSymbol, separation: Double): CIMHatchFill = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], lineSymbol = lineSymbol.asInstanceOf[js.Any], separation = separation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMHatchFill")
     __obj.asInstanceOf[CIMHatchFill]
   }

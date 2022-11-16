@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PieChartMediaInfoConstructor
   extends StObject
-     with /**
-  * A `PieChartMediaInfo` is a type of chart media element that represents a pie chart displayed within a popup.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-PieChartMediaInfo.html)
-  */
-Instantiable0[PieChartMediaInfo]
+     with Instantiable0[PieChartMediaInfo]
      with Instantiable1[/* properties */ PieChartMediaInfoProperties, PieChartMediaInfo] {
   
   def fromJSON(json: Any): PieChartMediaInfo = js.native

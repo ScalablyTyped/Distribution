@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clean-regexp"
-version := "1.0-dt-20211202Z-1cfd61"
+version := "1.0-dt-20211202Z-4934f0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

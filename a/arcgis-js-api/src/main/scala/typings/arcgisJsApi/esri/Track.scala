@@ -14,9 +14,9 @@ trait Track
      with GoTo {
   
   /**
-    * The HTML5 Geolocation Position options for locating.
+    * An object used for setting optional position parameters.
     *
-    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#geolocationOptions)
     */
@@ -32,7 +32,7 @@ trait Track
   var goToLocationEnabled: Boolean = js.native
   
   /**
-    * The graphic used to show the user's location in the view.
+    * The graphic used to show the user's location on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#graphic)
     */
@@ -51,7 +51,7 @@ trait Track
   def on_trackerror(name: `track-error`, eventHandler: TrackTrackErrorEventHandler): IHandle = js.native
   
   /**
-    * Indicates the scale to set on the view when navigating to the position of the geolocated result once a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event-track) event.
+    * Indicates the [scale](https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/) to set on the view when navigating to the position of the geolocated result, after a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event-track) event.
     *
     * @default null
     *
@@ -83,7 +83,7 @@ trait Track
   val tracking: Boolean = js.native
   
   /**
-    * Indicates whether the widget will automatically [rotate to user's direction](https://www.w3.org/TR/geolocation-API/#coordinates_interface).
+    * Indicates whether the widget will automatically rotate to the device heading based on the Geolocation APIs [`GeolocationCoordinates.heading`](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) property.
     *
     * @default true
     *
@@ -99,7 +99,7 @@ trait Track
   var view: MapView | SceneView = js.native
   
   /**
-    * The view model for this widget.
+    * The viewModel for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#viewModel)
     */

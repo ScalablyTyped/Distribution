@@ -14,22 +14,20 @@ object sourceEnforceOptionalMod {
   // Returns `never` if the key is required otherwise return the key type.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends Type[Key] ? Type[Key] extends undefined ? never : Key : never
     }}}
     */
-  @js.native
-  trait OptionalFilter[Type, Key /* <: /* keyof Type */ String */] extends StObject
+  type OptionalFilter[Type, Key /* <: /* keyof Type */ String */] = Key
   
   // Returns `never` if the key is optional otherwise return the key type.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends Type[Key] ? Type[Key] extends undefined ? Key : never : Key
     }}}
     */
-  @js.native
-  trait RequiredFilter[Type, Key /* <: /* keyof Type */ String */] extends StObject
+  type RequiredFilter[Type, Key /* <: /* keyof Type */ String */] = Key
 }

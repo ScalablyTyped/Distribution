@@ -116,6 +116,14 @@ object libFieldsMod {
     var values: StringDictionary[Any] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type WrappedFieldsProps = {[name: string] : redux-form.redux-form/lib/Fields.WrappedFieldsProps & redux-form.redux-form/lib/Field.WrappedFieldProps}
+  }}}
+  to avoid circular code involving: 
+  - redux-form.redux-form/lib/Fields.WrappedFieldsProps
+  */
   trait WrappedFieldsProps
     extends StObject
        with /* name */ StringDictionary[WrappedFieldsProps & WrappedFieldProps]

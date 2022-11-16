@@ -58,7 +58,7 @@ trait MosaicRule
   var method: none_ | center_ | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline = js.native
   
   /**
-    * A multiple dimensional service can have multiple dimensions for one or more variables.
+    * The multidimensional definitions associated with the [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#mosaicRule).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition)
     */

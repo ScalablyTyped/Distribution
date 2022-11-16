@@ -73,13 +73,6 @@ trait PopupTemplate
   var overwriteActions: Boolean = js.native
   
   /**
-    * The `RelatedRecordsInfo` class provides additional sorting options when working with related records in a popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#relatedRecordsInfo)
-    */
-  var relatedRecordsInfo: RelatedRecordsInfo = js.native
-  
-  /**
     * Indicates whether to include the feature's geometry for use by the template.
     *
     * @default false

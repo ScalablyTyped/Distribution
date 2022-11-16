@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalFeaturedGroups
-  extends StObject
-     with Object {
+trait PortalFeaturedGroups extends StObject {
   
   /**
     * Name of the group owner.
@@ -26,14 +22,8 @@ trait PortalFeaturedGroups
 }
 object PortalFeaturedGroups {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    owner: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    title: String
-  ): PortalFeaturedGroups = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), owner = owner.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
+  inline def apply(owner: String, title: String): PortalFeaturedGroups = {
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalFeaturedGroups]
   }
   

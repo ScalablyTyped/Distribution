@@ -72,6 +72,17 @@ object srcAnalyticsForwarderMod {
     var _fn_Original: AnalyticsForwarderFn = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type AnalyticsForwarderFn = (report : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject & @angular-devkit/core.@angular-devkit/core/src/analytics/forwarder.AnalyticsReport): void
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/analytics/forwarder.AnalyticsForwarderFn
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait AnalyticsForwarderFn extends StObject {
     

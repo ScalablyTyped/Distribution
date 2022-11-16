@@ -13,6 +13,14 @@ object esCssifyObjectMod {
   
   inline def default(style: StyleObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StyleObject = {[key: string] : string | number | css-in-js-utils.css-in-js-utils/es/cssifyObject.StyleObject | std.Array<string | number | css-in-js-utils.css-in-js-utils/es/cssifyObject.StyleObject>}
+  }}}
+  to avoid circular code involving: 
+  - css-in-js-utils.css-in-js-utils/es/cssifyObject.StyleObject
+  */
   trait StyleObject
     extends StObject
        with /* key */ StringDictionary[String | Double | StyleObject | (js.Array[String | Double | StyleObject])]

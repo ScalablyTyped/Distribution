@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compressible"
-version := "2.0-dt-20211202Z-a16e15"
+version := "2.0-dt-20211202Z-2c6e6a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

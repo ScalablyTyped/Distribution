@@ -125,6 +125,14 @@ object mod {
   
   type AttributeFunction = js.Function3[/* user */ Any, /* role */ String, /* params */ js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Roles = {[_: string] : number | rbac-a.rbac-a.Roles}
+  }}}
+  to avoid circular code involving: 
+  - rbac-a.rbac-a.Roles
+  */
   trait Roles
     extends StObject
        with /* _ */ StringDictionary[Double | Roles]

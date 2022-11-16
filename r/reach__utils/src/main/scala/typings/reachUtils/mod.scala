@@ -15,6 +15,7 @@ import typings.reachUtils.reachUtilsStrings.beforeinput
 import typings.reachUtils.reachUtilsStrings.beforeprint
 import typings.reachUtils.reachUtilsStrings.beforeunload
 import typings.reachUtils.reachUtilsStrings.blur
+import typings.reachUtils.reachUtilsStrings.cancel
 import typings.reachUtils.reachUtilsStrings.canplay
 import typings.reachUtils.reachUtilsStrings.canplaythrough
 import typings.reachUtils.reachUtilsStrings.change
@@ -650,6 +651,12 @@ object mod {
   inline def useEventListener_blur(eventName: blur, listener: js.Function1[/* event */ FocusEvent, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_blur(eventName: blur, listener: js.Function1[/* event */ FocusEvent, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_blur(eventName: blur, listener: js.Function1[/* event */ FocusEvent, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_cancel(eventName: cancel, listener: js.Function1[/* event */ Event, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cancel(eventName: cancel, listener: js.Function1[/* event */ Event, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cancel(eventName: cancel, listener: js.Function1[/* event */ Event, Any], element: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cancel(eventName: cancel, listener: js.Function1[/* event */ Event, Any], element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cancel(eventName: cancel, listener: js.Function1[/* event */ Event, Any], element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_canplay(eventName: canplay, listener: js.Function1[/* event */ Event, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_canplay(eventName: canplay, listener: js.Function1[/* event */ Event, Any], element: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]

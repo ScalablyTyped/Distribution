@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dequal"
-version := "2.0.3-f9fa0d"
+version := "2.0.3-fa1f5b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

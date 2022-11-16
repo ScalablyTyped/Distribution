@@ -121,6 +121,15 @@ type ResetRecoilState = js.Function1[/* recoilVal */ RecoilState[Any], Unit]
 
 type Resetter = js.Function0[Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type SerializableParam = recoil.recoil.Primitive | recoil.recoil.HasToJSON | std.ReadonlyArray<recoil.recoil.SerializableParam> | std.ReadonlySet<recoil.recoil.SerializableParam> | std.ReadonlyMap<recoil.recoil.SerializableParam, recoil.recoil.SerializableParam> | / * Inlined std.Readonly<{[key: string] : recoil.recoil.SerializableParam}> * /
+{}
+}}}
+to avoid circular code involving: 
+- recoil.recoil.SerializableParam
+*/
 type SerializableParam = Primitive | HasToJSON | js.Array[Any] | ReadonlySet[Any] | (ReadonlyMap[Any, Any]) | js.Object
 
 type SetRecoilState = js.Function2[

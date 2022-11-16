@@ -5,15 +5,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`natural-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait classBreaksClassBreaksParams
-  extends StObject
-     with Object {
+trait classBreaksClassBreaksParams extends StObject {
   
   /**
     * The method for classifying the data.
@@ -35,6 +31,20 @@ trait classBreaksClassBreaksParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
   var field: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A feature filter used to filter statistic queries by geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+    */
+  var filter: js.UndefOr[FeatureFilter] = js.undefined
+  
+  /**
+    * Indicates whether the generated statistics are for a binning or clustering visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer from which to generate class breaks.
@@ -123,12 +133,9 @@ trait classBreaksClassBreaksParams
 object classBreaksClassBreaksParams {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   ): classBreaksClassBreaksParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[classBreaksClassBreaksParams]
   }
   
@@ -147,6 +154,14 @@ object classBreaksClassBreaksParams {
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setFilter(value: FeatureFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(
       value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer

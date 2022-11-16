@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TraceResult
-import typings.arcgisJsApi.esri.TraceResultConstructor
 import typings.arcgisJsApi.esri.TraceResultProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestNetworksSupportTraceResultMod extends Shortcut {
+/* static members */
+object esriRestNetworksSupportTraceResultMod {
   
-  @JSImport("esri/rest/networks/support/TraceResult", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TraceResultConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/networks/support/TraceResult", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestNetworksSupportTraceResultMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceResult.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TraceResult {
     def this(properties: TraceResultProperties) = this()
@@ -35,9 +29,9 @@ object esriRestNetworksSupportTraceResultMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/networks/support/TraceResult", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TraceResultConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestNetworksSupportTraceResultMod.foo` */
-  override def _to: js.Object & TraceResultConstructor = ^
+  inline def fromJSON(json: Any): TraceResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TraceResult]
 }

@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RelationshipRampElement
   extends StObject
-     with Object
      with LegendElement {
   
   /**
@@ -71,16 +68,13 @@ object RelationshipRampElement {
   
   inline def apply(
     colors: js.Array[js.Array[Color_]],
-    constructor: js.Function,
     focus: String,
-    hasOwnProperty: PropertyKey => Boolean,
     labels: RelationshipLabels,
     numClasses: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     rotation: Double,
     `type`: String
   ): RelationshipRampElement = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), labels = labels.asInstanceOf[js.Any], numClasses = numClasses.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], numClasses = numClasses.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipRampElement]
   }

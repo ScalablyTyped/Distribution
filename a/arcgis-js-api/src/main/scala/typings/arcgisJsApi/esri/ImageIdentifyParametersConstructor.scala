@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageIdentifyParametersConstructor
   extends StObject
-     with /**
-  * Input parameters for [imageService](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-imageService.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html)
-  */
-Instantiable0[ImageIdentifyParameters]
+     with Instantiable0[ImageIdentifyParameters]
      with Instantiable1[/* properties */ ImageIdentifyParametersProperties, ImageIdentifyParameters] {
   
   def fromJSON(json: Any): ImageIdentifyParameters = js.native

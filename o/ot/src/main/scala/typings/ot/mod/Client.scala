@@ -118,6 +118,14 @@ object Client {
     * In the 'Synchronized' state, there is no pending operation that the client
     * has sent to the server.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Synchronized = ot.ot.Client.Sync<ot.ot.Client.AwaitingConfirm, ot.ot.Client.Synchronized, never>
+  }}}
+  to avoid circular code involving: 
+  - ot.ot.Client.Synchronized
+  */
   trait Synchronized
     extends StObject
        with Sync[AwaitingConfirm, Synchronized, scala.Nothing]

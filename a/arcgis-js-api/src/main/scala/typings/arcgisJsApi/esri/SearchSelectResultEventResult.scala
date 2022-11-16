@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchSelectResultEventResult
-  extends StObject
-     with Object {
+trait SearchSelectResultEventResult extends StObject {
   
   var extent: Extent
   
@@ -18,15 +14,8 @@ trait SearchSelectResultEventResult
 }
 object SearchSelectResultEventResult {
   
-  inline def apply(
-    constructor: js.Function,
-    extent: Extent,
-    feature: Graphic,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SearchSelectResultEventResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(extent: Extent, feature: Graphic, name: String): SearchSelectResultEventResult = {
+    val __obj = js.Dynamic.literal(extent = extent.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSelectResultEventResult]
   }
   

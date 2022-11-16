@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Handle
-  extends StObject
-     with Object {
+trait Handle extends StObject {
   
   /**
     * Removes the handle.
@@ -19,13 +15,8 @@ trait Handle
 }
 object Handle {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    remove: () => scala.Unit
-  ): Handle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), remove = js.Any.fromFunction0(remove))
+  inline def apply(remove: () => scala.Unit): Handle = {
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[Handle]
   }
   

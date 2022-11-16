@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.MultipartColorRamp
-import typings.arcgisJsApi.esri.MultipartColorRampConstructor
 import typings.arcgisJsApi.esri.MultipartColorRampProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportMultipartColorRampMod extends Shortcut {
+/* static members */
+object esriRestSupportMultipartColorRampMod {
   
-  @JSImport("esri/rest/support/MultipartColorRamp", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MultipartColorRampConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/MultipartColorRamp", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportMultipartColorRampMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with MultipartColorRamp {
     def this(properties: MultipartColorRampProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportMultipartColorRampMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/MultipartColorRamp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & MultipartColorRampConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportMultipartColorRampMod.foo` */
-  override def _to: js.Object & MultipartColorRampConstructor = ^
+  inline def fromJSON(json: Any): MultipartColorRamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[MultipartColorRamp]
 }

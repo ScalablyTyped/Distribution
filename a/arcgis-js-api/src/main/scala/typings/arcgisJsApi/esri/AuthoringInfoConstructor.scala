@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AuthoringInfoConstructor
   extends StObject
-     with /**
-  * Authoring information related to generating renderers and visual variables with the Smart Mapping methods.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html)
-  */
-Instantiable0[AuthoringInfo]
+     with Instantiable0[AuthoringInfo]
      with Instantiable1[/* properties */ AuthoringInfoProperties, AuthoringInfo] {
   
   def fromJSON(json: Any): AuthoringInfo = js.native

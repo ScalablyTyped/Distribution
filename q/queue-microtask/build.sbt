@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "queue-microtask"
-version := "1.2.3-8fc9a1"
+version := "1.2.3-de1c5d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

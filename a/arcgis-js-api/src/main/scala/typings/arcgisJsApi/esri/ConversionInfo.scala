@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConversionInfo
-  extends StObject
-     with Object {
+trait ConversionInfo extends StObject {
   
   /**
     * A function that takes a point and returns a [position](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#Position).
@@ -26,14 +22,8 @@ trait ConversionInfo
 }
 object ConversionInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    convert: () => scala.Unit,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    reverseConvert: () => scala.Unit
-  ): ConversionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], convert = js.Any.fromFunction0(convert), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), reverseConvert = js.Any.fromFunction0(reverseConvert))
+  inline def apply(convert: () => scala.Unit, reverseConvert: () => scala.Unit): ConversionInfo = {
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction0(convert), reverseConvert = js.Any.fromFunction0(reverseConvert))
     __obj.asInstanceOf[ConversionInfo]
   }
   

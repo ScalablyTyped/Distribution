@@ -9,15 +9,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.position
 import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.std.HTMLElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TickConfig
-  extends StObject
-     with Object {
+trait TickConfig extends StObject {
   
   /**
     * Callback for formatting tick labels.
@@ -56,14 +52,8 @@ trait TickConfig
 }
 object TickConfig {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: count | percent | position,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    values: Double | js.Array[Double]
-  ): TickConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any])
+  inline def apply(mode: count | percent | position, values: Double | js.Array[Double]): TickConfig = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TickConfig]
   }
   

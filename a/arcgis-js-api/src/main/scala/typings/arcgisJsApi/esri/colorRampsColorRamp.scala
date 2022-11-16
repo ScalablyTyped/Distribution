@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorRampsColorRamp
-  extends StObject
-     with Object {
+trait colorRampsColorRamp extends StObject {
   
   /**
     * An array of five colors intended for displaying a continuous color ramp.
@@ -43,13 +39,10 @@ object colorRampsColorRamp {
   inline def apply(
     colors: js.Array[Color_],
     colorsForClassBreaks: js.Array[ColorRampColorsForClassBreaks],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     tags: js.Array[String]
   ): colorRampsColorRamp = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], colorsForClassBreaks = colorsForClassBreaks.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], colorsForClassBreaks = colorsForClassBreaks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorRampsColorRamp]
   }
   

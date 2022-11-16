@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "totp-generator"
-version := "0.0-dt-20220624Z-8000ce"
+version := "0.0-dt-20220624Z-3d3a91"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

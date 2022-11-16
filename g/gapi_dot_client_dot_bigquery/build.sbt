@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_bigquery"
-version := "2.0-dt-20220912Z-44995f"
+version := "2.0-dt-20220912Z-6c431d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

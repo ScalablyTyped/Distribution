@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.donut
 import typings.arcgisJsApi.arcgisJsApiStrings.pie
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait pieChartCreateRendererParams
-  extends StObject
-     with Object {
+trait pieChartCreateRendererParams extends StObject {
   
   /**
     * A set of complementary numeric fields/expressions used to create the charts.
@@ -19,6 +15,13 @@ trait pieChartCreateRendererParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
     */
   var attributes: js.Array[pieChartCreateRendererParamsAttributes]
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to include data-driven size in the final renderer.
@@ -89,13 +92,10 @@ object pieChartCreateRendererParams {
   
   inline def apply(
     attributes: js.Array[pieChartCreateRendererParamsAttributes],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView
   ): pieChartCreateRendererParams = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[pieChartCreateRendererParams]
   }
   
@@ -104,6 +104,10 @@ object pieChartCreateRendererParams {
     inline def setAttributes(value: js.Array[pieChartCreateRendererParamsAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesVarargs(value: pieChartCreateRendererParamsAttributes*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setIncludeSizeVariable(value: Boolean): Self = StObject.set(x, "includeSizeVariable", value.asInstanceOf[js.Any])
     

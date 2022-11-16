@@ -50,6 +50,40 @@ trait query extends StObject {
   def executeForIds(url: String, query: Query_): js.Promise[js.Array[Double]] = js.native
   def executeForIds(url: String, query: Query_, requestOptions: Any): js.Promise[js.Array[Double]] = js.native
   
+  /**
+    * Executes a [TopFeaturesQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFeaturesQuery.html) against a feature service and returns the count of features or records that satisfy the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html#executeForTopCount)
+    */
+  def executeForTopCount(url: String, topFeaturesQuery: TopFeaturesQuery): js.Promise[Double] = js.native
+  def executeForTopCount(url: String, topFeaturesQuery: TopFeaturesQuery, requestOptions: Any): js.Promise[Double] = js.native
+  
+  /**
+    * Executes a [TopFeaturesQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFeaturesQuery.html) against a feature service and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html#executeForTopExtents)
+    */
+  def executeForTopExtents(url: String, topFeaturesQuery: TopFeaturesQuery, outSpatialReference: SpatialReference): js.Promise[Any] = js.native
+  def executeForTopExtents(
+    url: String,
+    topFeaturesQuery: TopFeaturesQuery,
+    outSpatialReference: SpatialReference,
+    requestOptions: Any
+  ): js.Promise[Any] = js.native
+  
+  /**
+    * Executes a [TopFeaturesQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFeaturesQuery.html) against a feature service and returns an array of Object IDs of features that satisfy the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html#executeForTopIds)
+    */
+  def executeForTopIds(url: String, topFeaturesQuery: TopFeaturesQuery, outSpatialReference: SpatialReference): js.Promise[js.Array[Double]] = js.native
+  def executeForTopIds(
+    url: String,
+    topFeaturesQuery: TopFeaturesQuery,
+    outSpatialReference: SpatialReference,
+    requestOptions: Any
+  ): js.Promise[js.Array[Double]] = js.native
+  
   def executeQueryJSON(url: String, query: QueryProperties): js.Promise[FeatureSet] = js.native
   def executeQueryJSON(url: String, query: QueryProperties, requestOptions: Any): js.Promise[FeatureSet] = js.native
   /**
@@ -79,4 +113,17 @@ trait query extends StObject {
   def executeRelationshipQuery(url: String, relationshipQuery: RelationshipQueryProperties): js.Promise[Any] = js.native
   def executeRelationshipQuery(url: String, relationshipQuery: RelationshipQueryProperties, requestOptions: Any): js.Promise[Any] = js.native
   def executeRelationshipQuery(url: String, relationshipQuery: RelationshipQuery, requestOptions: Any): js.Promise[Any] = js.native
+  
+  /**
+    * Executes a [TopFeaturesQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFeaturesQuery.html) against a feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) once the promise resolves.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html#executeTopFeaturesQuery)
+    */
+  def executeTopFeaturesQuery(url: String, topFeaturesQuery: TopFeaturesQuery, outSpatialReference: SpatialReference): js.Promise[FeatureSet] = js.native
+  def executeTopFeaturesQuery(
+    url: String,
+    topFeaturesQuery: TopFeaturesQuery,
+    outSpatialReference: SpatialReference,
+    requestOptions: Any
+  ): js.Promise[FeatureSet] = js.native
 }

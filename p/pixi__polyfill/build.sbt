@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi__polyfill"
-version := "6.5.8-6f5a42"
+version := "6.5.8-37fc4b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

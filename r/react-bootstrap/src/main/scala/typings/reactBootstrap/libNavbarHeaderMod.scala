@@ -15,6 +15,15 @@ object libNavbarHeaderMod {
   
   type NavbarHeader = Component[NavbarHeaderProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NavbarHeaderProps = react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavbarHeader.NavbarHeader>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/NavbarHeader.NavbarHeader
+  - react-bootstrap.react-bootstrap/lib/NavbarHeader.NavbarHeaderProps
+  */
   trait NavbarHeaderProps
     extends StObject
        with HTMLProps[NavbarHeader]

@@ -1,6 +1,7 @@
 package typings.wegameApi
 
 import typings.std.CanvasDirection
+import typings.std.CanvasFontKerning
 import typings.std.CanvasRenderingContext2D
 import typings.std.CanvasTextAlign
 import typings.std.CanvasTextBaseline
@@ -1748,6 +1749,10 @@ object global {
     /* standard dom */
     /* CompleteClass */
     var font: String = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var fontKerning: CanvasFontKerning = js.native
     
     /* standard dom */
     /* CompleteClass */

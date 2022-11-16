@@ -489,6 +489,17 @@ type Handler[T, TContext /* <: Context */] = js.Function2[/* event */ T, /* cont
 
 type LayoutAnimationFunction = js.Function1[/* targetValues */ LayoutAnimationsValues, LayoutAnimation]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Mapping = react-native-reanimated.react-native-reanimated.Animated.Mapping
+}}}
+to avoid circular code involving: 
+- react-native-reanimated.react-native-reanimated.Animated.Mapping
+- react-native-reanimated.react-native-reanimated.Mapping
+*/
+type Mapping = Any
+
 type MeasuredDimensions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_commonTypes.MeasuredDimensions */ Any
 
 // gesture-handler

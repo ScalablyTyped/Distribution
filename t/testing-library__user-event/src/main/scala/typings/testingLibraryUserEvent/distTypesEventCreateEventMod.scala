@@ -31,6 +31,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animations
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.beforeinput_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cancel
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplay_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplaythrough_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.change
@@ -163,6 +164,9 @@ object distTypesEventCreateEventMod {
   
   inline def createEvent_blur(`type`: blur, target: Element): FocusEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[FocusEvent]
   inline def createEvent_blur(`type`: blur, target: Element, init: EventTypeInit[blur]): FocusEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[FocusEvent]
+  
+  inline def createEvent_cancel(`type`: cancel, target: Element): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def createEvent_cancel(`type`: cancel, target: Element, init: EventTypeInit[cancel]): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Event]
   
   inline def createEvent_canplay(`type`: canplay_, target: Element): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Event]
   inline def createEvent_canplay(`type`: canplay_, target: Element, init: EventTypeInit[canplay_]): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("createEvent")(`type`.asInstanceOf[js.Any], target.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Event]

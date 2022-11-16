@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shallow-equals"
-version := "1.0-dt-20211202Z-fc9d71"
+version := "1.0-dt-20211202Z-68deb4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

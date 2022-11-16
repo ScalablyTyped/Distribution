@@ -105,6 +105,8 @@ type Identifier = java.lang.String
 
 type Integer = Double
 
+type KeyString = java.lang.String
+
 type LFTagErrors = js.Array[LFTagError]
 
 type LFTagKey = java.lang.String
@@ -138,6 +140,10 @@ type ObjectSize = Double
 type OptimizerType = _OptimizerType | java.lang.String
 
 type PageSize = Double
+
+type ParametersMap = StringDictionary[ParametersMapValue]
+
+type ParametersMapValue = java.lang.String
 
 type PartitionValueString = java.lang.String
 
@@ -222,6 +228,8 @@ type Result = java.lang.String
 type ResultStream = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String | Readable
 
 type SAMLAssertionString = java.lang.String
+
+type SearchPageSize = Double
 
 type SecretAccessKeyString = java.lang.String
 

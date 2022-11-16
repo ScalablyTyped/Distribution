@@ -166,6 +166,14 @@ object distTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RuntimeStVar = string | {[key: string] : @stylable/runtime.@stylable/runtime/dist/types.RuntimeStVar} | std.Array<@stylable/runtime.@stylable/runtime/dist/types.RuntimeStVar>
+  }}}
+  to avoid circular code involving: 
+  - @stylable/runtime.@stylable/runtime/dist/types.RuntimeStVar
+  */
   type RuntimeStVar = String | StringDictionary[Any] | js.Array[Any]
   
   trait RuntimeStylesheet

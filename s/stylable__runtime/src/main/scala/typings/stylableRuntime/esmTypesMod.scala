@@ -166,6 +166,14 @@ object esmTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RuntimeStVar = string | {[key: string] : @stylable/runtime.@stylable/runtime/esm/types.RuntimeStVar} | std.Array<@stylable/runtime.@stylable/runtime/esm/types.RuntimeStVar>
+  }}}
+  to avoid circular code involving: 
+  - @stylable/runtime.@stylable/runtime/esm/types.RuntimeStVar
+  */
   type RuntimeStVar = String | StringDictionary[Any] | js.Array[Any]
   
   trait RuntimeStylesheet

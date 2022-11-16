@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BackgroundConstructor
   extends StObject
-     with /**
-  * The background of a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) that lies behind the sky, atmosphere and stars.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-Background.html)
-  */
-Instantiable0[Background]
+     with Instantiable0[Background]
      with Instantiable1[/* properties */ BackgroundProperties, Background] {
   
   def fromJSON(json: Any): Background = js.native

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.CanvasRenderingContext2D
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseLayerView2DRenderRenderParameters
-  extends StObject
-     with Object {
+trait BaseLayerView2DRenderRenderParameters extends StObject {
   
   /**
     * The [canvas 2D context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) in which to draw content.
@@ -34,15 +30,8 @@ trait BaseLayerView2DRenderRenderParameters
 }
 object BaseLayerView2DRenderRenderParameters {
   
-  inline def apply(
-    constructor: js.Function,
-    context: CanvasRenderingContext2D,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    state: ViewState,
-    stationary: Boolean
-  ): BaseLayerView2DRenderRenderParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], stationary = stationary.asInstanceOf[js.Any])
+  inline def apply(context: CanvasRenderingContext2D, state: ViewState, stationary: Boolean): BaseLayerView2DRenderRenderParameters = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stationary = stationary.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }
   

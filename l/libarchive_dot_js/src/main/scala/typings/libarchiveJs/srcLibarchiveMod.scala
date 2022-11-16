@@ -46,6 +46,14 @@ object srcLibarchiveMod {
     inline def open(file: File, options: WorkerUrl): js.Promise[Archive] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Archive]]
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FilesObject = {[key: string] : libarchive.js.libarchive.js/src/libarchive.FilesObject | libarchive.js.libarchive.js/src/compressed-file.CompressedFile | std.File}
+  }}}
+  to avoid circular code involving: 
+  - libarchive.js.libarchive.js/src/libarchive.FilesObject
+  */
   trait FilesObject
     extends StObject
        with /* key */ StringDictionary[FilesObject | CompressedFile | File]

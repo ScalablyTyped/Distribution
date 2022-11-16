@@ -1,22 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.Layer
 import typings.arcgisJsApi.esri.Map
-import typings.arcgisJsApi.esri.MapConstructor
 import typings.arcgisJsApi.esri.MapProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriMapMod extends Shortcut {
+object esriMapMod {
   
-  @JSImport("esri/Map", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MapConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/Map", JSImport.Namespace)
   @js.native
   /**
@@ -24,7 +17,7 @@ object esriMapMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Map {
     def this(properties: MapProperties) = this()
@@ -45,9 +38,4 @@ object esriMapMod extends Shortcut {
     /* CompleteClass */
     var tables: Collection[Layer] = js.native
   }
-  
-  type _To = js.Object & MapConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriMapMod.foo` */
-  override def _to: js.Object & MapConstructor = ^
 }

@@ -7,6 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelVolumeStyleProperties extends StObject {
   
   /**
+    * The collection of [VoxelDynamicSection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVolumeStyle.html#dynamicSections)
+    */
+  var dynamicSections: js.UndefOr[CollectionProperties[VoxelDynamicSectionProperties]] = js.undefined
+  
+  /**
+    * The collection of [VoxelSlice](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVolumeStyle.html#slices)
+    */
+  var slices: js.UndefOr[CollectionProperties[VoxelSliceProperties]] = js.undefined
+  
+  /**
     * The vertical exaggeration factor.
     *
     * @default 1
@@ -32,6 +46,18 @@ object VoxelVolumeStyleProperties {
   }
   
   extension [Self <: VoxelVolumeStyleProperties](x: Self) {
+    
+    inline def setDynamicSections(value: CollectionProperties[VoxelDynamicSectionProperties]): Self = StObject.set(x, "dynamicSections", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicSectionsUndefined: Self = StObject.set(x, "dynamicSections", js.undefined)
+    
+    inline def setDynamicSectionsVarargs(value: VoxelDynamicSectionProperties*): Self = StObject.set(x, "dynamicSections", js.Array(value*))
+    
+    inline def setSlices(value: CollectionProperties[VoxelSliceProperties]): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    
+    inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
+    
+    inline def setSlicesVarargs(value: VoxelSliceProperties*): Self = StObject.set(x, "slices", js.Array(value*))
     
     inline def setVerticalExaggeration(value: Double): Self = StObject.set(x, "verticalExaggeration", value.asInstanceOf[js.Any])
     

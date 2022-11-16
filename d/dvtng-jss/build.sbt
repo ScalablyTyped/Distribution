@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dvtng-jss"
-version := "v0.6-dt-20221103Z-51e543"
+version := "v0.6-dt-20221103Z-343096"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

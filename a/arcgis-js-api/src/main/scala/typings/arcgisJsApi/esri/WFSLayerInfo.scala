@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WFSLayerInfo
-  extends StObject
-     with Object {
+trait WFSLayerInfo extends StObject {
   
   /**
     * The custom parameters applied to the layer.
@@ -75,7 +71,7 @@ trait WFSLayerInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSLayerInfo)
     */
-  var swapXY: Boolean | Any
+  var swapXY: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL to the WFS service.
@@ -89,22 +85,18 @@ trait WFSLayerInfo
 object WFSLayerInfo {
   
   inline def apply(
-    constructor: js.Function,
     customParameters: Any,
     extent: Extent,
     fields: js.Array[Field],
     geometryType: point | multipoint | polyline | polygon,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
     namespaceUri: String,
     objectIdField: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     spatialReference: SpatialReference,
-    swapXY: Boolean | Any,
     url: String,
     wfsCapabilities: WFSCapabilities
   ): WFSLayerInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], customParameters = customParameters.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], objectIdField = objectIdField.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), spatialReference = spatialReference.asInstanceOf[js.Any], swapXY = swapXY.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], wfsCapabilities = wfsCapabilities.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customParameters = customParameters.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], objectIdField = objectIdField.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], wfsCapabilities = wfsCapabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSLayerInfo]
   }
   
@@ -128,7 +120,9 @@ object WFSLayerInfo {
     
     inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    inline def setSwapXY(value: Boolean | Any): Self = StObject.set(x, "swapXY", value.asInstanceOf[js.Any])
+    inline def setSwapXY(value: Boolean): Self = StObject.set(x, "swapXY", value.asInstanceOf[js.Any])
+    
+    inline def setSwapXYUndefined: Self = StObject.set(x, "swapXY", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

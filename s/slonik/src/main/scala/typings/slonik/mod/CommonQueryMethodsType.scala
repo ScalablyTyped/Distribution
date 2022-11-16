@@ -29,7 +29,9 @@ trait CommonQueryMethodsType extends StObject {
   @JSName("exists")
   var exists_Original: QueryExistsFunctionType
   
-  var many: QueryManyFunctionType
+  def many[T](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[js.Array[T]]
   
   def manyFirst[T](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
@@ -40,6 +42,9 @@ trait CommonQueryMethodsType extends StObject {
   ]
   @JSName("manyFirst")
   var manyFirst_Original: QueryManyFirstFunctionType
+  
+  @JSName("many")
+  var many_Original: QueryManyFunctionType
   
   def maybeOne[T](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]

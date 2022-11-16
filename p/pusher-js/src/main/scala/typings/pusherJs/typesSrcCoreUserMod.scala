@@ -41,5 +41,7 @@ object typesSrcCoreUserMod {
     var signin_requested: Boolean = js.native
     
     var user_data: Any = js.native
+    
+    var watchlist: typings.pusherJs.typesSrcCoreWatchlistMod.default = js.native
   }
 }

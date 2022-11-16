@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ChartMediaInfoValue
 import typings.arcgisJsApi.esri.ColumnChartMediaInfo
-import typings.arcgisJsApi.esri.ColumnChartMediaInfoConstructor
 import typings.arcgisJsApi.esri.ColumnChartMediaInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriPopupContentColumnChartMediaInfoMod extends Shortcut {
+/* static members */
+object esriPopupContentColumnChartMediaInfoMod {
   
-  @JSImport("esri/popup/content/ColumnChartMediaInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ColumnChartMediaInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/content/ColumnChartMediaInfo", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriPopupContentColumnChartMediaInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ColumnChartMediaInfo {
     def this(properties: ColumnChartMediaInfoProperties) = this()
@@ -78,9 +72,9 @@ object esriPopupContentColumnChartMediaInfoMod extends Shortcut {
     /* CompleteClass */
     var value: ChartMediaInfoValue = js.native
   }
+  @JSImport("esri/popup/content/ColumnChartMediaInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ColumnChartMediaInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriPopupContentColumnChartMediaInfoMod.foo` */
-  override def _to: js.Object & ColumnChartMediaInfoConstructor = ^
+  inline def fromJSON(json: Any): ColumnChartMediaInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ColumnChartMediaInfo]
 }

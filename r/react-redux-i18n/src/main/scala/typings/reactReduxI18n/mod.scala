@@ -151,6 +151,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SubTranslationObject = string | {[key: string] : react-redux-i18n.react-redux-i18n.SubTranslationObject}
+  }}}
+  to avoid circular code involving: 
+  - react-redux-i18n.react-redux-i18n.SubTranslationObject
+  */
   type SubTranslationObject = String | StringDictionary[Any]
   
   trait TranslateProps
@@ -196,6 +204,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TranslationObjects = {[lang: string] : react-redux-i18n.react-redux-i18n.SubTranslationObject}
+  }}}
+  to avoid circular code involving: 
+  - react-redux-i18n.react-redux-i18n.SubTranslationObject
+  - react-redux-i18n.react-redux-i18n.TranslationObjects
+  */
   trait TranslationObjects
     extends StObject
        with /* lang */ StringDictionary[SubTranslationObject]

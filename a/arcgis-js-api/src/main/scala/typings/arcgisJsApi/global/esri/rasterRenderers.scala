@@ -1,18 +1,11 @@
 package typings.arcgisJsApi.global.esri
 
-import typings.arcgisJsApi.esri.ClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.ClassBreaksRendererProperties
-import typings.arcgisJsApi.esri.FlowRendererConstructor
 import typings.arcgisJsApi.esri.FlowRendererProperties
-import typings.arcgisJsApi.esri.RasterColormapRendererConstructor
 import typings.arcgisJsApi.esri.RasterColormapRendererProperties
-import typings.arcgisJsApi.esri.RasterShadedReliefRendererConstructor
 import typings.arcgisJsApi.esri.RasterShadedReliefRendererProperties
-import typings.arcgisJsApi.esri.RasterStretchRendererConstructor
 import typings.arcgisJsApi.esri.RasterStretchRendererProperties
-import typings.arcgisJsApi.esri.UniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.UniqueValueRendererProperties
-import typings.arcgisJsApi.esri.VectorFieldRendererConstructor
 import typings.arcgisJsApi.esri.VectorFieldRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,9 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object rasterRenderers {
   
-  @JSGlobal("__esri.rasterRenderers.ClassBreaksRenderer")
-  @js.native
-  val ClassBreaksRenderer: ClassBreaksRendererConstructor = js.native
+  object ClassBreaksRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.ClassBreaksRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.ClassBreaksRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.ClassBreaksRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.ClassBreaksRenderer")
@@ -59,9 +57,14 @@ object rasterRenderers {
     var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.FlowRenderer")
-  @js.native
-  val FlowRenderer: FlowRendererConstructor = js.native
+  object FlowRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.FlowRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.FlowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.FlowRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.FlowRenderer")
@@ -85,9 +88,21 @@ object rasterRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.RasterColormapRenderer")
-  @js.native
-  val RasterColormapRenderer: RasterColormapRendererConstructor = js.native
+  object RasterColormapRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.RasterColormapRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a new instance [RasterColormapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html) from an array of color maps where pixel values with its corresponding RGB color values specified.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#createFromColormap)
+      */
+    inline def createFromColormap(colormap: js.Array[js.Array[Double]]): typings.arcgisJsApi.esri.RasterColormapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromColormap")(colormap.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.RasterColormapRenderer]
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.RasterColormapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.RasterColormapRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.RasterColormapRenderer")
@@ -111,9 +126,14 @@ object rasterRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.RasterShadedReliefRenderer")
-  @js.native
-  val RasterShadedReliefRenderer: RasterShadedReliefRendererConstructor = js.native
+  object RasterShadedReliefRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.RasterShadedReliefRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.RasterShadedReliefRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.RasterShadedReliefRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.RasterShadedReliefRenderer")
@@ -137,9 +157,14 @@ object rasterRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.RasterStretchRenderer")
-  @js.native
-  val RasterStretchRenderer: RasterStretchRendererConstructor = js.native
+  object RasterStretchRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.RasterStretchRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.RasterStretchRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.RasterStretchRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.RasterStretchRenderer")
@@ -163,15 +188,20 @@ object rasterRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.UniqueValueRenderer")
-  @js.native
-  val UniqueValueRenderer: UniqueValueRendererConstructor = js.native
+  object UniqueValueRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.UniqueValueRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.UniqueValueRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.UniqueValueRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.UniqueValueRenderer")
   @js.native
   /**
-    * UniqueValueRenderer allows you to symbolize features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) based on one or more matching string attributes.
+    * UniqueValueRenderer allows you to symbolize features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) based on one or more categorical attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html)
     */
@@ -197,9 +227,14 @@ object rasterRenderers {
     var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
   }
   
-  @JSGlobal("__esri.rasterRenderers.VectorFieldRenderer")
-  @js.native
-  val VectorFieldRenderer: VectorFieldRendererConstructor = js.native
+  object VectorFieldRenderer {
+    
+    @JSGlobal("__esri.rasterRenderers.VectorFieldRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.VectorFieldRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.VectorFieldRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.rasterRenderers.VectorFieldRenderer")

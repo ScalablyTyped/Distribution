@@ -29,13 +29,13 @@ trait IClient extends EventEmitter {
   
   var processID: Double = js.native
   
-  def query(config: Any): js.Promise[IResult] = js.native
-  def query(config: Any, callback: js.Function2[/* err */ js.Error, /* result */ IResult, Unit]): Unit = js.native
-  def query(config: Any, values: js.Array[Any]): js.Promise[IResult] = js.native
-  def query(
+  def query[T](config: Any): js.Promise[IResult[T]] = js.native
+  def query[T](config: Any, callback: js.Function2[/* err */ js.Error, /* result */ IResult[T], Unit]): Unit = js.native
+  def query[T](config: Any, values: js.Array[Any]): js.Promise[IResult[T]] = js.native
+  def query[T](
     config: Any,
     values: js.Array[Any],
-    callback: js.Function2[/* err */ js.Error, /* result */ IResult, Unit]
+    callback: js.Function2[/* err */ js.Error, /* result */ IResult[T], Unit]
   ): Unit = js.native
   
   var queryQueue: js.Array[IQuery] = js.native

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshCreateSphereParamsSize
-  extends StObject
-     with Object {
+trait MeshCreateSphereParamsSize extends StObject {
   
   /**
     * The depth of the created mesh.
@@ -33,12 +29,8 @@ trait MeshCreateSphereParamsSize
 }
 object MeshCreateSphereParamsSize {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshCreateSphereParamsSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshCreateSphereParamsSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshCreateSphereParamsSize]
   }
   

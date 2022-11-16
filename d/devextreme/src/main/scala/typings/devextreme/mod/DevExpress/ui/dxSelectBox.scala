@@ -134,6 +134,31 @@ object dxSelectBox {
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SelectBoxInstance = devextreme.devextreme.DevExpress.ui.dxSelectBox<devextreme.devextreme.DevExpress.ui.dxSelectBox.Properties>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.ChangeEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.ClosedEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.CopyEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.CutEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.EnterKeyEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.FocusInEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.FocusOutEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.InputEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.KeyDownEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.KeyPressEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.KeyUpEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.OpenedEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.PasteEvent
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.Properties
+  - devextreme.devextreme.DevExpress.ui.dxSelectBox.SelectBoxInstance
+  */
   @js.native
   trait SelectBoxInstance
     extends StObject

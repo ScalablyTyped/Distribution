@@ -37,7 +37,7 @@ trait BuildingPhase
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingPhase.html#getValueLabel)
     */
-  def getValueLabel(value: Double): String | Any = js.native
+  def getValueLabel(value: Double): String | Null = js.native
   
   /**
     * Whether the next value can be selected.

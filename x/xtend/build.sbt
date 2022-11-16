@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xtend"
-version := "4.0-dt-20220624Z-9dba7b"
+version := "4.0-dt-20220624Z-533719"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

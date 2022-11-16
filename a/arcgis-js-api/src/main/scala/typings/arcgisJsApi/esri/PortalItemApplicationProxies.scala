@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalItemApplicationProxies
-  extends StObject
-     with Object {
+trait PortalItemApplicationProxies extends StObject {
   
   /**
     * The proxy ID registered in ArcGIS Online or ArcGIS Enterprise Portal.
@@ -33,15 +29,8 @@ trait PortalItemApplicationProxies
 }
 object PortalItemApplicationProxies {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    proxyId: String,
-    proxyUrl: String,
-    sourceUrl: String
-  ): PortalItemApplicationProxies = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), proxyId = proxyId.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], sourceUrl = sourceUrl.asInstanceOf[js.Any])
+  inline def apply(proxyId: String, proxyUrl: String, sourceUrl: String): PortalItemApplicationProxies = {
+    val __obj = js.Dynamic.literal(proxyId = proxyId.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], sourceUrl = sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalItemApplicationProxies]
   }
   

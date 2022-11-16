@@ -126,6 +126,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type QueryParams = {[key: string] : ziggy-js.ziggy-js.QueryParams | string | number | boolean}
+  }}}
+  to avoid circular code involving: 
+  - ziggy-js.ziggy-js.QueryParams
+  */
   trait QueryParams
     extends StObject
        with /* key */ StringDictionary[QueryParams | String | Double | Boolean]

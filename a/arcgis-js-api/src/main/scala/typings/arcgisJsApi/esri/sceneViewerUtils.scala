@@ -75,6 +75,13 @@ trait sceneViewerUtils extends StObject {
   /**
     * Note: reserved for internal use only, this is not part of the stable public API.
     *
+    * Check if the error is a schema validation error.
+    */
+  def isSchemaValidationError(saveError: scala.Unit): Boolean = js.native
+  
+  /**
+    * Note: reserved for internal use only, this is not part of the stable public API.
+    *
     * Checks whether the provided spatial reference is supported in the provided viewing mode.
     */
   def isSpatialReferenceSupported(spatialReference: SpatialReference, viewingMode: global | local): Boolean = js.native
@@ -114,4 +121,11 @@ trait sceneViewerUtils extends StObject {
     * Starts a create features workflow on the given editor view model
     */
   def startCreateFeaturesWorkflow(editorVM: EditorViewModel, creationInfo: CreationInfo, startAt: String): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Note: reserved for internal use only, this is not part of the stable public API.
+    *
+    * Returns the start position of the cross hair while dragging to zoom.
+    */
+  def zoomDragBeginPoint(view: SceneView): js.Array[Double] | Null = js.native
 }

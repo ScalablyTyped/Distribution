@@ -6,6 +6,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type GrpcObject = {[name: string] : grpc.grpc.GrpcObject | new (address : string, credentials : grpc.grpc.ChannelCredentials, options : object | undefined): grpc.grpc.Client | grpc.grpc.ProtobufMessage}
+}}}
+to avoid circular code involving: 
+- grpc.grpc.GrpcObject
+*/
 trait GrpcObject
   extends StObject
      with /* name */ StringDictionary[

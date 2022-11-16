@@ -38,6 +38,14 @@ object mod {
   
   type RegenerateArgValue = String | Double | typings.regenerate.mod.regenerate
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RegenerateArgValueOrArray = regenerate.regenerate.RegenerateArgValue | std.Array<regenerate.regenerate.RegenerateArgValueOrArray>
+  }}}
+  to avoid circular code involving: 
+  - regenerate.regenerate.RegenerateArgValueOrArray
+  */
   type RegenerateArgValueOrArray = RegenerateArgValue | js.Array[Any]
   
   trait ToStringOptions extends StObject {

@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectRotate
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -29,13 +26,8 @@ trait CIMGeometricEffectRotate
 }
 object CIMGeometricEffectRotate {
   
-  inline def apply(
-    angle: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMGeometricEffectRotate = {
-    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(angle: Double): CIMGeometricEffectRotate = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectRotate")
     __obj.asInstanceOf[CIMGeometricEffectRotate]
   }

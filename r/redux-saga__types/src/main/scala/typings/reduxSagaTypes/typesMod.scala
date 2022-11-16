@@ -242,6 +242,16 @@ object typesMod {
   
   type StrictCombinatorEffect[T] = CombinatorEffect[T, StrictEffect[T]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StrictEffect = @redux-saga/types.@redux-saga/types/types.SimpleEffect<T, any> | @redux-saga/types.@redux-saga/types/types.StrictCombinatorEffect<T>
+  }}}
+  to avoid circular code involving: 
+  - @redux-saga/types.@redux-saga/types/types.SagaIterator
+  - @redux-saga/types.@redux-saga/types/types.StrictCombinatorEffect
+  - @redux-saga/types.@redux-saga/types/types.StrictEffect
+  */
   type StrictEffect[T] = (SimpleEffect[T, Any]) | Any
   
   @js.native

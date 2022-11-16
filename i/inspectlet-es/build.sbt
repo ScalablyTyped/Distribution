@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inspectlet-es"
-version := "1.0-dt-20211202Z-d77ab0"
+version := "1.0-dt-20211202Z-4b13b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

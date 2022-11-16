@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IdentifyParametersConstructor
   extends StObject
-     with /**
-  * Input parameters for the [identify](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-identify.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html)
-  */
-Instantiable0[IdentifyParameters]
+     with Instantiable0[IdentifyParameters]
      with Instantiable1[/* properties */ IdentifyParametersProperties, IdentifyParameters] {
   
   def fromJSON(json: Any): IdentifyParameters = js.native

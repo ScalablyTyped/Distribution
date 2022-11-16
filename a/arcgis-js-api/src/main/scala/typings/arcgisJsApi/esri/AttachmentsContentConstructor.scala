@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AttachmentsContentConstructor
   extends StObject
-     with /**
-  * An `AttachmentsContent` popup element represents an attachment element associated with a feature.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html)
-  */
-Instantiable0[AttachmentsContent]
+     with Instantiable0[AttachmentsContent]
      with Instantiable1[/* properties */ AttachmentsContentProperties, AttachmentsContent] {
   
   def fromJSON(json: Any): AttachmentsContent = js.native

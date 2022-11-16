@@ -9,7 +9,7 @@ object outListZipMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     L extends unknown ? L1 extends unknown ? ts-toolbelt.ts-toolbelt/out/List/Zip._Zip<L, L1> : never : never
     }}}
@@ -19,13 +19,12 @@ object outListZipMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/List/Zip.__Zip<ts-toolbelt.ts-toolbelt/out/List/_Internal.Naked<L>, L1, [], ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<0>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<any>> : never
     }}}
     */
-  @js.native
-  trait _Zip[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject
+  type _Zip[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * @hidden

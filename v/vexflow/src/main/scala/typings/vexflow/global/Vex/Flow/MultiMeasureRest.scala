@@ -39,6 +39,10 @@ open class MultiMeasureRest protected ()
   
   /* standard dom */
   /* CompleteClass */
+  var ariaColIndexText: String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   var ariaColSpan: String | Null = js.native
   
   /* standard dom */
@@ -60,6 +64,10 @@ open class MultiMeasureRest protected ()
   /* standard dom */
   /* CompleteClass */
   var ariaHidden: String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var ariaInvalid: String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -127,6 +135,10 @@ open class MultiMeasureRest protected ()
   
   /* standard dom */
   /* CompleteClass */
+  var ariaRowIndexText: String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   var ariaRowSpan: String | Null = js.native
   
   /* standard dom */
@@ -174,4 +186,8 @@ open class MultiMeasureRest protected ()
   /* standard dom */
   /* CompleteClass */
   override val previousElementSibling: Element | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var role: String | Null = js.native
 }

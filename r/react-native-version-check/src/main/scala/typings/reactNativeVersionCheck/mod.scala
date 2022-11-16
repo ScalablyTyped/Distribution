@@ -1,8 +1,8 @@
 package typings.reactNativeVersionCheck
 
 import typings.reactNativeVersionCheck.anon.AppID
+import typings.reactNativeVersionCheck.anon.Country
 import typings.reactNativeVersionCheck.anon.CurrentVersion
-import typings.reactNativeVersionCheck.anon.FetchOptions
 import typings.reactNativeVersionCheck.anon.IgnoreErrors
 import typings.reactNativeVersionCheck.anon.IsNeeded
 import typings.reactNativeVersionCheck.anon.PackageName
@@ -43,7 +43,7 @@ object mod {
       * Returns the latest app version parsed from url. Returns null when parsing error occurs.
       */
     inline def getLatestVersion(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestVersion")().asInstanceOf[js.Promise[String]]
-    inline def getLatestVersion(option: FetchOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestVersion")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def getLatestVersion(option: Country): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestVersion")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Returns package name of app.

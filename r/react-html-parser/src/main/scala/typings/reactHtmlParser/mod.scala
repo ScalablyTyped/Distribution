@@ -69,6 +69,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Transform = (node : / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement * / any, index : number, transform : react-html-parser.react-html-parser.Transform | undefined): react.react.ReactElement | void | null
+  }}}
+  to avoid circular code involving: 
+  - react-html-parser.react-html-parser.Transform
+  */
   @js.native
   trait Transform extends StObject {
     

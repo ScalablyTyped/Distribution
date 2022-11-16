@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atob-lite"
-version := "2.0-dt-20211202Z-e39288"
+version := "2.0-dt-20211202Z-e30f2a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

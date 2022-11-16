@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.hangup
   - typings.std.stdStrings.nexttrack
   - typings.std.stdStrings.pause
   - typings.std.stdStrings.play
@@ -15,13 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.seekto
   - typings.std.stdStrings.skipad
   - typings.std.stdStrings.stop
-  - typings.std.stdStrings.togglecamera
-  - typings.std.stdStrings.togglemicrophone
 */
 trait MediaSessionAction extends StObject
 object MediaSessionAction {
-  
-  inline def hangup: typings.std.stdStrings.hangup = "hangup".asInstanceOf[typings.std.stdStrings.hangup]
   
   inline def nexttrack: typings.std.stdStrings.nexttrack = "nexttrack".asInstanceOf[typings.std.stdStrings.nexttrack]
   
@@ -40,8 +35,4 @@ object MediaSessionAction {
   inline def skipad: typings.std.stdStrings.skipad = "skipad".asInstanceOf[typings.std.stdStrings.skipad]
   
   inline def stop: typings.std.stdStrings.stop = "stop".asInstanceOf[typings.std.stdStrings.stop]
-  
-  inline def togglecamera: typings.std.stdStrings.togglecamera = "togglecamera".asInstanceOf[typings.std.stdStrings.togglecamera]
-  
-  inline def togglemicrophone: typings.std.stdStrings.togglemicrophone = "togglemicrophone".asInstanceOf[typings.std.stdStrings.togglemicrophone]
 }

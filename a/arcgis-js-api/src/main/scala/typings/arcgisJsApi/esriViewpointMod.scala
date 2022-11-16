@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Viewpoint
-import typings.arcgisJsApi.esri.ViewpointConstructor
 import typings.arcgisJsApi.esri.ViewpointProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewpointMod extends Shortcut {
+/* static members */
+object esriViewpointMod {
   
-  @JSImport("esri/Viewpoint", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ViewpointConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/Viewpoint", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriViewpointMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Viewpoint {
     def this(properties: ViewpointProperties) = this()
@@ -35,9 +29,9 @@ object esriViewpointMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/Viewpoint", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ViewpointConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewpointMod.foo` */
-  override def _to: js.Object & ViewpointConstructor = ^
+  inline def fromJSON(json: Any): Viewpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Viewpoint]
 }

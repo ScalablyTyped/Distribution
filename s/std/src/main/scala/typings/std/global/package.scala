@@ -84,6 +84,7 @@ import typings.std.stdStrings.auxclick
 import typings.std.stdStrings.beforeinput
 import typings.std.stdStrings.beforeprint
 import typings.std.stdStrings.beforeunload
+import typings.std.stdStrings.cancel
 import typings.std.stdStrings.canplay
 import typings.std.stdStrings.canplaythrough
 import typings.std.stdStrings.change
@@ -476,6 +477,18 @@ inline def addEventListener_blur(
 inline def addEventListener_blur(
   `type`: typings.std.stdStrings.blur,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: AddEventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_cancel(
+  `type`: cancel,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def addEventListener_cancel(
+  `type`: cancel,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
@@ -2149,6 +2162,9 @@ inline def onanimationstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ t
 inline def onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onauxclick").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onauxclick_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onauxclick")(x.asInstanceOf[js.Any])
 
+inline def onbeforeinput: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onbeforeinput").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null]
+inline def onbeforeinput_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onbeforeinput")(x.asInstanceOf[js.Any])
+
 inline def onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onbeforeprint").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onbeforeprint_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onbeforeprint")(x.asInstanceOf[js.Any])
 
@@ -2161,6 +2177,9 @@ inline def onbeforeunload_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typ
   */
 inline def onblur: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onblur").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null]
 inline def onblur_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onblur")(x.asInstanceOf[js.Any])
+
+inline def oncancel: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncancel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
+inline def oncancel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncancel")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when playback is possible, but would require further buffering.
@@ -2939,6 +2958,18 @@ inline def removeEventListener_blur(
 inline def removeEventListener_blur(
   `type`: typings.std.stdStrings.blur,
   listener: js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any],
+  options: EventListenerOptions
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_cancel(
+  `type`: cancel,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
+  options: scala.Boolean
+): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def removeEventListener_cancel(
+  `type`: cancel,
+  listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, Any],
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.png
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapViewTakeScreenshotOptions
-  extends StObject
-     with Object {
+trait MapViewTakeScreenshotOptions extends StObject {
   
   /**
     * Specifies whether to take a screenshot of a specific area of the view.
@@ -74,12 +70,8 @@ trait MapViewTakeScreenshotOptions
 }
 object MapViewTakeScreenshotOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MapViewTakeScreenshotOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MapViewTakeScreenshotOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapViewTakeScreenshotOptions]
   }
   

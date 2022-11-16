@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait heatmapStatisticsHeatmapStatisticsParams
-  extends StObject
-     with Object {
+trait heatmapStatisticsHeatmapStatisticsParams extends StObject {
   
   /**
     * The name of the numeric field for which the statistics will be generated.
@@ -49,13 +45,10 @@ trait heatmapStatisticsHeatmapStatisticsParams
 object heatmapStatisticsHeatmapStatisticsParams {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView | SceneView
   ): heatmapStatisticsHeatmapStatisticsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapStatisticsHeatmapStatisticsParams]
   }
   

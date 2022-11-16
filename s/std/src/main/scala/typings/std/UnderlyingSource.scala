@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnderlyingSource[R] extends StObject {
   
   /* standard dom */
+  var autoAllocateChunkSize: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var cancel: js.UndefOr[UnderlyingSourceCancelCallback] = js.undefined
   
   /* standard dom */
@@ -16,17 +19,20 @@ trait UnderlyingSource[R] extends StObject {
   var start: js.UndefOr[UnderlyingSourceStartCallback[R]] = js.undefined
   
   /* standard dom */
-  var `type`: Unit
+  var `type`: js.UndefOr[ReadableStreamType] = js.undefined
 }
 object UnderlyingSource {
   
-  inline def apply[R](`type`: Unit): UnderlyingSource[R] = {
+  inline def apply[R](): UnderlyingSource[R] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
   
   extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
+    
+    inline def setAutoAllocateChunkSize(value: Double): Self = StObject.set(x, "autoAllocateChunkSize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
     
     inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
@@ -40,6 +46,8 @@ object UnderlyingSource {
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReadableStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

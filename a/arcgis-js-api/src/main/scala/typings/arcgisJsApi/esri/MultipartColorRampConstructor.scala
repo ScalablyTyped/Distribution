@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MultipartColorRampConstructor
   extends StObject
-     with /**
-  * Creates a multipart color ramp to combine multiple continuous color ramps for use in raster renderers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html)
-  */
-Instantiable0[MultipartColorRamp]
+     with Instantiable0[MultipartColorRamp]
      with Instantiable1[/* properties */ MultipartColorRampProperties, MultipartColorRamp] {
   
   def fromJSON(json: Any): MultipartColorRamp = js.native

@@ -27,6 +27,7 @@ trait Typeofidentity extends StObject {
   def getRedirectURL(): String = js.native
   def getRedirectURL(path: String): String = js.native
   
+  def launchWebAuthFlow(details: WebAuthFlowOptions): js.Promise[js.UndefOr[String]] = js.native
   def launchWebAuthFlow(details: WebAuthFlowOptions, callback: js.Function1[/* responseUrl */ js.UndefOr[String], Unit]): Unit = js.native
   
   var onSignInChanged: SignInChangeEvent = js.native

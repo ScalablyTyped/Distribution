@@ -21,13 +21,12 @@ object outFunctionCurryMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     L1[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] extends ts-toolbelt.ts-toolbelt/out/Any/x.x ? ts-toolbelt.ts-toolbelt/out/List/Concat.Concat<LN, L2[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>]> : LN
     }}}
     */
-  @js.native
-  trait GapOf[L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] extends StObject
+  type GapOf[L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] = LN
   
   /**
     * @hidden
@@ -44,13 +43,12 @@ object outFunctionCurryMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/Function/Curry._GapsOf<L1, ts-toolbelt.ts-toolbelt/out/Function/Curry.SplitParams<L2>, [], ts-toolbelt.ts-toolbelt/out/Function/Curry.SplitParams<L2>, ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<0>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<any>> : never
     }}}
     */
-  @js.native
-  trait GapsOf[L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject
+  type GapsOf[L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, L2 /* <: typings.tsToolbelt.outListListMod.List[Any] */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * Undoes the job of [[SplitParams]]
@@ -58,13 +56,12 @@ object outFunctionCurryMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/Function/Curry._JoinParams<P, []> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<any>> : never
     }}}
     */
-  @js.native
-  trait JoinParams[P /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */] extends StObject
+  type JoinParams[P /* <: js.Array[typings.tsToolbelt.outListListMod.List[Any]] */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * Splits tuples to preserve their labels
@@ -72,13 +69,12 @@ object outFunctionCurryMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/Function/Curry._SplitParams<P, [], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<P>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, std.Array<ts-toolbelt.ts-toolbelt/out/List/List.List<any>>> : never
     }}}
     */
-  @js.native
-  trait SplitParams[P /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject
+  type SplitParams[P /* <: typings.tsToolbelt.outListListMod.List[Any] */] = js.Array[typings.tsToolbelt.outListListMod.List[Any]]
   
   /**
     * @hidden

@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-remove`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VertexRemoveEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -35,14 +32,8 @@ trait VertexRemoveEventInfo
 }
 object VertexRemoveEventInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    removed: js.Array[Double],
-    vertices: js.Array[VertexRemoveEventInfoVertices]
-  ): VertexRemoveEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+  inline def apply(removed: js.Array[Double], vertices: js.Array[VertexRemoveEventInfoVertices]): VertexRemoveEventInfo = {
+    val __obj = js.Dynamic.literal(removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("vertex-remove")
     __obj.asInstanceOf[VertexRemoveEventInfo]
   }

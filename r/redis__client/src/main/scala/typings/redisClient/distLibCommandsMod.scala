@@ -78,6 +78,14 @@ object distLibCommandsMod {
     var preserve: js.UndefOr[Any] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RedisCommandRawReply = string | number | node.buffer.<global>.Buffer | null | undefined | std.Array<@redis/client.@redis/client/dist/lib/commands.RedisCommandRawReply>
+  }}}
+  to avoid circular code involving: 
+  - @redis/client.@redis/client/dist/lib/commands.RedisCommandRawReply
+  */
   type RedisCommandRawReply = js.UndefOr[String | Double | Buffer | Null | js.Array[Any]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

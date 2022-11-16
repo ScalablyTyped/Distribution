@@ -8,6 +8,7 @@ import typings.railsUjs.railsUjsStrings.animationstart
 import typings.railsUjs.railsUjsStrings.auxclick
 import typings.railsUjs.railsUjsStrings.beforeinput
 import typings.railsUjs.railsUjsStrings.blur
+import typings.railsUjs.railsUjsStrings.cancel
 import typings.railsUjs.railsUjsStrings.canplay
 import typings.railsUjs.railsUjsStrings.canplaythrough
 import typings.railsUjs.railsUjsStrings.change
@@ -238,6 +239,19 @@ object utilsEventMod {
     selector: SelectorObject,
     eventType: blur,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def delegate_cancel(
+    element: EventTarget,
+    selector: String,
+    eventType: cancel,
+    handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def delegate_cancel(
+    element: EventTarget,
+    selector: SelectorObject,
+    eventType: cancel,
+    handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def delegate_canplay(

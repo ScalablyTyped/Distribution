@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.GeometryFieldsInfo
-import typings.arcgisJsApi.esri.GeometryFieldsInfoConstructor
 import typings.arcgisJsApi.esri.GeometryFieldsInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportGeometryFieldsInfoMod extends Shortcut {
+/* static members */
+object esriLayersSupportGeometryFieldsInfoMod {
   
-  @JSImport("esri/layers/support/GeometryFieldsInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GeometryFieldsInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/GeometryFieldsInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportGeometryFieldsInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with GeometryFieldsInfo {
     def this(properties: GeometryFieldsInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportGeometryFieldsInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/GeometryFieldsInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & GeometryFieldsInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportGeometryFieldsInfoMod.foo` */
-  override def _to: js.Object & GeometryFieldsInfoConstructor = ^
+  inline def fromJSON(json: Any): GeometryFieldsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[GeometryFieldsInfo]
 }

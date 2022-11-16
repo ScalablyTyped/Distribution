@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geakstr__sass-inline-svg"
-version := "1.0-dt-20221015Z-832eb9"
+version := "1.0-dt-20221015Z-16259f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

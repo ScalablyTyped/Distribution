@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DistanceMeasurement2DViewModelMeasurement
-  extends StObject
-     with Object {
+trait DistanceMeasurement2DViewModelMeasurement extends StObject {
   
   /**
     * Measurement line.
@@ -26,14 +22,8 @@ trait DistanceMeasurement2DViewModelMeasurement
 }
 object DistanceMeasurement2DViewModelMeasurement {
   
-  inline def apply(
-    constructor: js.Function,
-    geometry: Any,
-    hasOwnProperty: PropertyKey => Boolean,
-    length: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DistanceMeasurement2DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(geometry: Any, length: Double): DistanceMeasurement2DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }
   

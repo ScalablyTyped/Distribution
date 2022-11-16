@@ -1,6 +1,7 @@
 package typings.typeFest
 
 import typings.typeFest.sourceSplitMod.Split
+import typings.typeFest.typeFestBooleans.`true`
 import typings.typeFest.typeFestStrings.Dot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,26 +21,24 @@ object sourceGetMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     LongString extends '' ? true : LongString extends / * template literal string: ${Substring}${inferTail} * / string ? type-fest.type-fest/source/get.ConsistsOnlyOf</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tail * / any, Substring> : false
     }}}
     */
-  @js.native
-  trait ConsistsOnlyOf[LongString /* <: String */, Substring /* <: String */] extends StObject
+  type ConsistsOnlyOf[LongString /* <: String */, Substring /* <: String */] = `true`
   
   /**
   Replaces square-bracketed dot notation with dots, for example, `foo[0].bar` -> `foo.0.bar`.
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Path extends / * template literal string: [${inferHead}]${inferTail} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tail * / any extends / * template literal string: [${string} * / string ? / * template literal string: ${Head}.${FixPathSquareBrackets<Tail>} * / string : / * template literal string: ${Head}${FixPathSquareBrackets<Tail>} * / string : Path extends / * template literal string: ${inferHead}[${inferMiddle}]${inferTail} * / string ? / * template literal string: ${Head}.${FixPathSquareBrackets<[${Middle}]${Tail}>} * / string : Path
     }}}
     */
-  @js.native
-  trait FixPathSquareBrackets[Path /* <: String */] extends StObject
+  type FixPathSquareBrackets[Path /* <: String */] = Path
   
   type Get[BaseType, Path /* <: String | js.Array[String] */, Options /* <: GetOptions */] = GetWithPath[
     BaseType, 
@@ -76,13 +75,12 @@ object sourceGetMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Keys extends [] ? BaseType : Keys extends [infer Head, ...infer Tail] ? type-fest.type-fest/source/get.GetWithPath<type-fest.type-fest/source/get.PropertyOf<BaseType, std.Extract<Head, string>, Options>, std.Extract<Tail, std.Array<string>>, Options> : never
     }}}
     */
-  @js.native
-  trait GetWithPath[BaseType, Keys /* <: js.Array[String] */, Options /* <: GetOptions */] extends StObject
+  type GetWithPath[BaseType, Keys /* <: js.Array[String] */, Options /* <: GetOptions */] = BaseType
   
   /**
   Get a property of an object or array. Works when indexing arrays using number-literal-strings, for example, `PropertyOf<number[], '0'> = number`, and when indexing objects with number keys.
@@ -92,13 +90,12 @@ object sourceGetMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     BaseType extends null | undefined ? undefined : Key extends keyof BaseType ? type-fest.type-fest/source/get.StrictPropertyOf<BaseType, Key, Options> : BaseType extends [] | [unknown, ...std.Array<unknown>] ? unknown : BaseType extends {[n: number] : infer Item,   length :number} ? type-fest.type-fest/source/get.ConsistsOnlyOf<Key, type-fest.type-fest/source/internal.StringDigit> extends true ? type-fest.type-fest/source/get.Strictify<Item, Options> : unknown : Key extends keyof type-fest.type-fest/source/get.WithStringKeys<BaseType> ? type-fest.type-fest/source/get.StrictPropertyOf<type-fest.type-fest/source/get.WithStringKeys<BaseType>, Key, Options> : unknown
     }}}
     */
-  @js.native
-  trait PropertyOf[BaseType, Key /* <: String */, Options /* <: GetOptions */] extends StObject
+  type PropertyOf[BaseType, Key /* <: String */, Options /* <: GetOptions */] = Unit
   
   /**
   If `Options['strict']` is `true`, includes `undefined` in the returned type when accessing properties on `Record<string, any>`.
@@ -107,26 +104,26 @@ object sourceGetMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Record<string, any> extends BaseType ? string extends keyof BaseType ? type-fest.type-fest/source/get.Strictify<BaseType[Key], Options> : BaseType[Key] : BaseType[Key]
     }}}
     */
-  @js.native
-  trait StrictPropertyOf[BaseType, Key /* <: /* keyof BaseType */ String */, Options /* <: GetOptions */] extends StObject
+  type StrictPropertyOf[BaseType, Key /* <: /* keyof BaseType */ String */, Options /* <: GetOptions */] = js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: BaseType[Key] */ js.Any
+  ]
   
   /**
   Adds `undefined` to `Type` if `strict` is enabled.
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Options['strict'] extends false ? Type : Type | undefined
     }}}
     */
-  @js.native
-  trait Strictify[Type, Options /* <: GetOptions */] extends StObject
+  type Strictify[Type, Options /* <: GetOptions */] = Type
   
   /**
   Splits a dot-prop style path into a tuple comprised of the properties in the path. Handles square-bracket notation.
@@ -145,7 +142,7 @@ object sourceGetMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [std.Record<string | number, any>] ? T[U] : never
     }}}

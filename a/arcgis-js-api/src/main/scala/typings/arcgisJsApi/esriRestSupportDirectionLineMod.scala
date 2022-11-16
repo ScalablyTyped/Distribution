@@ -1,20 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.DirectionLine
-import typings.arcgisJsApi.esri.DirectionLineConstructor
 import typings.arcgisJsApi.esri.DirectionLineProperties
+import typings.arcgisJsApi.esri.Graphic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportDirectionLineMod extends Shortcut {
+/* static members */
+object esriRestSupportDirectionLineMod {
   
-  @JSImport("esri/rest/support/DirectionLine", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & DirectionLineConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/DirectionLine", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +17,7 @@ object esriRestSupportDirectionLineMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with DirectionLine {
     def this(properties: DirectionLineProperties) = this()
@@ -35,9 +30,17 @@ object esriRestSupportDirectionLineMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/DirectionLine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & DirectionLineConstructor
+  /**
+    * Creates a [DirectionLine](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#fromGraphic)
+    */
+  inline def fromGraphic(): DirectionLine = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")().asInstanceOf[DirectionLine]
+  inline def fromGraphic(graphic: Graphic): DirectionLine = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")(graphic.asInstanceOf[js.Any]).asInstanceOf[DirectionLine]
   
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportDirectionLineMod.foo` */
-  override def _to: js.Object & DirectionLineConstructor = ^
+  inline def fromJSON(json: Any): DirectionLine = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DirectionLine]
 }

@@ -20,6 +20,12 @@ object SymbolFlags extends StObject {
   /* 98304 */ val Accessor: typings.typescript.mod.SymbolFlags.Accessor & Double = js.native
   
   @js.native
+  sealed trait AccessorExcludes
+    extends StObject
+       with SymbolFlags
+  /* 13247 */ val AccessorExcludes: typings.typescript.mod.SymbolFlags.AccessorExcludes & Double = js.native
+  
+  @js.native
   sealed trait Alias
     extends StObject
        with SymbolFlags

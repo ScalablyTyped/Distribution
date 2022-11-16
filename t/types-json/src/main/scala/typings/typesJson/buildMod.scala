@@ -46,5 +46,14 @@ object buildMod {
   @js.native
   trait JSONObject extends StObject
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | null | types-json.types-json/build.JSONObject | types-json.types-json/build.JSONArray
+  }}}
+  to avoid circular code involving: 
+  - types-json.types-json/build.JSONArray
+  - types-json.types-json/build.JSONValue
+  */
   type JSONValue = String | Double | Boolean | Null | JSONObject | Any
 }

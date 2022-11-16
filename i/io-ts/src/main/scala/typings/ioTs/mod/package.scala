@@ -271,6 +271,17 @@ type Tagged[Tag /* <: String */, A, O] = (_Tagged[Tag, A, O]) | (InterfaceType[T
 
 type TaggedIntersection[Tag /* <: String */, A, O] = IntersectionType[TaggedIntersectionArgument[Tag], A, O, Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type TaggedIntersectionArgument = [io-ts.io-ts.Tagged<Tag, any, any>] | [io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>] | [io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>] | [io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>] | [io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>, io-ts.io-ts.Mixed] | [io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Mixed, io-ts.io-ts.Tagged<Tag, any, any>]
+}}}
+to avoid circular code involving: 
+- io-ts.io-ts.Tagged
+- io-ts.io-ts.TaggedExact
+- io-ts.io-ts.TaggedIntersection
+- io-ts.io-ts.TaggedIntersectionArgument
+*/
 type TaggedIntersectionArgument[Tag /* <: String */] = js.Array[Any] | (js.Tuple2[Any | Mixed_, Any | Mixed_]) | (js.Tuple3[Any | Mixed_, Any | Mixed_, Any | Mixed_]) | (js.Tuple4[Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_]) | (js.Tuple5[Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_, Any | Mixed_])
 
 type TaggedUnionC[Tag /* <: String */, CS /* <: Array[Mixed_] */] = TaggedUnionType[

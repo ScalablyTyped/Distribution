@@ -70,6 +70,14 @@ object distCommonFsTypesMod {
   
   type CallbackFnVoid = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type IDirectoryContents = {[nodeName: string] : string | @file-services/types.@file-services/types/dist/common-fs-types.IDirectoryContents}
+  }}}
+  to avoid circular code involving: 
+  - @file-services/types.@file-services/types/dist/common-fs-types.IDirectoryContents
+  */
   trait IDirectoryContents
     extends StObject
        with /* nodeName */ StringDictionary[String | IDirectoryContents]

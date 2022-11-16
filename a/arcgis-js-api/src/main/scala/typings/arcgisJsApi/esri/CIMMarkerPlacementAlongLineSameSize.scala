@@ -5,15 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.NoConstraint
 import typings.arcgisJsApi.arcgisJsApiStrings.WithFullGap
 import typings.arcgisJsApi.arcgisJsApiStrings.WithHalfGap
 import typings.arcgisJsApi.arcgisJsApiStrings.WithMarkers
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMMarkerPlacementAlongLineSameSize
   extends StObject
-     with Object
      with MarkerPlacement {
   
   /**
@@ -76,13 +73,8 @@ trait CIMMarkerPlacementAlongLineSameSize
 }
 object CIMMarkerPlacementAlongLineSameSize {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    placementTemplate: js.Array[Double],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMMarkerPlacementAlongLineSameSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), placementTemplate = placementTemplate.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(placementTemplate: js.Array[Double]): CIMMarkerPlacementAlongLineSameSize = {
+    val __obj = js.Dynamic.literal(placementTemplate = placementTemplate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineSameSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineSameSize]
   }

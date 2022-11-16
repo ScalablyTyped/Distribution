@@ -71,23 +71,21 @@ object typesUtilsMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     RawServer extends node.http.Server<new (socket : node.node:net.Socket): node.http.IncomingMessage, new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>> | node.https.Server<new (socket : node.node:net.Socket): node.node:http.IncomingMessage, new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.node:http.ServerResponse<Request>> ? node.http.ServerResponse<node.http.IncomingMessage> : RawServer extends node.http2.Http2Server | node.http2.Http2SecureServer ? node.http2.Http2ServerResponse : never
     }}}
     */
-  @js.native
-  trait RawReplyDefaultExpression[RawServer /* <: RawServerBase */] extends StObject
+  type RawReplyDefaultExpression[RawServer /* <: RawServerBase */] = ServerResponse[IncomingMessage]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     RawServer extends node.http.Server<new (socket : node.node:net.Socket): node.http.IncomingMessage, new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>> | node.https.Server<new (socket : node.node:net.Socket): node.node:http.IncomingMessage, new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.node:http.ServerResponse<Request>> ? node.http.IncomingMessage : RawServer extends node.http2.Http2Server | node.http2.Http2SecureServer ? node.http2.Http2ServerRequest : never
     }}}
     */
-  @js.native
-  trait RawRequestDefaultExpression[RawServer /* <: RawServerBase */] extends StObject
+  type RawRequestDefaultExpression[RawServer /* <: RawServerBase */] = IncomingMessage
   
   type RawServerBase = (Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microlight"
-version := "0.0-dt-20220712Z-234597"
+version := "0.0-dt-20220712Z-e562ea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

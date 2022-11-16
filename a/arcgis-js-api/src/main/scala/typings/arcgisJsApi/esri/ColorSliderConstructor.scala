@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColorSliderConstructor
   extends StObject
-     with /**
-  * The ColorSlider widget is intended for authoring and exploring data-driven visualizations in any layer that can be rendered with a [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html)
-  */
-Instantiable0[ColorSlider]
+     with Instantiable0[ColorSlider]
      with Instantiable1[/* properties */ ColorSliderProperties, ColorSlider] {
   
   /**

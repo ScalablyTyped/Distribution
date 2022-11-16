@@ -119,6 +119,16 @@ object buildJsonFileMod {
   
   type JSONArray = js.Array[JSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[key: string] : @expo/json-file.@expo/json-file/build/JsonFile.JSONValue | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @expo/json-file.@expo/json-file/build/JsonFile.JSONArray
+  - @expo/json-file.@expo/json-file/build/JsonFile.JSONObject
+  - @expo/json-file.@expo/json-file/build/JsonFile.JSONValue
+  */
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[JSONValue]]
@@ -130,6 +140,15 @@ object buildJsonFileMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = boolean | number | string | null | @expo/json-file.@expo/json-file/build/JsonFile.JSONArray | @expo/json-file.@expo/json-file/build/JsonFile.JSONObject
+  }}}
+  to avoid circular code involving: 
+  - @expo/json-file.@expo/json-file/build/JsonFile.JSONArray
+  - @expo/json-file.@expo/json-file/build/JsonFile.JSONValue
+  */
   type JSONValue = Boolean | Double | String | Null | Any | JSONObject
   
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__token-providers
 
-Typings are for version 3.209.0
+Typings are for version 3.211.0
 
 
 

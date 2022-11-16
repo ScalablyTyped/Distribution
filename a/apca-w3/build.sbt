@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apca-w3"
-version := "0.1-dt-20220116Z-021b0a"
+version := "0.1-dt-20220116Z-2bb894"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

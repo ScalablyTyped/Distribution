@@ -215,6 +215,7 @@ import typings.zinggrid.zinggridStrings.boolean
 import typings.zinggrid.zinggridStrings.bottom
 import typings.zinggrid.zinggridStrings.br
 import typings.zinggrid.zinggridStrings.button
+import typings.zinggrid.zinggridStrings.cancel
 import typings.zinggrid.zinggridStrings.canplay
 import typings.zinggrid.zinggridStrings.canplaythrough
 import typings.zinggrid.zinggridStrings.canvas
@@ -722,6 +723,20 @@ trait ZGColumn
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2107,6 +2122,9 @@ trait ZGColumn
   var ariaColIndex: String | Null = js.native
   
   /* standard dom */
+  var ariaColIndexText: String | Null = js.native
+  
+  /* standard dom */
   var ariaColSpan: String | Null = js.native
   
   /* standard dom */
@@ -2123,6 +2141,9 @@ trait ZGColumn
   
   /* standard dom */
   var ariaHidden: String | Null = js.native
+  
+  /* standard dom */
+  var ariaInvalid: String | Null = js.native
   
   /* standard dom */
   var ariaKeyShortcuts: String | Null = js.native
@@ -2171,6 +2192,9 @@ trait ZGColumn
   
   /* standard dom */
   var ariaRowIndex: String | Null = js.native
+  
+  /* standard dom */
+  var ariaRowIndexText: String | Null = js.native
   
   /* standard dom */
   var ariaRowSpan: String | Null = js.native
@@ -3310,12 +3334,18 @@ trait ZGColumn
   /* standard dom */
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /* standard dom */
+  var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
+  
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
+  
+  /* standard dom */
+  var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
@@ -4639,6 +4669,20 @@ trait ZGColumn
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -6017,6 +6061,9 @@ trait ZGColumn
   var resizableMinWidth: js.UndefOr[Double] = js.native
   
   var resizablePersistent: js.UndefOr[Boolean] = js.native
+  
+  /* standard dom */
+  var role: String | Null = js.native
   
   /* standard dom */
   def scroll(): Unit = js.native

@@ -46,5 +46,10 @@ trait CornersGeoreference
     */
   var topRight: Point = js.native
   
-  var `type`: corners = js.native
+  /**
+    * The georeference type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#type)
+    */
+  val `type`: corners = js.native
 }

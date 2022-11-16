@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestInterceptor
-  extends StObject
-     with Object {
+trait RequestInterceptor extends StObject {
   
   /**
     * Makes changes to the response after the request is sent, but before it's returned to the caller.
@@ -61,12 +57,8 @@ trait RequestInterceptor
 }
 object RequestInterceptor {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): RequestInterceptor = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestInterceptor]
   }
   

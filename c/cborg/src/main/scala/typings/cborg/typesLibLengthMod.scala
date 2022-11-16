@@ -28,8 +28,16 @@ object typesLibLengthMod {
   
   type EncodeOptions = typings.cborg.typesInterfaceMod.EncodeOptions
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped cborg.cborg/types/lib/token.Token | std.Array<cborg.cborg/types/lib/token.Token> | std.Array<any> */ trait TokenOrNestedTokens extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TokenOrNestedTokens = cborg.cborg/types/interface.TokenOrNestedTokens
+  }}}
+  to avoid circular code involving: 
+  - cborg.cborg/types/interface.TokenOrNestedTokens
+  - cborg.cborg/types/lib/length.TokenOrNestedTokens
+  */
+  type TokenOrNestedTokens = Any
   
   type TokenTypeEncoder = typings.cborg.typesInterfaceMod.TokenTypeEncoder
 }

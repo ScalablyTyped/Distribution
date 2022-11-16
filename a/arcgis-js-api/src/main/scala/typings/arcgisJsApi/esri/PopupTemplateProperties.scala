@@ -71,13 +71,6 @@ trait PopupTemplateProperties extends StObject {
   var overwriteActions: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The `RelatedRecordsInfo` class provides additional sorting options when working with related records in a popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#relatedRecordsInfo)
-    */
-  var relatedRecordsInfo: js.UndefOr[RelatedRecordsInfoProperties] = js.undefined
-  
-  /**
     * Indicates whether to include the feature's geometry for use by the template.
     *
     * @default false
@@ -143,10 +136,6 @@ object PopupTemplateProperties {
     inline def setOverwriteActions(value: Boolean): Self = StObject.set(x, "overwriteActions", value.asInstanceOf[js.Any])
     
     inline def setOverwriteActionsUndefined: Self = StObject.set(x, "overwriteActions", js.undefined)
-    
-    inline def setRelatedRecordsInfo(value: RelatedRecordsInfoProperties): Self = StObject.set(x, "relatedRecordsInfo", value.asInstanceOf[js.Any])
-    
-    inline def setRelatedRecordsInfoUndefined: Self = StObject.set(x, "relatedRecordsInfo", js.undefined)
     
     inline def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudStretchRenderer
-import typings.arcgisJsApi.esri.PointCloudStretchRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudStretchRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersPointCloudStretchRendererMod extends Shortcut {
+/* static members */
+object esriRenderersPointCloudStretchRendererMod {
   
-  @JSImport("esri/renderers/PointCloudStretchRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudStretchRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudStretchRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersPointCloudStretchRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudStretchRenderer {
     def this(properties: PointCloudStretchRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersPointCloudStretchRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/PointCloudStretchRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudStretchRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersPointCloudStretchRendererMod.foo` */
-  override def _to: js.Object & PointCloudStretchRendererConstructor = ^
+  inline def fromJSON(json: Any): PointCloudStretchRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudStretchRenderer]
 }

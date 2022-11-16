@@ -34,6 +34,7 @@ trait TouchEventtypetouchstartt extends StObject {
   /* standard dom */
   val bubbles: Boolean = js.native
   
+  /** @deprecated */
   /* standard dom */
   var cancelBubble: Boolean = js.native
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_admob"
-version := "1.0-dt-20220912Z-f32423"
+version := "1.0-dt-20220912Z-cdf013"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -25,6 +25,14 @@ object mod {
     extends StObject
        with _TopLevelPatch[T]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DeepArray = std.ReadonlyArray<T | mergerino.mergerino.DeepArray<T>>
+  }}}
+  to avoid circular code involving: 
+  - mergerino.mergerino.DeepArray
+  */
   @js.native
   trait DeepArray[T]
     extends StObject
@@ -55,6 +63,15 @@ object mod {
     def apply(source: S, patches: MultipleTopLevelPatch[S]*): S = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MultipleTopLevelPatch = mergerino.mergerino.TopLevelPatch<S> | mergerino.mergerino.DeepArray<mergerino.mergerino.TopLevelPatch<S>>
+  }}}
+  to avoid circular code involving: 
+  - mergerino.mergerino.DeepArray
+  - mergerino.mergerino.MultipleTopLevelPatch
+  */
   type MultipleTopLevelPatch[S /* <: js.Object */] = TopLevelPatch[S] | Any
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

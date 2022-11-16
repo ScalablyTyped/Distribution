@@ -53,6 +53,19 @@ object dxPopup {
     */
   type PopupInstance = dxPopup[Properties]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Properties = devextreme.devextreme.DevExpress.ui.dxPopupOptions<devextreme.devextreme.DevExpress.ui.dxPopup.PopupInstance>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxPopup.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopup.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopup.HiddenEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopup.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopup.PopupInstance
+  - devextreme.devextreme.DevExpress.ui.dxPopup.Properties
+  */
   trait Properties
     extends StObject
        with dxPopupOptions[PopupInstance]
@@ -112,6 +125,16 @@ object dxPopup {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ShownEvent = devextreme.devextreme.DevExpress.events.EventInfo<devextreme.devextreme.DevExpress.ui.dxPopup<devextreme.devextreme.DevExpress.ui.dxPopup.Properties>>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxPopup.PopupInstance
+  - devextreme.devextreme.DevExpress.ui.dxPopup.Properties
+  - devextreme.devextreme.DevExpress.ui.dxPopup.ShownEvent
+  */
   trait ShownEvent
     extends StObject
        with EventInfo[dxPopup[Properties]]

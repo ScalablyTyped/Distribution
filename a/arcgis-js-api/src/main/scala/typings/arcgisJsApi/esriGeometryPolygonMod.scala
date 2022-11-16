@@ -1,20 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
+import typings.arcgisJsApi.esri.Extent
 import typings.arcgisJsApi.esri.Polygon
-import typings.arcgisJsApi.esri.PolygonConstructor
 import typings.arcgisJsApi.esri.PolygonProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriGeometryPolygonMod extends Shortcut {
+/* static members */
+object esriGeometryPolygonMod {
   
-  @JSImport("esri/geometry/Polygon", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PolygonConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry/Polygon", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +17,7 @@ object esriGeometryPolygonMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Polygon {
     def this(properties: PolygonProperties) = this()
@@ -35,9 +30,16 @@ object esriGeometryPolygonMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/geometry/Polygon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PolygonConstructor
+  /**
+    * Converts the given Extent to a Polygon instance.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#fromExtent)
+    */
+  inline def fromExtent(extent: Extent): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   
-  /* This means you don't have to write `^`, but can instead just say `esriGeometryPolygonMod.foo` */
-  override def _to: js.Object & PolygonConstructor = ^
+  inline def fromJSON(json: Any): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Polygon]
 }

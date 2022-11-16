@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slackify-html"
-version := "v1.0.1-dt-20220818Z-c12fef"
+version := "v1.0.1-dt-20220818Z-1c2b6d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

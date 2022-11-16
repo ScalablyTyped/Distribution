@@ -36,6 +36,14 @@ object mod {
     }
     ```
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DirJSON = {[filename: string] : fixturify.fixturify.DirJSON | string | null}
+  }}}
+  to avoid circular code involving: 
+  - fixturify.fixturify.DirJSON
+  */
   trait DirJSON
     extends StObject
        with /* filename */ StringDictionary[DirJSON | String | Null]

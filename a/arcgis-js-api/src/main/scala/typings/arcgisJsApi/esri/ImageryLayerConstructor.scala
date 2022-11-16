@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageryLayerConstructor
   extends StObject
-     with /**
-  * Represents a dynamic [image service resource](https://developers.arcgis.com/rest/services-reference/image-service.htm) as a layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)
-  */
-Instantiable0[ImageryLayer]
+     with Instantiable0[ImageryLayer]
      with Instantiable1[/* properties */ ImageryLayerProperties, ImageryLayer] {
   
   def fromJSON(json: Any): ImageryLayer = js.native

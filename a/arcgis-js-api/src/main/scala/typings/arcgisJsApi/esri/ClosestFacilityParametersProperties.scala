@@ -2,33 +2,78 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.anon.DataLayerPropertiestypela
 import typings.arcgisJsApi.arcgisJsApiStrings.`allow-backtrack`
+import typings.arcgisJsApi.arcgisJsApiStrings.`any-hazmat-prohibited`
 import typings.arcgisJsApi.arcgisJsApiStrings.`at-dead-ends-and-intersections`
 import typings.arcgisJsApi.arcgisJsApiStrings.`at-dead-ends-only`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-carpool-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-express-lanes`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-ferries`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-gates`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-limited-access-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-private-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-roads-unsuitable-for-pedestrians`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-stairways`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-toll-roads-for-trucks`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-toll-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-truck-restricted-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`avoid-unpaved-roads`
+import typings.arcgisJsApi.arcgisJsApiStrings.`axle-count-restriction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`complete-no-events`
 import typings.arcgisJsApi.arcgisJsApiStrings.`decimal-degrees`
+import typings.arcgisJsApi.arcgisJsApiStrings.`driving-a-bus`
+import typings.arcgisJsApi.arcgisJsApiStrings.`driving-a-taxi`
+import typings.arcgisJsApi.arcgisJsApiStrings.`driving-a-truck`
+import typings.arcgisJsApi.arcgisJsApiStrings.`driving-an-automobile`
+import typings.arcgisJsApi.arcgisJsApiStrings.`driving-an-emergency-vehicle`
 import typings.arcgisJsApi.arcgisJsApiStrings.`from-facility`
+import typings.arcgisJsApi.arcgisJsApiStrings.`height-restriction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`instructions-only`
+import typings.arcgisJsApi.arcgisJsApiStrings.`kingpin-to-rear-axle-length-restriction`
+import typings.arcgisJsApi.arcgisJsApiStrings.`length-restriction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`no-backtrack`
+import typings.arcgisJsApi.arcgisJsApiStrings.`preferred-for-pedestrians`
+import typings.arcgisJsApi.arcgisJsApiStrings.`riding-a-motorcycle`
+import typings.arcgisJsApi.arcgisJsApiStrings.`roads-under-construction-prohibited`
+import typings.arcgisJsApi.arcgisJsApiStrings.`semi-or-tractor-with-one-or-more-trailers-prohibited`
+import typings.arcgisJsApi.arcgisJsApiStrings.`single-axle-vehicles-prohibited`
 import typings.arcgisJsApi.arcgisJsApiStrings.`summary-only`
+import typings.arcgisJsApi.arcgisJsApiStrings.`tandem-axle-vehicles-prohibited`
+import typings.arcgisJsApi.arcgisJsApiStrings.`through-traffic-prohibited`
 import typings.arcgisJsApi.arcgisJsApiStrings.`to-facility`
+import typings.arcgisJsApi.arcgisJsApiStrings.`travel-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`truck-minutes`
+import typings.arcgisJsApi.arcgisJsApiStrings.`truck-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`truck-travel-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`truck-with-trailers-restriction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`true-shape-with-measure`
 import typings.arcgisJsApi.arcgisJsApiStrings.`true-shape`
+import typings.arcgisJsApi.arcgisJsApiStrings.`use-preferred-hazmat-routes`
+import typings.arcgisJsApi.arcgisJsApiStrings.`use-preferred-truck-routes`
+import typings.arcgisJsApi.arcgisJsApiStrings.`walk-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`weight-restriction`
+import typings.arcgisJsApi.arcgisJsApiStrings.campus
 import typings.arcgisJsApi.arcgisJsApiStrings.centimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.complete
 import typings.arcgisJsApi.arcgisJsApiStrings.decimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.desktop
 import typings.arcgisJsApi.arcgisJsApiStrings.end
+import typings.arcgisJsApi.arcgisJsApiStrings.featuresets
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.inches
 import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.minutes
+import typings.arcgisJsApi.arcgisJsApiStrings.navigation
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
+import typings.arcgisJsApi.arcgisJsApiStrings.now
 import typings.arcgisJsApi.arcgisJsApiStrings.points
 import typings.arcgisJsApi.arcgisJsApiStrings.standard
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import typings.arcgisJsApi.arcgisJsApiStrings.straight
+import typings.arcgisJsApi.arcgisJsApiStrings.walking
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,11 +82,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClosestFacilityParametersProperties extends StObject {
   
   /**
-    * The list of network attribute names to be accumulated with the analysis, i.e., which attributes should be returned as part of the response.
+    * Use this property to specify whether the operation should accumulate values other than the value specified for [impedanceAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var accumulateAttributes: js.UndefOr[
+    js.Array[
+      kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+    ]
+  ] = js.undefined
   
   /**
     * An authorization string used to access a resource or service.
@@ -51,35 +100,35 @@ trait ClosestFacilityParametersProperties extends StObject {
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of attribute parameter values that determine which network elements can be used by a vehicle.
+    * Use this property to specify additional values required by an attribute or restriction, such as to specify whether the restriction prohibits, avoids, or prefers travel on restricted roads.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[js.Array[ClosestFacilityParametersAttributeParameterValues]] = js.undefined
+  var attributeParameterValues: js.UndefOr[js.Array[AttributeParameterValue]] = js.undefined
   
   /**
-    * The cutoff value used to determine when to stop traversing.
+    * The travel time or travel distance value at which to stop searching for facilities for a given incident.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultCutoff)
     */
   var defaultCutoff: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of facilities to find.
+    * The number of closest facilities to find per incident.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultTargetFacilityCount)
     */
   var defaultTargetFacilityCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * The language used when generating driving directions.
+    * The language that will be used when generating travel directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLanguage)
     */
   var directionsLanguage: js.UndefOr[String] = js.undefined
   
   /**
-    * The length units used when computing driving directions.
+    * Specify the units for displaying travel distance in the driving directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLengthUnits)
     */
@@ -88,30 +137,32 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * Defines the amount of direction information returned.
+    * Define the content and verbosity of the driving directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsOutputType)
     */
   var directionsOutputType: js.UndefOr[
-    complete | `complete-no-events` | `instructions-only` | standard | `summary-only`
+    complete | `complete-no-events` | featuresets | `instructions-only` | standard | `summary-only`
   ] = js.undefined
   
   /**
-    * The style to be used when returning directions.
+    * Specify the name of the formatting style for the directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsStyleName)
     */
-  var directionsStyleName: js.UndefOr[String] = js.undefined
+  var directionsStyleName: js.UndefOr[desktop | navigation | campus] = js.undefined
   
   /**
-    * The name of the attribute field that contains the drive time values.
+    * Set the time-based impedance attribute to display the duration of a maneuver, such as "Go northwest on Alvorado St.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsTimeAttribute)
     */
-  var directionsTimeAttribute: js.UndefOr[String] = js.undefined
+  var directionsTimeAttribute: js.UndefOr[
+    `travel-time` | `truck-travel-time` | `walk-time` | minutes | `truck-time` | String
+  ] = js.undefined
   
   /**
-    * The set of facilities loaded as network locations during analysis.
+    * One or more locations that are searched for when finding the closest location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#facilities)
     */
@@ -120,14 +171,44 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The network attribute name used as the impedance attribute in analysis.
+    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecision)
+    */
+  var geometryPrecision: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionM)
+    */
+  var geometryPrecisionM: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Use this property to specify the number of decimal places in the response geometries returned by a solve operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionZ)
+    */
+  var geometryPrecisionZ: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Specify whether invalid input locations should be ignored when finding the best solution.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#ignoreInvalidLocations)
+    */
+  var ignoreInvalidLocations: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the impedance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute)
     */
-  var impedanceAttribute: js.UndefOr[String] = js.undefined
+  var impedanceAttribute: js.UndefOr[
+    kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+  ] = js.undefined
   
   /**
-    * The set of incidents loaded as network locations during analysis.
+    * One or more locations from which the service searches for the nearby locations
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#incidents)
     */
@@ -136,21 +217,21 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The well-known id of the spatial reference or the spatial reference object for the geometries returned with the analysis results.
+    * Use this property to specify the spatial reference of the geometries, such as line or point features, returned by a solve operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | String] = js.undefined
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The output geometry precision.
+    * Use this property to specify by how much you want to simplify the route geometry returned by the operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision)
     */
   var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * The units of the output geometry precision.
+    * Use this property to specify the units for the value specified for the [outputGeometryPrecision](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision) parameter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
     */
@@ -159,38 +240,52 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The type of output lines to be generated in the result.
+    * Use this property to specify the type of route features that are output by the operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputLines)
     */
   var outputLines: js.UndefOr[none_ | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
-    * The set of point barriers loaded as network locations during analysis.
+    * Specify additional settings that can influence the behavior of the solver when finding solutions for the network analysis problems.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#overrides)
+    */
+  var overrides: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Use this property to specify one or more points that will act as temporary restrictions or represent additional time or distance that may be required to travel on the underlying streets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers)
     */
   var pointBarriers: js.UndefOr[
-    DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+    CollectionProperties[PointBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * The set of polygon barriers loaded as network locations during analysis.
+    * Use this property to specify polygons that either completely restrict travel or proportionately scale the time or distance required to travel on the streets intersected by the polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers)
     */
   var polygonBarriers: js.UndefOr[
-    DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+    CollectionProperties[PolygonBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * The set of polyline barriers loaded as network locations during analysis.
+    * Use this property to specify one or more lines that prohibit travel anywhere the lines intersect the streets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers)
     */
   var polylineBarriers: js.UndefOr[
-    DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+    CollectionProperties[PolylineBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
+  
+  /**
+    * Use this property to specify if the Object IDs specified for input locations such as stops or barriers should be preserved when the input locations are returned as output.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#preserveObjectID)
+    */
+  var preserveObjectID: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how U-Turns should be handled.
@@ -202,14 +297,18 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The list of network attribute names to be used as restrictions with the analysis.
+    * Use this property to specify which restrictions should be honored by the operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#restrictionAttributes)
     */
-  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var restrictionAttributes: js.UndefOr[
+    js.Array[
+      `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
+    ]
+  ] = js.undefined
   
   /**
-    * Indicates whether the service should generate driving directions for each route.
+    * Specify whether the operation should generate driving directions for each route.
     *
     * @default false
     *
@@ -218,7 +317,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnDirections: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, facilities will be returned with the analysis results.
+    * Determines if facilities will be returned by the service.
     *
     * @default false
     *
@@ -227,7 +326,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnFacilities: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, incidents will be returned with the analysis results.
+    * Determines if incidents will be returned by the service.
     *
     * @default false
     *
@@ -236,7 +335,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnIncidents: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, point barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html).
+    * Specify whether [point barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers) will be returned by the routing operation.
     *
     * @default false
     *
@@ -245,7 +344,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnPointBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, polygon barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html).
+    * Specify whether [polygon barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers) will be returned by the routing operation.
     *
     * @default false
     *
@@ -254,7 +353,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, polyline barriers will be returned in the barriers property of the [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html).
+    * Specify whether [polyline barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers) will be returned by the routing operation.
     *
     * @default false
     *
@@ -263,7 +362,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, closest facility routes will be generated and returned in the route property of each [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html).
+    * Use this property to specify if the operation should return routes.
     *
     * @default true
     *
@@ -272,21 +371,56 @@ trait ClosestFacilityParametersProperties extends StObject {
   var returnRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The arrival or departure date and time.
+    * Specify whether traversed edges will be returned by the operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedEdges)
+    */
+  var returnTraversedEdges: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specify whether traversed junctions will be returned by the operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedJunctions)
+    */
+  var returnTraversedJunctions: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specify whether traversed turns will be returned by the operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedTurns)
+    */
+  var returnTraversedTurns: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Include z values for the returned geometries if supported by the underlying network.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnZ)
+    */
+  var returnZ: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specify the time and date to depart from or arrive at incidents or facilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay)
     */
-  var timeOfDay: js.UndefOr[DateProperties] = js.undefined
+  var timeOfDay: js.UndefOr[DateProperties | now] = js.undefined
   
   /**
-    * Defines the way the `timeOfDay` value is used.
+    * Specify the time zone or zones of the [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayIsUTC)
+    */
+  var timeOfDayIsUTC: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) parameter value represents the arrival or departure time for the routes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayUsage)
     */
   var timeOfDayUsage: js.UndefOr[start | end] = js.undefined
   
   /**
-    * Options for traveling to or from the facility.
+    * Specifies how the travel direction for the closest facility search will be measured.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#travelDirection)
     */
@@ -300,7 +434,7 @@ trait ClosestFacilityParametersProperties extends StObject {
   var travelMode: js.UndefOr[TravelModeProperties] = js.undefined
   
   /**
-    * If `true`, the hierarchy attribute for the network will be used in analysis.
+    * Specify whether hierarchy should be used when finding the shortest paths.
     *
     * @default false
     *
@@ -317,21 +451,27 @@ object ClosestFacilityParametersProperties {
   
   extension [Self <: ClosestFacilityParametersProperties](x: Self) {
     
-    inline def setAccumulateAttributes(value: js.Array[String]): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
+    inline def setAccumulateAttributes(
+      value: js.Array[
+          kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+        ]
+    ): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
     
     inline def setAccumulateAttributesUndefined: Self = StObject.set(x, "accumulateAttributes", js.undefined)
     
-    inline def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value*))
+    inline def setAccumulateAttributesVarargs(
+      value: (kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String)*
+    ): Self = StObject.set(x, "accumulateAttributes", js.Array(value*))
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
-    inline def setAttributeParameterValues(value: js.Array[ClosestFacilityParametersAttributeParameterValues]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
+    inline def setAttributeParameterValues(value: js.Array[AttributeParameterValue]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     
     inline def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)
     
-    inline def setAttributeParameterValuesVarargs(value: ClosestFacilityParametersAttributeParameterValues*): Self = StObject.set(x, "attributeParameterValues", js.Array(value*))
+    inline def setAttributeParameterValuesVarargs(value: AttributeParameterValue*): Self = StObject.set(x, "attributeParameterValues", js.Array(value*))
     
     inline def setDefaultCutoff(value: Double): Self = StObject.set(x, "defaultCutoff", value.asInstanceOf[js.Any])
     
@@ -351,15 +491,17 @@ object ClosestFacilityParametersProperties {
     
     inline def setDirectionsLengthUnitsUndefined: Self = StObject.set(x, "directionsLengthUnits", js.undefined)
     
-    inline def setDirectionsOutputType(value: complete | `complete-no-events` | `instructions-only` | standard | `summary-only`): Self = StObject.set(x, "directionsOutputType", value.asInstanceOf[js.Any])
+    inline def setDirectionsOutputType(
+      value: complete | `complete-no-events` | featuresets | `instructions-only` | standard | `summary-only`
+    ): Self = StObject.set(x, "directionsOutputType", value.asInstanceOf[js.Any])
     
     inline def setDirectionsOutputTypeUndefined: Self = StObject.set(x, "directionsOutputType", js.undefined)
     
-    inline def setDirectionsStyleName(value: String): Self = StObject.set(x, "directionsStyleName", value.asInstanceOf[js.Any])
+    inline def setDirectionsStyleName(value: desktop | navigation | campus): Self = StObject.set(x, "directionsStyleName", value.asInstanceOf[js.Any])
     
     inline def setDirectionsStyleNameUndefined: Self = StObject.set(x, "directionsStyleName", js.undefined)
     
-    inline def setDirectionsTimeAttribute(value: String): Self = StObject.set(x, "directionsTimeAttribute", value.asInstanceOf[js.Any])
+    inline def setDirectionsTimeAttribute(value: `travel-time` | `truck-travel-time` | `walk-time` | minutes | `truck-time` | String): Self = StObject.set(x, "directionsTimeAttribute", value.asInstanceOf[js.Any])
     
     inline def setDirectionsTimeAttributeUndefined: Self = StObject.set(x, "directionsTimeAttribute", js.undefined)
     
@@ -369,7 +511,25 @@ object ClosestFacilityParametersProperties {
     
     inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
     
-    inline def setImpedanceAttribute(value: String): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
+    inline def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryPrecisionM(value: Double): Self = StObject.set(x, "geometryPrecisionM", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryPrecisionMUndefined: Self = StObject.set(x, "geometryPrecisionM", js.undefined)
+    
+    inline def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
+    
+    inline def setGeometryPrecisionZ(value: Double): Self = StObject.set(x, "geometryPrecisionZ", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryPrecisionZUndefined: Self = StObject.set(x, "geometryPrecisionZ", js.undefined)
+    
+    inline def setIgnoreInvalidLocations(value: Boolean): Self = StObject.set(x, "ignoreInvalidLocations", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreInvalidLocationsUndefined: Self = StObject.set(x, "ignoreInvalidLocations", js.undefined)
+    
+    inline def setImpedanceAttribute(
+      value: kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+    ): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
     
     inline def setImpedanceAttributeUndefined: Self = StObject.set(x, "impedanceAttribute", js.undefined)
     
@@ -379,7 +539,7 @@ object ClosestFacilityParametersProperties {
     
     inline def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
     
-    inline def setOutSpatialReference(value: SpatialReferenceProperties | String): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
@@ -397,33 +557,53 @@ object ClosestFacilityParametersProperties {
     
     inline def setOutputLinesUndefined: Self = StObject.set(x, "outputLines", js.undefined)
     
+    inline def setOverrides(value: Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    
     inline def setPointBarriers(
-      value: DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+      value: CollectionProperties[PointBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
     ): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     
     inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
     
+    inline def setPointBarriersVarargs(value: PointBarrierProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value*))
+    
     inline def setPolygonBarriers(
-      value: DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+      value: CollectionProperties[PolygonBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
     ): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
     inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
     
+    inline def setPolygonBarriersVarargs(value: PolygonBarrierProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value*))
+    
     inline def setPolylineBarriers(
-      value: DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
+      value: CollectionProperties[PolylineBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
     ): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
     inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    
+    inline def setPolylineBarriersVarargs(value: PolylineBarrierProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value*))
+    
+    inline def setPreserveObjectID(value: Boolean): Self = StObject.set(x, "preserveObjectID", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveObjectIDUndefined: Self = StObject.set(x, "preserveObjectID", js.undefined)
     
     inline def setRestrictUTurns(value: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`): Self = StObject.set(x, "restrictUTurns", value.asInstanceOf[js.Any])
     
     inline def setRestrictUTurnsUndefined: Self = StObject.set(x, "restrictUTurns", js.undefined)
     
-    inline def setRestrictionAttributes(value: js.Array[String]): Self = StObject.set(x, "restrictionAttributes", value.asInstanceOf[js.Any])
+    inline def setRestrictionAttributes(
+      value: js.Array[
+          `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
+        ]
+    ): Self = StObject.set(x, "restrictionAttributes", value.asInstanceOf[js.Any])
     
     inline def setRestrictionAttributesUndefined: Self = StObject.set(x, "restrictionAttributes", js.undefined)
     
-    inline def setRestrictionAttributesVarargs(value: String*): Self = StObject.set(x, "restrictionAttributes", js.Array(value*))
+    inline def setRestrictionAttributesVarargs(
+      value: (`any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String)*
+    ): Self = StObject.set(x, "restrictionAttributes", js.Array(value*))
     
     inline def setReturnDirections(value: Boolean): Self = StObject.set(x, "returnDirections", value.asInstanceOf[js.Any])
     
@@ -453,7 +633,27 @@ object ClosestFacilityParametersProperties {
     
     inline def setReturnRoutesUndefined: Self = StObject.set(x, "returnRoutes", js.undefined)
     
-    inline def setTimeOfDay(value: DateProperties): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
+    inline def setReturnTraversedEdges(value: Boolean): Self = StObject.set(x, "returnTraversedEdges", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTraversedEdgesUndefined: Self = StObject.set(x, "returnTraversedEdges", js.undefined)
+    
+    inline def setReturnTraversedJunctions(value: Boolean): Self = StObject.set(x, "returnTraversedJunctions", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTraversedJunctionsUndefined: Self = StObject.set(x, "returnTraversedJunctions", js.undefined)
+    
+    inline def setReturnTraversedTurns(value: Boolean): Self = StObject.set(x, "returnTraversedTurns", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTraversedTurnsUndefined: Self = StObject.set(x, "returnTraversedTurns", js.undefined)
+    
+    inline def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
+    
+    inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
+    
+    inline def setTimeOfDay(value: DateProperties | now): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOfDayIsUTC(value: Boolean): Self = StObject.set(x, "timeOfDayIsUTC", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOfDayIsUTCUndefined: Self = StObject.set(x, "timeOfDayIsUTC", js.undefined)
     
     inline def setTimeOfDayUndefined: Self = StObject.set(x, "timeOfDay", js.undefined)
     

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EffectiveUnits
-  extends StObject
-     with Object {
+trait EffectiveUnits extends StObject {
   
   /**
     * Units used for displaying distance or length values.
@@ -26,14 +22,8 @@ trait EffectiveUnits
 }
 object EffectiveUnits {
   
-  inline def apply(
-    constructor: js.Function,
-    distance: LengthUnit,
-    elevation: LengthUnit,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): EffectiveUnits = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], elevation = elevation.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(distance: LengthUnit, elevation: LengthUnit): EffectiveUnits = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], elevation = elevation.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectiveUnits]
   }
   

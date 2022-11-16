@@ -182,6 +182,18 @@ object dxMultiView {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Properties = devextreme.devextreme.DevExpress.ui.dxMultiViewBaseOptions<devextreme.devextreme.DevExpress.ui.dxMultiView.MultiViewInstance<TItem, TKey>, TItem, TKey>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxMultiView.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxMultiView.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxMultiView.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxMultiView.MultiViewInstance
+  - devextreme.devextreme.DevExpress.ui.dxMultiView.Properties
+  */
   trait Properties[TItem /* <: ItemLike */, TKey]
     extends StObject
        with dxMultiViewBaseOptions[MultiViewInstance[TItem, TKey], TItem, TKey]

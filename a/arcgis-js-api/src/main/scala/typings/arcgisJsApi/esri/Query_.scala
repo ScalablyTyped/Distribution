@@ -74,7 +74,7 @@ trait Query_
   var geometry: Geometry_ = js.native
   
   /**
-    * Specifies the number of decimal places for geometries returned by the query operation.
+    * Specifies the number of decimal places for geometries returned by the [JSON query operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query.html#executeQueryJSON).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometryPrecision)
     */

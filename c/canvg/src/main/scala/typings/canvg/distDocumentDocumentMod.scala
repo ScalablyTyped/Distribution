@@ -11,11 +11,11 @@ import typings.canvg.distPropertyMod.Property
 import typings.canvg.distScreenMod.Screen
 import typings.canvg.distSvgfontloaderMod.SVGFontLoader
 import typings.canvg.distTypesMod.RenderingContext2D
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.CanvasImageSource
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.OffscreenCanvas
 import typings.std.Record
 import typings.std.Window
 import org.scalablytyped.runtime.StObject

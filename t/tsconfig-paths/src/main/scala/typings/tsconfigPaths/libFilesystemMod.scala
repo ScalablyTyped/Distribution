@@ -35,6 +35,14 @@ object libFilesystemMod {
   
   type FileExistsSync_ = js.Function1[/* name */ String, Boolean]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PackageJson = {[key: string] : string | tsconfig-paths.tsconfig-paths/lib/filesystem.PackageJson}
+  }}}
+  to avoid circular code involving: 
+  - tsconfig-paths.tsconfig-paths/lib/filesystem.PackageJson
+  */
   trait PackageJson
     extends StObject
        with /* key */ StringDictionary[String | PackageJson]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jaro-winkler"
-version := "0.2-dt-20220906Z-4407e6"
+version := "0.2-dt-20220906Z-9d38f5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

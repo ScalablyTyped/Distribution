@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rndm"
-version := "1.2-dt-20221010Z-adae65"
+version := "1.2-dt-20221010Z-e62cc0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

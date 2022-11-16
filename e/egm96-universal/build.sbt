@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egm96-universal"
-version := "1.1.0-3394db"
+version := "1.1.0-8da4f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

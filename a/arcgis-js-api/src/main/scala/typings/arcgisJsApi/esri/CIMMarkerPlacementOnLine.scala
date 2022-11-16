@@ -4,15 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.LineBeginning
 import typings.arcgisJsApi.arcgisJsApiStrings.LineEnd
 import typings.arcgisJsApi.arcgisJsApiStrings.LineMiddle
 import typings.arcgisJsApi.arcgisJsApiStrings.SegmentMidpoint
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMMarkerPlacementOnLine
   extends StObject
-     with Object
      with MarkerPlacement {
   
   /**
@@ -61,13 +58,8 @@ trait CIMMarkerPlacementOnLine
 }
 object CIMMarkerPlacementOnLine {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    relativeTo: LineMiddle | LineBeginning | LineEnd | SegmentMidpoint
-  ): CIMMarkerPlacementOnLine = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relativeTo = relativeTo.asInstanceOf[js.Any])
+  inline def apply(relativeTo: LineMiddle | LineBeginning | LineEnd | SegmentMidpoint): CIMMarkerPlacementOnLine = {
+    val __obj = js.Dynamic.literal(relativeTo = relativeTo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMMarkerPlacementOnLine")
     __obj.asInstanceOf[CIMMarkerPlacementOnLine]
   }

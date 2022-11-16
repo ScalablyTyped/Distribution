@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd__shallowequal"
-version := "4.0.2-88236b"
+version := "4.0.2-fbd5e3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseLayerViewGL2DRenderRenderParameters
-  extends StObject
-     with Object {
+trait BaseLayerViewGL2DRenderRenderParameters extends StObject {
   
   /**
     * The WebGL or WebGL 2 context.
@@ -34,15 +30,8 @@ trait BaseLayerViewGL2DRenderRenderParameters
 }
 object BaseLayerViewGL2DRenderRenderParameters {
   
-  inline def apply(
-    constructor: js.Function,
-    context: WebGLRenderingContext | Any,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    state: ViewState,
-    stationary: Boolean
-  ): BaseLayerViewGL2DRenderRenderParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], stationary = stationary.asInstanceOf[js.Any])
+  inline def apply(context: WebGLRenderingContext | Any, state: ViewState, stationary: Boolean): BaseLayerViewGL2DRenderRenderParameters = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stationary = stationary.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayerViewGL2DRenderRenderParameters]
   }
   

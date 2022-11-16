@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "has-package-self-reference"
-version := "1.0-dt-20220624Z-3e88d3"
+version := "1.0-dt-20220624Z-9fa1ed"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VertexAttributes
-  extends StObject
-     with Object {
+trait VertexAttributes extends StObject {
   
   /**
     * The normal buffer.
@@ -33,13 +29,8 @@ trait VertexAttributes
 }
 object VertexAttributes {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    position: js.typedarray.Float64Array,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): VertexAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(position: js.typedarray.Float64Array): VertexAttributes = {
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[VertexAttributes]
   }
   

@@ -72,6 +72,23 @@ trait FeatureTableViewModelProperties extends StObject {
     *
     * @default true
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightEnabled)
+    */
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This property accepts and returns a collection of feature ObjectId's.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightIds)
+    */
+  var highlightIds: js.UndefOr[CollectionProperties[Double]] = js.undefined
+  
+  /**
+    * Indicates whether to highlight the associated feature when a row is selected.
+    *
+    * @default true
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable/FeatureTableViewModel#highlightEnabled highlightEnabled} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightOnRowSelectEnabled)
     */
   var highlightOnRowSelectEnabled: js.UndefOr[Boolean] = js.undefined
@@ -144,6 +161,16 @@ object FeatureTableViewModelProperties {
     inline def setHiddenFieldsUndefined: Self = StObject.set(x, "hiddenFields", js.undefined)
     
     inline def setHiddenFieldsVarargs(value: String*): Self = StObject.set(x, "hiddenFields", js.Array(value*))
+    
+    inline def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
+    
+    inline def setHighlightIds(value: CollectionProperties[Double]): Self = StObject.set(x, "highlightIds", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightIdsUndefined: Self = StObject.set(x, "highlightIds", js.undefined)
+    
+    inline def setHighlightIdsVarargs(value: Double*): Self = StObject.set(x, "highlightIds", js.Array(value*))
     
     inline def setHighlightOnRowSelectEnabled(value: Boolean): Self = StObject.set(x, "highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
     

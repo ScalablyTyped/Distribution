@@ -5,15 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Butt
 import typings.arcgisJsApi.arcgisJsApiStrings.Miter
 import typings.arcgisJsApi.arcgisJsApiStrings.Round
 import typings.arcgisJsApi.arcgisJsApiStrings.Square
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMSolidStroke
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -83,15 +80,8 @@ trait CIMSolidStroke
 }
 object CIMSolidStroke {
   
-  inline def apply(
-    color: js.Array[Double],
-    constructor: js.Function,
-    enable: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    width: Double
-  ): CIMSolidStroke = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
+  inline def apply(color: js.Array[Double], enable: Boolean, width: Double): CIMSolidStroke = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMSolidStroke")
     __obj.asInstanceOf[CIMSolidStroke]
   }

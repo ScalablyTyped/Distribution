@@ -157,6 +157,15 @@ object mod {
   
   type ReactNodeArray = js.Iterable[ReactNodeLike]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReactNodeLike = prop-types.prop-types.ReactElementLike | prop-types.prop-types.ReactNodeArray | string | number | boolean | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - prop-types.prop-types.ReactNodeArray
+  - prop-types.prop-types.ReactNodeLike
+  */
   type ReactNodeLike = js.UndefOr[ReactElementLike | Any | String | Double | Boolean | Null]
   
   @js.native

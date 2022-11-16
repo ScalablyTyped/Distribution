@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UtilityNetworkConstructor
   extends StObject
-     with /**
-  * This class contains metadata about the utility network dataset retrieved from a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html)
-  */
-Instantiable0[UtilityNetwork]
-     with Instantiable1[/* properties */ Any, UtilityNetwork]
+     with Instantiable0[UtilityNetwork]
+     with Instantiable1[/* properties */ UtilityNetworkProperties, UtilityNetwork] {
+  
+  def fromJSON(json: Any): UtilityNetwork = js.native
+}

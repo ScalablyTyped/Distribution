@@ -4525,6 +4525,14 @@ type HookFn = js.Function0[Unit]
 
 type HostBindingsFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ImportProvidersSource = @angular/core.@angular/core.Type<unknown> | @angular/core.@angular/core.ModuleWithProviders<unknown> | std.Array<@angular/core.@angular/core.ImportProvidersSource>
+}}}
+to avoid circular code involving: 
+- @angular/core.@angular/core.ImportProvidersSource
+*/
 type ImportProvidersSource = Type[Any] | ModuleWithProviders[Any] | js.Array[Any]
 
 /**

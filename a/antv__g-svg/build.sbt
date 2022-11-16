@@ -1,22 +1,21 @@
 organization := "org.scalablytyped"
 name := "antv__g-svg"
-version := "1.8.14-43219f"
+version := "1.8.14-b43391"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-3324b0",
-  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-fcd2e6",
-  "org.scalablytyped" %%% "antv__g-plugin-svg-picker" % "1.7.17-ac79cd",
-  "org.scalablytyped" %%% "antv__g-plugin-svg-renderer" % "1.8.14-489cc0",
-  "org.scalablytyped" %%% "antv__util" % "3.3.1-e7bc47",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-3076aa",
-  "org.scalablytyped" %%% "gl-matrix" % "3.4.3-85a0f5",
-  "org.scalablytyped" %%% "inversify" % "6.0.1-6db334",
-  "org.scalablytyped" %%% "mana-syringe" % "0.3.2-4331b0",
-  "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-096bcd",
-  "org.scalablytyped" %%% "rbush" % "3.0-dt-20220819Z-9c07f9",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-9325ab",
+  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-1b7b3b",
+  "org.scalablytyped" %%% "antv__g-plugin-svg-picker" % "1.7.17-3ddd63",
+  "org.scalablytyped" %%% "antv__g-plugin-svg-renderer" % "1.8.14-0be90e",
+  "org.scalablytyped" %%% "antv__util" % "3.3.1-73b2ea",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-5bff7d",
+  "org.scalablytyped" %%% "gl-matrix" % "3.4.3-8ec21e",
+  "org.scalablytyped" %%% "inversify" % "6.0.1-d4bb21",
+  "org.scalablytyped" %%% "mana-syringe" % "0.3.2-b815ac",
+  "org.scalablytyped" %%% "rbush" % "3.0-dt-20220819Z-00e49d",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

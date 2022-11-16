@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.angle
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Angle
-  extends StObject
-     with Object {
+trait Angle extends StObject {
   
   /**
     * Unit type.
@@ -34,14 +30,8 @@ trait Angle
 }
 object Angle {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    unit: AngleUnit,
-    value: Double
-  ): Angle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(unit: AngleUnit, value: Double): Angle = {
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("angle")
     __obj.asInstanceOf[Angle]
   }

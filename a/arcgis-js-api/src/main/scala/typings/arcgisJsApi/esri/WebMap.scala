@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMap
   extends StObject
      with Map
-     with corePromise
-     with _ProfileVariableInstanceType {
+     with corePromise {
   
   /**
     * The applicationProperties contains the viewing properties of the WebMap.

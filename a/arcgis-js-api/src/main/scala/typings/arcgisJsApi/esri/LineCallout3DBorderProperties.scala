@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineCallout3DBorderProperties
-  extends StObject
-     with Object {
+trait LineCallout3DBorderProperties extends StObject {
   
   /**
     * The color of the callout line border.
@@ -21,12 +17,8 @@ trait LineCallout3DBorderProperties
 }
 object LineCallout3DBorderProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LineCallout3DBorderProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): LineCallout3DBorderProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineCallout3DBorderProperties]
   }
   

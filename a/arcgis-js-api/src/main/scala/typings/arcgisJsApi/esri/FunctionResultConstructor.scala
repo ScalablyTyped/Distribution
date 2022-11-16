@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionResultConstructor
   extends StObject
-     with /**
-  * A trace can optionally return a aggregated function result if the trace configuration asked for it.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html)
-  */
-Instantiable0[FunctionResult]
+     with Instantiable0[FunctionResult]
      with Instantiable1[/* properties */ FunctionResultProperties, FunctionResult] {
   
   def fromJSON(json: Any): FunctionResult = js.native

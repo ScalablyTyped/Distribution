@@ -29,6 +29,16 @@ object buildUtilsXmlMod {
   
   type XMLArray = js.Array[XMLValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type XMLObject = {[key: string] : @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLValue | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLArray
+  - @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLObject
+  - @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLValue
+  */
   trait XMLObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[XMLValue]]
@@ -40,5 +50,14 @@ object buildUtilsXmlMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type XMLValue = boolean | number | string | null | @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLArray | @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLObject
+  }}}
+  to avoid circular code involving: 
+  - @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLArray
+  - @expo/config-plugins.@expo/config-plugins/build/utils/XML.XMLValue
+  */
   type XMLValue = Boolean | Double | String | Null | Any | XMLObject
 }

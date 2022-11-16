@@ -4,15 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Both
 import typings.arcgisJsApi.arcgisJsApiStrings.JustBegin
 import typings.arcgisJsApi.arcgisJsApiStrings.JustEnd
 import typings.arcgisJsApi.arcgisJsApiStrings.None
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMMarkerPlacementAtExtremities
   extends StObject
-     with Object
      with MarkerPlacement {
   
   /**
@@ -61,12 +58,8 @@ trait CIMMarkerPlacementAtExtremities
 }
 object CIMMarkerPlacementAtExtremities {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMMarkerPlacementAtExtremities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): CIMMarkerPlacementAtExtremities = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAtExtremities")
     __obj.asInstanceOf[CIMMarkerPlacementAtExtremities]
   }

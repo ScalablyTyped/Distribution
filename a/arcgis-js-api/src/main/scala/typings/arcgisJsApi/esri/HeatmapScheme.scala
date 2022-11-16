@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeatmapScheme
-  extends StObject
-     with Object {
+trait HeatmapScheme extends StObject {
   
   /**
     * A continuous color ramp used to construct a heatmap.
@@ -47,17 +43,8 @@ trait HeatmapScheme
 }
 object HeatmapScheme {
   
-  inline def apply(
-    colors: js.Array[Color_],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    id: String,
-    name: String,
-    opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    tags: js.Array[String]
-  ): HeatmapScheme = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags.asInstanceOf[js.Any])
+  inline def apply(colors: js.Array[Color_], id: String, name: String, opacity: Double, tags: js.Array[String]): HeatmapScheme = {
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapScheme]
   }
   

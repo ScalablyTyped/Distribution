@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`cursor-update`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CursorUpdateEventInfo
   extends StObject
-     with Object
      with CreateToolEventInfo {
   
   /**
@@ -28,13 +25,8 @@ trait CursorUpdateEventInfo
 }
 object CursorUpdateEventInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    coordinates: js.Array[Double],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CursorUpdateEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(coordinates: js.Array[Double]): CursorUpdateEventInfo = {
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cursor-update")
     __obj.asInstanceOf[CursorUpdateEventInfo]
   }

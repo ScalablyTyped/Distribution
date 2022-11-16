@@ -1,24 +1,17 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.Sublayer
 import typings.arcgisJsApi.esri.SublayersOwner
-import typings.arcgisJsApi.esri.SublayersOwnerConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersMixinsSublayersOwnerMod extends Shortcut {
+object esriLayersMixinsSublayersOwnerMod {
   
   @JSImport("esri/layers/mixins/SublayersOwner", JSImport.Namespace)
   @js.native
-  val ^ : SublayersOwnerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/layers/mixins/SublayersOwner", JSImport.Namespace)
-  @js.native
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SublayersOwner {
     
@@ -38,9 +31,4 @@ object esriLayersMixinsSublayersOwnerMod extends Shortcut {
     /* CompleteClass */
     override def findSublayerById(id: Double): Sublayer = js.native
   }
-  
-  type _To = SublayersOwnerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersMixinsSublayersOwnerMod.foo` */
-  override def _to: SublayersOwnerConstructor = ^
 }

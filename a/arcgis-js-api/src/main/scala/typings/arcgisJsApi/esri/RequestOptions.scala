@@ -19,15 +19,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import typings.std.AbortSignal
 import typings.std.FormData
 import typings.std.HTMLFormElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestOptions
-  extends StObject
-     with Object {
+trait RequestOptions extends StObject {
   
   /**
     * Indicates if and how requests to ArcGIS Services are authenticated.
@@ -108,12 +104,8 @@ trait RequestOptions
 }
 object RequestOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RequestOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): RequestOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestOptions]
   }
   

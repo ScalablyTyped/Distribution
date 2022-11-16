@@ -9,15 +9,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.UInt32
 import typings.arcgisJsApi.arcgisJsApiStrings.UInt8
 import typings.arcgisJsApi.arcgisJsApiStrings.continuous
 import typings.arcgisJsApi.arcgisJsApiStrings.discrete
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VoxelVariableRenderingFormat
-  extends StObject
-     with Object {
+trait VoxelVariableRenderingFormat extends StObject {
   
   /**
     * Whether or not the data is discrete or continuous.
@@ -52,13 +48,10 @@ trait VoxelVariableRenderingFormat
 object VoxelVariableRenderingFormat {
   
   inline def apply(
-    constructor: js.Function,
     continuity: discrete | continuous,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     `type`: Int8 | UInt8 | Int16 | UInt16 | Int32 | UInt32 | Float32
   ): VoxelVariableRenderingFormat = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], continuity = continuity.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(continuity = continuity.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoxelVariableRenderingFormat]
   }

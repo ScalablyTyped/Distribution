@@ -101,7 +101,7 @@ trait intl extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#normalizeMessageBundleLocale)
     */
-  def normalizeMessageBundleLocale(locale: String): String | Any = js.native
+  def normalizeMessageBundleLocale(locale: String): String | Null = js.native
   
   /**
     * Registers a [callback](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#LocaleChangeCallback) that gets notified when the locale changes.

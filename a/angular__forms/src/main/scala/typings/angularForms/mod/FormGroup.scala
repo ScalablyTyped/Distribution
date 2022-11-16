@@ -92,6 +92,38 @@ open class FormGroup[TControl /* <: /* import warning: importer.ImportType#apply
   
   var controls: ɵTypedOrUntyped[TControl, TControl, StringDictionary[AbstractControl[Any, Any]]] = js.native
   
+  /**
+    * Patches the value of the `FormGroup`. It accepts an object with control
+    * names as keys, and does its best to match the values to the correct controls
+    * in the group.
+    *
+    * It accepts both super-sets and sub-sets of the group without throwing an error.
+    *
+    * @usageNotes
+    * ### Patch the value for a form group
+    *
+    * ```
+    * const form = new FormGroup({
+    *    first: new FormControl(),
+    *    last: new FormControl()
+    * });
+    * console.log(form.value);   // {first: null, last: null}
+    *
+    * form.patchValue({first: 'Nancy'});
+    * console.log(form.value);   // {first: 'Nancy', last: null}
+    * ```
+    *
+    * @param value The object that matches the structure of the group.
+    * @param options Configuration options that determine how the control propagates changes and
+    * emits events after the value is patched.
+    * * `onlySelf`: When true, each change only affects this control and not its parent. Default is
+    * true.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control value
+    * is updated. When false, no events are emitted. The configuration options are passed to
+    * the {@link AbstractControl#updateValueAndValidity updateValueAndValidity} method.
+    */
+  def patchValue(value: ɵFormGroupValue[TControl]): Unit = js.native
   def patchValue(value: ɵFormGroupValue[TControl], options: EmitEvent): Unit = js.native
   
   def registerControl(name: String, control: AbstractControl[Any, Any]): AbstractControl[Any, Any] = js.native
@@ -144,5 +176,41 @@ open class FormGroup[TControl /* <: /* import warning: importer.ImportType#apply
     options: `0`
   ): Unit = js.native
   
+  /**
+    * Sets the value of the `FormGroup`. It accepts an object that matches
+    * the structure of the group, with control names as keys.
+    *
+    * @usageNotes
+    * ### Set the complete value for the form group
+    *
+    * ```
+    * const form = new FormGroup({
+    *   first: new FormControl(),
+    *   last: new FormControl()
+    * });
+    *
+    * console.log(form.value);   // {first: null, last: null}
+    *
+    * form.setValue({first: 'Nancy', last: 'Drew'});
+    * console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
+    * ```
+    *
+    * @throws When strict checks fail, such as setting the value of a control
+    * that doesn't exist or if you exclude a value of a control that does exist.
+    *
+    * @param value The new value for the control that matches the structure of the group.
+    * @param options Configuration options that determine how the control propagates changes
+    * and emits events after the value changes.
+    * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+    * updateValueAndValidity} method.
+    *
+    * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
+    * false.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges`
+    * observables emit events with the latest status and value when the control value is updated.
+    * When false, no events are emitted.
+    */
+  def setValue(value: ɵFormGroupRawValue[TControl]): Unit = js.native
   def setValue(value: ɵFormGroupRawValue[TControl], options: EmitEvent): Unit = js.native
 }

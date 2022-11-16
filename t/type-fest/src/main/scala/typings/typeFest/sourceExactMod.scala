@@ -16,7 +16,7 @@ object sourceExactMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends std.Array<unknown> ? T[0] : never
     }}}
@@ -26,14 +26,13 @@ object sourceExactMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     // Convert union of array to array of union: A[] & B[] => (A & B)[]
   ParameterType extends std.Array<unknown> ? std.Array<type-fest.type-fest/source/exact.Exact<type-fest.type-fest/source/exact.ArrayElement<ParameterType>, type-fest.type-fest/source/exact.ArrayElement<InputType>>> : ParameterType extends std.Array<unknown> ? std.ReadonlyArray<type-fest.type-fest/source/exact.Exact<type-fest.type-fest/source/exact.ArrayElement<ParameterType>, type-fest.type-fest/source/exact.ArrayElement<InputType>>> : ParameterType extends object ? type-fest.type-fest/source/exact.ExactObject<ParameterType, InputType> : ParameterType
     }}}
     */
-  @js.native
-  trait Exact[ParameterType, InputType] extends StObject
+  type Exact[ParameterType, InputType] = ParameterType
   
   /**
   Create a type from `ParameterType` and `InputType` and change keys exclusive to `InputType` to `never`.
@@ -48,7 +47,7 @@ object sourceExactMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     K extends keyof T ? T[K] : never
     }}}

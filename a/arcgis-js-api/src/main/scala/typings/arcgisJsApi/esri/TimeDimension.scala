@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.ISO8601
 import typings.arcgisJsApi.arcgisJsApiStrings.time
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeDimension
-  extends StObject
-     with Object {
+trait TimeDimension extends StObject {
   
   /**
     * Default value(s) for the time dimension.
@@ -57,15 +53,12 @@ trait TimeDimension
 object TimeDimension {
   
   inline def apply(
-    constructor: js.Function,
     default: js.Array[js.Date | TimeDimensionInterval],
     extent: js.Array[js.Date | TimeDimensionInterval],
-    hasOwnProperty: PropertyKey => Boolean,
     multipleValues: Boolean,
-    nearestValue: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
+    nearestValue: Boolean
   ): TimeDimension = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), multipleValues = multipleValues.asInstanceOf[js.Any], name = "time", nearestValue = nearestValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), units = "ISO8601")
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], multipleValues = multipleValues.asInstanceOf[js.Any], name = "time", nearestValue = nearestValue.asInstanceOf[js.Any], units = "ISO8601")
     __obj.asInstanceOf[TimeDimension]
   }
   

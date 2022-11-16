@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.butt_
 import typings.arcgisJsApi.arcgisJsApiStrings.round_
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FillSymbol3DLayerOutlineProperties
-  extends StObject
-     with Object {
+trait FillSymbol3DLayerOutlineProperties extends StObject {
   
   /**
     * The color of the outline.
@@ -49,12 +45,8 @@ trait FillSymbol3DLayerOutlineProperties
 }
 object FillSymbol3DLayerOutlineProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FillSymbol3DLayerOutlineProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FillSymbol3DLayerOutlineProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillSymbol3DLayerOutlineProperties]
   }
   

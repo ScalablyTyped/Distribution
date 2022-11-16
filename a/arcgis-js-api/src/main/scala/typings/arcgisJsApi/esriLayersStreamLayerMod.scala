@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,8 +33,10 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.StreamLayer
-import typings.arcgisJsApi.esri.StreamLayerConstructor
 import typings.arcgisJsApi.esri.StreamLayerProperties
 import typings.arcgisJsApi.esri.TimeExtent
 import typings.arcgisJsApi.esri.TimeInfo
@@ -44,13 +45,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersStreamLayerMod extends Shortcut {
+object esriLayersStreamLayerMod {
   
-  @JSImport("esri/layers/StreamLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & StreamLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/StreamLayer", JSImport.Namespace)
   @js.native
   /**
@@ -58,7 +54,7 @@ object esriLayersStreamLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with StreamLayer {
     def this(properties: StreamLayerProperties) = this()
@@ -90,6 +86,14 @@ object esriLayersStreamLayerMod extends Shortcut {
       */
     /* CompleteClass */
     var featureEffect: FeatureEffect = js.native
+    
+    /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
     
     /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -151,9 +155,4 @@ object esriLayersStreamLayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
-  
-  type _To = js.Object & StreamLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersStreamLayerMod.foo` */
-  override def _to: js.Object & StreamLayerConstructor = ^
 }

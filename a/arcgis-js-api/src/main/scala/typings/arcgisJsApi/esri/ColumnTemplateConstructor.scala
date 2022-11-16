@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColumnTemplateConstructor
   extends StObject
-     with /**
-  * A ColumnTemplate formats and defines the structure of a [Column](module-esri-widgets-FeatureTable-Grid-Column.html) within a [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html)
-  */
-Instantiable0[ColumnTemplate]
+     with Instantiable0[ColumnTemplate]
      with Instantiable1[/* properties */ ColumnTemplateProperties, ColumnTemplate] {
   
   def fromJSON(json: Any): ColumnTemplate = js.native

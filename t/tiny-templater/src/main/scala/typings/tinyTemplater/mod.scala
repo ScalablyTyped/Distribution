@@ -17,6 +17,15 @@ object mod {
   val ^ : js.Any = js.native
   
   /** Data passed to a template function for interpolation. */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Data = {[key: string] : string | tiny-templater.tiny-templater.Data}
+  }}}
+  to avoid circular code involving: 
+  - tiny-templater.tiny-templater.Data
+  - tiny-templater.tiny-templater.Template
+  */
   trait Data
     extends StObject
        with /* key */ StringDictionary[String | Data]

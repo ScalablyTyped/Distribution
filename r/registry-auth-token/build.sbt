@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "registry-auth-token"
-version := "5.0.1-523a21"
+version := "5.0.1-2faba1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

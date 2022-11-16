@@ -35,7 +35,7 @@ trait MediaDevices
   
   /* standard dom */
   def getDisplayMedia(): js.Promise[MediaStream] = js.native
-  def getDisplayMedia(constraints: DisplayMediaStreamConstraints): js.Promise[MediaStream] = js.native
+  def getDisplayMedia(options: DisplayMediaStreamOptions): js.Promise[MediaStream] = js.native
   
   /* standard dom */
   def getSupportedConstraints(): MediaTrackSupportedConstraints = js.native

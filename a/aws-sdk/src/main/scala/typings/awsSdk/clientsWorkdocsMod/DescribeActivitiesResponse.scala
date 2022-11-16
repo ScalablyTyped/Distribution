@@ -9,7 +9,7 @@ trait DescribeActivitiesResponse extends StObject {
   /**
     * The marker for the next set of results.
     */
-  var Marker: js.UndefOr[MarkerType] = js.undefined
+  var Marker: js.UndefOr[SearchMarkerType] = js.undefined
   
   /**
     * The list of activities for the specified user and time period.
@@ -25,7 +25,7 @@ object DescribeActivitiesResponse {
   
   extension [Self <: DescribeActivitiesResponse](x: Self) {
     
-    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: SearchMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     

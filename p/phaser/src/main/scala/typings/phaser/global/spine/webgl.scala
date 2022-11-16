@@ -5,6 +5,7 @@ import typings.phaser.spine.Restorable
 import typings.phaser.spine.webgl.VertexAttributeType
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.OffscreenCanvas
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLUniformLocation
@@ -171,7 +172,7 @@ object webgl {
     override def addRestorable(restorable: Restorable): Unit = js.native
     
     /* CompleteClass */
-    var canvas: HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OffscreenCanvas */ Any) = js.native
+    var canvas: HTMLCanvasElement | OffscreenCanvas = js.native
     
     /* CompleteClass */
     var gl: WebGLRenderingContext = js.native

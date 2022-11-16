@@ -24,9 +24,13 @@ object mod {
     
     var keysOnly: js.UndefOr[Boolean] = js.undefined
     
+    var maxElisions: js.UndefOr[Double] = js.undefined
+    
     var outputKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     var outputNewOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var precision: js.UndefOr[Double] = js.undefined
     
     var raw: js.UndefOr[Boolean] = js.undefined
     
@@ -55,6 +59,10 @@ object mod {
       
       inline def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
       
+      inline def setMaxElisions(value: Double): Self = StObject.set(x, "maxElisions", value.asInstanceOf[js.Any])
+      
+      inline def setMaxElisionsUndefined: Self = StObject.set(x, "maxElisions", js.undefined)
+      
       inline def setOutputKeys(value: js.Array[String]): Self = StObject.set(x, "outputKeys", value.asInstanceOf[js.Any])
       
       inline def setOutputKeysUndefined: Self = StObject.set(x, "outputKeys", js.undefined)
@@ -64,6 +72,10 @@ object mod {
       inline def setOutputNewOnly(value: Boolean): Self = StObject.set(x, "outputNewOnly", value.asInstanceOf[js.Any])
       
       inline def setOutputNewOnlyUndefined: Self = StObject.set(x, "outputNewOnly", js.undefined)
+      
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

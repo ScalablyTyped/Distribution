@@ -31,17 +31,12 @@ trait ParameterReflection extends StObject {
 object ParameterReflection {
   
   inline def apply(
-    comment: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]],
-    defaultValue: ToSerialized[js.UndefOr[String]],
     flags: ReflectionFlags,
     id: ToSerialized[Double],
     kind: ToSerialized[ReflectionKind],
-    kindString: ToSerialized[js.UndefOr[String]],
-    name: ToSerialized[String],
-    `type`: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]
+    name: ToSerialized[String]
   ): ParameterReflection = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterReflection]
   }
   
@@ -49,7 +44,11 @@ object ParameterReflection {
     
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
     inline def setDefaultValue(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     inline def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
@@ -59,6 +58,8 @@ object ParameterReflection {
     
     inline def setKindString(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
     
+    inline def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
+    
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
@@ -66,5 +67,7 @@ object ParameterReflection {
     inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
     inline def setType(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

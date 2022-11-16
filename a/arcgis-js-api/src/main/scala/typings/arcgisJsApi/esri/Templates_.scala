@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Templates_
-  extends StObject
-     with Object {
+trait Templates_ extends StObject {
   
   /**
     * Includes the primary PopupTemplate suggested for the input layer.
@@ -26,14 +22,8 @@ trait Templates_
 }
 object Templates_ {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    primaryTemplate: Template,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    secondaryTemplates: js.Array[Template]
-  ): Templates_ = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryTemplate = primaryTemplate.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondaryTemplates = secondaryTemplates.asInstanceOf[js.Any])
+  inline def apply(primaryTemplate: Template, secondaryTemplates: js.Array[Template]): Templates_ = {
+    val __obj = js.Dynamic.literal(primaryTemplate = primaryTemplate.asInstanceOf[js.Any], secondaryTemplates = secondaryTemplates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Templates_]
   }
   

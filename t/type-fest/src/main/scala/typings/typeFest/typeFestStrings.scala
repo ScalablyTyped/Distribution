@@ -824,6 +824,10 @@ object typeFestStrings {
   inline def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait _underscore
     extends StObject
        with WordSeparators

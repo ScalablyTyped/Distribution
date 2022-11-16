@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_mybusinessqanda-v1"
-version := "0.0-dt-20220912Z-4cdf7a"
+version := "0.0-dt-20220912Z-374b40"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

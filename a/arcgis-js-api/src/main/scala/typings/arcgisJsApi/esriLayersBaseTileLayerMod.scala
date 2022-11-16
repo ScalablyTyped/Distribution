@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -33,20 +32,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.BaseTileLayer
-import typings.arcgisJsApi.esri.BaseTileLayerConstructor
 import typings.arcgisJsApi.esri.BaseTileLayerProperties
 import typings.arcgisJsApi.esri.Effect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersBaseTileLayerMod extends Shortcut {
+object esriLayersBaseTileLayerMod {
   
-  @JSImport("esri/layers/BaseTileLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BaseTileLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/BaseTileLayer", JSImport.Namespace)
   @js.native
   /**
@@ -54,7 +47,7 @@ object esriLayersBaseTileLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BaseTileLayer {
     def this(properties: BaseTileLayerProperties) = this()
@@ -117,9 +110,4 @@ object esriLayersBaseTileLayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
-  
-  type _To = js.Object & BaseTileLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersBaseTileLayerMod.foo` */
-  override def _to: js.Object & BaseTileLayerConstructor = ^
 }

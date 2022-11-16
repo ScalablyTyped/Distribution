@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcModulesUiCoreThemeTypesMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ICSSRule = {[cssPropName: string] : string | playable.playable/dist/src/modules/ui/core/theme/types.ICSSRuleFunction | playable.playable/dist/src/modules/ui/core/theme/types.ICSSRule}
+  }}}
+  to avoid circular code involving: 
+  - playable.playable/dist/src/modules/ui/core/theme/types.ICSSRule
+  - playable.playable/dist/src/modules/ui/core/theme/types.ICSSRules
+  */
   trait ICSSRule
     extends StObject
        with /* cssPropName */ StringDictionary[String | ICSSRuleFunction | ICSSRule]

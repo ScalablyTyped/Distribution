@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compare-function"
-version := "2.0-dt-20211202Z-6088f9"
+version := "2.0-dt-20211202Z-a4b1d0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

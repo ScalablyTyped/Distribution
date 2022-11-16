@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InheritedDomainConstructor
   extends StObject
-     with /**
-  * This is a subclass of [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-InheritedDomain.html)
-  */
-Instantiable0[InheritedDomain]
+     with Instantiable0[InheritedDomain]
      with Instantiable1[/* properties */ InheritedDomainProperties, InheritedDomain] {
   
   def fromJSON(json: Any): InheritedDomain = js.native

@@ -28,5 +28,14 @@ object mod {
   
   type JsonPrimitive = String | Double | Boolean | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = esm-utils.esm-utils.JsonPrimitive | esm-utils.esm-utils.JsonObject | esm-utils.esm-utils.JsonArray
+  }}}
+  to avoid circular code involving: 
+  - esm-utils.esm-utils.JsonArray
+  - esm-utils.esm-utils.JsonValue
+  */
   type JsonValue = JsonPrimitive | JsonObject | Any
 }

@@ -22,6 +22,16 @@ object mod {
   
   type PlistBuildOptions = XMLToStringOptions
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PlistObject = {readonly [x: string] : plist.plist.PlistValue}
+  }}}
+  to avoid circular code involving: 
+  - plist.plist.PlistArray
+  - plist.plist.PlistObject
+  - plist.plist.PlistValue
+  */
   trait PlistObject
     extends StObject
        with /* x */ StringDictionary[PlistValue]
@@ -33,5 +43,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PlistValue = string | number | boolean | std.Date | node.buffer.<global>.Buffer | plist.plist.PlistObject | plist.plist.PlistArray
+  }}}
+  to avoid circular code involving: 
+  - plist.plist.PlistArray
+  - plist.plist.PlistValue
+  */
   type PlistValue = String | Double | Boolean | js.Date | Buffer | PlistObject | Any
 }

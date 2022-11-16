@@ -61,6 +61,13 @@ trait Widget_
   var label: String = js.native
   
   /**
+    * Adds one or more handles which are to be tied to the lifecycle of the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#own)
+    */
+  def own(handleOrHandles: WatchHandle): scala.Unit = js.native
+  
+  /**
     * *This method is primarily used by developers when implementing custom widgets.* Executes after widget is ready for rendering.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#postInitialize)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoassert"
-version := "2.0-dt-20220826Z-1be316"
+version := "2.0-dt-20220826Z-77b025"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

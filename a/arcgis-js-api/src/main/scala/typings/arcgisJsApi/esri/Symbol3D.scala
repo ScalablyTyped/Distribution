@@ -19,7 +19,7 @@ trait Symbol3D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleOrigin: Symbol3DStyleOrigin = js.native
+  var styleOrigin: StyleOrigin = js.native
   
   /**
     * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols
-  extends StObject
-     with Object {
+trait univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols extends StObject {
   
   /**
     * The symbol to use for the above portion of the `above-and-below` visualization.
@@ -26,14 +22,8 @@ trait univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols
 }
 object univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols {
   
-  inline def apply(
-    above: Symbol,
-    below: Symbol,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols = {
-    val __obj = js.Dynamic.literal(above = above.asInstanceOf[js.Any], below = below.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(above: Symbol, below: Symbol): univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols = {
+    val __obj = js.Dynamic.literal(above = above.asInstanceOf[js.Any], below = below.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols]
   }
   

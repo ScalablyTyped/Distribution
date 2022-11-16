@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchResource
-  extends StObject
-     with Object {
+trait FetchResource extends StObject {
   
   /**
     * When the resource was created.
@@ -33,15 +29,8 @@ trait FetchResource
 }
 object FetchResource {
   
-  inline def apply(
-    constructor: js.Function,
-    created: js.Date,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    resource: PortalItemResource,
-    size: Double
-  ): FetchResource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resource = resource.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+  inline def apply(created: js.Date, resource: PortalItemResource, size: Double): FetchResource = {
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchResource]
   }
   

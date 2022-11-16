@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HeightModelInfoConstructor
   extends StObject
-     with /**
-  * The height model info defines the characteristics of a vertical coordinate system.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html)
-  */
-Instantiable0[HeightModelInfo]
+     with Instantiable0[HeightModelInfo]
      with Instantiable1[/* properties */ HeightModelInfoProperties, HeightModelInfo] {
   
   def fromJSON(json: Any): HeightModelInfo = js.native

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IntegratedMeshLayerConstructor
   extends StObject
-     with /**
-  * The IntegratedMeshLayer is designed for visualizing accurate representations in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) of infrastructure and natural landscapes that are difficult to access.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html)
-  */
-Instantiable0[IntegratedMeshLayer]
+     with Instantiable0[IntegratedMeshLayer]
      with Instantiable1[/* properties */ IntegratedMeshLayerProperties, IntegratedMeshLayer] {
   
   def fromJSON(json: Any): IntegratedMeshLayer = js.native

@@ -29,7 +29,7 @@ trait GroupColumnTemplateProper extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#direction)
     */
-  var direction: js.UndefOr[asc_ | desc_ | Any] = js.undefined
+  var direction: js.UndefOr[asc_ | desc_ | Null] = js.undefined
   
   /**
     * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.
@@ -99,7 +99,9 @@ object GroupColumnTemplateProper {
     
     inline def setColumnTemplatesVarargs(value: (FieldColumnTemplateProper | (GroupColumnTemplateProperties & `6`))*): Self = StObject.set(x, "columnTemplates", js.Array(value*))
     
-    inline def setDirection(value: asc_ | desc_ | Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc_ | desc_): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

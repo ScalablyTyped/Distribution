@@ -78,16 +78,6 @@ trait SearchViewModel
   val defaultSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   
   /**
-    * The default [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
-    *
-    * @default PictureMarkerSymbol
-    * @deprecated since version 4.22. Use [defaultSymbols](#defaultSymbols) instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSymbol)
-    */
-  var defaultSymbol: Symbol = js.native
-  
-  /**
     * The default [symbol(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSymbols)

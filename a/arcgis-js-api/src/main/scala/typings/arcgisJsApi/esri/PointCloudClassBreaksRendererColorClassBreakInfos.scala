@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudClassBreaksRendererColorClassBreakInfos
-  extends StObject
-     with Object {
+trait PointCloudClassBreaksRendererColorClassBreakInfos extends StObject {
   
   /**
     * The color used to colorize the points where values are between the `minValue` and `maxValue` of the break.
@@ -40,15 +36,8 @@ trait PointCloudClassBreaksRendererColorClassBreakInfos
 }
 object PointCloudClassBreaksRendererColorClassBreakInfos {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    maxValue: Double,
-    minValue: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PointCloudClassBreaksRendererColorClassBreakInfos = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(color: Color_, maxValue: Double, minValue: Double): PointCloudClassBreaksRendererColorClassBreakInfos = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudClassBreaksRendererColorClassBreakInfos]
   }
   

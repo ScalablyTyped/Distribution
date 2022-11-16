@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.click
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DrawCreateDrawOptions
-  extends StObject
-     with Object {
+trait DrawCreateDrawOptions extends StObject {
   
   /**
     * The drawing mode.
@@ -22,12 +18,8 @@ trait DrawCreateDrawOptions
 }
 object DrawCreateDrawOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DrawCreateDrawOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): DrawCreateDrawOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawCreateDrawOptions]
   }
   

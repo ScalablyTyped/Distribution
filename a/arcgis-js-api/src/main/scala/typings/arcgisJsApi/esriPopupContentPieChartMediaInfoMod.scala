@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ChartMediaInfoValue
 import typings.arcgisJsApi.esri.PieChartMediaInfo
-import typings.arcgisJsApi.esri.PieChartMediaInfoConstructor
 import typings.arcgisJsApi.esri.PieChartMediaInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriPopupContentPieChartMediaInfoMod extends Shortcut {
+/* static members */
+object esriPopupContentPieChartMediaInfoMod {
   
-  @JSImport("esri/popup/content/PieChartMediaInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PieChartMediaInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/content/PieChartMediaInfo", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriPopupContentPieChartMediaInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-PieChartMediaInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PieChartMediaInfo {
     def this(properties: PieChartMediaInfoProperties) = this()
@@ -68,9 +62,9 @@ object esriPopupContentPieChartMediaInfoMod extends Shortcut {
     /* CompleteClass */
     var value: ChartMediaInfoValue = js.native
   }
+  @JSImport("esri/popup/content/PieChartMediaInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PieChartMediaInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriPopupContentPieChartMediaInfoMod.foo` */
-  override def _to: js.Object & PieChartMediaInfoConstructor = ^
+  inline def fromJSON(json: Any): PieChartMediaInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PieChartMediaInfo]
 }

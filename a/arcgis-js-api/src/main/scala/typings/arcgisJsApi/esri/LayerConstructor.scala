@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LayerConstructor
   extends StObject
-     with /**
-  * The layer is the most fundamental component of a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
-  */
-Instantiable0[Layer]
+     with Instantiable0[Layer]
      with Instantiable1[/* properties */ LayerProperties, Layer] {
   
   /**

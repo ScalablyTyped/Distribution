@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ImagePixelLocationResult
-import typings.arcgisJsApi.esri.ImagePixelLocationResultConstructor
 import typings.arcgisJsApi.esri.ImagePixelLocationResultProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportImagePixelLocationResultMod extends Shortcut {
+/* static members */
+object esriRestSupportImagePixelLocationResultMod {
   
-  @JSImport("esri/rest/support/ImagePixelLocationResult", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ImagePixelLocationResultConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/ImagePixelLocationResult", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportImagePixelLocationResultMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePixelLocationResult.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ImagePixelLocationResult {
     def this(properties: ImagePixelLocationResultProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportImagePixelLocationResultMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/ImagePixelLocationResult", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ImagePixelLocationResultConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportImagePixelLocationResultMod.foo` */
-  override def _to: js.Object & ImagePixelLocationResultConstructor = ^
+  inline def fromJSON(json: Any): ImagePixelLocationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ImagePixelLocationResult]
 }

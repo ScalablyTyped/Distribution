@@ -176,6 +176,18 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[key: string] : jest-resolve.jest-resolve.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - jest-resolve.jest-resolve.JSONObject
+  - jest-resolve.jest-resolve.JSONValue
+  - jest-resolve.jest-resolve.PackageFilter
+  - jest-resolve.jest-resolve.PackageJSON
+  - jest-resolve.jest-resolve.PathFilter
+  */
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[JSONValue]
@@ -187,6 +199,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | jest-resolve.jest-resolve.JSONObject | std.Array<jest-resolve.jest-resolve.JSONValue>
+  }}}
+  to avoid circular code involving: 
+  - jest-resolve.jest-resolve.JSONValue
+  */
   type JSONValue = String | Double | Boolean | JSONObject | js.Array[Any]
   
   /* Rewritten from type alias, can be one of: 

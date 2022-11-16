@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColorRampConstructor
   extends StObject
-     with /**
-  * A ColorRamp object is used to specify a range of colors that are applied to a group of symbols or pixels.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ColorRamp.html)
-  */
-Instantiable0[ColorRamp]
+     with Instantiable0[ColorRamp]
      with Instantiable1[/* properties */ ColorRampProperties, ColorRamp] {
   
   def fromJSON(json: Any): ColorRamp = js.native

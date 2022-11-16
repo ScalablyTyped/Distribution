@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesQueryRelated
-  extends StObject
-     with Object {
+trait FeatureLayerCapabilitiesQueryRelated extends StObject {
   
   /**
     * Indicates if the [relationship query operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html) supports a cache hint.
@@ -41,15 +37,12 @@ trait FeatureLayerCapabilitiesQueryRelated
 object FeatureLayerCapabilitiesQueryRelated {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsCacheHint: Boolean,
     supportsCount: Boolean,
     supportsOrderBy: Boolean,
     supportsPagination: Boolean
   ): FeatureLayerCapabilitiesQueryRelated = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
   

@@ -19,7 +19,8 @@ trait GeoJSONLayer
      with BlendLayer
      with OrderedLayer
      with ScaleRangeLayer
-     with FeatureEffectLayer {
+     with FeatureEffectLayer
+     with FeatureReductionLayer {
   
   /**
     * Applies edits to features in a layer.
@@ -93,13 +94,6 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#elevationInfo)
     */
   var elevationInfo: GeoJSONLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   
   /**
     * An array of fields in the layer.
@@ -216,6 +210,13 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupTemplate)
     */
   var popupTemplate: PopupTemplate = js.native
+  
+  /**
+    * The portal item referencing the geojson file from which the GeoJSONLayer is loaded.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#portalItem)
+    */
+  var portalItem: PortalItem = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against the layer and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.

@@ -2,15 +2,12 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.case_expression
 import typings.arcgisJsApi.arcgisJsApiStrings.simple
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SimpleCaseNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -40,15 +37,8 @@ trait SimpleCaseNode
 }
 object SimpleCaseNode {
   
-  inline def apply(
-    clauses: js.Array[WhenNode],
-    constructor: js.Function,
-    `else`: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    operand: SQLNode,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SimpleCaseNode = {
-    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], format = "simple", hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operand = operand.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(clauses: js.Array[WhenNode], `else`: SQLNode, operand: SQLNode): SimpleCaseNode = {
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], format = "simple", operand = operand.asInstanceOf[js.Any])
     __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("case_expression")
     __obj.asInstanceOf[SimpleCaseNode]

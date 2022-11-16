@@ -10,7 +10,7 @@ trait MediaRecorderEventMap extends StObject {
   var dataavailable: BlobEvent
   
   /* standard dom */
-  var error: MediaRecorderErrorEvent
+  var error: Event
   
   /* standard dom */
   var pause: Event
@@ -26,14 +26,7 @@ trait MediaRecorderEventMap extends StObject {
 }
 object MediaRecorderEventMap {
   
-  inline def apply(
-    dataavailable: BlobEvent,
-    error: MediaRecorderErrorEvent,
-    pause: Event,
-    resume: Event,
-    start: Event,
-    stop: Event
-  ): MediaRecorderEventMap = {
+  inline def apply(dataavailable: BlobEvent, error: Event, pause: Event, resume: Event, start: Event, stop: Event): MediaRecorderEventMap = {
     val __obj = js.Dynamic.literal(dataavailable = dataavailable.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRecorderEventMap]
   }
@@ -42,7 +35,7 @@ object MediaRecorderEventMap {
     
     inline def setDataavailable(value: BlobEvent): Self = StObject.set(x, "dataavailable", value.asInstanceOf[js.Any])
     
-    inline def setError(value: MediaRecorderErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     

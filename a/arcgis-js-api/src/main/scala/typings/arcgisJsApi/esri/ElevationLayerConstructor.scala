@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ElevationLayerConstructor
   extends StObject
-     with /**
-  * ElevationLayer is a tile layer used for rendering elevations in [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html)
-  */
-Instantiable0[ElevationLayer]
+     with Instantiable0[ElevationLayer]
      with Instantiable1[/* properties */ ElevationLayerProperties, ElevationLayer] {
   
   def fromJSON(json: Any): ElevationLayer = js.native

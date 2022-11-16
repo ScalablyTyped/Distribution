@@ -1159,6 +1159,15 @@ object `distTs3Dot9Modules@emotionReactTypesIndexMod` {
   
   type ArrayClassNamesArg = js.Array[ClassNamesArg]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ClassNamesArg = undefined | null | string | boolean | {[className: string] : boolean | null | undefined} | @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.ArrayClassNamesArg
+  }}}
+  to avoid circular code involving: 
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.ArrayClassNamesArg
+  - @storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.ClassNamesArg
+  */
   type ClassNamesArg = js.UndefOr[Null | String | Boolean | (StringDictionary[js.UndefOr[Boolean | Null]]) | Any]
   
   @js.native

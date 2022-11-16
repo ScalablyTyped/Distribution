@@ -479,12 +479,12 @@ trait CustomerProfiles extends Service {
   ): Request[PutProfileObjectTypeResponse, AWSError] = js.native
   
   /**
-    * Searches for profiles within a specific domain name using name, phone number, email address, account number, or a custom defined index.
+    * Searches for profiles within a specific domain using one or more predefined search keys (e.g., _fullName, _phone, _email, _account, etc.) and/or custom-defined search keys. A search key is a data type pair that consists of a KeyName and Values list. This operation supports searching for profiles with a minimum of 1 key-value(s) pair and up to 5 key-value(s) pairs using either AND or OR logic.
     */
   def searchProfiles(): Request[SearchProfilesResponse, AWSError] = js.native
   def searchProfiles(callback: js.Function2[/* err */ AWSError, /* data */ SearchProfilesResponse, Unit]): Request[SearchProfilesResponse, AWSError] = js.native
   /**
-    * Searches for profiles within a specific domain name using name, phone number, email address, account number, or a custom defined index.
+    * Searches for profiles within a specific domain using one or more predefined search keys (e.g., _fullName, _phone, _email, _account, etc.) and/or custom-defined search keys. A search key is a data type pair that consists of a KeyName and Values list. This operation supports searching for profiles with a minimum of 1 key-value(s) pair and up to 5 key-value(s) pairs using either AND or OR logic.
     */
   def searchProfiles(params: SearchProfilesRequest): Request[SearchProfilesResponse, AWSError] = js.native
   def searchProfiles(

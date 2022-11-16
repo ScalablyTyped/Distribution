@@ -17,7 +17,7 @@ object ModifierFlags extends StObject {
   sealed trait Abstract
     extends StObject
        with ModifierFlags
-  /* 128 */ val Abstract: typings.typescript.mod.ModifierFlags.Abstract & Double = js.native
+  /* 256 */ val Abstract: typings.typescript.mod.ModifierFlags.Abstract & Double = js.native
   
   @js.native
   sealed trait AccessibilityModifier
@@ -26,10 +26,16 @@ object ModifierFlags extends StObject {
   /* 28 */ val AccessibilityModifier: typings.typescript.mod.ModifierFlags.AccessibilityModifier & Double = js.native
   
   @js.native
+  sealed trait Accessor
+    extends StObject
+       with ModifierFlags
+  /* 128 */ val Accessor: typings.typescript.mod.ModifierFlags.Accessor & Double = js.native
+  
+  @js.native
   sealed trait All
     extends StObject
        with ModifierFlags
-  /* 257023 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
+  /* 258047 */ val All: typings.typescript.mod.ModifierFlags.All & Double = js.native
   
   @js.native
   sealed trait Ambient
@@ -41,7 +47,7 @@ object ModifierFlags extends StObject {
   sealed trait Async
     extends StObject
        with ModifierFlags
-  /* 256 */ val Async: typings.typescript.mod.ModifierFlags.Async & Double = js.native
+  /* 512 */ val Async: typings.typescript.mod.ModifierFlags.Async & Double = js.native
   
   @js.native
   sealed trait Const
@@ -59,7 +65,7 @@ object ModifierFlags extends StObject {
   sealed trait Default
     extends StObject
        with ModifierFlags
-  /* 512 */ val Default: typings.typescript.mod.ModifierFlags.Default & Double = js.native
+  /* 1024 */ val Default: typings.typescript.mod.ModifierFlags.Default & Double = js.native
   
   @js.native
   sealed trait Deprecated
@@ -77,7 +83,7 @@ object ModifierFlags extends StObject {
   sealed trait ExportDefault
     extends StObject
        with ModifierFlags
-  /* 513 */ val ExportDefault: typings.typescript.mod.ModifierFlags.ExportDefault & Double = js.native
+  /* 1025 */ val ExportDefault: typings.typescript.mod.ModifierFlags.ExportDefault & Double = js.native
   
   @js.native
   sealed trait HasComputedFlags
@@ -101,7 +107,7 @@ object ModifierFlags extends StObject {
   sealed trait Modifier
     extends StObject
        with ModifierFlags
-  /* 125951 */ val Modifier: typings.typescript.mod.ModifierFlags.Modifier & Double = js.native
+  /* 126975 */ val Modifier: typings.typescript.mod.ModifierFlags.Modifier & Double = js.native
   
   @js.native
   sealed trait NonPublicAccessibilityModifier
@@ -167,5 +173,5 @@ object ModifierFlags extends StObject {
   sealed trait TypeScriptModifier
     extends StObject
        with ModifierFlags
-  /* 116958 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
+  /* 117086 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
 }

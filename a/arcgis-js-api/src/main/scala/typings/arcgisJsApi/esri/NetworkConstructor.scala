@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NetworkConstructor
   extends StObject
-     with /**
-  * Class defining high level properties that describes utility networks and trace networks.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html)
-  */
-Instantiable0[Network]
+     with Instantiable0[Network]
      with Instantiable1[/* properties */ NetworkProperties, Network] {
   
   def fromJSON(json: Any): Network = js.native
+  
+  /**
+    * Creates a new network instance from an ArcGIS Online or ArcGIS Enterprise [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#fromPortalItem)
+    */
+  def fromPortalItem(params: NetworkFromPortalItemParams): js.Promise[UtilityNetwork] = js.native
 }

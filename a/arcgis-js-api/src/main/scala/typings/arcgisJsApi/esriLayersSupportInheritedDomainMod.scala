@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.InheritedDomain
-import typings.arcgisJsApi.esri.InheritedDomainConstructor
 import typings.arcgisJsApi.esri.InheritedDomainProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportInheritedDomainMod extends Shortcut {
+/* static members */
+object esriLayersSupportInheritedDomainMod {
   
-  @JSImport("esri/layers/support/InheritedDomain", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & InheritedDomainConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/InheritedDomain", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportInheritedDomainMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-InheritedDomain.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with InheritedDomain {
     def this(properties: InheritedDomainProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportInheritedDomainMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/InheritedDomain", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & InheritedDomainConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportInheritedDomainMod.foo` */
-  override def _to: js.Object & InheritedDomainConstructor = ^
+  inline def fromJSON(json: Any): InheritedDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[InheritedDomain]
 }

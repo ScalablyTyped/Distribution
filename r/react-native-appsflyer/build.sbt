@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-native-appsflyer"
-version := "6.9.2-d0d6e2"
+version := "6.9.2-52296a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

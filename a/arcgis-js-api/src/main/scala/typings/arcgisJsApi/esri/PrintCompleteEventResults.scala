@@ -1,26 +1,17 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrintCompleteEventResults
-  extends StObject
-     with Object {
+trait PrintCompleteEventResults extends StObject {
   
   var link: Collection[FileLink]
 }
 object PrintCompleteEventResults {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    link: Collection[FileLink],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PrintCompleteEventResults = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), link = link.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(link: Collection[FileLink]): PrintCompleteEventResults = {
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintCompleteEventResults]
   }
   

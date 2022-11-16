@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerViewQueryExtentOptions
-  extends StObject
-     with Object {
+trait FeatureLayerViewQueryExtentOptions extends StObject {
   
   /**
     * Signal object that can be used to abort the asynchronous task.
@@ -20,12 +16,8 @@ trait FeatureLayerViewQueryExtentOptions
 }
 object FeatureLayerViewQueryExtentOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureLayerViewQueryExtentOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FeatureLayerViewQueryExtentOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureLayerViewQueryExtentOptions]
   }
   

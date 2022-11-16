@@ -42,6 +42,14 @@ object mod {
   inline def serviceCredentials(filter: ServiceQuery): ServiceCredentials_ = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceCredentials")(filter.asInstanceOf[js.Any]).asInstanceOf[ServiceCredentials_]
   inline def serviceCredentials(path: String, filter: ServiceQuery): ServiceCredentials_ = (^.asInstanceOf[js.Dynamic].applyDynamic("serviceCredentials")(path.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[ServiceCredentials_]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | null | {[k: string] : @sap/xsenv.@sap/xsenv.JSONValue} | std.Array<@sap/xsenv.@sap/xsenv.JSONValue>
+  }}}
+  to avoid circular code involving: 
+  - @sap/xsenv.@sap/xsenv.JSONValue
+  */
   type JSONValue = String | Double | Boolean | Null | StringDictionary[Any] | js.Array[Any]
   
   trait ServiceBinding[T] extends StObject {
@@ -107,8 +115,27 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: @sap/xsenv.@sap/xsenv.JSONValue} */ trait ServiceCredentials_ extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ServiceCredentials = std.Record<string, @sap/xsenv.@sap/xsenv.JSONValue>
+  }}}
+  to avoid circular code involving: 
+  - @sap/xsenv.@sap/xsenv.JSONValue
+  - @sap/xsenv.@sap/xsenv.ServiceCredentials
+  */
+  @js.native
+  trait ServiceCredentials_ extends StObject
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ServiceQuery = string | {  name :string | undefined,   label :string | undefined,   tag :string | undefined,   plan :string | undefined} | (service : @sap/xsenv.@sap/xsenv.ServiceBinding<@sap/xsenv.@sap/xsenv.ServiceCredentials>): boolean
+  }}}
+  to avoid circular code involving: 
+  - @sap/xsenv.@sap/xsenv.JSONValue
+  - @sap/xsenv.@sap/xsenv.ServiceCredentials
+  - @sap/xsenv.@sap/xsenv.ServiceQuery
+  */
   type ServiceQuery = String | Label | (js.Function1[/* service */ ServiceBinding[Any], Boolean])
 }

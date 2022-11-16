@@ -526,6 +526,10 @@ object oracleOraclejetStrings {
   inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait cancelBehavior extends StObject
   inline def cancelBehavior: cancelBehavior = "cancelBehavior".asInstanceOf[cancelBehavior]
   

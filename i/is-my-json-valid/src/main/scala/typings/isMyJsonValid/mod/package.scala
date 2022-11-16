@@ -20,6 +20,20 @@ type AnyNullableObjectSchema = NullableObjectSchema[Record[String, AnySchema], S
 
 type AnyObjectSchema = ObjectSchema[Record[String, AnySchema], String]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type AnySchema = is-my-json-valid.is-my-json-valid.NullSchema | is-my-json-valid.is-my-json-valid.BooleanSchema | is-my-json-valid.is-my-json-valid.NullableBooleanSchema | is-my-json-valid.is-my-json-valid.NumberSchema | is-my-json-valid.is-my-json-valid.NullableNumberSchema | is-my-json-valid.is-my-json-valid.StringSchema | is-my-json-valid.is-my-json-valid.NullableStringSchema | is-my-json-valid.is-my-json-valid.AnyEnumSchema | is-my-json-valid.is-my-json-valid.AnyArraySchema | is-my-json-valid.is-my-json-valid.AnyNullableArraySchema | is-my-json-valid.is-my-json-valid.AnyObjectSchema | is-my-json-valid.is-my-json-valid.AnyNullableObjectSchema | is-my-json-valid.is-my-json-valid.AnyAllOptionalObjectSchema | is-my-json-valid.is-my-json-valid.AnyNullableAllOptionalObjectSchema | is-my-json-valid.is-my-json-valid.AnyOneOfSchema
+}}}
+to avoid circular code involving: 
+- is-my-json-valid.is-my-json-valid.AnyAllOptionalObjectSchema
+- is-my-json-valid.is-my-json-valid.AnyArraySchema
+- is-my-json-valid.is-my-json-valid.AnyNullableAllOptionalObjectSchema
+- is-my-json-valid.is-my-json-valid.AnyNullableArraySchema
+- is-my-json-valid.is-my-json-valid.AnyNullableObjectSchema
+- is-my-json-valid.is-my-json-valid.AnyObjectSchema
+- is-my-json-valid.is-my-json-valid.AnySchema
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.isMyJsonValid.mod.NullSchema
   - typings.isMyJsonValid.mod.BooleanSchema

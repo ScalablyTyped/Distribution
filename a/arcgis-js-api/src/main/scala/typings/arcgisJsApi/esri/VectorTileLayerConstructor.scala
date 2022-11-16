@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VectorTileLayerConstructor
   extends StObject
-     with /**
-  * VectorTileLayer accesses cached tiles of data and renders it in vector format.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html)
-  */
-Instantiable0[VectorTileLayer]
+     with Instantiable0[VectorTileLayer]
      with Instantiable1[/* properties */ VectorTileLayerProperties, VectorTileLayer] {
   
   def fromJSON(json: Any): VectorTileLayer = js.native

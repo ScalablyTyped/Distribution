@@ -65,6 +65,8 @@ object mod {
     
     var formatShortWeekday: js.UndefOr[FormatterCallback] = js.undefined
     
+    var formatWeekday: js.UndefOr[FormatterCallback] = js.undefined
+    
     var formatYear: js.UndefOr[FormatterCallback] = js.undefined
     
     var goToRangeStartOnSelect: js.UndefOr[Boolean] = js.undefined
@@ -209,6 +211,10 @@ object mod {
       inline def setFormatShortWeekday(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatShortWeekday", js.Any.fromFunction2(value))
       
       inline def setFormatShortWeekdayUndefined: Self = StObject.set(x, "formatShortWeekday", js.undefined)
+      
+      inline def setFormatWeekday(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatWeekday", js.Any.fromFunction2(value))
+      
+      inline def setFormatWeekdayUndefined: Self = StObject.set(x, "formatWeekday", js.undefined)
       
       inline def setFormatYear(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction2(value))
       

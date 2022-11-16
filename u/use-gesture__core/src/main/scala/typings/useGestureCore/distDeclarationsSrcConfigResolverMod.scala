@@ -25,6 +25,14 @@ object distDeclarationsSrcConfigResolverMod {
   
   type Resolver = js.Function3[/* x */ Any, /* key */ String, /* obj */ Any, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ResolverMap = {[k: string] : @use-gesture/core.@use-gesture/core/dist/declarations/src/config/resolver.Resolver | @use-gesture/core.@use-gesture/core/dist/declarations/src/config/resolver.ResolverMap | boolean}
+  }}}
+  to avoid circular code involving: 
+  - @use-gesture/core.@use-gesture/core/dist/declarations/src/config/resolver.ResolverMap
+  */
   trait ResolverMap
     extends StObject
        with /* k */ StringDictionary[Resolver | ResolverMap | Boolean]

@@ -5,15 +5,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`flow-line`
 import typings.arcgisJsApi.arcgisJsApiStrings.`flow-to`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wave-front`
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait flowCreateRendererParams
-  extends StObject
-     with Object {
+trait flowCreateRendererParams extends StObject {
   
   /**
     * Defines the flow direction of the data.
@@ -96,13 +92,8 @@ trait flowCreateRendererParams
 }
 object flowCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): flowCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer): flowCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[flowCreateRendererParams]
   }
   

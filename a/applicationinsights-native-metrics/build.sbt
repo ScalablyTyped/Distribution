@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "applicationinsights-native-metrics"
-version := "0.0.8-77e331"
+version := "0.0.8-eaed38"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

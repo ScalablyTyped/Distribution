@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait sizeGetSchemesParams
-  extends StObject
-     with Object {
+trait sizeGetSchemesParams extends StObject {
   
   /**
     * The Esri basemap to pair with the visualization.
@@ -53,13 +49,8 @@ trait sizeGetSchemesParams
 }
 object sizeGetSchemesParams {
   
-  inline def apply(
-    constructor: js.Function,
-    geometryType: point | multipoint | polyline | polygon,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): sizeGetSchemesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(geometryType: point | multipoint | polyline | polygon): sizeGetSchemesParams = {
+    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeGetSchemesParams]
   }
   

@@ -8,13 +8,12 @@ object outObjectRequiredKeysMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O extends unknown ? ts-toolbelt.ts-toolbelt/out/Object/RequiredKeys._RequiredKeys<O> : never
     }}}
     */
-  @js.native
-  trait RequiredKeys[O /* <: js.Object */] extends StObject
+  type RequiredKeys[O /* <: js.Object */] = _RequiredKeys[O]
   
   type _RequiredKeys[O /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: -? {} extends std.Pick<O, K>? never : K}[keyof O] */ js.Any
 }

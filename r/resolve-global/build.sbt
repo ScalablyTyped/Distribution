@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resolve-global"
-version := "1.0.0-ebbf2e"
+version := "1.0.0-066cbf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

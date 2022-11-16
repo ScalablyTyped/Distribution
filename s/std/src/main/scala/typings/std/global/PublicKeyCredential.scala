@@ -15,6 +15,10 @@ open class PublicKeyCredential ()
   
   /* standard dom */
   /* CompleteClass */
+  override val authenticatorAttachment: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   override def getClientExtensionResults(): AuthenticationExtensionsClientOutputs = js.native
   
   /* standard dom */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-symbol"
-version := "1.0-dt-20221104Z-98f4ef"
+version := "1.0-dt-20221104Z-1701f3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

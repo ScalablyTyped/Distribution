@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageAngleParametersConstructor
   extends StObject
-     with /**
-  * Input parameters for [ImageryLayer.computeAngles()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#computeAngles) or [imageService.computeAngles()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-imageService.html#computeAngles) methods.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html)
-  */
-Instantiable0[ImageAngleParameters]
+     with Instantiable0[ImageAngleParameters]
      with Instantiable1[/* properties */ ImageAngleParametersProperties, ImageAngleParameters] {
   
   def fromJSON(json: Any): ImageAngleParameters = js.native

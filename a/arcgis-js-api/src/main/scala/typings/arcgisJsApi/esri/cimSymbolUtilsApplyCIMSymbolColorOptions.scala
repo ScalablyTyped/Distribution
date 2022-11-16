@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`fill-and-outline`
 import typings.arcgisJsApi.arcgisJsApiStrings.fill
 import typings.arcgisJsApi.arcgisJsApiStrings.outline
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait cimSymbolUtilsApplyCIMSymbolColorOptions
-  extends StObject
-     with Object {
+trait cimSymbolUtilsApplyCIMSymbolColorOptions extends StObject {
   
   /**
     * The symbol layers to apply the color to.
@@ -22,12 +18,8 @@ trait cimSymbolUtilsApplyCIMSymbolColorOptions
 }
 object cimSymbolUtilsApplyCIMSymbolColorOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): cimSymbolUtilsApplyCIMSymbolColorOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): cimSymbolUtilsApplyCIMSymbolColorOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[cimSymbolUtilsApplyCIMSymbolColorOptions]
   }
   

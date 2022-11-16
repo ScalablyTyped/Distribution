@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WMTSLayerConstructor
   extends StObject
-     with /**
-  * The WMTSLayer is used to create layers based on OGC Web Map Tile Services (WMTS).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html)
-  */
-Instantiable0[WMTSLayer]
+     with Instantiable0[WMTSLayer]
      with Instantiable1[/* properties */ WMTSLayerProperties, WMTSLayer] {
   
   def fromJSON(json: Any): WMTSLayer = js.native

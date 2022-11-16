@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMColorSubstitution
-  extends StObject
-     with Object {
+trait CIMColorSubstitution extends StObject {
   
   /**
     * The new color that will replace the old color.
@@ -26,14 +22,8 @@ trait CIMColorSubstitution
 }
 object CIMColorSubstitution {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    newColor: js.Array[Double],
-    oldColor: js.Array[Double],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMColorSubstitution = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), newColor = newColor.asInstanceOf[js.Any], oldColor = oldColor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(newColor: js.Array[Double], oldColor: js.Array[Double]): CIMColorSubstitution = {
+    val __obj = js.Dynamic.literal(newColor = newColor.asInstanceOf[js.Any], oldColor = oldColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMColorSubstitution]
   }
   

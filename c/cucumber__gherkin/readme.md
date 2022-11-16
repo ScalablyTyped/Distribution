@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__gherkin
 
-Typings are for version 24.1.0
+Typings are for version 25.0.2
 
 ## Library description:
 Gherkin parser

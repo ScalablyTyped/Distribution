@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "okta__okta-auth-js"
-version := "7.0.0-df20b1"
+version := "7.0.0-30bec9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

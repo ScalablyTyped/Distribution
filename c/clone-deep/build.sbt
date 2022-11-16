@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clone-deep"
-version := "4.0-dt-20220624Z-21a7b5"
+version := "4.0-dt-20220624Z-25fbb3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

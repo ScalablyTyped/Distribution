@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SymbolConstructor
   extends StObject
-     with /**
-  * Symbol is the base class for all symbols.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html)
-  */
-Instantiable0[Symbol]
+     with Instantiable0[Symbol]
      with Instantiable1[/* properties */ SymbolProperties, Symbol] {
   
   def fromJSON(json: Any): Symbol = js.native

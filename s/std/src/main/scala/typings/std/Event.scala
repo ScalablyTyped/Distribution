@@ -24,6 +24,7 @@ trait Event extends StObject {
   /* standard dom */
   val bubbles: scala.Boolean = js.native
   
+  /** @deprecated */
   /* standard dom */
   var cancelBubble: scala.Boolean = js.native
   

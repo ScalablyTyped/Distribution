@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable3
 import typings.arcgisJsApi.arcgisJsApiStrings.average
 import typings.arcgisJsApi.arcgisJsApiStrings.compact
 import typings.arcgisJsApi.arcgisJsApiStrings.extent
@@ -16,7 +18,35 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type ActionBaseConstructor = Instantiable1[/* properties */ js.UndefOr[ActionBaseProperties], ActionBase]
+
+type ActionButtonConstructor = Instantiable1[/* properties */ js.UndefOr[ActionButtonProperties], ActionButton]
+
+type ActionToggleConstructor = Instantiable1[/* properties */ js.UndefOr[ActionToggleProperties], ActionToggle]
+
+type ActiveLayerInfoConstructor = Instantiable1[/* properties */ js.UndefOr[ActiveLayerInfoProperties], ActiveLayerInfo]
+
 type AfterInterceptorCallback = js.Function1[/* response */ RequestResponse, scala.Unit]
+
+type ApplicationPropertiesConstructor = Instantiable1[
+/* properties */ js.UndefOr[ApplicationPropertiesProperties], 
+ApplicationProperties]
+
+type AreaMeasurement2DConstructor = Instantiable1[/* properties */ js.UndefOr[AreaMeasurement2DProperties], AreaMeasurement2D]
+
+type AreaMeasurement2DViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[Any], AreaMeasurement2DViewModel]
+
+type AreaMeasurement3DConstructor = Instantiable1[/* properties */ js.UndefOr[AreaMeasurement3DProperties], AreaMeasurement3D]
+
+type AreaMeasurement3DViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[AreaMeasurement3DViewModelProperties], 
+AreaMeasurement3DViewModel]
+
+type AreaMeasurementAnalysisConstructor = Instantiable1[
+/* properties */ js.UndefOr[AreaMeasurementAnalysisProperties], 
+AreaMeasurementAnalysis]
+
+type AreaMeasurementAnalysisView3DConstructor = Instantiable1[/* properties */ js.UndefOr[Any], AreaMeasurementAnalysisView3D]
 
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.arcgisJsApiStrings.acres
@@ -29,11 +59,21 @@ type AfterInterceptorCallback = js.Function1[/* response */ RequestResponse, sca
   - typings.arcgisJsApi.arcgisJsApiStrings.`square-miles`
   - scala.Double
 */
-type ArealUnits = _ArealUnits | Double
+type AreaUnits = _AreaUnits | Double
+
+type AttachmentsConstructor = Instantiable1[/* properties */ js.UndefOr[AttachmentsProperties], Attachments]
+
+type AttachmentsViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[AttachmentsViewModelProperties], AttachmentsViewModel]
+
+type AttributionConstructor = Instantiable1[/* properties */ js.UndefOr[AttributionProperties], Attribution]
+
+type AttributionViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[AttributionViewModelProperties], AttributionViewModel]
 
 type BarCreatedFunction = js.Function2[/* index */ Double, /* element */ Any, scala.Unit]
 
 type BarcodeScannerInputProperties = TextInputProperties
+
+type BaseDynamicLayerConstructor = Instantiable1[/* properties */ js.UndefOr[BaseDynamicLayerProperties], BaseDynamicLayer]
 
 type BaseDynamicLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -42,6 +82,14 @@ type BaseDynamicLayerLayerviewCreateEventHandler = js.Function1[/* event */ Base
 type BaseDynamicLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewDestroyEvent, scala.Unit]
 
 type BaseDynamicLayerRefreshEventHandler = js.Function1[/* event */ BaseDynamicLayerRefreshEvent, scala.Unit]
+
+type BaseElevationLayerConstructor = Instantiable1[/* properties */ js.UndefOr[BaseElevationLayerProperties], BaseElevationLayer]
+
+type BaseLayerView2DConstructor = Instantiable1[/* properties */ js.UndefOr[BaseLayerView2DProperties], BaseLayerView2D]
+
+type BaseLayerViewGL2DConstructor = Instantiable1[/* properties */ js.UndefOr[BaseLayerViewGL2DProperties], BaseLayerViewGL2D]
+
+type BaseTileLayerConstructor = Instantiable1[/* properties */ js.UndefOr[BaseTileLayerProperties], BaseTileLayer]
 
 type BaseTileLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BaseTileLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -53,11 +101,33 @@ type BaseTileLayerRefreshEventHandler = js.Function1[/* event */ BaseTileLayerRe
 
 type BasemapFilter = js.Function3[/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap], Boolean]
 
+type BasemapGalleryConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapGalleryProperties], BasemapGallery]
+
+type BasemapGalleryItemConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapGalleryItemProperties], BasemapGalleryItem]
+
+type BasemapGalleryViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[BasemapGalleryViewModelProperties], 
+BasemapGalleryViewModel]
+
+type BasemapLayerListConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapLayerListProperties], BasemapLayerList]
+
 type BasemapLayerListTriggerActionEventHandler = js.Function1[/* event */ BasemapLayerListTriggerActionEvent, scala.Unit]
 
-type BasemapToggleToggleEventHandler = js.Function1[/* event */ BasemapToggleToggleEvent, scala.Unit]
+type BasemapLayerListViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[BasemapLayerListViewModelProperties], 
+BasemapLayerListViewModel]
+
+type BasemapToggleConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapToggleProperties], BasemapToggle]
+
+type BasemapToggleViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[BasemapToggleViewModelProperties], 
+BasemapToggleViewModel]
+
+type BasemapViewConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapViewProperties], BasemapView]
 
 type BeforeInterceptorCallback = js.Function1[/* params */ Any, Any]
+
+type BingMapsLayerConstructor = Instantiable1[/* properties */ js.UndefOr[BingMapsLayerProperties], BingMapsLayer]
 
 type BingMapsLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -67,13 +137,43 @@ type BingMapsLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BingMa
 
 type BingMapsLayerRefreshEventHandler = js.Function1[/* event */ BingMapsLayerRefreshEvent, scala.Unit]
 
+type BookmarkConstructor = Instantiable1[/* properties */ js.UndefOr[BookmarkProperties], Bookmark]
+
 type BookmarksBookmarkEditEventHandler = js.Function1[/* event */ BookmarksBookmarkEditEvent, scala.Unit]
 
 type BookmarksBookmarkSelectEventHandler = js.Function1[/* event */ BookmarksBookmarkSelectEvent, scala.Unit]
 
+type BookmarksConstructor = Instantiable1[/* properties */ js.UndefOr[BookmarksProperties], Bookmarks]
+
+type BookmarksViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[BookmarksViewModelProperties], BookmarksViewModel]
+
+type BuildingComponentSublayerViewConstructor = Instantiable1[
+/* properties */ js.UndefOr[BuildingComponentSublayerViewProperties], 
+BuildingComponentSublayerView]
+
+type BuildingExplorerConstructor = Instantiable1[/* properties */ js.UndefOr[BuildingExplorerProperties], BuildingExplorer]
+
+type BuildingExplorerViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[BuildingExplorerViewModelProperties], 
+BuildingExplorerViewModel]
+
+type BuildingLevelConstructor = Instantiable1[/* properties */ js.UndefOr[BuildingLevelProperties], BuildingLevel]
+
+type BuildingPhaseConstructor = Instantiable1[/* properties */ js.UndefOr[BuildingPhaseProperties], BuildingPhase]
+
+type BuildingSceneLayerViewConstructor = Instantiable1[
+/* properties */ js.UndefOr[BuildingSceneLayerViewProperties], 
+BuildingSceneLayerView]
+
 type BuildingSceneLayerViewProperties = LayerViewProperties
 
+type ButtonMenuConstructor = Instantiable1[/* properties */ js.UndefOr[ButtonMenuProperties], ButtonMenu]
+
 type ButtonMenuItemClickFunction = js.Function1[/* event */ Any, scala.Unit]
+
+type ButtonMenuItemConstructor = Instantiable1[/* properties */ js.UndefOr[ButtonMenuItemProperties], ButtonMenuItem]
+
+type ButtonMenuViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ButtonMenuViewModelProperties], ButtonMenuViewModel]
 
 type CSVLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ CSVLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -82,6 +182,22 @@ type CSVLayerLayerviewCreateEventHandler = js.Function1[/* event */ CSVLayerLaye
 type CSVLayerLayerviewDestroyEventHandler = js.Function1[/* event */ CSVLayerLayerviewDestroyEvent, scala.Unit]
 
 type CSVLayerRefreshEventHandler = js.Function1[/* event */ CSVLayerRefreshEvent, scala.Unit]
+
+type CSVLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[CSVLayerViewProperties], CSVLayerView]
+
+type ChartMediaInfoValueSeriesConstructor = Instantiable1[
+/* properties */ js.UndefOr[ChartMediaInfoValueSeriesProperties], 
+ChartMediaInfoValueSeries]
+
+type ClassedColorSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[ClassedColorSliderViewModelProperties], 
+ClassedColorSliderViewModel]
+
+type ClassedSizeSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[ClassedSizeSliderViewModelProperties], 
+ClassedSizeSliderViewModel]
+
+type CloudyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[CloudyWeatherProperties], CloudyWeather]
 
 type CollectionAfterAddEventHandler[T] = js.Function1[/* event */ CollectionAfterEvent[T], scala.Unit]
 
@@ -99,19 +215,63 @@ type CollectionChangeEventHandler[T] = js.Function1[/* event */ CollectionChange
 
 type CollectionProperties[T] = js.Array[T] | Collection[T]
 
+type ColorSizeSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[ColorSizeSliderViewModelProperties], 
+ColorSizeSliderViewModel]
+
+type ColorSliderViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ColorSliderViewModelProperties], ColorSliderViewModel]
+
+type CompassConstructor = Instantiable1[/* properties */ js.UndefOr[CompassProperties], Compass]
+
+type CompassViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[CompassViewModelProperties], CompassViewModel]
+
+type ConnectionConstructor = Instantiable0[Connection]
+
 type Constructor[T] = Instantiable1[/* params (repeated) */ Any, T]
 
+type ControlPointsGeoreferenceConstructor = Instantiable1[
+/* properties */ js.UndefOr[ControlPointsGeoreferenceProperties], 
+ControlPointsGeoreference]
+
+type ConversionConstructor = Instantiable1[/* properties */ js.UndefOr[ConversionProperties], Conversion]
+
+type CoordinateConversionConstructor = Instantiable1[/* properties */ js.UndefOr[CoordinateConversionProperties], CoordinateConversion]
+
+type CoordinateConversionViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[CoordinateConversionViewModelProperties], 
+CoordinateConversionViewModel]
+
+type CornersGeoreferenceConstructor = Instantiable1[/* properties */ js.UndefOr[CornersGeoreferenceProperties], CornersGeoreference]
+
+type CreateFeaturesWorkflowConstructor = Instantiable1[
+/* properties */ js.UndefOr[CreateFeaturesWorkflowProperties], 
+CreateFeaturesWorkflow]
+
+type CreateFeaturesWorkflowDataConstructor = Instantiable1[
+/* properties */ js.UndefOr[CreateFeaturesWorkflowDataProperties], 
+CreateFeaturesWorkflowData]
+
+type CreateWorkflowConstructor = Instantiable1[/* properties */ js.UndefOr[CreateWorkflowProperties], CreateWorkflow]
+
+type CreateWorkflowDataConstructor = Instantiable1[/* properties */ js.UndefOr[CreateWorkflowDataProperties], CreateWorkflowData]
+
 type CreateWorkflowProperties = WorkflowProperties
+
+type CredentialConstructor = Instantiable1[/* properties */ js.UndefOr[CredentialProperties], Credential]
 
 type CredentialDestroyEventHandler = js.Function1[/* event */ CredentialDestroyEvent, scala.Unit]
 
 type CredentialTokenChangeEventHandler = js.Function1[/* event */ CredentialTokenChangeEvent, scala.Unit]
+
+type CustomTemplateConstructor = Instantiable1[/* properties */ js.UndefOr[CustomTemplateProperties], CustomTemplate]
 
 type DataLineCreatedFunction = js.Function3[
 /* lineElement */ Any, 
 /* labelElement */ js.UndefOr[Any], 
 /* index */ js.UndefOr[Double], 
 scala.Unit]
+
+type DataModelConstructor = Instantiable1[/* properties */ js.UndefOr[DataModelProperties], DataModel]
 
 type DateLabelFormatter = js.Function4[
 /* value */ js.Date | js.Array[js.Date], 
@@ -120,21 +280,131 @@ type DateLabelFormatter = js.Function4[
 /* layout */ js.UndefOr[compact | wide], 
 scala.Unit]
 
+type DatePickerConstructor = Instantiable1[/* properties */ js.UndefOr[DatePickerProperties], DatePicker]
+
+type DatePickerViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[DatePickerViewModelProperties], DatePickerViewModel]
+
 type DatePickerViewModelProperties = DateTimeElementViewModelProperties
 
 type DateProperties = Double | String | js.Date
 
+type DaylightConstructor = Instantiable1[/* properties */ js.UndefOr[DaylightProperties], Daylight]
+
+type DaylightViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[DaylightViewModelProperties], DaylightViewModel]
+
+type DefaultUIConstructor = Instantiable1[/* properties */ js.UndefOr[DefaultUIProperties], DefaultUI]
+
+type DensifyParametersConstructor = Instantiable1[/* properties */ js.UndefOr[DensifyParametersProperties], DensifyParameters]
+
+type DimensionAnalysisConstructor = Instantiable1[/* properties */ js.UndefOr[DimensionAnalysisProperties], DimensionAnalysis]
+
+type DimensionAnalysisViewConstructor = Instantiable1[
+/* properties */ js.UndefOr[DimensionAnalysisViewProperties], 
+DimensionAnalysisView]
+
+type DimensionLayerConstructor = Instantiable1[/* properties */ js.UndefOr[DimensionLayerProperties], DimensionLayer]
+
+type DimensionLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[DimensionLayerViewProperties], DimensionLayerView]
+
+type DimensionSimpleStyleConstructor = Instantiable1[/* properties */ js.UndefOr[DimensionSimpleStyleProperties], DimensionSimpleStyle]
+
+type DirectLineMeasurement3DConstructor = Instantiable1[
+/* properties */ js.UndefOr[DirectLineMeasurement3DProperties], 
+DirectLineMeasurement3D]
+
+type DirectLineMeasurement3DViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[DirectLineMeasurement3DViewModelProperties], 
+DirectLineMeasurement3DViewModel]
+
+type DirectLineMeasurementAnalysisConstructor = Instantiable1[
+/* properties */ js.UndefOr[DirectLineMeasurementAnalysisProperties], 
+DirectLineMeasurementAnalysis]
+
+type DirectLineMeasurementAnalysisView3DConstructor = Instantiable1[/* properties */ js.UndefOr[Any], DirectLineMeasurementAnalysisView3D]
+
+type DirectionsConstructor = Instantiable1[/* properties */ js.UndefOr[DirectionsProperties], Directions]
+
+type DirectionsFeatureConstructor = Instantiable1[/* properties */ js.UndefOr[Any], DirectionsFeature]
+
+type DirectionsViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[DirectionsViewModelProperties], DirectionsViewModel]
+
+type DistanceMeasurement2DConstructor = Instantiable1[
+/* properties */ js.UndefOr[DistanceMeasurement2DProperties], 
+DistanceMeasurement2D]
+
+type DistanceMeasurement2DViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[DistanceMeasurement2DViewModelProperties], 
+DistanceMeasurement2DViewModel]
+
+type DistanceParametersConstructor = Instantiable1[/* properties */ js.UndefOr[DistanceParametersProperties], DistanceParameters]
+
+type DrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[DrawActionProperties], DrawAction]
+
+type DrawConstructor = Instantiable1[/* properties */ js.UndefOr[DrawProperties], Draw]
+
 type EasingFunction = js.Function2[/* t */ Double, /* duration */ Double, Double]
+
+type EditorConstructor = Instantiable1[/* properties */ js.UndefOr[EditorProperties], Editor]
+
+type EditorViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[EditorViewModelProperties], EditorViewModel]
+
+type EditsConstructor = Instantiable1[/* properties */ js.UndefOr[EditsProperties], Edits]
 
 type Effect = js.Array[Any] | String
 
+type ElevationProfileConstructor = Instantiable1[/* properties */ js.UndefOr[ElevationProfileProperties], ElevationProfile]
+
+type ElevationProfileLineConstructor = Instantiable1[/* properties */ js.UndefOr[ElevationProfileLineProperties], ElevationProfileLine]
+
+type ElevationProfileLineGroundConstructor = Instantiable1[
+/* properties */ js.UndefOr[ElevationProfileLineGroundProperties], 
+ElevationProfileLineGround]
+
 type ElevationProfileLineGroundProperties = ElevationProfileLineProperties
+
+type ElevationProfileLineInputConstructor = Instantiable1[
+/* properties */ js.UndefOr[ElevationProfileLineInputProperties], 
+ElevationProfileLineInput]
 
 type ElevationProfileLineInputProperties = ElevationProfileLineProperties
 
+type ElevationProfileLineQueryConstructor = Instantiable1[
+/* properties */ js.UndefOr[ElevationProfileLineQueryProperties], 
+ElevationProfileLineQuery]
+
+type ElevationProfileLineViewConstructor = Instantiable1[
+/* properties */ js.UndefOr[ElevationProfileLineViewProperties], 
+ElevationProfileLineView]
+
+type ElevationProfileViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[ElevationProfileViewModelProperties], 
+ElevationProfileViewModel]
+
 type ElevationSamplerChangedEventHandler = js.Function1[/* event */ ElevationSamplerChangedEvent, scala.Unit]
 
+type ElevationSamplerConstructor = Instantiable0[ElevationSampler]
+
+type Entity = GraphNamedObject
+
+type EntityConstructor = Instantiable1[/* properties */ js.UndefOr[EntityProperties], Entity]
+
+type EntityProperties = GraphNamedObjectProperties
+
+type EntityType = GraphObjectType
+
+type EntityTypeConstructor = Instantiable1[/* properties */ js.UndefOr[EntityTypeProperties], EntityType]
+
+type EntityTypeProperties = GraphObjectTypeProperties
+
+type EnvironmentConstructor = Instantiable1[/* properties */ js.UndefOr[EnvironmentProperties], Environment]
+
 type ErrorCallback = js.Function1[/* error */ Error, scala.Unit]
+
+type ErrorConstructor = Instantiable3[
+/* name */ String, 
+/* message */ js.UndefOr[String], 
+/* details */ js.UndefOr[Any], 
+Error]
 
 type EventAttachedCallback = js.Function4[
 /* target */ js.UndefOr[Any], 
@@ -147,11 +417,23 @@ type EventHandler = js.Function1[/* event */ Any, scala.Unit]
 
 type Executor = js.Function2[/* resolve */ ResolveCallback, /* reject */ RejectCallback, scala.Unit]
 
-type FeatureEffectEffect = js.Array[Any] | String
+type ExpandConstructor = Instantiable1[/* properties */ js.UndefOr[ExpandProperties], Expand]
+
+type ExpandViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ExpandViewModelProperties], ExpandViewModel]
+
+type ExtentAndRotationGeoreferenceConstructor = Instantiable1[
+/* properties */ js.UndefOr[ExtentAndRotationGeoreferenceProperties], 
+ExtentAndRotationGeoreference]
+
+type FeatureConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureProperties], Feature]
+
+type FeatureFormConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureFormProperties], FeatureForm]
 
 type FeatureFormSubmitEventHandler = js.Function1[/* event */ FeatureFormSubmitEvent, scala.Unit]
 
 type FeatureFormValueChangeEventHandler = js.Function1[/* event */ FeatureFormValueChangeEvent, scala.Unit]
+
+type FeatureFormViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureFormViewModelProperties], FeatureFormViewModel]
 
 type FeatureFormViewModelSubmitEventHandler = js.Function1[/* event */ FeatureFormViewModelSubmitEvent, scala.Unit]
 
@@ -167,17 +449,71 @@ type FeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ Feature
 
 type FeatureLayerRefreshEventHandler = js.Function1[/* event */ FeatureLayerRefreshEvent, scala.Unit]
 
+type FeatureLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureLayerViewProperties], FeatureLayerView]
+
+type FeatureSnappingLayerSourceConstructor = Instantiable1[
+/* properties */ js.UndefOr[FeatureSnappingLayerSourceProperties], 
+FeatureSnappingLayerSource]
+
+type FeatureTableConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureTableProperties], FeatureTable]
+
 type FeatureTableSelectionChangeEventHandler = js.Function1[/* event */ FeatureTableSelectionChangeEvent, scala.Unit]
+
+type FeatureTableViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[FeatureTableViewModelProperties], 
+FeatureTableViewModel]
+
+type FeatureTemplatesConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureTemplatesProperties], FeatureTemplates]
 
 type FeatureTemplatesSelectEventHandler = js.Function1[/* event */ FeatureTemplatesSelectEvent, scala.Unit]
 
+type FeatureTemplatesViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[FeatureTemplatesViewModelProperties], 
+FeatureTemplatesViewModel]
+
 type FeatureTemplatesViewModelSelectEventHandler = js.Function1[/* event */ FeatureTemplatesViewModelSelectEvent, scala.Unit]
 
+type FeatureViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureViewModelProperties], FeatureViewModel]
+
+type FenceGeotriggerConstructor = Instantiable1[/* properties */ js.UndefOr[FenceGeotriggerProperties], FenceGeotrigger]
+
+type FetchFeatureInfoFunction = js.Function1[/* query */ Any, js.Promise[js.Array[Graphic]]]
+
 type FetchMessageBundle = js.Function2[/* bundleId */ String, /* locale */ String, js.Promise[Any]]
+
+type FieldColumnConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldColumnConfigProperties], FieldColumnConfig]
+
+type FieldColumnConstructor = Instantiable1[/* properties */ js.UndefOr[FieldColumnProperties], FieldColumn]
+
+type FieldConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldConfigProperties], FieldConfig]
+
+type FieldGroupConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldGroupConfigProperties], FieldGroupConfig]
+
+type FieldIndexConstructor = Instantiable1[/* properties */ js.UndefOr[FieldIndexProperties], FieldIndex]
+
+type FieldsIndexConstructor = Instantiable1[/* properties */ js.UndefOr[Any], FieldsIndex]
 
 type FilterFunction = js.Function1[/* filterName */ Any, Boolean]
 
 type FilterPredicateCallback = js.Function2[/* value */ Any, /* index */ Double, js.Promise[Any]]
+
+type FloorFilterConstructor = Instantiable1[/* properties */ js.UndefOr[FloorFilterProperties], FloorFilter]
+
+type FloorFilterViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FloorFilterViewModelProperties], FloorFilterViewModel]
+
+type FoggyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[FoggyWeatherProperties], FoggyWeather]
+
+type FormatConstructor = Instantiable1[/* properties */ js.UndefOr[FormatProperties], Format]
+
+type FullscreenConstructor = Instantiable1[/* properties */ js.UndefOr[FullscreenProperties], Fullscreen]
+
+type FullscreenViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FullscreenViewModelProperties], FullscreenViewModel]
+
+type GamepadInputDeviceConstructor = Instantiable1[/* properties */ js.UndefOr[GamepadInputDeviceProperties], GamepadInputDevice]
+
+type GamepadSettingsConstructor = Instantiable1[/* properties */ js.UndefOr[GamepadSettingsProperties], GamepadSettings]
+
+type GeoJSONLayerConstructor = Instantiable1[/* properties */ js.UndefOr[GeoJSONLayerProperties], GeoJSONLayer]
 
 type GeoJSONLayerEditsEventHandler = js.Function1[/* event */ GeoJSONLayerEditsEvent, scala.Unit]
 
@@ -189,6 +525,10 @@ type GeoJSONLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoJSON
 
 type GeoJSONLayerRefreshEventHandler = js.Function1[/* event */ GeoJSONLayerRefreshEvent, scala.Unit]
 
+type GeoJSONLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[GeoJSONLayerViewProperties], GeoJSONLayerView]
+
+type GeoRSSLayerConstructor = Instantiable1[/* properties */ js.UndefOr[GeoRSSLayerProperties], GeoRSSLayer]
+
 type GeoRSSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewCreateErrorEvent, scala.Unit]
 
 type GeoRSSLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewCreateEvent, scala.Unit]
@@ -197,11 +537,19 @@ type GeoRSSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoRSSLa
 
 type GeoRSSLayerRefreshEventHandler = js.Function1[/* event */ GeoRSSLayerRefreshEvent, scala.Unit]
 
+type GeoRSSLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[GeoRSSLayerViewProperties], GeoRSSLayerView]
+
 type GeoRSSLayerViewProperties = LayerViewProperties
+
+type GeographicTransformationConstructor = Instantiable1[/* properties */ js.UndefOr[Any], GeographicTransformation]
+
+type GeographicTransformationStepConstructor = Instantiable1[/* properties */ js.UndefOr[Any], GeographicTransformationStep]
 
 type GetHeader = js.Function1[/* headerName */ String, String]
 
 type GetResultsHandler = js.Function1[/* params */ Any, js.Promise[js.Array[SearchResult]]]
+
+type GetSpriteInfo = js.Function1[/* name */ String, SpriteInfo]
 
 type GetSuggestionsParameters = js.Function1[/* params */ Any, js.Promise[js.Array[SuggestResult]]]
 
@@ -230,11 +578,49 @@ scala.Double | typings.arcgisJsApi.esri.Geometry_ | typings.arcgisJsApi.esri.Gra
 */
 type GoToTarget3D = _GoToTarget3D | (js.Array[Double | Geometry_ | Graphic]) | (Collection[Geometry_ | Graphic]) | Any
 
+type GraphApplyEditsConstructor = Instantiable1[/* properties */ js.UndefOr[GraphApplyEditsProperties], GraphApplyEdits]
+
+type GraphApplyEditsResultConstructor = Instantiable1[
+/* properties */ js.UndefOr[GraphApplyEditsResultProperties], 
+GraphApplyEditsResult]
+
+type GraphNamedObjectConstructor = Instantiable1[/* properties */ js.UndefOr[GraphNamedObjectProperties], GraphNamedObject]
+
+type GraphObjectConstructor = Instantiable1[/* properties */ js.UndefOr[GraphObjectProperties], GraphObject]
+
+type GraphObjectTypeConstructor = Instantiable1[/* properties */ js.UndefOr[GraphObjectTypeProperties], GraphObjectType]
+
+type GraphPropertyConstructor = Instantiable1[/* properties */ js.UndefOr[GraphPropertyProperties], GraphProperty]
+
+type GraphQueryConstructor = Instantiable1[/* properties */ js.UndefOr[GraphQueryProperties], GraphQuery]
+
+type GraphQueryResultConstructor = Instantiable1[/* properties */ js.UndefOr[GraphQueryResultProperties], GraphQueryResult]
+
+type GraphQueryStreamingConstructor = Instantiable1[/* properties */ js.UndefOr[GraphQueryStreamingProperties], GraphQueryStreaming]
+
+type GraphQueryStreamingResultConstructor = Instantiable1[
+/* properties */ js.UndefOr[GraphQueryStreamingResultProperties], 
+GraphQueryStreamingResult]
+
+type GraphSearchConstructor = Instantiable1[/* properties */ js.UndefOr[GraphSearchProperties], GraphSearch]
+
+type GraphSearchStreamingConstructor = Instantiable1[/* properties */ js.UndefOr[GraphSearchStreamingProperties], GraphSearchStreaming]
+
+type GraphicsLayerConstructor = Instantiable1[/* properties */ js.UndefOr[GraphicsLayerProperties], GraphicsLayer]
+
+type GraphicsLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[GraphicsLayerViewProperties], GraphicsLayerView]
+
 type GraphicsLayerViewProperties = LayerViewProperties
+
+type GroundViewConstructor = Instantiable1[/* properties */ js.UndefOr[GroundViewProperties], GroundView]
 
 type GroupByFunction = js.Function1[/* grouping */ Any, String | Any]
 
+type GroupColumnConstructor = Instantiable1[/* properties */ js.UndefOr[GroupColumnProperties], GroupColumn]
+
 type GroupColumnProperties = ColumnProperties
+
+type HandleOwnerConstructor = Instantiable1[/* properties */ js.UndefOr[HandleOwnerProperties], HandleOwner]
 
 type HandlerCallback = js.Function5[
 /* authorizeParams */ Any, 
@@ -244,9 +630,19 @@ type HandlerCallback = js.Function5[
 /* serverInfo */ ServerInfo, 
 scala.Unit]
 
+type HandlesConstructor = Instantiable0[Handles]
+
+type HeatmapColorStopConstructor = Instantiable1[/* properties */ js.UndefOr[HeatmapColorStopProperties], HeatmapColorStop]
+
 type HeatmapSliderThumbChangeEventHandler = js.Function1[/* event */ HeatmapSliderThumbChangeEvent, scala.Unit]
 
 type HeatmapSliderThumbDragEventHandler = js.Function1[/* event */ HeatmapSliderThumbDragEvent, scala.Unit]
+
+type HeatmapSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[HeatmapSliderViewModelProperties], 
+HeatmapSliderViewModel]
+
+type HistogramRangeSliderConstructor = Instantiable1[/* properties */ js.UndefOr[HistogramRangeSliderProperties], HistogramRangeSlider]
 
 type HistogramRangeSliderMaxChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderMaxChangeEvent, scala.Unit]
 
@@ -258,6 +654,12 @@ type HistogramRangeSliderThumbChangeEventHandler = js.Function1[/* event */ Hist
 
 type HistogramRangeSliderThumbDragEventHandler = js.Function1[/* event */ HistogramRangeSliderThumbDragEvent, scala.Unit]
 
+type HistogramRangeSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[HistogramRangeSliderViewModelProperties], 
+HistogramRangeSliderViewModel]
+
+type HistogramViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[HistogramViewModelProperties], HistogramViewModel]
+
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.esri.Layer
   - typings.arcgisJsApi.esri.Graphic
@@ -266,13 +668,23 @@ type HistogramRangeSliderThumbDragEventHandler = js.Function1[/* event */ Histog
 */
 type HitTestItem = _HitTestItem | (Collection[Graphic | Layer]) | (js.Array[Graphic | Layer])
 
+type HomeConstructor = Instantiable1[/* properties */ js.UndefOr[HomeProperties], Home]
+
 type HomeGoEventHandler = js.Function1[/* event */ HomeGoEvent, scala.Unit]
 
+type HomeViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[HomeViewModelProperties], HomeViewModel]
+
 type HomeViewModelGoEventHandler = js.Function1[/* event */ HomeViewModelGoEvent, scala.Unit]
+
+type IdentityManagerConstructor = Instantiable0[IdentityManager]
 
 type IdentityManagerCredentialCreateEventHandler = js.Function1[/* event */ IdentityManagerCredentialCreateEvent, scala.Unit]
 
 type IdentityManagerDialogCreateEventHandler = js.Function1[/* event */ IdentityManagerDialogCreateEvent, scala.Unit]
+
+type ImageElementConstructor = Instantiable1[/* properties */ js.UndefOr[ImageElementProperties], ImageElement]
+
+type ImageParametersConstructor = Instantiable1[/* properties */ js.UndefOr[ImageParametersProperties], ImageParameters]
 
 type ImageryLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ ImageryLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -282,7 +694,15 @@ type ImageryLayerLayerviewDestroyEventHandler = js.Function1[/* event */ Imagery
 
 type ImageryLayerRefreshEventHandler = js.Function1[/* event */ ImageryLayerRefreshEvent, scala.Unit]
 
+type ImageryLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[ImageryLayerViewProperties], ImageryLayerView]
+
 type InheritedDomainProperties = DomainProperties
+
+type InitialViewPropertiesConstructor = Instantiable1[
+/* properties */ js.UndefOr[InitialViewPropertiesProperties], 
+InitialViewProperties]
+
+type InputConstructor = Instantiable1[/* properties */ js.UndefOr[InputProperties], Input]
 
 type InputCreatedFunction = js.Function3[
 /* inputElement */ Any, 
@@ -290,11 +710,19 @@ type InputCreatedFunction = js.Function3[
 /* thumbIndex */ js.UndefOr[Double], 
 scala.Unit]
 
+type InputFieldConstructor = Instantiable1[/* properties */ js.UndefOr[InputFieldProperties], InputField]
+
+type InputFieldGroupConstructor = Instantiable1[/* properties */ js.UndefOr[InputFieldGroupProperties], InputFieldGroup]
+
 type InputParser = js.Function3[
 /* value */ String, 
 /* type */ js.UndefOr[average | min | max | tick | value], 
 /* index */ js.UndefOr[Double], 
 Double]
+
+type InputQuantizationParametersConstructor = Instantiable1[
+/* properties */ js.UndefOr[InputQuantizationParametersProperties], 
+InputQuantizationParameters]
 
 type ItemCallback[T] = js.Function2[/* item */ T, /* index */ Double, scala.Unit]
 
@@ -306,7 +734,11 @@ type ItemReduceCallback[T, R] = js.Function3[/* previousValue */ R, /* currentVa
 
 type ItemTestCallback[T] = js.Function2[/* item */ T, /* index */ Double, Boolean]
 
+type KMLLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[KMLLayerViewProperties], KMLLayerView]
+
 type KMLLayerViewProperties = LayerViewProperties
+
+type KnowledgeGraphConstructor = Instantiable1[/* properties */ js.UndefOr[KnowledgeGraphProperties], KnowledgeGraph]
 
 type LabelFormatter = js.Function3[
 /* value */ Double, 
@@ -320,13 +752,55 @@ type LayerLayerviewCreateEventHandler = js.Function1[/* event */ LayerLayerviewC
 
 type LayerLayerviewDestroyEventHandler = js.Function1[/* event */ LayerLayerviewDestroyEvent, scala.Unit]
 
+type LayerListConstructor = Instantiable1[/* properties */ js.UndefOr[LayerListProperties], LayerList]
+
 type LayerListListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
 
 type LayerListTriggerActionEventHandler = js.Function1[/* event */ LayerListTriggerActionEvent, scala.Unit]
 
+type LayerListViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[LayerListViewModelProperties], LayerListViewModel]
+
 type LayerListViewModelTriggerActionEventHandler = js.Function1[/* event */ LayerListViewModelTriggerActionEvent, scala.Unit]
 
+type LayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[LayerViewProperties], LayerView]
+
+type LegendConstructor = Instantiable1[/* properties */ js.UndefOr[LegendProperties], Legend]
+
+type LegendLayerConstructor = Instantiable1[/* properties */ js.UndefOr[LegendLayerProperties], LegendLayer]
+
+type LegendViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[LegendViewModelProperties], LegendViewModel]
+
+type LengthDimensionConstructor = Instantiable1[/* properties */ js.UndefOr[LengthDimensionProperties], LengthDimension]
+
+type LightingConstructor = Instantiable1[/* properties */ js.UndefOr[LightingProperties], Lighting]
+
 type LightingProperties = websceneSunLightingProperties
+
+type LineOfSightAnalysisConstructor = Instantiable1[/* properties */ js.UndefOr[LineOfSightAnalysisProperties], LineOfSightAnalysis]
+
+type LineOfSightAnalysisObserverConstructor = Instantiable1[
+/* properties */ js.UndefOr[LineOfSightAnalysisObserverProperties], 
+LineOfSightAnalysisObserver]
+
+type LineOfSightAnalysisResultConstructor = Instantiable1[/* properties */ js.UndefOr[Any], LineOfSightAnalysisResult]
+
+type LineOfSightAnalysisTargetConstructor = Instantiable1[
+/* properties */ js.UndefOr[LineOfSightAnalysisTargetProperties], 
+LineOfSightAnalysisTarget]
+
+type LineOfSightAnalysisView3DConstructor = Instantiable1[/* properties */ js.UndefOr[Any], LineOfSightAnalysisView3D]
+
+type LineOfSightConstructor = Instantiable1[/* properties */ js.UndefOr[LineOfSightProperties], LineOfSight]
+
+type LineOfSightLayerConstructor = Instantiable1[/* properties */ js.UndefOr[LineOfSightLayerProperties], LineOfSightLayer]
+
+type LineOfSightTargetConstructor = Instantiable1[/* properties */ js.UndefOr[LineOfSightTargetProperties], LineOfSightTarget]
+
+type LineOfSightViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[LineOfSightViewModelProperties], LineOfSightViewModel]
+
+type LineStyleMarker3DConstructor = Instantiable1[/* properties */ js.UndefOr[LineStyleMarker3DProperties], LineStyleMarker3D]
+
+type LineSymbolMarkerConstructor = Instantiable1[/* properties */ js.UndefOr[LineSymbolMarkerProperties], LineSymbolMarker]
 
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.arcgisJsApiStrings.meters_
@@ -339,15 +813,33 @@ type LightingProperties = websceneSunLightingProperties
 */
 type LinearUnits = _LinearUnits | Double
 
+type ListItemConstructor = Instantiable1[/* properties */ js.UndefOr[ListItemProperties], ListItem]
+
 type ListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
 
+type ListItemPanelConstructor = Instantiable0[ListItemPanel]
+
+type LocalBasemapsSourceConstructor = Instantiable1[/* properties */ js.UndefOr[LocalBasemapsSourceProperties], LocalBasemapsSource]
+
+type LocalMediaElementSourceConstructor = Instantiable1[
+/* properties */ js.UndefOr[LocalMediaElementSourceProperties], 
+LocalMediaElementSource]
+
 type LocaleChangeCallback = js.Function1[/* newLocale */ String, scala.Unit]
+
+type LocateConstructor = Instantiable1[/* properties */ js.UndefOr[LocateProperties], Locate]
 
 type LocateLocateErrorEventHandler = js.Function1[/* event */ LocateLocateErrorEvent, scala.Unit]
 
 type LocateLocateEventHandler = js.Function1[/* event */ LocateLocateEvent, scala.Unit]
 
+type LocateViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[LocateViewModelProperties], LocateViewModel]
+
 type LocateViewModelLocateErrorEventHandler = js.Function1[/* event */ LocateViewModelLocateErrorEvent, scala.Unit]
+
+type MagnifierConstructor = Instantiable1[/* properties */ js.UndefOr[MagnifierProperties], Magnifier]
+
+type MapConstructor = Instantiable1[/* properties */ js.UndefOr[MapProperties], Map]
 
 type MapImageLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ MapImageLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -356,6 +848,26 @@ type MapImageLayerLayerviewCreateEventHandler = js.Function1[/* event */ MapImag
 type MapImageLayerLayerviewDestroyEventHandler = js.Function1[/* event */ MapImageLayerLayerviewDestroyEvent, scala.Unit]
 
 type MapImageLayerRefreshEventHandler = js.Function1[/* event */ MapImageLayerRefreshEvent, scala.Unit]
+
+type MapViewConstructor = Instantiable1[/* properties */ js.UndefOr[MapViewProperties], MapView]
+
+type MeasurementConstructor = Instantiable1[/* properties */ js.UndefOr[MeasurementProperties], Measurement]
+
+type MeasurementViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[MeasurementViewModelProperties], MeasurementViewModel]
+
+type MediaLayerConstructor = Instantiable1[/* properties */ js.UndefOr[MediaLayerProperties], MediaLayer]
+
+type MeshComponentConstructor = Instantiable1[/* properties */ js.UndefOr[MeshComponentProperties], MeshComponent]
+
+type MeshMaterialConstructor = Instantiable1[/* properties */ js.UndefOr[MeshMaterialProperties], MeshMaterial]
+
+type MeshMaterialMetallicRoughnessConstructor = Instantiable1[
+/* properties */ js.UndefOr[MeshMaterialMetallicRoughnessProperties], 
+MeshMaterialMetallicRoughness]
+
+type MeshTextureConstructor = Instantiable1[/* properties */ js.UndefOr[MeshTextureProperties], MeshTexture]
+
+type MultipointDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[MultipointDrawActionProperties], MultipointDrawAction]
 
 type MultipointDrawActionCursorUpdateEventHandler = js.Function1[/* event */ MultipointDrawActionCursorUpdateEvent, scala.Unit]
 
@@ -371,6 +883,18 @@ type MultipointDrawActionVertexAddEventHandler = js.Function1[/* event */ Multip
 
 type MultipointDrawActionVertexRemoveEventHandler = js.Function1[/* event */ MultipointDrawActionVertexRemoveEvent, scala.Unit]
 
+type NamedTraceConfigurationConstructor = Instantiable1[/* properties */ js.UndefOr[Any], NamedTraceConfiguration]
+
+type NavigationConstructor = Instantiable1[/* properties */ js.UndefOr[NavigationProperties], Navigation]
+
+type NavigationToggleConstructor = Instantiable1[/* properties */ js.UndefOr[NavigationToggleProperties], NavigationToggle]
+
+type NavigationToggleViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[NavigationToggleViewModelProperties], 
+NavigationToggleViewModel]
+
+type NetworkSystemLayersConstructor = Instantiable1[/* properties */ js.UndefOr[NetworkSystemLayersProperties], NetworkSystemLayers]
+
 type OGCFeatureLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ OGCFeatureLayerLayerviewCreateErrorEvent, scala.Unit]
 
 type OGCFeatureLayerLayerviewCreateEventHandler = js.Function1[/* event */ OGCFeatureLayerLayerviewCreateEvent, scala.Unit]
@@ -379,19 +903,39 @@ type OGCFeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ OGCF
 
 type OGCFeatureLayerRefreshEventHandler = js.Function1[/* event */ OGCFeatureLayerRefreshEvent, scala.Unit]
 
+type OGCFeatureLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[OGCFeatureLayerViewProperties], OGCFeatureLayerView]
+
+type OpacitySliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[OpacitySliderViewModelProperties], 
+OpacitySliderViewModel]
+
 type OpenStreetMapLayerProperties = WebTileLayerProperties
+
+type OutputQuantizationParametersConstructor = Instantiable1[
+/* properties */ js.UndefOr[OutputQuantizationParametersProperties], 
+OutputQuantizationParameters]
+
+type PathConstructor = Instantiable1[/* properties */ js.UndefOr[PathProperties], Path]
 
 type PhaseCallback = js.Function1[/* event */ js.UndefOr[PhaseEvent], scala.Unit]
 
+type PixelBlockConstructor = Instantiable1[/* properties */ js.UndefOr[PixelBlockProperties], PixelBlock]
+
 type PixelFilterFunction = js.Function1[/* pixelData */ PixelData, scala.Unit]
 
+type PointCloudLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[PointCloudLayerViewProperties], PointCloudLayerView]
+
 type PointCloudLayerViewProperties = LayerViewProperties
+
+type PointDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[PointDrawActionProperties], PointDrawAction]
 
 type PointDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PointDrawActionCursorUpdateEvent, scala.Unit]
 
 type PointDrawActionDrawCompleteEventHandler = js.Function1[/* event */ PointDrawActionDrawCompleteEvent, scala.Unit]
 
 type PointDrawActionProperties = DrawActionProperties
+
+type PolygonDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[PolygonDrawActionProperties], PolygonDrawAction]
 
 type PolygonDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PolygonDrawActionCursorUpdateEvent, scala.Unit]
 
@@ -405,6 +949,8 @@ type PolygonDrawActionVertexAddEventHandler = js.Function1[/* event */ PolygonDr
 
 type PolygonDrawActionVertexRemoveEventHandler = js.Function1[/* event */ PolygonDrawActionVertexRemoveEvent, scala.Unit]
 
+type PolylineDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[PolylineDrawActionProperties], PolylineDrawAction]
+
 type PolylineDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PolylineDrawActionCursorUpdateEvent, scala.Unit]
 
 type PolylineDrawActionDrawCompleteEventHandler = js.Function1[/* event */ PolylineDrawActionDrawCompleteEvent, scala.Unit]
@@ -417,24 +963,56 @@ type PolylineDrawActionVertexAddEventHandler = js.Function1[/* event */ Polyline
 
 type PolylineDrawActionVertexRemoveEventHandler = js.Function1[/* event */ PolylineDrawActionVertexRemoveEvent, scala.Unit]
 
-type PopupTemplateContentCreator = js.Function1[/* graphic */ Graphic, String | HTMLElement | Widget_ | js.Promise[Any]]
+type PopupConstructor = Instantiable1[/* properties */ js.UndefOr[PopupProperties], Popup]
 
-type PopupTemplateContentDestroyer = js.Function1[/* graphic */ Graphic, scala.Unit]
+type PopupTemplateContentCreator = js.Function1[
+/* event */ js.UndefOr[PopupTemplateCreatorEvent], 
+String | HTMLElement | Widget_ | js.Promise[Any]]
+
+type PopupTemplateContentDestroyer = js.Function1[/* event */ js.UndefOr[PopupTemplateCreatorEvent], scala.Unit]
 
 type PopupTriggerActionEventHandler = js.Function1[/* event */ PopupTriggerActionEvent, scala.Unit]
 
+type PopupViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[PopupViewModelProperties], PopupViewModel]
+
 type PopupViewModelTriggerActionEventHandler = js.Function1[/* event */ PopupViewModelTriggerActionEvent, scala.Unit]
+
+type PortalBasemapsSourceConstructor = Instantiable1[/* properties */ js.UndefOr[PortalBasemapsSourceProperties], PortalBasemapsSource]
+
+type PortalFolderConstructor = Instantiable1[/* properties */ js.UndefOr[PortalFolderProperties], PortalFolder]
+
+type PortalGroupConstructor = Instantiable1[/* properties */ js.UndefOr[PortalGroupProperties], PortalGroup]
+
+type PortalItemResourceConstructor = Instantiable1[/* properties */ js.UndefOr[PortalItemResourceProperties], PortalItemResource]
+
+type PortalQueryParamsConstructor = Instantiable1[/* properties */ js.UndefOr[PortalQueryParamsProperties], PortalQueryParams]
+
+type PortalQueryResultConstructor = Instantiable1[/* properties */ js.UndefOr[PortalQueryResultProperties], PortalQueryResult]
+
+type PortalRatingConstructor = Instantiable1[/* properties */ js.UndefOr[PortalRatingProperties], PortalRating]
+
+type PortalUserConstructor = Instantiable1[/* properties */ js.UndefOr[PortalUserProperties], PortalUser]
+
+type PresentationConstructor = Instantiable1[/* properties */ js.UndefOr[PresentationProperties], Presentation]
 
 type PrintCompleteEventHandler = js.Function1[/* event */ PrintCompleteEvent, scala.Unit]
 
+type PrintConstructor = Instantiable1[/* properties */ js.UndefOr[PrintProperties], Print_]
+
+type PrintParametersConstructor = Instantiable1[/* properties */ js.UndefOr[PrintParametersProperties], PrintParameters]
+
 type PrintSubmitEventHandler = js.Function1[/* event */ PrintSubmitEvent, scala.Unit]
+
+type PrintTemplateConstructor = Instantiable1[/* properties */ js.UndefOr[PrintTemplateProperties], PrintTemplate]
+
+type PrintViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[PrintViewModelProperties], PrintViewModel]
 
 /* Rewritten from type alias, can be one of: 
   - typings.arcgisJsApi.esri.Graphic
   - typings.arcgisJsApi.esri.Geometry_
   - typings.arcgisJsApi.esri.FeatureSet
   - typings.arcgisJsApi.esri.FeatureLayer
-  - typings.arcgisJsApi.esri.WebMap
+  - typings.arcgisJsApi.esri.Map
   - java.lang.String
   - scala.Double
   - scala.Boolean
@@ -444,17 +1022,33 @@ type PrintSubmitEventHandler = js.Function1[/* event */ PrintSubmitEvent, scala.
 */
 type ProfileVariableInstanceType = _ProfileVariableInstanceType | js.Array[Any] | String | Double | Boolean | js.Date | Any
 
+type ProjectParametersConstructor = Instantiable1[/* properties */ js.UndefOr[ProjectParametersProperties], ProjectParameters]
+
+type PublishingInfoConstructor = Instantiable1[/* properties */ js.UndefOr[PublishingInfoProperties], PublishingInfo]
+
 type QueryElevation = js.Function2[
 /* geometry */ Point | Multipoint | Polyline, 
 /* options */ js.UndefOr[Any], 
 js.Promise[ElevationLayerElevationQueryResult]]
 
+type RainyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[RainyWeatherProperties], RainyWeather]
+
 type RejectCallback = js.Function1[/* error */ js.UndefOr[Any], scala.Unit]
+
+type RelationshipTypeConstructor = Instantiable1[/* properties */ js.UndefOr[RelationshipTypeProperties], RelationshipType]
 
 type RenderContextCallback = js.Function1[/* context */ js.UndefOr[RenderContext], scala.Unit]
 
 type ResolveCallback = js.Function1[/* value */ js.UndefOr[Any | js.Promise[Any]], scala.Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ResultType = number | string | std.Date | boolean | arcgis-js-api.__esri.Graphic | arcgis-js-api.__esri.Geometry | any | std.Array<arcgis-js-api.__esri.ResultType>
+}}}
+to avoid circular code involving: 
+- arcgis-js-api.__esri.ResultType
+*/
 /* Rewritten from type alias, can be one of: 
   - scala.Double
   - java.lang.String
@@ -467,7 +1061,33 @@ type ResolveCallback = js.Function1[/* value */ js.UndefOr[Any | js.Promise[Any]
 */
 type ResultType = _ResultType | js.Array[Any] | Double | String | js.Date | Boolean | Any
 
+type ScaleBarConstructor = Instantiable1[/* properties */ js.UndefOr[ScaleBarProperties], ScaleBar]
+
+type ScaleBarViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ScaleBarViewModelProperties], ScaleBarViewModel]
+
+type ScaleRangeSliderConstructor = Instantiable1[/* properties */ js.UndefOr[ScaleRangeSliderProperties], ScaleRangeSlider]
+
+type ScaleRangeSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[ScaleRangeSliderViewModelProperties], 
+ScaleRangeSliderViewModel]
+
+type ScaleRangesConstructor = Instantiable1[/* properties */ js.UndefOr[ScaleRangesProperties], ScaleRanges]
+
+type SceneFilterConstructor = Instantiable1[/* properties */ js.UndefOr[SceneFilterProperties], SceneFilter]
+
+type SceneLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[SceneLayerViewProperties], SceneLayerView]
+
 type SceneModificationsProperties = CollectionPropertiesBase[SceneModificationProperties]
+
+type SceneViewConstructor = Instantiable1[/* properties */ js.UndefOr[SceneViewProperties], SceneView]
+
+type SearchConstructor = Instantiable1[/* properties */ js.UndefOr[SearchProperties], Search]
+
+type SearchLayerConstructor = Instantiable1[/* properties */ js.UndefOr[SearchLayerProperties], SearchLayer]
+
+type SearchLayerFieldConstructor = Instantiable1[/* properties */ js.UndefOr[SearchLayerFieldProperties], SearchLayerField]
+
+type SearchResultRendererConstructor = Instantiable1[/* properties */ js.UndefOr[SearchResultRendererProperties], SearchResultRenderer]
 
 type SearchSearchBlurEventHandler = js.Function1[/* event */ SearchSearchBlurEvent, scala.Unit]
 
@@ -485,6 +1105,12 @@ type SearchSuggestCompleteEventHandler = js.Function1[/* event */ SearchSuggestC
 
 type SearchSuggestStartEventHandler = js.Function1[/* event */ SearchSuggestStartEvent, scala.Unit]
 
+type SearchTableConstructor = Instantiable1[/* properties */ js.UndefOr[SearchTableProperties], SearchTable]
+
+type SearchTableFieldConstructor = Instantiable1[/* properties */ js.UndefOr[SearchTableFieldProperties], SearchTableField]
+
+type SearchViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SearchViewModelProperties], SearchViewModel]
+
 type SearchViewModelSearchClearEventHandler = js.Function1[/* event */ SearchViewModelSearchClearEvent, scala.Unit]
 
 type SearchViewModelSearchCompleteEventHandler = js.Function1[/* event */ SearchViewModelSearchCompleteEvent, scala.Unit]
@@ -497,21 +1123,37 @@ type SearchViewModelSuggestCompleteEventHandler = js.Function1[/* event */ Searc
 
 type SearchViewModelSuggestStartEventHandler = js.Function1[/* event */ SearchViewModelSuggestStartEvent, scala.Unit]
 
+type SegmentDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[SegmentDrawActionProperties], SegmentDrawAction]
+
 type SegmentDrawActionCursorUpdateEventHandler = js.Function1[/* event */ SegmentDrawActionCursorUpdateEvent, scala.Unit]
 
 type SegmentDrawActionDrawCompleteEventHandler = js.Function1[/* event */ SegmentDrawActionDrawCompleteEvent, scala.Unit]
 
 type SegmentDrawActionVertexAddEventHandler = js.Function1[/* event */ SegmentDrawActionVertexAddEvent, scala.Unit]
 
+type ShadowCastConstructor = Instantiable1[/* properties */ js.UndefOr[ShadowCastProperties], ShadowCast]
+
+type ShadowCastViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ShadowCastViewModelProperties], ShadowCastViewModel]
+
+type SizeSliderViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SizeSliderViewModelProperties], SizeSliderViewModel]
+
+type SketchConstructor = Instantiable1[/* properties */ js.UndefOr[SketchProperties], Sketch]
+
 type SketchCreateEventHandler = js.Function1[/* event */ SketchCreateEvent, scala.Unit]
 
 type SketchDeleteEventHandler = js.Function1[/* event */ SketchDeleteEvent, scala.Unit]
 
+type SketchLabelOptionsConstructor = Instantiable1[/* properties */ js.UndefOr[SketchLabelOptionsProperties], SketchLabelOptions]
+
 type SketchRedoEventHandler = js.Function1[/* event */ SketchRedoEvent, scala.Unit]
+
+type SketchTooltipOptionsConstructor = Instantiable1[/* properties */ js.UndefOr[SketchTooltipOptionsProperties], SketchTooltipOptions]
 
 type SketchUndoEventHandler = js.Function1[/* event */ SketchUndoEvent, scala.Unit]
 
 type SketchUpdateEventHandler = js.Function1[/* event */ SketchUpdateEvent, scala.Unit]
+
+type SketchViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SketchViewModelProperties], SketchViewModel]
 
 type SketchViewModelCreateEventHandler = js.Function1[/* event */ SketchViewModelCreateEvent, scala.Unit]
 
@@ -522,6 +1164,16 @@ type SketchViewModelRedoEventHandler = js.Function1[/* event */ SketchViewModelR
 type SketchViewModelUndoEventHandler = js.Function1[/* event */ SketchViewModelUndoEvent, scala.Unit]
 
 type SketchViewModelUpdateEventHandler = js.Function1[/* event */ SketchViewModelUpdateEvent, scala.Unit]
+
+type SliceAnalysisConstructor = Instantiable1[/* properties */ js.UndefOr[SliceAnalysisProperties], SliceAnalysis]
+
+type SliceAnalysisView3DConstructor = Instantiable1[/* properties */ js.UndefOr[Any], SliceAnalysisView3D]
+
+type SliceConstructor = Instantiable1[/* properties */ js.UndefOr[SliceProperties], Slice]
+
+type SliceViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SliceViewModelProperties], SliceViewModel]
+
+type SliderConstructor = Instantiable1[/* properties */ js.UndefOr[SliderProperties], Slider]
 
 type SliderLabelFormatter = js.Function3[
 /* value */ Double, 
@@ -551,9 +1203,19 @@ type SliderTickClickEventHandler = js.Function1[/* event */ SliderTickClickEvent
 
 type SliderTrackClickEventHandler = js.Function1[/* event */ SliderTrackClickEvent, scala.Unit]
 
+type SliderViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SliderViewModelProperties], SliderViewModel]
+
 type SliderViewModelMaxChangeEventHandler = js.Function1[/* event */ SliderViewModelMaxChangeEvent, scala.Unit]
 
 type SliderViewModelMinChangeEventHandler = js.Function1[/* event */ SliderViewModelMinChangeEvent, scala.Unit]
+
+type SmartMappingPrimaryHandleSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[SmartMappingPrimaryHandleSliderViewModelProperties], 
+SmartMappingPrimaryHandleSliderViewModel]
+
+type SmartMappingSliderBaseConstructor = Instantiable1[
+/* properties */ js.UndefOr[SmartMappingSliderBaseProperties], 
+SmartMappingSliderBase]
 
 type SmartMappingSliderBaseLabelFormatter = js.Function3[
 /* value */ Double, 
@@ -571,9 +1233,33 @@ type SmartMappingSliderBaseThumbChangeEventHandler = js.Function1[/* event */ Sm
 
 type SmartMappingSliderBaseThumbDragEventHandler = js.Function1[/* event */ SmartMappingSliderBaseThumbDragEvent, scala.Unit]
 
+type SmartMappingSliderViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[SmartMappingSliderViewModelProperties], 
+SmartMappingSliderViewModel]
+
+type SnappingControlsConstructor = Instantiable1[/* properties */ js.UndefOr[SnappingControlsProperties], SnappingControls]
+
+type SnappingControlsViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[SnappingControlsViewModelProperties], 
+SnappingControlsViewModel]
+
+type SnappingOptionsConstructor = Instantiable1[/* properties */ js.UndefOr[SnappingOptionsProperties], SnappingOptions]
+
+type SnowyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[SnowyWeatherProperties], SnowyWeather]
+
+type StreamConnectionDataReceivedEventHandler = js.Function1[/* event */ StreamConnectionDataReceivedEvent, scala.Unit]
+
+type StreamLayerConstructor = Instantiable1[/* properties */ js.UndefOr[StreamLayerProperties], StreamLayer]
+
+type StreamLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[StreamLayerViewProperties], StreamLayerView]
+
 type StreamLayerViewDataReceivedEventHandler = js.Function1[/* event */ StreamLayerViewDataReceivedEvent, scala.Unit]
 
 type StreamLayerViewUpdateRateEventHandler = js.Function1[/* event */ StreamLayerViewUpdateRateEvent, scala.Unit]
+
+type StyleOriginConstructor = Instantiable1[/* properties */ js.UndefOr[StyleOriginProperties], StyleOrigin]
+
+type SublayerConstructor = Instantiable1[/* properties */ js.UndefOr[SublayerProperties], Sublayer]
 
 type SubtypeGroupLayerEditsEventHandler = js.Function1[/* event */ SubtypeGroupLayerEditsEvent, scala.Unit]
 
@@ -585,6 +1271,24 @@ type SubtypeGroupLayerLayerviewDestroyEventHandler = js.Function1[/* event */ Su
 
 type SubtypeGroupLayerRefreshEventHandler = js.Function1[/* event */ SubtypeGroupLayerRefreshEvent, scala.Unit]
 
+type SubtypeSublayerConstructor = Instantiable1[/* properties */ js.UndefOr[Any], SubtypeSublayer]
+
+type SunLightingConstructor = Instantiable1[/* properties */ js.UndefOr[SunLightingProperties], SunLighting]
+
+type SunnyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[SunnyWeatherProperties], SunnyWeather]
+
+type SwipeConstructor = Instantiable1[/* properties */ js.UndefOr[SwipeProperties], Swipe]
+
+type SwipeViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[SwipeViewModelProperties], SwipeViewModel]
+
+type Symbol3DVerticalOffsetConstructor = Instantiable1[
+/* properties */ js.UndefOr[Symbol3DVerticalOffsetProperties], 
+Symbol3DVerticalOffset]
+
+type TableListConstructor = Instantiable1[/* properties */ js.UndefOr[TableListProperties], TableList]
+
+type TableListListItemConstructor = Instantiable0[TableListListItem]
+
 type TableListListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
 
 type TableListTriggerActionEventHandler = js.Function1[/* event */ TableListTriggerActionEvent, scala.Unit]
@@ -592,6 +1296,10 @@ type TableListTriggerActionEventHandler = js.Function1[/* event */ TableListTrig
 type TableListViewModelListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
 
 type TableListViewModelTriggerActionEventHandler = js.Function1[/* event */ TableListViewModelTriggerActionEvent, scala.Unit]
+
+type TemplateItemGroupConstructor = Instantiable1[/* properties */ js.UndefOr[TemplateItemGroupProperties], TemplateItemGroup]
+
+type TemplateOptionsConstructor = Instantiable1[/* properties */ js.UndefOr[TemplateOptionsProperties], TemplateOptions]
 
 type TextAreaInputProperties = TextInputProperties
 
@@ -618,25 +1326,47 @@ type TileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ TileLayerL
 
 type TileLayerRefreshEventHandler = js.Function1[/* event */ TileLayerRefreshEvent, scala.Unit]
 
+type TimePickerConstructor = Instantiable1[/* properties */ js.UndefOr[TimePickerProperties], TimePicker]
+
+type TimePickerViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[TimePickerViewModelProperties], TimePickerViewModel]
+
 type TimePickerViewModelProperties = DateTimeElementViewModelProperties
 
 type TimeSliderTriggerActionEventHandler = js.Function1[/* event */ TimeSliderTriggerActionEvent, scala.Unit]
 
 type TimeSliderViewModelTriggerActionEventHandler = js.Function1[/* event */ TimeSliderViewModelTriggerActionEvent, scala.Unit]
 
+type TraceConfigurationConstructor = Instantiable1[/* properties */ js.UndefOr[Any], TraceConfiguration]
+
+type TrackConstructor = Instantiable1[/* properties */ js.UndefOr[TrackProperties], Track]
+
 type TrackTrackErrorEventHandler = js.Function1[/* event */ TrackTrackErrorEvent, scala.Unit]
 
 type TrackTrackEventHandler = js.Function1[/* event */ TrackTrackEvent, scala.Unit]
+
+type TrackViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[TrackViewModelProperties], TrackViewModel]
 
 type TrackViewModelTrackErrorEventHandler = js.Function1[/* event */ TrackViewModelTrackErrorEvent, scala.Unit]
 
 type TrackViewModelTrackEventHandler = js.Function1[/* event */ TrackViewModelTrackEvent, scala.Unit]
 
+type UIConstructor = Instantiable1[/* properties */ js.UndefOr[UIProperties], UI]
+
+type UNTraceConfigurationConstructor = Instantiable1[/* properties */ js.UndefOr[Any], UNTraceConfiguration]
+
+type UnknownLayerConstructor = Instantiable1[/* properties */ js.UndefOr[UnknownLayerProperties], UnknownLayer]
+
 type UnknownLayerProperties = LayerProperties
+
+type UnsupportedLayerConstructor = Instantiable1[/* properties */ js.UndefOr[UnsupportedLayerProperties], UnsupportedLayer]
 
 type UnsupportedLayerProperties = LayerProperties
 
 type UpdateBasemapsCallback = js.Function1[/* items */ js.Array[Basemap], js.Array[Basemap]]
+
+type UpdateWorkflowConstructor = Instantiable1[/* properties */ js.UndefOr[UpdateWorkflowProperties], UpdateWorkflow]
+
+type UpdateWorkflowDataConstructor = Instantiable1[/* properties */ js.UndefOr[UpdateWorkflowDataProperties], UpdateWorkflowData]
 
 type UpdateWorkflowProperties = WorkflowProperties
 
@@ -645,6 +1375,16 @@ type UtilityNetworkTraceAddFlagCompleteEventHandler = js.Function1[/* event */ U
 type UtilityNetworkTraceAddFlagErrorEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagErrorEvent, scala.Unit]
 
 type UtilityNetworkTraceAddFlagEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagEvent, scala.Unit]
+
+type UtilityNetworkTraceConstructor = Instantiable1[/* properties */ js.UndefOr[UtilityNetworkTraceProperties], UtilityNetworkTrace]
+
+type UtilityNetworkTraceViewModelConstructor = Instantiable1[
+/* properties */ js.UndefOr[UtilityNetworkTraceViewModelProperties], 
+UtilityNetworkTraceViewModel]
+
+type VideoElementConstructor = Instantiable1[/* properties */ js.UndefOr[VideoElementProperties], VideoElement]
+
+type ViewAnimationConstructor = Instantiable1[/* properties */ js.UndefOr[ViewAnimationProperties], ViewAnimation]
 
 type ViewBlurEventHandler = js.Function1[/* event */ ViewBlurEvent, scala.Unit]
 
@@ -686,6 +1426,10 @@ type ViewPointerUpEventHandler = js.Function1[/* event */ ViewPointerUpEvent, sc
 
 type ViewResizeEventHandler = js.Function1[/* event */ ViewResizeEvent, scala.Unit]
 
+type ViewingConstructor = Instantiable1[/* properties */ js.UndefOr[ViewingProperties], Viewing]
+
+type VirtualLightingConstructor = Instantiable1[/* properties */ js.UndefOr[VirtualLightingProperties], VirtualLighting]
+
 type WFSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WFSLayerLayerviewCreateErrorEvent, scala.Unit]
 
 type WFSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WFSLayerLayerviewCreateEvent, scala.Unit]
@@ -693,6 +1437,8 @@ type WFSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WFSLayerLaye
 type WFSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WFSLayerLayerviewDestroyEvent, scala.Unit]
 
 type WFSLayerRefreshEventHandler = js.Function1[/* event */ WFSLayerRefreshEvent, scala.Unit]
+
+type WFSLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[WFSLayerViewProperties], WFSLayerView]
 
 type WMSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WMSLayerLayerviewCreateErrorEvent, scala.Unit]
 
@@ -702,13 +1448,7 @@ type WMSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WMSLayerLay
 
 type WMSLayerRefreshEventHandler = js.Function1[/* event */ WMSLayerRefreshEvent, scala.Unit]
 
-type WMTSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WMTSLayerLayerviewCreateErrorEvent, scala.Unit]
-
-type WMTSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WMTSLayerLayerviewCreateEvent, scala.Unit]
-
-type WMTSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WMTSLayerLayerviewDestroyEvent, scala.Unit]
-
-type WMTSLayerRefreshEventHandler = js.Function1[/* event */ WMTSLayerRefreshEvent, scala.Unit]
+type WMSSublayerConstructor = Instantiable1[/* properties */ js.UndefOr[WMSSublayerProperties], WMSSublayer]
 
 type WatchCallback = js.Function4[
 /* newValue */ Any, 
@@ -716,6 +1456,18 @@ type WatchCallback = js.Function4[
 /* propertyName */ String, 
 /* target */ Accessor, 
 scala.Unit]
+
+type WeatherConstructor = Instantiable1[/* properties */ js.UndefOr[WeatherProperties], Weather]
+
+type WeatherViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[WeatherViewModelProperties], WeatherViewModel]
+
+type WidgetConstructor = Instantiable1[/* properties */ js.UndefOr[WidgetProperties], Widget_]
+
+type WorkflowConstructor = Instantiable1[/* properties */ js.UndefOr[WorkflowProperties], Workflow]
+
+type ZoomConstructor = Instantiable1[/* properties */ js.UndefOr[ZoomProperties], Zoom]
+
+type ZoomViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[ZoomViewModelProperties], ZoomViewModel]
 
 type contentAttachmentsContent = AttachmentsContent
 
@@ -727,7 +1479,13 @@ type contentFieldsContent = FieldsContent
 
 type contentMediaContent = MediaContent
 
+type contentRelationshipContent = RelationshipContent
+
 type contentTextContent = TextContent
+
+type gamepadGamepadSettingsConstructor = Instantiable1[
+/* properties */ js.UndefOr[gamepadGamepadSettingsProperties], 
+gamepadGamepadSettings]
 
 type geometryExtent = Extent
 
@@ -750,6 +1508,10 @@ type inputsDateTimePickerInput = DateTimePickerInput
 type inputsTextAreaInput = TextAreaInput
 
 type inputsTextBoxInput = TextBoxInput
+
+type knowledgeGraphRelationshipConstructor = Instantiable1[
+/* properties */ js.UndefOr[knowledgeGraphRelationshipProperties], 
+knowledgeGraphRelationship]
 
 type pointCloudRenderersPointCloudClassBreaksRenderer = PointCloudClassBreaksRenderer
 
@@ -786,6 +1548,10 @@ type renderersPieChartRenderer = PieChartRenderer
 type renderersSimpleRenderer = SimpleRenderer
 
 type renderersUniqueValueRenderer = UniqueValueRenderer
+
+type supportImageParametersConstructor = Instantiable1[
+/* properties */ js.UndefOr[supportImageParametersProperties], 
+supportImageParameters]
 
 type symbolsCIMSymbol = CIMSymbol
 
@@ -830,3 +1596,19 @@ type symbolsTextSymbol3DLayer = TextSymbol3DLayer
 type symbolsWaterSymbol3DLayer = WaterSymbol3DLayer
 
 type symbolsWebStyleSymbol = WebStyleSymbol
+
+type websceneApplicationPropertiesConstructor = Instantiable1[
+/* properties */ js.UndefOr[websceneApplicationPropertiesProperties], 
+websceneApplicationProperties]
+
+type websceneInitialViewPropertiesConstructor = Instantiable1[
+/* properties */ js.UndefOr[websceneInitialViewPropertiesProperties], 
+websceneInitialViewProperties]
+
+type websceneSunLightingConstructor = Instantiable1[/* properties */ js.UndefOr[websceneSunLightingProperties], websceneSunLighting]
+
+type websceneVirtualLightingConstructor = Instantiable1[
+/* properties */ js.UndefOr[websceneVirtualLightingProperties], 
+websceneVirtualLighting]
+
+type widgetsSearchConstructor = Instantiable1[/* properties */ js.UndefOr[widgetsSearchProperties], widgetsSearch]

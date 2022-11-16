@@ -1576,6 +1576,15 @@ type UnmountFn = js.Function5[
 /* optimized */ js.UndefOr[Boolean], 
 Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type VNodeChild = @vue/runtime-core.@vue/runtime-core.VNodeChildAtom | @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren
+}}}
+to avoid circular code involving: 
+- @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren
+- @vue/runtime-core.@vue/runtime-core.VNodeChild
+*/
 type VNodeChild = VNodeChildAtom | Any
 
 type VNodeChildAtom = js.UndefOr[
@@ -1583,6 +1592,15 @@ type VNodeChildAtom = js.UndefOr[
 
 type VNodeMountHook = js.Function1[/* vnode */ VNode[RendererNode, RendererElement, StringDictionary[Any]], Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type VNodeNormalizedChildren = string | @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren | @vue/runtime-core.@vue/runtime-core.RawSlots | null
+}}}
+to avoid circular code involving: 
+- @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren
+- @vue/runtime-core.@vue/runtime-core.VNodeNormalizedChildren
+*/
 type VNodeNormalizedChildren = String | Any | RawSlots | Null
 
 type VNodeNormalizedRef = VNodeNormalizedRefAtom | js.Array[VNodeNormalizedRefAtom]

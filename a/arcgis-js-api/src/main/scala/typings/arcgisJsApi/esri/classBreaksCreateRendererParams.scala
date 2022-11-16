@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`natural-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait classBreaksCreateRendererParams
-  extends StObject
-     with Object {
+trait classBreaksCreateRendererParams extends StObject {
   
   /**
     * The classification method used for generating breaks.
@@ -96,13 +92,8 @@ trait classBreaksCreateRendererParams
 }
 object classBreaksCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer | WCSLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): classBreaksCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer | WCSLayer): classBreaksCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[classBreaksCreateRendererParams]
   }
   

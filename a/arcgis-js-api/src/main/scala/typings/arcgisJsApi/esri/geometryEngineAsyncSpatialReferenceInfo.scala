@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait geometryEngineAsyncSpatialReferenceInfo
-  extends StObject
-     with Object {
+trait geometryEngineAsyncSpatialReferenceInfo extends StObject {
   
   /**
     * The XY tolerance of the spatial reference.
@@ -48,16 +44,13 @@ trait geometryEngineAsyncSpatialReferenceInfo
 object geometryEngineAsyncSpatialReferenceInfo {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     tolerance: Double,
     unitBaseFactor: Double,
     unitID: Double,
     unitSquareDerivative: Double,
     unitType: Double
   ): geometryEngineAsyncSpatialReferenceInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tolerance = tolerance.asInstanceOf[js.Any], unitBaseFactor = unitBaseFactor.asInstanceOf[js.Any], unitID = unitID.asInstanceOf[js.Any], unitSquareDerivative = unitSquareDerivative.asInstanceOf[js.Any], unitType = unitType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tolerance = tolerance.asInstanceOf[js.Any], unitBaseFactor = unitBaseFactor.asInstanceOf[js.Any], unitID = unitID.asInstanceOf[js.Any], unitSquareDerivative = unitSquareDerivative.asInstanceOf[js.Any], unitType = unitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[geometryEngineAsyncSpatialReferenceInfo]
   }
   

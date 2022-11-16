@@ -15,6 +15,15 @@ object libNavbarBrandMod {
   
   type NavbarBrand = Component[NavbarBrandProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NavbarBrandProps = react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavbarBrand.NavbarBrand>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/NavbarBrand.NavbarBrand
+  - react-bootstrap.react-bootstrap/lib/NavbarBrand.NavbarBrandProps
+  */
   trait NavbarBrandProps
     extends StObject
        with HTMLProps[NavbarBrand]

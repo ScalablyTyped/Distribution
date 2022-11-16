@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColumnChartMediaInfoConstructor
   extends StObject
-     with /**
-  * A `ColumnChartMediaInfo` is a type of chart media element that represents a column chart displayed within a popup.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html)
-  */
-Instantiable0[ColumnChartMediaInfo]
+     with Instantiable0[ColumnChartMediaInfo]
      with Instantiable1[/* properties */ ColumnChartMediaInfoProperties, ColumnChartMediaInfo] {
   
   def fromJSON(json: Any): ColumnChartMediaInfo = js.native

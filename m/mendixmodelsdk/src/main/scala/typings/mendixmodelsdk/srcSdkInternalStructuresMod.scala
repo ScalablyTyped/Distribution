@@ -291,6 +291,14 @@ object srcSdkInternalStructuresMod {
   
   object aliases {
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Container = mendixmodelsdk.mendixmodelsdk/src/sdk/internal/units.StructuralUnit<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel> | mendixmodelsdk.mendixmodelsdk/src/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container>
+    }}}
+    to avoid circular code involving: 
+    - mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container
+    */
     type Container = StructuralUnit[IAbstractModel] | (AbstractElement[IAbstractModel, Any])
     
     /* Rewritten from type alias, can be one of: 

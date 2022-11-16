@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisualVariablesResultSize
-  extends StObject
-     with Object {
+trait VisualVariablesResultSize extends StObject {
   
   /**
     * The size scheme used by the visual variable.
@@ -26,14 +22,8 @@ trait VisualVariablesResultSize
 }
 object VisualVariablesResultSize {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    sizeScheme: SizeScheme,
-    visualVariables: js.Array[SizeVariable]
-  ): VisualVariablesResultSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
+  inline def apply(sizeScheme: SizeScheme, visualVariables: js.Array[SizeVariable]): VisualVariablesResultSize = {
+    val __obj = js.Dynamic.literal(sizeScheme = sizeScheme.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualVariablesResultSize]
   }
   

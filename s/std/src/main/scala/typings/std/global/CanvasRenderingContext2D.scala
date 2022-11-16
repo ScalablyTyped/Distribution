@@ -1,6 +1,7 @@
 package typings.std.global
 
 import typings.std.CanvasDirection
+import typings.std.CanvasFontKerning
 import typings.std.CanvasTextAlign
 import typings.std.CanvasTextBaseline
 import typings.std.GlobalCompositeOperation
@@ -36,6 +37,10 @@ open class CanvasRenderingContext2D ()
   /* standard dom */
   /* CompleteClass */
   var font: java.lang.String = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var fontKerning: CanvasFontKerning = js.native
   
   /* standard dom */
   /* CompleteClass */

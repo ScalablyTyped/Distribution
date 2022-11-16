@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MapFloorInfoConstructor
   extends StObject
-     with /**
-  * Floor-aware maps facilitate visualizing, editing, and analyzing indoor data and they allow for fast navigation of buildings in maps and scenes.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-MapFloorInfo.html)
-  */
-Instantiable0[MapFloorInfo]
+     with Instantiable0[MapFloorInfo]
      with Instantiable1[/* properties */ MapFloorInfoProperties, MapFloorInfo] {
   
   def fromJSON(json: Any): MapFloorInfo = js.native

@@ -20,12 +20,12 @@ object distSrcTypesBoxTypesMod {
   
   type BoxProps[E /* <: ElementType[Any] */] = (BoxOwnProps[E, js.Object]) & (Without[
     PropsOf[E], 
-    /* keyof ui-box.anon.BoxOwnPropsElementTypeany */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 146, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+    /* keyof ui-box.anon.BoxOwnPropsElementTypeany */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 156, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ])
   
   type PolymorphicBoxProps[E /* <: ElementType[Any] */, P] = (BoxOwnProps[E, P]) & (Without[
     PropsOf[E], 
-    /* keyof ui-box.anon.BoxOwnPropsElementTypeany & P */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 146, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+    /* keyof ui-box.anon.BoxOwnPropsElementTypeany & P */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 156, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ]) & P
   
   type PropsOf[E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.uiBox.uiBoxStrings.a, typings.uiBox.uiBoxStrings.abbr, typings.uiBox.uiBoxStrings.address */ Any */] = LibraryManagedAttributes[E, ComponentPropsWithRef[E]]

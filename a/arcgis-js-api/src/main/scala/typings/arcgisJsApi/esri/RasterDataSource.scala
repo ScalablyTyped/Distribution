@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.raster
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterDataSource
-  extends StObject
-     with Object {
+trait RasterDataSource extends StObject {
   
   /**
     * The name of the raster in the registered workspace.
@@ -34,14 +30,8 @@ trait RasterDataSource
 }
 object RasterDataSource {
   
-  inline def apply(
-    constructor: js.Function,
-    dataSourceName: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    workspaceId: String
-  ): RasterDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSourceName = dataSourceName.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), workspaceId = workspaceId.asInstanceOf[js.Any])
+  inline def apply(dataSourceName: String, workspaceId: String): RasterDataSource = {
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("raster")
     __obj.asInstanceOf[RasterDataSource]
   }

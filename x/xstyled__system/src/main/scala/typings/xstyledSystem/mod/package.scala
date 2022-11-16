@@ -286,6 +286,14 @@ type AliasKey = String
 
 type BreakPointsRules = StringDictionary[Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ObjectOrArray = std.Array<T> | {[K: string] : T | @xstyled/system.@xstyled/system.ObjectOrArray<T>}
+}}}
+to avoid circular code involving: 
+- @xstyled/system.@xstyled/system.ObjectOrArray
+*/
 type ObjectOrArray[T] = js.Array[T] | (StringDictionary[T | Any])
 
 type ResponsiveValue[T] = T | js.Array[T] | StringDictionary[T]

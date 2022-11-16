@@ -170,6 +170,14 @@ object sourcePackageJsonMod {
     @js.native
     trait ExportConditions extends StObject
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Exports = null | string | std.Array<string | type-fest.type-fest/source/package-json.PackageJson.ExportConditions> | type-fest.type-fest/source/package-json.PackageJson.ExportConditions | {[path: string] : type-fest.type-fest/source/package-json.PackageJson.Exports}
+    }}}
+    to avoid circular code involving: 
+    - type-fest.type-fest/source/package-json.PackageJson.Exports
+    */
     type Exports = Null | String | (js.Array[String | ExportConditions]) | ExportConditions | StringDictionary[Any]
     
     type Imports = // eslint-disable-line @typescript-eslint/consistent-indexed-object-style

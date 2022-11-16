@@ -233,6 +233,14 @@ object mod {
     * A generator produced by `gensync`, which can only "await" (with `yield*`) other
     * generators produced by `gensync`.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Handler = std.Generator<gensync.gensync.Handler<unknown>, R, unknown>
+  }}}
+  to avoid circular code involving: 
+  - gensync.gensync.Handler
+  */
   @js.native
   trait Handler[R]
     extends StObject

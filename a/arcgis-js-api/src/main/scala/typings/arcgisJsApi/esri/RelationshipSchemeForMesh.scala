@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RelationshipSchemeForMesh
   extends StObject
-     with Object
      with RelationshipScheme {
   
   /**
@@ -57,16 +54,13 @@ object RelationshipSchemeForMesh {
   
   inline def apply(
     colorsForClassBreaks: js.Array[RelationshipSchemeForMeshColorsForClassBreaks],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     id: String,
     name: String,
     noDataColor: Color_,
     opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     tags: js.Array[String]
   ): RelationshipSchemeForMesh = {
-    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], noDataColor = noDataColor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipSchemeForMesh]
   }
   

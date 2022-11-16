@@ -14,5 +14,14 @@ object distCreateScaffoldMiddlewareMod {
   
   inline def createScaffoldMiddleware(handlers: StringDictionary[ScaffoldMiddlewareHandler[Any, Any]]): JsonRpcMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createScaffoldMiddleware")(handlers.asInstanceOf[js.Any]).asInstanceOf[JsonRpcMiddleware[Any, Any]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ScaffoldMiddlewareHandler = json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.JsonRpcMiddleware<T, U> | json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.Json
+  }}}
+  to avoid circular code involving: 
+  - json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.Json
+  - json-rpc-engine.json-rpc-engine/dist/createScaffoldMiddleware.ScaffoldMiddlewareHandler
+  */
   type ScaffoldMiddlewareHandler[T, U] = (JsonRpcMiddleware[T, U]) | Any
 }

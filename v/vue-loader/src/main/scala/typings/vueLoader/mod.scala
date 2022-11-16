@@ -1,44 +1,67 @@
 package typings.vueLoader
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vueComponentCompilerUtils.distTypesMod.VueTemplateCompiler
-import typings.vueTemplateCompiler.mod.CompilerOptions
+import typings.vueLoader.distPluginMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("vue-loader", "VueLoaderPlugin")
+  @JSImport("vue-loader", JSImport.Namespace)
   @js.native
-  open class VueLoaderPlugin () extends StObject
+  val ^ : js.Any = js.native
+  
+  inline def default(source: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  
+  /* was `typeof VueLoaderPlugin` */
+  @JSImport("vue-loader", "VueLoaderPlugin")
+  @js.native
+  open class VueLoaderPlugin () extends default
+  /* was `typeof VueLoaderPlugin` */
+  object VueLoaderPlugin {
+    
+    @JSImport("vue-loader", "VueLoaderPlugin")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("vue-loader", "VueLoaderPlugin.NS")
+    @js.native
+    def NS: String = js.native
+    inline def NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NS")(x.asInstanceOf[js.Any])
+  }
   
   trait VueLoaderOptions extends StObject {
     
-    var cacheDirectory: js.UndefOr[String] = js.undefined
+    var appendExtension: js.UndefOr[Boolean] = js.undefined
     
-    var cacheIdentifier: js.UndefOr[String] = js.undefined
+    var babelParserPlugins: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SFCScriptCompileOptions * / any['babelParserPlugins'] */ js.Any
+      ] = js.undefined
     
-    var compiler: js.UndefOr[VueTemplateCompiler] = js.undefined
+    var compiler: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateCompiler */ Any) | String
+      ] = js.undefined
     
-    var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
+    var compilerOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerOptions */ Any
+      ] = js.undefined
+    
+    var customElement: js.UndefOr[Boolean | js.RegExp] = js.undefined
+    
+    var enableTsInTemplate: js.UndefOr[Boolean] = js.undefined
     
     var exposeFilename: js.UndefOr[Boolean] = js.undefined
     
     var hotReload: js.UndefOr[Boolean] = js.undefined
     
-    var optimizeSSR: js.UndefOr[Boolean] = js.undefined
+    var isServerBuild: js.UndefOr[Boolean] = js.undefined
     
-    var prettify: js.UndefOr[Boolean] = js.undefined
+    var reactivityTransform: js.UndefOr[Boolean] = js.undefined
     
-    var productionMode: js.UndefOr[Boolean] = js.undefined
-    
-    var shadowMode: js.UndefOr[Boolean] = js.undefined
-    
-    var transformAssetUrls: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
-    
-    var transpileOptions: js.UndefOr[js.Object] = js.undefined
+    var transformAssetUrls: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SFCTemplateCompileOptions * / any['transformAssetUrls'] */ js.Any
+      ] = js.undefined
   }
   object VueLoaderOptions {
     
@@ -49,21 +72,35 @@ object mod {
     
     extension [Self <: VueLoaderOptions](x: Self) {
       
-      inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
+      inline def setAppendExtension(value: Boolean): Self = StObject.set(x, "appendExtension", value.asInstanceOf[js.Any])
       
-      inline def setCacheDirectoryUndefined: Self = StObject.set(x, "cacheDirectory", js.undefined)
+      inline def setAppendExtensionUndefined: Self = StObject.set(x, "appendExtension", js.undefined)
       
-      inline def setCacheIdentifier(value: String): Self = StObject.set(x, "cacheIdentifier", value.asInstanceOf[js.Any])
+      inline def setBabelParserPlugins(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SFCScriptCompileOptions * / any['babelParserPlugins'] */ js.Any
+      ): Self = StObject.set(x, "babelParserPlugins", value.asInstanceOf[js.Any])
       
-      inline def setCacheIdentifierUndefined: Self = StObject.set(x, "cacheIdentifier", js.undefined)
+      inline def setBabelParserPluginsUndefined: Self = StObject.set(x, "babelParserPlugins", js.undefined)
       
-      inline def setCompiler(value: VueTemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateCompiler */ Any) | String
+      ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CompilerOptions */ Any
+      ): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
       inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
       inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      
+      inline def setCustomElement(value: Boolean | js.RegExp): Self = StObject.set(x, "customElement", value.asInstanceOf[js.Any])
+      
+      inline def setCustomElementUndefined: Self = StObject.set(x, "customElement", js.undefined)
+      
+      inline def setEnableTsInTemplate(value: Boolean): Self = StObject.set(x, "enableTsInTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setEnableTsInTemplateUndefined: Self = StObject.set(x, "enableTsInTemplate", js.undefined)
       
       inline def setExposeFilename(value: Boolean): Self = StObject.set(x, "exposeFilename", value.asInstanceOf[js.Any])
       
@@ -73,29 +110,19 @@ object mod {
       
       inline def setHotReloadUndefined: Self = StObject.set(x, "hotReload", js.undefined)
       
-      inline def setOptimizeSSR(value: Boolean): Self = StObject.set(x, "optimizeSSR", value.asInstanceOf[js.Any])
+      inline def setIsServerBuild(value: Boolean): Self = StObject.set(x, "isServerBuild", value.asInstanceOf[js.Any])
       
-      inline def setOptimizeSSRUndefined: Self = StObject.set(x, "optimizeSSR", js.undefined)
+      inline def setIsServerBuildUndefined: Self = StObject.set(x, "isServerBuild", js.undefined)
       
-      inline def setPrettify(value: Boolean): Self = StObject.set(x, "prettify", value.asInstanceOf[js.Any])
+      inline def setReactivityTransform(value: Boolean): Self = StObject.set(x, "reactivityTransform", value.asInstanceOf[js.Any])
       
-      inline def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
+      inline def setReactivityTransformUndefined: Self = StObject.set(x, "reactivityTransform", js.undefined)
       
-      inline def setProductionMode(value: Boolean): Self = StObject.set(x, "productionMode", value.asInstanceOf[js.Any])
-      
-      inline def setProductionModeUndefined: Self = StObject.set(x, "productionMode", js.undefined)
-      
-      inline def setShadowMode(value: Boolean): Self = StObject.set(x, "shadowMode", value.asInstanceOf[js.Any])
-      
-      inline def setShadowModeUndefined: Self = StObject.set(x, "shadowMode", js.undefined)
-      
-      inline def setTransformAssetUrls(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "transformAssetUrls", value.asInstanceOf[js.Any])
+      inline def setTransformAssetUrls(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SFCTemplateCompileOptions * / any['transformAssetUrls'] */ js.Any
+      ): Self = StObject.set(x, "transformAssetUrls", value.asInstanceOf[js.Any])
       
       inline def setTransformAssetUrlsUndefined: Self = StObject.set(x, "transformAssetUrls", js.undefined)
-      
-      inline def setTranspileOptions(value: js.Object): Self = StObject.set(x, "transpileOptions", value.asInstanceOf[js.Any])
-      
-      inline def setTranspileOptionsUndefined: Self = StObject.set(x, "transpileOptions", js.undefined)
     }
   }
 }

@@ -21,6 +21,15 @@ trait FeatureTableViewModel
   val activeFilters: Collection[GeometryFilter | SelectionFilter] = js.native
   
   /**
+    * Use this read-only property if needing to query features while retaining a column's sort order.
+    *
+    * @default []
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#activeSortOrders)
+    */
+  val activeSortOrders: js.Array[ColumnSortOrder] = js.native
+  
+  /**
     * Indicates whether to display the `Attachments` field in the table.
     *
     * @default false
@@ -41,12 +50,16 @@ trait FeatureTableViewModel
   /**
     * This clears any highlighted features.
     *
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable/FeatureTableViewModel#highlightEnabled highlightEnabled} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#clearHighlights)
     */
   def clearHighlights(): scala.Unit = js.native
   
   /**
     * Clears the current selection within the table.
+    *
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable/FeatureTableViewModel#highlightEnabled highlightEnabled} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#clearSelection)
     */
@@ -58,6 +71,14 @@ trait FeatureTableViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#clearSelectionFilter)
     */
   def clearSelectionFilter(): scala.Unit = js.native
+  
+  /**
+    * Deletes all the selected rows from the table.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#deleteSelection)
+    */
+  def deleteSelection(): js.Promise[scala.Unit] = js.native
+  def deleteSelection(showWarningPrompt: Boolean): js.Promise[scala.Unit] = js.native
   
   def deselectRows(params: js.Array[Double | Graphic]): scala.Unit = js.native
   /**
@@ -113,7 +134,7 @@ trait FeatureTableViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#getValue)
     */
-  def getValue(objectId: Double, fieldName: String): String | Double | Any = js.native
+  def getValue(objectId: Double, fieldName: String): String | Double | Null = js.native
   
   /**
     * A collection of string [field.names](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) that are to remain hidden within the table.
@@ -129,6 +150,23 @@ trait FeatureTableViewModel
     *
     * @default true
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightEnabled)
+    */
+  var highlightEnabled: Boolean = js.native
+  
+  /**
+    * This property accepts and returns a collection of feature ObjectId's.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightIds)
+    */
+  var highlightIds: Collection[Double] = js.native
+  
+  /**
+    * Indicates whether to highlight the associated feature when a row is selected.
+    *
+    * @default true
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable/FeatureTableViewModel#highlightEnabled highlightEnabled} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#highlightOnRowSelectEnabled)
     */
   var highlightOnRowSelectEnabled: Boolean = js.native
@@ -139,6 +177,13 @@ trait FeatureTableViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#layer)
     */
   var layer: FeatureLayer | SceneLayer | GeoJSONLayer | CSVLayer | WFSLayer | ImageryLayer = js.native
+  
+  /**
+    * The [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) displaying data for the table's associated [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#layer).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#layerView)
+    */
+  val layerView: LayerView = js.native
   
   /**
     * Indicates whether sorting multiple columns is supported within the table.
@@ -173,6 +218,8 @@ trait FeatureTableViewModel
   def selectRows(params: js.Array[Double | Graphic]): scala.Unit = js.native
   /**
     * Selects the specified rows within the table.
+    *
+    * @deprecated since 4.25. Use {@link module:esri/widgets/FeatureTable#highlightIds highlightIds.add()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#selectRows)
     */

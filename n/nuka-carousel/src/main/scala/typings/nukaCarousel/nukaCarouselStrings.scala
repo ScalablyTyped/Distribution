@@ -1,5 +1,6 @@
 package typings.nukaCarousel
 
+import typings.nukaCarousel.libTypesMod.CellAlign
 import typings.nukaCarousel.libTypesMod.RenderControlFunctionNames
 import typings.nukaCarousel.libTypesMod._KeyCodeFunction
 import org.scalablytyped.runtime.StObject
@@ -11,6 +12,12 @@ object nukaCarouselStrings {
   @js.native
   sealed trait assertive extends StObject
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
+  
+  @js.native
+  sealed trait center
+    extends StObject
+       with CellAlign
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait fade extends StObject
@@ -27,6 +34,12 @@ object nukaCarouselStrings {
     extends StObject
        with _KeyCodeFunction
   inline def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
+  
+  @js.native
+  sealed trait left
+    extends StObject
+       with CellAlign
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait `next-cloned` extends StObject
@@ -115,6 +128,12 @@ object nukaCarouselStrings {
     extends StObject
        with RenderControlFunctionNames
   inline def renderTopRightControls: renderTopRightControls = "renderTopRightControls".asInstanceOf[renderTopRightControls]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with CellAlign
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait zoom extends StObject

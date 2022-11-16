@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "correlation-id"
-version := "2.1-dt-20211223Z-c674df"
+version := "2.1-dt-20211223Z-0c0a93"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

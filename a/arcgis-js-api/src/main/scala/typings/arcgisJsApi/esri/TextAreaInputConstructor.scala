@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextAreaInputConstructor
   extends StObject
-     with /**
-  * The `TextAreaInput` class defines the desired user interface as a multi-line text area.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextAreaInput.html)
-  */
-Instantiable0[TextAreaInput]
+     with Instantiable0[TextAreaInput]
      with Instantiable1[/* properties */ TextAreaInputProperties, TextAreaInput] {
   
   def fromJSON(json: Any): TextAreaInput = js.native

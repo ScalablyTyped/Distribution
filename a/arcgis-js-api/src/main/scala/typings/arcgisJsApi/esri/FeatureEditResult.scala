@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureEditResult
-  extends StObject
-     with Object {
+trait FeatureEditResult extends StObject {
   
   /**
     * If the edit failed, the edit result includes an error.
@@ -33,15 +29,8 @@ trait FeatureEditResult
 }
 object FeatureEditResult {
   
-  inline def apply(
-    constructor: js.Function,
-    error: FeatureEditResultError,
-    globalId: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    objectId: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureEditResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(error: FeatureEditResultError, globalId: String, objectId: Double): FeatureEditResult = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureEditResult]
   }
   

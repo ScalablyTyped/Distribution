@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMPolygonSymbol
-  extends StObject
-     with Object {
+trait CIMPolygonSymbol extends StObject {
   
   /**
     * The geometric effects applied to the symbol.
@@ -35,13 +31,8 @@ trait CIMPolygonSymbol
 }
 object CIMPolygonSymbol {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbolLayers: js.Array[CIMSymbolLayer]
-  ): CIMPolygonSymbol = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbolLayers = symbolLayers.asInstanceOf[js.Any])
+  inline def apply(symbolLayers: js.Array[CIMSymbolLayer]): CIMPolygonSymbol = {
+    val __obj = js.Dynamic.literal(symbolLayers = symbolLayers.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPolygonSymbol")
     __obj.asInstanceOf[CIMPolygonSymbol]
   }

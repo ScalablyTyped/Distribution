@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_webfonts"
-version := "1.0-dt-20220912Z-bff1d8"
+version := "1.0-dt-20220912Z-b55535"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

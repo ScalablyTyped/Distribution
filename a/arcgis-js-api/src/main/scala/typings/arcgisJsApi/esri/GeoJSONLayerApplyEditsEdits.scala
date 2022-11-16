@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONLayerApplyEditsEdits
-  extends StObject
-     with Object {
+trait GeoJSONLayerApplyEditsEdits extends StObject {
   
   /**
     * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added.
@@ -33,12 +29,8 @@ trait GeoJSONLayerApplyEditsEdits
 }
 object GeoJSONLayerApplyEditsEdits {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GeoJSONLayerApplyEditsEdits = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): GeoJSONLayerApplyEditsEdits = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONLayerApplyEditsEdits]
   }
   

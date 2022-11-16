@@ -4,6 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Responder = (message : any | std.Error, keepalive : boolean | undefined, replyHandler : axe-core.axe-core.ReplyHandler | undefined): void
+}}}
+to avoid circular code involving: 
+- axe-core.axe-core.ReplyHandler
+- axe-core.axe-core.Responder
+- axe-core.axe-core.TopicHandler
+*/
 @js.native
 trait Responder extends StObject {
   

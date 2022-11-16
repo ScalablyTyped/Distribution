@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.height
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait sizeCreateVisualVariablesParams
-  extends StObject
-     with Object {
+trait sizeCreateVisualVariablesParams extends StObject {
   
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
@@ -31,6 +27,13 @@ trait sizeCreateVisualVariablesParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
   var field: String
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer for which the visual variables are generated.
@@ -149,13 +152,10 @@ trait sizeCreateVisualVariablesParams
 object sizeCreateVisualVariablesParams {
   
   inline def apply(
-    constructor: js.Function,
     field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   ): sizeCreateVisualVariablesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeCreateVisualVariablesParams]
   }
   
@@ -166,6 +166,10 @@ object sizeCreateVisualVariablesParams {
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

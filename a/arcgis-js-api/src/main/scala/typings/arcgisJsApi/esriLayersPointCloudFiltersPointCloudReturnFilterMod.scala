@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudReturnFilter
-import typings.arcgisJsApi.esri.PointCloudReturnFilterConstructor
 import typings.arcgisJsApi.esri.PointCloudReturnFilterProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersPointCloudFiltersPointCloudReturnFilterMod extends Shortcut {
+/* static members */
+object esriLayersPointCloudFiltersPointCloudReturnFilterMod {
   
-  @JSImport("esri/layers/pointCloudFilters/PointCloudReturnFilter", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudReturnFilterConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/pointCloudFilters/PointCloudReturnFilter", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersPointCloudFiltersPointCloudReturnFilterMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudReturnFilter {
     def this(properties: PointCloudReturnFilterProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersPointCloudFiltersPointCloudReturnFilterMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/pointCloudFilters/PointCloudReturnFilter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudReturnFilterConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersPointCloudFiltersPointCloudReturnFilterMod.foo` */
-  override def _to: js.Object & PointCloudReturnFilterConstructor = ^
+  inline def fromJSON(json: Any): PointCloudReturnFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudReturnFilter]
 }

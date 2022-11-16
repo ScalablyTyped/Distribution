@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureFilterConstructor
   extends StObject
-     with /**
-  * This class defines parameters for setting a client-side filter on a [featureEffect](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureEffect) or [layer view](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html)
-  */
-Instantiable0[FeatureFilter]
+     with Instantiable0[FeatureFilter]
      with Instantiable1[/* properties */ FeatureFilterProperties, FeatureFilter] {
   
   def fromJSON(json: Any): FeatureFilter = js.native

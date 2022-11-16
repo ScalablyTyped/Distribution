@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`current-time`
 import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.timestamp
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CurrentTimeNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -25,13 +22,8 @@ trait CurrentTimeNode
 }
 object CurrentTimeNode {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: timestamp | date,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CurrentTimeNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(mode: timestamp | date): CurrentTimeNode = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("current-time")
     __obj.asInstanceOf[CurrentTimeNode]
   }

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Position
-  extends StObject
-     with Object {
+trait Position extends StObject {
   
   /**
     * A string representing the location.
@@ -26,14 +22,8 @@ trait Position
 }
 object Position {
   
-  inline def apply(
-    constructor: js.Function,
-    coordinate: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    location: Point,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): Position = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(coordinate: String, location: Point): Position = {
+    val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
   

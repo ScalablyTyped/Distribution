@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterMultidimensionalInfoVariables
-  extends StObject
-     with Object {
+trait RasterMultidimensionalInfoVariables extends StObject {
   
   /**
     * Variable description.
@@ -54,14 +50,8 @@ trait RasterMultidimensionalInfoVariables
 }
 object RasterMultidimensionalInfoVariables {
   
-  inline def apply(
-    constructor: js.Function,
-    dimensions: js.Array[RasterMultidimensionalInfoVariablesDimensions],
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RasterMultidimensionalInfoVariables = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(dimensions: js.Array[RasterMultidimensionalInfoVariablesDimensions], name: String): RasterMultidimensionalInfoVariables = {
+    val __obj = js.Dynamic.literal(dimensions = dimensions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterMultidimensionalInfoVariables]
   }
   

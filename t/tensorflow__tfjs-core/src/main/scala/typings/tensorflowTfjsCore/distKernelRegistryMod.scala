@@ -146,6 +146,17 @@ object distKernelRegistryMod {
   
   type KernelSetupFunc = js.Function1[/* backend */ js.Object, Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NamedAttrMap = {[name: string] : @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.Attribute}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.Attribute
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.AttributeValue
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.GradFunc
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedAttrMap
+  */
   trait NamedAttrMap
     extends StObject
        with /* name */ StringDictionary[Attribute]

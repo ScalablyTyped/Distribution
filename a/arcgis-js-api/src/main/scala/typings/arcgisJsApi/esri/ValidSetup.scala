@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidSetup
-  extends StObject
-     with Object {
+trait ValidSetup extends StObject {
   
   /**
     * An array of error messages for the missing requirements.
@@ -26,14 +22,8 @@ trait ValidSetup
 }
 object ValidSetup {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    issues: js.Array[String],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    status: Boolean
-  ): ValidSetup = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), issues = issues.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), status = status.asInstanceOf[js.Any])
+  inline def apply(issues: js.Array[String], status: Boolean): ValidSetup = {
+    val __obj = js.Dynamic.literal(issues = issues.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidSetup]
   }
   

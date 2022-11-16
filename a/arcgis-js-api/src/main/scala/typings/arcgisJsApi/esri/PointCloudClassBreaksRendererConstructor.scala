@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudClassBreaksRendererConstructor
   extends StObject
-     with /**
-  * This class defines the color of each point in a [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html) based on the value of a numeric attribute.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html)
-  */
-Instantiable0[PointCloudClassBreaksRenderer]
+     with Instantiable0[PointCloudClassBreaksRenderer]
      with Instantiable1[
       /* properties */ PointCloudClassBreaksRendererProperties, 
       PointCloudClassBreaksRenderer

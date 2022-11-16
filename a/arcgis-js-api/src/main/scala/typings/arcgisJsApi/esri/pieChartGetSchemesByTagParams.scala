@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.dark
 import typings.arcgisJsApi.arcgisJsApiStrings.light
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait pieChartGetSchemesByTagParams
-  extends StObject
-     with Object {
+trait pieChartGetSchemesByTagParams extends StObject {
   
   /**
     * The basemap to pair with the visualization.
@@ -58,14 +54,8 @@ trait pieChartGetSchemesByTagParams
 }
 object pieChartGetSchemesByTagParams {
   
-  inline def apply(
-    constructor: js.Function,
-    geometryType: point | polygon,
-    hasOwnProperty: PropertyKey => Boolean,
-    numColors: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): pieChartGetSchemesByTagParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numColors = numColors.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(geometryType: point | polygon, numColors: Double): pieChartGetSchemesByTagParams = {
+    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any], numColors = numColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[pieChartGetSchemesByTagParams]
   }
   

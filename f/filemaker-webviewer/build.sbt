@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filemaker-webviewer"
-version := "1.0-dt-20221020Z-109b6d"
+version := "1.0-dt-20221020Z-bdfeef"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

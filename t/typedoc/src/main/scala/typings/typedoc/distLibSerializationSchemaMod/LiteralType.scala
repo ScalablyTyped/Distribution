@@ -14,11 +14,8 @@ trait LiteralType extends StObject {
 }
 object LiteralType {
   
-  inline def apply(
-    `type`: ToSerialized[/* "literal" */ String],
-    value: ToSerialized[String | Double | Boolean | Null | js.BigInt]
-  ): LiteralType = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(`type`: ToSerialized[/* "literal" */ String]): LiteralType = {
+    val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralType]
   }
@@ -28,5 +25,7 @@ object LiteralType {
     inline def setType(value: ToSerialized[/* "literal" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: ToSerialized[String | Double | Boolean | Null | js.BigInt]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

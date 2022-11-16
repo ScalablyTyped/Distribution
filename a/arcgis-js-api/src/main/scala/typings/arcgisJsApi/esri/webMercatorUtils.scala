@@ -49,6 +49,7 @@ trait webMercatorUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-webMercatorUtils.html#webMercatorToGeographic)
     */
+  def webMercatorToGeographic(geometry: Geometry_): Geometry_ = js.native
   def webMercatorToGeographic(geometry: Geometry_, isLinear: Boolean): Geometry_ = js.native
   
   /**

@@ -109,6 +109,14 @@ object mod {
     def translateIn(locale: String, key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Translations = {[key: string] : string | vuex-i18n.vuex-i18n.Translations}
+  }}}
+  to avoid circular code involving: 
+  - vuex-i18n.vuex-i18n.Translations
+  */
   trait Translations
     extends StObject
        with /* key */ StringDictionary[String | Translations]

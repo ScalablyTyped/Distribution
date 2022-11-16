@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.length
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Length
-  extends StObject
-     with Object {
+trait Length extends StObject {
   
   /**
     * Unit type.
@@ -34,14 +30,8 @@ trait Length
 }
 object Length {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    unit: LengthUnit,
-    value: Double
-  ): Length = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(unit: LengthUnit, value: Double): Length = {
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("length")
     __obj.asInstanceOf[Length]
   }

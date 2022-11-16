@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft__applicationinsights-web-snippet"
-version := "1.0.1-f5c215"
+version := "1.0.1-2144dc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassedSizeSliderStyleProperties
-  extends StObject
-     with Object {
+trait ClassedSizeSliderStyleProperties extends StObject {
   
   /**
     * The background color of the slider's track.
@@ -30,12 +26,8 @@ trait ClassedSizeSliderStyleProperties
 }
 object ClassedSizeSliderStyleProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ClassedSizeSliderStyleProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ClassedSizeSliderStyleProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassedSizeSliderStyleProperties]
   }
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csvtojson"
-version := "2.0.10-89985a"
+version := "2.0.10-77c06b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twuni__emojify"
-version := "1.0-dt-20211202Z-b13572"
+version := "1.0-dt-20211202Z-8fde6b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

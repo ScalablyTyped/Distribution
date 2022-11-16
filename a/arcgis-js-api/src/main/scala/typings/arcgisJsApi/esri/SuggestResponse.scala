@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SuggestResponse
-  extends StObject
-     with Object {
+trait SuggestResponse extends StObject {
   
   /**
     * The index of the source from which suggestions are obtained.
@@ -49,15 +45,12 @@ object SuggestResponse {
   
   inline def apply(
     activeSourceIndex: Double,
-    constructor: js.Function,
     errors: js.Array[Error],
-    hasOwnProperty: PropertyKey => Boolean,
     numResults: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     results: js.Array[SuggestResponseResults],
     searchTerm: String
   ): SuggestResponse = {
-    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numResults = numResults.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], searchTerm = searchTerm.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], numResults = numResults.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], searchTerm = searchTerm.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestResponse]
   }
   

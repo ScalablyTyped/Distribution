@@ -66,6 +66,29 @@ object dxTextBox {
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TextBoxInstance = devextreme.devextreme.DevExpress.ui.dxTextBox<devextreme.devextreme.DevExpress.ui.dxTextBox.Properties>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.ChangeEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.CopyEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.CutEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.EnterKeyEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.FocusInEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.FocusOutEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.InputEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.KeyDownEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.KeyPressEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.KeyUpEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.PasteEvent
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.Properties
+  - devextreme.devextreme.DevExpress.ui.dxTextBox.TextBoxInstance
+  */
   @js.native
   trait TextBoxInstance
     extends StObject

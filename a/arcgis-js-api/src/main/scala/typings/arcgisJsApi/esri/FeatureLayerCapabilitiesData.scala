@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesData
-  extends StObject
-     with Object {
+trait FeatureLayerCapabilitiesData extends StObject {
   
   /**
     * Indicates if the feature service is versioned.
@@ -40,16 +36,8 @@ trait FeatureLayerCapabilitiesData
 }
 object FeatureLayerCapabilitiesData {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    isVersioned: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supportsAttachment: Boolean,
-    supportsM: Boolean,
-    supportsZ: Boolean
-  ): FeatureLayerCapabilitiesData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isVersioned = isVersioned.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAttachment = supportsAttachment.asInstanceOf[js.Any], supportsM = supportsM.asInstanceOf[js.Any], supportsZ = supportsZ.asInstanceOf[js.Any])
+  inline def apply(isVersioned: Boolean, supportsAttachment: Boolean, supportsM: Boolean, supportsZ: Boolean): FeatureLayerCapabilitiesData = {
+    val __obj = js.Dynamic.literal(isVersioned = isVersioned.asInstanceOf[js.Any], supportsAttachment = supportsAttachment.asInstanceOf[js.Any], supportsM = supportsM.asInstanceOf[js.Any], supportsZ = supportsZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesData]
   }
   

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "google-cloud__storage"
-version := "6.7.0-cfddb6"
+version := "6.7.0-2f0c61"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "gaxios" % "5.0.2-5484cf",
-  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-0e45e5",
-  "org.scalablytyped" %%% "gtoken" % "6.1.2-8d49c3",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "teeny-request" % "8.0.2-f5b1a7")
+  "org.scalablytyped" %%% "gaxios" % "5.0.2-c90b6e",
+  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-8d869d",
+  "org.scalablytyped" %%% "gtoken" % "6.1.2-7ff90f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "teeny-request" % "8.0.2-2ce28a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

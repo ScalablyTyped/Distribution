@@ -63,6 +63,19 @@ object dxPopover {
     */
   type PopoverInstance = dxPopover[Properties]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Properties = devextreme.devextreme.DevExpress.ui.dxPopoverOptions<devextreme.devextreme.DevExpress.ui.dxPopover.PopoverInstance>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxPopover.ContentReadyEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopover.DisposingEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopover.HiddenEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopover.InitializedEvent
+  - devextreme.devextreme.DevExpress.ui.dxPopover.PopoverInstance
+  - devextreme.devextreme.DevExpress.ui.dxPopover.Properties
+  */
   trait Properties
     extends StObject
        with dxPopoverOptions[PopoverInstance]
@@ -86,6 +99,16 @@ object dxPopover {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ShownEvent = devextreme.devextreme.DevExpress.events.EventInfo<devextreme.devextreme.DevExpress.ui.dxPopover<devextreme.devextreme.DevExpress.ui.dxPopover.Properties>>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxPopover.PopoverInstance
+  - devextreme.devextreme.DevExpress.ui.dxPopover.Properties
+  - devextreme.devextreme.DevExpress.ui.dxPopover.ShownEvent
+  */
   trait ShownEvent
     extends StObject
        with EventInfo[dxPopover[Properties]]

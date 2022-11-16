@@ -65,8 +65,8 @@ trait IBaseProtocol[Ext] extends StObject {
   def multi[T](query: QueryParam, values: Any): js.Promise[js.Array[js.Array[T]]] = js.native
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#multiResult
-  def multiResult(query: QueryParam): js.Promise[js.Array[IResult]] = js.native
-  def multiResult(query: QueryParam, values: Any): js.Promise[js.Array[IResult]] = js.native
+  def multiResult(query: QueryParam): js.Promise[js.Array[IResult[Any]]] = js.native
+  def multiResult(query: QueryParam, values: Any): js.Promise[js.Array[IResult[Any]]] = js.native
   
   // result-specific methods;
   // API: http://vitaly-t.github.io/pg-promise/Database.html#none
@@ -112,11 +112,11 @@ trait IBaseProtocol[Ext] extends StObject {
   // API: http://vitaly-t.github.io/pg-promise/Database.html#result
   def result[T](query: QueryParam): js.Promise[T] = js.native
   def result[T](query: QueryParam, values: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt, T]): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt, T], thisArg: Any): js.Promise[T] = js.native
+  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[Any], T]): js.Promise[T] = js.native
+  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[Any], T], thisArg: Any): js.Promise[T] = js.native
   def result[T](query: QueryParam, values: Any, cb: Unit, thisArg: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt, T]): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt, T], thisArg: Any): js.Promise[T] = js.native
+  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[Any], T]): js.Promise[T] = js.native
+  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[Any], T], thisArg: Any): js.Promise[T] = js.native
   def result[T](query: QueryParam, values: Unit, cb: Unit, thisArg: Any): js.Promise[T] = js.native
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#stream

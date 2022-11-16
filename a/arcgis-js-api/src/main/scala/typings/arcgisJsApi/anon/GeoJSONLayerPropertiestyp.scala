@@ -47,6 +47,7 @@ import typings.arcgisJsApi.esri.GeoJSONLayerElevationInfo
 import typings.arcgisJsApi.esri.LabelClassProperties
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PopupTemplateProperties
+import typings.arcgisJsApi.esri.PortalItemProperties
 import typings.arcgisJsApi.esri.RendererProperties
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
 import typings.arcgisJsApi.esri.TimeExtentProperties
@@ -133,9 +134,11 @@ trait GeoJSONLayerPropertiestyp extends StObject {
   /**
     * Configures the method for reducing the number of point features in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#featureReduction)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | FeatureReductionSelection] = js.undefined
+  var featureReduction: js.UndefOr[
+    FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection
+  ] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -193,7 +196,7 @@ trait GeoJSONLayerPropertiestyp extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -266,6 +269,13 @@ trait GeoJSONLayerPropertiestyp extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupTemplate)
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  
+  /**
+    * The portal item referencing the geojson file from which the GeoJSONLayer is loaded.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#portalItem)
+    */
+  var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
     * Refresh interval of the layer in minutes.
@@ -417,7 +427,7 @@ object GeoJSONLayerPropertiestyp {
     
     inline def setFeatureEffectUndefined: Self = StObject.set(x, "featureEffect", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
@@ -492,6 +502,10 @@ object GeoJSONLayerPropertiestyp {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
     inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
     

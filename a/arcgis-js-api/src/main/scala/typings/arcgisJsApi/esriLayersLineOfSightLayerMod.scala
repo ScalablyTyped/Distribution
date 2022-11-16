@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.LineOfSightLayer
-import typings.arcgisJsApi.esri.LineOfSightLayerConstructor
 import typings.arcgisJsApi.esri.LineOfSightLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersLineOfSightLayerMod extends Shortcut {
+object esriLayersLineOfSightLayerMod {
   
-  @JSImport("esri/layers/LineOfSightLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & LineOfSightLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/LineOfSightLayer", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriLayersLineOfSightLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with LineOfSightLayer {
     def this(properties: LineOfSightLayerProperties) = this()
   }
-  
-  type _To = js.Object & LineOfSightLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersLineOfSightLayerMod.foo` */
-  override def _to: js.Object & LineOfSightLayerConstructor = ^
 }

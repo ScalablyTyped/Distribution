@@ -621,6 +621,10 @@ object mod {
   @js.native
   val faBandage: IconDefinition = js.native
   
+  @JSImport("@fortawesome/free-solid-svg-icons", "faBangladeshiTakaSign")
+  @js.native
+  val faBangladeshiTakaSign: IconDefinition = js.native
+  
   @JSImport("@fortawesome/free-solid-svg-icons", "faBank")
   @js.native
   val faBank: IconDefinition = js.native
@@ -1504,6 +1508,10 @@ object mod {
   @JSImport("@fortawesome/free-solid-svg-icons", "faChild")
   @js.native
   val faChild: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons", "faChildCombatant")
+  @js.native
+  val faChildCombatant: IconDefinition = js.native
   
   @JSImport("@fortawesome/free-solid-svg-icons", "faChildDress")
   @js.native
@@ -4760,6 +4768,10 @@ object mod {
   @JSImport("@fortawesome/free-solid-svg-icons", "faNotEqual")
   @js.native
   val faNotEqual: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons", "faNotdef")
+  @js.native
+  val faNotdef: IconDefinition = js.native
   
   @JSImport("@fortawesome/free-solid-svg-icons", "faNoteSticky")
   @js.native

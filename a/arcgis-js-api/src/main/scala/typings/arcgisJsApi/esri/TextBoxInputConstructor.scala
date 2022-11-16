@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextBoxInputConstructor
   extends StObject
-     with /**
-  * The `TextBoxInput` class defines the desired user interface as a single-line text box.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextBoxInput.html)
-  */
-Instantiable0[TextBoxInput]
+     with Instantiable0[TextBoxInput]
      with Instantiable1[/* properties */ TextBoxInputProperties, TextBoxInput] {
   
   def fromJSON(json: Any): TextBoxInput = js.native

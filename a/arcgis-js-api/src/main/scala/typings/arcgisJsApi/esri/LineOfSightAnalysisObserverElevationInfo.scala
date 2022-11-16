@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`absolute-height`
 import typings.arcgisJsApi.arcgisJsApiStrings.`on-the-ground`
 import typings.arcgisJsApi.arcgisJsApiStrings.`relative-to-ground`
 import typings.arcgisJsApi.arcgisJsApiStrings.`relative-to-scene`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineOfSightAnalysisObserverElevationInfo
-  extends StObject
-     with Object {
+trait LineOfSightAnalysisObserverElevationInfo extends StObject {
   
   /**
     * Defines how the observer is placed with respect to the terrain surface or 3D objects in the scene.
@@ -30,13 +26,8 @@ trait LineOfSightAnalysisObserverElevationInfo
 }
 object LineOfSightAnalysisObserverElevationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LineOfSightAnalysisObserverElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`): LineOfSightAnalysisObserverElevationInfo = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOfSightAnalysisObserverElevationInfo]
   }
   

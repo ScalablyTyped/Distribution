@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RampTitle
-  extends StObject
-     with Object {
+trait RampTitle extends StObject {
   
   /**
     * The field name used in a visual variable of a renderer.
@@ -48,16 +44,13 @@ trait RampTitle
 object RampTitle {
   
   inline def apply(
-    constructor: js.Function,
     field: String,
-    hasOwnProperty: PropertyKey => Boolean,
     normField: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     ratio: Boolean,
     ratioPercent: Boolean,
     ratioPercentTotal: Boolean
   ): RampTitle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), normField = normField.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ratio = ratio.asInstanceOf[js.Any], ratioPercent = ratioPercent.asInstanceOf[js.Any], ratioPercentTotal = ratioPercentTotal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], normField = normField.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any], ratioPercent = ratioPercent.asInstanceOf[js.Any], ratioPercentTotal = ratioPercentTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[RampTitle]
   }
   

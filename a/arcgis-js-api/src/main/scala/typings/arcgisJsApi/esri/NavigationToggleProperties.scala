@@ -27,7 +27,7 @@ trait NavigationToggleProperties
   var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
-    * A reference to the SceneView.
+    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#view)
     */

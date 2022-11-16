@@ -8,7 +8,7 @@ import typings.arcgisJsApi.esri.FillSymbol3DLayerProperties
 import typings.arcgisJsApi.esri.IconSymbol3DLayerProperties
 import typings.arcgisJsApi.esri.LineSymbol3DLayerProperties
 import typings.arcgisJsApi.esri.ObjectSymbol3DLayerProperties
-import typings.arcgisJsApi.esri.Symbol3DStyleOrigin
+import typings.arcgisJsApi.esri.StyleOriginProperties
 import typings.arcgisJsApi.esri.TextSymbol3DLayerProperties
 import typings.arcgisJsApi.esri.WaterSymbol3DLayerProperties
 import org.scalablytyped.runtime.StObject
@@ -32,7 +32,7 @@ trait PolygonSymbol3DPropertiesColor extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleOrigin: js.UndefOr[Symbol3DStyleOrigin] = js.undefined
+  var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
     * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
@@ -63,7 +63,7 @@ object PolygonSymbol3DPropertiesColor {
     
     inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
+    inline def setStyleOrigin(value: StyleOriginProperties): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     
     inline def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
     

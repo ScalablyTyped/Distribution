@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMPictureFill
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -99,14 +96,8 @@ trait CIMPictureFill
 }
 object CIMPictureFill {
   
-  inline def apply(
-    constructor: js.Function,
-    enable: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    url: String
-  ): CIMPictureFill = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), url = url.asInstanceOf[js.Any])
+  inline def apply(enable: Boolean, url: String): CIMPictureFill = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPictureFill")
     __obj.asInstanceOf[CIMPictureFill]
   }

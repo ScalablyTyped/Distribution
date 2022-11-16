@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchResourcesResult
-  extends StObject
-     with Object {
+trait FetchResourcesResult extends StObject {
   
   /**
     * The next entry index if the current result set doesn't contain all results.
@@ -33,15 +29,8 @@ trait FetchResourcesResult
 }
 object FetchResourcesResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    nextStart: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    resources: js.Array[FetchResource],
-    total: Double
-  ): FetchResourcesResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), nextStart = nextStart.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resources = resources.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+  inline def apply(nextStart: Double, resources: js.Array[FetchResource], total: Double): FetchResourcesResult = {
+    val __obj = js.Dynamic.literal(nextStart = nextStart.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchResourcesResult]
   }
   

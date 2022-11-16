@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomTemplateLayoutOptions
-  extends StObject
-     with Object {
+trait CustomTemplateLayoutOptions extends StObject {
   
   /**
     * Indicates whether the legend will be included in the print-out.
@@ -19,12 +15,8 @@ trait CustomTemplateLayoutOptions
 }
 object CustomTemplateLayoutOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CustomTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): CustomTemplateLayoutOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomTemplateLayoutOptions]
   }
   

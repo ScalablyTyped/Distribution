@@ -4,6 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ColorSpace = canvaskit-wasm.canvaskit-wasm.EmbindObject<canvaskit-wasm.canvaskit-wasm.ColorSpace>
+}}}
+to avoid circular code involving: 
+- canvaskit-wasm.canvaskit-wasm.ColorSpace
+*/
 trait ColorSpace
   extends StObject
      with EmbindObject[ColorSpace]

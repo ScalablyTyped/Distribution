@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.RasterColormapRenderer
-import typings.arcgisJsApi.esri.RasterColormapRendererConstructor
 import typings.arcgisJsApi.esri.RasterColormapRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersRasterColormapRendererMod extends Shortcut {
+/* static members */
+object esriRenderersRasterColormapRendererMod {
   
-  @JSImport("esri/renderers/RasterColormapRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RasterColormapRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/RasterColormapRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersRasterColormapRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with RasterColormapRenderer {
     def this(properties: RasterColormapRendererProperties) = this()
@@ -35,9 +29,16 @@ object esriRenderersRasterColormapRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/RasterColormapRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RasterColormapRendererConstructor
+  /**
+    * Creates a new instance [RasterColormapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html) from an array of color maps where pixel values with its corresponding RGB color values specified.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#createFromColormap)
+    */
+  inline def createFromColormap(colormap: js.Array[js.Array[Double]]): RasterColormapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromColormap")(colormap.asInstanceOf[js.Any]).asInstanceOf[RasterColormapRenderer]
   
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersRasterColormapRendererMod.foo` */
-  override def _to: js.Object & RasterColormapRendererConstructor = ^
+  inline def fromJSON(json: Any): RasterColormapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[RasterColormapRenderer]
 }

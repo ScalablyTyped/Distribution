@@ -3,6 +3,7 @@ package typings.typeFest
 import typings.std.PropertyKey
 import typings.std.Record
 import typings.typeFest.sourcePrimitiveMod.Primitive
+import typings.typeFest.typeFestBooleans.`true`
 import typings.typeFest.typeFestStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +13,12 @@ object sourceInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TArray extends [unknown, ...infer TTail] ? TTail : []
     }}}
     */
-  @js.native
-  trait ArrayTail[TArray /* <: UnknownArrayOrTuple */] extends StObject
+  type ArrayTail[TArray /* <: UnknownArrayOrTuple */] = js.Array[Any]
   
   /**
   Create a tuple type of the given length `<L>`.
@@ -26,19 +26,18 @@ object sourceInternalMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends { readonly length :L} ? T : type-fest.type-fest/source/internal.BuildTuple<L, [...T, unknown]>
     }}}
     */
-  @js.native
-  trait BuildTuple[L /* <: Double */, T /* <: js.Array[Any] */] extends StObject
+  type BuildTuple[L /* <: Double */, T /* <: js.Array[Any] */] = T
   
   type BuiltIns = Primitive | js.Date | js.RegExp
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     TArray extends [infer THead, ...std.Array<unknown>] ? THead : never
     }}}
@@ -48,33 +47,30 @@ object sourceInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     FirstType extends BaseType ? SecondType extends BaseType ? true : false : false
     }}}
     */
-  @js.native
-  trait IsBothExtends[BaseType, FirstType, SecondType] extends StObject
+  type IsBothExtends[BaseType, FirstType, SecondType] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     <G>(): G extends T ? 1 : 2 extends <G>(): G extends U ? 1 : 2 ? true : false
     }}}
     */
-  @js.native
-  trait IsEqual[T, U] extends StObject
+  type IsEqual[T, U] = `true`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends T ? keyof T : never
     }}}
     */
-  @js.native
-  trait KeysOfUnion[T] extends StObject
+  type KeysOfUnion[T] = /* keyof T */ String
   
   type NonEmptyTuple = Array[Any]
   
@@ -116,7 +112,7 @@ object sourceInternalMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     type-fest.type-fest/source/internal.BuildTuple<A, []> extends [...infer U, ...type-fest.type-fest/source/internal.BuildTuple<B, []>] ? type-fest.type-fest/source/internal.TupleLength<U> : never
     }}}
@@ -130,7 +126,7 @@ object sourceInternalMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends { readonly length :infer L} ? L : never
     }}}

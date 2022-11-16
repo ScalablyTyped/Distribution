@@ -15,7 +15,6 @@ import typings.reactSelect.distDeclarationsSrcTypesMod.CommonPropsAndClassName
 import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPlacement
 import typings.reactSelect.distDeclarationsSrcTypesMod.MenuPosition
-import typings.reactSelect.distDeclarationsSrcTypesMod.Theme
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -248,6 +247,8 @@ object distDeclarationsSrcComponentsMenuMod {
   
   trait PlacementArgs extends StObject {
     
+    var controlHeight: Double
+    
     var isFixedPosition: Boolean
     
     var maxHeight: Double
@@ -259,24 +260,24 @@ object distDeclarationsSrcComponentsMenuMod {
     var placement: MenuPlacement
     
     var shouldScroll: Boolean
-    
-    var theme: Theme
   }
   object PlacementArgs {
     
     inline def apply(
+      controlHeight: Double,
       isFixedPosition: Boolean,
       maxHeight: Double,
       minHeight: Double,
       placement: MenuPlacement,
-      shouldScroll: Boolean,
-      theme: Theme
+      shouldScroll: Boolean
     ): PlacementArgs = {
-      val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], menuEl = null)
+      val __obj = js.Dynamic.literal(controlHeight = controlHeight.asInstanceOf[js.Any], isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any], menuEl = null)
       __obj.asInstanceOf[PlacementArgs]
     }
     
     extension [Self <: PlacementArgs](x: Self) {
+      
+      inline def setControlHeight(value: Double): Self = StObject.set(x, "controlHeight", value.asInstanceOf[js.Any])
       
       inline def setIsFixedPosition(value: Boolean): Self = StObject.set(x, "isFixedPosition", value.asInstanceOf[js.Any])
       
@@ -291,8 +292,6 @@ object distDeclarationsSrcComponentsMenuMod {
       inline def setPlacement(value: MenuPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setShouldScroll(value: Boolean): Self = StObject.set(x, "shouldScroll", value.asInstanceOf[js.Any])
-      
-      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

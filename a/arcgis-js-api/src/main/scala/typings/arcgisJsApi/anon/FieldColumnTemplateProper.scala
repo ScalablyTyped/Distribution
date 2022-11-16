@@ -21,7 +21,7 @@ trait FieldColumnTemplateProper extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#direction)
     */
-  var direction: js.UndefOr[asc_ | desc_ | Any] = js.undefined
+  var direction: js.UndefOr[asc_ | desc_ | Null] = js.undefined
   
   /**
     * The [coded value domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or a [range domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) of the associated field.
@@ -115,7 +115,9 @@ object FieldColumnTemplateProper {
   
   extension [Self <: FieldColumnTemplateProper](x: Self) {
     
-    inline def setDirection(value: asc_ | desc_ | Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc_ | desc_): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_streetviewpublish-v1"
-version := "0.0-dt-20220912Z-9b8800"
+version := "0.0-dt-20220912Z-a2c4ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,6 +13,7 @@ import typings.rollup.anon.Format
 import typings.rollup.anon.Handler
 import typings.rollup.anon.PartialSourceDescription
 import typings.rollup.mod.^
+import typings.rollup.rollupBooleans.`false`
 import typings.rollup.rollupStrings.`no-external`
 import typings.std.Parameters
 import typings.std.Record
@@ -65,6 +66,16 @@ type HasModuleSideEffects = js.Function2[/* id */ String, /* external */ Boolean
 
 type InputOption = String | js.Array[String] | StringDictionary[String]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type InputPluginOption = rollup.rollup.MaybePromise<rollup.rollup.Plugin | rollup.rollup.NullValue | false | std.Array<rollup.rollup.InputPluginOption>>
+}}}
+to avoid circular code involving: 
+- rollup.rollup.InputPluginOption
+*/
+type InputPluginOption = MaybePromise[Plugin | NullValue | `false` | js.Array[Any]]
+
 type IsExternal = js.Function3[
 /* source */ String, 
 /* importer */ js.UndefOr[String], 
@@ -81,6 +92,15 @@ type ManualChunksOption = StringDictionary[js.Array[String]] | GetManualChunk
 
 type MaybeArray[T] = T | js.Array[T]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type MaybePromise = T | std.Promise<T>
+}}}
+to avoid circular code involving: 
+- rollup.rollup.InputPluginOption
+- rollup.rollup.MaybePromise
+*/
 type MaybePromise[T] = T | js.Promise[T]
 
 type ModuleParsedHook = js.ThisFunction1[/* this */ PluginContext, /* info */ ModuleInfo, Unit]
@@ -96,6 +116,17 @@ type ObjectHook[T, O] = T | (Handler[T] & O)
 type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, String])
 
 type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
+
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type OutputPluginOption = rollup.rollup.MaybePromise<rollup.rollup.OutputPlugin | rollup.rollup.NullValue | false | std.Array<rollup.rollup.OutputPluginOption>>
+}}}
+to avoid circular code involving: 
+- rollup.rollup.MaybePromise
+- rollup.rollup.OutputPluginOption
+*/
+type OutputPluginOption = Any
 
 type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
 

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapNotesLayerCapabilities
-  extends StObject
-     with Object {
+trait MapNotesLayerCapabilities extends StObject {
   
   /**
     * Describes operations that can be performed on map notes in the layer.
@@ -19,13 +15,8 @@ trait MapNotesLayerCapabilities
 }
 object MapNotesLayerCapabilities {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    operations: MapNotesLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MapNotesLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(operations: MapNotesLayerCapabilitiesOperations): MapNotesLayerCapabilities = {
+    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapNotesLayerCapabilities]
   }
   

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapSaveOptions
-  extends StObject
-     with Object {
+trait WebMapSaveOptions extends StObject {
   
   /**
     * When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols).
@@ -19,12 +15,8 @@ trait WebMapSaveOptions
 }
 object WebMapSaveOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WebMapSaveOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): WebMapSaveOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebMapSaveOptions]
   }
   

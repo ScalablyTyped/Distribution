@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-lambda"
-version := "1.0-dt-20221102Z-c91496"
+version := "1.0-dt-20221102Z-02f9ff"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.ImageData
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewScreenshot
-  extends StObject
-     with Object {
+trait SceneViewScreenshot extends StObject {
   
   /**
     * The raw RGBA image data.
@@ -27,14 +23,8 @@ trait SceneViewScreenshot
 }
 object SceneViewScreenshot {
   
-  inline def apply(
-    constructor: js.Function,
-    data: ImageData,
-    dataUrl: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneViewScreenshot = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dataUrl = dataUrl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(data: ImageData, dataUrl: String): SceneViewScreenshot = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataUrl = dataUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewScreenshot]
   }
   

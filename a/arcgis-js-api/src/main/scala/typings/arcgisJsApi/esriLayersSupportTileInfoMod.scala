@@ -1,20 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TileInfo
-import typings.arcgisJsApi.esri.TileInfoConstructor
+import typings.arcgisJsApi.esri.TileInfoCreateOptions
 import typings.arcgisJsApi.esri.TileInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportTileInfoMod extends Shortcut {
+/* static members */
+object esriLayersSupportTileInfoMod {
   
-  @JSImport("esri/layers/support/TileInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TileInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/TileInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +17,7 @@ object esriLayersSupportTileInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TileInfo {
     def this(properties: TileInfoProperties) = this()
@@ -35,9 +30,17 @@ object esriLayersSupportTileInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/TileInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TileInfoConstructor
+  /**
+    * A convenience method used to create a new TileInfo instance with preset properties like [LODs](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
+    */
+  inline def create(): TileInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TileInfo]
+  inline def create(options: TileInfoCreateOptions): TileInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[TileInfo]
   
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportTileInfoMod.foo` */
-  override def _to: js.Object & TileInfoConstructor = ^
+  inline def fromJSON(json: Any): TileInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TileInfo]
 }

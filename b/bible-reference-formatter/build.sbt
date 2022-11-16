@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bible-reference-formatter"
-version := "1.0-dt-20211202Z-f063e1"
+version := "1.0-dt-20211202Z-2908c0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

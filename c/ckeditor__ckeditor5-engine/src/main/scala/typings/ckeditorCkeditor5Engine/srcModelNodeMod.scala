@@ -109,6 +109,14 @@ object srcModelNodeMod {
     def toJSON(): Record[String, String | Double | Boolean] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NodeSet = @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/node.Node | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/textproxy.default | string | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/nodelist.default | @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/documentfragment.default | std.Iterable<@ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/node.NodeSet>
+  }}}
+  to avoid circular code involving: 
+  - @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/node.NodeSet
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.ckeditorCkeditor5Engine.srcModelNodeMod.Node
     - typings.ckeditorCkeditor5Engine.srcModelTextproxyMod.default

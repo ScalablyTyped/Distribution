@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hsl-to-rgb-for-reals"
-version := "1.1-dt-20221005Z-36e9b9"
+version := "1.1-dt-20221005Z-c5ad32"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

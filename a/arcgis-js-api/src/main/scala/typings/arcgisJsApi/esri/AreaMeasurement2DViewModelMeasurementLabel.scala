@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AreaMeasurement2DViewModelMeasurementLabel
-  extends StObject
-     with Object {
+trait AreaMeasurement2DViewModelMeasurementLabel extends StObject {
   
   /**
     * The area (m²).
@@ -26,14 +22,8 @@ trait AreaMeasurement2DViewModelMeasurementLabel
 }
 object AreaMeasurement2DViewModelMeasurementLabel {
   
-  inline def apply(
-    area: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    perimeter: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AreaMeasurement2DViewModelMeasurementLabel = {
-    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), perimeter = perimeter.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(area: Double, perimeter: Double): AreaMeasurement2DViewModelMeasurementLabel = {
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], perimeter = perimeter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurementLabel]
   }
   

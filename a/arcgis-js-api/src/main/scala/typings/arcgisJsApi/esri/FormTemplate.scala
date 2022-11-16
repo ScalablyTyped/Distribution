@@ -32,7 +32,14 @@ trait FormTemplate
   var expressionInfos: js.Array[ExpressionInfo] = js.native
   
   /**
-    * The string template for defining how to format the title used in a popup.
+    * Indicates whether to retain or clear a [form's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) [field element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#preserveFieldValuesWhenHidden)
+    */
+  var preserveFieldValuesWhenHidden: Boolean = js.native
+  
+  /**
+    * The string template for defining how to format the title displayed at the top of a form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#title)
     */

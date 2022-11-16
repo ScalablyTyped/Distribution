@@ -57,6 +57,8 @@ object ScriptElementKind extends StObject {
   
   /* "local var" */ val localVariableElement: typings.typescript.mod.ScriptElementKind.localVariableElement & String = js.native
   
+  /* "accessor" */ val memberAccessorVariableElement: typings.typescript.mod.ScriptElementKind.memberAccessorVariableElement & String = js.native
+  
   /* "method" */ val memberFunctionElement: typings.typescript.mod.ScriptElementKind.memberFunctionElement & String = js.native
   
   /* "getter" */ val memberGetAccessorElement: typings.typescript.mod.ScriptElementKind.memberGetAccessorElement & String = js.native

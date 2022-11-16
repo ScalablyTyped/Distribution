@@ -228,10 +228,30 @@ object mod extends Shortcut {
   @js.native
   trait JsonObject extends StObject
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = string | number | boolean | null | codecs.codecs.JsonObject | codecs.codecs.JsonArray
+  }}}
+  to avoid circular code involving: 
+  - codecs.codecs.JsonArray
+  - codecs.codecs.JsonCodec
+  - codecs.codecs.JsonValue
+  */
   type JsonValue = String | Double | Boolean | Null | JsonObject | Any
   
   type MaybeCodecInput = js.UndefOr[CodecInput | String | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NDJsonCodec = codecs.codecs.NamedCodec<'ndjson', any, codecs.codecs.JsonValue>
+  }}}
+  to avoid circular code involving: 
+  - codecs.codecs.JsonArray
+  - codecs.codecs.JsonValue
+  - codecs.codecs.NDJsonCodec
+  */
   trait NDJsonCodec
     extends StObject
        with NamedCodec[ndjson, Any, JsonValue]

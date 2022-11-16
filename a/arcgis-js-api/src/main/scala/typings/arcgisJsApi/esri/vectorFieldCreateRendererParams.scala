@@ -16,15 +16,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`wind-barb`
 import typings.arcgisJsApi.arcgisJsApiStrings.arithmetic
 import typings.arcgisJsApi.arcgisJsApiStrings.geographic
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait vectorFieldCreateRendererParams
-  extends StObject
-     with Object {
+trait vectorFieldCreateRendererParams extends StObject {
   
   /**
     * Defines the flow direction of the data.
@@ -72,13 +68,8 @@ trait vectorFieldCreateRendererParams
 }
 object vectorFieldCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): vectorFieldCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer): vectorFieldCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[vectorFieldCreateRendererParams]
   }
   

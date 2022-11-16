@@ -4,8 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`label-3d`
 import typings.arcgisJsApi.esri.Callout3DProperties
 import typings.arcgisJsApi.esri.CollectionProperties
 import typings.arcgisJsApi.esri.Color_
-import typings.arcgisJsApi.esri.LabelSymbol3DVerticalOffsetProperties
-import typings.arcgisJsApi.esri.Symbol3DStyleOrigin
+import typings.arcgisJsApi.esri.StyleOriginProperties
+import typings.arcgisJsApi.esri.Symbol3DVerticalOffsetProperties
 import typings.arcgisJsApi.esri.TextSymbol3DLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +35,7 @@ trait LabelSymbol3DPropertiesty extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleOrigin: js.UndefOr[Symbol3DStyleOrigin] = js.undefined
+  var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
     * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
@@ -51,7 +51,7 @@ trait LabelSymbol3DPropertiesty extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
-  var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.undefined
+  var verticalOffset: js.UndefOr[Symbol3DVerticalOffsetProperties] = js.undefined
 }
 object LabelSymbol3DPropertiesty {
   
@@ -73,7 +73,7 @@ object LabelSymbol3DPropertiesty {
     
     inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
+    inline def setStyleOrigin(value: StyleOriginProperties): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     
     inline def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
     
@@ -85,7 +85,7 @@ object LabelSymbol3DPropertiesty {
     
     inline def setType(value: `label-3d`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setVerticalOffset(value: LabelSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: Symbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
     inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
   }

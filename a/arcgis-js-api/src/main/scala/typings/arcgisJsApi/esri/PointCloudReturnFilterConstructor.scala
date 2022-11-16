@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudReturnFilterConstructor
   extends StObject
-     with /**
-  * Laser pulses emitted from a lidar system can have several returns depending on the surfaces that they encounter.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html)
-  */
-Instantiable0[PointCloudReturnFilter]
+     with Instantiable0[PointCloudReturnFilter]
      with Instantiable1[/* properties */ PointCloudReturnFilterProperties, PointCloudReturnFilter] {
   
   def fromJSON(json: Any): PointCloudReturnFilter = js.native

@@ -183,7 +183,7 @@ object mod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     2 extends std.ConstructorParameters<std.ErrorConstructor>['length'] ? std.ConstructorParameters<std.ErrorConstructor> extends [message: string | undefined, options: infer O | undefined] ? std.NonNullable<O> : never : never
     }}}

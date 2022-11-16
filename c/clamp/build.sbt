@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clamp"
-version := "1.0-dt-20211223Z-1afce7"
+version := "1.0-dt-20211223Z-71fe76"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

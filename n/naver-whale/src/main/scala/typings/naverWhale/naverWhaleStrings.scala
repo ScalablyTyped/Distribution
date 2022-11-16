@@ -148,6 +148,10 @@ object naverWhaleStrings {
   inline def browsingData: browsingData = "browsingData".asInstanceOf[browsingData]
   
   @js.native
+  sealed trait cached extends StObject
+  inline def cached: cached = "cached".asInstanceOf[cached]
+  
+  @js.native
   sealed trait cancelled extends StObject
   inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
@@ -338,6 +342,10 @@ object naverWhaleStrings {
   @js.native
   sealed trait fantasy extends StObject
   inline def fantasy: fantasy = "fantasy".asInstanceOf[fantasy]
+  
+  @js.native
+  sealed trait fenced_frame extends StObject
+  inline def fenced_frame: fenced_frame = "fenced_frame".asInstanceOf[fenced_frame]
   
   @js.native
   sealed trait fileBrowserHandler
@@ -627,6 +635,10 @@ object naverWhaleStrings {
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
+  sealed trait outermost_frame extends StObject
+  inline def outermost_frame: outermost_frame = "outermost_frame".asInstanceOf[outermost_frame]
+  
+  @js.native
   sealed trait page
     extends StObject
        with ContextType
@@ -656,6 +668,10 @@ object naverWhaleStrings {
   inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
+  sealed trait pending_deletion extends StObject
+  inline def pending_deletion: pending_deletion = "pending_deletion".asInstanceOf[pending_deletion]
+  
+  @js.native
   sealed trait ping
     extends StObject
        with ResourceType
@@ -679,6 +695,10 @@ object naverWhaleStrings {
     extends StObject
        with ManifestPermissions
   inline def power: power = "power".asInstanceOf[power]
+  
+  @js.native
+  sealed trait prerender extends StObject
+  inline def prerender: prerender = "prerender".asInstanceOf[prerender]
   
   @js.native
   sealed trait printerProvider

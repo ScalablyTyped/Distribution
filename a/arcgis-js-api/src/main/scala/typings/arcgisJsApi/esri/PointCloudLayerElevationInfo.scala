@@ -6,15 +6,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudLayerElevationInfo
-  extends StObject
-     with Object {
+trait PointCloudLayerElevationInfo extends StObject {
   
   /**
     * Defines how the points are placed on the vertical axis (z).
@@ -41,13 +37,8 @@ trait PointCloudLayerElevationInfo
 }
 object PointCloudLayerElevationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PointCloudLayerElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(mode: String): PointCloudLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudLayerElevationInfo]
   }
   

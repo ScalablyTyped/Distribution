@@ -62,13 +62,37 @@ object buildSrcSpecMod {
   
   inline def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GenericSpec = U | L | R | vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<U, L, F> | vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F>> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F>> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<vega-lite.vega-lite/build/src/spec.GenericSpec<U, L, R, F>>
+  }}}
+  to avoid circular code involving: 
+  - vega-lite.vega-lite/build/src/spec.GenericSpec
+  */
   type GenericSpec[U /* <: GenericUnitSpec[Encoding[F], Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[U] */, R /* <: RepeatSpec */, F /* <: Field */] = U | L | R | (GenericFacetSpec[U, L, F]) | GenericConcatSpec[Any] | GenericVConcatSpec[Any] | GenericHConcatSpec[Any]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<vega-lite.vega-lite/build/src/channeldef.Field, vega-lite.vega-lite/build/src/selection.SelectionParameter<vega-lite.vega-lite/build/src/selection.SelectionType>> | vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field> | vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec | vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<vega-lite.vega-lite/build/src/channeldef.Field, vega-lite.vega-lite/build/src/selection.SelectionParameter<vega-lite.vega-lite/build/src/selection.SelectionType>>, vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/channeldef.Field> | vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ trait NonNormalizedSpec extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NonNormalizedSpec = vega-lite.vega-lite/build/src/spec.GenericSpec<vega-lite.vega-lite/build/src/spec/unit.FacetedUnitSpec<vega-lite.vega-lite/build/src/channeldef.Field, vega-lite.vega-lite/build/src/selection.SelectionParameter<vega-lite.vega-lite/build/src/selection.SelectionType>>, vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec, vega-lite.vega-lite/build/src/channeldef.Field>
+  }}}
+  to avoid circular code involving: 
+  - vega-lite.vega-lite/build/src/spec.GenericSpec
+  - vega-lite.vega-lite/build/src/spec.NonNormalizedSpec
+  */
+  type NonNormalizedSpec = Any
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped vega-lite.vega-lite/build/src/spec/unit.NormalizedUnitSpec | vega-lite.vega-lite/build/src/spec/layer.NormalizedLayerSpec | never | vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.NormalizedUnitSpec, vega-lite.vega-lite/build/src/spec/layer.NormalizedLayerSpec, vega-lite.vega-lite/build/src/channeldef.FieldName> | vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ trait NormalizedSpec extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NormalizedSpec = vega-lite.vega-lite/build/src/spec.GenericSpec<vega-lite.vega-lite/build/src/spec/unit.NormalizedUnitSpec, vega-lite.vega-lite/build/src/spec/layer.NormalizedLayerSpec, never, vega-lite.vega-lite/build/src/channeldef.FieldName>
+  }}}
+  to avoid circular code involving: 
+  - vega-lite.vega-lite/build/src/spec.GenericSpec
+  - vega-lite.vega-lite/build/src/spec.NormalizedSpec
+  */
+  type NormalizedSpec = Any
   
   /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/facet.GenericFacetSpec<vega-lite.vega-lite/build/src/spec/unit.UnitSpecWithFrame<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/spec/layer.LayerSpec<vega-lite.vega-lite/build/src/channeldef.Field>, vega-lite.vega-lite/build/src/channeldef.Field>> & vega-lite.vega-lite/build/src/spec/base.DataMixins */
   trait TopLevelFacetSpec

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pinyin4js"
-version := "1.3-dt-20220829Z-b349a5"
+version := "1.3-dt-20220829Z-4aa159"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

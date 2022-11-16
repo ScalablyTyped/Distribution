@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_policytroubleshooter"
-version := "1.0-dt-20220912Z-2193ad"
+version := "1.0-dt-20220912Z-8f71a1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

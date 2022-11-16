@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-ini
 
-Typings are for version 3.209.0
+Typings are for version 3.211.0
 
 ## Library description:
 AWS credential provider that sources credentials from ~/.aws/credentials and ~/.aws/config

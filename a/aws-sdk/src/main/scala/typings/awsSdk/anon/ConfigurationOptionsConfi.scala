@@ -782,6 +782,8 @@ trait ConfigurationOptionsConfi
   
   var ssmincidents: js.UndefOr[typings.awsSdk.clientsSsmincidentsMod.ClientConfiguration] = js.undefined
   
+  var ssmsap: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ClientConfiguration] = js.undefined
+  
   var sso: js.UndefOr[typings.awsSdk.clientsSsoMod.ClientConfiguration] = js.undefined
   
   var ssoadmin: js.UndefOr[typings.awsSdk.clientsSsoadminMod.ClientConfiguration] = js.undefined
@@ -2175,6 +2177,10 @@ object ConfigurationOptionsConfi {
     inline def setSsmincidents(value: typings.awsSdk.clientsSsmincidentsMod.ClientConfiguration): Self = StObject.set(x, "ssmincidents", value.asInstanceOf[js.Any])
     
     inline def setSsmincidentsUndefined: Self = StObject.set(x, "ssmincidents", js.undefined)
+    
+    inline def setSsmsap(value: typings.awsSdk.clientsSsmsapMod.ClientConfiguration): Self = StObject.set(x, "ssmsap", value.asInstanceOf[js.Any])
+    
+    inline def setSsmsapUndefined: Self = StObject.set(x, "ssmsap", js.undefined)
     
     inline def setSso(value: typings.awsSdk.clientsSsoMod.ClientConfiguration): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
     

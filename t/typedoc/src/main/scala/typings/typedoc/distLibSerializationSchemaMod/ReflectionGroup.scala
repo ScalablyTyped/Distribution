@@ -21,13 +21,8 @@ trait ReflectionGroup extends StObject {
 }
 object ReflectionGroup {
   
-  inline def apply(
-    categories: ToSerialized[
-      js.UndefOr[js.Array[typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory]]
-    ],
-    title: ToSerialized[String]
-  ): ReflectionGroup = {
-    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(title: ToSerialized[String]): ReflectionGroup = {
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionGroup]
   }
   
@@ -38,6 +33,10 @@ object ReflectionGroup {
           js.UndefOr[js.Array[typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory]]
         ]
     ): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setChildren(
       value: js.Array[

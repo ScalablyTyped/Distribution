@@ -10,15 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONLayerElevationInfo
-  extends StObject
-     with Object {
+trait GeoJSONLayerElevationInfo extends StObject {
   
   /**
     * Defines how to override a feature's Z-value based on its attributes.
@@ -50,13 +46,8 @@ trait GeoJSONLayerElevationInfo
 }
 object GeoJSONLayerElevationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GeoJSONLayerElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`): GeoJSONLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerElevationInfo]
   }
   

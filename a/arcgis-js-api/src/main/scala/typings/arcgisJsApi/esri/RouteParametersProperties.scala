@@ -82,7 +82,11 @@ trait RouteParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var accumulateAttributes: js.UndefOr[
+    js.Array[
+      kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+    ]
+  ] = js.undefined
   
   /**
     * An authorization string used to access a resource or service.
@@ -96,7 +100,7 @@ trait RouteParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[js.Array[AttributeParameterValue]] = js.undefined
+  var attributeParameterValues: js.UndefOr[js.Array[RouteParametersAttributeParameterValue]] = js.undefined
   
   /**
     * The language that will be used when generating travel directions.
@@ -436,21 +440,27 @@ object RouteParametersProperties {
   
   extension [Self <: RouteParametersProperties](x: Self) {
     
-    inline def setAccumulateAttributes(value: js.Array[String]): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
+    inline def setAccumulateAttributes(
+      value: js.Array[
+          kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+        ]
+    ): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
     
     inline def setAccumulateAttributesUndefined: Self = StObject.set(x, "accumulateAttributes", js.undefined)
     
-    inline def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value*))
+    inline def setAccumulateAttributesVarargs(
+      value: (kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String)*
+    ): Self = StObject.set(x, "accumulateAttributes", js.Array(value*))
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
-    inline def setAttributeParameterValues(value: js.Array[AttributeParameterValue]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
+    inline def setAttributeParameterValues(value: js.Array[RouteParametersAttributeParameterValue]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     
     inline def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)
     
-    inline def setAttributeParameterValuesVarargs(value: AttributeParameterValue*): Self = StObject.set(x, "attributeParameterValues", js.Array(value*))
+    inline def setAttributeParameterValuesVarargs(value: RouteParametersAttributeParameterValue*): Self = StObject.set(x, "attributeParameterValues", js.Array(value*))
     
     inline def setDirectionsLanguage(value: String): Self = StObject.set(x, "directionsLanguage", value.asInstanceOf[js.Any])
     

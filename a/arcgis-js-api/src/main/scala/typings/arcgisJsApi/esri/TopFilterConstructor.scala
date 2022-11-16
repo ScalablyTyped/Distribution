@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TopFilterConstructor
   extends StObject
-     with /**
-  * This class defines the top filter parameters for executing top features queries for features from a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html)
-  */
-Instantiable0[TopFilter]
+     with Instantiable0[TopFilter]
      with Instantiable1[/* properties */ TopFilterProperties, TopFilter] {
   
   def fromJSON(json: Any): TopFilter = js.native

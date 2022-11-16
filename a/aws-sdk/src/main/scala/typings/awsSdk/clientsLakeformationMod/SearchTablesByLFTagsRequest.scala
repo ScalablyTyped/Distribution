@@ -19,7 +19,7 @@ trait SearchTablesByLFTagsRequest extends StObject {
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.undefined
+  var MaxResults: js.UndefOr[SearchPageSize] = js.undefined
   
   /**
     * A continuation token, if this is not the first call to retrieve this list.
@@ -43,7 +43,7 @@ object SearchTablesByLFTagsRequest {
     
     inline def setExpressionVarargs(value: LFTag*): Self = StObject.set(x, "Expression", js.Array(value*))
     
-    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: SearchPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

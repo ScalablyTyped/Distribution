@@ -29,6 +29,7 @@ import typings.std.IDBFactory
 import typings.std.IdleRequestCallback
 import typings.std.ImageBitmap
 import typings.std.ImageBitmapSource
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.Location
 import typings.std.MediaQueryList
@@ -239,11 +240,15 @@ object distEsm2017SrcPlatformBrowserAuthWindowMod {
     
     var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
     
+    var onbeforeinput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null] = js.undefined
+    
     var onbeforeprint: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
     var onbeforeunload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]) | Null] = js.undefined
     
     var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.undefined
+    
+    var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
     var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
@@ -840,6 +845,12 @@ object distEsm2017SrcPlatformBrowserAuthWindowMod {
       
       inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
       
+      inline def setOnbeforeinput(value: js.ThisFunction1[AuthWindow, /* ev */ InputEvent, Any]): Self = StObject.set(x, "onbeforeinput", value.asInstanceOf[js.Any])
+      
+      inline def setOnbeforeinputNull: Self = StObject.set(x, "onbeforeinput", null)
+      
+      inline def setOnbeforeinputUndefined: Self = StObject.set(x, "onbeforeinput", js.undefined)
+      
       inline def setOnbeforeprint(value: js.ThisFunction1[AuthWindow, /* ev */ Event, Any]): Self = StObject.set(x, "onbeforeprint", value.asInstanceOf[js.Any])
       
       inline def setOnbeforeprintNull: Self = StObject.set(x, "onbeforeprint", null)
@@ -857,6 +868,12 @@ object distEsm2017SrcPlatformBrowserAuthWindowMod {
       inline def setOnblurNull: Self = StObject.set(x, "onblur", null)
       
       inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
+      
+      inline def setOncancel(value: js.ThisFunction1[AuthWindow, /* ev */ Event, Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+      
+      inline def setOncancelNull: Self = StObject.set(x, "oncancel", null)
+      
+      inline def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
       
       inline def setOncanplay(value: js.ThisFunction1[AuthWindow, /* ev */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
       

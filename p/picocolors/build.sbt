@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "picocolors"
-version := "1.0.0-a3c914"
+version := "1.0.0-8d7927"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

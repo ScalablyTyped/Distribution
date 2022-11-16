@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intercept-stdout"
-version := "0.1-dt-20211202Z-cb1e5c"
+version := "0.1-dt-20211202Z-ba634e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

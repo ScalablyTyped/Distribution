@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-valid-zipcode"
-version := "1.0-dt-20211202Z-797877"
+version := "1.0-dt-20211202Z-06be15"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

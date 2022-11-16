@@ -6,15 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.FullPattern
 import typings.arcgisJsApi.arcgisJsApiStrings.HalfGap
 import typings.arcgisJsApi.arcgisJsApiStrings.HalfPattern
 import typings.arcgisJsApi.arcgisJsApiStrings.NoConstraint
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectDashes
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -57,14 +54,11 @@ trait CIMGeometricEffectDashes
 object CIMGeometricEffectDashes {
   
   inline def apply(
-    constructor: js.Function,
     dashTemplate: js.Array[Double],
-    hasOwnProperty: PropertyKey => Boolean,
     lineDashEnding: NoConstraint | HalfPattern | HalfGap | FullPattern | FullGap | Custom,
-    offsetAlongLine: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
+    offsetAlongLine: Double
   ): CIMGeometricEffectDashes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dashTemplate = dashTemplate.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lineDashEnding = lineDashEnding.asInstanceOf[js.Any], offsetAlongLine = offsetAlongLine.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(dashTemplate = dashTemplate.asInstanceOf[js.Any], lineDashEnding = lineDashEnding.asInstanceOf[js.Any], offsetAlongLine = offsetAlongLine.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectDashes")
     __obj.asInstanceOf[CIMGeometricEffectDashes]
   }

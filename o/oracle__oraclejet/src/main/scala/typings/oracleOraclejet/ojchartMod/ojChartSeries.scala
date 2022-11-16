@@ -30,6 +30,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.borderWidth
 import typings.oracleOraclejet.oracleOraclejetStrings.borderWidthChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.boxPlot
 import typings.oracleOraclejet.oracleOraclejetStrings.boxPlotChanged
+import typings.oracleOraclejet.oracleOraclejetStrings.cancel
 import typings.oracleOraclejet.oracleOraclejetStrings.candlestick
 import typings.oracleOraclejet.oracleOraclejetStrings.canplay
 import typings.oracleOraclejet.oracleOraclejetStrings.canplaythrough
@@ -555,6 +556,14 @@ trait ojChartSeries
   def addEventListener_boxPlotChanged(
     `type`: boxPlotChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[Q2Color]], Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

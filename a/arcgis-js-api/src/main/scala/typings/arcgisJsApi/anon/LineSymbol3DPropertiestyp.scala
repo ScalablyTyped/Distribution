@@ -3,7 +3,7 @@ package typings.arcgisJsApi.anon
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-3d`
 import typings.arcgisJsApi.esri.CollectionProperties
 import typings.arcgisJsApi.esri.Color_
-import typings.arcgisJsApi.esri.Symbol3DStyleOrigin
+import typings.arcgisJsApi.esri.StyleOriginProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ trait LineSymbol3DPropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleOrigin: js.UndefOr[Symbol3DStyleOrigin] = js.undefined
+  var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
     * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
@@ -52,7 +52,7 @@ object LineSymbol3DPropertiestyp {
     
     inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
+    inline def setStyleOrigin(value: StyleOriginProperties): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     
     inline def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
     

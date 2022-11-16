@@ -64,6 +64,9 @@ trait CSSStyleDeclaration
   var aspectRatio: java.lang.String = js.native
   
   /* standard dom */
+  var backdropFilter: java.lang.String = js.native
+  
+  /* standard dom */
   var backfaceVisibility: java.lang.String = js.native
   
   /* standard dom */
@@ -374,6 +377,15 @@ trait CSSStyleDeclaration
   var contain: java.lang.String = js.native
   
   /* standard dom */
+  var container: java.lang.String = js.native
+  
+  /* standard dom */
+  var containerName: java.lang.String = js.native
+  
+  /* standard dom */
+  var containerType: java.lang.String = js.native
+  
+  /* standard dom */
   var content: java.lang.String = js.native
   
   /* standard dom */
@@ -462,6 +474,9 @@ trait CSSStyleDeclaration
   
   /* standard dom */
   var fontOpticalSizing: java.lang.String = js.native
+  
+  /* standard dom */
+  var fontPalette: java.lang.String = js.native
   
   /* standard dom */
   var fontSize: java.lang.String = js.native
@@ -573,6 +588,9 @@ trait CSSStyleDeclaration
   
   /* standard dom */
   var height: java.lang.String = js.native
+  
+  /* standard dom */
+  var hyphenateCharacter: java.lang.String = js.native
   
   /* standard dom */
   var hyphens: java.lang.String = js.native
@@ -806,6 +824,9 @@ trait CSSStyleDeclaration
   
   /* standard dom */
   var overflowAnchor: java.lang.String = js.native
+  
+  /* standard dom */
+  var overflowClipMargin: java.lang.String = js.native
   
   /* standard dom */
   var overflowWrap: java.lang.String = js.native

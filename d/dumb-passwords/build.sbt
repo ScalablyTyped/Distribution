@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dumb-passwords"
-version := "0.2-dt-20211202Z-e99d20"
+version := "0.2-dt-20211202Z-cd5ab1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

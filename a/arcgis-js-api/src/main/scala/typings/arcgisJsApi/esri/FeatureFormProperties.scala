@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.sequential
 import org.scalablytyped.runtime.StObject
@@ -9,6 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureFormProperties
   extends StObject
      with WidgetProperties {
+  
+  /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#disabled)
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The associated feature containing the editable attributes.
@@ -50,6 +61,13 @@ trait FeatureFormProperties
   var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
   
   /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#view)
+    */
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
+  /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#viewModel)
@@ -64,6 +82,10 @@ object FeatureFormProperties {
   }
   
   extension [Self <: FeatureFormProperties](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
@@ -85,8 +107,12 @@ object FeatureFormProperties {
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
     inline def setViewModel(value: FeatureFormViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

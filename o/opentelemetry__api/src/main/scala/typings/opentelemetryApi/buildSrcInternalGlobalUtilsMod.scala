@@ -2,10 +2,12 @@ package typings.opentelemetryApi
 
 import typings.opentelemetryApi.buildSrcContextTypesMod.ContextManager
 import typings.opentelemetryApi.buildSrcDiagTypesMod.DiagLogger
+import typings.opentelemetryApi.buildSrcMetricsMeterProviderMod.MeterProvider
 import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapPropagator
 import typings.opentelemetryApi.buildSrcTraceTracerProviderMod.TracerProvider
 import typings.opentelemetryApi.opentelemetryApiStrings.context
 import typings.opentelemetryApi.opentelemetryApiStrings.diag
+import typings.opentelemetryApi.opentelemetryApiStrings.metrics
 import typings.opentelemetryApi.opentelemetryApiStrings.propagation
 import typings.opentelemetryApi.opentelemetryApiStrings.trace
 import typings.opentelemetryApi.opentelemetryApiStrings.version
@@ -23,6 +25,8 @@ object buildSrcInternalGlobalUtilsMod {
   
   inline def getGlobal_diag(`type`: diag): js.UndefOr[DiagLogger] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DiagLogger]]
   
+  inline def getGlobal_metrics(`type`: metrics): js.UndefOr[MeterProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[MeterProvider]]
+  
   inline def getGlobal_propagation(`type`: propagation): js.UndefOr[TextMapPropagator[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TextMapPropagator[Any]]]
   
   inline def getGlobal_trace(`type`: trace): js.UndefOr[TracerProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TracerProvider]]
@@ -39,6 +43,11 @@ object buildSrcInternalGlobalUtilsMod {
   inline def registerGlobal_diag(`type`: diag, instance: DiagLogger, diag: DiagLogger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def registerGlobal_diag(`type`: diag, instance: DiagLogger, diag: DiagLogger, allowOverride: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any], allowOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def registerGlobal_metrics(`type`: metrics, instance: Unit, diag: DiagLogger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def registerGlobal_metrics(`type`: metrics, instance: Unit, diag: DiagLogger, allowOverride: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any], allowOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def registerGlobal_metrics(`type`: metrics, instance: MeterProvider, diag: DiagLogger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def registerGlobal_metrics(`type`: metrics, instance: MeterProvider, diag: DiagLogger, allowOverride: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any], allowOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def registerGlobal_propagation(`type`: propagation, instance: Unit, diag: DiagLogger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def registerGlobal_propagation(`type`: propagation, instance: Unit, diag: DiagLogger, allowOverride: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any], allowOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def registerGlobal_propagation(`type`: propagation, instance: TextMapPropagator[Any], diag: DiagLogger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -53,7 +62,7 @@ object buildSrcInternalGlobalUtilsMod {
   inline def registerGlobal_version(`type`: version, instance: String, diag: DiagLogger, allowOverride: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobal")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], diag.asInstanceOf[js.Any], allowOverride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def unregisterGlobal(
-    `type`: /* keyof @opentelemetry/api.@opentelemetry/api/build/src/internal/global-utils.OTelGlobalAPI */ version | diag | trace | context | propagation,
+    `type`: /* keyof @opentelemetry/api.@opentelemetry/api/build/src/internal/global-utils.OTelGlobalAPI */ version | diag | trace | context | metrics | propagation,
     diag: DiagLogger
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterGlobal")(`type`.asInstanceOf[js.Any], diag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -62,6 +71,8 @@ object buildSrcInternalGlobalUtilsMod {
     var context: js.UndefOr[ContextManager] = js.undefined
     
     var diag: js.UndefOr[DiagLogger] = js.undefined
+    
+    var metrics: js.UndefOr[MeterProvider] = js.undefined
     
     var propagation: js.UndefOr[TextMapPropagator[Any]] = js.undefined
     
@@ -85,6 +96,10 @@ object buildSrcInternalGlobalUtilsMod {
       inline def setDiag(value: DiagLogger): Self = StObject.set(x, "diag", value.asInstanceOf[js.Any])
       
       inline def setDiagUndefined: Self = StObject.set(x, "diag", js.undefined)
+      
+      inline def setMetrics(value: MeterProvider): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
       inline def setPropagation(value: TextMapPropagator[Any]): Self = StObject.set(x, "propagation", value.asInstanceOf[js.Any])
       

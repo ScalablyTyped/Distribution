@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bintrees"
-version := "1.0.2-dt-20221103Z-444933"
+version := "1.0.2-dt-20221103Z-4790fe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

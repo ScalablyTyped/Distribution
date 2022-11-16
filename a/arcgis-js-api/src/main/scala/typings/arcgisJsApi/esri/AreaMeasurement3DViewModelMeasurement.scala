@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.euclidean
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AreaMeasurement3DViewModelMeasurement
-  extends StObject
-     with Object {
+trait AreaMeasurement3DViewModelMeasurement extends StObject {
   
   /**
     * The area of the polygon.
@@ -35,15 +31,8 @@ trait AreaMeasurement3DViewModelMeasurement
 }
 object AreaMeasurement3DViewModelMeasurement {
   
-  inline def apply(
-    area: MeasurementValue,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: euclidean | geodesic,
-    perimeterLength: MeasurementValue,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AreaMeasurement3DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], perimeterLength = perimeterLength.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(area: MeasurementValue, mode: euclidean | geodesic, perimeterLength: MeasurementValue): AreaMeasurement3DViewModelMeasurement = {
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], perimeterLength = perimeterLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMeasurement3DViewModelMeasurement]
   }
   

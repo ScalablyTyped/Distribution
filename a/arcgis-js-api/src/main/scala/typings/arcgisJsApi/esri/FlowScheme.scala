@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`flow-line`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wave-front`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlowScheme
-  extends StObject
-     with Object {
+trait FlowScheme extends StObject {
   
   /**
     * The suggested color of the flow lines if a color visual variable is not desired.
@@ -129,10 +125,8 @@ object FlowScheme {
   inline def apply(
     color: Color_,
     colors: js.Array[Color_],
-    constructor: js.Function,
     density: Double,
     flowSpeed: Double,
-    hasOwnProperty: PropertyKey => Boolean,
     id: String,
     layerEffect: String,
     maxOpacity: Double,
@@ -140,14 +134,13 @@ object FlowScheme {
     minOpacity: Double,
     minWidth: Double,
     name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     tags: js.Array[String],
     theme: `flow-line` | `wave-front`,
     trailCap: Double,
     trailLength: Double,
     trailWidth: Double
   ): FlowScheme = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any], flowSpeed = flowSpeed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], layerEffect = layerEffect.asInstanceOf[js.Any], maxOpacity = maxOpacity.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minOpacity = minOpacity.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tags = tags.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], trailCap = trailCap.asInstanceOf[js.Any], trailLength = trailLength.asInstanceOf[js.Any], trailWidth = trailWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any], flowSpeed = flowSpeed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], layerEffect = layerEffect.asInstanceOf[js.Any], maxOpacity = maxOpacity.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minOpacity = minOpacity.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], trailCap = trailCap.asInstanceOf[js.Any], trailLength = trailLength.asInstanceOf[js.Any], trailWidth = trailWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowScheme]
   }
   

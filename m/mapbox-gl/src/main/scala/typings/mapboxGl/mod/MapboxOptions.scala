@@ -266,6 +266,15 @@ trait MapboxOptions extends StObject {
     */
   var transformRequest: js.UndefOr[TransformRequestFunction] = js.undefined
   
+  /**
+    * Sets the map's worldview. A worldview determines the way that certain disputed boundaries are rendered.
+    * By default, GL JS will not set a worldview so that the worldview of Mapbox tiles will be determined by
+    * the vector tile source's TileJSON. Valid worldview strings must be an ISO alpha-2 country code.
+    *
+    * @default null
+    */
+  var worldview: js.UndefOr[String] = js.undefined
+  
   /** Initial zoom level */
   var zoom: js.UndefOr[Double] = js.undefined
 }
@@ -465,6 +474,10 @@ object MapboxOptions {
     inline def setTransformRequest(value: (/* url */ String, /* resourceType */ ResourceType) => RequestParameters): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
     inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+    
+    inline def setWorldview(value: String): Self = StObject.set(x, "worldview", value.asInstanceOf[js.Any])
+    
+    inline def setWorldviewUndefined: Self = StObject.set(x, "worldview", js.undefined)
     
     inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     

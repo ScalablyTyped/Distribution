@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudLayer
-import typings.arcgisJsApi.esri.PointCloudLayerConstructor
 import typings.arcgisJsApi.esri.PointCloudLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SceneServiceVersion
@@ -11,13 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersPointCloudLayerMod extends Shortcut {
+/* static members */
+object esriLayersPointCloudLayerMod {
   
-  @JSImport("esri/layers/PointCloudLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/PointCloudLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersPointCloudLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudLayer {
     def this(properties: PointCloudLayerProperties) = this()
@@ -106,9 +100,9 @@ object esriLayersPointCloudLayerMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/PointCloudLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersPointCloudLayerMod.foo` */
-  override def _to: js.Object & PointCloudLayerConstructor = ^
+  inline def fromJSON(json: Any): PointCloudLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudLayer]
 }

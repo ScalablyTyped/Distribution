@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LODConstructor
   extends StObject
-     with /**
-  * A [TileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html) has a number of LODs (Levels of Detail).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html)
-  */
-Instantiable0[LOD]
+     with Instantiable0[LOD]
      with Instantiable1[/* properties */ LODProperties, LOD] {
   
   def fromJSON(json: Any): LOD = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure-function-log-intercept"
-version := "1.0-dt-20211202Z-f1cbbb"
+version := "1.0-dt-20211202Z-9970f8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

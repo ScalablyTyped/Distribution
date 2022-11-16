@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`flow-line`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wave-front`
 import typings.arcgisJsApi.arcgisJsApiStrings.dark
 import typings.arcgisJsApi.arcgisJsApiStrings.light
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait flowGetSchemesParams
-  extends StObject
-     with Object {
+trait flowGetSchemesParams extends StObject {
   
   /**
     * The Esri basemap to pair with the visualization.
@@ -39,12 +35,8 @@ trait flowGetSchemesParams
 }
 object flowGetSchemesParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): flowGetSchemesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): flowGetSchemesParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[flowGetSchemesParams]
   }
   

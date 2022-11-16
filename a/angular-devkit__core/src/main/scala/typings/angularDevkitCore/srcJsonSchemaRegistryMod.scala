@@ -100,6 +100,17 @@ object srcJsonSchemaRegistryMod {
     inline def createMessages(errors: js.Array[SchemaValidatorError]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMessages")(errors.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type UriHandler = (uri : string): rxjs.rxjs.Observable<@angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject> | std.Promise<@angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject> | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/registry.UriHandler
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait UriHandler extends StObject {
     

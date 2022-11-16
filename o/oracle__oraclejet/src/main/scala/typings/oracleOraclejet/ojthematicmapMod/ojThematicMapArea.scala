@@ -12,6 +12,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.auxclick
 import typings.oracleOraclejet.oracleOraclejetStrings.beforeinput
 import typings.oracleOraclejet.oracleOraclejetStrings.blur
+import typings.oracleOraclejet.oracleOraclejetStrings.cancel
 import typings.oracleOraclejet.oracleOraclejetStrings.canplay
 import typings.oracleOraclejet.oracleOraclejetStrings.canplaythrough
 import typings.oracleOraclejet.oracleOraclejetStrings.categories
@@ -289,6 +290,14 @@ trait ojThematicMapArea
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

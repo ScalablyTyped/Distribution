@@ -19,6 +19,14 @@ object mod {
   inline def getStylesForProperty(name: String, value: String): Style = (^.asInstanceOf[js.Dynamic].applyDynamic("getStylesForProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Style]
   inline def getStylesForProperty(name: String, value: String, allowShorthand: Boolean): Style = (^.asInstanceOf[js.Dynamic].applyDynamic("getStylesForProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allowShorthand.asInstanceOf[js.Any])).asInstanceOf[Style]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Style = {[key: string] : string | number | css-to-react-native.css-to-react-native.Style}
+  }}}
+  to avoid circular code involving: 
+  - css-to-react-native.css-to-react-native.Style
+  */
   trait Style
     extends StObject
        with /* key */ StringDictionary[String | Double | Style]

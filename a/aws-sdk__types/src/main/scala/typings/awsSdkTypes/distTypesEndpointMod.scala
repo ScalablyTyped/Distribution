@@ -73,6 +73,14 @@ object distTypesEndpointMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type EndpointObjectProperty = string | boolean | {[key: string] : @aws-sdk/types.@aws-sdk/types/dist-types/endpoint.EndpointObjectProperty} | std.Array<@aws-sdk/types.@aws-sdk/types/dist-types/endpoint.EndpointObjectProperty>
+  }}}
+  to avoid circular code involving: 
+  - @aws-sdk/types.@aws-sdk/types/dist-types/endpoint.EndpointObjectProperty
+  */
   type EndpointObjectProperty = String | Boolean | StringDictionary[Any] | js.Array[Any]
   
   type EndpointParameters = StringDictionary[js.UndefOr[String | Boolean]]

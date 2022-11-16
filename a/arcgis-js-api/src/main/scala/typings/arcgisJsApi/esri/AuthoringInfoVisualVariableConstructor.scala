@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AuthoringInfoVisualVariableConstructor
   extends StObject
-     with /**
-  * Contains authoring properties of visual variables generated from one of the Smart Mapping methods or sliders.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html)
-  */
-Instantiable0[AuthoringInfoVisualVariable]
+     with Instantiable0[AuthoringInfoVisualVariable]
      with Instantiable1[
       /* properties */ AuthoringInfoVisualVariableProperties, 
       AuthoringInfoVisualVariable

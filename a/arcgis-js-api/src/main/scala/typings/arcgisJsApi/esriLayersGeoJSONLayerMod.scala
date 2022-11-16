@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,21 +33,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.GeoJSONLayer
-import typings.arcgisJsApi.esri.GeoJSONLayerConstructor
 import typings.arcgisJsApi.esri.GeoJSONLayerProperties
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersGeoJSONLayerMod extends Shortcut {
+object esriLayersGeoJSONLayerMod {
   
-  @JSImport("esri/layers/GeoJSONLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GeoJSONLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/GeoJSONLayer", JSImport.Namespace)
   @js.native
   /**
@@ -56,7 +52,7 @@ object esriLayersGeoJSONLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with GeoJSONLayer {
     def this(properties: GeoJSONLayerProperties) = this()
@@ -90,6 +86,14 @@ object esriLayersGeoJSONLayerMod extends Shortcut {
     var featureEffect: FeatureEffect = js.native
     
     /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
+    
+    /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
       *
       * @default 0
@@ -119,9 +123,4 @@ object esriLayersGeoJSONLayerMod extends Shortcut {
     /* CompleteClass */
     var orderBy: js.Array[OrderedLayerOrderBy] = js.native
   }
-  
-  type _To = js.Object & GeoJSONLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersGeoJSONLayerMod.foo` */
-  override def _to: js.Object & GeoJSONLayerConstructor = ^
 }

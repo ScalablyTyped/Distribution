@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DirectionLineConstructor
   extends StObject
-     with /**
-  * The DirectionLine represents polylines associated with individual direction items.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html)
-  */
-Instantiable0[DirectionLine]
+     with Instantiable0[DirectionLine]
      with Instantiable1[/* properties */ DirectionLineProperties, DirectionLine] {
   
   /**

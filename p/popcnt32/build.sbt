@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popcnt32"
-version := "1.0-dt-20220829Z-81b9eb"
+version := "1.0-dt-20220829Z-df7b86"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

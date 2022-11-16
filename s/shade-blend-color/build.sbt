@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shade-blend-color"
-version := "1.0-dt-20220824Z-e45e91"
+version := "1.0-dt-20220824Z-1c3d8c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -39,6 +39,14 @@ object glStrings {
   inline def EXT_shader_texture_lod: EXT_shader_texture_lod = "EXT_shader_texture_lod".asInstanceOf[EXT_shader_texture_lod]
   
   @js.native
+  sealed trait EXT_texture_compression_bptc extends StObject
+  inline def EXT_texture_compression_bptc: EXT_texture_compression_bptc = "EXT_texture_compression_bptc".asInstanceOf[EXT_texture_compression_bptc]
+  
+  @js.native
+  sealed trait EXT_texture_compression_rgtc extends StObject
+  inline def EXT_texture_compression_rgtc: EXT_texture_compression_rgtc = "EXT_texture_compression_rgtc".asInstanceOf[EXT_texture_compression_rgtc]
+  
+  @js.native
   sealed trait EXT_texture_filter_anisotropic extends StObject
   inline def EXT_texture_filter_anisotropic: EXT_texture_filter_anisotropic = "EXT_texture_filter_anisotropic".asInstanceOf[EXT_texture_filter_anisotropic]
   
@@ -49,6 +57,10 @@ object glStrings {
   @js.native
   sealed trait OES_element_index_uint extends StObject
   inline def OES_element_index_uint: OES_element_index_uint = "OES_element_index_uint".asInstanceOf[OES_element_index_uint]
+  
+  @js.native
+  sealed trait OES_fbo_render_mipmap extends StObject
+  inline def OES_fbo_render_mipmap: OES_fbo_render_mipmap = "OES_fbo_render_mipmap".asInstanceOf[OES_fbo_render_mipmap]
   
   @js.native
   sealed trait OES_standard_derivatives extends StObject
@@ -129,4 +141,8 @@ object glStrings {
   @js.native
   sealed trait WEBGL_lose_context extends StObject
   inline def WEBGL_lose_context: WEBGL_lose_context = "WEBGL_lose_context".asInstanceOf[WEBGL_lose_context]
+  
+  @js.native
+  sealed trait WEBGL_multi_draw extends StObject
+  inline def WEBGL_multi_draw: WEBGL_multi_draw = "WEBGL_multi_draw".asInstanceOf[WEBGL_multi_draw]
 }

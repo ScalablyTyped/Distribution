@@ -57,18 +57,25 @@ trait FeatureFormViewModel
     */
   var layer: FeatureLayer | SceneLayer = js.native
   
+  /**
+    * Updates the geometry on _featureClone and triggers re-evaluation of expressions that depend on the feature's geometry
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#notifyFeatureGeometryChanged)
+    */
+  def notifyFeatureGeometryChanged(): scala.Unit = js.native
+  
   @JSName("on")
   def on_submit(name: submit, eventHandler: FeatureFormViewModelSubmitEventHandler): IHandle = js.native
   @JSName("on")
   def on_valuechange(name: `value-change`, eventHandler: FeatureFormViewModelValueChangeEventHandler): IHandle = js.native
   
-  def setValue(fieldName: String, value: String): scala.Unit = js.native
-  def setValue(fieldName: String, value: Any): scala.Unit = js.native
   /**
     * Used to set the updated field value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#setValue)
     */
+  def setValue(fieldName: String): scala.Unit = js.native
+  def setValue(fieldName: String, value: String): scala.Unit = js.native
   def setValue(fieldName: String, value: Double): scala.Unit = js.native
   
   /**

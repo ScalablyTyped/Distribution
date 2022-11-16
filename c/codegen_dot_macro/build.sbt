@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "codegen_dot_macro"
-version := "4.1.0-3799c3"
+version := "4.1.0-cb5df6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

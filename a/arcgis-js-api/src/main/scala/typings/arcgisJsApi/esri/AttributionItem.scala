@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttributionItem
-  extends StObject
-     with Object {
+trait AttributionItem extends StObject {
   
   /**
     * The layer that has the attribution text.
@@ -26,14 +22,8 @@ trait AttributionItem
 }
 object AttributionItem {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: Layer,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    text: String
-  ): AttributionItem = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text.asInstanceOf[js.Any])
+  inline def apply(layer: Layer, text: String): AttributionItem = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributionItem]
   }
   

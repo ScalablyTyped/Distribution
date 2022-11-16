@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-it"
-version := "4.0.1-bf1c9c"
+version := "4.0.1-4cf182"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

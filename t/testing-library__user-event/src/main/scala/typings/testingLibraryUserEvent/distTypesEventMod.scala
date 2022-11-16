@@ -17,6 +17,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animations
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.beforeinput_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cancel
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplay_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplaythrough_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.change
@@ -151,6 +152,9 @@ object distTypesEventMod {
   
   inline def dispatchDOMEvent_blur(target: Element, `type`: blur): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatchDOMEvent_blur(target: Element, `type`: blur, init: EventTypeInit[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def dispatchDOMEvent_cancel(target: Element, `type`: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatchDOMEvent_cancel(target: Element, `type`: cancel, init: EventTypeInit[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def dispatchDOMEvent_canplay(target: Element, `type`: canplay_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatchDOMEvent_canplay(target: Element, `type`: canplay_, init: EventTypeInit[canplay_]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchDOMEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -512,6 +516,11 @@ object distTypesEventMod {
   inline def dispatchUIEvent_blur(target: Element, `type`: blur, init: Unit, preventDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def dispatchUIEvent_blur(target: Element, `type`: blur, init: EventTypeInit[blur]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def dispatchUIEvent_blur(target: Element, `type`: blur, init: EventTypeInit[blur], preventDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def dispatchUIEvent_cancel(target: Element, `type`: cancel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchUIEvent_cancel(target: Element, `type`: cancel, init: Unit, preventDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchUIEvent_cancel(target: Element, `type`: cancel, init: EventTypeInit[cancel]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchUIEvent_cancel(target: Element, `type`: cancel, init: EventTypeInit[cancel], preventDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def dispatchUIEvent_canplay(target: Element, `type`: canplay_): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def dispatchUIEvent_canplay(target: Element, `type`: canplay_, init: Unit, preventDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], init.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]

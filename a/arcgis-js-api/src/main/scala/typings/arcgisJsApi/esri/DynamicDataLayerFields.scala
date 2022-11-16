@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicDataLayerFields
-  extends StObject
-     with Object {
+trait DynamicDataLayerFields extends StObject {
   
   /**
     * The alias of the field.
@@ -26,14 +22,8 @@ trait DynamicDataLayerFields
 }
 object DynamicDataLayerFields {
   
-  inline def apply(
-    alias: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DynamicDataLayerFields = {
-    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(alias: String, name: String): DynamicDataLayerFields = {
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicDataLayerFields]
   }
   

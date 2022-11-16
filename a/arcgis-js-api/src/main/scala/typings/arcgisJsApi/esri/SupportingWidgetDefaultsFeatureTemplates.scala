@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SupportingWidgetDefaultsFeatureTemplates
-  extends StObject
-     with Object {
+trait SupportingWidgetDefaultsFeatureTemplates extends StObject {
   
   /**
     * Aids in managing various template items and how they display within the widget.
@@ -21,13 +17,8 @@ trait SupportingWidgetDefaultsFeatureTemplates
 }
 object SupportingWidgetDefaultsFeatureTemplates {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    visibleElements: SupportingWidgetDefaultsFeatureTemplatesVisibleElements
-  ): SupportingWidgetDefaultsFeatureTemplates = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), visibleElements = visibleElements.asInstanceOf[js.Any])
+  inline def apply(visibleElements: SupportingWidgetDefaultsFeatureTemplatesVisibleElements): SupportingWidgetDefaultsFeatureTemplates = {
+    val __obj = js.Dynamic.literal(visibleElements = visibleElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureTemplates]
   }
   

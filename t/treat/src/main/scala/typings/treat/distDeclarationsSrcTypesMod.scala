@@ -156,6 +156,17 @@ object distDeclarationsSrcTypesMod {
   
   type TreatModuleArray = js.Array[TreatModuleValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreatModuleObject = {[index: string] : treat.treat/dist/declarations/src/types.TreatModuleValue, [index: number] : treat.treat/dist/declarations/src/types.TreatModuleValue}
+  }}}
+  to avoid circular code involving: 
+  - treat.treat/dist/declarations/src/types.TreatModule
+  - treat.treat/dist/declarations/src/types.TreatModuleArray
+  - treat.treat/dist/declarations/src/types.TreatModuleObject
+  - treat.treat/dist/declarations/src/types.TreatModuleValue
+  */
   trait TreatModuleObject
     extends StObject
        with /* index */ NumberDictionary[TreatModuleValue]
@@ -168,6 +179,16 @@ object distDeclarationsSrcTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreatModuleValue = string | number | boolean | null | undefined | treat.treat/dist/declarations/src/types.TreatModuleObject | treat.treat/dist/declarations/src/types.TreatModuleArray
+  }}}
+  to avoid circular code involving: 
+  - treat.treat/dist/declarations/src/types.TreatModule
+  - treat.treat/dist/declarations/src/types.TreatModuleArray
+  - treat.treat/dist/declarations/src/types.TreatModuleValue
+  */
   type TreatModuleValue = js.UndefOr[String | Double | Boolean | Null | TreatModuleObject | Any]
   
   trait TreatTheme[Tokens] extends StObject {

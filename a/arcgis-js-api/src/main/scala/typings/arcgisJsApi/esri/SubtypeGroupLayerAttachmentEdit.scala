@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerAttachmentEdit
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerAttachmentEdit extends StObject {
   
   /**
     * The attachment to be added, updated or deleted.
@@ -26,14 +22,8 @@ trait SubtypeGroupLayerAttachmentEdit
 }
 object SubtypeGroupLayerAttachmentEdit {
   
-  inline def apply(
-    attachment: SubtypeGroupLayerAttachmentEditAttachment,
-    constructor: js.Function,
-    feature: Graphic | Double | String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubtypeGroupLayerAttachmentEdit = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(attachment: SubtypeGroupLayerAttachmentEditAttachment, feature: Graphic | Double | String): SubtypeGroupLayerAttachmentEdit = {
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerAttachmentEdit]
   }
   

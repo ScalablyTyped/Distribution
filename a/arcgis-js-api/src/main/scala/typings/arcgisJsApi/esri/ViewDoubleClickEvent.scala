@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiInts.`0`
+import typings.arcgisJsApi.arcgisJsApiInts.`1`
+import typings.arcgisJsApi.arcgisJsApiInts.`2`
 import typings.arcgisJsApi.arcgisJsApiStrings.`double-click`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +12,7 @@ trait ViewDoubleClickEvent extends StObject {
   
   var button: Double
   
-  var buttons: Any
+  var buttons: `0` | `1` | `2`
   
   var mapPoint: Point
   
@@ -29,7 +32,7 @@ object ViewDoubleClickEvent {
   
   inline def apply(
     button: Double,
-    buttons: Any,
+    buttons: `0` | `1` | `2`,
     mapPoint: Point,
     native: Any,
     stopPropagation: js.Function,
@@ -46,7 +49,7 @@ object ViewDoubleClickEvent {
     
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: `0` | `1` | `2`): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     

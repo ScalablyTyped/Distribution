@@ -239,6 +239,14 @@ object sapMP13nEngineMod extends Shortcut {
     ): js.Promise[Any] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type EngineRegistrationConfig = (oControl : openui5.sap/ui/core/Control.default, oConfig : openui5.sap/m/p13n/Engine.EngineRegistrationConfig): object
+  }}}
+  to avoid circular code involving: 
+  - openui5.sap/m/p13n/Engine.EngineRegistrationConfig
+  */
   @js.native
   trait EngineRegistrationConfig extends StObject {
     

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PredominantExpressionsPredominantCategory
-  extends StObject
-     with Object {
+trait PredominantExpressionsPredominantCategory extends StObject {
   
   /**
     * valueExpression - An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
@@ -19,13 +15,8 @@ trait PredominantExpressionsPredominantCategory
 }
 object PredominantExpressionsPredominantCategory {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    valueExpression: String
-  ): PredominantExpressionsPredominantCategory = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueExpression = valueExpression.asInstanceOf[js.Any])
+  inline def apply(valueExpression: String): PredominantExpressionsPredominantCategory = {
+    val __obj = js.Dynamic.literal(valueExpression = valueExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredominantExpressionsPredominantCategory]
   }
   

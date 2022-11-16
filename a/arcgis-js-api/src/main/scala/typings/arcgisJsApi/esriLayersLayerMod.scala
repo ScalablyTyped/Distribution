@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Layer
-import typings.arcgisJsApi.esri.LayerConstructor
+import typings.arcgisJsApi.esri.LayerFromArcGISServerUrlParams
+import typings.arcgisJsApi.esri.LayerFromPortalItemParams
 import typings.arcgisJsApi.esri.LayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersLayerMod extends Shortcut {
+/* static members */
+object esriLayersLayerMod {
   
-  @JSImport("esri/layers/Layer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & LayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/Layer", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,26 @@ object esriLayersLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Layer {
     def this(properties: LayerProperties) = this()
   }
+  @JSImport("esri/layers/Layer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & LayerConstructor
+  /**
+    * Creates a new layer instance from an ArcGIS Server URL.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
+    */
+  inline def fromArcGISServerUrl(params: LayerFromArcGISServerUrlParams): js.Promise[Layer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArcGISServerUrl")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Layer]]
   
-  /* This means you don't have to write `^`, but can instead just say `esriLayersLayerMod.foo` */
-  override def _to: js.Object & LayerConstructor = ^
+  /**
+    * Creates a new layer instance of the appropriate layer class from an ArcGIS Online or ArcGIS Enterprise [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromPortalItem)
+    */
+  inline def fromPortalItem(params: LayerFromPortalItemParams): js.Promise[Layer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPortalItem")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Layer]]
 }

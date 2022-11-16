@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.created
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchResourcesParams
-  extends StObject
-     with Object {
+trait FetchResourcesParams extends StObject {
   
   /**
     * The maximum number of results to be included in the result set response.
@@ -45,12 +41,8 @@ trait FetchResourcesParams
 }
 object FetchResourcesParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FetchResourcesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FetchResourcesParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchResourcesParams]
   }
   

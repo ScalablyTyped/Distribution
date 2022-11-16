@@ -13,7 +13,9 @@ trait VideoElementPropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
     */
-  var georeference: js.UndefOr[ExtentAndRotationGeorefer | CornersGeoreferenceProper] = js.undefined
+  var georeference: js.UndefOr[
+    ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference
+  ] = js.undefined
   
   /**
     * The opacity of the element.
@@ -24,7 +26,7 @@ trait VideoElementPropertiestyp extends StObject {
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[video] & video
+  var `type`: video
   
   /**
     * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
@@ -35,15 +37,15 @@ trait VideoElementPropertiestyp extends StObject {
 }
 object VideoElementPropertiestyp {
   
-  inline def apply(`type`: js.UndefOr[video] & video): VideoElementPropertiestyp = {
+  inline def apply(): VideoElementPropertiestyp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[VideoElementPropertiestyp]
   }
   
   extension [Self <: VideoElementPropertiestyp](x: Self) {
     
-    inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
+    inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     
     inline def setGeoreferenceUndefined: Self = StObject.set(x, "georeference", js.undefined)
     
@@ -51,7 +53,7 @@ object VideoElementPropertiestyp {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setType(value: js.UndefOr[video] & video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVideo(value: String | Any): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

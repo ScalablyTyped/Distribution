@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "boolbase"
-version := "1.0-dt-20211223Z-1e0c59"
+version := "1.0-dt-20211223Z-164583"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

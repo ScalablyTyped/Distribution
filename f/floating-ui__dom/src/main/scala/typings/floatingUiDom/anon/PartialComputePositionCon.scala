@@ -2,6 +2,7 @@ package typings.floatingUiDom.anon
 
 import typings.floatingUiCore.srcTypesMod.Placement
 import typings.floatingUiCore.srcTypesMod.Strategy
+import typings.floatingUiDom.floatingUiDomBooleans.`false`
 import typings.floatingUiDom.srcTypesMod.Middleware
 import typings.floatingUiDom.srcTypesMod.Platform_
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@floating-ui/dom.@floating-ui/dom/src/types.ComputePositionConfig> */
 trait PartialComputePositionCon extends StObject {
   
-  var middleware: js.UndefOr[js.Array[Middleware]] = js.undefined
+  var middleware: js.UndefOr[js.Array[js.UndefOr[Middleware | Null | `false`]]] = js.undefined
   
   var placement: js.UndefOr[Placement] = js.undefined
   
@@ -28,11 +29,11 @@ object PartialComputePositionCon {
   
   extension [Self <: PartialComputePositionCon](x: Self) {
     
-    inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    inline def setMiddleware(value: js.Array[js.UndefOr[Middleware | Null | `false`]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value*))
+    inline def setMiddlewareVarargs(value: (js.UndefOr[Middleware | Null | `false`])*): Self = StObject.set(x, "middleware", js.Array(value*))
     
     inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

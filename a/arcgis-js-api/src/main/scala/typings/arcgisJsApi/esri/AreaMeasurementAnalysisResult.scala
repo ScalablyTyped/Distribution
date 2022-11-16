@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.euclidean
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AreaMeasurementAnalysisResult
-  extends StObject
-     with Object {
+trait AreaMeasurementAnalysisResult extends StObject {
   
   /**
     * Measured area quantity.
@@ -35,15 +31,8 @@ trait AreaMeasurementAnalysisResult
 }
 object AreaMeasurementAnalysisResult {
   
-  inline def apply(
-    area: Area,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: euclidean | geodesic,
-    pathLength: Length,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AreaMeasurementAnalysisResult = {
-    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], pathLength = pathLength.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(area: Area, mode: euclidean | geodesic, pathLength: Length): AreaMeasurementAnalysisResult = {
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pathLength = pathLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMeasurementAnalysisResult]
   }
   

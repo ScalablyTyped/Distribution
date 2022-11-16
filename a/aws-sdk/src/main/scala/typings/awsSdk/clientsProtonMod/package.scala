@@ -116,8 +116,6 @@ type OutputValueString = java.lang.String
 
 type OutputsList = js.Array[Output]
 
-type PipelineRoleArn = java.lang.String
-
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION
   - typings.awsSdk.awsSdkStrings.TERRAFORM
@@ -185,6 +183,10 @@ type ResourceSyncEvents = js.Array[ResourceSyncEvent]
   - java.lang.String
 */
 type ResourceSyncStatus = _ResourceSyncStatus | java.lang.String
+
+type RoleArn = java.lang.String
+
+type RoleArnOrEmptyString = java.lang.String
 
 type S3Bucket = java.lang.String
 

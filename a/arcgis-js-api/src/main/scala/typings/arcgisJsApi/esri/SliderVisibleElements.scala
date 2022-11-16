@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderVisibleElements
-  extends StObject
-     with Object {
+trait SliderVisibleElements extends StObject {
   
   /**
     * Indicates whether to display labels for slider thumbs.
@@ -26,12 +22,8 @@ trait SliderVisibleElements
 }
 object SliderVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SliderVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SliderVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderVisibleElements]
   }
   

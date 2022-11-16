@@ -111,6 +111,10 @@ object svelteStrings {
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   

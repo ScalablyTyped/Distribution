@@ -9,24 +9,22 @@ object outStringReplaceMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/String/Replace._Replace<S, R, W> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, string> : never
     }}}
     */
-  @js.native
-  trait Replace[S /* <: String */, R /* <: Literal */, W /* <: Literal */] extends StObject
+  type Replace[S /* <: String */, R /* <: Literal */, W /* <: Literal */] = String
   
   /**
     * @hidden
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends / * template literal string: ${inferBS}${R}${inferAS} * / string ? ts-toolbelt.ts-toolbelt/out/String/Replace.Replace</ * template literal string: ${BS}${W}${AS} * / string, R, W> : S
     }}}
     */
-  @js.native
-  trait _Replace[S /* <: String */, R /* <: Literal */, W /* <: Literal */] extends StObject
+  type _Replace[S /* <: String */, R /* <: Literal */, W /* <: Literal */] = S
 }

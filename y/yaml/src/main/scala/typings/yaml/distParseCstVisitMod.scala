@@ -70,6 +70,14 @@ object distParseCstVisitMod {
   
   type VisitPath = js.Array[js.Tuple2[key | value, Double]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Visitor = (item : yaml.yaml/dist/parse/cst.CollectionItem, path : yaml.yaml/dist/parse/cst-visit.VisitPath): number | symbol | yaml.yaml/dist/parse/cst-visit.Visitor | void
+  }}}
+  to avoid circular code involving: 
+  - yaml.yaml/dist/parse/cst-visit.Visitor
+  */
   @js.native
   trait Visitor extends StObject {
     

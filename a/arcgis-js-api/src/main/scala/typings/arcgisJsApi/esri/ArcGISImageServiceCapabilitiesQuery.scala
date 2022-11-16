@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISImageServiceCapabilitiesQuery
-  extends StObject
-     with Object {
+trait ArcGISImageServiceCapabilitiesQuery extends StObject {
   
   /**
     * The maximum number of records that will be returned for a given query.
@@ -55,17 +51,14 @@ trait ArcGISImageServiceCapabilitiesQuery
 object ArcGISImageServiceCapabilitiesQuery {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     maxRecordCount: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsDistinct: Boolean,
     supportsOrderBy: Boolean,
     supportsPagination: Boolean,
     supportsStandardizedQueriesOnly: Boolean,
     supportsStatistics: Boolean
   ): ArcGISImageServiceCapabilitiesQuery = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxRecordCount = maxRecordCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxRecordCount = maxRecordCount.asInstanceOf[js.Any], supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesQuery]
   }
   

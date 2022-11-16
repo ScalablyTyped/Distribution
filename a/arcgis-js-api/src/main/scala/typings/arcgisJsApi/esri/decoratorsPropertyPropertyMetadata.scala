@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait decoratorsPropertyPropertyMetadata
-  extends StObject
-     with Object {
+trait decoratorsPropertyPropertyMetadata extends StObject {
   
   /**
     * The property decorator that creates a two-way binding between the property it decorates and an inner property of one of its members.
@@ -61,12 +57,8 @@ trait decoratorsPropertyPropertyMetadata
 }
 object decoratorsPropertyPropertyMetadata {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): decoratorsPropertyPropertyMetadata = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): decoratorsPropertyPropertyMetadata = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]
   }
   

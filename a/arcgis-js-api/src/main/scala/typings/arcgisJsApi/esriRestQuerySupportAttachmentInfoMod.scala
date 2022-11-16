@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.AttachmentInfo
-import typings.arcgisJsApi.esri.AttachmentInfoConstructor
 import typings.arcgisJsApi.esri.AttachmentInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestQuerySupportAttachmentInfoMod extends Shortcut {
+/* static members */
+object esriRestQuerySupportAttachmentInfoMod {
   
-  @JSImport("esri/rest/query/support/AttachmentInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & AttachmentInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/query/support/AttachmentInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestQuerySupportAttachmentInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with AttachmentInfo {
     def this(properties: AttachmentInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriRestQuerySupportAttachmentInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/query/support/AttachmentInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & AttachmentInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestQuerySupportAttachmentInfoMod.foo` */
-  override def _to: js.Object & AttachmentInfoConstructor = ^
+  inline def fromJSON(json: Any): AttachmentInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AttachmentInfo]
 }

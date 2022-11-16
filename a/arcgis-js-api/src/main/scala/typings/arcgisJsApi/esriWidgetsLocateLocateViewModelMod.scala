@@ -1,10 +1,8 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.Graphic
 import typings.arcgisJsApi.esri.LocateViewModel
-import typings.arcgisJsApi.esri.LocateViewModelConstructor
 import typings.arcgisJsApi.esri.LocateViewModelProperties
 import typings.arcgisJsApi.esri.MapView
 import typings.arcgisJsApi.esri.SceneView
@@ -12,13 +10,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsLocateLocateViewModelMod extends Shortcut {
+object esriWidgetsLocateLocateViewModelMod {
   
-  @JSImport("esri/widgets/Locate/LocateViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & LocateViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Locate/LocateViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -26,15 +19,15 @@ object esriWidgetsLocateLocateViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with LocateViewModel {
     def this(properties: LocateViewModelProperties) = this()
     
     /**
-      * The HTML5 Geolocation Position options for locating.
+      * An object used for setting optional position parameters.
       *
-      * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
       */
@@ -78,7 +71,7 @@ object esriWidgetsLocateLocateViewModelMod extends Shortcut {
     var graphic: Graphic = js.native
     
     /**
-      * The scale to set on the view when navigating to the position of the geolocated result.
+      * Indicates the scale to set on the view when navigating to the position of the geolocated result, after a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#event-track) event.
       *
       * @default null
       *
@@ -95,9 +88,4 @@ object esriWidgetsLocateLocateViewModelMod extends Shortcut {
     /* CompleteClass */
     var view: MapView | SceneView = js.native
   }
-  
-  type _To = js.Object & LocateViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsLocateLocateViewModelMod.foo` */
-  override def _to: js.Object & LocateViewModelConstructor = ^
 }

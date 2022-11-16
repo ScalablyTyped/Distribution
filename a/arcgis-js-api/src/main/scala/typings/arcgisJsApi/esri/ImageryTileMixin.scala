@@ -34,8 +34,10 @@ trait ImageryTileMixin extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#identify)
     */
-  def identify(point: Point): js.Promise[Any] = js.native
-  def identify(point: Point, options: RasterIdentifyOptions): js.Promise[Any] = js.native
+  def identify(point: Point): js.Promise[RasterIdentifyResult] = js.native
+  def identify(point: PointProperties): js.Promise[RasterIdentifyResult] = js.native
+  def identify(point: PointProperties, options: RasterIdentifyOptions): js.Promise[RasterIdentifyResult] = js.native
+  def identify(point: Point, options: RasterIdentifyOptions): js.Promise[RasterIdentifyResult] = js.native
   
   /**
     * The multidimensional definitions associated with the layer.
@@ -57,11 +59,4 @@ trait ImageryTileMixin extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#renderer)
     */
   var renderer: ClassBreaksRenderer | UniqueValueRenderer | RasterStretchRenderer | RasterShadedReliefRenderer | RasterColormapRenderer | VectorFieldRenderer | FlowRenderer = js.native
-  
-  /**
-    * The URL of the REST endpoint of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#url)
-    */
-  var url: String = js.native
 }

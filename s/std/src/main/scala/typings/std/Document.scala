@@ -1215,9 +1215,6 @@ trait Document
   def createEvent_MediaQueryListEvent(eventInterface: typings.std.stdStrings.MediaQueryListEvent): MediaQueryListEvent = js.native
   /* standard dom */
   @JSName("createEvent")
-  def createEvent_MediaRecorderErrorEvent(eventInterface: typings.std.stdStrings.MediaRecorderErrorEvent): MediaRecorderErrorEvent = js.native
-  /* standard dom */
-  @JSName("createEvent")
   def createEvent_MediaStreamTrackEvent(eventInterface: typings.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
   /* standard dom */
   @JSName("createEvent")
@@ -1246,6 +1243,9 @@ trait Document
   /* standard dom */
   @JSName("createEvent")
   def createEvent_PaymentRequestUpdateEvent(eventInterface: typings.std.stdStrings.PaymentRequestUpdateEvent): PaymentRequestUpdateEvent = js.native
+  /* standard dom */
+  @JSName("createEvent")
+  def createEvent_PictureInPictureEvent(eventInterface: typings.std.stdStrings.PictureInPictureEvent): PictureInPictureEvent = js.native
   /* standard dom */
   @JSName("createEvent")
   def createEvent_PointerEvent(eventInterface: typings.std.stdStrings.PointerEvent): PointerEvent = js.native
@@ -1384,7 +1384,10 @@ trait Document
   /* standard dom */
   val documentURI: java.lang.String = js.native
   
-  /** Sets or gets the security domain of the document. */
+  /**
+    * Sets or gets the security domain of the document.
+    * @deprecated
+    */
   /* standard dom */
   var domain: java.lang.String = js.native
   
@@ -1936,6 +1939,7 @@ trait Document
   /**
     * Returns a Boolean value that indicates whether the specified command is in the indeterminate state.
     * @param commandId String that specifies a command identifier.
+    * @deprecated
     */
   /* standard dom */
   def queryCommandIndeterm(commandId: java.lang.String): scala.Boolean = js.native
@@ -1959,6 +1963,7 @@ trait Document
   /**
     * Returns the current value of the document, range, or current selection for the given command.
     * @param commandId String that specifies a command identifier.
+    * @deprecated
     */
   /* standard dom */
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native

@@ -78,6 +78,16 @@ object ngccSrcWritingPackageJsonUpdaterMod {
     positioning: PackageJsonPropertyPositioning
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(ctx.asInstanceOf[js.Any], propPath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], positioning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PackageJsonChange = [std.Array<string>, @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue, @angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.PackageJsonPropertyPositioning]
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonArray
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.PackageJsonChange
+  */
   type PackageJsonChange = js.Tuple3[js.Array[String], Any, PackageJsonPropertyPositioning]
   
   /* Rewritten from type alias, can be one of: 
@@ -110,6 +120,18 @@ object ngccSrcWritingPackageJsonUpdaterMod {
     def writeChanges(changes: js.Array[PackageJsonChange], packageJsonPath: AbsoluteFsPath, parsedJson: JsonObject): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type WritePackageJsonChangesFn = (changes : std.Array<@angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.PackageJsonChange>, packageJsonPath : @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/file_system/src/types.AbsoluteFsPath, parsedJson : @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonObject | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonArray
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonObject
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.PackageJsonChange
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.WritePackageJsonChangesFn
+  */
   @js.native
   trait WritePackageJsonChangesFn extends StObject {
     

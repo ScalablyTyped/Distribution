@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.CompassViewModel
-import typings.arcgisJsApi.esri.CompassViewModelConstructor
 import typings.arcgisJsApi.esri.CompassViewModelProperties
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.MapView
@@ -11,13 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsCompassCompassViewModelMod extends Shortcut {
+object esriWidgetsCompassCompassViewModelMod {
   
-  @JSImport("esri/widgets/Compass/CompassViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CompassViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Compass/CompassViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsCompassCompassViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass-CompassViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with CompassViewModel {
     def this(properties: CompassViewModelProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsCompassCompassViewModelMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & CompassViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsCompassCompassViewModelMod.foo` */
-  override def _to: js.Object & CompassViewModelConstructor = ^
 }

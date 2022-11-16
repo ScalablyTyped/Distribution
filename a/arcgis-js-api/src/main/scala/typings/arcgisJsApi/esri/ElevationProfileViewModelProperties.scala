@@ -35,6 +35,8 @@ trait ElevationProfileViewModelProperties extends StObject {
   /**
     * Whether the graphic used as [input](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#input) is highlighted.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#highlightEnabled)
     */
   var highlightEnabled: js.UndefOr[Boolean] = js.undefined

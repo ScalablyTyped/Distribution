@@ -380,18 +380,20 @@ object mod {
     
     var hashId: js.UndefOr[String] = js.undefined
     
-    var intl: IntlType
+    var hashed: js.UndefOr[Boolean] = js.undefined
     
-    var theme: Theme[Any, Any]
+    var intl: js.UndefOr[IntlType] = js.undefined
+    
+    var theme: js.UndefOr[Theme[Any, Any]] = js.undefined
     
     var token: js.UndefOr[ProAliasToken] = js.undefined
     
-    var valueTypeMap: Record[String, ProRenderFieldPropsType]
+    var valueTypeMap: js.UndefOr[Record[String, ProRenderFieldPropsType]] = js.undefined
   }
   object ConfigContextPropsType {
     
-    inline def apply(intl: IntlType, theme: Theme[Any, Any], valueTypeMap: Record[String, ProRenderFieldPropsType]): ConfigContextPropsType = {
-      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], valueTypeMap = valueTypeMap.asInstanceOf[js.Any])
+    inline def apply(): ConfigContextPropsType = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigContextPropsType]
     }
     
@@ -401,15 +403,25 @@ object mod {
       
       inline def setHashIdUndefined: Self = StObject.set(x, "hashId", js.undefined)
       
+      inline def setHashed(value: Boolean): Self = StObject.set(x, "hashed", value.asInstanceOf[js.Any])
+      
+      inline def setHashedUndefined: Self = StObject.set(x, "hashed", js.undefined)
+      
       inline def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
       
+      inline def setIntlUndefined: Self = StObject.set(x, "intl", js.undefined)
+      
       inline def setTheme(value: Theme[Any, Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
       inline def setToken(value: ProAliasToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
       inline def setValueTypeMap(value: Record[String, ProRenderFieldPropsType]): Self = StObject.set(x, "valueTypeMap", value.asInstanceOf[js.Any])
+      
+      inline def setValueTypeMapUndefined: Self = StObject.set(x, "valueTypeMap", js.undefined)
     }
   }
   

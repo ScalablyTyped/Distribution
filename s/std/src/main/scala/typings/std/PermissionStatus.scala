@@ -27,6 +27,9 @@ trait PermissionStatus
   ): Unit = js.native
   
   /* standard dom */
+  val name: java.lang.String = js.native
+  
+  /* standard dom */
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /* standard dom */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_kgsearch-v1"
-version := "0.0-dt-20220912Z-647f31"
+version := "0.0-dt-20220912Z-66b99c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

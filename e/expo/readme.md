@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo
 
-Typings are for version 47.0.3
+Typings are for version 47.0.6
 
 
 

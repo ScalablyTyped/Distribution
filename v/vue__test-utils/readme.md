@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__test-utils
 
-Typings are for version 2.2.2
+Typings are for version 2.2.3
 
 ## Library description:
 Component testing utils for Vue 3.

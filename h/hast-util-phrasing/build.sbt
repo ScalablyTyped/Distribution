@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hast-util-phrasing"
-version := "2.0.1-d156db"
+version := "2.0.1-382eb7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -185,4 +185,53 @@ object buildSrcDiagTypesMod {
       inline def setWarn(value: DiagLogFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
+  
+  @js.native
+  trait DiagLoggerApi extends StObject {
+    
+    /**
+      * Set the global DiagLogger and DiagLogLevel.
+      * If a global diag logger is already set, this will override it.
+      *
+      * @param logger - The {@link DiagLogger} instance to set as the default logger.
+      * @param options - A {@link LoggerOptions} object. If not provided, default values will be set.
+      * @returns `true` if the logger was successfully registered, else `false`
+      */
+    def setLogger(logger: DiagLogger): Boolean = js.native
+    def setLogger(logger: DiagLogger, logLevel: DiagLogLevel): Boolean = js.native
+    def setLogger(logger: DiagLogger, options: LoggerOptions): Boolean = js.native
+  }
+  
+  trait LoggerOptions extends StObject {
+    
+    /**
+      * The {@link DiagLogLevel} used to filter logs sent to the logger.
+      *
+      * @defaultValue DiagLogLevel.INFO
+      */
+    var logLevel: js.UndefOr[DiagLogLevel] = js.undefined
+    
+    /**
+      * Setting this value to `true` will suppress the warning message normally emitted when registering a logger when another logger is already registered.
+      */
+    var suppressOverrideMessage: js.UndefOr[Boolean] = js.undefined
+  }
+  object LoggerOptions {
+    
+    inline def apply(): LoggerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LoggerOptions]
+    }
+    
+    extension [Self <: LoggerOptions](x: Self) {
+      
+      inline def setLogLevel(value: DiagLogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      
+      inline def setSuppressOverrideMessage(value: Boolean): Self = StObject.set(x, "suppressOverrideMessage", value.asInstanceOf[js.Any])
+      
+      inline def setSuppressOverrideMessageUndefined: Self = StObject.set(x, "suppressOverrideMessage", js.undefined)
+    }
+  }
 }

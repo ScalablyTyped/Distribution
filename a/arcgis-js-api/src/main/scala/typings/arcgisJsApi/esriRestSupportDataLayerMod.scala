@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.DataLayer
-import typings.arcgisJsApi.esri.DataLayerConstructor
 import typings.arcgisJsApi.esri.DataLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportDataLayerMod extends Shortcut {
+/* static members */
+object esriRestSupportDataLayerMod {
   
-  @JSImport("esri/rest/support/DataLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & DataLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/DataLayer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportDataLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with DataLayer {
     def this(properties: DataLayerProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportDataLayerMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/DataLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & DataLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportDataLayerMod.foo` */
-  override def _to: js.Object & DataLayerConstructor = ^
+  inline def fromJSON(json: Any): DataLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DataLayer]
 }

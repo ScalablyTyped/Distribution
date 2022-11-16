@@ -12,15 +12,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.log
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait sizeCreateClassBreaksRendererParams
-  extends StObject
-     with Object {
+trait sizeCreateClassBreaksRendererParams extends StObject {
   
   /**
     * The classification method used for generating breaks.
@@ -45,7 +41,14 @@ trait sizeCreateClassBreaksRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
-  var field: String
+  var field: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer for which the visualization is generated.
@@ -181,14 +184,8 @@ trait sizeCreateClassBreaksRendererParams
 }
 object sizeCreateClassBreaksRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): sizeCreateClassBreaksRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): sizeCreateClassBreaksRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeCreateClassBreaksRendererParams]
   }
   
@@ -203,6 +200,12 @@ object sizeCreateClassBreaksRendererParams {
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

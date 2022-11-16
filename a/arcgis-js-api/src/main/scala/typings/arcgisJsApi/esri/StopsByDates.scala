@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StopsByDates
-  extends StObject
-     with Object {
+trait StopsByDates extends StObject {
   
   /**
     * Array of dates.
@@ -19,13 +15,8 @@ trait StopsByDates
 }
 object StopsByDates {
   
-  inline def apply(
-    constructor: js.Function,
-    dates: js.Array[js.Date],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): StopsByDates = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dates = dates.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(dates: js.Array[js.Date]): StopsByDates = {
+    val __obj = js.Dynamic.literal(dates = dates.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsByDates]
   }
   

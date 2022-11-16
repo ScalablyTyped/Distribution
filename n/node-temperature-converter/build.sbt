@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-temperature-converter"
-version := "1.0-dt-20220309Z-a19278"
+version := "1.0-dt-20220309Z-c16bab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

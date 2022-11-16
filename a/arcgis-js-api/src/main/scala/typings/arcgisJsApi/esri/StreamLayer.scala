@@ -16,7 +16,16 @@ trait StreamLayer
      with ScaleRangeLayer
      with TemporalLayer
      with BlendLayer
-     with FeatureEffectLayer {
+     with FeatureEffectLayer
+     with FeatureReductionLayer {
+  
+  /**
+    * Establishes a connection to a web socket that satisfy the specified connection parameters.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#connect)
+    */
+  def connect(): js.Promise[StreamConnection] = js.native
+  def connect(parameters: ConnectionParameters): js.Promise[StreamConnection] = js.native
   
   /**
     * Copyright information for the layer.
@@ -24,6 +33,13 @@ trait StreamLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#copyright)
     */
   var copyright: String = js.native
+  
+  /**
+    * Creates a [ConnectionParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters) object that can be used to establish a connection to a web socket that satisfies the layer's configuration.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#createConnectionParameters)
+    */
+  def createConnectionParameters(): ConnectionParameters = js.native
   
   /**
     * Creates a popup template for the layer, populated with all the fields of the layer.
@@ -60,13 +76,6 @@ trait StreamLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */
   var elevationInfo: StreamLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionSelection = js.native
   
   /**
     * An array of fields in the layer.

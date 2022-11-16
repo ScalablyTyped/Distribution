@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationTileData
-  extends StObject
-     with Object {
+trait ElevationTileData extends StObject {
   
   /**
     * The height of the tile in pixels.
@@ -47,17 +43,8 @@ trait ElevationTileData
 }
 object ElevationTileData {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    height: Double,
-    maxZError: Double,
-    noDataValue: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    values: js.Array[Double],
-    width: Double
-  ): ElevationTileData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], maxZError = maxZError.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(height: Double, maxZError: Double, noDataValue: Double, values: js.Array[Double], width: Double): ElevationTileData = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], maxZError = maxZError.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationTileData]
   }
   

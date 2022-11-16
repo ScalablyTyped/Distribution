@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,25 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymbolTableElementType extends StObject
 object SymbolTableElementType {
   
-  inline def ImageSymbolTableElementInfo(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    src: String
-  ): typings.arcgisJsApi.esri.ImageSymbolTableElementInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), src = src.asInstanceOf[js.Any])
+  inline def ImageSymbolTableElementInfo(opacity: Double, src: String): typings.arcgisJsApi.esri.ImageSymbolTableElementInfo = {
+    val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ImageSymbolTableElementInfo]
   }
   
-  inline def SymbolTableElementInfo(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    label: String | RampTitle,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbol: Symbol
-  ): typings.arcgisJsApi.esri.SymbolTableElementInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
+  inline def SymbolTableElementInfo(label: String | RampTitle, symbol: Symbol): typings.arcgisJsApi.esri.SymbolTableElementInfo = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SymbolTableElementInfo]
   }
 }

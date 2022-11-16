@@ -21,10 +21,9 @@ object PredicateType {
   inline def apply(
     asserts: ToSerialized[Boolean],
     name: ToSerialized[String],
-    targetType: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]],
     `type`: ToSerialized[/* "predicate" */ String]
   ): PredicateType = {
-    val __obj = js.Dynamic.literal(asserts = asserts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asserts = asserts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredicateType]
   }
@@ -36,6 +35,8 @@ object PredicateType {
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setTargetType(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
     inline def setType(value: ToSerialized[/* "predicate" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

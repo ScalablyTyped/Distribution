@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FrameTaskHandle
-  extends StObject
-     with Object {
+trait FrameTaskHandle extends StObject {
   
   /**
     * Pause the execution the frame task at every frame.
@@ -33,15 +29,8 @@ trait FrameTaskHandle
 }
 object FrameTaskHandle {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    pause: () => scala.Unit,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    remove: () => scala.Unit,
-    resume: () => scala.Unit
-  ): FrameTaskHandle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pause = js.Any.fromFunction0(pause), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), remove = js.Any.fromFunction0(remove), resume = js.Any.fromFunction0(resume))
+  inline def apply(pause: () => scala.Unit, remove: () => scala.Unit, resume: () => scala.Unit): FrameTaskHandle = {
+    val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), remove = js.Any.fromFunction0(remove), resume = js.Any.fromFunction0(resume))
     __obj.asInstanceOf[FrameTaskHandle]
   }
   

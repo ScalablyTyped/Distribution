@@ -27,6 +27,7 @@ import typings.std.HTMLCollection
 import typings.std.HTMLCollectionOf
 import typings.std.HTMLElement
 import typings.std.HTMLSlotElement
+import typings.std.InputEvent
 import typings.std.InsertPosition
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -130,6 +131,8 @@ trait PropsSVGRadialGradientEle extends StObject {
   
   var ariaColIndex: js.UndefOr[String | Null] = js.undefined
   
+  var ariaColIndexText: js.UndefOr[String | Null] = js.undefined
+  
   var ariaColSpan: js.UndefOr[String | Null] = js.undefined
   
   var ariaCurrent: js.UndefOr[String | Null] = js.undefined
@@ -141,6 +144,8 @@ trait PropsSVGRadialGradientEle extends StObject {
   var ariaHasPopup: js.UndefOr[String | Null] = js.undefined
   
   var ariaHidden: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaInvalid: js.UndefOr[String | Null] = js.undefined
   
   var ariaKeyShortcuts: js.UndefOr[String | Null] = js.undefined
   
@@ -173,6 +178,8 @@ trait PropsSVGRadialGradientEle extends StObject {
   var ariaRowCount: js.UndefOr[String | Null] = js.undefined
   
   var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowIndexText: js.UndefOr[String | Null] = js.undefined
   
   var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
   
@@ -360,7 +367,11 @@ trait PropsSVGRadialGradientEle extends StObject {
   
   var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
   
+  var onbeforeinput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null] = js.undefined
+  
   var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null] = js.undefined
+  
+  var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
   var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
   
@@ -596,6 +607,8 @@ trait PropsSVGRadialGradientEle extends StObject {
   
   var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  var role: js.UndefOr[String | Null] = js.undefined
+  
   var scroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var scrollBy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -713,6 +726,12 @@ object PropsSVGRadialGradientEle {
     
     inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
     
+    inline def setAriaColIndexText(value: String): Self = StObject.set(x, "ariaColIndexText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColIndexTextNull: Self = StObject.set(x, "ariaColIndexText", null)
+    
+    inline def setAriaColIndexTextUndefined: Self = StObject.set(x, "ariaColIndexText", js.undefined)
+    
     inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
     
     inline def setAriaColSpan(value: String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
@@ -750,6 +769,12 @@ object PropsSVGRadialGradientEle {
     inline def setAriaHiddenNull: Self = StObject.set(x, "ariaHidden", null)
     
     inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+    
+    inline def setAriaInvalid(value: String): Self = StObject.set(x, "ariaInvalid", value.asInstanceOf[js.Any])
+    
+    inline def setAriaInvalidNull: Self = StObject.set(x, "ariaInvalid", null)
+    
+    inline def setAriaInvalidUndefined: Self = StObject.set(x, "ariaInvalid", js.undefined)
     
     inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
     
@@ -844,6 +869,12 @@ object PropsSVGRadialGradientEle {
     inline def setAriaRowIndex(value: String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
     
     inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
+    
+    inline def setAriaRowIndexText(value: String): Self = StObject.set(x, "ariaRowIndexText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowIndexTextNull: Self = StObject.set(x, "ariaRowIndexText", null)
+    
+    inline def setAriaRowIndexTextUndefined: Self = StObject.set(x, "ariaRowIndexText", js.undefined)
     
     inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
     
@@ -1317,11 +1348,23 @@ object PropsSVGRadialGradientEle {
     
     inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
     
+    inline def setOnbeforeinput(value: js.ThisFunction1[PropsSVGRadialGradientEle, /* ev */ InputEvent, Any]): Self = StObject.set(x, "onbeforeinput", value.asInstanceOf[js.Any])
+    
+    inline def setOnbeforeinputNull: Self = StObject.set(x, "onbeforeinput", null)
+    
+    inline def setOnbeforeinputUndefined: Self = StObject.set(x, "onbeforeinput", js.undefined)
+    
     inline def setOnblur(value: js.ThisFunction1[PropsSVGRadialGradientEle, /* ev */ FocusEvent, Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
     inline def setOnblurNull: Self = StObject.set(x, "onblur", null)
     
     inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
+    
+    inline def setOncancel(value: js.ThisFunction1[PropsSVGRadialGradientEle, /* ev */ Event, Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+    
+    inline def setOncancelNull: Self = StObject.set(x, "oncancel", null)
+    
+    inline def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
     
     inline def setOncanplay(value: js.ThisFunction1[PropsSVGRadialGradientEle, /* ev */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
@@ -1964,6 +2007,12 @@ object PropsSVGRadialGradientEle {
     inline def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
     
     inline def setRequestPointerLockUndefined: Self = StObject.set(x, "requestPointerLock", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setSVG_SPREADMETHOD_PAD(value: Double): Self = StObject.set(x, "SVG_SPREADMETHOD_PAD", value.asInstanceOf[js.Any])
     

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterStretchColorrampResult
-  extends StObject
-     with Object {
+trait RasterStretchColorrampResult extends StObject {
   
   /**
     * The zero-based index of the band represented by the renderer.
@@ -26,14 +22,8 @@ trait RasterStretchColorrampResult
 }
 object RasterStretchColorrampResult {
   
-  inline def apply(
-    bandId: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    renderer: RasterStretchRenderer
-  ): RasterStretchColorrampResult = {
-    val __obj = js.Dynamic.literal(bandId = bandId.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+  inline def apply(bandId: Double, renderer: RasterStretchRenderer): RasterStretchColorrampResult = {
+    val __obj = js.Dynamic.literal(bandId = bandId.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterStretchColorrampResult]
   }
   

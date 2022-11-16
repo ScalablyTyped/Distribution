@@ -422,6 +422,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type LayerConfig = {[layerName: string] : string | std.Array<string> | d3kit.d3kit.LayerConfig | std.Array<d3kit.d3kit.LayerConfig>}
+  }}}
+  to avoid circular code involving: 
+  - d3kit.d3kit.LayerConfig
+  */
   trait LayerConfig
     extends StObject
        with /* layerName */ StringDictionary[String | (js.Array[LayerConfig | String]) | LayerConfig]

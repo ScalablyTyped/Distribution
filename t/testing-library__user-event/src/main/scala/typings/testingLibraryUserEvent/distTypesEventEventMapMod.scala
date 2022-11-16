@@ -482,6 +482,17 @@ object distTypesEventEventMapMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blur")(x.asInstanceOf[js.Any])
     
+    @JSImport("@testing-library/user-event/dist/types/event/eventMap", "eventMapKeys.cancel")
+    @js.native
+    def cancel: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.testingLibraryUserEvent.testingLibraryUserEventStrings.click, typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick, typings.testingLibraryUserEvent.testingLibraryUserEventStrings.contextmenu_ */ Any
+      ] = js.native
+    inline def cancel_=(
+      x: js.UndefOr[
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.testingLibraryUserEvent.testingLibraryUserEventStrings.click, typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick, typings.testingLibraryUserEvent.testingLibraryUserEventStrings.contextmenu_ */ Any
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
+    
     @JSImport("@testing-library/user-event/dist/types/event/eventMap", "eventMapKeys.canplay")
     @js.native
     def canplay: js.UndefOr[

@@ -97,6 +97,8 @@ trait PropsElement extends StObject {
   
   var ariaColIndex: js.UndefOr[String | Null] = js.undefined
   
+  var ariaColIndexText: js.UndefOr[String | Null] = js.undefined
+  
   var ariaColSpan: js.UndefOr[String | Null] = js.undefined
   
   var ariaCurrent: js.UndefOr[String | Null] = js.undefined
@@ -108,6 +110,8 @@ trait PropsElement extends StObject {
   var ariaHasPopup: js.UndefOr[String | Null] = js.undefined
   
   var ariaHidden: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaInvalid: js.UndefOr[String | Null] = js.undefined
   
   var ariaKeyShortcuts: js.UndefOr[String | Null] = js.undefined
   
@@ -140,6 +144,8 @@ trait PropsElement extends StObject {
   var ariaRowCount: js.UndefOr[String | Null] = js.undefined
   
   var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
+  
+  var ariaRowIndexText: js.UndefOr[String | Null] = js.undefined
   
   var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
   
@@ -345,6 +351,8 @@ trait PropsElement extends StObject {
   
   var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  var role: js.UndefOr[String | Null] = js.undefined
+  
   var scroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var scrollBy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -454,6 +462,12 @@ object PropsElement {
     
     inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
     
+    inline def setAriaColIndexText(value: String): Self = StObject.set(x, "ariaColIndexText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColIndexTextNull: Self = StObject.set(x, "ariaColIndexText", null)
+    
+    inline def setAriaColIndexTextUndefined: Self = StObject.set(x, "ariaColIndexText", js.undefined)
+    
     inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
     
     inline def setAriaColSpan(value: String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
@@ -491,6 +505,12 @@ object PropsElement {
     inline def setAriaHiddenNull: Self = StObject.set(x, "ariaHidden", null)
     
     inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+    
+    inline def setAriaInvalid(value: String): Self = StObject.set(x, "ariaInvalid", value.asInstanceOf[js.Any])
+    
+    inline def setAriaInvalidNull: Self = StObject.set(x, "ariaInvalid", null)
+    
+    inline def setAriaInvalidUndefined: Self = StObject.set(x, "ariaInvalid", js.undefined)
     
     inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
     
@@ -585,6 +605,12 @@ object PropsElement {
     inline def setAriaRowIndex(value: String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
     
     inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
+    
+    inline def setAriaRowIndexText(value: String): Self = StObject.set(x, "ariaRowIndexText", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowIndexTextNull: Self = StObject.set(x, "ariaRowIndexText", null)
+    
+    inline def setAriaRowIndexTextUndefined: Self = StObject.set(x, "ariaRowIndexText", js.undefined)
     
     inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
     
@@ -1089,6 +1115,12 @@ object PropsElement {
     inline def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
     
     inline def setRequestPointerLockUndefined: Self = StObject.set(x, "requestPointerLock", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setScroll(value: () => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction0(value))
     

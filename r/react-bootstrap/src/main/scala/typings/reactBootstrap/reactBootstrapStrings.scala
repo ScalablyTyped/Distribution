@@ -94,6 +94,10 @@ object reactBootstrapStrings {
   inline def success: success = "success".asInstanceOf[success]
   
   @js.native
+  sealed trait title extends StObject
+  inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
   sealed trait top extends StObject
   inline def top: top = "top".asInstanceOf[top]
   

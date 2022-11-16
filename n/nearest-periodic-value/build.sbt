@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nearest-periodic-value"
-version := "1.2-dt-20211223Z-72c88a"
+version := "1.2-dt-20211223Z-2a33b9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

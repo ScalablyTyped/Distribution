@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanwhocodes__gitignore-to-minimatch"
-version := "1.0.2-04aa72"
+version := "1.0.2-aa5bd2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,13 +15,40 @@ object mod {
   
   type FunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonArray = std.Array<@wdio/types.@wdio/types.JsonPrimitive | @wdio/types.@wdio/types.JsonObject | @wdio/types.@wdio/types.JsonArray>
+  }}}
+  to avoid circular code involving: 
+  - @wdio/types.@wdio/types.JsonArray
+  */
   @js.native
   trait JsonArray
     extends StObject
        with Array[JsonPrimitive | JsonObject | JsonArray]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonCompatible = @wdio/types.@wdio/types.JsonObject | @wdio/types.@wdio/types.JsonArray
+  }}}
+  to avoid circular code involving: 
+  - @wdio/types.@wdio/types.JsonArray
+  - @wdio/types.@wdio/types.JsonCompatible
+  */
   type JsonCompatible = JsonObject | Any
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonObject = {[x: string] : @wdio/types.@wdio/types.JsonPrimitive | @wdio/types.@wdio/types.JsonObject | @wdio/types.@wdio/types.JsonArray}
+  }}}
+  to avoid circular code involving: 
+  - @wdio/types.@wdio/types.JsonArray
+  - @wdio/types.@wdio/types.JsonCompatible
+  - @wdio/types.@wdio/types.JsonObject
+  */
   trait JsonObject
     extends StObject
        with /* x */ StringDictionary[JsonPrimitive | JsonObject | JsonArray]

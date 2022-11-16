@@ -49,6 +49,14 @@ type GenerateId = js.Function2[/* rule */ Rule, /* sheet */ js.UndefOr[StyleShee
 
 type InsertionPoint = String | HTMLElement | Comment
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JssStyle = {[ K in keyof jss.jss.NormalCssProperties ]: jss.jss.NormalCssValues<K> | jss.jss.JssStyle<Props, Theme> | jss.jss.Func<Props, Theme, jss.jss.NormalCssValues<K> | jss.jss.JssStyle<undefined, undefined> | undefined> | jss.jss.MinimalObservable<jss.jss.NormalCssValues<K> | jss.jss.JssStyle<any, undefined> | undefined>} | {[K: string] : jss.jss.JssValue | jss.jss.JssStyle<Props, Theme> | jss.jss.Func<Props, Theme, jss.jss.JssValue | jss.jss.JssStyle<undefined, undefined> | undefined> | jss.jss.MinimalObservable<jss.jss.JssValue | jss.jss.JssStyle<any, undefined> | undefined>}
+}}}
+to avoid circular code involving: 
+- jss.jss.JssStyle
+*/
 type JssStyle[Props, Theme] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof jss.jss.NormalCssProperties ]: jss.jss.NormalCssValues<K> | any | jss.jss.Func<Props, Theme, jss.jss.NormalCssValues<K> | any | undefined> | jss.jss.MinimalObservable<jss.jss.NormalCssValues<K> | any | undefined>} */ js.Any) | (StringDictionary[
 JssValue | Any | (Func[Props, Theme, js.UndefOr[JssValue | Any]]) | (MinimalObservable[js.UndefOr[JssValue | Any]])])
 

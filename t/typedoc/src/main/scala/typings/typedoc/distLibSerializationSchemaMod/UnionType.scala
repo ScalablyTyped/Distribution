@@ -28,5 +28,7 @@ object UnionType {
     inline def setType(value: ToSerialized[/* "union" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: ToSerialized[js.Array[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesVarargs(value: typings.typedoc.distLibModelsTypesMod.SomeType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

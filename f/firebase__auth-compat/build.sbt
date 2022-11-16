@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "firebase__auth-compat"
-version := "0.2.24-5a47b6"
+version := "0.2.24-3cc133"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app" % "0.8.4-b8bdad",
-  "org.scalablytyped" %%% "firebase__app-compat" % "0.1.39-5a59c3",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-1b99ae",
-  "org.scalablytyped" %%% "firebase__auth" % "0.20.11-3090f0",
-  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-dacf77",
-  "org.scalablytyped" %%% "firebase__auth-types" % "0.11.1-dff632",
-  "org.scalablytyped" %%% "firebase__component" % "0.5.21-905454",
-  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-d9a3b0",
-  "org.scalablytyped" %%% "firebase__util" % "1.7.3-4a44ae",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221108Z-e7ea9b",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-38b082")
+  "org.scalablytyped" %%% "firebase__app" % "0.8.4-8ef584",
+  "org.scalablytyped" %%% "firebase__app-compat" % "0.1.39-6153c9",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-120265",
+  "org.scalablytyped" %%% "firebase__auth" % "0.20.11-e43193",
+  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-6e854a",
+  "org.scalablytyped" %%% "firebase__auth-types" % "0.11.1-76cec1",
+  "org.scalablytyped" %%% "firebase__component" % "0.5.21-e12783",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-5011e0",
+  "org.scalablytyped" %%% "firebase__util" % "1.7.3-898cce",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221108Z-9f473f",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-0611bd")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

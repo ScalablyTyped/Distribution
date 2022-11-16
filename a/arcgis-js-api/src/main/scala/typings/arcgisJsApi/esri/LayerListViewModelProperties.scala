@@ -9,6 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerListViewModelProperties extends StObject {
   
   /**
+    * Whether to provide an indication if a layer is being published in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html).
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#checkPublishStatusEnabled)
+    */
+  var checkPublishStatusEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#listItemCreatedFunction)
@@ -30,6 +39,10 @@ object LayerListViewModelProperties {
   }
   
   extension [Self <: LayerListViewModelProperties](x: Self) {
+    
+    inline def setCheckPublishStatusEnabled(value: Boolean): Self = StObject.set(x, "checkPublishStatusEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setCheckPublishStatusEnabledUndefined: Self = StObject.set(x, "checkPublishStatusEnabled", js.undefined)
     
     inline def setListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.Blob
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttachmentEditAttachment
-  extends StObject
-     with Object {
+trait AttachmentEditAttachment extends StObject {
   
   /**
     * The content type of the attachment.
@@ -48,13 +44,8 @@ trait AttachmentEditAttachment
 }
 object AttachmentEditAttachment {
   
-  inline def apply(
-    constructor: js.Function,
-    globalId: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AttachmentEditAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(globalId: String): AttachmentEditAttachment = {
+    val __obj = js.Dynamic.literal(globalId = globalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentEditAttachment]
   }
   

@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.StreamLayerView
-import typings.arcgisJsApi.esri.StreamLayerViewConstructor
 import typings.arcgisJsApi.esri.StreamLayerViewProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewsLayersStreamLayerViewMod extends Shortcut {
+object esriViewsLayersStreamLayerViewMod {
   
-  @JSImport("esri/views/layers/StreamLayerView", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & StreamLayerViewConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/layers/StreamLayerView", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriViewsLayersStreamLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with StreamLayerView {
     def this(properties: StreamLayerViewProperties) = this()
   }
-  
-  type _To = js.Object & StreamLayerViewConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewsLayersStreamLayerViewMod.foo` */
-  override def _to: js.Object & StreamLayerViewConstructor = ^
 }

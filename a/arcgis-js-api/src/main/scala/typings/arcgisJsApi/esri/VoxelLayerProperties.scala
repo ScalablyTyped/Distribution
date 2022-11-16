@@ -24,6 +24,27 @@ trait VoxelLayerProperties
   var currentVariableId: js.UndefOr[Double] = js.undefined
   
   /**
+    * Controls whether or not to globally disable all dynamic sections in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableDynamicSections)
+    */
+  var enableDynamicSections: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether or not to globally disable all isosurfaces in the current [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableIsosurfaces)
+    */
+  var enableIsosurfaces: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether or not to globally disable all slices in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableSlices)
+    */
+  var enableSlices: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Current rendering mode for the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
     *
     * @default "volume"
@@ -33,11 +54,18 @@ trait VoxelLayerProperties
   var renderMode: js.UndefOr[volume | surfaces] = js.undefined
   
   /**
+    * The collection of variable styles, containing exactly one [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html) for each [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#variableStyles)
+    */
+  var variableStyles: js.UndefOr[CollectionProperties[VoxelVariableStyleProperties]] = js.undefined
+  
+  /**
     * The collection of volume styles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#volumeStyles)
     */
-  var volumeStyles: js.UndefOr[CollectionProperties[VoxelVolumeStyleProperties]] = js.undefined
+  var volumeStyles: js.UndefOr[CollectionProperties[voxelVoxelVolumeStyleProperties]] = js.undefined
 }
 object VoxelLayerProperties {
   
@@ -52,14 +80,32 @@ object VoxelLayerProperties {
     
     inline def setCurrentVariableIdUndefined: Self = StObject.set(x, "currentVariableId", js.undefined)
     
+    inline def setEnableDynamicSections(value: Boolean): Self = StObject.set(x, "enableDynamicSections", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDynamicSectionsUndefined: Self = StObject.set(x, "enableDynamicSections", js.undefined)
+    
+    inline def setEnableIsosurfaces(value: Boolean): Self = StObject.set(x, "enableIsosurfaces", value.asInstanceOf[js.Any])
+    
+    inline def setEnableIsosurfacesUndefined: Self = StObject.set(x, "enableIsosurfaces", js.undefined)
+    
+    inline def setEnableSlices(value: Boolean): Self = StObject.set(x, "enableSlices", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSlicesUndefined: Self = StObject.set(x, "enableSlices", js.undefined)
+    
     inline def setRenderMode(value: volume | surfaces): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     
     inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
     
-    inline def setVolumeStyles(value: CollectionProperties[VoxelVolumeStyleProperties]): Self = StObject.set(x, "volumeStyles", value.asInstanceOf[js.Any])
+    inline def setVariableStyles(value: CollectionProperties[VoxelVariableStyleProperties]): Self = StObject.set(x, "variableStyles", value.asInstanceOf[js.Any])
+    
+    inline def setVariableStylesUndefined: Self = StObject.set(x, "variableStyles", js.undefined)
+    
+    inline def setVariableStylesVarargs(value: VoxelVariableStyleProperties*): Self = StObject.set(x, "variableStyles", js.Array(value*))
+    
+    inline def setVolumeStyles(value: CollectionProperties[voxelVoxelVolumeStyleProperties]): Self = StObject.set(x, "volumeStyles", value.asInstanceOf[js.Any])
     
     inline def setVolumeStylesUndefined: Self = StObject.set(x, "volumeStyles", js.undefined)
     
-    inline def setVolumeStylesVarargs(value: VoxelVolumeStyleProperties*): Self = StObject.set(x, "volumeStyles", js.Array(value*))
+    inline def setVolumeStylesVarargs(value: voxelVoxelVolumeStyleProperties*): Self = StObject.set(x, "volumeStyles", js.Array(value*))
   }
 }

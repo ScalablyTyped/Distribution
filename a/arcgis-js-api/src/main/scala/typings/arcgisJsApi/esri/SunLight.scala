@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.ArrayLike
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SunLight
-  extends StObject
-     with Object {
+trait SunLight extends StObject {
   
   /**
     * The ambient light color and intensity.
@@ -34,15 +30,8 @@ trait SunLight
 }
 object SunLight {
   
-  inline def apply(
-    ambient: ColorAndIntensity,
-    constructor: js.Function,
-    diffuse: ColorAndIntensity,
-    direction: ArrayLike[Double],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SunLight = {
-    val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(ambient: ColorAndIntensity, diffuse: ColorAndIntensity, direction: ArrayLike[Double]): SunLight = {
+    val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SunLight]
   }
   

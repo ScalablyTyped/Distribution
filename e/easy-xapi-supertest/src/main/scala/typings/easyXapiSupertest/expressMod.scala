@@ -16,6 +16,14 @@ object expressMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Router = easy-xapi-supertest.express.IRouter<easy-xapi-supertest.express.Router>
+  }}}
+  to avoid circular code involving: 
+  - easy-xapi-supertest.express.Router
+  */
   @js.native
   trait Router extends IRouter[Router]
   object Router {

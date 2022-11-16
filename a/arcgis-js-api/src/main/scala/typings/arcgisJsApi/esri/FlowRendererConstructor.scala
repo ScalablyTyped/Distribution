@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FlowRendererConstructor
   extends StObject
-     with /**
-  * The FlowRenderer allows you to visualize your raster data with animated streamlines.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html)
-  */
-Instantiable0[FlowRenderer]
+     with Instantiable0[FlowRenderer]
      with Instantiable1[/* properties */ FlowRendererProperties, FlowRenderer] {
   
   def fromJSON(json: Any): FlowRenderer = js.native

@@ -5,15 +5,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`3d-flat`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric-uniform`
 import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait locationCreateRendererParams
-  extends StObject
-     with Object {
+trait locationCreateRendererParams extends StObject {
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
@@ -23,6 +19,13 @@ trait locationCreateRendererParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#createRenderer)
     */
   var colorMixMode: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-location.html#createRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer for which the visualization is generated.
@@ -77,13 +80,8 @@ trait locationCreateRendererParams
 }
 object locationCreateRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): locationCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): locationCreateRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[locationCreateRendererParams]
   }
   
@@ -92,6 +90,10 @@ object locationCreateRendererParams {
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     inline def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

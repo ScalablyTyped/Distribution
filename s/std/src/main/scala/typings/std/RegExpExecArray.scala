@@ -10,6 +10,12 @@ trait RegExpExecArray
   extends StObject
      with Array[java.lang.String] {
   
+  /**
+    * The first match. This will always be present because `null` will be returned if there are no matches.
+    */
+  /* standard es5 */
+  var `0`: java.lang.String = js.native
+  
   /* standard es2018.regexp */
   var groups: js.UndefOr[/* standard es2018.regexp */
   StringDictionary[java.lang.String]] = js.native

@@ -29,5 +29,10 @@ trait ImageElement
     */
   var image: String | HTMLImageElement | HTMLCanvasElement | ImageData = js.native
   
-  var `type`: image = js.native
+  /**
+    * The element type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#type)
+    */
+  val `type`: image = js.native
 }

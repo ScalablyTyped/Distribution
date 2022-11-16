@@ -1,8 +1,13 @@
 package typings.deta
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.deta.anon.Items
+import typings.deta.distTypesTypesActionMod.Action
+import typings.deta.distTypesTypesBasicMod.ArrayType
+import typings.deta.distTypesTypesBasicMod.BasicType
 import typings.deta.distTypesTypesBasicMod.NullType
 import typings.deta.distTypesTypesBasicMod.ObjectType
+import typings.deta.distTypesTypesBasicMod.UndefinedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,9 +47,26 @@ object distTypesTypesBaseResponseMod {
   
   type GetResponse = ObjectType | NullType
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type InsertResponse = deta.deta/dist/types/types/basic.ObjectType
+  }}}
+  to avoid circular code involving: 
+  - deta.deta/dist/types/types/base/response.InsertResponse
+  - deta.deta/dist/types/types/basic.ArrayType
+  - deta.deta/dist/types/types/basic.ObjectType
+  */
   trait InsertResponse
     extends StObject
-       with ObjectType
+       with /* key */ StringDictionary[ObjectType | ArrayType | BasicType | NullType | UndefinedType | Action]
+  object InsertResponse {
+    
+    inline def apply(): InsertResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InsertResponse]
+    }
+  }
   
   trait PutManyResponse extends StObject {
     

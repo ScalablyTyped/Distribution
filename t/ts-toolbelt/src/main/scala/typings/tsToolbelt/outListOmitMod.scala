@@ -11,13 +11,12 @@ object outListOmitMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     L extends unknown ? ts-toolbelt.ts-toolbelt/out/List/Omit._Omit<L, K> : never
     }}}
     */
-  @js.native
-  trait Omit[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, K /* <: Key */] extends StObject
+  type Omit[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, K /* <: Key */] = typings.tsToolbelt.outListListMod.List[Any]
   
   type _Omit[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, K /* <: Key */] = _ListOf[
     typings.tsToolbelt.outObjectOmitMod._Omit[ObjectOf[L], (/* template literal string: ${K&number} */ String) | K]

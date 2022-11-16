@@ -28,6 +28,8 @@ object Comment {
     
     inline def setBlockTagsUndefined: Self = StObject.set(x, "blockTags", js.undefined)
     
+    inline def setBlockTagsVarargs(value: typings.typedoc.distLibModelsCommentsCommentMod.CommentTag*): Self = StObject.set(x, "blockTags", js.Array(value*))
+    
     inline def setModifierTags(value: js.Array[String]): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
     
     inline def setModifierTagsUndefined: Self = StObject.set(x, "modifierTags", js.undefined)

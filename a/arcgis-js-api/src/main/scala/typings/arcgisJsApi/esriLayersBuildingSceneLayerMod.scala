@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.BuildingSceneLayer
-import typings.arcgisJsApi.esri.BuildingSceneLayerConstructor
 import typings.arcgisJsApi.esri.BuildingSceneLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SceneServiceVersion
@@ -11,13 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersBuildingSceneLayerMod extends Shortcut {
+/* static members */
+object esriLayersBuildingSceneLayerMod {
   
-  @JSImport("esri/layers/BuildingSceneLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BuildingSceneLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/BuildingSceneLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersBuildingSceneLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BuildingSceneLayer {
     def this(properties: BuildingSceneLayerProperties) = this()
@@ -106,9 +100,9 @@ object esriLayersBuildingSceneLayerMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/BuildingSceneLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & BuildingSceneLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersBuildingSceneLayerMod.foo` */
-  override def _to: js.Object & BuildingSceneLayerConstructor = ^
+  inline def fromJSON(json: Any): BuildingSceneLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[BuildingSceneLayer]
 }

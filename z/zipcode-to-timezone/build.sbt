@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipcode-to-timezone"
-version := "0.0-dt-20220624Z-d204ee"
+version := "0.0-dt-20220624Z-a1970f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

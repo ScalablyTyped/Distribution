@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "peerjs"
-version := "1.4.7-69d32a"
+version := "1.4.7-45a389"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-3076aa",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-5bff7d",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

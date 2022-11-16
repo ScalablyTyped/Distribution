@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.`candidate-pair`
   - typings.std.stdStrings.certificate
   - typings.std.stdStrings.codec
-  - typings.std.stdStrings.csrc
   - typings.std.stdStrings.`data-channel`
   - typings.std.stdStrings.`inbound-rtp`
   - typings.std.stdStrings.`local-candidate`
@@ -29,8 +28,6 @@ object RTCStatsType {
   inline def certificate: typings.std.stdStrings.certificate = "certificate".asInstanceOf[typings.std.stdStrings.certificate]
   
   inline def codec: typings.std.stdStrings.codec = "codec".asInstanceOf[typings.std.stdStrings.codec]
-  
-  inline def csrc: typings.std.stdStrings.csrc = "csrc".asInstanceOf[typings.std.stdStrings.csrc]
   
   inline def `data-channel`: typings.std.stdStrings.`data-channel` = "data-channel".asInstanceOf[typings.std.stdStrings.`data-channel`]
   

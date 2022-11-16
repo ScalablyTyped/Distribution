@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONLayerCapabilitiesData
-  extends StObject
-     with Object {
+trait GeoJSONLayerCapabilitiesData extends StObject {
   
   /**
     * Indicates if the attachment is enabled on the layer.
@@ -33,15 +29,8 @@ trait GeoJSONLayerCapabilitiesData
 }
 object GeoJSONLayerCapabilitiesData {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supportsAttachment: Boolean,
-    supportsM: Boolean,
-    supportsZ: Boolean
-  ): GeoJSONLayerCapabilitiesData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAttachment = supportsAttachment.asInstanceOf[js.Any], supportsM = supportsM.asInstanceOf[js.Any], supportsZ = supportsZ.asInstanceOf[js.Any])
+  inline def apply(supportsAttachment: Boolean, supportsM: Boolean, supportsZ: Boolean): GeoJSONLayerCapabilitiesData = {
+    val __obj = js.Dynamic.literal(supportsAttachment = supportsAttachment.asInstanceOf[js.Any], supportsM = supportsM.asInstanceOf[js.Any], supportsZ = supportsZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerCapabilitiesData]
   }
   

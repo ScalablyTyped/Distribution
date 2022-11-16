@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "luhn-generator"
-version := "0.5-dt-20211202Z-221fc7"
+version := "0.5-dt-20211202Z-dcdf98"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

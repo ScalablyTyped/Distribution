@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureReductionSelectionConstructor
   extends StObject
-     with /**
-  * Declutters points in the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) by thinning overlapping features so no features intersect on screen.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html)
-  */
-Instantiable0[FeatureReductionSelection]
+     with Instantiable0[FeatureReductionSelection]
      with Instantiable1[/* properties */ FeatureReductionSelectionProperties, FeatureReductionSelection] {
   
   def fromJSON(json: Any): FeatureReductionSelection = js.native

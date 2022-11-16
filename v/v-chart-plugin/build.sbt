@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "v-chart-plugin"
-version := "0.2-dt-20211223Z-fcbc60"
+version := "0.2-dt-20211223Z-76d7df"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -11,7 +11,7 @@ trait HandleOwnerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
     */
-  var handles: js.UndefOr[HandlesProperties] = js.undefined
+  var handles: js.UndefOr[Handles] = js.undefined
 }
 object HandleOwnerProperties {
   
@@ -22,7 +22,7 @@ object HandleOwnerProperties {
   
   extension [Self <: HandleOwnerProperties](x: Self) {
     
-    inline def setHandles(value: HandlesProperties): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: Handles): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
     inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
   }

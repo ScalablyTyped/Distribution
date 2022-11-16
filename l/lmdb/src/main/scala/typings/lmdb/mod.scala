@@ -558,6 +558,14 @@ object mod {
   
   trait GetOptions extends StObject
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Key = std.Array<lmdb.lmdb.Key> | string | symbol | number | boolean | std.Uint8Array
+  }}}
+  to avoid circular code involving: 
+  - lmdb.lmdb.Key
+  */
   type Key = js.Array[Any] | String | js.Symbol | Double | Boolean | js.typedarray.Uint8Array
   
   trait PutOptions extends StObject {

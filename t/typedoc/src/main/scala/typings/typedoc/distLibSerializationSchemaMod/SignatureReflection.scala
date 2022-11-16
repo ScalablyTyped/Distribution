@@ -49,24 +49,12 @@ trait SignatureReflection extends StObject {
 object SignatureReflection {
   
   inline def apply(
-    comment: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]],
     flags: ReflectionFlags,
     id: ToSerialized[Double],
-    implementationOf: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]],
-    inheritedFrom: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]],
     kind: ToSerialized[ReflectionKind],
-    kindString: ToSerialized[js.UndefOr[String]],
-    name: ToSerialized[String],
-    overwrites: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]],
-    parameters: ToSerialized[
-      js.UndefOr[
-        js.Array[typings.typedoc.distLibModelsReflectionsParameterMod.ParameterReflection]
-      ]
-    ],
-    `type`: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]
+    name: ToSerialized[String]
   ): SignatureReflection = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], implementationOf = implementationOf.asInstanceOf[js.Any], inheritedFrom = inheritedFrom.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overwrites = overwrites.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureReflection]
   }
   
@@ -74,17 +62,25 @@ object SignatureReflection {
     
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
     inline def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     inline def setId(value: ToSerialized[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImplementationOf(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]]): Self = StObject.set(x, "implementationOf", value.asInstanceOf[js.Any])
     
+    inline def setImplementationOfUndefined: Self = StObject.set(x, "implementationOf", js.undefined)
+    
     inline def setInheritedFrom(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]]): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
+    
+    inline def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
     inline def setKind(value: ToSerialized[ReflectionKind]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindString(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
+    
+    inline def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -94,6 +90,8 @@ object SignatureReflection {
     
     inline def setOverwrites(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.ReferenceType]]): Self = StObject.set(x, "overwrites", value.asInstanceOf[js.Any])
     
+    inline def setOverwritesUndefined: Self = StObject.set(x, "overwrites", js.undefined)
+    
     inline def setParameters(
       value: ToSerialized[
           js.UndefOr[
@@ -101,6 +99,10 @@ object SignatureReflection {
           ]
         ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    
+    inline def setParametersVarargs(value: typings.typedoc.distLibModelsReflectionsParameterMod.ParameterReflection*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setType(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -113,5 +115,9 @@ object SignatureReflection {
     ): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
     
     inline def setTypeParameterUndefined: Self = StObject.set(x, "typeParameter", js.undefined)
+    
+    inline def setTypeParameterVarargs(value: typings.typedoc.distLibModelsReflectionsTypeParameterMod.TypeParameterReflection*): Self = StObject.set(x, "typeParameter", js.Array(value*))
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

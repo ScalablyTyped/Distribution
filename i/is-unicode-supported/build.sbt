@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-unicode-supported"
-version := "1.3.0-15d9cb"
+version := "1.3.0-cd43b1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

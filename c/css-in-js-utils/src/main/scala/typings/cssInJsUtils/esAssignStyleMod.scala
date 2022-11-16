@@ -13,6 +13,14 @@ object esAssignStyleMod {
   
   inline def default(base: StyleObject, extendingStyles: StyleObject*): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(base.asInstanceOf[js.Any]).`++`(extendingStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleObject]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StyleObject = {[key: string] : string | number | css-in-js-utils.css-in-js-utils/es/assignStyle.StyleObject | std.Array<string | number | css-in-js-utils.css-in-js-utils/es/assignStyle.StyleObject>}
+  }}}
+  to avoid circular code involving: 
+  - css-in-js-utils.css-in-js-utils/es/assignStyle.StyleObject
+  */
   trait StyleObject
     extends StObject
        with /* key */ StringDictionary[String | Double | StyleObject | (js.Array[String | Double | StyleObject])]

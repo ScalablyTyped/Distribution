@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`selection-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
+import typings.arcgisJsApi.arcgisJsApiStrings.loaded
 import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
@@ -15,6 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureTable
   extends StObject
      with Widget_ {
+  
+  /**
+    * A read-only property indicating the type of filter used by the table.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#activeFilters)
+    */
+  val activeFilters: Collection[GeometryFilter | SelectionFilter] = js.native
+  
+  /**
+    * Use this read-only property if needing to query features while retaining a column's sort order.
+    *
+    * @default []
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#activeSortOrders)
+    */
+  val activeSortOrders: js.Array[ColumnSortOrder] = js.native
   
   /**
     * Indicates whether to display the `Attachments` field in the table.
@@ -37,12 +54,16 @@ trait FeatureTable
   /**
     * This clears any highlighted features.
     *
+    * @deprecated since version 4.25. Use {@link module:esri/core/Collection#removeAll highlightIds.removeAll()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#clearHighlights)
     */
   def clearHighlights(): scala.Unit = js.native
   
   /**
     * Clears the current selection within the table.
+    *
+    * @deprecated since version 4.25. Use {@link module:esri/core/Collection#removeAll highlightIds.removeAll()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#clearSelection)
     */
@@ -71,9 +92,19 @@ trait FeatureTable
     */
   val columns: Collection[FieldColumn | GroupColumn] = js.native
   
+  /**
+    * Deletes all the selected rows from the table.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#deleteSelection)
+    */
+  def deleteSelection(): js.Promise[scala.Unit] = js.native
+  def deleteSelection(showWarningPrompt: Boolean): js.Promise[scala.Unit] = js.native
+  
   def deselectRows(params: js.Array[Double | Graphic]): scala.Unit = js.native
   /**
     * Unselects the specified rows within the table.
+    *
+    * @deprecated since 4.25. Use {@link module:esri/widgets/FeatureTable#highlightIds highlightIds.remove()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#deselectRows)
     */
@@ -141,6 +172,23 @@ trait FeatureTable
     *
     * @default true
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightEnabled)
+    */
+  var highlightEnabled: Boolean = js.native
+  
+  /**
+    * This property accepts and returns a collection of feature ObjectId's.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightIds)
+    */
+  var highlightIds: Collection[Double] = js.native
+  
+  /**
+    * Indicates whether to highlight the associated feature when a row is selected.
+    *
+    * @default true
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable#highlightEnabled highlightEnabled} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightOnRowSelectEnabled)
     */
   var highlightOnRowSelectEnabled: Boolean = js.native
@@ -192,7 +240,7 @@ trait FeatureTable
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#refresh)
     */
-  def refresh(): scala.Unit = js.native
+  def refresh(): js.Promise[scala.Unit] = js.native
   
   /**
     * Scrolls the table to a row based on a specified index.
@@ -204,6 +252,8 @@ trait FeatureTable
   def selectRows(params: js.Array[Double | Graphic]): scala.Unit = js.native
   /**
     * Selects the specified rows within the table.
+    *
+    * @deprecated since 4.25. Use {@link module:esri/widgets/FeatureTable#highlightIds highlightIds.add()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#selectRows)
     */
@@ -238,7 +288,7 @@ trait FeatureTable
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#state)
     */
-  var state: disabled | loading | ready = js.native
+  val state: disabled | loading | loaded | ready = js.native
   
   /**
     * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-TableTemplate.html) used for the feature table.

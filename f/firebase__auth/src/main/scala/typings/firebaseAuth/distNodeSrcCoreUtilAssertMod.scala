@@ -86,5 +86,14 @@ object distNodeSrcCoreUtilAssertMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TypeExpectation = std.Function | string | @firebase/auth.@firebase/auth/dist/node/src/core/util/assert.MapType
+  }}}
+  to avoid circular code involving: 
+  - @firebase/auth.@firebase/auth/dist/node/src/core/util/assert.MapType
+  - @firebase/auth.@firebase/auth/dist/node/src/core/util/assert.TypeExpectation
+  */
   type TypeExpectation = js.Function | String | Any
 }

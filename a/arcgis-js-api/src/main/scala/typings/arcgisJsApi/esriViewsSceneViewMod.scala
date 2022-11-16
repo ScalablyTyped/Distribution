@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.landscape
 import typings.arcgisJsApi.arcgisJsApiStrings.large
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
@@ -12,20 +11,14 @@ import typings.arcgisJsApi.esri.BreakpointsOwnerBreakpoints
 import typings.arcgisJsApi.esri.DefaultUI
 import typings.arcgisJsApi.esri.Popup
 import typings.arcgisJsApi.esri.SceneView
-import typings.arcgisJsApi.esri.SceneViewConstructor
 import typings.arcgisJsApi.esri.SceneViewProperties
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewsSceneViewMod extends Shortcut {
+object esriViewsSceneViewMod {
   
-  @JSImport("esri/views/SceneView", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SceneViewConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/SceneView", JSImport.Namespace)
   @js.native
   /**
@@ -33,7 +26,7 @@ object esriViewsSceneViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SceneView {
     def this(properties: SceneViewProperties) = this()
@@ -150,9 +143,4 @@ object esriViewsSceneViewMod extends Shortcut {
     /* CompleteClass */
     var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
   }
-  
-  type _To = js.Object & SceneViewConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewsSceneViewMod.foo` */
-  override def _to: js.Object & SceneViewConstructor = ^
 }

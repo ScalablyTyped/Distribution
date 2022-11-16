@@ -15,6 +15,15 @@ trait FeatureForm
      with Widget_ {
   
   /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#disabled)
+    */
+  var disabled: Boolean = js.native
+  
+  /**
     * The associated feature containing the editable attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#feature)
@@ -71,6 +80,13 @@ trait FeatureForm
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#submit)
     */
   def submit(): scala.Unit = js.native
+  
+  /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#view)
+    */
+  var view: MapView | SceneView = js.native
   
   /**
     * The view model for this widget.

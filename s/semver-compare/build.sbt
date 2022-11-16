@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semver-compare"
-version := "1.0-dt-20211202Z-006ae5"
+version := "1.0-dt-20211202Z-59b237"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

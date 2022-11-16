@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,8 +33,10 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.OGCFeatureLayer
-import typings.arcgisJsApi.esri.OGCFeatureLayerConstructor
 import typings.arcgisJsApi.esri.OGCFeatureLayerProperties
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PortalItem
@@ -43,13 +44,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersOgcfeaturelayerMod extends Shortcut {
+/* static members */
+object esriLayersOgcfeaturelayerMod {
   
-  @JSImport("esri/layers/OGCFeatureLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & OGCFeatureLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/OGCFeatureLayer", JSImport.Namespace)
   @js.native
   /**
@@ -57,7 +54,7 @@ object esriLayersOgcfeaturelayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with OGCFeatureLayer {
     def this(properties: OGCFeatureLayerProperties) = this()
@@ -105,6 +102,14 @@ object esriLayersOgcfeaturelayerMod extends Shortcut {
       */
     /* CompleteClass */
     var featureEffect: FeatureEffect = js.native
+    
+    /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
     
     /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -162,9 +167,9 @@ object esriLayersOgcfeaturelayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/OGCFeatureLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & OGCFeatureLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersOgcfeaturelayerMod.foo` */
-  override def _to: js.Object & OGCFeatureLayerConstructor = ^
+  inline def fromJSON(json: Any): OGCFeatureLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[OGCFeatureLayer]
 }

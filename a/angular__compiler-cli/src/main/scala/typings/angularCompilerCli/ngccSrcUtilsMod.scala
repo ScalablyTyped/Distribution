@@ -79,6 +79,17 @@ object ngccSrcUtilsMod {
   
   type JsonArray = js.Array[JsonValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonObject = {[key: string] : @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue}
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonArray
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonObject
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/writing/package_json_updater.PackageJsonChange
+  */
   trait JsonObject
     extends StObject
        with /* key */ StringDictionary[JsonValue]
@@ -92,6 +103,15 @@ object ngccSrcUtilsMod {
   
   type JsonPrimitive = String | Double | Boolean | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonPrimitive | @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonArray | @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonObject | undefined
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonArray
+  - @angular/compiler-cli.@angular/compiler-cli/ngcc/src/utils.JsonValue
+  */
   type JsonValue = js.UndefOr[JsonPrimitive | Any | JsonObject]
   
   @js.native

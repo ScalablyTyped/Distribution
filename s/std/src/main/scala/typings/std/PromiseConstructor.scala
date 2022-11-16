@@ -85,7 +85,7 @@ Instantiable1[
   def any[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[Awaited[T]] = js.native
   
   // see: lib.es2015.iterable.d.ts
-  // all<T>(values: Iterable<T | PromiseLike<T>>): Promise<T[]>;
+  // all<T>(values: Iterable<T | PromiseLike<T>>): Promise<Awaited<T>[]>;
   /**
     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
@@ -108,7 +108,7 @@ Instantiable1[
   def race[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[Awaited[T]] = js.native
   
   // see: lib.es2015.iterable.d.ts
-  // race<T>(values: Iterable<T>): Promise<T extends PromiseLike<infer U> ? U : T>;
+  // race<T>(values: Iterable<T | PromiseLike<T>>): Promise<Awaited<T>>;
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.
@@ -130,8 +130,8 @@ Instantiable1[
     * @returns A promise whose internal state matches the provided promise.
     */
   /* standard es2015.promise */
-  def resolve[T](value: T): js.Promise[T] = js.native
-  def resolve[T](value: PromiseLike[T]): js.Promise[T] = js.native
+  def resolve[T](value: T): js.Promise[Awaited[T]] = js.native
+  def resolve[T](value: PromiseLike[T]): js.Promise[Awaited[T]] = js.native
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.species)

@@ -596,6 +596,8 @@ object libConfigServicePlaceholdersMod {
     
     var ssmincidents: js.UndefOr[typings.awsSdk.clientsSsmincidentsMod.ClientConfiguration] = js.native
     
+    var ssmsap: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ClientConfiguration] = js.native
+    
     var sso: js.UndefOr[typings.awsSdk.clientsSsoMod.ClientConfiguration] = js.native
     
     var ssoadmin: js.UndefOr[typings.awsSdk.clientsSsoadminMod.ClientConfiguration] = js.native
@@ -1240,6 +1242,8 @@ object libConfigServicePlaceholdersMod {
     var ssmcontacts: js.UndefOr[typings.awsSdk.clientsSsmcontactsMod.apiVersion] = js.undefined
     
     var ssmincidents: js.UndefOr[typings.awsSdk.clientsSsmincidentsMod.apiVersion] = js.undefined
+    
+    var ssmsap: js.UndefOr[typings.awsSdk.clientsSsmsapMod.apiVersion] = js.undefined
     
     var sso: js.UndefOr[typings.awsSdk.clientsSsoMod.apiVersion] = js.undefined
     
@@ -2475,6 +2479,10 @@ object libConfigServicePlaceholdersMod {
       inline def setSsmincidents(value: typings.awsSdk.clientsSsmincidentsMod.apiVersion): Self = StObject.set(x, "ssmincidents", value.asInstanceOf[js.Any])
       
       inline def setSsmincidentsUndefined: Self = StObject.set(x, "ssmincidents", js.undefined)
+      
+      inline def setSsmsap(value: typings.awsSdk.clientsSsmsapMod.apiVersion): Self = StObject.set(x, "ssmsap", value.asInstanceOf[js.Any])
+      
+      inline def setSsmsapUndefined: Self = StObject.set(x, "ssmsap", js.undefined)
       
       inline def setSso(value: typings.awsSdk.clientsSsoMod.apiVersion): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
       

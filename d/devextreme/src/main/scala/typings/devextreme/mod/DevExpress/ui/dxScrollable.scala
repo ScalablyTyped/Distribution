@@ -135,6 +135,15 @@ object dxScrollable {
   /**
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ScrollableInstance = devextreme.devextreme.DevExpress.ui.dxScrollable<devextreme.devextreme.DevExpress.ui.dxScrollable.Properties>
+  }}}
+  to avoid circular code involving: 
+  - devextreme.devextreme.DevExpress.ui.dxScrollable.Properties
+  - devextreme.devextreme.DevExpress.ui.dxScrollable.ScrollableInstance
+  */
   @js.native
   trait ScrollableInstance
     extends StObject

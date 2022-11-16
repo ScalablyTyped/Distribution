@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.Blob
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalItemUpdateThumbnailParams
-  extends StObject
-     with Object {
+trait PortalItemUpdateThumbnailParams extends StObject {
   
   /**
     * The file name used for the thumbnail in [thumbnailUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#thumbnailUrl).
@@ -27,13 +23,8 @@ trait PortalItemUpdateThumbnailParams
 }
 object PortalItemUpdateThumbnailParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    thumbnail: Blob | String
-  ): PortalItemUpdateThumbnailParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), thumbnail = thumbnail.asInstanceOf[js.Any])
+  inline def apply(thumbnail: Blob | String): PortalItemUpdateThumbnailParams = {
+    val __obj = js.Dynamic.literal(thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }
   

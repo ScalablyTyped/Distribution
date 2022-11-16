@@ -20,7 +20,8 @@ trait WFSLayer
      with RefreshableLayer
      with BlendLayer
      with PortalLayer
-     with FeatureEffectLayer {
+     with FeatureEffectLayer
+     with FeatureReductionLayer {
   
   /**
     * Describes the layer's supported capabilities.
@@ -78,13 +79,6 @@ trait WFSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#elevationInfo)
     */
   var elevationInfo: WFSLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   
   /**
     * An array of fields in the layer.
@@ -278,4 +272,11 @@ trait WFSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#url)
     */
   var url: String = js.native
+  
+  /**
+    * WFS service information about the available layers and operations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#wfsCapabilities)
+    */
+  var wfsCapabilities: WFSCapabilities = js.native
 }

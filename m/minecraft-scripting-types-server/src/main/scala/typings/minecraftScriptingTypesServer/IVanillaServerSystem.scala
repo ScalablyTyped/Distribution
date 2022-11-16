@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * a utility interface that defines a system that is not being actively extended
   */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type IVanillaServerSystem = minecraft-scripting-types-server.IServerSystem<minecraft-scripting-types-server.IVanillaServerSystem>
+}}}
+to avoid circular code involving: 
+- minecraft-scripting-types-server.IVanillaServerSystem
+*/
 @js.native
 trait IVanillaServerSystem
   extends StObject

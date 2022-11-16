@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.graphic
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SceneViewGraphicHit
   extends StObject
-     with Object
      with SceneViewViewHit {
   
   /**
@@ -44,16 +41,8 @@ trait SceneViewGraphicHit
 }
 object SceneViewGraphicHit {
   
-  inline def apply(
-    constructor: js.Function,
-    distance: Double,
-    graphic: Graphic,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: Layer,
-    mapPoint: Point,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneViewGraphicHit = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(distance: Double, graphic: Graphic, layer: Layer, mapPoint: Point): SceneViewGraphicHit = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("graphic")
     __obj.asInstanceOf[SceneViewGraphicHit]
   }

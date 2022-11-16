@@ -11,11 +11,6 @@ trait ColorConstructor
      with Instantiable1[(/* color */ Any) | (/* color */ js.Array[Double]) | (/* color */ String), Color_] {
   
   /**
-    * Creates a new color object by passing either a hex, rgb(a), hsl(a) or [named color value](https://www.w3.org/wiki/CSS/Properties/color/keywords).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html)
-    */
-  /**
     * Creates a Color instance by blending two colors using a weight factor.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#blendColors)
@@ -29,15 +24,15 @@ trait ColorConstructor
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#fromArray)
     */
   def fromArray(a: js.Array[Double]): Color_ = js.native
-  def fromArray(a: js.Array[Double], obj: Color_): Color_ = js.native
+  def fromArray(a: js.Array[Double], t: Color_): Color_ = js.native
   
   /**
     * Creates a Color instance from a hex string with a '#' prefix.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html#fromHex)
     */
-  def fromHex(color: String): Color_ = js.native
-  def fromHex(color: String, obj: Color_): Color_ = js.native
+  def fromHex(colorStr: String): Color_ = js.native
+  def fromHex(colorStr: String, t: Color_): Color_ = js.native
   
   /**
     * Creates a new Color instance, and initializes it with values from a JSON object.

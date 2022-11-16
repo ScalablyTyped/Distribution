@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneLayerCapabilities
-  extends StObject
-     with Object {
+trait SceneLayerCapabilities extends StObject {
   
   /**
     * Describes characteristics of the data in the layer.
@@ -41,15 +37,12 @@ trait SceneLayerCapabilities
 object SceneLayerCapabilities {
   
   inline def apply(
-    constructor: js.Function,
     data: SceneLayerCapabilitiesData,
     editing: SceneLayerCapabilitiesEditing,
-    hasOwnProperty: PropertyKey => Boolean,
     operations: SceneLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean,
     query: SceneLayerCapabilitiesQuery
   ): SceneLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerCapabilities]
   }
   

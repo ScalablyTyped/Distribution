@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SupportedRendererInfo
-  extends StObject
-     with Object {
+trait SupportedRendererInfo extends StObject {
   
   /**
     * The default renderer of the input layer.
@@ -27,13 +23,10 @@ trait SupportedRendererInfo
 object SupportedRendererInfo {
   
   inline def apply(
-    constructor: js.Function,
     defaultRenderer: ClassBreaksRenderer | RasterColormapRenderer | UniqueValueRenderer | RasterStretchRenderer | VectorFieldRenderer | RasterShadedReliefRenderer | FlowRenderer,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportedTypes: js.Array[SupportedRendererType]
   ): SupportedRendererInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], defaultRenderer = defaultRenderer.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportedTypes = supportedTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultRenderer = defaultRenderer.asInstanceOf[js.Any], supportedTypes = supportedTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedRendererInfo]
   }
   

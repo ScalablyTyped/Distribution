@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.WMSSublayer
-import typings.arcgisJsApi.esri.WMSSublayerConstructor
 import typings.arcgisJsApi.esri.WMSSublayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportWmssublayerMod extends Shortcut {
+object esriLayersSupportWmssublayerMod {
   
-  @JSImport("esri/layers/support/WMSSublayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WMSSublayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/WMSSublayer", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriLayersSupportWmssublayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WMSSublayer {
     def this(properties: WMSSublayerProperties) = this()
   }
-  
-  type _To = js.Object & WMSSublayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportWmssublayerMod.foo` */
-  override def _to: js.Object & WMSSublayerConstructor = ^
 }

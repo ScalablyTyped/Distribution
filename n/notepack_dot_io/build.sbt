@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "notepack_dot_io"
-version := "3.0.1-12b9b9"
+version := "3.0.1-6da736"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -625,6 +625,22 @@ trait WorkSpaces extends Service {
   ): Request[ModifyAccountResult, AWSError] = js.native
   
   /**
+    * Modifies the properties of the certificate-based authentication you want to use with your WorkSpaces.
+    */
+  def modifyCertificateBasedAuthProperties(): Request[ModifyCertificateBasedAuthPropertiesResult, AWSError] = js.native
+  def modifyCertificateBasedAuthProperties(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyCertificateBasedAuthPropertiesResult, Unit]
+  ): Request[ModifyCertificateBasedAuthPropertiesResult, AWSError] = js.native
+  /**
+    * Modifies the properties of the certificate-based authentication you want to use with your WorkSpaces.
+    */
+  def modifyCertificateBasedAuthProperties(params: ModifyCertificateBasedAuthPropertiesRequest): Request[ModifyCertificateBasedAuthPropertiesResult, AWSError] = js.native
+  def modifyCertificateBasedAuthProperties(
+    params: ModifyCertificateBasedAuthPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyCertificateBasedAuthPropertiesResult, Unit]
+  ): Request[ModifyCertificateBasedAuthPropertiesResult, AWSError] = js.native
+  
+  /**
     * Modifies the properties of the specified Amazon WorkSpaces clients.
     */
   def modifyClientProperties(): Request[ModifyClientPropertiesResult, AWSError] = js.native

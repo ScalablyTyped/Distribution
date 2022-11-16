@@ -51,7 +51,23 @@ object mod {
   
   inline def encodingLength(value: ValueToEncode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DecodedValue = node.buffer.<global>.Buffer | std.Array<rlp-encoding.rlp-encoding.DecodedValue>
+  }}}
+  to avoid circular code involving: 
+  - rlp-encoding.rlp-encoding.DecodedValue
+  */
   type DecodedValue = Buffer | js.Array[Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ValueToEncode = std.ReadonlyArray<rlp-encoding.rlp-encoding.ValueToEncode> | node.buffer.<global>.Buffer | number | string | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - rlp-encoding.rlp-encoding.ValueToEncode
+  */
   type ValueToEncode = js.UndefOr[js.Array[Any] | Buffer | Double | String | Null]
 }

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominantCategoriesPredominantCategoriesParams
-  extends StObject
-     with Object {
+trait predominantCategoriesPredominantCategoriesParams extends StObject {
   
   /**
     * An array of numeric fields from which to determine predominant categories.
@@ -17,6 +13,13 @@ trait predominantCategoriesPredominantCategoriesParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
   var fields: js.Array[String]
+  
+  /**
+    * Indicates whether the generated statistics are for a binning or clustering visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer from which to generate predominant categories for the given set of `fields`.
@@ -42,13 +45,10 @@ trait predominantCategoriesPredominantCategoriesParams
 object predominantCategoriesPredominantCategoriesParams {
   
   inline def apply(
-    constructor: js.Function,
     fields: js.Array[String],
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   ): predominantCategoriesPredominantCategoriesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[predominantCategoriesPredominantCategoriesParams]
   }
   
@@ -57,6 +57,10 @@ object predominantCategoriesPredominantCategoriesParams {
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

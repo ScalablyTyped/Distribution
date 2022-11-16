@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.tall
 import typings.std.HTMLElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsRenderPreviewHTMLOptions
-  extends StObject
-     with Object {
+trait symbolUtilsRenderPreviewHTMLOptions extends StObject {
   
   /**
     * Indicates whether to disable upsampling for raster images.
@@ -39,6 +35,13 @@ trait symbolUtilsRenderPreviewHTMLOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * _Since 4.25_ The text that will be displayed in the symbol preview of a TextSymbol.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+    */
+  var overrideText: js.UndefOr[String] = js.undefined
   
   /**
     * The rotation of the symbol.
@@ -72,12 +75,8 @@ trait symbolUtilsRenderPreviewHTMLOptions
 }
 object symbolUtilsRenderPreviewHTMLOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): symbolUtilsRenderPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): symbolUtilsRenderPreviewHTMLOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptions]
   }
   
@@ -98,6 +97,10 @@ object symbolUtilsRenderPreviewHTMLOptions {
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOverrideText(value: String): Self = StObject.set(x, "overrideText", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideTextUndefined: Self = StObject.set(x, "overrideText", js.undefined)
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

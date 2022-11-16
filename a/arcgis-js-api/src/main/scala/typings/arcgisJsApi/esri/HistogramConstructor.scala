@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HistogramConstructor
   extends StObject
-     with /**
-  * Renders a histogram to visualize the spread of a dataset based on [bins](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins) representing buckets, or sub-ranges, of data.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html)
-  */
-Instantiable0[Histogram_]
+     with Instantiable0[Histogram_]
      with Instantiable1[/* properties */ HistogramProperties, Histogram_] {
   
   /**

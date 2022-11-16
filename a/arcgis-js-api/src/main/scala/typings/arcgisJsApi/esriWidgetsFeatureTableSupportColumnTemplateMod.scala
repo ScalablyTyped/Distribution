@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ColumnTemplate
-import typings.arcgisJsApi.esri.ColumnTemplateConstructor
 import typings.arcgisJsApi.esri.ColumnTemplateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsFeatureTableSupportColumnTemplateMod extends Shortcut {
+/* static members */
+object esriWidgetsFeatureTableSupportColumnTemplateMod {
   
-  @JSImport("esri/widgets/FeatureTable/support/ColumnTemplate", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ColumnTemplateConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/FeatureTable/support/ColumnTemplate", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWidgetsFeatureTableSupportColumnTemplateMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ColumnTemplate {
     def this(properties: ColumnTemplateProperties) = this()
@@ -35,9 +29,9 @@ object esriWidgetsFeatureTableSupportColumnTemplateMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/widgets/FeatureTable/support/ColumnTemplate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ColumnTemplateConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsFeatureTableSupportColumnTemplateMod.foo` */
-  override def _to: js.Object & ColumnTemplateConstructor = ^
+  inline def fromJSON(json: Any): ColumnTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ColumnTemplate]
 }

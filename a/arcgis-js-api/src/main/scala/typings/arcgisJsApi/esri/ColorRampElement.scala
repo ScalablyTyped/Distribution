@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColorRampElement
   extends StObject
-     with Object
      with LegendElement {
   
   /**
@@ -34,15 +31,8 @@ trait ColorRampElement
 }
 object ColorRampElement {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    infos: js.Array[ColorRampStop],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    title: String | RampTitle,
-    `type`: String
-  ): ColorRampElement = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), infos = infos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
+  inline def apply(infos: js.Array[ColorRampStop], title: String | RampTitle, `type`: String): ColorRampElement = {
+    val __obj = js.Dynamic.literal(infos = infos.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorRampElement]
   }

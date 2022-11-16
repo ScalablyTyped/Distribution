@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DictionaryVariable
   extends StObject
-     with Object
      with ProfileVariable {
   
   /**
@@ -24,7 +21,7 @@ trait DictionaryVariable
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
     */
-  var properties: js.Array[ProfileVariable]
+  var properties: js.UndefOr[js.Array[ProfileVariable]] = js.undefined
   
   /**
     * The Arcade data type of the variable.
@@ -35,14 +32,8 @@ trait DictionaryVariable
 }
 object DictionaryVariable {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    properties: js.Array[ProfileVariable],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DictionaryVariable = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(name: String): DictionaryVariable = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dictionary")
     __obj.asInstanceOf[DictionaryVariable]
   }
@@ -52,6 +43,8 @@ object DictionaryVariable {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: js.Array[ProfileVariable]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     inline def setPropertiesVarargs(value: ProfileVariable*): Self = StObject.set(x, "properties", js.Array(value*))
     

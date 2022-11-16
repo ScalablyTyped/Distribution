@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "split-on-first"
-version := "3.0.0-ab1a26"
+version := "3.0.0-eb4d1d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,19 +34,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.WebTileLayer
-import typings.arcgisJsApi.esri.WebTileLayerConstructor
 import typings.arcgisJsApi.esri.WebTileLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersWebTileLayerMod extends Shortcut {
+/* static members */
+object esriLayersWebTileLayerMod {
   
-  @JSImport("esri/layers/WebTileLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WebTileLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/WebTileLayer", JSImport.Namespace)
   @js.native
   /**
@@ -55,7 +49,7 @@ object esriLayersWebTileLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WebTileLayer {
     def this(properties: WebTileLayerProperties) = this()
@@ -126,9 +120,9 @@ object esriLayersWebTileLayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/WebTileLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WebTileLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersWebTileLayerMod.foo` */
-  override def _to: js.Object & WebTileLayerConstructor = ^
+  inline def fromJSON(json: Any): WebTileLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WebTileLayer]
 }

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LabelClassConstructor
   extends StObject
-     with /**
-  * Defines label expressions, symbols, scale ranges, label priorities, and label placement options for labels on a layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html)
-  */
-Instantiable0[LabelClass]
+     with Instantiable0[LabelClass]
      with Instantiable1[/* properties */ LabelClassProperties, LabelClass] {
   
   def fromJSON(json: Any): LabelClass = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "big-rat"
-version := "1.0-dt-20211202Z-cd4d28"
+version := "1.0-dt-20211202Z-7ca9af"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

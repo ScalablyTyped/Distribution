@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-geolocation"
-version := "1.4-dt-20211202Z-c69671"
+version := "1.4-dt-20211202Z-7198f0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20220624Z-416cd2",
-  "org.scalablytyped" %%% "amap-js-api-geocoder" % "1.4-dt-20211202Z-291fdb",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "amap-js-api" % "1.4-dt-20221114Z-ffcfcc",
+  "org.scalablytyped" %%% "amap-js-api-geocoder" % "1.4-dt-20211202Z-b18611",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,14 +1,17 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterIdentifyResult
-  extends StObject
-     with Object {
+trait RasterIdentifyResult extends StObject {
+  
+  /**
+    * Transposed multidimensional data for the requested location and variable returned from a transposed multidimensional [ImageryTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#identify).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyResult)
+    */
+  var dataSeries: js.UndefOr[js.Array[RasterSliceValue]] = js.undefined
   
   /**
     * The identified location.
@@ -26,18 +29,18 @@ trait RasterIdentifyResult
 }
 object RasterIdentifyResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    location: Point,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: js.Array[Double]
-  ): RasterIdentifyResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(location: Point, value: js.Array[Double]): RasterIdentifyResult = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterIdentifyResult]
   }
   
   extension [Self <: RasterIdentifyResult](x: Self) {
+    
+    inline def setDataSeries(value: js.Array[RasterSliceValue]): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
+    
+    inline def setDataSeriesUndefined: Self = StObject.set(x, "dataSeries", js.undefined)
+    
+    inline def setDataSeriesVarargs(value: RasterSliceValue*): Self = StObject.set(x, "dataSeries", js.Array(value*))
     
     inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

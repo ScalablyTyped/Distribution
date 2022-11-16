@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-electron-renderer"
-version := "2.0-dt-20221031Z-68fcc9"
+version := "2.0-dt-20221031Z-e35586"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

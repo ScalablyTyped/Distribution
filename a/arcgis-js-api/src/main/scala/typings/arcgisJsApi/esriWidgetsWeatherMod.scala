@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Weather
-import typings.arcgisJsApi.esri.WeatherConstructor
 import typings.arcgisJsApi.esri.WeatherProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsWeatherMod extends Shortcut {
+object esriWidgetsWeatherMod {
   
-  @JSImport("esri/widgets/Weather", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WeatherConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Weather", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriWidgetsWeatherMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Weather {
     def this(properties: WeatherProperties) = this()
   }
-  
-  type _To = js.Object & WeatherConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsWeatherMod.foo` */
-  override def _to: js.Object & WeatherConstructor = ^
 }

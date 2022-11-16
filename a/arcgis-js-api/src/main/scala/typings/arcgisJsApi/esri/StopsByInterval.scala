@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StopsByInterval
-  extends StObject
-     with Object {
+trait StopsByInterval extends StObject {
   
   /**
     * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals.
@@ -26,13 +22,8 @@ trait StopsByInterval
 }
 object StopsByInterval {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    interval: TimeInterval,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): StopsByInterval = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), interval = interval.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(interval: TimeInterval): StopsByInterval = {
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsByInterval]
   }
   

@@ -185,6 +185,15 @@ object mod {
     inline def Polygon: typings.geojson.geojsonStrings.Polygon = "Polygon".asInstanceOf[typings.geojson.geojsonStrings.Polygon]
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Geometry = geojson.geojson.Point | geojson.geojson.MultiPoint | geojson.geojson.LineString | geojson.geojson.MultiLineString | geojson.geojson.Polygon | geojson.geojson.MultiPolygon | geojson.geojson.GeometryCollection<geojson.geojson.Geometry>
+  }}}
+  to avoid circular code involving: 
+  - geojson.geojson.GeoJSON
+  - geojson.geojson.Geometry
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.geojson.mod.Point
     - typings.geojson.mod.MultiPoint
@@ -223,8 +232,16 @@ object mod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped geojson.geojson.Point | geojson.geojson.MultiPoint | geojson.geojson.LineString | geojson.geojson.MultiLineString | geojson.geojson.Polygon | geojson.geojson.MultiPolygon | geojson.geojson.GeometryCollection<any> */ trait GeometryObject extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GeometryObject = geojson.geojson.Geometry
+  }}}
+  to avoid circular code involving: 
+  - geojson.geojson.Geometry
+  - geojson.geojson.GeometryObject
+  */
+  type GeometryObject = Any
   
   trait LineString
     extends StObject

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "set-blocking"
-version := "2.0-dt-20221005Z-3c4d5d"
+version := "2.0-dt-20221005Z-d70520"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

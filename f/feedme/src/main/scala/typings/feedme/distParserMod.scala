@@ -34,6 +34,15 @@ object distParserMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FeedItem = {[key: string] : feedme.feedme/dist/parser.FeedObject}
+  }}}
+  to avoid circular code involving: 
+  - feedme.feedme/dist/parser.FeedItem
+  - feedme.feedme/dist/parser.FeedObject
+  */
   trait FeedItem
     extends StObject
        with /* key */ StringDictionary[FeedObject]
@@ -45,6 +54,14 @@ object distParserMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FeedObject = string | {[key: string] : string | boolean | null | feedme.feedme/dist/parser.FeedObject | std.Array<feedme.feedme/dist/parser.FeedObject>}
+  }}}
+  to avoid circular code involving: 
+  - feedme.feedme/dist/parser.FeedObject
+  */
   type FeedObject = String | (StringDictionary[String | Boolean | Null | Any | js.Array[Any]])
   
   @js.native

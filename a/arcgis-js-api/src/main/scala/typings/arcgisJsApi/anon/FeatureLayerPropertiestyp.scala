@@ -45,7 +45,7 @@ import typings.arcgisJsApi.esri.CollectionProperties
 import typings.arcgisJsApi.esri.DateProperties
 import typings.arcgisJsApi.esri.ExtentProperties
 import typings.arcgisJsApi.esri.FeatureEffectProperties
-import typings.arcgisJsApi.esri.FeatureLayerElevationInfo
+import typings.arcgisJsApi.esri.FeatureLayerBaseElevationInfo
 import typings.arcgisJsApi.esri.FeatureTemplateProperties
 import typings.arcgisJsApi.esri.FeatureTypeProperties
 import typings.arcgisJsApi.esri.FieldProperties
@@ -89,7 +89,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * Copyright information for the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#copyright)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
   
@@ -103,14 +103,14 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * The SQL where clause used to filter features on the client.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#definitionExpression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the layer's primary display field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#displayField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
     */
   var displayField: js.UndefOr[String] = js.undefined
   
@@ -142,9 +142,9 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * Specifies how features are placed on the vertical axis (z).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[FeatureLayerElevationInfo] = js.undefined
+  var elevationInfo: js.UndefOr[FeatureLayerBaseElevationInfo] = js.undefined
   
   /**
     * The featureEffect can be used to draw attention features of interest.
@@ -156,7 +156,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * Configures the method for reducing the number of point features in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
     */
   var featureReduction: js.UndefOr[
     FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection
@@ -172,7 +172,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#floorInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
     */
   var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
   
@@ -188,19 +188,24 @@ trait FeatureLayerPropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
     */
+  /**
+    * The full extent of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fullExtent)
+    */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The version of the geodatabase of the feature service data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#gdbVersion)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
     */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The geometry type of features in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
     */
   var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   
@@ -209,7 +214,7 @@ trait FeatureLayerPropertiestyp extends StObject {
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
     */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
@@ -218,14 +223,14 @@ trait FeatureLayerPropertiestyp extends StObject {
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
     */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The historic moment to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#historicMoment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
     */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
@@ -255,7 +260,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * The layer ID, or layer index, of a Feature Service layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
     */
   var layerId: js.UndefOr[Double] = js.undefined
   
@@ -271,7 +276,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -296,9 +301,9 @@ trait FeatureLayerPropertiestyp extends StObject {
   var minScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) containing a unique value or identifier for each feature in the layer.
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
     */
   var objectIdField: js.UndefOr[String] = js.undefined
   
@@ -373,7 +378,7 @@ trait FeatureLayerPropertiestyp extends StObject {
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
     */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
@@ -382,7 +387,7 @@ trait FeatureLayerPropertiestyp extends StObject {
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
     */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
@@ -405,14 +410,14 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
     */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * The spatial reference of the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
@@ -476,7 +481,7 @@ trait FeatureLayerPropertiestyp extends StObject {
   /**
     * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
   
@@ -548,7 +553,7 @@ object FeatureLayerPropertiestyp {
     
     inline def setEffectVarargs(value: Any*): Self = StObject.set(x, "effect", js.Array(value*))
     
-    inline def setElevationInfo(value: FeatureLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: FeatureLayerBaseElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     

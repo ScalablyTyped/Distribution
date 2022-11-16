@@ -10,15 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneLayerElevationInfo
-  extends StObject
-     with Object {
+trait SceneLayerElevationInfo extends StObject {
   
   /**
     * Defines how the feature is placed with respect to the terrain surface.
@@ -45,13 +41,8 @@ trait SceneLayerElevationInfo
 }
 object SceneLayerElevationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneLayerElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`): SceneLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerElevationInfo]
   }
   

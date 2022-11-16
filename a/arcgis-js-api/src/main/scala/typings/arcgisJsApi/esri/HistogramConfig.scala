@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistogramConfig
-  extends StObject
-     with Object {
+trait HistogramConfig extends StObject {
   
   /**
     * Indicates the average value of the dataset.
@@ -61,12 +57,8 @@ trait HistogramConfig
 }
 object HistogramConfig {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): HistogramConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): HistogramConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramConfig]
   }
   

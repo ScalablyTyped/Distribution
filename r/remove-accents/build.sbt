@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remove-accents"
-version := "0.4.3-6f1021"
+version := "0.4.3-39e39d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

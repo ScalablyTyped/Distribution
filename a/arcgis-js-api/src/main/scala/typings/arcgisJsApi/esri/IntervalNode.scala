@@ -4,15 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Plussign
 import typings.arcgisJsApi.arcgisJsApiStrings._empty
 import typings.arcgisJsApi.arcgisJsApiStrings.`-_`
 import typings.arcgisJsApi.arcgisJsApiStrings.interval
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IntervalNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -41,14 +38,11 @@ trait IntervalNode
 object IntervalNode {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     op: Plussign | `-_` | _empty,
-    propertyIsEnumerable: PropertyKey => Boolean,
     qualifier: IntervalQualifierNode | IntervalPeriodNode,
     value: StringNode
   ): IntervalNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), op = op.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), qualifier = qualifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], qualifier = qualifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("interval")
     __obj.asInstanceOf[IntervalNode]
   }

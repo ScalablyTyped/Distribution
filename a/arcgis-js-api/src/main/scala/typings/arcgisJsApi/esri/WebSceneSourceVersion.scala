@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebSceneSourceVersion
-  extends StObject
-     with Object {
+trait WebSceneSourceVersion extends StObject {
   
   /**
     * The major version of the WebScene.
@@ -26,14 +22,8 @@ trait WebSceneSourceVersion
 }
 object WebSceneSourceVersion {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    major: Double,
-    minor: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WebSceneSourceVersion = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(major: Double, minor: Double): WebSceneSourceVersion = {
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSceneSourceVersion]
   }
   

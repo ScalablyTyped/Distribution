@@ -37,9 +37,7 @@ object mod {
   
   inline def setCustomModal(customModalProps: ModalProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCustomModal")(customModalProps.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setCustomPicker(
-    customPickerProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PickerProps */ Any
-  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCustomPicker")(customPickerProps.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCustomPicker(customPickerProps: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCustomPicker")(customPickerProps.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setCustomRefreshControl(customRefreshControlProps: RefreshControlProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCustomRefreshControl")(customRefreshControlProps.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

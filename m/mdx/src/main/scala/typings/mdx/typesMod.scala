@@ -92,6 +92,15 @@ object typesMod {
   }
   
   // tslint:disable-next-line: strict-export-declare-modifiers
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedMDXComponents = {[key: string] : mdx.mdx/types.NestedMDXComponents | mdx.mdx/types.Component<any> | keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.IntrinsicElements * / any}
+  }}}
+  to avoid circular code involving: 
+  - mdx.mdx/types.MDXComponents
+  - mdx.mdx/types.NestedMDXComponents
+  */
   trait NestedMDXComponents
     extends StObject
        with /* key */ StringDictionary[

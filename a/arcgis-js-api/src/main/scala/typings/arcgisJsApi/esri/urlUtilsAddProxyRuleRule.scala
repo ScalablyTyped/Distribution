@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait urlUtilsAddProxyRuleRule
-  extends StObject
-     with Object {
+trait urlUtilsAddProxyRuleRule extends StObject {
   
   /**
     * The URL of the proxy.
@@ -26,14 +22,8 @@ trait urlUtilsAddProxyRuleRule
 }
 object urlUtilsAddProxyRuleRule {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    proxyUrl: String,
-    urlPrefix: String
-  ): urlUtilsAddProxyRuleRule = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), proxyUrl = proxyUrl.asInstanceOf[js.Any], urlPrefix = urlPrefix.asInstanceOf[js.Any])
+  inline def apply(proxyUrl: String, urlPrefix: String): urlUtilsAddProxyRuleRule = {
+    val __obj = js.Dynamic.literal(proxyUrl = proxyUrl.asInstanceOf[js.Any], urlPrefix = urlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
   }
   

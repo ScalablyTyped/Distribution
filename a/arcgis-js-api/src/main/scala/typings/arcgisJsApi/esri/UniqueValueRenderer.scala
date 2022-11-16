@@ -36,42 +36,42 @@ trait UniqueValueRenderer
   var backgroundFillSymbol: FillSymbol | PolygonSymbol3D = js.native
   
   /**
-    * Label used in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to describe features assigned the [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#defaultSymbol).
+    * The label used in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to describe features assigned the [default symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#defaultSymbol).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#defaultLabel)
     */
   var defaultLabel: String = js.native
   
   /**
-    * The default symbol used to draw a feature whose value is not matched or specified by the renderer.
+    * The symbol used to draw all features with values not referenced by [uniqueValueInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos) or [uniqueValueGroups](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueGroups).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#defaultSymbol)
     */
   var defaultSymbol: Symbol = js.native
   
   /**
-    * The name of the attribute field the renderer uses to match unique values or types.
+    * The name of the attribute field containing types or categorical values referenced in [uniqueValueInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos) or [uniqueValueGroups](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueGroups).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field)
     */
   var field: String = js.native
   
   /**
-    * If needed, specifies the name of an additional attribute field the renderer will use to match values.
+    * Specifies the name of an additional attribute field used to categorize features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field2)
     */
   var field2: String = js.native
   
   /**
-    * If needed, specify the name of a third attribute field the renderer will use to match values.
+    * Specifies the name of a third attribute field used to categorize features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field3)
     */
   var field3: String = js.native
   
   /**
-    * String inserted between the values if multiple attribute fields are specified.
+    * A string used as a separator between the values in the legend if multiple attribute fields are used to categorize values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#fieldDelimiter)
     */
@@ -108,7 +108,14 @@ trait UniqueValueRenderer
   val type_UniqueValueRenderer: `unique-value` = js.native
   
   /**
-    * Each element in the array is an object that provides information about a unique value associated with the renderer.
+    * An array of objects defining groups of unique values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueGroups)
+    */
+  var uniqueValueGroups: js.Array[UniqueValueGroup] = js.native
+  
+  /**
+    * Defines categories and their corresponding symbols based on a set of values expected from the provided [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#field) or [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos)
     */

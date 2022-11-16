@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreatePopupTemplateOptions
-  extends StObject
-     with Object {
+trait CreatePopupTemplateOptions extends StObject {
   
   /**
     * An array of field types to ignore when creating the popup.
@@ -27,12 +23,8 @@ trait CreatePopupTemplateOptions
 }
 object CreatePopupTemplateOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CreatePopupTemplateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): CreatePopupTemplateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePopupTemplateOptions]
   }
   

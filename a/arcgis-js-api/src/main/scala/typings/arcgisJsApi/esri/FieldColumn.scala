@@ -31,7 +31,7 @@ trait FieldColumn
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#defaultValue)
     */
-  val defaultValue: Double | String | Any = js.native
+  val defaultValue: js.UndefOr[Double | String | Null] = js.native
   
   /**
     * Contains information describing the purpose of each field.

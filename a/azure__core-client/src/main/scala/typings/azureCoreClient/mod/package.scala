@@ -39,6 +39,14 @@ inline def serializationPolicyName: /* "serializationPolicy" */ String = ^.asIns
 
 type OperationRequest = PipelineRequest
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ParameterPath = string | std.Array<string> | {[propertyName: string] : @azure/core-client.@azure/core-client.ParameterPath}
+}}}
+to avoid circular code involving: 
+- @azure/core-client.@azure/core-client.ParameterPath
+*/
 type ParameterPath = String | js.Array[String] | StringDictionary[Any]
 
 type RawResponseCallback = js.Function3[

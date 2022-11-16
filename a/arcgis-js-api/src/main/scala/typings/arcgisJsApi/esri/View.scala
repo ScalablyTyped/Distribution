@@ -285,6 +285,12 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
     */
+  def whenLayerView(layer: DimensionLayer): js.Promise[DimensionLayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    */
   def whenLayerView(layer: FeatureLayer): js.Promise[FeatureLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer.

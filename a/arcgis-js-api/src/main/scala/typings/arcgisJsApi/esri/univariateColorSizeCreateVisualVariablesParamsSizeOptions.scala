@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.height
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
-  extends StObject
-     with Object {
+trait univariateColorSizeCreateVisualVariablesParamsSizeOptions extends StObject {
   
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
@@ -37,12 +33,8 @@ trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
 }
 object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): univariateColorSizeCreateVisualVariablesParamsSizeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): univariateColorSizeCreateVisualVariablesParamsSizeOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptions]
   }
   

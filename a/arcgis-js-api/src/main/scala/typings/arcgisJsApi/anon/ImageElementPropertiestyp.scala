@@ -16,7 +16,9 @@ trait ImageElementPropertiestyp extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
     */
-  var georeference: js.UndefOr[ExtentAndRotationGeorefer | CornersGeoreferenceProper] = js.undefined
+  var georeference: js.UndefOr[
+    ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference
+  ] = js.undefined
   
   /**
     * The image element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
@@ -34,19 +36,19 @@ trait ImageElementPropertiestyp extends StObject {
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[image] & image
+  var `type`: image
 }
 object ImageElementPropertiestyp {
   
-  inline def apply(`type`: js.UndefOr[image] & image): ImageElementPropertiestyp = {
+  inline def apply(): ImageElementPropertiestyp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageElementPropertiestyp]
   }
   
   extension [Self <: ImageElementPropertiestyp](x: Self) {
     
-    inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
+    inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     
     inline def setGeoreferenceUndefined: Self = StObject.set(x, "georeference", js.undefined)
     
@@ -58,6 +60,6 @@ object ImageElementPropertiestyp {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setType(value: js.UndefOr[image] & image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

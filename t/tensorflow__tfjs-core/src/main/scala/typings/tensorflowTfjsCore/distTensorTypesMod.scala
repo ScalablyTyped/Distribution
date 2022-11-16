@@ -52,12 +52,31 @@ object distTensorTypesMod {
   */
   type TensorContainer = _TensorContainer | Tensor[Rank] | Unit | String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TensorContainerArray = std.Array<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainer>
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainer
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainerArray
+  */
   @js.native
   trait TensorContainerArray
     extends StObject
        with Array[TensorContainer]
        with _TensorContainer
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TensorContainerObject = {[x: string] : @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainer}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainer
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainerArray
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_types.TensorContainerObject
+  */
   trait TensorContainerObject
     extends StObject
        with /* x */ StringDictionary[TensorContainer]

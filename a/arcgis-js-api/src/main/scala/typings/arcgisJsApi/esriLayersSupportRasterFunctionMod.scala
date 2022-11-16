@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.RasterFunction
-import typings.arcgisJsApi.esri.RasterFunctionConstructor
 import typings.arcgisJsApi.esri.RasterFunctionProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportRasterFunctionMod extends Shortcut {
+/* static members */
+object esriLayersSupportRasterFunctionMod {
   
-  @JSImport("esri/layers/support/RasterFunction", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RasterFunctionConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/RasterFunction", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportRasterFunctionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with RasterFunction {
     def this(properties: RasterFunctionProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportRasterFunctionMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/RasterFunction", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RasterFunctionConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportRasterFunctionMod.foo` */
-  override def _to: js.Object & RasterFunctionConstructor = ^
+  inline def fromJSON(json: Any): RasterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[RasterFunction]
 }

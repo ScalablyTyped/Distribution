@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SolidEdges3D
-import typings.arcgisJsApi.esri.SolidEdges3DConstructor
 import typings.arcgisJsApi.esri.SolidEdges3DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsEdgesSolidEdges3DMod extends Shortcut {
+/* static members */
+object esriSymbolsEdgesSolidEdges3DMod {
   
-  @JSImport("esri/symbols/edges/SolidEdges3D", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SolidEdges3DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/edges/SolidEdges3D", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsEdgesSolidEdges3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SolidEdges3D.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SolidEdges3D {
     def this(properties: SolidEdges3DProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsEdgesSolidEdges3DMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/edges/SolidEdges3D", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SolidEdges3DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsEdgesSolidEdges3DMod.foo` */
-  override def _to: js.Object & SolidEdges3DConstructor = ^
+  inline def fromJSON(json: Any): SolidEdges3D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SolidEdges3D]
 }

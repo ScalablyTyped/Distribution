@@ -70,17 +70,16 @@ object typesTypeProviderMod {
   // this exists to allow users to override faulty type-provider logic.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends any ? keyof T : never
     }}}
     */
-  @js.native
-  trait KeysOf[T] extends StObject
+  type KeysOf[T] = /* keyof T */ String
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     fastify.fastify/types/type-provider.ResolveFastifyReplyType<TypeProvider, SchemaCompiler, RouteGeneric> extends infer Return ? Return | void | std.Promise<Return | void> : unknown
     }}}
@@ -138,7 +137,7 @@ object typesTypeProviderMod {
   // Resolves the Reply type by taking a union of response status codes
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     {[ K in keyof SchemaCompiler['response'] ]: fastify.fastify/types/type-provider.CallTypeProvider<TypeProvider, SchemaCompiler['response'][K]>} extends infer Result ? Result[keyof Result] : unknown
     }}}
@@ -170,11 +169,10 @@ object typesTypeProviderMod {
   //   Without brackets, UndefinedToUnknown<undefined | null> => unknown
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [undefined] ? unknown : T
     }}}
     */
-  @js.native
-  trait UndefinedToUnknown[T] extends StObject
+  type UndefinedToUnknown[T] = T
 }

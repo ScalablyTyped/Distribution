@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsViewModelImpedanceAttribute
-  extends StObject
-     with Object {
+trait DirectionsViewModelImpedanceAttribute extends StObject {
   
   /**
     * Name of the impedance network attribute.
@@ -26,14 +22,8 @@ trait DirectionsViewModelImpedanceAttribute
 }
 object DirectionsViewModelImpedanceAttribute {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    units: String
-  ): DirectionsViewModelImpedanceAttribute = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), units = units.asInstanceOf[js.Any])
+  inline def apply(name: String, units: String): DirectionsViewModelImpedanceAttribute = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelImpedanceAttribute]
   }
   

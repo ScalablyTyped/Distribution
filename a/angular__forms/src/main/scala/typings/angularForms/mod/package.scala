@@ -3,6 +3,7 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Version
+import typings.angularForms.angularFormsStrings.Dot
 import typings.angularForms.mod.^
 import typings.rxjs.mod.Observable_
 import typings.std.Partial
@@ -69,6 +70,15 @@ type ValidatorConfig = ValidatorFn | AsyncValidatorFn | (js.Array[AsyncValidator
 
 type ValidatorFn = js.Function1[/* control */ AbstractControl[Any, Any], ValidationErrors | Null]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  S extends [infer Head, ...infer Tail] ? Head extends / * template literal string: ${number} * / string ? [number, ...@angular/forms.@angular/forms.ɵCoerceStrArrToNumArr<Tail>] : [Head, ...@angular/forms.@angular/forms.ɵCoerceStrArrToNumArr<Tail>] : []
+  }}}
+  */
+type ɵCoerceStrArrToNumArr[S] = js.Array[Any]
+
 type ɵFormArrayRawValue[T /* <: AbstractControl[Any, Any] */] = ɵTypedOrUntyped[T, js.Array[ɵRawValue[T]], js.Array[Any]]
 
 type ɵFormArrayValue[T /* <: AbstractControl[Any, Any] */] = ɵTypedOrUntyped[T, js.Array[ɵValue[T]], js.Array[Any]]
@@ -85,7 +95,34 @@ Partial[
 ], 
 StringDictionary[Any]]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  K extends string ? @angular/forms.@angular/forms.ɵGetProperty<T, @angular/forms.@angular/forms.ɵCoerceStrArrToNumArr<@angular/forms.@angular/forms.ɵTokenize<K, '.'>>> : @angular/forms.@angular/forms.ɵWriteable<K> extends std.Array<string | number> ? @angular/forms.@angular/forms.ɵNavigate<T, @angular/forms.@angular/forms.ɵWriteable<K>> : any
+  }}}
+  */
+type ɵGetProperty[T, K] = ɵNavigate[T, ɵWriteable[ɵCoerceStrArrToNumArr[ɵTokenize[K, Dot]]]]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  0 extends 1 & T ? Y : N
+  }}}
+  */
+type ɵIsAny[T, Y, N] = Y
+
 type ɵOptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] */ js.Any
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  string extends S ? std.Array<string> : S extends / * template literal string: ${inferT}${D}${inferU} * / string ? [/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T * / any, ...@angular/forms.@angular/forms.ɵTokenize</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify U * / any, D>] : [S]
+  }}}
+  */
+type ɵTokenize[S /* <: String */, D /* <: String */] = js.Array[String]
 
 type ɵTypedOrUntyped[T, Typed, Untyped] = ɵIsAny[T, Untyped, Typed]
 

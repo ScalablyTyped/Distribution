@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rn-host-detect"
-version := "1.2-dt-20220129Z-f3cd33"
+version := "1.2-dt-20220129Z-b1659a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

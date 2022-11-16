@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object outMiscJsonObjectMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Object = {[k: string] : ts-toolbelt.ts-toolbelt/out/Misc/JSON/Value.Value}
+  }}}
+  to avoid circular code involving: 
+  - ts-toolbelt.ts-toolbelt/out/Misc/JSON/Array.List
+  - ts-toolbelt.ts-toolbelt/out/Misc/JSON/Object.Object
+  - ts-toolbelt.ts-toolbelt/out/Misc/JSON/Value.Value
+  */
   trait Object
     extends StObject
        with /* k */ StringDictionary[Value]

@@ -9,6 +9,14 @@ object libRowDotinterfaceMod {
   
   type ArrayType = js.Array[Boolean | js.Date | Double | String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RowInterface = {[key: string] : parquetjs.parquetjs/lib/row.interface.ScalarType | parquetjs.parquetjs/lib/row.interface.ArrayType | parquetjs.parquetjs/lib/row.interface.RowInterface | std.Array<parquetjs.parquetjs/lib/row.interface.RowInterface>}
+  }}}
+  to avoid circular code involving: 
+  - parquetjs.parquetjs/lib/row.interface.RowInterface
+  */
   trait RowInterface
     extends StObject
        with /* key */ StringDictionary[ScalarType | ArrayType | RowInterface | js.Array[RowInterface]]

@@ -38,7 +38,7 @@ trait LineOfSightAnalysisView3D extends StObject {
   val `type`: `line-of-sight-view-3d`
   
   /**
-    * When `true`, the analysis is visualized in the view.
+    * When `true`, the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-LineOfSightAnalysisView3D.html#analysis) is visualized in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-LineOfSightAnalysisView3D.html#visible)
     */

@@ -24,6 +24,7 @@ import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
 import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
+import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
@@ -256,6 +257,15 @@ object mod {
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_cancel(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: TaggedEventHandler[cancel],
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -1409,6 +1419,8 @@ object mod {
     
     inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
     
+    inline def filter_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
+    
     inline def filter_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
     
     inline def filter_canplaythrough(selector: String, handler: EventHandler[canplaythrough]): EventHandler[canplaythrough] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplaythrough]]
@@ -1728,6 +1740,15 @@ object mod {
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_cancel(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: EventHandler[cancel],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -2825,6 +2846,15 @@ object mod {
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_cancel(
+      node: HTMLElement,
+      eventName: cancel,
+      handler: TaggedEventHandler[cancel],
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -4067,6 +4097,15 @@ object mod {
     inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def triggerEvent_cancel(node: Null, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def triggerEvent_canplay(node: Null, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -5003,6 +5042,15 @@ object mod {
     node: HTMLElement,
     eventName: blur,
     handler: TaggedEventHandler[blur],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_cancel(
+    node: HTMLElement,
+    eventName: cancel,
+    handler: TaggedEventHandler[cancel],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -6104,6 +6152,8 @@ object mod {
   
   inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
   
+  inline def filter_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
+  
   inline def filter_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
   
   inline def filter_canplaythrough(selector: String, handler: EventHandler[canplaythrough]): EventHandler[canplaythrough] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplaythrough]]
@@ -6389,6 +6439,15 @@ object mod {
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_cancel(
+    node: HTMLElement,
+    eventName: cancel,
+    handler: EventHandler[cancel],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -7430,6 +7489,15 @@ object mod {
     node: HTMLElement,
     eventName: blur,
     handler: TaggedEventHandler[blur],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_cancel(
+    node: HTMLElement,
+    eventName: cancel,
+    handler: TaggedEventHandler[cancel],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -8584,6 +8652,15 @@ object mod {
   inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_cancel(node: Null, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: Null, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cancel(node: HTMLElement, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def triggerEvent_canplay(node: Null, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]

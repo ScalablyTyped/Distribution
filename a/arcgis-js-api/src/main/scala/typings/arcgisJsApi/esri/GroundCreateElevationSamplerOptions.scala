@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GroundCreateElevationSamplerOptions
-  extends StObject
-     with Object {
+trait GroundCreateElevationSamplerOptions extends StObject {
   
   /**
     * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
@@ -36,12 +32,8 @@ trait GroundCreateElevationSamplerOptions
 }
 object GroundCreateElevationSamplerOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GroundCreateElevationSamplerOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): GroundCreateElevationSamplerOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroundCreateElevationSamplerOptions]
   }
   

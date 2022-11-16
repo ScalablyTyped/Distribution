@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "heroku-logger"
-version := "1.0-dt-20211202Z-11a3bd"
+version := "1.0-dt-20211202Z-4eb8ee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

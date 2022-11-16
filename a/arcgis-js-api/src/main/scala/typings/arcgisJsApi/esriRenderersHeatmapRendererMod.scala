@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.HeatmapRenderer
-import typings.arcgisJsApi.esri.HeatmapRendererConstructor
 import typings.arcgisJsApi.esri.HeatmapRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersHeatmapRendererMod extends Shortcut {
+/* static members */
+object esriRenderersHeatmapRendererMod {
   
-  @JSImport("esri/renderers/HeatmapRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & HeatmapRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/HeatmapRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersHeatmapRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with HeatmapRenderer {
     def this(properties: HeatmapRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersHeatmapRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/HeatmapRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & HeatmapRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersHeatmapRendererMod.foo` */
-  override def _to: js.Object & HeatmapRendererConstructor = ^
+  inline def fromJSON(json: Any): HeatmapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[HeatmapRenderer]
 }

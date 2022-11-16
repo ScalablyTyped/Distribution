@@ -23,6 +23,15 @@ trait BasemapLayerListViewModelProperties extends StObject {
   var basemapTitle: js.UndefOr[String] = js.undefined
   
   /**
+    * Whether to provide an indication if a layer is being published in the [BasemapLayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html).
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#checkPublishStatusEnabled)
+    */
+  var checkPublishStatusEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing reference layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#referenceListItemCreatedFunction)
@@ -52,6 +61,10 @@ object BasemapLayerListViewModelProperties {
     inline def setBasemapTitle(value: String): Self = StObject.set(x, "basemapTitle", value.asInstanceOf[js.Any])
     
     inline def setBasemapTitleUndefined: Self = StObject.set(x, "basemapTitle", js.undefined)
+    
+    inline def setCheckPublishStatusEnabled(value: Boolean): Self = StObject.set(x, "checkPublishStatusEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setCheckPublishStatusEnabledUndefined: Self = StObject.set(x, "checkPublishStatusEnabled", js.undefined)
     
     inline def setReferenceListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
     

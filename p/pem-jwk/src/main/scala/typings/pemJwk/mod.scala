@@ -16,6 +16,14 @@ object mod {
   inline def pem2jwk[T /* <: Extras */](rsa_pem: String): JWK[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any]).asInstanceOf[JWK[T]]
   inline def pem2jwk[T /* <: Extras */](rsa_pem: String, extras: T): JWK[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[JWK[T]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Extras = {[key: string] : pem-jwk.pem-jwk.Extras | string | boolean | number}
+  }}}
+  to avoid circular code involving: 
+  - pem-jwk.pem-jwk.Extras
+  */
   trait Extras
     extends StObject
        with /* key */ StringDictionary[Extras | String | Boolean | Double]

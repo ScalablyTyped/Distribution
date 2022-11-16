@@ -105,8 +105,30 @@ object mod {
   
   type Property = js.Tuple2[PropKey, PropValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type __RecursiveNode = [string, std.Array<idyll-compiler.idyll-compiler.Property>, std.Array<T>]
+  }}}
+  to avoid circular code involving: 
+  - idyll-compiler.idyll-compiler.AST
+  - idyll-compiler.idyll-compiler.Node
+  - idyll-compiler.idyll-compiler.PostProcessor
+  - idyll-compiler.idyll-compiler.TreeNode
+  - idyll-compiler.idyll-compiler.__RecursiveNode
+  */
   type RecursiveNode[T] = js.Tuple3[String, js.Array[Property], js.Array[T]]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped [string, std.Array<idyll-compiler.idyll-compiler.Property>, std.Array<idyll-compiler.idyll-compiler.Node>] */ trait TreeNode extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreeNode = idyll-compiler.idyll-compiler.__RecursiveNode<idyll-compiler.idyll-compiler.Node>
+  }}}
+  to avoid circular code involving: 
+  - idyll-compiler.idyll-compiler.AST
+  - idyll-compiler.idyll-compiler.Node
+  - idyll-compiler.idyll-compiler.PostProcessor
+  - idyll-compiler.idyll-compiler.TreeNode
+  */
+  type TreeNode = RecursiveNode[Any]
 }

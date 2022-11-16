@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elo-rank"
-version := "1.0-dt-20211202Z-a8d8e7"
+version := "1.0-dt-20211202Z-dac172"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

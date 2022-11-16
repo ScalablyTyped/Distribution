@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait relationshipUpdateRendererParamsField2
-  extends StObject
-     with Object {
+trait relationshipUpdateRendererParamsField2 extends StObject {
   
   /**
     * The class breaks for the second field used in the relationship visualization.
@@ -40,14 +36,8 @@ trait relationshipUpdateRendererParamsField2
 }
 object relationshipUpdateRendererParamsField2 {
   
-  inline def apply(
-    classBreakInfos: js.Array[ClassBreak],
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): relationshipUpdateRendererParamsField2 = {
-    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(classBreakInfos: js.Array[ClassBreak], field: String): relationshipUpdateRendererParamsField2 = {
+    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipUpdateRendererParamsField2]
   }
   

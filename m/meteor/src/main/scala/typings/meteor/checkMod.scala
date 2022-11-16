@@ -127,6 +127,14 @@ object checkMod {
       }
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Pattern = std.StringConstructor | std.NumberConstructor | std.BooleanConstructor | std.ObjectConstructor | std.FunctionConstructor | new (args : ...any): any | undefined | null | string | number | boolean | [meteor.meteor/check.Match.Pattern] | {[key: string] : meteor.meteor/check.Match.Pattern} | meteor.meteor/check.Match.Matcher<any>
+    }}}
+    to avoid circular code involving: 
+    - meteor.meteor/check.Match.Pattern
+    */
     type Pattern = js.UndefOr[
         StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ Any, Any]) | Null | String | Double | Boolean | js.Array[Any] | StringDictionary[Any] | Matcher[Any]
       ]

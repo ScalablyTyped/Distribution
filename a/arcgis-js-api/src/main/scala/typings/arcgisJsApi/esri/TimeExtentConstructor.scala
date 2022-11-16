@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimeExtentConstructor
   extends StObject
-     with /**
-  * A period of time with a definitive [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end) date.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html)
-  */
-Instantiable0[TimeExtent]
+     with Instantiable0[TimeExtent]
      with Instantiable1[/* properties */ TimeExtentProperties, TimeExtent] {
   
   def fromJSON(json: Any): TimeExtent = js.native

@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.click
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchCreateCreateOptions
-  extends StObject
-     with Object {
+trait SketchCreateCreateOptions extends StObject {
   
   /**
     * The default z-value of the newly created geometry.
@@ -36,12 +32,8 @@ trait SketchCreateCreateOptions
 }
 object SketchCreateCreateOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SketchCreateCreateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SketchCreateCreateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchCreateCreateOptions]
   }
   

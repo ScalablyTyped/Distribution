@@ -56,6 +56,9 @@ trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
   
   def getNewLine(): java.lang.String = js.native
   
+  /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
+  var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+  
   /** If provided, used to cache and handle directory structure modifications */
   var readDirectory: js.UndefOr[
     js.Function5[

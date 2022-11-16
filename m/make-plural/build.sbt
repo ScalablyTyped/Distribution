@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "make-plural"
-version := "7.1.0-e4835b"
+version := "7.1.0-183512"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

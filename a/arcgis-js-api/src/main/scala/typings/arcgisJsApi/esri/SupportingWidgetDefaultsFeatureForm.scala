@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SupportingWidgetDefaultsFeatureForm
-  extends StObject
-     with Object {
+trait SupportingWidgetDefaultsFeatureForm extends StObject {
   
   /**
     * String indicating the [groupDisplay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay) and how they will be displayed to the end user.
@@ -19,12 +15,8 @@ trait SupportingWidgetDefaultsFeatureForm
 }
 object SupportingWidgetDefaultsFeatureForm {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SupportingWidgetDefaultsFeatureForm = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SupportingWidgetDefaultsFeatureForm = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureForm]
   }
   

@@ -25,12 +25,18 @@ trait State extends StObject {
   
   def antialias(enable: Boolean): State = js.native
   
+  def append(): State = js.native
   def append(image: String): State = js.native
   def append(image: String, ltr: Boolean): State = js.native
+  def append(image: js.Array[String]): State = js.native
+  def append(image: js.Array[String], ltr: Boolean): State = js.native
+  def append(ltr: Boolean): State = js.native
   
   def authenticate(password: String): State = js.native
   
   def autoOrient(): State = js.native
+  
+  def average(): State = js.native
   
   def backdrop(): State = js.native
   
@@ -497,6 +503,8 @@ trait State extends StObject {
   
   def textFont(font: String): State = js.native
   
+  def texture(filename: String): State = js.native
+  
   def threshold(value: Double): State = js.native
   def threshold(value: Double, percent: Boolean): State = js.native
   
@@ -518,6 +526,9 @@ trait State extends StObject {
     callback: WriteCallback
   ): State = js.native
   def thumb(width: Double, height: Double, outName: String, quality: Double, callback: WriteCallback): State = js.native
+  
+  def thumbnail(width: Double, height: Double): State = js.native
+  def thumbnail(width: Double, height: Double, options: ResizeOption): State = js.native
   
   def tile(filename: String): State = js.native
   

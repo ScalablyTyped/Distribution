@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "round-to"
-version := "6.0.0-4b7597"
+version := "6.0.0-5150c3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

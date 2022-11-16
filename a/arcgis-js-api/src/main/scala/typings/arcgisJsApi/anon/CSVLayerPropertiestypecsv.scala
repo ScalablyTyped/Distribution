@@ -128,9 +128,11 @@ trait CSVLayerPropertiestypecsv extends StObject {
   /**
     * Configures the method for reducing the number of point features in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#featureReduction)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | FeatureReductionSelection] = js.undefined
+  var featureReduction: js.UndefOr[
+    FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection
+  ] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -195,7 +197,7 @@ trait CSVLayerPropertiestypecsv extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -426,7 +428,7 @@ object CSVLayerPropertiestypecsv {
     
     inline def setFeatureEffectUndefined: Self = StObject.set(x, "featureEffect", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     

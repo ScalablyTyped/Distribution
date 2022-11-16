@@ -42,13 +42,6 @@ trait ImageryTileMixinProperties extends StObject {
   var renderer: js.UndefOr[
     ClassBreaksRendererProper | UniqueValueRendererProper | RasterStretchRendererProp | RasterShadedReliefRendere | RasterColormapRendererPro | VectorFieldRendererProper | FlowRendererPropertiestyp
   ] = js.undefined
-  
-  /**
-    * The URL of the REST endpoint of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ImageryTileMixin.html#url)
-    */
-  var url: js.UndefOr[String] = js.undefined
 }
 object ImageryTileMixinProperties {
   
@@ -80,9 +73,5 @@ object ImageryTileMixinProperties {
     ): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

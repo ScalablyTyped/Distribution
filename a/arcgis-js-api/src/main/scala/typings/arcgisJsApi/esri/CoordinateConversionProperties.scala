@@ -28,13 +28,6 @@ trait CoordinateConversionProperties
   var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.undefined
   
   /**
-    * Describes the location of the coordinates currently displayed by the widget as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#currentLocation)
-    */
-  var currentLocation: js.UndefOr[PointProperties] = js.undefined
-  
-  /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html) that the widget is capable of displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#formats)
@@ -137,10 +130,6 @@ object CoordinateConversionProperties {
     inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
     
     inline def setConversionsVarargs(value: ConversionProperties*): Self = StObject.set(x, "conversions", js.Array(value*))
-    
-    inline def setCurrentLocation(value: PointProperties): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
-    
-    inline def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
     
     inline def setFormats(value: CollectionProperties[FormatProperties]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

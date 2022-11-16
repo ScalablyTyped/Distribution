@@ -62,6 +62,11 @@ trait Profile extends StObject {
   var FirstName: js.UndefOr[string1To255] = js.undefined
   
   /**
+    * A list of items used to find a profile returned in a SearchProfiles response. An item is a key-value(s) pair that matches an attribute in the profile. If the optional AdditionalSearchKeys parameter was included in the SearchProfiles request, the FoundByItems list should be interpreted based on the LogicalOperator used in the request:    AND - The profile included in the response matched all of the search keys specified in the request. The FoundByItems will include all of the key-value(s) pairs that were specified in the request (as this is a requirement of AND search logic).    OR - The profile included in the response matched at least one of the search keys specified in the request. The FoundByItems will include each of the key-value(s) pairs that the profile was found by.   The OR relationship is the default behavior if the LogicalOperator parameter is not included in the SearchProfiles request.
+    */
+  var FoundByItems: js.UndefOr[foundByList] = js.undefined
+  
+  /**
     * The gender with which the customer identifies. 
     */
   var Gender: js.UndefOr[typings.awsSdk.clientsCustomerprofilesMod.Gender] = js.undefined
@@ -168,6 +173,12 @@ object Profile {
     inline def setFirstName(value: string1To255): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     inline def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
+    
+    inline def setFoundByItems(value: foundByList): Self = StObject.set(x, "FoundByItems", value.asInstanceOf[js.Any])
+    
+    inline def setFoundByItemsUndefined: Self = StObject.set(x, "FoundByItems", js.undefined)
+    
+    inline def setFoundByItemsVarargs(value: FoundByKeyValue*): Self = StObject.set(x, "FoundByItems", js.Array(value*))
     
     inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     

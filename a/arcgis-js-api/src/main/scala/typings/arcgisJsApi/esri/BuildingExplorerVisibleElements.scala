@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BuildingExplorerVisibleElements
-  extends StObject
-     with Object {
+trait BuildingExplorerVisibleElements extends StObject {
   
   /**
     * When set to `false`, the disciplines and categories sublayer list is not displayed.
@@ -33,12 +29,8 @@ trait BuildingExplorerVisibleElements
 }
 object BuildingExplorerVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): BuildingExplorerVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): BuildingExplorerVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingExplorerVisibleElements]
   }
   

@@ -30,6 +30,7 @@ import typings.yandexMaps.yandexMapsStrings.animationstart
 import typings.yandexMaps.yandexMapsStrings.auxclick
 import typings.yandexMaps.yandexMapsStrings.beforeinput
 import typings.yandexMaps.yandexMapsStrings.blur
+import typings.yandexMaps.yandexMapsStrings.cancel
 import typings.yandexMaps.yandexMapsStrings.canplay
 import typings.yandexMaps.yandexMapsStrings.canplaythrough
 import typings.yandexMaps.yandexMapsStrings.change
@@ -639,6 +640,56 @@ object domEvent {
       htmlElement: HTMLElement,
       types: blur,
       callback: js.Function1[/* event */ FocusEvent, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(htmlElement: Document, types: cancel, callback: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: Document,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: Document,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: Document,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
+      context: Unit,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(htmlElement: HTMLElement, types: cancel, callback: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: HTMLElement,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
+      context: js.Object
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: HTMLElement,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
+      context: js.Object,
+      capture: Boolean
+    ): this.type = js.native
+    @JSName("add")
+    def add_cancel(
+      htmlElement: HTMLElement,
+      types: cancel,
+      callback: js.Function1[/* event */ Event, Unit],
       context: Unit,
       capture: Boolean
     ): this.type = js.native

@@ -45,28 +45,12 @@ trait ContainerReflection extends StObject {
 object ContainerReflection {
   
   inline def apply(
-    categories: ToSerialized[
-      js.UndefOr[js.Array[typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory]]
-    ],
-    children: ToSerialized[
-      js.UndefOr[
-        js.Array[typings.typedoc.distLibModelsReflectionsDeclarationMod.DeclarationReflection]
-      ]
-    ],
-    comment: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]],
     flags: ReflectionFlags,
-    groups: ToSerialized[
-      js.UndefOr[js.Array[typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup]]
-    ],
     id: ToSerialized[Double],
     kind: ToSerialized[ReflectionKind],
-    kindString: ToSerialized[js.UndefOr[String]],
-    name: ToSerialized[String],
-    sources: ToSerialized[
-      js.UndefOr[js.Array[typings.typedoc.distLibModelsSourcesFileMod.SourceReference]]
-    ]
+    name: ToSerialized[String]
   ): ContainerReflection = {
-    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerReflection]
   }
   
@@ -78,6 +62,10 @@ object ContainerReflection {
         ]
     ): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory*): Self = StObject.set(x, "categories", js.Array(value*))
+    
     inline def setChildren(
       value: ToSerialized[
           js.UndefOr[
@@ -86,7 +74,13 @@ object ContainerReflection {
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: typings.typedoc.distLibModelsReflectionsDeclarationMod.DeclarationReflection*): Self = StObject.set(x, "children", js.Array(value*))
+    
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     inline def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
@@ -96,11 +90,17 @@ object ContainerReflection {
         ]
     ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    
+    inline def setGroupsVarargs(value: typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup*): Self = StObject.set(x, "groups", js.Array(value*))
+    
     inline def setId(value: ToSerialized[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setKind(value: ToSerialized[ReflectionKind]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindString(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
+    
+    inline def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -113,5 +113,9 @@ object ContainerReflection {
           js.UndefOr[js.Array[typings.typedoc.distLibModelsSourcesFileMod.SourceReference]]
         ]
     ): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    
+    inline def setSourcesVarargs(value: typings.typedoc.distLibModelsSourcesFileMod.SourceReference*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

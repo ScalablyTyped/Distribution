@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassedColorSliderBreaks
-  extends StObject
-     with Object {
+trait ClassedColorSliderBreaks extends StObject {
   
   /**
     * Features with values within the provided `min` and `max` will be rendered with this color.
@@ -33,15 +29,8 @@ trait ClassedColorSliderBreaks
 }
 object ClassedColorSliderBreaks {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ClassedColorSliderBreaks = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(color: Color_, max: Double, min: Double): ClassedColorSliderBreaks = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassedColorSliderBreaks]
   }
   

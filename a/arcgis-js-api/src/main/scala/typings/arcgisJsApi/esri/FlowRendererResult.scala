@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlowRendererResult
-  extends StObject
-     with Object {
+trait FlowRendererResult extends StObject {
   
   /**
     * The ID of the basemap used to determine the optimal color of the flow lines.
@@ -64,16 +60,13 @@ object FlowRendererResult {
   inline def apply(
     basemapId: String,
     basemapTheme: String,
-    constructor: js.Function,
     flowScheme: FlowScheme,
-    hasOwnProperty: PropertyKey => Boolean,
     layerEffect: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     renderer: FlowRenderer,
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[VisualVariable]
   ): FlowRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], flowScheme = flowScheme.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerEffect = layerEffect.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], flowScheme = flowScheme.asInstanceOf[js.Any], layerEffect = layerEffect.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowRendererResult]
   }
   

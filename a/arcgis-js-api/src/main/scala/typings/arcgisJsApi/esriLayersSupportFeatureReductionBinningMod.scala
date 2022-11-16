@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FeatureReductionBinning
-import typings.arcgisJsApi.esri.FeatureReductionBinningConstructor
 import typings.arcgisJsApi.esri.FeatureReductionBinningProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportFeatureReductionBinningMod extends Shortcut {
+/* static members */
+object esriLayersSupportFeatureReductionBinningMod {
   
-  @JSImport("esri/layers/support/FeatureReductionBinning", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FeatureReductionBinningConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/FeatureReductionBinning", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportFeatureReductionBinningMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FeatureReductionBinning {
     def this(properties: FeatureReductionBinningProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportFeatureReductionBinningMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/FeatureReductionBinning", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FeatureReductionBinningConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportFeatureReductionBinningMod.foo` */
-  override def _to: js.Object & FeatureReductionBinningConstructor = ^
+  inline def fromJSON(json: Any): FeatureReductionBinning = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FeatureReductionBinning]
 }

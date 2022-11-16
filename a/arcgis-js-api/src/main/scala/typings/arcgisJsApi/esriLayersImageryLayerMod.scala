@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,7 +33,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.ImageryLayer
-import typings.arcgisJsApi.esri.ImageryLayerConstructor
 import typings.arcgisJsApi.esri.ImageryLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.TimeExtent
@@ -44,13 +42,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersImageryLayerMod extends Shortcut {
+/* static members */
+object esriLayersImageryLayerMod {
   
-  @JSImport("esri/layers/ImageryLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ImageryLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/ImageryLayer", JSImport.Namespace)
   @js.native
   /**
@@ -58,7 +52,7 @@ object esriLayersImageryLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ImageryLayer {
     def this(properties: ImageryLayerProperties) = this()
@@ -169,9 +163,9 @@ object esriLayersImageryLayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
+  @JSImport("esri/layers/ImageryLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ImageryLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersImageryLayerMod.foo` */
-  override def _to: js.Object & ImageryLayerConstructor = ^
+  inline def fromJSON(json: Any): ImageryLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ImageryLayer]
 }

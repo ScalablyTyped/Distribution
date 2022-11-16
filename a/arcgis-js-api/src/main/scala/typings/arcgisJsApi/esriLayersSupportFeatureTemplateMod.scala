@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FeatureTemplate
-import typings.arcgisJsApi.esri.FeatureTemplateConstructor
 import typings.arcgisJsApi.esri.FeatureTemplateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportFeatureTemplateMod extends Shortcut {
+/* static members */
+object esriLayersSupportFeatureTemplateMod {
   
-  @JSImport("esri/layers/support/FeatureTemplate", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FeatureTemplateConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/FeatureTemplate", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportFeatureTemplateMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FeatureTemplate {
     def this(properties: FeatureTemplateProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportFeatureTemplateMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/FeatureTemplate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FeatureTemplateConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportFeatureTemplateMod.foo` */
-  override def _to: js.Object & FeatureTemplateConstructor = ^
+  inline def fromJSON(json: Any): FeatureTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FeatureTemplate]
 }

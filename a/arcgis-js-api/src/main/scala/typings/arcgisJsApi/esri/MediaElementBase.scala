@@ -11,7 +11,7 @@ trait MediaElementBase extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
     */
-  var georeference: ExtentAndRotationGeoreference | CornersGeoreference
+  var georeference: ExtentAndRotationGeoreference | CornersGeoreference | ControlPointsGeoreference
   
   /**
     * The opacity of the element.
@@ -24,14 +24,17 @@ trait MediaElementBase extends StObject {
 }
 object MediaElementBase {
   
-  inline def apply(georeference: ExtentAndRotationGeoreference | CornersGeoreference, opacity: Double): MediaElementBase = {
+  inline def apply(
+    georeference: ExtentAndRotationGeoreference | CornersGeoreference | ControlPointsGeoreference,
+    opacity: Double
+  ): MediaElementBase = {
     val __obj = js.Dynamic.literal(georeference = georeference.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaElementBase]
   }
   
   extension [Self <: MediaElementBase](x: Self) {
     
-    inline def setGeoreference(value: ExtentAndRotationGeoreference | CornersGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
+    inline def setGeoreference(value: ExtentAndRotationGeoreference | CornersGeoreference | ControlPointsGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }

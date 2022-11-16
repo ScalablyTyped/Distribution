@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.landscape
 import typings.arcgisJsApi.arcgisJsApiStrings.large
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
@@ -10,21 +9,15 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xlarge
 import typings.arcgisJsApi.arcgisJsApiStrings.xsmall
 import typings.arcgisJsApi.esri.BreakpointsOwner
 import typings.arcgisJsApi.esri.BreakpointsOwnerBreakpoints
-import typings.arcgisJsApi.esri.BreakpointsOwnerConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewsBreakpointsOwnerMod extends Shortcut {
+object esriViewsBreakpointsOwnerMod {
   
   @JSImport("esri/views/BreakpointsOwner", JSImport.Namespace)
   @js.native
-  val ^ : BreakpointsOwnerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/views/BreakpointsOwner", JSImport.Namespace)
-  @js.native
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BreakpointsOwner {
     
@@ -60,9 +53,4 @@ object esriViewsBreakpointsOwnerMod extends Shortcut {
     /* CompleteClass */
     var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
   }
-  
-  type _To = BreakpointsOwnerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewsBreakpointsOwnerMod.foo` */
-  override def _to: BreakpointsOwnerConstructor = ^
 }

@@ -3804,6 +3804,7 @@ object domHelpersStrings {
   sealed trait backdropFilter
     extends StObject
        with CamelProperty
+       with Styles
   inline def backdropFilter: backdropFilter = "backdropFilter".asInstanceOf[backdropFilter]
   
   @js.native
@@ -4986,6 +4987,10 @@ object domHelpersStrings {
   inline def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   
@@ -5281,6 +5286,24 @@ object domHelpersStrings {
        with HyphenProperty
        with Styles
   inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
+  sealed trait container
+    extends StObject
+       with Styles
+  inline def container: container = "container".asInstanceOf[container]
+  
+  @js.native
+  sealed trait containerName
+    extends StObject
+       with Styles
+  inline def containerName: containerName = "containerName".asInstanceOf[containerName]
+  
+  @js.native
+  sealed trait containerType
+    extends StObject
+       with Styles
+  inline def containerType: containerType = "containerType".asInstanceOf[containerType]
   
   @js.native
   sealed trait content
@@ -5804,6 +5827,12 @@ object domHelpersStrings {
   inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
   
   @js.native
+  sealed trait fontPalette
+    extends StObject
+       with Styles
+  inline def fontPalette: fontPalette = "fontPalette".asInstanceOf[fontPalette]
+  
+  @js.native
   sealed trait fontSize
     extends StObject
        with CamelProperty
@@ -6214,6 +6243,7 @@ object domHelpersStrings {
   sealed trait hyphenateCharacter
     extends StObject
        with CamelProperty
+       with Styles
   inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
   
   @js.native
@@ -8032,6 +8062,7 @@ object domHelpersStrings {
   sealed trait overflowClipMargin
     extends StObject
        with CamelProperty
+       with Styles
   inline def overflowClipMargin: overflowClipMargin = "overflowClipMargin".asInstanceOf[overflowClipMargin]
   
   @js.native

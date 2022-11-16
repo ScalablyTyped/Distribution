@@ -10,7 +10,7 @@ object outListZipObjMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     LKeys extends unknown ? LFields extends unknown ? ts-toolbelt.ts-toolbelt/out/List/ZipObj._ZipObj<LKeys, LFields> : never : never
     }}}
@@ -20,7 +20,7 @@ object outListZipObjMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/List/ZipObj.__ZipObj<ts-toolbelt.ts-toolbelt/out/List/_Internal.Naked<LKeys>, LFields, {}, ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<0>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, object> : never
     }}}

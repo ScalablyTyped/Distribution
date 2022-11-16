@@ -42,6 +42,16 @@ object distSrcTypesMod {
     def apply[T](context: TransformMessageFunction[MessageContext[T]]): Logger[T | Z] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonObject = {[k: string] : roarr.roarr/dist/src/types.JsonValue}
+  }}}
+  to avoid circular code involving: 
+  - roarr.roarr/dist/src/types.JsonObject
+  - roarr.roarr/dist/src/types.JsonValue
+  - roarr.roarr/dist/src/types.MessageContext
+  */
   trait JsonObject
     extends StObject
        with /* k */ StringDictionary[JsonValue]
@@ -53,6 +63,14 @@ object distSrcTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = roarr.roarr/dist/src/types.JsonObject | std.Array<roarr.roarr/dist/src/types.JsonValue> | boolean | number | string | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - roarr.roarr/dist/src/types.JsonValue
+  */
   type JsonValue = js.UndefOr[JsonObject | js.Array[Any] | Boolean | Double | String | Null]
   
   /* Rewritten from type alias, can be one of: 
@@ -388,12 +406,34 @@ object distSrcTypesMod {
   
   type MessageContext[T] = JsonObject & T
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MessageEventHandler = (message : roarr.roarr/dist/src/types.Message</ * Inlined roarr.roarr/dist/src/types.MessageContext<{}> * /
+  {[k: string] : roarr.roarr/dist/src/types.JsonValue}>): void
+  }}}
+  to avoid circular code involving: 
+  - roarr.roarr/dist/src/types.JsonObject
+  - roarr.roarr/dist/src/types.JsonValue
+  - roarr.roarr/dist/src/types.MessageEventHandler
+  */
   @js.native
   trait MessageEventHandler extends StObject {
     
     def apply(message: Message[StringDictionary[JsonValue]]): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MessageSerializer = (message : roarr.roarr/dist/src/types.Message</ * Inlined roarr.roarr/dist/src/types.MessageContext<{}> * /
+  {[k: string] : roarr.roarr/dist/src/types.JsonValue}>): string
+  }}}
+  to avoid circular code involving: 
+  - roarr.roarr/dist/src/types.JsonObject
+  - roarr.roarr/dist/src/types.JsonValue
+  - roarr.roarr/dist/src/types.MessageSerializer
+  */
   @js.native
   trait MessageSerializer extends StObject {
     
@@ -509,6 +549,17 @@ object distSrcTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TransformMessageFunction = (message : roarr.roarr/dist/src/types.Message<T>): roarr.roarr/dist/src/types.Message</ * Inlined roarr.roarr/dist/src/types.MessageContext<{}> * /
+  {[k: string] : roarr.roarr/dist/src/types.JsonValue}>
+  }}}
+  to avoid circular code involving: 
+  - roarr.roarr/dist/src/types.JsonObject
+  - roarr.roarr/dist/src/types.JsonValue
+  - roarr.roarr/dist/src/types.TransformMessageFunction
+  */
   @js.native
   trait TransformMessageFunction[T] extends StObject {
     

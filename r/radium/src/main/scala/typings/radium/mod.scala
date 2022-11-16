@@ -192,6 +192,14 @@ object mod {
       }
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type StyleRules = {[index: string] : react.react.CSSProperties | radium.radium.Radium.StyleRules}
+    }}}
+    to avoid circular code involving: 
+    - radium.radium.Radium.StyleRules
+    */
     trait StyleRules
       extends StObject
          with /* index */ StringDictionary[CSSProperties | StyleRules]

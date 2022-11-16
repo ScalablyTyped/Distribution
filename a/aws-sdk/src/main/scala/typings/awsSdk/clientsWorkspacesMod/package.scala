@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsWorkspacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN
 import typings.awsSdk.awsSdkStrings.ENABLED
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -57,6 +58,15 @@ type BundleIdList = js.Array[BundleId]
 type BundleList = js.Array[WorkspaceBundle]
 
 type BundleOwner = String
+
+type CertificateAuthorityArn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type CertificateBasedAuthStatusEnum = _CertificateBasedAuthStatusEnum | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DeviceTypeWindows
@@ -153,6 +163,10 @@ type DedicatedTenancySupportResultEnum = _DedicatedTenancySupportResultEnum | St
 type DefaultLogo = Buffer | js.typedarray.Uint8Array | Blob | String
 
 type DefaultOu = String
+
+type DeletableCertificateBasedAuthPropertiesList = js.Array[DeletableCertificateBasedAuthProperty]
+
+type DeletableCertificateBasedAuthProperty = CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN | String
 
 type DeletableSamlPropertiesList = js.Array[DeletableSamlProperty]
 

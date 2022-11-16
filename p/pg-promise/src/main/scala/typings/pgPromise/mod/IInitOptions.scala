@@ -35,7 +35,7 @@ trait IInitOptions[Ext, C /* <: IClient */] extends StObject {
   var receive: js.UndefOr[
     js.Function3[
       /* data */ js.Array[Any], 
-      /* result */ IResultExt | Unit, 
+      /* result */ IResultExt[Any] | Unit, 
       /* e */ IEventContext[C], 
       Unit
     ]
@@ -101,7 +101,7 @@ object IInitOptions {
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     inline def setReceive(
-      value: (/* data */ js.Array[Any], /* result */ IResultExt | Unit, /* e */ IEventContext[C]) => Unit
+      value: (/* data */ js.Array[Any], /* result */ IResultExt[Any] | Unit, /* e */ IEventContext[C]) => Unit
     ): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
     
     inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FindParameters
-import typings.arcgisJsApi.esri.FindParametersConstructor
 import typings.arcgisJsApi.esri.FindParametersProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportFindParametersMod extends Shortcut {
+/* static members */
+object esriRestSupportFindParametersMod {
   
-  @JSImport("esri/rest/support/FindParameters", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FindParametersConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/FindParameters", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportFindParametersMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FindParameters.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FindParameters {
     def this(properties: FindParametersProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportFindParametersMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/FindParameters", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FindParametersConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportFindParametersMod.foo` */
-  override def _to: js.Object & FindParametersConstructor = ^
+  inline def fromJSON(json: Any): FindParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FindParameters]
 }

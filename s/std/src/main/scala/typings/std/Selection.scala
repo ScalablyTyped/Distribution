@@ -56,6 +56,16 @@ trait Selection extends StObject {
   val isCollapsed: scala.Boolean = js.native
   
   /* standard dom */
+  def modify(): Unit = js.native
+  def modify(alter: java.lang.String): Unit = js.native
+  def modify(alter: java.lang.String, direction: java.lang.String): Unit = js.native
+  def modify(alter: java.lang.String, direction: java.lang.String, granularity: java.lang.String): Unit = js.native
+  def modify(alter: java.lang.String, direction: Unit, granularity: java.lang.String): Unit = js.native
+  def modify(alter: Unit, direction: java.lang.String): Unit = js.native
+  def modify(alter: Unit, direction: java.lang.String, granularity: java.lang.String): Unit = js.native
+  def modify(alter: Unit, direction: Unit, granularity: java.lang.String): Unit = js.native
+  
+  /* standard dom */
   val rangeCount: Double = js.native
   
   /* standard dom */

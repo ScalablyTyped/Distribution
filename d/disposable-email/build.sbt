@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "disposable-email"
-version := "0.2-dt-20220810Z-44dc66"
+version := "0.2-dt-20220810Z-b7693b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

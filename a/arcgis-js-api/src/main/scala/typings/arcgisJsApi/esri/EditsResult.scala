@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditsResult
-  extends StObject
-     with Object {
+trait EditsResult extends StObject {
   
   /**
     * Result of adding attachments.
@@ -71,15 +67,12 @@ object EditsResult {
   inline def apply(
     addAttachmentResults: js.Array[FeatureEditResult],
     addFeatureResults: js.Array[FeatureEditResult],
-    constructor: js.Function,
     deleteAttachmentResults: js.Array[FeatureEditResult],
     deleteFeatureResults: js.Array[FeatureEditResult],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     updateAttachmentResults: js.Array[FeatureEditResult],
     updateFeatureResults: js.Array[FeatureEditResult]
   ): EditsResult = {
-    val __obj = js.Dynamic.literal(addAttachmentResults = addAttachmentResults.asInstanceOf[js.Any], addFeatureResults = addFeatureResults.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], deleteAttachmentResults = deleteAttachmentResults.asInstanceOf[js.Any], deleteFeatureResults = deleteFeatureResults.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), updateAttachmentResults = updateAttachmentResults.asInstanceOf[js.Any], updateFeatureResults = updateFeatureResults.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addAttachmentResults = addAttachmentResults.asInstanceOf[js.Any], addFeatureResults = addFeatureResults.asInstanceOf[js.Any], deleteAttachmentResults = deleteAttachmentResults.asInstanceOf[js.Any], deleteFeatureResults = deleteFeatureResults.asInstanceOf[js.Any], updateAttachmentResults = updateAttachmentResults.asInstanceOf[js.Any], updateFeatureResults = updateFeatureResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditsResult]
   }
   

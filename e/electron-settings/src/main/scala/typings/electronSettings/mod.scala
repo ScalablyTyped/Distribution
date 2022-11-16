@@ -175,6 +175,15 @@ object mod {
     * A `SettingsObject` is an object whose property values
     * are of the type `SettingsValue`.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SettingsObject = {[key: string] : electron-settings.electron-settings.SettingsValue}
+  }}}
+  to avoid circular code involving: 
+  - electron-settings.electron-settings.SettingsObject
+  - electron-settings.electron-settings.SettingsValue
+  */
   trait SettingsObject
     extends StObject
        with /* key */ StringDictionary[SettingsValue]
@@ -202,5 +211,13 @@ object mod {
     *     const lastLogin = await settings.get('user.lastLogin');
     *     const lastLoginDate = new Date(lastLogin);
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SettingsValue = null | boolean | string | number | electron-settings.electron-settings.SettingsObject | std.Array<electron-settings.electron-settings.SettingsValue>
+  }}}
+  to avoid circular code involving: 
+  - electron-settings.electron-settings.SettingsValue
+  */
   type SettingsValue = Null | Boolean | String | Double | SettingsObject | js.Array[Any]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-process-hrtime"
-version := "1.0.0-f38285"
+version := "1.0.0-e62228"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

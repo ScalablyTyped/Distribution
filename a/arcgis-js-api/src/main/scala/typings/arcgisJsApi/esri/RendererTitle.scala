@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RendererTitle
-  extends StObject
-     with Object {
+trait RendererTitle extends StObject {
   
   /**
     * The field name used in the renderer.
@@ -40,15 +36,8 @@ trait RendererTitle
 }
 object RendererTitle {
   
-  inline def apply(
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    normByPct: Boolean,
-    normField: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RendererTitle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), normByPct = normByPct.asInstanceOf[js.Any], normField = normField.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(field: String, normByPct: Boolean, normField: String): RendererTitle = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], normByPct = normByPct.asInstanceOf[js.Any], normField = normField.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererTitle]
   }
   

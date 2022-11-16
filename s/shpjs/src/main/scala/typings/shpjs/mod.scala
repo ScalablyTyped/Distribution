@@ -55,6 +55,7 @@ object mod extends Shortcut {
     
     def parseDbf(dbf: ShpJSBuffer, cpg: ShpJSBuffer): js.Array[GeoJsonProperties] = js.native
     
+    def parseShp(shp: ShpJSBuffer): js.Array[Geometry] = js.native
     def parseShp(shp: ShpJSBuffer, prj: String): js.Array[Geometry] = js.native
     def parseShp(shp: ShpJSBuffer, prj: Buffer): js.Array[Geometry] = js.native
     

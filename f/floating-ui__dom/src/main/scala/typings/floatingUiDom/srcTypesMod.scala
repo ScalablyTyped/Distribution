@@ -30,6 +30,7 @@ import typings.floatingUiDom.anon.PartialHideOptionsDetectO
 import typings.floatingUiDom.anon.PartialOptions
 import typings.floatingUiDom.anon.PartialShiftOptionsDetect
 import typings.floatingUiDom.anon.PartialSizeOptionsDetectO
+import typings.floatingUiDom.floatingUiDomBooleans.`false`
 import typings.floatingUiDom.floatingUiDomStrings.clippingAncestors
 import typings.floatingUiDom.srcUtilsIsMod.global.Window
 import typings.std.HTMLElement
@@ -132,10 +133,10 @@ object srcTypesMod {
   
   type Boundary = clippingAncestors | typings.std.Element | js.Array[typings.std.Element]
   
-  /* Inlined std.Omit<@floating-ui/core.@floating-ui/core.ComputePositionConfig, 'middleware' | 'platform'> & {  middleware :std.Array<@floating-ui/dom.@floating-ui/dom/src/types.Middleware> | undefined,   platform :@floating-ui/dom.@floating-ui/dom/src/types.Platform | undefined} */
+  /* Inlined std.Omit<@floating-ui/core.@floating-ui/core.ComputePositionConfig, 'middleware' | 'platform'> & {  middleware :std.Array<@floating-ui/dom.@floating-ui/dom/src/types.Middleware | null | undefined | false> | undefined,   platform :@floating-ui/dom.@floating-ui/dom/src/types.Platform | undefined} */
   trait ComputePositionConfig extends StObject {
     
-    var middleware: js.UndefOr[js.Array[Middleware]] = js.undefined
+    var middleware: js.UndefOr[js.Array[js.UndefOr[Middleware | Null | `false`]]] = js.undefined
     
     var placement: js.UndefOr[Placement] = js.undefined
     
@@ -152,11 +153,11 @@ object srcTypesMod {
     
     extension [Self <: ComputePositionConfig](x: Self) {
       
-      inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Array[js.UndefOr[Middleware | Null | `false`]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
       inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
-      inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value*))
+      inline def setMiddlewareVarargs(value: (js.UndefOr[Middleware | Null | `false`])*): Self = StObject.set(x, "middleware", js.Array(value*))
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

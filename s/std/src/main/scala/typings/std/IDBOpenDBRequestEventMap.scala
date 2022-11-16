@@ -9,21 +9,21 @@ trait IDBOpenDBRequestEventMap
      with IDBRequestEventMap {
   
   /* standard dom */
-  var blocked: Event
+  var blocked: IDBVersionChangeEvent
   
   /* standard dom */
   var upgradeneeded: IDBVersionChangeEvent
 }
 object IDBOpenDBRequestEventMap {
   
-  inline def apply(blocked: Event, error: Event, success: Event, upgradeneeded: IDBVersionChangeEvent): IDBOpenDBRequestEventMap = {
+  inline def apply(blocked: IDBVersionChangeEvent, error: Event, success: Event, upgradeneeded: IDBVersionChangeEvent): IDBOpenDBRequestEventMap = {
     val __obj = js.Dynamic.literal(blocked = blocked.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], upgradeneeded = upgradeneeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBOpenDBRequestEventMap]
   }
   
   extension [Self <: IDBOpenDBRequestEventMap](x: Self) {
     
-    inline def setBlocked(value: Event): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: IDBVersionChangeEvent): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     inline def setUpgradeneeded(value: IDBVersionChangeEvent): Self = StObject.set(x, "upgradeneeded", value.asInstanceOf[js.Any])
   }

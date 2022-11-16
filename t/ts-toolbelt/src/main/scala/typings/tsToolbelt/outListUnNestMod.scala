@@ -2,6 +2,7 @@ package typings.tsToolbelt
 
 import typings.tsToolbelt.outBooleanInternalMod.Boolean
 import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outListConcatMod.Concat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +14,24 @@ object outListUnNestMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] extends infer LP ? LP extends ts-toolbelt.ts-toolbelt/out/List/List.List<any> ? ts-toolbelt.ts-toolbelt/out/List/Concat.Concat<LN, L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>]> : ts-toolbelt.ts-toolbelt/out/List/Append.Append<LN, L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>]> : never
     }}}
     */
-  @js.native
-  trait Flatter[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] extends StObject
+  type Flatter[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] = Concat[
+    LN, 
+    /* import warning: importer.ImportType#apply Failed type conversion: L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
+  ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     L extends unknown ? ts-toolbelt.ts-toolbelt/out/List/UnNest._UnNest<L, strict> : never
     }}}
     */
-  @js.native
-  trait UnNest[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */] extends StObject
+  type UnNest[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * @hidden
@@ -45,13 +47,12 @@ object outListUnNestMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/List/UnNest.__UnNest<ts-toolbelt.ts-toolbelt/out/List/_Internal.Naked<L>, strict> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<any>> : never
     }}}
     */
-  @js.native
-  trait _UnNest[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */] extends StObject
+  type _UnNest[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, strict /* <: Boolean */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * @hidden

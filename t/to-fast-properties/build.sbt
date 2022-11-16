@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "to-fast-properties"
-version := "4.0.0-a80916"
+version := "4.0.0-5a543c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

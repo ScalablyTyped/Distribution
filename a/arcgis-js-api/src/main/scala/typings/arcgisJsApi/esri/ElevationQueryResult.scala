@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationQueryResult
-  extends StObject
-     with Object {
+trait ElevationQueryResult extends StObject {
   
   /**
     * The geometry with sampled z-values.
@@ -33,14 +29,8 @@ trait ElevationQueryResult
 }
 object ElevationQueryResult {
   
-  inline def apply(
-    constructor: js.Function,
-    geometry: Point | Multipoint | Polyline,
-    hasOwnProperty: PropertyKey => Boolean,
-    noDataValue: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ElevationQueryResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataValue = noDataValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(geometry: Point | Multipoint | Polyline, noDataValue: Double): ElevationQueryResult = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationQueryResult]
   }
   

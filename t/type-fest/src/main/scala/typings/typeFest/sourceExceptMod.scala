@@ -40,11 +40,10 @@ object sourceExceptMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     type-fest.type-fest/source/internal.IsEqual<KeyType, ExcludeType> extends true ? never : KeyType extends ExcludeType ? never : KeyType
     }}}
     */
-  @js.native
-  trait Filter[KeyType, ExcludeType] extends StObject
+  type Filter[KeyType, ExcludeType] = KeyType
 }

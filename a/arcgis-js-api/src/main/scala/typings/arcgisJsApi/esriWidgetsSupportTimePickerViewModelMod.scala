@@ -1,21 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.esri.TimePickerViewModel
-import typings.arcgisJsApi.esri.TimePickerViewModelConstructor
 import typings.arcgisJsApi.esri.TimePickerViewModelProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsSupportTimePickerViewModelMod extends Shortcut {
+object esriWidgetsSupportTimePickerViewModelMod {
   
-  @JSImport("esri/widgets/support/TimePickerViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TimePickerViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/support/TimePickerViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +16,7 @@ object esriWidgetsSupportTimePickerViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePickerViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TimePickerViewModel {
     def this(properties: TimePickerViewModelProperties) = this()
@@ -46,9 +39,4 @@ object esriWidgetsSupportTimePickerViewModelMod extends Shortcut {
     /* CompleteClass */
     var value: js.Date = js.native
   }
-  
-  type _To = js.Object & TimePickerViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsSupportTimePickerViewModelMod.foo` */
-  override def _to: js.Object & TimePickerViewModelConstructor = ^
 }

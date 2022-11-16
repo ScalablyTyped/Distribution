@@ -2,15 +2,12 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`column-reference`
 import typings.arcgisJsApi.arcgisJsApiStrings.string_
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColumnNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -24,12 +21,8 @@ trait ColumnNode
 }
 object ColumnNode {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ColumnNode = {
-    val __obj = js.Dynamic.literal(column = "string", constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ColumnNode = {
+    val __obj = js.Dynamic.literal(column = "string")
     __obj.updateDynamic("type")("column-reference")
     __obj.asInstanceOf[ColumnNode]
   }

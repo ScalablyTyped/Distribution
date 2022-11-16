@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wrap-text"
-version := "1.0-dt-20221029Z-309b57"
+version := "1.0-dt-20221029Z-3bb243"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,7 +13,7 @@ trait Symbol3DProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
-  var styleOrigin: js.UndefOr[Symbol3DStyleOrigin] = js.undefined
+  var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
     * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
@@ -31,7 +31,7 @@ object Symbol3DProperties {
   
   extension [Self <: Symbol3DProperties](x: Self) {
     
-    inline def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
+    inline def setStyleOrigin(value: StyleOriginProperties): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     
     inline def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
     

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelatedRecordsInfoFieldOrderConstructor
   extends StObject
-     with /**
-  * The `RelatedRecordsInfoFieldOrder` class indicates the field display order for the related records in a layer's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html)
-  */
-Instantiable0[RelatedRecordsInfoFieldOrder]
+     with Instantiable0[RelatedRecordsInfoFieldOrder]
      with Instantiable1[
       /* properties */ RelatedRecordsInfoFieldOrderProperties, 
       RelatedRecordsInfoFieldOrder

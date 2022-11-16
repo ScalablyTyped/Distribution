@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.DirectionsViewModel
-import typings.arcgisJsApi.esri.DirectionsViewModelConstructor
 import typings.arcgisJsApi.esri.DirectionsViewModelProperties
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.MapView
@@ -11,13 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsDirectionsDirectionsViewModelMod extends Shortcut {
+object esriWidgetsDirectionsDirectionsViewModelMod {
   
-  @JSImport("esri/widgets/Directions/DirectionsViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & DirectionsViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Directions/DirectionsViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsDirectionsDirectionsViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with DirectionsViewModel {
     def this(properties: DirectionsViewModelProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsDirectionsDirectionsViewModelMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & DirectionsViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsDirectionsDirectionsViewModelMod.foo` */
-  override def _to: js.Object & DirectionsViewModelConstructor = ^
 }

@@ -65,8 +65,8 @@ trait FakeTimersConfignowExclud extends StObject {
 }
 object FakeTimersConfignowExclud {
   
-  inline def apply(now: (js.UndefOr[Double | js.Date]) & (js.UndefOr[Exclude[js.UndefOr[Double | js.Date], js.Date]])): FakeTimersConfignowExclud = {
-    val __obj = js.Dynamic.literal(now = now.asInstanceOf[js.Any])
+  inline def apply(): FakeTimersConfignowExclud = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FakeTimersConfignowExclud]
   }
   
@@ -93,6 +93,8 @@ object FakeTimersConfignowExclud {
     inline def setNow(
       value: (js.UndefOr[Double | js.Date]) & (js.UndefOr[Exclude[js.UndefOr[Double | js.Date], js.Date]])
     ): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    
+    inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     
     inline def setTimerLimit(value: Double): Self = StObject.set(x, "timerLimit", value.asInstanceOf[js.Any])
     

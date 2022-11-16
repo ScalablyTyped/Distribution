@@ -2,11 +2,11 @@ package typings.tsLoader.distInterfacesMod
 
 import typings.tsLoader.anon.FnCallPathCallbackPollingIntervalOptions
 import typings.tsLoader.anon.FnCallPathCallbackRecursiveOptions
-import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.DirectoryWatcherCallback
 import typings.typescript.mod.FileWatcher
 import typings.typescript.mod.FileWatcherCallback
 import typings.typescript.mod.FileWatcherEventKind
+import typings.typescript.mod.WatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +20,9 @@ trait WatchFactory extends StObject {
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
   def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
-  def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher
+  def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: WatchOptions): FileWatcher
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
-  def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher
+  def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: WatchOptions): FileWatcher
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
   @JSName("watchDirectory")
   var watchDirectory_Original: FnCallPathCallbackRecursiveOptions
@@ -32,9 +32,9 @@ trait WatchFactory extends StObject {
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher
   /** Used to watch changes in source files, missing files needed to update the program or config file */
-  def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher
+  def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: WatchOptions): FileWatcher
   /** Used to watch changes in source files, missing files needed to update the program or config file */
-  def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: CompilerOptions): FileWatcher
+  def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: WatchOptions): FileWatcher
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   @JSName("watchFile")
   var watchFile_Original: FnCallPathCallbackPollingIntervalOptions

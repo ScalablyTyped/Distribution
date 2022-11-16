@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "matchmediaquery"
-version := "0.3-dt-20211202Z-ef8aeb"
+version := "0.3-dt-20211202Z-d950b6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

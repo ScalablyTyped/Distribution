@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multi-number-parse"
-version := "1.1-dt-20211202Z-955d19"
+version := "1.1-dt-20211202Z-db573c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-path-bounds"
-version := "1.0-dt-20221111Z-fba53b"
+version := "1.0-dt-20221111Z-3b1d95"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

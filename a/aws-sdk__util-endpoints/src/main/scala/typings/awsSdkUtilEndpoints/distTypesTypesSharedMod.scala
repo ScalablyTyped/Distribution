@@ -108,6 +108,14 @@ object distTypesTypesSharedMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionReturn = string | boolean | number | {[key: string] : @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.FunctionReturn}
+  }}}
+  to avoid circular code involving: 
+  - @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.FunctionReturn
+  */
   type FunctionReturn = String | Boolean | Double | StringDictionary[Any]
   
   trait ReferenceObject
@@ -129,8 +137,17 @@ object distTypesTypesSharedMod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.FunctionReturn} */ trait ReferenceRecord extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReferenceRecord = std.Record<string, @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.FunctionReturn>
+  }}}
+  to avoid circular code involving: 
+  - @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.FunctionReturn
+  - @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/types/shared.ReferenceRecord
+  */
+  @js.native
+  trait ReferenceRecord extends StObject
   
   trait _Expression extends StObject
   object _Expression {

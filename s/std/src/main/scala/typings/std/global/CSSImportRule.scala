@@ -62,6 +62,10 @@ open class CSSImportRule ()
   
   /* standard dom */
   /* CompleteClass */
+  override val layerName: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   override val media: typings.std.MediaList = js.native
   
   /* standard dom */

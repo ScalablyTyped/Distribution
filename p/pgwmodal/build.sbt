@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pgwmodal"
-version := "2.0-dt-20221103Z-ef6452"
+version := "2.0-dt-20221103Z-c74176"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-select" : "5.6.0"
+      "react-select" : "5.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-select" : "5.6.0"
+      "react-select" : "5.6.1"
     }
   ],
   "compile-devDependencies" : [

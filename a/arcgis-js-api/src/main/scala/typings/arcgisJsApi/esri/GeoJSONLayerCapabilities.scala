@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONLayerCapabilities
-  extends StObject
-     with Object {
+trait GeoJSONLayerCapabilities extends StObject {
   
   /**
     * Describes characteristics of the data in the layer.
@@ -48,16 +44,13 @@ trait GeoJSONLayerCapabilities
 object GeoJSONLayerCapabilities {
   
   inline def apply(
-    constructor: js.Function,
     data: GeoJSONLayerCapabilitiesData,
     editing: GeoJSONLayerCapabilitiesEditing,
-    hasOwnProperty: PropertyKey => Boolean,
     operations: GeoJSONLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean,
     query: GeoJSONLayerCapabilitiesQuery,
     queryRelated: GeoJSONLayerCapabilitiesQueryRelated
   ): GeoJSONLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerCapabilities]
   }
   

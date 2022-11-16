@@ -295,6 +295,14 @@ object esInterfaceMod {
   
   type EventDataNode[TreeDataType] = Active & TreeDataType & BasicDataNode
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FieldDataNode = rc-tree.rc-tree/es/interface.BasicDataNode & T & std.Partial<std.Record<ChildFieldName, std.Array<rc-tree.rc-tree/es/interface.FieldDataNode<T, ChildFieldName>>>>
+  }}}
+  to avoid circular code involving: 
+  - rc-tree.rc-tree/es/interface.FieldDataNode
+  */
   type FieldDataNode[T, ChildFieldName /* <: String */] = BasicDataNode & T & (Partial[Record[ChildFieldName, js.Array[Any]]])
   
   trait FieldNames extends StObject {

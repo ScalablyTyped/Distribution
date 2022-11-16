@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WCSLayerConstructor
   extends StObject
-     with /**
-  * WCS presents raster data from a [OGC Web Coverage Service](https://www.ogc.org/standards/wcs).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html)
-  */
-Instantiable0[WCSLayer]
+     with Instantiable0[WCSLayer]
      with Instantiable1[/* properties */ WCSLayerProperties, WCSLayer] {
   
   def fromJSON(json: Any): WCSLayer = js.native

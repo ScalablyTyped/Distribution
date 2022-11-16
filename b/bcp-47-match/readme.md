@@ -1,7 +1,7 @@
 
 # Scala.js typings for bcp-47-match
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 Match BCP 47 language tags with language ranges per RFC 4647

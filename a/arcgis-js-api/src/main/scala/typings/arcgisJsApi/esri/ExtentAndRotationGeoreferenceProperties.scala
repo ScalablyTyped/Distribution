@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`extent-and-rotation`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +23,6 @@ trait ExtentAndRotationGeoreferenceProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ExtentAndRotationGeoreference.html#rotation)
     */
   var rotation: js.UndefOr[Double] = js.undefined
-  
-  var `type`: js.UndefOr[`extent-and-rotation`] = js.undefined
 }
 object ExtentAndRotationGeoreferenceProperties {
   
@@ -43,9 +40,5 @@ object ExtentAndRotationGeoreferenceProperties {
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
-    
-    inline def setType(value: `extent-and-rotation`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

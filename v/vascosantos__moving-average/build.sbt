@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vascosantos__moving-average"
-version := "1.1.0-6f3888"
+version := "1.1.0-259fdd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

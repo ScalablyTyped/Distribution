@@ -16,8 +16,8 @@ trait Path extends StObject {
 }
 object Path {
   
-  inline def apply(path: String, ref: RuleFactory[js.Object]): Path = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+  inline def apply(path: String, ref: js.Object => Rule): Path = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
     __obj.asInstanceOf[Path]
   }
   
@@ -25,6 +25,6 @@ object Path {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setRef(value: RuleFactory[js.Object]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: js.Object => Rule): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-parse-better-errors"
-version := "1.0-dt-20211202Z-1e5db0"
+version := "1.0-dt-20211202Z-8f77fa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

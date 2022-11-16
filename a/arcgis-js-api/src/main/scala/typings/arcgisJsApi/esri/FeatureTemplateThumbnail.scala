@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.image
 import typings.arcgisJsApi.arcgisJsApiStrings.jpeg
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.png
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureTemplateThumbnail
-  extends StObject
-     with Object {
+trait FeatureTemplateThumbnail extends StObject {
   
   /**
     * The MIME type of the image.
@@ -44,16 +40,8 @@ trait FeatureTemplateThumbnail
 }
 object FeatureTemplateThumbnail {
   
-  inline def apply(
-    constructor: js.Function,
-    contentType: image | png | jpg | jpeg,
-    hasOwnProperty: PropertyKey => Boolean,
-    height: Double,
-    imageData: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    width: Double
-  ): FeatureTemplateThumbnail = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], imageData = imageData.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
+  inline def apply(contentType: image | png | jpg | jpeg, height: Double, imageData: String, width: Double): FeatureTemplateThumbnail = {
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], imageData = imageData.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplateThumbnail]
   }
   

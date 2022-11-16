@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jira2slack"
-version := "1.2-dt-20221026Z-f1dcf5"
+version := "1.2-dt-20221026Z-032ac1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

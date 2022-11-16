@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanwhocodes__module-importer"
-version := "1.0.1-ca963f"
+version := "1.0.1-5bc3b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

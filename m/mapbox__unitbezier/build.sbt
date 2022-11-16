@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__unitbezier"
-version := "0.0.1-0f27a1"
+version := "0.0.1-df2ad5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

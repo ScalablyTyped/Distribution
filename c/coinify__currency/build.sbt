@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "coinify__currency"
-version := "1.3-dt-20220413Z-8aafbb"
+version := "1.3-dt-20220413Z-94b5fb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

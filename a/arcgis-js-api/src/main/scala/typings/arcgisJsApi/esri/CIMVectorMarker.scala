@@ -2,15 +2,12 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.Absolute
 import typings.arcgisJsApi.arcgisJsApiStrings.Relative
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMVectorMarker
   extends StObject
-     with Object
      with CIMSymbolLayer {
   
   /**
@@ -129,16 +126,8 @@ trait CIMVectorMarker
 }
 object CIMVectorMarker {
   
-  inline def apply(
-    constructor: js.Function,
-    enable: Boolean,
-    frame: Envelope,
-    hasOwnProperty: PropertyKey => Boolean,
-    markerGraphics: js.Array[CIMMarkerGraphic],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    size: Double
-  ): CIMVectorMarker = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), markerGraphics = markerGraphics.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any])
+  inline def apply(enable: Boolean, frame: Envelope, markerGraphics: js.Array[CIMMarkerGraphic], size: Double): CIMVectorMarker = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], markerGraphics = markerGraphics.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMVectorMarker")
     __obj.asInstanceOf[CIMVectorMarker]
   }

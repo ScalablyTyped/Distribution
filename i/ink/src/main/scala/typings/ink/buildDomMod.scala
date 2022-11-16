@@ -102,13 +102,12 @@ object buildDomMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {  nodeName :infer U} ? U extends '#text' ? ink.ink/build/dom.TextNode : ink.ink/build/dom.DOMElement : never
     }}}
     */
-  @js.native
-  trait DOMNode[T] extends StObject
+  type DOMNode[T] = TextNode
   
   type DOMNodeAttribute = Boolean | String | Double
   

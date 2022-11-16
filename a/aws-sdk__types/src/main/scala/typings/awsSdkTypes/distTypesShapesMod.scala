@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesShapesMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DocumentType = null | boolean | number | string | std.Array<@aws-sdk/types.@aws-sdk/types/dist-types/shapes.DocumentType> | {[prop: string] : @aws-sdk/types.@aws-sdk/types/dist-types/shapes.DocumentType}
+  }}}
+  to avoid circular code involving: 
+  - @aws-sdk/types.@aws-sdk/types/dist-types/shapes.DocumentType
+  */
   type DocumentType = Null | Boolean | Double | String | js.Array[Any] | StringDictionary[Any]
   
   trait RetryableTrait extends StObject {

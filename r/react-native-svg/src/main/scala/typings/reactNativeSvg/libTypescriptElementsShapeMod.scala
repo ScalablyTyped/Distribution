@@ -269,20 +269,22 @@ object libTypescriptElementsShapeMod {
     extends Component[P, js.Object, Any]
        with /* x */ StringDictionary[Any] {
     
-    def getBBox(): SVGRect = js.native
-    def getBBox(options: SVGBoundingBoxOptions): SVGRect = js.native
+    def getBBox(): js.UndefOr[SVGRect] = js.native
+    def getBBox(options: SVGBoundingBoxOptions): js.UndefOr[SVGRect] = js.native
     
     def getCTM(): SVGMatrix = js.native
+    
+    def getNativeScrollRef(): (Shape[P] & NativeMethods) | Null = js.native
     
     def getPointAtLength(length: Double): SVGPoint = js.native
     
     def getScreenCTM(): SVGMatrix = js.native
     
-    def getTotalLength(): Double = js.native
+    def getTotalLength(): js.UndefOr[Double] = js.native
     
-    def isPointInFill(options: DOMPointInit): Boolean = js.native
+    def isPointInFill(options: DOMPointInit): js.UndefOr[Boolean] = js.native
     
-    def isPointInStroke(options: DOMPointInit): Boolean = js.native
+    def isPointInStroke(options: DOMPointInit): js.UndefOr[Boolean] = js.native
     
     def refMethod(): Unit = js.native
     def refMethod(instance: Shape[P] & NativeMethods): Unit = js.native

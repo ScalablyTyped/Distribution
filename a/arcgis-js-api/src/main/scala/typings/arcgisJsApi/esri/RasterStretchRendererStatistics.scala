@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterStretchRendererStatistics
-  extends StObject
-     with Object {
+trait RasterStretchRendererStatistics extends StObject {
   
   /**
     * The average pixel value.
@@ -40,14 +36,8 @@ trait RasterStretchRendererStatistics
 }
 object RasterStretchRendererStatistics {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RasterStretchRendererStatistics = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(max: Double, min: Double): RasterStretchRendererStatistics = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterStretchRendererStatistics]
   }
   

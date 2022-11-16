@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureFormViewModelValidateContingencyConstraintsOptions
-  extends StObject
-     with Object {
+trait FeatureFormViewModelValidateContingencyConstraintsOptions extends StObject {
   
   /**
     * If `true`, return contingency violations for field groups that are invalid because values have not yet been specified for all their fields.
@@ -19,12 +15,8 @@ trait FeatureFormViewModelValidateContingencyConstraintsOptions
 }
 object FeatureFormViewModelValidateContingencyConstraintsOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureFormViewModelValidateContingencyConstraintsOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FeatureFormViewModelValidateContingencyConstraintsOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureFormViewModelValidateContingencyConstraintsOptions]
   }
   

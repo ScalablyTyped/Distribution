@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapImageLayerCreateExportImageParametersOptions
-  extends StObject
-     with Object {
+trait MapImageLayerCreateExportImageParametersOptions extends StObject {
   
   /**
     * The pixel ratio to apply to the dpi of the exported image.
@@ -33,12 +29,8 @@ trait MapImageLayerCreateExportImageParametersOptions
 }
 object MapImageLayerCreateExportImageParametersOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MapImageLayerCreateExportImageParametersOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MapImageLayerCreateExportImageParametersOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapImageLayerCreateExportImageParametersOptions]
   }
   

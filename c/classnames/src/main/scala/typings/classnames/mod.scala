@@ -21,6 +21,15 @@ object mod {
   
   type Argument = Value | Mapping | ArgumentArray
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ArgumentArray = std.Array<classnames.classnames.Argument>
+  }}}
+  to avoid circular code involving: 
+  - classnames.classnames.Argument
+  - classnames.classnames.ArgumentArray
+  */
   @js.native
   trait ArgumentArray
     extends StObject

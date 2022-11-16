@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-twitter-conversion-tracker-plus"
-version := "1.1-dt-20211202Z-9f1ffd"
+version := "1.1-dt-20211202Z-b23ae6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

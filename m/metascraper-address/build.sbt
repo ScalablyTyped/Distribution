@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "metascraper-address"
-version := "1.0-dt-20211202Z-2526f7"
+version := "1.0-dt-20211202Z-2e1c7c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "metascraper" % "5.14-dt-20211202Z-57fbb5",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "metascraper" % "5.14-dt-20211202Z-530b34",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

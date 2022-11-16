@@ -17,7 +17,7 @@ trait DataLakeSettings extends StObject {
   var AuthorizedSessionTagValueList: js.UndefOr[typings.awsSdk.clientsLakeformationMod.AuthorizedSessionTagValueList] = js.undefined
   
   /**
-    * Specifies whether access control on newly created database is managed by Lake Formation permissions or exclusively by IAM permissions. You can override this default setting when you create a database. A null value indicates access control by Lake Formation permissions. A value that assigns ALL to IAM_ALLOWED_PRINCIPALS indicates access control by IAM permissions. This is referred to as the setting "Use only IAM access control," and is for backward compatibility with the Glue permission model implemented by IAM permissions. The only permitted values are an empty array or an array that contains a single JSON object that grants ALL to IAM_ALLOWED_PRINCIPALS. For more information, see Changing the Default Security Settings for Your Data Lake.
+    * Specifies whether access control on newly created database is managed by Lake Formation permissions or exclusively by IAM permissions. A null value indicates access control by Lake Formation permissions. A value that assigns ALL to IAM_ALLOWED_PRINCIPALS indicates access control by IAM permissions. This is referred to as the setting "Use only IAM access control," and is for backward compatibility with the Glue permission model implemented by IAM permissions. The only permitted values are an empty array or an array that contains a single JSON object that grants ALL to IAM_ALLOWED_PRINCIPALS. For more information, see Changing the Default Security Settings for Your Data Lake.
     */
   var CreateDatabaseDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
   
@@ -35,6 +35,11 @@ trait DataLakeSettings extends StObject {
     * A list of the account IDs of Amazon Web Services accounts with Amazon EMR clusters that are to perform data filtering.&gt;
     */
   var ExternalDataFilteringAllowList: js.UndefOr[DataLakePrincipalList] = js.undefined
+  
+  /**
+    * A key-value map that provides an additional configuration on your data lake. CrossAccountVersion is the key you can configure in the Parameters field. Accepted values for the CrossAccountVersion key are 1, 2, and 3.
+    */
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * A list of the resource-owning account IDs that the caller's account can use to share their user access details (user ARNs). The user ARNs can be logged in the resource owner's CloudTrail log. You may want to specify this property when you are in a high-trust boundary, such as the same team or company. 
@@ -83,6 +88,10 @@ object DataLakeSettings {
     inline def setExternalDataFilteringAllowListUndefined: Self = StObject.set(x, "ExternalDataFilteringAllowList", js.undefined)
     
     inline def setExternalDataFilteringAllowListVarargs(value: DataLakePrincipal*): Self = StObject.set(x, "ExternalDataFilteringAllowList", js.Array(value*))
+    
+    inline def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     inline def setTrustedResourceOwners(value: TrustedResourceOwners): Self = StObject.set(x, "TrustedResourceOwners", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait FeatureReductionBinning
      with JSONSupport {
   
   /**
-    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) of features contained within each bin.
+    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) from features contained within each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fields)
     */
@@ -58,6 +58,13 @@ trait FeatureReductionBinning
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#popupTemplate)
     */
   var popupTemplate: PopupTemplate = js.native
+  
+  /**
+    * The renderer used to style the bins.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#renderer)
+    */
+  var renderer: Renderer = js.native
   
   /**
     * The feature reduction type.

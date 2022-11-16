@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchSource
   extends StObject
      with Accessor
-     with JSONSupport {
+     with JSONSupport
+     with Identifiable {
   
   /**
     * Indicates whether to automatically navigate to the selected result once selected.

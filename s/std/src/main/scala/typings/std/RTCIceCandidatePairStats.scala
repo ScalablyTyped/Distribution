@@ -24,6 +24,12 @@ trait RTCIceCandidatePairStats
   var currentRoundTripTime: js.UndefOr[Double] = js.undefined
   
   /* standard dom */
+  var lastPacketReceivedTimestamp: js.UndefOr[DOMHighResTimeStamp] = js.undefined
+  
+  /* standard dom */
+  var lastPacketSentTimestamp: js.UndefOr[DOMHighResTimeStamp] = js.undefined
+  
+  /* standard dom */
   var localCandidateId: java.lang.String
   
   /* standard dom */
@@ -90,6 +96,14 @@ object RTCIceCandidatePairStats {
     inline def setCurrentRoundTripTime(value: Double): Self = StObject.set(x, "currentRoundTripTime", value.asInstanceOf[js.Any])
     
     inline def setCurrentRoundTripTimeUndefined: Self = StObject.set(x, "currentRoundTripTime", js.undefined)
+    
+    inline def setLastPacketReceivedTimestamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "lastPacketReceivedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastPacketReceivedTimestampUndefined: Self = StObject.set(x, "lastPacketReceivedTimestamp", js.undefined)
+    
+    inline def setLastPacketSentTimestamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "lastPacketSentTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastPacketSentTimestampUndefined: Self = StObject.set(x, "lastPacketSentTimestamp", js.undefined)
     
     inline def setLocalCandidateId(value: java.lang.String): Self = StObject.set(x, "localCandidateId", value.asInstanceOf[js.Any])
     

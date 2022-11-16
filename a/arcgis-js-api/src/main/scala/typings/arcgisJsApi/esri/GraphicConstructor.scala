@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GraphicConstructor
   extends StObject
-     with /**
-  * A Graphic is a vector representation of real world geographic phenomena.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html)
-  */
-Instantiable0[Graphic]
+     with Instantiable0[Graphic]
      with Instantiable1[/* properties */ GraphicProperties, Graphic] {
   
   def fromJSON(json: Any): Graphic = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-yarn-workspace-root"
-version := "2.0.0-40a188"
+version := "2.0.0-927d23"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

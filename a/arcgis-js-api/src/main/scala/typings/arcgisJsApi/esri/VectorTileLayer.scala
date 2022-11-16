@@ -134,7 +134,8 @@ trait VectorTileLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#setSpriteSource)
     */
-  def setSpriteSource(spriteUrl: String): js.Promise[SpriteSource] = js.native
+  def setSpriteSource(spriteSourceInfo: SpriteSourceImageInfo): js.Promise[SpriteSource] = js.native
+  def setSpriteSource(spriteSourceInfo: SpriteSourceUrlInfo): js.Promise[SpriteSource] = js.native
   
   /**
     * Changes the layer properties of the specified [style layer](https://www.mapbox.com/mapbox-gl-js/style-spec/#layers).

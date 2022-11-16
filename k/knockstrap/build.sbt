@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockstrap"
-version := "0.0-unknown-dt-20220818Z-b44e8b"
+version := "0.0-unknown-dt-20220818Z-ebcd19"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

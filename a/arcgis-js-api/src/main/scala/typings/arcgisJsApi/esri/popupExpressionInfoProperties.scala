@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.number
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +27,7 @@ trait popupExpressionInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#returnType)
     */
-  var returnType: js.UndefOr[String | Double] = js.undefined
+  var returnType: js.UndefOr[string_ | number] = js.undefined
   
   /**
     * The title used to describe the value returned by the expression in the popup.
@@ -51,7 +53,7 @@ object popupExpressionInfoProperties {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setReturnType(value: String | Double): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: string_ | number): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     

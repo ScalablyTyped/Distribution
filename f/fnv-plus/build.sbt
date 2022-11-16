@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fnv-plus"
-version := "1.3-dt-20220412Z-edf0a3"
+version := "1.3-dt-20220412Z-4c0bb0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

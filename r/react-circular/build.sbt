@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-circular"
-version := "1.0-dt-20211202Z-21665a"
+version := "1.0-dt-20211202Z-1af4b4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

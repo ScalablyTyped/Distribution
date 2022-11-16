@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TraceResultExtend
-  extends StObject
-     with Object {
+trait TraceResultExtend extends StObject {
   
   /**
     * TraceItem extends the named trace configuration and adds a property to manage the selection on the view.
@@ -57,15 +53,12 @@ object TraceResultExtend {
   inline def apply(
     TraceItem: TraceItem,
     TraceResult: TraceResult,
-    constructor: js.Function,
     graphicColor: GraphicColor,
     graphicEnabled: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     selectionEnabled: Boolean,
     status: String
   ): TraceResultExtend = {
-    val __obj = js.Dynamic.literal(TraceItem = TraceItem.asInstanceOf[js.Any], TraceResult = TraceResult.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], graphicColor = graphicColor.asInstanceOf[js.Any], graphicEnabled = graphicEnabled.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), selectionEnabled = selectionEnabled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(TraceItem = TraceItem.asInstanceOf[js.Any], TraceResult = TraceResult.asInstanceOf[js.Any], graphicColor = graphicColor.asInstanceOf[js.Any], graphicEnabled = graphicEnabled.asInstanceOf[js.Any], selectionEnabled = selectionEnabled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceResultExtend]
   }
   

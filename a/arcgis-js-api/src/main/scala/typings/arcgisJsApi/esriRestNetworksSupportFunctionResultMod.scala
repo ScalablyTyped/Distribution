@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FunctionResult
-import typings.arcgisJsApi.esri.FunctionResultConstructor
 import typings.arcgisJsApi.esri.FunctionResultProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestNetworksSupportFunctionResultMod extends Shortcut {
+/* static members */
+object esriRestNetworksSupportFunctionResultMod {
   
-  @JSImport("esri/rest/networks/support/FunctionResult", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FunctionResultConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/networks/support/FunctionResult", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestNetworksSupportFunctionResultMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FunctionResult {
     def this(properties: FunctionResultProperties) = this()
@@ -35,9 +29,9 @@ object esriRestNetworksSupportFunctionResultMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/networks/support/FunctionResult", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FunctionResultConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestNetworksSupportFunctionResultMod.foo` */
-  override def _to: js.Object & FunctionResultConstructor = ^
+  inline def fromJSON(json: Any): FunctionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FunctionResult]
 }

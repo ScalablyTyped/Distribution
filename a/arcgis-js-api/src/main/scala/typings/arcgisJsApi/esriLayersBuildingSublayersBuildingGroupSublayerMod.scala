@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.BuildingGroupSublayer
-import typings.arcgisJsApi.esri.BuildingGroupSublayerConstructor
 import typings.arcgisJsApi.esri.BuildingGroupSublayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersBuildingSublayersBuildingGroupSublayerMod extends Shortcut {
+/* static members */
+object esriLayersBuildingSublayersBuildingGroupSublayerMod {
   
-  @JSImport("esri/layers/buildingSublayers/BuildingGroupSublayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BuildingGroupSublayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/buildingSublayers/BuildingGroupSublayer", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +16,14 @@ object esriLayersBuildingSublayersBuildingGroupSublayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BuildingGroupSublayer {
     def this(properties: BuildingGroupSublayerProperties) = this()
   }
+  @JSImport("esri/layers/buildingSublayers/BuildingGroupSublayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & BuildingGroupSublayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersBuildingSublayersBuildingGroupSublayerMod.foo` */
-  override def _to: js.Object & BuildingGroupSublayerConstructor = ^
+  inline def fromJSON(json: Any): BuildingGroupSublayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[BuildingGroupSublayer]
 }

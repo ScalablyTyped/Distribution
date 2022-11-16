@@ -105,5 +105,13 @@ object typesLatestSrcOperationParameterMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ParameterPath = string | std.Array<string> | {[propertyName: string] : @azure/core-http.@azure/core-http/types/latest/src/operationParameter.ParameterPath}
+  }}}
+  to avoid circular code involving: 
+  - @azure/core-http.@azure/core-http/types/latest/src/operationParameter.ParameterPath
+  */
   type ParameterPath = String | js.Array[String] | StringDictionary[Any]
 }

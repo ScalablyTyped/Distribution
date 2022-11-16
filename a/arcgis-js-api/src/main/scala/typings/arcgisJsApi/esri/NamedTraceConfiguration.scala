@@ -78,7 +78,7 @@ trait NamedTraceConfiguration extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
     */
-  var traceConfiguration: Any
+  var traceConfiguration: TraceConfiguration | UNTraceConfiguration
   
   /**
     * The trace type defined in this trace configuration.
@@ -98,7 +98,7 @@ object NamedTraceConfiguration {
     resultTypes: js.Array[Any],
     tags: js.Array[String],
     title: String,
-    traceConfiguration: Any,
+    traceConfiguration: TraceConfiguration | UNTraceConfiguration,
     traceType: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation
   ): NamedTraceConfiguration = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], minStartingPoints = minStartingPoints.asInstanceOf[js.Any], resultTypes = resultTypes.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], traceConfiguration = traceConfiguration.asInstanceOf[js.Any], traceType = traceType.asInstanceOf[js.Any])
@@ -127,7 +127,7 @@ object NamedTraceConfiguration {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTraceConfiguration(value: Any): Self = StObject.set(x, "traceConfiguration", value.asInstanceOf[js.Any])
+    inline def setTraceConfiguration(value: TraceConfiguration | UNTraceConfiguration): Self = StObject.set(x, "traceConfiguration", value.asInstanceOf[js.Any])
     
     inline def setTraceType(
       value: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation

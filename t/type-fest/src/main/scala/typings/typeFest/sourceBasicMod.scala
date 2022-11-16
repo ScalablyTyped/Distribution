@@ -18,5 +18,14 @@ object sourceBasicMod {
   
   type JsonPrimitive = String | Double | Boolean | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = type-fest.type-fest/source/basic.JsonPrimitive | type-fest.type-fest/source/basic.JsonObject | type-fest.type-fest/source/basic.JsonArray
+  }}}
+  to avoid circular code involving: 
+  - type-fest.type-fest/source/basic.JsonArray
+  - type-fest.type-fest/source/basic.JsonValue
+  */
   type JsonValue = JsonPrimitive | JsonObject | Any
 }

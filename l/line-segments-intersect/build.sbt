@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "line-segments-intersect"
-version := "0.0-dt-20211202Z-2c3512"
+version := "0.0-dt-20211202Z-aabaea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.nukaCarousel
 
 import typings.nukaCarousel.anon.PickControlPropscellAlign
 import typings.nukaCarousel.anon.PickControlPropscellAlignCellAlign
-import typings.nukaCarousel.libTypesMod.Alignment
+import typings.nukaCarousel.libTypesMod.CellAlign
 import typings.nukaCarousel.libTypesMod.ControlProps
 import typings.nukaCarousel.libTypesMod.ScrollMode
 import typings.react.mod.global.JSX.Element
@@ -28,7 +28,7 @@ object libDefaultControlsMod {
     scrollMode: ScrollMode,
     slidesToShow: Double,
     wrapAround: Boolean,
-    cellAlign: Alignment
+    cellAlign: CellAlign
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotIndexes")(slideCount.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], scrollMode.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], wrapAround.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def nextButtonDisabled(param0: PickControlPropscellAlign): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nextButtonDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]

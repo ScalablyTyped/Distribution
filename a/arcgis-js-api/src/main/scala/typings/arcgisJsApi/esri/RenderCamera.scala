@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.ArrayLike
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderCamera
-  extends StObject
-     with Object {
+trait RenderCamera extends StObject {
   
   /**
     * The camera target ("look at") position in the internal Cartesian rendering coordinate system.
@@ -99,22 +95,19 @@ object RenderCamera {
   
   inline def apply(
     center: ArrayLike[Double],
-    constructor: js.Function,
     eye: ArrayLike[Double],
     far: Double,
     fovX: Double,
     fovY: Double,
-    hasOwnProperty: PropertyKey => Boolean,
     near: Double,
     pixelRatio: Double,
     projectionMatrix: ArrayLike[Double],
-    propertyIsEnumerable: PropertyKey => Boolean,
     up: ArrayLike[Double],
     viewInverseTransposeMatrix: ArrayLike[Double],
     viewMatrix: ArrayLike[Double],
     viewport: Any
   ): RenderCamera = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), near = near.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], fovX = fovX.asInstanceOf[js.Any], fovY = fovY.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any], viewInverseTransposeMatrix = viewInverseTransposeMatrix.asInstanceOf[js.Any], viewMatrix = viewMatrix.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderCamera]
   }
   

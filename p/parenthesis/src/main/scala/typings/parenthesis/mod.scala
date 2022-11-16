@@ -39,6 +39,15 @@ object mod {
   type ArrayTree = js.Array[Node]
   
   // One entry in the returned nested array
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Node = string | parenthesis.parenthesis.ArrayTree
+  }}}
+  to avoid circular code involving: 
+  - parenthesis.parenthesis.ArrayTree
+  - parenthesis.parenthesis.Node
+  */
   type Node = String | Any
   
   // Second-argument options used by the function

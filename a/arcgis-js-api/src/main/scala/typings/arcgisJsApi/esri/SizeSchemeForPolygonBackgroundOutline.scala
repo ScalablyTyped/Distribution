@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeSchemeForPolygonBackgroundOutline
-  extends StObject
-     with Object {
+trait SizeSchemeForPolygonBackgroundOutline extends StObject {
   
   /**
     * The outline color of the background fill symbol.
@@ -26,14 +22,8 @@ trait SizeSchemeForPolygonBackgroundOutline
 }
 object SizeSchemeForPolygonBackgroundOutline {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    width: Double
-  ): SizeSchemeForPolygonBackgroundOutline = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
+  inline def apply(color: Color_, width: Double): SizeSchemeForPolygonBackgroundOutline = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSchemeForPolygonBackgroundOutline]
   }
   

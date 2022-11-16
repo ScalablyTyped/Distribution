@@ -1,9 +1,7 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.HomeViewModel
-import typings.arcgisJsApi.esri.HomeViewModelConstructor
 import typings.arcgisJsApi.esri.HomeViewModelProperties
 import typings.arcgisJsApi.esri.MapView
 import typings.arcgisJsApi.esri.SceneView
@@ -11,13 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsHomeHomeViewModelMod extends Shortcut {
+object esriWidgetsHomeHomeViewModelMod {
   
-  @JSImport("esri/widgets/Home/HomeViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & HomeViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Home/HomeViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsHomeHomeViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with HomeViewModel {
     def this(properties: HomeViewModelProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsHomeHomeViewModelMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & HomeViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsHomeHomeViewModelMod.foo` */
-  override def _to: js.Object & HomeViewModelConstructor = ^
 }

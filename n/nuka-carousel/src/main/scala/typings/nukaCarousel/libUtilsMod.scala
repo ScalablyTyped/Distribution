@@ -1,6 +1,6 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.libTypesMod.Alignment
+import typings.nukaCarousel.libTypesMod.CellAlign
 import typings.nukaCarousel.libTypesMod.ScrollMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object libUtilsMod {
     slideCount: Double,
     slidesToShow: Double,
     slidesToScroll: Double,
-    cellAlign: Alignment,
+    cellAlign: CellAlign,
     autoplayReverse: Boolean,
     scrollMode: ScrollMode
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultSlideIndex")(slideIndex.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any], autoplayReverse.asInstanceOf[js.Any], scrollMode.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -28,7 +28,7 @@ object libUtilsMod {
     slideCount: Double,
     slidesToShow: Double,
     slidesToScroll: Double,
-    cellAlign: Alignment,
+    cellAlign: CellAlign,
     autoplayReverse: Boolean,
     scrollMode: ScrollMode
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultSlideIndex")(slideIndex.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any], autoplayReverse.asInstanceOf[js.Any], scrollMode.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -40,7 +40,7 @@ object libUtilsMod {
     slideCount: Double,
     slidesToScroll: Double,
     slidesToShow: Double,
-    cellAlign: Alignment
+    cellAlign: CellAlign
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextMoveIndex")(scrollMode.asInstanceOf[js.Any], wrapAround.asInstanceOf[js.Any], currentSlide.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getPrevMoveIndex(
@@ -49,8 +49,8 @@ object libUtilsMod {
     currentSlide: Double,
     slidesToScroll: Double,
     slidesToShow: Double,
-    cellAlign: Alignment
+    cellAlign: CellAlign
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrevMoveIndex")(scrollMode.asInstanceOf[js.Any], wrapAround.asInstanceOf[js.Any], currentSlide.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def isSlideVisible(currentSlide: Double, indexToCheck: Double, slidesToShow: Double, cellAlign: Alignment): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSlideVisible")(currentSlide.asInstanceOf[js.Any], indexToCheck.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSlideVisible(currentSlide: Double, indexToCheck: Double, slidesToShow: Double, cellAlign: CellAlign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSlideVisible")(currentSlide.asInstanceOf[js.Any], indexToCheck.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -12,9 +12,14 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton User Guide.
+    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision infrastructure resources using CodeBuild-based provisioning in the associated environment account.
     */
-  var componentRoleArn: js.UndefOr[Arn] = js.undefined
+  var codebuildRoleArn: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton User Guide.
+    */
+  var componentRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The name of the Proton environment that's created in the associated management account.
@@ -27,9 +32,9 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var managementAccountId: AwsAccountId
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that's created in the environment account. Proton uses this role to provision infrastructure resources in the associated environment account.
+    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision infrastructure resources using Amazon Web Services-managed provisioning and CloudFormation in the associated environment account.
     */
-  var roleArn: Arn
+  var roleArn: RoleArn
   
   /**
     * An optional list of metadata items that you can associate with the Proton environment account connection. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
@@ -38,7 +43,7 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
 }
 object CreateEnvironmentAccountConnectionInput {
   
-  inline def apply(environmentName: ResourceName, managementAccountId: AwsAccountId, roleArn: Arn): CreateEnvironmentAccountConnectionInput = {
+  inline def apply(environmentName: ResourceName, managementAccountId: AwsAccountId, roleArn: RoleArn): CreateEnvironmentAccountConnectionInput = {
     val __obj = js.Dynamic.literal(environmentName = environmentName.asInstanceOf[js.Any], managementAccountId = managementAccountId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEnvironmentAccountConnectionInput]
   }
@@ -49,7 +54,11 @@ object CreateEnvironmentAccountConnectionInput {
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    inline def setComponentRoleArn(value: Arn): Self = StObject.set(x, "componentRoleArn", value.asInstanceOf[js.Any])
+    inline def setCodebuildRoleArn(value: RoleArn): Self = StObject.set(x, "codebuildRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setCodebuildRoleArnUndefined: Self = StObject.set(x, "codebuildRoleArn", js.undefined)
+    
+    inline def setComponentRoleArn(value: RoleArn): Self = StObject.set(x, "componentRoleArn", value.asInstanceOf[js.Any])
     
     inline def setComponentRoleArnUndefined: Self = StObject.set(x, "componentRoleArn", js.undefined)
     
@@ -57,7 +66,7 @@ object CreateEnvironmentAccountConnectionInput {
     
     inline def setManagementAccountId(value: AwsAccountId): Self = StObject.set(x, "managementAccountId", value.asInstanceOf[js.Any])
     
-    inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

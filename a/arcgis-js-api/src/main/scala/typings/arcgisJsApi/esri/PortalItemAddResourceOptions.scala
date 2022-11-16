@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
 import typings.arcgisJsApi.arcgisJsApiStrings.inherit
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalItemAddResourceOptions
-  extends StObject
-     with Object {
+trait PortalItemAddResourceOptions extends StObject {
   
   /**
     * Indicates the level of access to the resource.
@@ -31,12 +27,8 @@ trait PortalItemAddResourceOptions
 }
 object PortalItemAddResourceOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PortalItemAddResourceOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): PortalItemAddResourceOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalItemAddResourceOptions]
   }
   

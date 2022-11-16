@@ -195,7 +195,7 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
     */
-  var maxInlineActions: Double | Any = js.native
+  var maxInlineActions: Double | Null = js.native
   
   /**
     * Selects the feature at the next index in relation to the selected feature.

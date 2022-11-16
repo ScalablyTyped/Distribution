@@ -25,7 +25,7 @@ trait ColumnTemplateBase
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#direction)
     */
-  var direction: asc_ | desc_ | Any = js.native
+  var direction: asc_ | desc_ | Null = js.native
   
   /**
     * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.

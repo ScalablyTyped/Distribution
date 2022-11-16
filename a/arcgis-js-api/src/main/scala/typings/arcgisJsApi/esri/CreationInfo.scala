@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreationInfo
-  extends StObject
-     with Object {
+trait CreationInfo extends StObject {
   
   /**
     * The associated feature layer for newly-created feature(s).
@@ -26,14 +22,8 @@ trait CreationInfo
 }
 object CreationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    template: FeatureTemplate
-  ): CreationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), template = template.asInstanceOf[js.Any])
+  inline def apply(layer: FeatureLayer, template: FeatureTemplate): CreationInfo = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreationInfo]
   }
   

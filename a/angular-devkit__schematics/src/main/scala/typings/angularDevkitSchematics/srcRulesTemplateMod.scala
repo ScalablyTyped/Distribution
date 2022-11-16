@@ -51,6 +51,14 @@ object srcRulesTemplateMod {
   
   inline def template[T /* <: js.Object */](options: T): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PathTemplateData = {[key: string] : @angular-devkit/schematics.@angular-devkit/schematics/src/rules/template.PathTemplateValue | @angular-devkit/schematics.@angular-devkit/schematics/src/rules/template.PathTemplateData | @angular-devkit/schematics.@angular-devkit/schematics/src/rules/template.PathTemplatePipeFunction}
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/schematics.@angular-devkit/schematics/src/rules/template.PathTemplateData
+  */
   trait PathTemplateData
     extends StObject
        with /* key */ StringDictionary[PathTemplateValue | PathTemplateData | PathTemplatePipeFunction]

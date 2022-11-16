@@ -9,6 +9,7 @@ import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
 import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
+import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
@@ -126,6 +127,8 @@ object cjsFilterEventHandlerMod {
   inline def default_beforeinput(selector: String, handler: EventHandler[beforeinput]): EventHandler[beforeinput] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[beforeinput]]
   
   inline def default_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
+  
+  inline def default_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
   
   inline def default_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
   

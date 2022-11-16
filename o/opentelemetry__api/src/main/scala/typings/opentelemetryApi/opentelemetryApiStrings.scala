@@ -15,6 +15,10 @@ object opentelemetryApiStrings {
   inline def diag: diag = "diag".asInstanceOf[diag]
   
   @js.native
+  sealed trait metrics extends StObject
+  inline def metrics: metrics = "metrics".asInstanceOf[metrics]
+  
+  @js.native
   sealed trait propagation extends StObject
   inline def propagation: propagation = "propagation".asInstanceOf[propagation]
   

@@ -6,15 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Fast
 import typings.arcgisJsApi.arcgisJsApiStrings.Mitered
 import typings.arcgisJsApi.arcgisJsApiStrings.Rounded
 import typings.arcgisJsApi.arcgisJsApiStrings.Square
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectOffset
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -49,15 +46,8 @@ trait CIMGeometricEffectOffset
 }
 object CIMGeometricEffectOffset {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    method: Mitered | Bevelled | Rounded | Square,
-    offset: Double,
-    option: Fast | Accurate,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMGeometricEffectOffset = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), method = method.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(method: Mitered | Bevelled | Rounded | Square, offset: Double, option: Fast | Accurate): CIMGeometricEffectOffset = {
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectOffset")
     __obj.asInstanceOf[CIMGeometricEffectOffset]
   }

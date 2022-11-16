@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mozjpeg"
-version := "5.0-dt-20211202Z-53311b"
+version := "5.0-dt-20211202Z-280696"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

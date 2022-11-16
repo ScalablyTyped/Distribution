@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-unc-path"
-version := "1.0-dt-20211202Z-c121a8"
+version := "1.0-dt-20211202Z-81a714"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

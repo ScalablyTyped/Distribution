@@ -141,6 +141,9 @@ object srcNgtscTscPluginMod {
         ]
       ] = js.native
     
+    /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
+    var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+    
     val inputFiles: js.Array[String] = js.native
     
     var readDirectory: js.UndefOr[

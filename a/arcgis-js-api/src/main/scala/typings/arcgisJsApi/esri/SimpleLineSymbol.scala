@@ -51,7 +51,7 @@ trait SimpleLineSymbol
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
     */
-  var marker: LineSymbolMarker = js.native
+  var marker: LineSymbolMarker | Null = js.native
   
   /**
     * Maximum allowed ratio of the width of a miter join to the line width.

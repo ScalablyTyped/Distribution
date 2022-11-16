@@ -7,6 +7,7 @@ import typings.typeFest.sourceInternalMod.UnknownRecord
 import typings.typeFest.sourceMergeMod.Merge
 import typings.typeFest.sourceOmitIndexSignatureMod.OmitIndexSignature
 import typings.typeFest.sourcePickIndexSignatureMod.PickIndexSignature
+import typings.typeFest.typeFestBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,13 +39,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     type-fest.type-fest/source/merge-deep.ShouldSpread<Options> extends true ? std.Array<std.Exclude<Destination, undefined>[number] | std.Exclude<Source, undefined>[number]> : Source
     }}}
     */
-  @js.native
-  trait DoMergeArrayOrTuple[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type DoMergeArrayOrTuple[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] = Source
   
   /**
   Walk through the union of the keys of the two objects and test in which object the properties are defined.
@@ -61,26 +61,24 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Destination extends [] ? Source extends [] ? [] : type-fest.type-fest/source/merge-deep.MergeArrayTypeAndTuple<DestinationRestType, Source, Options> : Source extends [] ? type-fest.type-fest/source/merge-deep.MergeTupleAndArrayType<Destination, SourceRestType, Options> : [type-fest.type-fest/source/merge-deep.MergeDeepArrayOrTupleElements<type-fest.type-fest/source/internal.FirstArrayElement<Destination>, type-fest.type-fest/source/internal.FirstArrayElement<Source>, Options>, ...type-fest.type-fest/source/merge-deep.DoMergeDeepTupleAndTupleRecursive<type-fest.type-fest/source/internal.ArrayTail<Destination>, type-fest.type-fest/source/internal.ArrayTail<Source>, DestinationRestType, SourceRestType, Options>]
     }}}
     */
-  @js.native
-  trait DoMergeDeepTupleAndTupleRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, DestinationRestType, SourceRestType, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type DoMergeDeepTupleAndTupleRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, DestinationRestType, SourceRestType, Options /* <: MergeDeepInternalOptions */] = Source
   
   /**
   Merge a tuple with an array type recursively.
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Tuple extends [] ? Tuple : [type-fest.type-fest/source/merge-deep.MergeDeepArrayOrTupleElements<ArrayType, type-fest.type-fest/source/internal.FirstArrayElement<Tuple>, Options>, ...type-fest.type-fest/source/merge-deep.MergeArrayTypeAndTuple<ArrayType, type-fest.type-fest/source/internal.ArrayTail<Tuple>, Options>]
     }}}
     */
-  @js.native
-  trait MergeArrayTypeAndTuple[ArrayType, Tuple /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeArrayTypeAndTuple[ArrayType, Tuple /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] = Tuple
   
   type MergeDeep[Destination, Source, Options /* <: MergeDeepOptions */] = MergeDeepWithDefaultOptions[SimplifyDeep[Destination], SimplifyDeep[Source], Options]
   
@@ -96,26 +94,24 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Options['recurseIntoArrays'] extends true ? type-fest.type-fest/source/merge-deep.MergeDeepArrayOrTupleRecursive<Destination, Source, Options> : type-fest.type-fest/source/merge-deep.DoMergeArrayOrTuple<Destination, Source, Options>
     }}}
     */
-  @js.native
-  trait MergeDeepArrayOrTuple[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeDeepArrayOrTuple[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] = Source
   
   /**
   Try to merge two array/tuple elements or return the source element if the end of the destination is reached or vis-versa.
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Source extends [] ? Destination : Destination extends [] ? Source : type-fest.type-fest/source/merge-deep.MergeDeepOrReturn<Source, Destination, Source, Options>
     }}}
     */
-  @js.native
-  trait MergeDeepArrayOrTupleElements[Destination, Source, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeDeepArrayOrTupleElements[Destination, Source, Options /* <: MergeDeepInternalOptions */] = Destination
   
   /**
   Merge two array/tuple recursively by selecting one of the four strategies according to the type of inputs.
@@ -126,13 +122,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     type-fest.type-fest/source/internal.IsBothExtends<type-fest.type-fest/source/internal.NonEmptyTuple, Destination, Source> extends true ? type-fest.type-fest/source/merge-deep.MergeDeepTupleAndTupleRecursive<Destination, Source, Options> : Destination extends type-fest.type-fest/source/internal.NonEmptyTuple ? type-fest.type-fest/source/merge-deep.MergeDeepTupleAndArrayRecursive<Destination, Source, Options> : Source extends type-fest.type-fest/source/internal.NonEmptyTuple ? type-fest.type-fest/source/merge-deep.MergeDeepArrayAndTupleRecursive<Destination, Source, Options> : type-fest.type-fest/source/merge-deep.MergeDeepArrayRecursive<Destination, Source, Options>
     }}}
     */
-  @js.native
-  trait MergeDeepArrayOrTupleRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeDeepArrayOrTupleRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] = MergeDeepTupleAndTupleRecursive[Destination, Source, Options]
   
   // 'replace'
   /**
@@ -142,13 +137,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Destination[number] extends type-fest.type-fest/source/internal.UnknownArrayOrTuple ? Source[number] extends type-fest.type-fest/source/internal.UnknownArrayOrTuple ? std.Array<type-fest.type-fest/source/merge-deep.MergeDeepArrayOrTupleRecursive<Destination[number], Source[number], Options>> : type-fest.type-fest/source/merge-deep.DoMergeArrayOrTuple<Destination, Source, Options> : Destination[number] extends type-fest.type-fest/source/internal.UnknownRecord ? Source[number] extends type-fest.type-fest/source/internal.UnknownRecord ? std.Array<type-fest.type-fest/source/merge-deep.SimplifyDeep<type-fest.type-fest/source/merge-deep.MergeDeepRecord<Destination[number], Source[number], Options>>> : type-fest.type-fest/source/merge-deep.DoMergeArrayOrTuple<Destination, Source, Options> : type-fest.type-fest/source/merge-deep.DoMergeArrayOrTuple<Destination, Source, Options>
     }}}
     */
-  @js.native
-  trait MergeDeepArrayRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeDeepArrayRecursive[Destination /* <: UnknownArrayOrTuple */, Source /* <: UnknownArrayOrTuple */, Options /* <: MergeDeepInternalOptions */] = Source
   
   /**
   Internal options.
@@ -268,13 +262,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends Source ? type-fest.type-fest/source/merge-deep.MergeDeepOrReturn<Source, std.Exclude<Destination, undefined>, std.Exclude<Source, undefined>, Options> | undefined : type-fest.type-fest/source/merge-deep.MergeDeepOrReturn<Source, Destination, Source, Options>
     }}}
     */
-  @js.native
-  trait MergeDeepRecordProperty[Destination, Source, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeDeepRecordProperty[Destination, Source, Options /* <: MergeDeepInternalOptions */] = Source
   
   /**
   Merge an array into a tuple recursively taking into account a possible rest element.
@@ -302,13 +295,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Tuple extends [] ? Tuple : [type-fest.type-fest/source/merge-deep.MergeDeepArrayOrTupleElements<type-fest.type-fest/source/internal.FirstArrayElement<Tuple>, ArrayType, Options>, ...type-fest.type-fest/source/merge-deep.MergeTupleAndArrayType<type-fest.type-fest/source/internal.ArrayTail<Tuple>, ArrayType, Options>]
     }}}
     */
-  @js.native
-  trait MergeTupleAndArrayType[Tuple /* <: UnknownArrayOrTuple */, ArrayType, Options /* <: MergeDeepInternalOptions */] extends StObject
+  type MergeTupleAndArrayType[Tuple /* <: UnknownArrayOrTuple */, ArrayType, Options /* <: MergeDeepInternalOptions */] = Tuple
   
   /**
   Omit the rest type.
@@ -324,13 +316,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     number extends Type['length'] ? type-fest.type-fest/source/internal.ArrayTail<Type> extends [] ? Result : type-fest.type-fest/source/merge-deep.OmitRestType<type-fest.type-fest/source/internal.ArrayTail<Type>, [...Result, type-fest.type-fest/source/internal.FirstArrayElement<Type>]> : Type
     }}}
     */
-  @js.native
-  trait OmitRestType[Type /* <: UnknownArrayOrTuple */, Result /* <: UnknownArrayOrTuple */] extends StObject
+  type OmitRestType[Type /* <: UnknownArrayOrTuple */, Result /* <: UnknownArrayOrTuple */] = Result
   
   /**
   Pick the rest type.
@@ -345,13 +336,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     number extends Type['length'] ? type-fest.type-fest/source/internal.ArrayTail<Type> extends [] ? Type : type-fest.type-fest/source/merge-deep.PickRestType<type-fest.type-fest/source/internal.ArrayTail<Type>> : []
     }}}
     */
-  @js.native
-  trait PickRestType[Type /* <: UnknownArrayOrTuple */] extends StObject
+  type PickRestType[Type /* <: UnknownArrayOrTuple */] = Type
   
   // Pick the rest type (array) and try to get the intrinsic type or return the provided type.
   type PickRestTypeFlat[Type /* <: UnknownArrayOrTuple */] = TypeNumberOrType[PickRestType[Type]]
@@ -361,13 +351,12 @@ object sourceMergeDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Options['spreadTopLevelArrays'] extends false ? Options['arrayMergeMode'] extends 'spread' ? true : false : true
     }}}
     */
-  @js.native
-  trait ShouldSpread[Options /* <: MergeDeepInternalOptions */] extends StObject
+  type ShouldSpread[Options /* <: MergeDeepInternalOptions */] = `true`
   
   /**
   Deeply smplifies an object excluding iterables and functions. Used internally to improve the UX and accept both interfaces and type aliases as inputs.
@@ -377,11 +366,10 @@ object sourceMergeDeepMod {
   // Utility to avoid picking two times the type.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Type[number] extends never ? Type : Type[number]
     }}}
     */
-  @js.native
-  trait TypeNumberOrType[Type /* <: UnknownArrayOrTuple */] extends StObject
+  type TypeNumberOrType[Type /* <: UnknownArrayOrTuple */] = Type
 }

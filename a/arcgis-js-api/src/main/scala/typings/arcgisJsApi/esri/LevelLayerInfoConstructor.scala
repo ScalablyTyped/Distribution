@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LevelLayerInfoConstructor
   extends StObject
-     with /**
-  * The LevelLayerInfo class describes the footprint of each occupiable floor contained in a managed facility.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LevelLayerInfo.html)
-  */
-Instantiable0[LevelLayerInfo]
+     with Instantiable0[LevelLayerInfo]
      with Instantiable1[/* properties */ LevelLayerInfoProperties, LevelLayerInfo] {
   
   def fromJSON(json: Any): LevelLayerInfo = js.native

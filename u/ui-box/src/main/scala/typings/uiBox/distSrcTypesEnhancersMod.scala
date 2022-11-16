@@ -4,6 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.csstype.mod.Property.AlignContent
 import typings.csstype.mod.Property.AlignItems
 import typings.csstype.mod.Property.AlignSelf
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.AnimationDelay
+import typings.csstype.mod.Property.AnimationDirection
+import typings.csstype.mod.Property.AnimationDuration
+import typings.csstype.mod.Property.AnimationFillMode
+import typings.csstype.mod.Property.AnimationIterationCount
+import typings.csstype.mod.Property.AnimationName
+import typings.csstype.mod.Property.AnimationPlayState
+import typings.csstype.mod.Property.AnimationTimingFunction
 import typings.csstype.mod.Property.Background
 import typings.csstype.mod.Property.BackgroundBlendMode
 import typings.csstype.mod.Property.BackgroundClip
@@ -44,6 +53,7 @@ import typings.csstype.mod.Property.BoxSizing
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Color
 import typings.csstype.mod.Property.ColumnGap
+import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.Cursor
 import typings.csstype.mod.Property.Display
 import typings.csstype.mod.Property.Flex
@@ -141,6 +151,7 @@ import typings.csstype.mod.Property.WordWrap
 import typings.csstype.mod.Property.ZIndex
 import typings.propTypes.mod.Validator
 import typings.uiBox.anon.BoxCssPropsCssProps
+import typings.uiBox.distSrcPrefixerMod.Rule
 import typings.uiBox.uiBoxBooleans.`false`
 import typings.uiBox.uiBoxInts.`0`
 import org.scalablytyped.runtime.StObject
@@ -161,7 +172,7 @@ object distSrcTypesEnhancersMod {
   
   type BoxPropValue = js.UndefOr[String | Double | `false` | Null]
   
-  /* Inlined std.Pick<csstype.csstype.StandardProperties<string & {} | 0, string & {}>, 'alignContent' | 'alignItems' | 'alignSelf' | 'background' | 'backgroundBlendMode' | 'backgroundClip' | 'backgroundColor' | 'backgroundImage' | 'backgroundOrigin' | 'backgroundPosition' | 'backgroundRepeat' | 'backgroundSize' | 'border' | 'borderBottom' | 'borderBottomColor' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderBottomStyle' | 'borderBottomWidth' | 'borderColor' | 'borderLeft' | 'borderLeftColor' | 'borderLeftStyle' | 'borderLeftWidth' | 'borderRadius' | 'borderRight' | 'borderRightColor' | 'borderRightStyle' | 'borderRightWidth' | 'borderStyle' | 'borderTop' | 'borderTopColor' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderTopStyle' | 'borderTopWidth' | 'borderWidth' | 'bottom' | 'boxShadow' | 'boxSizing' | 'clear' | 'color' | 'columnGap' | 'cursor' | 'display' | 'flex' | 'flexBasis' | 'flexDirection' | 'flexFlow' | 'flexGrow' | 'flexShrink' | 'flexWrap' | 'float' | 'font' | 'fontFamily' | 'fontSize' | 'fontStyle' | 'fontVariant' | 'fontWeight' | 'gap' | 'grid' | 'gridArea' | 'gridAutoColumns' | 'gridAutoFlow' | 'gridAutoRows' | 'gridColumn' | 'gridColumnEnd' | 'gridColumnStart' | 'gridRow' | 'gridRowEnd' | 'gridRowStart' | 'gridTemplate' | 'gridTemplateAreas' | 'gridTemplateColumns' | 'gridTemplateRows' | 'height' | 'justifyContent' | 'justifyItems' | 'justifySelf' | 'left' | 'letterSpacing' | 'lineHeight' | 'listStyle' | 'listStyleImage' | 'listStylePosition' | 'listStyleType' | 'margin' | 'marginBottom' | 'marginLeft' | 'marginRight' | 'marginTop' | 'maxHeight' | 'maxWidth' | 'minHeight' | 'minWidth' | 'opacity' | 'order' | 'outline' | 'overflow' | 'overflowX' | 'overflowY' | 'padding' | 'paddingBottom' | 'paddingLeft' | 'paddingRight' | 'paddingTop' | 'placeContent' | 'placeItems' | 'placeSelf' | 'pointerEvents' | 'position' | 'resize' | 'right' | 'rowGap' | 'textAlign' | 'textDecoration' | 'textOverflow' | 'textShadow' | 'textTransform' | 'top' | 'transform' | 'transformOrigin' | 'transition' | 'transitionDelay' | 'transitionDuration' | 'transitionProperty' | 'transitionTimingFunction' | 'userSelect' | 'verticalAlign' | 'visibility' | 'whiteSpace' | 'width' | 'wordBreak' | 'wordWrap' | 'zIndex'> & std.Pick<csstype.csstype.ObsoleteProperties<string & {} | 0, string & {}>, 'gridColumnGap' | 'gridGap' | 'gridRowGap'> */
+  /* Inlined std.Pick<csstype.csstype.StandardProperties<string & {} | 0, string & {}>, 'alignContent' | 'alignItems' | 'alignSelf' | 'animation' | 'animationDelay' | 'animationDirection' | 'animationDuration' | 'animationFillMode' | 'animationIterationCount' | 'animationName' | 'animationPlayState' | 'animationTimingFunction' | 'background' | 'backgroundBlendMode' | 'backgroundClip' | 'backgroundColor' | 'backgroundImage' | 'backgroundOrigin' | 'backgroundPosition' | 'backgroundRepeat' | 'backgroundSize' | 'border' | 'borderBottom' | 'borderBottomColor' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderBottomStyle' | 'borderBottomWidth' | 'borderColor' | 'borderLeft' | 'borderLeftColor' | 'borderLeftStyle' | 'borderLeftWidth' | 'borderRadius' | 'borderRight' | 'borderRightColor' | 'borderRightStyle' | 'borderRightWidth' | 'borderStyle' | 'borderTop' | 'borderTopColor' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderTopStyle' | 'borderTopWidth' | 'borderWidth' | 'bottom' | 'boxShadow' | 'boxSizing' | 'clear' | 'color' | 'columnGap' | 'content' | 'cursor' | 'display' | 'flex' | 'flexBasis' | 'flexDirection' | 'flexFlow' | 'flexGrow' | 'flexShrink' | 'flexWrap' | 'float' | 'font' | 'fontFamily' | 'fontSize' | 'fontStyle' | 'fontVariant' | 'fontWeight' | 'gap' | 'grid' | 'gridArea' | 'gridAutoColumns' | 'gridAutoFlow' | 'gridAutoRows' | 'gridColumn' | 'gridColumnEnd' | 'gridColumnStart' | 'gridRow' | 'gridRowEnd' | 'gridRowStart' | 'gridTemplate' | 'gridTemplateAreas' | 'gridTemplateColumns' | 'gridTemplateRows' | 'height' | 'justifyContent' | 'justifyItems' | 'justifySelf' | 'left' | 'letterSpacing' | 'lineHeight' | 'listStyle' | 'listStyleImage' | 'listStylePosition' | 'listStyleType' | 'margin' | 'marginBottom' | 'marginLeft' | 'marginRight' | 'marginTop' | 'maxHeight' | 'maxWidth' | 'minHeight' | 'minWidth' | 'opacity' | 'order' | 'outline' | 'overflow' | 'overflowX' | 'overflowY' | 'padding' | 'paddingBottom' | 'paddingLeft' | 'paddingRight' | 'paddingTop' | 'placeContent' | 'placeItems' | 'placeSelf' | 'pointerEvents' | 'position' | 'resize' | 'right' | 'rowGap' | 'textAlign' | 'textDecoration' | 'textOverflow' | 'textShadow' | 'textTransform' | 'top' | 'transform' | 'transformOrigin' | 'transition' | 'transitionDelay' | 'transitionDuration' | 'transitionProperty' | 'transitionTimingFunction' | 'userSelect' | 'verticalAlign' | 'visibility' | 'whiteSpace' | 'width' | 'wordBreak' | 'wordWrap' | 'zIndex'> & std.Pick<csstype.csstype.ObsoleteProperties<string & {} | 0, string & {}>, 'gridColumnGap' | 'gridGap' | 'gridRowGap'> */
   trait CssProps extends StObject {
     
     var alignContent: js.UndefOr[AlignContent] = js.undefined
@@ -169,6 +180,24 @@ object distSrcTypesEnhancersMod {
     var alignItems: js.UndefOr[AlignItems] = js.undefined
     
     var alignSelf: js.UndefOr[AlignSelf] = js.undefined
+    
+    var animation: js.UndefOr[Animation[String]] = js.undefined
+    
+    var animationDelay: js.UndefOr[AnimationDelay[String]] = js.undefined
+    
+    var animationDirection: js.UndefOr[AnimationDirection] = js.undefined
+    
+    var animationDuration: js.UndefOr[AnimationDuration[String]] = js.undefined
+    
+    var animationFillMode: js.UndefOr[AnimationFillMode] = js.undefined
+    
+    var animationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
+    
+    var animationName: js.UndefOr[AnimationName] = js.undefined
+    
+    var animationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
+    
+    var animationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
     
     var background: js.UndefOr[Background[String | `0`]] = js.undefined
     
@@ -249,6 +278,8 @@ object distSrcTypesEnhancersMod {
     var color: js.UndefOr[Color] = js.undefined
     
     var columnGap: js.UndefOr[ColumnGap[String | `0`]] = js.undefined
+    
+    var content: js.UndefOr[Content] = js.undefined
     
     var cursor: js.UndefOr[Cursor] = js.undefined
     
@@ -461,6 +492,42 @@ object distSrcTypesEnhancersMod {
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
+      inline def setAnimation(value: Animation[String]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelay(value: AnimationDelay[String]): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      
+      inline def setAnimationDirection(value: AnimationDirection): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      
+      inline def setAnimationDuration(value: AnimationDuration[String]): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
+      inline def setAnimationFillMode(value: AnimationFillMode): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
+      
+      inline def setAnimationIterationCount(value: AnimationIterationCount): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      
+      inline def setAnimationName(value: AnimationName): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      
+      inline def setAnimationPlayState(value: AnimationPlayState): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimingFunction(value: AnimationTimingFunction): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
       inline def setBackground(value: Background[String | `0`]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundBlendMode(value: BackgroundBlendMode): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
@@ -620,6 +687,10 @@ object distSrcTypesEnhancersMod {
       inline def setColumnGap(value: ColumnGap[String | `0`]): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      
+      inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -1007,18 +1078,24 @@ object distSrcTypesEnhancersMod {
     
     var className: String
     
+    var rules: js.Array[Rule]
+    
     var styles: String
   }
   object EnhancedProp {
     
-    inline def apply(className: String, styles: String): EnhancedProp = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    inline def apply(className: String, rules: js.Array[Rule], styles: String): EnhancedProp = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnhancedProp]
     }
     
     extension [Self <: EnhancedProp](x: Self) {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
@@ -1032,6 +1109,24 @@ object distSrcTypesEnhancersMod {
     var alignItems: js.UndefOr[AlignItems | Double | `false` | Null] = js.undefined
     
     var alignSelf: js.UndefOr[AlignSelf | Double | `false` | Null] = js.undefined
+    
+    var animation: js.UndefOr[Animation[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDelay: js.UndefOr[AnimationDelay[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDirection: js.UndefOr[AnimationDirection | Double | `false` | Null] = js.undefined
+    
+    var animationDuration: js.UndefOr[AnimationDuration[String] | Double | `false` | Null] = js.undefined
+    
+    var animationFillMode: js.UndefOr[AnimationFillMode | Double | `false` | Null] = js.undefined
+    
+    var animationIterationCount: js.UndefOr[AnimationIterationCount | Double | `false` | Null] = js.undefined
+    
+    var animationName: js.UndefOr[AnimationName | Double | `false` | Null] = js.undefined
+    
+    var animationPlayState: js.UndefOr[AnimationPlayState | Double | `false` | Null] = js.undefined
+    
+    var animationTimingFunction: js.UndefOr[AnimationTimingFunction | Double | `false` | Null] = js.undefined
     
     var background: js.UndefOr[(Background[String | `0`]) | Double | `false` | Null] = js.undefined
     
@@ -1114,6 +1209,8 @@ object distSrcTypesEnhancersMod {
     var color: js.UndefOr[Color | Double | `false` | Null] = js.undefined
     
     var columnGap: js.UndefOr[(ColumnGap[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var content: js.UndefOr[Content | Double | `false` | Null] = js.undefined
     
     var cursor: js.UndefOr[Cursor | Double | `false` | Null] = js.undefined
     
@@ -1341,6 +1438,60 @@ object distSrcTypesEnhancersMod {
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      
+      inline def setAnimation(value: Animation[String] | Double | `false`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelay(value: AnimationDelay[String] | Double | `false`): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayNull: Self = StObject.set(x, "animationDelay", null)
+      
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      
+      inline def setAnimationDirection(value: AnimationDirection | Double | `false`): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDirectionNull: Self = StObject.set(x, "animationDirection", null)
+      
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      
+      inline def setAnimationDuration(value: AnimationDuration[String] | Double | `false`): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationNull: Self = StObject.set(x, "animationDuration", null)
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
+      inline def setAnimationFillMode(value: AnimationFillMode | Double | `false`): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationFillModeNull: Self = StObject.set(x, "animationFillMode", null)
+      
+      inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
+      
+      inline def setAnimationIterationCount(value: AnimationIterationCount | Double | `false`): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationIterationCountNull: Self = StObject.set(x, "animationIterationCount", null)
+      
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      
+      inline def setAnimationName(value: AnimationName | Double | `false`): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationNameNull: Self = StObject.set(x, "animationName", null)
+      
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      
+      inline def setAnimationNull: Self = StObject.set(x, "animation", null)
+      
+      inline def setAnimationPlayState(value: AnimationPlayState | Double | `false`): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationPlayStateNull: Self = StObject.set(x, "animationPlayState", null)
+      
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimingFunction(value: AnimationTimingFunction | Double | `false`): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimingFunctionNull: Self = StObject.set(x, "animationTimingFunction", null)
+      
+      inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
       inline def setBackground(value: (Background[String | `0`]) | Double | `false`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -1585,6 +1736,12 @@ object distSrcTypesEnhancersMod {
       inline def setColumnGapNull: Self = StObject.set(x, "columnGap", null)
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      
+      inline def setContent(value: Content | Double | `false`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setCursor(value: Cursor | Double | `false`): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

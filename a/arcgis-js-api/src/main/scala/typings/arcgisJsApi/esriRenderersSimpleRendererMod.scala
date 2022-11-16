@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SimpleRenderer
-import typings.arcgisJsApi.esri.SimpleRendererConstructor
 import typings.arcgisJsApi.esri.SimpleRendererProperties
 import typings.arcgisJsApi.esri.VisualVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersSimpleRendererMod extends Shortcut {
+/* static members */
+object esriRenderersSimpleRendererMod {
   
-  @JSImport("esri/renderers/SimpleRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SimpleRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/SimpleRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriRenderersSimpleRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SimpleRenderer {
     def this(properties: SimpleRendererProperties) = this()
@@ -44,9 +38,9 @@ object esriRenderersSimpleRendererMod extends Shortcut {
     /* CompleteClass */
     var visualVariables: js.Array[VisualVariable] = js.native
   }
+  @JSImport("esri/renderers/SimpleRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SimpleRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersSimpleRendererMod.foo` */
-  override def _to: js.Object & SimpleRendererConstructor = ^
+  inline def fromJSON(json: Any): SimpleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SimpleRenderer]
 }

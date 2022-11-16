@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HitTestResultGround
-  extends StObject
-     with Object {
+trait HitTestResultGround extends StObject {
   
   /**
     * The distance from camera position to the ground hit.
@@ -26,14 +22,8 @@ trait HitTestResultGround
 }
 object HitTestResultGround {
   
-  inline def apply(
-    constructor: js.Function,
-    distance: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    mapPoint: Point,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): HitTestResultGround = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(distance: Double, mapPoint: Point): HitTestResultGround = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitTestResultGround]
   }
   

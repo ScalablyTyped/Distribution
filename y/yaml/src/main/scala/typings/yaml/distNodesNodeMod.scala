@@ -118,6 +118,14 @@ object distNodesNodeMod {
     */
   type NodeType[T] = Scalar[T]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ParsedNode = yaml.yaml/dist/nodes/Alias.Alias.Parsed | yaml.yaml/dist/nodes/Scalar.Scalar.Parsed | yaml.yaml/dist/nodes/YAMLMap.YAMLMap.Parsed<yaml.yaml/dist/nodes/Node.ParsedNode, yaml.yaml/dist/nodes/Node.ParsedNode | null> | yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq.Parsed<yaml.yaml/dist/nodes/Node.ParsedNode>
+  }}}
+  to avoid circular code involving: 
+  - yaml.yaml/dist/nodes/Node.ParsedNode
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.yaml.distNodesAliasMod.Alias.Parsed
     - typings.yaml.distNodesScalarMod.Scalar.Parsed

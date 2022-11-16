@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistogramResult
-  extends StObject
-     with Object {
+trait HistogramResult extends StObject {
   
   /**
     * An array of objects representing each bin in the histogram.
@@ -40,15 +36,8 @@ trait HistogramResult
 }
 object HistogramResult {
   
-  inline def apply(
-    bins: js.Array[Bin],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    maxValue: Double,
-    minValue: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): HistogramResult = {
-    val __obj = js.Dynamic.literal(bins = bins.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(bins: js.Array[Bin], maxValue: Double, minValue: Double): HistogramResult = {
+    val __obj = js.Dynamic.literal(bins = bins.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramResult]
   }
   

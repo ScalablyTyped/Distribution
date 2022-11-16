@@ -11,3 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class AbortSignal ()
   extends StObject
      with typings.std.AbortSignal
+object AbortSignal {
+  
+  @JSGlobal("AbortSignal")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* standard dom */
+  inline def abort(): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")().asInstanceOf[typings.std.AbortSignal]
+  inline def abort(reason: Any): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.std.AbortSignal]
+  
+  /* standard dom */
+  inline def timeout(milliseconds: Double): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.std.AbortSignal]
+}

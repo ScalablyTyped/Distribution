@@ -114,6 +114,15 @@ object mod {
       }
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type UpdateSpecPath = {[key: string] : react-addons-update.react-addons-update.react.UpdateSpec}
+    }}}
+    to avoid circular code involving: 
+    - react-addons-update.react-addons-update.react.UpdateSpec
+    - react-addons-update.react-addons-update.react.UpdateSpecPath
+    */
     trait UpdateSpecPath
       extends StObject
          with /* key */ StringDictionary[UpdateSpec]

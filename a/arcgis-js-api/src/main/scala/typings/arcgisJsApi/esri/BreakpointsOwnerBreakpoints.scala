@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BreakpointsOwnerBreakpoints
-  extends StObject
-     with Object {
+trait BreakpointsOwnerBreakpoints extends StObject {
   
   /**
     * Sets the `large` breakpoint in pixels used by [widthBreakpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint) and [heightBreakpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint).
@@ -55,12 +51,8 @@ trait BreakpointsOwnerBreakpoints
 }
 object BreakpointsOwnerBreakpoints {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): BreakpointsOwnerBreakpoints = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): BreakpointsOwnerBreakpoints = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BreakpointsOwnerBreakpoints]
   }
   

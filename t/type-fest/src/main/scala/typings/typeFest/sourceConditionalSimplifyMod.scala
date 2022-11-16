@@ -8,21 +8,19 @@ object sourceConditionalSimplifyMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Type extends ExcludeType ? Type : Type extends IncludeType ? {[ TypeKey in keyof Type ]: Type[TypeKey]} : Type
     }}}
     */
-  @js.native
-  trait ConditionalSimplify[Type, ExcludeType, IncludeType] extends StObject
+  type ConditionalSimplify[Type, ExcludeType, IncludeType] = Type
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Type extends ExcludeType ? Type : Type extends IncludeType ? {[ TypeKey in keyof Type ]: type-fest.type-fest/source/conditional-simplify.ConditionalSimplifyDeep<Type[TypeKey], ExcludeType, IncludeType>} : Type
     }}}
     */
-  @js.native
-  trait ConditionalSimplifyDeep[Type, ExcludeType, IncludeType] extends StObject
+  type ConditionalSimplifyDeep[Type, ExcludeType, IncludeType] = Type
 }

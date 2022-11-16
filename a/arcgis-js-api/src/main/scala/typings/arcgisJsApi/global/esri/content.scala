@@ -1,16 +1,11 @@
 package typings.arcgisJsApi.global.esri
 
-import typings.arcgisJsApi.esri.AttachmentsContentConstructor
 import typings.arcgisJsApi.esri.AttachmentsContentProperties
-import typings.arcgisJsApi.esri.CustomContentConstructor
 import typings.arcgisJsApi.esri.CustomContentProperties
-import typings.arcgisJsApi.esri.ExpressionContentConstructor
 import typings.arcgisJsApi.esri.ExpressionContentProperties
-import typings.arcgisJsApi.esri.FieldsContentConstructor
 import typings.arcgisJsApi.esri.FieldsContentProperties
-import typings.arcgisJsApi.esri.MediaContentConstructor
 import typings.arcgisJsApi.esri.MediaContentProperties
-import typings.arcgisJsApi.esri.TextContentConstructor
+import typings.arcgisJsApi.esri.RelationshipContentProperties
 import typings.arcgisJsApi.esri.TextContentProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,9 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object content {
   
-  @JSGlobal("__esri.content.AttachmentsContent")
-  @js.native
-  val AttachmentsContent: AttachmentsContentConstructor = js.native
+  object AttachmentsContent {
+    
+    @JSGlobal("__esri.content.AttachmentsContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.AttachmentsContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.AttachmentsContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.AttachmentsContent")
@@ -49,9 +49,14 @@ object content {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.content.CustomContent")
-  @js.native
-  val CustomContent: CustomContentConstructor = js.native
+  object CustomContent {
+    
+    @JSGlobal("__esri.content.CustomContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.CustomContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.CustomContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.CustomContent")
@@ -75,9 +80,14 @@ object content {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.content.ExpressionContent")
-  @js.native
-  val ExpressionContent: ExpressionContentConstructor = js.native
+  object ExpressionContent {
+    
+    @JSGlobal("__esri.content.ExpressionContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.ExpressionContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.ExpressionContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.ExpressionContent")
@@ -101,9 +111,14 @@ object content {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.content.FieldsContent")
-  @js.native
-  val FieldsContent: FieldsContentConstructor = js.native
+  object FieldsContent {
+    
+    @JSGlobal("__esri.content.FieldsContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.FieldsContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.FieldsContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.FieldsContent")
@@ -127,9 +142,14 @@ object content {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.content.MediaContent")
-  @js.native
-  val MediaContent: MediaContentConstructor = js.native
+  object MediaContent {
+    
+    @JSGlobal("__esri.content.MediaContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.MediaContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.MediaContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.MediaContent")
@@ -153,9 +173,45 @@ object content {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.content.TextContent")
+  object RelationshipContent {
+    
+    @JSGlobal("__esri.content.RelationshipContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.RelationshipContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.RelationshipContent]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSGlobal("__esri.content.RelationshipContent")
   @js.native
-  val TextContent: TextContentConstructor = js.native
+  /**
+    * A `RelationshipContent` popup element represents a relationship element associated with a feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html)
+    */
+  open class RelationshipContentCls ()
+    extends StObject
+       with typings.arcgisJsApi.esri.RelationshipContent {
+    def this(properties: RelationshipContentProperties) = this()
+    
+    /**
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
+  }
+  
+  object TextContent {
+    
+    @JSGlobal("__esri.content.TextContent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.TextContent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.TextContent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.content.TextContent")

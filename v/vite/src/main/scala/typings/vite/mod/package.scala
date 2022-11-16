@@ -188,6 +188,14 @@ type Matcher = AnymatchPattern | js.Array[AnymatchPattern]
 
 type PackageCache = Map[String, PackageData]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type PluginOption = vite.vite.Plugin_2 | false | null | undefined | std.Array<vite.vite.PluginOption> | std.Promise<vite.vite.Plugin_2 | false | null | undefined | std.Array<vite.vite.PluginOption>>
+}}}
+to avoid circular code involving: 
+- vite.vite.PluginOption
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.vite.mod.Plugin2
   - typings.vite.viteBooleans.`false`

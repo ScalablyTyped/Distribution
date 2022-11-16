@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.dark
 import typings.arcgisJsApi.arcgisJsApiStrings.light
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dotDensityGetSchemesParams
-  extends StObject
-     with Object {
+trait dotDensityGetSchemesParams extends StObject {
   
   /**
     * The Esri basemap to pair with the visualization.
@@ -35,13 +31,8 @@ trait dotDensityGetSchemesParams
 }
 object dotDensityGetSchemesParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    numColors: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): dotDensityGetSchemesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numColors = numColors.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(numColors: Double): dotDensityGetSchemesParams = {
+    val __obj = js.Dynamic.literal(numColors = numColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityGetSchemesParams]
   }
   

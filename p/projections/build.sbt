@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "projections"
-version := "1.0-dt-20211202Z-646da2"
+version := "1.0-dt-20211202Z-3356d3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

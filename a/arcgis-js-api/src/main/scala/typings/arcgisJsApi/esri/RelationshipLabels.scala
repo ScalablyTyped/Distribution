@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelationshipLabels
-  extends StObject
-     with Object {
+trait RelationshipLabels extends StObject {
   
   /**
     * The label corresponding with the bottom corner of the legend if the focus is set to `HH`.
@@ -40,16 +36,8 @@ trait RelationshipLabels
 }
 object RelationshipLabels {
   
-  inline def apply(
-    bottom: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    left: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    right: String,
-    top: String
-  ): RelationshipLabels = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), left = left.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  inline def apply(bottom: String, left: String, right: String, top: String): RelationshipLabels = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipLabels]
   }
   

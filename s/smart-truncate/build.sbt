@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smart-truncate"
-version := "1.0-dt-20211202Z-1debc2"
+version := "1.0-dt-20211202Z-813035"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

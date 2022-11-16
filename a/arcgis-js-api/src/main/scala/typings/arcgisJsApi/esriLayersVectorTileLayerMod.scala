@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,19 +33,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.VectorTileLayer
-import typings.arcgisJsApi.esri.VectorTileLayerConstructor
 import typings.arcgisJsApi.esri.VectorTileLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersVectorTileLayerMod extends Shortcut {
+/* static members */
+object esriLayersVectorTileLayerMod {
   
-  @JSImport("esri/layers/VectorTileLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & VectorTileLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/VectorTileLayer", JSImport.Namespace)
   @js.native
   /**
@@ -54,7 +48,7 @@ object esriLayersVectorTileLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with VectorTileLayer {
     def this(properties: VectorTileLayerProperties) = this()
@@ -99,9 +93,9 @@ object esriLayersVectorTileLayerMod extends Shortcut {
     /* CompleteClass */
     var minScale: Double = js.native
   }
+  @JSImport("esri/layers/VectorTileLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & VectorTileLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersVectorTileLayerMod.foo` */
-  override def _to: js.Object & VectorTileLayerConstructor = ^
+  inline def fromJSON(json: Any): VectorTileLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[VectorTileLayer]
 }

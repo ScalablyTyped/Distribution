@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait relationshipCreateRendererParamsField2
-  extends StObject
-     with Object {
+trait relationshipCreateRendererParamsField2 extends StObject {
   
   /**
     * The name of a numeric field.
@@ -47,13 +43,8 @@ trait relationshipCreateRendererParamsField2
 }
 object relationshipCreateRendererParamsField2 {
   
-  inline def apply(
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): relationshipCreateRendererParamsField2 = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(field: String): relationshipCreateRendererParamsField2 = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipCreateRendererParamsField2]
   }
   

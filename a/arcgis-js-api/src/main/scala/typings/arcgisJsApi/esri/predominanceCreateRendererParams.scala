@@ -7,15 +7,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
 import typings.arcgisJsApi.arcgisJsApiStrings.count
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominanceCreateRendererParams
-  extends StObject
-     with Object {
+trait predominanceCreateRendererParams extends StObject {
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
@@ -41,6 +37,13 @@ trait predominanceCreateRendererParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
   var fields: js.Array[predominanceCreateRendererParamsFields]
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to include data-driven opacity in the final renderer.
@@ -133,14 +136,11 @@ trait predominanceCreateRendererParams
 object predominanceCreateRendererParams {
   
   inline def apply(
-    constructor: js.Function,
     fields: js.Array[predominanceCreateRendererParamsFields],
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     view: View
   ): predominanceCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[predominanceCreateRendererParams]
   }
   
@@ -157,6 +157,10 @@ object predominanceCreateRendererParams {
     inline def setFields(value: js.Array[predominanceCreateRendererParamsFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsVarargs(value: predominanceCreateRendererParamsFields*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setIncludeOpacityVariable(value: Boolean): Self = StObject.set(x, "includeOpacityVariable", value.asInstanceOf[js.Any])
     

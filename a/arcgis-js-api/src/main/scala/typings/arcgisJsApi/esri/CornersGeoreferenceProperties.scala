@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.corners
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,8 +41,6 @@ trait CornersGeoreferenceProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#topRight)
     */
   var topRight: js.UndefOr[PointProperties] = js.undefined
-  
-  var `type`: js.UndefOr[corners] = js.undefined
 }
 object CornersGeoreferenceProperties {
   
@@ -69,9 +66,5 @@ object CornersGeoreferenceProperties {
     inline def setTopRight(value: PointProperties): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     
     inline def setTopRightUndefined: Self = StObject.set(x, "topRight", js.undefined)
-    
-    inline def setType(value: corners): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

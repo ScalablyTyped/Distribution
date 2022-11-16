@@ -84,5 +84,5 @@ trait BookmarksViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView | SceneView = js.native
 }

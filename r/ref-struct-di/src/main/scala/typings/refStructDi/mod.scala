@@ -112,14 +112,13 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] | [0] ? std.Record<string, ref-struct-di.ref-struct-di.Field<any>> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-struct-di.ref-struct-di.Field<ref-napi.ref-napi.UnderlyingType<T[P]>>}
     }}}
     */
-  @js.native
-  trait StructFields[T /* <: StructTypeDefinitionBase */] extends StObject
+  type StructFields[T /* <: StructTypeDefinitionBase */] = Record[String, Field[Any]]
   
   /**
     * Represents the instance type of a struct type.
@@ -181,14 +180,13 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.UnderlyingType<T[P]>}
     }}}
     */
-  @js.native
-  trait StructObjectProperties[T /* <: StructTypeDefinitionBase */] extends StObject
+  type StructObjectProperties[T /* <: StructTypeDefinitionBase */] = Record[String, Any]
   
   /**
     * This is the `constructor` of the Struct type that gets returned.
@@ -260,7 +258,7 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<T[P]>>}
@@ -286,7 +284,7 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in std.Extract<keyof T, / * template literal string: ${number} * / string> as std.Extract<T[P], [ref-napi.ref-napi.TypeLike, string]>[1] ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<std.Extract<T[P], [ref-napi.ref-napi.TypeLike, string]>[0]>>}

@@ -42,6 +42,7 @@ trait SVGStyleElement
   /* standard dom */
   var title: java.lang.String = js.native
   
+  /** @deprecated */
   /* standard dom */
   var `type`: java.lang.String = js.native
 }

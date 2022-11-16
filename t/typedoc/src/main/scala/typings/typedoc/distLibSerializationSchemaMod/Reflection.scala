@@ -26,20 +26,20 @@ trait Reflection extends StObject {
 object Reflection {
   
   inline def apply(
-    comment: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]],
     flags: ReflectionFlags,
     id: ToSerialized[Double],
     kind: ToSerialized[ReflectionKind],
-    kindString: ToSerialized[js.UndefOr[String]],
     name: ToSerialized[String]
   ): Reflection = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reflection]
   }
   
   extension [Self <: Reflection](x: Self) {
     
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     inline def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,8 @@ object Reflection {
     inline def setKind(value: ToSerialized[ReflectionKind]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindString(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
+    
+    inline def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

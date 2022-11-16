@@ -1,12 +1,8 @@
 package typings.arcgisJsApi.global.esri
 
-import typings.arcgisJsApi.esri.PointCloudClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudClassBreaksRendererProperties
-import typings.arcgisJsApi.esri.PointCloudRGBRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudRGBRendererProperties
-import typings.arcgisJsApi.esri.PointCloudStretchRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudStretchRendererProperties
-import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pointCloudRenderers {
   
-  @JSGlobal("__esri.pointCloudRenderers.PointCloudClassBreaksRenderer")
-  @js.native
-  val PointCloudClassBreaksRenderer: PointCloudClassBreaksRendererConstructor = js.native
+  object PointCloudClassBreaksRenderer {
+    
+    @JSGlobal("__esri.pointCloudRenderers.PointCloudClassBreaksRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.PointCloudClassBreaksRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.PointCloudClassBreaksRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.pointCloudRenderers.PointCloudClassBreaksRenderer")
@@ -45,9 +46,14 @@ object pointCloudRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.pointCloudRenderers.PointCloudRGBRenderer")
-  @js.native
-  val PointCloudRGBRenderer: PointCloudRGBRendererConstructor = js.native
+  object PointCloudRGBRenderer {
+    
+    @JSGlobal("__esri.pointCloudRenderers.PointCloudRGBRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.PointCloudRGBRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.PointCloudRGBRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.pointCloudRenderers.PointCloudRGBRenderer")
@@ -71,9 +77,14 @@ object pointCloudRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.pointCloudRenderers.PointCloudStretchRenderer")
-  @js.native
-  val PointCloudStretchRenderer: PointCloudStretchRendererConstructor = js.native
+  object PointCloudStretchRenderer {
+    
+    @JSGlobal("__esri.pointCloudRenderers.PointCloudStretchRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.PointCloudStretchRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.PointCloudStretchRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.pointCloudRenderers.PointCloudStretchRenderer")
@@ -97,9 +108,14 @@ object pointCloudRenderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.pointCloudRenderers.PointCloudUniqueValueRenderer")
-  @js.native
-  val PointCloudUniqueValueRenderer: PointCloudUniqueValueRendererConstructor = js.native
+  object PointCloudUniqueValueRenderer {
+    
+    @JSGlobal("__esri.pointCloudRenderers.PointCloudUniqueValueRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.pointCloudRenderers.PointCloudUniqueValueRenderer")

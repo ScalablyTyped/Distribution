@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`rotate-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`rotate-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.rotate
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RotateEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -30,14 +27,8 @@ trait RotateEventInfo
 }
 object RotateEventInfo {
   
-  inline def apply(
-    angle: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `rotate-start` | rotate | `rotate-stop`
-  ): RotateEventInfo = {
-    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(angle: Double, `type`: `rotate-start` | rotate | `rotate-stop`): RotateEventInfo = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateEventInfo]
   }

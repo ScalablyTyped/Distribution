@@ -14,18 +14,12 @@ trait FeatureFormViewModelValueChangeEvent extends StObject {
   
   var valid: Boolean
   
-  var value: Double | String | Any
+  var value: Double | String | Null
 }
 object FeatureFormViewModelValueChangeEvent {
   
-  inline def apply(
-    feature: Graphic,
-    fieldName: String,
-    layer: FeatureLayer,
-    valid: Boolean,
-    value: Double | String | Any
-  ): FeatureFormViewModelValueChangeEvent = {
-    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(feature: Graphic, fieldName: String, layer: FeatureLayer, valid: Boolean): FeatureFormViewModelValueChangeEvent = {
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[FeatureFormViewModelValueChangeEvent]
   }
   
@@ -39,6 +33,8 @@ object FeatureFormViewModelValueChangeEvent {
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Double | String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

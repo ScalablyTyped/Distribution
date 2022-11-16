@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`data-layer`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicDataLayer
-  extends StObject
-     with Object {
+trait DynamicDataLayer extends StObject {
   
   /**
     * A table, feature class, or raster that resides in a registered workspace (either a folder or geodatabase).
@@ -35,13 +31,10 @@ trait DynamicDataLayer
 object DynamicDataLayer {
   
   inline def apply(
-    constructor: js.Function,
     dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource,
-    fields: js.Array[DynamicDataLayerFields],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
+    fields: js.Array[DynamicDataLayerFields]
   ): DynamicDataLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("data-layer")
     __obj.asInstanceOf[DynamicDataLayer]
   }

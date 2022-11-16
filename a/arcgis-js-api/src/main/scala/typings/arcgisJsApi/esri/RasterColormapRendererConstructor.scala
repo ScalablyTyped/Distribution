@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RasterColormapRendererConstructor
   extends StObject
-     with /**
-  * The RasterColormapRenderer defines the symbology to display raster data based on specific colors, aiding in visual analysis of the data.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html)
-  */
-Instantiable0[RasterColormapRenderer]
+     with Instantiable0[RasterColormapRenderer]
      with Instantiable1[/* properties */ RasterColormapRendererProperties, RasterColormapRenderer] {
   
   /**

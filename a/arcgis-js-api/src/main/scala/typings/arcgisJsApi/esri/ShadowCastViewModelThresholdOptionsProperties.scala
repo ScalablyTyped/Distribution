@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowCastViewModelThresholdOptionsProperties
-  extends StObject
-     with Object {
+trait ShadowCastViewModelThresholdOptionsProperties extends StObject {
   
   /**
     * Color of the shadow visualization.
@@ -46,12 +42,8 @@ trait ShadowCastViewModelThresholdOptionsProperties
 }
 object ShadowCastViewModelThresholdOptionsProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ShadowCastViewModelThresholdOptionsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ShadowCastViewModelThresholdOptionsProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowCastViewModelThresholdOptionsProperties]
   }
   

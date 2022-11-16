@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerCapabilitiesAttachment
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerCapabilitiesAttachment extends StObject {
   
   /**
     * Indicates if the attachments can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html) by their content types.
@@ -48,16 +44,13 @@ trait SubtypeGroupLayerCapabilitiesAttachment
 object SubtypeGroupLayerCapabilitiesAttachment {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsContentType: Boolean,
     supportsExifInfo: Boolean,
     supportsKeywords: Boolean,
     supportsName: Boolean,
     supportsSize: Boolean
   ): SubtypeGroupLayerCapabilitiesAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsContentType = supportsContentType.asInstanceOf[js.Any], supportsExifInfo = supportsExifInfo.asInstanceOf[js.Any], supportsKeywords = supportsKeywords.asInstanceOf[js.Any], supportsName = supportsName.asInstanceOf[js.Any], supportsSize = supportsSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsContentType = supportsContentType.asInstanceOf[js.Any], supportsExifInfo = supportsExifInfo.asInstanceOf[js.Any], supportsKeywords = supportsKeywords.asInstanceOf[js.Any], supportsName = supportsName.asInstanceOf[js.Any], supportsSize = supportsSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesAttachment]
   }
   

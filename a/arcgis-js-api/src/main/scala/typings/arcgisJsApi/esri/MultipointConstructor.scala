@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MultipointConstructor
   extends StObject
-     with /**
-  * An ordered collection of points.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html)
-  */
-Instantiable0[Multipoint]
+     with Instantiable0[Multipoint]
      with Instantiable1[/* properties */ MultipointProperties, Multipoint] {
   
   def fromJSON(json: Any): Multipoint = js.native

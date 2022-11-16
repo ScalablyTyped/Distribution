@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-gray"
-version := "1.6-dt-20211202Z-033a7e"
+version := "1.6-dt-20211202Z-e0a00a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

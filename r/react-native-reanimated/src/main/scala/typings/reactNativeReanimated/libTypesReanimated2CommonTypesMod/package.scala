@@ -22,6 +22,14 @@ type AnimatableValue = Double | String | js.Array[Double]
 
 type AnimationCallback = js.Function2[/* finished */ js.UndefOr[Boolean], /* current */ js.UndefOr[AnimatableValue], Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type NestedObjectValues = T | std.Array<react-native-reanimated.react-native-reanimated/lib/types/reanimated2/commonTypes.NestedObjectValues<T>> | react-native-reanimated.react-native-reanimated/lib/types/reanimated2/commonTypes.NestedObject<T>
+}}}
+to avoid circular code involving: 
+- react-native-reanimated.react-native-reanimated/lib/types/reanimated2/commonTypes.NestedObjectValues
+*/
 type NestedObjectValues[T] = T | js.Array[Any] | NestedObject[T]
 
 type SensorValue3D = SharedValue[Value3D]

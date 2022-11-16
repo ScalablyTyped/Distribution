@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "interactjs"
-version := "1.10.17-49c566"
+version := "1.10.17-627600"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

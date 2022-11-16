@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataSourceSortItem extends StObject {
   
+  var compare: js.UndefOr[js.Function] = js.undefined
+  
   var dir: js.UndefOr[String] = js.undefined
   
   var field: js.UndefOr[String] = js.undefined
@@ -18,6 +20,10 @@ object DataSourceSortItem {
   }
   
   extension [Self <: DataSourceSortItem](x: Self) {
+    
+    inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

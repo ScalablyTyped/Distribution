@@ -10,12 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimeSliderViewModelConstructor
   extends StObject
-     with /**
-  * Provides the logic for the [TimeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html)
-  */
-Instantiable0[TimeSliderViewModel]
+     with Instantiable0[TimeSliderViewModel]
      with Instantiable1[/* properties */ TimeSliderViewModelProperties, TimeSliderViewModel] {
   
   /**

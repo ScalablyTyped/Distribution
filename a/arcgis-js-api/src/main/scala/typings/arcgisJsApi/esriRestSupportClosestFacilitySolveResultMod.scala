@@ -1,28 +1,22 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ClosestFacilitySolveResult
-import typings.arcgisJsApi.esri.ClosestFacilitySolveResultConstructor
 import typings.arcgisJsApi.esri.ClosestFacilitySolveResultProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportClosestFacilitySolveResultMod extends Shortcut {
+/* static members */
+object esriRestSupportClosestFacilitySolveResultMod {
   
-  @JSImport("esri/rest/support/ClosestFacilitySolveResult", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ClosestFacilitySolveResultConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/ClosestFacilitySolveResult", JSImport.Namespace)
   @js.native
   /**
-    * The result from module:esri/rest/ClosestFacilityTask.
+    * The result from [closestFacility](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-closestFacility.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ClosestFacilitySolveResult {
     def this(properties: ClosestFacilitySolveResultProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportClosestFacilitySolveResultMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/ClosestFacilitySolveResult", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ClosestFacilitySolveResultConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportClosestFacilitySolveResultMod.foo` */
-  override def _to: js.Object & ClosestFacilitySolveResultConstructor = ^
+  inline def fromJSON(json: Any): ClosestFacilitySolveResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ClosestFacilitySolveResult]
 }

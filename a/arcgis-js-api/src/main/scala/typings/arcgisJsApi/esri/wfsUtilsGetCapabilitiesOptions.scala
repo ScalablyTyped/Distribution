@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait wfsUtilsGetCapabilitiesOptions
-  extends StObject
-     with Object {
+trait wfsUtilsGetCapabilitiesOptions extends StObject {
   
   /**
     * A list of key-value pairs of parameters to append to the url.
@@ -27,12 +23,8 @@ trait wfsUtilsGetCapabilitiesOptions
 }
 object wfsUtilsGetCapabilitiesOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): wfsUtilsGetCapabilitiesOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): wfsUtilsGetCapabilitiesOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[wfsUtilsGetCapabilitiesOptions]
   }
   

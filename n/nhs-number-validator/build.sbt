@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nhs-number-validator"
-version := "1.1-dt-20220313Z-bcd263"
+version := "1.1-dt-20220313Z-ad0658"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

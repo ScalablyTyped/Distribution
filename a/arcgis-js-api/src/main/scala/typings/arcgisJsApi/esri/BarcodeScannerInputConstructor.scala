@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BarcodeScannerInputConstructor
   extends StObject
-     with /**
-  * The `BarcodeScannerInput` class defines the desired user interface for a barcode or QR code scanner.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-BarcodeScannerInput.html)
-  */
-Instantiable0[BarcodeScannerInput]
+     with Instantiable0[BarcodeScannerInput]
      with Instantiable1[/* properties */ BarcodeScannerInputProperties, BarcodeScannerInput] {
   
   def fromJSON(json: Any): BarcodeScannerInput = js.native

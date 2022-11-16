@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterFunctionInfo
-  extends StObject
-     with Object {
+trait RasterFunctionInfo extends StObject {
   
   /**
     * Description of the raster function.
@@ -47,17 +43,8 @@ trait RasterFunctionInfo
 }
 object RasterFunctionInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    description: String,
-    functionType: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    help: String,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    thumbnail: String
-  ): RasterFunctionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], functionType = functionType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), thumbnail = thumbnail.asInstanceOf[js.Any])
+  inline def apply(description: String, functionType: Double, help: String, name: String, thumbnail: String): RasterFunctionInfo = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], functionType = functionType.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterFunctionInfo]
   }
   

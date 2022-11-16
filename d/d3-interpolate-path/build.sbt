@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-interpolate-path"
-version := "2.0-dt-20211202Z-9542c1"
+version := "2.0-dt-20211202Z-c2232f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

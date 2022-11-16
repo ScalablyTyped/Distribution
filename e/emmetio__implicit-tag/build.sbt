@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emmetio__implicit-tag"
-version := "1.0-dt-20221006Z-de8362"
+version := "1.0-dt-20221006Z-b1a908"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

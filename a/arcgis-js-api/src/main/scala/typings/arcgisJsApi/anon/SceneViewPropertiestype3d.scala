@@ -16,6 +16,7 @@ import typings.arcgisJsApi.esri.BreakpointsOwnerBreakpoints
 import typings.arcgisJsApi.esri.CameraProperties
 import typings.arcgisJsApi.esri.CollectionProperties
 import typings.arcgisJsApi.esri.DefaultUIProperties
+import typings.arcgisJsApi.esri.DimensionAnalysisProperties
 import typings.arcgisJsApi.esri.DirectLineMeasurementAnalysisProperties
 import typings.arcgisJsApi.esri.Error
 import typings.arcgisJsApi.esri.ExtentProperties
@@ -64,7 +65,7 @@ trait SceneViewPropertiestype3d extends StObject {
     */
   var analyses: js.UndefOr[
     CollectionProperties[
-      DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
+      DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
     ]
   ] = js.undefined
   
@@ -305,14 +306,14 @@ object SceneViewPropertiestype3d {
     
     inline def setAnalyses(
       value: CollectionProperties[
-          DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
+          DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
         ]
     ): Self = StObject.set(x, "analyses", value.asInstanceOf[js.Any])
     
     inline def setAnalysesUndefined: Self = StObject.set(x, "analyses", js.undefined)
     
     inline def setAnalysesVarargs(
-      value: (DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties)*
+      value: (DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties)*
     ): Self = StObject.set(x, "analyses", js.Array(value*))
     
     inline def setAnimation(value: ViewAnimationProperties): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])

@@ -27,6 +27,7 @@ import typings.yandexMaps.yandexMapsStrings.animationstart
 import typings.yandexMaps.yandexMapsStrings.auxclick
 import typings.yandexMaps.yandexMapsStrings.beforeinput
 import typings.yandexMaps.yandexMapsStrings.blur
+import typings.yandexMaps.yandexMapsStrings.cancel
 import typings.yandexMaps.yandexMapsStrings.canplay
 import typings.yandexMaps.yandexMapsStrings.canplaythrough
 import typings.yandexMaps.yandexMapsStrings.change
@@ -347,6 +348,28 @@ trait IEventManager[TargetGeometry]
   def add_blur(
     types: blur,
     callback: js.Function1[/* event */ IEvent[FocusEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(types: cancel, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
     context: Unit,
     priority: Double
   ): this.type = js.native

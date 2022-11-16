@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SceneLayerConstructor
   extends StObject
-     with /**
-  * The SceneLayer is a layer type designed for on-demand streaming and displaying large amounts of data in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html)
-  */
-Instantiable0[SceneLayer]
+     with Instantiable0[SceneLayer]
      with Instantiable1[/* properties */ SceneLayerProperties, SceneLayer] {
   
   def fromJSON(json: Any): SceneLayer = js.native

@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.DictionaryRenderer
-import typings.arcgisJsApi.esri.DictionaryRendererConstructor
 import typings.arcgisJsApi.esri.DictionaryRendererProperties
 import typings.arcgisJsApi.esri.VisualVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersDictionaryRendererMod extends Shortcut {
+/* static members */
+object esriRenderersDictionaryRendererMod {
   
-  @JSImport("esri/renderers/DictionaryRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & DictionaryRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/DictionaryRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriRenderersDictionaryRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with DictionaryRenderer {
     def this(properties: DictionaryRendererProperties) = this()
@@ -44,9 +38,9 @@ object esriRenderersDictionaryRendererMod extends Shortcut {
     /* CompleteClass */
     var visualVariables: js.Array[VisualVariable] = js.native
   }
+  @JSImport("esri/renderers/DictionaryRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & DictionaryRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersDictionaryRendererMod.foo` */
-  override def _to: js.Object & DictionaryRendererConstructor = ^
+  inline def fromJSON(json: Any): DictionaryRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DictionaryRenderer]
 }

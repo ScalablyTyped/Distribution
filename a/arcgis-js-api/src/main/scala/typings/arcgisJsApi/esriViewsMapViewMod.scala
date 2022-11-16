@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.landscape
 import typings.arcgisJsApi.arcgisJsApiStrings.large
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
@@ -11,7 +10,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xsmall
 import typings.arcgisJsApi.esri.BreakpointsOwnerBreakpoints
 import typings.arcgisJsApi.esri.DefaultUI
 import typings.arcgisJsApi.esri.MapView
-import typings.arcgisJsApi.esri.MapViewConstructor
 import typings.arcgisJsApi.esri.MapViewProperties
 import typings.arcgisJsApi.esri.Popup
 import typings.std.HTMLDivElement
@@ -19,13 +17,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewsMapViewMod extends Shortcut {
+object esriViewsMapViewMod {
   
-  @JSImport("esri/views/MapView", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MapViewConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/MapView", JSImport.Namespace)
   @js.native
   /**
@@ -33,7 +26,7 @@ object esriViewsMapViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with MapView {
     def this(properties: MapViewProperties) = this()
@@ -150,9 +143,4 @@ object esriViewsMapViewMod extends Shortcut {
     /* CompleteClass */
     var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
   }
-  
-  type _To = js.Object & MapViewConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewsMapViewMod.foo` */
-  override def _to: js.Object & MapViewConstructor = ^
 }

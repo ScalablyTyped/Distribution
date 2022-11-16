@@ -1,23 +1,18 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
+import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.DefaultUI
 import typings.arcgisJsApi.esri.Popup
 import typings.arcgisJsApi.esri.View
-import typings.arcgisJsApi.esri.ViewConstructor
 import typings.arcgisJsApi.esri.ViewProperties
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViewsViewMod extends Shortcut {
+/* static members */
+object esriViewsViewMod {
   
-  @JSImport("esri/views/View", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ViewConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/View", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +20,7 @@ object esriViewsViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with View {
     def this(properties: ViewProperties) = this()
@@ -111,8 +106,12 @@ object esriViewsViewMod extends Shortcut {
     override val width: Double = js.native
   }
   
-  type _To = js.Object & ViewConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViewsViewMod.foo` */
-  override def _to: js.Object & ViewConstructor = ^
+  /**
+    * Contains the collection of active views on the page.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#views)
+    */
+  @JSImport("esri/views/View", "views")
+  @js.native
+  val views: Collection[View] = js.native
 }

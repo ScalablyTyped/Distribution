@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-wsl"
-version := "2.2.0-30186b"
+version := "2.2.0-72a207"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

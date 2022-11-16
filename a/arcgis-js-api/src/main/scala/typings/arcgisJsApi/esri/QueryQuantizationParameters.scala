@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`lower-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`upper-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.edit
 import typings.arcgisJsApi.arcgisJsApiStrings.view
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryQuantizationParameters
-  extends StObject
-     with Object {
+trait QueryQuantizationParameters extends StObject {
   
   /**
     * An extent defining the quantization grid bounds.
@@ -48,12 +44,8 @@ trait QueryQuantizationParameters
 }
 object QueryQuantizationParameters {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): QueryQuantizationParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): QueryQuantizationParameters = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryQuantizationParameters]
   }
   

@@ -39,6 +39,7 @@ trait MouseEventtypemousedownmo extends StObject {
   /* standard dom */
   val buttons: Double = js.native
   
+  /** @deprecated */
   /* standard dom */
   var cancelBubble: Boolean = js.native
   

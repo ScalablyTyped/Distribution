@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DateTimePickerInputConstructor
   extends StObject
-     with /**
-  * The `DateTimePickerInput` class defines the desired user interface for editing date fields in a form.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html)
-  */
-Instantiable0[DateTimePickerInput]
+     with Instantiable0[DateTimePickerInput]
      with Instantiable1[/* properties */ DateTimePickerInputProperties, DateTimePickerInput] {
   
   def fromJSON(json: Any): DateTimePickerInput = js.native

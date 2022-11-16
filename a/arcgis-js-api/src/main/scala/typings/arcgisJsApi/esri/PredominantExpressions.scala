@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PredominantExpressions
-  extends StObject
-     with Object {
+trait PredominantExpressions extends StObject {
   
   /**
     * The Arcade and SQL expressions used to query the server or client-side layer for statistics of the percentage among all competing fields comprised by the predominant category.
@@ -34,14 +30,11 @@ trait PredominantExpressions
 object PredominantExpressions {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     opacity: OpacityExpressionInfo,
     predominantCategory: PredominantExpressionsPredominantCategory,
-    propertyIsEnumerable: PropertyKey => Boolean,
     size: SizeExpressionInfo
   ): PredominantExpressions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], predominantCategory = predominantCategory.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], predominantCategory = predominantCategory.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredominantExpressions]
   }
   

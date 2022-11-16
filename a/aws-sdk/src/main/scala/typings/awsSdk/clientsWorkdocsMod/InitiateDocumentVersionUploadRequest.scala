@@ -44,12 +44,12 @@ trait InitiateDocumentVersionUploadRequest extends StObject {
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: ResourceIdType
+  var ParentFolderId: js.UndefOr[ResourceIdType] = js.undefined
 }
 object InitiateDocumentVersionUploadRequest {
   
-  inline def apply(ParentFolderId: ResourceIdType): InitiateDocumentVersionUploadRequest = {
-    val __obj = js.Dynamic.literal(ParentFolderId = ParentFolderId.asInstanceOf[js.Any])
+  inline def apply(): InitiateDocumentVersionUploadRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateDocumentVersionUploadRequest]
   }
   
@@ -84,5 +84,7 @@ object InitiateDocumentVersionUploadRequest {
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     inline def setParentFolderId(value: ResourceIdType): Self = StObject.set(x, "ParentFolderId", value.asInstanceOf[js.Any])
+    
+    inline def setParentFolderIdUndefined: Self = StObject.set(x, "ParentFolderId", js.undefined)
   }
 }

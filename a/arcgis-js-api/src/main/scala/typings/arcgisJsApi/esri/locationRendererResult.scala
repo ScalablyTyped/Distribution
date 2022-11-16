@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait locationRendererResult
-  extends StObject
-     with Object {
+trait locationRendererResult extends StObject {
   
   /**
     * The ID of the basemap used to determine the optimal fill color of the features.
@@ -40,16 +36,8 @@ trait locationRendererResult
 }
 object locationRendererResult {
   
-  inline def apply(
-    basemapId: String,
-    basemapTheme: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    locationScheme: LocationScheme,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    renderer: SimpleRenderer
-  ): locationRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+  inline def apply(basemapId: String, basemapTheme: String, locationScheme: LocationScheme, renderer: SimpleRenderer): locationRendererResult = {
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], locationScheme = locationScheme.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[locationRendererResult]
   }
   

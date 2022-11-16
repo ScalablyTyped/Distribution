@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ColorSlider
-import typings.arcgisJsApi.esri.ColorSliderConstructor
 import typings.arcgisJsApi.esri.ColorSliderProperties
+import typings.arcgisJsApi.esri.ContinuousRendererResult
+import typings.arcgisJsApi.esri.HistogramResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsSmartMappingColorSliderMod extends Shortcut {
+/* static members */
+object esriWidgetsSmartMappingColorSliderMod {
   
-  @JSImport("esri/widgets/smartMapping/ColorSlider", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ColorSliderConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/smartMapping/ColorSlider", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,20 @@ object esriWidgetsSmartMappingColorSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ColorSlider {
     def this(properties: ColorSliderProperties) = this()
   }
+  @JSImport("esri/widgets/smartMapping/ColorSlider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ColorSliderConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsSmartMappingColorSliderMod.foo` */
-  override def _to: js.Object & ColorSliderConstructor = ^
+  /**
+    * A convenience function used to create a ColorSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ContinuousRendererResult) of the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createContinuousRenderer) method.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#fromRendererResult)
+    */
+  inline def fromRendererResult(rendererResult: ContinuousRendererResult): ColorSlider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any]).asInstanceOf[ColorSlider]
+  inline def fromRendererResult(rendererResult: ContinuousRendererResult, histogramResult: HistogramResult): ColorSlider = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any], histogramResult.asInstanceOf[js.Any])).asInstanceOf[ColorSlider]
 }

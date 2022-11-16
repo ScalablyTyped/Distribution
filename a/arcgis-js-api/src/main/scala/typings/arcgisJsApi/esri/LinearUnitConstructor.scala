@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LinearUnitConstructor
   extends StObject
-     with /**
-  * A data object containing a linear distance.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html)
-  */
-Instantiable0[LinearUnit]
+     with Instantiable0[LinearUnit]
      with Instantiable1[/* properties */ LinearUnitProperties, LinearUnit] {
   
   def fromJSON(json: Any): LinearUnit = js.native

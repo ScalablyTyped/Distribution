@@ -85,6 +85,14 @@ type Params = URLSearchParams | (StringDictionary[String | Double | Boolean])
 
 type ReporterOption = String | ReporterDescriptor
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ReporterOptions = testcafe.testcafe.<global>.ReporterOption | std.Array<testcafe.testcafe.<global>.ReporterOptions>
+}}}
+to avoid circular code involving: 
+- testcafe.testcafe.<global>.ReporterOptions
+*/
 type ReporterOptions = ReporterOption | js.Array[Any]
 
 type RequestLoggerFactory = js.Function2[

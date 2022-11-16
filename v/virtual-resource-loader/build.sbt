@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "virtual-resource-loader"
-version := "1.0.0-b02560"
+version := "1.0.0-7fb113"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

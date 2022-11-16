@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations
-  extends StObject
-     with Object {
+trait FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations extends StObject {
   
   /**
     * Indicates if the layer can return centroid for each distinct group for [groupByFieldsForStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#groupByFieldsForStatistics).
@@ -33,15 +29,8 @@ trait FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations
 }
 object FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations {
   
-  inline def apply(
-    centroid: Boolean,
-    constructor: js.Function,
-    convexHull: Boolean,
-    envelope: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations = {
-    val __obj = js.Dynamic.literal(centroid = centroid.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], convexHull = convexHull.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(centroid: Boolean, convexHull: Boolean, envelope: Boolean): FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations = {
+    val __obj = js.Dynamic.literal(centroid = centroid.asInstanceOf[js.Any], convexHull = convexHull.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations]
   }
   

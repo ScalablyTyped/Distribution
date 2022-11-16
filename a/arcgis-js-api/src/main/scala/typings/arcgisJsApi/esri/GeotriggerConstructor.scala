@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeotriggerConstructor
   extends StObject
-     with /**
-  * A Geotrigger is a condition that will be monitored against dynamic GIS data - for example using a spatial operation to check for enter/exit.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-Geotrigger.html)
-  */
-Instantiable0[Geotrigger]
+     with Instantiable0[Geotrigger]
      with Instantiable1[/* properties */ GeotriggerProperties, Geotrigger] {
   
   def fromJSON(json: Any): Geotrigger = js.native

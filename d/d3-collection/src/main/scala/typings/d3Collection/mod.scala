@@ -353,6 +353,14 @@ object mod {
   
   type NestedArray[Datum, RollupType] = js.Array[Values[Datum, RollupType]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedMap = d3-collection.d3-collection.Map<d3-collection.d3-collection.NestedMap<Datum, RollupType> | std.Array<Datum> | RollupType>
+  }}}
+  to avoid circular code involving: 
+  - d3-collection.d3-collection.NestedMap
+  */
   trait NestedMap[Datum, RollupType]
     extends StObject
        with Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
@@ -381,6 +389,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedObject = {[key: string] : d3-collection.d3-collection.NestedObject<Datum, RollupType> | std.Array<Datum> | RollupType}
+  }}}
+  to avoid circular code involving: 
+  - d3-collection.d3-collection.NestedObject
+  */
   trait NestedObject[Datum, RollupType]
     extends StObject
        with /* key */ StringDictionary[(NestedObject[Datum, RollupType]) | js.Array[Datum] | RollupType]

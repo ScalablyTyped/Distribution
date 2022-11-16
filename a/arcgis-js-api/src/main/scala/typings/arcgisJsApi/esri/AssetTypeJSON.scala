@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AssetTypeJSON
-  extends StObject
-     with Object {
+trait AssetTypeJSON extends StObject {
   
   /**
     * The asset type code.
@@ -33,15 +29,8 @@ trait AssetTypeJSON
 }
 object AssetTypeJSON {
   
-  inline def apply(
-    assetTypeCode: Double,
-    assetTypeName: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    terminalConfigurationId: Double
-  ): AssetTypeJSON = {
-    val __obj = js.Dynamic.literal(assetTypeCode = assetTypeCode.asInstanceOf[js.Any], assetTypeName = assetTypeName.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), terminalConfigurationId = terminalConfigurationId.asInstanceOf[js.Any])
+  inline def apply(assetTypeCode: Double, assetTypeName: String, terminalConfigurationId: Double): AssetTypeJSON = {
+    val __obj = js.Dynamic.literal(assetTypeCode = assetTypeCode.asInstanceOf[js.Any], assetTypeName = assetTypeName.asInstanceOf[js.Any], terminalConfigurationId = terminalConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetTypeJSON]
   }
   

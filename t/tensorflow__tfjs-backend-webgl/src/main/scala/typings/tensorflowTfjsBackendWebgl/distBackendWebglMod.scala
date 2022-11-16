@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.HTMLCanvasElement
+import typings.std.OffscreenCanvas
 import typings.std.WeakMap
 import typings.std.WebGLTexture
 import typings.tensorflowTfjsBackendWebgl.distGpgpuContextMod.GPGPUContext
@@ -45,8 +45,8 @@ object distBackendWebglMod {
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/backend_webgl", "MathBackendWebGL")
   @js.native
   open class MathBackendWebGL () extends KernelBackend {
-    def this(gpuResource: OffscreenCanvas) = this()
     def this(gpuResource: HTMLCanvasElement) = this()
+    def this(gpuResource: OffscreenCanvas) = this()
     def this(gpuResource: GPGPUContext) = this()
     
     def abs[T /* <: Tensor[Rank] */](x: T): T = js.native

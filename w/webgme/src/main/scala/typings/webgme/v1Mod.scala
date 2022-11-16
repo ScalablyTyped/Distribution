@@ -15,6 +15,14 @@ object v1Mod {
   
   type GUID = String
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonContainment = {[index: string] : webgme.webgme/v1.JsonContainment}
+  }}}
+  to avoid circular code involving: 
+  - webgme.webgme/v1.JsonContainment
+  */
   trait JsonContainment
     extends StObject
        with /* index */ StringDictionary[JsonContainment]

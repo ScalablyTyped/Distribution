@@ -76,6 +76,13 @@ trait WMSSublayerProperties extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns a reference to the parent WMS sublayer or layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#parent)
+    */
+  var parent: js.UndefOr[Any] = js.undefined
+  
+  /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * @default false
@@ -165,6 +172,10 @@ object WMSSublayerProperties {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

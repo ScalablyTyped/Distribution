@@ -35,7 +35,7 @@ trait PointSymbol3DProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
-  var verticalOffset: js.UndefOr[PointSymbol3DVerticalOffsetProperties] = js.undefined
+  var verticalOffset: js.UndefOr[Symbol3DVerticalOffsetProperties] = js.undefined
 }
 object PointSymbol3DProperties {
   
@@ -60,7 +60,7 @@ object PointSymbol3DProperties {
     
     inline def setSymbolLayersVarargs(value: (IconSymbol3DLayerProperti | ObjectSymbol3DLayerProper | TextSymbol3DLayerProperti)*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
     
-    inline def setVerticalOffset(value: PointSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: Symbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
     inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
   }

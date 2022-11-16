@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "single-trailing-newline"
-version := "1.0-dt-20211202Z-31cc78"
+version := "1.0-dt-20211202Z-13a8c2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.LayerFloorInfo
-import typings.arcgisJsApi.esri.LayerFloorInfoConstructor
 import typings.arcgisJsApi.esri.LayerFloorInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportLayerFloorInfoMod extends Shortcut {
+/* static members */
+object esriLayersSupportLayerFloorInfoMod {
   
-  @JSImport("esri/layers/support/LayerFloorInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & LayerFloorInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/LayerFloorInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportLayerFloorInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LayerFloorInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with LayerFloorInfo {
     def this(properties: LayerFloorInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportLayerFloorInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/LayerFloorInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & LayerFloorInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportLayerFloorInfoMod.foo` */
-  override def _to: js.Object & LayerFloorInfoConstructor = ^
+  inline def fromJSON(json: Any): LayerFloorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[LayerFloorInfo]
 }

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait utilsGetSupportedRendererInfoParams
-  extends StObject
-     with Object {
+trait utilsGetSupportedRendererInfoParams extends StObject {
   
   /**
     * The input layer for which the renderer info is returned.
@@ -34,13 +30,8 @@ trait utilsGetSupportedRendererInfoParams
 }
 object utilsGetSupportedRendererInfoParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer | WCSLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): utilsGetSupportedRendererInfoParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer | WCSLayer): utilsGetSupportedRendererInfoParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[utilsGetSupportedRendererInfoParams]
   }
   

@@ -94,6 +94,14 @@ object libTypesCreateAnimatedComponentMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedArray = T | std.Array<react-native-reanimated.react-native-reanimated/lib/types/createAnimatedComponent.NestedArray<T>>
+  }}}
+  to avoid circular code involving: 
+  - react-native-reanimated.react-native-reanimated/lib/types/createAnimatedComponent.NestedArray
+  */
   type NestedArray[T] = T | js.Array[Any]
   
   trait Options[P] extends StObject {

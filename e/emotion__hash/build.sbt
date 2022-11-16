@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__hash"
-version := "0.9.0-5650a9"
+version := "0.9.0-f7759c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

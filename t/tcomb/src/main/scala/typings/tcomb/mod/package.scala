@@ -119,4 +119,12 @@ type StructProps = StringDictionary[Constructor[scala.Any]]
 
 type TypeGuardPredicate[T] = js.Function1[/* x */ scala.Any, /* is T */ scala.Boolean]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type UpdatePatch = tcomb.tcomb.Command | {[key: string] : tcomb.tcomb.UpdatePatch}
+}}}
+to avoid circular code involving: 
+- tcomb.tcomb.UpdatePatch
+*/
 type UpdatePatch = Command | StringDictionary[scala.Any]

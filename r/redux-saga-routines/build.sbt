@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "redux-saga-routines"
-version := "3.1-dt-20220624Z-066430"
+version := "3.1-dt-20220624Z-cd1227"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
-  "org.scalablytyped" %%% "redux" % "4.2.0-ff8bb6",
-  "org.scalablytyped" %%% "redux-actions" % "2.6-dt-20211202Z-6237f5",
-  "org.scalablytyped" %%% "redux-form" % "8.3-dt-20220426Z-387b06",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
+  "org.scalablytyped" %%% "redux" % "4.2.0-0479e7",
+  "org.scalablytyped" %%% "redux-actions" % "2.6-dt-20211202Z-d4f324",
+  "org.scalablytyped" %%% "redux-form" % "8.3-dt-20220426Z-24f897",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

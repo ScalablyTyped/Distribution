@@ -121,6 +121,7 @@ import typings.cypress.cypressStrings.blur
 import typings.cypress.cypressStrings.body
 import typings.cypress.cypressStrings.br
 import typings.cypress.cypressStrings.button
+import typings.cypress.cypressStrings.cancel
 import typings.cypress.cypressStrings.canplay
 import typings.cypress.cypressStrings.canplaythrough
 import typings.cypress.cypressStrings.canvas
@@ -19018,6 +19019,20 @@ trait Chainable[Subject] extends StObject {
   def trigger_blur(eventName: blur, x: Double, y: Double): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(eventName: blur, x: Double, y: Double, options: Partial[TriggerOptions & ObjectLike & FocusEvent]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, options: Partial[TriggerOptions & ObjectLike & Event]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, position: Unit, options: Partial[TriggerOptions & ObjectLike & Event]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, position: PositionType, options: Partial[TriggerOptions & ObjectLike & Event]): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, x: Double, y: Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_cancel(eventName: cancel, x: Double, y: Double, options: Partial[TriggerOptions & ObjectLike & Event]): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplay(eventName: canplay): Chainable[Subject] = js.native
   @JSName("trigger")

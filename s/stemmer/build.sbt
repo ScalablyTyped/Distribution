@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stemmer"
-version := "2.0.1-03eda9"
+version := "2.0.1-0d2e07"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanize-string"
-version := "3.0.0-6cf1db"
+version := "3.0.0-8e130b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

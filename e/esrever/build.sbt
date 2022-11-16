@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esrever"
-version := "0.2-dt-20211223Z-749377"
+version := "0.2-dt-20211223Z-caf8e7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

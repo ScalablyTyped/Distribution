@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zengin-code"
-version := "1.0-dt-20211202Z-7f320e"
+version := "1.0-dt-20211202Z-1e74c1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

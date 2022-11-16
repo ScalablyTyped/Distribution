@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerFromPortalItemParams
-  extends StObject
-     with Object {
+trait LayerFromPortalItemParams extends StObject {
   
   /**
     * The object representing an ArcGIS Online or ArcGIS Enterprise portal item from which to load the layer.
@@ -19,13 +15,8 @@ trait LayerFromPortalItemParams
 }
 object LayerFromPortalItemParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    portalItem: PortalItem,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LayerFromPortalItemParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), portalItem = portalItem.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(portalItem: PortalItem): LayerFromPortalItemParams = {
+    val __obj = js.Dynamic.literal(portalItem = portalItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerFromPortalItemParams]
   }
   

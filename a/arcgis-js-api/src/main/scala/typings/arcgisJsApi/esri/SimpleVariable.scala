@@ -7,15 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.featureSet
 import typings.arcgisJsApi.arcgisJsApiStrings.featureSetCollection
 import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.arcgisJsApi.arcgisJsApiStrings.text
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SimpleVariable
   extends StObject
-     with Object
      with ProfileVariable {
   
   /**
@@ -35,13 +32,10 @@ trait SimpleVariable
 object SimpleVariable {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     `type`: feature | featureSet | featureSetCollection | typings.arcgisJsApi.arcgisJsApiStrings.geometry | number | text | date | boolean
   ): SimpleVariable = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleVariable]
   }

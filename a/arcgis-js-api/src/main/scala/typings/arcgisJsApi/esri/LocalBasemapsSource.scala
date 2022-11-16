@@ -17,13 +17,6 @@ trait LocalBasemapsSource
   var basemaps: Collection[Basemap] = js.native
   
   /**
-    * Refreshes the source basemaps.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-LocalBasemapsSource.html#refresh)
-    */
-  def refresh(): scala.Unit = js.native
-  
-  /**
     * The source's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-LocalBasemapsSource.html#state)

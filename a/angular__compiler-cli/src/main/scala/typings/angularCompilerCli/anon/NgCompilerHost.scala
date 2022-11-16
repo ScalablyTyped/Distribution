@@ -136,6 +136,9 @@ trait NgCompilerHost extends StObject {
     js.UndefOr[SourceFile]
   ] = js.native
   
+  /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
+  var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+  
   /**
     * Retrieves a set of `ts.SourceFile`s which should not be emitted as JS files.
     *

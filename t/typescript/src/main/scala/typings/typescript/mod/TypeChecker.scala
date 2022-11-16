@@ -55,6 +55,8 @@ trait TypeChecker extends StObject {
   
   def getIndexInfoOfType(`type`: Type, kind: IndexKind): js.UndefOr[IndexInfo] = js.native
   
+  def getIndexInfosOfIndexSymbol(indexSymbol: Symbol): js.Array[IndexInfo] = js.native
+  
   def getIndexInfosOfType(`type`: Type): js.Array[IndexInfo] = js.native
   
   def getIndexTypeOfType(`type`: Type, kind: IndexKind): js.UndefOr[Type] = js.native

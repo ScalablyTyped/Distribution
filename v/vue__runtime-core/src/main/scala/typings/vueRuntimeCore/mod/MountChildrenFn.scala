@@ -4,6 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type MountChildrenFn = (children : @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren, container : @vue/runtime-core.@vue/runtime-core.RendererElement, anchor : @vue/runtime-core.@vue/runtime-core.RendererNode | null, parentComponent : @vue/runtime-core.@vue/runtime-core.ComponentInternalInstance | null, parentSuspense : @vue/runtime-core.@vue/runtime-core.SuspenseBoundary | null, isSVG : boolean, slotScopeIds : std.Array<string> | null, optimized : boolean, start : number | undefined): void
+}}}
+to avoid circular code involving: 
+- @vue/runtime-core.@vue/runtime-core.MountChildrenFn
+- @vue/runtime-core.@vue/runtime-core.VNodeArrayChildren
+*/
 @js.native
 trait MountChildrenFn extends StObject {
   

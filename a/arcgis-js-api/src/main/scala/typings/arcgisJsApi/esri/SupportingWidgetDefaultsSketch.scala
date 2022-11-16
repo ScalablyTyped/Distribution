@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SupportingWidgetDefaultsSketch
-  extends StObject
-     with Object {
+trait SupportingWidgetDefaultsSketch extends StObject {
   
   /**
     * An object containing the `defaultUpdateOptions` for the [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html) widget.
@@ -40,12 +36,8 @@ trait SupportingWidgetDefaultsSketch
 }
 object SupportingWidgetDefaultsSketch {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SupportingWidgetDefaultsSketch = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SupportingWidgetDefaultsSketch = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportingWidgetDefaultsSketch]
   }
   

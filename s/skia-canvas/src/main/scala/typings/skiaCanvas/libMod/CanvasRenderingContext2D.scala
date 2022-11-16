@@ -63,9 +63,6 @@ trait CanvasRenderingContext2D
   
   def reset(): Unit = js.native
   
-  def roundRect(x: Double, y: Double, width: Double, height: Double, radii: js.Array[CornerRadius]): Any = js.native
-  def roundRect(x: Double, y: Double, width: Double, height: Double, radii: Double): Any = js.native
-  
   var textTracking: Double = js.native
   
   var textWrap: Boolean = js.native

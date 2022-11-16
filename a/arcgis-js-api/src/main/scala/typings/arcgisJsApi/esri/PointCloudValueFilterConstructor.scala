@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudValueFilterConstructor
   extends StObject
-     with /**
-  * Every lidar point can have a classification that defines the type of surface that reflected the laser pulse.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html)
-  */
-Instantiable0[PointCloudValueFilter]
+     with Instantiable0[PointCloudValueFilter]
      with Instantiable1[/* properties */ PointCloudValueFilterProperties, PointCloudValueFilter] {
   
   def fromJSON(json: Any): PointCloudValueFilter = js.native

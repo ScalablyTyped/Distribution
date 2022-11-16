@@ -28,5 +28,10 @@ trait ExtentAndRotationGeoreference
     */
   var rotation: Double = js.native
   
-  var `type`: `extent-and-rotation` = js.native
+  /**
+    * The georeference type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ExtentAndRotationGeoreference.html#type)
+    */
+  val `type`: `extent-and-rotation` = js.native
 }

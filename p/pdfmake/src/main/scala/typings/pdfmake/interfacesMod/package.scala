@@ -23,6 +23,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Column = Content & ColumnProperties
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Content = string | std.Array<pdfmake.pdfmake/interfaces.Content> | pdfmake.pdfmake/interfaces.ContentText | pdfmake.pdfmake/interfaces.ContentColumns | pdfmake.pdfmake/interfaces.ContentStack | pdfmake.pdfmake/interfaces.ContentUnorderedList | pdfmake.pdfmake/interfaces.ContentOrderedList | pdfmake.pdfmake/interfaces.ContentTable | pdfmake.pdfmake/interfaces.ContentAnchor | pdfmake.pdfmake/interfaces.ContentPageReference | pdfmake.pdfmake/interfaces.ContentTextReference | pdfmake.pdfmake/interfaces.ContentToc | pdfmake.pdfmake/interfaces.ContentTocItem | pdfmake.pdfmake/interfaces.ContentImage | pdfmake.pdfmake/interfaces.ContentSvg | pdfmake.pdfmake/interfaces.ContentQr | pdfmake.pdfmake/interfaces.ContentCanvas
+}}}
+to avoid circular code involving: 
+- pdfmake.pdfmake/interfaces.Column
+- pdfmake.pdfmake/interfaces.Content
+*/
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - js.Array[scala.Any]
@@ -67,6 +76,17 @@ type ForbidOtherElementProperties[TProperty /* <: text | columns | stack | ul | 
 
 type Margins = Double | (js.Tuple2[Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type OrderedListElement = pdfmake.pdfmake/interfaces.Content & pdfmake.pdfmake/interfaces.OrderedListElementProperties
+}}}
+to avoid circular code involving: 
+- pdfmake.pdfmake/interfaces.Content
+- pdfmake.pdfmake/interfaces.OrderedListElement
+*/
+type OrderedListElement = Any & OrderedListElementProperties
+
 type PatternFill = js.Tuple2[String, String]
 
 /* Rewritten from type alias, can be one of: 
@@ -83,6 +103,15 @@ type StyleReference = String | Style | (js.Array[String | Style])
 
 type TFontDictionary = StringDictionary[TFontFamilyTypes]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type TableCell = {} | pdfmake.pdfmake/interfaces.Content & pdfmake.pdfmake/interfaces.TableCellProperties
+}}}
+to avoid circular code involving: 
+- pdfmake.pdfmake/interfaces.Content
+- pdfmake.pdfmake/interfaces.TableCell
+*/
 type TableCell = js.Object | (Any & TableCellProperties)
 
 /* Rewritten from type alias, can be one of: 
@@ -91,6 +120,17 @@ type TableCell = js.Object | (Any & TableCellProperties)
   - typings.pdfmake.interfacesMod.CustomTableLayout
 */
 type TableLayout = _TableLayout | String
+
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type UnorderedListElement = pdfmake.pdfmake/interfaces.Content & pdfmake.pdfmake/interfaces.UnorderedListElementProperties
+}}}
+to avoid circular code involving: 
+- pdfmake.pdfmake/interfaces.Content
+- pdfmake.pdfmake/interfaces.UnorderedListElement
+*/
+type UnorderedListElement = Any & UnorderedListElementProperties
 
 type VerticalDynamicCellLayout[T] = js.Function3[/* columnIndex */ Double, /* node */ ContentTable, /* rowIndex */ Double, T | Null]
 

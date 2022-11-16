@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unicode-properties"
-version := "1.3-dt-20220127Z-1745c0"
+version := "1.3-dt-20220127Z-7b3b4d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

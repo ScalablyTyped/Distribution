@@ -1,18 +1,24 @@
 package typings.arcgisJsApi
 
-import typings.arcgisJsApi.esri.ExtentConstructor
+import typings.arcgisJsApi.esri.Extent
 import typings.arcgisJsApi.esri.ExtentProperties
-import typings.arcgisJsApi.esri.MeshConstructor
+import typings.arcgisJsApi.esri.Mesh
+import typings.arcgisJsApi.esri.MeshCreateBoxParams
+import typings.arcgisJsApi.esri.MeshCreateCylinderParams
+import typings.arcgisJsApi.esri.MeshCreateFromGLTFParams
+import typings.arcgisJsApi.esri.MeshCreateFromPolygonParams
+import typings.arcgisJsApi.esri.MeshCreatePlaneParams
+import typings.arcgisJsApi.esri.MeshCreateSphereParams
 import typings.arcgisJsApi.esri.MeshProperties
-import typings.arcgisJsApi.esri.MultipointConstructor
+import typings.arcgisJsApi.esri.Multipoint
 import typings.arcgisJsApi.esri.MultipointProperties
-import typings.arcgisJsApi.esri.PointConstructor
+import typings.arcgisJsApi.esri.Point
 import typings.arcgisJsApi.esri.PointProperties
-import typings.arcgisJsApi.esri.PolygonConstructor
+import typings.arcgisJsApi.esri.Polygon
 import typings.arcgisJsApi.esri.PolygonProperties
-import typings.arcgisJsApi.esri.PolylineConstructor
+import typings.arcgisJsApi.esri.Polyline
 import typings.arcgisJsApi.esri.PolylineProperties
-import typings.arcgisJsApi.esri.SpatialReferenceConstructor
+import typings.arcgisJsApi.esri.SpatialReference
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,9 +26,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esriGeometryMod {
   
-  @JSImport("esri/geometry", "Extent")
-  @js.native
-  val Extent: ExtentConstructor = js.native
+  object Extent {
+    
+    @JSImport("esri/geometry", "Extent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Extent]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Extent")
@@ -34,7 +45,7 @@ object esriGeometryMod {
     */
   open class ExtentCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Extent {
+       with Extent {
     def this(properties: ExtentProperties) = this()
     
     /**
@@ -46,9 +57,62 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "Mesh")
-  @js.native
-  val Mesh: MeshConstructor = js.native
+  object Mesh {
+    
+    @JSImport("esri/geometry", "Mesh")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a mesh representing a box.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+      */
+    inline def createBox(location: Point): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")(location.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    inline def createBox(location: Point, params: MeshCreateBoxParams): typings.arcgisJsApi.esri.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createBox")(location.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    
+    /**
+      * Creates a mesh representing a cylinder.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+      */
+    inline def createCylinder(location: Point): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createCylinder")(location.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    inline def createCylinder(location: Point, params: MeshCreateCylinderParams): typings.arcgisJsApi.esri.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createCylinder")(location.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    
+    /**
+      * Creates a new mesh geometry from a glTF model referenced by the `url` parameter.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
+      */
+    inline def createFromGLTF(location: Point, url: String): js.Promise[typings.arcgisJsApi.esri.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromGLTF")(location.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.arcgisJsApi.esri.Mesh]]
+    inline def createFromGLTF(location: Point, url: String, params: MeshCreateFromGLTFParams): js.Promise[typings.arcgisJsApi.esri.Mesh] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromGLTF")(location.asInstanceOf[js.Any], url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.arcgisJsApi.esri.Mesh]]
+    
+    /**
+      * Creates a new mesh geometry from a polygon geometry.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
+      */
+    inline def createFromPolygon(polygon: Polygon): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPolygon")(polygon.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    inline def createFromPolygon(polygon: Polygon, params: MeshCreateFromPolygonParams): typings.arcgisJsApi.esri.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPolygon")(polygon.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    
+    /**
+      * Creates a mesh representing a plane.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+      */
+    inline def createPlane(location: Point): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createPlane")(location.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    inline def createPlane(location: Point, params: MeshCreatePlaneParams): typings.arcgisJsApi.esri.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlane")(location.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    
+    /**
+      * Creates a mesh representing a sphere.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+      */
+    inline def createSphere(location: Point): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createSphere")(location.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    inline def createSphere(location: Point, params: MeshCreateSphereParams): typings.arcgisJsApi.esri.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createSphere")(location.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Mesh]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Mesh")
@@ -60,7 +124,7 @@ object esriGeometryMod {
     */
   open class MeshCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Mesh {
+       with Mesh {
     def this(properties: MeshProperties) = this()
     
     /**
@@ -72,9 +136,14 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "Multipoint")
-  @js.native
-  val Multipoint: MultipointConstructor = js.native
+  object Multipoint {
+    
+    @JSImport("esri/geometry", "Multipoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Multipoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Multipoint]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Multipoint")
@@ -86,7 +155,7 @@ object esriGeometryMod {
     */
   open class MultipointCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Multipoint {
+       with Multipoint {
     def this(properties: MultipointProperties) = this()
     
     /**
@@ -98,9 +167,14 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "Point")
-  @js.native
-  val Point: PointConstructor = js.native
+  object Point {
+    
+    @JSImport("esri/geometry", "Point")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Point]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Point")
@@ -112,7 +186,7 @@ object esriGeometryMod {
     */
   open class PointCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Point {
+       with Point {
     def this(properties: PointProperties) = this()
     
     /**
@@ -124,9 +198,21 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "Polygon")
-  @js.native
-  val Polygon: PolygonConstructor = js.native
+  object Polygon {
+    
+    @JSImport("esri/geometry", "Polygon")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Converts the given Extent to a Polygon instance.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#fromExtent)
+      */
+    inline def fromExtent(extent: Extent): typings.arcgisJsApi.esri.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Polygon]
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Polygon]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Polygon")
@@ -138,7 +224,7 @@ object esriGeometryMod {
     */
   open class PolygonCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Polygon {
+       with Polygon {
     def this(properties: PolygonProperties) = this()
     
     /**
@@ -150,9 +236,14 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "Polyline")
-  @js.native
-  val Polyline: PolylineConstructor = js.native
+  object Polyline {
+    
+    @JSImport("esri/geometry", "Polyline")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.Polyline]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "Polyline")
@@ -164,7 +255,7 @@ object esriGeometryMod {
     */
   open class PolylineCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.Polyline {
+       with Polyline {
     def this(properties: PolylineProperties) = this()
     
     /**
@@ -176,9 +267,34 @@ object esriGeometryMod {
     override def toJSON(): Any = js.native
   }
   
-  @JSImport("esri/geometry", "SpatialReference")
-  @js.native
-  val SpatialReference: SpatialReferenceConstructor = js.native
+  object SpatialReference {
+    
+    @JSImport("esri/geometry", "SpatialReference")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A convenience spatial reference instance for WGS84.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WGS84)
+      */
+    @JSImport("esri/geometry", "SpatialReference.WGS84")
+    @js.native
+    def WGS84: typings.arcgisJsApi.esri.SpatialReference = js.native
+    inline def WGS84_=(x: typings.arcgisJsApi.esri.SpatialReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WGS84")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A convenience spatial reference instance for Web Mercator.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WebMercator)
+      */
+    @JSImport("esri/geometry", "SpatialReference.WebMercator")
+    @js.native
+    def WebMercator: typings.arcgisJsApi.esri.SpatialReference = js.native
+    inline def WebMercator_=(x: typings.arcgisJsApi.esri.SpatialReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebMercator")(x.asInstanceOf[js.Any])
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.SpatialReference]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/geometry", "SpatialReference")
@@ -190,7 +306,7 @@ object esriGeometryMod {
     */
   open class SpatialReferenceCls ()
     extends StObject
-       with typings.arcgisJsApi.esri.SpatialReference {
+       with SpatialReference {
     def this(properties: SpatialReferenceProperties) = this()
     
     /**

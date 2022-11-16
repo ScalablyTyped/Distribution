@@ -109,6 +109,15 @@ object typesBaseMod {
   
   type ArrayInterpolation[MergedProps, StyleType /* <: ReactNativeStyle */] = js.Array[Interpolation[MergedProps, StyleType]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @emotion/native.@emotion/native/types/base.InterpolationPrimitive<StyleType> | @emotion/native.@emotion/native/types/base.ArrayCSSInterpolation<StyleType>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/native.@emotion/native/types/base.ArrayCSSInterpolation
+  - @emotion/native.@emotion/native/types/base.CSSInterpolation
+  */
   type CSSInterpolation[StyleType /* <: ReactNativeStyle */] = InterpolationPrimitive[StyleType] | Any
   
   @js.native
@@ -215,12 +224,31 @@ object typesBaseMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionInterpolation = (mergedProps : MergedProps): @emotion/native.@emotion/native/types/base.Interpolation<MergedProps, StyleType>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/native.@emotion/native/types/base.ArrayInterpolation
+  - @emotion/native.@emotion/native/types/base.FunctionInterpolation
+  - @emotion/native.@emotion/native/types/base.Interpolation
+  */
   @js.native
   trait FunctionInterpolation[MergedProps, StyleType /* <: ReactNativeStyle */] extends StObject {
     
     def apply(mergedProps: MergedProps): Interpolation[MergedProps, StyleType] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = @emotion/native.@emotion/native/types/base.InterpolationPrimitive<StyleType> | @emotion/native.@emotion/native/types/base.ArrayInterpolation<MergedProps, StyleType> | @emotion/native.@emotion/native/types/base.FunctionInterpolation<MergedProps, StyleType>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/native.@emotion/native/types/base.ArrayInterpolation
+  - @emotion/native.@emotion/native/types/base.Interpolation
+  */
   type Interpolation[MergedProps, StyleType /* <: ReactNativeStyle */] = InterpolationPrimitive[StyleType] | Any | (FunctionInterpolation[MergedProps, StyleType])
   
   type InterpolationPrimitive[StyleType /* <: ReactNativeStyle */] = js.UndefOr[Null | Boolean | Double | String | ObjectInterpolation[StyleType]]

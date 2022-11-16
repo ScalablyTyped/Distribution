@@ -29,14 +29,14 @@ trait DrawAction
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#getCoordsAndPointFromScreenPoint)
     */
-  def getCoordsAndPointFromScreenPoint(screenPoint: DrawActionScreenPoint): FromScreenPointResult | Any = js.native
+  def getCoordsAndPointFromScreenPoint(screenPoint: DrawActionScreenPoint): FromScreenPointResult | Null = js.native
   
   /**
     * Maps the given screen point to a map point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#getCoordsFromScreenPoint)
     */
-  def getCoordsFromScreenPoint(screenPoint: DrawActionScreenPoint): js.Array[Double] | Any = js.native
+  def getCoordsFromScreenPoint(screenPoint: DrawActionScreenPoint): js.Array[Double] | Null = js.native
   
   /**
     * Controls whether the created geometry will have z coordinates or not.
@@ -59,7 +59,7 @@ trait DrawAction
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#screenToMap)
     */
-  def screenToMap(screenPoint: DrawActionScreenPoint): Point | Any = js.native
+  def screenToMap(screenPoint: DrawActionScreenPoint): Point | Null = js.native
   
   /**
     * Incrementally undo actions recorded in the stack.

@@ -403,6 +403,14 @@ type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes
   */
 type IsExactlyAny[T] = `true`
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JSXElementConstructor = (props : P): rax.rax.RaxElement<any, string | rax.rax.JSXElementConstructor<any>> | null | new (props : P): rax.rax.Component<P, any, any>
+}}}
+to avoid circular code involving: 
+- rax.rax.JSXElementConstructor
+*/
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, (RaxElement[Any, String | Any]) | Null]) | (Instantiable1[/* props */ P, Component[P, Any, Any]])
 
 type Key = String | Double
@@ -478,6 +486,15 @@ type PropsWithoutRef[P] = P
 
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RaxChild = rax.rax.RaxElement<any, string | rax.rax.JSXElementConstructor<any>> | rax.rax.RaxText
+}}}
+to avoid circular code involving: 
+- rax.rax.JSXElementConstructor
+- rax.rax.RaxChild
+*/
 type RaxChild = (RaxElement[Any, String | Any]) | RaxText
 
 type RaxComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 217, starting with typings.rax.raxStrings.a_, typings.rax.raxStrings.abbr, typings.rax.raxStrings.address */ Any */, P] = RaxElement[P, T]
@@ -505,6 +522,16 @@ type RaxInstance = (Component[Any, js.Object, Any]) | Element
   */
 type RaxManagedAttributes[C, P] = P
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RaxNode = rax.rax.RaxChild | rax.rax.RaxFragment | rax.rax.RaxPortal | boolean | null | undefined
+}}}
+to avoid circular code involving: 
+- rax.rax.JSXElementConstructor
+- rax.rax.RaxChild
+- rax.rax.RaxNode
+*/
 type RaxNode = js.UndefOr[Any | RaxFragment | RaxPortal | Boolean | Null]
 
 /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "condense-whitespace"
-version := "3.0.0-f9e0b3"
+version := "3.0.0-247907"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

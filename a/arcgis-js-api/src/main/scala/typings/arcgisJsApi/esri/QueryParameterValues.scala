@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryParameterValues
-  extends StObject
-     with Object {
+trait QueryParameterValues extends StObject {
   
   /**
     * The parameter name.
@@ -26,14 +22,8 @@ trait QueryParameterValues
 }
 object QueryParameterValues {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String | (js.Array[js.Date | Double | String]) | Double | js.Date
-  ): QueryParameterValues = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(name: String, value: String | (js.Array[js.Date | Double | String]) | Double | js.Date): QueryParameterValues = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameterValues]
   }
   

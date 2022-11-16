@@ -147,6 +147,14 @@ object libGrammarPegjsDistGrammarMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type IClassParts = std.Array<string | sip.js.sip.js/lib/grammar/pegjs/dist/grammar.IClassParts>
+  }}}
+  to avoid circular code involving: 
+  - sip.js.sip.js/lib/grammar/pegjs/dist/grammar.IClassParts
+  */
   @js.native
   trait IClassParts
     extends StObject

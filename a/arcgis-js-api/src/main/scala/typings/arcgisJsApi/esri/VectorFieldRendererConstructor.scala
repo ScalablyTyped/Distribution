@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VectorFieldRendererConstructor
   extends StObject
-     with /**
-  * The VectorFieldRenderer allows you to display your raster data with vector symbols.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html)
-  */
-Instantiable0[VectorFieldRenderer]
+     with Instantiable0[VectorFieldRenderer]
      with Instantiable1[/* properties */ VectorFieldRendererProperties, VectorFieldRenderer] {
   
   def fromJSON(json: Any): VectorFieldRenderer = js.native

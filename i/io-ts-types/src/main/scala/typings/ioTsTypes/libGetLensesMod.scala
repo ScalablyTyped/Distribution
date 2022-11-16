@@ -16,5 +16,14 @@ object libGetLensesMod {
   
   type ExactHasLenses = ExactType[HasLenses, Any, Any, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type HasLenses = io-ts.io-ts.InterfaceType<any, any, any, unknown> | io-ts-types.io-ts-types/lib/getLenses.ExactHasLenses
+  }}}
+  to avoid circular code involving: 
+  - io-ts-types.io-ts-types/lib/getLenses.ExactHasLenses
+  - io-ts-types.io-ts-types/lib/getLenses.HasLenses
+  */
   type HasLenses = (InterfaceType[Any, Any, Any, Any]) | Any
 }

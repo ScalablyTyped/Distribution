@@ -8,6 +8,7 @@ import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
 import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
+import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
@@ -182,6 +183,15 @@ object cjsTriggerEventMod {
   inline def default_blur(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_cancel(node: Null, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: Null, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: Null, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: Null, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: HTMLElement, eventName: cancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: HTMLElement, eventName: cancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: HTMLElement, eventName: cancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_canplay(node: Null, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_canplay(node: Null, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -327,6 +327,15 @@ type RawLoaderDefinitionFunction[OptionsType, ContextAdditions] = js.ThisFunctio
 /* additionalData */ js.UndefOr[AdditionalData], 
 String | Unit | Buffer | (js.Promise[String | Buffer])]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RecursiveArrayOrRecord = {[index: string] : webpack.webpack.RecursiveArrayOrRecord<T>} | std.Array<webpack.webpack.RecursiveArrayOrRecord<T>> | T
+}}}
+to avoid circular code involving: 
+- webpack.webpack.CodeValue
+- webpack.webpack.RecursiveArrayOrRecord
+*/
 type RecursiveArrayOrRecord[T] = StringDictionary[Any] | js.Array[Any] | T
 
 type Remotes = (js.Array[String | RemotesObject]) | RemotesObject
@@ -338,10 +347,35 @@ type RemotesObject = StringDictionary[String | RemotesConfig | js.Array[String]]
 
 type Rule = String | js.RegExp
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RuleSetCondition = string | std.RegExp | (value : string): boolean | webpack.webpack.RuleSetLogicalConditions | std.Array<webpack.webpack.RuleSetCondition>
+}}}
+to avoid circular code involving: 
+- webpack.webpack.RuleSetCondition
+*/
 type RuleSetCondition = String | js.RegExp | (js.Function1[/* value */ String, Boolean]) | RuleSetLogicalConditions | js.Array[Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RuleSetConditionAbsolute = string | std.RegExp | (value : string): boolean | webpack.webpack.RuleSetLogicalConditionsAbsolute | std.Array<webpack.webpack.RuleSetConditionAbsolute>
+}}}
+to avoid circular code involving: 
+- webpack.webpack.RuleSetConditionAbsolute
+*/
 type RuleSetConditionAbsolute = String | js.RegExp | (js.Function1[/* value */ String, Boolean]) | RuleSetLogicalConditionsAbsolute | js.Array[Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RuleSetConditionOrConditions = string | std.RegExp | (value : string): boolean | webpack.webpack.RuleSetLogicalConditions | std.Array<webpack.webpack.RuleSetCondition>
+}}}
+to avoid circular code involving: 
+- webpack.webpack.RuleSetCondition
+- webpack.webpack.RuleSetConditionOrConditions
+*/
 type RuleSetConditionOrConditions = String | js.RegExp | (js.Function1[/* value */ String, Boolean]) | RuleSetLogicalConditions | js.Array[Any]
 
 /* Rewritten from type alias, can be one of: 

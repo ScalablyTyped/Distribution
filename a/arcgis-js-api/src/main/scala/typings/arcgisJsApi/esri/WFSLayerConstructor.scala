@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WFSLayerConstructor
   extends StObject
-     with /**
-  * The WFSLayer is used to create a layer based on an [OGC Web Feature Service](https://www.ogc.org/standards/wfs) (WFS).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html)
-  */
-Instantiable0[WFSLayer]
+     with Instantiable0[WFSLayer]
      with Instantiable1[/* properties */ WFSLayerProperties, WFSLayer] {
   
   def fromJSON(json: Any): WFSLayer = js.native

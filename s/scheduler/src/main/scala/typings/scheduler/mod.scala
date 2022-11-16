@@ -93,6 +93,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FrameCallbackType = (): scheduler.scheduler.FrameCallbackType | void
+  }}}
+  to avoid circular code involving: 
+  - scheduler.scheduler.FrameCallbackType
+  */
   @js.native
   trait FrameCallbackType extends StObject {
     

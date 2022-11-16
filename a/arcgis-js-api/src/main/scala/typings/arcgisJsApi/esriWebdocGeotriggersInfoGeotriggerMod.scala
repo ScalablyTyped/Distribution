@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Geotrigger
-import typings.arcgisJsApi.esri.GeotriggerConstructor
 import typings.arcgisJsApi.esri.GeotriggerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebdocGeotriggersInfoGeotriggerMod extends Shortcut {
+/* static members */
+object esriWebdocGeotriggersInfoGeotriggerMod {
   
-  @JSImport("esri/webdoc/geotriggersInfo/Geotrigger", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GeotriggerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/geotriggersInfo/Geotrigger", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWebdocGeotriggersInfoGeotriggerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-Geotrigger.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Geotrigger {
     def this(properties: GeotriggerProperties) = this()
@@ -35,9 +29,9 @@ object esriWebdocGeotriggersInfoGeotriggerMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/webdoc/geotriggersInfo/Geotrigger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & GeotriggerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWebdocGeotriggersInfoGeotriggerMod.foo` */
-  override def _to: js.Object & GeotriggerConstructor = ^
+  inline def fromJSON(json: Any): Geotrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Geotrigger]
 }

@@ -330,6 +330,14 @@ object mod {
     def logMessage(message: String): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONAble = number | boolean | string | null | std.Array<@zedit/upf.@zedit/upf.JSONAble> | {[k: string] : @zedit/upf.@zedit/upf.JSONAble}
+  }}}
+  to avoid circular code involving: 
+  - @zedit/upf.@zedit/upf.JSONAble
+  */
   type JSONAble = Double | Boolean | String | Null | js.Array[Any] | StringDictionary[Any]
   
   type LegacyPatcher[S /* <: js.Object */, L /* <: js.Object */] = (RequiredFiles & (Patcher[S, L])) | ((Execute[S, L]) & (Patcher[S, L]))

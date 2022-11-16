@@ -75,4 +75,18 @@ trait HeatmapRenderer
     */
   @JSName("type")
   val type_HeatmapRenderer: typings.arcgisJsApi.arcgisJsApiStrings.heatmap = js.native
+  
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression)
+    */
+  var valueExpression: String = js.native
+  
+  /**
+    * The title identifying and describing the [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpressionTitle)
+    */
+  var valueExpressionTitle: String = js.native
 }

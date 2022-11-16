@@ -34,6 +34,17 @@ object srcNgtscPartialEvaluatorSrcInterfaceMod {
     /* private */ var host: Any = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ForeignFunctionResolver = (fn : @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/imports.Reference<typescript.typescript.FunctionDeclaration | typescript.typescript.MethodDeclaration | typescript.typescript.FunctionExpression>, callExpr : typescript.typescript.CallExpression, resolve : (expr : typescript.typescript.Expression): @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue, unresolvable : @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/dynamic.DynamicValue<unknown>): @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue
+  }}}
+  to avoid circular code involving: 
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/interface.ForeignFunctionResolver
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValue
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValueArray
+  - @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/partial_evaluator/src/result.ResolvedValueMap
+  */
   @js.native
   trait ForeignFunctionResolver extends StObject {
     

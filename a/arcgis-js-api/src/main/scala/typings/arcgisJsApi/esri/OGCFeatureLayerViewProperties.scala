@@ -9,15 +9,6 @@ trait OGCFeatureLayerViewProperties
      with LayerViewProperties {
   
   /**
-    * The effect applied to the layerView.
-    *
-    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#effect)
-    */
-  var effect: js.UndefOr[FeatureEffectProperties] = js.undefined
-  
-  /**
     * The featureEffect can be used to draw attention features of interest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#featureEffect)
@@ -39,10 +30,6 @@ object OGCFeatureLayerViewProperties {
   }
   
   extension [Self <: OGCFeatureLayerViewProperties](x: Self) {
-    
-    inline def setEffect(value: FeatureEffectProperties): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
-    
-    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

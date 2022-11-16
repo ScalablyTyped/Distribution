@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapTimeSlider
-  extends StObject
-     with Object {
+trait WebMapTimeSlider extends StObject {
   
   /**
     * The current time extent of the time slider.
@@ -69,19 +65,16 @@ trait WebMapTimeSlider
 object WebMapTimeSlider {
   
   inline def apply(
-    constructor: js.Function,
     currentTimeExtent: TimeExtent,
     fullTimeExtent: TimeExtent,
-    hasOwnProperty: PropertyKey => Boolean,
     loop: Boolean,
     numStops: Double,
     numThumbs: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
     stopDelay: Double,
     stopInterval: TimeInterval,
     stops: js.Array[js.Date]
   ): WebMapTimeSlider = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], currentTimeExtent = currentTimeExtent.asInstanceOf[js.Any], fullTimeExtent = fullTimeExtent.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), loop = loop.asInstanceOf[js.Any], numStops = numStops.asInstanceOf[js.Any], numThumbs = numThumbs.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stopDelay = stopDelay.asInstanceOf[js.Any], stopInterval = stopInterval.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentTimeExtent = currentTimeExtent.asInstanceOf[js.Any], fullTimeExtent = fullTimeExtent.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], numStops = numStops.asInstanceOf[js.Any], numThumbs = numThumbs.asInstanceOf[js.Any], stopDelay = stopDelay.asInstanceOf[js.Any], stopInterval = stopInterval.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMapTimeSlider]
   }
   

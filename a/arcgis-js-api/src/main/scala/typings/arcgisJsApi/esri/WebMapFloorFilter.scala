@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapFloorFilter
-  extends StObject
-     with Object {
+trait WebMapFloorFilter extends StObject {
   
   /**
     * Indicates whether the FloorFilter is active and filtering the displayed content according to the [FloorFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter.html) selection.
@@ -62,18 +58,15 @@ trait WebMapFloorFilter
 object WebMapFloorFilter {
   
   inline def apply(
-    constructor: js.Function,
     enabled: Boolean,
     facility: String,
-    hasOwnProperty: PropertyKey => Boolean,
     level: String,
     longNames: Boolean,
     minimized: Boolean,
     pinnedLevels: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     site: String
   ): WebMapFloorFilter = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], facility = facility.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), level = level.asInstanceOf[js.Any], longNames = longNames.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], pinnedLevels = pinnedLevels.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), site = site.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], facility = facility.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], longNames = longNames.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any], pinnedLevels = pinnedLevels.asInstanceOf[js.Any], site = site.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMapFloorFilter]
   }
   

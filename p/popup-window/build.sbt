@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popup-window"
-version := "1.0-dt-20211202Z-388bdc"
+version := "1.0-dt-20211202Z-580ae9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

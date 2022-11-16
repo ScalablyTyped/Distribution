@@ -3,6 +3,8 @@ package typings.vueTestUtils
 import typings.std.Node
 import typings.std.Record
 import typings.vueRuntimeCore.mod.Component
+import typings.vueRuntimeCore.mod.ComponentOptionsBase
+import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vueRuntimeCore.mod.ComputedOptions
 import typings.vueRuntimeCore.mod.Directive
 import typings.vueRuntimeCore.mod.MethodOptions
@@ -11,6 +13,7 @@ import typings.vueTestUtils.distTypesMod.GlobalMountOptions
 import typings.vueTestUtils.distTypesMod.RefSelector
 import typings.vueTestUtils.distTypesMod.Stub
 import typings.vueTestUtils.distTypesMod.Stubs
+import typings.vueTestUtils.vueTestUtilsBooleans.`false`
 import typings.vueTestUtils.vueTestUtilsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,6 +34,22 @@ object distUtilsMod {
   inline def hasOwnProperty_[O /* <: js.Object */](obj: O, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def hasOwnProperty_[O /* <: js.Object */](obj: O, prop: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def hasOwnProperty_[O /* <: js.Object */](obj: O, prop: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def hasSetupState_false(
+    vm: ComponentPublicInstance[
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      `false`, 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
+    ]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSetupState")(vm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isClassComponent(component: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

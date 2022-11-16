@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi__mixin-get-child-by-name"
-version := "7.0.4-d97027"
+version := "7.0.4-186382"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

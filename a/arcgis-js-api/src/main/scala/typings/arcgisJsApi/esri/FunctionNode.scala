@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.function
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FunctionNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -30,14 +27,8 @@ trait FunctionNode
 }
 object FunctionNode {
   
-  inline def apply(
-    args: ListNode,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FunctionNode = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(args: ListNode, name: String): FunctionNode = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("function")
     __obj.asInstanceOf[FunctionNode]
   }

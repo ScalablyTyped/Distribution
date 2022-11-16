@@ -433,13 +433,12 @@ object distTypesComplexTypesModelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     A extends mobx-state-tree.mobx-state-tree/dist/types/utility-types/snapshotProcessor._NotCustomized ? B : A & B
     }}}
     */
-  @js.native
-  trait CustomJoin[A, B] extends StObject
+  type CustomJoin[A, B] = B
   
   /**
     * Name of the properties of an object that can't be set to undefined, any or unknown
@@ -458,7 +457,7 @@ object distTypesComplexTypesModelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends mobx-state-tree.mobx-state-tree/dist/types/complex-types/model.IModelType<any, infer O, any, any> ? O : never
     }}}
@@ -468,7 +467,7 @@ object distTypesComplexTypesModelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends mobx-state-tree.mobx-state-tree/dist/types/complex-types/model.IModelType<infer P, any, any, any> ? P : never
     }}}
@@ -522,13 +521,12 @@ object distTypesComplexTypesModelMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     undefined extends C ? TV : FV
     }}}
     */
-  @js.native
-  trait IsOptionalValue[C, TV, FV] extends StObject
+  type IsOptionalValue[C, TV, FV] = TV
   
   type ModelActions = StringDictionary[js.Function]
   
@@ -548,13 +546,12 @@ object distTypesComplexTypesModelMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {[k: string] : mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType} ? T : {[ K in keyof T ]: T[K] extends mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType? T[K] : T[K] extends string? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string | undefined, string, string> : T[K] extends number? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<number | undefined, number, number> : T[K] extends boolean? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<boolean | undefined, boolean, boolean> : T[K] extends std.Date? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<number | std.Date | undefined, number, std.Date> : never}
     }}}
     */
-  @js.native
-  trait ModelPropertiesDeclarationToProperties[T /* <: ModelPropertiesDeclaration */] extends StObject
+  type ModelPropertiesDeclarationToProperties[T /* <: ModelPropertiesDeclaration */] = T
   
   type ModelSnapshotType[P /* <: ModelProperties */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: P[K]['SnapshotType']} */ js.Any) & NonEmptyObject_
   

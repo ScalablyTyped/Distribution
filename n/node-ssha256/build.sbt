@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-ssha256"
-version := "0.1-dt-20211202Z-88223a"
+version := "0.1-dt-20211202Z-fd5b55"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

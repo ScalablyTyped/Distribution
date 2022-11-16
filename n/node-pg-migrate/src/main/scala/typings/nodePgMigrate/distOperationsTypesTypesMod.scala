@@ -28,6 +28,15 @@ object distOperationsTypesTypesMod {
     String | js.Array[String]
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type AddTypeValue = (typeName : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Name, value : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value, options : node-pg-migrate.node-pg-migrate/dist/operations/typesTypes.AddTypeValueOptions | undefined): string | std.Array<string>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  - node-pg-migrate.node-pg-migrate/dist/operations/typesTypes.AddTypeValue
+  */
   @js.native
   trait AddTypeValue extends StObject {
     
@@ -73,6 +82,16 @@ object distOperationsTypesTypesMod {
     var reverse_Original: CreateTypeFn = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CreateTypeFn = (typeName : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Name, values : std.Array<node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value> & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions | / * Inlined {[name: string] : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Type} & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions * /
+  {[name: string] : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Type,   ifExists :boolean | undefined,   cascade :boolean | undefined}): string | std.Array<string>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  - node-pg-migrate.node-pg-migrate/dist/operations/typesTypes.CreateTypeFn
+  */
   @js.native
   trait CreateTypeFn extends StObject {
     

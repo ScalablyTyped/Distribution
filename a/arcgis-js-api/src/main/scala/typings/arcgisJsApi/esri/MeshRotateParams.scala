@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshRotateParams
-  extends StObject
-     with Object {
+trait MeshRotateParams extends StObject {
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
@@ -26,12 +22,8 @@ trait MeshRotateParams
 }
 object MeshRotateParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MeshRotateParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MeshRotateParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshRotateParams]
   }
   

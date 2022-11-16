@@ -81,6 +81,13 @@ trait WCSLayerProperties
   var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
   
   /**
+    * The URL of the WCS service endpoint of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#url)
+    */
+  var url: js.UndefOr[String] = js.undefined
+  
+  /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
     *
     * @default true
@@ -138,6 +145,10 @@ object WCSLayerProperties {
     inline def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     inline def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
     

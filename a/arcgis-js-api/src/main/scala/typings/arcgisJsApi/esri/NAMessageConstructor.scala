@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NAMessageConstructor
   extends StObject
-     with /**
-  * Represents a message generated during the execution of a network analyst task.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html)
-  */
-Instantiable0[NAMessage]
+     with Instantiable0[NAMessage]
      with Instantiable1[/* properties */ NAMessageProperties, NAMessage] {
   
   def fromJSON(json: Any): NAMessage = js.native

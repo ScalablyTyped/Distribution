@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__karma-credential-loader"
-version := "3.40.0-71f7ab"
+version := "3.40.0-28812b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

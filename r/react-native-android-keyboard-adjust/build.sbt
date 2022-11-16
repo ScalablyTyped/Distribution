@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-android-keyboard-adjust"
-version := "1.0-dt-20211202Z-670b2a"
+version := "1.0-dt-20211202Z-b9f653"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

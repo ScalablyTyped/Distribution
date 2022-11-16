@@ -74,9 +74,17 @@ object libTypescriptFabricMod {
   @js.native
   val RNSVGRect: NativeComponentType[typings.reactNativeSvg.libTypescriptFabricRectNativeComponentMod.NativeProps] = js.native
   
-  @JSImport("react-native-svg/lib/typescript/fabric", "RNSVGSvg")
+  @JSImport("react-native-svg/lib/typescript/fabric", "RNSVGSvgAndroid")
   @js.native
-  val RNSVGSvg: NativeComponentType[typings.reactNativeSvg.libTypescriptFabricSvgViewNativeComponentMod.NativeProps] = js.native
+  val RNSVGSvgAndroid: NativeComponentType[
+    typings.reactNativeSvg.libTypescriptFabricAndroidSvgViewNativeComponentMod.NativeProps
+  ] = js.native
+  
+  @JSImport("react-native-svg/lib/typescript/fabric", "RNSVGSvgIOS")
+  @js.native
+  val RNSVGSvgIOS: NativeComponentType[
+    typings.reactNativeSvg.libTypescriptFabricIossvgviewnativecomponentMod.NativeProps
+  ] = js.native
   
   @JSImport("react-native-svg/lib/typescript/fabric", "RNSVGSymbol")
   @js.native

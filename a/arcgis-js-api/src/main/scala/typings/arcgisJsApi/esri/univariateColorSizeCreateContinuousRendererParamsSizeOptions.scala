@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait univariateColorSizeCreateContinuousRendererParamsSizeOptions
-  extends StObject
-     with Object {
+trait univariateColorSizeCreateContinuousRendererParamsSizeOptions extends StObject {
   
   /**
     * In authoring apps, the user may select a pre-defined size scheme.
@@ -19,12 +15,8 @@ trait univariateColorSizeCreateContinuousRendererParamsSizeOptions
 }
 object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): univariateColorSizeCreateContinuousRendererParamsSizeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): univariateColorSizeCreateContinuousRendererParamsSizeOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptions]
   }
   

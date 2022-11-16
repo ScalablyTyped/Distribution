@@ -20,6 +20,7 @@ object content {
     - typings.arcgisJsApi.esri.AttachmentsContent
     - typings.arcgisJsApi.esri.CustomContent
     - typings.arcgisJsApi.esri.ExpressionContent
+    - typings.arcgisJsApi.esri.RelationshipContent
   */
   trait Content extends StObject
   
@@ -30,6 +31,8 @@ object content {
   type FieldsContent = typings.arcgisJsApi.esri.FieldsContent
   
   type MediaContent = typings.arcgisJsApi.esri.MediaContent
+  
+  type RelationshipContent = typings.arcgisJsApi.esri.RelationshipContent
   
   type TextContent = typings.arcgisJsApi.esri.TextContent
 }

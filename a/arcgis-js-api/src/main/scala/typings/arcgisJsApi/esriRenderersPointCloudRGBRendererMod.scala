@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudRGBRenderer
-import typings.arcgisJsApi.esri.PointCloudRGBRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudRGBRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersPointCloudRGBRendererMod extends Shortcut {
+/* static members */
+object esriRenderersPointCloudRGBRendererMod {
   
-  @JSImport("esri/renderers/PointCloudRGBRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudRGBRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudRGBRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersPointCloudRGBRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudRGBRenderer {
     def this(properties: PointCloudRGBRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersPointCloudRGBRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/PointCloudRGBRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudRGBRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersPointCloudRGBRendererMod.foo` */
-  override def _to: js.Object & PointCloudRGBRendererConstructor = ^
+  inline def fromJSON(json: Any): PointCloudRGBRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudRGBRenderer]
 }

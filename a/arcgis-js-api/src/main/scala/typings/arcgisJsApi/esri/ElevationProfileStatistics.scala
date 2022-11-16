@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationProfileStatistics
-  extends StObject
-     with Object {
+trait ElevationProfileStatistics extends StObject {
   
   /**
     * The average elevation along the path.
@@ -71,17 +67,14 @@ object ElevationProfileStatistics {
   inline def apply(
     avgElevation: Double,
     avgSlope: Double,
-    constructor: js.Function,
     elevationGain: Double,
     elevationLoss: Double,
-    hasOwnProperty: PropertyKey => Boolean,
     maxDistance: Double,
     maxElevation: Double,
     maxSlope: Double,
-    minElevation: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
+    minElevation: Double
   ): ElevationProfileStatistics = {
-    val __obj = js.Dynamic.literal(avgElevation = avgElevation.asInstanceOf[js.Any], avgSlope = avgSlope.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], elevationGain = elevationGain.asInstanceOf[js.Any], elevationLoss = elevationLoss.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxDistance = maxDistance.asInstanceOf[js.Any], maxElevation = maxElevation.asInstanceOf[js.Any], maxSlope = maxSlope.asInstanceOf[js.Any], minElevation = minElevation.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(avgElevation = avgElevation.asInstanceOf[js.Any], avgSlope = avgSlope.asInstanceOf[js.Any], elevationGain = elevationGain.asInstanceOf[js.Any], elevationLoss = elevationLoss.asInstanceOf[js.Any], maxDistance = maxDistance.asInstanceOf[js.Any], maxElevation = maxElevation.asInstanceOf[js.Any], maxSlope = maxSlope.asInstanceOf[js.Any], minElevation = minElevation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationProfileStatistics]
   }
   

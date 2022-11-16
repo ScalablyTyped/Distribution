@@ -358,6 +358,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Middleware = (element : stylis.stylis.Element, index : number, children : std.Array<stylis.stylis.Element>, callback : stylis.stylis.Middleware): string | void
+  }}}
+  to avoid circular code involving: 
+  - stylis.stylis.Middleware
+  */
   @js.native
   trait Middleware_ extends StObject {
     

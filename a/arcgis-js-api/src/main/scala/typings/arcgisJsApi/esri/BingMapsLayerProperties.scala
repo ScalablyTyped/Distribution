@@ -39,7 +39,7 @@ trait BingMapsLayerProperties
   var region: js.UndefOr[String] = js.undefined
   
   /**
-    * For more information on Bing map styles please visit: https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
+    * For more information on Bing map styles please visit: https://learn.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
     *
     * @default "road"
     *

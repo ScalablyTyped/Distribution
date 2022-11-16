@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.RelationshipQuery
-import typings.arcgisJsApi.esri.RelationshipQueryConstructor
 import typings.arcgisJsApi.esri.RelationshipQueryProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportRelationshipQueryMod extends Shortcut {
+/* static members */
+object esriRestSupportRelationshipQueryMod {
   
-  @JSImport("esri/rest/support/RelationshipQuery", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RelationshipQueryConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/RelationshipQuery", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportRelationshipQueryMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with RelationshipQuery {
     def this(properties: RelationshipQueryProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportRelationshipQueryMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/RelationshipQuery", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RelationshipQueryConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportRelationshipQueryMod.foo` */
-  override def _to: js.Object & RelationshipQueryConstructor = ^
+  inline def fromJSON(json: Any): RelationshipQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[RelationshipQuery]
 }

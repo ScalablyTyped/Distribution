@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "import-from"
-version := "4.0.0-7b60e5"
+version := "4.0.0-cf5149"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

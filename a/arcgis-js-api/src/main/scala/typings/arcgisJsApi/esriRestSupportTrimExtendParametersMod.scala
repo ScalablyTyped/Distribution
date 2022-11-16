@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TrimExtendParameters
-import typings.arcgisJsApi.esri.TrimExtendParametersConstructor
 import typings.arcgisJsApi.esri.TrimExtendParametersProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportTrimExtendParametersMod extends Shortcut {
+/* static members */
+object esriRestSupportTrimExtendParametersMod {
   
-  @JSImport("esri/rest/support/TrimExtendParameters", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TrimExtendParametersConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/TrimExtendParameters", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportTrimExtendParametersMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TrimExtendParameters {
     def this(properties: TrimExtendParametersProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportTrimExtendParametersMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/TrimExtendParameters", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TrimExtendParametersConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportTrimExtendParametersMod.foo` */
-  override def _to: js.Object & TrimExtendParametersConstructor = ^
+  inline def fromJSON(json: Any): TrimExtendParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TrimExtendParameters]
 }

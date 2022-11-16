@@ -138,6 +138,13 @@ trait ArcGISImageServiceProperties extends StObject {
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
+    * Represents a multidimensional subset of raster data.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalSubset)
+    */
+  var multidimensionalSubset: js.UndefOr[MultidimensionalSubsetProperties] = js.undefined
+  
+  /**
     * The pixel value representing no available information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData)
@@ -266,6 +273,10 @@ object ArcGISImageServiceProperties {
     inline def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
     
     inline def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
+    
+    inline def setMultidimensionalSubset(value: MultidimensionalSubsetProperties): Self = StObject.set(x, "multidimensionalSubset", value.asInstanceOf[js.Any])
+    
+    inline def setMultidimensionalSubsetUndefined: Self = StObject.set(x, "multidimensionalSubset", js.undefined)
     
     inline def setNoData(value: Double | js.Array[Double]): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     

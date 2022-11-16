@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsSaveAsOptions
-  extends StObject
-     with Object {
+trait DirectionsSaveAsOptions extends StObject {
   
   /**
     * The folder in which to save the item.
@@ -19,12 +15,8 @@ trait DirectionsSaveAsOptions
 }
 object DirectionsSaveAsOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DirectionsSaveAsOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): DirectionsSaveAsOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectionsSaveAsOptions]
   }
   

@@ -68,6 +68,10 @@ object mod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -89,6 +93,10 @@ object mod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -153,6 +161,10 @@ object mod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -226,6 +238,10 @@ object mod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var role: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */

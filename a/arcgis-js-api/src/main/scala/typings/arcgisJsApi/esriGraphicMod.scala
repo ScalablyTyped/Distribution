@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Graphic
-import typings.arcgisJsApi.esri.GraphicConstructor
 import typings.arcgisJsApi.esri.GraphicProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriGraphicMod extends Shortcut {
+/* static members */
+object esriGraphicMod {
   
-  @JSImport("esri/Graphic", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GraphicConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/Graphic", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriGraphicMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Graphic {
     def this(properties: GraphicProperties) = this()
@@ -35,9 +29,9 @@ object esriGraphicMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/Graphic", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & GraphicConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriGraphicMod.foo` */
-  override def _to: js.Object & GraphicConstructor = ^
+  inline def fromJSON(json: Any): Graphic = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Graphic]
 }

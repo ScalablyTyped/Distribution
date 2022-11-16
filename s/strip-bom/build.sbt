@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strip-bom"
-version := "5.0.0-b1abec"
+version := "5.0.0-65ea94"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

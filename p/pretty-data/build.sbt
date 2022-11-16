@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pretty-data"
-version := "0.40-dt-20211202Z-ea6590"
+version := "0.40-dt-20211202Z-3c1031"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

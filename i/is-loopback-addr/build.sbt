@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-loopback-addr"
-version := "2.0.1-509d85"
+version := "2.0.1-a0decd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

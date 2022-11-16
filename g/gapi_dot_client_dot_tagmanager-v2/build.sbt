@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_tagmanager-v2"
-version := "0.0-dt-20220912Z-eb0d8d"
+version := "0.0-dt-20220912Z-ba6538"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

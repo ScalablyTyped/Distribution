@@ -158,6 +158,15 @@ object mod extends Shortcut {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ValidJSON = {[key: string] : json-form-data.json-form-data.ValidJSON | std.Array<json-form-data.json-form-data.ValidJSON> | json-form-data.json-form-data.ValidJSONValue | std.Array<json-form-data.json-form-data.ValidJSONValue> | std.FileList}
+  }}}
+  to avoid circular code involving: 
+  - json-form-data.json-form-data.FormDataFormatter
+  - json-form-data.json-form-data.ValidJSON
+  */
   trait ValidJSON
     extends StObject
        with /* key */ StringDictionary[ValidJSON | (js.Array[ValidJSON | ValidJSONValue]) | ValidJSONValue | FileList]

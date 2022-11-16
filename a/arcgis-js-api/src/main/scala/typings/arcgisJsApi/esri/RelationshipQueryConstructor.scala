@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelationshipQueryConstructor
   extends StObject
-     with /**
-  * This class defines parameters for executing queries for related records from a layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html)
-  */
-Instantiable0[RelationshipQuery]
+     with Instantiable0[RelationshipQuery]
      with Instantiable1[/* properties */ RelationshipQueryProperties, RelationshipQuery] {
   
   def fromJSON(json: Any): RelationshipQuery = js.native

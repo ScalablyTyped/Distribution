@@ -12,7 +12,7 @@ trait DeleteNodeInput extends StObject {
   var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
-    * The unique identifier of the network that the node is on. Ethereum public networks have the following NetworkIds:    n-ethereum-mainnet     n-ethereum-rinkeby     n-ethereum-ropsten   
+    * The unique identifier of the network that the node is on. Ethereum public networks have the following NetworkIds:    n-ethereum-mainnet     n-ethereum-goerli     n-ethereum-rinkeby     n-ethereum-ropsten   
     */
   var NetworkId: ResourceIdString
   

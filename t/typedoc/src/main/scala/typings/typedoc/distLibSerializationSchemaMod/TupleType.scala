@@ -26,6 +26,8 @@ object TupleType {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
+    inline def setElementsVarargs(value: typings.typedoc.distLibModelsTypesMod.SomeType*): Self = StObject.set(x, "elements", js.Array(value*))
+    
     inline def setType(value: ToSerialized[/* "tuple" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

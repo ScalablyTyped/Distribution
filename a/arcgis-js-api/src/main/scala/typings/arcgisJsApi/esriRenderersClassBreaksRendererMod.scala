@@ -1,21 +1,15 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ClassBreaksRenderer
-import typings.arcgisJsApi.esri.ClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.ClassBreaksRendererProperties
 import typings.arcgisJsApi.esri.VisualVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersClassBreaksRendererMod extends Shortcut {
+/* static members */
+object esriRenderersClassBreaksRendererMod {
   
-  @JSImport("esri/renderers/ClassBreaksRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ClassBreaksRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/ClassBreaksRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -23,7 +17,7 @@ object esriRenderersClassBreaksRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ClassBreaksRenderer {
     def this(properties: ClassBreaksRendererProperties) = this()
@@ -44,9 +38,9 @@ object esriRenderersClassBreaksRendererMod extends Shortcut {
     /* CompleteClass */
     var visualVariables: js.Array[VisualVariable] = js.native
   }
+  @JSImport("esri/renderers/ClassBreaksRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ClassBreaksRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersClassBreaksRendererMod.foo` */
-  override def _to: js.Object & ClassBreaksRendererConstructor = ^
+  inline def fromJSON(json: Any): ClassBreaksRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ClassBreaksRenderer]
 }

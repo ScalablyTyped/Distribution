@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vscode-webview"
-version := "1.57-dt-20220829Z-54f214"
+version := "1.57-dt-20220829Z-a9384e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

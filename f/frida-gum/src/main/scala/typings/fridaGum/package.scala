@@ -146,8 +146,40 @@ type NativeFunctionReturnValue = RecursiveValuesOf[NativeFunctionReturnTypeMap]
   */
 type PageProtection = String
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RecursiveKeysOf = keyof T | std.Array<frida-gum.RecursiveKeysOf<T>> | []
+}}}
+to avoid circular code involving: 
+- frida-gum.GetNativeCallbackArgumentValue
+- frida-gum.GetNativeCallbackReturnValue
+- frida-gum.GetNativeFunctionArgumentValue
+- frida-gum.GetNativeFunctionReturnValue
+- frida-gum.NativeCallbackArgumentType
+- frida-gum.NativeCallbackReturnType
+- frida-gum.NativeFunctionArgumentType
+- frida-gum.NativeFunctionReturnType
+- frida-gum.RecursiveKeysOf
+*/
 type RecursiveKeysOf[T] = (/* keyof T */ String) | js.Array[Any]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type RecursiveValuesOf = T[keyof T] | std.Array<frida-gum.RecursiveValuesOf<T>>
+}}}
+to avoid circular code involving: 
+- frida-gum.GetNativeCallbackArgumentValue
+- frida-gum.GetNativeCallbackReturnValue
+- frida-gum.GetNativeFunctionArgumentValue
+- frida-gum.GetNativeFunctionReturnValue
+- frida-gum.NativeCallbackArgumentValue
+- frida-gum.NativeCallbackReturnValue
+- frida-gum.NativeFunctionArgumentValue
+- frida-gum.NativeFunctionReturnValue
+- frida-gum.RecursiveValuesOf
+*/
 type RecursiveValuesOf[T] = (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | js.Array[Any]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.

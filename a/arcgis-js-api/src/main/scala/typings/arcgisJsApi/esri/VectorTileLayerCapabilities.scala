@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VectorTileLayerCapabilities
-  extends StObject
-     with Object {
+trait VectorTileLayerCapabilities extends StObject {
   
   var exportMap: VectorTileLayerCapabilitiesExportMap
   
@@ -29,14 +25,11 @@ trait VectorTileLayerCapabilities
 object VectorTileLayerCapabilities {
   
   inline def apply(
-    constructor: js.Function,
     exportMap: VectorTileLayerCapabilitiesExportMap,
     exportTiles: Any,
-    hasOwnProperty: PropertyKey => Boolean,
-    operations: VectorTileLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean
+    operations: VectorTileLayerCapabilitiesOperations
   ): VectorTileLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }
   

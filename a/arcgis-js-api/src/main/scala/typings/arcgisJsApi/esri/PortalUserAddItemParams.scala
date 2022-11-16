@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalUserAddItemParams
-  extends StObject
-     with Object {
+trait PortalUserAddItemParams extends StObject {
   
   /**
     * The component used to stream the data represented by the item to the client.
@@ -33,13 +29,8 @@ trait PortalUserAddItemParams
 }
 object PortalUserAddItemParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    item: PortalItem,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PortalUserAddItemParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), item = item.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(item: PortalItem): PortalUserAddItemParams = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalUserAddItemParams]
   }
   

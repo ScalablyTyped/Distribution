@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.LineSymbolMarkerPropertie
 import typings.arcgisJsApi.arcgisJsApiStrings.`dash-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`long-dash-dot-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`long-dash-dot`
@@ -48,7 +49,7 @@ trait SimpleLineSymbolProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
     */
-  var marker: js.UndefOr[LineSymbolMarkerProperties] = js.undefined
+  var marker: js.UndefOr[LineSymbolMarkerPropertie | Null] = js.undefined
   
   /**
     * Maximum allowed ratio of the width of a miter join to the line width.
@@ -87,7 +88,9 @@ object SimpleLineSymbolProperties {
     
     inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    inline def setMarker(value: LineSymbolMarkerProperties): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: LineSymbolMarkerPropertie): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerNull: Self = StObject.set(x, "marker", null)
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     

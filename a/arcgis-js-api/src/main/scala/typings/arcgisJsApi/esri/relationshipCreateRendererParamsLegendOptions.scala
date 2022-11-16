@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait relationshipCreateRendererParamsLegendOptions
-  extends StObject
-     with Object {
+trait relationshipCreateRendererParamsLegendOptions extends StObject {
   
   /**
     * Indicates whether to include the renderer in the legend.
@@ -26,12 +22,8 @@ trait relationshipCreateRendererParamsLegendOptions
 }
 object relationshipCreateRendererParamsLegendOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): relationshipCreateRendererParamsLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): relationshipCreateRendererParamsLegendOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[relationshipCreateRendererParamsLegendOptions]
   }
   

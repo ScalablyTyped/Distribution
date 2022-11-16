@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EsriErrorDetails
-  extends StObject
-     with Object {
+trait EsriErrorDetails extends StObject {
   
   /**
     * A function to retrieve headers sent from the server.
@@ -83,20 +79,17 @@ trait EsriErrorDetails
 object EsriErrorDetails {
   
   inline def apply(
-    constructor: js.Function,
     getHeader: /* headerName */ String => String,
-    hasOwnProperty: PropertyKey => Boolean,
     httpStatus: Double,
     messageCode: String,
     messages: js.Array[String],
-    propertyIsEnumerable: PropertyKey => Boolean,
     raw: Any | String,
     requestOptions: Any,
     ssl: Boolean,
     subCode: Double,
     url: String
   ): EsriErrorDetails = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), httpStatus = httpStatus.asInstanceOf[js.Any], messageCode = messageCode.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), raw = raw.asInstanceOf[js.Any], requestOptions = requestOptions.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], subCode = subCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader), httpStatus = httpStatus.asInstanceOf[js.Any], messageCode = messageCode.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], requestOptions = requestOptions.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], subCode = subCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsriErrorDetails]
   }
   

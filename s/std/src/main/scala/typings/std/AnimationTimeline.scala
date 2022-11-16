@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnimationTimeline extends StObject {
   
   /* standard dom */
-  val currentTime: Double | Null
+  val currentTime: CSSNumberish | Null
 }
 object AnimationTimeline {
   
@@ -18,7 +18,7 @@ object AnimationTimeline {
   
   extension [Self <: AnimationTimeline](x: Self) {
     
-    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: CSSNumberish): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
   }

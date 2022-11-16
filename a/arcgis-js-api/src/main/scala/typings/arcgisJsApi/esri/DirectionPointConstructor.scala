@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DirectionPointConstructor
   extends StObject
-     with /**
-  * The DirectionPoint represents direction items as points with various display information.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html)
-  */
-Instantiable0[DirectionPoint]
+     with Instantiable0[DirectionPoint]
      with Instantiable1[/* properties */ DirectionPointProperties, DirectionPoint] {
   
   /**

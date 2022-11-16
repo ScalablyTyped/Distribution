@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ElementExpressionInfoConstructor
   extends StObject
-     with /**
-  * Defines an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression used to create an [ExpressionContent](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html) element in a [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ElementExpressionInfo.html)
-  */
-Instantiable0[ElementExpressionInfo]
+     with Instantiable0[ElementExpressionInfo]
      with Instantiable1[/* properties */ ElementExpressionInfoProperties, ElementExpressionInfo] {
   
   def fromJSON(json: Any): ElementExpressionInfo = js.native

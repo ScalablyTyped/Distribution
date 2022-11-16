@@ -73,6 +73,14 @@ object grouping {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type IGridExpandedHash = {[key: string] : ui-grid.ui-grid.grouping.IGridExpandedHash | string}
+  }}}
+  to avoid circular code involving: 
+  - ui-grid.ui-grid.grouping.IGridExpandedHash
+  */
   trait IGridExpandedHash
     extends StObject
        with /* key */ StringDictionary[IGridExpandedHash | String]

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GraphicColor
-  extends StObject
-     with Object {
+trait GraphicColor extends StObject {
   
   /**
     * The color of the trace result graphic in the view.
@@ -33,15 +29,8 @@ trait GraphicColor
 }
 object GraphicColor {
   
-  inline def apply(
-    color: js.Array[Double],
-    constructor: js.Function,
-    haloOpacity: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    hex: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GraphicColor = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], haloOpacity = haloOpacity.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hex = hex.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(color: js.Array[Double], haloOpacity: Double, hex: String): GraphicColor = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], haloOpacity = haloOpacity.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicColor]
   }
   

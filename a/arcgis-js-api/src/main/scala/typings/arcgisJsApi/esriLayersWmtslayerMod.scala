@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,19 +34,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.WMTSLayer
-import typings.arcgisJsApi.esri.WMTSLayerConstructor
 import typings.arcgisJsApi.esri.WMTSLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersWmtslayerMod extends Shortcut {
+/* static members */
+object esriLayersWmtslayerMod {
   
-  @JSImport("esri/layers/WMTSLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WMTSLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/WMTSLayer", JSImport.Namespace)
   @js.native
   /**
@@ -55,7 +49,7 @@ object esriLayersWmtslayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WMTSLayer {
     def this(properties: WMTSLayerProperties) = this()
@@ -126,9 +120,9 @@ object esriLayersWmtslayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/WMTSLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WMTSLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersWmtslayerMod.foo` */
-  override def _to: js.Object & WMTSLayerConstructor = ^
+  inline def fromJSON(json: Any): WMTSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WMTSLayer]
 }

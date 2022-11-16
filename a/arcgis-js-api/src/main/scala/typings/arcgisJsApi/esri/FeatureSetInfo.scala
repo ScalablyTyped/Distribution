@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureSetInfo
-  extends StObject
-     with Object {
+trait FeatureSetInfo extends StObject {
   
   /**
     * The [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html).
@@ -26,14 +22,8 @@ trait FeatureSetInfo
 }
 object FeatureSetInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    featureSet: FeatureSet,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureSetInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], featureSet = featureSet.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(featureSet: FeatureSet, layer: FeatureLayer): FeatureSetInfo = {
+    val __obj = js.Dynamic.literal(featureSet = featureSet.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSetInfo]
   }
   

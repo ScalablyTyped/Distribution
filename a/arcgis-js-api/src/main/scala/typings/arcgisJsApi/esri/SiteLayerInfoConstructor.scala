@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SiteLayerInfoConstructor
   extends StObject
-     with /**
-  * The SiteLayerInfo class describes the boundaries of managed sites and is used for visualizing groups of facilities.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SiteLayerInfo.html)
-  */
-Instantiable0[SiteLayerInfo]
+     with Instantiable0[SiteLayerInfo]
      with Instantiable1[/* properties */ SiteLayerInfoProperties, SiteLayerInfo] {
   
   def fromJSON(json: Any): SiteLayerInfo = js.native

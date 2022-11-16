@@ -278,11 +278,32 @@ object libIcomponentMod {
   
   type ITokenBase[TViewProps, TTokens] = js.UndefOr[(ITokenFunctionOrObject[TViewProps, TTokens]) | `false` | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ITokenBaseArray = std.Array<@uifabric/foundation.@uifabric/foundation/lib/IComponent.IToken<TViewProps, TTokens>>
+  }}}
+  to avoid circular code involving: 
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.IToken
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.ITokenBaseArray
+  */
   @js.native
   trait ITokenBaseArray[TViewProps, TTokens]
     extends StObject
        with Array[IToken[TViewProps, TTokens]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ITokenFunction = (props : TViewProps, theme : @fluentui/theme.@fluentui/theme/lib/types/ITheme.ITheme): @uifabric/foundation.@uifabric/foundation/lib/IComponent.IToken<TViewProps, TTokens>
+  }}}
+  to avoid circular code involving: 
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.IToken
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.ITokenBase
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.ITokenBaseArray
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.ITokenFunction
+  - @uifabric/foundation.@uifabric/foundation/lib/IComponent.ITokenFunctionOrObject
+  */
   @js.native
   trait ITokenFunction[TViewProps, TTokens] extends StObject {
     

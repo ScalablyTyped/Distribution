@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.CodedValueDomain
-import typings.arcgisJsApi.esri.CodedValueDomainConstructor
 import typings.arcgisJsApi.esri.CodedValueDomainProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportCodedValueDomainMod extends Shortcut {
+/* static members */
+object esriLayersSupportCodedValueDomainMod {
   
-  @JSImport("esri/layers/support/CodedValueDomain", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CodedValueDomainConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/CodedValueDomain", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportCodedValueDomainMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with CodedValueDomain {
     def this(properties: CodedValueDomainProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportCodedValueDomainMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/CodedValueDomain", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & CodedValueDomainConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportCodedValueDomainMod.foo` */
-  override def _to: js.Object & CodedValueDomainConstructor = ^
+  inline def fromJSON(json: Any): CodedValueDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[CodedValueDomain]
 }

@@ -127,21 +127,54 @@ object mod {
   /**
     * Any valid JSON collection value.
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonCollection = sfdx-faye.sfdx-faye.JsonMap | sfdx-faye.sfdx-faye.JsonArray
+  }}}
+  to avoid circular code involving: 
+  - sfdx-faye.sfdx-faye.AnyJson
+  - sfdx-faye.sfdx-faye.JsonArray
+  - sfdx-faye.sfdx-faye.JsonCollection
+  */
   type JsonCollection = JsonMap | Any
   
   /**
     * Any JSON-compatible object.
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: sfdx-faye.sfdx-faye.AnyJson} */ trait JsonMap extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonMap = std.Record<string, sfdx-faye.sfdx-faye.AnyJson>
+  }}}
+  to avoid circular code involving: 
+  - sfdx-faye.sfdx-faye.AnyJson
+  - sfdx-faye.sfdx-faye.JsonArray
+  - sfdx-faye.sfdx-faye.JsonCollection
+  - sfdx-faye.sfdx-faye.JsonMap
+  */
+  @js.native
+  trait JsonMap extends StObject
   
   /**
     * Any valid JSON primitive value.
     */
   type JsonPrimitive = Null | Boolean | Double | String
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: sfdx-faye.sfdx-faye.AnyJson} */ trait Message extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Message = sfdx-faye.sfdx-faye.JsonMap
+  }}}
+  to avoid circular code involving: 
+  - sfdx-faye.sfdx-faye.AnyJson
+  - sfdx-faye.sfdx-faye.JsonArray
+  - sfdx-faye.sfdx-faye.JsonCollection
+  - sfdx-faye.sfdx-faye.JsonMap
+  - sfdx-faye.sfdx-faye.Message
+  */
+  @js.native
+  trait Message extends StObject
   
   /**
     * Return type for the Streaming and Polling client.
@@ -181,6 +214,19 @@ object mod {
   /**
     * Function type for processing messages
     */
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StreamProcessor = (message : sfdx-faye.sfdx-faye.Message): sfdx-faye.sfdx-faye.StatusResult
+  }}}
+  to avoid circular code involving: 
+  - sfdx-faye.sfdx-faye.AnyJson
+  - sfdx-faye.sfdx-faye.JsonArray
+  - sfdx-faye.sfdx-faye.JsonCollection
+  - sfdx-faye.sfdx-faye.JsonMap
+  - sfdx-faye.sfdx-faye.Message
+  - sfdx-faye.sfdx-faye.StreamProcessor
+  */
   @js.native
   trait StreamProcessor extends StObject {
     

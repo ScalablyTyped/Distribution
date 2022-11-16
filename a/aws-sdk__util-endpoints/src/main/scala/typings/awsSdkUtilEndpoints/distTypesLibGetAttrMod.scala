@@ -13,5 +13,13 @@ object distTypesLibGetAttrMod {
   
   inline def getAttr(value: GetAttrValue, path: String): GetAttrValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttr")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[GetAttrValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type GetAttrValue = string | boolean | {[key: string] : @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/lib/getAttr.GetAttrValue} | std.Array<@aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/lib/getAttr.GetAttrValue>
+  }}}
+  to avoid circular code involving: 
+  - @aws-sdk/util-endpoints.@aws-sdk/util-endpoints/dist-types/lib/getAttr.GetAttrValue
+  */
   type GetAttrValue = String | Boolean | StringDictionary[Any] | js.Array[Any]
 }

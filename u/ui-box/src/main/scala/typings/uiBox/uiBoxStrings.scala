@@ -1,5 +1,7 @@
 package typings.uiBox
 
+import typings.uiBox.distSrcTypesKeyframesMod.KeyframesPositionalKey
+import typings.uiBox.distSrcTypesKeyframesMod.KeyframesTimelineKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +47,42 @@ object uiBoxStrings {
   @js.native
   sealed trait animateTransform extends StObject
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
+  sealed trait animation extends StObject
+  inline def animation: animation = "animation".asInstanceOf[animation]
+  
+  @js.native
+  sealed trait animationDelay extends StObject
+  inline def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
+  
+  @js.native
+  sealed trait animationDirection extends StObject
+  inline def animationDirection: animationDirection = "animationDirection".asInstanceOf[animationDirection]
+  
+  @js.native
+  sealed trait animationDuration extends StObject
+  inline def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
+  
+  @js.native
+  sealed trait animationFillMode extends StObject
+  inline def animationFillMode: animationFillMode = "animationFillMode".asInstanceOf[animationFillMode]
+  
+  @js.native
+  sealed trait animationIterationCount extends StObject
+  inline def animationIterationCount: animationIterationCount = "animationIterationCount".asInstanceOf[animationIterationCount]
+  
+  @js.native
+  sealed trait animationName extends StObject
+  inline def animationName: animationName = "animationName".asInstanceOf[animationName]
+  
+  @js.native
+  sealed trait animationPlayState extends StObject
+  inline def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
+  
+  @js.native
+  sealed trait animationTimingFunction extends StObject
+  inline def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
   
   @js.native
   sealed trait area extends StObject
@@ -293,6 +331,10 @@ object uiBoxStrings {
   @js.native
   sealed trait columnGap extends StObject
   inline def columnGap: columnGap = "columnGap".asInstanceOf[columnGap]
+  
+  @js.native
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
   sealed trait cursor extends StObject
@@ -545,6 +587,13 @@ object uiBoxStrings {
   @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
+  sealed trait from
+    extends StObject
+       with KeyframesPositionalKey
+       with KeyframesTimelineKey
+  inline def from: from = "from".asInstanceOf[from]
   
   @js.native
   sealed trait g extends StObject
@@ -1181,6 +1230,13 @@ object uiBoxStrings {
   @js.native
   sealed trait title extends StObject
   inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
+  sealed trait to
+    extends StObject
+       with KeyframesPositionalKey
+       with KeyframesTimelineKey
+  inline def to: to = "to".asInstanceOf[to]
   
   @js.native
   sealed trait top extends StObject

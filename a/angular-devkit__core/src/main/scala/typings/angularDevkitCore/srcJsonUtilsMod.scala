@@ -17,6 +17,18 @@ object srcJsonUtilsMod {
   
   type JsonArray = js.Array[JsonValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonObject = {[prop: string] : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue}
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidator
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/schema.JsonSchema
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   trait JsonObject
     extends StObject
        with /* prop */ StringDictionary[JsonValue]
@@ -28,5 +40,14 @@ object srcJsonUtilsMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = boolean | string | number | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | null
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   type JsonValue = Boolean | String | Double | Any | JsonObject | Null
 }

@@ -75,6 +75,10 @@ object materialGridListStrings {
   inline def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
   
   @js.native
+  sealed trait backdropFilter extends StObject
+  inline def backdropFilter: backdropFilter = "backdropFilter".asInstanceOf[backdropFilter]
+  
+  @js.native
   sealed trait backfaceVisibility extends StObject
   inline def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
   
@@ -487,6 +491,18 @@ object materialGridListStrings {
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
+  sealed trait container extends StObject
+  inline def container: container = "container".asInstanceOf[container]
+  
+  @js.native
+  sealed trait containerName extends StObject
+  inline def containerName: containerName = "containerName".asInstanceOf[containerName]
+  
+  @js.native
+  sealed trait containerType extends StObject
+  inline def containerType: containerType = "containerType".asInstanceOf[containerType]
+  
+  @js.native
   sealed trait content extends StObject
   inline def content: content = "content".asInstanceOf[content]
   
@@ -605,6 +621,10 @@ object materialGridListStrings {
   @js.native
   sealed trait fontOpticalSizing extends StObject
   inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
+  
+  @js.native
+  sealed trait fontPalette extends StObject
+  inline def fontPalette: fontPalette = "fontPalette".asInstanceOf[fontPalette]
   
   @js.native
   sealed trait fontSize extends StObject
@@ -741,6 +761,10 @@ object materialGridListStrings {
   @js.native
   sealed trait height extends StObject
   inline def height: height = "height".asInstanceOf[height]
+  
+  @js.native
+  sealed trait hyphenateCharacter extends StObject
+  inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
   
   @js.native
   sealed trait hyphens extends StObject
@@ -1041,6 +1065,10 @@ object materialGridListStrings {
   @js.native
   sealed trait overflowAnchor extends StObject
   inline def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
+  
+  @js.native
+  sealed trait overflowClipMargin extends StObject
+  inline def overflowClipMargin: overflowClipMargin = "overflowClipMargin".asInstanceOf[overflowClipMargin]
   
   @js.native
   sealed trait overflowWrap extends StObject

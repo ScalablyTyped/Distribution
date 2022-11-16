@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "3d-bin-packing"
-version := "1.1.3-a2fa59"
+version := "1.1.3-7ac8ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

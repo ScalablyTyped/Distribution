@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrimitiveOverride
-  extends StObject
-     with Object {
+trait PrimitiveOverride extends StObject {
   
   /**
     * The primitive name this override applies to.
@@ -37,14 +33,11 @@ trait PrimitiveOverride
 object PrimitiveOverride {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     primitiveName: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     propertyName: String,
     valueExpressionInfo: PrimitiveOverrideValueExpressionInfo
   ): PrimitiveOverride = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primitiveName = primitiveName.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), propertyName = propertyName.asInstanceOf[js.Any], valueExpressionInfo = valueExpressionInfo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(primitiveName = primitiveName.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], valueExpressionInfo = valueExpressionInfo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPrimitiveOverride")
     __obj.asInstanceOf[PrimitiveOverride]
   }

@@ -14,6 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *        var negativeKeywordList = negativeKeywordListIterator.next();
   *      }
   */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type NegativeKeywordListIterator = google-ads-scripts.GoogleAdsScripts.Base.Iterator<google-ads-scripts.GoogleAdsScripts.AdsApp.NegativeKeywordListIterator>
+}}}
+to avoid circular code involving: 
+- google-ads-scripts.GoogleAdsScripts.AdsApp.NegativeKeywordListIterator
+*/
 trait NegativeKeywordListIterator
   extends StObject
      with Iterator[NegativeKeywordListIterator]

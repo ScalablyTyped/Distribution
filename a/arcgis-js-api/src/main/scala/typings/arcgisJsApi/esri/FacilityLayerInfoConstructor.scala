@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FacilityLayerInfoConstructor
   extends StObject
-     with /**
-  * The FacilityLayerInfo describes the footprints of managed buildings and other structures.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FacilityLayerInfo.html)
-  */
-Instantiable0[FacilityLayerInfo]
+     with Instantiable0[FacilityLayerInfo]
      with Instantiable1[/* properties */ FacilityLayerInfoProperties, FacilityLayerInfo] {
   
   def fromJSON(json: Any): FacilityLayerInfo = js.native

@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,19 +34,14 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.WMSLayer
-import typings.arcgisJsApi.esri.WMSLayerConstructor
 import typings.arcgisJsApi.esri.WMSLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersWmslayerMod extends Shortcut {
+/* static members */
+object esriLayersWmslayerMod {
   
-  @JSImport("esri/layers/WMSLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WMSLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/WMSLayer", JSImport.Namespace)
   @js.native
   /**
@@ -55,7 +49,7 @@ object esriLayersWmslayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WMSLayer {
     def this(properties: WMSLayerProperties) = this()
@@ -126,9 +120,9 @@ object esriLayersWmslayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/WMSLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WMSLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersWmslayerMod.foo` */
-  override def _to: js.Object & WMSLayerConstructor = ^
+  inline def fromJSON(json: Any): WMSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WMSLayer]
 }

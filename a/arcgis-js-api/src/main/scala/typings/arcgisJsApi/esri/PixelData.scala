@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PixelData
-  extends StObject
-     with Object {
+trait PixelData extends StObject {
   
   /**
     * The extent of the `pixelBlock`.
@@ -26,14 +22,8 @@ trait PixelData
 }
 object PixelData {
   
-  inline def apply(
-    constructor: js.Function,
-    extent: Extent,
-    hasOwnProperty: PropertyKey => Boolean,
-    pixelBlock: PixelBlock,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PixelData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixelBlock = pixelBlock.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(extent: Extent, pixelBlock: PixelBlock): PixelData = {
+    val __obj = js.Dynamic.literal(extent = extent.asInstanceOf[js.Any], pixelBlock = pixelBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelData]
   }
   

@@ -10,6 +10,7 @@ trait StorageEvent
   extends StObject
      with Event {
   
+  /** @deprecated */
   /* standard dom */
   def initStorageEvent(
     `type`: java.lang.String,

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeotriggerNotificationOptionsConstructor
   extends StObject
-     with /**
-  * Options that control the notification information sent to a client app client when a Geotrigger condition is met.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html)
-  */
-Instantiable0[GeotriggerNotificationOptions]
+     with Instantiable0[GeotriggerNotificationOptions]
      with Instantiable1[
       /* properties */ GeotriggerNotificationOptionsProperties, 
       GeotriggerNotificationOptions

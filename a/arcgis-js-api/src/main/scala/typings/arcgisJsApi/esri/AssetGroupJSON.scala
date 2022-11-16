@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AssetGroupJSON
-  extends StObject
-     with Object {
+trait AssetGroupJSON extends StObject {
   
   /**
     * The asset group code.
@@ -33,15 +29,8 @@ trait AssetGroupJSON
 }
 object AssetGroupJSON {
   
-  inline def apply(
-    assetGroupCode: Double,
-    assetGroupName: String,
-    assetTypes: js.Array[AssetTypeJSON],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): AssetGroupJSON = {
-    val __obj = js.Dynamic.literal(assetGroupCode = assetGroupCode.asInstanceOf[js.Any], assetGroupName = assetGroupName.asInstanceOf[js.Any], assetTypes = assetTypes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(assetGroupCode: Double, assetGroupName: String, assetTypes: js.Array[AssetTypeJSON]): AssetGroupJSON = {
+    val __obj = js.Dynamic.literal(assetGroupCode = assetGroupCode.asInstanceOf[js.Any], assetGroupName = assetGroupName.asInstanceOf[js.Any], assetTypes = assetTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetGroupJSON]
   }
   

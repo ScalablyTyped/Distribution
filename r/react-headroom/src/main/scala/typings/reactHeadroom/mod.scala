@@ -40,9 +40,13 @@ object mod {
     
     var parent: js.UndefOr[js.Function0[Any]] = js.undefined
     
+    var pin: js.UndefOr[Boolean] = js.undefined
+    
     var pinStart: js.UndefOr[Double] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var tag: js.UndefOr[String] = js.undefined
     
     var upTolerance: js.UndefOr[Double] = js.undefined
     
@@ -97,13 +101,21 @@ object mod {
       
       inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
+      inline def setPin(value: Boolean): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      
       inline def setPinStart(value: Double): Self = StObject.set(x, "pinStart", value.asInstanceOf[js.Any])
       
       inline def setPinStartUndefined: Self = StObject.set(x, "pinStart", js.undefined)
       
+      inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
       inline def setUpTolerance(value: Double): Self = StObject.set(x, "upTolerance", value.asInstanceOf[js.Any])
       

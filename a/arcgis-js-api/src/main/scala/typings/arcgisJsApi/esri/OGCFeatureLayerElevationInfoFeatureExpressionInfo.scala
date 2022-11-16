@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OGCFeatureLayerElevationInfoFeatureExpressionInfo
-  extends StObject
-     with Object {
+trait OGCFeatureLayerElevationInfoFeatureExpressionInfo extends StObject {
   
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Feature Z Profile](https://developers.arcgis.com/javascript/latest/arcade/#z-values).
@@ -19,12 +15,8 @@ trait OGCFeatureLayerElevationInfoFeatureExpressionInfo
 }
 object OGCFeatureLayerElevationInfoFeatureExpressionInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): OGCFeatureLayerElevationInfoFeatureExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): OGCFeatureLayerElevationInfoFeatureExpressionInfo = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OGCFeatureLayerElevationInfoFeatureExpressionInfo]
   }
   

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshVertex
-  extends StObject
-     with Object {
+trait MeshVertex extends StObject {
   
   /**
     * The distance parameter for this vertex; this only applies when tessellating polylines.
@@ -62,10 +58,7 @@ trait MeshVertex
 object MeshVertex {
   
   inline def apply(
-    constructor: js.Function,
     distance: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     uTexcoord: Double,
     vTexcoord: Double,
     x: Double,
@@ -73,7 +66,7 @@ object MeshVertex {
     y: Double,
     yOffset: Double
   ): MeshVertex = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), uTexcoord = uTexcoord.asInstanceOf[js.Any], vTexcoord = vTexcoord.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], uTexcoord = uTexcoord.asInstanceOf[js.Any], vTexcoord = vTexcoord.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshVertex]
   }
   

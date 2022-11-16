@@ -8,15 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.month
 import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.arcgisJsApi.arcgisJsApiStrings.second
 import typings.arcgisJsApi.arcgisJsApiStrings.year
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IntervalQualifierNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -44,14 +41,8 @@ trait IntervalQualifierNode
 }
 object IntervalQualifierNode {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    period: day | month | hour | second | year | minute,
-    precision: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): IntervalQualifierNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondary = "number")
+  inline def apply(period: day | month | hour | second | year | minute, precision: Double): IntervalQualifierNode = {
+    val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], secondary = "number")
     __obj.updateDynamic("type")("interval-qualifier")
     __obj.asInstanceOf[IntervalQualifierNode]
   }

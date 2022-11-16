@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popmotion__easing"
-version := "1.0.2-9ba060"
+version := "1.0.2-8ecb0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

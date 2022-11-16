@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reactjs-localstorage"
-version := "1.0-dt-20211202Z-b724b0"
+version := "1.0-dt-20211202Z-52f7af"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

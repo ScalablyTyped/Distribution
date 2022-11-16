@@ -28,7 +28,14 @@ trait FormTemplateProperties extends StObject {
   var expressionInfos: js.UndefOr[js.Array[ExpressionInfoProperties]] = js.undefined
   
   /**
-    * The string template for defining how to format the title used in a popup.
+    * Indicates whether to retain or clear a [form's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) [field element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#preserveFieldValuesWhenHidden)
+    */
+  var preserveFieldValuesWhenHidden: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The string template for defining how to format the title displayed at the top of a form.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#title)
     */
@@ -58,6 +65,10 @@ object FormTemplateProperties {
     inline def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
     
     inline def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value*))
+    
+    inline def setPreserveFieldValuesWhenHidden(value: Boolean): Self = StObject.set(x, "preserveFieldValuesWhenHidden", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveFieldValuesWhenHiddenUndefined: Self = StObject.set(x, "preserveFieldValuesWhenHidden", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

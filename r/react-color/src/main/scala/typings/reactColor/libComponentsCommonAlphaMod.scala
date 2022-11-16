@@ -18,6 +18,15 @@ object libComponentsCommonAlphaMod {
   
   type Alpha = Component[AlphaProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type AlphaProps = react-color.react-color.CustomPickerProps<react-color.react-color/lib/components/common/Alpha.Alpha>
+  }}}
+  to avoid circular code involving: 
+  - react-color.react-color/lib/components/common/Alpha.Alpha
+  - react-color.react-color/lib/components/common/Alpha.AlphaProps
+  */
   trait AlphaProps
     extends StObject
        with CustomPickerProps[Alpha]

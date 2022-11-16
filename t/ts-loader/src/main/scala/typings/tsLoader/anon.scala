@@ -733,8 +733,8 @@ object anon {
     
     def apply(path: String, callback: FileWatcherCallback): FileWatcher = js.native
     def apply(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
-    def apply(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher = js.native
-    def apply(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: CompilerOptions): FileWatcher = js.native
+    def apply(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: WatchOptions): FileWatcher = js.native
+    def apply(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: WatchOptions): FileWatcher = js.native
   }
   
   @js.native
@@ -742,8 +742,8 @@ object anon {
     
     def apply(path: String, callback: DirectoryWatcherCallback): FileWatcher = js.native
     def apply(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
-    def apply(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher = js.native
-    def apply(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher = js.native
+    def apply(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: WatchOptions): FileWatcher = js.native
+    def apply(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: WatchOptions): FileWatcher = js.native
   }
   
   trait InputFileName extends StObject {
@@ -5821,6 +5821,8 @@ object anon {
     def createStringLiteral(text: String, isSingleQuote: Unit, hasExtendedUnicodeEscape: Boolean): StringLiteral = js.native
     
     /** @deprecated Use `factory.createStringLiteralFromNode` or the factory supplied by your transformation context instead. */
+    def createStringLiteralFromNode(sourceNode: PrivateIdentifier): StringLiteral = js.native
+    def createStringLiteralFromNode(sourceNode: PrivateIdentifier, isSingleQuote: Boolean): StringLiteral = js.native
     def createStringLiteralFromNode(sourceNode: PropertyNameLiteral): StringLiteral = js.native
     def createStringLiteralFromNode(sourceNode: PropertyNameLiteral, isSingleQuote: Boolean): StringLiteral = js.native
     
@@ -7020,6 +7022,8 @@ object anon {
     
     def isAsteriskToken(node: Node): /* is typescript.typescript.AsteriskToken */ Boolean = js.native
     
+    def isAutoAccessorPropertyDeclaration(node: Node): /* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean = js.native
+    
     def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = js.native
     
     def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = js.native
@@ -7428,6 +7432,8 @@ object anon {
     def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = js.native
     
     def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = js.native
+    
+    def isSatisfiesExpression(node: Node): /* is typescript.typescript.SatisfiesExpression */ Boolean = js.native
     
     def isSemicolonClassElement(node: Node): /* is typescript.typescript.SemicolonClassElement */ Boolean = js.native
     
@@ -11929,7 +11935,7 @@ object anon {
     /** The version of the TypeScript compiler release */
     val version: String = js.native
     
-    val versionMajorMinor: /* "4.8" */ String = js.native
+    val versionMajorMinor: /* "4.9" */ String = js.native
     
     /**
       * Visits each child of a Node using the supplied visitor, possibly returning a new Node of the same kind in its place.

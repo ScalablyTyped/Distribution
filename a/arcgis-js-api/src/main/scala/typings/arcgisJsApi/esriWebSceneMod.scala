@@ -1,22 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.Layer
 import typings.arcgisJsApi.esri.WebScene
-import typings.arcgisJsApi.esri.WebSceneConstructor
 import typings.arcgisJsApi.esri.WebSceneProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebSceneMod extends Shortcut {
+/* static members */
+object esriWebSceneMod {
   
-  @JSImport("esri/WebScene", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WebSceneConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/WebScene", JSImport.Namespace)
   @js.native
   /**
@@ -24,7 +18,7 @@ object esriWebSceneMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WebScene {
     def this(properties: WebSceneProperties) = this()
@@ -45,9 +39,23 @@ object esriWebSceneMod extends Shortcut {
     /* CompleteClass */
     var tables: Collection[Layer] = js.native
   }
+  @JSImport("esri/WebScene", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WebSceneConstructor
+  /**
+    * Creates a new instance of this class and initializes it with values from a JSON object generated from an ArcGIS product.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#fromJSON)
+    */
+  inline def fromJSON(json: Any): WebScene = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WebScene]
   
-  /* This means you don't have to write `^`, but can instead just say `esriWebSceneMod.foo` */
-  override def _to: js.Object & WebSceneConstructor = ^
+  /**
+    * The latest supported webscene spec version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#version)
+    */
+  @JSImport("esri/WebScene", "version")
+  @js.native
+  val version: String = js.native
 }

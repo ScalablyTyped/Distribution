@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,19 +33,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.GraphicsLayer
-import typings.arcgisJsApi.esri.GraphicsLayerConstructor
 import typings.arcgisJsApi.esri.GraphicsLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersGraphicsLayerMod extends Shortcut {
+object esriLayersGraphicsLayerMod {
   
-  @JSImport("esri/layers/GraphicsLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GraphicsLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/GraphicsLayer", JSImport.Namespace)
   @js.native
   /**
@@ -54,7 +47,7 @@ object esriLayersGraphicsLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with GraphicsLayer {
     def this(properties: GraphicsLayerProperties) = this()
@@ -99,9 +92,4 @@ object esriLayersGraphicsLayerMod extends Shortcut {
     /* CompleteClass */
     var minScale: Double = js.native
   }
-  
-  type _To = js.Object & GraphicsLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersGraphicsLayerMod.foo` */
-  override def _to: js.Object & GraphicsLayerConstructor = ^
 }

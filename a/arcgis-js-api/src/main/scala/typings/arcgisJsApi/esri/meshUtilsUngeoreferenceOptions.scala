@@ -11,15 +11,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait meshUtilsUngeoreferenceOptions
-  extends StObject
-     with Object {
+trait meshUtilsUngeoreferenceOptions extends StObject {
   
   /**
     * Indicates whether the coordinates are georeferenced relative to the globe or the projected coordinate system.
@@ -39,12 +35,8 @@ trait meshUtilsUngeoreferenceOptions
 }
 object meshUtilsUngeoreferenceOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): meshUtilsUngeoreferenceOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): meshUtilsUngeoreferenceOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[meshUtilsUngeoreferenceOptions]
   }
   

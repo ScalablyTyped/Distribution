@@ -9,24 +9,22 @@ object outObjectPOmitMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Path extends unknown ? ts-toolbelt.ts-toolbelt/out/Object/P/Omit.OmitAt<O, Path> : never
     }}}
     */
-  @js.native
-  trait Omit[O /* <: js.Object */, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] extends StObject
+  type Omit[O /* <: js.Object */, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] = O
   
   /**
     * @hidden
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     O extends ts-toolbelt.ts-toolbelt/out/Misc/BuiltIn.BuiltIn ? O : Path extends [ts-toolbelt.ts-toolbelt/out/Any/Key.Key] ? O extends ts-toolbelt.ts-toolbelt/out/List/List.List<any> ? ts-toolbelt.ts-toolbelt/out/List/Omit._Omit<O, Path[0]> : O extends object ? ts-toolbelt.ts-toolbelt/out/Object/Omit._Omit<O, Path[0]> : O : {[ K in keyof O ]: K extends Path[0]? ts-toolbelt.ts-toolbelt/out/Object/P/Omit.OmitAt<O[K], ts-toolbelt.ts-toolbelt/out/List/Tail.Tail<Path>> : O[K]}
     }}}
     */
-  @js.native
-  trait OmitAt[O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] extends StObject
+  type OmitAt[O, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] = O
 }

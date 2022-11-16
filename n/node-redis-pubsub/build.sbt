@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-redis-pubsub"
-version := "3.0-dt-20211209Z-bc32c8"
+version := "3.0-dt-20211209Z-21c5ed"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "path-strip-sep"
-version := "1.0.13-7643e0"
+version := "1.0.13-00b271"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendLayerInfos
-  extends StObject
-     with Object {
+trait LegendLayerInfos extends StObject {
   
   /**
     * A layer to display in the legend.
@@ -33,13 +29,8 @@ trait LegendLayerInfos
 }
 object LegendLayerInfos {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: Layer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): LegendLayerInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: Layer): LegendLayerInfos = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayerInfos]
   }
   

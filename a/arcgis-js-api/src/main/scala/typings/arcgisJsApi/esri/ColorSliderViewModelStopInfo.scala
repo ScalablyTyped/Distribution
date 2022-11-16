@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorSliderViewModelStopInfo
-  extends StObject
-     with Object {
+trait ColorSliderViewModelStopInfo extends StObject {
   
   /**
     * The color of the stop.
@@ -26,14 +22,8 @@ trait ColorSliderViewModelStopInfo
 }
 object ColorSliderViewModelStopInfo {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    offset: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ColorSliderViewModelStopInfo = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), offset = offset.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(color: Color_, offset: Double): ColorSliderViewModelStopInfo = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorSliderViewModelStopInfo]
   }
   

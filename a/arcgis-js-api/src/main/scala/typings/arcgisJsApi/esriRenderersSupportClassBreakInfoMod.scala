@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ClassBreakInfo
-import typings.arcgisJsApi.esri.ClassBreakInfoConstructor
 import typings.arcgisJsApi.esri.ClassBreakInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersSupportClassBreakInfoMod extends Shortcut {
+/* static members */
+object esriRenderersSupportClassBreakInfoMod {
   
-  @JSImport("esri/renderers/support/ClassBreakInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ClassBreakInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/support/ClassBreakInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersSupportClassBreakInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ClassBreakInfo {
     def this(properties: ClassBreakInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersSupportClassBreakInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/support/ClassBreakInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ClassBreakInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersSupportClassBreakInfoMod.foo` */
-  override def _to: js.Object & ClassBreakInfoConstructor = ^
+  inline def fromJSON(json: Any): ClassBreakInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ClassBreakInfo]
 }

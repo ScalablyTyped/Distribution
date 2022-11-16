@@ -13,7 +13,7 @@ trait AuthenticationExtensionsClientOutputs extends StObject {
   var credProps: js.UndefOr[CredentialPropertiesOutput] = js.undefined
   
   /* standard dom */
-  var uvm: js.UndefOr[UvmEntries] = js.undefined
+  var hmacCreateSecret: js.UndefOr[scala.Boolean] = js.undefined
 }
 object AuthenticationExtensionsClientOutputs {
   
@@ -32,10 +32,8 @@ object AuthenticationExtensionsClientOutputs {
     
     inline def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
     
-    inline def setUvm(value: UvmEntries): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
+    inline def setHmacCreateSecret(value: scala.Boolean): Self = StObject.set(x, "hmacCreateSecret", value.asInstanceOf[js.Any])
     
-    inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
-    
-    inline def setUvmVarargs(value: UvmEntry*): Self = StObject.set(x, "uvm", js.Array(value*))
+    inline def setHmacCreateSecretUndefined: Self = StObject.set(x, "hmacCreateSecret", js.undefined)
   }
 }

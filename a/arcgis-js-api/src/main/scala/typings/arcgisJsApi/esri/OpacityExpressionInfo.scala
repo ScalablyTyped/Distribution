@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpacityExpressionInfo
-  extends StObject
-     with Object {
+trait OpacityExpressionInfo extends StObject {
   
   /**
     * The SQL expressions used for querying the histogram using the percentage the predominant value comprises among of a set of fields.
@@ -33,15 +29,8 @@ trait OpacityExpressionInfo
 }
 object OpacityExpressionInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    histogramQuery: SQLExpressionInfo,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    statisticsQuery: SQLExpressionInfo,
-    valueExpression: String
-  ): OpacityExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), histogramQuery = histogramQuery.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statisticsQuery = statisticsQuery.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
+  inline def apply(histogramQuery: SQLExpressionInfo, statisticsQuery: SQLExpressionInfo, valueExpression: String): OpacityExpressionInfo = {
+    val __obj = js.Dynamic.literal(histogramQuery = histogramQuery.asInstanceOf[js.Any], statisticsQuery = statisticsQuery.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacityExpressionInfo]
   }
   

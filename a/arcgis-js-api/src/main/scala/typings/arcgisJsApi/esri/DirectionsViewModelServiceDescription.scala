@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsViewModelServiceDescription
-  extends StObject
-     with Object {
+trait DirectionsViewModelServiceDescription extends StObject {
   
   /**
     * Server version.
@@ -33,15 +29,8 @@ trait DirectionsViewModelServiceDescription
 }
 object DirectionsViewModelServiceDescription {
   
-  inline def apply(
-    constructor: js.Function,
-    currentVersion: Double,
-    defaultTravelMode: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supportedTravelModes: js.Array[TravelMode]
-  ): DirectionsViewModelServiceDescription = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], currentVersion = currentVersion.asInstanceOf[js.Any], defaultTravelMode = defaultTravelMode.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportedTravelModes = supportedTravelModes.asInstanceOf[js.Any])
+  inline def apply(currentVersion: Double, defaultTravelMode: String, supportedTravelModes: js.Array[TravelMode]): DirectionsViewModelServiceDescription = {
+    val __obj = js.Dynamic.literal(currentVersion = currentVersion.asInstanceOf[js.Any], defaultTravelMode = defaultTravelMode.asInstanceOf[js.Any], supportedTravelModes = supportedTravelModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelServiceDescription]
   }
   

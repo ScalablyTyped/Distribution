@@ -17,6 +17,15 @@ object mod {
   
   type Loadable[F /* <: AnyFunction */] = String | F | RecursiveLoadable[F]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RecursiveLoadable = std.Array<F | loadware.loadware.Loadable<F>>
+  }}}
+  to avoid circular code involving: 
+  - loadware.loadware.Loadable
+  - loadware.loadware.RecursiveLoadable
+  */
   @js.native
   trait RecursiveLoadable[F /* <: AnyFunction */]
     extends StObject

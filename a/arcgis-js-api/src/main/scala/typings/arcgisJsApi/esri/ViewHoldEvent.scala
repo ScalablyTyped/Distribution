@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiInts.`0`
+import typings.arcgisJsApi.arcgisJsApiInts.`1`
+import typings.arcgisJsApi.arcgisJsApiInts.`2`
 import typings.arcgisJsApi.arcgisJsApiStrings.hold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ViewHoldEvent extends StObject {
   
-  var button: Any
+  var button: `0` | `1` | `2`
   
   var buttons: Double
   
@@ -28,7 +31,7 @@ trait ViewHoldEvent extends StObject {
 object ViewHoldEvent {
   
   inline def apply(
-    button: Any,
+    button: `0` | `1` | `2`,
     buttons: Double,
     mapPoint: Point,
     native: Any,
@@ -44,7 +47,7 @@ object ViewHoldEvent {
   
   extension [Self <: ViewHoldEvent](x: Self) {
     
-    inline def setButton(value: Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: `0` | `1` | `2`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

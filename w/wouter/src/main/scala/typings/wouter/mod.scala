@@ -52,6 +52,14 @@ object mod {
   // React <18 only: fixes incorrect `ReactNode` declaration that had `{}` in the union.
   // This issue has been fixed in React 18 type declaration.
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/56210
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReactNode = react.react.ReactChild | std.Iterable<wouter.wouter.ReactNode> | react.react.ReactPortal | boolean | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - wouter.wouter.ReactNode
+  */
   type ReactNode = js.UndefOr[ReactChild | js.Iterable[Any] | ReactPortal | Boolean | Null]
   
   type RedirectProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = NavigationalProps[H] & Children

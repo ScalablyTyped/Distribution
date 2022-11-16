@@ -810,7 +810,7 @@ object mod {
   output spec, it should be the only child element in its parent
   node.
   */
-  type DOMOutputSpec = String | DOMNode | ContentDOM | (/* import warning: importer.ImportType#apply c repeated non-array type: any */ js.Array[Any])
+  type DOMOutputSpec = String | DOMNode | ContentDOM | (Array[String | Any])
   
   /**
   A DOM parser represents a strategy for parsing DOM content into a

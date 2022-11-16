@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaContentConstructor
   extends StObject
-     with /**
-  * A `MediaContent` popup element contains an individual or array of chart and/or image media elements to display within a popup's content.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html)
-  */
-Instantiable0[MediaContent]
+     with Instantiable0[MediaContent]
      with Instantiable1[/* properties */ MediaContentProperties, MediaContent] {
   
   def fromJSON(json: Any): MediaContent = js.native

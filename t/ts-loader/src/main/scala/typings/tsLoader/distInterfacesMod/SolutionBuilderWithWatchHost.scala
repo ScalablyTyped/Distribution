@@ -4,12 +4,12 @@ import typings.std.Map
 import typings.tsLoader.anon.Key
 import typings.tsLoader.anon.Text
 import typings.tsLoader.tsLoaderBooleans.`true`
-import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.DirectoryWatcherCallback
 import typings.typescript.mod.EmitAndSemanticDiagnosticsBuilderProgram
 import typings.typescript.mod.FileWatcher
 import typings.typescript.mod.FileWatcherCallback
 import typings.typescript.mod.OutputFile
+import typings.typescript.mod.WatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,9 +54,9 @@ trait SolutionBuilderWithWatchHost
   /* InferMemberOverrides */
   override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
   /* InferMemberOverrides */
-  override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher = js.native
+  override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: WatchOptions): FileWatcher = js.native
   /* InferMemberOverrides */
-  override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher = js.native
+  override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: WatchOptions): FileWatcher = js.native
   
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   /* InferMemberOverrides */
@@ -64,9 +64,9 @@ trait SolutionBuilderWithWatchHost
   /* InferMemberOverrides */
   override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
   /* InferMemberOverrides */
-  override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher = js.native
+  override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: WatchOptions): FileWatcher = js.native
   /* InferMemberOverrides */
-  override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: CompilerOptions): FileWatcher = js.native
+  override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: WatchOptions): FileWatcher = js.native
   
   var writtenFiles: js.Array[OutputFile] = js.native
 }

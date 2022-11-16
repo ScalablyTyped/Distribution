@@ -24,6 +24,7 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.auxclick
     - typings.materialBase.materialBaseStrings.beforeinput
     - typings.materialBase.materialBaseStrings.blur
+    - typings.materialBase.materialBaseStrings.cancel
     - typings.materialBase.materialBaseStrings.canplay
     - typings.materialBase.materialBaseStrings.canplaythrough
     - typings.materialBase.materialBaseStrings.change

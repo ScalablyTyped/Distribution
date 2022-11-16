@@ -59,4 +59,11 @@ trait CanvasPath extends StObject {
   
   /* standard dom */
   def rect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
+  /* standard dom */
+  def roundRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def roundRect(x: Double, y: Double, w: Double, h: Double, radii: js.Array[Double | DOMPointInit]): Unit = js.native
+  def roundRect(x: Double, y: Double, w: Double, h: Double, radii: js.Iterable[Double | DOMPointInit]): Unit = js.native
+  def roundRect(x: Double, y: Double, w: Double, h: Double, radii: Double): Unit = js.native
+  def roundRect(x: Double, y: Double, w: Double, h: Double, radii: DOMPointInit): Unit = js.native
 }

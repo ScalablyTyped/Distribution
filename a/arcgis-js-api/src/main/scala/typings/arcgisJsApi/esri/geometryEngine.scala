@@ -168,7 +168,7 @@ trait geometryEngine extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#geodesicArea)
     */
   def geodesicArea(geometry: Polygon): Double = js.native
-  def geodesicArea(geometry: Polygon, unit: ArealUnits): Double = js.native
+  def geodesicArea(geometry: Polygon, unit: AreaUnits): Double = js.native
   
   def geodesicBuffer(geometry: js.Array[Geometry_], distance: js.Array[Double]): Polygon | js.Array[Polygon] = js.native
   def geodesicBuffer(geometry: js.Array[Geometry_], distance: js.Array[Double], unit: scala.Unit, unionResults: Boolean): Polygon | js.Array[Polygon] = js.native
@@ -222,6 +222,13 @@ trait geometryEngine extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#intersect)
     */
   def intersect(geometry1: Geometry_, geometry2: Geometry_): Geometry_ | js.Array[Geometry_] = js.native
+  
+  /**
+    * Returns an array of points at the intersecting locations of two input polylines.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#intersectLinesToPoints)
+    */
+  def intersectLinesToPoints(line1: Polyline, line2: Polyline): js.Array[Point] = js.native
   
   /**
     * Indicates if one geometry intersects another geometry.
@@ -489,7 +496,7 @@ trait geometryEngine extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#planarArea)
     */
   def planarArea(geometry: Polygon): Double = js.native
-  def planarArea(geometry: Polygon, unit: ArealUnits): Double = js.native
+  def planarArea(geometry: Polygon, unit: AreaUnits): Double = js.native
   
   /**
     * Calculates the length of the input geometry.

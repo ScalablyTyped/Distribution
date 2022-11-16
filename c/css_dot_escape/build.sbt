@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css_dot_escape"
-version := "1.5-dt-20220725Z-3f8828"
+version := "1.5-dt-20220725Z-69abe1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

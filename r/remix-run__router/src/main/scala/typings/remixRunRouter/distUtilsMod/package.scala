@@ -6,6 +6,7 @@ import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
 import typings.remixRunRouter.distUtilsMod.^
+import typings.remixRunRouter.remixRunRouterStrings.Asterisk
 import typings.std.Record
 import typings.std.Response
 import typings.std.ResponseInit
@@ -81,6 +82,33 @@ type JsonFunction = js.Function2[/* data */ Any, /* init */ js.UndefOr[Double | 
 type LoaderFunction = js.Function1[/* args */ LoaderFunctionArgs, (js.Promise[Any | Response]) | Response | Any]
 
 type LoaderFunctionArgs = DataFunctionArgs
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [@remix-run/router.@remix-run/router/dist/utils.PathParam<Segment>] extends [never] ? string : @remix-run/router.@remix-run/router/dist/utils.PathParam<Segment>
+  }}}
+  */
+type ParamParseKey[Segment /* <: String */] = String
+
+/**
+  * Examples:
+  * "/a/b/ *" -> "*"
+  * ":a" -> "a"
+  * "/a/:b" -> "b"
+  * "/a/blahblahblah:b" -> "b"
+  * "/:a/:b" -> "a" | "b"
+  * "/:a/b/:c/ *" -> "a" | "c" | "*"
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  Path extends '*' ? '*' : Path extends / * template literal string: ${inferRest}/ * * / string ? '*' | @remix-run/router.@remix-run/router/dist/utils._PathParam</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : @remix-run/router.@remix-run/router/dist/utils._PathParam<Path>
+  }}}
+  */
+type PathParam[Path /* <: String */] = Asterisk
 
 type RedirectFunction = js.Function2[/* url */ String, /* init */ js.UndefOr[Double | ResponseInit], Response]
 

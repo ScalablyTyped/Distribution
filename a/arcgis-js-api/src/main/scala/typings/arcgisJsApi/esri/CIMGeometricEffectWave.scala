@@ -4,15 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Random
 import typings.arcgisJsApi.arcgisJsApiStrings.Sinus
 import typings.arcgisJsApi.arcgisJsApiStrings.Square
 import typings.arcgisJsApi.arcgisJsApiStrings.Triangle
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectWave
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -54,15 +51,8 @@ trait CIMGeometricEffectWave
 }
 object CIMGeometricEffectWave {
   
-  inline def apply(
-    amplitude: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    period: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    waveform: Sinus | Square | Triangle | Random
-  ): CIMGeometricEffectWave = {
-    val __obj = js.Dynamic.literal(amplitude = amplitude.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), period = period.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), waveform = waveform.asInstanceOf[js.Any])
+  inline def apply(amplitude: Double, period: Double, waveform: Sinus | Square | Triangle | Random): CIMGeometricEffectWave = {
+    val __obj = js.Dynamic.literal(amplitude = amplitude.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], waveform = waveform.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectWave")
     __obj.asInstanceOf[CIMGeometricEffectWave]
   }

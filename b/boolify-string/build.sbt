@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "boolify-string"
-version := "0.0-unknown-dt-20221103Z-e98566"
+version := "0.0-unknown-dt-20221103Z-9f9cfd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

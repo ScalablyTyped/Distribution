@@ -34,7 +34,7 @@ trait DescribeActivitiesRequest extends StObject {
   /**
     * The marker for the next set of results.
     */
-  var Marker: js.UndefOr[MarkerType] = js.undefined
+  var Marker: js.UndefOr[SearchMarkerType] = js.undefined
   
   /**
     * The ID of the organization. This is a mandatory parameter when using administrative API (SigV4) requests.
@@ -85,7 +85,7 @@ object DescribeActivitiesRequest {
     
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: SearchMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     

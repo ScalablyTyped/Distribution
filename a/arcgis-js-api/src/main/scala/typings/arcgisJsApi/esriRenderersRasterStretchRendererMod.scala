@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.RasterStretchRenderer
-import typings.arcgisJsApi.esri.RasterStretchRendererConstructor
 import typings.arcgisJsApi.esri.RasterStretchRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersRasterStretchRendererMod extends Shortcut {
+/* static members */
+object esriRenderersRasterStretchRendererMod {
   
-  @JSImport("esri/renderers/RasterStretchRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RasterStretchRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/RasterStretchRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersRasterStretchRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with RasterStretchRenderer {
     def this(properties: RasterStretchRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersRasterStretchRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/RasterStretchRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RasterStretchRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersRasterStretchRendererMod.foo` */
-  override def _to: js.Object & RasterStretchRendererConstructor = ^
+  inline def fromJSON(json: Any): RasterStretchRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[RasterStretchRenderer]
 }

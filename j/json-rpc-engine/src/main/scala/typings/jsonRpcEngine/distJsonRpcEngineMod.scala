@@ -143,6 +143,14 @@ object distJsonRpcEngineMod {
     inline def _runReturnHandlers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_runReturnHandlers")(x.asInstanceOf[js.Any])
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Json = boolean | number | string | null | {[property: string] : json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.Json} | std.Array<json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.Json>
+  }}}
+  to avoid circular code involving: 
+  - json-rpc-engine.json-rpc-engine/dist/JsonRpcEngine.Json
+  */
   type Json = Boolean | Double | String | Null | StringDictionary[Any] | js.Array[Any]
   
   type JsonRpcEngineCallbackError = js.Error | JsonRpcError | Null

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fps"
-version := "0.0-dt-20221031Z-208322"
+version := "0.0-dt-20221031Z-e2ad8e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

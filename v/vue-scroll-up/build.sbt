@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-scroll-up"
-version := "1.0-dt-20211202Z-c4e374"
+version := "1.0-dt-20211202Z-43c3c7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClosestFacilitySolveResultConstructor
   extends StObject
-     with /**
-  * The result from module:esri/rest/ClosestFacilityTask.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html)
-  */
-Instantiable0[ClosestFacilitySolveResult]
+     with Instantiable0[ClosestFacilitySolveResult]
      with Instantiable1[/* properties */ ClosestFacilitySolveResultProperties, ClosestFacilitySolveResult] {
   
   def fromJSON(json: Any): ClosestFacilitySolveResult = js.native

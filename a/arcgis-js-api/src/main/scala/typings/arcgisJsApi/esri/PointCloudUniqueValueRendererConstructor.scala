@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudUniqueValueRendererConstructor
   extends StObject
-     with /**
-  * PointCloudUniqueValueRenderer allows you to colorize points in a [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html) based on an attribute value.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html)
-  */
-Instantiable0[PointCloudUniqueValueRenderer]
+     with Instantiable0[PointCloudUniqueValueRenderer]
      with Instantiable1[
       /* properties */ PointCloudUniqueValueRendererProperties, 
       PointCloudUniqueValueRenderer

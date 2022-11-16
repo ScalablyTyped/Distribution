@@ -44,5 +44,14 @@ object libCarouselMod {
   
   type Carousel = Component[CarouselProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CarouselProps = react-bootstrap.react-bootstrap.Omit<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Carousel.Carousel>, 'wrap'> & {  activeIndex :number | undefined,   bsSize :react-bootstrap.react-bootstrap.Sizes | undefined,   bsStyle :string | undefined,   controls :boolean | undefined,   defaultActiveIndex :number | undefined,   direction :string | undefined,   indicators :boolean | undefined,   interval :number | null | undefined,   nextIcon :react.react.ReactNode | undefined,   onSelect :react-bootstrap.react-bootstrap.SelectCallback | undefined,   onSlideEnd :std.Function | undefined,   pauseOnHover :boolean | undefined,   prevIcon :react.react.ReactNode | undefined,   slide :boolean | undefined,   wrap :boolean | undefined}
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/Carousel.Carousel
+  - react-bootstrap.react-bootstrap/lib/Carousel.CarouselProps
+  */
   type CarouselProps = (Omit[HTMLProps[Any], wrap]) & ActiveIndex
 }

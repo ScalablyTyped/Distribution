@@ -12,9 +12,19 @@ trait Edge extends StObject {
   var Aliases: js.UndefOr[AliasList] = js.undefined
   
   /**
+    * Describes an asynchronous connection, with a value of link.
+    */
+  var EdgeType: js.UndefOr[String] = js.undefined
+  
+  /**
     * The end time of the last segment on the edge.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A histogram that maps the spread of event age when received by consumers. Age is calculated each time an event is received. Only populated when EdgeType is link.
+    */
+  var ReceivedEventAgeHistogram: js.UndefOr[Histogram] = js.undefined
   
   /**
     * Identifier of the edge. Unique within a service map.
@@ -22,7 +32,7 @@ trait Edge extends StObject {
   var ReferenceId: js.UndefOr[NullableInteger] = js.undefined
   
   /**
-    * A histogram that maps the spread of client response times on an edge.
+    * A histogram that maps the spread of client response times on an edge. Only populated for synchronous edges.
     */
   var ResponseTimeHistogram: js.UndefOr[Histogram] = js.undefined
   
@@ -51,9 +61,19 @@ object Edge {
     
     inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value*))
     
+    inline def setEdgeType(value: String): Self = StObject.set(x, "EdgeType", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeTypeUndefined: Self = StObject.set(x, "EdgeType", js.undefined)
+    
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    
+    inline def setReceivedEventAgeHistogram(value: Histogram): Self = StObject.set(x, "ReceivedEventAgeHistogram", value.asInstanceOf[js.Any])
+    
+    inline def setReceivedEventAgeHistogramUndefined: Self = StObject.set(x, "ReceivedEventAgeHistogram", js.undefined)
+    
+    inline def setReceivedEventAgeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ReceivedEventAgeHistogram", js.Array(value*))
     
     inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     

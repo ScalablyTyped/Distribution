@@ -85,7 +85,7 @@ trait TravelModeProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
     */
-  var distanceAttributeName: js.UndefOr[kilometers_ | miles_ | String] = js.undefined
+  var distanceAttributeName: js.UndefOr[kilometers_ | miles_ | meters_ | String] = js.undefined
   
   /**
     * The unique identifier.
@@ -100,7 +100,7 @@ trait TravelModeProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
     */
   var impedanceAttributeName: js.UndefOr[
-    kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+    kilometers_ | miles_ | meters_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
   ] = js.undefined
   
   /**
@@ -188,7 +188,7 @@ object TravelModeProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDistanceAttributeName(value: kilometers_ | miles_ | String): Self = StObject.set(x, "distanceAttributeName", value.asInstanceOf[js.Any])
+    inline def setDistanceAttributeName(value: kilometers_ | miles_ | meters_ | String): Self = StObject.set(x, "distanceAttributeName", value.asInstanceOf[js.Any])
     
     inline def setDistanceAttributeNameUndefined: Self = StObject.set(x, "distanceAttributeName", js.undefined)
     
@@ -197,7 +197,7 @@ object TravelModeProperties {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setImpedanceAttributeName(
-      value: kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+      value: kilometers_ | miles_ | meters_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
     ): Self = StObject.set(x, "impedanceAttributeName", value.asInstanceOf[js.Any])
     
     inline def setImpedanceAttributeNameUndefined: Self = StObject.set(x, "impedanceAttributeName", js.undefined)

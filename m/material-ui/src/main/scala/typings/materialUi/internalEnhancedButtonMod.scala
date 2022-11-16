@@ -15,6 +15,15 @@ object internalEnhancedButtonMod {
   
   type EnhancedButton = Component[EnhancedButtonProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type EnhancedButtonProps = material-ui.__MaterialUI.SharedEnhancedButtonProps<material-ui.material-ui/internal/EnhancedButton.EnhancedButton>
+  }}}
+  to avoid circular code involving: 
+  - material-ui.material-ui/internal/EnhancedButton.EnhancedButton
+  - material-ui.material-ui/internal/EnhancedButton.EnhancedButtonProps
+  */
   trait EnhancedButtonProps
     extends StObject
        with SharedEnhancedButtonProps[EnhancedButton]

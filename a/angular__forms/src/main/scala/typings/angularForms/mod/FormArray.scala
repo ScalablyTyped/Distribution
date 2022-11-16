@@ -133,6 +133,39 @@ open class FormArray[TControl /* <: AbstractControl[Any, Any] */] protected () e
     */
   def length: Double = js.native
   
+  /**
+    * Patches the value of the `FormArray`. It accepts an array that matches the
+    * structure of the control, and does its best to match the values to the correct
+    * controls in the group.
+    *
+    * It accepts both super-sets and sub-sets of the array without throwing an error.
+    *
+    * @usageNotes
+    * ### Patch the values for controls in a form array
+    *
+    * ```
+    * const arr = new FormArray([
+    *    new FormControl(),
+    *    new FormControl()
+    * ]);
+    * console.log(arr.value);   // [null, null]
+    *
+    * arr.patchValue(['Nancy']);
+    * console.log(arr.value);   // ['Nancy', null]
+    * ```
+    *
+    * @param value Array of latest values for the controls
+    * @param options Configure options that determine how the control propagates changes and
+    * emits events after the value changes
+    *
+    * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
+    * is false.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control
+    * value is updated. When false, no events are emitted. The configuration options are passed to
+    * the {@link AbstractControl#updateValueAndValidity updateValueAndValidity} method.
+    */
+  def patchValue(value: ɵFormArrayValue[TControl]): Unit = js.native
   def patchValue(value: ɵFormArrayValue[TControl], options: EmitEvent): Unit = js.native
   
   /**
@@ -182,5 +215,41 @@ open class FormArray[TControl /* <: AbstractControl[Any, Any] */] protected () e
   def setControl(index: Double, control: TControl): Unit = js.native
   def setControl(index: Double, control: TControl, options: `0`): Unit = js.native
   
+  /**
+    * Sets the value of the `FormArray`. It accepts an array that matches
+    * the structure of the control.
+    *
+    * This method performs strict checks, and throws an error if you try
+    * to set the value of a control that doesn't exist or if you exclude the
+    * value of a control.
+    *
+    * @usageNotes
+    * ### Set the values for the controls in the form array
+    *
+    * ```
+    * const arr = new FormArray([
+    *   new FormControl(),
+    *   new FormControl()
+    * ]);
+    * console.log(arr.value);   // [null, null]
+    *
+    * arr.setValue(['Nancy', 'Drew']);
+    * console.log(arr.value);   // ['Nancy', 'Drew']
+    * ```
+    *
+    * @param value Array of values for the controls
+    * @param options Configure options that determine how the control propagates changes and
+    * emits events after the value changes
+    *
+    * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
+    * is false.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges`
+    * observables emit events with the latest status and value when the control value is updated.
+    * When false, no events are emitted.
+    * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
+    * updateValueAndValidity} method.
+    */
+  def setValue(value: ɵFormArrayRawValue[TControl]): Unit = js.native
   def setValue(value: ɵFormArrayRawValue[TControl], options: EmitEvent): Unit = js.native
 }

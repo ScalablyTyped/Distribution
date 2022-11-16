@@ -1,5 +1,6 @@
 package typings.wellknown
 
+import typings.wellknown.wellknownStrings.Feature
 import typings.wellknown.wellknownStrings.GeometryCollection
 import typings.wellknown.wellknownStrings.LineString
 import typings.wellknown.wellknownStrings.MultiLineString
@@ -19,7 +20,30 @@ object mod {
   
   inline def parse(input: String): GeoJSONGeometryOrNull = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[GeoJSONGeometryOrNull]
   
+  inline def stringify(gj: GeoJSONFeature): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(gj.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(gj: GeoJSONGeometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(gj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  trait GeoJSONFeature extends StObject {
+    
+    var geometry: GeoJSONGeometry
+    
+    var `type`: Feature
+  }
+  object GeoJSONFeature {
+    
+    inline def apply(geometry: GeoJSONGeometry): GeoJSONFeature = {
+      val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Feature")
+      __obj.asInstanceOf[GeoJSONFeature]
+    }
+    
+    extension [Self <: GeoJSONFeature](x: Self) {
+      
+      inline def setGeometry(value: GeoJSONGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
   
   type GeoJSONGeometry = GeoJSONPoint | GeoJSONMultiPoint | GeoJSONLineString | GeoJSONMultiLineString | GeoJSONPolygon | GeoJSONMultiPolygon | GeoJSONGeometryCollection
   

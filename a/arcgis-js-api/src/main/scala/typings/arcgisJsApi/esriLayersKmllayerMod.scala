@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,20 +33,15 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.KMLLayer
-import typings.arcgisJsApi.esri.KMLLayerConstructor
 import typings.arcgisJsApi.esri.KMLLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersKmllayerMod extends Shortcut {
+/* static members */
+object esriLayersKmllayerMod {
   
-  @JSImport("esri/layers/KMLLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & KMLLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/KMLLayer", JSImport.Namespace)
   @js.native
   /**
@@ -55,7 +49,7 @@ object esriLayersKmllayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with KMLLayer {
     def this(properties: KMLLayerProperties) = this()
@@ -108,9 +102,9 @@ object esriLayersKmllayerMod extends Shortcut {
     /* CompleteClass */
     var portalItem: PortalItem = js.native
   }
+  @JSImport("esri/layers/KMLLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & KMLLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersKmllayerMod.foo` */
-  override def _to: js.Object & KMLLayerConstructor = ^
+  inline def fromJSON(json: Any): KMLLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[KMLLayer]
 }

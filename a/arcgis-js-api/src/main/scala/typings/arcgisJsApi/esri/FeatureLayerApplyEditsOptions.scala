@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`original-and-current-features`
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerApplyEditsOptions
-  extends StObject
-     with Object {
+trait FeatureLayerApplyEditsOptions extends StObject {
   
   /**
     * The geodatabase version to apply the edits.
@@ -49,12 +45,8 @@ trait FeatureLayerApplyEditsOptions
 }
 object FeatureLayerApplyEditsOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureLayerApplyEditsOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FeatureLayerApplyEditsOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureLayerApplyEditsOptions]
   }
   

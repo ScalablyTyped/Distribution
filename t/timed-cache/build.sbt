@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timed-cache"
-version := "2.0-dt-20220930Z-234db1"
+version := "2.0-dt-20220930Z-5643fb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

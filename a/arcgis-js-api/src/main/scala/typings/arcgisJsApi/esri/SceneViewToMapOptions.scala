@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewToMapOptions
-  extends StObject
-     with Object {
+trait SceneViewToMapOptions extends StObject {
   
   /**
     * A list of layers and graphics to include for intersection testing.
@@ -30,12 +26,8 @@ trait SceneViewToMapOptions
 }
 object SceneViewToMapOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneViewToMapOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SceneViewToMapOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewToMapOptions]
   }
   

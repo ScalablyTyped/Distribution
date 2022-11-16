@@ -11,15 +11,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import typings.arcgisJsApi.arcgisJsApiStrings.thumb
 import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait univariateColorSizeCreateContinuousRendererParamsSymbolOptions
-  extends StObject
-     with Object {
+trait univariateColorSizeCreateContinuousRendererParamsSymbolOptions extends StObject {
   
   /**
     * Sets above and below symbols based on pre-defined named symbol pairs.
@@ -39,12 +35,8 @@ trait univariateColorSizeCreateContinuousRendererParamsSymbolOptions
 }
 object univariateColorSizeCreateContinuousRendererParamsSymbolOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): univariateColorSizeCreateContinuousRendererParamsSymbolOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): univariateColorSizeCreateContinuousRendererParamsSymbolOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSymbolOptions]
   }
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "7zip-bin"
-version := "5.2.0-b73434"
+version := "5.2.0-0e826f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -40,6 +40,7 @@ import typings.revealJs.revealJsStrings.beforeinput
 import typings.revealJs.revealJsStrings.blur
 import typings.revealJs.revealJsStrings.c
 import typings.revealJs.revealJsStrings.cSlasht
+import typings.revealJs.revealJsStrings.cancel
 import typings.revealJs.revealJsStrings.canplay
 import typings.revealJs.revealJsStrings.canplaythrough
 import typings.revealJs.revealJsStrings.change
@@ -684,6 +685,47 @@ object mod {
     def addEventListener_blur(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("addEventListener")
+    def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("addEventListener")
+    def addEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("addEventListener")
+    def addEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     /**
@@ -5603,6 +5645,41 @@ object mod {
       * @param useCapture
       */
     @JSName("off")
+    def off_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    /**
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("off")
+    def off_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    /**
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("off")
+    def off_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    /**
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("off")
     def off_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
     /**
       * Unsubscribes from a reveal.js event.
@@ -9414,6 +9491,44 @@ object mod {
     def on_blur(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    /**
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("on")
+    def on_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    /**
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("on")
+    def on_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    /**
+      * Adds a listener to one of our custom reveal.js events,
+      * like slidechanged.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("on")
+    def on_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     /**
@@ -13563,6 +13678,44 @@ object mod {
     def removeEventListener_blur(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    /**
+      * Legacy event binding methods left in for backwards compatibility
+      * Unsubscribes from a reveal.js event.
+      *
+      * @param type
+      * @param listener
+      * @param useCapture
+      */
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     /**

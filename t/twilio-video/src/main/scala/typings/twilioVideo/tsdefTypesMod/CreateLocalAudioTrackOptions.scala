@@ -8,6 +8,8 @@ trait CreateLocalAudioTrackOptions
   extends StObject
      with CreateLocalTrackOptions {
   
+  var defaultDeviceCaptureMode: js.UndefOr[DefaultDeviceCaptureMode] = js.undefined
+  
   var noiseCancellationOptions: js.UndefOr[NoiseCancellationOptions] = js.undefined
 }
 object CreateLocalAudioTrackOptions {
@@ -18,6 +20,10 @@ object CreateLocalAudioTrackOptions {
   }
   
   extension [Self <: CreateLocalAudioTrackOptions](x: Self) {
+    
+    inline def setDefaultDeviceCaptureMode(value: DefaultDeviceCaptureMode): Self = StObject.set(x, "defaultDeviceCaptureMode", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDeviceCaptureModeUndefined: Self = StObject.set(x, "defaultDeviceCaptureMode", js.undefined)
     
     inline def setNoiseCancellationOptions(value: NoiseCancellationOptions): Self = StObject.set(x, "noiseCancellationOptions", value.asInstanceOf[js.Any])
     

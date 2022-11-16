@@ -203,6 +203,14 @@ object expectMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ExpectCookie = nightwatch.nightwatch/expect.ExpectAssertions<nightwatch.nightwatch/expect.ExpectCookie>
+  }}}
+  to avoid circular code involving: 
+  - nightwatch.nightwatch/expect.ExpectCookie
+  */
   trait ExpectCookie
     extends StObject
        with ExpectAssertions[ExpectCookie]
@@ -513,6 +521,14 @@ object expectMod {
   
   type ExpectStartWith[T] = js.Function1[/* value */ String, Awaitable[T, NightwatchExpectResult]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ExpectTitle = nightwatch.nightwatch/expect.ExpectAssertions<nightwatch.nightwatch/expect.ExpectTitle>
+  }}}
+  to avoid circular code involving: 
+  - nightwatch.nightwatch/expect.ExpectTitle
+  */
   trait ExpectTitle
     extends StObject
        with ExpectAssertions[ExpectTitle]
@@ -565,6 +581,14 @@ object expectMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ExpectUrl = nightwatch.nightwatch/expect.ExpectAssertions<nightwatch.nightwatch/expect.ExpectUrl>
+  }}}
+  to avoid circular code involving: 
+  - nightwatch.nightwatch/expect.ExpectUrl
+  */
   trait ExpectUrl
     extends StObject
        with ExpectAssertions[ExpectUrl]

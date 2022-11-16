@@ -8,9 +8,12 @@ import typings.gl.glStrings.EXT_float_blend
 import typings.gl.glStrings.EXT_frag_depth
 import typings.gl.glStrings.EXT_sRGB
 import typings.gl.glStrings.EXT_shader_texture_lod
+import typings.gl.glStrings.EXT_texture_compression_bptc
+import typings.gl.glStrings.EXT_texture_compression_rgtc
 import typings.gl.glStrings.EXT_texture_filter_anisotropic
 import typings.gl.glStrings.KHR_parallel_shader_compile
 import typings.gl.glStrings.OES_element_index_uint
+import typings.gl.glStrings.OES_fbo_render_mipmap
 import typings.gl.glStrings.OES_standard_derivatives
 import typings.gl.glStrings.OES_texture_float
 import typings.gl.glStrings.OES_texture_float_linear
@@ -31,6 +34,7 @@ import typings.gl.glStrings.WEBGL_debug_shaders
 import typings.gl.glStrings.WEBGL_depth_texture
 import typings.gl.glStrings.WEBGL_draw_buffers
 import typings.gl.glStrings.WEBGL_lose_context
+import typings.gl.glStrings.WEBGL_multi_draw
 import typings.std.ANGLEInstancedArrays
 import typings.std.BufferSource
 import typings.std.EXTBlendMinmax
@@ -40,6 +44,8 @@ import typings.std.EXTFloatBlend
 import typings.std.EXTFragDepth
 import typings.std.EXTSRGB
 import typings.std.EXTShaderTextureLod
+import typings.std.EXTTextureCompressionBptc
+import typings.std.EXTTextureCompressionRgtc
 import typings.std.EXTTextureFilterAnisotropic
 import typings.std.Float32List
 import typings.std.GLbitfield
@@ -56,6 +62,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.Int32List
 import typings.std.KHRParallelShaderCompile
 import typings.std.OESElementIndexUint
+import typings.std.OESFboRenderMipmap
 import typings.std.OESStandardDerivatives
 import typings.std.OESTextureFloat
 import typings.std.OESTextureFloatLinear
@@ -63,6 +70,7 @@ import typings.std.OESTextureHalfFloat
 import typings.std.OESTextureHalfFloatLinear
 import typings.std.OESVertexArrayObject
 import typings.std.OVRMultiview2
+import typings.std.OffscreenCanvas
 import typings.std.TexImageSource
 import typings.std.WEBGLColorBufferFloat
 import typings.std.WEBGLCompressedTextureAstc
@@ -75,6 +83,7 @@ import typings.std.WEBGLDebugShaders
 import typings.std.WEBGLDepthTexture
 import typings.std.WEBGLDrawBuffers
 import typings.std.WEBGLLoseContext
+import typings.std.WEBGLMultiDraw
 import typings.std.WebGLActiveInfo
 import typings.std.WebGLBuffer
 import typings.std.WebGLContextAttributes
@@ -1638,7 +1647,7 @@ object mod {
     /* standard dom */
     @JSImport("gl", "WebGLRenderingContext.canvas")
     @js.native
-    val canvas: HTMLCanvasElement = js.native
+    val canvas: HTMLCanvasElement | OffscreenCanvas = js.native
     
     /* standard dom */
     inline def checkFramebufferStatus(target: GLenum): GLenum = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFramebufferStatus")(target.asInstanceOf[js.Any]).asInstanceOf[GLenum]
@@ -1862,6 +1871,12 @@ object mod {
     inline def getExtension_EXTshadertexturelod(extensionName: EXT_shader_texture_lod): EXTShaderTextureLod | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[EXTShaderTextureLod | Null]
     
     /* standard dom */
+    inline def getExtension_EXTtexturecompressionbptc(extensionName: EXT_texture_compression_bptc): EXTTextureCompressionBptc | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[EXTTextureCompressionBptc | Null]
+    
+    /* standard dom */
+    inline def getExtension_EXTtexturecompressionrgtc(extensionName: EXT_texture_compression_rgtc): EXTTextureCompressionRgtc | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[EXTTextureCompressionRgtc | Null]
+    
+    /* standard dom */
     inline def getExtension_EXTtexturefilteranisotropic(extensionName: EXT_texture_filter_anisotropic): EXTTextureFilterAnisotropic | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[EXTTextureFilterAnisotropic | Null]
     
     /* standard dom */
@@ -1869,6 +1884,9 @@ object mod {
     
     /* standard dom */
     inline def getExtension_OESelementindexuint(extensionName: OES_element_index_uint): OESElementIndexUint | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[OESElementIndexUint | Null]
+    
+    /* standard dom */
+    inline def getExtension_OESfborendermipmap(extensionName: OES_fbo_render_mipmap): OESFboRenderMipmap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[OESFboRenderMipmap | Null]
     
     /* standard dom */
     inline def getExtension_OESstandardderivatives(extensionName: OES_standard_derivatives): OESStandardDerivatives | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[OESStandardDerivatives | Null]
@@ -1927,6 +1945,9 @@ object mod {
     
     /* standard dom */
     inline def getExtension_WEBGLlosecontext(extensionName: WEBGL_lose_context): WEBGLLoseContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLLoseContext | Null]
+    
+    /* standard dom */
+    inline def getExtension_WEBGLmultidraw(extensionName: WEBGL_multi_draw): WEBGLMultiDraw | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLMultiDraw | Null]
     
     /* standard dom */
     inline def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getFramebufferAttachmentParameter")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]

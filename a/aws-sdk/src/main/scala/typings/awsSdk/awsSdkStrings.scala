@@ -788,6 +788,7 @@ import typings.awsSdk.clientsCustomerprofilesMod._SourceConnectorType
 import typings.awsSdk.clientsCustomerprofilesMod._StandardIdentifier
 import typings.awsSdk.clientsCustomerprofilesMod._TaskType
 import typings.awsSdk.clientsCustomerprofilesMod._ZendeskConnectorOperator
+import typings.awsSdk.clientsCustomerprofilesMod._logicalOperator
 import typings.awsSdk.clientsDatabrewMod._AnalyticsMode
 import typings.awsSdk.clientsDatabrewMod._CompressionFormat
 import typings.awsSdk.clientsDatabrewMod._EncryptionMode
@@ -1959,7 +1960,6 @@ import typings.awsSdk.clientsKinesisMod._StreamMode
 import typings.awsSdk.clientsKinesisMod._StreamStatus
 import typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationMode
 import typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationRestoreType
-import typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
 import typings.awsSdk.clientsKinesisanalyticsv2Mod._CodeContentType
 import typings.awsSdk.clientsKinesisanalyticsv2Mod._ConfigurationType
 import typings.awsSdk.clientsKinesisanalyticsv2Mod._InputStartingPosition
@@ -3830,6 +3830,10 @@ import typings.awsSdk.clientsSsmincidentsMod._RegionStatus
 import typings.awsSdk.clientsSsmincidentsMod._ReplicationSetStatus
 import typings.awsSdk.clientsSsmincidentsMod._SsmTargetAccount
 import typings.awsSdk.clientsSsmincidentsMod._VariableType
+import typings.awsSdk.clientsSsmsapMod._ApplicationStatus
+import typings.awsSdk.clientsSsmsapMod._DatabaseStatus
+import typings.awsSdk.clientsSsmsapMod._DatabaseType
+import typings.awsSdk.clientsSsmsapMod._HostRole
 import typings.awsSdk.clientsSsoadminMod._InstanceAccessControlAttributeConfigurationStatus
 import typings.awsSdk.clientsSsoadminMod._ProvisionTargetType
 import typings.awsSdk.clientsSsoadminMod._ProvisioningStatus
@@ -3997,6 +4001,7 @@ import typings.awsSdk.clientsWorkdocsMod._ResourceStateType
 import typings.awsSdk.clientsWorkdocsMod._RolePermissionType
 import typings.awsSdk.clientsWorkdocsMod._RoleType
 import typings.awsSdk.clientsWorkdocsMod._ShareStatusType
+import typings.awsSdk.clientsWorkdocsMod._SubscriptionProtocolType
 import typings.awsSdk.clientsWorkdocsMod._UserFilterType
 import typings.awsSdk.clientsWorkdocsMod._UserSortType
 import typings.awsSdk.clientsWorkdocsMod._UserStatusType
@@ -4015,6 +4020,7 @@ import typings.awsSdk.clientsWorkmailMod._RetentionAction
 import typings.awsSdk.clientsWorkspacesMod._AccessPropertyValue
 import typings.awsSdk.clientsWorkspacesMod._Application
 import typings.awsSdk.clientsWorkspacesMod._AssociationStatus
+import typings.awsSdk.clientsWorkspacesMod._CertificateBasedAuthStatusEnum
 import typings.awsSdk.clientsWorkspacesMod._ClientDeviceType
 import typings.awsSdk.clientsWorkspacesMod._Compute
 import typings.awsSdk.clientsWorkspacesMod._ConnectionAliasState
@@ -5102,6 +5108,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsRumMod._apiVersion
        with typings.awsSdk.clientsControltowerMod._apiVersion
        with typings.awsSdk.clientsLicensemanagerusersubscriptionsMod._apiVersion
+       with typings.awsSdk.clientsSsmsapMod._apiVersion
        with typings.awsSdk.clientsSsmincidentsMod._apiVersion
        with typings.awsSdk.clientsRolesanywhereMod._apiVersion
   inline def `2018-05-10`: `2018-05-10` = "2018-05-10".asInstanceOf[`2018-05-10`]
@@ -6293,6 +6300,7 @@ object awsSdkStrings {
   sealed trait ACTIVATED
     extends StObject
        with _ActivationStatus
+       with _ApplicationStatus
        with _Category
        with _TriggerState
   inline def ACTIVATED: ACTIVATED = "ACTIVATED".asInstanceOf[ACTIVATED]
@@ -7960,6 +7968,7 @@ object awsSdkStrings {
        with _FilterLogicalOperator
        with _Logical
        with typings.awsSdk.clientsRoute53recoverycontrolconfigMod._RuleType
+       with _logicalOperator
   inline def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
@@ -9398,7 +9407,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AUTOSCALING
     extends StObject
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
   
   @js.native
   sealed trait AUTOSCALING_VALIDATION_ERROR
@@ -15128,6 +15137,10 @@ object awsSdkStrings {
     extends StObject
        with _RevocationReason
   inline def CERTIFICATE_AUTHORITY_COMPROMISE: CERTIFICATE_AUTHORITY_COMPROMISE = "CERTIFICATE_AUTHORITY_COMPROMISE".asInstanceOf[CERTIFICATE_AUTHORITY_COMPROMISE]
+  
+  @js.native
+  sealed trait CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN extends StObject
+  inline def CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN: CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN = "CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN".asInstanceOf[CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN]
   
   @js.native
   sealed trait CERTIFICATE_BUNDLE
@@ -21241,8 +21254,9 @@ object awsSdkStrings {
        with _AppStatus
        with _ApplicationState
        with typings.awsSdk.clientsMigrationhubrefactorspacesMod._ApplicationState
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
+       with _ApplicationStatus
        with _AssetModelState
        with typings.awsSdk.clientsIotsitewiseMod._AssetState
        with _AttachmentState
@@ -22229,6 +22243,7 @@ object awsSdkStrings {
        with _CatalogEncryptionMode
        with _CertificateAuthorityStatus
        with _CertificateBasedAuthStatus
+       with _CertificateBasedAuthStatusEnum
        with _CertificateTransparencyLoggingPreference
        with typings.awsSdk.clientsGameliftMod._CertificateType
        with _CloudWatchEncryptionMode
@@ -25607,6 +25622,7 @@ object awsSdkStrings {
        with _BurnInSubtitleStylePassthrough
        with _CEState
        with _CertificateBasedAuthStatus
+       with _CertificateBasedAuthStatusEnum
        with _CertificateTransparencyLoggingPreference
        with _CmafClientCache
        with _CmafWriteDASHManifest
@@ -25928,7 +25944,6 @@ object awsSdkStrings {
   sealed trait ENCRYPTED_PASSWORD
     extends StObject
        with _ConnectionPropertyKey
-  inline def ENCRYPTED_PASSWORD: ENCRYPTED_PASSWORD = "ENCRYPTED_PASSWORD".asInstanceOf[ENCRYPTED_PASSWORD]
   
   @js.native
   sealed trait ENCRYPTION
@@ -26047,6 +26062,11 @@ object awsSdkStrings {
        with _ReservationVideoQuality
        with _ScanType
   inline def ENHANCED: ENHANCED = "ENHANCED".asInstanceOf[ENHANCED]
+  
+  @js.native
+  sealed trait ENHANCED_CONTACT_MONITORING
+    extends StObject
+       with _InstanceAttributeType
   
   @js.native
   sealed trait ENHANCED_QUALITY
@@ -26318,6 +26338,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsIotsitewiseMod._LoggingLevel
        with _MigrationAlertType
        with _NodeInstanceStatus
+       with typings.awsSdk.clientsSsmsapMod._OperationStatus
        with typings.awsSdk.clientsRoute53domainsMod._OperationStatus
        with _OrderStatus
        with _PhaseStatus
@@ -27897,6 +27918,7 @@ object awsSdkStrings {
        with _AntipatternReportStatus
        with _ApiCacheStatus
        with typings.awsSdk.clientsMigrationhubrefactorspacesMod._ApplicationState
+       with _ApplicationStatus
        with _AssessmentReportStatus
        with _AssessmentRunState
        with typings.awsSdk.clientsMigrationhubstrategyMod._AssessmentStatus
@@ -29563,7 +29585,7 @@ object awsSdkStrings {
   @js.native
   sealed trait FORCE_STOPPING
     extends StObject
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
   inline def FORCE_STOPPING: FORCE_STOPPING = "FORCE_STOPPING".asInstanceOf[FORCE_STOPPING]
   
   @js.native
@@ -32016,6 +32038,9 @@ object awsSdkStrings {
   inline def HADOOP_SNAPPY: HADOOP_SNAPPY = "HADOOP_SNAPPY".asInstanceOf[HADOOP_SNAPPY]
   
   @js.native
+  sealed trait HANA extends StObject
+  
+  @js.native
   sealed trait HANDLE_TIME
     extends StObject
        with _HistoricalMetricName
@@ -32849,6 +32874,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsServicediscoveryMod._HealthCheckType
        with _ObjectStorageServerProtocol
        with _ProtocolEnum
+       with _SubscriptionProtocolType
   inline def HTTPS: HTTPS = "HTTPS".asInstanceOf[HTTPS]
   
   @js.native
@@ -34287,6 +34313,7 @@ object awsSdkStrings {
        with _DeviceDeploymentStatus
        with _EdgePackagingJobStatus
        with _EntityStatus
+       with typings.awsSdk.clientsSsmsapMod._OperationStatus
        with _ReportStateType
        with _StageStatus
   inline def INPROGRESS: INPROGRESS = "INPROGRESS".asInstanceOf[INPROGRESS]
@@ -38571,6 +38598,11 @@ object awsSdkStrings {
   inline def LEAD: LEAD = "LEAD".asInstanceOf[LEAD]
   
   @js.native
+  sealed trait LEADER
+    extends StObject
+       with _HostRole
+  
+  @js.native
   sealed trait LEAF_NODE
     extends StObject
        with _ObjectType
@@ -40362,7 +40394,7 @@ object awsSdkStrings {
   @js.native
   sealed trait MAINTENANCE
     extends StObject
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKafkaMod._ClusterState
        with _WorkspaceState
   inline def MAINTENANCE: MAINTENANCE = "MAINTENANCE".asInstanceOf[MAINTENANCE]
@@ -46367,6 +46399,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._ConditionalOperator
        with _FilterLogicalOperator
        with typings.awsSdk.clientsRoute53recoverycontrolconfigMod._RuleType
+       with _logicalOperator
   
   @js.native
   sealed trait ORACLE
@@ -51541,7 +51574,7 @@ object awsSdkStrings {
   sealed trait READY
     extends StObject
        with _AccountRoleStatus
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
        with typings.awsSdk.clientsNetworkfirewallMod._AttachmentStatus
        with _BackupState
@@ -51990,6 +52023,7 @@ object awsSdkStrings {
   @js.native
   sealed trait REGISTERING
     extends StObject
+       with _ApplicationStatus
        with _ContainerInstanceStatus
        with _TargetState
        with _WorkspaceDirectoryState
@@ -52930,6 +52964,10 @@ object awsSdkStrings {
   inline def RESTART: RESTART = "RESTART".asInstanceOf[RESTART]
   
   @js.native
+  sealed trait RESTORE extends StObject
+  inline def RESTORE: RESTORE = "RESTORE".asInstanceOf[RESTORE]
+  
+  @js.native
   sealed trait RESTORE_FROM_CUSTOM_SNAPSHOT
     extends StObject
        with _ApplicationRestoreType
@@ -53447,7 +53485,7 @@ object awsSdkStrings {
   @js.native
   sealed trait ROLLED_BACK
     extends StObject
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with _DeploymentState
        with typings.awsSdk.clientsAppconfigMod._EnvironmentState
   inline def ROLLED_BACK: ROLLED_BACK = "ROLLED_BACK".asInstanceOf[ROLLED_BACK]
@@ -53455,7 +53493,7 @@ object awsSdkStrings {
   @js.native
   sealed trait ROLLING_BACK
     extends StObject
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with _BlueprintRunState
        with _DeploymentState
        with typings.awsSdk.clientsAppconfigMod._EnvironmentState
@@ -53877,7 +53915,7 @@ object awsSdkStrings {
        with _AgentStatus
        with _AnalysisStatus
        with _ApplicationInstanceHealthStatus
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
        with _BackupJobState
        with _BlueprintRunState
@@ -53896,6 +53934,7 @@ object awsSdkStrings {
        with _CrawlerHistoryState
        with _CrawlerState
        with _DataViewStatus
+       with _DatabaseStatus
        with typings.awsSdk.clientsFinspacedataMod._DatasetStatus
        with _DesiredState
        with _DesiredStatus
@@ -55676,7 +55715,6 @@ object awsSdkStrings {
   sealed trait SAGE_MAKER
     extends StObject
        with _ServiceName
-  inline def SAGE_MAKER: SAGE_MAKER = "SAGE_MAKER".asInstanceOf[SAGE_MAKER]
   
   @js.native
   sealed trait SALESFORCE
@@ -58410,6 +58448,7 @@ object awsSdkStrings {
        with _NotificationTarget
        with _NotificationTransport
        with _ServiceName
+       with _SubscriptionProtocolType
   inline def SQS: SQS = "SQS".asInstanceOf[SQS]
   
   @js.native
@@ -58775,6 +58814,7 @@ object awsSdkStrings {
   sealed trait STANDBY
     extends StObject
        with typings.awsSdk.clientsBudgetsMod._ActionStatus
+       with _HostRole
        with _Status
   inline def STANDBY: STANDBY = "STANDBY".asInstanceOf[STANDBY]
   
@@ -58815,13 +58855,15 @@ object awsSdkStrings {
   sealed trait STARTING
     extends StObject
        with typings.awsSdk.clientsEmrserverlessMod._ApplicationState
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
+       with _ApplicationStatus
        with _CanaryState
        with _ChannelState
        with typings.awsSdk.clientsEmrMod._ClusterState
        with _CompilationJobStatus
        with _DataViewStatus
+       with _DatabaseStatus
        with _DeviceReportedStatus
        with _EdgePackagingJobStatus
        with _FleetState
@@ -59137,6 +59179,7 @@ object awsSdkStrings {
   sealed trait STOPPED
     extends StObject
        with typings.awsSdk.clientsEmrserverlessMod._ApplicationState
+       with _ApplicationStatus
        with typings.awsSdk.clientsMigrationhubstrategyMod._AssessmentStatus
        with _BuildBatchPhaseType
        with _CanaryState
@@ -59145,6 +59188,7 @@ object awsSdkStrings {
        with _CrawlerHistoryState
        with _DataReplicationState
        with typings.awsSdk.clientsDrsMod._DataReplicationState
+       with _DatabaseStatus
        with _DatasourcePackageIngestState
        with _DesiredState
        with _DesiredStatus
@@ -59193,8 +59237,9 @@ object awsSdkStrings {
   sealed trait STOPPING
     extends StObject
        with typings.awsSdk.clientsEmrserverlessMod._ApplicationState
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
+       with _ApplicationStatus
        with _CanaryState
        with _ChannelState
        with _CompilationJobStatus
@@ -60066,6 +60111,7 @@ object awsSdkStrings {
        with _NodeAssociationStatus
        with _OperationStatus
        with typings.awsSdk.clientsCloudformationMod._OperationStatus
+       with typings.awsSdk.clientsSsmsapMod._OperationStatus
        with typings.awsSdk.clientsServicediscoveryMod._OperationStatus
        with _PhaseStatus
        with _PostLaunchActionExecutionStatus
@@ -60439,6 +60485,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._BackupType
        with _BackupTypeFilter
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._BackupTypeFilter
+       with _DatabaseType
        with typings.awsSdk.clientsBudgetsMod._EventType
        with _FilterType
        with _JobTemplateListBy
@@ -62269,6 +62316,12 @@ object awsSdkStrings {
        with _Dimension
   
   @js.native
+  sealed trait TENANT
+    extends StObject
+       with _DatabaseType
+  inline def TENANT: TENANT = "TENANT".asInstanceOf[TENANT]
+  
+  @js.native
   sealed trait TENSORFLOW
     extends StObject
        with _Framework
@@ -63319,7 +63372,6 @@ object awsSdkStrings {
        with _NumberType
        with _PhoneNumberType
        with _RequestableNumberType
-  inline def TOLL_FREE: TOLL_FREE = "TOLL_FREE".asInstanceOf[TOLL_FREE]
   
   @js.native
   sealed trait TON
@@ -63634,7 +63686,6 @@ object awsSdkStrings {
   sealed trait TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH
     extends StObject
        with _RouteAnalysisCompletionReasonCode
-  inline def TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH: TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH = "TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH".asInstanceOf[TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH]
   
   @js.native
   sealed trait TRANSIT_GATEWAY_ATTACHMENT_NOT_FOUND
@@ -65040,12 +65091,14 @@ object awsSdkStrings {
        with _AgentHealthCode
        with _AgentStatus
        with _AllowsUnencryptedObjectUploads
+       with _ApplicationStatus
        with _ArtifactType
        with _CapabilitySyncStatus
        with _ColumnNullable
        with typings.awsSdk.clientsWorkspacesMod._ConnectionState
        with _CsvHeaderOption
        with _DataSourceErrorInfoType
+       with _DatabaseStatus
        with _DeliveryStatus
        with _Ec2Platform
        with _EffectivePermission
@@ -65056,6 +65109,7 @@ object awsSdkStrings {
        with _FirstBoot
        with _HealthStatus
        with typings.awsSdk.clientsServicediscoveryMod._HealthStatus
+       with _HostRole
        with _IsDefinedInJob
        with _IsMonitoredByJob
        with _LoadBalancerTlsCertificateStatus
@@ -65618,7 +65672,7 @@ object awsSdkStrings {
        with _AlertManagerDefinitionStatusCode
        with _AppStatus
        with typings.awsSdk.clientsMigrationhubrefactorspacesMod._ApplicationState
-       with _ApplicationStatus
+       with typings.awsSdk.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with typings.awsSdk.clientsKinesisanalyticsMod._ApplicationStatus
        with _ArchiveState
        with typings.awsSdk.clientsEventbridgeMod._ArchiveState
@@ -68230,6 +68284,7 @@ object awsSdkStrings {
        with _AnalysisResultLevel
        with _CheckStatus
        with typings.awsSdk.clientsSecurityhubMod._ComplianceStatus
+       with _DatabaseStatus
        with typings.awsSdk.clientsMedialiveMod._LogLevel
        with _LoggingLevel
        with _ValidatePolicyFindingType
@@ -68651,6 +68706,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsKendraMod._DataSourceType
   inline def WORKDOCS: WORKDOCS = "WORKDOCS".asInstanceOf[WORKDOCS]
+  
+  @js.native
+  sealed trait WORKER
+    extends StObject
+       with _HostRole
+  inline def WORKER: WORKER = "WORKER".asInstanceOf[WORKER]
   
   @js.native
   sealed trait WORKFLOW_ALREADY_RUNNING
@@ -74434,6 +74495,9 @@ object awsSdkStrings {
   sealed trait `eu-south-2`
     extends StObject
        with _AWSRegion
+       with _CloudWatchRegion
+       with _ResourceRecordSetRegion
+       with _VPCRegion
   inline def `eu-south-2`: `eu-south-2` = "eu-south-2".asInstanceOf[`eu-south-2`]
   
   @js.native
@@ -77490,6 +77554,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsResiliencehubMod._apiVersion
        with typings.awsSdk.clientsKendraMod._apiVersion
        with typings.awsSdk.clientsWorkmailmessageflowMod._apiVersion
+       with typings.awsSdk.clientsSsmsapMod._apiVersion
        with typings.awsSdk.clientsWorklinkMod._apiVersion
        with typings.awsSdk.clientsResourcegroupsMod._apiVersion
        with typings.awsSdk.clientsElasticbeanstalkMod._apiVersion

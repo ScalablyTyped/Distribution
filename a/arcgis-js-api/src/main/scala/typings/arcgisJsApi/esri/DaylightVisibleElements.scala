@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DaylightVisibleElements
-  extends StObject
-     with Object {
+trait DaylightVisibleElements extends StObject {
   
   /**
     * When set to `false`, neither the date nor the season picker are displayed.
@@ -54,12 +50,8 @@ trait DaylightVisibleElements
 }
 object DaylightVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): DaylightVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): DaylightVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DaylightVisibleElements]
   }
   

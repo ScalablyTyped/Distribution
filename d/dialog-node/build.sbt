@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dialog-node"
-version := "0.2-dt-20220112Z-e0de58"
+version := "0.2-dt-20220112Z-71434c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

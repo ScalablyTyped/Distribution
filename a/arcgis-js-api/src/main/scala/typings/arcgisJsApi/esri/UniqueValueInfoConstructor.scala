@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UniqueValueInfoConstructor
   extends StObject
-     with /**
-  * Defines the symbols to use in a [UniqueValueRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueInfo.html)
-  */
-Instantiable0[UniqueValueInfo]
+     with Instantiable0[UniqueValueInfo]
      with Instantiable1[/* properties */ UniqueValueInfoProperties, UniqueValueInfo] {
   
   def fromJSON(json: Any): UniqueValueInfo = js.native

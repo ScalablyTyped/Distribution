@@ -421,6 +421,15 @@ type StatusBarPropertiesAndroid = StatusBarPropsAndroid
 
 type StatusBarPropertiesIOS = StatusBarPropsIOS
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type StyleProp = T | react-native.react-native.RegisteredStyle<T> | react-native.react-native.RecursiveArray<T | react-native.react-native.RegisteredStyle<T> | react-native.react-native.Falsy> | react-native.react-native.Falsy
+}}}
+to avoid circular code involving: 
+- react-native.react-native.RecursiveArray
+- react-native.react-native.StyleProp
+*/
 type StyleProp[T] = T | RegisteredStyle[T] | Any | Falsy
 
 type SwitchChangeEvent = NativeSyntheticEvent[SwitchChangeEventData]

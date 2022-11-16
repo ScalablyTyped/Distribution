@@ -13,6 +13,17 @@ object buildTypesGetQueryArgMod {
   
   inline def getQueryArg(url: String, arg: String): QueryArgParsed | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[QueryArgParsed | Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type QueryArgObject = {[key: string] : @wordpress/url.@wordpress/url/build-types/get-query-arg.QueryArgParsed}
+  }}}
+  to avoid circular code involving: 
+  - @wordpress/url.@wordpress/url/build-types/get-query-arg.QueryArgObject
+  - @wordpress/url.@wordpress/url/build-types/get-query-arg.QueryArgParsed
+  - @wordpress/url.@wordpress/url/build-types/get-query-args.QueryArgParsed
+  - @wordpress/url.@wordpress/url/build-types/get-query-args.QueryArgs
+  */
   trait QueryArgObject
     extends StObject
        with /* key */ StringDictionary[QueryArgParsed]

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait opacityVisualVariableResult
-  extends StObject
-     with Object {
+trait opacityVisualVariableResult extends StObject {
   
   /**
     * Authoring information related to the creation of the visual variable.
@@ -42,14 +38,11 @@ object opacityVisualVariableResult {
   
   inline def apply(
     authoringInfo: AuthoringInfo,
-    constructor: js.Function,
     defaultValuesUsed: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     statistics: SummaryStatisticsResult,
     visualVariable: OpacityVariable
   ): opacityVisualVariableResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics.asInstanceOf[js.Any], visualVariable = visualVariable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], visualVariable = visualVariable.asInstanceOf[js.Any])
     __obj.asInstanceOf[opacityVisualVariableResult]
   }
   

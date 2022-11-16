@@ -85,7 +85,9 @@ trait RouteParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.Array[String] = js.native
+  var accumulateAttributes: js.Array[
+    kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
+  ] = js.native
   
   /**
     * An authorization string used to access a resource or service.
@@ -99,7 +101,7 @@ trait RouteParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.Array[AttributeParameterValue] = js.native
+  var attributeParameterValues: js.Array[RouteParametersAttributeParameterValue] = js.native
   
   /**
     * The language that will be used when generating travel directions.

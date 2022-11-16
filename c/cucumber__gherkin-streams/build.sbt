@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "cucumber__gherkin-streams"
-version := "5.0.1-fa1f0e"
+version := "5.0.1-37ac6d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cucumber__gherkin" % "24.1.0-28d280",
-  "org.scalablytyped" %%% "cucumber__messages" % "19.1.4-3ec83e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "cucumber__gherkin" % "25.0.2-18b694",
+  "org.scalablytyped" %%% "cucumber__messages" % "20.0.0-6f9bc1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

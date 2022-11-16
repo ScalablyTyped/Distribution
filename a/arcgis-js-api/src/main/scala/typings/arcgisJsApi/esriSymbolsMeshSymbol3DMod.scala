@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.MeshSymbol3D
-import typings.arcgisJsApi.esri.MeshSymbol3DConstructor
 import typings.arcgisJsApi.esri.MeshSymbol3DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsMeshSymbol3DMod extends Shortcut {
+/* static members */
+object esriSymbolsMeshSymbol3DMod {
   
-  @JSImport("esri/symbols/MeshSymbol3D", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MeshSymbol3DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/MeshSymbol3D", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsMeshSymbol3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with MeshSymbol3D {
     def this(properties: MeshSymbol3DProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsMeshSymbol3DMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/MeshSymbol3D", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & MeshSymbol3DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsMeshSymbol3DMod.foo` */
-  override def _to: js.Object & MeshSymbol3DConstructor = ^
+  inline def fromJSON(json: Any): MeshSymbol3D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[MeshSymbol3D]
 }

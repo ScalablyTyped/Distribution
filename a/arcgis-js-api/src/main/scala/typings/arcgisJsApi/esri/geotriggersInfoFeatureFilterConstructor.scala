@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait geotriggersInfoFeatureFilterConstructor
   extends StObject
-     with /**
-  * Description of spatial and attribute filters that will be applied to Feature data.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html)
-  */
-Instantiable0[geotriggersInfoFeatureFilter]
+     with Instantiable0[geotriggersInfoFeatureFilter]
      with Instantiable1[
       /* properties */ geotriggersInfoFeatureFilterProperties, 
       geotriggersInfoFeatureFilter

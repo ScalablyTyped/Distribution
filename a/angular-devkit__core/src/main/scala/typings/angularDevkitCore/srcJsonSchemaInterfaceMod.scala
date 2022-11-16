@@ -26,6 +26,17 @@ object srcJsonSchemaInterfaceMod {
     var __PRIVATE_DEVKIT_JSON_POINTER: Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonSchemaVisitor = (current : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray, pointer : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.JsonPointer, parentSchema : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray | undefined, index : string | undefined): void
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.JsonSchemaVisitor
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait JsonSchemaVisitor extends StObject {
     
@@ -43,6 +54,17 @@ object srcJsonSchemaInterfaceMod {
     def apply(current: JsonObject, pointer: JsonPointer, parentSchema: JsonObject, index: java.lang.String): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonVisitor = (value : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, pointer : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.JsonPointer, schema : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | undefined, root : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray | undefined): rxjs.rxjs.Observable<@angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue> | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.JsonVisitor
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait JsonVisitor extends StObject {
     
@@ -132,6 +154,17 @@ object srcJsonSchemaInterfaceMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PromptProvider = (definitions : std.Array<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.PromptDefinition>): rxjs.rxjs/dist/types/internal/types.SubscribableOrPromise<{[id: string] : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue}>
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.PromptProvider
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait PromptProvider extends StObject {
     
@@ -163,6 +196,17 @@ object srcJsonSchemaInterfaceMod {
   
   type SchemaFormatter = Format
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaKeywordValidator = (data : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, schema : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, parent : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject | @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray | undefined, parentProperty : string | number | undefined, pointer : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.JsonPointer, rootData : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue): boolean | rxjs.rxjs.Observable<boolean>
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaKeywordValidator
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait SchemaKeywordValidator extends StObject {
     
@@ -280,6 +324,16 @@ object srcJsonSchemaInterfaceMod {
     def useXDeprecatedProvider(onUsage: js.Function1[/* message */ java.lang.String, Unit]): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaValidator = (data : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, options : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorOptions | undefined): rxjs.rxjs.Observable<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorResult>
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidator
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait SchemaValidator extends StObject {
     
@@ -417,6 +471,17 @@ object srcJsonSchemaInterfaceMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SmartDefaultProvider = (schema : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject): T | rxjs.rxjs.Observable<T>
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SmartDefaultProvider
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonArray
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonObject
+  - @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue
+  */
   @js.native
   trait SmartDefaultProvider[T] extends StObject {
     

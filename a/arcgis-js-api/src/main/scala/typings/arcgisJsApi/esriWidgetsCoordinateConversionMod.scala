@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.CoordinateConversion
-import typings.arcgisJsApi.esri.CoordinateConversionConstructor
 import typings.arcgisJsApi.esri.CoordinateConversionProperties
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.MapView
@@ -11,13 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsCoordinateConversionMod extends Shortcut {
+object esriWidgetsCoordinateConversionMod {
   
-  @JSImport("esri/widgets/CoordinateConversion", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CoordinateConversionConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/CoordinateConversion", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsCoordinateConversionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with CoordinateConversion {
     def this(properties: CoordinateConversionProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsCoordinateConversionMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & CoordinateConversionConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsCoordinateConversionMod.foo` */
-  override def _to: js.Object & CoordinateConversionConstructor = ^
 }

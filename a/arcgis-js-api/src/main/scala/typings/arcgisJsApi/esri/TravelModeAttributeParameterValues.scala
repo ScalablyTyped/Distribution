@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TravelModeAttributeParameterValues
-  extends StObject
-     with Object {
+trait TravelModeAttributeParameterValues extends StObject {
   
   /**
     * The name of the attribute.
@@ -33,15 +29,8 @@ trait TravelModeAttributeParameterValues
 }
 object TravelModeAttributeParameterValues {
   
-  inline def apply(
-    attributeName: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    parameterName: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String
-  ): TravelModeAttributeParameterValues = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), parameterName = parameterName.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def apply(attributeName: String, parameterName: String, value: String): TravelModeAttributeParameterValues = {
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TravelModeAttributeParameterValues]
   }
   

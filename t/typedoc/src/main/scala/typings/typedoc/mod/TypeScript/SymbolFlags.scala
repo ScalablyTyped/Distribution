@@ -13,6 +13,8 @@ object SymbolFlags extends StObject {
   
   /* 98304 */ val Accessor: typings.typescript.mod.SymbolFlags.Accessor & Double = js.native
   
+  /* 13247 */ val AccessorExcludes: typings.typescript.mod.SymbolFlags.AccessorExcludes & Double = js.native
+  
   /* 2097152 */ val Alias: typings.typescript.mod.SymbolFlags.Alias & Double = js.native
   
   /* 2097152 */ val AliasExcludes: typings.typescript.mod.SymbolFlags.AliasExcludes & Double = js.native

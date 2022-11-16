@@ -32,12 +32,17 @@ trait Deployment extends StObject {
   var isLatestForTarget: js.UndefOr[IsLatestForTarget] = js.undefined
   
   /**
+    * The parent deployment's target ARN within a subdeployment.
+    */
+  var parentTargetArn: js.UndefOr[ThingGroupARN] = js.undefined
+  
+  /**
     * The revision number of the deployment.
     */
   var revisionId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ARN of the target IoT thing or thing group.
+    * The ARN of the target IoT thing or thing group. When creating a subdeployment, the targetARN can only be a thing group.
     */
   var targetArn: js.UndefOr[TargetARN] = js.undefined
 }
@@ -69,6 +74,10 @@ object Deployment {
     inline def setIsLatestForTarget(value: IsLatestForTarget): Self = StObject.set(x, "isLatestForTarget", value.asInstanceOf[js.Any])
     
     inline def setIsLatestForTargetUndefined: Self = StObject.set(x, "isLatestForTarget", js.undefined)
+    
+    inline def setParentTargetArn(value: ThingGroupARN): Self = StObject.set(x, "parentTargetArn", value.asInstanceOf[js.Any])
+    
+    inline def setParentTargetArnUndefined: Self = StObject.set(x, "parentTargetArn", js.undefined)
     
     inline def setRevisionId(value: NonEmptyString): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     

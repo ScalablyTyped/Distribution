@@ -291,6 +291,10 @@ object amapJsApiStrings {
   inline def c: c = "c".asInstanceOf[c]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   

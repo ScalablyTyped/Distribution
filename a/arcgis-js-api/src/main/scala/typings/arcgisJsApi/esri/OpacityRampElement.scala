@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OpacityRampElement
   extends StObject
-     with Object
      with LegendElement {
   
   /**
@@ -34,14 +31,8 @@ trait OpacityRampElement
 }
 object OpacityRampElement {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    infos: js.Array[OpacityRampStop],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String
-  ): OpacityRampElement = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), infos = infos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(infos: js.Array[OpacityRampStop], `type`: String): OpacityRampElement = {
+    val __obj = js.Dynamic.literal(infos = infos.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacityRampElement]
   }

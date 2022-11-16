@@ -1,7 +1,6 @@
 package typings.floatingUiDom
 
 import typings.std.Element
-import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ object srcUtilsIsMod {
   
   inline def isNode(value: Any): /* is std.Node */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Node */ Boolean]
   
-  inline def isOverflowElement(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOverflowElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOverflowElement(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOverflowElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isShadowRoot(node: Node): /* is std.ShadowRoot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShadowRoot")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.ShadowRoot */ Boolean]
   

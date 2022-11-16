@@ -19,7 +19,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.round_
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import typings.arcgisJsApi.esri.Color_
-import typings.arcgisJsApi.esri.LineSymbolMarkerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +58,7 @@ trait SimpleLineSymbolPropertie extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
     */
-  var marker: js.UndefOr[LineSymbolMarkerProperties] = js.undefined
+  var marker: js.UndefOr[LineSymbolMarkerPropertie | Null] = js.undefined
   
   /**
     * Maximum allowed ratio of the width of a miter join to the line width.
@@ -121,7 +120,9 @@ object SimpleLineSymbolPropertie {
     
     inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    inline def setMarker(value: LineSymbolMarkerProperties): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: LineSymbolMarkerPropertie): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerNull: Self = StObject.set(x, "marker", null)
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     

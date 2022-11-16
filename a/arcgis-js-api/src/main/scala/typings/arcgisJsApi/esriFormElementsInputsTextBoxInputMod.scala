@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TextBoxInput
-import typings.arcgisJsApi.esri.TextBoxInputConstructor
 import typings.arcgisJsApi.esri.TextBoxInputProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriFormElementsInputsTextBoxInputMod extends Shortcut {
+/* static members */
+object esriFormElementsInputsTextBoxInputMod {
   
-  @JSImport("esri/form/elements/inputs/TextBoxInput", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TextBoxInputConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/form/elements/inputs/TextBoxInput", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriFormElementsInputsTextBoxInputMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextBoxInput.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TextBoxInput {
     def this(properties: TextBoxInputProperties) = this()
@@ -51,9 +45,9 @@ object esriFormElementsInputsTextBoxInputMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/form/elements/inputs/TextBoxInput", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TextBoxInputConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriFormElementsInputsTextBoxInputMod.foo` */
-  override def _to: js.Object & TextBoxInputConstructor = ^
+  inline def fromJSON(json: Any): TextBoxInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TextBoxInput]
 }

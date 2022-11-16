@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointBarrierConstructor
   extends StObject
-     with /**
-  * A point barrier to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html)
-  */
-Instantiable0[PointBarrier]
+     with Instantiable0[PointBarrier]
      with Instantiable1[/* properties */ PointBarrierProperties, PointBarrier] {
   
   /**

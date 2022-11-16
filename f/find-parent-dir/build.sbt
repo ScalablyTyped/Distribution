@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-parent-dir"
-version := "0.3-dt-20211202Z-113ede"
+version := "0.3-dt-20211202Z-65d0f4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -48,6 +48,7 @@ import typings.arcgisJsApi.esri.PopupTemplateProperties
 import typings.arcgisJsApi.esri.PortalItemProperties
 import typings.arcgisJsApi.esri.RendererProperties
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
+import typings.arcgisJsApi.esri.WFSCapabilities
 import typings.arcgisJsApi.esri.WFSLayerElevationInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -121,9 +122,11 @@ trait WFSLayerPropertiestypewfs extends StObject {
   /**
     * Configures the method for reducing the number of point features in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#featureReduction)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | FeatureReductionSelection] = js.undefined
+  var featureReduction: js.UndefOr[
+    FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection
+  ] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -181,7 +184,7 @@ trait WFSLayerPropertiestypewfs extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -334,6 +337,13 @@ trait WFSLayerPropertiestypewfs extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * WFS service information about the available layers and operations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#wfsCapabilities)
+    */
+  var wfsCapabilities: js.UndefOr[WFSCapabilities] = js.undefined
 }
 object WFSLayerPropertiestypewfs {
   
@@ -381,7 +391,7 @@ object WFSLayerPropertiestypewfs {
     
     inline def setFeatureEffectUndefined: Self = StObject.set(x, "featureEffect", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
@@ -498,5 +508,9 @@ object WFSLayerPropertiestypewfs {
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWfsCapabilities(value: WFSCapabilities): Self = StObject.set(x, "wfsCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setWfsCapabilitiesUndefined: Self = StObject.set(x, "wfsCapabilities", js.undefined)
   }
 }

@@ -80,19 +80,22 @@ object mod extends Shortcut {
     
     def addKeycodes(keycodes: NumberDictionary[String]): Unit = js.native
     
-    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]): MousetrapInstance = js.native
     def bind(
       keys: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Boolean | Unit]
+    ): MousetrapInstance = js.native
+    def bind(
+      keys: String,
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Boolean | Unit],
       action: String
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Boolean | Unit]
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Boolean | Unit],
       action: String
     ): MousetrapInstance = js.native
     

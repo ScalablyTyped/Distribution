@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterInfoStatistics
-  extends StObject
-     with Object {
+trait RasterInfoStatistics extends StObject {
   
   /**
     * The average of calculated pixel values.
@@ -40,16 +36,8 @@ trait RasterInfoStatistics
 }
 object RasterInfoStatistics {
   
-  inline def apply(
-    avg: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    stddev: Double
-  ): RasterInfoStatistics = {
-    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stddev = stddev.asInstanceOf[js.Any])
+  inline def apply(avg: Double, max: Double, min: Double, stddev: Double): RasterInfoStatistics = {
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], stddev = stddev.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterInfoStatistics]
   }
   

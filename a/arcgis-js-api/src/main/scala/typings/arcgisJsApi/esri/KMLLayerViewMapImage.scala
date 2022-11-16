@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KMLLayerViewMapImage
-  extends StObject
-     with Object {
+trait KMLLayerViewMapImage extends StObject {
   
   /**
     * The [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of the map image.
@@ -40,16 +36,8 @@ trait KMLLayerViewMapImage
 }
 object KMLLayerViewMapImage {
   
-  inline def apply(
-    Extent: Extent,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    href: String,
-    id: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    rotation: Double
-  ): KMLLayerViewMapImage = {
-    val __obj = js.Dynamic.literal(Extent = Extent.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation.asInstanceOf[js.Any])
+  inline def apply(Extent: Extent, href: String, id: Double, rotation: Double): KMLLayerViewMapImage = {
+    val __obj = js.Dynamic.literal(Extent = Extent.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }
   

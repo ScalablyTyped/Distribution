@@ -5365,6 +5365,8 @@ inline def createStringLiteral(text: String, isSingleQuote: Boolean, hasExtended
 inline def createStringLiteral(text: String, isSingleQuote: Unit, hasExtendedUnicodeEscape: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteral")(text.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any], hasExtendedUnicodeEscape.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
 
 /** @deprecated Use `factory.createStringLiteralFromNode` or the factory supplied by your transformation context instead. */
+inline def createStringLiteralFromNode(sourceNode: PrivateIdentifier): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
+inline def createStringLiteralFromNode(sourceNode: PrivateIdentifier, isSingleQuote: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
 inline def createStringLiteralFromNode(sourceNode: PropertyNameLiteral): StringLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any]).asInstanceOf[StringLiteral]
 inline def createStringLiteralFromNode(sourceNode: PropertyNameLiteral, isSingleQuote: Boolean): StringLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringLiteralFromNode")(sourceNode.asInstanceOf[js.Any], isSingleQuote.asInstanceOf[js.Any])).asInstanceOf[StringLiteral]
 
@@ -6563,6 +6565,8 @@ inline def isAssertionKey(node: Node): /* is typescript.typescript.AssertionKey 
 
 inline def isAsteriskToken(node: Node): /* is typescript.typescript.AsteriskToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsteriskToken")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AsteriskToken */ Boolean]
 
+inline def isAutoAccessorPropertyDeclaration(node: Node): /* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoAccessorPropertyDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean]
+
 inline def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAwaitExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AwaitExpression */ Boolean]
 
 inline def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigIntLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BigIntLiteral */ Boolean]
@@ -6975,6 +6979,8 @@ inline def isRestParameter(node: ParameterDeclaration): Boolean = ^.asInstanceOf
 inline def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRestTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.RestTypeNode */ Boolean]
 
 inline def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReturnStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ReturnStatement */ Boolean]
+
+inline def isSatisfiesExpression(node: Node): /* is typescript.typescript.SatisfiesExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSatisfiesExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SatisfiesExpression */ Boolean]
 
 inline def isSemicolonClassElement(node: Node): /* is typescript.typescript.SemicolonClassElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSemicolonClassElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SemicolonClassElement */ Boolean]
 
@@ -11476,7 +11482,7 @@ inline def validateLocaleAndSetLanguage(locale: String, sys: FileExists, errors:
 /** The version of the TypeScript compiler release */
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-inline def versionMajorMinor: /* "4.8" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("versionMajorMinor").asInstanceOf[/* "4.8" */ String]
+inline def versionMajorMinor: /* "4.9" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("versionMajorMinor").asInstanceOf[/* "4.9" */ String]
 
 /**
   * Visits each child of a Node using the supplied visitor, possibly returning a new Node of the same kind in its place.

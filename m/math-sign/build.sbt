@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "math-sign"
-version := "1.0-dt-20211202Z-9723f8"
+version := "1.0-dt-20211202Z-313948"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

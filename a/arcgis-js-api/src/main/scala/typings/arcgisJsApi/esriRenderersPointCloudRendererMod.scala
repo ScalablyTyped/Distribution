@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudRenderer
-import typings.arcgisJsApi.esri.PointCloudRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersPointCloudRendererMod extends Shortcut {
+/* static members */
+object esriRenderersPointCloudRendererMod {
   
-  @JSImport("esri/renderers/PointCloudRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersPointCloudRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudRenderer {
     def this(properties: PointCloudRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersPointCloudRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/PointCloudRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersPointCloudRendererMod.foo` */
-  override def _to: js.Object & PointCloudRendererConstructor = ^
+  inline def fromJSON(json: Any): PointCloudRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudRenderer]
 }

@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.AttachmentsContent
   - typings.arcgisJsApi.esri.CustomContent
   - typings.arcgisJsApi.esri.ExpressionContent
+  - typings.arcgisJsApi.esri.RelationshipContent
 */
 trait contentContent extends StObject

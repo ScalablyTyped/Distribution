@@ -28,6 +28,14 @@ java.lang.String | typings.pgPromise.mod.IColumnConfig[T] | typings.pgPromise.mo
 */
 type QueryColumns[T] = _QueryColumns[T] | (js.Array[String | IColumnConfig[T] | Column[T]])
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type QueryParam = string | pg-promise.pg-promise.QueryFile | pg-promise.pg-promise.IPreparedStatement | pg-promise.pg-promise.IParameterizedQuery | pg-promise.pg-promise.PreparedStatement | pg-promise.pg-promise.ParameterizedQuery | (values : any | undefined): pg-promise.pg-promise.QueryParam
+}}}
+to avoid circular code involving: 
+- pg-promise.pg-promise.QueryParam
+*/
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - typings.pgPromise.mod.QueryFile

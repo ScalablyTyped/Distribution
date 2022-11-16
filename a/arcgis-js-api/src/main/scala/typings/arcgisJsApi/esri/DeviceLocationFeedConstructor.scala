@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DeviceLocationFeedConstructor
   extends StObject
-     with /**
-  * A Geotrigger feed which uses the device location to provide updates.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-DeviceLocationFeed.html)
-  */
-Instantiable0[DeviceLocationFeed]
+     with Instantiable0[DeviceLocationFeed]
      with Instantiable1[/* properties */ DeviceLocationFeedProperties, DeviceLocationFeed] {
   
   def fromJSON(json: Any): DeviceLocationFeed = js.native

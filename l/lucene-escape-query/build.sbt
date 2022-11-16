@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lucene-escape-query"
-version := "1.0-dt-20220117Z-fd9e4a"
+version := "1.0-dt-20220117Z-26d077"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object remixRunRouterStrings {
   
   @js.native
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @js.native
   sealed trait `applicationSlashx-www-form-urlencoded`
     extends StObject
        with FormEncType

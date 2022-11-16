@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileLink
-  extends StObject
-     with Object {
+trait FileLink extends StObject {
   
   /**
     * The location of the FileLink element in the array.
@@ -54,18 +50,8 @@ trait FileLink
 }
 object FileLink {
   
-  inline def apply(
-    constructor: js.Function,
-    count: Double,
-    error: String,
-    `extension`: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    state: String,
-    url: String
-  ): FileLink = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(count: Double, error: String, `extension`: String, name: String, state: String, url: String): FileLink = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileLink]
   }

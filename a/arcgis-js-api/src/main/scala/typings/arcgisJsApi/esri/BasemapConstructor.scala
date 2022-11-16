@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapConstructor
   extends StObject
-     with /**
-  * Creates a new basemap object.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html)
-  */
-Instantiable0[Basemap]
+     with Instantiable0[Basemap]
      with Instantiable1[/* properties */ BasemapProperties, Basemap] {
   
   /**

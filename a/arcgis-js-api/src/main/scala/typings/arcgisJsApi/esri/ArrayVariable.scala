@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.array
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrayVariable
   extends StObject
-     with Object
      with ProfileVariable {
   
   /**
@@ -17,7 +14,7 @@ trait ArrayVariable
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
     */
-  var elementType: ProfileVariable
+  var elementType: js.UndefOr[ArrayElementType] = js.undefined
   
   /**
     * The name of the profile variable.
@@ -35,21 +32,17 @@ trait ArrayVariable
 }
 object ArrayVariable {
   
-  inline def apply(
-    constructor: js.Function,
-    elementType: ProfileVariable,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ArrayVariable = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(name: String): ArrayVariable = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[ArrayVariable]
   }
   
   extension [Self <: ArrayVariable](x: Self) {
     
-    inline def setElementType(value: ProfileVariable): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: ArrayElementType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    
+    inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

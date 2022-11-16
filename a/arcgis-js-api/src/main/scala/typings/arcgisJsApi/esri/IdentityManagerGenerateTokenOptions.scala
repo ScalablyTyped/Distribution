@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdentityManagerGenerateTokenOptions
-  extends StObject
-     with Object {
+trait IdentityManagerGenerateTokenOptions extends StObject {
   
   /**
     * The server URL.
@@ -33,15 +29,8 @@ trait IdentityManagerGenerateTokenOptions
 }
 object IdentityManagerGenerateTokenOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    serverUrl: String,
-    ssl: Boolean,
-    token: String
-  ): IdentityManagerGenerateTokenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serverUrl = serverUrl.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+  inline def apply(serverUrl: String, ssl: Boolean, token: String): IdentityManagerGenerateTokenOptions = {
+    val __obj = js.Dynamic.literal(serverUrl = serverUrl.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }
   

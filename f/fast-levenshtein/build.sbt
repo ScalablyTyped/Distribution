@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-levenshtein"
-version := "0.0-unknown-dt-20220818Z-fd400a"
+version := "0.0-unknown-dt-20220818Z-5edaa9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

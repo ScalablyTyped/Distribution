@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubtypeSublayer extends StObject {
+trait SubtypeSublayer
+  extends StObject
+     with Identifiable {
   
   /**
     * Creates a popup template for the layer, populated with all the fields of the layer.
@@ -15,6 +17,43 @@ trait SubtypeSublayer extends StObject {
     */
   def createPopupTemplate(): PopupTemplate = js.native
   def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
+  
+  /**
+    * Determines if the layer is editable.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#editingEnabled)
+    */
+  var editingEnabled: Boolean = js.native
+  
+  /**
+    * An array of fields in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#fields)
+    */
+  var fields: js.Array[Field] = js.native
+  
+  /**
+    * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#formTemplate)
+    */
+  var formTemplate: FormTemplate = js.native
+  
+  /**
+    * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name (case-insensitive).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#getField)
+    */
+  def getField(fieldName: String): Field = js.native
+  
+  /**
+    * Returns the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) associated with the given field name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#getFieldDomain)
+    */
+  def getFieldDomain(fieldName: String): Domain = js.native
   
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
@@ -58,6 +97,15 @@ trait SubtypeSublayer extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#minScale)
     */
   var minScale: Double = js.native
+  
+  /**
+    * The opacity of the layer.
+    *
+    * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#opacity)
+    */
+  var opacity: Double = js.native
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
@@ -106,4 +154,13 @@ trait SubtypeSublayer extends StObject {
   var title: String = js.native
   
   val `type`: `subtype-sublayer` = js.native
+  
+  /**
+    * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#visible)
+    */
+  var visible: Boolean = js.native
 }

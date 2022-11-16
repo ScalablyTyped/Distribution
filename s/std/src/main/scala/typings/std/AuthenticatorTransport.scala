@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.ble
+  - typings.std.stdStrings.hybrid
   - typings.std.stdStrings.internal
   - typings.std.stdStrings.nfc_
   - typings.std.stdStrings.usb
@@ -15,6 +16,8 @@ trait AuthenticatorTransport extends StObject
 object AuthenticatorTransport {
   
   inline def ble: typings.std.stdStrings.ble = "ble".asInstanceOf[typings.std.stdStrings.ble]
+  
+  inline def hybrid: typings.std.stdStrings.hybrid = "hybrid".asInstanceOf[typings.std.stdStrings.hybrid]
   
   inline def internal: typings.std.stdStrings.internal = "internal".asInstanceOf[typings.std.stdStrings.internal]
   

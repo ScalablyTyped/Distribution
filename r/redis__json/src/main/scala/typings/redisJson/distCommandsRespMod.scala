@@ -20,6 +20,14 @@ object distCommandsRespMod {
   
   inline def transformReply(): RESPReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[RESPReply]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RESPReply = std.Array<string | number | @redis/json.@redis/json/dist/commands/RESP.RESPReply>
+  }}}
+  to avoid circular code involving: 
+  - @redis/json.@redis/json/dist/commands/RESP.RESPReply
+  */
   @js.native
   trait RESPReply
     extends StObject

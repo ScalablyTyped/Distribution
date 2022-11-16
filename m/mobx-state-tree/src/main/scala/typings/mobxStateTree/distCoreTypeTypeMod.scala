@@ -101,53 +101,41 @@ object distCoreTypeTypeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {[$type] : undefined,   Type :any} ? T['Type'] : T
     }}}
     */
-  @js.native
-  trait Instance[T]
-    extends StObject
-       with SnapshotOrInstance[T]
+  type Instance[T] = T
   
   type Primitives = js.UndefOr[ModelPrimitive | Null]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends object ? T & mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IStateTreeNode<IT> : T
     }}}
     */
-  @js.native
-  trait STNValue[T, IT /* <: IAnyType */] extends StObject
+  type STNValue[T, IT /* <: IAnyType */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {[$type] : undefined,   CreationType :any} ? T['CreationType'] : T extends mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IStateTreeNode<infer IT> ? IT['CreationType'] : T
     }}}
     */
-  @js.native
-  trait SnapshotIn[T]
-    extends StObject
-       with SnapshotOrInstance[T]
+  type SnapshotIn[T] = T
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobxStateTree.distCoreTypeTypeMod.SnapshotIn[T]
-    - typings.mobxStateTree.distCoreTypeTypeMod.Instance[T]
-  */
-  trait SnapshotOrInstance[T] extends StObject
+  type SnapshotOrInstance[T] = SnapshotIn[T] | Instance[T]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {[$type] : undefined,   SnapshotType :any} ? T['SnapshotType'] : T extends mobx-state-tree.mobx-state-tree/dist/core/node/node-utils.IStateTreeNode<infer IT> ? IT['SnapshotType'] : T
     }}}
     */
-  @js.native
-  trait SnapshotOut[T] extends StObject
+  type SnapshotOut[T] = T
 }

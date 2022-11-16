@@ -1,31 +1,19 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`line-of-sight-view-3d`
 import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.LineOfSightAnalysis
 import typings.arcgisJsApi.esri.LineOfSightAnalysisResult
 import typings.arcgisJsApi.esri.LineOfSightAnalysisView3D
-import typings.arcgisJsApi.esri.LineOfSightAnalysisView3DConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViews3dAnalysisLineOfSightAnalysisView3DMod extends Shortcut {
+object esriViews3dAnalysisLineOfSightAnalysisView3DMod {
   
   @JSImport("esri/views/3d/analysis/LineOfSightAnalysisView3D", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & LineOfSightAnalysisView3DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/views/3d/analysis/LineOfSightAnalysisView3D", JSImport.Namespace)
-  @js.native
-  /**
-    * Represents the analysis view of a [LineOfSightAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html) after it has been added to [SceneView.analyses](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#analyses).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-LineOfSightAnalysisView3D.html)
-    */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with LineOfSightAnalysisView3D {
     def this(properties: Any) = this()
@@ -65,16 +53,11 @@ object esriViews3dAnalysisLineOfSightAnalysisView3DMod extends Shortcut {
     override val `type`: `line-of-sight-view-3d` = js.native
     
     /**
-      * When `true`, the analysis is visualized in the view.
+      * When `true`, the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-LineOfSightAnalysisView3D.html#analysis) is visualized in the view.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-LineOfSightAnalysisView3D.html#visible)
       */
     /* CompleteClass */
     var visible: Boolean = js.native
   }
-  
-  type _To = js.Object & LineOfSightAnalysisView3DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViews3dAnalysisLineOfSightAnalysisView3DMod.foo` */
-  override def _to: js.Object & LineOfSightAnalysisView3DConstructor = ^
 }

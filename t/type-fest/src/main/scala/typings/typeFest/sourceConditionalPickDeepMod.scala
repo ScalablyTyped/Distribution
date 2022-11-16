@@ -5,6 +5,7 @@ import typings.std.Record
 import typings.typeFest.sourceConditionalExceptMod.ConditionalExcept
 import typings.typeFest.sourceConditionalSimplifyMod.ConditionalSimplifyDeep
 import typings.typeFest.sourceOpaqueMod.Opaque
+import typings.typeFest.typeFestBooleans.`true`
 import typings.typeFest.typeFestStrings.`conditional-pick-deep-symbol`
 import typings.typeFest.typeFestStrings.`extends`
 import typings.typeFest.typeFestStrings.equality
@@ -19,13 +20,12 @@ object sourceConditionalPickDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Options['condition'] extends 'equality' ? type-fest.type-fest/source/internal.IsEqual<Type, Condition> : Type extends Condition ? true : false
     }}}
     */
-  @js.native
-  trait AssertCondition[Type, Condition, Options /* <: ConditionalPickDeepOptions */] extends StObject
+  type AssertCondition[Type, Condition, Options /* <: ConditionalPickDeepOptions */] = `true`
   
   type ConditionalPickDeep[Type, Condition, Options /* <: ConditionalPickDeepOptions */] = ConditionalSimplifyDeep[
     ConditionalExcept[

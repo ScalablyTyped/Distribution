@@ -19,6 +19,7 @@ import typings.sharepoint.sharepointStrings.animationstart
 import typings.sharepoint.sharepointStrings.auxclick
 import typings.sharepoint.sharepointStrings.beforeinput
 import typings.sharepoint.sharepointStrings.blur
+import typings.sharepoint.sharepointStrings.cancel
 import typings.sharepoint.sharepointStrings.canplay
 import typings.sharepoint.sharepointStrings.canplaythrough
 import typings.sharepoint.sharepointStrings.change
@@ -187,6 +188,12 @@ inline def AttachEvent_beforeinput(
 inline def AttachEvent_blur(
   `type`: blur,
   eventFunc: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+  el: GlobalEventHandlers
+): Any = (js.Dynamic.global.applyDynamic("AttachEvent")(`type`.asInstanceOf[js.Any], eventFunc.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def AttachEvent_cancel(
+  `type`: cancel,
+  eventFunc: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
   el: GlobalEventHandlers
 ): Any = (js.Dynamic.global.applyDynamic("AttachEvent")(`type`.asInstanceOf[js.Any], eventFunc.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Any]
 

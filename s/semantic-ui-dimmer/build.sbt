@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-dimmer"
-version := "2.2-dt-20220624Z-948f11"
+version := "2.2-dt-20220624Z-93ab54"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

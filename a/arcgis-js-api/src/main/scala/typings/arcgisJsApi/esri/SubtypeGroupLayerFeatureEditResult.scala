@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerFeatureEditResult
-  extends StObject
-     with Object {
+trait SubtypeGroupLayerFeatureEditResult extends StObject {
   
   /**
     * If the edit failed, the edit result includes an error.
@@ -33,15 +29,8 @@ trait SubtypeGroupLayerFeatureEditResult
 }
 object SubtypeGroupLayerFeatureEditResult {
   
-  inline def apply(
-    constructor: js.Function,
-    error: SubtypeGroupLayerFeatureEditResultError,
-    globalId: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    objectId: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubtypeGroupLayerFeatureEditResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), objectId = objectId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(error: SubtypeGroupLayerFeatureEditResultError, globalId: String, objectId: Double): SubtypeGroupLayerFeatureEditResult = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtypeGroupLayerFeatureEditResult]
   }
   

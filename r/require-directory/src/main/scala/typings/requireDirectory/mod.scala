@@ -123,6 +123,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RequireDirectoryResult = {[index: string] : require-directory.require-directory.RequireDirectoryResult<T> | T}
+  }}}
+  to avoid circular code involving: 
+  - require-directory.require-directory.RequireDirectoryResult
+  */
   trait RequireDirectoryResult[T]
     extends StObject
        with /**

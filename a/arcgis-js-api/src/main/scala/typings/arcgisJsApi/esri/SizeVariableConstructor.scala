@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SizeVariableConstructor
   extends StObject
-     with /**
-  * The size visual variable defines the size of individual features in a layer based on a numeric (often thematic) value.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html)
-  */
-Instantiable0[SizeVariable]
+     with Instantiable0[SizeVariable]
      with Instantiable1[/* properties */ SizeVariableProperties, SizeVariable] {
   
   def fromJSON(json: Any): SizeVariable = js.native

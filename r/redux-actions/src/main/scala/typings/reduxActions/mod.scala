@@ -141,6 +141,14 @@ object mod {
   
   type ActionFunctions[Payload] = BaseActionFunctions[Action[Payload]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ActionMap = {[actionType: string] : redux-actions.redux-actions.ActionMap<Payload, Meta> | redux-actions.redux-actions.ActionFunctionAny<Payload> | [redux-actions.redux-actions.ActionFunctionAny<Payload>, redux-actions.redux-actions.ActionFunctionAny<Meta>] | undefined}
+  }}}
+  to avoid circular code involving: 
+  - redux-actions.redux-actions.ActionMap
+  */
   trait ActionMap[Payload, Meta]
     extends StObject
        with /* actionType */ StringDictionary[
@@ -242,6 +250,15 @@ object mod {
   
   type Reducer[State, Payload] = js.Function2[/* state */ State, /* action */ Action[Payload], State]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReducerMap = {[actionType: string] : redux-actions.redux-actions.ReducerMapValue<State, Payload>}
+  }}}
+  to avoid circular code involving: 
+  - redux-actions.redux-actions.ReducerMap
+  - redux-actions.redux-actions.ReducerMapValue
+  */
   trait ReducerMap[State, Payload]
     extends StObject
        with /* actionType */ StringDictionary[ReducerMapValue[State, Payload]]
@@ -254,6 +271,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReducerMapMeta = {[actionType: string] : redux-actions.redux-actions.ReducerMeta<State, Payload, Meta> | redux-actions.redux-actions.ReducerNextThrowMeta<State, Payload, Meta> | redux-actions.redux-actions.ReducerMapMeta<State, Payload, Meta>}
+  }}}
+  to avoid circular code involving: 
+  - redux-actions.redux-actions.ReducerMapMeta
+  */
   trait ReducerMapMeta[State, Payload, Meta]
     extends StObject
        with /* actionType */ StringDictionary[

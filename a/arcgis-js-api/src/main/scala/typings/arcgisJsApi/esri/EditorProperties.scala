@@ -87,6 +87,13 @@ trait EditorProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
     */
   var viewModel: js.UndefOr[EditorViewModelProperties] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[EditorVisibleElements] = js.undefined
 }
 object EditorProperties {
   
@@ -138,5 +145,9 @@ object EditorProperties {
     inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleElements(value: EditorVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

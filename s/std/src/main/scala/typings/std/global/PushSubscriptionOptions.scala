@@ -15,4 +15,8 @@ open class PushSubscriptionOptions ()
   /* standard dom */
   /* CompleteClass */
   override val applicationServerKey: js.typedarray.ArrayBuffer | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val userVisibleOnly: scala.Boolean = js.native
 }

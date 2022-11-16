@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Describes a single variable in the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
   *
+  * @deprecated This module was moved in 4.25. Use {@link module:esri/layers/voxel/VoxelVariable esri/layers/voxel/VoxelVariable} instead.
+  *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html)
   */
 trait VoxelVariable extends StObject {

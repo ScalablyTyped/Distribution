@@ -69,6 +69,13 @@ trait PrintTemplateProperties extends StObject {
   ] = js.undefined
   
   /**
+    * A custom layout hosted as a [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutItem)
+    */
+  var layoutItem: js.UndefOr[PortalItemProperties] = js.undefined
+  
+  /**
     * Defines the layout elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
@@ -130,6 +137,10 @@ object PrintTemplateProperties {
     inline def setLayout(
       value: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
     ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutItem(value: PortalItemProperties): Self = StObject.set(x, "layoutItem", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutItemUndefined: Self = StObject.set(x, "layoutItem", js.undefined)
     
     inline def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
     

@@ -56,6 +56,8 @@ object buildModulesEventlistenersMod {
     
     var blur: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.undefined
     
+    var cancel: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
+    
     var canplay: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
     var canplaythrough: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
@@ -300,6 +302,12 @@ object buildModulesEventlistenersMod {
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
       inline def setBlurVarargs(value: Listener[FocusEvent]*): Self = StObject.set(x, "blur", js.Array(value*))
+      
+      inline def setCancel(value: Listener[Event] | js.Array[Listener[Event]]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setCancelVarargs(value: Listener[Event]*): Self = StObject.set(x, "cancel", js.Array(value*))
       
       inline def setCanplay(value: Listener[Event] | js.Array[Listener[Event]]): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
       

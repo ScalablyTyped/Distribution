@@ -41,6 +41,15 @@ object mod {
     def setItem(key: String, value: Value, callback: Callback[DatabaseContents]): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DatabaseContents = {[key: string] : quick-store.quick-store.Value}
+  }}}
+  to avoid circular code involving: 
+  - quick-store.quick-store.DatabaseContents
+  - quick-store.quick-store.Value
+  */
   trait DatabaseContents
     extends StObject
        with /* key */ StringDictionary[Value]
@@ -52,5 +61,13 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Value = string | number | quick-store.quick-store.DatabaseContents | std.Array<quick-store.quick-store.Value> | boolean | null
+  }}}
+  to avoid circular code involving: 
+  - quick-store.quick-store.Value
+  */
   type Value = String | Double | DatabaseContents | js.Array[Any] | Boolean | Null
 }

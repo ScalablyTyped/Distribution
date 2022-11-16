@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "good-storage"
-version := "1.1-dt-20211202Z-a16a85"
+version := "1.1-dt-20211202Z-c0287f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

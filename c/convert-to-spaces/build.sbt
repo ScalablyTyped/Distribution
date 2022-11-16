@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "convert-to-spaces"
-version := "2.0.1-8f3086"
+version := "2.0.1-02cb6d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

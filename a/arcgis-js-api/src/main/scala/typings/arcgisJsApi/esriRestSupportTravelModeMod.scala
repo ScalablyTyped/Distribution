@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TravelMode
-import typings.arcgisJsApi.esri.TravelModeConstructor
 import typings.arcgisJsApi.esri.TravelModeProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestSupportTravelModeMod extends Shortcut {
+/* static members */
+object esriRestSupportTravelModeMod {
   
-  @JSImport("esri/rest/support/TravelMode", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TravelModeConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/support/TravelMode", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestSupportTravelModeMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TravelMode {
     def this(properties: TravelModeProperties) = this()
@@ -35,9 +29,9 @@ object esriRestSupportTravelModeMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/support/TravelMode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TravelModeConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestSupportTravelModeMod.foo` */
-  override def _to: js.Object & TravelModeConstructor = ^
+  inline def fromJSON(json: Any): TravelMode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TravelMode]
 }

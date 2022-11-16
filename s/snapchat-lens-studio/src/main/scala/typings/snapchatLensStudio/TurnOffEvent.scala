@@ -7,6 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Triggered when the lens turns off. */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type TurnOffEvent = snapchat-lens-studio.SceneEvent<snapchat-lens-studio.TurnOffEvent>
+}}}
+to avoid circular code involving: 
+- snapchat-lens-studio.TurnOffEvent
+*/
 trait TurnOffEvent
   extends StObject
      with SceneEvent[TurnOffEvent]

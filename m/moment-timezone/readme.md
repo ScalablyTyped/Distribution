@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment-timezone
 
-Typings are for version 0.5.38
+Typings are for version 0.5.39
 
 ## Library description:
 Parse and display moments in any timezone.

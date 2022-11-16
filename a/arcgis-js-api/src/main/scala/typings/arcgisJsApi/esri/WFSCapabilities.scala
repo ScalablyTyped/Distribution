@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WFSCapabilities
-  extends StObject
-     with Object {
+trait WFSCapabilities extends StObject {
   
   /**
     * An array of featureTypes (or layers) available in the WFS service.
@@ -26,14 +22,8 @@ trait WFSCapabilities
 }
 object WFSCapabilities {
   
-  inline def apply(
-    constructor: js.Function,
-    featureTypes: js.Array[WFSFeatureType],
-    hasOwnProperty: PropertyKey => Boolean,
-    operations: WFSOperations,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WFSCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], featureTypes = featureTypes.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(featureTypes: js.Array[WFSFeatureType], operations: WFSOperations): WFSCapabilities = {
+    val __obj = js.Dynamic.literal(featureTypes = featureTypes.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSCapabilities]
   }
   

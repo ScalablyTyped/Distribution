@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.textSlashhtml
+import typings.arcgisJsApi.arcgisJsApiStrings.textSlashplain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,11 +50,11 @@ trait WMSLayerProperties
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Return format of feature information (MIME type).
+    * The MIME type that will be requested by popups.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoFormat)
     */
-  var featureInfoFormat: js.UndefOr[String] = js.undefined
+  var featureInfoFormat: js.UndefOr[textSlashhtml | textSlashplain | Null] = js.undefined
   
   /**
     * The URL for the WMS GetFeatureInfo call.
@@ -60,6 +62,15 @@ trait WMSLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoUrl)
     */
   var featureInfoUrl: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Function to override the default popup behavior of `WMSLayer`.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchFeatureInfoFunction)
+    */
+  var fetchFeatureInfoFunction: js.UndefOr[FetchFeatureInfoFunction] = js.undefined
   
   /**
     * All bounding boxes defined for the layer.
@@ -211,13 +222,19 @@ object WMSLayerProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFeatureInfoFormat(value: String): Self = StObject.set(x, "featureInfoFormat", value.asInstanceOf[js.Any])
+    inline def setFeatureInfoFormat(value: textSlashhtml | textSlashplain): Self = StObject.set(x, "featureInfoFormat", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureInfoFormatNull: Self = StObject.set(x, "featureInfoFormat", null)
     
     inline def setFeatureInfoFormatUndefined: Self = StObject.set(x, "featureInfoFormat", js.undefined)
     
     inline def setFeatureInfoUrl(value: String): Self = StObject.set(x, "featureInfoUrl", value.asInstanceOf[js.Any])
     
     inline def setFeatureInfoUrlUndefined: Self = StObject.set(x, "featureInfoUrl", js.undefined)
+    
+    inline def setFetchFeatureInfoFunction(value: /* query */ Any => js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "fetchFeatureInfoFunction", js.Any.fromFunction1(value))
+    
+    inline def setFetchFeatureInfoFunctionUndefined: Self = StObject.set(x, "fetchFeatureInfoFunction", js.undefined)
     
     inline def setFullExtents(value: js.Array[ExtentProperties]): Self = StObject.set(x, "fullExtents", value.asInstanceOf[js.Any])
     

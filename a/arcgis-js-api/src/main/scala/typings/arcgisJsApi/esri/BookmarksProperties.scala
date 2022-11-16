@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +71,7 @@ trait BookmarksProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -124,7 +126,7 @@ object BookmarksProperties {
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: BookmarksViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

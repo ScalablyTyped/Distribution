@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActionBase
   extends StObject
-     with Accessor {
+     with Accessor
+     with Identifiable {
   
   /**
     * Set this property to `true` to display a spinner icon.

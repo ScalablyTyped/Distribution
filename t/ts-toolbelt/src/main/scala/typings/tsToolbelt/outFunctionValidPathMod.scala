@@ -11,7 +11,7 @@ object outFunctionValidPathMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     O extends unknown ? Path extends unknown ? ts-toolbelt.ts-toolbelt/out/Function/ValidPath._ValidPath<O, Path> : never : never
     }}}
@@ -30,13 +30,12 @@ object outFunctionValidPathMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/Function/ValidPath.__ValidPath<O, Path, ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<0>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<ts-toolbelt.ts-toolbelt/out/Any/Key.Key>> : never
     }}}
     */
-  @js.native
-  trait _ValidPath[O /* <: js.Object */, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] extends StObject
+  type _ValidPath[O /* <: js.Object */, Path /* <: typings.tsToolbelt.outListListMod.List[Key] */] = typings.tsToolbelt.outListListMod.List[Key]
   
   /**
     * @hidden

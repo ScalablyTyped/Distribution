@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.OpacityVariable
-import typings.arcgisJsApi.esri.OpacityVariableConstructor
 import typings.arcgisJsApi.esri.OpacityVariableProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersVisualVariablesOpacityVariableMod extends Shortcut {
+/* static members */
+object esriRenderersVisualVariablesOpacityVariableMod {
   
-  @JSImport("esri/renderers/visualVariables/OpacityVariable", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & OpacityVariableConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/visualVariables/OpacityVariable", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersVisualVariablesOpacityVariableMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with OpacityVariable {
     def this(properties: OpacityVariableProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersVisualVariablesOpacityVariableMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/visualVariables/OpacityVariable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & OpacityVariableConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersVisualVariablesOpacityVariableMod.foo` */
-  override def _to: js.Object & OpacityVariableConstructor = ^
+  inline def fromJSON(json: Any): OpacityVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[OpacityVariable]
 }

@@ -15,6 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableListViewModel extends StObject {
   
   /**
+    * Whether to provide an indication if a layer is being published in the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html).
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#checkPublishStatusEnabled)
+    */
+  var checkPublishStatusEnabled: Boolean
+  
+  /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
@@ -54,16 +63,19 @@ trait TableListViewModel extends StObject {
 object TableListViewModel {
   
   inline def apply(
+    checkPublishStatusEnabled: Boolean,
     listItemCreatedFunction: /* event */ Any => scala.Unit,
     map: Map | WebMap,
     state: loading | ready | disabled,
     tableItems: Collection[TableListListItem]
   ): TableListViewModel = {
-    val __obj = js.Dynamic.literal(listItemCreatedFunction = js.Any.fromFunction1(listItemCreatedFunction), map = map.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tableItems = tableItems.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkPublishStatusEnabled = checkPublishStatusEnabled.asInstanceOf[js.Any], listItemCreatedFunction = js.Any.fromFunction1(listItemCreatedFunction), map = map.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tableItems = tableItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableListViewModel]
   }
   
   extension [Self <: TableListViewModel](x: Self) {
+    
+    inline def setCheckPublishStatusEnabled(value: Boolean): Self = StObject.set(x, "checkPublishStatusEnabled", value.asInstanceOf[js.Any])
     
     inline def setListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     

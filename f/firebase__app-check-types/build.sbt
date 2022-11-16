@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "firebase__app-check-types"
-version := "0.4.1-e37532"
+version := "0.4.1-b9990b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-1b99ae",
-  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-d9a3b0",
-  "org.scalablytyped" %%% "firebase__util" % "1.7.3-4a44ae",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-120265",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-5011e0",
+  "org.scalablytyped" %%% "firebase__util" % "1.7.3-898cce",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

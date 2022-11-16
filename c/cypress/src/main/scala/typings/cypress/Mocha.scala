@@ -2,6 +2,7 @@ package typings.cypress
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.cypress.Cypress.SuiteConfigOverrides
 import typings.cypress.Cypress.TestConfigOverrides
 import typings.cypress.Mocha.Interface
 import typings.cypress.Mocha.MochaInstanceOptions
@@ -369,7 +370,7 @@ object Mocha {
       * Describe a "suite" with the given `title`, TestOptions, and callback `fn` containing
       * nested suites. Indicates this suite should be executed exclusively.
       */
-    def apply(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def apply(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites. Indicates this suite should be executed exclusively.
@@ -734,7 +735,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def context(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
+    def context(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -775,7 +776,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def describe(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
+    def describe(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -989,7 +990,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def suite(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
+    def suite(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -1233,7 +1234,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xcontext(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
+    def xcontext(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
     /**
       * Pending suite.
       *
@@ -1253,7 +1254,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def xdescribe(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
+    def xdescribe(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit
     /**
       * Pending suite.
       *
@@ -1681,7 +1682,7 @@ object Mocha {
   @js.native
   trait PendingSuiteFunction extends StObject {
     
-    def apply(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+    def apply(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
     def apply(title: String, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
   }
   
@@ -3130,7 +3131,7 @@ object Mocha {
       * Describe a "suite" with the given `title`, TestOptions, and callback `fn` containing
       * nested suites.
       */
-    def apply(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def apply(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites.
@@ -3160,7 +3161,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def only(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
+    def only(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite = js.native
     /**
       * [bdd, tdd] Describe a "suite" with the given `title` and callback `fn` containing
       * nested suites. Indicates this suite should be executed exclusively.
@@ -3186,7 +3187,7 @@ object Mocha {
       *
       * - _Only available when invoked via the mocha CLI._
       */
-    def skip(title: String, config: TestConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
+    def skip(title: String, config: SuiteConfigOverrides, fn: js.ThisFunction0[/* this */ Suite, Unit]): Suite | Unit = js.native
     /**
       * [bdd, tdd] Indicates this suite should not be executed.
       *

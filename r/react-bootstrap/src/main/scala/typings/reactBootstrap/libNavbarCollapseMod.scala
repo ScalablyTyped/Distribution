@@ -15,6 +15,15 @@ object libNavbarCollapseMod {
   
   type NavbarCollapse = Component[NavbarCollapseProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NavbarCollapseProps = react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavbarCollapse.NavbarCollapse>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/NavbarCollapse.NavbarCollapse
+  - react-bootstrap.react-bootstrap/lib/NavbarCollapse.NavbarCollapseProps
+  */
   trait NavbarCollapseProps
     extends StObject
        with HTMLProps[NavbarCollapse]

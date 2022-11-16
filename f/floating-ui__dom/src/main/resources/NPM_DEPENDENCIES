@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@floating-ui/dom" : "1.0.4"
+      "@floating-ui/dom" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@floating-ui/dom" : "1.0.4"
+      "@floating-ui/dom" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

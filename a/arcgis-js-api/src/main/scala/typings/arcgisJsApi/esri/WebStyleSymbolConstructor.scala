@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebStyleSymbolConstructor
   extends StObject
-     with /**
-  * WebStyleSymbol is a class used to conveniently create vector 2D symbols and realistic and thematic 3D symbols.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html)
-  */
-Instantiable0[WebStyleSymbol]
+     with Instantiable0[WebStyleSymbol]
      with Instantiable1[/* properties */ WebStyleSymbolProperties, WebStyleSymbol] {
   
   def fromJSON(json: Any): WebStyleSymbol = js.native

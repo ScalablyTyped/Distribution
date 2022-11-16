@@ -89,7 +89,7 @@ trait TravelMode
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
     */
-  var distanceAttributeName: kilometers_ | miles_ | String = js.native
+  var distanceAttributeName: kilometers_ | miles_ | meters_ | String = js.native
   
   /**
     * The unique identifier.
@@ -103,7 +103,7 @@ trait TravelMode
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
     */
-  var impedanceAttributeName: kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String = js.native
+  var impedanceAttributeName: kilometers_ | miles_ | meters_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String = js.native
   
   /**
     * The unique name of the travel mode.

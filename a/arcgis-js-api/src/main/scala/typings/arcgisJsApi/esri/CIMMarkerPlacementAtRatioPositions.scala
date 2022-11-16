@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMMarkerPlacementAtRatioPositions
   extends StObject
-     with Object
      with MarkerPlacement {
   
   /**
@@ -71,13 +68,8 @@ trait CIMMarkerPlacementAtRatioPositions
 }
 object CIMMarkerPlacementAtRatioPositions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    positionArray: js.Array[Double],
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMMarkerPlacementAtRatioPositions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), positionArray = positionArray.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(positionArray: js.Array[Double]): CIMMarkerPlacementAtRatioPositions = {
+    val __obj = js.Dynamic.literal(positionArray = positionArray.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMMarkerPlacementAtRatioPositions")
     __obj.asInstanceOf[CIMMarkerPlacementAtRatioPositions]
   }

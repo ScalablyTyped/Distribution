@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextSymbol3DLayerBackgroundProperties
-  extends StObject
-     with Object {
+trait TextSymbol3DLayerBackgroundProperties extends StObject {
   
   /**
     * The color of the background.
@@ -19,12 +15,8 @@ trait TextSymbol3DLayerBackgroundProperties
 }
 object TextSymbol3DLayerBackgroundProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): TextSymbol3DLayerBackgroundProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): TextSymbol3DLayerBackgroundProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextSymbol3DLayerBackgroundProperties]
   }
   

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait typeCreatePCClassRendererParams
-  extends StObject
-     with Object {
+trait typeCreatePCClassRendererParams extends StObject {
   
   /**
     * The number of points per inch in the view.
@@ -66,14 +62,8 @@ trait typeCreatePCClassRendererParams
 }
 object typeCreatePCClassRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    field: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: PointCloudLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typeCreatePCClassRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(field: String, layer: PointCloudLayer): typeCreatePCClassRendererParams = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeCreatePCClassRendererParams]
   }
   

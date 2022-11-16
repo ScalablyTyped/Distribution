@@ -42,6 +42,14 @@ object mod extends Shortcut {
   
   type Cache = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MicroMemoize.Cache */ Any
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CurriedMoize = <CurriedFn extends moize.moize.Moizeable, CurriedOptions extends moize.moize.Options>(curriedFn : CurriedFn | CurriedOptions, curriedOptions : CurriedOptions | undefined): moize.moize.Moized<CurriedFn, OriginalOptions & CurriedOptions> | moize.moize.CurriedMoize<OriginalOptions & CurriedOptions>
+  }}}
+  to avoid circular code involving: 
+  - moize.moize.CurriedMoize
+  */
   @js.native
   trait CurriedMoize[OriginalOptions] extends StObject {
     

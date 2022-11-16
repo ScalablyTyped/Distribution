@@ -92,6 +92,14 @@ object distHelpersMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type LooksLikeMatch = type-fest.type-fest/source/primitive.Primitive | (a : babel-plugin-codegen.babel-plugin-codegen/dist/helpers.LooksLikeTarget): boolean | {[key: string] : babel-plugin-codegen.babel-plugin-codegen/dist/helpers.LooksLikeMatch}
+  }}}
+  to avoid circular code involving: 
+  - babel-plugin-codegen.babel-plugin-codegen/dist/helpers.LooksLikeMatch
+  */
   type LooksLikeMatch = Primitive | (js.Function1[/* a */ LooksLikeTarget, Boolean]) | StringDictionary[Any]
   
   type LooksLikeTarget = Any

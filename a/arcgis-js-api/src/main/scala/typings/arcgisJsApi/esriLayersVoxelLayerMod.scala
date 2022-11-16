@@ -1,23 +1,17 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SceneServiceVersion
 import typings.arcgisJsApi.esri.SpatialReference
 import typings.arcgisJsApi.esri.VoxelLayer
-import typings.arcgisJsApi.esri.VoxelLayerConstructor
 import typings.arcgisJsApi.esri.VoxelLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersVoxelLayerMod extends Shortcut {
+/* static members */
+object esriLayersVoxelLayerMod {
   
-  @JSImport("esri/layers/VoxelLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & VoxelLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/VoxelLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersVoxelLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with VoxelLayer {
     def this(properties: VoxelLayerProperties) = this()
@@ -106,9 +100,9 @@ object esriLayersVoxelLayerMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/VoxelLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & VoxelLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersVoxelLayerMod.foo` */
-  override def _to: js.Object & VoxelLayerConstructor = ^
+  inline def fromJSON(json: Any): VoxelLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[VoxelLayer]
 }

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisibleElementsMenuItems
-  extends StObject
-     with Object {
+trait VisibleElementsMenuItems extends StObject {
   
   /**
     * Indicates whether to display the `Clear selection` menu item.
@@ -18,6 +14,13 @@ trait VisibleElementsMenuItems
   var clearSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * _(Since 4.25)_ Indicates whether to display the `Delete Selection` menu item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+    */
+  var deleteSelection: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates whether to display the `Refresh data` menu item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
@@ -25,7 +28,7 @@ trait VisibleElementsMenuItems
   var refreshData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * _(Since 4.23) Indicates whether to toggle from showing only selected records in the table to showing all of the records.
+    * _(Since 4.23)_ Indicates whether to toggle between showing only selected records in the table to showing all of the records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
@@ -54,12 +57,8 @@ trait VisibleElementsMenuItems
 }
 object VisibleElementsMenuItems {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): VisibleElementsMenuItems = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): VisibleElementsMenuItems = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisibleElementsMenuItems]
   }
   
@@ -68,6 +67,10 @@ object VisibleElementsMenuItems {
     inline def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
     
     inline def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
+    
+    inline def setDeleteSelection(value: Boolean): Self = StObject.set(x, "deleteSelection", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteSelectionUndefined: Self = StObject.set(x, "deleteSelection", js.undefined)
     
     inline def setRefreshData(value: Boolean): Self = StObject.set(x, "refreshData", value.asInstanceOf[js.Any])
     

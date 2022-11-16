@@ -599,6 +599,14 @@ type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes
   */
 type IsExactlyAny[T] = `true`
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JSXElementConstructor = (props : P): babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<any, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> | null | new (props : P): babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Component<P, any, any>
+}}}
+to avoid circular code involving: 
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor
+*/
 type JSXElementConstructor[P] = (js.Function1[/* props */ P, (ReactElement[Any, String | Any]) | Null]) | (Instantiable1[/* props */ P, Component[P, Any, Any]])
 
 type Key = String | Double
@@ -689,6 +697,15 @@ type PropsWithoutRef[P] = P
 // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
 type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ReactChild = babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<any, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactText
+}}}
+to avoid circular code involving: 
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactChild
+*/
 type ReactChild = (ReactElement[Any, String | Any]) | ReactText
 
 type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.a_, typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.abbr, typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.address */ Any */, P] = ReactElement[P, Exclude[T, Double]]
@@ -714,6 +731,16 @@ type ReactInstance = (Component[Any, js.Object, Any]) | Element
   */
 type ReactManagedAttributes[C, P] = P
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ReactNode = babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactChild | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactFragment | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactPortal | boolean | null | undefined
+}}}
+to avoid circular code involving: 
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactChild
+- babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactNode
+*/
 type ReactNode = js.UndefOr[Any | ReactFragment | ReactPortal | Boolean | Null]
 
 //

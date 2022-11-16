@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_recommender"
-version := "1.0-dt-20220912Z-b4f4ec"
+version := "1.0-dt-20220912Z-d2a7c9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

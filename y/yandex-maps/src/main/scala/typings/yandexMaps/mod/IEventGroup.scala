@@ -27,6 +27,7 @@ import typings.yandexMaps.yandexMapsStrings.animationstart
 import typings.yandexMaps.yandexMapsStrings.auxclick
 import typings.yandexMaps.yandexMapsStrings.beforeinput
 import typings.yandexMaps.yandexMapsStrings.blur
+import typings.yandexMaps.yandexMapsStrings.cancel
 import typings.yandexMaps.yandexMapsStrings.canplay
 import typings.yandexMaps.yandexMapsStrings.canplaythrough
 import typings.yandexMaps.yandexMapsStrings.change
@@ -354,6 +355,28 @@ trait IEventGroup extends StObject {
   def add_blur(
     types: blur,
     callback: js.Function1[/* event */ FocusEvent | (IEvent[js.Object, js.Object]), Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(types: cancel, callback: js.Function1[/* event */ Event | (IEvent[js.Object, js.Object]), Unit]): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ Event | (IEvent[js.Object, js.Object]), Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ Event | (IEvent[js.Object, js.Object]), Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cancel(
+    types: cancel,
+    callback: js.Function1[/* event */ Event | (IEvent[js.Object, js.Object]), Unit],
     context: Unit,
     priority: Double
   ): this.type = js.native

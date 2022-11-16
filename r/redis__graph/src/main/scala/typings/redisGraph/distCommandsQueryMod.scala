@@ -30,6 +30,14 @@ object distCommandsQueryMod {
   
   inline def transformReply(reply: QueryRawReply): QueryReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[QueryReply]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Data = std.Array<string | number | null | @redis/graph.@redis/graph/dist/commands/QUERY.Data>
+  }}}
+  to avoid circular code involving: 
+  - @redis/graph.@redis/graph/dist/commands/QUERY.Data
+  */
   @js.native
   trait Data
     extends StObject
@@ -39,6 +47,15 @@ object distCommandsQueryMod {
   
   type Metadata = js.Array[String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type QueryRawReply = [headers: @redis/graph.@redis/graph/dist/commands/QUERY.Headers, data: @redis/graph.@redis/graph/dist/commands/QUERY.Data, metadata: @redis/graph.@redis/graph/dist/commands/QUERY.Metadata] | [metadata: @redis/graph.@redis/graph/dist/commands/QUERY.Metadata]
+  }}}
+  to avoid circular code involving: 
+  - @redis/graph.@redis/graph/dist/commands/QUERY.Data
+  - @redis/graph.@redis/graph/dist/commands/QUERY.QueryRawReply
+  */
   type QueryRawReply = (js.Tuple3[/* headers */ Headers, /* data */ Any, /* metadata */ Metadata]) | (js.Array[/* metadata */ Metadata])
   
   /* Rewritten from type alias, can be one of: 

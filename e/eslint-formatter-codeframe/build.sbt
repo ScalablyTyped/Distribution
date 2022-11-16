@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eslint-formatter-codeframe"
-version := "7.32.1-5cb99f"
+version := "7.32.1-5a5fe6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

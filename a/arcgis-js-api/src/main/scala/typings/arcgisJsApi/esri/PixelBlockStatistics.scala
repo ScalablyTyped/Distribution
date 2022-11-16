@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PixelBlockStatistics
-  extends StObject
-     with Object {
+trait PixelBlockStatistics extends StObject {
   
   /**
     * The maximum pixel value in the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) array.
@@ -33,12 +29,8 @@ trait PixelBlockStatistics
 }
 object PixelBlockStatistics {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PixelBlockStatistics = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): PixelBlockStatistics = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PixelBlockStatistics]
   }
   

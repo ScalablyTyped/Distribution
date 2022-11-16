@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remove-trailing-slash"
-version := "0.1.1-6e0e3e"
+version := "0.1.1-8d082a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

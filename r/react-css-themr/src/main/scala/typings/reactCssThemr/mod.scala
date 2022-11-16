@@ -149,6 +149,15 @@ object mod {
   
   type TMapThemrProps[P] = js.Function2[/* ownProps */ P, /* theme */ TReactCSSThemrTheme, P & Theme]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TReactCSSThemrTheme = {[key: string] : string | react-css-themr.react-css-themr.TReactCSSThemrTheme}
+  }}}
+  to avoid circular code involving: 
+  - react-css-themr.react-css-themr.TMapThemrProps
+  - react-css-themr.react-css-themr.TReactCSSThemrTheme
+  */
   trait TReactCSSThemrTheme
     extends StObject
        with /* key */ StringDictionary[String | TReactCSSThemrTheme]

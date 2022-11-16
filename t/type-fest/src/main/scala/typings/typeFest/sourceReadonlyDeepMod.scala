@@ -3,6 +3,7 @@ package typings.typeFest
 import typings.std.IterableIterator
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
+import typings.typeFest.typeFestBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,25 +18,23 @@ object sourceReadonlyDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends {None (arguments : infer A): unknown, None (arguments : ...any): unknown} ? std.Array<unknown> extends A ? false : true : false
     }}}
     */
-  @js.native
-  trait HasMultipleCallSignatures[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject
+  type HasMultipleCallSignatures[T /* <: js.Function1[/* repeated */ Any, Any] */] = `false`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/internal.BuiltIns ? T : T extends (arguments : ...any): unknown ? {} extends type-fest.type-fest/source/readonly-deep.ReadonlyObjectDeep<T> ? T : type-fest.type-fest/source/readonly-deep.HasMultipleCallSignatures<T> extends true ? T : (arguments : std.Parameters<T>): std.ReturnType<T> & type-fest.type-fest/source/readonly-deep.ReadonlyObjectDeep<T> : T extends / * Inlined std.Readonly<std.ReadonlyMap<infer KeyType, infer ValueType>> * /
   {readonly entries (): std.IterableIterator<[infer KeyType, infer ValueType]>,  readonly size :number, readonly keys (): std.IterableIterator<infer KeyType>, readonly forEach (callbackfn : (value : infer ValueType, key : infer KeyType, map : std.ReadonlyMap<infer KeyType, infer ValueType>): void): void, readonly has (key : infer KeyType): boolean, readonly values (): std.IterableIterator<infer ValueType>, readonly get (key : infer KeyType): infer ValueType | undefined} ? type-fest.type-fest/source/readonly-deep.ReadonlyMapDeep<KeyType, ValueType> : T extends / * Inlined std.Readonly<std.ReadonlySet<infer ItemType>> * /
   {readonly entries (): std.IterableIterator<[infer ItemType, infer ItemType]>,  readonly size :number, readonly keys (): std.IterableIterator<infer ItemType>, readonly forEach (callbackfn : (value : infer ItemType, value2 : infer ItemType, set : std.ReadonlySet<infer ItemType>): void): void, readonly has (value : infer ItemType): boolean, readonly values (): std.IterableIterator<infer ItemType>} ? type-fest.type-fest/source/readonly-deep.ReadonlySetDeep<ItemType> : T extends object ? type-fest.type-fest/source/readonly-deep.ReadonlyObjectDeep<T> : unknown
     }}}
     */
-  @js.native
-  trait ReadonlyDeep[T] extends StObject
+  type ReadonlyDeep[T] = T
   
   /**
   Same as `ReadonlyDeep`, but accepts only `ReadonlyMap`s as inputs. Internal helper for `ReadonlyDeep`.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "levelrunnerrc"
-version := "1.0-dt-20220720Z-dd9e14"
+version := "1.0-dt-20220720Z-6130c4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

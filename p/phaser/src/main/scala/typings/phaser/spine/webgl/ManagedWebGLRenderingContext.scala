@@ -2,6 +2,7 @@ package typings.phaser.spine.webgl
 
 import typings.phaser.spine.Restorable
 import typings.std.HTMLCanvasElement
+import typings.std.OffscreenCanvas
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ trait ManagedWebGLRenderingContext extends StObject {
   
   def addRestorable(restorable: Restorable): Unit
   
-  var canvas: HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OffscreenCanvas */ Any)
+  var canvas: HTMLCanvasElement | OffscreenCanvas
   
   var gl: WebGLRenderingContext
   
@@ -23,7 +24,7 @@ object ManagedWebGLRenderingContext {
   
   inline def apply(
     addRestorable: Restorable => Unit,
-    canvas: HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OffscreenCanvas */ Any),
+    canvas: HTMLCanvasElement | OffscreenCanvas,
     gl: WebGLRenderingContext,
     removeRestorable: Restorable => Unit,
     restorables: Any
@@ -36,9 +37,7 @@ object ManagedWebGLRenderingContext {
     
     inline def setAddRestorable(value: Restorable => Unit): Self = StObject.set(x, "addRestorable", js.Any.fromFunction1(value))
     
-    inline def setCanvas(
-      value: HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OffscreenCanvas */ Any)
-    ): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     

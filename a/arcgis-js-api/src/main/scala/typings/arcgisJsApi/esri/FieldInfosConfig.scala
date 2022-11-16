@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldInfosConfig
-  extends StObject
-     with Object {
+trait FieldInfosConfig extends StObject {
   
   /**
     * The fields that record who adds or edits data in the feature service and when the edit is made.
@@ -33,13 +29,8 @@ trait FieldInfosConfig
 }
 object FieldInfosConfig {
   
-  inline def apply(
-    constructor: js.Function,
-    fields: js.Array[Field],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FieldInfosConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(fields: js.Array[Field]): FieldInfosConfig = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfosConfig]
   }
   

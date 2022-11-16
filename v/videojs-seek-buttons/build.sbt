@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "videojs-seek-buttons"
-version := "2.1-dt-20211202Z-e2316f"
+version := "2.1-dt-20211202Z-eca02b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

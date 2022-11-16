@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingSublayer
   extends StObject
      with Accessor
+     with Identifiable
      with IntersectItem {
   
   /**

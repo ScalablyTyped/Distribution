@@ -21,14 +21,14 @@ trait RouteResultProperties extends StObject {
   var directionPoints: js.UndefOr[FeatureSetProperties] = js.undefined
   
   /**
-    * Route directions are returned if `RouteParameters.returnDirections = true` and `RouteParameters.directionsOutputType` is not set to "featuresets"`.
+    * Direction are returned if [RouteParameters.returnDirections](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#returnDirections) is set to `true` and [RouteParameters.directionsOutputType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#directionsOutputType) is set to `complete`, `complete-no-events`, `instructions-only', `standard` or `summary-only` in a [route.solve()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-route.html#solve) request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#directions)
     */
   var directions: js.UndefOr[DirectionsFeatureSetProperties] = js.undefined
   
   /**
-    * The Route graphic that is returned if `RouteParameters.returnRoutes = true`.
+    * This property returns a Graphic that represent the overall path with attributes containing the total cost.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#route)
     */

@@ -310,6 +310,15 @@ object mod {
   
   type Mask = MaskObj | js.Array[MaskObj] | Boolean
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MaskObj = {[key: string] : objtools.objtools.Mask}
+  }}}
+  to avoid circular code involving: 
+  - objtools.objtools.Mask
+  - objtools.objtools.MaskObj
+  */
   trait MaskObj
     extends StObject
        with /* key */ StringDictionary[Mask]

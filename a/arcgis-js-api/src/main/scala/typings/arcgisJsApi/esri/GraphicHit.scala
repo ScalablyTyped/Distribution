@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.graphic
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GraphicHit
   extends StObject
-     with Object
      with ViewHit {
   
   /**
@@ -37,15 +34,8 @@ trait GraphicHit
 }
 object GraphicHit {
   
-  inline def apply(
-    constructor: js.Function,
-    graphic: Graphic,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: Layer,
-    mapPoint: Point,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GraphicHit = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(graphic: Graphic, layer: Layer, mapPoint: Point): GraphicHit = {
+    val __obj = js.Dynamic.literal(graphic = graphic.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("graphic")
     __obj.asInstanceOf[GraphicHit]
   }

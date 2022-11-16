@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
 import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorGetMatchingSchemesParams
-  extends StObject
-     with Object {
+trait colorGetMatchingSchemesParams extends StObject {
   
   /**
     * An array of colors used to match with schemes for the given theme.
@@ -53,13 +49,10 @@ object colorGetMatchingSchemesParams {
   
   inline def apply(
     colors: js.Array[Color_],
-    constructor: js.Function,
     geometryType: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   ): colorGetMatchingSchemesParams = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorGetMatchingSchemesParams]
   }
   

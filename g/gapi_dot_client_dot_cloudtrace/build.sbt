@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_cloudtrace"
-version := "2.0-dt-20220912Z-a4ec3d"
+version := "2.0-dt-20220912Z-f985b5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

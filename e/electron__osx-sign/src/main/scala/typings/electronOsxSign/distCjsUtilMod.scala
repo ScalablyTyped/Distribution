@@ -41,5 +41,14 @@ object distCjsUtilMod {
   
   type DeepList[T] = js.Array[DeepListItem[T]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DeepListItem = null | T | std.Array<@electron/osx-sign.@electron/osx-sign/dist/cjs/util.DeepListItem<T>>
+  }}}
+  to avoid circular code involving: 
+  - @electron/osx-sign.@electron/osx-sign/dist/cjs/util.DeepList
+  - @electron/osx-sign.@electron/osx-sign/dist/cjs/util.DeepListItem
+  */
   type DeepListItem[T] = Null | T | js.Array[Any]
 }

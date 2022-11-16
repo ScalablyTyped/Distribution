@@ -205,6 +205,16 @@ object jsonldMod {
   */
   type JsonLdDocument = _JsonLdDocument | js.Array[NodeObject]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonObject = {[key: string] : jsonld.jsonld/jsonld.JsonValue | undefined}
+  }}}
+  to avoid circular code involving: 
+  - jsonld.jsonld/jsonld.JsonArray
+  - jsonld.jsonld/jsonld.JsonObject
+  - jsonld.jsonld/jsonld.JsonValue
+  */
   trait JsonObject
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[JsonValue]]
@@ -222,6 +232,15 @@ object jsonldMod {
     */
   type JsonPrimitive = String | Double | Boolean | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonValue = jsonld.jsonld/jsonld.JsonPrimitive | jsonld.jsonld/jsonld.JsonArray | jsonld.jsonld/jsonld.JsonObject
+  }}}
+  to avoid circular code involving: 
+  - jsonld.jsonld/jsonld.JsonArray
+  - jsonld.jsonld/jsonld.JsonValue
+  */
   type JsonValue = JsonPrimitive | Any | JsonObject
   
   /**

@@ -46,6 +46,14 @@ object mod {
   
   type ListItem = Any
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedResult = {[key: string] : index-array-by.index-array-by.NestedResult | index-array-by.index-array-by.ListItem | std.Array<index-array-by.index-array-by.ListItem>}
+  }}}
+  to avoid circular code involving: 
+  - index-array-by.index-array-by.NestedResult
+  */
   trait NestedResult
     extends StObject
        with /* key */ StringDictionary[NestedResult | ListItem | js.Array[ListItem]]

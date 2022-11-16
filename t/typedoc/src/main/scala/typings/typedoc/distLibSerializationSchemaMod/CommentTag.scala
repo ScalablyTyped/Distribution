@@ -17,10 +17,9 @@ object CommentTag {
   
   inline def apply(
     content: js.Array[CommentDisplayPart],
-    name: ToSerialized[js.UndefOr[String]],
     tag: ToSerialized[/* template literal string: @${string} */ String]
   ): CommentTag = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentTag]
   }
   
@@ -31,6 +30,8 @@ object CommentTag {
     inline def setContentVarargs(value: CommentDisplayPart*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setName(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setTag(value: ToSerialized[/* template literal string: @${string} */ String]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }

@@ -30,6 +30,14 @@ object Match {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Pattern = std.StringConstructor | std.NumberConstructor | std.BooleanConstructor | std.ObjectConstructor | std.FunctionConstructor | new (args : ...any): any | undefined | null | string | number | boolean | [meteor.Match.Pattern] | {[key: string] : meteor.Match.Pattern} | meteor.Match.Matcher<any>
+  }}}
+  to avoid circular code involving: 
+  - meteor.Match.Pattern
+  */
   type Pattern = js.UndefOr[
     StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ Any, Any]) | Null | String | Double | Boolean | js.Array[Any] | StringDictionary[Any] | Matcher[Any]
   ]

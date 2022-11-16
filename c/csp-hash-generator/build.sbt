@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csp-hash-generator"
-version := "0.0-dt-20220123Z-1cc2dc"
+version := "0.0-dt-20220123Z-7a677f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -362,7 +362,7 @@ trait DBInstance extends StObject {
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the storage throughput for the DB instance.
+    * Specifies the storage throughput for the DB instance. This setting applies only to the gp3 storage type.
     */
   var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
   

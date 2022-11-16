@@ -18,6 +18,8 @@ trait timeUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-timeUtils.html#getTimeExtentFromLayers)
     */
+  def getTimeExtentFromLayers(layers: js.Array[Layer]): js.Promise[TimeExtent] = js.native
   def getTimeExtentFromLayers(layers: js.Array[Layer], signal: AbortSignal): js.Promise[TimeExtent] = js.native
+  def getTimeExtentFromLayers(layers: Collection[Layer]): js.Promise[TimeExtent] = js.native
   def getTimeExtentFromLayers(layers: Collection[Layer], signal: AbortSignal): js.Promise[TimeExtent] = js.native
 }

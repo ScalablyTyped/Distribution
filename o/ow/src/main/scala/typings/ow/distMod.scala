@@ -193,7 +193,7 @@ object distMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends ow.ow/dist.ReusableValidator<infer R> ? (value : unknown, label : string | undefined): asserts valueis TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(R))),IArray()) : T extends ow.ow/dist/predicates/base-predicate.BasePredicate<infer R> ? (value : unknown, label : string | undefined): asserts valueis TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(R))),IArray()) : never
     }}}
@@ -203,7 +203,7 @@ object distMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     P extends ow.ow/dist/predicates/base-predicate.BasePredicate<infer T> ? T : never
     }}}

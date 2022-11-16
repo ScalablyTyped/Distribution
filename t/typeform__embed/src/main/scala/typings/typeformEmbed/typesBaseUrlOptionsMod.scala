@@ -14,6 +14,11 @@ object typesBaseUrlOptionsMod {
   trait UrlOptions extends StObject {
     
     /**
+      * Disable navigation between questions via scrolling and swiping
+      */
+    var disableScroll: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Disables tracking.
       *
       * @type {boolean}
@@ -132,6 +137,10 @@ object typesBaseUrlOptionsMod {
     }
     
     extension [Self <: UrlOptions](x: Self) {
+      
+      inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      
+      inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
       
       inline def setDisableTracking(value: Boolean): Self = StObject.set(x, "disableTracking", value.asInstanceOf[js.Any])
       

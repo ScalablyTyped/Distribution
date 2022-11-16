@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReadableStreamBYOBReader
   extends StObject
-     with ReadableStreamGenericReader {
+     with ReadableStreamGenericReader
+     with ReadableStreamReader[Any] {
   
   /* standard dom */
-  def read(view: js.typedarray.ArrayBufferView): js.Promise[ReadableStreamReadResult[js.typedarray.ArrayBufferView]] = js.native
+  def read[T /* <: js.typedarray.ArrayBufferView */](view: T): js.Promise[ReadableStreamReadResult[T]] = js.native
   
   /* standard dom */
   def releaseLock(): Unit = js.native

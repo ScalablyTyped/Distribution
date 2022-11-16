@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SceneService
-import typings.arcgisJsApi.esri.SceneServiceConstructor
 import typings.arcgisJsApi.esri.SceneServiceProperties
 import typings.arcgisJsApi.esri.SceneServiceVersion
 import typings.arcgisJsApi.esri.SpatialReference
@@ -10,16 +8,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersMixinsSceneServiceMod extends Shortcut {
+/* static members */
+object esriLayersMixinsSceneServiceMod {
   
   @JSImport("esri/layers/mixins/SceneService", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & SceneServiceConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/layers/mixins/SceneService", JSImport.Namespace)
-  @js.native
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SceneService {
     def this(properties: SceneServiceProperties) = this()
@@ -64,9 +58,9 @@ object esriLayersMixinsSceneServiceMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/mixins/SceneService", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SceneServiceConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersMixinsSceneServiceMod.foo` */
-  override def _to: js.Object & SceneServiceConstructor = ^
+  inline def fromJSON(json: Any): SceneService = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SceneService]
 }

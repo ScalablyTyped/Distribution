@@ -1,0 +1,30 @@
+package typings.johnnyFive.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait PiezoTune extends StObject {
+  
+  var song: js.Array[js.Tuple2[/* frequency */ String | Null, /* duration */ Double]]
+  
+  var tempo: js.UndefOr[Double] = js.undefined
+}
+object PiezoTune {
+  
+  inline def apply(song: js.Array[js.Tuple2[/* frequency */ String | Null, /* duration */ Double]]): PiezoTune = {
+    val __obj = js.Dynamic.literal(song = song.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PiezoTune]
+  }
+  
+  extension [Self <: PiezoTune](x: Self) {
+    
+    inline def setSong(value: js.Array[js.Tuple2[/* frequency */ String | Null, /* duration */ Double]]): Self = StObject.set(x, "song", value.asInstanceOf[js.Any])
+    
+    inline def setSongVarargs(value: (js.Tuple2[/* frequency */ String | Null, /* duration */ Double])*): Self = StObject.set(x, "song", js.Array(value*))
+    
+    inline def setTempo(value: Double): Self = StObject.set(x, "tempo", value.asInstanceOf[js.Any])
+    
+    inline def setTempoUndefined: Self = StObject.set(x, "tempo", js.undefined)
+  }
+}

@@ -355,6 +355,14 @@ object mod {
     def zoomToFit(durationMs: Unit, padding: Unit, nodeFilter: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ForceGraphInstance = force-graph.force-graph.ForceGraphGenericInstance<force-graph.force-graph.ForceGraphInstance>
+  }}}
+  to avoid circular code involving: 
+  - force-graph.force-graph.ForceGraphInstance
+  */
   @js.native
   trait ForceGraphInstance
     extends StObject

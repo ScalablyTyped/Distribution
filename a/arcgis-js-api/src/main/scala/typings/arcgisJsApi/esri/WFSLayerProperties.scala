@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.anon.FeatureReductionClusterPr
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
@@ -17,7 +16,8 @@ trait WFSLayerProperties
      with RefreshableLayerProperties
      with BlendLayerProperties
      with PortalLayerProperties
-     with FeatureEffectLayerProperties {
+     with FeatureEffectLayerProperties
+     with FeatureReductionLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -53,13 +53,6 @@ trait WFSLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[WFSLayerElevationInfo] = js.undefined
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#featureReduction)
-    */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -177,6 +170,13 @@ trait WFSLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
+  
+  /**
+    * WFS service information about the available layers and operations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#wfsCapabilities)
+    */
+  var wfsCapabilities: js.UndefOr[WFSCapabilities] = js.undefined
 }
 object WFSLayerProperties {
   
@@ -206,10 +206,6 @@ object WFSLayerProperties {
     inline def setElevationInfo(value: WFSLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
-    
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
-    
-    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
     inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -276,5 +272,9 @@ object WFSLayerProperties {
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWfsCapabilities(value: WFSCapabilities): Self = StObject.set(x, "wfsCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setWfsCapabilitiesUndefined: Self = StObject.set(x, "wfsCapabilities", js.undefined)
   }
 }

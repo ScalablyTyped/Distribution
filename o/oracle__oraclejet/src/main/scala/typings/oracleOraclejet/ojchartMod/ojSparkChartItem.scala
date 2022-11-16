@@ -14,6 +14,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.beforeinput
 import typings.oracleOraclejet.oracleOraclejetStrings.blur
 import typings.oracleOraclejet.oracleOraclejetStrings.borderColor
 import typings.oracleOraclejet.oracleOraclejetStrings.borderColorChanged
+import typings.oracleOraclejet.oracleOraclejetStrings.cancel
 import typings.oracleOraclejet.oracleOraclejetStrings.canplay
 import typings.oracleOraclejet.oracleOraclejetStrings.canplaythrough
 import typings.oracleOraclejet.oracleOraclejetStrings.change
@@ -315,6 +316,14 @@ trait ojSparkChartItem
   def addEventListener_borderColorChanged(
     `type`: borderColorChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

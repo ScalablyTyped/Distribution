@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StylePattern3DConstructor
   extends StObject
-     with /**
-  * Renders polygons with predefined style pattern fills.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html)
-  */
-Instantiable0[StylePattern3D]
+     with Instantiable0[StylePattern3D]
      with Instantiable1[/* properties */ StylePattern3DProperties, StylePattern3D] {
   
   def fromJSON(json: Any): StylePattern3D = js.native

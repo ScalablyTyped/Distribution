@@ -93,6 +93,15 @@ object libFilesystemMod {
     typings.mockFs.libFileMod.^ | typings.mockFs.libDirectoryMod.^ | typings.mockFs.libSymlinkMod.^
   ]) | DirectoryItems
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DirectoryItems = {[name: string] : mock-fs.mock-fs/lib/filesystem.DirectoryItem}
+  }}}
+  to avoid circular code involving: 
+  - mock-fs.mock-fs/lib/filesystem.DirectoryItem
+  - mock-fs.mock-fs/lib/filesystem.DirectoryItems
+  */
   trait DirectoryItems
     extends StObject
        with /* name */ StringDictionary[DirectoryItem]

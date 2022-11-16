@@ -8,7 +8,7 @@ object outListGroupMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     L extends unknown ? N extends unknown ? ts-toolbelt.ts-toolbelt/out/List/Group._Group<L, N> : never : never
     }}}
@@ -18,13 +18,12 @@ object outListGroupMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/List/Group.__Group<L, N, []> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, ts-toolbelt.ts-toolbelt/out/List/List.List<any>> : never
     }}}
     */
-  @js.native
-  trait _Group[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */] extends StObject
+  type _Group[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */] = typings.tsToolbelt.outListListMod.List[Any]
   
   /**
     * @hidden

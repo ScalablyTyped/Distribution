@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_cloudscheduler"
-version := "1.0-dt-20220912Z-d733d9"
+version := "1.0-dt-20220912Z-db9ebd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

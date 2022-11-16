@@ -44,6 +44,77 @@ object anon {
     }
   }
   
+  trait Country extends StObject {
+    
+    /**
+      * Country code where the playstore or appstore app is available. i.e: "US"
+      */
+    var country: js.UndefOr[String] = js.undefined
+    
+    /**
+      * isomorphic-fetch options (https://github.github.io/fetch/)
+      */
+    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
+    
+    /**
+      * @default false
+      */
+    var forceUpdate: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Package name or function that returns promise or value of package name
+      */
+    var packageName: js.UndefOr[String | js.Function0[String]] = js.undefined
+    
+    /**
+      * provider name or function that returns promise or value of the latest version
+      */
+    var provider: js.UndefOr[js.Function0[String] | String] = js.undefined
+  }
+  object Country {
+    
+    inline def apply(): Country = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Country]
+    }
+    
+    extension [Self <: Country](x: Self) {
+      
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      
+      inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
+      
+      inline def setForceUpdate(value: Boolean): Self = StObject.set(x, "forceUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setForceUpdateUndefined: Self = StObject.set(x, "forceUpdate", js.undefined)
+      
+      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      
+      inline def setPackageName(value: String | js.Function0[String]): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      
+      inline def setPackageNameFunction0(value: () => String): Self = StObject.set(x, "packageName", js.Any.fromFunction0(value))
+      
+      inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+      
+      inline def setProvider(value: js.Function0[String] | String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
+      inline def setProviderFunction0(value: () => String): Self = StObject.set(x, "provider", js.Any.fromFunction0(value))
+      
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    }
+  }
+  
   trait CurrentVersion extends StObject {
     
     /**
@@ -120,68 +191,6 @@ object anon {
       inline def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
       
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
-      
-      inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
-      
-      inline def setProvider(value: js.Function0[String] | String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
-      
-      inline def setProviderFunction0(value: () => String): Self = StObject.set(x, "provider", js.Any.fromFunction0(value))
-      
-      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
-    }
-  }
-  
-  trait FetchOptions extends StObject {
-    
-    /**
-      * isomorphic-fetch options (https://github.github.io/fetch/)
-      */
-    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
-    
-    /**
-      * @default false
-      */
-    var forceUpdate: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * @default true
-      */
-    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Package name or function that returns promise or value of package name
-      */
-    var packageName: js.UndefOr[String | js.Function0[String]] = js.undefined
-    
-    /**
-      * provider name or function that returns promise or value of the latest version
-      */
-    var provider: js.UndefOr[js.Function0[String] | String] = js.undefined
-  }
-  object FetchOptions {
-    
-    inline def apply(): FetchOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FetchOptions]
-    }
-    
-    extension [Self <: FetchOptions](x: Self) {
-      
-      inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
-      
-      inline def setForceUpdate(value: Boolean): Self = StObject.set(x, "forceUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setForceUpdateUndefined: Self = StObject.set(x, "forceUpdate", js.undefined)
-      
-      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
-      
-      inline def setPackageName(value: String | js.Function0[String]): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
-      
-      inline def setPackageNameFunction0(value: () => String): Self = StObject.set(x, "packageName", js.Any.fromFunction0(value))
       
       inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
       

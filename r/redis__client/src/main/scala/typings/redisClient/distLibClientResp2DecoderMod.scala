@@ -238,6 +238,14 @@ object distLibClientResp2DecoderMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Reply = string | node.buffer.<global>.Buffer | @redis/client.@redis/client/dist/lib/errors.ErrorReply | number | null | std.Array<@redis/client.@redis/client/dist/lib/client/RESP2/decoder.Reply>
+  }}}
+  to avoid circular code involving: 
+  - @redis/client.@redis/client/dist/lib/client/RESP2/decoder.Reply
+  */
   type Reply = String | Buffer | ErrorReply | Double | Null | js.Array[Any]
   
   type ReturnStringsAsBuffers = js.Function0[Boolean]

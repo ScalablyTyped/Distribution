@@ -18,6 +18,15 @@ inline def Modifier: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("Modif
 
 inline def Type: TypeBuilder = ^.asInstanceOf[js.Dynamic].selectDynamic("Type").asInstanceOf[TypeBuilder]
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends [infer A, ...infer B] ? @sinclair/typebox.@sinclair/typebox.IntersectReduce<I & A, B> : I extends object ? I : {}
+  }}}
+  */
+type IntersectReduce[I /* <: Any */, T /* <: js.Array[Any] */] = I
+
 type OptionalPropertyKeys[T /* <: TProperties */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends / * Inlined @sinclair/typebox.@sinclair/typebox.TOptional<@sinclair/typebox.@sinclair/typebox.TSchema> * /
 {[Kind] : string, [Hint] : string | undefined, [Modifier] : string | undefined,   params :std.Array<unknown>,   static :unknown,   $schema :string | undefined,   $id :string | undefined,   title :string | undefined,   description :string | undefined,   default :any | undefined,   examples :any | undefined, [prop: string] : any, [Modifier] : 'Optional'}? K : never}[keyof T] */ js.Any
 
@@ -89,4 +98,32 @@ type TReadonlyOptional[T /* <: TSchema */] = T & `2`
 
 type TRecordKey = TString[String] | TNumber | TUnion[js.Array[TLiteral[Any]]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type TRecursiveReduce = @sinclair/typebox.@sinclair/typebox.Static<T, [@sinclair/typebox.@sinclair/typebox.TRecursiveReduce<T>]>
+}}}
+to avoid circular code involving: 
+- @sinclair/typebox.@sinclair/typebox.TRecursiveReduce
+*/
+type TRecursiveReduce[T /* <: TSchema */] = Static[T, js.Array[Any]]
+
 type TReturnType[T /* <: TFunction[js.Array[TSchema], TSchema] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['returns'] */ js.Any
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  {[ K in @sinclair/typebox.@sinclair/typebox.ObjectPropertyKeys<T> ]: @sinclair/typebox.@sinclair/typebox.TLiteral<K>} extends infer R ? @sinclair/typebox.@sinclair/typebox.UnionToTuple<R[keyof R], @sinclair/typebox.@sinclair/typebox.UnionLast<R[keyof R]>> : never
+  }}}
+  */
+type UnionLiteralsFromObject[T /* <: TObject[TProperties] */] = js.Array[Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  [U] extends [never] ? [] : [...@sinclair/typebox.@sinclair/typebox.UnionToTuple<std.Exclude<U, L>, @sinclair/typebox.@sinclair/typebox.UnionLast<std.Exclude<U, L>>>, L]
+  }}}
+  */
+type UnionToTuple[U, L] = js.Array[Any]

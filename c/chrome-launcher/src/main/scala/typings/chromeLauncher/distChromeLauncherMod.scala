@@ -54,6 +54,14 @@ object distChromeLauncherMod {
   inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
   inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONLike = {[property: string] : chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike} | std.Array<chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike> | string | number | boolean | null
+  }}}
+  to avoid circular code involving: 
+  - chrome-launcher.chrome-launcher/dist/chrome-launcher.JSONLike
+  */
   type JSONLike = StringDictionary[Any] | js.Array[Any] | String | Double | Boolean | Null
   
   trait LaunchedChrome extends StObject {

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RendererResultClassBreaks
-  extends StObject
-     with Object {
+trait RendererResultClassBreaks extends StObject {
   
   /**
     * The class breaks generated for values in the `field1` parameter.
@@ -26,14 +22,8 @@ trait RendererResultClassBreaks
 }
 object RendererResultClassBreaks {
   
-  inline def apply(
-    constructor: js.Function,
-    field1: ClassBreaksResult,
-    field2: ClassBreaksResult,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): RendererResultClassBreaks = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(field1: ClassBreaksResult, field2: ClassBreaksResult): RendererResultClassBreaks = {
+    val __obj = js.Dynamic.literal(field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererResultClassBreaks]
   }
   

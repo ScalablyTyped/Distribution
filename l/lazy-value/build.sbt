@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lazy-value"
-version := "3.0.0-fec4a9"
+version := "3.0.0-243ee8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

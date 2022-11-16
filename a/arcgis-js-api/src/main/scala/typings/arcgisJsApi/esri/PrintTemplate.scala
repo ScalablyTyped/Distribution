@@ -70,6 +70,13 @@ trait PrintTemplate
   var layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
   
   /**
+    * A custom layout hosted as a [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutItem)
+    */
+  var layoutItem: PortalItem = js.native
+  
+  /**
     * Defines the layout elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)

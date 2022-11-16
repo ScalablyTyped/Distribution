@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ServerInfo
-import typings.arcgisJsApi.esri.ServerInfoConstructor
 import typings.arcgisJsApi.esri.ServerInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriIdentityServerInfoMod extends Shortcut {
+/* static members */
+object esriIdentityServerInfoMod {
   
-  @JSImport("esri/identity/ServerInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ServerInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/identity/ServerInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriIdentityServerInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ServerInfo {
     def this(properties: ServerInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriIdentityServerInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/identity/ServerInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ServerInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriIdentityServerInfoMod.foo` */
-  override def _to: js.Object & ServerInfoConstructor = ^
+  inline def fromJSON(json: Any): ServerInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ServerInfo]
 }

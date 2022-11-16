@@ -9,7 +9,8 @@ trait Map
   extends StObject
      with Accessor
      with LayersMixin
-     with TablesMixin {
+     with TablesMixin
+     with _ProfileVariableInstanceType {
   
   /**
     * A flattened collection of all [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) in the map.

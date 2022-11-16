@@ -50,6 +50,14 @@ object serverRenderMod {
   
   // NodeJS.ReadableStream only works on server.
   // HTMLElement only works on client.
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Content = string | std.Array<meteor.meteor/server-render.Content> | node.NodeJS.ReadableStream | std.HTMLElement
+  }}}
+  to avoid circular code involving: 
+  - meteor.meteor/server-render.Content
+  */
   type Content = String | js.Array[Any] | ReadableStream | HTMLElement
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

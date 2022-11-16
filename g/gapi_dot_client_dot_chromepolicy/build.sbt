@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_chromepolicy"
-version := "1.0-dt-20220912Z-717bf7"
+version := "1.0-dt-20220912Z-64fcd5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

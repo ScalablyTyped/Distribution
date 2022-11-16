@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hypertext-application-language"
-version := "6.0-dt-20211202Z-59f0d4"
+version := "6.0-dt-20211202Z-59c2bf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

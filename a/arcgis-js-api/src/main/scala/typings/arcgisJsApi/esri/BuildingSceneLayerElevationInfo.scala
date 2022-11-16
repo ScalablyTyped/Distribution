@@ -7,15 +7,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BuildingSceneLayerElevationInfo
-  extends StObject
-     with Object {
+trait BuildingSceneLayerElevationInfo extends StObject {
   
   /**
     * Defines how features are placed on the vertical axis (z).
@@ -42,12 +38,8 @@ trait BuildingSceneLayerElevationInfo
 }
 object BuildingSceneLayerElevationInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): BuildingSceneLayerElevationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = "absolute-height", propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): BuildingSceneLayerElevationInfo = {
+    val __obj = js.Dynamic.literal(mode = "absolute-height")
     __obj.asInstanceOf[BuildingSceneLayerElevationInfo]
   }
   

@@ -19,6 +19,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.borderStyleChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.borderWidth
 import typings.oracleOraclejet.oracleOraclejetStrings.borderWidthChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.bottom
+import typings.oracleOraclejet.oracleOraclejetStrings.cancel
 import typings.oracleOraclejet.oracleOraclejetStrings.canplay
 import typings.oracleOraclejet.oracleOraclejetStrings.canplaythrough
 import typings.oracleOraclejet.oracleOraclejetStrings.categories
@@ -399,6 +400,14 @@ trait ojThematicMapMarker
   def addEventListener_borderWidthChanged(
     `type`: borderWidthChanged,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")

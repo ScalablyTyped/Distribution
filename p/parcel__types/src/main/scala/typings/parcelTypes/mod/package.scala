@@ -43,6 +43,14 @@ js.UndefOr[TContext | Null]]
 
 type GraphVisitor[TNode, TContext] = (GraphTraversalCallback[TNode, TContext]) | (Enter[TNode, TContext])
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JSONValue = null | void | boolean | number | string | std.Array<@parcel/types.@parcel/types.JSONValue> | @parcel/types.@parcel/types.JSONObject
+}}}
+to avoid circular code involving: 
+- @parcel/types.@parcel/types.JSONValue
+*/
 type JSONValue = Null | Unit | Boolean | Double | String | js.Array[Any] | JSONObject
 
 type Meta = JSONObject

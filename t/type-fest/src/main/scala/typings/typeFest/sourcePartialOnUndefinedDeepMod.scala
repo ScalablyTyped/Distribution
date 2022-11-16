@@ -8,13 +8,12 @@ object sourcePartialOnUndefinedDeepMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Record<any, any> | undefined ? {[ KeyType in keyof T as undefined extends T[KeyType]? KeyType : never ]:? type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeepValue<T[KeyType], Options>} extends infer U ? type-fest.type-fest/source/merge.Merge<{[ KeyType in keyof T as KeyType extends keyof U? never : KeyType ]: type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeepValue<T[KeyType], Options>}, U> : never : T
     }}}
     */
-  @js.native
-  trait PartialOnUndefinedDeep[T, Options /* <: PartialOnUndefinedDeepOptions */] extends StObject
+  type PartialOnUndefinedDeep[T, Options /* <: PartialOnUndefinedDeepOptions */] = T
   
   trait PartialOnUndefinedDeepOptions extends StObject {
     
@@ -44,11 +43,10 @@ object sourcePartialOnUndefinedDeepMod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/internal.BuiltIns | (arguments : ...any): unknown ? T : T extends std.ReadonlyArray<infer U> ? Options['recurseIntoArrays'] extends true ? std.Array<U> extends T ? std.Array<U> extends T ? std.ReadonlyArray<type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeep<U, Options>> : std.Array<type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeep<U, Options>> : type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeep<{[ Key in keyof T ]: type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeep<T[Key], Options>}, Options> : T : T extends std.Record<any, any> | undefined ? type-fest.type-fest/source/partial-on-undefined-deep.PartialOnUndefinedDeep<T, Options> : unknown
     }}}
     */
-  @js.native
-  trait PartialOnUndefinedDeepValue[T, Options /* <: PartialOnUndefinedDeepOptions */] extends StObject
+  type PartialOnUndefinedDeepValue[T, Options /* <: PartialOnUndefinedDeepOptions */] = T
 }

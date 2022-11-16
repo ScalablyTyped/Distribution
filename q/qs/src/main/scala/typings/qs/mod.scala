@@ -273,6 +273,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ParsedQs = {[key: string] : undefined | string | std.Array<string> | qs.qs.ParsedQs | std.Array<qs.qs.ParsedQs>}
+  }}}
+  to avoid circular code involving: 
+  - qs.qs.ParsedQs
+  */
   trait ParsedQs
     extends StObject
        with /* key */ StringDictionary[js.UndefOr[String | (js.Array[ParsedQs | String]) | ParsedQs]]

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISImageServiceCapabilitiesOperations
-  extends StObject
-     with Object {
+trait ArcGISImageServiceCapabilitiesOperations extends StObject {
   
   /**
     * Indicates if the elevation layer supports an operation to [compute volumes](https://developers.arcgis.com/rest/services-reference/calculate-volume.htm).
@@ -97,9 +93,6 @@ trait ArcGISImageServiceCapabilitiesOperations
 object ArcGISImageServiceCapabilitiesOperations {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsCalculateVolume: Boolean,
     supportsComputeHistograms: Boolean,
     supportsComputePixelLocation: Boolean,
@@ -113,7 +106,7 @@ object ArcGISImageServiceCapabilitiesOperations {
     supportsQuery: Boolean,
     supportsQueryBoundary: Boolean
   ): ArcGISImageServiceCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCalculateVolume = supportsCalculateVolume.asInstanceOf[js.Any], supportsComputeHistograms = supportsComputeHistograms.asInstanceOf[js.Any], supportsComputePixelLocation = supportsComputePixelLocation.asInstanceOf[js.Any], supportsComputeStatisticsHistograms = supportsComputeStatisticsHistograms.asInstanceOf[js.Any], supportsDownload = supportsDownload.asInstanceOf[js.Any], supportsExportImage = supportsExportImage.asInstanceOf[js.Any], supportsGetSamples = supportsGetSamples.asInstanceOf[js.Any], supportsIdentify = supportsIdentify.asInstanceOf[js.Any], supportsMeasure = supportsMeasure.asInstanceOf[js.Any], supportsProject = supportsProject.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsQueryBoundary = supportsQueryBoundary.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsCalculateVolume = supportsCalculateVolume.asInstanceOf[js.Any], supportsComputeHistograms = supportsComputeHistograms.asInstanceOf[js.Any], supportsComputePixelLocation = supportsComputePixelLocation.asInstanceOf[js.Any], supportsComputeStatisticsHistograms = supportsComputeStatisticsHistograms.asInstanceOf[js.Any], supportsDownload = supportsDownload.asInstanceOf[js.Any], supportsExportImage = supportsExportImage.asInstanceOf[js.Any], supportsGetSamples = supportsGetSamples.asInstanceOf[js.Any], supportsIdentify = supportsIdentify.asInstanceOf[js.Any], supportsMeasure = supportsMeasure.asInstanceOf[js.Any], supportsProject = supportsProject.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsQueryBoundary = supportsQueryBoundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesOperations]
   }
   

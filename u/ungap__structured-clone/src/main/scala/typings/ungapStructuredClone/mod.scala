@@ -42,5 +42,14 @@ object mod {
   
   type SerializedRecord = Array[js.Array[SerializedRecordIndex] | (js.Tuple2[Double, Any])]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SerializedRecordIndex = [number, any] | std.Array<@ungap/structured-clone.@ungap/structured-clone.SerializedRecordIndex>
+  }}}
+  to avoid circular code involving: 
+  - @ungap/structured-clone.@ungap/structured-clone.SerializedRecord
+  - @ungap/structured-clone.@ungap/structured-clone.SerializedRecordIndex
+  */
   type SerializedRecordIndex = (js.Tuple2[Double, Any]) | js.Array[Any]
 }

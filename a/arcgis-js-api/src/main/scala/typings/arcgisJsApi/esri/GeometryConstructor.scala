@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeometryConstructor
   extends StObject
-     with /**
-  * The base class for geometry objects.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html)
-  */
-Instantiable0[Geometry_]
+     with Instantiable0[Geometry_]
      with Instantiable1[/* properties */ GeometryProperties, Geometry_] {
   
   def fromJSON(json: Any): Geometry_ = js.native

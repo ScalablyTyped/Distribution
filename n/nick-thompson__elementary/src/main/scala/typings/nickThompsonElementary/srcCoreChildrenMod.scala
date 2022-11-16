@@ -62,35 +62,32 @@ object srcCoreChildrenMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     std.Parameters<T> extends [] ? [] : std.Parameters<T> extends [infer IProps, ...infer IChildren] ? IProps extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.SizedChildrenArray<@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.ChildrenArraySize<[IProps, ...IChildren]>> : @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.SizedChildrenArray<@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.ChildrenArraySize<IChildren>> : never
     }}}
     */
-  @js.native
-  trait CompositeNodeChildren[T /* <: CompositeNodeType */] extends StObject
+  type CompositeNodeChildren[T /* <: CompositeNodeType */] = js.Array[Any]
   
   type NativeNodeChildren[T /* <: NativeNodeType */] = /* import warning: importer.ImportType#apply Failed type conversion: @nick-thompson/elementary.anon.keyininSizedChildrenArray[T] */ js.Any
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.NodeType extends T ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Children : T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.NativeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.NativeNodeChildren<T> : T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.CompositeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.CompositeNodeChildren<T> : never
     }}}
     */
-  @js.native
-  trait NodeChildren[T /* <: NodeType */] extends StObject
+  type NodeChildren[T /* <: NodeType */] = Children
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     Size extends 1 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 2 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 3 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 4 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 5 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 6 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 7 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : Size extends 8 ? [@nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child, @nick-thompson/elementary.@nick-thompson/elementary/src/core/children.Child] : std.Array<never>
     }}}
     */
-  @js.native
-  trait SizedChildrenArray[Size /* <: ChildrenArraySizeRange */] extends StObject
+  type SizedChildrenArray[Size /* <: ChildrenArraySizeRange */] = js.Array[Child]
   
   type VariadicChildrenArray = SizedChildrenArray[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`]
 }

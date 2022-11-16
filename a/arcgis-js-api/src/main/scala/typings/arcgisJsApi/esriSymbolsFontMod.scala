@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Font
-import typings.arcgisJsApi.esri.FontConstructor
 import typings.arcgisJsApi.esri.FontProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsFontMod extends Shortcut {
+/* static members */
+object esriSymbolsFontMod {
   
-  @JSImport("esri/symbols/Font", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FontConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/Font", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsFontMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Font {
     def this(properties: FontProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsFontMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/Font", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FontConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsFontMod.foo` */
-  override def _to: js.Object & FontConstructor = ^
+  inline def fromJSON(json: Any): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Font]
 }

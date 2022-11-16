@@ -354,6 +354,7 @@ type InstanceArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.EARLY_MEDIA
   - typings.awsSdk.awsSdkStrings.MULTI_PARTY_CONFERENCE
   - typings.awsSdk.awsSdkStrings.HIGH_VOLUME_OUTBOUND
+  - typings.awsSdk.awsSdkStrings.ENHANCED_CONTACT_MONITORING
   - java.lang.String
 */
 type InstanceAttributeType = _InstanceAttributeType | java.lang.String

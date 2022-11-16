@@ -98,6 +98,15 @@ object mod {
     def write(data: Any): Unit = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NextFunction = (next : (stream : combined-stream.combined-stream.Appendable): any): any
+  }}}
+  to avoid circular code involving: 
+  - combined-stream.combined-stream.Appendable
+  - combined-stream.combined-stream.NextFunction
+  */
   @js.native
   trait NextFunction extends StObject {
     

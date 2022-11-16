@@ -13,11 +13,12 @@ trait CSVLayer
   extends StObject
      with Layer
      with OrderedLayer
-     with PortalLayer
      with ScaleRangeLayer
      with TemporalLayer
      with BlendLayer
-     with FeatureEffectLayer {
+     with FeatureEffectLayer
+     with FeatureReductionLayer
+     with PortalLayer {
   
   /**
     * Describes the layer's supported capabilities.
@@ -82,13 +83,6 @@ trait CSVLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#elevationInfo)
     */
   var elevationInfo: CSVLayerElevationInfo = js.native
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#featureReduction)
-    */
-  var featureReduction: FeatureReductionCluster | FeatureReductionSelection = js.native
   
   /**
     * An array of fields in the layer.

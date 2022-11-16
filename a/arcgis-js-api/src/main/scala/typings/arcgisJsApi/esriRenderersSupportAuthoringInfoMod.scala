@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.AuthoringInfo
-import typings.arcgisJsApi.esri.AuthoringInfoConstructor
 import typings.arcgisJsApi.esri.AuthoringInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersSupportAuthoringInfoMod extends Shortcut {
+/* static members */
+object esriRenderersSupportAuthoringInfoMod {
   
-  @JSImport("esri/renderers/support/AuthoringInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & AuthoringInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/support/AuthoringInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersSupportAuthoringInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with AuthoringInfo {
     def this(properties: AuthoringInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersSupportAuthoringInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/support/AuthoringInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & AuthoringInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersSupportAuthoringInfoMod.foo` */
-  override def _to: js.Object & AuthoringInfoConstructor = ^
+  inline def fromJSON(json: Any): AuthoringInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthoringInfo]
 }

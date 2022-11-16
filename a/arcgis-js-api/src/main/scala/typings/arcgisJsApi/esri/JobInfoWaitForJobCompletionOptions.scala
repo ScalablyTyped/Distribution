@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JobInfoWaitForJobCompletionOptions
-  extends StObject
-     with Object {
+trait JobInfoWaitForJobCompletionOptions extends StObject {
   
   /**
     * The time in millisecond between remote job status requests.
@@ -35,12 +31,8 @@ trait JobInfoWaitForJobCompletionOptions
 }
 object JobInfoWaitForJobCompletionOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): JobInfoWaitForJobCompletionOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): JobInfoWaitForJobCompletionOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobInfoWaitForJobCompletionOptions]
   }
   

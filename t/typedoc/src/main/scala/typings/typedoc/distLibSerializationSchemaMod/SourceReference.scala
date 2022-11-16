@@ -17,13 +17,8 @@ trait SourceReference extends StObject {
 }
 object SourceReference {
   
-  inline def apply(
-    character: ToSerialized[Double],
-    fileName: ToSerialized[String],
-    line: ToSerialized[Double],
-    url: ToSerialized[js.UndefOr[String]]
-  ): SourceReference = {
-    val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(character: ToSerialized[Double], fileName: ToSerialized[String], line: ToSerialized[Double]): SourceReference = {
+    val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceReference]
   }
   
@@ -36,5 +31,7 @@ object SourceReference {
     inline def setLine(value: ToSerialized[Double]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterClassBreaksResult
-  extends StObject
-     with Object {
+trait RasterClassBreaksResult extends StObject {
   
   /**
     * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
@@ -26,14 +22,8 @@ trait RasterClassBreaksResult
 }
 object RasterClassBreaksResult {
   
-  inline def apply(
-    classBreaksResult: ClassBreaksResult,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    renderer: ClassBreaksRenderer
-  ): RasterClassBreaksResult = {
-    val __obj = js.Dynamic.literal(classBreaksResult = classBreaksResult.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+  inline def apply(classBreaksResult: ClassBreaksResult, renderer: ClassBreaksRenderer): RasterClassBreaksResult = {
+    val __obj = js.Dynamic.literal(classBreaksResult = classBreaksResult.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterClassBreaksResult]
   }
   

@@ -99,6 +99,16 @@ object buildSrcSpecConcatMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NormalizedConcatSpec = vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<vega-lite.vega-lite/build/src/spec.NormalizedSpec> | vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<vega-lite.vega-lite/build/src/spec.NormalizedSpec> | vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<vega-lite.vega-lite/build/src/spec.NormalizedSpec>
+  }}}
+  to avoid circular code involving: 
+  - vega-lite.vega-lite/build/src/spec.GenericSpec
+  - vega-lite.vega-lite/build/src/spec.NormalizedSpec
+  - vega-lite.vega-lite/build/src/spec/concat.NormalizedConcatSpec
+  */
   type NormalizedConcatSpec = GenericConcatSpec[Any] | GenericVConcatSpec[Any] | GenericHConcatSpec[Any]
   
   trait OneDirectionalConcatLayout

@@ -46,6 +46,14 @@ type EventMapping[T] = Adaptable[T] | EventArgFunc[T]
   */
 type EventMappingArray[T] = js.Array[EventMapping[T]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Mapping = {[key: string] : react-native-reanimated.react-native-reanimated.Animated.Mapping} | react-native-reanimated.react-native-reanimated.Animated.Adaptable<any>
+}}}
+to avoid circular code involving: 
+- react-native-reanimated.react-native-reanimated.Animated.Mapping
+*/
 type Mapping = StringDictionary[Any] | Adaptable[Any]
 
 type Nullable[T] = js.UndefOr[T | Null]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_factchecktools-v1alpha1"
-version := "0.0-dt-20220912Z-1e343b"
+version := "0.0-dt-20220912Z-2479a5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

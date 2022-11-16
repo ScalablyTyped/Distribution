@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TimeSliderViewModel
-import typings.arcgisJsApi.esri.TimeSliderViewModelConstructor
 import typings.arcgisJsApi.esri.TimeSliderViewModelProperties
+import typings.arcgisJsApi.esri.WebMap
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsTimeSliderTimeSliderViewModelMod extends Shortcut {
+/* static members */
+object esriWidgetsTimeSliderTimeSliderViewModelMod {
   
-  @JSImport("esri/widgets/TimeSlider/TimeSliderViewModel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TimeSliderViewModelConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/TimeSlider/TimeSliderViewModel", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,20 @@ object esriWidgetsTimeSliderTimeSliderViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TimeSliderViewModel {
     def this(properties: TimeSliderViewModelProperties) = this()
   }
+  @JSImport("esri/widgets/TimeSlider/TimeSliderViewModel", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TimeSliderViewModelConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsTimeSliderTimeSliderViewModelMod.foo` */
-  override def _to: js.Object & TimeSliderViewModelConstructor = ^
+  /**
+    * Extracts time slider settings from a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) if the webmap contains a [time slider widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider) definition.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#getPropertiesFromWebMap)
+    */
+  inline def getPropertiesFromWebMap(webMap: WebMap): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertiesFromWebMap")(webMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def getPropertiesFromWebMap(webMap: WebMap, signal: AbortSignal): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertiesFromWebMap")(webMap.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

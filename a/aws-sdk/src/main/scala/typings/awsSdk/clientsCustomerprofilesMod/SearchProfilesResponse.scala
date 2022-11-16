@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchProfilesResponse extends StObject {
   
   /**
-    * The list of SearchProfiles instances.
+    * The list of Profiles matching the search criteria.
     */
   var Items: js.UndefOr[ProfileList] = js.undefined
   

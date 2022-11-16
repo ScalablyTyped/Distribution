@@ -44,6 +44,14 @@ object mod {
   inline def set(params: DataSetSingleParams): js.Promise[DataSetSingleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DataSetSingleResult]]
   inline def set(params: DataSetSingleParams, callback: DataSetSingleCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type BeginDataType = number | string | boolean | null | std.Array<@begin/data.@begin/data.BeginDataType> | {[key: string] : @begin/data.@begin/data.BeginDataType | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  */
   type BeginDataType = Double | String | Boolean | Null | js.Array[Any] | StringDictionary[js.UndefOr[Any]]
   
   type DataCountCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ DataCountResult, Unit]
@@ -186,6 +194,16 @@ object mod {
     var cursor: js.UndefOr[String] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataGetMultipleCallback = (err : std.Error | null | undefined, result : @begin/data.@begin/data.DataGetMultipleResult): void
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataGetMultipleCallback
+  - @begin/data.@begin/data.DataGetMultipleResult
+  */
   @js.native
   trait DataGetMultipleCallback extends StObject {
     
@@ -196,11 +214,30 @@ object mod {
   
   type DataGetMultipleParams = js.Array[DataGetSingleParams]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataGetMultipleResult = std.Array<{  table :string,   key :string, [others: string] : @begin/data.@begin/data.BeginDataType | undefined}>
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataGetMultipleResult
+  */
   @js.native
   trait DataGetMultipleResult
     extends StObject
        with Array[Dictothers]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataGetSingleCallback = (err : std.Error | null | undefined, result : @begin/data.@begin/data.DataGetSingleResult): void
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataGetSingleCallback
+  - @begin/data.@begin/data.DataGetSingleResult
+  */
   @js.native
   trait DataGetSingleCallback extends StObject {
     
@@ -230,6 +267,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataGetSingleResult = {  table :string,   key :string, [others: string] : @begin/data.@begin/data.BeginDataType | undefined} | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataGetSingleResult
+  */
   type DataGetSingleResult = js.UndefOr[Key | Null]
   
   type DataIncrementCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* result */ DataIncrementResult, Unit]
@@ -307,6 +353,16 @@ object mod {
   
   type DataPageResult = js.Array[Table]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataSetMultipleCallback = (err : std.Error | null | undefined, result : @begin/data.@begin/data.DataSetMultipleResult): void
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataSetMultipleCallback
+  - @begin/data.@begin/data.DataSetMultipleResult
+  */
   @js.native
   trait DataSetMultipleCallback extends StObject {
     
@@ -317,6 +373,15 @@ object mod {
   
   type DataSetMultipleParams = js.Array[DataSetSingleParams]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataSetMultipleResult = std.Array<{  table :string,   key :string, [others: string] : @begin/data.@begin/data.BeginDataType | undefined}>
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.BeginDataType
+  - @begin/data.@begin/data.DataSetMultipleResult
+  */
   @js.native
   trait DataSetMultipleResult
     extends StObject
@@ -394,5 +459,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ReadonlyBeginDataType = number | string | boolean | null | std.ReadonlyArray<@begin/data.@begin/data.ReadonlyBeginDataType> | {readonly [key: string] : @begin/data.@begin/data.ReadonlyBeginDataType | undefined}
+  }}}
+  to avoid circular code involving: 
+  - @begin/data.@begin/data.DataPageResult
+  - @begin/data.@begin/data.ReadonlyBeginDataType
+  */
   type ReadonlyBeginDataType = Double | String | Boolean | Null | js.Array[Any] | StringDictionary[js.UndefOr[Any]]
 }

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewHighlightOptionsProperties
-  extends StObject
-     with Object {
+trait SceneViewHighlightOptionsProperties extends StObject {
   
   /**
     * The color of the highlight.
@@ -73,12 +69,8 @@ trait SceneViewHighlightOptionsProperties
 }
 object SceneViewHighlightOptionsProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SceneViewHighlightOptionsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SceneViewHighlightOptionsProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewHighlightOptionsProperties]
   }
   

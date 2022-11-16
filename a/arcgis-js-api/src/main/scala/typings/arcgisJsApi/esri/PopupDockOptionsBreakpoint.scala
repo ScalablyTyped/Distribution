@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopupDockOptionsBreakpoint
-  extends StObject
-     with Object {
+trait PopupDockOptionsBreakpoint extends StObject {
   
   /**
     * The maximum height of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) at which the popup will be set to dockEnabled automatically.
@@ -30,12 +26,8 @@ trait PopupDockOptionsBreakpoint
 }
 object PopupDockOptionsBreakpoint {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PopupDockOptionsBreakpoint = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): PopupDockOptionsBreakpoint = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupDockOptionsBreakpoint]
   }
   

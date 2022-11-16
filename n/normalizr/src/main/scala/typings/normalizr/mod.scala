@@ -37,12 +37,32 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaArray = std.Array<normalizr.normalizr.Schema<T>>
+  }}}
+  to avoid circular code involving: 
+  - normalizr.normalizr.Schema
+  - normalizr.normalizr.SchemaArray
+  */
   @js.native
   trait SchemaArray[T]
     extends StObject
        with Array[Schema_[T]]
        with Schema_[T]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaObject = {[key: string] : normalizr.normalizr.SchemaValue<T>}
+  }}}
+  to avoid circular code involving: 
+  - normalizr.normalizr.Schema
+  - normalizr.normalizr.SchemaArray
+  - normalizr.normalizr.SchemaObject
+  - normalizr.normalizr.SchemaValue
+  */
   trait SchemaObject[T]
     extends StObject
        with /* key */ StringDictionary[SchemaValue[T]]
@@ -55,8 +75,30 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaValue = normalizr.normalizr.Schema<T> | normalizr.normalizr.SchemaValueFunction<T>
+  }}}
+  to avoid circular code involving: 
+  - normalizr.normalizr.Schema
+  - normalizr.normalizr.SchemaArray
+  - normalizr.normalizr.SchemaValue
+  */
   type SchemaValue[T] = Any | SchemaValueFunction[T]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SchemaValueFunction = (t : T): normalizr.normalizr.Schema<T>
+  }}}
+  to avoid circular code involving: 
+  - normalizr.normalizr.Schema
+  - normalizr.normalizr.SchemaArray
+  - normalizr.normalizr.SchemaObject
+  - normalizr.normalizr.SchemaValue
+  - normalizr.normalizr.SchemaValueFunction
+  */
   @js.native
   trait SchemaValueFunction[T] extends StObject {
     

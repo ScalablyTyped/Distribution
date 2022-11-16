@@ -1,15 +1,12 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`selection-change`
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SelectionChangeEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -35,14 +32,8 @@ trait SelectionChangeEventInfo
 }
 object SelectionChangeEventInfo {
   
-  inline def apply(
-    added: js.Array[Graphic],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    removed: js.Array[Graphic]
-  ): SelectionChangeEventInfo = {
-    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any])
+  inline def apply(added: js.Array[Graphic], removed: js.Array[Graphic]): SelectionChangeEventInfo = {
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("selection-change")
     __obj.asInstanceOf[SelectionChangeEventInfo]
   }

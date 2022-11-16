@@ -104,6 +104,14 @@ object distJsonMod {
   
   type InferWithParams[Type /* <: Struct_[Any, Any] */, Params /* <: JsonRpcParams */] = (Omit[Infer[Type], params]) & ParamsParams[Params]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Json = null | boolean | number | string | std.Array<@metamask/utils.@metamask/utils/dist/json.Json> | {[prop: string] : @metamask/utils.@metamask/utils/dist/json.Json}
+  }}}
+  to avoid circular code involving: 
+  - @metamask/utils.@metamask/utils/dist/json.Json
+  */
   type Json = Null | Boolean | Double | String | js.Array[Any] | StringDictionary[Any]
   
   /* Inlined superstruct.superstruct.Infer<superstruct.superstruct.Struct<{  code :number,   message :string,   data :unknown,   stack :string | undefined}, {  code :superstruct.superstruct.Struct<number, null>,   message :superstruct.superstruct.Struct<string, null>,   data :superstruct.superstruct.Struct<unknown, null>,   stack :superstruct.superstruct.Struct<string | undefined, null>}>> */

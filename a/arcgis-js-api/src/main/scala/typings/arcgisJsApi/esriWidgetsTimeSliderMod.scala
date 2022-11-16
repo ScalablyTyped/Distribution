@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TimeSlider
-import typings.arcgisJsApi.esri.TimeSliderConstructor
 import typings.arcgisJsApi.esri.TimeSliderProperties
+import typings.arcgisJsApi.esri.WebMap
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsTimeSliderMod extends Shortcut {
+/* static members */
+object esriWidgetsTimeSliderMod {
   
-  @JSImport("esri/widgets/TimeSlider", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TimeSliderConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/TimeSlider", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,20 @@ object esriWidgetsTimeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TimeSlider {
     def this(properties: TimeSliderProperties) = this()
   }
+  @JSImport("esri/widgets/TimeSlider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TimeSliderConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsTimeSliderMod.foo` */
-  override def _to: js.Object & TimeSliderConstructor = ^
+  /**
+    * Extracts time slider settings from a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) if the webmap contains a [time slider widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider) definition.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#getPropertiesFromWebMap)
+    */
+  inline def getPropertiesFromWebMap(webMap: WebMap): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertiesFromWebMap")(webMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def getPropertiesFromWebMap(webMap: WebMap, signal: AbortSignal): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertiesFromWebMap")(webMap.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

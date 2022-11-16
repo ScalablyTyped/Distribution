@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudLayerConstructor
   extends StObject
-     with /**
-  * The PointCloudLayer is designed for visualizing large collections of points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html)
-  */
-Instantiable0[PointCloudLayer]
+     with Instantiable0[PointCloudLayer]
      with Instantiable1[/* properties */ PointCloudLayerProperties, PointCloudLayer] {
   
   def fromJSON(json: Any): PointCloudLayer = js.native

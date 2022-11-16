@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SimpleRendererConstructor
   extends StObject
-     with /**
-  * SimpleRenderer renders all features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) with one [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html)
-  */
-Instantiable0[SimpleRenderer]
+     with Instantiable0[SimpleRenderer]
      with Instantiable1[/* properties */ SimpleRendererProperties, SimpleRenderer] {
   
   def fromJSON(json: Any): SimpleRenderer = js.native

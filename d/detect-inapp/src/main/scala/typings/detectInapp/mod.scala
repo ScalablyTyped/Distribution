@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("detect-inapp", JSImport.Default)
+  @JSImport("detect-inapp", JSImport.Namespace)
   @js.native
-  open class default protected ()
+  open class ^ protected ()
     extends StObject
        with InApp {
     def this(useragent: String) = this()

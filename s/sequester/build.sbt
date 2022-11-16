@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sequester"
-version := "1.0.0-dt-20220818Z-0fb5f3"
+version := "1.0.0-dt-20220818Z-e3ce11"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

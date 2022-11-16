@@ -1,6 +1,6 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.libTypesMod.Alignment
+import typings.nukaCarousel.libTypesMod.CellAlign
 import typings.nukaCarousel.libTypesMod.EasingFunction
 import typings.nukaCarousel.libTypesMod.ScrollMode
 import typings.nukaCarousel.nukaCarouselStrings.fade
@@ -27,7 +27,7 @@ object libSliderListMod {
     currentSlide: Double,
     slideCount: Double,
     slidesToShow: Double,
-    cellAlign: Alignment,
+    cellAlign: CellAlign,
     wrapAround: Boolean
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPercentOffsetForSlide")(currentSlide.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any], wrapAround.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -38,7 +38,7 @@ object libSliderListMod {
     
     var animationDistance: Double
     
-    var cellAlign: Alignment
+    var cellAlign: CellAlign
     
     var children: ReactNode
     
@@ -72,7 +72,7 @@ object libSliderListMod {
     
     inline def apply(
       animationDistance: Double,
-      cellAlign: Alignment,
+      cellAlign: CellAlign,
       currentSlide: Double,
       disableAnimation: Boolean,
       disableEdgeSwiping: Boolean,
@@ -99,7 +99,7 @@ object libSliderListMod {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

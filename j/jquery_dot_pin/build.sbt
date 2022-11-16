@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_pin"
-version := "1.0-dt-20211202Z-f08c24"
+version := "1.0-dt-20211202Z-3785d3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

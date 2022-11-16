@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mini-svg-data-uri"
-version := "1.4.4-d2653b"
+version := "1.4.4-1e37f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

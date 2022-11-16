@@ -18,6 +18,15 @@ object libComponentsCommonSaturationMod {
   
   type Saturation = Component[SaturationProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SaturationProps = react-color.react-color.CustomPickerProps<react-color.react-color/lib/components/common/Saturation.Saturation>
+  }}}
+  to avoid circular code involving: 
+  - react-color.react-color/lib/components/common/Saturation.Saturation
+  - react-color.react-color/lib/components/common/Saturation.SaturationProps
+  */
   trait SaturationProps
     extends StObject
        with CustomPickerProps[Saturation]

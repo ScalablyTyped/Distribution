@@ -120,7 +120,7 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
     * @param target The original object which is being proxied.
     * @param p The name or `Symbol` of the property to set.
     * @param receiver The object to which the assignment was originally directed.
-    * @returns `A `Boolean` indicating whether or not the property was set.
+    * @returns A `Boolean` indicating whether or not the property was set.
     */
   /* standard es2015.proxy */
   var set: js.UndefOr[

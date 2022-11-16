@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.anon.FeatureReductionClusterPr
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +9,12 @@ trait CSVLayerProperties
   extends StObject
      with LayerProperties
      with OrderedLayerProperties
-     with PortalLayerProperties
      with ScaleRangeLayerProperties
      with TemporalLayerProperties
      with BlendLayerProperties
-     with FeatureEffectLayerProperties {
+     with FeatureEffectLayerProperties
+     with FeatureReductionLayerProperties
+     with PortalLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -57,13 +57,6 @@ trait CSVLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[CSVLayerElevationInfo] = js.undefined
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#featureReduction)
-    */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -221,10 +214,6 @@ object CSVLayerProperties {
     inline def setElevationInfo(value: CSVLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
-    
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
-    
-    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
     inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

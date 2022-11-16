@@ -8,15 +8,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`equal-interval`
 import typings.arcgisJsApi.arcgisJsApiStrings.`natural-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait relationshipCreateRendererParams
-  extends StObject
-     with Object {
+trait relationshipCreateRendererParams extends StObject {
   
   /**
     * The method for classifying each field's data values.
@@ -65,6 +61,13 @@ trait relationshipCreateRendererParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
   var focus: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer for which the visualization is generated.
@@ -136,15 +139,12 @@ trait relationshipCreateRendererParams
 object relationshipCreateRendererParams {
   
   inline def apply(
-    constructor: js.Function,
     field1: relationshipCreateRendererParamsField1,
     field2: relationshipCreateRendererParamsField2,
-    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
     view: View
   ): relationshipCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field1 = field1.asInstanceOf[js.Any], field2 = field2.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipCreateRendererParams]
   }
   
@@ -169,6 +169,10 @@ object relationshipCreateRendererParams {
     inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

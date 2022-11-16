@@ -15,6 +15,15 @@ object libMediaListMod {
   
   type MediaList = Component[MediaListProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type MediaListProps = react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/MediaList.MediaList>
+  }}}
+  to avoid circular code involving: 
+  - react-bootstrap.react-bootstrap/lib/MediaList.MediaList
+  - react-bootstrap.react-bootstrap/lib/MediaList.MediaListProps
+  */
   trait MediaListProps
     extends StObject
        with HTMLProps[MediaList]

@@ -21,11 +21,11 @@ object Rebase {
     branch: js.UndefOr[typings.nodegit.annotatedCommitMod.AnnotatedCommit | Null],
     upstream: js.UndefOr[typings.nodegit.annotatedCommitMod.AnnotatedCommit | Null],
     onto: js.UndefOr[typings.nodegit.annotatedCommitMod.AnnotatedCommit | Null],
-    opts: js.UndefOr[RebaseOptions | Null]
+    opts: js.UndefOr[RebaseOptions[Any] | Null]
   ): js.Promise[typings.nodegit.rebaseMod.Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.rebaseMod.Rebase]]
   
-  inline def initOptions(opts: RebaseOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def initOptions(opts: RebaseOptions[Any], version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def open(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.rebaseMod.Rebase] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.rebaseMod.Rebase]]
-  inline def open(repo: typings.nodegit.repositoryMod.Repository, opts: RebaseOptions): js.Promise[typings.nodegit.rebaseMod.Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.rebaseMod.Rebase]]
+  inline def open(repo: typings.nodegit.repositoryMod.Repository, opts: RebaseOptions[Any]): js.Promise[typings.nodegit.rebaseMod.Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.rebaseMod.Rebase]]
 }

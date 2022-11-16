@@ -66,6 +66,10 @@ trait DOMEventHandlers[This] extends StObject {
     js.ThisFunction2[/* this */ This, /* event */ FocusEvent, /* view */ EditorView, Boolean | Unit]
   ] = js.undefined
   
+  var cancel: js.UndefOr[
+    js.ThisFunction2[/* this */ This, /* event */ Event, /* view */ EditorView, Boolean | Unit]
+  ] = js.undefined
+  
   var canplay: js.UndefOr[
     js.ThisFunction2[/* this */ This, /* event */ Event, /* view */ EditorView, Boolean | Unit]
   ] = js.undefined
@@ -500,6 +504,10 @@ object DOMEventHandlers {
     ): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    
+    inline def setCancel(value: js.ThisFunction2[/* this */ This, /* event */ Event, /* view */ EditorView, Boolean | Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     inline def setCanplay(value: js.ThisFunction2[/* this */ This, /* event */ Event, /* view */ EditorView, Boolean | Unit]): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
     

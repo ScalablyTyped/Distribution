@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.HTMLElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonMenuConfig
-  extends StObject
-     with Object {
+trait ButtonMenuConfig extends StObject {
   
   /**
     * The DOM Element containing the menu.
@@ -48,12 +44,8 @@ trait ButtonMenuConfig
 }
 object ButtonMenuConfig {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ButtonMenuConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ButtonMenuConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonMenuConfig]
   }
   

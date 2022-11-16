@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapToggleViewModel
   extends StObject
-     with Accessor
-     with Evented {
+     with Accessor {
   
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
@@ -18,6 +17,13 @@ trait BasemapToggleViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html#activeBasemap)
     */
   val activeBasemap: Basemap = js.native
+  
+  /**
+    * Helper method to find a basemap's thumbnail URL.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html#getThumbnailUrl)
+    */
+  def getThumbnailUrl(basemap: Basemap): String = js.native
   
   /**
     * The next basemap for toggling.
@@ -40,7 +46,7 @@ trait BasemapToggleViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html#toggle)
     */
-  def toggle(): scala.Unit = js.native
+  def toggle(): js.Promise[Any] = js.native
   
   /**
     * The view from which the widget will operate.

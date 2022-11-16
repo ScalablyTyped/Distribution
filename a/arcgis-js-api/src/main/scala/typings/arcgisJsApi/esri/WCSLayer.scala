@@ -92,6 +92,13 @@ trait WCSLayer
   val type_WCSLayer: wcs = js.native
   
   /**
+    * The URL of the WCS service endpoint of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#url)
+    */
+  var url: String = js.native
+  
+  /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
     *
     * @default true

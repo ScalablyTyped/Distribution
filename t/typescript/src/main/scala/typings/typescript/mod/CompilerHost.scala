@@ -83,6 +83,9 @@ trait CompilerHost
     ]
   ] = js.native
   
+  /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
+  var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
+  
   var readDirectory: js.UndefOr[
     js.Function5[
       /* rootDir */ java.lang.String, 

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.FormTemplate
-import typings.arcgisJsApi.esri.FormTemplateConstructor
 import typings.arcgisJsApi.esri.FormTemplateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriFormFormTemplateMod extends Shortcut {
+/* static members */
+object esriFormFormTemplateMod {
   
-  @JSImport("esri/form/FormTemplate", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & FormTemplateConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/form/FormTemplate", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriFormFormTemplateMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with FormTemplate {
     def this(properties: FormTemplateProperties) = this()
@@ -35,9 +29,9 @@ object esriFormFormTemplateMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/form/FormTemplate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & FormTemplateConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriFormFormTemplateMod.foo` */
-  override def _to: js.Object & FormTemplateConstructor = ^
+  inline def fromJSON(json: Any): FormTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[FormTemplate]
 }

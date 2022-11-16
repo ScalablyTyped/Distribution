@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudUniqueValueRendererColorUniqueValueInfos
-  extends StObject
-     with Object {
+trait PointCloudUniqueValueRendererColorUniqueValueInfos extends StObject {
   
   /**
     * The color used to represent points whose value matches `values`.
@@ -33,14 +29,8 @@ trait PointCloudUniqueValueRendererColorUniqueValueInfos
 }
 object PointCloudUniqueValueRendererColorUniqueValueInfos {
   
-  inline def apply(
-    color: Color_,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    values: js.Array[String]
-  ): PointCloudUniqueValueRendererColorUniqueValueInfos = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any])
+  inline def apply(color: Color_, values: js.Array[String]): PointCloudUniqueValueRendererColorUniqueValueInfos = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudUniqueValueRendererColorUniqueValueInfos]
   }
   

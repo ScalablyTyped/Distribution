@@ -34,6 +34,8 @@ trait Provider extends StObject {
   
   var environment: js.UndefOr[Environment | String] = js.undefined
   
+  var ephemeralStorageSize: js.UndefOr[Double | String] = js.undefined
+  
   var eventBridge: js.UndefOr[EventBridge] = js.undefined
   
   var httpApi: js.UndefOr[HttpApi] = js.undefined
@@ -156,6 +158,10 @@ object Provider {
     inline def setEnvironment(value: Environment | String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setEphemeralStorageSize(value: Double | String): Self = StObject.set(x, "ephemeralStorageSize", value.asInstanceOf[js.Any])
+    
+    inline def setEphemeralStorageSizeUndefined: Self = StObject.set(x, "ephemeralStorageSize", js.undefined)
     
     inline def setEventBridge(value: EventBridge): Self = StObject.set(x, "eventBridge", value.asInstanceOf[js.Any])
     

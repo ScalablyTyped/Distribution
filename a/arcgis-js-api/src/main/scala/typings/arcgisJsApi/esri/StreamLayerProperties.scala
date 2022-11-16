@@ -14,7 +14,8 @@ trait StreamLayerProperties
      with ScaleRangeLayerProperties
      with TemporalLayerProperties
      with BlendLayerProperties
-     with FeatureEffectLayerProperties {
+     with FeatureEffectLayerProperties
+     with FeatureReductionLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -50,13 +51,6 @@ trait StreamLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[StreamLayerElevationInfo] = js.undefined
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#featureReduction)
-    */
-  var featureReduction: js.UndefOr[FeatureReductionSelectionProperties] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -229,10 +223,6 @@ object StreamLayerProperties {
     inline def setElevationInfo(value: StreamLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
-    
-    inline def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
-    
-    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
     inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

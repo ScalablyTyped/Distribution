@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterHistogram
-  extends StObject
-     with Object {
+trait RasterHistogram extends StObject {
   
   /**
     * Count of pixels that fall into each bin.
@@ -40,16 +36,8 @@ trait RasterHistogram
 }
 object RasterHistogram {
   
-  inline def apply(
-    constructor: js.Function,
-    counts: js.Array[Double] | js.typedarray.Uint32Array,
-    hasOwnProperty: PropertyKey => Boolean,
-    max: Double,
-    min: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    size: Double
-  ): RasterHistogram = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], counts = counts.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any])
+  inline def apply(counts: js.Array[Double] | js.typedarray.Uint32Array, max: Double, min: Double, size: Double): RasterHistogram = {
+    val __obj = js.Dynamic.literal(counts = counts.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterHistogram]
   }
   

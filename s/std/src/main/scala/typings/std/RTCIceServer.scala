@@ -10,9 +10,6 @@ trait RTCIceServer extends StObject {
   var credential: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
-  var credentialType: js.UndefOr[RTCIceCredentialType] = js.undefined
-  
-  /* standard dom */
   var urls: java.lang.String | js.Array[java.lang.String]
   
   /* standard dom */
@@ -28,10 +25,6 @@ object RTCIceServer {
   extension [Self <: RTCIceServer](x: Self) {
     
     inline def setCredential(value: java.lang.String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
-    
-    inline def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
-    
-    inline def setCredentialTypeUndefined: Self = StObject.set(x, "credentialType", js.undefined)
     
     inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     

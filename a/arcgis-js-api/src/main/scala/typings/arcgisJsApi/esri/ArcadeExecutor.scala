@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcadeExecutor
-  extends StObject
-     with Object {
+trait ArcadeExecutor extends StObject {
   
   /**
     * A function that can be invoked to evaluate the compiled expression for a set of profile variables.
@@ -49,6 +45,13 @@ trait ArcadeExecutor
   var fieldsUsed: js.Array[String]
   
   /**
+    * Indicates whether the expression accesses or uses a feature's geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArcadeExecutor)
+    */
+  var geometryUsed: Boolean
+  
+  /**
     * Indicates whether the compiled expression accesses data using a FeatureSet function and therefore must be executed using the `executeAsync` function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArcadeExecutor)
@@ -58,15 +61,13 @@ trait ArcadeExecutor
 object ArcadeExecutor {
   
   inline def apply(
-    constructor: js.Function,
     execute: ExecuteFunction,
     executeAsync: ExecuteFunctionAsync,
     fieldsUsed: js.Array[String],
-    hasOwnProperty: PropertyKey => Boolean,
-    isAsync: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
+    geometryUsed: Boolean,
+    isAsync: Boolean
   ): ArcadeExecutor = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], executeAsync = executeAsync.asInstanceOf[js.Any], fieldsUsed = fieldsUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isAsync = isAsync.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(execute = execute.asInstanceOf[js.Any], executeAsync = executeAsync.asInstanceOf[js.Any], fieldsUsed = fieldsUsed.asInstanceOf[js.Any], geometryUsed = geometryUsed.asInstanceOf[js.Any], isAsync = isAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcadeExecutor]
   }
   
@@ -79,6 +80,8 @@ object ArcadeExecutor {
     inline def setFieldsUsed(value: js.Array[String]): Self = StObject.set(x, "fieldsUsed", value.asInstanceOf[js.Any])
     
     inline def setFieldsUsedVarargs(value: String*): Self = StObject.set(x, "fieldsUsed", js.Array(value*))
+    
+    inline def setGeometryUsed(value: Boolean): Self = StObject.set(x, "geometryUsed", value.asInstanceOf[js.Any])
     
     inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
   }

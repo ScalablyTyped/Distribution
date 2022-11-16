@@ -15,6 +15,15 @@ object internalEnhancedSwitchMod {
   
   type EnhancedSwitch = Component[EnhancedSwitchProps, js.Object, Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type EnhancedSwitchProps = material-ui.__MaterialUI.Switches.CommonEnhancedSwitchProps<material-ui.material-ui/internal/EnhancedSwitch.EnhancedSwitch>
+  }}}
+  to avoid circular code involving: 
+  - material-ui.material-ui/internal/EnhancedSwitch.EnhancedSwitch
+  - material-ui.material-ui/internal/EnhancedSwitch.EnhancedSwitchProps
+  */
   trait EnhancedSwitchProps
     extends StObject
        with CommonEnhancedSwitchProps[EnhancedSwitch]

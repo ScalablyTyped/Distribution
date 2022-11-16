@@ -23,7 +23,7 @@ trait SessionOptions extends StObject {
     * If validation fails after restoring a session, `setup` will re-run.
     * @default {false}
     */
-  var validate: js.UndefOr[js.Function0[(js.Promise[`false` | Unit]) | `false` | Unit]] = js.undefined
+  var validate: js.UndefOr[js.Function0[(js.Promise[`false` | Unit]) | Unit]] = js.undefined
 }
 object SessionOptions {
   
@@ -38,7 +38,7 @@ object SessionOptions {
     
     inline def setCacheAcrossSpecsUndefined: Self = StObject.set(x, "cacheAcrossSpecs", js.undefined)
     
-    inline def setValidate(value: () => (js.Promise[`false` | Unit]) | `false` | Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => (js.Promise[`false` | Unit]) | Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }

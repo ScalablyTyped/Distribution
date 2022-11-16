@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AgeExpressionsResult
-  extends StObject
-     with Object {
+trait AgeExpressionsResult extends StObject {
   
   /**
     * A SQL expression and where clause that matches the generated `valueExpression` used to query for a histogram from the layer.
@@ -33,15 +29,8 @@ trait AgeExpressionsResult
 }
 object AgeExpressionsResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    histogramQuery: Any,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    statisticsQuery: Any,
-    valueExpression: String
-  ): AgeExpressionsResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), histogramQuery = histogramQuery.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statisticsQuery = statisticsQuery.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
+  inline def apply(histogramQuery: Any, statisticsQuery: Any, valueExpression: String): AgeExpressionsResult = {
+    val __obj = js.Dynamic.literal(histogramQuery = histogramQuery.asInstanceOf[js.Any], statisticsQuery = statisticsQuery.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgeExpressionsResult]
   }
   

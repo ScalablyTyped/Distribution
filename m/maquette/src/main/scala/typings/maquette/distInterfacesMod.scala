@@ -525,6 +525,14 @@ object distInterfacesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type VNodeChild = string | maquette.maquette/dist/interfaces.VNode | std.Array<maquette.maquette/dist/interfaces.VNodeChild> | false | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - maquette.maquette/dist/interfaces.VNodeChild
+  */
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.maquette.distInterfacesMod.VNode
@@ -535,6 +543,15 @@ object distInterfacesMod {
   */
   type VNodeChild = js.UndefOr[_VNodeChild | js.Array[Any] | String | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type VNodeChildren = std.Array<maquette.maquette/dist/interfaces.VNodeChild>
+  }}}
+  to avoid circular code involving: 
+  - maquette.maquette/dist/interfaces.VNodeChild
+  - maquette.maquette/dist/interfaces.VNodeChildren
+  */
   @js.native
   trait VNodeChildren
     extends StObject

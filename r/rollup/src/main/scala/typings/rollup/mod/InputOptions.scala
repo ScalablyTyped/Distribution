@@ -147,7 +147,11 @@ object InputOptions {
     
     inline def setPlugins(value: InputPluginOption): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
+    inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
+    
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     

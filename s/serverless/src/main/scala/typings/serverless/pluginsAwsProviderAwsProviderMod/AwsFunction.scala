@@ -27,6 +27,8 @@ trait AwsFunction extends StObject {
   
   var environment: js.UndefOr[Environment] = js.undefined
   
+  var ephemeralStorageSize: js.UndefOr[Double | String] = js.undefined
+  
   var events: js.UndefOr[js.Array[Event]] = js.undefined
   
   var fileSystemConfig: js.UndefOr[FileSystemConfig] = js.undefined
@@ -97,6 +99,10 @@ object AwsFunction {
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setEphemeralStorageSize(value: Double | String): Self = StObject.set(x, "ephemeralStorageSize", value.asInstanceOf[js.Any])
+    
+    inline def setEphemeralStorageSizeUndefined: Self = StObject.set(x, "ephemeralStorageSize", js.undefined)
     
     inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

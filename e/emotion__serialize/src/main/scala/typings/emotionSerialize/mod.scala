@@ -573,6 +573,15 @@ object mod {
   
   type ArrayInterpolation[Props] = js.Array[Interpolation[Props]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @emotion/serialize.@emotion/serialize.InterpolationPrimitive | @emotion/serialize.@emotion/serialize.ArrayCSSInterpolation
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayCSSInterpolation
+  - @emotion/serialize.@emotion/serialize.CSSInterpolation
+  */
   type CSSInterpolation = InterpolationPrimitive | Any
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -599,6 +608,16 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSOthersObject = {[propertiesName: string] : @emotion/serialize.@emotion/serialize.CSSInterpolation}
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayCSSInterpolation
+  - @emotion/serialize.@emotion/serialize.CSSInterpolation
+  - @emotion/serialize.@emotion/serialize.CSSOthersObject
+  */
   trait CSSOthersObject
     extends StObject
        with /* propertiesName */ StringDictionary[CSSInterpolation]
@@ -22639,6 +22658,16 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionInterpolation = (props : Props): @emotion/serialize.@emotion/serialize.Interpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayInterpolation
+  - @emotion/serialize.@emotion/serialize.FunctionInterpolation
+  - @emotion/serialize.@emotion/serialize.Interpolation
+  */
   @js.native
   trait FunctionInterpolation[Props]
     extends StObject
@@ -22647,6 +22676,15 @@ object mod {
     def apply(props: Props): Interpolation[Props] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = @emotion/serialize.@emotion/serialize.InterpolationPrimitive | @emotion/serialize.@emotion/serialize.ArrayInterpolation<Props> | @emotion/serialize.@emotion/serialize.FunctionInterpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayInterpolation
+  - @emotion/serialize.@emotion/serialize.Interpolation
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.emotionSerialize.mod.InterpolationPrimitive
     - scala.Any

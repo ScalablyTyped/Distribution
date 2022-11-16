@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisualVariablesResult
-  extends StObject
-     with Object {
+trait VisualVariablesResult extends StObject {
   
   /**
     * Authoring information related to the creation of the visual variables.
@@ -66,14 +62,11 @@ object VisualVariablesResult {
     basemapId: String,
     basemapTheme: String,
     color: VisualVariablesResultColor,
-    constructor: js.Function,
     defaultValuesUsed: Boolean,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     size: VisualVariablesResultSize,
     statistics: SummaryStatisticsResult
   ): VisualVariablesResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualVariablesResult]
   }
   

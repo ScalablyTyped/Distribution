@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WFSOperations
-  extends StObject
-     with Object {
+trait WFSOperations extends StObject {
   
   var DescribeFeatureType: WFSOperationsDescribeFeatureType
   
@@ -21,12 +17,9 @@ object WFSOperations {
   inline def apply(
     DescribeFeatureType: WFSOperationsDescribeFeatureType,
     GetCapabilities: WFSOperationsGetCapabilities,
-    GetFeature: WFSOperationsGetFeature,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
+    GetFeature: WFSOperationsGetFeature
   ): WFSOperations = {
-    val __obj = js.Dynamic.literal(DescribeFeatureType = DescribeFeatureType.asInstanceOf[js.Any], GetCapabilities = GetCapabilities.asInstanceOf[js.Any], GetFeature = GetFeature.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(DescribeFeatureType = DescribeFeatureType.asInstanceOf[js.Any], GetCapabilities = GetCapabilities.asInstanceOf[js.Any], GetFeature = GetFeature.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSOperations]
   }
   

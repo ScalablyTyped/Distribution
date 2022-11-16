@@ -27,6 +27,16 @@ object mod {
   
   type JSONArray = js.Array[JSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[key: string] : k6.k6.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - k6.k6.JSONArray
+  - k6.k6.JSONObject
+  - k6.k6.JSONValue
+  */
   trait JSONObject
     extends StObject
        with /* key */ StringDictionary[JSONValue]
@@ -38,6 +48,15 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = null | boolean | number | string | k6.k6.JSONArray | k6.k6.JSONObject
+  }}}
+  to avoid circular code involving: 
+  - k6.k6.JSONArray
+  - k6.k6.JSONValue
+  */
   type JSONValue = Null | Boolean | Double | String | Any | JSONObject
   
   type bytes = js.Array[Double]

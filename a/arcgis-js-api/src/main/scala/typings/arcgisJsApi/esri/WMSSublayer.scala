@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WMSSublayer
   extends StObject
-     with Accessor {
+     with Accessor
+     with Identifiable {
   
   /**
     * Description for the WMS sublayer.
@@ -84,6 +85,13 @@ trait WMSSublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#name)
     */
   var name: String = js.native
+  
+  /**
+    * Returns a reference to the parent WMS sublayer or layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#parent)
+    */
+  var parent: Any = js.native
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.

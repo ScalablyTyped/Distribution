@@ -70,7 +70,7 @@ trait InternalCarouselProps extends StObject {
     * When displaying more than one slide,
     * sets which position to anchor the current slide to
     */
-  var cellAlign: Alignment = js.native
+  var cellAlign: CellAlign = js.native
   
   /**
     * Space between slides, as an integer, but reflected as px

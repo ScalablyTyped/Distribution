@@ -140,6 +140,15 @@ object nativeDistTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Flattener = (chunks : std.Array<styled-components.styled-components/native/dist/types.Interpolation<Props>>, executionContext : std.Object | null | undefined, styleSheet : std.Object | null | undefined): std.Array<styled-components.styled-components/native/dist/types.Interpolation<Props>>
+  }}}
+  to avoid circular code involving: 
+  - styled-components.styled-components/native/dist/types.Flattener
+  - styled-components.styled-components/native/dist/types.Interpolation
+  */
   @js.native
   trait Flattener[Props] extends StObject {
     
@@ -200,6 +209,16 @@ object nativeDistTypesMod {
       ] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type IStyledComponentFactory = (target : Target, options : styled-components.styled-components/native/dist/types.StyledOptions<R, Props>, rules : styled-components.styled-components/native/dist/types.RuleSet<Props>): styled-components.styled-components/native/dist/types.IStyledComponent<R, Target, Props> & Statics
+  }}}
+  to avoid circular code involving: 
+  - styled-components.styled-components/native/dist/types.IStyledComponentFactory
+  - styled-components.styled-components/native/dist/types.Interpolation
+  - styled-components.styled-components/native/dist/types.RuleSet
+  */
   @js.native
   trait IStyledComponentFactory[R /* <: Runtime */, Target /* <: StyledTarget[R] */, Props /* <: js.Object */, Statics] extends StObject {
     
@@ -268,6 +287,14 @@ object nativeDistTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = styled-components.styled-components/native/dist/types.StyleFunction<Props> | styled-components.styled-components/native/dist/types.StyledObject<Props> | std.TemplateStringsArray | string | number | false | undefined | null | styled-components.styled-components/native/dist/types.Keyframes | styled-components.styled-components/native/dist/types.IStyledComponent<'web', any, any> | std.Array<styled-components.styled-components/native/dist/types.Interpolation<Props>>
+  }}}
+  to avoid circular code involving: 
+  - styled-components.styled-components/native/dist/types.Interpolation
+  */
   /* Rewritten from type alias, can be one of: 
     - typings.styledComponents.nativeDistTypesMod.StyleFunction[Props]
     - typings.styledComponents.nativeDistTypesMod.StyledObject[Props]
@@ -520,6 +547,16 @@ object nativeDistTypesMod {
     (/* keyof ActualComponentProps */ String) | as | $as
   ]) & ActualComponentProps)
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RuleSet = std.Array<styled-components.styled-components/native/dist/types.Interpolation<Props>>
+  }}}
+  to avoid circular code involving: 
+  - styled-components.styled-components/native/dist/types.FlattenerResult
+  - styled-components.styled-components/native/dist/types.Interpolation
+  - styled-components.styled-components/native/dist/types.RuleSet
+  */
   @js.native
   trait RuleSet[Props]
     extends StObject
@@ -555,6 +592,22 @@ object nativeDistTypesMod {
     var hash: String = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StyleFunction = (executionContext : styled-components.styled-components/native/dist/types.ExecutionContext & Props): styled-components.styled-components/native/dist/types.Interpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - styled-components.styled-components/native/dist/types.CSSProp
+  - styled-components.styled-components/native/dist/types.Flattener
+  - styled-components.styled-components/native/dist/types.FlattenerResult
+  - styled-components.styled-components/native/dist/types.IStyledComponentFactory
+  - styled-components.styled-components/native/dist/types.Interpolation
+  - styled-components.styled-components/native/dist/types.RuleSet
+  - styled-components.styled-components/native/dist/types.StyleFunction
+  - styled-components.styled-components/native/dist/types.StyledObject
+  - styled-components.styled-components/native/dist/types.Styles
+  */
   @js.native
   trait StyleFunction[Props]
     extends StObject

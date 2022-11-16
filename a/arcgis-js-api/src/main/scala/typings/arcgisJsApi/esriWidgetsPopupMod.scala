@@ -1,23 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.GoToOverride
 import typings.arcgisJsApi.esri.MapView
 import typings.arcgisJsApi.esri.Popup
-import typings.arcgisJsApi.esri.PopupConstructor
 import typings.arcgisJsApi.esri.PopupProperties
 import typings.arcgisJsApi.esri.SceneView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsPopupMod extends Shortcut {
+object esriWidgetsPopupMod {
   
-  @JSImport("esri/widgets/Popup", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PopupConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Popup", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +18,7 @@ object esriWidgetsPopupMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Popup {
     def this(properties: PopupProperties) = this()
@@ -48,9 +41,4 @@ object esriWidgetsPopupMod extends Shortcut {
     @JSName("goToOverride")
     var goToOverride_Original: GoToOverride = js.native
   }
-  
-  type _To = js.Object & PopupConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsPopupMod.foo` */
-  override def _to: js.Object & PopupConstructor = ^
 }

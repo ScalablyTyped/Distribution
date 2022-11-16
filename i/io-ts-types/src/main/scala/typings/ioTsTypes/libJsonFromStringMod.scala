@@ -26,6 +26,15 @@ object libJsonFromStringMod {
   */
   type Json = _Json | Boolean | Double | String | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonArray = std.ReadonlyArray<io-ts-types.io-ts-types/lib/JsonFromString.Json>
+  }}}
+  to avoid circular code involving: 
+  - io-ts-types.io-ts-types/lib/JsonFromString.Json
+  - io-ts-types.io-ts-types/lib/JsonFromString.JsonArray
+  */
   @js.native
   trait JsonArray
     extends StObject
@@ -43,6 +52,16 @@ object libJsonFromStringMod {
   @js.native
   val JsonFromString: Type_[typings.ioTsTypes.libJsonFromStringMod.Json, String, String] = js.native
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonRecord = {readonly [key: string] : io-ts-types.io-ts-types/lib/JsonFromString.Json}
+  }}}
+  to avoid circular code involving: 
+  - io-ts-types.io-ts-types/lib/JsonFromString.Json
+  - io-ts-types.io-ts-types/lib/JsonFromString.JsonArray
+  - io-ts-types.io-ts-types/lib/JsonFromString.JsonRecord
+  */
   trait JsonRecord
     extends StObject
        with /* key */ StringDictionary[typings.ioTsTypes.libJsonFromStringMod.Json]

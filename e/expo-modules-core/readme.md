@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-modules-core
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 
 

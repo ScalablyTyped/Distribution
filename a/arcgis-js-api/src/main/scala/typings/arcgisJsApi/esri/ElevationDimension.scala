@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationDimension
-  extends StObject
-     with Object {
+trait ElevationDimension extends StObject {
   
   /**
     * Name of dimensional axis.
@@ -20,12 +16,8 @@ trait ElevationDimension
 }
 object ElevationDimension {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ElevationDimension = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = "elevation", propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ElevationDimension = {
+    val __obj = js.Dynamic.literal(name = "elevation")
     __obj.asInstanceOf[ElevationDimension]
   }
   

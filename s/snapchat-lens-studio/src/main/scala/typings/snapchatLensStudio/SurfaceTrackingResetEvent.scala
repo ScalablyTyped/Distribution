@@ -7,6 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** If a DeviceTracking component is present in the scene, this event is triggered when the tracking is restarted (typically when the Lens starts, or if the user taps the ground). */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type SurfaceTrackingResetEvent = snapchat-lens-studio.SceneEvent<snapchat-lens-studio.SurfaceTrackingResetEvent>
+}}}
+to avoid circular code involving: 
+- snapchat-lens-studio.SurfaceTrackingResetEvent
+*/
 trait SurfaceTrackingResetEvent
   extends StObject
      with SceneEvent[SurfaceTrackingResetEvent]

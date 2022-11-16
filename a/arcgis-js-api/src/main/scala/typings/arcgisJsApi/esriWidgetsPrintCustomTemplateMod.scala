@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.CustomTemplate
-import typings.arcgisJsApi.esri.CustomTemplateConstructor
 import typings.arcgisJsApi.esri.CustomTemplateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsPrintCustomTemplateMod extends Shortcut {
+object esriWidgetsPrintCustomTemplateMod {
   
-  @JSImport("esri/widgets/Print/CustomTemplate", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CustomTemplateConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Print/CustomTemplate", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriWidgetsPrintCustomTemplateMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with CustomTemplate {
     def this(properties: CustomTemplateProperties) = this()
   }
-  
-  type _To = js.Object & CustomTemplateConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsPrintCustomTemplateMod.foo` */
-  override def _to: js.Object & CustomTemplateConstructor = ^
 }

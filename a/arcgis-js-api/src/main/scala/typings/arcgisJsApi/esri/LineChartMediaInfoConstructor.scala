@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineChartMediaInfoConstructor
   extends StObject
-     with /**
-  * A `LineChartMediaInfo` is a type of chart media element that represents a line chart displayed within a popup.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-LineChartMediaInfo.html)
-  */
-Instantiable0[LineChartMediaInfo]
+     with Instantiable0[LineChartMediaInfo]
      with Instantiable1[/* properties */ LineChartMediaInfoProperties, LineChartMediaInfo] {
   
   def fromJSON(json: Any): LineChartMediaInfo = js.native

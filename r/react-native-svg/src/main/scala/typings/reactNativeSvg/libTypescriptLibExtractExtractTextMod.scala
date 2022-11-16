@@ -22,6 +22,14 @@ object libTypescriptLibExtractExtractTextMod {
   
   inline def setTSpan(TSpanImplementation: ComponentType[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTSpan")(TSpanImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TextChild = undefined | string | number | react.react.ComponentType<{}> | react.react.ReactElement | std.Array<react-native-svg.react-native-svg/lib/typescript/lib/extract/extractText.TextChild>
+  }}}
+  to avoid circular code involving: 
+  - react-native-svg.react-native-svg/lib/typescript/lib/extract/extractText.TextChild
+  */
   type TextChild = js.UndefOr[String | Double | ComponentType[js.Object] | ReactElement | js.Array[Any]]
   
   trait TextProps

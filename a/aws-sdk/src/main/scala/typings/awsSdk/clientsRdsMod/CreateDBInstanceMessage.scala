@@ -232,7 +232,7 @@ trait CreateDBInstanceMessage extends StObject {
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Specifies the storage throughput value for the DB instance. This setting doesn't apply to RDS Custom or Amazon Aurora.
+    * Specifies the storage throughput value for the DB instance. This setting applies only to the gp3 storage type. This setting doesn't apply to RDS Custom or Amazon Aurora.
     */
   var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
   

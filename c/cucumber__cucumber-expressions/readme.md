@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__cucumber-expressions
 
-Typings are for version 16.0.0
+Typings are for version 16.0.1
 
 ## Library description:
 Cucumber Expressions - a simpler alternative to Regular Expressions

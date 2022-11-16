@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "append-field"
-version := "2.0.0-2f61ab"
+version := "2.0.0-9a1bc0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

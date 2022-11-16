@@ -14,11 +14,10 @@ object outFunctionExactMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     W extends unknown ? A extends W ? A extends ts-toolbelt.ts-toolbelt/out/Function/_Internal.Narrowable ? A : {[ K in keyof A ]: K extends keyof W? ts-toolbelt.ts-toolbelt/out/Function/Exact.Exact<A[K], W[K]> : never} : W : never
     }}}
     */
-  @js.native
-  trait Exact[A, W] extends StObject
+  type Exact[A, W] = A
 }

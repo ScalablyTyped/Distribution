@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.create
 import typings.arcgisJsApi.arcgisJsApiStrings.edit
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureViewModelLastEditInfo
-  extends StObject
-     with Object {
+trait FeatureViewModelLastEditInfo extends StObject {
   
   /**
     * Date that the edit was performed.
@@ -35,15 +31,8 @@ trait FeatureViewModelLastEditInfo
 }
 object FeatureViewModelLastEditInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    date: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: edit | create,
-    user: String
-  ): FeatureViewModelLastEditInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
+  inline def apply(date: String, `type`: edit | create, user: String): FeatureViewModelLastEditInfo = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelLastEditInfo]
   }

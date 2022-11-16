@@ -31,6 +31,7 @@ import typings.webdriverio.webdriverioStrings.animationstart
 import typings.webdriverio.webdriverioStrings.auxclick
 import typings.webdriverio.webdriverioStrings.beforeinput
 import typings.webdriverio.webdriverioStrings.blur
+import typings.webdriverio.webdriverioStrings.cancel
 import typings.webdriverio.webdriverioStrings.canplay
 import typings.webdriverio.webdriverioStrings.canplaythrough
 import typings.webdriverio.webdriverioStrings.change
@@ -231,6 +232,17 @@ trait Fn1 extends StObject {
   def apply(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native
+  def apply(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  def apply(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Any]): Unit = js.native

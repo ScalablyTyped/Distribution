@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdentityManagerGetCredentialOptions
-  extends StObject
-     with Object {
+trait IdentityManagerGetCredentialOptions extends StObject {
   
   /**
     * Error object returned by the server from a previous attempt to fetch the given URL.
@@ -35,12 +31,8 @@ trait IdentityManagerGetCredentialOptions
 }
 object IdentityManagerGetCredentialOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): IdentityManagerGetCredentialOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): IdentityManagerGetCredentialOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityManagerGetCredentialOptions]
   }
   

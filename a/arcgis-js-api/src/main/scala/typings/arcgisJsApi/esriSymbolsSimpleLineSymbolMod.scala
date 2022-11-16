@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SimpleLineSymbol
-import typings.arcgisJsApi.esri.SimpleLineSymbolConstructor
 import typings.arcgisJsApi.esri.SimpleLineSymbolProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsSimpleLineSymbolMod extends Shortcut {
+/* static members */
+object esriSymbolsSimpleLineSymbolMod {
   
-  @JSImport("esri/symbols/SimpleLineSymbol", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SimpleLineSymbolConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/SimpleLineSymbol", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsSimpleLineSymbolMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SimpleLineSymbol {
     def this(properties: SimpleLineSymbolProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsSimpleLineSymbolMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/SimpleLineSymbol", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SimpleLineSymbolConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsSimpleLineSymbolMod.foo` */
-  override def _to: js.Object & SimpleLineSymbolConstructor = ^
+  inline def fromJSON(json: Any): SimpleLineSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SimpleLineSymbol]
 }

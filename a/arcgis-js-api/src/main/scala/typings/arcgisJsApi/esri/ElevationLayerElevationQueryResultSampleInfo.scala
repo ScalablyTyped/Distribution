@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationLayerElevationQueryResultSampleInfo
-  extends StObject
-     with Object {
+trait ElevationLayerElevationQueryResultSampleInfo extends StObject {
   
   /**
     * The resolution at which the z-value was sampled.
@@ -19,13 +15,8 @@ trait ElevationLayerElevationQueryResultSampleInfo
 }
 object ElevationLayerElevationQueryResultSampleInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    demResolution: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ElevationLayerElevationQueryResultSampleInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], demResolution = demResolution.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(demResolution: Double): ElevationLayerElevationQueryResultSampleInfo = {
+    val __obj = js.Dynamic.literal(demResolution = demResolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationLayerElevationQueryResultSampleInfo]
   }
   

@@ -1,8 +1,11 @@
 package typings.arcgisJsApi.anon
 
 import typings.arcgisJsApi.arcgisJsApiStrings.cluster
+import typings.arcgisJsApi.esri.AggregateFieldProperties
 import typings.arcgisJsApi.esri.LabelClassProperties
+import typings.arcgisJsApi.esri.MarkerSymbolProperties
 import typings.arcgisJsApi.esri.PopupTemplateProperties
+import typings.arcgisJsApi.esri.RendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +32,20 @@ trait FeatureReductionClusterPr extends StObject {
   var clusterMinSize: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster.
+    * Defines the radius in points (or pixels if specified) of the area in which multiple points will be grouped and visualized as a single cluster.
     *
     * @default 60
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius)
     */
   var clusterRadius: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) from features contained within each cluster.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#fields)
+    */
+  var fields: js.UndefOr[js.Array[AggregateFieldProperties]] = js.undefined
   
   /**
     * Defines labels for clusters as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
@@ -70,6 +80,20 @@ trait FeatureReductionClusterPr extends StObject {
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * The renderer used to override the default style of the clusters.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#renderer)
+    */
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
+  /**
+    * A symbol used to override the default cluster style.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#symbol)
+    */
+  var symbol: js.UndefOr[MarkerSymbolProperties | CIMSymbolPropertiestypeci | WebStyleSymbolPropertiest] = js.undefined
+  
+  /**
     * The feature reduction type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#type)
@@ -98,6 +122,12 @@ object FeatureReductionClusterPr {
     
     inline def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
+    inline def setFields(value: js.Array[AggregateFieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: AggregateFieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
+    
     inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
@@ -115,6 +145,14 @@ object FeatureReductionClusterPr {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    inline def setSymbol(value: MarkerSymbolProperties | CIMSymbolPropertiestypeci | WebStyleSymbolPropertiest): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     inline def setType(value: js.UndefOr[cluster] & cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

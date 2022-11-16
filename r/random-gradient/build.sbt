@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "random-gradient"
-version := "0.0-dt-20211202Z-72b6df"
+version := "0.0-dt-20211202Z-30ed6f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

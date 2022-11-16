@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VoxelVolumeStyleConstructor
   extends StObject
-     with /**
-  * The VolumeStyle allows you to define rendering properties that apply to the volume itself, such as vertical exaggeration and offset.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVolumeStyle.html)
-  */
-Instantiable0[VoxelVolumeStyle]
+     with Instantiable0[VoxelVolumeStyle]
      with Instantiable1[/* properties */ VoxelVolumeStyleProperties, VoxelVolumeStyle] {
   
   def fromJSON(json: Any): VoxelVolumeStyle = js.native

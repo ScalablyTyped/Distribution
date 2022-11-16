@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldInfoFormatConstructor
   extends StObject
-     with /**
-  * The `FieldInfoFormat` class is used with numerical or date fields to provide more detail about how the value should be displayed in a popup.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-FieldInfoFormat.html)
-  */
-Instantiable0[FieldInfoFormat]
+     with Instantiable0[FieldInfoFormat]
      with Instantiable1[/* properties */ FieldInfoFormatProperties, FieldInfoFormat] {
   
   def fromJSON(json: Any): FieldInfoFormat = js.native

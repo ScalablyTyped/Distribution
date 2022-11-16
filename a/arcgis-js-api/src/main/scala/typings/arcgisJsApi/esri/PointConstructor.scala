@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointConstructor
   extends StObject
-     with /**
-  * A location defined by X, Y, and Z coordinates.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html)
-  */
-Instantiable0[Point]
+     with Instantiable0[Point]
      with Instantiable1[/* properties */ PointProperties, Point] {
   
   def fromJSON(json: Any): Point = js.native

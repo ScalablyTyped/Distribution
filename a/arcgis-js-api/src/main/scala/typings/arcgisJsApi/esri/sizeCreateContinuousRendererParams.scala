@@ -8,15 +8,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.above
 import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait sizeCreateContinuousRendererParams
-  extends StObject
-     with Object {
+trait sizeCreateContinuousRendererParams extends StObject {
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value and features that do not fall within the configured data range.
@@ -33,6 +29,13 @@ trait sizeCreateContinuousRendererParams
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createContinuousRenderer)
     */
   var field: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the generated renderer is for a binning visualization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createContinuousRenderer)
+    */
+  var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer for which the renderer is generated.
@@ -159,13 +162,8 @@ trait sizeCreateContinuousRendererParams
 }
 object sizeCreateContinuousRendererParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): sizeCreateContinuousRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): sizeCreateContinuousRendererParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeCreateContinuousRendererParams]
   }
   
@@ -178,6 +176,10 @@ object sizeCreateContinuousRendererParams {
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setForBinning(value: Boolean): Self = StObject.set(x, "forBinning", value.asInstanceOf[js.Any])
+    
+    inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

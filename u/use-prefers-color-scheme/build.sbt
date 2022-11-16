@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-prefers-color-scheme"
-version := "0.1-dt-20211202Z-2232df"
+version := "0.1-dt-20211202Z-e8969f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

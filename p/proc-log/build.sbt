@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proc-log"
-version := "3.0-dt-20221107Z-96df67"
+version := "3.0-dt-20221107Z-3bedf7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

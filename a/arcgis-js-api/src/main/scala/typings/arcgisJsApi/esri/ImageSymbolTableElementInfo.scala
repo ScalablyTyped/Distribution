@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImageSymbolTableElementInfo
   extends StObject
-     with Object
      with SymbolTableElementType {
   
   /**
@@ -48,14 +45,8 @@ trait ImageSymbolTableElementInfo
 }
 object ImageSymbolTableElementInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    src: String
-  ): ImageSymbolTableElementInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), src = src.asInstanceOf[js.Any])
+  inline def apply(opacity: Double, src: String): ImageSymbolTableElementInfo = {
+    val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSymbolTableElementInfo]
   }
   

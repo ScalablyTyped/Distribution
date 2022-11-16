@@ -122,6 +122,14 @@ object webpack {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ExportsInfo = {[k: string] : webpack.webpack.ExportInfo & webpack.webpack.ExportsInfo}
+  }}}
+  to avoid circular code involving: 
+  - webpack.webpack.ExportsInfo
+  */
   trait ExportsInfo
     extends StObject
        with /* k */ StringDictionary[ExportInfo & ExportsInfo]

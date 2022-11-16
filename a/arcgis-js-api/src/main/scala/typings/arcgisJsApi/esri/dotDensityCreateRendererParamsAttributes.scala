@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dotDensityCreateRendererParamsAttributes
-  extends StObject
-     with Object {
+trait dotDensityCreateRendererParamsAttributes extends StObject {
   
   /**
     * The name of a numeric field.
@@ -40,12 +36,8 @@ trait dotDensityCreateRendererParamsAttributes
 }
 object dotDensityCreateRendererParamsAttributes {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): dotDensityCreateRendererParamsAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): dotDensityCreateRendererParamsAttributes = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dotDensityCreateRendererParamsAttributes]
   }
   

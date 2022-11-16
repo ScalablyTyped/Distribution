@@ -930,4 +930,12 @@ object tsToolbeltStrings {
     extends StObject
        with Mode
   inline def sync: sync = "sync".asInstanceOf[sync]
+  
+  @js.native
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
 }

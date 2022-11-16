@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SizeSchemeForPolygon
   extends StObject
-     with Object
      with SizeScheme {
   
   /**
@@ -34,15 +31,8 @@ trait SizeSchemeForPolygon
 }
 object SizeSchemeForPolygon {
   
-  inline def apply(
-    background: SizeSchemeForPolygonBackground,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    marker: SizeSchemeForPoint,
-    opacity: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SizeSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), marker = marker.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(background: SizeSchemeForPolygonBackground, marker: SizeSchemeForPoint, opacity: Double): SizeSchemeForPolygon = {
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }
   

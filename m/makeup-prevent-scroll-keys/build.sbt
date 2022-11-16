@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "makeup-prevent-scroll-keys"
-version := "0.0-dt-20211202Z-f255e6"
+version := "0.0-dt-20211202Z-89c21a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

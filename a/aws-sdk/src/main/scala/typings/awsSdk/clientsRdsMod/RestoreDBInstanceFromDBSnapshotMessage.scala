@@ -32,6 +32,11 @@ trait RestoreDBInstanceFromDBSnapshotMessage extends StObject {
   var CustomIamInstanceProfile: js.UndefOr[String] = js.undefined
   
   /**
+    * The identifier for the RDS for MySQL Multi-AZ DB cluster snapshot to restore from. For more information on Multi-AZ DB clusters, see  Multi-AZ deployments with two readable standby DB instances in the Amazon RDS User Guide. Constraints:   Must match the identifier of an existing Multi-AZ DB cluster snapshot.   Can't be specified when DBSnapshotIdentifier is specified.   Must be specified when DBSnapshotIdentifier isn't specified.   If you are restoring from a shared manual Multi-AZ DB cluster snapshot, the DBClusterSnapshotIdentifier must be the ARN of the shared snapshot.   Can't be the identifier of an Aurora DB cluster snapshot.   Can't be the identifier of an RDS for PostgreSQL Multi-AZ DB cluster snapshot.  
+    */
+  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
     * The compute and memory capacity of the Amazon RDS DB instance, for example db.m4.large. Not all DB instance classes are available in all Amazon Web Services Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see DB Instance Class in the Amazon RDS User Guide.  Default: The same DBInstanceClass as the original DB instance.
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
@@ -52,9 +57,9 @@ trait RestoreDBInstanceFromDBSnapshotMessage extends StObject {
   var DBParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the DB snapshot to restore from. Constraints:   Must match the identifier of an existing DBSnapshot.   If you are restoring from a shared manual DB snapshot, the DBSnapshotIdentifier must be the ARN of the shared DB snapshot.  
+    * The identifier for the DB snapshot to restore from. Constraints:   Must match the identifier of an existing DBSnapshot.   Can't be specified when DBClusterSnapshotIdentifier is specified.   Must be specified when DBClusterSnapshotIdentifier isn't specified.   If you are restoring from a shared manual DB snapshot, the DBSnapshotIdentifier must be the ARN of the shared DB snapshot.  
     */
-  var DBSnapshotIdentifier: String
+  var DBSnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The DB subnet group name to use for the new instance. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mydbsubnetgroup 
@@ -170,8 +175,8 @@ trait RestoreDBInstanceFromDBSnapshotMessage extends StObject {
 }
 object RestoreDBInstanceFromDBSnapshotMessage {
   
-  inline def apply(DBInstanceIdentifier: String, DBSnapshotIdentifier: String): RestoreDBInstanceFromDBSnapshotMessage = {
-    val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any], DBSnapshotIdentifier = DBSnapshotIdentifier.asInstanceOf[js.Any])
+  inline def apply(DBInstanceIdentifier: String): RestoreDBInstanceFromDBSnapshotMessage = {
+    val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreDBInstanceFromDBSnapshotMessage]
   }
   
@@ -197,6 +202,10 @@ object RestoreDBInstanceFromDBSnapshotMessage {
     
     inline def setCustomIamInstanceProfileUndefined: Self = StObject.set(x, "CustomIamInstanceProfile", js.undefined)
     
+    inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setDBClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "DBClusterSnapshotIdentifier", js.undefined)
+    
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
     inline def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
@@ -212,6 +221,8 @@ object RestoreDBInstanceFromDBSnapshotMessage {
     inline def setDBParameterGroupNameUndefined: Self = StObject.set(x, "DBParameterGroupName", js.undefined)
     
     inline def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setDBSnapshotIdentifierUndefined: Self = StObject.set(x, "DBSnapshotIdentifier", js.undefined)
     
     inline def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
     

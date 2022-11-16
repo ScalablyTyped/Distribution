@@ -106,6 +106,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ResultHash = {[key: string] : string | std.Array<string> | form-serialize.form-serialize.ResultHash}
+  }}}
+  to avoid circular code involving: 
+  - form-serialize.form-serialize.ResultHash
+  */
   trait ResultHash
     extends StObject
        with /* key */ StringDictionary[String | js.Array[String] | ResultHash]

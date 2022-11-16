@@ -1,8 +1,8 @@
 package typings.antvGLite
 
 import typings.antvGLite.distTypesMod.CanvasLike
-import typings.offscreencanvas.OffscreenCanvasRenderingContext2D
 import typings.std.CanvasRenderingContext2D
+import typings.std.OffscreenCanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

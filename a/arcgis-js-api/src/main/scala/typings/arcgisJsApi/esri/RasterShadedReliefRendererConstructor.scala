@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RasterShadedReliefRendererConstructor
   extends StObject
-     with /**
-  * RasterShadedReliefRenderer produces a grayscale or colored 3D representation of the surface on an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) or [ImageryTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html), with the sun's relative position taken into account for shading the image.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html)
-  */
-Instantiable0[RasterShadedReliefRenderer]
+     with Instantiable0[RasterShadedReliefRenderer]
      with Instantiable1[/* properties */ RasterShadedReliefRendererProperties, RasterShadedReliefRenderer] {
   
   def fromJSON(json: Any): RasterShadedReliefRenderer = js.native

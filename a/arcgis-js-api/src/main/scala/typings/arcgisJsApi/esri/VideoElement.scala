@@ -19,7 +19,12 @@ trait VideoElement
     */
   val content: Any = js.native
   
-  var `type`: video = js.native
+  /**
+    * The element type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html#type)
+    */
+  val `type`: video = js.native
   
   /**
     * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).

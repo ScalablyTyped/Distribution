@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`scale-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`scale-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.scale
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ScaleEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -37,15 +34,8 @@ trait ScaleEventInfo
 }
 object ScaleEventInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `scale-start` | scale | `scale-stop`,
-    xScale: Double,
-    yScale: Double
-  ): ScaleEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), xScale = xScale.asInstanceOf[js.Any], yScale = yScale.asInstanceOf[js.Any])
+  inline def apply(`type`: `scale-start` | scale | `scale-stop`, xScale: Double, yScale: Double): ScaleEventInfo = {
+    val __obj = js.Dynamic.literal(xScale = xScale.asInstanceOf[js.Any], yScale = yScale.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleEventInfo]
   }

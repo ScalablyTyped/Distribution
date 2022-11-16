@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterUniqueValuesResult
-  extends StObject
-     with Object {
+trait RasterUniqueValuesResult extends StObject {
   
   /**
     * The class field name from which the unique value infos were generated.
@@ -26,14 +22,8 @@ trait RasterUniqueValuesResult
 }
 object RasterUniqueValuesResult {
   
-  inline def apply(
-    classFieldName: String,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    renderer: UniqueValueRenderer
-  ): RasterUniqueValuesResult = {
-    val __obj = js.Dynamic.literal(classFieldName = classFieldName.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
+  inline def apply(classFieldName: String, renderer: UniqueValueRenderer): RasterUniqueValuesResult = {
+    val __obj = js.Dynamic.literal(classFieldName = classFieldName.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterUniqueValuesResult]
   }
   

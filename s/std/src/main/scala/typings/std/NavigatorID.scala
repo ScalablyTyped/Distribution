@@ -18,6 +18,7 @@ trait NavigatorID extends StObject {
   /* standard dom */
   val appVersion: java.lang.String
   
+  /** @deprecated */
   /* standard dom */
   val platform: java.lang.String
   
@@ -32,6 +33,7 @@ trait NavigatorID extends StObject {
   /* standard dom */
   val userAgent: java.lang.String
   
+  /** @deprecated */
   /* standard dom */
   val vendor: java.lang.String
   

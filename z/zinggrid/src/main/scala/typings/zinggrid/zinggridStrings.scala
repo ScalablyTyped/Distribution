@@ -339,6 +339,10 @@ object zinggridStrings {
   inline def `button-text`: `button-text` = "button-text".asInstanceOf[`button-text`]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   

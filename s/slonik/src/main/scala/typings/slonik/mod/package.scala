@@ -84,6 +84,15 @@ type QueryResultRowColumnType = String | Double
 
 type SerializableValueArray = js.Array[SerializableValueType]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type SerializableValueType = string | number | boolean | null | object | slonik.slonik.SerializableValueObject | slonik.slonik.SerializableValueArray
+}}}
+to avoid circular code involving: 
+- slonik.slonik.SerializableValueArray
+- slonik.slonik.SerializableValueType
+*/
 type SerializableValueType = String | Double | Boolean | Null | js.Object | SerializableValueObject | Any
 
 type SqlSqlTokenType[T] = TaggedTemplateLiteralInvocationType[T]
@@ -103,4 +112,16 @@ type StreamHandlerType = js.Function1[/* stream */ Readable, Unit]
 
 type TransactionFunctionType[T] = js.Function1[/* connection */ DatabaseTransactionConnectionType, js.Promise[T]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ValueExpressionType = slonik.slonik.SqlTokenType | slonik.slonik.PrimitiveValueExpressionType
+}}}
+to avoid circular code involving: 
+- slonik.slonik.NamedAssignmentType
+- slonik.slonik.NamedParameterValuesType
+- slonik.slonik.PrimitiveValueExpressionType
+- slonik.slonik.PrimitiveValueExpressionTypeArray
+- slonik.slonik.ValueExpressionType
+*/
 type ValueExpressionType = SqlTokenType | Any

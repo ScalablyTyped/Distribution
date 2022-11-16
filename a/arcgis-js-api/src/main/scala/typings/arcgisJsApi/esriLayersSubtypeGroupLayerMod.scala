@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,7 +34,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SubtypeGroupLayer
-import typings.arcgisJsApi.esri.SubtypeGroupLayerConstructor
 import typings.arcgisJsApi.esri.SubtypeGroupLayerProperties
 import typings.arcgisJsApi.esri.TimeExtent
 import typings.arcgisJsApi.esri.TimeInfo
@@ -44,13 +42,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSubtypeGroupLayerMod extends Shortcut {
+/* static members */
+object esriLayersSubtypeGroupLayerMod {
   
-  @JSImport("esri/layers/SubtypeGroupLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SubtypeGroupLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/SubtypeGroupLayer", JSImport.Namespace)
   @js.native
   /**
@@ -58,7 +52,7 @@ object esriLayersSubtypeGroupLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SubtypeGroupLayer {
     def this(properties: SubtypeGroupLayerProperties) = this()
@@ -177,9 +171,9 @@ object esriLayersSubtypeGroupLayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
+  @JSImport("esri/layers/SubtypeGroupLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SubtypeGroupLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSubtypeGroupLayerMod.foo` */
-  override def _to: js.Object & SubtypeGroupLayerConstructor = ^
+  inline def fromJSON(json: Any): SubtypeGroupLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SubtypeGroupLayer]
 }

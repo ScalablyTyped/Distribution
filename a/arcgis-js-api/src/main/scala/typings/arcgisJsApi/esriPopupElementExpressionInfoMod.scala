@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ElementExpressionInfo
-import typings.arcgisJsApi.esri.ElementExpressionInfoConstructor
 import typings.arcgisJsApi.esri.ElementExpressionInfoProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriPopupElementExpressionInfoMod extends Shortcut {
+/* static members */
+object esriPopupElementExpressionInfoMod {
   
-  @JSImport("esri/popup/ElementExpressionInfo", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ElementExpressionInfoConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/ElementExpressionInfo", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriPopupElementExpressionInfoMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ElementExpressionInfo.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ElementExpressionInfo {
     def this(properties: ElementExpressionInfoProperties) = this()
@@ -35,9 +29,9 @@ object esriPopupElementExpressionInfoMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/popup/ElementExpressionInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ElementExpressionInfoConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriPopupElementExpressionInfoMod.foo` */
-  override def _to: js.Object & ElementExpressionInfoConstructor = ^
+  inline def fromJSON(json: Any): ElementExpressionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ElementExpressionInfo]
 }

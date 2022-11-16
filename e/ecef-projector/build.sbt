@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecef-projector"
-version := "1.0-dt-20220823Z-fa706b"
+version := "1.0-dt-20220823Z-8a20d8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

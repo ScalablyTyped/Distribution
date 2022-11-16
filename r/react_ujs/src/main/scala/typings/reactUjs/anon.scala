@@ -16,6 +16,7 @@ import typings.reactUjs.reactUjsStrings.animationstart
 import typings.reactUjs.reactUjsStrings.auxclick
 import typings.reactUjs.reactUjsStrings.beforeinput
 import typings.reactUjs.reactUjsStrings.blur
+import typings.reactUjs.reactUjsStrings.cancel
 import typings.reactUjs.reactUjsStrings.canplay
 import typings.reactUjs.reactUjsStrings.canplaythrough
 import typings.reactUjs.reactUjsStrings.change
@@ -263,6 +264,17 @@ object anon {
     def apply(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
@@ -1483,6 +1495,17 @@ object anon {
     def apply(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native

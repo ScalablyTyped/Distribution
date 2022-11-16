@@ -347,6 +347,19 @@ object distTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RecursiveArray = {[index: number] : T | @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.RecursiveArray<T>}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.Attribute
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.AttributeValue
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.GradFunc
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedAttrMap
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.RecursiveArray
+  - @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.TensorLike
+  */
   trait RecursiveArray[T /* <: Any */]
     extends StObject
        with /* index */ NumberDictionary[T | RecursiveArray[T]]

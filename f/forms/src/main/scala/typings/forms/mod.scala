@@ -226,6 +226,14 @@ object mod {
     var widget_Field: Widget = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FieldArrayChoice = std.Array<[string, string | forms.forms.FieldArrayChoice]>
+  }}}
+  to avoid circular code involving: 
+  - forms.forms.FieldArrayChoice
+  */
   @js.native
   trait FieldArrayChoice
     extends StObject
@@ -319,6 +327,14 @@ object mod {
   
   type FieldIterator = js.Function2[/* name */ String, /* field */ FieldBound[Any, Any], String]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FieldObjectChoice = {[key: string] : string | forms.forms.FieldObjectChoice}
+  }}}
+  to avoid circular code involving: 
+  - forms.forms.FieldObjectChoice
+  */
   trait FieldObjectChoice
     extends StObject
        with /* key */ StringDictionary[String | FieldObjectChoice]
@@ -502,6 +518,14 @@ object mod {
   @js.native
   trait FormData[Fields /* <: FormFields */] extends StObject
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FormFields = {[key: string] : forms.forms.Field<unknown> | forms.forms.FormFields}
+  }}}
+  to avoid circular code involving: 
+  - forms.forms.FormFields
+  */
   trait FormFields
     extends StObject
        with /* key */ StringDictionary[Field[Any] | FormFields]

@@ -5,15 +5,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.move
 import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.offset
 import typings.arcgisJsApi.arcgisJsApiStrings.split
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchDefaultUpdateOptionsReshapeOptions
-  extends StObject
-     with Object {
+trait SketchDefaultUpdateOptionsReshapeOptions extends StObject {
   
   /**
     * Sets the reshape operation on the edge.
@@ -44,12 +40,8 @@ trait SketchDefaultUpdateOptionsReshapeOptions
 }
 object SketchDefaultUpdateOptionsReshapeOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SketchDefaultUpdateOptionsReshapeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SketchDefaultUpdateOptionsReshapeOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchDefaultUpdateOptionsReshapeOptions]
   }
   

@@ -30,6 +30,15 @@ object mod extends Shortcut {
     
     type Dispatch[S] = js.Function1[/* asyncAction */ PromiseAction[S], Any]
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type PromiseAction = (dispatch : redux-promise.redux-promise.redux.Dispatch<S>, getState : (): S | undefined): any
+    }}}
+    to avoid circular code involving: 
+    - redux-promise.redux-promise.redux.Dispatch
+    - redux-promise.redux-promise.redux.PromiseAction
+    */
     @js.native
     trait PromiseAction[S] extends StObject {
       

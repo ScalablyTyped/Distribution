@@ -30,15 +30,6 @@ trait StreamLayerView
   val connectionStatus: connected | disconnected = js.native
   
   /**
-    * The effect applied to the layerView.
-    *
-    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#effect)
-    */
-  var effect: FeatureEffect = js.native
-  
-  /**
     * The featureEffect can be used to draw attention features of interest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#featureEffect)

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlagProperty
-  extends StObject
-     with Object {
+trait FlagProperty extends StObject {
   
   /**
     * The available [terminals](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html) to define the permissible paths based on the terminal configurations.
@@ -70,18 +66,15 @@ object FlagProperty {
   
   inline def apply(
     allTerminals: TerminalConfiguration,
-    constructor: js.Function,
     details: Any,
     displayField: DisplayField,
-    hasOwnProperty: PropertyKey => Boolean,
     id: Double,
     mapGraphic: Graphic,
     mapPoint: Point,
-    propertyIsEnumerable: PropertyKey => Boolean,
     selectedTerminals: js.Array[Double],
     `type`: String
   ): FlagProperty = {
-    val __obj = js.Dynamic.literal(allTerminals = allTerminals.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], displayField = displayField.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], mapGraphic = mapGraphic.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), selectedTerminals = selectedTerminals.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allTerminals = allTerminals.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], displayField = displayField.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mapGraphic = mapGraphic.asInstanceOf[js.Any], mapPoint = mapPoint.asInstanceOf[js.Any], selectedTerminals = selectedTerminals.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagProperty]
   }

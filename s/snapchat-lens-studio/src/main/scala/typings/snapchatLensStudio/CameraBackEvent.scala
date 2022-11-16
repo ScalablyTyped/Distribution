@@ -7,6 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Triggered when the device’s back facing camera becomes active. */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type CameraBackEvent = snapchat-lens-studio.SceneEvent<snapchat-lens-studio.CameraBackEvent>
+}}}
+to avoid circular code involving: 
+- snapchat-lens-studio.CameraBackEvent
+*/
 trait CameraBackEvent
   extends StObject
      with SceneEvent[CameraBackEvent]

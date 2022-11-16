@@ -85,6 +85,14 @@ type Builtin = js.Function | js.Date | js.Error | js.RegExp
 
 type EndCallback = js.Function1[/* result */ EndResult, Unit]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Mapping = {[key: string] : react-native-windows.react-native-windows/rntypes.Animated.Mapping} | react-native-windows.react-native-windows/rntypes.Animated.AnimatedValue
+}}}
+to avoid circular code involving: 
+- react-native-windows.react-native-windows/rntypes.Animated.Mapping
+*/
 type Mapping = StringDictionary[Any] | AnimatedValue
 
 type Nullable = js.UndefOr[Null]

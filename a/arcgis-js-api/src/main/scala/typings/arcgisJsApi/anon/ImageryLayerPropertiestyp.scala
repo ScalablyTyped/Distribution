@@ -64,6 +64,7 @@ import typings.arcgisJsApi.esri.ArcGISImageServiceCapabilities
 import typings.arcgisJsApi.esri.ExtentProperties
 import typings.arcgisJsApi.esri.FieldProperties
 import typings.arcgisJsApi.esri.MosaicRuleProperties
+import typings.arcgisJsApi.esri.MultidimensionalSubsetProperties
 import typings.arcgisJsApi.esri.PixelData
 import typings.arcgisJsApi.esri.PixelFilterFunction
 import typings.arcgisJsApi.esri.PopupTemplateProperties
@@ -224,7 +225,7 @@ trait ImageryLayerPropertiestyp extends StObject {
   /**
     * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
-    * @default show
+    * @default "show"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     */
@@ -254,6 +255,13 @@ trait ImageryLayerPropertiestyp extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)
     */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
+  
+  /**
+    * Represents a multidimensional subset of raster data.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalSubset)
+    */
+  var multidimensionalSubset: js.UndefOr[MultidimensionalSubsetProperties] = js.undefined
   
   /**
     * The pixel value representing no available information.
@@ -520,6 +528,10 @@ object ImageryLayerPropertiestyp {
     inline def setMosaicRule(value: MosaicRuleProperties): Self = StObject.set(x, "mosaicRule", value.asInstanceOf[js.Any])
     
     inline def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
+    
+    inline def setMultidimensionalSubset(value: MultidimensionalSubsetProperties): Self = StObject.set(x, "multidimensionalSubset", value.asInstanceOf[js.Any])
+    
+    inline def setMultidimensionalSubsetUndefined: Self = StObject.set(x, "multidimensionalSubset", js.undefined)
     
     inline def setNoData(value: Double | js.Array[Double]): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     

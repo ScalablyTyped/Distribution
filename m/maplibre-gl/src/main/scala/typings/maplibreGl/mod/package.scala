@@ -167,6 +167,16 @@ type ExpressionInputType = String | Double | Boolean
 
 type ExpressionParameters = js.Array[zoom | feature_ | `feature-state` | `heatmap-density` | `line-progress`]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ExpressionSpecification = ['array', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['array', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['array', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['boolean', ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>, unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | maplibre-gl.maplibre-gl.CollatorExpressionSpecification | ['format', ...std.Array<string | ['image', maplibre-gl.maplibre-gl.ExpressionSpecification] | maplibre-gl.maplibre-gl.ExpressionSpecification | {  font-scale :number | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined,   text-font :std.Array<string> | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined,   text-color :maplibre-gl.maplibre-gl.ColorSpecification | maplibre-gl.maplibre-gl.ExpressionSpecification}>] | ['image', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['literal', unknown] | ['number', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['number-format', number | maplibre-gl.maplibre-gl.ExpressionSpecification, {  locale :string | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined,   currency :string | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined,   min-fraction-digits :number | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined,   max-fraction-digits :number | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined}] | ['object', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['string', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['to-boolean', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['to-color', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['to-number', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<unknown | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['to-string', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['accumulated'] | ['feature-state', string] | ['geometry-type'] | ['id'] | ['line-progress'] | ['properties'] | ['at', number | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionSpecification] | ['get', string | maplibre-gl.maplibre-gl.ExpressionSpecification, std.Record<string, unknown> | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined] | ['has', string | maplibre-gl.maplibre-gl.ExpressionSpecification, std.Record<string, unknown> | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined] | ['in', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['index-of', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['length', string | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['slice', string | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['!', boolean | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['!=', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['<', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['<=', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['==', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['>', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['>=', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.CollatorExpressionSpecification | undefined] | ['all', ...std.Array<boolean | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['any', ...std.Array<boolean | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['case', boolean | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<boolean | maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification>, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['coalesce', ...std.Array<maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['match', maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | std.Array<maplibre-gl.maplibre-gl.ExpressionInputType>, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<maplibre-gl.maplibre-gl.ExpressionInputType | std.Array<maplibre-gl.maplibre-gl.ExpressionInputType> | maplibre-gl.maplibre-gl.ExpressionSpecification>, maplibre-gl.maplibre-gl.ExpressionInputType] | ['within', unknown | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['interpolate', maplibre-gl.maplibre-gl.InterpolationSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | std.Array<number> | maplibre-gl.maplibre-gl.ColorSpecification>] | ['interpolate-hcl', maplibre-gl.maplibre-gl.InterpolationSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ColorSpecification>] | ['interpolate-lab', maplibre-gl.maplibre-gl.InterpolationSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ColorSpecification>] | ['step', number | maplibre-gl.maplibre-gl.ExpressionSpecification, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['let', string, maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<string | maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['var', string] | ['concat', ...std.Array<maplibre-gl.maplibre-gl.ExpressionInputType | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['downcase', string | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['is-supported-script', string | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['resolved-locale', maplibre-gl.maplibre-gl.CollatorExpressionSpecification] | ['upcase', string | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['rgb', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['rgba', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['to-rgba', maplibre-gl.maplibre-gl.ColorSpecification | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['-', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification | undefined] | ['*', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['/', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['%', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['^', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['+', ...std.Array<number | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['abs', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['acos', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['asin', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['atan', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['ceil', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['cos', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['distance', std.Record<string, unknown> | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['ExpressionSpecification'] | ['floor', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['ln', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['ln2'] | ['log10', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['log2', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['max', number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['min', number | maplibre-gl.maplibre-gl.ExpressionSpecification, ...std.Array<number | maplibre-gl.maplibre-gl.ExpressionSpecification>] | ['pi'] | ['round', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['sin', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['sqrt', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['tan', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['zoom'] | ['heatmap-density']
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.DataDrivenPropertyValueSpecification
+- maplibre-gl.maplibre-gl.ExpressionFilterSpecification
+- maplibre-gl.maplibre-gl.ExpressionSpecification
+*/
 type ExpressionSpecification = (js.Tuple2[
 array | image_ | literal | `to-boolean` | `to-string` | `feature-state` | length | Exclamationmark | within | `var` | downcase | `is-supported-script` | `resolved-locale` | upcase | `to-rgba` | abs | acos | asin | atan | ceil | cos | distance | floor | ln | log10 | log2 | round | sin | sqrt | tan, 
 Any | Boolean | CollatorExpressionSpecification | ColorSpecification | Double | (Record[String, Any]) | String]) | (js.Tuple3[
@@ -190,6 +200,16 @@ type FilterExpression = js.Function3[
 /* canonical */ js.UndefOr[CanonicalTileID], 
 Boolean]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type FilterSpecification = maplibre-gl.maplibre-gl.ExpressionFilterSpecification | maplibre-gl.maplibre-gl.LegacyFilterSpecification
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.ExpressionFilterSpecification
+- maplibre-gl.maplibre-gl.ExpressionSpecification
+- maplibre-gl.maplibre-gl.FilterSpecification
+*/
 type FilterSpecification = Any | LegacyFilterSpecification
 
 type FormattedSpecification = String
@@ -206,10 +226,31 @@ type GlyphPositions = StringDictionary[NumberDictionary[GlyphPosition]]
 
 type InputEvent = MouseEvent | TouchEvent | KeyboardEvent | WheelEvent
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type InterpolationSpecification = ['linear'] | ['exponential', number | maplibre-gl.maplibre-gl.ExpressionSpecification] | ['cubic-bezier', number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification, number | maplibre-gl.maplibre-gl.ExpressionSpecification]
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.DataDrivenPropertyValueSpecification
+- maplibre-gl.maplibre-gl.ExpressionFilterSpecification
+- maplibre-gl.maplibre-gl.ExpressionSpecification
+- maplibre-gl.maplibre-gl.FilterSpecification
+- maplibre-gl.maplibre-gl.InterpolationSpecification
+*/
 type InterpolationSpecification = js.Array[linear] | (js.Tuple2[exponential, Double | Any]) | (js.Tuple5[`cubic-bezier`, Double | Any, Double | Any, Double | Any, Double | Any])
 
 type LayerFeatureStates = StringDictionary[FeatureStates]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type LegacyFilterSpecification = ['has', string] | ['!has', string] | ['==', string, string | number | boolean] | ['!=', string, string | number | boolean] | ['>', string, string | number | boolean] | ['>=', string, string | number | boolean] | ['<', string, string | number | boolean] | ['<=', string, string | number | boolean] | ['in', string, ...std.Array<string | number | boolean>] | ['!in', string, ...std.Array<string | number | boolean>] | ['all', ...std.Array<maplibre-gl.maplibre-gl.LegacyFilterSpecification>] | ['any', ...std.Array<maplibre-gl.maplibre-gl.LegacyFilterSpecification>] | ['none', ...std.Array<maplibre-gl.maplibre-gl.LegacyFilterSpecification>]
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.FilterSpecification
+- maplibre-gl.maplibre-gl.LegacyFilterSpecification
+*/
 type LegacyFilterSpecification = (js.Tuple2[has | Exclamationmarkhas, String]) | (js.Tuple3[
 EqualssignEqualssign | ExclamationmarkEqualssign | Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign, 
 String, 
@@ -241,6 +282,16 @@ type PointLike = typings.mapboxPointGeometry.mod.^ | (js.Tuple2[Double, Double])
 
 type PromoteIdSpecification = StringDictionary[String] | String
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type PropertyValueSpecification = T | maplibre-gl.maplibre-gl.CameraFunctionSpecification<T> | maplibre-gl.maplibre-gl.ExpressionSpecification
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.ExpressionSpecification
+- maplibre-gl.maplibre-gl.InterpolationSpecification
+- maplibre-gl.maplibre-gl.PropertyValueSpecification
+*/
 type PropertyValueSpecification[T] = T | CameraFunctionSpecification[T] | Any
 
 type RequestTransformFunction = js.Function2[/* url */ String, /* resourceType */ js.UndefOr[ResourceTypeEnum], RequestParameters]
@@ -286,6 +337,14 @@ type UniformValues[Us /* <: js.Object */] = ObjMap[Us, js.Function1[/* u */ Unif
 
 type Validator = js.Function1[/* a */ Any, js.Array[ValidationError]]
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Value = null | string | boolean | number | maplibre-gl.maplibre-gl.Color | maplibre-gl.maplibre-gl.Collator | maplibre-gl.maplibre-gl.Formatted | maplibre-gl.maplibre-gl.Padding | maplibre-gl.maplibre-gl.ResolvedImage | std.ReadonlyArray<maplibre-gl.maplibre-gl.Value> | {readonly [x: string] : maplibre-gl.maplibre-gl.Value}
+}}}
+to avoid circular code involving: 
+- maplibre-gl.maplibre-gl.Value
+*/
 /* Rewritten from type alias, can be one of: 
   - scala.Null
   - java.lang.String

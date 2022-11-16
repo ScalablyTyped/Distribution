@@ -33,7 +33,7 @@ object libTypescriptFabricRadialGradientNativeComponentMod extends Shortcut {
     
     var gradient: js.UndefOr[js.Array[Float]] = js.undefined
     
-    var gradientTransform: js.UndefOr[js.Array[Float]] = js.undefined
+    var gradientTransform: js.UndefOr[js.Array[Float] | Null] = js.undefined
     
     var gradientUnits: js.UndefOr[Int32] = js.undefined
     
@@ -69,6 +69,8 @@ object libTypescriptFabricRadialGradientNativeComponentMod extends Shortcut {
       inline def setGradient(value: js.Array[Float]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
       inline def setGradientTransform(value: js.Array[Float]): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+      
+      inline def setGradientTransformNull: Self = StObject.set(x, "gradientTransform", null)
       
       inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
       

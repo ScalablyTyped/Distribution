@@ -97,23 +97,21 @@ object mod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     S extends '' ? Last : / * template literal string: ${S}.${Last} * / string
     }}}
     */
-  @js.native
-  trait AppendPath[S /* <: String */, Last /* <: String */] extends StObject
+  type AppendPath[S /* <: String */, Last /* <: String */] = Last
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? {[ P in keyof T ]: T[P] extends std.Record<string, any> | std.Array<any>? {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, ''> : T[P]} : T extends std.Record<string, any> ? {[ P in keyof T as [camelcase-keys.camelcase-keys.IsInclude<Exclude, P>] extends [true]? P : [IsPascalCase] extends [true]? type-fest.type-fest/source/pascal-case.PascalCase<P> : type-fest.type-fest/source/camel-case.CamelCase<P> ]: [camelcase-keys.camelcase-keys.IsInclude<StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>>] extends [true]? T[P] : {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : [Deep] extends [true]? camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>> : T[P]} : T
     }}}
     */
-  @js.native
-  trait CamelCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, IsPascalCase /* <: Boolean */, Exclude /* <: js.Array[Any] */, StopPaths /* <: js.Array[String] */, Path /* <: String */] extends StObject
+  type CamelCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, IsPascalCase /* <: Boolean */, Exclude /* <: js.Array[Any] */, StopPaths /* <: js.Array[String] */, Path /* <: String */] = T
   
   // eslint-disable-next-line @typescript-eslint/ban-types
   type EmptyTuple = js.Array[Any]
@@ -125,13 +123,12 @@ object mod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     List extends undefined ? false : List extends std.Readonly<camelcase-keys.camelcase-keys.EmptyTuple> ? false : List extends [infer First, ...infer Rest] ? First extends Target ? true : camelcase-keys.camelcase-keys.IsInclude<Rest, Target> : boolean
     }}}
     */
-  @js.native
-  trait IsInclude[List /* <: js.Array[Any] */, Target] extends StObject
+  type IsInclude[List /* <: js.Array[Any] */, Target] = `false`
   
   trait Options extends StObject {
     
@@ -226,11 +223,10 @@ object mod {
   */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends undefined | void | null ? U : T
     }}}
     */
-  @js.native
-  trait WithDefault[T, U /* <: T */] extends StObject
+  type WithDefault[T, U /* <: T */] = U
 }

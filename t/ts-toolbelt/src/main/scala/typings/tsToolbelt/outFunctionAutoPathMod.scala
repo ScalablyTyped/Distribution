@@ -25,13 +25,12 @@ object outFunctionAutoPathMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [Exec] extends [never] ? ts-toolbelt.ts-toolbelt/out/Function/AutoPath.ExecPath<A, ts-toolbelt.ts-toolbelt/out/List/Pop.Pop<SP>, D> : Exec | P
     }}}
     */
-  @js.native
-  trait HintPath[A, P /* <: String */, SP /* <: typings.tsToolbelt.outListListMod.List[Index] */, Exec /* <: String */, D /* <: String */] extends StObject
+  type HintPath[A, P /* <: String */, SP /* <: typings.tsToolbelt.outListListMod.List[Index] */, Exec /* <: String */, D /* <: String */] = Exec | P
   
   /**
     * @ignore
@@ -43,13 +42,12 @@ object outFunctionAutoPathMod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     number extends K ? ts-toolbelt.ts-toolbelt/out/List/Head.Head<SP> : K & ts-toolbelt.ts-toolbelt/out/Function/AutoPath.Index
     }}}
     */
-  @js.native
-  trait KeyToIndex[K /* <: Key */, SP /* <: typings.tsToolbelt.outListListMod.List[Index] */] extends StObject
+  type KeyToIndex[K /* <: Key */, SP /* <: typings.tsToolbelt.outListListMod.List[Index] */] = K & Index
   
   /**
     * @ignore

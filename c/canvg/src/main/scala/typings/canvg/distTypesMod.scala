@@ -1,7 +1,7 @@
 package typings.canvg
 
-import typings.offscreencanvas.OffscreenCanvasRenderingContext2D
 import typings.std.CanvasRenderingContext2D
+import typings.std.OffscreenCanvasRenderingContext2D
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response

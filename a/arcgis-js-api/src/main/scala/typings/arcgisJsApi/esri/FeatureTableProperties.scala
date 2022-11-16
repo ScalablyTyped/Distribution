@@ -8,9 +8,6 @@ import typings.arcgisJsApi.anon.MapViewPropertiestype2d
 import typings.arcgisJsApi.anon.SceneLayerPropertiestypes
 import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.arcgisJsApi.anon.WFSLayerPropertiestypewfs
-import typings.arcgisJsApi.arcgisJsApiStrings.disabled
-import typings.arcgisJsApi.arcgisJsApiStrings.loading
-import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,6 +83,23 @@ trait FeatureTableProperties
     *
     * @default true
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightEnabled)
+    */
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This property accepts and returns a collection of feature ObjectId's.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightIds)
+    */
+  var highlightIds: js.UndefOr[CollectionProperties[Double]] = js.undefined
+  
+  /**
+    * Indicates whether to highlight the associated feature when a row is selected.
+    *
+    * @default true
+    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable#highlightEnabled highlightEnabled} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightOnRowSelectEnabled)
     */
   var highlightOnRowSelectEnabled: js.UndefOr[Boolean] = js.undefined
@@ -123,15 +137,6 @@ trait FeatureTableProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#pageSize)
     */
   var pageSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The state of the widget.
-    *
-    * @default disabled
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#state)
-    */
-  var state: js.UndefOr[disabled | loading | ready] = js.undefined
   
   /**
     * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-TableTemplate.html) used for the feature table.
@@ -202,6 +207,16 @@ object FeatureTableProperties {
     
     inline def setHiddenFieldsVarargs(value: String*): Self = StObject.set(x, "hiddenFields", js.Array(value*))
     
+    inline def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
+    
+    inline def setHighlightIds(value: CollectionProperties[Double]): Self = StObject.set(x, "highlightIds", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightIdsUndefined: Self = StObject.set(x, "highlightIds", js.undefined)
+    
+    inline def setHighlightIdsVarargs(value: Double*): Self = StObject.set(x, "highlightIds", js.Array(value*))
+    
     inline def setHighlightOnRowSelectEnabled(value: Boolean): Self = StObject.set(x, "highlightOnRowSelectEnabled", value.asInstanceOf[js.Any])
     
     inline def setHighlightOnRowSelectEnabledUndefined: Self = StObject.set(x, "highlightOnRowSelectEnabled", js.undefined)
@@ -223,10 +238,6 @@ object FeatureTableProperties {
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setState(value: disabled | loading | ready): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-    
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setTableTemplate(value: TableTemplateProperties): Self = StObject.set(x, "tableTemplate", value.asInstanceOf[js.Any])
     

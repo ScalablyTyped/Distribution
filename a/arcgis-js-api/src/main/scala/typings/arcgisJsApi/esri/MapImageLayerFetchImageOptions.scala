@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapImageLayerFetchImageOptions
-  extends StObject
-     with Object {
+trait MapImageLayerFetchImageOptions extends StObject {
   
   /**
     * The ratio of the resolution in physical pixels of the image to the resolution it will be displayed at.
@@ -41,12 +37,8 @@ trait MapImageLayerFetchImageOptions
 }
 object MapImageLayerFetchImageOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): MapImageLayerFetchImageOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): MapImageLayerFetchImageOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapImageLayerFetchImageOptions]
   }
   

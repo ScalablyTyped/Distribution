@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationProfileSample
-  extends StObject
-     with Object {
+trait ElevationProfileSample extends StObject {
   
   /**
     * Distance from the beginning of the path, in the effective selected by the user.
@@ -47,15 +43,8 @@ trait ElevationProfileSample
 }
 object ElevationProfileSample {
   
-  inline def apply(
-    constructor: js.Function,
-    distance: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    x: Double,
-    y: Double
-  ): ElevationProfileSample = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(distance: Double, x: Double, y: Double): ElevationProfileSample = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationProfileSample]
   }
   

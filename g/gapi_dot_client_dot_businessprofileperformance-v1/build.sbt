@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_businessprofileperformance-v1"
-version := "0.0-dt-20220912Z-eabc2b"
+version := "0.0-dt-20220912Z-13d4ca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

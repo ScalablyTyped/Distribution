@@ -103,6 +103,15 @@ type HistoryStateArray = js.Array[HistoryStateValue]
   *
   * @internal
   */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type HistoryStateValue = string | number | boolean | null | undefined | vue-router.vue-router.HistoryState | vue-router.vue-router.HistoryStateArray
+}}}
+to avoid circular code involving: 
+- vue-router.vue-router.HistoryStateArray
+- vue-router.vue-router.HistoryStateValue
+*/
 type HistoryStateValue = js.UndefOr[String | Double | Boolean | Null | HistoryState | Any]
 
 type Lazy[T] = js.Function0[js.Promise[T]]

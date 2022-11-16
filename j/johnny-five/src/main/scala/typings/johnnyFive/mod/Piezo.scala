@@ -24,8 +24,8 @@ open class Piezo protected () extends StObject {
   
   var pin: Double = js.native
   
-  def play(tune: Any): Unit = js.native
-  def play(tune: Any, cb: js.Function0[Unit]): Unit = js.native
+  def play(tune: PiezoTune): Unit = js.native
+  def play(tune: PiezoTune, cb: js.Function0[Unit]): Unit = js.native
   
-  def tone(frequency: Double, duration: Double): Unit = js.native
+  def tone(tone: Double, duration: Double): Unit = js.native
 }

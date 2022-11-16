@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableStreamDefaultController[R] extends StObject {
+trait ReadableStreamDefaultController[R]
+  extends StObject
+     with ReadableStreamController[R] {
   
   /* standard dom */
   def close(): Unit = js.native

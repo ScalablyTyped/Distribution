@@ -252,6 +252,14 @@ object mod {
     /**
       * Entry points of a module, optionally with conditions and subpath exports.
       */
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Exports = null | string | std.Array<string> | {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.Exports} | {[key: string] : rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.Exports}
+    }}}
+    to avoid circular code involving: 
+    - rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.Exports
+    */
     type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in rollup-plugin-generate-package-json.rollup-plugin-generate-package-json.PackageJson.ExportCondition ]: any} */ js.Any) | StringDictionary[Any]
     
     // eslint-disable-line @typescript-eslint/consistent-indexed-object-style

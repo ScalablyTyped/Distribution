@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hast-util-has-property"
-version := "2.0.0-263c1a"
+version := "2.0.0-d309cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

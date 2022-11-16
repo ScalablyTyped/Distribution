@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableListListItem extends StObject {
+trait TableListListItem
+  extends StObject
+     with Identifiable {
   
   /**
     * Indicates whether the actions panel is open in the TableList.
@@ -48,6 +50,15 @@ trait TableListListItem extends StObject {
   var layer: Layer
   
   /**
+    * Value is `true` when the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer) is being published.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#publishing)
+    */
+  val publishing: Boolean
+  
+  /**
     * The title of the table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#title)
@@ -62,9 +73,10 @@ object TableListListItem {
     error: Error,
     hidden: Boolean,
     layer: Layer,
+    publishing: Boolean,
     title: String
   ): TableListListItem = {
-    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen.asInstanceOf[js.Any], actionsSections = actionsSections.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen.asInstanceOf[js.Any], actionsSections = actionsSections.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], publishing = publishing.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableListListItem]
   }
   
@@ -79,6 +91,8 @@ object TableListListItem {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setPublishing(value: Boolean): Self = StObject.set(x, "publishing", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

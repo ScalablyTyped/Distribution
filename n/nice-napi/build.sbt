@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nice-napi"
-version := "1.0.2-3f5b26"
+version := "1.0.2-f17312"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "extenso"
-version := "2.0-dt-20220624Z-fd4581"
+version := "2.0-dt-20220624Z-434606"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

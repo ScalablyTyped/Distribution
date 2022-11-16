@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nano-cache"
-version := "1.1-dt-20220223Z-8bd0f8"
+version := "1.1-dt-20220223Z-9d2999"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

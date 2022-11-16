@@ -52,6 +52,10 @@ open class SVGFEBlendElement ()
   
   /* standard dom */
   /* CompleteClass */
+  var ariaColIndexText: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
   var ariaColSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -73,6 +77,10 @@ open class SVGFEBlendElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaHidden: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var ariaInvalid: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -137,6 +145,10 @@ open class SVGFEBlendElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaRowIndex: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var ariaRowIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -206,6 +218,10 @@ open class SVGFEBlendElement ()
   /* standard dom */
   /* CompleteClass */
   override val result: typings.std.SVGAnimatedString = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  var role: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */

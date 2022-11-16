@@ -19,7 +19,7 @@ object distLibUtilsGeneralMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends / * template literal string: ${inferC}${inferR} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify C * / any | typedoc.typedoc/dist/lib/utils/general.Chars</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify R * / any> : never
     }}}
@@ -29,13 +29,12 @@ object distLibUtilsGeneralMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     typedoc.typedoc/dist/lib/utils/general.InternalOnly extends true ? T : F
     }}}
     */
-  @js.native
-  trait IfInternal[T, F] extends StObject
+  type IfInternal[T, F] = T
   
   type InternalOnly = `false`
   

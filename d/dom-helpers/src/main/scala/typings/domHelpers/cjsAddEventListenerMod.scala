@@ -8,6 +8,7 @@ import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
 import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
+import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
@@ -206,6 +207,15 @@ object cjsAddEventListenerMod {
     node: HTMLElement,
     eventName: blur,
     handler: TaggedEventHandler[blur],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(
+    node: HTMLElement,
+    eventName: cancel,
+    handler: TaggedEventHandler[cancel],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1261,14 +1271,14 @@ object cjsAddEventListenerMod {
   def optionsSupported: Boolean = js.native
   inline def optionsSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsSupported")(x.asInstanceOf[js.Any])
   
-  type EventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] = js.ThisFunction1[
+  type EventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] = js.ThisFunction1[
     /* this */ HTMLElement, 
     /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
     Any
   ]
   
   @js.native
-  trait TaggedEventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] extends EventHandler[K] {
+  trait TaggedEventHandler[K /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.domHelpers.domHelpersStrings.fullscreenchange, typings.domHelpers.domHelpersStrings.fullscreenerror, typings.domHelpers.domHelpersStrings.copy */ Any */] extends EventHandler[K] {
     
     var __once: js.UndefOr[EventHandler[K]] = js.native
   }

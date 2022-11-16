@@ -130,6 +130,17 @@ object mod {
   
   type JSONArray = js.Array[JSONValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONObject = {[x: string] : resolve.resolve.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - resolve.resolve.JSONArray
+  - resolve.resolve.JSONObject
+  - resolve.resolve.JSONValue
+  - resolve.resolve.PackageJSON
+  */
   trait JSONObject
     extends StObject
        with /* x */ StringDictionary[JSONValue]
@@ -142,6 +153,15 @@ object mod {
   }
   
   // https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | resolve.resolve.JSONObject | resolve.resolve.JSONArray
+  }}}
+  to avoid circular code involving: 
+  - resolve.resolve.JSONArray
+  - resolve.resolve.JSONValue
+  */
   type JSONValue = String | Double | Boolean | JSONObject | Any
   
   trait Opts extends StObject {

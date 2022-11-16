@@ -10,15 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait typeGetSchemeByNameParams
-  extends StObject
-     with Object {
+trait typeGetSchemeByNameParams extends StObject {
   
   /**
     * The basemap to pair with the visualization.
@@ -73,14 +69,8 @@ trait typeGetSchemeByNameParams
 }
 object typeGetSchemeByNameParams {
   
-  inline def apply(
-    constructor: js.Function,
-    geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typeGetSchemeByNameParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(geometryType: point | multipoint | polyline | polygon | mesh | multipatch, name: String): typeGetSchemeByNameParams = {
+    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeGetSchemeByNameParams]
   }
   

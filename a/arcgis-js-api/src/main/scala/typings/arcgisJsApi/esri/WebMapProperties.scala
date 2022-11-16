@@ -83,7 +83,7 @@ trait WebMapProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#utilityNetworks)
     */
-  var utilityNetworks: js.UndefOr[CollectionProperties[UtilityNetwork]] = js.undefined
+  var utilityNetworks: js.UndefOr[CollectionProperties[UtilityNetworkProperties]] = js.undefined
   
   /**
     * The widgets object contains widgets that are exposed to the user.
@@ -143,11 +143,11 @@ object WebMapProperties {
     
     inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
-    inline def setUtilityNetworks(value: CollectionProperties[UtilityNetwork]): Self = StObject.set(x, "utilityNetworks", value.asInstanceOf[js.Any])
+    inline def setUtilityNetworks(value: CollectionProperties[UtilityNetworkProperties]): Self = StObject.set(x, "utilityNetworks", value.asInstanceOf[js.Any])
     
     inline def setUtilityNetworksUndefined: Self = StObject.set(x, "utilityNetworks", js.undefined)
     
-    inline def setUtilityNetworksVarargs(value: UtilityNetwork*): Self = StObject.set(x, "utilityNetworks", js.Array(value*))
+    inline def setUtilityNetworksVarargs(value: UtilityNetworkProperties*): Self = StObject.set(x, "utilityNetworks", js.Array(value*))
     
     inline def setWidgets(value: Widgets): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     

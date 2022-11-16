@@ -3,15 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`reshape-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`reshape-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.reshape
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReshapeEventInfo
   extends StObject
-     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -23,13 +20,8 @@ trait ReshapeEventInfo
 }
 object ReshapeEventInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `reshape-start` | reshape | `reshape-stop`
-  ): ReshapeEventInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(`type`: `reshape-start` | reshape | `reshape-stop`): ReshapeEventInfo = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReshapeEventInfo]
   }

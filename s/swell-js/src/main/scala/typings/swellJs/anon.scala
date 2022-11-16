@@ -1,5 +1,7 @@
 package typings.swellJs
 
+import typings.swellJs.mod.ProductCamelCase
+import typings.swellJs.mod.ProductSnakeCase
 import typings.swellJs.mod.PurchaseOptions
 import typings.swellJs.swellJsBooleans.`true`
 import typings.swellJs.swellJsStrings.Size
@@ -54,6 +56,161 @@ object anon {
       inline def setValuesVarargs(value: Description*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setVariant(value: `true`): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ContentType_ extends StObject {
+    
+    var contentType: String
+    
+    var dateUploaded: String
+    
+    var filename: String | Null
+    
+    var height: Double
+    
+    var id: String
+    
+    var length: Double
+    
+    var md5: String
+    
+    var metadata: Any
+    
+    var url: String
+    
+    var width: Double
+  }
+  object ContentType_ {
+    
+    inline def apply(
+      contentType: String,
+      dateUploaded: String,
+      height: Double,
+      id: String,
+      length: Double,
+      md5: String,
+      metadata: Any,
+      url: String,
+      width: Double
+    ): ContentType_ = {
+      val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], dateUploaded = dateUploaded.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], filename = null)
+      __obj.asInstanceOf[ContentType_]
+    }
+    
+    extension [Self <: ContentType_](x: Self) {
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setDateUploaded(value: String): Self = StObject.set(x, "dateUploaded", value.asInstanceOf[js.Any])
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+      
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Contenttype extends StObject {
+    
+    var content_type: String
+    
+    var date_uploaded: String
+    
+    var filename: js.UndefOr[String | Null] = js.undefined
+    
+    var height: Double
+    
+    var id: String
+    
+    var length: Double
+    
+    var md5: String
+    
+    var metadata: Any
+    
+    var url: String
+    
+    var width: Double
+  }
+  object Contenttype {
+    
+    inline def apply(
+      content_type: String,
+      date_uploaded: String,
+      height: Double,
+      id: String,
+      length: Double,
+      md5: String,
+      metadata: Any,
+      url: String,
+      width: Double
+    ): Contenttype = {
+      val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], date_uploaded = date_uploaded.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Contenttype]
+    }
+    
+    extension [Self <: Contenttype](x: Self) {
+      
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      
+      inline def setDate_uploaded(value: String): Self = StObject.set(x, "date_uploaded", value.asInstanceOf[js.Any])
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+      
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Count extends StObject {
+    
+    var count: Double
+    
+    var results: js.Array[ProductCamelCase]
+  }
+  object Count {
+    
+    inline def apply(count: Double, results: js.Array[ProductCamelCase]): Count = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Count]
+    }
+    
+    extension [Self <: Count](x: Self) {
+      
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      
+      inline def setResults(value: js.Array[ProductCamelCase]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      
+      inline def setResultsVarargs(value: ProductCamelCase*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
@@ -113,34 +270,22 @@ object anon {
   
   trait Id extends StObject {
     
-    var description: Null
-    
     var id: String
     
-    var name: String
-    
-    var price: Null
-    
-    var shipment_weight: Null
+    var productId: String
   }
   object Id {
     
-    inline def apply(description: Null, id: String, name: String, price: Null, shipment_weight: Null): Id = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], shipment_weight = shipment_weight.asInstanceOf[js.Any])
+    inline def apply(id: String, productId: String): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
       
-      inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setPrice(value: Null): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
-      
-      inline def setShipment_weight(value: Null): Self = StObject.set(x, "shipment_weight", value.asInstanceOf[js.Any])
+      inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,13 +303,13 @@ object anon {
     
     var required: `true`
     
-    var values: js.Array[Id]
+    var values: js.Array[Name]
     
     var variant: `true`
   }
   object Inputtype {
     
-    inline def apply(description: Null, id: String, values: js.Array[Id]): Inputtype = {
+    inline def apply(description: Null, id: String, values: js.Array[Name]): Inputtype = {
       val __obj = js.Dynamic.literal(active = true, description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], input_type = "select", name = "Size", required = true, values = values.asInstanceOf[js.Any], variant = true)
       __obj.asInstanceOf[Inputtype]
     }
@@ -183,11 +328,44 @@ object anon {
       
       inline def setRequired(value: `true`): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: js.Array[Id]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Name]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Id*): Self = StObject.set(x, "values", js.Array(value*))
+      inline def setValuesVarargs(value: Name*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setVariant(value: `true`): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Name extends StObject {
+    
+    var description: Null
+    
+    var id: String
+    
+    var name: String
+    
+    var price: Null
+    
+    var shipment_weight: Null
+  }
+  object Name {
+    
+    inline def apply(description: Null, id: String, name: String, price: Null, shipment_weight: Null): Name = {
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], shipment_weight = shipment_weight.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPrice(value: Null): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      
+      inline def setShipment_weight(value: Null): Self = StObject.set(x, "shipment_weight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,6 +391,50 @@ object anon {
       inline def setType(value: PurchaseOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait Productid extends StObject {
+    
+    var id: String
+    
+    var product_id: String
+  }
+  object Productid {
+    
+    inline def apply(id: String, product_id: String): Productid = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Productid]
+    }
+    
+    extension [Self <: Productid](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Results extends StObject {
+    
+    var count: Double
+    
+    var results: js.Array[ProductSnakeCase]
+  }
+  object Results {
+    
+    inline def apply(count: Double, results: js.Array[ProductSnakeCase]): Results = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Results]
+    }
+    
+    extension [Self <: Results](x: Self) {
+      
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      
+      inline def setResults(value: js.Array[ProductSnakeCase]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      
+      inline def setResultsVarargs(value: ProductSnakeCase*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
 }

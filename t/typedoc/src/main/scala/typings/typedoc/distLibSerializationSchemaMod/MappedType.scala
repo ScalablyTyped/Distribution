@@ -27,15 +27,12 @@ trait MappedType extends StObject {
 object MappedType {
   
   inline def apply(
-    nameType: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]],
-    optionalModifier: ToSerialized[js.UndefOr[`-_` | Plussign]],
     parameter: ToSerialized[String],
     parameterType: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType],
-    readonlyModifier: ToSerialized[js.UndefOr[`-_` | Plussign]],
     templateType: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType],
     `type`: ToSerialized[/* "mapped" */ String]
   ): MappedType = {
-    val __obj = js.Dynamic.literal(nameType = nameType.asInstanceOf[js.Any], optionalModifier = optionalModifier.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameterType = parameterType.asInstanceOf[js.Any], readonlyModifier = readonlyModifier.asInstanceOf[js.Any], templateType = templateType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], parameterType = parameterType.asInstanceOf[js.Any], templateType = templateType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappedType]
   }
@@ -44,13 +41,19 @@ object MappedType {
     
     inline def setNameType(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "nameType", value.asInstanceOf[js.Any])
     
+    inline def setNameTypeUndefined: Self = StObject.set(x, "nameType", js.undefined)
+    
     inline def setOptionalModifier(value: ToSerialized[js.UndefOr[`-_` | Plussign]]): Self = StObject.set(x, "optionalModifier", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalModifierUndefined: Self = StObject.set(x, "optionalModifier", js.undefined)
     
     inline def setParameter(value: ToSerialized[String]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     inline def setParameterType(value: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType]): Self = StObject.set(x, "parameterType", value.asInstanceOf[js.Any])
     
     inline def setReadonlyModifier(value: ToSerialized[js.UndefOr[`-_` | Plussign]]): Self = StObject.set(x, "readonlyModifier", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyModifierUndefined: Self = StObject.set(x, "readonlyModifier", js.undefined)
     
     inline def setTemplateType(value: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType]): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
     

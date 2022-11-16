@@ -47,6 +47,14 @@ object mod {
   inline def scopeReducers(): Reducer[Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("scopeReducers")().asInstanceOf[Reducer[Any, AnyAction]]
   inline def scopeReducers(reducers: StringDictionary[Reducer[Any, AnyAction]]): Reducer[Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("scopeReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[Any, AnyAction]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type ActionFactoriesMap = {[key: string] : redux-doghouse.redux-doghouse.ScopedActionFactory<any> | redux.redux.ActionCreator<any> | redux-doghouse.redux-doghouse.ActionFactoriesMap}
+  }}}
+  to avoid circular code involving: 
+  - redux-doghouse.redux-doghouse.ActionFactoriesMap
+  */
   trait ActionFactoriesMap
     extends StObject
        with /* key */ StringDictionary[ScopedActionFactory[Any] | ActionCreator[Any] | ActionFactoriesMap]

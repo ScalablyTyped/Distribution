@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectSymbol3DLayerMaterialProperties
-  extends StObject
-     with Object {
+trait ObjectSymbol3DLayerMaterialProperties extends StObject {
   
   /**
     * The fill color of the object.
@@ -21,12 +17,8 @@ trait ObjectSymbol3DLayerMaterialProperties
 }
 object ObjectSymbol3DLayerMaterialProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ObjectSymbol3DLayerMaterialProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ObjectSymbol3DLayerMaterialProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectSymbol3DLayerMaterialProperties]
   }
   

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureViewModelFormattedAttributes
-  extends StObject
-     with Object {
+trait FeatureViewModelFormattedAttributes extends StObject {
   
   /**
     * The formatted attributes for an individual content element.
@@ -26,12 +22,8 @@ trait FeatureViewModelFormattedAttributes
 }
 object FeatureViewModelFormattedAttributes {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): FeatureViewModelFormattedAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): FeatureViewModelFormattedAttributes = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]
   }
   

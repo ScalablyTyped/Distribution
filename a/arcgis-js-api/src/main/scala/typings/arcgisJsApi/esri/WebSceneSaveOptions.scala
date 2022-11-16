@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebSceneSaveOptions
-  extends StObject
-     with Object {
+trait WebSceneSaveOptions extends StObject {
   
   /**
     * When `true`, the scene will save even if it contains unsupported content (layers, renderers, symbols).
@@ -19,12 +15,8 @@ trait WebSceneSaveOptions
 }
 object WebSceneSaveOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WebSceneSaveOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): WebSceneSaveOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebSceneSaveOptions]
   }
   

@@ -29,7 +29,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.month
 import typings.arcgisJsApi.arcgisJsApiStrings.second
 import typings.arcgisJsApi.arcgisJsApiStrings.timestamp
 import typings.arcgisJsApi.arcgisJsApiStrings.year
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,211 +57,119 @@ trait SQLNode extends StObject
 object SQLNode {
   
   inline def BinaryNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     left: SQLNode,
     operator: AND | OR | IS | ISNOT | IN | (`NOT IN`) | BETWEEN | NOTBETWEEN | LIKE | (`NOT LIKE`) | LessthansignGreaterthansign | Lessthansign | Greaterthansign | GreaterthansignEqualssign | LessthansignEqualssign | Equalssign | Asterisk | `-_` | Plussign | Slash,
-    propertyIsEnumerable: PropertyKey => Boolean,
     right: SQLNode
   ): typings.arcgisJsApi.esri.BinaryNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("binary-expression")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.BinaryNode]
   }
   
-  inline def BoolNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: Boolean
-  ): typings.arcgisJsApi.esri.BoolNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def BoolNode(value: Boolean): typings.arcgisJsApi.esri.BoolNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.BoolNode]
   }
   
-  inline def ColumnNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.ColumnNode = {
-    val __obj = js.Dynamic.literal(column = "string", constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def ColumnNode(): typings.arcgisJsApi.esri.ColumnNode = {
+    val __obj = js.Dynamic.literal(column = "string")
     __obj.updateDynamic("type")("column-reference")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ColumnNode]
   }
   
-  inline def CurrentTimeNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    mode: timestamp | date,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.CurrentTimeNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def CurrentTimeNode(mode: timestamp | date): typings.arcgisJsApi.esri.CurrentTimeNode = {
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("current-time")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CurrentTimeNode]
   }
   
-  inline def DateNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String
-  ): typings.arcgisJsApi.esri.DateNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def DateNode(value: String): typings.arcgisJsApi.esri.DateNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("date")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.DateNode]
   }
   
-  inline def FunctionNode(
-    args: ListNode,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    name: String,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.FunctionNode = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def FunctionNode(args: ListNode, name: String): typings.arcgisJsApi.esri.FunctionNode = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("function")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.FunctionNode]
   }
   
   inline def IntervalNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     op: Plussign | `-_` | _empty,
-    propertyIsEnumerable: PropertyKey => Boolean,
     qualifier: IntervalQualifierNode | IntervalPeriodNode,
     value: StringNode
   ): typings.arcgisJsApi.esri.IntervalNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), op = op.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), qualifier = qualifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], qualifier = qualifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("interval")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.IntervalNode]
   }
   
-  inline def IntervalPeriodNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    period: day | month | hour | second | year | minute,
-    precision: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.IntervalPeriodNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondary = "number")
+  inline def IntervalPeriodNode(period: day | month | hour | second | year | minute, precision: Double): typings.arcgisJsApi.esri.IntervalPeriodNode = {
+    val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], secondary = "number")
     __obj.updateDynamic("type")("interval-period")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.IntervalPeriodNode]
   }
   
-  inline def IntervalQualifierNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    period: day | month | hour | second | year | minute,
-    precision: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.IntervalQualifierNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondary = "number")
+  inline def IntervalQualifierNode(period: day | month | hour | second | year | minute, precision: Double): typings.arcgisJsApi.esri.IntervalQualifierNode = {
+    val __obj = js.Dynamic.literal(period = period.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], secondary = "number")
     __obj.updateDynamic("type")("interval-qualifier")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.IntervalQualifierNode]
   }
   
-  inline def ListNode(
-    constructor: js.Function,
-    expr: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.ListNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def ListNode(expr: SQLNode): typings.arcgisJsApi.esri.ListNode = {
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("expression-list")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ListNode]
   }
   
-  inline def NullNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: Any
-  ): typings.arcgisJsApi.esri.NullNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def NullNode(value: Null): typings.arcgisJsApi.esri.NullNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.NullNode]
   }
   
-  inline def NumberNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: Double
-  ): typings.arcgisJsApi.esri.NumberNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def NumberNode(value: Double): typings.arcgisJsApi.esri.NumberNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.NumberNode]
   }
   
-  inline def SearchedCaseNode(
-    clauses: js.Array[WhenNode],
-    constructor: js.Function,
-    `else`: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.SearchedCaseNode = {
-    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], format = "searched", hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def SearchedCaseNode(clauses: js.Array[WhenNode], `else`: SQLNode): typings.arcgisJsApi.esri.SearchedCaseNode = {
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], format = "searched")
     __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("case-expression")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SearchedCaseNode]
   }
   
-  inline def SimpleCaseNode(
-    clauses: js.Array[WhenNode],
-    constructor: js.Function,
-    `else`: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    operand: SQLNode,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.SimpleCaseNode = {
-    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], format = "simple", hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operand = operand.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def SimpleCaseNode(clauses: js.Array[WhenNode], `else`: SQLNode, operand: SQLNode): typings.arcgisJsApi.esri.SimpleCaseNode = {
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], format = "simple", operand = operand.asInstanceOf[js.Any])
     __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("case_expression")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SimpleCaseNode]
   }
   
-  inline def StringNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String
-  ): typings.arcgisJsApi.esri.StringNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def StringNode(value: String): typings.arcgisJsApi.esri.StringNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.StringNode]
   }
   
-  inline def TimeStampNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: String
-  ): typings.arcgisJsApi.esri.TimeStampNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def TimeStampNode(value: String): typings.arcgisJsApi.esri.TimeStampNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("timestamp")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.TimeStampNode]
   }
   
-  inline def UnaryNode(
-    constructor: js.Function,
-    expr: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): typings.arcgisJsApi.esri.UnaryNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def UnaryNode(expr: SQLNode): typings.arcgisJsApi.esri.UnaryNode = {
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unary-expression")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.UnaryNode]
   }
   
-  inline def WhenNode(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    operand: SQLNode,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    value: SQLNode
-  ): typings.arcgisJsApi.esri.WhenNode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operand = operand.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
+  inline def WhenNode(operand: SQLNode, value: SQLNode): typings.arcgisJsApi.esri.WhenNode = {
+    val __obj = js.Dynamic.literal(operand = operand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("when-clause")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.WhenNode]
   }

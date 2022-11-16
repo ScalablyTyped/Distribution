@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowCastViewModelDiscreteOptionsProperties
-  extends StObject
-     with Object {
+trait ShadowCastViewModelDiscreteOptionsProperties extends StObject {
   
   /**
     * Color of the shadow visualization.
@@ -37,12 +33,8 @@ trait ShadowCastViewModelDiscreteOptionsProperties
 }
 object ShadowCastViewModelDiscreteOptionsProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): ShadowCastViewModelDiscreteOptionsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): ShadowCastViewModelDiscreteOptionsProperties = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowCastViewModelDiscreteOptionsProperties]
   }
   

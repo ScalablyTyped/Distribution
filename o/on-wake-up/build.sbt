@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "on-wake-up"
-version := "1.0-dt-20211202Z-dcee89"
+version := "1.0-dt-20211202Z-8eeccd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

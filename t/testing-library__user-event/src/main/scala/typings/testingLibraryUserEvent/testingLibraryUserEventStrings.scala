@@ -211,6 +211,10 @@ object testingLibraryUserEventStrings {
   inline def canPlayThrough: canPlayThrough = "canPlayThrough".asInstanceOf[canPlayThrough]
   
   @js.native
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
   sealed trait canplay_ extends StObject
   inline def canplay_ : canplay_ = "canplay".asInstanceOf[canplay_]
   

@@ -114,6 +114,15 @@ object mod {
   
   type Tree = TreeInnerNode | String
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type TreeInnerNode = {[parent: string] : dependency-tree.dependency-tree.TreeInnerNode | string}
+  }}}
+  to avoid circular code involving: 
+  - dependency-tree.dependency-tree.Tree
+  - dependency-tree.dependency-tree.TreeInnerNode
+  */
   trait TreeInnerNode
     extends StObject
        with /* parent */ StringDictionary[TreeInnerNode | String]

@@ -1123,23 +1123,36 @@ object esHooksUseStyleRegisterMod {
   
   type ArrayCSSInterpolation = js.Array[CSSInterpolation]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.InterpolationPrimitive | @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.ArrayCSSInterpolation | @ant-design/cssinjs.@ant-design/cssinjs/es/Keyframes.default
+  }}}
+  to avoid circular code involving: 
+  - @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.ArrayCSSInterpolation
+  - @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSInterpolation
+  */
   type CSSInterpolation = InterpolationPrimitive | Any | typings.antDesignCssinjs.esKeyframesMod.default
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSInterpolation} */ trait CSSObject
+  @js.native
+  trait CSSObject
     extends StObject
        with CSSPropertiesWithMultiValues
        with CSSPseudos
-  object CSSObject {
-    
-    inline def apply(): CSSObject = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CSSObject]
-    }
-  }
+       with CSSOthersObject
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSInterpolation} */ trait CSSOthersObject extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSOthersObject = std.Record<string, @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSInterpolation>
+  }}}
+  to avoid circular code involving: 
+  - @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.ArrayCSSInterpolation
+  - @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSInterpolation
+  - @ant-design/cssinjs.@ant-design/cssinjs/es/hooks/useStyleRegister.CSSOthersObject
+  */
+  @js.native
+  trait CSSOthersObject extends StObject
   
   /* Inlined std.Omit<csstype.csstype.PropertiesFallback<number | string, string & {}>, 'animationName'> & {  animationName :csstype.csstype.PropertiesFallback<number | string, string & {}>['animationName'] | @ant-design/cssinjs.@ant-design/cssinjs/es/Keyframes.default | undefined} */
   trait CSSProperties extends StObject {

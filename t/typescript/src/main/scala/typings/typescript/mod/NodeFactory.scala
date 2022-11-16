@@ -4356,6 +4356,8 @@ trait NodeFactory extends StObject {
   
   def createRightShift(left: Expression, right: Expression): BinaryExpression = js.native
   
+  def createSatisfiesExpression(expression: Expression, `type`: TypeNode): SatisfiesExpression = js.native
+  
   def createSemicolonClassElement(): SemicolonClassElement = js.native
   
   /**
@@ -4501,6 +4503,8 @@ trait NodeFactory extends StObject {
   def createStringLiteral(text: java.lang.String): StringLiteral = js.native
   def createStringLiteral(text: java.lang.String, isSingleQuote: Boolean): StringLiteral = js.native
   
+  def createStringLiteralFromNode(sourceNode: PrivateIdentifier): StringLiteral = js.native
+  def createStringLiteralFromNode(sourceNode: PrivateIdentifier, isSingleQuote: Boolean): StringLiteral = js.native
   def createStringLiteralFromNode(sourceNode: PropertyNameLiteral): StringLiteral = js.native
   def createStringLiteralFromNode(sourceNode: PropertyNameLiteral, isSingleQuote: Boolean): StringLiteral = js.native
   
@@ -4784,6 +4788,9 @@ trait NodeFactory extends StObject {
   def createUniqueName(text: java.lang.String): Identifier = js.native
   def createUniqueName(text: java.lang.String, flags: GeneratedIdentifierFlags): Identifier = js.native
   
+  def createUniquePrivateName(): PrivateIdentifier = js.native
+  def createUniquePrivateName(text: java.lang.String): PrivateIdentifier = js.native
+  
   def createUnsignedRightShift(left: Expression, right: Expression): BinaryExpression = js.native
   
   def createVariableDeclaration(name: java.lang.String): VariableDeclaration = js.native
@@ -4833,6 +4840,8 @@ trait NodeFactory extends StObject {
   def getGeneratedNameForNode(node: Unit, flags: GeneratedIdentifierFlags): Identifier = js.native
   def getGeneratedNameForNode(node: Node): Identifier = js.native
   def getGeneratedNameForNode(node: Node, flags: GeneratedIdentifierFlags): Identifier = js.native
+  
+  def getGeneratedPrivateNameForNode(node: Node): PrivateIdentifier = js.native
   
   def restoreOuterExpressions(outerExpression: Unit, innerExpression: Expression): Expression = js.native
   def restoreOuterExpressions(outerExpression: Unit, innerExpression: Expression, kinds: OuterExpressionKinds): Expression = js.native
@@ -9107,6 +9116,8 @@ trait NodeFactory extends StObject {
   
   def updateReturnStatement(node: ReturnStatement): ReturnStatement = js.native
   def updateReturnStatement(node: ReturnStatement, expression: Expression): ReturnStatement = js.native
+  
+  def updateSatisfiesExpression(node: SatisfiesExpression, expression: Expression, `type`: TypeNode): SatisfiesExpression = js.native
   
   /**
     * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.

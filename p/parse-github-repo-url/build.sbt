@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-github-repo-url"
-version := "1.4-dt-20211202Z-022175"
+version := "1.4-dt-20211202Z-8a1243"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

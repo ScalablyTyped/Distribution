@@ -1,30 +1,18 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.edges
 import typings.arcgisJsApi.arcgisJsApiStrings.junctions
 import typings.arcgisJsApi.arcgisJsApiStrings.junctionsAndEdges
 import typings.arcgisJsApi.esri.TraceConfiguration
-import typings.arcgisJsApi.esri.TraceConfigurationConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriNetworksSupportTraceConfigurationMod extends Shortcut {
+object esriNetworksSupportTraceConfigurationMod {
   
   @JSImport("esri/networks/support/TraceConfiguration", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & TraceConfigurationConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/networks/support/TraceConfiguration", JSImport.Namespace)
-  @js.native
-  /**
-    * The TraceConfiguration class provides the ability to configure custom trace properties required to run a network trace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html)
-    */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TraceConfiguration {
     def this(properties: Any) = this()
@@ -101,9 +89,4 @@ object esriNetworksSupportTraceConfigurationMod extends Shortcut {
     /* CompleteClass */
     var validateConsistency: Boolean = js.native
   }
-  
-  type _To = js.Object & TraceConfigurationConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriNetworksSupportTraceConfigurationMod.foo` */
-  override def _to: js.Object & TraceConfigurationConstructor = ^
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Pick<nuka-carousel.nuka-carousel/lib/types.InternalCarouselProps, 'cellAlign' | 'cellSpacing' | 'defaultControlsConfig' | 'onUserNavigation' | 'scrollMode' | 'slidesToScroll' | 'slidesToShow' | 'vertical' | 'wrapAround'> */
 trait ControlProps extends StObject {
   
-  var cellAlign: Alignment
+  var cellAlign: CellAlign
   
   var cellSpacing: Double
   
@@ -77,7 +77,7 @@ trait ControlProps extends StObject {
 object ControlProps {
   
   inline def apply(
-    cellAlign: Alignment,
+    cellAlign: CellAlign,
     cellSpacing: Double,
     currentSlide: Double,
     defaultControlsConfig: DefaultControlsConfig,
@@ -101,7 +101,7 @@ object ControlProps {
   
   extension [Self <: ControlProps](x: Self) {
     
-    inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+    inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
     
     inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
     

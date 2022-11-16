@@ -40,6 +40,7 @@ import typings.electron.electronStrings.animationstart
 import typings.electron.electronStrings.auxclick
 import typings.electron.electronStrings.beforeinput
 import typings.electron.electronStrings.blur
+import typings.electron.electronStrings.cancel
 import typings.electron.electronStrings.canplay
 import typings.electron.electronStrings.canplaythrough
 import typings.electron.electronStrings.change
@@ -249,6 +250,17 @@ trait WebviewTag
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1921,6 +1933,17 @@ trait WebviewTag
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

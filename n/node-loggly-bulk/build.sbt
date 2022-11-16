@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "node-loggly-bulk"
-version := "2.2-dt-20211202Z-35edec"
+version := "2.2-dt-20211202Z-7a3d73"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "loggly" % "1.1-dt-20211202Z-2b55b4",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "loggly" % "1.1-dt-20211202Z-380c63",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

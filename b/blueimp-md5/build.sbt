@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueimp-md5"
-version := "2.18-dt-20211202Z-fa512e"
+version := "2.18-dt-20211202Z-c14cb0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "util-arity"
-version := "1.1.0-46bac3"
+version := "1.1.0-133857"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

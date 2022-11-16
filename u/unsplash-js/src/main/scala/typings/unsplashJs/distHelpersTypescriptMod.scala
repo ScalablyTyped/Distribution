@@ -34,12 +34,31 @@ object distHelpersTypescriptMod {
   */
   type AnyJson = _AnyJson | Boolean | Double | String | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonArray = std.Array<unsplash-js.unsplash-js/dist/helpers/typescript.AnyJson>
+  }}}
+  to avoid circular code involving: 
+  - unsplash-js.unsplash-js/dist/helpers/typescript.AnyJson
+  - unsplash-js.unsplash-js/dist/helpers/typescript.JsonArray
+  */
   @js.native
   trait JsonArray
     extends StObject
        with Array[AnyJson]
        with _AnyJson
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonMap = {[key: string] : unsplash-js.unsplash-js/dist/helpers/typescript.AnyJson}
+  }}}
+  to avoid circular code involving: 
+  - unsplash-js.unsplash-js/dist/helpers/typescript.AnyJson
+  - unsplash-js.unsplash-js/dist/helpers/typescript.JsonArray
+  - unsplash-js.unsplash-js/dist/helpers/typescript.JsonMap
+  */
   trait JsonMap
     extends StObject
        with /* key */ StringDictionary[AnyJson]

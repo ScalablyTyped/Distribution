@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISMapServiceCapabilitiesExportMap
-  extends StObject
-     with Object {
+trait ArcGISMapServiceCapabilitiesExportMap extends StObject {
   
   /**
     * Indicates if sublayers support Arcade expressions for labeling.
@@ -55,9 +51,6 @@ trait ArcGISMapServiceCapabilitiesExportMap
 object ArcGISMapServiceCapabilitiesExportMap {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsArcadeExpressionForLabeling: Boolean,
     supportsCIMSymbols: Boolean,
     supportsDynamicLayers: Boolean,
@@ -65,7 +58,7 @@ object ArcGISMapServiceCapabilitiesExportMap {
     supportsSublayerVisibility: Boolean,
     supportsSublayersChanges: Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsArcadeExpressionForLabeling = supportsArcadeExpressionForLabeling.asInstanceOf[js.Any], supportsCIMSymbols = supportsCIMSymbols.asInstanceOf[js.Any], supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsArcadeExpressionForLabeling = supportsArcadeExpressionForLabeling.asInstanceOf[js.Any], supportsCIMSymbols = supportsCIMSymbols.asInstanceOf[js.Any], supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
   

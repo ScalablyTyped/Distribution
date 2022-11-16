@@ -16,8 +16,18 @@ trait AssociationProperties extends StObject {
     */
   var associationType: js.UndefOr[attachment | connectivity | containment] = js.undefined
   
+  /**
+    * Error code returned from the server for a failed associations query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html#errorCode)
+    */
   var errorCode: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Message returned from the server for a failed associations query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html#errorMessage)
+    */
   var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
@@ -34,6 +44,11 @@ trait AssociationProperties extends StObject {
     */
   var globalId: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the content visibility on the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html#isContentVisible)
+    */
   var isContentVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -43,8 +58,18 @@ trait AssociationProperties extends StObject {
     */
   var line: js.UndefOr[PolylineProperties] = js.undefined
   
+  /**
+    * This double parameter of value of 0-1 indicates a percentage along the line of where the trace location is placed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html#percentAlong)
+    */
   var percentAlong: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Indicates the type of association a feature or object participates in, the role the network feature plays in the association relationship, and any properties that are set.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html#status)
+    */
   var status: js.UndefOr[Double] = js.undefined
   
   /**

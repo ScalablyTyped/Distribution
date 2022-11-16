@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "import-cwd"
-version := "3.0.0-a67ce2"
+version := "3.0.0-ca4663"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

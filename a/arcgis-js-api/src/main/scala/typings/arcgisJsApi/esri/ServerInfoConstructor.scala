@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ServerInfoConstructor
   extends StObject
-     with /**
-  * This class contains information about an ArcGIS Server and its token endpoint.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html)
-  */
-Instantiable0[ServerInfo]
+     with Instantiable0[ServerInfo]
      with Instantiable1[/* properties */ ServerInfoProperties, ServerInfo] {
   
   def fromJSON(json: Any): ServerInfo = js.native

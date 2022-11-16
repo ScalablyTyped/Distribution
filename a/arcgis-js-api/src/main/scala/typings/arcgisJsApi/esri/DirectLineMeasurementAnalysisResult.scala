@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.euclidean
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectLineMeasurementAnalysisResult
-  extends StObject
-     with Object {
+trait DirectLineMeasurementAnalysisResult extends StObject {
   
   /**
     * Measured distance between start and endpoint.
@@ -42,16 +38,8 @@ trait DirectLineMeasurementAnalysisResult
 }
 object DirectLineMeasurementAnalysisResult {
   
-  inline def apply(
-    constructor: js.Function,
-    distance: Length,
-    hasOwnProperty: PropertyKey => Boolean,
-    horizontalDistance: Length,
-    mode: euclidean | geodesic,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    verticalDistance: Length
-  ): DirectLineMeasurementAnalysisResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), horizontalDistance = horizontalDistance.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), verticalDistance = verticalDistance.asInstanceOf[js.Any])
+  inline def apply(distance: Length, horizontalDistance: Length, mode: euclidean | geodesic, verticalDistance: Length): DirectLineMeasurementAnalysisResult = {
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], horizontalDistance = horizontalDistance.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], verticalDistance = verticalDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectLineMeasurementAnalysisResult]
   }
   

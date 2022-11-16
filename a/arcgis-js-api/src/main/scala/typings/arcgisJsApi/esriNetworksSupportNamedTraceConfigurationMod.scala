@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`shortest-path`
 import typings.arcgisJsApi.arcgisJsApiStrings.`subnetwork-controllers`
 import typings.arcgisJsApi.arcgisJsApiStrings.connected
@@ -13,26 +12,17 @@ import typings.arcgisJsApi.arcgisJsApiStrings.one
 import typings.arcgisJsApi.arcgisJsApiStrings.subnetwork
 import typings.arcgisJsApi.arcgisJsApiStrings.upstream
 import typings.arcgisJsApi.esri.NamedTraceConfiguration
-import typings.arcgisJsApi.esri.NamedTraceConfigurationConstructor
+import typings.arcgisJsApi.esri.TraceConfiguration
+import typings.arcgisJsApi.esri.UNTraceConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriNetworksSupportNamedTraceConfigurationMod extends Shortcut {
+object esriNetworksSupportNamedTraceConfigurationMod {
   
   @JSImport("esri/networks/support/NamedTraceConfiguration", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & NamedTraceConfigurationConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/networks/support/NamedTraceConfiguration", JSImport.Namespace)
-  @js.native
-  /**
-    * This class describes a trace configuration object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html)
-    */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with NamedTraceConfiguration {
     def this(properties: Any) = this()
@@ -107,7 +97,7 @@ object esriNetworksSupportNamedTraceConfigurationMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
       */
     /* CompleteClass */
-    var traceConfiguration: Any = js.native
+    var traceConfiguration: TraceConfiguration | UNTraceConfiguration = js.native
     
     /**
       * The trace type defined in this trace configuration.
@@ -117,9 +107,4 @@ object esriNetworksSupportNamedTraceConfigurationMod extends Shortcut {
     /* CompleteClass */
     var traceType: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation = js.native
   }
-  
-  type _To = js.Object & NamedTraceConfigurationConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriNetworksSupportNamedTraceConfigurationMod.foo` */
-  override def _to: js.Object & NamedTraceConfigurationConstructor = ^
 }

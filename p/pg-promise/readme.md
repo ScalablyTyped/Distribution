@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-promise
 
-Typings are for version 10.12.1
+Typings are for version 10.14.0
 
 ## Library description:
 PostgreSQL interface for Node.js

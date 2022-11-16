@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PolygonSymbol3D
-import typings.arcgisJsApi.esri.PolygonSymbol3DConstructor
 import typings.arcgisJsApi.esri.PolygonSymbol3DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsPolygonSymbol3DMod extends Shortcut {
+/* static members */
+object esriSymbolsPolygonSymbol3DMod {
   
-  @JSImport("esri/symbols/PolygonSymbol3D", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PolygonSymbol3DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/PolygonSymbol3D", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsPolygonSymbol3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PolygonSymbol3D {
     def this(properties: PolygonSymbol3DProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsPolygonSymbol3DMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/PolygonSymbol3D", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PolygonSymbol3DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsPolygonSymbol3DMod.foo` */
-  override def _to: js.Object & PolygonSymbol3DConstructor = ^
+  inline def fromJSON(json: Any): PolygonSymbol3D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PolygonSymbol3D]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "belter"
-version := "1.0-dt-20211202Z-8c79c9"
+version := "1.0-dt-20211202Z-4ca1c9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

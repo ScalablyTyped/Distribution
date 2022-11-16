@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingSummaryStatisticsConstructor
   extends StObject
-     with /**
-  * Contains statistics about the fields in all sublayers of a [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html)
-  */
-Instantiable0[BuildingSummaryStatistics]
+     with Instantiable0[BuildingSummaryStatistics]
      with Instantiable1[/* properties */ BuildingSummaryStatisticsProperties, BuildingSummaryStatistics] {
   
   def fromJSON(json: Any): BuildingSummaryStatistics = js.native

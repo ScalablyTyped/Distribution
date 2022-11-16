@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VertexAddEventInfoVertices
-  extends StObject
-     with Object {
+trait VertexAddEventInfoVertices extends StObject {
   
   /**
     * The ring/path index of the added vertex.
@@ -33,15 +29,8 @@ trait VertexAddEventInfoVertices
 }
 object VertexAddEventInfoVertices {
   
-  inline def apply(
-    componentIndex: Double,
-    constructor: js.Function,
-    coordinates: js.Array[Double],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    vertexIndex: Double
-  ): VertexAddEventInfoVertices = {
-    val __obj = js.Dynamic.literal(componentIndex = componentIndex.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
+  inline def apply(componentIndex: Double, coordinates: js.Array[Double], vertexIndex: Double): VertexAddEventInfoVertices = {
+    val __obj = js.Dynamic.literal(componentIndex = componentIndex.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[VertexAddEventInfoVertices]
   }
   

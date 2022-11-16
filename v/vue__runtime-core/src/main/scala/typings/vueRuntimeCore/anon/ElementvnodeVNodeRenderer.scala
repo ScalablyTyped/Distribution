@@ -509,6 +509,9 @@ trait ElementvnodeVNodeRenderer extends StObject {
   var ariaColIndex: String | Null = js.native
   
   /* standard dom */
+  var ariaColIndexText: String | Null = js.native
+  
+  /* standard dom */
   var ariaColSpan: String | Null = js.native
   
   /* standard dom */
@@ -525,6 +528,9 @@ trait ElementvnodeVNodeRenderer extends StObject {
   
   /* standard dom */
   var ariaHidden: String | Null = js.native
+  
+  /* standard dom */
+  var ariaInvalid: String | Null = js.native
   
   /* standard dom */
   var ariaKeyShortcuts: String | Null = js.native
@@ -573,6 +579,9 @@ trait ElementvnodeVNodeRenderer extends StObject {
   
   /* standard dom */
   var ariaRowIndex: String | Null = js.native
+  
+  /* standard dom */
+  var ariaRowIndexText: String | Null = js.native
   
   /* standard dom */
   var ariaRowSpan: String | Null = js.native
@@ -2349,6 +2358,9 @@ trait ElementvnodeVNodeRenderer extends StObject {
   
   /* standard dom */
   def requestPointerLock(): Unit = js.native
+  
+  /* standard dom */
+  var role: String | Null = js.native
   
   /* standard dom */
   def scroll(): Unit = js.native

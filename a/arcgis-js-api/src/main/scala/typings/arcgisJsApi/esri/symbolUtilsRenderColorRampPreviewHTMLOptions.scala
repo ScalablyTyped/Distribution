@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsRenderColorRampPreviewHTMLOptions
-  extends StObject
-     with Object {
+trait symbolUtilsRenderColorRampPreviewHTMLOptions extends StObject {
   
   /**
     * Specifies the alignment of the color ramp.
@@ -46,12 +42,8 @@ trait symbolUtilsRenderColorRampPreviewHTMLOptions
 }
 object symbolUtilsRenderColorRampPreviewHTMLOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): symbolUtilsRenderColorRampPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): symbolUtilsRenderColorRampPreviewHTMLOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[symbolUtilsRenderColorRampPreviewHTMLOptions]
   }
   

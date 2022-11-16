@@ -6,7 +6,8 @@ import typings.std.anon.AcceptNode
 import typings.std.anon.LookupNamespaceURI
 import typings.std.stdStrings.`public-key`
 import typings.std.stdStrings.auto
-import typings.std.stdStrings.password
+import typings.std.stdStrings.byob
+import typings.std.stdStrings.bytes
 import typings.std.stdStrings.require
 import typings.std.stdStrings.vibration
 import org.scalablytyped.runtime.StObject
@@ -31,8 +32,8 @@ type AutoKeyword = auto
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
   T extends null | undefined ? T : // special case for `null | undefined` when not in `--strictNullChecks` mode
-T extends object & {then (onfulfilled : infer F): any} ? // `await` only unwraps object types with a callable `then`. Non-object types are not unwrapped
-F extends (value : infer V, args : any): any ? // if the argument to `then` is callable, extracts the first argument
+T extends object & {then (onfulfilled : infer F, args : infer _): any} ? // `await` only unwraps object types with a callable `then`. Non-object types are not unwrapped
+F extends (value : infer V, args : infer _): any ? // if the argument to `then` is callable, extracts the first argument
 std.Awaited<V> : // recursively unwrap the value
 never : // the argument to `then` was not callable
 T
@@ -56,6 +57,8 @@ type BufferSource = js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer
 type CDATASection = Text
 
 type COSEAlgorithmIdentifier = Double
+
+type CSSContainerRule = CSSConditionRule
 
 type CSSNumberish = Double
 
@@ -193,6 +196,14 @@ type HashAlgorithmIdentifier = AlgorithmIdentifier
 
 type HeadersInit = (js.Array[js.Tuple2[java.lang.String, java.lang.String]]) | (Record[java.lang.String, java.lang.String]) | Headers
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type IDBValidKey = number | string | std.Date | std.BufferSource | std.Array<std.IDBValidKey>
+}}}
+to avoid circular code involving: 
+- std.IDBValidKey
+*/
 type IDBValidKey = Double | java.lang.String | js.Date | BufferSource | js.Array[Any]
 
 type IdleRequestCallback = js.Function1[/* deadline */ IdleDeadline, Unit]
@@ -203,6 +214,7 @@ type IdleRequestCallback = js.Function1[/* deadline */ IdleDeadline, Unit]
 type ImportAssertions = /* standard es5 */
 StringDictionary[java.lang.String]
 
+/** Available only in secure contexts. */
 type InputDeviceInfo = MediaDeviceInfo
 
 type Int32List = js.typedarray.Int32Array | js.Array[GLint]
@@ -343,8 +355,6 @@ type QueuingStrategySize[T] = js.Function1[/* chunk */ T, Double]
 
 type RTCAnswerOptions = RTCOfferAnswerOptions
 
-type RTCIceCredentialType = password
-
 type RTCPeerConnectionErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
 type RTCRtcpMuxPolicy = require
@@ -357,9 +367,9 @@ type RTCSessionDescriptionCallback = js.Function1[/* description */ RTCSessionDe
 
 type RangeError = js.Error
 
-type ReadableStreamController[T] = ReadableStreamDefaultController[T]
+type ReadableStreamReaderMode = byob
 
-type ReadableStreamReader[T] = ReadableStreamDefaultReader[T]
+type ReadableStreamType = bytes
 
 /**
   * Make all properties in T readonly
@@ -418,11 +428,15 @@ type SyntaxError = js.Error
 type TimerHandler = java.lang.String | js.Function
 
 /* Rewritten from type alias, can be one of: 
-  - js.typedarray.ArrayBuffer
-  - typings.std.MessagePort
+  - typings.std.OffscreenCanvas
   - typings.std.ImageBitmap
+  - typings.std.MessagePort
+  - typings.std.ReadableStream[scala.Any]
+  - typings.std.WritableStream[scala.Any]
+  - typings.std.TransformStream[scala.Any, scala.Any]
+  - js.typedarray.ArrayBuffer
 */
-type Transferable = _Transferable | js.typedarray.ArrayBuffer
+type Transferable = _Transferable | ReadableStream[Any] | WritableStream[Any] | (TransformStream[Any, Any]) | js.typedarray.ArrayBuffer
 
 type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | PromiseLike[Unit]]
 
@@ -466,13 +480,9 @@ type UnderlyingSourceStartCallback[R] = js.Function1[/* controller */ ReadableSt
   */
 type Uppercase[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
-type UvmEntries = js.Array[UvmEntry]
-
-type UvmEntry = js.Array[Double]
-
 type VibratePattern = Double | js.Array[Double]
 
-type VideoFrameRequestCallback = js.Function2[/* now */ DOMHighResTimeStamp, /* metadata */ VideoFrameMetadata, Unit]
+type VideoFrameRequestCallback = js.Function2[/* now */ DOMHighResTimeStamp, /* metadata */ VideoFrameCallbackMetadata, Unit]
 
 type VoidFunction = js.Function0[Unit]
 

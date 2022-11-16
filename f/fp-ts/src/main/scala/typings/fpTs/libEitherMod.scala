@@ -437,12 +437,31 @@ object libEitherMod {
   */
   type Json = _Json | Boolean | Double | String | Null
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonArray = std.ReadonlyArray<fp-ts.fp-ts/lib/Either.Json>
+  }}}
+  to avoid circular code involving: 
+  - fp-ts.fp-ts/lib/Either.Json
+  - fp-ts.fp-ts/lib/Either.JsonArray
+  */
   @js.native
   trait JsonArray
     extends StObject
        with ReadonlyArray[Json]
        with _Json
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonRecord = {readonly [key: string] : fp-ts.fp-ts/lib/Either.Json}
+  }}}
+  to avoid circular code involving: 
+  - fp-ts.fp-ts/lib/Either.Json
+  - fp-ts.fp-ts/lib/Either.JsonArray
+  - fp-ts.fp-ts/lib/Either.JsonRecord
+  */
   trait JsonRecord
     extends StObject
        with /* key */ StringDictionary[Json]

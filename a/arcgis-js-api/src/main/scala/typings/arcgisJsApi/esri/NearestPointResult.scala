@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NearestPointResult
-  extends StObject
-     with Object {
+trait NearestPointResult extends StObject {
   
   /**
     * A vertex within the specified distance of the search.
@@ -40,16 +36,8 @@ trait NearestPointResult
 }
 object NearestPointResult {
   
-  inline def apply(
-    constructor: js.Function,
-    coordinate: Point,
-    distance: Double,
-    hasOwnProperty: PropertyKey => Boolean,
-    isEmpty: Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    vertexIndex: Double
-  ): NearestPointResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
+  inline def apply(coordinate: Point, distance: Double, isEmpty: Boolean, vertexIndex: Double): NearestPointResult = {
+    val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestPointResult]
   }
   

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureTypeConstructor
   extends StObject
-     with /**
-  * FeatureType is a subset of features defined in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) that share the same attributes.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html)
-  */
-Instantiable0[FeatureType]
+     with Instantiable0[FeatureType]
      with Instantiable1[/* properties */ FeatureTypeProperties, FeatureType] {
   
   def fromJSON(json: Any): FeatureType = js.native

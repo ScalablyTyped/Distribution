@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.HTMLElement
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeRampStop
-  extends StObject
-     with Object {
+trait SizeRampStop extends StObject {
   
   /**
     * The label in the legend describing features with the given `symbol` and `value`.
@@ -55,14 +51,8 @@ trait SizeRampStop
 }
 object SizeRampStop {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    label: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbol: Symbol
-  ): SizeRampStop = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
+  inline def apply(label: String, symbol: Symbol): SizeRampStop = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeRampStop]
   }
   

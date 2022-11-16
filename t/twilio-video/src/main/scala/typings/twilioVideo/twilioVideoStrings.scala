@@ -6,6 +6,7 @@ import typings.twilioVideo.tsdefTrackMod.Track.Priority
 import typings.twilioVideo.tsdefTypesMod.AudioCodec
 import typings.twilioVideo.tsdefTypesMod.BandwidthProfileMode
 import typings.twilioVideo.tsdefTypesMod.ClientTrackSwitchOffControl
+import typings.twilioVideo.tsdefTypesMod.DefaultDeviceCaptureMode
 import typings.twilioVideo.tsdefTypesMod.LogLevel
 import typings.twilioVideo.tsdefTypesMod.NoiseCancellationVendor
 import typings.twilioVideo.tsdefTypesMod.TrackSwitchOffMode
@@ -93,6 +94,7 @@ object twilioVideoStrings {
   sealed trait auto
     extends StObject
        with ClientTrackSwitchOffControl
+       with DefaultDeviceCaptureMode
        with VideoContentPreferencesMode
   inline def auto: auto = "auto".asInstanceOf[auto]
   
@@ -199,6 +201,7 @@ object twilioVideoStrings {
   sealed trait manual
     extends StObject
        with ClientTrackSwitchOffControl
+       with DefaultDeviceCaptureMode
        with VideoContentPreferencesMode
   inline def manual: manual = "manual".asInstanceOf[manual]
   

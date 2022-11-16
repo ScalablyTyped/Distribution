@@ -9,6 +9,7 @@ import typings.materialBase.materialBaseStrings.animationstart
 import typings.materialBase.materialBaseStrings.auxclick
 import typings.materialBase.materialBaseStrings.beforeinput
 import typings.materialBase.materialBaseStrings.blur
+import typings.materialBase.materialBaseStrings.cancel
 import typings.materialBase.materialBaseStrings.canplay
 import typings.materialBase.materialBaseStrings.canplaythrough
 import typings.materialBase.materialBaseStrings.change
@@ -219,6 +220,12 @@ object componentMod {
     def listen_blur(evtType: blur, handler: SpecificEventListener[blur], options: Boolean): Unit = js.native
     @JSName("listen")
     def listen_blur(evtType: blur, handler: SpecificEventListener[blur], options: AddEventListenerOptions): Unit = js.native
+    @JSName("listen")
+    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel]): Unit = js.native
+    @JSName("listen")
+    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: Boolean): Unit = js.native
+    @JSName("listen")
+    def listen_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: AddEventListenerOptions): Unit = js.native
     @JSName("listen")
     def listen_canplay(evtType: canplay, handler: SpecificEventListener[canplay]): Unit = js.native
     @JSName("listen")
@@ -947,6 +954,12 @@ object componentMod {
     def unlisten_blur(evtType: blur, handler: SpecificEventListener[blur], options: Boolean): Unit = js.native
     @JSName("unlisten")
     def unlisten_blur(evtType: blur, handler: SpecificEventListener[blur], options: AddEventListenerOptions): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel]): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: Boolean): Unit = js.native
+    @JSName("unlisten")
+    def unlisten_cancel(evtType: cancel, handler: SpecificEventListener[cancel], options: AddEventListenerOptions): Unit = js.native
     @JSName("unlisten")
     def unlisten_canplay(evtType: canplay, handler: SpecificEventListener[canplay]): Unit = js.native
     @JSName("unlisten")

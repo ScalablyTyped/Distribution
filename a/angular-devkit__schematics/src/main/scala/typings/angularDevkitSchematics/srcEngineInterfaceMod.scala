@@ -131,17 +131,22 @@ object srcEngineInterfaceMod {
   
   type FileOperator = js.Function1[/* entry */ FileEntry, FileEntry | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Rule = (tree : @angular-devkit/schematics.@angular-devkit/schematics/src/tree/interface.Tree, context : @angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.SchematicContext): @angular-devkit/schematics.@angular-devkit/schematics/src/tree/interface.Tree | rxjs.rxjs.Observable<@angular-devkit/schematics.@angular-devkit/schematics/src/tree/interface.Tree> | @angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.Rule | std.Promise<void | @angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.Rule> | void
+  }}}
+  to avoid circular code involving: 
+  - @angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.Rule
+  - @angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.RuleFactory
+  */
   @js.native
   trait Rule extends StObject {
     
     def apply(tree: Tree, context: SchematicContext): Tree | Observable_[Tree] | Rule | (js.Promise[Unit | Rule]) | Unit = js.native
   }
   
-  @js.native
-  trait RuleFactory[T /* <: js.Object */] extends StObject {
-    
-    def apply(options: T): Rule = js.native
-  }
+  type RuleFactory[T /* <: js.Object */] = js.Function1[/* options */ T, Rule]
   
   @js.native
   trait Schematic[CollectionMetadataT /* <: js.Object */, SchematicMetadataT /* <: js.Object */] extends StObject {

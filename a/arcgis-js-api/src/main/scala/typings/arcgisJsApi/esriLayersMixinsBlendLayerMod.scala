@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -33,22 +32,16 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.BlendLayer
-import typings.arcgisJsApi.esri.BlendLayerConstructor
 import typings.arcgisJsApi.esri.Effect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersMixinsBlendLayerMod extends Shortcut {
+object esriLayersMixinsBlendLayerMod {
   
   @JSImport("esri/layers/mixins/BlendLayer", JSImport.Namespace)
   @js.native
-  val ^ : BlendLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/layers/mixins/BlendLayer", JSImport.Namespace)
-  @js.native
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BlendLayer {
     
@@ -72,9 +65,4 @@ object esriLayersMixinsBlendLayerMod extends Shortcut {
     /* CompleteClass */
     var effect: Effect = js.native
   }
-  
-  type _To = BlendLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersMixinsBlendLayerMod.foo` */
-  override def _to: BlendLayerConstructor = ^
 }

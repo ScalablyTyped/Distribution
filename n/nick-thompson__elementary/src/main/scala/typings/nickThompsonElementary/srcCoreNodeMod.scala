@@ -78,13 +78,12 @@ object srcCoreNodeMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.NativeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/node.NativeNode<T> : T extends @nick-thompson/elementary.@nick-thompson/elementary/src/core/types.CompositeNodeType ? @nick-thompson/elementary.@nick-thompson/elementary/src/core/node.CompositeNode<T> : never
     }}}
     */
-  @js.native
-  trait ConcreteNode[T /* <: NodeType */] extends StObject
+  type ConcreteNode[T /* <: NodeType */] = NativeNode[T]
   
   type ConstNode = NativeNode[const]
   

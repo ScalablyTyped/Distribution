@@ -14,25 +14,25 @@ object distSrcEnhancePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
-  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
-  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String, parentProperty: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
-  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: Unit, parentProperty: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancePropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[EnhancePropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String): EnhancePropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[EnhancePropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String, parentProperty: String): EnhancePropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancePropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: Unit, parentProperty: String): EnhancePropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any], parentProperty.asInstanceOf[js.Any])).asInstanceOf[EnhancePropsResult]
   
-  trait EnhancedPropsResult extends StObject {
+  trait EnhancePropsResult extends StObject {
     
     var className: String
     
     var enhancedProps: PreservedProps
   }
-  object EnhancedPropsResult {
+  object EnhancePropsResult {
     
-    inline def apply(className: String, enhancedProps: PreservedProps): EnhancedPropsResult = {
+    inline def apply(className: String, enhancedProps: PreservedProps): EnhancePropsResult = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], enhancedProps = enhancedProps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EnhancedPropsResult]
+      __obj.asInstanceOf[EnhancePropsResult]
     }
     
-    extension [Self <: EnhancedPropsResult](x: Self) {
+    extension [Self <: EnhancePropsResult](x: Self) {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -42,6 +42,6 @@ object distSrcEnhancePropsMod {
   
   type PreservedProps = Without[
     ComponentProps[Any], 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ]
 }

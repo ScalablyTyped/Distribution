@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISMapServiceCapabilities
-  extends StObject
-     with Object {
+trait ArcGISMapServiceCapabilities extends StObject {
   
   /**
     * Indicates options supported by the exportMap operation.
@@ -34,14 +30,11 @@ trait ArcGISMapServiceCapabilities
 object ArcGISMapServiceCapabilities {
   
   inline def apply(
-    constructor: js.Function,
     exportMap: ArcGISMapServiceCapabilitiesExportMap,
     exportTiles: ArcGISMapServiceCapabilitiesExportTiles,
-    hasOwnProperty: PropertyKey => Boolean,
-    operations: ArcGISMapServiceCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean
+    operations: ArcGISMapServiceCapabilitiesOperations
   ): ArcGISMapServiceCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilities]
   }
   

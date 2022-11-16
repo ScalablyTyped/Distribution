@@ -13,7 +13,9 @@ trait MediaElementBaseProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
     */
-  var georeference: js.UndefOr[ExtentAndRotationGeorefer | CornersGeoreferenceProper] = js.undefined
+  var georeference: js.UndefOr[
+    ExtentAndRotationGeorefer | CornersGeoreferenceProper | typings.arcgisJsApi.anon.ControlPointsGeoreference
+  ] = js.undefined
   
   /**
     * The opacity of the element.
@@ -33,7 +35,9 @@ object MediaElementBaseProperties {
   
   extension [Self <: MediaElementBaseProperties](x: Self) {
     
-    inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
+    inline def setGeoreference(
+      value: ExtentAndRotationGeorefer | CornersGeoreferenceProper | typings.arcgisJsApi.anon.ControlPointsGeoreference
+    ): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     
     inline def setGeoreferenceUndefined: Self = StObject.set(x, "georeference", js.undefined)
     

@@ -17,7 +17,7 @@ trait CreateNodeInput extends StObject {
   var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
-    * The unique identifier of the network for the node. Ethereum public networks have the following NetworkIds:    n-ethereum-mainnet     n-ethereum-rinkeby     n-ethereum-ropsten   
+    * The unique identifier of the network for the node. Ethereum public networks have the following NetworkIds:    n-ethereum-mainnet     n-ethereum-goerli     n-ethereum-rinkeby     n-ethereum-ropsten   
     */
   var NetworkId: ResourceIdString
   

@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.HashMap
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubstituteOptions
-  extends StObject
-     with Object {
+trait SubstituteOptions extends StObject {
   
   /**
     * A hashmap of string keys to formatting options.
@@ -20,13 +16,8 @@ trait SubstituteOptions
 }
 object SubstituteOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions],
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SubstituteOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]): SubstituteOptions = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubstituteOptions]
   }
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ip1sms__is-disposable-phone-number"
-version := "1.1-dt-20220812Z-7ea176"
+version := "1.1-dt-20220812Z-30052f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

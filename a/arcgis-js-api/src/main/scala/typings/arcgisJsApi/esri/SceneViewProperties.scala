@@ -32,7 +32,7 @@ trait SceneViewProperties
     */
   var analyses: js.UndefOr[
     CollectionProperties[
-      DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
+      DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
     ]
   ] = js.undefined
   
@@ -146,14 +146,14 @@ object SceneViewProperties {
     
     inline def setAnalyses(
       value: CollectionProperties[
-          DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
+          DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties
         ]
     ): Self = StObject.set(x, "analyses", value.asInstanceOf[js.Any])
     
     inline def setAnalysesUndefined: Self = StObject.set(x, "analyses", js.undefined)
     
     inline def setAnalysesVarargs(
-      value: (DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties)*
+      value: (DimensionAnalysisProperties | DirectLineMeasurementAnalysisProperties | AreaMeasurementAnalysisProperties | SliceAnalysisPropertiesty | LineOfSightAnalysisProperties)*
     ): Self = StObject.set(x, "analyses", js.Array(value*))
     
     inline def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])

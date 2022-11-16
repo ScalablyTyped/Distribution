@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tiny-templater"
-version := "1.0-dt-20221019Z-08c718"
+version := "1.0-dt-20221019Z-33f85d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

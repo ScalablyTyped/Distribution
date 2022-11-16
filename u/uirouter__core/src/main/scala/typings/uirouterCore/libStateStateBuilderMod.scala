@@ -60,6 +60,14 @@ object libStateStateBuilderMod {
   
   inline def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type BuilderFunction = (state : @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject, parent : @uirouter/core.@uirouter/core/lib/state/stateBuilder.BuilderFunction | undefined): any
+  }}}
+  to avoid circular code involving: 
+  - @uirouter/core.@uirouter/core/lib/state/stateBuilder.BuilderFunction
+  */
   @js.native
   trait BuilderFunction extends StObject {
     

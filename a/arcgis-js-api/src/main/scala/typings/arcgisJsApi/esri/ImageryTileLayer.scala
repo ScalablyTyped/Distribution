@@ -58,6 +58,13 @@ trait ImageryTileLayer
   var legendEnabled: Boolean = js.native
   
   /**
+    * Represents a multidimensional subset of raster data.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#multidimensionalSubset)
+    */
+  var multidimensionalSubset: MultidimensionalSubset = js.native
+  
+  /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * @default true
@@ -123,6 +130,13 @@ trait ImageryTileLayer
   
   @JSName("type")
   val type_ImageryTileLayer: `imagery-tile` = js.native
+  
+  /**
+    * The URL of the REST endpoint of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#url)
+    */
+  var url: String = js.native
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).

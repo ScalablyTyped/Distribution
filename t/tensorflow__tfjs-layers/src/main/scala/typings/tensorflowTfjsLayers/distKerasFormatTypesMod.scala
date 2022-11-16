@@ -43,6 +43,19 @@ object distKerasFormatTypesMod {
   
   type PyJsonArray = js.Array[PyJsonValue]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PyJsonDict = {[key: string] : @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue}
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/node_config.NodeArgs
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/node_config.NodeConfig
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/node_config.TensorKeyWithArgsArray
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonArray
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonDict
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue
+  */
   trait PyJsonDict
     extends StObject
        with /* key */ StringDictionary[PyJsonValue]
@@ -54,5 +67,14 @@ object distKerasFormatTypesMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PyJsonValue = boolean | number | string | null | @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonArray | @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonDict
+  }}}
+  to avoid circular code involving: 
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonArray
+  - @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue
+  */
   type PyJsonValue = Boolean | Double | String | Null | Any | PyJsonDict
 }

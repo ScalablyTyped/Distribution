@@ -197,6 +197,15 @@ object mod {
   
   type IsSupportedAlg = js.Function1[/* algName */ String | SupportedAlgorithms, Boolean]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONMap = {[key: string] : njwt.njwt.JSONValue}
+  }}}
+  to avoid circular code involving: 
+  - njwt.njwt.JSONMap
+  - njwt.njwt.JSONValue
+  */
   trait JSONMap
     extends StObject
        with /* key */ StringDictionary[JSONValue]
@@ -208,6 +217,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JSONValue = string | number | boolean | null | std.Array<njwt.njwt.JSONValue> | njwt.njwt.JSONMap
+  }}}
+  to avoid circular code involving: 
+  - njwt.njwt.JSONValue
+  */
   type JSONValue = String | Double | Boolean | Null | js.Array[Any] | JSONMap
   
   trait JwtHeaderOptions extends StObject {

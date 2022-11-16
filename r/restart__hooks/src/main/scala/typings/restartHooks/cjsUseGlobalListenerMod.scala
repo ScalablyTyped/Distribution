@@ -9,6 +9,7 @@ import typings.restartHooks.restartHooksStrings.animationstart
 import typings.restartHooks.restartHooksStrings.auxclick
 import typings.restartHooks.restartHooksStrings.beforeinput
 import typings.restartHooks.restartHooksStrings.blur
+import typings.restartHooks.restartHooksStrings.cancel
 import typings.restartHooks.restartHooksStrings.canplay
 import typings.restartHooks.restartHooksStrings.canplaythrough
 import typings.restartHooks.restartHooksStrings.change
@@ -168,6 +169,10 @@ object cjsUseGlobalListenerMod {
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_blur(event: blur, handler: DocumentEventHandler[blur], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def default_canplay(event: canplay, handler: DocumentEventHandler[canplay]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default_canplay(event: canplay, handler: DocumentEventHandler[canplay], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]

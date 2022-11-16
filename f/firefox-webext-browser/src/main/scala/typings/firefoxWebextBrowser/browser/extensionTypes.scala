@@ -222,12 +222,31 @@ object extensionTypes {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type _PlainJSONArray = std.Array<firefox-webext-browser.browser.extensionTypes.PlainJSONValue>
+  }}}
+  to avoid circular code involving: 
+  - firefox-webext-browser.browser.extensionTypes.PlainJSONValue
+  - firefox-webext-browser.browser.extensionTypes._PlainJSONArray
+  */
   @js.native
   trait PlainJSONArray
     extends StObject
        with Array[PlainJSONValue]
        with _PlainJSONValue
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type _PlainJSONObject = {[key: string] : firefox-webext-browser.browser.extensionTypes.PlainJSONValue}
+  }}}
+  to avoid circular code involving: 
+  - firefox-webext-browser.browser.extensionTypes.PlainJSONValue
+  - firefox-webext-browser.browser.extensionTypes._PlainJSONArray
+  - firefox-webext-browser.browser.extensionTypes._PlainJSONObject
+  */
   trait PlainJSONObject
     extends StObject
        with /* key */ StringDictionary[PlainJSONValue]

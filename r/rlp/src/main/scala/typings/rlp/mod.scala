@@ -101,8 +101,24 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Input = string | number | bigint | std.Uint8Array | std.Array<rlp.rlp.Input> | null | undefined
+  }}}
+  to avoid circular code involving: 
+  - rlp.rlp.Input
+  */
   type Input = js.UndefOr[String | Double | js.BigInt | js.typedarray.Uint8Array | js.Array[Any] | Null]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedUint8Array = std.Array<std.Uint8Array | rlp.rlp.NestedUint8Array>
+  }}}
+  to avoid circular code involving: 
+  - rlp.rlp.NestedUint8Array
+  */
   @js.native
   trait NestedUint8Array
     extends StObject

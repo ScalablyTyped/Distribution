@@ -29,7 +29,7 @@ trait SceneLayerProperties
   var elevationInfo: js.UndefOr[SceneLayerElevationInfo] = js.undefined
   
   /**
-    * List of object ids to exclude from rendering.
+    * List of ObjectIDs not being displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#excludeObjectIds)
     */
@@ -43,7 +43,7 @@ trait SceneLayerProperties
   var featureReduction: js.UndefOr[FeatureReductionSelectionProperties] = js.undefined
   
   /**
-    * A collection of polygons and a type to apply client-side spatial feature masking.
+    * A collection of polygons [geometries](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#geometries) which will mask out different parts of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#filter)
     */

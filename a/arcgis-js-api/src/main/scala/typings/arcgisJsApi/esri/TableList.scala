@@ -88,4 +88,11 @@ trait TableList
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#viewModel)
     */
   var viewModel: TableListViewModel = js.native
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#visibleElements)
+    */
+  var visibleElements: TableListVisibleElements = js.native
 }

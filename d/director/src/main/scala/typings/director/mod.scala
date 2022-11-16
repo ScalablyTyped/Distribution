@@ -1082,6 +1082,14 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RoutingTable = {[route: string] : director.director.RouteEntry<ThisType> | director.director.RoutingTable<ThisType>}
+  }}}
+  to avoid circular code involving: 
+  - director.director.RoutingTable
+  */
   trait RoutingTable[ThisType]
     extends StObject
        with /* route */ StringDictionary[RouteEntry[ThisType] | RoutingTable[ThisType]]

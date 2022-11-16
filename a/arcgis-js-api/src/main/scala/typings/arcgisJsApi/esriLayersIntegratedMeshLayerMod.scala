@@ -1,8 +1,6 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.IntegratedMeshLayer
-import typings.arcgisJsApi.esri.IntegratedMeshLayerConstructor
 import typings.arcgisJsApi.esri.IntegratedMeshLayerProperties
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.SceneServiceVersion
@@ -11,13 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersIntegratedMeshLayerMod extends Shortcut {
+/* static members */
+object esriLayersIntegratedMeshLayerMod {
   
-  @JSImport("esri/layers/IntegratedMeshLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & IntegratedMeshLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/IntegratedMeshLayer", JSImport.Namespace)
   @js.native
   /**
@@ -25,7 +19,7 @@ object esriLayersIntegratedMeshLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with IntegratedMeshLayer {
     def this(properties: IntegratedMeshLayerProperties) = this()
@@ -106,9 +100,9 @@ object esriLayersIntegratedMeshLayerMod extends Shortcut {
     /* CompleteClass */
     override val version: SceneServiceVersion = js.native
   }
+  @JSImport("esri/layers/IntegratedMeshLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & IntegratedMeshLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersIntegratedMeshLayerMod.foo` */
-  override def _to: js.Object & IntegratedMeshLayerConstructor = ^
+  inline def fromJSON(json: Any): IntegratedMeshLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[IntegratedMeshLayer]
 }

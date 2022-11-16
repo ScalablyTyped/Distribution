@@ -172,6 +172,8 @@ trait SketchViewModel
   /**
     * The sketch view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#state)
     */
   val state: ready | disabled | active = js.native

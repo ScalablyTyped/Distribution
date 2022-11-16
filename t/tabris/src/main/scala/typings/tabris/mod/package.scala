@@ -534,6 +534,16 @@ type ScrollViewConstructor = ScrollViewFactory
 
 type SearchActionConstructor = SearchActionFactory
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Selectable = T | {[key: string] : tabris.tabris.Selectable<T>} | undefined | {  inherit :boolean} | {  ref :string}
+}}}
+to avoid circular code involving: 
+- tabris.tabris.ResourceDataWithConfig
+- tabris.tabris.ResourceRawData
+- tabris.tabris.Selectable
+*/
 /* Rewritten from type alias, can be one of: 
   - T
   - org.scalablytyped.runtime.StringDictionary[scala.Any]

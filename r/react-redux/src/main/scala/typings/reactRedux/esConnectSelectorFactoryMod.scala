@@ -135,13 +135,12 @@ object esConnectSelectorFactoryMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TOwnProps extends null | undefined ? (state : S): TProps : (state : S, ownProps : TOwnProps): TProps
     }}}
     */
-  @js.native
-  trait Selector[S, TProps, TOwnProps] extends StObject
+  type Selector[S, TProps, TOwnProps] = js.Function1[/* state */ S, TProps]
   
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
     /* dispatch */ Dispatch[Action[Any]], 

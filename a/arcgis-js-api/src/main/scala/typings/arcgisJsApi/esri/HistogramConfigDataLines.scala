@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistogramConfigDataLines
-  extends StObject
-     with Object {
+trait HistogramConfigDataLines extends StObject {
   
   /**
     * The label associated with the line.
@@ -26,12 +22,8 @@ trait HistogramConfigDataLines
 }
 object HistogramConfigDataLines {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): HistogramConfigDataLines = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): HistogramConfigDataLines = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramConfigDataLines]
   }
   

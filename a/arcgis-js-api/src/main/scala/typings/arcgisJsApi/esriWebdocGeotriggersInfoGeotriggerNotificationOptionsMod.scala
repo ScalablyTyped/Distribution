@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.GeotriggerNotificationOptions
-import typings.arcgisJsApi.esri.GeotriggerNotificationOptionsConstructor
 import typings.arcgisJsApi.esri.GeotriggerNotificationOptionsProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWebdocGeotriggersInfoGeotriggerNotificationOptionsMod extends Shortcut {
+/* static members */
+object esriWebdocGeotriggersInfoGeotriggerNotificationOptionsMod {
   
-  @JSImport("esri/webdoc/geotriggersInfo/GeotriggerNotificationOptions", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & GeotriggerNotificationOptionsConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/geotriggersInfo/GeotriggerNotificationOptions", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWebdocGeotriggersInfoGeotriggerNotificationOptionsMod extends Shortcu
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with GeotriggerNotificationOptions {
     def this(properties: GeotriggerNotificationOptionsProperties) = this()
@@ -35,9 +29,9 @@ object esriWebdocGeotriggersInfoGeotriggerNotificationOptionsMod extends Shortcu
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/webdoc/geotriggersInfo/GeotriggerNotificationOptions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & GeotriggerNotificationOptionsConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWebdocGeotriggersInfoGeotriggerNotificationOptionsMod.foo` */
-  override def _to: js.Object & GeotriggerNotificationOptionsConstructor = ^
+  inline def fromJSON(json: Any): GeotriggerNotificationOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[GeotriggerNotificationOptions]
 }

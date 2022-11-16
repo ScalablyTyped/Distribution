@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-spring"
-version := "9.5.4-8bc50e"
+version := "9.5.4-c5259a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

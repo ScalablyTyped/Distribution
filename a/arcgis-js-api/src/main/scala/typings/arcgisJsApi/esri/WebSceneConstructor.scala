@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebSceneConstructor
   extends StObject
-     with /**
-  * The web scene is the core element of 3D mapping across ArcGIS.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html)
-  */
-Instantiable0[WebScene]
+     with Instantiable0[WebScene]
      with Instantiable1[/* properties */ WebSceneProperties, WebScene] {
   
   /**
@@ -22,5 +17,12 @@ Instantiable0[WebScene]
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#fromJSON)
     */
-  def fromJSON(json: Any): Any = js.native
+  def fromJSON(json: Any): WebScene = js.native
+  
+  /**
+    * The latest supported webscene spec version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#version)
+    */
+  val version: String = js.native
 }

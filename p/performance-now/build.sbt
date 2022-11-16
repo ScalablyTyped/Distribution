@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "performance-now"
-version := "2.1.0-31a3d3"
+version := "2.1.0-4c2dd0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

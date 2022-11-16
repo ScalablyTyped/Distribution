@@ -252,6 +252,14 @@ object mod {
     /**
       * Entry points of a module, optionally with conditions and subpath exports.
       */
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Exports = null | string | std.Array<string> | {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: @npmcli/package-json.@npmcli/package-json.PackageJson.Exports} | {[key: string] : @npmcli/package-json.@npmcli/package-json.PackageJson.Exports}
+    }}}
+    to avoid circular code involving: 
+    - @npmcli/package-json.@npmcli/package-json.PackageJson.Exports
+    */
     type Exports = Null | String | js.Array[String] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in @npmcli/package-json.@npmcli/package-json.PackageJson.ExportCondition ]: any} */ js.Any) | StringDictionary[Any]
     
     /**

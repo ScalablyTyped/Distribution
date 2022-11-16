@@ -59,6 +59,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -80,6 +84,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -144,6 +152,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -229,6 +241,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var role: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
   /* static members */
@@ -278,6 +294,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -299,6 +319,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -363,6 +387,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -438,6 +466,10 @@ object typesMod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var role: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -595,6 +627,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -616,6 +652,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -680,6 +720,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -758,6 +802,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var role: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
   
@@ -800,6 +848,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -821,6 +873,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -885,6 +941,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -969,6 +1029,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var role: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
   
@@ -1012,6 +1076,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -1033,6 +1101,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1097,6 +1169,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1193,6 +1269,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var role: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
     
     def updated(): Unit = js.native
@@ -1240,6 +1320,10 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -1261,6 +1345,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1325,6 +1413,10 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1404,6 +1496,10 @@ object typesMod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var role: String | Null = js.native
     
     // Called to check whether or not the component should call updated(), much like React's shouldComponentUpdate().
     def shouldUpdate(): Boolean = js.native

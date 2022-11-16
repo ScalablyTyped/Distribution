@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-truncate"
-version := "1.2-dt-20211223Z-13c7de"
+version := "1.2-dt-20211223Z-d2c912"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

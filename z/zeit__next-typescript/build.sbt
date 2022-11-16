@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zeit__next-typescript"
-version := "0.1-dt-20211202Z-e27d22"
+version := "0.1-dt-20211202Z-446672"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

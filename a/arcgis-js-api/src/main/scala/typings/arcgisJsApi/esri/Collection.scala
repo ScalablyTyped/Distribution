@@ -20,13 +20,13 @@ trait Collection[T]
      with Evented
      with esriImplementsIteration[T] {
   
-  def add(item: T): scala.Unit = js.native
-  def add(item: T, index: Double): scala.Unit = js.native
+  def add(item: T): this.type = js.native
+  def add(item: T, index: Double): this.type = js.native
   
-  def addMany(items: js.Array[T]): scala.Unit = js.native
-  def addMany(items: js.Array[T], index: Double): scala.Unit = js.native
-  def addMany(items: Collection[T]): scala.Unit = js.native
-  def addMany(items: Collection[T], index: Double): scala.Unit = js.native
+  def addMany(items: js.Array[T]): this.type = js.native
+  def addMany(items: js.Array[T], index: Double): this.type = js.native
+  def addMany(items: Collection[T]): this.type = js.native
+  def addMany(items: Collection[T], index: Double): this.type = js.native
   
   def at(index: Double): T = js.native
   
@@ -102,7 +102,7 @@ trait Collection[T]
   
   def reorder(item: T, index: Double): T = js.native
   
-  def reverse(): Collection[T] = js.native
+  def reverse(): this.type = js.native
   
   def shift(): T = js.native
   
@@ -113,8 +113,8 @@ trait Collection[T]
   
   def some(callback: ItemCallback[T]): Boolean = js.native
   
-  def sort(): scala.Unit = js.native
-  def sort(compareFunction: ItemCompareCallback[T]): scala.Unit = js.native
+  def sort(): this.type = js.native
+  def sort(compareFunction: ItemCompareCallback[T]): this.type = js.native
   
   def splice(start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
   

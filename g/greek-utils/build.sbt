@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "greek-utils"
-version := "1.2-dt-20211202Z-d25795"
+version := "1.2-dt-20211202Z-e49d8b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

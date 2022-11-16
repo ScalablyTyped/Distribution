@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cmu-pronouncing-dictionary"
-version := "3.0.0-ed4b60"
+version := "3.0.0-5e3361"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

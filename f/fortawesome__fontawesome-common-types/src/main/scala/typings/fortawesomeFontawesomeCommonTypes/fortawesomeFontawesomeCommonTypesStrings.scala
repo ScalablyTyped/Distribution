@@ -3636,6 +3636,18 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `bullseye-pointer`: `bullseye-pointer` = "bullseye-pointer".asInstanceOf[`bullseye-pointer`]
   
   @js.native
+  sealed trait buoy
+    extends StObject
+       with IconName
+  inline def buoy: buoy = "buoy".asInstanceOf[buoy]
+  
+  @js.native
+  sealed trait `buoy-mooring`
+    extends StObject
+       with IconName
+  inline def `buoy-mooring`: `buoy-mooring` = "buoy-mooring".asInstanceOf[`buoy-mooring`]
+  
+  @js.native
   sealed trait burger
     extends StObject
        with IconName
@@ -5236,6 +5248,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def child: child = "child".asInstanceOf[child]
+  
+  @js.native
+  sealed trait `child-combatant`
+    extends StObject
+       with IconName
+  inline def `child-combatant`: `child-combatant` = "child-combatant".asInstanceOf[`child-combatant`]
   
   @js.native
   sealed trait `child-dress`
@@ -6929,6 +6947,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `comment-exclamation`: `comment-exclamation` = "comment-exclamation".asInstanceOf[`comment-exclamation`]
   
   @js.native
+  sealed trait `comment-heart`
+    extends StObject
+       with IconName
+  inline def `comment-heart`: `comment-heart` = "comment-heart".asInstanceOf[`comment-heart`]
+  
+  @js.native
   sealed trait `comment-image`
     extends StObject
        with IconName
@@ -7983,6 +8007,18 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `diamond-exclamation`: `diamond-exclamation` = "diamond-exclamation".asInstanceOf[`diamond-exclamation`]
+  
+  @js.native
+  sealed trait `diamond-half`
+    extends StObject
+       with IconName
+  inline def `diamond-half`: `diamond-half` = "diamond-half".asInstanceOf[`diamond-half`]
+  
+  @js.native
+  sealed trait `diamond-half-stroke`
+    extends StObject
+       with IconName
+  inline def `diamond-half-stroke`: `diamond-half-stroke` = "diamond-half-stroke".asInstanceOf[`diamond-half-stroke`]
   
   @js.native
   sealed trait `diamond-turn-right`
@@ -11376,6 +11412,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `game-console-handheld`: `game-console-handheld` = "game-console-handheld".asInstanceOf[`game-console-handheld`]
   
   @js.native
+  sealed trait `game-console-handheld-crank`
+    extends StObject
+       with IconName
+  inline def `game-console-handheld-crank`: `game-console-handheld-crank` = "game-console-handheld-crank".asInstanceOf[`game-console-handheld-crank`]
+  
+  @js.native
   sealed trait gamepad
     extends StObject
        with IconName
@@ -14124,6 +14166,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `internet-explorer`: `internet-explorer` = "internet-explorer".asInstanceOf[`internet-explorer`]
   
   @js.native
+  sealed trait interrobang
+    extends StObject
+       with IconName
+  inline def interrobang: interrobang = "interrobang".asInstanceOf[interrobang]
+  
+  @js.native
   sealed trait intersection
     extends StObject
        with IconName
@@ -15564,6 +15612,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def mailbox: mailbox = "mailbox".asInstanceOf[mailbox]
   
   @js.native
+  sealed trait `mailbox-flag-up`
+    extends StObject
+       with IconName
+  inline def `mailbox-flag-up`: `mailbox-flag-up` = "mailbox-flag-up".asInstanceOf[`mailbox-flag-up`]
+  
+  @js.native
   sealed trait mailchimp
     extends StObject
        with IconName
@@ -16102,6 +16156,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `message-exclamation`: `message-exclamation` = "message-exclamation".asInstanceOf[`message-exclamation`]
+  
+  @js.native
+  sealed trait `message-heart`
+    extends StObject
+       with IconName
+  inline def `message-heart`: `message-heart` = "message-heart".asInstanceOf[`message-heart`]
   
   @js.native
   sealed trait `message-image`
@@ -16914,6 +16974,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `music-slash`: `music-slash` = "music-slash".asInstanceOf[`music-slash`]
   
   @js.native
+  sealed trait mustache
+    extends StObject
+       with IconName
+  inline def mustache: mustache = "mustache".asInstanceOf[mustache]
+  
+  @js.native
   sealed trait n
     extends StObject
        with IconName
@@ -17050,6 +17116,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `node-js`: `node-js` = "node-js".asInstanceOf[`node-js`]
+  
+  @js.native
+  sealed trait nose
+    extends StObject
+       with IconName
+  inline def nose: nose = "nose".asInstanceOf[nose]
   
   @js.native
   sealed trait `not-equal`
@@ -17260,6 +17332,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `odnoklassniki-square`: `odnoklassniki-square` = "odnoklassniki-square".asInstanceOf[`odnoklassniki-square`]
+  
+  @js.native
+  sealed trait odysee
+    extends StObject
+       with IconName
+  inline def odysee: odysee = "odysee".asInstanceOf[odysee]
   
   @js.native
   sealed trait `oil-can`
@@ -18528,6 +18606,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `phone-arrow-down-left`: `phone-arrow-down-left` = "phone-arrow-down-left".asInstanceOf[`phone-arrow-down-left`]
   
   @js.native
+  sealed trait `phone-arrow-right`
+    extends StObject
+       with IconName
+  inline def `phone-arrow-right`: `phone-arrow-right` = "phone-arrow-right".asInstanceOf[`phone-arrow-right`]
+  
+  @js.native
   sealed trait `phone-arrow-up`
     extends StObject
        with IconName
@@ -18694,6 +18778,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `piano-keyboard`: `piano-keyboard` = "piano-keyboard".asInstanceOf[`piano-keyboard`]
+  
+  @js.native
+  sealed trait pickaxe
+    extends StObject
+       with IconName
+  inline def pickaxe: pickaxe = "pickaxe".asInstanceOf[pickaxe]
   
   @js.native
   sealed trait pickleball
@@ -19252,6 +19342,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `prescription-bottle-medical`: `prescription-bottle-medical` = "prescription-bottle-medical".asInstanceOf[`prescription-bottle-medical`]
+  
+  @js.native
+  sealed trait `prescription-bottle-pill`
+    extends StObject
+       with IconName
+  inline def `prescription-bottle-pill`: `prescription-bottle-pill` = "prescription-bottle-pill".asInstanceOf[`prescription-bottle-pill`]
   
   @js.native
   sealed trait presentation
@@ -21870,6 +21966,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def snowflake: snowflake = "snowflake".asInstanceOf[snowflake]
   
   @js.native
+  sealed trait `snowflake-droplets`
+    extends StObject
+       with IconName
+  inline def `snowflake-droplets`: `snowflake-droplets` = "snowflake-droplets".asInstanceOf[`snowflake-droplets`]
+  
+  @js.native
   sealed trait snowflakes
     extends StObject
        with IconName
@@ -22576,6 +22678,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `square-dashed`: `square-dashed` = "square-dashed".asInstanceOf[`square-dashed`]
+  
+  @js.native
+  sealed trait `square-dashed-circle-plus`
+    extends StObject
+       with IconName
+  inline def `square-dashed-circle-plus`: `square-dashed-circle-plus` = "square-dashed-circle-plus".asInstanceOf[`square-dashed-circle-plus`]
   
   @js.native
   sealed trait `square-divide`
@@ -23572,6 +23680,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def stroopwafel: stroopwafel = "stroopwafel".asInstanceOf[stroopwafel]
+  
+  @js.native
+  sealed trait stubber
+    extends StObject
+       with IconName
+  inline def stubber: stubber = "stubber".asInstanceOf[stubber]
   
   @js.native
   sealed trait studiovinari
@@ -25398,6 +25512,18 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `triangle-person-digging`: `triangle-person-digging` = "triangle-person-digging".asInstanceOf[`triangle-person-digging`]
   
   @js.native
+  sealed trait tricycle
+    extends StObject
+       with IconName
+  inline def tricycle: tricycle = "tricycle".asInstanceOf[tricycle]
+  
+  @js.native
+  sealed trait `tricycle-adult`
+    extends StObject
+       with IconName
+  inline def `tricycle-adult`: `tricycle-adult` = "tricycle-adult".asInstanceOf[`tricycle-adult`]
+  
+  @js.native
   sealed trait trillium
     extends StObject
        with IconName
@@ -26242,6 +26368,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `user-lock`: `user-lock` = "user-lock".asInstanceOf[`user-lock`]
+  
+  @js.native
+  sealed trait `user-magnifying-glass`
+    extends StObject
+       with IconName
+  inline def `user-magnifying-glass`: `user-magnifying-glass` = "user-magnifying-glass".asInstanceOf[`user-magnifying-glass`]
   
   @js.native
   sealed trait `user-md`

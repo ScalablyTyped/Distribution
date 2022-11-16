@@ -40,6 +40,7 @@ import typings.cookieclicker.cookieclickerStrings.blur
 import typings.cookieclicker.cookieclickerStrings.body
 import typings.cookieclicker.cookieclickerStrings.br
 import typings.cookieclicker.cookieclickerStrings.button
+import typings.cookieclicker.cookieclickerStrings.cancel
 import typings.cookieclicker.cookieclickerStrings.canplay
 import typings.cookieclicker.cookieclickerStrings.canplaythrough
 import typings.cookieclicker.cookieclickerStrings.canvas
@@ -390,6 +391,7 @@ import typings.std.MouseEvent
 import typings.std.NamedNodeMap
 import typings.std.Node
 import typings.std.NodeListOf
+import typings.std.OffscreenCanvas
 import typings.std.OnErrorEventHandler
 import typings.std.ParentNode
 import typings.std.PointerEvent
@@ -800,6 +802,20 @@ object anon {
     def addEventListener_blur(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
@@ -2185,6 +2201,9 @@ object anon {
     var ariaColIndex: String | Null = js.native
     
     /* standard dom */
+    var ariaColIndexText: String | Null = js.native
+    
+    /* standard dom */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -2201,6 +2220,9 @@ object anon {
     
     /* standard dom */
     var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    var ariaInvalid: String | Null = js.native
     
     /* standard dom */
     var ariaKeyShortcuts: String | Null = js.native
@@ -2249,6 +2271,9 @@ object anon {
     
     /* standard dom */
     var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     var ariaRowSpan: String | Null = js.native
@@ -3328,12 +3353,18 @@ object anon {
     /* standard dom */
     var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
     
+    /* standard dom */
+    var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
+    
     /**
       * Fires when the object loses the input focus.
       * @param ev The focus event.
       */
     /* standard dom */
     var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
+    
+    /* standard dom */
+    var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
     
     /**
       * Occurs when playback is possible, but would require further buffering.
@@ -4657,6 +4688,20 @@ object anon {
     def removeEventListener_blur(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_cancel(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
@@ -6023,6 +6068,9 @@ object anon {
     def requestPointerLock(): Unit = js.native
     
     /* standard dom */
+    var role: String | Null = js.native
+    
+    /* standard dom */
     def scroll(): Unit = js.native
     def scroll(options: ScrollToOptions): Unit = js.native
     /* standard dom */
@@ -6126,6 +6174,9 @@ object anon {
     /* standard dom */
     def toggleAttribute(qualifiedName: String): Boolean = js.native
     def toggleAttribute(qualifiedName: String, force: Boolean): Boolean = js.native
+    
+    /* standard dom */
+    def transferControlToOffscreen(): OffscreenCanvas = js.native
     
     /* standard dom */
     var translate: Boolean = js.native

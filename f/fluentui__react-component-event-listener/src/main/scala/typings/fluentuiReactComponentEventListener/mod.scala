@@ -11,6 +11,7 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.auxclick
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.beforeinput
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.blur
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.cancel
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.canplay
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.canplaythrough
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.change
@@ -121,7 +122,7 @@ object mod {
     
     inline def apply(
       props: EventListenerOptions[
-          DOMContentLoaded | abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
+          DOMContentLoaded | abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | cancel | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
         ]
     ): Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Null]
     
@@ -163,6 +164,8 @@ object mod {
   inline def useEventListener_beforeinput(options: EventListenerOptions[beforeinput]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useEventListener_blur(options: EventListenerOptions[blur]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def useEventListener_cancel(options: EventListenerOptions[cancel]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useEventListener_canplay(options: EventListenerOptions[canplay]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

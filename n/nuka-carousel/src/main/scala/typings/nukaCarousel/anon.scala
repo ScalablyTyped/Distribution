@@ -1,6 +1,6 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.libTypesMod.Alignment
+import typings.nukaCarousel.libTypesMod.CellAlign
 import typings.nukaCarousel.nukaCarouselStrings.`next-cloned`
 import typings.nukaCarousel.nukaCarouselStrings.`prev-cloned`
 import typings.nukaCarousel.nukaCarouselStrings.assertive
@@ -22,7 +22,7 @@ object anon {
     
     var animation: js.UndefOr[zoom | fade] = js.native
     
-    var cellAlign: Alignment = js.native
+    var cellAlign: CellAlign = js.native
     
     var cellSpacing: Double = js.native
     
@@ -144,7 +144,7 @@ object anon {
   /* Inlined std.Pick<nuka-carousel.nuka-carousel/lib/types.ControlProps, 'cellAlign' | 'currentSlide' | 'slideCount' | 'slidesToShow' | 'wrapAround'> */
   trait PickControlPropscellAlign extends StObject {
     
-    var cellAlign: Alignment
+    var cellAlign: CellAlign
     
     var currentSlide: Double
     
@@ -157,7 +157,7 @@ object anon {
   object PickControlPropscellAlign {
     
     inline def apply(
-      cellAlign: Alignment,
+      cellAlign: CellAlign,
       currentSlide: Double,
       slideCount: Double,
       slidesToShow: Double,
@@ -169,7 +169,7 @@ object anon {
     
     extension [Self <: PickControlPropscellAlign](x: Self) {
       
-      inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
       inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
@@ -184,7 +184,7 @@ object anon {
   /* Inlined std.Pick<nuka-carousel.nuka-carousel/lib/types.ControlProps, 'cellAlign' | 'currentSlide' | 'slidesToShow' | 'wrapAround'> */
   trait PickControlPropscellAlignCellAlign extends StObject {
     
-    var cellAlign: Alignment
+    var cellAlign: CellAlign
     
     var currentSlide: Double
     
@@ -194,14 +194,14 @@ object anon {
   }
   object PickControlPropscellAlignCellAlign {
     
-    inline def apply(cellAlign: Alignment, currentSlide: Double, slidesToShow: Double, wrapAround: Boolean): PickControlPropscellAlignCellAlign = {
+    inline def apply(cellAlign: CellAlign, currentSlide: Double, slidesToShow: Double, wrapAround: Boolean): PickControlPropscellAlignCellAlign = {
       val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickControlPropscellAlignCellAlign]
     }
     
     extension [Self <: PickControlPropscellAlignCellAlign](x: Self) {
       
-      inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
       inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       

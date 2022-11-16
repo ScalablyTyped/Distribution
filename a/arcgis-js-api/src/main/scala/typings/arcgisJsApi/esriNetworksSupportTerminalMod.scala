@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Terminal
-import typings.arcgisJsApi.esri.TerminalConstructor
 import typings.arcgisJsApi.esri.TerminalProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriNetworksSupportTerminalMod extends Shortcut {
+/* static members */
+object esriNetworksSupportTerminalMod {
   
-  @JSImport("esri/networks/support/Terminal", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TerminalConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/networks/support/Terminal", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriNetworksSupportTerminalMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Terminal {
     def this(properties: TerminalProperties) = this()
@@ -35,9 +29,9 @@ object esriNetworksSupportTerminalMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/networks/support/Terminal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TerminalConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriNetworksSupportTerminalMod.foo` */
-  override def _to: js.Object & TerminalConstructor = ^
+  inline def fromJSON(json: Any): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Terminal]
 }

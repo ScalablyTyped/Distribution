@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-barcode-reader"
-version := "0.0-dt-20211202Z-6460dc"
+version := "0.0-dt-20211202Z-b7a018"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

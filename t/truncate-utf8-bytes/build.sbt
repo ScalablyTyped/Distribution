@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "truncate-utf8-bytes"
-version := "1.0-dt-20211202Z-f73976"
+version := "1.0-dt-20211202Z-dcea7d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

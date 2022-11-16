@@ -41,6 +41,13 @@ trait PortalBasemapsSource
   var query: Any | String = js.native
   
   /**
+    * Refreshes basemaps by fetching them from the Portal.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#refresh)
+    */
+  def refresh(): js.Promise[Any] = js.native
+  
+  /**
     * The source's state.
     *
     * @default not-loaded

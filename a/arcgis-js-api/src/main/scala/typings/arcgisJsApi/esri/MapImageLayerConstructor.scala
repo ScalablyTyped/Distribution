@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MapImageLayerConstructor
   extends StObject
-     with /**
-  * MapImageLayer allows you to display and analyze data from [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) defined in a [map service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm), exporting images instead of features.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)
-  */
-Instantiable0[MapImageLayer]
+     with Instantiable0[MapImageLayer]
      with Instantiable1[/* properties */ MapImageLayerProperties, MapImageLayer] {
   
   def fromJSON(json: Any): MapImageLayer = js.native

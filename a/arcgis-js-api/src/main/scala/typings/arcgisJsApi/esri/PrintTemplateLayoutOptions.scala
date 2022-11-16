@@ -4,15 +4,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.Feet
 import typings.arcgisJsApi.arcgisJsApiStrings.Kilometers
 import typings.arcgisJsApi.arcgisJsApiStrings.Meters
 import typings.arcgisJsApi.arcgisJsApiStrings.Miles
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrintTemplateLayoutOptions
-  extends StObject
-     with Object {
+trait PrintTemplateLayoutOptions extends StObject {
   
   /**
     * The text used for the author if the specified layout contains an author text element.
@@ -67,12 +63,8 @@ trait PrintTemplateLayoutOptions
 }
 object PrintTemplateLayoutOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PrintTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): PrintTemplateLayoutOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }
   

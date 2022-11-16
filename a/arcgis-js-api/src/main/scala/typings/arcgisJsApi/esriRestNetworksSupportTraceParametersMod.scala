@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.TraceParameters
-import typings.arcgisJsApi.esri.TraceParametersConstructor
 import typings.arcgisJsApi.esri.TraceParametersProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRestNetworksSupportTraceParametersMod extends Shortcut {
+/* static members */
+object esriRestNetworksSupportTraceParametersMod {
   
-  @JSImport("esri/rest/networks/support/TraceParameters", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & TraceParametersConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/rest/networks/support/TraceParameters", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRestNetworksSupportTraceParametersMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with TraceParameters {
     def this(properties: TraceParametersProperties) = this()
@@ -35,9 +29,9 @@ object esriRestNetworksSupportTraceParametersMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/rest/networks/support/TraceParameters", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & TraceParametersConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRestNetworksSupportTraceParametersMod.foo` */
-  override def _to: js.Object & TraceParametersConstructor = ^
+  inline def fromJSON(json: Any): TraceParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[TraceParameters]
 }

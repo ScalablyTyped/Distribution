@@ -86,8 +86,25 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Value = number | string | (args : ...expr-eval.expr-eval.Value): expr-eval.expr-eval.Value | {[propertyName: string] : expr-eval.expr-eval.Value}
+  }}}
+  to avoid circular code involving: 
+  - expr-eval.expr-eval.Value
+  */
   type Value = Double | String | (js.Function1[/* repeated */ Any, Any]) | StringDictionary[Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Values = {[propertyName: string] : expr-eval.expr-eval.Value}
+  }}}
+  to avoid circular code involving: 
+  - expr-eval.expr-eval.Value
+  - expr-eval.expr-eval.Values
+  */
   trait Values
     extends StObject
        with /* propertyName */ StringDictionary[Value]

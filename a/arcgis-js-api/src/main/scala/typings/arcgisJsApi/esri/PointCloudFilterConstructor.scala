@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudFilterConstructor
   extends StObject
-     with /**
-  * Point cloud filters are used to hide points that do not satisfy the filter criteria.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html)
-  */
-Instantiable0[PointCloudFilter]
+     with Instantiable0[PointCloudFilter]
      with Instantiable1[/* properties */ PointCloudFilterProperties, PointCloudFilter] {
   
   def fromJSON(json: Any): PointCloudFilter = js.native

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.RouteSymbols
-import typings.arcgisJsApi.esri.RouteSymbolsConstructor
 import typings.arcgisJsApi.esri.RouteSymbolsProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersSupportRouteSymbolsMod extends Shortcut {
+/* static members */
+object esriLayersSupportRouteSymbolsMod {
   
-  @JSImport("esri/layers/support/RouteSymbols", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RouteSymbolsConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/RouteSymbols", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriLayersSupportRouteSymbolsMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RouteSymbols.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with RouteSymbols {
     def this(properties: RouteSymbolsProperties) = this()
@@ -35,9 +29,9 @@ object esriLayersSupportRouteSymbolsMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/layers/support/RouteSymbols", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RouteSymbolsConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersSupportRouteSymbolsMod.foo` */
-  override def _to: js.Object & RouteSymbolsConstructor = ^
+  inline def fromJSON(json: Any): RouteSymbols = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[RouteSymbols]
 }

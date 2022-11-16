@@ -1,7 +1,9 @@
 package typings.opentelemetryApi
 
+import typings.opentelemetryApi.buildSrcApiMetricsMod.MetricsAPI
 import typings.opentelemetryApi.buildSrcBaggageTypesMod.BaggageEntryMetadata
 import typings.opentelemetryApi.buildSrcContextTypesMod.Context
+import typings.opentelemetryApi.buildSrcMetricsMeterMod.Meter
 import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapGetter
 import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapSetter
 import typings.opentelemetryApi.buildSrcTraceProxyTracerMod.TracerDelegator
@@ -33,6 +35,11 @@ object mod {
     @js.native
     def diag: typings.opentelemetryApi.buildSrcApiDiagMod.DiagAPI = js.native
     inline def diag_=(x: typings.opentelemetryApi.buildSrcApiDiagMod.DiagAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diag")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/api", "default.metrics")
+    @js.native
+    def metrics: MetricsAPI = js.native
+    inline def metrics_=(x: MetricsAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
     
     @JSImport("@opentelemetry/api", "default.propagation")
     @js.native
@@ -93,7 +100,7 @@ object mod {
   @JSImport("@opentelemetry/api", "DiagConsoleLogger")
   @js.native
   open class DiagConsoleLogger ()
-    extends typings.opentelemetryApi.buildSrcDiagMod.DiagConsoleLogger
+    extends typings.opentelemetryApi.buildSrcDiagConsoleLoggerMod.DiagConsoleLogger
   
   @JSImport("@opentelemetry/api", "DiagLogLevel")
   @js.native
@@ -250,6 +257,18 @@ object mod {
     /* 1 */ val SAMPLED: typings.opentelemetryApi.buildSrcTraceTraceFlagsMod.TraceFlags.SAMPLED & Double = js.native
   }
   
+  @JSImport("@opentelemetry/api", "ValueType")
+  @js.native
+  object ValueType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.buildSrcMetricsMetricMod.ValueType & Double] = js.native
+    
+    /* 1 */ val DOUBLE: typings.opentelemetryApi.buildSrcMetricsMetricMod.ValueType.DOUBLE & Double = js.native
+    
+    /* 0 */ val INT: typings.opentelemetryApi.buildSrcMetricsMetricMod.ValueType.INT & Double = js.native
+  }
+  
   inline def baggageEntryMetadataFromString(str: String): BaggageEntryMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("baggageEntryMetadataFromString")(str.asInstanceOf[js.Any]).asInstanceOf[BaggageEntryMetadata]
   
   @JSImport("@opentelemetry/api", "context")
@@ -257,6 +276,8 @@ object mod {
   val context: typings.opentelemetryApi.buildSrcApiContextMod.ContextAPI = js.native
   
   inline def createContextKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createContextKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
+  
+  inline def createNoopMeter(): Meter = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoopMeter")().asInstanceOf[Meter]
   
   inline def createTraceState(): TraceState = ^.asInstanceOf[js.Dynamic].applyDynamic("createTraceState")().asInstanceOf[TraceState]
   inline def createTraceState(rawTraceState: String): TraceState = ^.asInstanceOf[js.Dynamic].applyDynamic("createTraceState")(rawTraceState.asInstanceOf[js.Any]).asInstanceOf[TraceState]
@@ -278,6 +299,10 @@ object mod {
   inline def isValidSpanId(spanId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidSpanId")(spanId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidTraceId(traceId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTraceId")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("@opentelemetry/api", "metrics")
+  @js.native
+  val metrics: MetricsAPI = js.native
   
   @JSImport("@opentelemetry/api", "propagation")
   @js.native

@@ -25,15 +25,8 @@ trait ReferenceType extends StObject {
 }
 object ReferenceType {
   
-  inline def apply(
-    _package: ToSerialized[js.UndefOr[String]],
-    externalUrl: ToSerialized[js.UndefOr[String]],
-    name: ToSerialized[String],
-    `type`: ToSerialized[/* "reference" */ String],
-    typeArguments: ToSerialized[js.UndefOr[js.Array[typings.typedoc.distLibModelsTypesMod.SomeType]]]
-  ): ReferenceType = {
-    val __obj = js.Dynamic.literal(externalUrl = externalUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeArguments = typeArguments.asInstanceOf[js.Any])
-    __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
+  inline def apply(name: ToSerialized[String], `type`: ToSerialized[/* "reference" */ String]): ReferenceType = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceType]
   }
@@ -41,6 +34,8 @@ object ReferenceType {
   extension [Self <: ReferenceType](x: Self) {
     
     inline def setExternalUrl(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "externalUrl", value.asInstanceOf[js.Any])
+    
+    inline def setExternalUrlUndefined: Self = StObject.set(x, "externalUrl", js.undefined)
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -56,6 +51,12 @@ object ReferenceType {
     
     inline def setTypeArguments(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.distLibModelsTypesMod.SomeType]]]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
+    inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
+    
+    inline def setTypeArgumentsVarargs(value: typings.typedoc.distLibModelsTypesMod.SomeType*): Self = StObject.set(x, "typeArguments", js.Array(value*))
+    
     inline def set_package(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

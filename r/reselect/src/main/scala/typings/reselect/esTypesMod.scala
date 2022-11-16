@@ -3,6 +3,7 @@ package typings.reselect
 import org.scalablytyped.runtime.StringDictionary
 import typings.reselect.anon.Length
 import typings.reselect.anon.ToStringTag
+import typings.reselect.reselectInts.`1`
 import typings.std.Generator
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     A extends any ? {[ K in keyof A ]: K}[number] : never
     }}}
@@ -51,7 +52,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [unknown, ...infer U] ? U : never
     }}}
@@ -63,7 +64,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends (args : infer A): infer R ? (args : reselect.reselect/es/types.Expand<A>): reselect.reselect/es/types.Expand<R> : T extends infer O ? {[ K in keyof O ]: O[K]} : never
     }}}
@@ -73,13 +74,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends (args : infer A): infer R ? (args : reselect.reselect/es/types.ExpandRecursively<A>): reselect.reselect/es/types.ExpandRecursively<R> : T extends object ? T extends infer O ? {[ K in keyof O ]: reselect.reselect/es/types.ExpandRecursively<O[K]>} : never : T
     }}}
     */
-  @js.native
-  trait ExpandRecursively[T] extends StObject
+  type ExpandRecursively[T] = T
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -97,17 +97,16 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [U1] extends [U] ? 1 : 0
     }}}
     */
-  @js.native
-  trait Has[U, U1] extends StObject
+  type Has[U, U1] = `1`
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     T extends [any, ...std.Array<any>] ? T[0] : never
     }}}
@@ -119,13 +118,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     B extends 1 ? Then : Else
     }}}
     */
-  @js.native
-  trait If2[B /* <: Boolean2 */, Then, Else] extends StObject
+  type If2[B /* <: Boolean2 */, Then, Else] = Then
   
   type InstanceOf[V, T] = And[Matches[V, T], Not[Matches[T, V]]]
   
@@ -143,7 +141,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     reselect.reselect/es/types.UnionToIntersection<T extends any ? (): T : never> extends (): infer R ? R : never
     }}}
@@ -159,13 +157,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     V extends T ? '1' : '0'
     }}}
     */
-  @js.native
-  trait Matches[V, T] extends StObject
+  type Matches[V, T] = typings.reselect.reselectStrings.`1`
   
   type Not[T /* <: Bool */] = /* import warning: importer.ImportType#apply Failed type conversion: reselect.anon.0[T] */ js.Any
   
@@ -173,13 +170,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     KS extends [infer K, ...infer KT] ? reselect.reselect/es/types.ObjValueTuple<T, KT, [...R, T[K & keyof T]]> : R
     }}}
     */
-  @js.native
-  trait ObjValueTuple[T, KS /* <: js.Array[Any] */, R /* <: js.Array[Any] */] extends StObject
+  type ObjValueTuple[T, KS /* <: js.Array[Any] */, R /* <: js.Array[Any] */] = R
   
   type OutputParametricSelector[State, Props, Result, Combiner /* <: UnknownFunction */] = (ParametricSelector[State, Props, Result]) & OutputSelectorFields[Combiner]
   
@@ -251,13 +247,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [Params] extends [never] ? (state : State): Result : (state : State, params : Params): Result
     }}}
     */
-  @js.native
-  trait Selector[State, Result, Params /* <: scala.Nothing | js.Array[Any] */] extends StObject
+  type Selector[State, Result, Params /* <: scala.Nothing | js.Array[Any] */] = js.Function1[/* state */ State, Result]
   
   type SelectorArray = js.Array[Selector[Any, Any, js.Array[Any]]]
   
@@ -265,7 +260,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     A extends [any, ...infer Rest] ? Rest : never
     }}}
@@ -275,17 +270,16 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     true extends N ? [] : reselect.reselect/es/types.Push<reselect.reselect/es/types.TuplifyUnion<std.Exclude<T, L>, reselect.reselect/es/types.LastOf<std.Exclude<T, L>>, [std.Exclude<T, L>] extends [never] ? true : false>, L>
     }}}
     */
-  @js.native
-  trait TuplifyUnion[T, L, N] extends StObject
+  type TuplifyUnion[T, L, N] = js.Array[Any]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     Union extends unknown ? (distributedUnion : Union): void : never extends (mergedIntersection : infer Intersection): void ? Intersection : never
     }}}

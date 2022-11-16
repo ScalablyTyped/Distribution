@@ -12,6 +12,11 @@ trait WorkspaceDirectory extends StObject {
   var Alias: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.Alias] = js.undefined
   
   /**
+    * The certificate-based authentication properties used to authenticate SAML 2.0 Identity Provider (IdP) user identities to Active Directory for WorkSpaces login.
+    */
+  var CertificateBasedAuthProperties: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.CertificateBasedAuthProperties] = js.undefined
+  
+  /**
     * The user name for the service account.
     */
   var CustomerUserName: js.UndefOr[UserName] = js.undefined
@@ -103,6 +108,10 @@ object WorkspaceDirectory {
     inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
+    
+    inline def setCertificateBasedAuthProperties(value: CertificateBasedAuthProperties): Self = StObject.set(x, "CertificateBasedAuthProperties", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateBasedAuthPropertiesUndefined: Self = StObject.set(x, "CertificateBasedAuthProperties", js.undefined)
     
     inline def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
     

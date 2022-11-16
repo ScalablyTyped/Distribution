@@ -106,28 +106,26 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] | [0] ? std.Record<string, ref-union-di.ref-union-di.Field<any>> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-union-di.ref-union-di.Field<ref-napi.ref-napi.UnderlyingType<T[P]>>}
     }}}
     */
-  @js.native
-  trait UnionFields[T /* <: UnionTypeDefinitionBase */] extends StObject
+  type UnionFields[T /* <: UnionTypeDefinitionBase */] = Record[String, Field[Any]]
   
   /**
     * Converts a {@link UnionTypeDefinitionBase} into a union of possible inputs, allowing only a single key/value of the union.
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof ref-union-di.ref-union-di.UnionObjectProperties<T> ]: std.Pick<ref-union-di.ref-union-di.UnionObjectProperties<T>, P> & std.Partial<std.Record<std.Exclude<keyof ref-union-di.ref-union-di.UnionObjectProperties<T>, P>, never>>}[keyof ref-union-di.ref-union-di.UnionObjectProperties<T>]
     }}}
     */
-  @js.native
-  trait UnionInput[T /* <: UnionTypeDefinitionBase */] extends StObject
+  type UnionInput[T /* <: UnionTypeDefinitionBase */] = Record[String, Any]
   
   /**
     * Represents the instance type of a union type.
@@ -162,14 +160,13 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.UnderlyingType<T[P]>}
     }}}
     */
-  @js.native
-  trait UnionObjectProperties[T /* <: UnionTypeDefinitionBase */] extends StObject
+  type UnionObjectProperties[T /* <: UnionTypeDefinitionBase */] = Record[String, Any]
   
   /**
     * This is the `constructor` of the union type that gets returned.
@@ -237,7 +234,7 @@ object mod {
     */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<T[P]>>}

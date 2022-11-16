@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fernet"
-version := "0.4-dt-20221031Z-e88b35"
+version := "0.4-dt-20221031Z-98e61d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "crypto-js" % "4.1-dt-20220818Z-d6f1d3",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "crypto-js" % "4.1-dt-20220818Z-b742dc",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

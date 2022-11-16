@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_pagespeedonline"
-version := "5.0-dt-20220912Z-b41fe0"
+version := "5.0-dt-20220912Z-1f3d0f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

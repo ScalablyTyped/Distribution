@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.move
 import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchViewModelUpdateUpdateOptions
-  extends StObject
-     with Object {
+trait SketchViewModelUpdateUpdateOptions extends StObject {
   
   /**
     * Indicates if the `rotation` operation will be enabled when updating graphics.
@@ -74,12 +70,8 @@ trait SketchViewModelUpdateUpdateOptions
 }
 object SketchViewModelUpdateUpdateOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SketchViewModelUpdateUpdateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): SketchViewModelUpdateUpdateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchViewModelUpdateUpdateOptions]
   }
   

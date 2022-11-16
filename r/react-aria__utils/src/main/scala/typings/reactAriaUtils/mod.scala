@@ -17,6 +17,7 @@ import typings.reactAriaUtils.reactAriaUtilsStrings.animationstart
 import typings.reactAriaUtils.reactAriaUtilsStrings.auxclick
 import typings.reactAriaUtils.reactAriaUtilsStrings.beforeinput
 import typings.reactAriaUtils.reactAriaUtilsStrings.blur
+import typings.reactAriaUtils.reactAriaUtilsStrings.cancel
 import typings.reactAriaUtils.reactAriaUtilsStrings.canplay
 import typings.reactAriaUtils.reactAriaUtilsStrings.canplaythrough
 import typings.reactAriaUtils.reactAriaUtilsStrings.change
@@ -352,6 +353,24 @@ object mod {
     ref: RefObject[EventTarget],
     event: blur,
     handler: js.ThisFunction1[/* this */ Document, /* ev */ FocusEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEvent_cancel(
+    ref: RefObject[EventTarget],
+    event: cancel,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_cancel(
+    ref: RefObject[EventTarget],
+    event: cancel,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEvent_cancel(
+    ref: RefObject[EventTarget],
+    event: cancel,
+    handler: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEvent")(ref.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2158,6 +2177,26 @@ object mod {
       el: EventTarget,
       `type`: blur,
       listener: js.ThisFunction1[/* this */ Document, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addGlobalListener")
+    def addGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("addGlobalListener")
+    def addGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addGlobalListener")
+    def addGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addGlobalListener")
@@ -4269,6 +4308,26 @@ object mod {
       el: EventTarget,
       `type`: blur,
       listener: js.ThisFunction1[/* this */ Document, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    @JSName("removeGlobalListener")
+    def removeGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any]
+    ): Unit = js.native
+    @JSName("removeGlobalListener")
+    def removeGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeGlobalListener")
+    def removeGlobalListener_cancel(
+      el: EventTarget,
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ Document, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     @JSName("removeGlobalListener")

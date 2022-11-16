@@ -75,11 +75,27 @@ object distTypesMod {
   */
   type BufferLike = _BufferLike | js.Array[Double] | Buffer | js.typedarray.Uint8Array | Double | PrefixedHexString
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedBufferArray = std.Array<node.buffer.<global>.Buffer | ethereumjs-util.ethereumjs-util/dist/types.NestedBufferArray>
+  }}}
+  to avoid circular code involving: 
+  - ethereumjs-util.ethereumjs-util/dist/types.NestedBufferArray
+  */
   @js.native
   trait NestedBufferArray
     extends StObject
        with Array[Buffer | NestedBufferArray]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedUint8Array = std.Array<std.Uint8Array | ethereumjs-util.ethereumjs-util/dist/types.NestedUint8Array>
+  }}}
+  to avoid circular code involving: 
+  - ethereumjs-util.ethereumjs-util/dist/types.NestedUint8Array
+  */
   @js.native
   trait NestedUint8Array
     extends StObject

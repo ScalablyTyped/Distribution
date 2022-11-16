@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bcp-47-match" : "2.0.2"
+      "bcp-47-match" : "2.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "bcp-47-match" : "2.0.2"
+      "bcp-47-match" : "2.0.3"
     }
   ],
   "compile-devDependencies" : [

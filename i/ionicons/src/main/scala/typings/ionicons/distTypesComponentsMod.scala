@@ -63,6 +63,10 @@ object distTypesComponentsMod {
       
       /* standard dom */
       /* CompleteClass */
+      var ariaColIndexText: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
       var ariaColSpan: String | Null = js.native
       
       /* standard dom */
@@ -84,6 +88,10 @@ object distTypesComponentsMod {
       /* standard dom */
       /* CompleteClass */
       var ariaHidden: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaInvalid: String | Null = js.native
       
       /* standard dom */
       /* CompleteClass */
@@ -148,6 +156,10 @@ object distTypesComponentsMod {
       /* standard dom */
       /* CompleteClass */
       var ariaRowIndex: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRowIndexText: String | Null = js.native
       
       /* standard dom */
       /* CompleteClass */
@@ -233,6 +245,10 @@ object distTypesComponentsMod {
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var role: String | Null = js.native
       
       /**
         * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.

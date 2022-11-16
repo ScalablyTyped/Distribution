@@ -2,15 +2,12 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`case-expression`
 import typings.arcgisJsApi.arcgisJsApiStrings.searched
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SearchedCaseNode
   extends StObject
-     with Object
      with SQLNode {
   
   /**
@@ -38,14 +35,8 @@ trait SearchedCaseNode
 }
 object SearchedCaseNode {
   
-  inline def apply(
-    clauses: js.Array[WhenNode],
-    constructor: js.Function,
-    `else`: SQLNode,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): SearchedCaseNode = {
-    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], format = "searched", hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(clauses: js.Array[WhenNode], `else`: SQLNode): SearchedCaseNode = {
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], format = "searched")
     __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("case-expression")
     __obj.asInstanceOf[SearchedCaseNode]

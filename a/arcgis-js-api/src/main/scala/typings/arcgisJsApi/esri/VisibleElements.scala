@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisibleElements
-  extends StObject
-     with Object {
+trait VisibleElements extends StObject {
   
   /**
     * Indicates whether to the base layers will be displayed.
@@ -16,6 +12,13 @@ trait VisibleElements
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#VisibleElements)
     */
   var baseLayers: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * _Since 4.25_ Indicates whether layer load errors will be displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#VisibleElements)
+    */
+  var errors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to the reference layers will be displayed.
@@ -33,12 +36,8 @@ trait VisibleElements
 }
 object VisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): VisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): VisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisibleElements]
   }
   
@@ -47,6 +46,10 @@ object VisibleElements {
     inline def setBaseLayers(value: Boolean): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     
     inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
+    
+    inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     inline def setReferenceLayers(value: Boolean): Self = StObject.set(x, "referenceLayers", value.asInstanceOf[js.Any])
     

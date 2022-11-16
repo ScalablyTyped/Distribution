@@ -9,43 +9,39 @@ object sourceNumericMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/numeric.PositiveInfinity | type-fest.type-fest/source/numeric.NegativeInfinity ? never : T
     }}}
     */
-  @js.native
-  trait Finite[T /* <: Double */] extends StObject
+  type Finite[T /* <: Double */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/numeric.Integer<T> ? never : T
     }}}
     */
-  @js.native
-  trait Float[T /* <: Double */] extends StObject
+  type Float[T /* <: Double */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     / * template literal string: ${T} * / string extends / * template literal string: ${bigint} * / string ? T : never
     }}}
     */
-  @js.native
-  trait Integer[T /* <: Double */] extends StObject
+  type Integer[T /* <: Double */] = T
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/numeric.Zero ? never : / * template literal string: ${T} * / string extends / * template literal string: -${string} * / string ? T : never
     }}}
     */
-  @js.native
-  trait Negative[T /* <: Numeric */] extends StObject
+  type Negative[T /* <: Numeric */] = T
   
   type NegativeFloat[T /* <: Double */] = Negative[Float[T]]
   
@@ -55,13 +51,12 @@ object sourceNumericMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends type-fest.type-fest/source/numeric.Zero ? T : type-fest.type-fest/source/numeric.Negative<T> extends never ? T : never
     }}}
     */
-  @js.native
-  trait NonNegative[T /* <: Numeric */] extends StObject
+  type NonNegative[T /* <: Numeric */] = T
   
   type NonNegativeInteger[T /* <: Double */] = NonNegative[Integer[T]]
   

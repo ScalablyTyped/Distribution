@@ -38,16 +38,6 @@ trait SearchViewModelProperties
   var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The default [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
-    *
-    * @default PictureMarkerSymbol
-    * @deprecated since version 4.22. Use [defaultSymbols](#defaultSymbols) instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSymbol)
-    */
-  var defaultSymbol: js.UndefOr[SymbolProperties] = js.undefined
-  
-  /**
     * The default [symbol(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSymbols)
@@ -212,10 +202,6 @@ object SearchViewModelProperties {
     inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     
     inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
-    
-    inline def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
     inline def setDefaultSymbols(value: SearchViewModelDefaultSymbols): Self = StObject.set(x, "defaultSymbols", value.asInstanceOf[js.Any])
     

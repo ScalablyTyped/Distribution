@@ -1,9 +1,7 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.ArcGISMapService
 import typings.arcgisJsApi.esri.ArcGISMapServiceCapabilities
-import typings.arcgisJsApi.esri.ArcGISMapServiceConstructor
 import typings.arcgisJsApi.esri.ArcGISMapServiceProperties
 import typings.arcgisJsApi.esri.Extent
 import typings.arcgisJsApi.esri.SpatialReference
@@ -11,16 +9,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersMixinsArcGISMapServiceMod extends Shortcut {
+/* static members */
+object esriLayersMixinsArcGISMapServiceMod {
   
   @JSImport("esri/layers/mixins/ArcGISMapService", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & ArcGISMapServiceConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/layers/mixins/ArcGISMapService", JSImport.Namespace)
-  @js.native
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ArcGISMapService {
     def this(properties: ArcGISMapServiceProperties) = this()
@@ -75,9 +69,9 @@ object esriLayersMixinsArcGISMapServiceMod extends Shortcut {
     /* CompleteClass */
     override val version: Double = js.native
   }
+  @JSImport("esri/layers/mixins/ArcGISMapService", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ArcGISMapServiceConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersMixinsArcGISMapServiceMod.foo` */
-  override def _to: js.Object & ArcGISMapServiceConstructor = ^
+  inline def fromJSON(json: Any): ArcGISMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ArcGISMapService]
 }

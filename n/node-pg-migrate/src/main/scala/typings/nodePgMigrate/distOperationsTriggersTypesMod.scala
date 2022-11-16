@@ -27,6 +27,17 @@ object distOperationsTriggersTypesMod {
     String | js.Array[String]
   ]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CreateTriggerFn2 = (tableName : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Name, triggerName : string, triggerOptions : node-pg-migrate.node-pg-migrate/dist/operations/triggersTypes.TriggerOptions & node-pg-migrate.node-pg-migrate/dist/operations/functionsTypes.FunctionOptions & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions, definition : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value): string | std.Array<string>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  - node-pg-migrate.node-pg-migrate/dist/operations/triggersTypes.CreateTrigger
+  - node-pg-migrate.node-pg-migrate/dist/operations/triggersTypes.CreateTriggerFn
+  - node-pg-migrate.node-pg-migrate/dist/operations/triggersTypes.CreateTriggerFn2
+  */
   @js.native
   trait CreateTriggerFn2 extends StObject {
     

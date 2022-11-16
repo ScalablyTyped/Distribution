@@ -8,15 +8,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.gars
 import typings.arcgisJsApi.arcgisJsApiStrings.mrgs
 import typings.arcgisJsApi.arcgisJsApiStrings.usng
 import typings.arcgisJsApi.arcgisJsApiStrings.utm
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait geometryServiceFromGeoCoordinateStringParams
-  extends StObject
-     with Object {
+trait geometryServiceFromGeoCoordinateStringParams extends StObject {
   
   /**
     * Conversion options for mrgs, utm and gars conversion types.
@@ -50,14 +46,8 @@ trait geometryServiceFromGeoCoordinateStringParams
 }
 object geometryServiceFromGeoCoordinateStringParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    sr: SpatialReference | String | Double,
-    strings: js.Array[String]
-  ): geometryServiceFromGeoCoordinateStringParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
+  inline def apply(sr: SpatialReference | String | Double, strings: js.Array[String]): geometryServiceFromGeoCoordinateStringParams = {
+    val __obj = js.Dynamic.literal(sr = sr.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[geometryServiceFromGeoCoordinateStringParams]
   }
   

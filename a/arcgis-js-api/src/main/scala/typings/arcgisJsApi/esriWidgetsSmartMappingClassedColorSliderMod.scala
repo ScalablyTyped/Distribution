@@ -1,20 +1,16 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
+import typings.arcgisJsApi.esri.ClassBreaksRendererResult
 import typings.arcgisJsApi.esri.ClassedColorSlider
-import typings.arcgisJsApi.esri.ClassedColorSliderConstructor
 import typings.arcgisJsApi.esri.ClassedColorSliderProperties
+import typings.arcgisJsApi.esri.HistogramResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsSmartMappingClassedColorSliderMod extends Shortcut {
+/* static members */
+object esriWidgetsSmartMappingClassedColorSliderMod {
   
-  @JSImport("esri/widgets/smartMapping/ClassedColorSlider", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & ClassedColorSliderConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/smartMapping/ClassedColorSlider", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +18,20 @@ object esriWidgetsSmartMappingClassedColorSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with ClassedColorSlider {
     def this(properties: ClassedColorSliderProperties) = this()
   }
+  @JSImport("esri/widgets/smartMapping/ClassedColorSlider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & ClassedColorSliderConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsSmartMappingClassedColorSliderMod.foo` */
-  override def _to: js.Object & ClassedColorSliderConstructor = ^
+  /**
+    * A convenience function used to create a ClassedColorSlider widget from the result of the [createClassBreaksRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer) method.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html#fromRendererResult)
+    */
+  inline def fromRendererResult(rendererResult: ClassBreaksRendererResult): ClassedColorSlider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any]).asInstanceOf[ClassedColorSlider]
+  inline def fromRendererResult(rendererResult: ClassBreaksRendererResult, histogramResult: HistogramResult): ClassedColorSlider = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRendererResult")(rendererResult.asInstanceOf[js.Any], histogramResult.asInstanceOf[js.Any])).asInstanceOf[ClassedColorSlider]
 }

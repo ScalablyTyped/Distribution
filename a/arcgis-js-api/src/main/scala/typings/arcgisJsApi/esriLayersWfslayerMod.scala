@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -34,22 +33,21 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.FeatureEffect
+import typings.arcgisJsApi.esri.FeatureReductionBinning
+import typings.arcgisJsApi.esri.FeatureReductionCluster
+import typings.arcgisJsApi.esri.FeatureReductionSelection
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PortalItem
 import typings.arcgisJsApi.esri.WFSLayer
-import typings.arcgisJsApi.esri.WFSLayerConstructor
+import typings.arcgisJsApi.esri.WFSLayerInfo
 import typings.arcgisJsApi.esri.WFSLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersWfslayerMod extends Shortcut {
+/* static members */
+object esriLayersWfslayerMod {
   
-  @JSImport("esri/layers/WFSLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & WFSLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/WFSLayer", JSImport.Namespace)
   @js.native
   /**
@@ -57,7 +55,7 @@ object esriLayersWfslayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with WFSLayer {
     def this(properties: WFSLayerProperties) = this()
@@ -89,6 +87,14 @@ object esriLayersWfslayerMod extends Shortcut {
       */
     /* CompleteClass */
     var featureEffect: FeatureEffect = js.native
+    
+    /**
+      * Configures the method for reducing the number of point features in the view.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+      */
+    /* CompleteClass */
+    var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
     
     /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
@@ -146,9 +152,16 @@ object esriLayersWfslayerMod extends Shortcut {
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }
+  @JSImport("esri/layers/WFSLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & WFSLayerConstructor
+  inline def fromJSON(json: Any): WFSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WFSLayer]
   
-  /* This means you don't have to write `^`, but can instead just say `esriLayersWfslayerMod.foo` */
-  override def _to: js.Object & WFSLayerConstructor = ^
+  /**
+    * Creates a WFSLayer from an object created by [wfsUtils.getWFSLayerInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getWFSLayerInfo).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#fromWFSLayerInfo)
+    */
+  inline def fromWFSLayerInfo(layerInfo: WFSLayerInfo): WFSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWFSLayerInfo")(layerInfo.asInstanceOf[js.Any]).asInstanceOf[WFSLayer]
 }

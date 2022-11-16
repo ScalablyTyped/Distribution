@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GPMessageConstructor
   extends StObject
-     with /**
-  * Represents a message generated during the execution of a module:esri/rest/Geoprocessor method.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html)
-  */
-Instantiable0[GPMessage]
+     with Instantiable0[GPMessage]
      with Instantiable1[/* properties */ GPMessageProperties, GPMessage] {
   
   def fromJSON(json: Any): GPMessage = js.native

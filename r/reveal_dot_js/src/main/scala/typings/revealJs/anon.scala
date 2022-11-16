@@ -9,6 +9,7 @@ import typings.revealJs.revealJsStrings.animationstart
 import typings.revealJs.revealJsStrings.auxclick
 import typings.revealJs.revealJsStrings.beforeinput
 import typings.revealJs.revealJsStrings.blur
+import typings.revealJs.revealJsStrings.cancel
 import typings.revealJs.revealJsStrings.canplay
 import typings.revealJs.revealJsStrings.canplaythrough
 import typings.revealJs.revealJsStrings.change
@@ -428,6 +429,17 @@ object anon {
     def apply(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
@@ -1648,6 +1660,17 @@ object anon {
     def apply(
       `type`: blur,
       listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      `type`: cancel,
+      listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native

@@ -34,5 +34,5 @@ trait GroupElement
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#type)
     */
   @JSName("type")
-  val type_GroupElement: group = js.native
+  var type_GroupElement: group = js.native
 }

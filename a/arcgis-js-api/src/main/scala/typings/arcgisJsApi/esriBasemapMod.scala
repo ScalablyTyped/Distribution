@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Basemap
-import typings.arcgisJsApi.esri.BasemapConstructor
 import typings.arcgisJsApi.esri.BasemapProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriBasemapMod extends Shortcut {
+/* static members */
+object esriBasemapMod {
   
-  @JSImport("esri/Basemap", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BasemapConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/Basemap", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriBasemapMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Basemap {
     def this(properties: BasemapProperties) = this()
@@ -35,9 +29,16 @@ object esriBasemapMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/Basemap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & BasemapConstructor
+  /**
+    * Creates a new basemap instance from a [well known basemap ID](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#fromId)
+    */
+  inline def fromId(id: String): Basemap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[Basemap]
   
-  /* This means you don't have to write `^`, but can instead just say `esriBasemapMod.foo` */
-  override def _to: js.Object & BasemapConstructor = ^
+  inline def fromJSON(json: Any): Basemap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Basemap]
 }

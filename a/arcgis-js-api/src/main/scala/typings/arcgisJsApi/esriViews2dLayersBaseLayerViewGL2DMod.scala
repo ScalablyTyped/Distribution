@@ -1,20 +1,13 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.BaseLayerViewGL2D
-import typings.arcgisJsApi.esri.BaseLayerViewGL2DConstructor
 import typings.arcgisJsApi.esri.BaseLayerViewGL2DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriViews2dLayersBaseLayerViewGL2DMod extends Shortcut {
+object esriViews2dLayersBaseLayerViewGL2DMod {
   
-  @JSImport("esri/views/2d/layers/BaseLayerViewGL2D", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & BaseLayerViewGL2DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/2d/layers/BaseLayerViewGL2D", JSImport.Namespace)
   @js.native
   /**
@@ -22,14 +15,9 @@ object esriViews2dLayersBaseLayerViewGL2DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with BaseLayerViewGL2D {
     def this(properties: BaseLayerViewGL2DProperties) = this()
   }
-  
-  type _To = js.Object & BaseLayerViewGL2DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriViews2dLayersBaseLayerViewGL2DMod.foo` */
-  override def _to: js.Object & BaseLayerViewGL2DConstructor = ^
 }

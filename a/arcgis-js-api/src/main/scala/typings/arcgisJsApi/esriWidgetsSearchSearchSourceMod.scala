@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.SearchSource
-import typings.arcgisJsApi.esri.SearchSourceConstructor
 import typings.arcgisJsApi.esri.SearchSourceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriWidgetsSearchSearchSourceMod extends Shortcut {
+/* static members */
+object esriWidgetsSearchSearchSourceMod {
   
-  @JSImport("esri/widgets/Search/SearchSource", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & SearchSourceConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Search/SearchSource", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriWidgetsSearchSearchSourceMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with SearchSource {
     def this(properties: SearchSourceProperties) = this()
@@ -35,9 +29,9 @@ object esriWidgetsSearchSearchSourceMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/widgets/Search/SearchSource", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & SearchSourceConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriWidgetsSearchSearchSourceMod.foo` */
-  override def _to: js.Object & SearchSourceConstructor = ^
+  inline def fromJSON(json: Any): SearchSource = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[SearchSource]
 }

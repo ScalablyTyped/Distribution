@@ -1,14 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CIMGeometricEffectScale
   extends StObject
-     with Object
      with CIMGeometricEffect {
   
   /**
@@ -36,14 +33,8 @@ trait CIMGeometricEffectScale
 }
 object CIMGeometricEffectScale {
   
-  inline def apply(
-    XScaleFactor: Double,
-    YScaleFactor: Double,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): CIMGeometricEffectScale = {
-    val __obj = js.Dynamic.literal(XScaleFactor = XScaleFactor.asInstanceOf[js.Any], YScaleFactor = YScaleFactor.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(XScaleFactor: Double, YScaleFactor: Double): CIMGeometricEffectScale = {
+    val __obj = js.Dynamic.literal(XScaleFactor = XScaleFactor.asInstanceOf[js.Any], YScaleFactor = YScaleFactor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectScale")
     __obj.asInstanceOf[CIMGeometricEffectScale]
   }

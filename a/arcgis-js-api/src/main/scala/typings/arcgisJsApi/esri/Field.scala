@@ -52,7 +52,7 @@ trait Field
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: Double | String | Any = js.native
+  var defaultValue: js.UndefOr[Double | String | Null] = js.native
   
   /**
     * Contains information describing the purpose of each field.

@@ -32,12 +32,17 @@ trait CreateDeploymentRequest extends StObject {
   var iotJobConfiguration: js.UndefOr[DeploymentIoTJobConfiguration] = js.undefined
   
   /**
+    * The parent deployment's target ARN within a subdeployment.
+    */
+  var parentTargetArn: js.UndefOr[ThingGroupARN] = js.undefined
+  
+  /**
     * A list of key-value pairs that contain metadata for the resource. For more information, see Tag your resources in the IoT Greengrass V2 Developer Guide.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The ARN of the target IoT thing or thing group.
+    * The ARN of the target IoT thing or thing group. When creating a subdeployment, the targetARN can only be a thing group.
     */
   var targetArn: TargetARN
 }
@@ -69,6 +74,10 @@ object CreateDeploymentRequest {
     inline def setIotJobConfiguration(value: DeploymentIoTJobConfiguration): Self = StObject.set(x, "iotJobConfiguration", value.asInstanceOf[js.Any])
     
     inline def setIotJobConfigurationUndefined: Self = StObject.set(x, "iotJobConfiguration", js.undefined)
+    
+    inline def setParentTargetArn(value: ThingGroupARN): Self = StObject.set(x, "parentTargetArn", value.asInstanceOf[js.Any])
+    
+    inline def setParentTargetArnUndefined: Self = StObject.set(x, "parentTargetArn", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

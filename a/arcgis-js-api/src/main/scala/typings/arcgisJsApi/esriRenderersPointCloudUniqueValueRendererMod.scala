@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer
-import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersPointCloudUniqueValueRendererMod extends Shortcut {
+/* static members */
+object esriRenderersPointCloudUniqueValueRendererMod {
   
-  @JSImport("esri/renderers/PointCloudUniqueValueRenderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & PointCloudUniqueValueRendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudUniqueValueRenderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersPointCloudUniqueValueRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with PointCloudUniqueValueRenderer {
     def this(properties: PointCloudUniqueValueRendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersPointCloudUniqueValueRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/PointCloudUniqueValueRenderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & PointCloudUniqueValueRendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersPointCloudUniqueValueRendererMod.foo` */
-  override def _to: js.Object & PointCloudUniqueValueRendererConstructor = ^
+  inline def fromJSON(json: Any): PointCloudUniqueValueRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[PointCloudUniqueValueRenderer]
 }

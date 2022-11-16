@@ -1431,4 +1431,12 @@ type ModelDirective[T] = ObjectDirective[T & Assign, Any]
 
 type Numberish = Double | String
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type StyleValue = string | @vue/runtime-dom.@vue/runtime-dom.CSSProperties | std.Array<@vue/runtime-dom.@vue/runtime-dom.StyleValue>
+}}}
+to avoid circular code involving: 
+- @vue/runtime-dom.@vue/runtime-dom.StyleValue
+*/
 type StyleValue = String | CSSProperties | js.Array[Any]

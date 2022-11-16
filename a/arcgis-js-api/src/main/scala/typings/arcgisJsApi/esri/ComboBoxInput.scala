@@ -22,7 +22,7 @@ trait ComboBoxInput
   /**
     * Determines whether a null value option is displayed.
     *
-    * @default false
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#showNoValueOption)
     */

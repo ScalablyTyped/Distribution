@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ElementConstructor
   extends StObject
-     with /**
-  * Form elements define what should display within the [FormTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) elements.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-Element.html)
-  */
-Instantiable0[Element]
+     with Instantiable0[Element]
      with Instantiable1[/* properties */ ElementProperties, Element] {
   
   def fromJSON(json: Any): Element = js.native

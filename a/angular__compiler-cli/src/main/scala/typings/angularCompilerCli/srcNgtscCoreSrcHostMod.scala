@@ -207,7 +207,7 @@ object srcNgtscCoreSrcHostMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ M in keyof std.Required<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/interfaces.ExtendedTsCompilerHost> ]: @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/interfaces.ExtendedTsCompilerHost[M]} */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.NgCompilerAdapter because var conflicts: directoryExists, getCurrentDirectory, getDirectories, getModifiedResourceFiles, readResource, realpath, resolveModuleNames, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames. Inlined entryPoint, constructionDiagnostics, ignoreForEmit, factoryTracker, unifiedModulesHost, rootDirs, readFile_Original, fileExists_Original, getCanonicalFileName_Original, isShim, isResource
-  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, fileNameToModuleName, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModifiedResourceFiles, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, readDirectory, readResource, realpath, resolveModuleNames, resolveTypeReferenceDirectives, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames, writeFile_Original. Inlined getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, fileExists */ @JSImport("@angular/compiler-cli/src/ngtsc/core/src/host", "NgCompilerHost")
+  - typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ExtendedTsCompilerHost because var conflicts: createHash, directoryExists, fileNameToModuleName, getCancellationToken, getCurrentDirectory, getDefaultLibLocation, getDirectories, getEnvironmentVariable, getModifiedResourceFiles, getModuleResolutionCache, getParsedCommandLine, getSourceFileByPath, readDirectory, readResource, realpath, resolveModuleNames, resolveTypeReferenceDirectives, resourceNameToFileName, trace, transformResource, useCaseSensitiveFileNames, writeFile_Original. Inlined hasInvalidatedResolutions, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, getSourceFile, fileExists */ @JSImport("@angular/compiler-cli/src/ngtsc/core/src/host", "NgCompilerHost")
   @js.native
   open class NgCompilerHost protected () extends DelegatingCompilerHost {
     def this(
@@ -293,6 +293,9 @@ object srcNgtscCoreSrcHostMod {
       shouldCreateNewSourceFile: Boolean
     ): js.UndefOr[SourceFile] = js.native
     def getSourceFile(fileName: String, languageVersion: ScriptTarget, onError: Unit, shouldCreateNewSourceFile: Boolean): js.UndefOr[SourceFile] = js.native
+    
+    /** If provided along with custom resolveModuleNames or resolveTypeReferenceDirectives, used to determine if unchanged file path needs to re-resolve modules/type reference directives */
+    var hasInvalidatedResolutions: js.UndefOr[js.Function1[/* filePath */ Path, Boolean]] = js.native
     
     /**
       * Retrieves a set of `ts.SourceFile`s which should not be emitted as JS files.

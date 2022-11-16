@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PolygonBarrierConstructor
   extends StObject
-     with /**
-  * A polygon barrier to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html)
-  */
-Instantiable0[PolygonBarrier]
+     with Instantiable0[PolygonBarrier]
      with Instantiable1[/* properties */ PolygonBarrierProperties, PolygonBarrier] {
   
   /**

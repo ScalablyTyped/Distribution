@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel__helper-validator-identifier"
-version := "7.15-dt-20220121Z-5507f4"
+version := "7.15-dt-20220121Z-a75560"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

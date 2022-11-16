@@ -1,18 +1,11 @@
 package typings.arcgisJsApi.global.esri
 
-import typings.arcgisJsApi.esri.ClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.ClassBreaksRendererProperties
-import typings.arcgisJsApi.esri.DictionaryRendererConstructor
 import typings.arcgisJsApi.esri.DictionaryRendererProperties
-import typings.arcgisJsApi.esri.DotDensityRendererConstructor
 import typings.arcgisJsApi.esri.DotDensityRendererProperties
-import typings.arcgisJsApi.esri.HeatmapRendererConstructor
 import typings.arcgisJsApi.esri.HeatmapRendererProperties
-import typings.arcgisJsApi.esri.PieChartRendererConstructor
 import typings.arcgisJsApi.esri.PieChartRendererProperties
-import typings.arcgisJsApi.esri.SimpleRendererConstructor
 import typings.arcgisJsApi.esri.SimpleRendererProperties
-import typings.arcgisJsApi.esri.UniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.UniqueValueRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,9 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object renderers {
   
-  @JSGlobal("__esri.renderers.ClassBreaksRenderer")
-  @js.native
-  val ClassBreaksRenderer: ClassBreaksRendererConstructor = js.native
+  object ClassBreaksRenderer {
+    
+    @JSGlobal("__esri.renderers.ClassBreaksRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.ClassBreaksRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.ClassBreaksRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.ClassBreaksRenderer")
@@ -59,9 +57,14 @@ object renderers {
     var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
   }
   
-  @JSGlobal("__esri.renderers.DictionaryRenderer")
-  @js.native
-  val DictionaryRenderer: DictionaryRendererConstructor = js.native
+  object DictionaryRenderer {
+    
+    @JSGlobal("__esri.renderers.DictionaryRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.DictionaryRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.DictionaryRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.DictionaryRenderer")
@@ -93,9 +96,14 @@ object renderers {
     var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
   }
   
-  @JSGlobal("__esri.renderers.DotDensityRenderer")
-  @js.native
-  val DotDensityRenderer: DotDensityRendererConstructor = js.native
+  object DotDensityRenderer {
+    
+    @JSGlobal("__esri.renderers.DotDensityRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.DotDensityRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.DotDensityRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.DotDensityRenderer")
@@ -119,9 +127,14 @@ object renderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.renderers.HeatmapRenderer")
-  @js.native
-  val HeatmapRenderer: HeatmapRendererConstructor = js.native
+  object HeatmapRenderer {
+    
+    @JSGlobal("__esri.renderers.HeatmapRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.HeatmapRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.HeatmapRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.HeatmapRenderer")
@@ -145,9 +158,14 @@ object renderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.renderers.PieChartRenderer")
-  @js.native
-  val PieChartRenderer: PieChartRendererConstructor = js.native
+  object PieChartRenderer {
+    
+    @JSGlobal("__esri.renderers.PieChartRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.PieChartRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.PieChartRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.PieChartRenderer")
@@ -171,9 +189,14 @@ object renderers {
     override def toJSON(): Any = js.native
   }
   
-  @JSGlobal("__esri.renderers.SimpleRenderer")
-  @js.native
-  val SimpleRenderer: SimpleRendererConstructor = js.native
+  object SimpleRenderer {
+    
+    @JSGlobal("__esri.renderers.SimpleRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.SimpleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.SimpleRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.SimpleRenderer")
@@ -205,15 +228,20 @@ object renderers {
     var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
   }
   
-  @JSGlobal("__esri.renderers.UniqueValueRenderer")
-  @js.native
-  val UniqueValueRenderer: UniqueValueRendererConstructor = js.native
+  object UniqueValueRenderer {
+    
+    @JSGlobal("__esri.renderers.UniqueValueRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromJSON(json: Any): typings.arcgisJsApi.esri.UniqueValueRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.UniqueValueRenderer]
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("__esri.renderers.UniqueValueRenderer")
   @js.native
   /**
-    * UniqueValueRenderer allows you to symbolize features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) based on one or more matching string attributes.
+    * UniqueValueRenderer allows you to symbolize features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) based on one or more categorical attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html)
     */

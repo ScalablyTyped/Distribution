@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebTileLayerFetchTileOptions
-  extends StObject
-     with Object {
+trait WebTileLayerFetchTileOptions extends StObject {
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
@@ -20,12 +16,8 @@ trait WebTileLayerFetchTileOptions
 }
 object WebTileLayerFetchTileOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WebTileLayerFetchTileOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): WebTileLayerFetchTileOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebTileLayerFetchTileOptions]
   }
   

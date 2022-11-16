@@ -84,6 +84,14 @@ plain object describing a change (a deletion, insertion, or
 replacement, depending on which fields are present), a [change
 set](https://codemirror.net/6/docs/ref/#state.ChangeSet), or an array of change specs.
 */
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ChangeSpec = {  from :number,   to :number | undefined,   insert :string | @codemirror/state.@codemirror/state.Text | undefined} | @codemirror/state.@codemirror/state.ChangeSet | std.Array<@codemirror/state.@codemirror/state.ChangeSpec>
+}}}
+to avoid circular code involving: 
+- @codemirror/state.@codemirror/state.ChangeSpec
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.codemirrorState.anon.From
   - typings.codemirrorState.mod.ChangeSet
@@ -100,6 +108,14 @@ objects, such as [state fields](https://codemirror.net/6/docs/ref/#state.StateFi
 providers](https://codemirror.net/6/docs/ref/#state.Facet.of), or objects with an extension in its
 `extension` property. Extensions can be nested in arrays
 arbitrarily deep—they will be flattened when processed.
+*/
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type Extension = {  extension :@codemirror/state.@codemirror/state.Extension} | std.Array<@codemirror/state.@codemirror/state.Extension>
+}}}
+to avoid circular code involving: 
+- @codemirror/state.@codemirror/state.Extension
 */
 type Extension = typings.codemirrorState.anon.Extension | js.Array[Any]
 

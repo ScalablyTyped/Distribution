@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "globalyzer"
-version := "0.1-dt-20211202Z-7ddf64"
+version := "0.1-dt-20211202Z-aae058"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

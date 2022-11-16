@@ -201,12 +201,33 @@ object mod {
   */
   type DataMatcher = js.UndefOr[_DataMatcher | Boolean | Double | String | Null | js.RegExp]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataMatcherArray = std.ReadonlyArray<nock.nock.DataMatcher>
+  }}}
+  to avoid circular code involving: 
+  - nock.nock.DataMatcher
+  - nock.nock.DataMatcherArray
+  */
   @js.native
   trait DataMatcherArray
     extends StObject
        with ReadonlyArray[DataMatcher]
        with _DataMatcher
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type DataMatcherMap = {[key: string] : nock.nock.DataMatcher}
+  }}}
+  to avoid circular code involving: 
+  - nock.nock.DataMatcher
+  - nock.nock.DataMatcherArray
+  - nock.nock.DataMatcherMap
+  - nock.nock.InterceptFunction
+  - nock.nock.RequestBodyMatcher
+  */
   trait DataMatcherMap
     extends StObject
        with /* key */ StringDictionary[DataMatcher]
@@ -292,6 +313,17 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type InterceptFunction = (uri : string | std.RegExp | (uri : string): boolean, requestBody : nock.nock.RequestBodyMatcher | undefined, interceptorOptions : nock.nock.Options | undefined): nock.nock.Interceptor
+  }}}
+  to avoid circular code involving: 
+  - nock.nock.DataMatcher
+  - nock.nock.DataMatcherArray
+  - nock.nock.InterceptFunction
+  - nock.nock.RequestBodyMatcher
+  */
   @js.native
   trait InterceptFunction extends StObject {
     
@@ -572,6 +604,16 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RequestBodyMatcher = string | node.buffer.<global>.Buffer | std.RegExp | nock.nock.DataMatcherArray | nock.nock.DataMatcherMap | (body : any): boolean
+  }}}
+  to avoid circular code involving: 
+  - nock.nock.DataMatcher
+  - nock.nock.DataMatcherArray
+  - nock.nock.RequestBodyMatcher
+  */
   type RequestBodyMatcher = String | Buffer | js.RegExp | Any | DataMatcherMap | (js.Function1[/* body */ Any, Boolean])
   
   type RequestHeaderMatcher = String | js.RegExp | (js.Function1[/* fieldValue */ String, Boolean])

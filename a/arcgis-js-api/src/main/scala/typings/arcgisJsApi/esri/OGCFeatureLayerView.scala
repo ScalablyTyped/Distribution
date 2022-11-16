@@ -17,20 +17,18 @@ trait OGCFeatureLayerView
   val availableFields: js.Array[String] = js.native
   
   /**
+    * Creates query parameter object that can be used to [fetch aggregate features](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryAggregates) as they are being displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#createAggregateQuery)
+    */
+  def createAggregateQuery(): Query_ = js.native
+  
+  /**
     * Creates a query parameter object that can be used to fetch features as they are being displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#createQuery)
     */
   def createQuery(): Query_ = js.native
-  
-  /**
-    * The effect applied to the layerView.
-    *
-    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#effect)
-    */
-  var effect: FeatureEffect = js.native
   
   /**
     * The featureEffect can be used to draw attention features of interest.
@@ -55,6 +53,18 @@ trait OGCFeatureLayerView
   def highlight(target: js.Array[Double | Graphic]): Handle = js.native
   def highlight(target: Double): Handle = js.native
   def highlight(target: Graphic): Handle = js.native
+  
+  /**
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against aggregate features (i.e.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-OGCFeatureLayerView.html#queryAggregates)
+    */
+  def queryAggregates(): js.Promise[FeatureSet] = js.native
+  def queryAggregates(query: scala.Unit, options: OGCFeatureLayerViewQueryAggregatesOptions): js.Promise[FeatureSet] = js.native
+  def queryAggregates(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryAggregates(query: QueryProperties, options: OGCFeatureLayerViewQueryAggregatesOptions): js.Promise[FeatureSet] = js.native
+  def queryAggregates(query: Query_): js.Promise[FeatureSet] = js.native
+  def queryAggregates(query: Query_, options: OGCFeatureLayerViewQueryAggregatesOptions): js.Promise[FeatureSet] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.

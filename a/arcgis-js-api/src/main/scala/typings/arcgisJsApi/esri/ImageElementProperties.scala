@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.image
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
@@ -18,8 +17,6 @@ trait ImageElementProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#image)
     */
   var image: js.UndefOr[String | HTMLImageElement | HTMLCanvasElement | ImageData] = js.undefined
-  
-  var `type`: js.UndefOr[image] = js.undefined
 }
 object ImageElementProperties {
   
@@ -33,9 +30,5 @@ object ImageElementProperties {
     inline def setImage(value: String | HTMLImageElement | HTMLCanvasElement | ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
-    
-    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

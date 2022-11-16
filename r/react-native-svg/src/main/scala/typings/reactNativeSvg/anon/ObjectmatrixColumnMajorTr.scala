@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.anon
 
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.MatrixTransform
 import typings.reactNative.mod.PerpectiveTransform
 import typings.reactNative.mod.RotateTransform
@@ -21,12 +22,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Object & {  matrix :react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ColumnMajorTransformMatrix | undefined} & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.TransformProps */
+/* Inlined std.Object & {  matrix :react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ColumnMajorTransformMatrix | undefined,   fill :react-native.react-native.ColorValue | undefined} & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.TransformProps */
 trait ObjectmatrixColumnMajorTr extends StObject {
   
   /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
   /* standard es5 */
   var constructor: js.Function
+  
+  var fill: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Determines whether an object has a property with the specified name.
@@ -94,6 +97,10 @@ object ObjectmatrixColumnMajorTr {
   extension [Self <: ObjectmatrixColumnMajorTr](x: Self) {
     
     inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    
+    inline def setFill(value: ColorValue): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     inline def setHasOwnProperty(value: PropertyKey => Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
     

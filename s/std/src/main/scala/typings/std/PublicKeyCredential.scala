@@ -10,6 +10,9 @@ trait PublicKeyCredential
      with Credential {
   
   /* standard dom */
+  val authenticatorAttachment: java.lang.String | Null
+  
+  /* standard dom */
   def getClientExtensionResults(): AuthenticationExtensionsClientOutputs
   
   /* standard dom */
@@ -27,12 +30,16 @@ object PublicKeyCredential {
     response: AuthenticatorResponse,
     `type`: java.lang.String
   ): PublicKeyCredential = {
-    val __obj = js.Dynamic.literal(getClientExtensionResults = js.Any.fromFunction0(getClientExtensionResults), id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getClientExtensionResults = js.Any.fromFunction0(getClientExtensionResults), id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], authenticatorAttachment = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredential]
   }
   
   extension [Self <: PublicKeyCredential](x: Self) {
+    
+    inline def setAuthenticatorAttachment(value: java.lang.String): Self = StObject.set(x, "authenticatorAttachment", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticatorAttachmentNull: Self = StObject.set(x, "authenticatorAttachment", null)
     
     inline def setGetClientExtensionResults(value: () => AuthenticationExtensionsClientOutputs): Self = StObject.set(x, "getClientExtensionResults", js.Any.fromFunction0(value))
     

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DataFileConstructor
   extends StObject
-     with /**
-  * A geoprocessing data object containing a data source.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html)
-  */
-Instantiable0[DataFile]
+     with Instantiable0[DataFile]
      with Instantiable1[/* properties */ DataFileProperties, DataFile] {
   
   def fromJSON(json: Any): DataFile = js.native

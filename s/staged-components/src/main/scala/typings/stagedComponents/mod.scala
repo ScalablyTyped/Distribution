@@ -17,6 +17,16 @@ object mod {
   inline def staged[P](stage: StageRenderRoot[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("staged")(stage.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   inline def staged[P, R](stage: StageRenderRootWithRef[P, R]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("staged")(stage.asInstanceOf[js.Any]).asInstanceOf[Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type StageRender = (): staged-components.staged-components.StageRender | react.react.ReactElement | null
+  }}}
+  to avoid circular code involving: 
+  - staged-components.staged-components.StageRender
+  - staged-components.staged-components.StageRenderRoot
+  - staged-components.staged-components.StageRenderRootWithRef
+  */
   @js.native
   trait StageRender extends StObject {
     

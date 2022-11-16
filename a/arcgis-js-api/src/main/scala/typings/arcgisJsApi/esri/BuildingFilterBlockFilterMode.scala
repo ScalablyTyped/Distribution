@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`wire-frame`
 import typings.arcgisJsApi.arcgisJsApiStrings.`x-ray`
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BuildingFilterBlockFilterMode
-  extends StObject
-     with Object {
+trait BuildingFilterBlockFilterMode extends StObject {
   
   /**
     * Defines the type of edges used to display a [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) filtered in `wire-frame` mode.
@@ -31,12 +27,8 @@ trait BuildingFilterBlockFilterMode
 }
 object BuildingFilterBlockFilterMode {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): BuildingFilterBlockFilterMode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): BuildingFilterBlockFilterMode = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingFilterBlockFilterMode]
   }
   

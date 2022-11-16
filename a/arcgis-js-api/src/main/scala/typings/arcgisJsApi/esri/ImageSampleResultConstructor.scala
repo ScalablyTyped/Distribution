@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImageSampleResultConstructor
   extends StObject
-     with /**
-  * The result from the [getSamples](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#getSamples) method on [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) containing array of [ImageSample](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSample.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleResult.html)
-  */
-Instantiable0[ImageSampleResult]
+     with Instantiable0[ImageSampleResult]
      with Instantiable1[/* properties */ ImageSampleResultProperties, ImageSampleResult] {
   
   def fromJSON(json: Any): ImageSampleResult = js.native

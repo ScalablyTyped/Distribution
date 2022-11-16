@@ -9,6 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distOperationsOthersTypesMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Sql = (sqlStr : string, args : {[key: string] : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Name | node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value} | undefined): string | std.Array<string>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  - node-pg-migrate.node-pg-migrate/dist/operations/othersTypes.Sql
+  */
   @js.native
   trait Sql extends StObject {
     

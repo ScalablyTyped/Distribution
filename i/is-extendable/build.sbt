@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-extendable"
-version := "1.0.1-c13857"
+version := "1.0.1-7b8f28"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

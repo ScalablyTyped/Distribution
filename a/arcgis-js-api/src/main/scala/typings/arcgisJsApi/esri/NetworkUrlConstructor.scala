@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NetworkUrlConstructor
   extends StObject
-     with /**
-  * An input type for Route, Closest Facility, and Service Area solvers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkUrl.html)
-  */
-Instantiable0[NetworkUrl]
+     with Instantiable0[NetworkUrl]
      with Instantiable1[/* properties */ NetworkUrlProperties, NetworkUrl] {
   
   def fromJSON(json: Any): NetworkUrl = js.native

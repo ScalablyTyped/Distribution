@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExtrudeSymbol3DLayerConstructor
   extends StObject
-     with /**
-  * ExtrudeSymbol3DLayer is used to render [Polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) geometries by extruding them upward from the ground, creating a 3D volumetric object.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html)
-  */
-Instantiable0[ExtrudeSymbol3DLayer]
+     with Instantiable0[ExtrudeSymbol3DLayer]
      with Instantiable1[/* properties */ ExtrudeSymbol3DLayerProperties, ExtrudeSymbol3DLayer] {
   
   def fromJSON(json: Any): ExtrudeSymbol3DLayer = js.native

@@ -10,7 +10,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubtypeGroupLayerProperties
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.arcgisJsApi.esri.FeatureLayerBaseProperties because var conflicts: fullExtent. Inlined copyright, definitionExpression, displayField, elevationInfo, floorInfo, gdbVersion, geometryType, hasM, hasZ, historicMoment, layerId, objectIdField, returnM, returnZ, sourceJSON, spatialReference, url */ trait SubtypeGroupLayerProperties
   extends StObject
      with LayerProperties
      with PortalLayerProperties
@@ -23,21 +24,21 @@ trait SubtypeGroupLayerProperties
   /**
     * Copyright information for the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#copyright)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * The SQL where clause used to filter features on the client.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#definitionExpression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the layer's primary display field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#displayField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
     */
   var displayField: js.UndefOr[String] = js.undefined
   
@@ -53,9 +54,9 @@ trait SubtypeGroupLayerProperties
   /**
     * Specifies how features are placed on the vertical axis (z).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#elevationInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[SubtypeGroupLayerElevationInfo] = js.undefined
+  var elevationInfo: js.UndefOr[FeatureLayerBaseElevationInfo] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -67,28 +68,21 @@ trait SubtypeGroupLayerProperties
   /**
     * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#floorInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
     */
   var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
   
   /**
-    * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#formTemplate)
-    */
-  var formTemplate: js.UndefOr[FormTemplateProperties] = js.undefined
-  
-  /**
     * The version of the geodatabase of the feature service data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#gdbVersion)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
     */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The geometry type of features in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#geometryType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
     */
   var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   
@@ -97,7 +91,7 @@ trait SubtypeGroupLayerProperties
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#hasM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
     */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
@@ -106,37 +100,28 @@ trait SubtypeGroupLayerProperties
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#hasZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
     */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The historic moment to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#historicMoment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
     */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The layer ID, or layer index, of a Feature Service layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#layerId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
     */
   var layerId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the layer will be included in the legend.
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
     *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#legendEnabled)
-    */
-  var legendEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#fields) containing a unique value or identifier for each feature in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#objectIdField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
     */
   var objectIdField: js.UndefOr[String] = js.undefined
   
@@ -154,7 +139,7 @@ trait SubtypeGroupLayerProperties
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#returnM)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
     */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
@@ -163,30 +148,21 @@ trait SubtypeGroupLayerProperties
     *
     * @default undefined
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#returnZ)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
     */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#screenSizePerspectiveEnabled)
-    */
-  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#sourceJSON)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
     */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * The spatial reference of the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#spatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
@@ -205,16 +181,9 @@ trait SubtypeGroupLayerProperties
   var subtypeField: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the field holding the type ID or subtypes for the features.
+    * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#typeIdField)
-    */
-  var typeIdField: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The URL of the REST endpoint of the layer, non-spatial table or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#url)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
 }
@@ -243,7 +212,7 @@ object SubtypeGroupLayerProperties {
     
     inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
     
-    inline def setElevationInfo(value: SubtypeGroupLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: FeatureLayerBaseElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
@@ -256,10 +225,6 @@ object SubtypeGroupLayerProperties {
     inline def setFloorInfo(value: LayerFloorInfoProperties): Self = StObject.set(x, "floorInfo", value.asInstanceOf[js.Any])
     
     inline def setFloorInfoUndefined: Self = StObject.set(x, "floorInfo", js.undefined)
-    
-    inline def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
-    
-    inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
     inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
@@ -285,10 +250,6 @@ object SubtypeGroupLayerProperties {
     
     inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
-    
     inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
     inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
@@ -307,10 +268,6 @@ object SubtypeGroupLayerProperties {
     
     inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
     
-    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
-    
     inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
@@ -328,10 +285,6 @@ object SubtypeGroupLayerProperties {
     inline def setSubtypeField(value: String): Self = StObject.set(x, "subtypeField", value.asInstanceOf[js.Any])
     
     inline def setSubtypeFieldUndefined: Self = StObject.set(x, "subtypeField", js.undefined)
-    
-    inline def setTypeIdField(value: String): Self = StObject.set(x, "typeIdField", value.asInstanceOf[js.Any])
-    
-    inline def setTypeIdFieldUndefined: Self = StObject.set(x, "typeIdField", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

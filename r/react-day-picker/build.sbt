@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-day-picker"
-version := "8.3.6-87461d"
+version := "8.3.6-41d5ec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
-  "org.scalablytyped" %%% "date-fns" % "2.29.3-38278b",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
+  "org.scalablytyped" %%% "date-fns" % "2.29.3-aa858c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

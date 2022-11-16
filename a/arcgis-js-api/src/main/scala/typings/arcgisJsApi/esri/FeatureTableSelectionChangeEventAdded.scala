@@ -1,18 +1,16 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureTableSelectionChangeEventAdded
-  extends StObject
-     with Object {
+trait FeatureTableSelectionChangeEventAdded extends StObject {
   
   var attachments: js.Array[AttachmentInfo]
   
   var feature: Graphic
+  
+  var objectId: Double
   
   var relatedRecords: js.Array[Graphic]
 }
@@ -20,13 +18,11 @@ object FeatureTableSelectionChangeEventAdded {
   
   inline def apply(
     attachments: js.Array[AttachmentInfo],
-    constructor: js.Function,
     feature: Graphic,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
+    objectId: Double,
     relatedRecords: js.Array[Graphic]
   ): FeatureTableSelectionChangeEventAdded = {
-    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relatedRecords = relatedRecords.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], relatedRecords = relatedRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTableSelectionChangeEventAdded]
   }
   
@@ -37,6 +33,8 @@ object FeatureTableSelectionChangeEventAdded {
     inline def setAttachmentsVarargs(value: AttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    
+    inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     inline def setRelatedRecords(value: js.Array[Graphic]): Self = StObject.set(x, "relatedRecords", value.asInstanceOf[js.Any])
     

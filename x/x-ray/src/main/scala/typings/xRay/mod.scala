@@ -80,6 +80,15 @@ object mod {
   // https://stackoverflow.com/a/41826582
   type ScalarSelector = String | InstanceInvocation | StringDictionary[Selector]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Selector = x-ray.x-ray.ScalarSelector | x-ray.x-ray.SelectorArray
+  }}}
+  to avoid circular code involving: 
+  - x-ray.x-ray.ScalarSelector
+  - x-ray.x-ray.Selector
+  */
   type Selector = Any | SelectorArray
   
   @js.native

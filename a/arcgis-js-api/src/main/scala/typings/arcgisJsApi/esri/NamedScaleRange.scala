@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NamedScaleRange
-  extends StObject
-     with Object {
+trait NamedScaleRange extends StObject {
   
   /**
     * The named scale range, such as "room" or "metropolitan area".
@@ -33,15 +29,8 @@ trait NamedScaleRange
 }
 object NamedScaleRange {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    id: String,
-    maxScale: Double,
-    minScale: Double,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): NamedScaleRange = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], maxScale = maxScale.asInstanceOf[js.Any], minScale = minScale.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(id: String, maxScale: Double, minScale: Double): NamedScaleRange = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], maxScale = maxScale.asInstanceOf[js.Any], minScale = minScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedScaleRange]
   }
   

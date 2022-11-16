@@ -33,6 +33,16 @@ object buildMod {
   
   type PlistBuildOptions = XMLToStringOptions
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PlistObject = {readonly [x: string] : @expo/plist.@expo/plist/build.PlistValue}
+  }}}
+  to avoid circular code involving: 
+  - @expo/plist.@expo/plist/build.PlistArray
+  - @expo/plist.@expo/plist/build.PlistObject
+  - @expo/plist.@expo/plist/build.PlistValue
+  */
   trait PlistObject
     extends StObject
        with /* x */ StringDictionary[PlistValue]
@@ -44,5 +54,14 @@ object buildMod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PlistValue = string | number | boolean | std.Date | node.buffer.<global>.Buffer | @expo/plist.@expo/plist/build.PlistObject | @expo/plist.@expo/plist/build.PlistArray
+  }}}
+  to avoid circular code involving: 
+  - @expo/plist.@expo/plist/build.PlistArray
+  - @expo/plist.@expo/plist/build.PlistValue
+  */
   type PlistValue = String | Double | Boolean | js.Date | Buffer | PlistObject | Any
 }

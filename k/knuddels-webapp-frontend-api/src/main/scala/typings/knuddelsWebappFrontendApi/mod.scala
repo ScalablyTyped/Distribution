@@ -317,6 +317,18 @@ object mod {
       val Web: ClientType = js.native
     }
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type Json = {[x: string] : knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.JsonData | undefined}
+    }}}
+    to avoid circular code involving: 
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.Json
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.JsonArray
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.KnuddelsEventArray
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.JsonData
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.KnuddelsEvent
+    */
     trait Json
       extends StObject
          with /* x */ StringDictionary[js.UndefOr[JsonData]]
@@ -330,13 +342,39 @@ object mod {
     
     type JsonArray = js.Array[JsonData]
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type KnuddelsEventArray = std.Array<string | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.Json | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.KnuddelsEventArray>
+    }}}
+    to avoid circular code involving: 
+    - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.KnuddelsEventArray
+    */
     @js.native
     trait KnuddelsEventArray
       extends StObject
          with Array[String | Json | KnuddelsEventArray]
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type JsonData = string | number | boolean | std.Date | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.Json | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.JsonArray | undefined
+  }}}
+  to avoid circular code involving: 
+  - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.JsonArray
+  - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.JsonData
+  */
   type JsonData = js.UndefOr[String | Double | Boolean | js.Date | Json | Any]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type KnuddelsEvent = string | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.Json | knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.KnuddelsEventArray
+  }}}
+  to avoid circular code involving: 
+  - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.<global>.KnuddelsEventArray
+  - knuddels-webapp-frontend-api.knuddels-webapp-frontend-api.KnuddelsEvent
+  */
   type KnuddelsEvent = String | Json | Any
 }

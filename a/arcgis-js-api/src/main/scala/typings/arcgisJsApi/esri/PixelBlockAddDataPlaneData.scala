@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PixelBlockAddDataPlaneData
-  extends StObject
-     with Object {
+trait PixelBlockAddDataPlaneData extends StObject {
   
   /**
     * A two dimensional array representing the pixels to add.
@@ -26,14 +22,8 @@ trait PixelBlockAddDataPlaneData
 }
 object PixelBlockAddDataPlaneData {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    pixels: js.Array[js.Array[Double]],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    statistics: js.Array[Any]
-  ): PixelBlockAddDataPlaneData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixels = pixels.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics.asInstanceOf[js.Any])
+  inline def apply(pixels: js.Array[js.Array[Double]], statistics: js.Array[Any]): PixelBlockAddDataPlaneData = {
+    val __obj = js.Dynamic.literal(pixels = pixels.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelBlockAddDataPlaneData]
   }
   

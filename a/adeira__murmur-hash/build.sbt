@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adeira__murmur-hash"
-version := "0.2-dt-20220624Z-ca6b8d"
+version := "0.2-dt-20220624Z-d65690"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditableItem
-  extends StObject
-     with Object {
+trait EditableItem extends StObject {
   
   /**
     * *Read-only* The feature layer associated with the editable item.
@@ -26,14 +22,8 @@ trait EditableItem
 }
 object EditableItem {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    supports: String
-  ): EditableItem = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supports = supports.asInstanceOf[js.Any])
+  inline def apply(layer: FeatureLayer, supports: String): EditableItem = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], supports = supports.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditableItem]
   }
   

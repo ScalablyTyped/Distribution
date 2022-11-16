@@ -2,6 +2,8 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.refresh
+import typings.arcgisJsApi.arcgisJsApiStrings.textSlashhtml
+import typings.arcgisJsApi.arcgisJsApiStrings.textSlashplain
 import typings.arcgisJsApi.arcgisJsApiStrings.wms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,11 +61,18 @@ trait WMSLayer
   val dimensions: js.Array[TimeDimension | ElevationDimension | GenericDimension] = js.native
   
   /**
-    * Return format of feature information (MIME type).
+    * The MIME type that will be requested by popups.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoFormat)
     */
-  var featureInfoFormat: String = js.native
+  var featureInfoFormat: textSlashhtml | textSlashplain | Null = js.native
+  
+  /**
+    * This property lists all available MIME-types that can be used with the WMS service's _GetFeatureInfo_ request.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoFormats)
+    */
+  val featureInfoFormats: js.Array[String] = js.native
   
   /**
     * The URL for the WMS GetFeatureInfo call.
@@ -71,6 +80,24 @@ trait WMSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoUrl)
     */
   var featureInfoUrl: String = js.native
+  
+  /**
+    * Function to override the default popup behavior of `WMSLayer`.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchFeatureInfoFunction)
+    */
+  def fetchFeatureInfoFunction(query: Any): js.Promise[js.Array[Graphic]] = js.native
+  /**
+    * Function to override the default popup behavior of `WMSLayer`.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchFeatureInfoFunction)
+    */
+  @JSName("fetchFeatureInfoFunction")
+  var fetchFeatureInfoFunction_Original: FetchFeatureInfoFunction = js.native
   
   /**
     * Fetching the WMS image.

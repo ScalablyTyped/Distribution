@@ -7,6 +7,7 @@ import typings.reactRedux.anon.WrappedComponent
 import typings.reactRedux.esComponentsConnectMod.ConnectProps
 import typings.redux.mod.Action
 import typings.redux.mod.Dispatch
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +18,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     keyof T extends never ? any : T
     }}}
     */
-  @js.native
-  trait AnyIfEmpty[T /* <: js.Object */] extends StObject
+  type AnyIfEmpty[T /* <: js.Object */] = T
   
   type ConnectedComponent[C /* <: ComponentType[Any] */, P] = ComponentType[P] & (NonReactStatics[C, js.Object]) & WrappedComponent[C]
   
@@ -46,13 +46,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends unknown ? std.Omit<T, K> : never
     }}}
     */
-  @js.native
-  trait DistributiveOmit[T, K /* <: /* keyof T */ String */] extends StObject
+  type DistributiveOmit[T, K /* <: /* keyof T */ String */] = Omit[T, K]
   
   type EqualityFn[T] = js.Function2[/* a */ T, /* b */ T, Boolean]
   
@@ -62,7 +61,7 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     C extends react.react.ComponentType<infer P> ? C extends react.react.ComponentClass<P, react.react.ComponentState> ? react.react.ClassAttributes<std.InstanceType<C>> & P : P : never
     }}}
@@ -72,23 +71,21 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TActionCreator extends (args : ...any): any ? react-redux.react-redux/es/types.InferThunkActionCreatorType<TActionCreator> : TActionCreator
     }}}
     */
-  @js.native
-  trait HandleThunkActionCreator[TActionCreator] extends StObject
+  type HandleThunkActionCreator[TActionCreator] = TActionCreator
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TActionCreator extends (args : infer TParams): (args : ...any): infer TReturn ? (args : TParams): TReturn : TActionCreator
     }}}
     */
-  @js.native
-  trait InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject
+  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ Any, Any] */] = TActionCreator
   
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   
@@ -115,13 +112,12 @@ object esTypesMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     TDispatchProps extends {[key: string] : any} ? {[ C in keyof TDispatchProps ]: react-redux.react-redux/es/types.HandleThunkActionCreator<TDispatchProps[C]>} : TDispatchProps
     }}}
     */
-  @js.native
-  trait ResolveThunks[TDispatchProps] extends StObject
+  type ResolveThunks[TDispatchProps] = TDispatchProps
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.

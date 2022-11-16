@@ -40,6 +40,13 @@ trait ImageryTileLayerProperties
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents a multidimensional subset of raster data.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#multidimensionalSubset)
+    */
+  var multidimensionalSubset: js.UndefOr[MultidimensionalSubsetProperties] = js.undefined
+  
+  /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * @default true
@@ -97,6 +104,13 @@ trait ImageryTileLayerProperties
   var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
   
   /**
+    * The URL of the REST endpoint of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#url)
+    */
+  var url: js.UndefOr[String] = js.undefined
+  
+  /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
     *
     * @default true
@@ -126,6 +140,10 @@ object ImageryTileLayerProperties {
     
     inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
+    inline def setMultidimensionalSubset(value: MultidimensionalSubsetProperties): Self = StObject.set(x, "multidimensionalSubset", value.asInstanceOf[js.Any])
+    
+    inline def setMultidimensionalSubsetUndefined: Self = StObject.set(x, "multidimensionalSubset", js.undefined)
+    
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
@@ -153,6 +171,10 @@ object ImageryTileLayerProperties {
     inline def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     inline def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
     

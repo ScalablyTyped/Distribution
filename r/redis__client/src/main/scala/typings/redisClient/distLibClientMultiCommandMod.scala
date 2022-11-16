@@ -100,6 +100,15 @@ object distLibClientMultiCommandMod {
   
   type RedisClientMultiCommandType[M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] = RedisClientMultiCommand & (WithCommands[M, F, S]) & (WithModules[M, F, S]) & (WithFunctions[M, F, S]) & (WithScripts[M, F, S])
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RedisClientMultiExecutor = (queue : std.Array<@redis/client.@redis/client/dist/lib/multi-command.RedisMultiQueuedCommand>, selectedDB : number | undefined, chainId : symbol | undefined): std.Promise<std.Array<@redis/client.@redis/client/dist/lib/commands.RedisCommandRawReply>>
+  }}}
+  to avoid circular code involving: 
+  - @redis/client.@redis/client/dist/lib/client/multi-command.RedisClientMultiExecutor
+  - @redis/client.@redis/client/dist/lib/commands.RedisCommandRawReply
+  */
   @js.native
   trait RedisClientMultiExecutor extends StObject {
     

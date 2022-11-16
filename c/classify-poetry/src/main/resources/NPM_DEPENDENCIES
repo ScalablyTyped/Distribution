@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "classify-poetry" : "1.0.2"
+      "classify-poetry" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "classify-poetry" : "1.0.2"
+      "classify-poetry" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

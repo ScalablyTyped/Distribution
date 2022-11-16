@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisualVariablesResultColor
-  extends StObject
-     with Object {
+trait VisualVariablesResultColor extends StObject {
   
   /**
     * The color scheme used by the visual variable.
@@ -26,14 +22,8 @@ trait VisualVariablesResultColor
 }
 object VisualVariablesResultColor {
   
-  inline def apply(
-    colorScheme: ColorScheme,
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    visualVariable: ColorVariable
-  ): VisualVariablesResultColor = {
-    val __obj = js.Dynamic.literal(colorScheme = colorScheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), visualVariable = visualVariable.asInstanceOf[js.Any])
+  inline def apply(colorScheme: ColorScheme, visualVariable: ColorVariable): VisualVariablesResultColor = {
+    val __obj = js.Dynamic.literal(colorScheme = colorScheme.asInstanceOf[js.Any], visualVariable = visualVariable.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualVariablesResultColor]
   }
   

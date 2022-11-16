@@ -8,5 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object outMiscJsonValueMod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Value = ts-toolbelt.ts-toolbelt/out/Misc/JSON/Primitive.Primitive | ts-toolbelt.ts-toolbelt/out/Misc/JSON/Object.Object | ts-toolbelt.ts-toolbelt/out/Misc/JSON/Array.List
+  }}}
+  to avoid circular code involving: 
+  - ts-toolbelt.ts-toolbelt/out/Misc/JSON/Array.List
+  - ts-toolbelt.ts-toolbelt/out/Misc/JSON/Value.Value
+  */
   type Value = Primitive | Object | Any
 }

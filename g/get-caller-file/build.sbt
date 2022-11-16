@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "get-caller-file"
-version := "2.0.5-dfdc5e"
+version := "2.0.5-ca0d87"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

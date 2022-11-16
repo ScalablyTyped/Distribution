@@ -1,9 +1,9 @@
 package typings.tensorflowModelsFaceDetection
 
-import typings.offscreencanvas.OffscreenCanvas
 import typings.std.CanvasImageSource
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
+import typings.std.OffscreenCanvas
 import typings.std.SVGImageElement
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import org.scalablytyped.runtime.StObject
@@ -18,8 +18,8 @@ object distSharedCalculatorsMaskUtilMod {
   
   inline def assertMaskValue(maskValue: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertMaskValue")(maskValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def toHTMLCanvasElementLossy(image: OffscreenCanvas): js.Promise[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLCanvasElementLossy")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLCanvasElement]]
   inline def toHTMLCanvasElementLossy(image: ImageData): js.Promise[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLCanvasElementLossy")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLCanvasElement]]
+  inline def toHTMLCanvasElementLossy(image: OffscreenCanvas): js.Promise[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLCanvasElementLossy")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLCanvasElement]]
   inline def toHTMLCanvasElementLossy(image: SVGImageElement): js.Promise[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLCanvasElementLossy")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLCanvasElement]]
   inline def toHTMLCanvasElementLossy(image: Tensor3D): js.Promise[HTMLCanvasElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLCanvasElementLossy")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLCanvasElement]]
   

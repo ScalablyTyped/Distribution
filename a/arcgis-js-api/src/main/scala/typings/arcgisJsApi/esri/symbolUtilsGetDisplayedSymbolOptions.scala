@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsGetDisplayedSymbolOptions
-  extends StObject
-     with Object {
+trait symbolUtilsGetDisplayedSymbolOptions extends StObject {
   
   /**
     * The renderer of the layer associated with the `graphic`.
@@ -47,12 +43,8 @@ trait symbolUtilsGetDisplayedSymbolOptions
 }
 object symbolUtilsGetDisplayedSymbolOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): symbolUtilsGetDisplayedSymbolOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): symbolUtilsGetDisplayedSymbolOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[symbolUtilsGetDisplayedSymbolOptions]
   }
   

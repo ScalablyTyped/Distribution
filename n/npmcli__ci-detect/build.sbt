@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npmcli__ci-detect"
-version := "2.0-dt-20220816Z-d8862f"
+version := "2.0-dt-20220816Z-2de74f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

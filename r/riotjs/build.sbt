@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "riotjs"
-version := "0.0-unknown-dt-20221103Z-6d677b"
+version := "0.0-unknown-dt-20221103Z-b1a3ff"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

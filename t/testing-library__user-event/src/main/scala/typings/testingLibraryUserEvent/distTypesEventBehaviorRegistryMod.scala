@@ -12,6 +12,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animations
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.beforeinput_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cancel
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplay_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplaythrough_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.change
@@ -175,6 +176,13 @@ object distTypesEventBehaviorRegistryMod {
         BehaviorPlugin[typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur]
       ] = js.native
     inline def blur_=(x: js.UndefOr[BehaviorPlugin[blur]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blur")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@testing-library/user-event/dist/types/event/behavior/registry", "behavior.cancel")
+    @js.native
+    def cancel: js.UndefOr[
+        BehaviorPlugin[typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cancel]
+      ] = js.native
+    inline def cancel_=(x: js.UndefOr[BehaviorPlugin[cancel]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/user-event/dist/types/event/behavior/registry", "behavior.canplay")
     @js.native

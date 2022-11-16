@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.anon.FeatureReductionClusterPr
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
@@ -19,7 +18,8 @@ trait OGCFeatureLayerProperties
      with PortalLayerProperties
      with RefreshableLayerProperties
      with ScaleRangeLayerProperties
-     with FeatureEffectLayerProperties {
+     with FeatureEffectLayerProperties
+     with FeatureReductionLayerProperties {
   
   /**
     * The unique identifier of the collection on the server.
@@ -48,13 +48,6 @@ trait OGCFeatureLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[OGCFeatureLayerElevationInfo] = js.undefined
-  
-  /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#featureReduction)
-    */
-  var featureReduction: js.UndefOr[FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -94,6 +87,15 @@ trait OGCFeatureLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Explicitly set the maximum number of features that can be returned in a single request.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#maxRecordCount)
+    */
+  var maxRecordCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The OGCFeatureLayer requires that each feature be uniquely identified with an object id.
@@ -168,10 +170,6 @@ object OGCFeatureLayerProperties {
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
-    
-    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
-    
     inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -195,6 +193,10 @@ object OGCFeatureLayerProperties {
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setMaxRecordCount(value: Double): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRecordCountUndefined: Self = StObject.set(x, "maxRecordCount", js.undefined)
     
     inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     

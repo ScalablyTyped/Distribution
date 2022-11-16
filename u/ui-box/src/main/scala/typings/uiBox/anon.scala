@@ -4,6 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.csstype.mod.Property.AlignContent
 import typings.csstype.mod.Property.AlignItems
 import typings.csstype.mod.Property.AlignSelf
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.AnimationDelay
+import typings.csstype.mod.Property.AnimationDirection
+import typings.csstype.mod.Property.AnimationDuration
+import typings.csstype.mod.Property.AnimationFillMode
+import typings.csstype.mod.Property.AnimationIterationCount
+import typings.csstype.mod.Property.AnimationName
+import typings.csstype.mod.Property.AnimationPlayState
+import typings.csstype.mod.Property.AnimationTimingFunction
 import typings.csstype.mod.Property.Background
 import typings.csstype.mod.Property.BackgroundBlendMode
 import typings.csstype.mod.Property.BackgroundClip
@@ -44,6 +53,7 @@ import typings.csstype.mod.Property.BoxSizing
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.Color
 import typings.csstype.mod.Property.ColumnGap
+import typings.csstype.mod.Property.Content
 import typings.csstype.mod.Property.Cursor
 import typings.csstype.mod.Property.Display
 import typings.csstype.mod.Property.Flex
@@ -183,6 +193,24 @@ object anon {
     
     var alignSelf: js.UndefOr[AlignSelf | Double | `false` | Null] = js.undefined
     
+    var animation: js.UndefOr[Animation[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDelay: js.UndefOr[AnimationDelay[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDirection: js.UndefOr[AnimationDirection | Double | `false` | Null] = js.undefined
+    
+    var animationDuration: js.UndefOr[AnimationDuration[String] | Double | `false` | Null] = js.undefined
+    
+    var animationFillMode: js.UndefOr[AnimationFillMode | Double | `false` | Null] = js.undefined
+    
+    var animationIterationCount: js.UndefOr[AnimationIterationCount | Double | `false` | Null] = js.undefined
+    
+    var animationName: js.UndefOr[AnimationName | Double | `false` | Null] = js.undefined
+    
+    var animationPlayState: js.UndefOr[AnimationPlayState | Double | `false` | Null] = js.undefined
+    
+    var animationTimingFunction: js.UndefOr[AnimationTimingFunction | Double | `false` | Null] = js.undefined
+    
     var background: js.UndefOr[(Background[String | `0`]) | Double | `false` | Null] = js.undefined
     
     var backgroundBlendMode: js.UndefOr[BackgroundBlendMode | Double | `false` | Null] = js.undefined
@@ -262,6 +290,8 @@ object anon {
     var color: js.UndefOr[Color | Double | `false` | Null] = js.undefined
     
     var columnGap: js.UndefOr[(ColumnGap[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var content: js.UndefOr[Content | Double | `false` | Null] = js.undefined
     
     var cursor: js.UndefOr[Cursor | Double | `false` | Null] = js.undefined
     
@@ -479,6 +509,60 @@ object anon {
       inline def setAlignSelfNull: Self = StObject.set(x, "alignSelf", null)
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      
+      inline def setAnimation(value: Animation[String] | Double | `false`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelay(value: AnimationDelay[String] | Double | `false`): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayNull: Self = StObject.set(x, "animationDelay", null)
+      
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      
+      inline def setAnimationDirection(value: AnimationDirection | Double | `false`): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDirectionNull: Self = StObject.set(x, "animationDirection", null)
+      
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      
+      inline def setAnimationDuration(value: AnimationDuration[String] | Double | `false`): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationNull: Self = StObject.set(x, "animationDuration", null)
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
+      inline def setAnimationFillMode(value: AnimationFillMode | Double | `false`): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationFillModeNull: Self = StObject.set(x, "animationFillMode", null)
+      
+      inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
+      
+      inline def setAnimationIterationCount(value: AnimationIterationCount | Double | `false`): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationIterationCountNull: Self = StObject.set(x, "animationIterationCount", null)
+      
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      
+      inline def setAnimationName(value: AnimationName | Double | `false`): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationNameNull: Self = StObject.set(x, "animationName", null)
+      
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      
+      inline def setAnimationNull: Self = StObject.set(x, "animation", null)
+      
+      inline def setAnimationPlayState(value: AnimationPlayState | Double | `false`): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationPlayStateNull: Self = StObject.set(x, "animationPlayState", null)
+      
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimingFunction(value: AnimationTimingFunction | Double | `false`): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimingFunctionNull: Self = StObject.set(x, "animationTimingFunction", null)
+      
+      inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
       inline def setBackground(value: (Background[String | `0`]) | Double | `false`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -719,6 +803,12 @@ object anon {
       inline def setColumnGapNull: Self = StObject.set(x, "columnGap", null)
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      
+      inline def setContent(value: Content | Double | `false`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setCursor(value: Cursor | Double | `false`): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -1303,6 +1393,24 @@ object anon {
     
     var allowUnsafeHref: js.UndefOr[Boolean] = js.undefined
     
+    var animation: js.UndefOr[Animation[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDelay: js.UndefOr[AnimationDelay[String] | Double | `false` | Null] = js.undefined
+    
+    var animationDirection: js.UndefOr[AnimationDirection | Double | `false` | Null] = js.undefined
+    
+    var animationDuration: js.UndefOr[AnimationDuration[String] | Double | `false` | Null] = js.undefined
+    
+    var animationFillMode: js.UndefOr[AnimationFillMode | Double | `false` | Null] = js.undefined
+    
+    var animationIterationCount: js.UndefOr[AnimationIterationCount | Double | `false` | Null] = js.undefined
+    
+    var animationName: js.UndefOr[AnimationName | Double | `false` | Null] = js.undefined
+    
+    var animationPlayState: js.UndefOr[AnimationPlayState | Double | `false` | Null] = js.undefined
+    
+    var animationTimingFunction: js.UndefOr[AnimationTimingFunction | Double | `false` | Null] = js.undefined
+    
     var background: js.UndefOr[(Background[String | `0`]) | Double | `false` | Null] = js.undefined
     
     var backgroundBlendMode: js.UndefOr[BackgroundBlendMode | Double | `false` | Null] = js.undefined
@@ -1384,6 +1492,8 @@ object anon {
     var color: js.UndefOr[Color | Double | `false` | Null] = js.undefined
     
     var columnGap: js.UndefOr[(ColumnGap[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var content: js.UndefOr[Content | Double | `false` | Null] = js.undefined
     
     var cursor: js.UndefOr[Cursor | Double | `false` | Null] = js.undefined
     
@@ -1617,6 +1727,60 @@ object anon {
       inline def setAllowUnsafeHref(value: Boolean): Self = StObject.set(x, "allowUnsafeHref", value.asInstanceOf[js.Any])
       
       inline def setAllowUnsafeHrefUndefined: Self = StObject.set(x, "allowUnsafeHref", js.undefined)
+      
+      inline def setAnimation(value: Animation[String] | Double | `false`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelay(value: AnimationDelay[String] | Double | `false`): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayNull: Self = StObject.set(x, "animationDelay", null)
+      
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      
+      inline def setAnimationDirection(value: AnimationDirection | Double | `false`): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDirectionNull: Self = StObject.set(x, "animationDirection", null)
+      
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      
+      inline def setAnimationDuration(value: AnimationDuration[String] | Double | `false`): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationNull: Self = StObject.set(x, "animationDuration", null)
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
+      inline def setAnimationFillMode(value: AnimationFillMode | Double | `false`): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationFillModeNull: Self = StObject.set(x, "animationFillMode", null)
+      
+      inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
+      
+      inline def setAnimationIterationCount(value: AnimationIterationCount | Double | `false`): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationIterationCountNull: Self = StObject.set(x, "animationIterationCount", null)
+      
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      
+      inline def setAnimationName(value: AnimationName | Double | `false`): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationNameNull: Self = StObject.set(x, "animationName", null)
+      
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      
+      inline def setAnimationNull: Self = StObject.set(x, "animation", null)
+      
+      inline def setAnimationPlayState(value: AnimationPlayState | Double | `false`): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationPlayStateNull: Self = StObject.set(x, "animationPlayState", null)
+      
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimingFunction(value: AnimationTimingFunction | Double | `false`): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimingFunctionNull: Self = StObject.set(x, "animationTimingFunction", null)
+      
+      inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
       inline def setBackground(value: (Background[String | `0`]) | Double | `false`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -1861,6 +2025,12 @@ object anon {
       inline def setColumnGapNull: Self = StObject.set(x, "columnGap", null)
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      
+      inline def setContent(value: Content | Double | `false`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setCursor(value: Cursor | Double | `false`): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -2486,6 +2656,638 @@ object anon {
       inline def setCacheVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "cache", js.Array(value*))
       
       inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<std.Record<ui-box.ui-box/dist/src/types/keyframes.KeyframesTimelineKey, ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps>>> */
+  trait PartialRecordKeyframesTim extends StObject {
+    
+    var `0`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `1`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `10`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `100`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `11`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `12`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `13`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `14`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `15`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `16`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `17`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `18`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `19`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `2`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `20`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `21`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `22`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `23`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `24`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `25`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `26`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `27`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `28`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `29`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `3`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `30`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `31`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `32`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `33`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `34`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `35`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `36`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `37`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `38`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `39`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `4`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `40`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `41`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `42`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `43`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `44`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `45`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `46`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `47`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `48`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `49`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `5`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `50`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `51`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `52`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `53`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `54`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `55`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `56`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `57`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `58`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `59`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `6`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `60`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `61`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `62`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `63`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `64`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `65`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `66`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `67`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `68`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `69`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `7`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `70`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `71`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `72`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `73`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `74`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `75`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `76`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `77`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `78`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `79`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `8`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `80`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `81`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `82`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `83`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `84`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `85`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `86`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `87`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `88`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `89`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `9`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `90`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `91`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `92`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `93`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `94`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `95`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `96`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `97`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `98`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var `99`: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var from: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+    
+    var to: js.UndefOr[BoxCssPropsCssProps] = js.undefined
+  }
+  object PartialRecordKeyframesTim {
+    
+    inline def apply(): PartialRecordKeyframesTim = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialRecordKeyframesTim]
+    }
+    
+    extension [Self <: PartialRecordKeyframesTim](x: Self) {
+      
+      inline def set0(value: BoxCssPropsCssProps): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      
+      inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
+      
+      inline def set1(value: BoxCssPropsCssProps): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      
+      inline def set10(value: BoxCssPropsCssProps): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+      
+      inline def set100(value: BoxCssPropsCssProps): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      
+      inline def set100Undefined: Self = StObject.set(x, "100", js.undefined)
+      
+      inline def set10Undefined: Self = StObject.set(x, "10", js.undefined)
+      
+      inline def set11(value: BoxCssPropsCssProps): Self = StObject.set(x, "11", value.asInstanceOf[js.Any])
+      
+      inline def set11Undefined: Self = StObject.set(x, "11", js.undefined)
+      
+      inline def set12(value: BoxCssPropsCssProps): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
+      
+      inline def set12Undefined: Self = StObject.set(x, "12", js.undefined)
+      
+      inline def set13(value: BoxCssPropsCssProps): Self = StObject.set(x, "13", value.asInstanceOf[js.Any])
+      
+      inline def set13Undefined: Self = StObject.set(x, "13", js.undefined)
+      
+      inline def set14(value: BoxCssPropsCssProps): Self = StObject.set(x, "14", value.asInstanceOf[js.Any])
+      
+      inline def set14Undefined: Self = StObject.set(x, "14", js.undefined)
+      
+      inline def set15(value: BoxCssPropsCssProps): Self = StObject.set(x, "15", value.asInstanceOf[js.Any])
+      
+      inline def set15Undefined: Self = StObject.set(x, "15", js.undefined)
+      
+      inline def set16(value: BoxCssPropsCssProps): Self = StObject.set(x, "16", value.asInstanceOf[js.Any])
+      
+      inline def set16Undefined: Self = StObject.set(x, "16", js.undefined)
+      
+      inline def set17(value: BoxCssPropsCssProps): Self = StObject.set(x, "17", value.asInstanceOf[js.Any])
+      
+      inline def set17Undefined: Self = StObject.set(x, "17", js.undefined)
+      
+      inline def set18(value: BoxCssPropsCssProps): Self = StObject.set(x, "18", value.asInstanceOf[js.Any])
+      
+      inline def set18Undefined: Self = StObject.set(x, "18", js.undefined)
+      
+      inline def set19(value: BoxCssPropsCssProps): Self = StObject.set(x, "19", value.asInstanceOf[js.Any])
+      
+      inline def set19Undefined: Self = StObject.set(x, "19", js.undefined)
+      
+      inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+      
+      inline def set2(value: BoxCssPropsCssProps): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      
+      inline def set20(value: BoxCssPropsCssProps): Self = StObject.set(x, "20", value.asInstanceOf[js.Any])
+      
+      inline def set20Undefined: Self = StObject.set(x, "20", js.undefined)
+      
+      inline def set21(value: BoxCssPropsCssProps): Self = StObject.set(x, "21", value.asInstanceOf[js.Any])
+      
+      inline def set21Undefined: Self = StObject.set(x, "21", js.undefined)
+      
+      inline def set22(value: BoxCssPropsCssProps): Self = StObject.set(x, "22", value.asInstanceOf[js.Any])
+      
+      inline def set22Undefined: Self = StObject.set(x, "22", js.undefined)
+      
+      inline def set23(value: BoxCssPropsCssProps): Self = StObject.set(x, "23", value.asInstanceOf[js.Any])
+      
+      inline def set23Undefined: Self = StObject.set(x, "23", js.undefined)
+      
+      inline def set24(value: BoxCssPropsCssProps): Self = StObject.set(x, "24", value.asInstanceOf[js.Any])
+      
+      inline def set24Undefined: Self = StObject.set(x, "24", js.undefined)
+      
+      inline def set25(value: BoxCssPropsCssProps): Self = StObject.set(x, "25", value.asInstanceOf[js.Any])
+      
+      inline def set25Undefined: Self = StObject.set(x, "25", js.undefined)
+      
+      inline def set26(value: BoxCssPropsCssProps): Self = StObject.set(x, "26", value.asInstanceOf[js.Any])
+      
+      inline def set26Undefined: Self = StObject.set(x, "26", js.undefined)
+      
+      inline def set27(value: BoxCssPropsCssProps): Self = StObject.set(x, "27", value.asInstanceOf[js.Any])
+      
+      inline def set27Undefined: Self = StObject.set(x, "27", js.undefined)
+      
+      inline def set28(value: BoxCssPropsCssProps): Self = StObject.set(x, "28", value.asInstanceOf[js.Any])
+      
+      inline def set28Undefined: Self = StObject.set(x, "28", js.undefined)
+      
+      inline def set29(value: BoxCssPropsCssProps): Self = StObject.set(x, "29", value.asInstanceOf[js.Any])
+      
+      inline def set29Undefined: Self = StObject.set(x, "29", js.undefined)
+      
+      inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
+      
+      inline def set3(value: BoxCssPropsCssProps): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      
+      inline def set30(value: BoxCssPropsCssProps): Self = StObject.set(x, "30", value.asInstanceOf[js.Any])
+      
+      inline def set30Undefined: Self = StObject.set(x, "30", js.undefined)
+      
+      inline def set31(value: BoxCssPropsCssProps): Self = StObject.set(x, "31", value.asInstanceOf[js.Any])
+      
+      inline def set31Undefined: Self = StObject.set(x, "31", js.undefined)
+      
+      inline def set32(value: BoxCssPropsCssProps): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
+      
+      inline def set32Undefined: Self = StObject.set(x, "32", js.undefined)
+      
+      inline def set33(value: BoxCssPropsCssProps): Self = StObject.set(x, "33", value.asInstanceOf[js.Any])
+      
+      inline def set33Undefined: Self = StObject.set(x, "33", js.undefined)
+      
+      inline def set34(value: BoxCssPropsCssProps): Self = StObject.set(x, "34", value.asInstanceOf[js.Any])
+      
+      inline def set34Undefined: Self = StObject.set(x, "34", js.undefined)
+      
+      inline def set35(value: BoxCssPropsCssProps): Self = StObject.set(x, "35", value.asInstanceOf[js.Any])
+      
+      inline def set35Undefined: Self = StObject.set(x, "35", js.undefined)
+      
+      inline def set36(value: BoxCssPropsCssProps): Self = StObject.set(x, "36", value.asInstanceOf[js.Any])
+      
+      inline def set36Undefined: Self = StObject.set(x, "36", js.undefined)
+      
+      inline def set37(value: BoxCssPropsCssProps): Self = StObject.set(x, "37", value.asInstanceOf[js.Any])
+      
+      inline def set37Undefined: Self = StObject.set(x, "37", js.undefined)
+      
+      inline def set38(value: BoxCssPropsCssProps): Self = StObject.set(x, "38", value.asInstanceOf[js.Any])
+      
+      inline def set38Undefined: Self = StObject.set(x, "38", js.undefined)
+      
+      inline def set39(value: BoxCssPropsCssProps): Self = StObject.set(x, "39", value.asInstanceOf[js.Any])
+      
+      inline def set39Undefined: Self = StObject.set(x, "39", js.undefined)
+      
+      inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
+      
+      inline def set4(value: BoxCssPropsCssProps): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      
+      inline def set40(value: BoxCssPropsCssProps): Self = StObject.set(x, "40", value.asInstanceOf[js.Any])
+      
+      inline def set40Undefined: Self = StObject.set(x, "40", js.undefined)
+      
+      inline def set41(value: BoxCssPropsCssProps): Self = StObject.set(x, "41", value.asInstanceOf[js.Any])
+      
+      inline def set41Undefined: Self = StObject.set(x, "41", js.undefined)
+      
+      inline def set42(value: BoxCssPropsCssProps): Self = StObject.set(x, "42", value.asInstanceOf[js.Any])
+      
+      inline def set42Undefined: Self = StObject.set(x, "42", js.undefined)
+      
+      inline def set43(value: BoxCssPropsCssProps): Self = StObject.set(x, "43", value.asInstanceOf[js.Any])
+      
+      inline def set43Undefined: Self = StObject.set(x, "43", js.undefined)
+      
+      inline def set44(value: BoxCssPropsCssProps): Self = StObject.set(x, "44", value.asInstanceOf[js.Any])
+      
+      inline def set44Undefined: Self = StObject.set(x, "44", js.undefined)
+      
+      inline def set45(value: BoxCssPropsCssProps): Self = StObject.set(x, "45", value.asInstanceOf[js.Any])
+      
+      inline def set45Undefined: Self = StObject.set(x, "45", js.undefined)
+      
+      inline def set46(value: BoxCssPropsCssProps): Self = StObject.set(x, "46", value.asInstanceOf[js.Any])
+      
+      inline def set46Undefined: Self = StObject.set(x, "46", js.undefined)
+      
+      inline def set47(value: BoxCssPropsCssProps): Self = StObject.set(x, "47", value.asInstanceOf[js.Any])
+      
+      inline def set47Undefined: Self = StObject.set(x, "47", js.undefined)
+      
+      inline def set48(value: BoxCssPropsCssProps): Self = StObject.set(x, "48", value.asInstanceOf[js.Any])
+      
+      inline def set48Undefined: Self = StObject.set(x, "48", js.undefined)
+      
+      inline def set49(value: BoxCssPropsCssProps): Self = StObject.set(x, "49", value.asInstanceOf[js.Any])
+      
+      inline def set49Undefined: Self = StObject.set(x, "49", js.undefined)
+      
+      inline def set4Undefined: Self = StObject.set(x, "4", js.undefined)
+      
+      inline def set5(value: BoxCssPropsCssProps): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      
+      inline def set50(value: BoxCssPropsCssProps): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+      
+      inline def set50Undefined: Self = StObject.set(x, "50", js.undefined)
+      
+      inline def set51(value: BoxCssPropsCssProps): Self = StObject.set(x, "51", value.asInstanceOf[js.Any])
+      
+      inline def set51Undefined: Self = StObject.set(x, "51", js.undefined)
+      
+      inline def set52(value: BoxCssPropsCssProps): Self = StObject.set(x, "52", value.asInstanceOf[js.Any])
+      
+      inline def set52Undefined: Self = StObject.set(x, "52", js.undefined)
+      
+      inline def set53(value: BoxCssPropsCssProps): Self = StObject.set(x, "53", value.asInstanceOf[js.Any])
+      
+      inline def set53Undefined: Self = StObject.set(x, "53", js.undefined)
+      
+      inline def set54(value: BoxCssPropsCssProps): Self = StObject.set(x, "54", value.asInstanceOf[js.Any])
+      
+      inline def set54Undefined: Self = StObject.set(x, "54", js.undefined)
+      
+      inline def set55(value: BoxCssPropsCssProps): Self = StObject.set(x, "55", value.asInstanceOf[js.Any])
+      
+      inline def set55Undefined: Self = StObject.set(x, "55", js.undefined)
+      
+      inline def set56(value: BoxCssPropsCssProps): Self = StObject.set(x, "56", value.asInstanceOf[js.Any])
+      
+      inline def set56Undefined: Self = StObject.set(x, "56", js.undefined)
+      
+      inline def set57(value: BoxCssPropsCssProps): Self = StObject.set(x, "57", value.asInstanceOf[js.Any])
+      
+      inline def set57Undefined: Self = StObject.set(x, "57", js.undefined)
+      
+      inline def set58(value: BoxCssPropsCssProps): Self = StObject.set(x, "58", value.asInstanceOf[js.Any])
+      
+      inline def set58Undefined: Self = StObject.set(x, "58", js.undefined)
+      
+      inline def set59(value: BoxCssPropsCssProps): Self = StObject.set(x, "59", value.asInstanceOf[js.Any])
+      
+      inline def set59Undefined: Self = StObject.set(x, "59", js.undefined)
+      
+      inline def set5Undefined: Self = StObject.set(x, "5", js.undefined)
+      
+      inline def set6(value: BoxCssPropsCssProps): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      
+      inline def set60(value: BoxCssPropsCssProps): Self = StObject.set(x, "60", value.asInstanceOf[js.Any])
+      
+      inline def set60Undefined: Self = StObject.set(x, "60", js.undefined)
+      
+      inline def set61(value: BoxCssPropsCssProps): Self = StObject.set(x, "61", value.asInstanceOf[js.Any])
+      
+      inline def set61Undefined: Self = StObject.set(x, "61", js.undefined)
+      
+      inline def set62(value: BoxCssPropsCssProps): Self = StObject.set(x, "62", value.asInstanceOf[js.Any])
+      
+      inline def set62Undefined: Self = StObject.set(x, "62", js.undefined)
+      
+      inline def set63(value: BoxCssPropsCssProps): Self = StObject.set(x, "63", value.asInstanceOf[js.Any])
+      
+      inline def set63Undefined: Self = StObject.set(x, "63", js.undefined)
+      
+      inline def set64(value: BoxCssPropsCssProps): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
+      
+      inline def set64Undefined: Self = StObject.set(x, "64", js.undefined)
+      
+      inline def set65(value: BoxCssPropsCssProps): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
+      
+      inline def set65Undefined: Self = StObject.set(x, "65", js.undefined)
+      
+      inline def set66(value: BoxCssPropsCssProps): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
+      
+      inline def set66Undefined: Self = StObject.set(x, "66", js.undefined)
+      
+      inline def set67(value: BoxCssPropsCssProps): Self = StObject.set(x, "67", value.asInstanceOf[js.Any])
+      
+      inline def set67Undefined: Self = StObject.set(x, "67", js.undefined)
+      
+      inline def set68(value: BoxCssPropsCssProps): Self = StObject.set(x, "68", value.asInstanceOf[js.Any])
+      
+      inline def set68Undefined: Self = StObject.set(x, "68", js.undefined)
+      
+      inline def set69(value: BoxCssPropsCssProps): Self = StObject.set(x, "69", value.asInstanceOf[js.Any])
+      
+      inline def set69Undefined: Self = StObject.set(x, "69", js.undefined)
+      
+      inline def set6Undefined: Self = StObject.set(x, "6", js.undefined)
+      
+      inline def set7(value: BoxCssPropsCssProps): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      
+      inline def set70(value: BoxCssPropsCssProps): Self = StObject.set(x, "70", value.asInstanceOf[js.Any])
+      
+      inline def set70Undefined: Self = StObject.set(x, "70", js.undefined)
+      
+      inline def set71(value: BoxCssPropsCssProps): Self = StObject.set(x, "71", value.asInstanceOf[js.Any])
+      
+      inline def set71Undefined: Self = StObject.set(x, "71", js.undefined)
+      
+      inline def set72(value: BoxCssPropsCssProps): Self = StObject.set(x, "72", value.asInstanceOf[js.Any])
+      
+      inline def set72Undefined: Self = StObject.set(x, "72", js.undefined)
+      
+      inline def set73(value: BoxCssPropsCssProps): Self = StObject.set(x, "73", value.asInstanceOf[js.Any])
+      
+      inline def set73Undefined: Self = StObject.set(x, "73", js.undefined)
+      
+      inline def set74(value: BoxCssPropsCssProps): Self = StObject.set(x, "74", value.asInstanceOf[js.Any])
+      
+      inline def set74Undefined: Self = StObject.set(x, "74", js.undefined)
+      
+      inline def set75(value: BoxCssPropsCssProps): Self = StObject.set(x, "75", value.asInstanceOf[js.Any])
+      
+      inline def set75Undefined: Self = StObject.set(x, "75", js.undefined)
+      
+      inline def set76(value: BoxCssPropsCssProps): Self = StObject.set(x, "76", value.asInstanceOf[js.Any])
+      
+      inline def set76Undefined: Self = StObject.set(x, "76", js.undefined)
+      
+      inline def set77(value: BoxCssPropsCssProps): Self = StObject.set(x, "77", value.asInstanceOf[js.Any])
+      
+      inline def set77Undefined: Self = StObject.set(x, "77", js.undefined)
+      
+      inline def set78(value: BoxCssPropsCssProps): Self = StObject.set(x, "78", value.asInstanceOf[js.Any])
+      
+      inline def set78Undefined: Self = StObject.set(x, "78", js.undefined)
+      
+      inline def set79(value: BoxCssPropsCssProps): Self = StObject.set(x, "79", value.asInstanceOf[js.Any])
+      
+      inline def set79Undefined: Self = StObject.set(x, "79", js.undefined)
+      
+      inline def set7Undefined: Self = StObject.set(x, "7", js.undefined)
+      
+      inline def set8(value: BoxCssPropsCssProps): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      
+      inline def set80(value: BoxCssPropsCssProps): Self = StObject.set(x, "80", value.asInstanceOf[js.Any])
+      
+      inline def set80Undefined: Self = StObject.set(x, "80", js.undefined)
+      
+      inline def set81(value: BoxCssPropsCssProps): Self = StObject.set(x, "81", value.asInstanceOf[js.Any])
+      
+      inline def set81Undefined: Self = StObject.set(x, "81", js.undefined)
+      
+      inline def set82(value: BoxCssPropsCssProps): Self = StObject.set(x, "82", value.asInstanceOf[js.Any])
+      
+      inline def set82Undefined: Self = StObject.set(x, "82", js.undefined)
+      
+      inline def set83(value: BoxCssPropsCssProps): Self = StObject.set(x, "83", value.asInstanceOf[js.Any])
+      
+      inline def set83Undefined: Self = StObject.set(x, "83", js.undefined)
+      
+      inline def set84(value: BoxCssPropsCssProps): Self = StObject.set(x, "84", value.asInstanceOf[js.Any])
+      
+      inline def set84Undefined: Self = StObject.set(x, "84", js.undefined)
+      
+      inline def set85(value: BoxCssPropsCssProps): Self = StObject.set(x, "85", value.asInstanceOf[js.Any])
+      
+      inline def set85Undefined: Self = StObject.set(x, "85", js.undefined)
+      
+      inline def set86(value: BoxCssPropsCssProps): Self = StObject.set(x, "86", value.asInstanceOf[js.Any])
+      
+      inline def set86Undefined: Self = StObject.set(x, "86", js.undefined)
+      
+      inline def set87(value: BoxCssPropsCssProps): Self = StObject.set(x, "87", value.asInstanceOf[js.Any])
+      
+      inline def set87Undefined: Self = StObject.set(x, "87", js.undefined)
+      
+      inline def set88(value: BoxCssPropsCssProps): Self = StObject.set(x, "88", value.asInstanceOf[js.Any])
+      
+      inline def set88Undefined: Self = StObject.set(x, "88", js.undefined)
+      
+      inline def set89(value: BoxCssPropsCssProps): Self = StObject.set(x, "89", value.asInstanceOf[js.Any])
+      
+      inline def set89Undefined: Self = StObject.set(x, "89", js.undefined)
+      
+      inline def set8Undefined: Self = StObject.set(x, "8", js.undefined)
+      
+      inline def set9(value: BoxCssPropsCssProps): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      
+      inline def set90(value: BoxCssPropsCssProps): Self = StObject.set(x, "90", value.asInstanceOf[js.Any])
+      
+      inline def set90Undefined: Self = StObject.set(x, "90", js.undefined)
+      
+      inline def set91(value: BoxCssPropsCssProps): Self = StObject.set(x, "91", value.asInstanceOf[js.Any])
+      
+      inline def set91Undefined: Self = StObject.set(x, "91", js.undefined)
+      
+      inline def set92(value: BoxCssPropsCssProps): Self = StObject.set(x, "92", value.asInstanceOf[js.Any])
+      
+      inline def set92Undefined: Self = StObject.set(x, "92", js.undefined)
+      
+      inline def set93(value: BoxCssPropsCssProps): Self = StObject.set(x, "93", value.asInstanceOf[js.Any])
+      
+      inline def set93Undefined: Self = StObject.set(x, "93", js.undefined)
+      
+      inline def set94(value: BoxCssPropsCssProps): Self = StObject.set(x, "94", value.asInstanceOf[js.Any])
+      
+      inline def set94Undefined: Self = StObject.set(x, "94", js.undefined)
+      
+      inline def set95(value: BoxCssPropsCssProps): Self = StObject.set(x, "95", value.asInstanceOf[js.Any])
+      
+      inline def set95Undefined: Self = StObject.set(x, "95", js.undefined)
+      
+      inline def set96(value: BoxCssPropsCssProps): Self = StObject.set(x, "96", value.asInstanceOf[js.Any])
+      
+      inline def set96Undefined: Self = StObject.set(x, "96", js.undefined)
+      
+      inline def set97(value: BoxCssPropsCssProps): Self = StObject.set(x, "97", value.asInstanceOf[js.Any])
+      
+      inline def set97Undefined: Self = StObject.set(x, "97", js.undefined)
+      
+      inline def set98(value: BoxCssPropsCssProps): Self = StObject.set(x, "98", value.asInstanceOf[js.Any])
+      
+      inline def set98Undefined: Self = StObject.set(x, "98", js.undefined)
+      
+      inline def set99(value: BoxCssPropsCssProps): Self = StObject.set(x, "99", value.asInstanceOf[js.Any])
+      
+      inline def set99Undefined: Self = StObject.set(x, "99", js.undefined)
+      
+      inline def set9Undefined: Self = StObject.set(x, "9", js.undefined)
+      
+      inline def setFrom(value: BoxCssPropsCssProps): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setTo(value: BoxCssPropsCssProps): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   

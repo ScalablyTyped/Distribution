@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.Renderer
-import typings.arcgisJsApi.esri.RendererConstructor
 import typings.arcgisJsApi.esri.RendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriRenderersRendererMod extends Shortcut {
+/* static members */
+object esriRenderersRendererMod {
   
-  @JSImport("esri/renderers/Renderer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & RendererConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/Renderer", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriRenderersRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with Renderer {
     def this(properties: RendererProperties) = this()
@@ -35,9 +29,9 @@ object esriRenderersRendererMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/renderers/Renderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & RendererConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriRenderersRendererMod.foo` */
-  override def _to: js.Object & RendererConstructor = ^
+  inline def fromJSON(json: Any): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Renderer]
 }

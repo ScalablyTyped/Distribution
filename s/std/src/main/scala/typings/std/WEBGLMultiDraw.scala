@@ -219,7 +219,7 @@ trait WEBGLMultiDraw extends StObject {
   
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Array[GLsizei],
@@ -230,7 +230,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Array[GLsizei],
@@ -241,7 +241,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,
@@ -252,7 +252,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,
@@ -263,7 +263,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Iterable[GLsizei],
@@ -274,7 +274,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Iterable[GLsizei],
@@ -285,7 +285,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,
@@ -296,7 +296,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,
@@ -386,7 +386,7 @@ trait WEBGLMultiDraw extends StObject {
   
   def multiDrawElementsWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Array[GLsizei],
@@ -395,7 +395,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsWEBGL(
     mode: GLenum,
-    countsList: js.Array[GLint],
+    countsList: js.Array[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,
@@ -404,7 +404,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.Iterable[GLsizei],
@@ -413,7 +413,7 @@ trait WEBGLMultiDraw extends StObject {
   ): Unit = js.native
   def multiDrawElementsWEBGL(
     mode: GLenum,
-    countsList: js.Iterable[GLint],
+    countsList: js.Iterable[GLsizei],
     countsOffset: GLuint,
     `type`: GLenum,
     offsetsList: js.typedarray.Int32Array,

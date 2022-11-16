@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-for-search"
-version := "2.1-dt-20220822Z-e718ef"
+version := "2.1-dt-20220822Z-b7bc27"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

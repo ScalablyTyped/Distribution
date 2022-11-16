@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.dark
 import typings.arcgisJsApi.arcgisJsApiStrings.light
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait heatmapGetSchemesParams
-  extends StObject
-     with Object {
+trait heatmapGetSchemesParams extends StObject {
   
   /**
     * The Esri basemap to pair with the visualization.
@@ -28,12 +24,8 @@ trait heatmapGetSchemesParams
 }
 object heatmapGetSchemesParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): heatmapGetSchemesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): heatmapGetSchemesParams = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[heatmapGetSchemesParams]
   }
   

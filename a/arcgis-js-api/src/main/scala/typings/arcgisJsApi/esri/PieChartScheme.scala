@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PieChartScheme
-  extends StObject
-     with Object {
+trait PieChartScheme extends StObject {
   
   /**
     * The color of the "others" category.
@@ -64,16 +60,13 @@ object PieChartScheme {
   inline def apply(
     colorForOthersCategory: Color_,
     colors: js.Array[Color_],
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
     name: String,
     outline: PieChartSchemeOutline,
-    propertyIsEnumerable: PropertyKey => Boolean,
     size: Double | String,
     sizeScheme: SizeScheme,
     tags: js.Array[String]
   ): PieChartScheme = {
-    val __obj = js.Dynamic.literal(colorForOthersCategory = colorForOthersCategory.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size.asInstanceOf[js.Any], sizeScheme = sizeScheme.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorForOthersCategory = colorForOthersCategory.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sizeScheme = sizeScheme.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartScheme]
   }
   

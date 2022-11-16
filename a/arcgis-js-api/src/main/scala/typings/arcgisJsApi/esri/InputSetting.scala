@@ -2,15 +2,11 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`starting-point`
 import typings.arcgisJsApi.arcgisJsApiStrings.barrier
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputSetting
-  extends StObject
-     with Object {
+trait InputSetting extends StObject {
   
   /**
     * The description that replaces the default sub-headings for either the starting points or barriers.
@@ -43,15 +39,12 @@ trait InputSetting
 object InputSetting {
   
   inline def apply(
-    constructor: js.Function,
     description: String,
-    hasOwnProperty: PropertyKey => Boolean,
     label: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
     symbol: SimpleMarkerSymbol | PictureMarkerSymbol,
     `type`: `starting-point` | barrier
   ): InputSetting = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSetting]
   }

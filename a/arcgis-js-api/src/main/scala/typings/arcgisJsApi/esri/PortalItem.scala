@@ -194,6 +194,13 @@ trait PortalItem
   val itemControl: admin | update | `null` = js.native
   
   /**
+    * The URL to the [Item page](https://doc.arcgis.com/en/arcgis-online/manage-data/item-details.htm) on the portal.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#itemPageUrl)
+    */
+  val itemPageUrl: String = js.native
+  
+  /**
     * The URL to the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#itemUrl)

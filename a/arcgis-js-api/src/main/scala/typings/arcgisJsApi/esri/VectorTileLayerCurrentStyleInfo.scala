@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VectorTileLayerCurrentStyleInfo
-  extends StObject
-     with Object {
+trait VectorTileLayerCurrentStyleInfo extends StObject {
   
   /**
     * Absolute template URL for font sets included in a style.
@@ -55,17 +51,14 @@ trait VectorTileLayerCurrentStyleInfo
 object VectorTileLayerCurrentStyleInfo {
   
   inline def apply(
-    constructor: js.Function,
     glyphsUrl: String,
-    hasOwnProperty: PropertyKey => Boolean,
     layerDefinition: Any,
-    propertyIsEnumerable: PropertyKey => Boolean,
     serviceUrl: String,
     spriteUrl: String,
     style: Any,
     styleUrl: String
   ): VectorTileLayerCurrentStyleInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], glyphsUrl = glyphsUrl.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layerDefinition = layerDefinition.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), serviceUrl = serviceUrl.asInstanceOf[js.Any], spriteUrl = spriteUrl.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], styleUrl = styleUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(glyphsUrl = glyphsUrl.asInstanceOf[js.Any], layerDefinition = layerDefinition.asInstanceOf[js.Any], serviceUrl = serviceUrl.asInstanceOf[js.Any], spriteUrl = spriteUrl.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], styleUrl = styleUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
   }
   

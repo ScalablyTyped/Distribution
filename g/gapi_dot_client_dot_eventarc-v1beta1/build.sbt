@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_eventarc-v1beta1"
-version := "0.0-dt-20220912Z-d690b9"
+version := "0.0-dt-20220912Z-86c97c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

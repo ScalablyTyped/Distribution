@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilities
-  extends StObject
-     with Object {
+trait FeatureLayerCapabilities extends StObject {
   
   /**
     * Describes what attachment capabilities are enabled on the layer.
@@ -70,18 +66,15 @@ object FeatureLayerCapabilities {
   
   inline def apply(
     attachment: FeatureLayerCapabilitiesAttachment,
-    constructor: js.Function,
     data: FeatureLayerCapabilitiesData,
     editing: FeatureLayerCapabilitiesEditing,
-    hasOwnProperty: PropertyKey => Boolean,
     metadata: FeatureLayerCapabilitiesMetadata,
     operations: FeatureLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => Boolean,
     query: FeatureLayerCapabilitiesQuery,
     queryRelated: FeatureLayerCapabilitiesQueryRelated,
     queryTopFeatures: FeatureLayerCapabilitiesQueryTopFeatures
   ): FeatureLayerCapabilities = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any], queryTopFeatures = queryTopFeatures.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], queryRelated = queryRelated.asInstanceOf[js.Any], queryTopFeatures = queryTopFeatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
   

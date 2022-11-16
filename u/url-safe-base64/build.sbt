@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "url-safe-base64"
-version := "1.1-dt-20211202Z-6aa725"
+version := "1.1-dt-20211202Z-801735"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

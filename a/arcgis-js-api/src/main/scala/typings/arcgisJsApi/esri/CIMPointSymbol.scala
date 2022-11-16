@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.Display
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMPointSymbol
-  extends StObject
-     with Object {
+trait CIMPointSymbol extends StObject {
   
   /**
     * The amount of variation applied to the symbol, measured in degrees, propagated cumulatively to all marker symbols.
@@ -64,13 +60,8 @@ trait CIMPointSymbol
 }
 object CIMPointSymbol {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    symbolLayers: js.Array[CIMSymbolLayer]
-  ): CIMPointSymbol = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), symbolLayers = symbolLayers.asInstanceOf[js.Any])
+  inline def apply(symbolLayers: js.Array[CIMSymbolLayer]): CIMPointSymbol = {
+    val __obj = js.Dynamic.literal(symbolLayers = symbolLayers.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMPointSymbol")
     __obj.asInstanceOf[CIMPointSymbol]
   }

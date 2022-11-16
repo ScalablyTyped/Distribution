@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "angular-meteor"
-version := "0.8-dt-20220222Z-2e6e51"
+version := "0.8-dt-20220222Z-75f01c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "angular" % "1.8-dt-20220525Z-fafc63",
-  "org.scalablytyped" %%% "bson" % "4.7.0-afb24b",
-  "org.scalablytyped" %%% "buffer" % "6.0.3-bfb740",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-c317a9",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-f779a1",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-b865bf",
-  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221107Z-e39bc2",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-b2e776",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-fada11",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-fab591",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-08aa87",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-d89e1b",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "underscore" % "1.11-dt-20220722Z-472b38")
+  "org.scalablytyped" %%% "angular" % "1.8-dt-20220525Z-fdf98d",
+  "org.scalablytyped" %%% "bson" % "4.7.0-16c8c2",
+  "org.scalablytyped" %%% "buffer" % "6.0.3-61ce95",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-fdb527",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-ab3df7",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-20efda",
+  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221107Z-af0133",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-d3cec1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-53873f",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-9ff1b2",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-ea4558",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-224716",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "underscore" % "1.11-dt-20220722Z-a428d7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

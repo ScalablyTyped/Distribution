@@ -786,6 +786,15 @@ type ReactInstance = (Component[Any, js.Object, Any]) | Element
   */
 type ReactManagedAttributes[C, P] = P
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type ReactNode = react.react.ReactElement | string | number | react.react.ReactFragment | react.react.ReactPortal | boolean | undefined
+}}}
+to avoid circular code involving: 
+- react.react.ReactFragment
+- react.react.ReactNode
+*/
 /* Rewritten from type alias, can be one of: 
   - typings.react.mod.ReactElement
   - java.lang.String

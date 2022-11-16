@@ -1,7 +1,7 @@
 package typings.vuelidate
 
-import typings.vuelidate.vueMod.ValidationEvaluation
-import typings.vuelidate.vueMod.ValidationProperties
+import typings.vuelidate.vueTypesVueMod.ValidationEvaluation
+import typings.vuelidate.vueTypesVueMod.ValidationProperties
 import typings.vuelidate.vuelidateMod.Validation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

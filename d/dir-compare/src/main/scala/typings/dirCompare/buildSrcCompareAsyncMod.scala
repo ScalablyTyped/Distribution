@@ -27,6 +27,14 @@ object buildSrcCompareAsyncMod {
     symlinkCache: SymlinkCache
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("compareAsync")(rootEntry1.asInstanceOf[js.Any], rootEntry2.asInstanceOf[js.Any], level.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], statistics.asInstanceOf[js.Any], asyncDiffSet.asInstanceOf[js.Any], symlinkCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type AsyncDiffSet = std.Array<dir-compare.dir-compare/build/src/types.Difference | dir-compare.dir-compare/build/src/compareAsync.AsyncDiffSet>
+  }}}
+  to avoid circular code involving: 
+  - dir-compare.dir-compare/build/src/compareAsync.AsyncDiffSet
+  */
   @js.native
   trait AsyncDiffSet
     extends StObject

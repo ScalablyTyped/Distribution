@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "globaloffensive"
-version := "2.2-dt-20220411Z-1492ad"
+version := "2.2-dt-20220411Z-be4b96"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bytebuffer" % "5.0.0-dt-20220818Z-930ff5",
-  "org.scalablytyped" %%% "file-manager" % "2.0-dt-20220829Z-0f4661",
-  "org.scalablytyped" %%% "long" % "5.2.1-3917db",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d",
-  "org.scalablytyped" %%% "steam-user" % "4.23-dt-20220909Z-315df3",
-  "org.scalablytyped" %%% "steamid" % "2.0-dt-20211202Z-0cda09")
+  "org.scalablytyped" %%% "bytebuffer" % "5.0.0-dt-20220818Z-944a8e",
+  "org.scalablytyped" %%% "file-manager" % "2.0-dt-20220829Z-eaba0d",
+  "org.scalablytyped" %%% "long" % "5.2.1-89c48a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce",
+  "org.scalablytyped" %%% "steam-user" % "4.23-dt-20220909Z-304e6b",
+  "org.scalablytyped" %%% "steamid" % "2.0-dt-20211202Z-68195b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

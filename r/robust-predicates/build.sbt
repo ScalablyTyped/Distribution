@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "robust-predicates"
-version := "3.0.1-1f3e31"
+version := "3.0.1-20b2a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

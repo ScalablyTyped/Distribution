@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CoordinateSegment
-  extends StObject
-     with Object {
+trait CoordinateSegment extends StObject {
   
   /**
     * A string that provides the name for this segment of a coordinate string.
@@ -33,15 +29,8 @@ trait CoordinateSegment
 }
 object CoordinateSegment {
   
-  inline def apply(
-    alias: String,
-    constructor: js.Function,
-    description: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    searchPattern: js.RegExp
-  ): CoordinateSegment = {
-    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), searchPattern = searchPattern.asInstanceOf[js.Any])
+  inline def apply(alias: String, description: String, searchPattern: js.RegExp): CoordinateSegment = {
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], searchPattern = searchPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateSegment]
   }
   

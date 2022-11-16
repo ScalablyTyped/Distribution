@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchSearchCompleteEventResults
-  extends StObject
-     with Object {
+trait SearchSearchCompleteEventResults extends StObject {
   
   var results: js.Array[SearchResult]
   
@@ -18,15 +14,8 @@ trait SearchSearchCompleteEventResults
 }
 object SearchSearchCompleteEventResults {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    results: js.Array[SearchResult],
-    source: Any,
-    sourceIndex: Double
-  ): SearchSearchCompleteEventResults = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
+  inline def apply(results: js.Array[SearchResult], source: Any, sourceIndex: Double): SearchSearchCompleteEventResults = {
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSearchCompleteEventResults]
   }
   

@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OGCFeatureLayerConstructor
   extends StObject
-     with /**
-  * The OGCFeatureLayer class is used to create a layer based on individual collections from a [OGC API Features](https://www.opengeospatial.org/standards/ogcapi-features) service.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html)
-  */
-Instantiable0[OGCFeatureLayer]
+     with Instantiable0[OGCFeatureLayer]
      with Instantiable1[/* properties */ OGCFeatureLayerProperties, OGCFeatureLayer] {
   
   def fromJSON(json: Any): OGCFeatureLayer = js.native

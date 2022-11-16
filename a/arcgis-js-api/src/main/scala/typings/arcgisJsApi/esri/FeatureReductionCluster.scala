@@ -30,13 +30,20 @@ trait FeatureReductionCluster
   var clusterMinSize: Double = js.native
   
   /**
-    * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster.
+    * Defines the radius in points (or pixels if specified) of the area in which multiple points will be grouped and visualized as a single cluster.
     *
     * @default 60
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius)
     */
   var clusterRadius: Double = js.native
+  
+  /**
+    * An array of aggregate fields that summarize layer [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) from features contained within each cluster.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#fields)
+    */
+  var fields: js.Array[AggregateField] = js.native
   
   /**
     * Defines labels for clusters as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
@@ -69,6 +76,20 @@ trait FeatureReductionCluster
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupTemplate)
     */
   var popupTemplate: PopupTemplate = js.native
+  
+  /**
+    * The renderer used to override the default style of the clusters.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#renderer)
+    */
+  var renderer: Renderer = js.native
+  
+  /**
+    * A symbol used to override the default cluster style.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#symbol)
+    */
+  var symbol: MarkerSymbol | CIMSymbol | WebStyleSymbol = js.native
   
   /**
     * The feature reduction type.

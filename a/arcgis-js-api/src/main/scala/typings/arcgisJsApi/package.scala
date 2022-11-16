@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type HashMap[T] = Record[String, T]
 
+/** @deprecated Use native Promise instead. */
 type IPromise[T] = js.Promise[T]

@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.timeZoneName
   - typings.std.stdStrings.weekday
   - typings.std.stdStrings.year
+  - typings.std.stdStrings.unknown
   - typings.std.stdStrings.fractionalSecond
 */
 trait DateTimeFormatPartTypes extends StObject

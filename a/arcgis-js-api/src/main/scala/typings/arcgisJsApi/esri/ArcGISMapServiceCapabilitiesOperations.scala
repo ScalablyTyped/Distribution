@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISMapServiceCapabilitiesOperations
-  extends StObject
-     with Object {
+trait ArcGISMapServiceCapabilitiesOperations extends StObject {
   
   /**
     * Indicates if the service can generate images.
@@ -48,16 +44,13 @@ trait ArcGISMapServiceCapabilitiesOperations
 object ArcGISMapServiceCapabilitiesOperations {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsExportMap: Boolean,
     supportsExportTiles: Boolean,
     supportsIdentify: Boolean,
     supportsQuery: Boolean,
     supportsTileMap: Boolean
   ): ArcGISMapServiceCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsExportMap = supportsExportMap.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsIdentify = supportsIdentify.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsExportMap = supportsExportMap.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsIdentify = supportsIdentify.asInstanceOf[js.Any], supportsQuery = supportsQuery.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
   

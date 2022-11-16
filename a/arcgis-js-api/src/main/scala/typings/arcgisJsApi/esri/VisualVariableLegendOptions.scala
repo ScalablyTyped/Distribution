@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VisualVariableLegendOptions
-  extends StObject
-     with Object {
+trait VisualVariableLegendOptions extends StObject {
   
   /**
     * Indicates whether to show the visual variable in the legend.
@@ -26,12 +22,8 @@ trait VisualVariableLegendOptions
 }
 object VisualVariableLegendOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): VisualVariableLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): VisualVariableLegendOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VisualVariableLegendOptions]
   }
   

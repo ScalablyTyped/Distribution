@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "architect__functions"
-version := "3.13-dt-20220630Z-b0bcb3"
+version := "3.13-dt-20220630Z-5389c2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20221018Z-22845c",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1253.0-da05ac",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a7050d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-2c076a",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-e2d669",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-c05674",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-9d2495",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20221018Z-b44f7d",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1255.0-7ae5b6",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-2966c9",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-5cc384",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-4d0efa",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-fa36ba",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-088887",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

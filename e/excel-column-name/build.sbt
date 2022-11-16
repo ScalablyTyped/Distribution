@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "excel-column-name"
-version := "1.0-dt-20211202Z-bae7a9"
+version := "1.0-dt-20211202Z-44d84e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

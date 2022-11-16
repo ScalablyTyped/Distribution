@@ -1,6 +1,5 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-burn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`color-dodge`
 import typings.arcgisJsApi.arcgisJsApiStrings.`destination-atop`
@@ -35,7 +34,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Collection
 import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.MapImageLayer
-import typings.arcgisJsApi.esri.MapImageLayerConstructor
 import typings.arcgisJsApi.esri.MapImageLayerProperties
 import typings.arcgisJsApi.esri.Sublayer
 import typings.arcgisJsApi.esri.TimeExtent
@@ -45,13 +43,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriLayersMapImageLayerMod extends Shortcut {
+/* static members */
+object esriLayersMapImageLayerMod {
   
-  @JSImport("esri/layers/MapImageLayer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & MapImageLayerConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/MapImageLayer", JSImport.Namespace)
   @js.native
   /**
@@ -59,7 +53,7 @@ object esriLayersMapImageLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with MapImageLayer {
     def this(properties: MapImageLayerProperties) = this()
@@ -186,9 +180,9 @@ object esriLayersMapImageLayerMod extends Shortcut {
     /* CompleteClass */
     var useViewTime: Boolean = js.native
   }
+  @JSImport("esri/layers/MapImageLayer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & MapImageLayerConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriLayersMapImageLayerMod.foo` */
-  override def _to: js.Object & MapImageLayerConstructor = ^
+  inline def fromJSON(json: Any): MapImageLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[MapImageLayer]
 }

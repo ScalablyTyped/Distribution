@@ -13,6 +13,7 @@ import typings.interactjsTypes.interactjsTypesStrings.beforeinput
 import typings.interactjsTypes.interactjsTypesStrings.beforeprint
 import typings.interactjsTypes.interactjsTypesStrings.beforeunload
 import typings.interactjsTypes.interactjsTypesStrings.blur
+import typings.interactjsTypes.interactjsTypesStrings.cancel
 import typings.interactjsTypes.interactjsTypesStrings.canplay
 import typings.interactjsTypes.interactjsTypesStrings.canplaythrough
 import typings.interactjsTypes.interactjsTypesStrings.change
@@ -408,6 +409,20 @@ trait Windowwrapargsanyanyundef
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -2213,6 +2228,9 @@ trait Windowwrapargsanyanyundef
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /* standard dom */
+  var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
+  
+  /* standard dom */
   var onbeforeprint: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /* standard dom */
@@ -2224,6 +2242,9 @@ trait Windowwrapargsanyanyundef
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
+  
+  /* standard dom */
+  var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
@@ -2992,6 +3013,20 @@ trait Windowwrapargsanyanyundef
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

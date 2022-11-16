@@ -89,6 +89,7 @@ import typings.layuiSrc.layuiSrcStrings.body
 import typings.layuiSrc.layuiSrcStrings.br
 import typings.layuiSrc.layuiSrcStrings.breadcrumb
 import typings.layuiSrc.layuiSrcStrings.button
+import typings.layuiSrc.layuiSrcStrings.cancel
 import typings.layuiSrc.layuiSrcStrings.canplay
 import typings.layuiSrc.layuiSrcStrings.canplaythrough
 import typings.layuiSrc.layuiSrcStrings.canvas
@@ -3180,7 +3181,7 @@ object Layui {
       * @param [fn] 回调    (tip:this:any)
       */
     def on(
-      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100, starting with typings.layuiSrc.layuiSrcStrings.fullscreenchange, typings.layuiSrc.layuiSrcStrings.fullscreenerror, typings.layuiSrc.layuiSrcStrings.copy */ Any,
+      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.layuiSrc.layuiSrcStrings.fullscreenchange, typings.layuiSrc.layuiSrcStrings.fullscreenerror, typings.layuiSrc.layuiSrcStrings.copy */ Any,
       fn: js.Function1[/* args */ Any, Any]
     ): js.Array[HTMLElement] = js.native
     
@@ -5380,6 +5381,18 @@ object Layui {
       elem: HTMLElement,
       event: blur,
       listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, Unit]
+    ): Unit = js.native
+    @JSName("on")
+    def on_cancel(
+      elem: Null,
+      event: cancel,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Unit]
+    ): Unit = js.native
+    @JSName("on")
+    def on_cancel(
+      elem: HTMLElement,
+      event: cancel,
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, Unit]
     ): Unit = js.native
     @JSName("on")
     def on_canplay(

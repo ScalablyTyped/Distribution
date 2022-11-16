@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__middleware-bucket-endpoint"
-version := "3.209.0-fc7bb4"
+version := "3.209.0-231c4e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.209.0-9ba2e9",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.209.0-05f31a",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-f19ef1",
-  "org.scalablytyped" %%% "aws-sdk__util-arn-parser" % "3.208.0-5716b9",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-86f548",
-  "org.scalablytyped" %%% "std" % "4.8-686d1d")
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.209.0-a60587",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.209.0-adb61e",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.208.0-b45120",
+  "org.scalablytyped" %%% "aws-sdk__util-arn-parser" % "3.208.0-8d3033",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-4346d8",
+  "org.scalablytyped" %%% "std" % "4.9-c133ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

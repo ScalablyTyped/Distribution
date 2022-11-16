@@ -26,6 +26,14 @@ object distTypesJsonSchemaMod {
     */
   type JSONType[T /* <: String */, IsPartial /* <: Boolean */] = T
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Known = {[key: string] : ajv.ajv/dist/types/json-schema.Known} | [ajv.ajv/dist/types/json-schema.Known, ...std.Array<ajv.ajv/dist/types/json-schema.Known>] | std.Array<ajv.ajv/dist/types/json-schema.Known> | number | string | boolean | null
+  }}}
+  to avoid circular code involving: 
+  - ajv.ajv/dist/types/json-schema.Known
+  */
   type Known = StringDictionary[Any] | Array[Any] | js.Array[Any] | Double | String | Boolean | Null
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
@@ -93,8 +101,16 @@ object distTypesJsonSchemaMod {
   
   type RequiredMembers[T] = StrictNullChecksWrapper[typings.ajv.ajvStrings.RequiredMembers, UncheckedRequiredMembers[T]]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped ajv.anon.AnyOf<ajv.ajv/dist/types/json-schema.Known, true> & ajv.anon.Dictkeyword | ajv.anon.OneOf<ajv.ajv/dist/types/json-schema.Known, true> & ajv.anon.Dictkeyword | ajv.anon.TypeArray<ajv.ajv/dist/types/json-schema.Known, true> & ajv.ajv/dist/types/json-schema.UnionToIntersection<ajv.ajv/dist/types/json-schema.Known extends number ? ajv.ajv/dist/types/json-schema.NumberKeywords : ajv.ajv/dist/types/json-schema.Known extends string ? ajv.ajv/dist/types/json-schema.StringKeywords : ajv.ajv/dist/types/json-schema.Known extends boolean ? {} : never> & ajv.anon.Dictkeyword | ajv.ajv/dist/types/json-schema.Known extends number ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'number' | 'integer', true>} & ajv.ajv/dist/types/json-schema.NumberKeywords : ajv.ajv/dist/types/json-schema.Known extends string ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'string', true>} & ajv.ajv/dist/types/json-schema.StringKeywords : ajv.ajv/dist/types/json-schema.Known extends boolean ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'boolean', true>} : ajv.ajv/dist/types/json-schema.Known extends [any, ...std.Array<any>] ? {  maxItems :ajv.ajv/dist/types/json-schema.Known['length']} & {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', true>,   items :{readonly [ K in keyof ajv.ajv/dist/types/json-schema.Known ]: -? ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[K], false> & ajv.ajv/dist/types/json-schema.Nullable<ajv.ajv/dist/types/json-schema.Known[K]>} & {  length :ajv.ajv/dist/types/json-schema.Known['length']},   minItems :ajv.ajv/dist/types/json-schema.Known['length']} | {  additionalItems :false} & {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', true>,   items :{readonly [ K in keyof ajv.ajv/dist/types/json-schema.Known ]: -? ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[K], false> & ajv.ajv/dist/types/json-schema.Nullable<ajv.ajv/dist/types/json-schema.Known[K]>} & {  length :ajv.ajv/dist/types/json-schema.Known['length']},   minItems :ajv.ajv/dist/types/json-schema.Known['length']} : ajv.ajv/dist/types/json-schema.Known extends std.Array<any> ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'array', true>,   items :ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[0], false>,   contains :ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<ajv.ajv/dist/types/json-schema.Known[0]> | undefined,   minItems :number | undefined,   maxItems :number | undefined,   minContains :number | undefined,   maxContains :number | undefined,   uniqueItems :true | undefined,   additionalItems :never | undefined} : ajv.ajv/dist/types/json-schema.Known extends std.Record<string, any> ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'object', true>,   additionalProperties :boolean | ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[string], false> | undefined,   unevaluatedProperties :boolean | ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[string], false> | undefined,   properties :true extends true ? std.Partial<ajv.ajv/dist/types/json-schema.UncheckedPropertiesSchema<ajv.ajv/dist/types/json-schema.Known>> : ajv.ajv/dist/types/json-schema.UncheckedPropertiesSchema<ajv.ajv/dist/types/json-schema.Known> | undefined,   patternProperties :std.Record<string, ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known[string], false>> | undefined,   propertyNames :std.Omit<ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<string, false>, 'type'> & {  type :'string' | undefined} | undefined,   dependencies :{[ K in keyof ajv.ajv/dist/types/json-schema.Known ]:? std.Readonly<std.Array<keyof ajv.ajv/dist/types/json-schema.Known>> | ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<ajv.ajv/dist/types/json-schema.Known>} | undefined,   dependentRequired :{[ K in keyof ajv.ajv/dist/types/json-schema.Known ]:? std.Readonly<std.Array<keyof ajv.ajv/dist/types/json-schema.Known>>} | undefined,   dependentSchemas :{[ K in keyof ajv.ajv/dist/types/json-schema.Known ]:? ajv.ajv/dist/types/json-schema.UncheckedPartialSchema<ajv.ajv/dist/types/json-schema.Known>} | undefined,   minProperties :number | undefined,   maxProperties :number | undefined} & true extends true ? {  required :std.Readonly<std.Array<keyof ajv.ajv/dist/types/json-schema.Known>>} : [ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<ajv.ajv/dist/types/json-schema.Known>] extends [never] ? {  required :std.Readonly<std.Array<ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<ajv.ajv/dist/types/json-schema.Known>>> | undefined} : {  required :std.Readonly<std.Array<ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<ajv.ajv/dist/types/json-schema.Known>>>} : ajv.ajv/dist/types/json-schema.Known extends null ? {  type :ajv.ajv/dist/types/json-schema.JSONType<'null', true>,   nullable :true} : never & ajv.anon.AllOf<ajv.ajv/dist/types/json-schema.Known> & ajv.anon.Dictkeyword */ trait SomeJSONSchema extends StObject
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type SomeJSONSchema = ajv.ajv/dist/types/json-schema.UncheckedJSONSchemaType<ajv.ajv/dist/types/json-schema.Known, true>
+  }}}
+  to avoid circular code involving: 
+  - ajv.ajv/dist/types/json-schema.Known
+  - ajv.ajv/dist/types/json-schema.SomeJSONSchema
+  */
+  type SomeJSONSchema = UncheckedJSONSchemaType[Any, `true`]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

@@ -1,20 +1,14 @@
 package typings.arcgisJsApi
 
-import org.scalablytyped.runtime.Shortcut
 import typings.arcgisJsApi.esri.LineCallout3D
-import typings.arcgisJsApi.esri.LineCallout3DConstructor
 import typings.arcgisJsApi.esri.LineCallout3DProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esriSymbolsCalloutsLineCallout3DMod extends Shortcut {
+/* static members */
+object esriSymbolsCalloutsLineCallout3DMod {
   
-  @JSImport("esri/symbols/callouts/LineCallout3D", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & LineCallout3DConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/callouts/LineCallout3D", JSImport.Namespace)
   @js.native
   /**
@@ -22,7 +16,7 @@ object esriSymbolsCalloutsLineCallout3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html)
     */
-  open class Class ()
+  open class ^ ()
     extends StObject
        with LineCallout3D {
     def this(properties: LineCallout3DProperties) = this()
@@ -35,9 +29,9 @@ object esriSymbolsCalloutsLineCallout3DMod extends Shortcut {
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
+  @JSImport("esri/symbols/callouts/LineCallout3D", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type _To = js.Object & LineCallout3DConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `esriSymbolsCalloutsLineCallout3DMod.foo` */
-  override def _to: js.Object & LineCallout3DConstructor = ^
+  inline def fromJSON(json: Any): LineCallout3D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[LineCallout3D]
 }

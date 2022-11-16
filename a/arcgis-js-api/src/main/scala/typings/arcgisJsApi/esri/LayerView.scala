@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerView
   extends StObject
      with Accessor
-     with corePromise {
+     with corePromise
+     with Identifiable {
   
   /**
     * The layer being viewed.

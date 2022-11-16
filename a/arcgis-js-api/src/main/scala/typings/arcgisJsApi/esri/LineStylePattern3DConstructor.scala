@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineStylePattern3DConstructor
   extends StObject
-     with /**
-  * Renders lines with predefined style patterns.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-LineStylePattern3D.html)
-  */
-Instantiable0[LineStylePattern3D]
+     with Instantiable0[LineStylePattern3D]
      with Instantiable1[/* properties */ LineStylePattern3DProperties, LineStylePattern3D] {
   
   def fromJSON(json: Any): LineStylePattern3D = js.native

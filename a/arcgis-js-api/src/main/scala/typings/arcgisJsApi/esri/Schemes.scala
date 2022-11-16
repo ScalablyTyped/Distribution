@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Schemes
-  extends StObject
-     with Object {
+trait Schemes extends StObject {
   
   /**
     * Includes the primary labeling scheme suggested for the input layer's clusters.
@@ -26,14 +22,8 @@ trait Schemes
 }
 object Schemes {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    primaryScheme: Scheme,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    secondarySchemes: js.Array[Scheme]
-  ): Schemes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryScheme = primaryScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondarySchemes = secondarySchemes.asInstanceOf[js.Any])
+  inline def apply(primaryScheme: Scheme, secondarySchemes: js.Array[Scheme]): Schemes = {
+    val __obj = js.Dynamic.literal(primaryScheme = primaryScheme.asInstanceOf[js.Any], secondarySchemes = secondarySchemes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schemes]
   }
   

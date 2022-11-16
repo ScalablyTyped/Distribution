@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node_redis"
-version := "0.8-dt-20221103Z-40bc30"
+version := "0.8-dt-20221103Z-4f69b2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

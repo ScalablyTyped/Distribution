@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VisualVariableConstructor
   extends StObject
-     with /**
-  * The visual variable base class.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html)
-  */
-Instantiable0[VisualVariable]
+     with Instantiable0[VisualVariable]
      with Instantiable1[/* properties */ VisualVariableProperties, VisualVariable] {
   
   def fromJSON(json: Any): VisualVariable = js.native

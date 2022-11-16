@@ -52,6 +52,16 @@ object XmlPoke {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type PathToValueMap = {[xpath: string] : xmlpoke.XmlPoke.Value}
+  }}}
+  to avoid circular code involving: 
+  - xmlpoke.XmlPoke.PathToValueMap
+  - xmlpoke.XmlPoke.Transform
+  - xmlpoke.XmlPoke.Value
+  */
   trait PathToValueMap
     extends StObject
        with /* xpath */ StringDictionary[Value]
@@ -65,6 +75,15 @@ object XmlPoke {
   }
   
   // ghost module
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Transform = (node : std.Node, value : string): xmlpoke.XmlPoke.Value
+  }}}
+  to avoid circular code involving: 
+  - xmlpoke.XmlPoke.Transform
+  - xmlpoke.XmlPoke.Value
+  */
   @js.native
   trait Transform
     extends StObject

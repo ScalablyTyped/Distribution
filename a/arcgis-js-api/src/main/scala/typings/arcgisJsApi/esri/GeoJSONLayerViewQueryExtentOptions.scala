@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONLayerViewQueryExtentOptions
-  extends StObject
-     with Object {
+trait GeoJSONLayerViewQueryExtentOptions extends StObject {
   
   /**
     * Signal object that can be used to abort the asynchronous task.
@@ -20,12 +16,8 @@ trait GeoJSONLayerViewQueryExtentOptions
 }
 object GeoJSONLayerViewQueryExtentOptions {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): GeoJSONLayerViewQueryExtentOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): GeoJSONLayerViewQueryExtentOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONLayerViewQueryExtentOptions]
   }
   

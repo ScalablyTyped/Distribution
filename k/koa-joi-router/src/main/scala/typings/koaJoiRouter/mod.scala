@@ -69,6 +69,15 @@ object mod extends Shortcut {
     def apply(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NestedHandler = std.ReadonlyArray<koa-joi-router.koa-joi-router.Handler>
+  }}}
+  to avoid circular code involving: 
+  - koa-joi-router.koa-joi-router.Handler
+  - koa-joi-router.koa-joi-router.NestedHandler
+  */
   @js.native
   trait NestedHandler
     extends StObject

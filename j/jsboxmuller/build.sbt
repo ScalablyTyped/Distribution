@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsboxmuller"
-version := "1.1-dt-20220329Z-3b5747"
+version := "1.1-dt-20220329Z-f36799"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

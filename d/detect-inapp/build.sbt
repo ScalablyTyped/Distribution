@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-inapp"
-version := "1.4-dt-20221108Z-40ca21"
+version := "1.4-dt-20221114Z-a4b005"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

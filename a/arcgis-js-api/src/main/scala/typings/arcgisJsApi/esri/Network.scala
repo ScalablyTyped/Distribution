@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Network
   extends StObject
      with Accessor
-     with Loadable
-     with JSONSupport {
+     with JSONSupport
+     with Loadable {
   
   /**
     * The full network definition, accessible only when the network is loaded.
@@ -85,6 +85,13 @@ trait Network
   val networkServiceUrl: String = js.native
   
   /**
+    * Contains the url and IDs of the utility network rules, subnetworks, and dirty areas tables or layers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#networkSystemLayers)
+    */
+  val networkSystemLayers: NetworkSystemLayers = js.native
+  
+  /**
     * The portal user owner of the network.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#owner)
@@ -97,6 +104,16 @@ trait Network
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#parsedUrl)
     */
   val parsedUrl: String = js.native
+  
+  /**
+    * Named trace configurations allow you to add and store complex traces in a network that can be shared across an organization through web maps and consumed by web and field applications.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
+    */
+  def queryNamedTraceConfigurations(): js.Promise[js.Array[NamedTraceConfiguration]] = js.native
+  def queryNamedTraceConfigurations(query: scala.Unit, options: RequestOptions): js.Promise[js.Array[NamedTraceConfiguration]] = js.native
+  def queryNamedTraceConfigurations(query: NetworkQueryNamedTraceConfigurationsQuery): js.Promise[js.Array[NamedTraceConfiguration]] = js.native
+  def queryNamedTraceConfigurations(query: NetworkQueryNamedTraceConfigurationsQuery, options: RequestOptions): js.Promise[js.Array[NamedTraceConfiguration]] = js.native
   
   /**
     * The schema version of the network.

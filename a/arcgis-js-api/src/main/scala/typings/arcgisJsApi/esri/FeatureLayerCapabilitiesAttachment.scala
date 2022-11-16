@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesAttachment
-  extends StObject
-     with Object {
+trait FeatureLayerCapabilitiesAttachment extends StObject {
   
   /**
     * Indicates if the [attachment operations](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html) support a cache hint.
@@ -62,9 +58,6 @@ trait FeatureLayerCapabilitiesAttachment
 object FeatureLayerCapabilitiesAttachment {
   
   inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
     supportsCacheHint: Boolean,
     supportsContentType: Boolean,
     supportsExifInfo: Boolean,
@@ -73,7 +66,7 @@ object FeatureLayerCapabilitiesAttachment {
     supportsResize: Boolean,
     supportsSize: Boolean
   ): FeatureLayerCapabilitiesAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsContentType = supportsContentType.asInstanceOf[js.Any], supportsExifInfo = supportsExifInfo.asInstanceOf[js.Any], supportsKeywords = supportsKeywords.asInstanceOf[js.Any], supportsName = supportsName.asInstanceOf[js.Any], supportsResize = supportsResize.asInstanceOf[js.Any], supportsSize = supportsSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsContentType = supportsContentType.asInstanceOf[js.Any], supportsExifInfo = supportsExifInfo.asInstanceOf[js.Any], supportsKeywords = supportsKeywords.asInstanceOf[js.Any], supportsName = supportsName.asInstanceOf[js.Any], supportsResize = supportsResize.asInstanceOf[js.Any], supportsSize = supportsSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesAttachment]
   }
   

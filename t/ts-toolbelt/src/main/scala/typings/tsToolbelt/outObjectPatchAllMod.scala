@@ -10,7 +10,7 @@ object outObjectPatchAllMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     O extends unknown ? Os extends unknown ? ts-toolbelt.ts-toolbelt/out/Object/PatchAll._PatchAll<O, Os, depth, ignore, fill> : never : never
     }}}
@@ -20,7 +20,7 @@ object outObjectPatchAllMod {
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
+    * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
     ts-toolbelt.ts-toolbelt/out/Object/PatchAll.__PatchAll<O, Os, depth, ignore, fill, ts-toolbelt.ts-toolbelt/out/Iteration/IterationOf.IterationOf<0>> extends infer X ? ts-toolbelt.ts-toolbelt/out/Any/Cast.Cast<X, object> : never
     }}}

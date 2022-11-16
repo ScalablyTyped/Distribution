@@ -19,14 +19,14 @@ object distSrcUtilsSplitBoxPropsMod {
     
     var matchedProps: Pick[
         P, 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
       ]
     
     var remainingProps: Pick[
         P, 
         Exclude[
           /* keyof P */ String, 
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
         ]
       ]
   }
@@ -35,13 +35,13 @@ object distSrcUtilsSplitBoxPropsMod {
     inline def apply[P /* <: EnhancerProps */](
       matchedProps: Pick[
           P, 
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
         ],
       remainingProps: Pick[
           P, 
           Exclude[
             /* keyof P */ String, 
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
           ]
         ]
     ): SplitBoxProps[P] = {
@@ -54,7 +54,7 @@ object distSrcUtilsSplitBoxPropsMod {
       inline def setMatchedProps(
         value: Pick[
               P, 
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
             ]
       ): Self = StObject.set(x, "matchedProps", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object distSrcUtilsSplitBoxPropsMod {
               P, 
               Exclude[
                 /* keyof P */ String, 
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
               ]
             ]
       ): Self = StObject.set(x, "remainingProps", value.asInstanceOf[js.Any])

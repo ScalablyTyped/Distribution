@@ -3,15 +3,11 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.CIMExpressionInfo
 import typings.arcgisJsApi.arcgisJsApiStrings.Default
 import typings.arcgisJsApi.arcgisJsApiStrings.Numeric
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrimitiveOverrideValueExpressionInfo
-  extends StObject
-     with Object {
+trait PrimitiveOverrideValueExpressionInfo extends StObject {
   
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
@@ -45,13 +41,8 @@ trait PrimitiveOverrideValueExpressionInfo
 }
 object PrimitiveOverrideValueExpressionInfo {
   
-  inline def apply(
-    constructor: js.Function,
-    expression: String,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): PrimitiveOverrideValueExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(expression: String): PrimitiveOverrideValueExpressionInfo = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMExpressionInfo")
     __obj.asInstanceOf[PrimitiveOverrideValueExpressionInfo]
   }

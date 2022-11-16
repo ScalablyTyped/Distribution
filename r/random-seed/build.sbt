@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "random-seed"
-version := "0.3-dt-20211202Z-dbd4f8"
+version := "0.3-dt-20211202Z-0c9379"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

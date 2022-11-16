@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "charcodes"
-version := "0.2-dt-20220101Z-4317fb"
+version := "0.2-dt-20220101Z-9e248f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

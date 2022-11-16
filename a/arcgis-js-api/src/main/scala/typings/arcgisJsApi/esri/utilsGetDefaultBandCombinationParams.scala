@@ -1,15 +1,11 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.AbortSignal
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait utilsGetDefaultBandCombinationParams
-  extends StObject
-     with Object {
+trait utilsGetDefaultBandCombinationParams extends StObject {
   
   /**
     * Layer for which the default band ids are returned.
@@ -34,13 +30,8 @@ trait utilsGetDefaultBandCombinationParams
 }
 object utilsGetDefaultBandCombinationParams {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    layer: ImageryLayer | ImageryTileLayer | WCSLayer,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): utilsGetDefaultBandCombinationParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(layer: ImageryLayer | ImageryTileLayer | WCSLayer): utilsGetDefaultBandCombinationParams = {
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[utilsGetDefaultBandCombinationParams]
   }
   

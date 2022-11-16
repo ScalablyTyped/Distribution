@@ -8,7 +8,7 @@ trait ClassOptions extends StObject {
   
   var appPath: js.UndefOr[String] = js.undefined
   
-  var imageMagick: js.UndefOr[Boolean] = js.undefined
+  var imageMagick: js.UndefOr[String | Boolean] = js.undefined
   
   var nativeAutoOrient: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ object ClassOptions {
     
     inline def setAppPathUndefined: Self = StObject.set(x, "appPath", js.undefined)
     
-    inline def setImageMagick(value: Boolean): Self = StObject.set(x, "imageMagick", value.asInstanceOf[js.Any])
+    inline def setImageMagick(value: String | Boolean): Self = StObject.set(x, "imageMagick", value.asInstanceOf[js.Any])
     
     inline def setImageMagickUndefined: Self = StObject.set(x, "imageMagick", js.undefined)
     

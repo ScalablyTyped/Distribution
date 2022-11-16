@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SuggestResult
-  extends StObject
-     with Object {
+trait SuggestResult extends StObject {
   
   /**
     * The key related to the suggest result.
@@ -33,15 +29,8 @@ trait SuggestResult
 }
 object SuggestResult {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    key: String,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    sourceIndex: Double,
-    text: String
-  ): SuggestResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), key = key.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceIndex = sourceIndex.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(key: String, sourceIndex: Double, text: String): SuggestResult = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestResult]
   }
   

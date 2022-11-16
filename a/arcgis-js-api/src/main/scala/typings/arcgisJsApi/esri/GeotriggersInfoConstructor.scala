@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeotriggersInfoConstructor
   extends StObject
-     with /**
-  * Information relating to a list of Geotriggers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html)
-  */
-Instantiable0[GeotriggersInfo]
+     with Instantiable0[GeotriggersInfo]
      with Instantiable1[/* properties */ GeotriggersInfoProperties, GeotriggersInfo] {
   
   def fromJSON(json: Any): GeotriggersInfo = js.native

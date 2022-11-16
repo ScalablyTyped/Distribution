@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroundConstructor
   extends StObject
-     with /**
-  * The Ground class contains properties that specify how the ground surface is displayed in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html)
-  */
-Instantiable0[Ground]
+     with Instantiable0[Ground]
      with Instantiable1[/* properties */ GroundProperties, Ground] {
   
   def fromJSON(json: Any): Ground = js.native

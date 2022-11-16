@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WeatherVisibleElements
-  extends StObject
-     with Object {
+trait WeatherVisibleElements extends StObject {
   
   /**
     * When set to `false`, the header is not displayed.
@@ -19,12 +15,8 @@ trait WeatherVisibleElements
 }
 object WeatherVisibleElements {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
-  ): WeatherVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+  inline def apply(): WeatherVisibleElements = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeatherVisibleElements]
   }
   

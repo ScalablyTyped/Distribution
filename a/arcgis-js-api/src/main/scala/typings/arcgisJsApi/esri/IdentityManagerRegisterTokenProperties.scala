@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdentityManagerRegisterTokenProperties
-  extends StObject
-     with Object {
+trait IdentityManagerRegisterTokenProperties extends StObject {
   
   /**
     * Token expiration time specified as number of milliseconds since 1 January 1970 00:00:00 UTC.
@@ -47,14 +43,8 @@ trait IdentityManagerRegisterTokenProperties
 }
 object IdentityManagerRegisterTokenProperties {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    server: String,
-    token: String
-  ): IdentityManagerRegisterTokenProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), server = server.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+  inline def apply(server: String, token: String): IdentityManagerRegisterTokenProperties = {
+    val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityManagerRegisterTokenProperties]
   }
   

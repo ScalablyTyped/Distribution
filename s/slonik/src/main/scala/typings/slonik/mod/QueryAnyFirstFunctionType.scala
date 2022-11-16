@@ -4,6 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type QueryAnyFirstFunctionType = <T>(args : slonik.slonik.QueryMethodParams<T>): std.Promise<std.Array<T[keyof T]>>
+}}}
+to avoid circular code involving: 
+- slonik.slonik.PrimitiveValueExpressionType
+- slonik.slonik.PrimitiveValueExpressionTypeArray
+- slonik.slonik.QueryAnyFirstFunctionType
+- slonik.slonik.QueryManyFirstFunctionType
+- slonik.slonik.QueryMethodParams
+- slonik.slonik.QueryMethodType
+*/
 @js.native
 trait QueryAnyFirstFunctionType extends StObject {
   

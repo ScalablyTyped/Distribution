@@ -147,6 +147,14 @@ object distOperationsGeneralTypesMod {
   
   type Type = String | typings.nodePgMigrate.anon.Type
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Value = null | boolean | string | number | node-pg-migrate.node-pg-migrate/dist/operations/PgLiteral.default | node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.PgLiteralValue | std.Array<node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value>
+  }}}
+  to avoid circular code involving: 
+  - node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value
+  */
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - scala.Boolean

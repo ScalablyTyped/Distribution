@@ -8,6 +8,7 @@ import typings.std.stdStrings.animationstart
 import typings.std.stdStrings.auxclick
 import typings.std.stdStrings.beforeinput
 import typings.std.stdStrings.blur
+import typings.std.stdStrings.cancel
 import typings.std.stdStrings.canplay
 import typings.std.stdStrings.canplaythrough
 import typings.std.stdStrings.change
@@ -233,6 +234,20 @@ trait GlobalEventHandlers extends StObject {
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1518,12 +1533,18 @@ trait GlobalEventHandlers extends StObject {
   /* standard dom */
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /* standard dom */
+  var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
+  
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
+  
+  /* standard dom */
+  var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
@@ -2079,6 +2100,20 @@ trait GlobalEventHandlers extends StObject {
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(`type`: cancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cancel(
+    `type`: cancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

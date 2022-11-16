@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IdentifyResultConstructor
   extends StObject
-     with /**
-  * The result from [identify](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-identify.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyResult.html)
-  */
-Instantiable0[IdentifyResult]
+     with Instantiable0[IdentifyResult]
      with Instantiable1[/* properties */ IdentifyResultProperties, IdentifyResult] {
   
   def fromJSON(json: Any): IdentifyResult = js.native

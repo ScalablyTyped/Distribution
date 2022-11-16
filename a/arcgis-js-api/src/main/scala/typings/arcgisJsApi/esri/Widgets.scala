@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Widgets
-  extends StObject
-     with Object {
+trait Widgets extends StObject {
   
   /**
     * Floor filtering is controlled by a configurable [floor filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter.html).
@@ -26,14 +22,8 @@ trait Widgets
 }
 object Widgets {
   
-  inline def apply(
-    constructor: js.Function,
-    floorFilter: WebMapFloorFilter,
-    hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    timeSlider: WebMapTimeSlider
-  ): Widgets = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], floorFilter = floorFilter.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), timeSlider = timeSlider.asInstanceOf[js.Any])
+  inline def apply(floorFilter: WebMapFloorFilter, timeSlider: WebMapTimeSlider): Widgets = {
+    val __obj = js.Dynamic.literal(floorFilter = floorFilter.asInstanceOf[js.Any], timeSlider = timeSlider.asInstanceOf[js.Any])
     __obj.asInstanceOf[Widgets]
   }
   

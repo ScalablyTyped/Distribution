@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineSymbolConstructor
   extends StObject
-     with /**
-  * Line symbols are used to draw [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) in a 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html)
-  */
-Instantiable0[LineSymbol]
+     with Instantiable0[LineSymbol]
      with Instantiable1[/* properties */ LineSymbolProperties, LineSymbol] {
   
   def fromJSON(json: Any): LineSymbol = js.native

@@ -19,7 +19,8 @@ trait CustomContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
     */
-  def creator(graphic: Graphic): String | HTMLElement | Widget_ | js.Promise[Any] = js.native
+  def creator(): String | HTMLElement | Widget_ | js.Promise[Any] = js.native
+  def creator(event: PopupTemplateCreatorEvent): String | HTMLElement | Widget_ | js.Promise[Any] = js.native
   /**
     * The function that is called to create the custom content element.
     *
@@ -33,7 +34,8 @@ trait CustomContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#destroyer)
     */
-  def destroyer(graphic: Graphic): scala.Unit = js.native
+  def destroyer(): scala.Unit = js.native
+  def destroyer(event: PopupTemplateCreatorEvent): scala.Unit = js.native
   /**
     * The called function to cleanup custom content when it is no longer necessary.
     *

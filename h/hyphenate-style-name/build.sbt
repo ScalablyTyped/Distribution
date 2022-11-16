@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hyphenate-style-name"
-version := "1.0-dt-20211202Z-25315c"
+version := "1.0-dt-20211202Z-d26c24"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -278,12 +278,31 @@ object distCommandsMod {
   */
   type RedisJSON = _RedisJSON | Null | Boolean | Double | String | js.Date
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RedisJSONArray = std.Array<@redis/json.@redis/json/dist/commands.RedisJSON>
+  }}}
+  to avoid circular code involving: 
+  - @redis/json.@redis/json/dist/commands.RedisJSON
+  - @redis/json.@redis/json/dist/commands.RedisJSONArray
+  */
   @js.native
   trait RedisJSONArray
     extends StObject
        with Array[RedisJSON]
        with _RedisJSON
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type RedisJSONObject = {[key: string] : @redis/json.@redis/json/dist/commands.RedisJSON, [key: number] : @redis/json.@redis/json/dist/commands.RedisJSON}
+  }}}
+  to avoid circular code involving: 
+  - @redis/json.@redis/json/dist/commands.RedisJSON
+  - @redis/json.@redis/json/dist/commands.RedisJSONArray
+  - @redis/json.@redis/json/dist/commands.RedisJSONObject
+  */
   trait RedisJSONObject
     extends StObject
        with /* key */ NumberDictionary[RedisJSON]

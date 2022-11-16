@@ -1,14 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Object
-import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TessellatedMesh
-  extends StObject
-     with Object {
+trait TessellatedMesh extends StObject {
   
   /**
     * The indices of the triangles that connect vertices together; each consecutive triplet of indices denotes a triangle.
@@ -26,14 +22,8 @@ trait TessellatedMesh
 }
 object TessellatedMesh {
   
-  inline def apply(
-    constructor: js.Function,
-    hasOwnProperty: PropertyKey => Boolean,
-    indices: js.Array[Double],
-    propertyIsEnumerable: PropertyKey => Boolean,
-    vertices: js.Array[MeshVertex]
-  ): TessellatedMesh = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), indices = indices.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertices = vertices.asInstanceOf[js.Any])
+  inline def apply(indices: js.Array[Double], vertices: js.Array[MeshVertex]): TessellatedMesh = {
+    val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[TessellatedMesh]
   }
   

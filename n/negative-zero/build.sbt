@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "negative-zero"
-version := "4.0.0-d7be15"
+version := "4.0.0-6b7ea3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -67,7 +67,7 @@ trait RasterInfo
   var extent: Extent = js.native
   
   /**
-    * Indicates whether the source multidimensional data has been transposed
+    * Indicates whether the source multidimensional data has been transposed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#hasMultidimensionalTranspose)
     */
@@ -95,7 +95,7 @@ trait RasterInfo
   var keyProperties: Any = js.native
   
   /**
-    * Returns the multidimensional information associated with the raster service.
+    * Returns the multidimensional information associated with the raster service referenced in an imagery layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
     */

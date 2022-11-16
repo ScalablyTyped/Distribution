@@ -25,13 +25,13 @@ object adapterMod {
     
     def setStyleForTilesElement(
       property: Exclude[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458, starting with typings.materialGridList.materialGridListStrings.accentColor, typings.materialGridList.materialGridListStrings.alignContent, typings.materialGridList.materialGridListStrings.alignItems */ Any, 
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 465, starting with typings.materialGridList.materialGridListStrings.accentColor, typings.materialGridList.materialGridListStrings.alignContent, typings.materialGridList.materialGridListStrings.alignItems */ Any, 
           length | parentRule
         ]
     ): Unit = js.native
     def setStyleForTilesElement(
       property: Exclude[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458, starting with typings.materialGridList.materialGridListStrings.accentColor, typings.materialGridList.materialGridListStrings.alignContent, typings.materialGridList.materialGridListStrings.alignItems */ Any, 
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 465, starting with typings.materialGridList.materialGridListStrings.accentColor, typings.materialGridList.materialGridListStrings.alignContent, typings.materialGridList.materialGridListStrings.alignItems */ Any, 
           length | parentRule
         ],
       value: String
