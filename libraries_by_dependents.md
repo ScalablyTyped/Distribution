@@ -976,6 +976,7 @@
 | 0.0 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing
 | 0.0 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
 | 0.0 | [browser-update](./b/browser-update) | Remind users to update their browser in an unobtru
+| 0.0 | [browserfs](./b/browserfs) | A filesystem in your browser
 | 0.0 | [browserify](./b/browserify) | browser-side require() the node way
 | 0.0 | [browserslist](./b/browserslist) | Share target browsers between different front-end 
 | 0.0 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u
@@ -1128,6 +1129,7 @@
 | 0.0 | [catering](./c/catering) | Simple utility to allow your module to be consumed
 | 0.0 | [catho__quantum](./c/catho__quantum) | Catho react components
 | 0.0 | [cavy](./c/cavy) | An integration test framework for React Native.
+| 0.0 | [cbor](./c/cbor) | Encode and parse data in the Concise Binary Object
 | 0.0 | [cborg](./c/cborg) | Fast CBOR with a focus on strictness
 | 0.0 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi
 | 0.0 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a 
@@ -1613,6 +1615,7 @@
 | 0.0 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node
 | 0.0 | [cradle](./c/cradle) | the high-level, caching, CouchDB library
 | 0.0 | [crawler](./c/crawler) | Crawler is a web spider written with Nodejs. It gi
+| 0.0 | [crc](./c/crc) | Module for calculating Cyclic Redundancy Check (CR
 | 0.0 | [crc-32](./c/crc-32) | Pure-JS CRC-32
 | 0.0 | [create-banner](./c/create-banner) | Create a banner from a package.json file.
 | 0.0 | [create-cert](./c/create-cert) | Super simple self signed certificates
@@ -1765,6 +1768,7 @@
 | 0.0 | [cypress-dark](./c/cypress-dark) | Dark mode for Cypress test runner from user space
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
+| 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
 | 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
@@ -2466,7 +2470,11 @@
 | 0.0 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam
 | 0.0 | [ethereumjs-abi](./e/ethereumjs-abi) | Decoder and encoder for the Ethereum ABI
 | 0.0 | [ethereumjs-account](./e/ethereumjs-account) | Encoding, decoding and validation of Ethereum's Ac
+| 0.0 | [ethereumjs-blockchain](./e/ethereumjs-blockchain) | A module to store and interact with blocks
 | 0.0 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations
+| 0.0 | [ethereumjs-tx](./e/ethereumjs-tx) | A simple module for creating, manipulating and sig
+| 0.0 | [ethereumjs-util](./e/ethereumjs-util) | A collection of utility functions for Ethereum
+| 0.0 | [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation
 | 0.0 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys
 | 0.0 | [ethers](./e/ethers) | Umbrella package for most common Ethers libraries.
 | 0.0 | [ethersproject__abi](./e/ethersproject__abi) | Utilities and Classes for parsing, formatting and 
@@ -2729,6 +2737,8 @@
 | 0.0 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e
 | 0.0 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js
 | 0.0 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us
+| 0.0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
+| 0.0 | [fastify-plugin](./f/fastify-plugin) | Plugin helper for Fastify
 | 0.0 | [fastify__ajv-compiler](./f/fastify__ajv-compiler) | Build and manage the AJV instances for the fastify
 | 0.0 | [fastify__busboy](./f/fastify__busboy) | A streaming parser for HTML form data for node.js
 | 0.0 | [fastify__error](./f/fastify__error) | A small utility, used by Fastify itself, for gener
@@ -3696,7 +3706,6 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
-| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -6534,7 +6543,6 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
-| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6558,7 +6566,6 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
-| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js

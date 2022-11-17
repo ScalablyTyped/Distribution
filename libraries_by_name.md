@@ -1132,6 +1132,7 @@
 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing | browser sync, css, live reload, sync |
 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration | webpack, webpack-plugin, browsersync, browser-sync, livereload, serve |
 | [browser-update](./b/browser-update) | Remind users to update their browser in an unobtru | browser, web |
+| [browserfs](./b/browserfs) | A filesystem in your browser | filesystem, node, storage |
 | [browserify](./b/browserify) | browser-side require() the node way | browser, require, commonjs, commonj-esque, bundle, npm, javascript |
 | [browserslist](./b/browserslist) | Share target browsers between different front-end  | caniuse, browsers, target |
 | [browserslist-useragent](./b/browserslist-useragent) | A utility to match a browselist query to browser u | - |
@@ -1285,6 +1286,7 @@
 | [catering](./c/catering) | Simple utility to allow your module to be consumed | callback, promise, promisify |
 | [catho__quantum](./c/catho__quantum) | Catho react components | catho, react, components, style, guide, quantum |
 | [cavy](./c/cavy) | An integration test framework for React Native. | react, react native, ios, android, integration tests, testing, test, specs |
+| [cbor](./c/cbor) | Encode and parse data in the Concise Binary Object | coap, cbor, json, rfc7049, rfc8949 |
 | [cborg](./c/cborg) | Fast CBOR with a focus on strictness | cbor |
 | [ccap](./c/ccap) | node.js generate captcha using c++ library CImg wi | node, captcha, c++, image, CImg |
 | [ccapture_dot_js](./c/ccapture_dot_js) | A library to capture canvas-based animations at a  | capture, canvas, webgl, animation |
@@ -1790,6 +1792,7 @@
 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node | cqrs, eventsourcing, ddd, dddd, command, event, eventdenormalizer, domain |
 | [cradle](./c/cradle) | the high-level, caching, CouchDB library | couchdb, database, couch |
 | [crawler](./c/crawler) | Crawler is a web spider written with Nodejs. It gi | dom, javascript, crawling, spider, scraper, scraping, jquery, crawler, nodejs |
+| [crc](./c/crc) | Module for calculating Cyclic Redundancy Check (CR | crc, crc16ccitt, crc16kermit, crc16modbus, crc16, crc16xmodem, crc1, crc24, crc32, crc81wire, crc8, crcjam |
 | [crc-32](./c/crc-32) | Pure-JS CRC-32 | crc, crc32, checksum |
 | [create-banner](./c/create-banner) | Create a banner from a package.json file. | create, banner, banner-generator, package, package.json |
 | [create-cert](./c/create-cert) | Super simple self signed certificates | self, signed, certificate, cert, ssl |
@@ -1948,6 +1951,7 @@
 | [cypress-dark](./c/cypress-dark) | Dark mode for Cypress test runner from user space | cypress, cypress-io, dark, theme |
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
+| [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
@@ -2695,7 +2699,11 @@
 | [ethereum-protocol](./e/ethereum-protocol) | This package is a stub so that noone takes the nam | - |
 | [ethereumjs-abi](./e/ethereumjs-abi) | Decoder and encoder for the Ethereum ABI | ethereum, ABI |
 | [ethereumjs-account](./e/ethereumjs-account) | Encoding, decoding and validation of Ethereum's Ac | ethereum, account |
+| [ethereumjs-blockchain](./e/ethereumjs-blockchain) | A module to store and interact with blocks | ethereum, blockchain |
 | [ethereumjs-common](./e/ethereumjs-common) | Resources common to all Ethereum implementations | ethereum, ethereumjs, constants, parameters, genesis, networks, bootstrap |
+| [ethereumjs-tx](./e/ethereumjs-tx) | A simple module for creating, manipulating and sig | ethereum, transactions |
+| [ethereumjs-util](./e/ethereumjs-util) | A collection of utility functions for Ethereum | ethereum, utilities, utils |
+| [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation | ethereum, VM |
 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys | ethereum, wallets, keys |
 | [ethereumjs__rlp](./e/ethereumjs__rlp) | - | - |
 | [ethers](./e/ethers) | Umbrella package for most common Ethers libraries. | Ethereum, ethers |
@@ -2970,6 +2978,8 @@
 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e | utf-8, encoding, decoding, encoder, decoder, javascript, polyfill, js, utf8, compact, cross-browser, utf8-string, pure-javascript, nodejs, node-js, node-module, nodejs-modules, performance, tiny, small |
 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js | web, framework, json, schema, open, api |
 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us | fastify, error, utility, plugin |
+| [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests | fastify, plugin, favicon |
+| [fastify-plugin](./f/fastify-plugin) | Plugin helper for Fastify | plugin, helper, fastify |
 | [fastify__ajv-compiler](./f/fastify__ajv-compiler) | Build and manage the AJV instances for the fastify | ajv, validator, schema, compiler, fastify |
 | [fastify__busboy](./f/fastify__busboy) | A streaming parser for HTML form data for node.js | uploads, forms, multipart, form-data |
 | [fastify__deepmerge](./f/fastify__deepmerge) | - | - |
@@ -4626,7 +4636,6 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
-| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -7614,7 +7623,6 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
-| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7640,7 +7648,6 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
-| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |
